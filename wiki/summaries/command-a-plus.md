@@ -1,6 +1,6 @@
 # Introducing Command A+
 
-**Source**: `raw/command-a-plus/full-article.html` (411 KB), `raw/command-a-plus/full-article.md` (markdown view), `raw/command-a-plus/press-release.html` (press release)  
+**Source**: `raw/command-a-plus/full-article.md` (411 KB), `raw/command-a-plus/full-article.md` (markdown view), `raw/command-a-plus/press-release.md` (press release)  
 **URL**: https://cohere.com/blog/command-a-plus (technical), https://cohere.com/blog/cohere-releases-command-a-plus (press)  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -26,17 +26,17 @@ Benchmark highlights vs prior Command A variants: τ²-Bench Telecom **37% → 8
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/command-a-plus/fig-1.png) | Command A+ hero / announcement visual | — |
-| ![fig-2](../assets/command-a-plus/fig-2.png) | Command A family capability comparison (reasoning, multimodal, tool use, languages) | — |
-| ![fig-3](../assets/command-a-plus/fig-3.png) | Open-source benchmark performance vs Command A Reasoning | — |
-| ![fig-4](../assets/command-a-plus/fig-4.png) | North internal evals: agentic QA, data analysis, memory usage | — |
-| ![fig-5](../assets/command-a-plus/fig-5.png) | Multimodal benchmark comparison vs Command A Vision | — |
-| ![fig-6](../assets/command-a-plus/fig-6.png) | Multilingual performance vs Command A Reasoning (MT-AIME, WMT24++) | — |
-| ![fig-7](../assets/command-a-plus/fig-7.png) | Speed (TOPS) and latency (TTFT) vs Command A Reasoning by quantization and concurrency | — |
-| ![fig-8](../assets/command-a-plus/fig-8.png) | Speed and latency by concurrency and quantization (Image 7, panel 2) | — |
-| ![fig-9](../assets/command-a-plus/fig-9.png) | Tokenizer efficiency vs Command A Reasoning and gpt-oss across languages (Image 8) | — |
+| ![fig-1](../assets/command-a-plus/fig-1.webp) | Command A+ hero / announcement visual | — |
+| ![fig-2](../assets/command-a-plus/fig-2.webp) | Command A family capability comparison (reasoning, multimodal, tool use, languages) | — |
+| ![fig-3](../assets/command-a-plus/fig-3.webp) | Open-source benchmark performance vs Command A Reasoning | — |
+| ![fig-4](../assets/command-a-plus/fig-4.webp) | North internal evals: agentic QA, data analysis, memory usage | — |
+| ![fig-5](../assets/command-a-plus/fig-5.webp) | Multimodal benchmark comparison vs Command A Vision | — |
+| ![fig-6](../assets/command-a-plus/fig-6.webp) | Multilingual performance vs Command A Reasoning (MT-AIME, WMT24++) | — |
+| ![fig-7](../assets/command-a-plus/fig-7.webp) | Speed (TOPS) and latency (TTFT) vs Command A Reasoning by quantization and concurrency | — |
+| ![fig-8](../assets/command-a-plus/fig-8.webp) | Speed and latency by concurrency and quantization (Image 7, panel 2) | — |
+| ![fig-9](../assets/command-a-plus/fig-9.webp) | Tokenizer efficiency vs Command A Reasoning and gpt-oss across languages (Image 8) | — |
 
-![Command A family comparison](../assets/command-a-plus/fig-2.png)
+![Command A family comparison](../assets/command-a-plus/fig-2.webp)
 
 ## Entities
 

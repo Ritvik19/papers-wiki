@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-07-22_Papers-Explained-414--Out-of-distribution-Math-Problems-Evaluation-with-3-Generalization-Axes--ac4abe71a794.html`
+- Source file: `raw/2025-07-22_Papers-Explained-414--Out-of-distribution-Math-Problems-Evaluation-with-3-Generalization-Axes--ac4abe71a794.md`
 - Source title: Papers Explained 414: Out-of-distribution Math Problems Evaluation with 3 Generalization Axes…
 - Published: 2025-07-22
 - Canonical: [https://medium.com/@ritvik19/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes-ac4abe71a794](https://medium.com/@ritvik19/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes-ac4abe71a794)
@@ -239,24 +239,24 @@ OMEGA: Can LLMs Reason Outside the Box in Math? Evaluating Exploratory, Composit
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-07-22_Papers-Explained-414--Out-of-distribution-Math-Problems-Evaluation-with-3-Generalization-Axes--ac4abe71a794.html`); local copies under `wiki/assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-07-22_Papers-Explained-414--Out-of-distribution-Math-Problems-Evaluation-with-3-Generalization-Axes--ac4abe71a794.md`); local copies under `wiki/assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-1.png) | Title card: Out-of-distribution Math Problems Evaluation with 3 Generalization Axes…. |
-| ![Figure 2](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-2.png) | Examples of training-test pairs designed to test distinct generalization capabilities. |
-| ![Figure 3](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-3.png) | Example problem templates across six mathematical domains. |
-| ![Figure 4](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-4.png) | Examples of training and test tasks that probe Compositional generalization ability of LLM. |
-| ![Figure 5](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-5.png) | Examples of training and test tasks that probe Transformative generalization. |
-| ![Figure 6](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-6.png) | Exact-match accuracy of four top-tier LLMs on OMEGA, plotted against increasing complexity levels. |
-| ![Figure 7](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-7.png) | Performance and reasoning patterns across six mathematical task domains showing accuracy degradation and verification behavior as problem complexity increases. |
-| ![Figure 8](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-8.png) | The percentage of incorrect responses exhibiting two distinct error patterns. |
-| ![Figure 9](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-9.png) | Reasoning trace analysis. |
-| ![Figure 10](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-10.png) | Pass@k performance of the advanced LLMs across complexity levels for geometry rotation problems. |
-| ![Figure 11](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-11.png) | Performance comparison of Qwen2.5–7B-Instruct before and after RL on OMEGA under the exploratory generalization setting. |
-| ![Figure 12](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-12.png) | Generalization across complexity levels. |
-| ![Figure 13](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-13.png) | Performance comparison of Qwen2.5–7B-Instruct on OMEGA under the compositional generalization setting. |
-| ![Figure 14](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-14.png) | Performance comparison of Qwen2.5–7B-Instruct on OMEGA under the transformational generalization setting. |
+| ![Figure 1](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-1.webp) | Title card: Out-of-distribution Math Problems Evaluation with 3 Generalization Axes…. |
+| ![Figure 2](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-2.webp) | Examples of training-test pairs designed to test distinct generalization capabilities. |
+| ![Figure 3](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-3.webp) | Example problem templates across six mathematical domains. |
+| ![Figure 4](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-4.webp) | Examples of training and test tasks that probe Compositional generalization ability of LLM. |
+| ![Figure 5](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-5.webp) | Examples of training and test tasks that probe Transformative generalization. |
+| ![Figure 6](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-6.webp) | Exact-match accuracy of four top-tier LLMs on OMEGA, plotted against increasing complexity levels. |
+| ![Figure 7](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-7.webp) | Performance and reasoning patterns across six mathematical task domains showing accuracy degradation and verification behavior as problem complexity increases. |
+| ![Figure 8](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-8.webp) | The percentage of incorrect responses exhibiting two distinct error patterns. |
+| ![Figure 9](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-9.webp) | Reasoning trace analysis. |
+| ![Figure 10](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-10.webp) | Pass@k performance of the advanced LLMs across complexity levels for geometry rotation problems. |
+| ![Figure 11](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-11.webp) | Performance comparison of Qwen2.5–7B-Instruct before and after RL on OMEGA under the exploratory generalization setting. |
+| ![Figure 12](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-12.webp) | Generalization across complexity levels. |
+| ![Figure 13](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-13.webp) | Performance comparison of Qwen2.5–7B-Instruct on OMEGA under the compositional generalization setting. |
+| ![Figure 14](assets/papers-explained-414-out-of-distribution-math-problems-evaluation-with-3-generalization-axes/fig-14.webp) | Performance comparison of Qwen2.5–7B-Instruct on OMEGA under the transformational generalization setting. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-05-31_Paper-Explained-144--Granite-Code-Models-e1a92678739b.html`
+- Source file: `raw/2024-05-31_Paper-Explained-144--Granite-Code-Models-e1a92678739b.md`
 - Source title: Paper Explained 144: Granite Code Models
 - Published: 2024-05-31
 - Canonical: [https://medium.com/@ritvik19/paper-explained-144-granite-code-models-e1a92678739b](https://medium.com/@ritvik19/paper-explained-144-granite-code-models-e1a92678739b)
@@ -285,32 +285,32 @@ Recommended Reading [LLMs for Code](https://ritvik19.medium.com/list/llms-for-co
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-05-31_Paper-Explained-144--Granite-Code-Models-e1a92678739b.html`); local copies under `wiki/assets/paper-explained-144-granite-code-models/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-05-31_Paper-Explained-144--Granite-Code-Models-e1a92678739b.md`); local copies under `wiki/assets/paper-explained-144-granite-code-models/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/paper-explained-144-granite-code-models/fig-1.png) | Decoder-only Granite Code models (3B, 8B, 20B, 34B) on 116 languages; Granite Code Base vs Granite Code Instruct. |
-| ![Figure 2](assets/paper-explained-144-granite-code-models/fig-2.png) | Four filtering rules for crawled code quality (alphabet ratio, XML preamble, HTML visible text share, JSON/YAML length). |
-| ![Figure 3](assets/paper-explained-144-granite-code-models/fig-3.png) | Model configurations for Granite Code models. |
-| ![Figure 4](assets/paper-explained-144-granite-code-models/fig-4.png) | Depth upscaling for Granite-34B-Code (duplicate 20B, trim ends, concatenate to 88 layers). |
-| ![Figure 5](assets/paper-explained-144-granite-code-models/fig-5.png) | Combined causal LM and fill-in-the-middle loss; α = 0.5 in pretraining, α = 1 when FIM is dropped for instruct tuning. |
-| ![Figure 6](assets/paper-explained-144-granite-code-models/fig-6.png) | Summary of evaluation tasks. |
-| ![Figure 7](assets/paper-explained-144-granite-code-models/fig-7.png) | Pass@1 performance on HumanEvalSynthesize benchmark. |
-| ![Figure 8](assets/paper-explained-144-granite-code-models/fig-8.png) | Pass@1 results on MultiPL-E averaged over 50 samples for each problem. |
-| ![Figure 9](assets/paper-explained-144-granite-code-models/fig-9.png) | Pass@1 on MBPP and MBPP+. |
-| ![Figure 10](assets/paper-explained-144-granite-code-models/fig-10.png) | Mean pass@1 accuracy averaged over 40 samples on DS-1000. |
-| ![Figure 11](assets/paper-explained-144-granite-code-models/fig-11.png) | Average exact match (EM) and edit similarity (ES) on RepoBench v1.1. |
-| ![Figure 12](assets/paper-explained-144-granite-code-models/fig-12.png) | CrossCodeEval evaluation results. |
-| ![Figure 13](assets/paper-explained-144-granite-code-models/fig-13.png) | Exact-match on FIM-task. |
-| ![Figure 14](assets/paper-explained-144-granite-code-models/fig-14.png) | Pass@1 performance on HumanEvalExplain. |
-| ![Figure 15](assets/paper-explained-144-granite-code-models/fig-15.png) | Pass@1 performance on HumanEvalFix. |
-| ![Figure 16](assets/paper-explained-144-granite-code-models/fig-16.png) | Performance on HumanEvalPack. |
-| ![Figure 17](assets/paper-explained-144-granite-code-models/fig-17.png) | Pass@1 and ExcessCode on CanItEdit (correctness vs conciseness of edits). |
-| ![Figure 18](assets/paper-explained-144-granite-code-models/fig-18.png) | Performance of instruction-tuned models on CodeLingua. |
-| ![Figure 19](assets/paper-explained-144-granite-code-models/fig-19.png) | Performance on the CRUXEval benchmark. |
-| ![Figure 20](assets/paper-explained-144-granite-code-models/fig-20.png) | Performance on four chain-of-thought math tasks and two tool-aided math tasks. |
-| ![Figure 21](assets/paper-explained-144-granite-code-models/fig-21.png) | Performance on Berkeley Function-Calling Leaderboard. |
-| ![Figure 22](assets/paper-explained-144-granite-code-models/fig-22.png) | Granite-8B-Code vs CodeLlama-7B on Berkley Function-Calling Leaderboard. |
+| ![Figure 1](assets/paper-explained-144-granite-code-models/fig-1.webp) | Decoder-only Granite Code models (3B, 8B, 20B, 34B) on 116 languages; Granite Code Base vs Granite Code Instruct. |
+| ![Figure 2](assets/paper-explained-144-granite-code-models/fig-2.webp) | Four filtering rules for crawled code quality (alphabet ratio, XML preamble, HTML visible text share, JSON/YAML length). |
+| ![Figure 3](assets/paper-explained-144-granite-code-models/fig-3.webp) | Model configurations for Granite Code models. |
+| ![Figure 4](assets/paper-explained-144-granite-code-models/fig-4.webp) | Depth upscaling for Granite-34B-Code (duplicate 20B, trim ends, concatenate to 88 layers). |
+| ![Figure 5](assets/paper-explained-144-granite-code-models/fig-5.webp) | Combined causal LM and fill-in-the-middle loss; α = 0.5 in pretraining, α = 1 when FIM is dropped for instruct tuning. |
+| ![Figure 6](assets/paper-explained-144-granite-code-models/fig-6.webp) | Summary of evaluation tasks. |
+| ![Figure 7](assets/paper-explained-144-granite-code-models/fig-7.webp) | Pass@1 performance on HumanEvalSynthesize benchmark. |
+| ![Figure 8](assets/paper-explained-144-granite-code-models/fig-8.webp) | Pass@1 results on MultiPL-E averaged over 50 samples for each problem. |
+| ![Figure 9](assets/paper-explained-144-granite-code-models/fig-9.webp) | Pass@1 on MBPP and MBPP+. |
+| ![Figure 10](assets/paper-explained-144-granite-code-models/fig-10.webp) | Mean pass@1 accuracy averaged over 40 samples on DS-1000. |
+| ![Figure 11](assets/paper-explained-144-granite-code-models/fig-11.webp) | Average exact match (EM) and edit similarity (ES) on RepoBench v1.1. |
+| ![Figure 12](assets/paper-explained-144-granite-code-models/fig-12.webp) | CrossCodeEval evaluation results. |
+| ![Figure 13](assets/paper-explained-144-granite-code-models/fig-13.webp) | Exact-match on FIM-task. |
+| ![Figure 14](assets/paper-explained-144-granite-code-models/fig-14.webp) | Pass@1 performance on HumanEvalExplain. |
+| ![Figure 15](assets/paper-explained-144-granite-code-models/fig-15.webp) | Pass@1 performance on HumanEvalFix. |
+| ![Figure 16](assets/paper-explained-144-granite-code-models/fig-16.webp) | Performance on HumanEvalPack. |
+| ![Figure 17](assets/paper-explained-144-granite-code-models/fig-17.webp) | Pass@1 and ExcessCode on CanItEdit (correctness vs conciseness of edits). |
+| ![Figure 18](assets/paper-explained-144-granite-code-models/fig-18.webp) | Performance of instruction-tuned models on CodeLingua. |
+| ![Figure 19](assets/paper-explained-144-granite-code-models/fig-19.webp) | Performance on the CRUXEval benchmark. |
+| ![Figure 20](assets/paper-explained-144-granite-code-models/fig-20.webp) | Performance on four chain-of-thought math tasks and two tool-aided math tasks. |
+| ![Figure 21](assets/paper-explained-144-granite-code-models/fig-21.webp) | Performance on Berkeley Function-Calling Leaderboard. |
+| ![Figure 22](assets/paper-explained-144-granite-code-models/fig-22.webp) | Granite-8B-Code vs CodeLlama-7B on Berkley Function-Calling Leaderboard. |
 ## Related
 
 - [[Papers Explained Corpus]]

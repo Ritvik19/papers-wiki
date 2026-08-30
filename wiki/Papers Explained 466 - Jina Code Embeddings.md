@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-10-02_Papers-Explained-466--Jina-Code-Embeddings-0a6c9ad05bbd.html`
+- Source file: `raw/2025-10-02_Papers-Explained-466--Jina-Code-Embeddings-0a6c9ad05bbd.md`
 - Source title: Papers Explained 466: Jina Code Embeddings
 - Published: 2025-10-02
 - Canonical: [https://medium.com/@ritvik19/papers-explained-466-jina-code-embeddings-0a6c9ad05bbd](https://medium.com/@ritvik19/papers-explained-466-jina-code-embeddings-0a6c9ad05bbd)
@@ -61,16 +61,16 @@ Efficient Code Embeddings from Code Generation Models [2508.21290](https://arxiv
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-10-02_Papers-Explained-466--Jina-Code-Embeddings-0a6c9ad05bbd.html`); local copies under `wiki/assets/papers-explained-466-jina-code-embeddings/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-10-02_Papers-Explained-466--Jina-Code-Embeddings-0a6c9ad05bbd.md`); local copies under `wiki/assets/papers-explained-466-jina-code-embeddings/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-466-jina-code-embeddings/fig-1.png) | Title card: Jina Code Embeddings. |
-| ![Figure 2](assets/papers-explained-466-jina-code-embeddings/fig-2.png) | Task categories and their corresponding instruction prefixes. |
-| ![Figure 3](assets/papers-explained-466-jina-code-embeddings/fig-3.png) | Datasets used to train jina-code-embeddings. |
-| ![Figure 4](assets/papers-explained-466-jina-code-embeddings/fig-4.png) | Breakdown of the training datasets by task type. |
-| ![Figure 5](assets/papers-explained-466-jina-code-embeddings/fig-5.png) | In each training step, a batch B = (q1,d1),…,(qn,dn) of n query-document text pairs is sampled. |
-| ![Figure 6](assets/papers-explained-466-jina-code-embeddings/fig-6.png) | Evaluation Results on Code Retrieval Tasks. |
+| ![Figure 1](assets/papers-explained-466-jina-code-embeddings/fig-1.webp) | Title card: Jina Code Embeddings. |
+| ![Figure 2](assets/papers-explained-466-jina-code-embeddings/fig-2.webp) | Task categories and their corresponding instruction prefixes. |
+| ![Figure 3](assets/papers-explained-466-jina-code-embeddings/fig-3.webp) | Datasets used to train jina-code-embeddings. |
+| ![Figure 4](assets/papers-explained-466-jina-code-embeddings/fig-4.webp) | Breakdown of the training datasets by task type. |
+| ![Figure 5](assets/papers-explained-466-jina-code-embeddings/fig-5.webp) | In each training step, a batch B = (q1,d1),…,(qn,dn) of n query-document text pairs is sampled. |
+| ![Figure 6](assets/papers-explained-466-jina-code-embeddings/fig-6.webp) | Evaluation Results on Code Retrieval Tasks. |
 ## Related
 
 - [[Papers Explained Corpus]]

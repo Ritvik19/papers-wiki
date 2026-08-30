@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-11-05_Papers-Explained-245--Layout-Parser-d29bb291890c.html`
+- Source file: `raw/2024-11-05_Papers-Explained-245--Layout-Parser-d29bb291890c.md`
 - Source title: Papers Explained 245: Layout Parser
 - Published: 2024-11-05
 - Canonical: [https://medium.com/@ritvik19/papers-explained-245-layout-parser-d29bb291890c](https://medium.com/@ritvik19/papers-explained-245-layout-parser-d29bb291890c)
@@ -87,16 +87,16 @@ Recommended Reading [Document Information Processing](https://ritvik19.medium.co
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-11-05_Papers-Explained-245--Layout-Parser-d29bb291890c.html`); local copies under `wiki/assets/papers-explained-245-layout-parser/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-11-05_Papers-Explained-245--Layout-Parser-d29bb291890c.md`); local copies under `wiki/assets/papers-explained-245-layout-parser/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-245-layout-parser/fig-1.png) | Title card: Layout Parser. |
-| ![Figure 2](assets/papers-explained-245-layout-parser/fig-2.png) | The overall architecture of LayoutParser. |
-| ![Figure 3](assets/papers-explained-245-layout-parser/fig-3.png) | The layout detection models enable using pre-trained or self-trained DL models for layout detection with just four lines of code. |
-| ![Figure 4](assets/papers-explained-245-layout-parser/fig-4.png) | Current layout detection models in the LayoutParser model zoo. |
-| ![Figure 5](assets/papers-explained-245-layout-parser/fig-5.png) | The relationship between the three types of layout data structures. |
-| ![Figure 6](assets/papers-explained-245-layout-parser/fig-6.png) | LayoutParser builds a series of wrappers among existing OCR engines, and provides nearly the same syntax for using them. |
+| ![Figure 1](assets/papers-explained-245-layout-parser/fig-1.webp) | Title card: Layout Parser. |
+| ![Figure 2](assets/papers-explained-245-layout-parser/fig-2.webp) | The overall architecture of LayoutParser. |
+| ![Figure 3](assets/papers-explained-245-layout-parser/fig-3.webp) | The layout detection models enable using pre-trained or self-trained DL models for layout detection with just four lines of code. |
+| ![Figure 4](assets/papers-explained-245-layout-parser/fig-4.webp) | Current layout detection models in the LayoutParser model zoo. |
+| ![Figure 5](assets/papers-explained-245-layout-parser/fig-5.webp) | The relationship between the three types of layout data structures. |
+| ![Figure 6](assets/papers-explained-245-layout-parser/fig-6.webp) | LayoutParser builds a series of wrappers among existing OCR engines, and provides nearly the same syntax for using them. |
 ## Related
 
 - [[Papers Explained Corpus]]

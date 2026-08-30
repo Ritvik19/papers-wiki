@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-10-24_Papers-Explained-238--Segment-Anything-Model-b3960b569fce.html`
+- Source file: `raw/2024-10-24_Papers-Explained-238--Segment-Anything-Model-b3960b569fce.md`
 - Source title: Papers Explained 238: Segment Anything Model
 - Published: 2024-10-24
 - Canonical: [https://medium.com/@ritvik19/papers-explained-238-segment-anything-model-b3960b569fce](https://medium.com/@ritvik19/papers-explained-238-segment-anything-model-b3960b569fce)
@@ -151,21 +151,21 @@ Recommended Reading: [Object Detection](https://ritvik19.medium.com/list/object-
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-10-24_Papers-Explained-238--Segment-Anything-Model-b3960b569fce.html`); local copies under `wiki/assets/papers-explained-238-segment-anything-model/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-10-24_Papers-Explained-238--Segment-Anything-Model-b3960b569fce.md`); local copies under `wiki/assets/papers-explained-238-segment-anything-model/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-238-segment-anything-model/fig-1.png) | Title card: Segment Anything Model. |
-| ![Figure 2](assets/papers-explained-238-segment-anything-model/fig-2.png) | Papers Explained 238: Segment Anything Model. |
-| ![Figure 3](assets/papers-explained-238-segment-anything-model/fig-3.png) | Segment Anything Model (SAM) overview. A heavyweight image encoder outputs an image embedding that can then be efficiently queried by a variety of input prompts to produce object masks at amortized real-time speed. For ambiguous prompts corresponding to more than one object, SAM can output multiple valid masks and associated confidence scores. |
-| ![Figure 4](assets/papers-explained-238-segment-anything-model/fig-4.png) | Dataset mask properties. The legend references the number of images and masks in each dataset. |
-| ![Figure 5](assets/papers-explained-238-segment-anything-model/fig-5.png) | Estimated geographic distribution of SA-1B images. Most of the world’s countries have more than 1000 images in SA-1B, and the three countries with the most images are from different parts of the world. |
-| ![Figure 6](assets/papers-explained-238-segment-anything-model/fig-6.png) | Comparison of geographic and income representation. SA-1B has higher representation in Europe and Asia & Oceania as well as middle income countries. Images from Africa, Latin America & Caribbean, as well as low income countries, are underrepresented in all datasets. |
-| ![Figure 7](assets/papers-explained-238-segment-anything-model/fig-7.png) | Point to mask evaluation on 23 datasets. |
-| ![Figure 8](assets/papers-explained-238-segment-anything-model/fig-8.png) | Zero-shot transfer to edge detection on BSDS500. |
-| ![Figure 9](assets/papers-explained-238-segment-anything-model/fig-9.png) | Object proposal generation on LVIS v1. SAM. |
-| ![Figure 10](assets/papers-explained-238-segment-anything-model/fig-10.png) | Instance segmentation results. |
-| ![Figure 11](assets/papers-explained-238-segment-anything-model/fig-11.png) | Mask quality rating distribution from the human study for ViTDet and SAM, both applied to LVIS ground truth boxes. LVIS and COCO ground truth quality is also reported. The legend shows rating means and 95% confidence intervals. |
+| ![Figure 1](assets/papers-explained-238-segment-anything-model/fig-1.webp) | Title card: Segment Anything Model. |
+| ![Figure 2](assets/papers-explained-238-segment-anything-model/fig-2.webp) | Papers Explained 238: Segment Anything Model. |
+| ![Figure 3](assets/papers-explained-238-segment-anything-model/fig-3.webp) | Segment Anything Model (SAM) overview. A heavyweight image encoder outputs an image embedding that can then be efficiently queried by a variety of input prompts to produce object masks at amortized real-time speed. For ambiguous prompts corresponding to more than one object, SAM can output multiple valid masks and associated confidence scores. |
+| ![Figure 4](assets/papers-explained-238-segment-anything-model/fig-4.webp) | Dataset mask properties. The legend references the number of images and masks in each dataset. |
+| ![Figure 5](assets/papers-explained-238-segment-anything-model/fig-5.webp) | Estimated geographic distribution of SA-1B images. Most of the world’s countries have more than 1000 images in SA-1B, and the three countries with the most images are from different parts of the world. |
+| ![Figure 6](assets/papers-explained-238-segment-anything-model/fig-6.webp) | Comparison of geographic and income representation. SA-1B has higher representation in Europe and Asia & Oceania as well as middle income countries. Images from Africa, Latin America & Caribbean, as well as low income countries, are underrepresented in all datasets. |
+| ![Figure 7](assets/papers-explained-238-segment-anything-model/fig-7.webp) | Point to mask evaluation on 23 datasets. |
+| ![Figure 8](assets/papers-explained-238-segment-anything-model/fig-8.webp) | Zero-shot transfer to edge detection on BSDS500. |
+| ![Figure 9](assets/papers-explained-238-segment-anything-model/fig-9.webp) | Object proposal generation on LVIS v1. SAM. |
+| ![Figure 10](assets/papers-explained-238-segment-anything-model/fig-10.webp) | Instance segmentation results. |
+| ![Figure 11](assets/papers-explained-238-segment-anything-model/fig-11.webp) | Mask quality rating distribution from the human study for ViTDet and SAM, both applied to LVIS ground truth boxes. LVIS and COCO ground truth quality is also reported. The legend shows rating means and 95% confidence intervals. |
 ## Related
 
 - [[Papers Explained Corpus]]

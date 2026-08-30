@@ -1,6 +1,6 @@
 # Why Multi-Head Self Attention Works: Math, Intuitions and 10+1 Hidden Insights
 
-**Source**: `raw/self-attention/full-article.html` (482 KB), `raw/self-attention/full-article.md` (markdown view)  
+**Source**: `raw/self-attention/full-article.md` (482 KB), `raw/self-attention/full-article.md` (markdown view)  
 **URL**: https://theaisummer.com/self-attention/  
 **Author**: Nikolas Adaloglou (AI Summer), 2021-03-25  
 **Ingested**: 2026-06-06  
@@ -36,29 +36,29 @@ The article's **11 insights** synthesize research findings: self-attention is **
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/self-attention/fig-1.png) | Self-attention as two matrix multiplications (QKᵀ then weighted V) | — |
-| ![fig-2](../assets/self-attention/fig-2.png) | Cross-attention: encoder K/V with decoder Q | — |
-| ![fig-3](../assets/self-attention/fig-3.png) | Multi-head attention step-by-step (Peltarion) | — |
-| ![fig-4](../assets/self-attention/fig-4.png) | Multi-head self-attention block I/O diagram | — |
-| ![fig-5](../assets/self-attention/fig-5.png) | Attention matrix as directed graph (not symmetric) | — |
-| ![fig-6](../assets/self-attention/fig-6.png) | Voita et al.: head classification by function (positional/syntactic/rare) | — |
-| ![fig-7](../assets/self-attention/fig-7.png) | Encoder head pruning BLEU results (Voita et al.) | — |
-| ![fig-8](../assets/self-attention/fig-8.png) | BERT projection product ranks per head vs concatenated (Cordonnier et al.) | — |
-| ![fig-9](../assets/self-attention/fig-9.png) | Cross-attention head pruning impact (Michel et al.) | — |
-| ![fig-10](../assets/self-attention/fig-10.png) | Post-softmax attention low-rank spectrum (Linformer) | — |
-| ![fig-11](../assets/self-attention/fig-11.png) | Long Range Arena efficient-transformer taxonomy | — |
-| ![fig-12](../assets/self-attention/fig-12.png) | Overview of efficient transformer architecture families | — |
-| ![fig-13](../assets/self-attention/fig-13.png) | BigBird sparse attention patterns (global + window + random) | — |
+| ![fig-1](../assets/self-attention/fig-1.webp) | Self-attention as two matrix multiplications (QKᵀ then weighted V) | — |
+| ![fig-2](../assets/self-attention/fig-2.webp) | Cross-attention: encoder K/V with decoder Q | — |
+| ![fig-3](../assets/self-attention/fig-3.webp) | Multi-head attention step-by-step (Peltarion) | — |
+| ![fig-4](../assets/self-attention/fig-4.webp) | Multi-head self-attention block I/O diagram | — |
+| ![fig-5](../assets/self-attention/fig-5.webp) | Attention matrix as directed graph (not symmetric) | — |
+| ![fig-6](../assets/self-attention/fig-6.webp) | Voita et al.: head classification by function (positional/syntactic/rare) | — |
+| ![fig-7](../assets/self-attention/fig-7.webp) | Encoder head pruning BLEU results (Voita et al.) | — |
+| ![fig-8](../assets/self-attention/fig-8.webp) | BERT projection product ranks per head vs concatenated (Cordonnier et al.) | — |
+| ![fig-9](../assets/self-attention/fig-9.webp) | Cross-attention head pruning impact (Michel et al.) | — |
+| ![fig-10](../assets/self-attention/fig-10.webp) | Post-softmax attention low-rank spectrum (Linformer) | — |
+| ![fig-11](../assets/self-attention/fig-11.webp) | Long Range Arena efficient-transformer taxonomy | — |
+| ![fig-12](../assets/self-attention/fig-12.webp) | Overview of efficient transformer architecture families | — |
+| ![fig-13](../assets/self-attention/fig-13.webp) | BigBird sparse attention patterns (global + window + random) | — |
 
-![Two matmul view of self-attention](../assets/self-attention/fig-1.png)
+![Two matmul view of self-attention](../assets/self-attention/fig-1.webp)
 
 Attention = dot-product scoring matrix \(QK^T\), then softmax-weighted aggregation of values.
 
-![Self-attention is directed](../assets/self-attention/fig-5.png)
+![Self-attention is directed](../assets/self-attention/fig-5.webp)
 
 Because \(W_Q \neq W_K\) in general, the attention matrix forms a directed graph, not an undirected one.
 
-![Head specialization](../assets/self-attention/fig-6.png)
+![Head specialization](../assets/self-attention/fig-6.webp)
 
 Voita et al. identify positional, syntactic, and rare-word heads; most encoder heads are prunable.
 

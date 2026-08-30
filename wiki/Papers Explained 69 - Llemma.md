@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-11-10_Papers-Explained-69--Llemma-0a17287e890a.html`
+- Source file: `raw/2023-11-10_Papers-Explained-69--Llemma-0a17287e890a.md`
 - Source title: Papers Explained 69: Llemma
 - Published: 2023-11-10
 - Canonical: [https://medium.com/@ritvik19/papers-explained-69-llemma-0a17287e890a](https://medium.com/@ritvik19/papers-explained-69-llemma-0a17287e890a)
@@ -123,15 +123,15 @@ Llemma: An Open Language Model For Mathematics [2310.10631](https://arxiv.org/ab
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-11-10_Papers-Explained-69--Llemma-0a17287e890a.html`); local copies under `wiki/assets/papers-explained-69-llemma/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-11-10_Papers-Explained-69--Llemma-0a17287e890a.md`); local copies under `wiki/assets/papers-explained-69-llemma/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-69-llemma/fig-1.png) | Title card: Llemma. |
-| ![Figure 2](assets/papers-explained-69-llemma/fig-2.png) | Results on our five chain-of-thought reasoning tasks with samples generated via greedy decoding. |
-| ![Figure 3](assets/papers-explained-69-llemma/fig-3.png) | Majority voting results for LLEMMA and Minerva. |
-| ![Figure 4](assets/papers-explained-69-llemma/fig-4.png) | Mathematical problem solving with tool use. |
-| ![Figure 5](assets/papers-explained-69-llemma/fig-5.png) | Formal theorem proving tasks. Left: Informal-to-formal proving in Isabelle, showing the percentage of proven theorems with greedy decoding. Right: Formal-to-formal proving in Lean, showing the percentage of proven theorems with the given number of attempts × generations-periteration of best first search, and a 10-minute timeout. |
+| ![Figure 1](assets/papers-explained-69-llemma/fig-1.webp) | Title card: Llemma. |
+| ![Figure 2](assets/papers-explained-69-llemma/fig-2.webp) | Results on our five chain-of-thought reasoning tasks with samples generated via greedy decoding. |
+| ![Figure 3](assets/papers-explained-69-llemma/fig-3.webp) | Majority voting results for LLEMMA and Minerva. |
+| ![Figure 4](assets/papers-explained-69-llemma/fig-4.webp) | Mathematical problem solving with tool use. |
+| ![Figure 5](assets/papers-explained-69-llemma/fig-5.webp) | Formal theorem proving tasks. Left: Informal-to-formal proving in Isabelle, showing the percentage of proven theorems with greedy decoding. Right: Formal-to-formal proving in Lean, showing the percentage of proven theorems with the given number of attempts × generations-periteration of best first search, and a 10-minute timeout. |
 ## Related
 
 - [[Papers Explained Corpus]]

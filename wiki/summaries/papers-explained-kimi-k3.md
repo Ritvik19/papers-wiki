@@ -1,6 +1,6 @@
 # Papers Explained: Kimi K3
 
-**Source**: `raw/draft_Papers-Explained--Kimi-K3-97c6b5e539bb.html`  
+**Source**: `raw/draft_Papers-Explained--Kimi-K3-97c6b5e539bb.md`  
 **Paper**: https://arxiv.org/abs/2607.24653  
 **Ingested**: 2026-08-23  
 **Tags**: #summary
@@ -9,7 +9,7 @@
 
 **Kimi K3** represents Moonshot AI's next-generation reasoning and agentic foundation model. Advancing beyond K2.5, Kimi K3 integrates **Multi-Teacher On-Policy Distillation**, **Massive RL Task Synthesis**, and specialized **Agentic Sandboxes** for multi-step software engineering and scientific discovery. By combining asynchronous multi-teacher guidance (distilling from specialized mathematics, coding, and multimodal teachers simultaneously) with verifiable reward RL, Kimi K3 achieves state-of-the-art results on competitive programming, formal theorem proving, and SWE-Bench Verified.
 
-![Papers Explained Kimi K3 banner](../assets/papers-explained-kimi-k3/fig-1.png)
+![Papers Explained Kimi K3 banner](../assets/papers-explained-kimi-k3/fig-1.webp)
 
 ### Core Technologies
 
@@ -17,7 +17,7 @@
 2. **RL Task Synthesis**: Automates generation of complex verifiable environments across repository debugging, terminal administration, and mathematical conjecture proving.
 3. **Architecture Enhancements**: Features refined Multi-Head Latent Attention (MLA) with extreme sparse routing and dynamic compute allocation per token.
 
-![Multi-Teacher Distillation and Agentic RL Pipeline](../assets/papers-explained-kimi-k3/fig-2.png)
+![Multi-Teacher Distillation and Agentic RL Pipeline](../assets/papers-explained-kimi-k3/fig-2.webp)
 
 ## Key Claims
 
@@ -29,12 +29,12 @@
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/papers-explained-kimi-k3/fig-1.png) | Kimi K3 overview banner. | Overview |
-| ![fig-2](../assets/papers-explained-kimi-k3/fig-2.png) | Kimi K3 multi-teacher on-policy distillation architecture. | Method |
-| ![fig-3](../assets/papers-explained-kimi-k3/fig-3.png) | RL task synthesis and agentic sandbox environment. | Environments |
-| ![fig-4](../assets/papers-explained-kimi-k3/fig-4.png) | Benchmark performance across Coding, Math, and Tool-use. | Evaluation |
-| ![fig-5](../assets/papers-explained-kimi-k3/fig-5.png) | Multi-teacher vs single-teacher distillation ablation curves. | Ablations |
-| ![fig-6](../assets/papers-explained-kimi-k3/fig-6.png) | Qualitative long-horizon software engineering case study. | Qualitative |
+| ![fig-1](../assets/papers-explained-kimi-k3/fig-1.webp) | Kimi K3 overview banner. | Overview |
+| ![fig-2](../assets/papers-explained-kimi-k3/fig-2.webp) | Kimi K3 multi-teacher on-policy distillation architecture. | Method |
+| ![fig-3](../assets/papers-explained-kimi-k3/fig-3.webp) | RL task synthesis and agentic sandbox environment. | Environments |
+| ![fig-4](../assets/papers-explained-kimi-k3/fig-4.webp) | Benchmark performance across Coding, Math, and Tool-use. | Evaluation |
+| ![fig-5](../assets/papers-explained-kimi-k3/fig-5.webp) | Multi-teacher vs single-teacher distillation ablation curves. | Ablations |
+| ![fig-6](../assets/papers-explained-kimi-k3/fig-6.webp) | Qualitative long-horizon software engineering case study. | Qualitative |
 
 ## Entities
 

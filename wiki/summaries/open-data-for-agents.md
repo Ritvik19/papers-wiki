@@ -1,6 +1,6 @@
 # Data for Agents
 
-**Source**: `raw/open-data-for-agents/full-article.html`, `raw/open-data-for-agents/full-article.md`
+**Source**: `raw/open-data-for-agents/full-article.md`, `raw/open-data-for-agents/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

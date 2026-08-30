@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-09-12_Papers-Explained-452--Apriel-Nemotron-15B-Thinker-463f8f4b5045.html`
+- Source file: `raw/2025-09-12_Papers-Explained-452--Apriel-Nemotron-15B-Thinker-463f8f4b5045.md`
 - Source title: Papers Explained 452: Apriel-Nemotron-15B-Thinker
 - Published: 2025-09-12
 - Canonical: [https://medium.com/@ritvik19/papers-explained-452-apriel-nemotron-15b-thinker-463f8f4b5045](https://medium.com/@ritvik19/papers-explained-452-apriel-nemotron-15b-thinker-463f8f4b5045)
@@ -157,18 +157,18 @@ Apriel-Nemotron-15B-Thinker [2508.10948](https://arxiv.org/abs/2508.10948)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-09-12_Papers-Explained-452--Apriel-Nemotron-15B-Thinker-463f8f4b5045.html`); local copies under `wiki/assets/papers-explained-452-apriel-nemotron-15b-thinker/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-09-12_Papers-Explained-452--Apriel-Nemotron-15B-Thinker-463f8f4b5045.md`); local copies under `wiki/assets/papers-explained-452-apriel-nemotron-15b-thinker/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-452-apriel-nemotron-15b-thinker/fig-1.png) | Title card: Apriel-Nemotron-15B-Thinker. |
-| ![Figure 2](assets/papers-explained-452-apriel-nemotron-15b-thinker/fig-2.png) | Upscaling model parameters necessitates continual pretraining or fine-tuning to achieve better results. |
-| ![Figure 3](assets/papers-explained-452-apriel-nemotron-15b-thinker/fig-3.png) | Benchmark performance comparison before and after continual pretraining (CPT). |
-| ![Figure 4](assets/papers-explained-452-apriel-nemotron-15b-thinker/fig-4.png) | Reasoning benchmark performance after supervised fine-tuning (SFT) on a 15B model before and after continual pretraining (CPT). |
-| ![Figure 5](assets/papers-explained-452-apriel-nemotron-15b-thinker/fig-5.png) | Construction of the final Apriel Nemotron 15B Thinker checkpoint from the SFT and GRPO stages. |
-| ![Figure 6](assets/papers-explained-452-apriel-nemotron-15b-thinker/fig-6.png) | Performance comparison of various LLMs across enterprise-oriented benchmarks. |
-| ![Figure 7](assets/papers-explained-452-apriel-nemotron-15b-thinker/fig-7.png) | Evaluation (pass@1) on academic research oriented and competitive benchmarks. |
-| ![Figure 8](assets/papers-explained-452-apriel-nemotron-15b-thinker/fig-8.png) | Thinking Token Consumption by Model Across Academic Reasoning Tasks. |
+| ![Figure 1](assets/papers-explained-452-apriel-nemotron-15b-thinker/fig-1.webp) | Title card: Apriel-Nemotron-15B-Thinker. |
+| ![Figure 2](assets/papers-explained-452-apriel-nemotron-15b-thinker/fig-2.webp) | Upscaling model parameters necessitates continual pretraining or fine-tuning to achieve better results. |
+| ![Figure 3](assets/papers-explained-452-apriel-nemotron-15b-thinker/fig-3.webp) | Benchmark performance comparison before and after continual pretraining (CPT). |
+| ![Figure 4](assets/papers-explained-452-apriel-nemotron-15b-thinker/fig-4.webp) | Reasoning benchmark performance after supervised fine-tuning (SFT) on a 15B model before and after continual pretraining (CPT). |
+| ![Figure 5](assets/papers-explained-452-apriel-nemotron-15b-thinker/fig-5.webp) | Construction of the final Apriel Nemotron 15B Thinker checkpoint from the SFT and GRPO stages. |
+| ![Figure 6](assets/papers-explained-452-apriel-nemotron-15b-thinker/fig-6.webp) | Performance comparison of various LLMs across enterprise-oriented benchmarks. |
+| ![Figure 7](assets/papers-explained-452-apriel-nemotron-15b-thinker/fig-7.webp) | Evaluation (pass@1) on academic research oriented and competitive benchmarks. |
+| ![Figure 8](assets/papers-explained-452-apriel-nemotron-15b-thinker/fig-8.webp) | Thinking Token Consumption by Model Across Academic Reasoning Tasks. |
 ## Related
 
 - [[Papers Explained Corpus]]

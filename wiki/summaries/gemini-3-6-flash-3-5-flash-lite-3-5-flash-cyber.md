@@ -1,6 +1,6 @@
 # Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber
 
-**Source**: `raw/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/full-article.html` (410 KB); `raw/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/full-article.md`  
+**Source**: `raw/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/full-article.md` (410 KB); `raw/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/full-article.md`  
 **URL**: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/  
 **Ingested**: 2026-07-22  
 **Tags**: #summary

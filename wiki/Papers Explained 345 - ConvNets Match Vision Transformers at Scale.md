@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-04-11_Papers-Explained-345--ConvNets-Match-Vision-Transformers-at-Scale-496690f604c7.html`
+- Source file: `raw/2025-04-11_Papers-Explained-345--ConvNets-Match-Vision-Transformers-at-Scale-496690f604c7.md`
 - Source title: Papers Explained 345: ConvNets Match Vision Transformers at Scale
 - Published: 2025-04-11
 - Canonical: [https://medium.com/@ritvik19/papers-explained-345-convnets-match-vision-transformers-at-scale-496690f604c7](https://medium.com/@ritvik19/papers-explained-345-convnets-match-vision-transformers-at-scale-496690f604c7)
@@ -79,14 +79,14 @@ ConvNets Match Vision Transformers at Scale [2310.16764](https://arxiv.org/abs/2
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-04-11_Papers-Explained-345--ConvNets-Match-Vision-Transformers-at-Scale-496690f604c7.html`); local copies under `wiki/assets/papers-explained-345-convnets-match-vision-transformers-at-scale/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-04-11_Papers-Explained-345--ConvNets-Match-Vision-Transformers-at-Scale-496690f604c7.md`); local copies under `wiki/assets/papers-explained-345-convnets-match-vision-transformers-at-scale/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-345-convnets-match-vision-transformers-at-scale/fig-1.png) | Title card: ConvNets Match Vision Transformers at Scale. |
-| ![Figure 2](assets/papers-explained-345-convnets-match-vision-transformers-at-scale/fig-2.png) | Held out loss of NFNets on JFT-4B, plotted against the compute used during training. Both axes are log-scaled, and each curve denotes a different model trained for a range of epoch budgets. |
-| ![Figure 3](assets/papers-explained-345-convnets-match-vision-transformers-at-scale/fig-3.png) | Optimal learning rate for different models across epoch budgets. |
-| ![Figure 4](assets/papers-explained-345-convnets-match-vision-transformers-at-scale/fig-4.png) | ImageNet Top-1 error, after fine-tuning pre-trained NFNet models for 50 epochs. Both axes are log-scaled. |
+| ![Figure 1](assets/papers-explained-345-convnets-match-vision-transformers-at-scale/fig-1.webp) | Title card: ConvNets Match Vision Transformers at Scale. |
+| ![Figure 2](assets/papers-explained-345-convnets-match-vision-transformers-at-scale/fig-2.webp) | Held out loss of NFNets on JFT-4B, plotted against the compute used during training. Both axes are log-scaled, and each curve denotes a different model trained for a range of epoch budgets. |
+| ![Figure 3](assets/papers-explained-345-convnets-match-vision-transformers-at-scale/fig-3.webp) | Optimal learning rate for different models across epoch budgets. |
+| ![Figure 4](assets/papers-explained-345-convnets-match-vision-transformers-at-scale/fig-4.webp) | ImageNet Top-1 error, after fine-tuning pre-trained NFNet models for 50 epochs. Both axes are log-scaled. |
 ## Related
 
 - [[Papers Explained Corpus]]

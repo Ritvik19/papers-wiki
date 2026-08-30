@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-04-24_Papers-Explained-128--WizardCoder-a12ecb5b93b6.html`
+- Source file: `raw/2024-04-24_Papers-Explained-128--WizardCoder-a12ecb5b93b6.md`
 - Source title: Papers Explained 128: WizardCoder
 - Published: 2024-04-24
 - Canonical: [https://medium.com/@ritvik19/papers-explained-wizardcoder-a12ecb5b93b6](https://medium.com/@ritvik19/papers-explained-wizardcoder-a12ecb5b93b6)
@@ -83,17 +83,17 @@ Recommended Reading [Wizard Models](https://ritvik19.medium.com/list/wizard-mode
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-04-24_Papers-Explained-128--WizardCoder-a12ecb5b93b6.html`); local copies under `wiki/assets/papers-explained-128-wizardcoder/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-04-24_Papers-Explained-128--WizardCoder-a12ecb5b93b6.md`); local copies under `wiki/assets/papers-explained-128-wizardcoder/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-128-wizardcoder/fig-1.png) | Title page of *WizardCoder: Empowering Code Large Language Models with Evol-Instruct*. |
-| ![Figure 2](assets/papers-explained-128-wizardcoder/fig-2.png) | Unified code-domain Evol-Instruct prompt template for difficulty enhancement. |
-| ![Figure 3](assets/papers-explained-128-wizardcoder/fig-3.png) | Code-specific evolution methods: extra constraints, reasoning depth, debugging, and complexity limits. |
-| ![Figure 4](assets/papers-explained-128-wizardcoder/fig-4.png) | Instruction-following fine-tuning prompt format used for WizardCoder training. |
-| ![Figure 5](assets/papers-explained-128-wizardcoder/fig-5.png) | HumanEval/HumanEval+ single-attempt pass-rate comparison with closed and open baselines. |
-| ![Figure 6](assets/papers-explained-128-wizardcoder/fig-6.png) | Benchmark table showing WizardCoder vs closed-source and open-source code models. |
-| ![Figure 7](assets/papers-explained-128-wizardcoder/fig-7.png) | DS-1000 performance across data-science libraries for completion and insertion settings. |
+| ![Figure 1](assets/papers-explained-128-wizardcoder/fig-1.webp) | Title page of *WizardCoder: Empowering Code Large Language Models with Evol-Instruct*. |
+| ![Figure 2](assets/papers-explained-128-wizardcoder/fig-2.webp) | Unified code-domain Evol-Instruct prompt template for difficulty enhancement. |
+| ![Figure 3](assets/papers-explained-128-wizardcoder/fig-3.webp) | Code-specific evolution methods: extra constraints, reasoning depth, debugging, and complexity limits. |
+| ![Figure 4](assets/papers-explained-128-wizardcoder/fig-4.webp) | Instruction-following fine-tuning prompt format used for WizardCoder training. |
+| ![Figure 5](assets/papers-explained-128-wizardcoder/fig-5.webp) | HumanEval/HumanEval+ single-attempt pass-rate comparison with closed and open baselines. |
+| ![Figure 6](assets/papers-explained-128-wizardcoder/fig-6.webp) | Benchmark table showing WizardCoder vs closed-source and open-source code models. |
+| ![Figure 7](assets/papers-explained-128-wizardcoder/fig-7.webp) | DS-1000 performance across data-science libraries for completion and insertion settings. |
 ## Related
 
 - [[Papers Explained Corpus]]

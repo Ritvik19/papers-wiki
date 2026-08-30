@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-05-27_Papers-Explained-374--Sarvam-M-594e1bfb6b6c.html`
+- Source file: `raw/2025-05-27_Papers-Explained-374--Sarvam-M-594e1bfb6b6c.md`
 - Source title: Papers Explained 374: Sarvam-M
 - Published: 2025-05-27
 - Canonical: [https://medium.com/@ritvik19/papers-explained-374-sarvam-m-594e1bfb6b6c](https://medium.com/@ritvik19/papers-explained-374-sarvam-m-594e1bfb6b6c)
@@ -161,19 +161,19 @@ With aligned vocabularies, the student was fine-tuned to learn the log-probabili
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-05-27_Papers-Explained-374--Sarvam-M-594e1bfb6b6c.html`); local copies under `wiki/assets/papers-explained-374-sarvam-m/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-05-27_Papers-Explained-374--Sarvam-M-594e1bfb6b6c.md`); local copies under `wiki/assets/papers-explained-374-sarvam-m/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-374-sarvam-m/fig-1.png) | Title card: Sarvam-M. |
-| ![Figure 2](assets/papers-explained-374-sarvam-m/fig-2.png) | Category Distribution. |
-| ![Figure 3](assets/papers-explained-374-sarvam-m/fig-3.png) | Quality Distribution. |
-| ![Figure 4](assets/papers-explained-374-sarvam-m/fig-4.png) | Difficulty Distribution. |
-| ![Figure 5](assets/papers-explained-374-sarvam-m/fig-5.png) | These English prompts were partially translated into Indian languages, with about one-third used for completions in Indic languages. |
-| ![Figure 6](assets/papers-explained-374-sarvam-m/fig-6.png) | where p_i is the probability of digit i at the score token. |
-| ![Figure 7](assets/papers-explained-374-sarvam-m/fig-7.png) | Experiments included testing both Dare-Ties and Slerp algorithms with various checkpoint combinations. |
-| ![Figure 8](assets/papers-explained-374-sarvam-m/fig-8.png) | For Translation tasks, a ‘relative reward score’ was developed with the following structure. |
-| ![Figure 9](assets/papers-explained-374-sarvam-m/fig-9.png) | To evaluate user engagement with the model, “Indic Vibe Check” was developed. |
+| ![Figure 1](assets/papers-explained-374-sarvam-m/fig-1.webp) | Title card: Sarvam-M. |
+| ![Figure 2](assets/papers-explained-374-sarvam-m/fig-2.webp) | Category Distribution. |
+| ![Figure 3](assets/papers-explained-374-sarvam-m/fig-3.webp) | Quality Distribution. |
+| ![Figure 4](assets/papers-explained-374-sarvam-m/fig-4.webp) | Difficulty Distribution. |
+| ![Figure 5](assets/papers-explained-374-sarvam-m/fig-5.webp) | These English prompts were partially translated into Indian languages, with about one-third used for completions in Indic languages. |
+| ![Figure 6](assets/papers-explained-374-sarvam-m/fig-6.webp) | where p_i is the probability of digit i at the score token. |
+| ![Figure 7](assets/papers-explained-374-sarvam-m/fig-7.webp) | Experiments included testing both Dare-Ties and Slerp algorithms with various checkpoint combinations. |
+| ![Figure 8](assets/papers-explained-374-sarvam-m/fig-8.webp) | For Translation tasks, a ‘relative reward score’ was developed with the following structure. |
+| ![Figure 9](assets/papers-explained-374-sarvam-m/fig-9.webp) | To evaluate user engagement with the model, “Indic Vibe Check” was developed. |
 ## Related
 
 - [[Papers Explained Corpus]]

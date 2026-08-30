@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-01-17_Papers-Explained-91--E5-Mistral-7B-23890f40f83a.html`
+- Source file: `raw/2024-01-17_Papers-Explained-91--E5-Mistral-7B-23890f40f83a.md`
 - Source title: Papers Explained 91: E5 Mistral-7B
 - Published: 2024-01-17
 - Canonical: [https://medium.com/@ritvik19/papers-explained-91-e5-mistral-7b-23890f40f83a](https://medium.com/@ritvik19/papers-explained-91-e5-mistral-7b-23890f40f83a)
@@ -115,21 +115,21 @@ Recommended Reading: [Retrieval and Representation Learning](https://ritvik19.me
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-01-17_Papers-Explained-91--E5-Mistral-7B-23890f40f83a.html`); local copies under `wiki/assets/papers-explained-91-e5-mistral-7b/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-01-17_Papers-Explained-91--E5-Mistral-7B-23890f40f83a.md`); local copies under `wiki/assets/papers-explained-91-e5-mistral-7b/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-91-e5-mistral-7b/fig-1.png) | Title card: E5 Mistral-7B. |
-| ![Figure 2](assets/papers-explained-91-e5-mistral-7b/fig-2.png) | An example two-step prompt template for generating synthetic data with GPT-4. |
-| ![Figure 3](assets/papers-explained-91-e5-mistral-7b/fig-3.png) | Task type and language statistics of the generated synthetic data. |
-| ![Figure 4](assets/papers-explained-91-e5-mistral-7b/fig-4.png) | Given a relevant query-document pair (q +, d+), the following instruction template is applied to the original query q + to generate a new one q + inst. |
-| ![Figure 5](assets/papers-explained-91-e5-mistral-7b/fig-5.png) | Instructions for each training dataset. |
-| ![Figure 6](assets/papers-explained-91-e5-mistral-7b/fig-6.png) | To train the embedding model, t the standard InfoNCE loss is adopted over the in-batch negatives and hard negatives. |
-| ![Figure 7](assets/papers-explained-91-e5-mistral-7b/fig-7.png) | where N denotes the set of all negatives, and ϕ(q, d) is a function that computes the matching score between query q and document d. |
-| ![Figure 8](assets/papers-explained-91-e5-mistral-7b/fig-8.png) | Results on the MTEB benchmark. |
-| ![Figure 9](assets/papers-explained-91-e5-mistral-7b/fig-9.png) | Comparison with commercial models and the model that tops the MTEB leaderboard. |
-| ![Figure 10](assets/papers-explained-91-e5-mistral-7b/fig-10.png) | Training Datasets. |
-| ![Figure 11](assets/papers-explained-91-e5-mistral-7b/fig-11.png) | Effects of contrastive pre-training. |
+| ![Figure 1](assets/papers-explained-91-e5-mistral-7b/fig-1.webp) | Title card: E5 Mistral-7B. |
+| ![Figure 2](assets/papers-explained-91-e5-mistral-7b/fig-2.webp) | An example two-step prompt template for generating synthetic data with GPT-4. |
+| ![Figure 3](assets/papers-explained-91-e5-mistral-7b/fig-3.webp) | Task type and language statistics of the generated synthetic data. |
+| ![Figure 4](assets/papers-explained-91-e5-mistral-7b/fig-4.webp) | Given a relevant query-document pair (q +, d+), the following instruction template is applied to the original query q + to generate a new one q + inst. |
+| ![Figure 5](assets/papers-explained-91-e5-mistral-7b/fig-5.webp) | Instructions for each training dataset. |
+| ![Figure 6](assets/papers-explained-91-e5-mistral-7b/fig-6.webp) | To train the embedding model, t the standard InfoNCE loss is adopted over the in-batch negatives and hard negatives. |
+| ![Figure 7](assets/papers-explained-91-e5-mistral-7b/fig-7.webp) | where N denotes the set of all negatives, and ϕ(q, d) is a function that computes the matching score between query q and document d. |
+| ![Figure 8](assets/papers-explained-91-e5-mistral-7b/fig-8.webp) | Results on the MTEB benchmark. |
+| ![Figure 9](assets/papers-explained-91-e5-mistral-7b/fig-9.webp) | Comparison with commercial models and the model that tops the MTEB leaderboard. |
+| ![Figure 10](assets/papers-explained-91-e5-mistral-7b/fig-10.webp) | Training Datasets. |
+| ![Figure 11](assets/papers-explained-91-e5-mistral-7b/fig-11.webp) | Effects of contrastive pre-training. |
 ## Related
 
 - [[Papers Explained Corpus]]

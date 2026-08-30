@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-06-06_Papers-Explained-381--KL-Divergence-VS-MSE-for-Knowledge-Distillation-97988e80de3e.html`
+- Source file: `raw/2025-06-06_Papers-Explained-381--KL-Divergence-VS-MSE-for-Knowledge-Distillation-97988e80de3e.md`
 - Source title: Papers Explained 381: KL Divergence VS MSE for Knowledge Distillation
 - Published: 2025-06-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-381-kl-divergence-vs-mse-for-knowledge-distillation-97988e80de3e](https://medium.com/@ritvik19/papers-explained-381-kl-divergence-vs-mse-for-knowledge-distillation-97988e80de3e)
@@ -121,21 +121,21 @@ Check out all the threads in this series [here](https://ritvik19.github.io/paper
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-06-06_Papers-Explained-381--KL-Divergence-VS-MSE-for-Knowledge-Distillation-97988e80de3e.html`); local copies under `wiki/assets/papers-explained-381-kl-divergence-vs-mse-for-knowledge-distillation/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-06-06_Papers-Explained-381--KL-Divergence-VS-MSE-for-Knowledge-Distillation-97988e80de3e.md`); local copies under `wiki/assets/papers-explained-381-kl-divergence-vs-mse-for-knowledge-distillation/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-381-kl-divergence-vs-mse-for-knowledge-distillation/fig-1.png) | Title card: KL Divergence VS MSE for Knowledge Distillation. |
-| ![Figure 2](assets/papers-explained-381-kl-divergence-vs-mse-for-knowledge-distillation/fig-2.png) | Papers Explained 381: KL Divergence VS MSE for Knowledge Distillation. |
-| ![Figure 3](assets/papers-explained-381-kl-divergence-vs-mse-for-knowledge-distillation/fig-3.png) | Grid maps of accuracies according to the change of α and τ on CIFAR-100. |
-| ![Figure 4](assets/papers-explained-381-kl-divergence-vs-mse-for-knowledge-distillation/fig-4.png) | Top-1 test accuracies on CIFAR-100. WRN-28–4 is used as a teacher. |
-| ![Figure 5](assets/papers-explained-381-kl-divergence-vs-mse-for-knowledge-distillation/fig-5.png) | Test accuracy of various KD methods on CIFAR-100. All student models share the same teacher model as WRN-28–4. |
-| ![Figure 6](assets/papers-explained-381-kl-divergence-vs-mse-for-knowledge-distillation/fig-6.png) | (a) Probabilistic density function (pdf) for ||z s − z t ||2 on CIFAR-100 training dataset; (b) The pdf for the 2-norm of prelogit (i.e., ||r s ||2) on CIFAR-100 training dataset. We use a (teacher, student) pair of (WRN-28–4, WRN-16–2). |
-| ![Figure 7](assets/papers-explained-381-kl-divergence-vs-mse-for-knowledge-distillation/fig-7.png) | Visualizations of pre-logits on CIFAR-100 according to the change of loss function. Here, we use the classes “apple,” “aquarium fish,” and “baby.”. |
-| ![Figure 8](assets/papers-explained-381-kl-divergence-vs-mse-for-knowledge-distillation/fig-8.png) | Top-1 test accuracies on CIFAR-100. WRN-28–4 is used as a teacher for LKL and LMSE. Here, the teacher (WRN-28–4) was not fully trained. The training accuracy of the teacher network is 53.77%. |
-| ![Figure 9](assets/papers-explained-381-kl-divergence-vs-mse-for-knowledge-distillation/fig-9.png) | Test accuracy on the ImageNet dataset. We used a (teacher, student) pair of (ResNet-152, ResNet-50). The training accuracy of the teacher network is 81.16%. |
-| ![Figure 10](assets/papers-explained-381-kl-divergence-vs-mse-for-knowledge-distillation/fig-10.png) | Test accuracies of sequential knowledge distillation. In each entry, we note the objective function that used for the training. ‘X’ indicates that distillation was not used in training. |
-| ![Figure 11](assets/papers-explained-381-kl-divergence-vs-mse-for-knowledge-distillation/fig-11.png) | Test accuracy graph as τ changes on CIFAR-100. We use the (teacher, student) as (WRN-28–4, WRN-16–2). |
+| ![Figure 1](assets/papers-explained-381-kl-divergence-vs-mse-for-knowledge-distillation/fig-1.webp) | Title card: KL Divergence VS MSE for Knowledge Distillation. |
+| ![Figure 2](assets/papers-explained-381-kl-divergence-vs-mse-for-knowledge-distillation/fig-2.webp) | Papers Explained 381: KL Divergence VS MSE for Knowledge Distillation. |
+| ![Figure 3](assets/papers-explained-381-kl-divergence-vs-mse-for-knowledge-distillation/fig-3.webp) | Grid maps of accuracies according to the change of α and τ on CIFAR-100. |
+| ![Figure 4](assets/papers-explained-381-kl-divergence-vs-mse-for-knowledge-distillation/fig-4.webp) | Top-1 test accuracies on CIFAR-100. WRN-28–4 is used as a teacher. |
+| ![Figure 5](assets/papers-explained-381-kl-divergence-vs-mse-for-knowledge-distillation/fig-5.webp) | Test accuracy of various KD methods on CIFAR-100. All student models share the same teacher model as WRN-28–4. |
+| ![Figure 6](assets/papers-explained-381-kl-divergence-vs-mse-for-knowledge-distillation/fig-6.webp) | (a) Probabilistic density function (pdf) for ||z s − z t ||2 on CIFAR-100 training dataset; (b) The pdf for the 2-norm of prelogit (i.e., ||r s ||2) on CIFAR-100 training dataset. We use a (teacher, student) pair of (WRN-28–4, WRN-16–2). |
+| ![Figure 7](assets/papers-explained-381-kl-divergence-vs-mse-for-knowledge-distillation/fig-7.webp) | Visualizations of pre-logits on CIFAR-100 according to the change of loss function. Here, we use the classes “apple,” “aquarium fish,” and “baby.”. |
+| ![Figure 8](assets/papers-explained-381-kl-divergence-vs-mse-for-knowledge-distillation/fig-8.webp) | Top-1 test accuracies on CIFAR-100. WRN-28–4 is used as a teacher for LKL and LMSE. Here, the teacher (WRN-28–4) was not fully trained. The training accuracy of the teacher network is 53.77%. |
+| ![Figure 9](assets/papers-explained-381-kl-divergence-vs-mse-for-knowledge-distillation/fig-9.webp) | Test accuracy on the ImageNet dataset. We used a (teacher, student) pair of (ResNet-152, ResNet-50). The training accuracy of the teacher network is 81.16%. |
+| ![Figure 10](assets/papers-explained-381-kl-divergence-vs-mse-for-knowledge-distillation/fig-10.webp) | Test accuracies of sequential knowledge distillation. In each entry, we note the objective function that used for the training. ‘X’ indicates that distillation was not used in training. |
+| ![Figure 11](assets/papers-explained-381-kl-divergence-vs-mse-for-knowledge-distillation/fig-11.webp) | Test accuracy graph as τ changes on CIFAR-100. We use the (teacher, student) as (WRN-28–4, WRN-16–2). |
 ## Related
 
 - [[Papers Explained Corpus]]

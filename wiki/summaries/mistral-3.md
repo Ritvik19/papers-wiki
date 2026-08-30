@@ -1,6 +1,6 @@
 # Introducing Mistral 3
 
-**Source**: `raw/mistral-3/full-article.html` (225 KB), `raw/mistral-3/full-article.md` (markdown view)  
+**Source**: `raw/mistral-3/full-article.md` (225 KB), `raw/mistral-3/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/mistral-3/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

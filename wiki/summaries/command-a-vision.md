@@ -1,6 +1,6 @@
 # Introducing Command A Vision: Multimodal AI built for business
 
-**Source**: `raw/command-a-vision/full-article.html` (327 KB), `raw/command-a-vision/full-article.md` (markdown view)  
+**Source**: `raw/command-a-vision/full-article.md` (327 KB), `raw/command-a-vision/full-article.md` (markdown view)  
 **URL**: https://cohere.com/blog/command-a-vision  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -27,13 +27,13 @@ Customer quotes from Fujitsu Intelligence and Oracle Infrastructure Industries e
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/command-a-vision/fig-1.png) | Average multimodal benchmark comparison vs. GPT 4.1, Llama 4 Maverick, Mistral Medium 3, Pixtral Large | — |
-| ![fig-2](../assets/command-a-vision/fig-2.png) | Detailed per-benchmark scores across enterprise vision tasks | — |
-| ![fig-3](../assets/command-a-vision/fig-3.png) | Chart, graph, and diagram analysis benchmark table | — |
-| ![fig-4](../assets/command-a-vision/fig-4.png) | Document OCR and visual processing benchmarks (DocVQA, TextVQA, OCRBench) | — |
-| ![fig-5](../assets/command-a-vision/fig-5.png) | Enterprise use cases: slides, diagrams, PDFs, photos, real-world scenes | — |
+| ![fig-1](../assets/command-a-vision/fig-1.webp) | Average multimodal benchmark comparison vs. GPT 4.1, Llama 4 Maverick, Mistral Medium 3, Pixtral Large | — |
+| ![fig-2](../assets/command-a-vision/fig-2.webp) | Detailed per-benchmark scores across enterprise vision tasks | — |
+| ![fig-3](../assets/command-a-vision/fig-3.webp) | Chart, graph, and diagram analysis benchmark table | — |
+| ![fig-4](../assets/command-a-vision/fig-4.webp) | Document OCR and visual processing benchmarks (DocVQA, TextVQA, OCRBench) | — |
+| ![fig-5](../assets/command-a-vision/fig-5.webp) | Enterprise use cases: slides, diagrams, PDFs, photos, real-world scenes | — |
 
-![Average benchmark comparison](../assets/command-a-vision/fig-1.png)
+![Average benchmark comparison](../assets/command-a-vision/fig-1.webp)
 
 ## Entities
 

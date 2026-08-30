@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-07-17_Papers-Explained-47--Gopher-2e71bbef9e87.html`
+- Source file: `raw/2023-07-17_Papers-Explained-47--Gopher-2e71bbef9e87.md`
 - Source title: Papers Explained 47: Gopher
 - Published: 2023-07-17
 - Canonical: [https://medium.com/@ritvik19/papers-explained-47-gopher-2e71bbef9e87](https://medium.com/@ritvik19/papers-explained-47-gopher-2e71bbef9e87)
@@ -93,21 +93,21 @@ Scaling Language Models: Methods, Analysis & Insights from Training Gopher [2112
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-07-17_Papers-Explained-47--Gopher-2e71bbef9e87.html`); local copies under `wiki/assets/papers-explained-47-gopher/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-07-17_Papers-Explained-47--Gopher-2e71bbef9e87.md`); local copies under `wiki/assets/papers-explained-47-gopher/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-47-gopher/fig-1.png) | Title card: Gopher. |
-| ![Figure 2](assets/papers-explained-47-gopher/fig-2.png) | Model architecture details. |
-| ![Figure 3](assets/papers-explained-47-gopher/fig-3.png) | MassiveText data makeup. |
-| ![Figure 4](assets/papers-explained-47-gopher/fig-4.png) | Diagram of dataset processing stages. |
-| ![Figure 5](assets/papers-explained-47-gopher/fig-5.png) | Thresholds for repetitious text. |
-| ![Figure 6](assets/papers-explained-47-gopher/fig-6.png) | Evaluation Tasks. |
-| ![Figure 7](assets/papers-explained-47-gopher/fig-7.png) | Gopher (280B) vs LM SOTA. An overview of the percentage change in performance metric (higher is better) of Gopher versus state-of-the-art language model performance across 124 tasks. Each bar represents a task, here we clip the maximum relative improvement to 120%. In total Gopher shows an improvement across 100 / 124. The best-published results include (175B) GPT-3, (178B) Jurassic-1, and (530B) Megatron-Turing NLG. |
-| ![Figure 8](assets/papers-explained-47-gopher/fig-8.png) | RACE reading comprehension. Accuracy for few-shot models: Gopher, GPT-3, Megatron-Turing. Gopher extends performance significantly. Comparison with supervised SOTA: ALBERT (ensemble), Amazon Turk and Human Ceiling (obtained by restricting to unambiguous questions with correctly labeled answers). |
-| ![Figure 9](assets/papers-explained-47-gopher/fig-9.png) | Language Modelling Comparisons with SOTA. Comparison of Gopher to the current SOTA models on various language modeling tasks, including many from The Pile. The superscript (1) indicates the prior SOTA was Jurassic-1 and (2) indicates GPT-3. Gopher achieves state-of-the-art performance on 11 out of 19 datasets with the largest improvements on books and articles. |
-| ![Figure 10](assets/papers-explained-47-gopher/fig-10.png) | Massive Multitask Language Understanding (MMLU). Average accuracy over 57 tasks with model and human accuracy comparisons. Human rater performance is obtained using Mechanical Turk and average human expert performance is estimated per task based on published exam results and averaged. Gopher improves over the prior supervised SOTA models by a considerable margin (>30%) however it is far from human expertise. We also include the average prediction for SOTA accuracy in June 2022 and 2023 made by 73 competitive human forecasters. Gopher is situated between the 2022 and 2023 forecast. |
-| ![Figure 11](assets/papers-explained-47-gopher/fig-11.png) | 280B vs best performance up to 7.1B across different tasks. We compare the performance of Gopher to the best performance of our smaller models up to 7.1B. In nearly every case, Gopher outperforms the best smaller model’s performance. Small gains come from either scale not improving results substantially or the smaller models already being very performant. Language modeling improvements are in BPB and the rest are in terms of accuracy. |
+| ![Figure 1](assets/papers-explained-47-gopher/fig-1.webp) | Title card: Gopher. |
+| ![Figure 2](assets/papers-explained-47-gopher/fig-2.webp) | Model architecture details. |
+| ![Figure 3](assets/papers-explained-47-gopher/fig-3.webp) | MassiveText data makeup. |
+| ![Figure 4](assets/papers-explained-47-gopher/fig-4.webp) | Diagram of dataset processing stages. |
+| ![Figure 5](assets/papers-explained-47-gopher/fig-5.webp) | Thresholds for repetitious text. |
+| ![Figure 6](assets/papers-explained-47-gopher/fig-6.webp) | Evaluation Tasks. |
+| ![Figure 7](assets/papers-explained-47-gopher/fig-7.webp) | Gopher (280B) vs LM SOTA. An overview of the percentage change in performance metric (higher is better) of Gopher versus state-of-the-art language model performance across 124 tasks. Each bar represents a task, here we clip the maximum relative improvement to 120%. In total Gopher shows an improvement across 100 / 124. The best-published results include (175B) GPT-3, (178B) Jurassic-1, and (530B) Megatron-Turing NLG. |
+| ![Figure 8](assets/papers-explained-47-gopher/fig-8.webp) | RACE reading comprehension. Accuracy for few-shot models: Gopher, GPT-3, Megatron-Turing. Gopher extends performance significantly. Comparison with supervised SOTA: ALBERT (ensemble), Amazon Turk and Human Ceiling (obtained by restricting to unambiguous questions with correctly labeled answers). |
+| ![Figure 9](assets/papers-explained-47-gopher/fig-9.webp) | Language Modelling Comparisons with SOTA. Comparison of Gopher to the current SOTA models on various language modeling tasks, including many from The Pile. The superscript (1) indicates the prior SOTA was Jurassic-1 and (2) indicates GPT-3. Gopher achieves state-of-the-art performance on 11 out of 19 datasets with the largest improvements on books and articles. |
+| ![Figure 10](assets/papers-explained-47-gopher/fig-10.webp) | Massive Multitask Language Understanding (MMLU). Average accuracy over 57 tasks with model and human accuracy comparisons. Human rater performance is obtained using Mechanical Turk and average human expert performance is estimated per task based on published exam results and averaged. Gopher improves over the prior supervised SOTA models by a considerable margin (>30%) however it is far from human expertise. We also include the average prediction for SOTA accuracy in June 2022 and 2023 made by 73 competitive human forecasters. Gopher is situated between the 2022 and 2023 forecast. |
+| ![Figure 11](assets/papers-explained-47-gopher/fig-11.webp) | 280B vs best performance up to 7.1B across different tasks. We compare the performance of Gopher to the best performance of our smaller models up to 7.1B. In nearly every case, Gopher outperforms the best smaller model’s performance. Small gains come from either scale not improving results substantially or the smaller models already being very performant. Language modeling improvements are in BPB and the rest are in terms of accuracy. |
 ## Related
 
 - [[Papers Explained Corpus]]

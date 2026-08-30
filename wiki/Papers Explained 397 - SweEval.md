@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-06-27_Papers-Explained-397--SweEval-f779d7da1196.html`
+- Source file: `raw/2025-06-27_Papers-Explained-397--SweEval-f779d7da1196.md`
 - Source title: Papers Explained 397: SweEval
 - Published: 2025-06-27
 - Canonical: [https://medium.com/@ritvik19/papers-explained-397-sweeval-f779d7da1196](https://medium.com/@ritvik19/papers-explained-397-sweeval-f779d7da1196)
@@ -103,21 +103,21 @@ SweEval: Do LLMs Really Swear? A Safety Benchmark for Testing Limits for Enterpr
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-06-27_Papers-Explained-397--SweEval-f779d7da1196.html`); local copies under `wiki/assets/papers-explained-397-sweeval/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-06-27_Papers-Explained-397--SweEval-f779d7da1196.md`); local copies under `wiki/assets/papers-explained-397-sweeval/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-397-sweeval/fig-1.png) | Title card: SweEval. |
-| ![Figure 2](assets/papers-explained-397-sweeval/fig-2.png) | Number of prompts per category used for every language. |
-| ![Figure 3](assets/papers-explained-397-sweeval/fig-3.png) | Case 1: Multilingual Swearing. |
-| ![Figure 4](assets/papers-explained-397-sweeval/fig-4.png) | Case 2: Transliterated Swearing. |
-| ![Figure 5](assets/papers-explained-397-sweeval/fig-5.png) | Model Parameters. |
-| ![Figure 6](assets/papers-explained-397-sweeval/fig-6.png) | The evaluation of model responses was conducted using the Harmful Rate. |
-| ![Figure 7](assets/papers-explained-397-sweeval/fig-7.png) | Case 1: Model-wise harmful rate distribution across all languages. |
-| ![Figure 8](assets/papers-explained-397-sweeval/fig-8.png) | Case 2: Model-wise harmful rate distribution across all languages. |
-| ![Figure 9](assets/papers-explained-397-sweeval/fig-9.png) | Case 1: Latin vs. Indic Languages. |
-| ![Figure 10](assets/papers-explained-397-sweeval/fig-10.png) | Case 2: Latin vs. Indic Languages. |
-| ![Figure 11](assets/papers-explained-397-sweeval/fig-11.png) | Harmful rate of Mistral and Llama models. |
+| ![Figure 1](assets/papers-explained-397-sweeval/fig-1.webp) | Title card: SweEval. |
+| ![Figure 2](assets/papers-explained-397-sweeval/fig-2.webp) | Number of prompts per category used for every language. |
+| ![Figure 3](assets/papers-explained-397-sweeval/fig-3.webp) | Case 1: Multilingual Swearing. |
+| ![Figure 4](assets/papers-explained-397-sweeval/fig-4.webp) | Case 2: Transliterated Swearing. |
+| ![Figure 5](assets/papers-explained-397-sweeval/fig-5.webp) | Model Parameters. |
+| ![Figure 6](assets/papers-explained-397-sweeval/fig-6.webp) | The evaluation of model responses was conducted using the Harmful Rate. |
+| ![Figure 7](assets/papers-explained-397-sweeval/fig-7.webp) | Case 1: Model-wise harmful rate distribution across all languages. |
+| ![Figure 8](assets/papers-explained-397-sweeval/fig-8.webp) | Case 2: Model-wise harmful rate distribution across all languages. |
+| ![Figure 9](assets/papers-explained-397-sweeval/fig-9.webp) | Case 1: Latin vs. Indic Languages. |
+| ![Figure 10](assets/papers-explained-397-sweeval/fig-10.webp) | Case 2: Latin vs. Indic Languages. |
+| ![Figure 11](assets/papers-explained-397-sweeval/fig-11.webp) | Harmful rate of Mistral and Llama models. |
 ## Related
 
 - [[Papers Explained Corpus]]

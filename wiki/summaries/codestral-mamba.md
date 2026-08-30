@@ -1,6 +1,6 @@
 # Codestral Mamba
 
-**Source**: `raw/codestral-mamba/full-article.html` (212 KB), `raw/codestral-mamba/full-article.md` (markdown view)  
+**Source**: `raw/codestral-mamba/full-article.md` (212 KB), `raw/codestral-mamba/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/codestral-mamba/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

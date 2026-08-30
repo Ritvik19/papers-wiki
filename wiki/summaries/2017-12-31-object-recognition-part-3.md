@@ -1,6 +1,6 @@
 # Object Detection for Dummies Part 3
 
-**Source**: `raw/2017-12-31-object-recognition-part-3/full-article.html` (73 KB); secondary: `raw/2017-12-31-object-recognition-part-3/full-article.md`  
+**Source**: `raw/2017-12-31-object-recognition-part-3/full-article.md` (73 KB); secondary: `raw/2017-12-31-object-recognition-part-3/full-article.md`  
 **Canonical URL**: https://lilianweng.github.io/posts/2017-12-31-object-recognition-part-3/  
 **Author**: Lilian Weng  
 **Published**: 2017-12-31 (updated 2018-12-20: YOLO moved to Part 4; 2018-12-27: bbox regression + tricks)  
@@ -32,7 +32,7 @@ Common tricks: [[Non-Maximum Suppression]] (greedy, IoU > 0.5 suppression) and [
 | Faster R-CNN | RPN | Shared CNN | RPN + Fast R-CNN | Learned proposals |
 | Mask R-CNN | RPN | Shared CNN + RoIAlign | + mask branch | Pixel masks |
 
-![R-CNN family summary](../assets/2017-12-31-object-recognition-part-3/fig-11.png)
+![R-CNN family summary](../assets/2017-12-31-object-recognition-part-3/fig-11.webp)
 
 ## Key Claims
 
@@ -47,17 +47,17 @@ Common tricks: [[Non-Maximum Suppression]] (greedy, IoU > 0.5 suppression) and [
 
 | Figure | Caption |
 |--------|---------|
-| ![R-CNN architecture](../assets/2017-12-31-object-recognition-part-3/fig-1.png) | R-CNN: proposals → warp → CNN → SVM + bbox. |
-| ![BBox regression geometry](../assets/2017-12-31-object-recognition-part-3/fig-2.png) | Predicted vs ground-truth box parameterization. |
-| ![Non-maximum suppression](../assets/2017-12-31-object-recognition-part-3/fig-3.png) | Multiple car boxes collapsed to highest-scoring non-overlapping set. |
-| ![Fast R-CNN architecture](../assets/2017-12-31-object-recognition-part-3/fig-4.png) | Single CNN + RoI pooling + dual heads. |
-| ![RoI pooling](../assets/2017-12-31-object-recognition-part-3/fig-5.png) | Max-pool within each sub-window of arbitrary RoI on feature map. |
-| ![Smooth L1 loss curve](../assets/2017-12-31-object-recognition-part-3/fig-6.png) | Huber-style \(L_1^{smooth}\) for robust regression. |
-| ![Faster R-CNN](../assets/2017-12-31-object-recognition-part-3/fig-7.png) | Shared conv + RPN + Fast R-CNN detector. |
-| ![Mask R-CNN heads](../assets/2017-12-31-object-recognition-part-3/fig-8.png) | Classification, box, and mask branches. |
-| ![Mask R-CNN COCO examples](../assets/2017-12-31-object-recognition-part-3/fig-9.png) | Instance masks on COCO test images. |
-| ![RoIAlign vs quantization](../assets/2017-12-31-object-recognition-part-3/fig-10.png) | Floating-point RoI mapping with bilinear interpolation. |
-| ![Family comparison diagram](../assets/2017-12-31-object-recognition-part-3/fig-11.png) | Side-by-side R-CNN family architectures. |
+| ![R-CNN architecture](../assets/2017-12-31-object-recognition-part-3/fig-1.webp) | R-CNN: proposals → warp → CNN → SVM + bbox. |
+| ![BBox regression geometry](../assets/2017-12-31-object-recognition-part-3/fig-2.webp) | Predicted vs ground-truth box parameterization. |
+| ![Non-maximum suppression](../assets/2017-12-31-object-recognition-part-3/fig-3.webp) | Multiple car boxes collapsed to highest-scoring non-overlapping set. |
+| ![Fast R-CNN architecture](../assets/2017-12-31-object-recognition-part-3/fig-4.webp) | Single CNN + RoI pooling + dual heads. |
+| ![RoI pooling](../assets/2017-12-31-object-recognition-part-3/fig-5.webp) | Max-pool within each sub-window of arbitrary RoI on feature map. |
+| ![Smooth L1 loss curve](../assets/2017-12-31-object-recognition-part-3/fig-6.webp) | Huber-style \(L_1^{smooth}\) for robust regression. |
+| ![Faster R-CNN](../assets/2017-12-31-object-recognition-part-3/fig-7.webp) | Shared conv + RPN + Fast R-CNN detector. |
+| ![Mask R-CNN heads](../assets/2017-12-31-object-recognition-part-3/fig-8.webp) | Classification, box, and mask branches. |
+| ![Mask R-CNN COCO examples](../assets/2017-12-31-object-recognition-part-3/fig-9.webp) | Instance masks on COCO test images. |
+| ![RoIAlign vs quantization](../assets/2017-12-31-object-recognition-part-3/fig-10.webp) | Floating-point RoI mapping with bilinear interpolation. |
+| ![Family comparison diagram](../assets/2017-12-31-object-recognition-part-3/fig-11.webp) | Side-by-side R-CNN family architectures. |
 
 ## R-CNN workflow (detailed)
 

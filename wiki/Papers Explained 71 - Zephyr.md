@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-11-17_Papers-Explained-71--Zephyr-7ec068e2f20b.html`
+- Source file: `raw/2023-11-17_Papers-Explained-71--Zephyr-7ec068e2f20b.md`
 - Source title: Papers Explained 71: Zephyr
 - Published: 2023-11-17
 - Canonical: [https://medium.com/@ritvik19/papers-explained-71-zephyr-7ec068e2f20b](https://medium.com/@ritvik19/papers-explained-71-zephyr-7ec068e2f20b)
@@ -119,15 +119,15 @@ Zephyr: Direct Distillation of LM Alignment [2310.16944](https://arxiv.org/abs/2
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-11-17_Papers-Explained-71--Zephyr-7ec068e2f20b.html`); local copies under `wiki/assets/papers-explained-71-zephyr/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-11-17_Papers-Explained-71--Zephyr-7ec068e2f20b.md`); local copies under `wiki/assets/papers-explained-71-zephyr/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-71-zephyr/fig-1.png) | Title card: Zephyr. |
-| ![Figure 2](assets/papers-explained-71-zephyr/fig-2.png) | The approach follows similar stages as InstructGPT. |
-| ![Figure 3](assets/papers-explained-71-zephyr/fig-3.png) | Chat benchmark results for open-access and proprietary models on MT-Bench and AlpacaEval. |
-| ![Figure 4](assets/papers-explained-71-zephyr/fig-4.png) | Academic benchmark results for open-access models on the Open LLM Leaderboard. |
-| ![Figure 5](assets/papers-explained-71-zephyr/fig-5.png) | Ablation of different alignment methods on the base Mistral 7B model. |
+| ![Figure 1](assets/papers-explained-71-zephyr/fig-1.webp) | Title card: Zephyr. |
+| ![Figure 2](assets/papers-explained-71-zephyr/fig-2.webp) | The approach follows similar stages as InstructGPT. |
+| ![Figure 3](assets/papers-explained-71-zephyr/fig-3.webp) | Chat benchmark results for open-access and proprietary models on MT-Bench and AlpacaEval. |
+| ![Figure 4](assets/papers-explained-71-zephyr/fig-4.webp) | Academic benchmark results for open-access models on the Open LLM Leaderboard. |
+| ![Figure 5](assets/papers-explained-71-zephyr/fig-5.webp) | Ablation of different alignment methods on the base Mistral 7B model. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -2,4 +2,4 @@
 
 **URL**: https://unsloth.ai/blog/vision
 
-(Canonical HTML: raw/vision/full-article.html)
+(Canonical HTML: raw/vision/full-article.md)

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-03-25_Papers-Explained-337--Logic-RL-6f1ae1ffaf09.html`
+- Source file: `raw/2025-03-25_Papers-Explained-337--Logic-RL-6f1ae1ffaf09.md`
 - Source title: Papers Explained 337: Logic-RL
 - Published: 2025-03-25
 - Canonical: [https://medium.com/@ritvik19/papers-explained-337-logic-rl-6f1ae1ffaf09](https://medium.com/@ritvik19/papers-explained-337-logic-rl-6f1ae1ffaf09)
@@ -195,23 +195,23 @@ Logic-RL: Unleashing LLM Reasoning with Rule-Based Reinforcement Learning [2502.
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-03-25_Papers-Explained-337--Logic-RL-6f1ae1ffaf09.html`); local copies under `wiki/assets/papers-explained-337-logic-rl/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-03-25_Papers-Explained-337--Logic-RL-6f1ae1ffaf09.md`); local copies under `wiki/assets/papers-explained-337-logic-rl/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-337-logic-rl/fig-1.png) | Title card: Logic-RL. |
-| ![Figure 2](assets/papers-explained-337-logic-rl/fig-2.png) | The Knights and Knaves (K&K) puzzles constitute an algorithmically generated reasoning dataset. |
-| ![Figure 3](assets/papers-explained-337-logic-rl/fig-3.png) | Accordingly, the rule design was iteratively refined. |
-| ![Figure 4](assets/papers-explained-337-logic-rl/fig-4.png) | Once the format is validated, the model’s answer is checked for a match with the ground truth. |
-| ![Figure 5](assets/papers-explained-337-logic-rl/fig-5.png) | Both Qwen2.5–7B-Base and Qwen2.5–7B-Instruct are then tested as starting points. |
-| ![Figure 6](assets/papers-explained-337-logic-rl/fig-6.png) | Comparison of different models including reasoning models and general models on K&K logic puzzle across various difficulty. |
-| ![Figure 7](assets/papers-explained-337-logic-rl/fig-7.png) | Comparison of performance (averaged by sliding window = 50) in terms of training speed, accuracy, and reward gain. |
-| ![Figure 8](assets/papers-explained-337-logic-rl/fig-8.png) | Impact of complex reasoning behaviours and language mixing on reasoning performance. |
-| ![Figure 9](assets/papers-explained-337-logic-rl/fig-9.png) | Tracking the frequency of words in the first 1,800 training steps. |
-| ![Figure 10](assets/papers-explained-337-logic-rl/fig-10.png) | Training Step vs. Accuracy on AIME (2021–2024) and AMC (2022–2023) Datasets. |
-| ![Figure 11](assets/papers-explained-337-logic-rl/fig-11.png) | RFT memorizes while RL generalizes. |
-| ![Figure 12](assets/papers-explained-337-logic-rl/fig-12.png) | Comparison of test scores for curriculum learning and mixed-difficulty training. |
-| ![Figure 13](assets/papers-explained-337-logic-rl/fig-13.png) | Comparison of response length, validation accuracy, and mean reward across training steps for positive and negative example models. |
+| ![Figure 1](assets/papers-explained-337-logic-rl/fig-1.webp) | Title card: Logic-RL. |
+| ![Figure 2](assets/papers-explained-337-logic-rl/fig-2.webp) | The Knights and Knaves (K&K) puzzles constitute an algorithmically generated reasoning dataset. |
+| ![Figure 3](assets/papers-explained-337-logic-rl/fig-3.webp) | Accordingly, the rule design was iteratively refined. |
+| ![Figure 4](assets/papers-explained-337-logic-rl/fig-4.webp) | Once the format is validated, the model’s answer is checked for a match with the ground truth. |
+| ![Figure 5](assets/papers-explained-337-logic-rl/fig-5.webp) | Both Qwen2.5–7B-Base and Qwen2.5–7B-Instruct are then tested as starting points. |
+| ![Figure 6](assets/papers-explained-337-logic-rl/fig-6.webp) | Comparison of different models including reasoning models and general models on K&K logic puzzle across various difficulty. |
+| ![Figure 7](assets/papers-explained-337-logic-rl/fig-7.webp) | Comparison of performance (averaged by sliding window = 50) in terms of training speed, accuracy, and reward gain. |
+| ![Figure 8](assets/papers-explained-337-logic-rl/fig-8.webp) | Impact of complex reasoning behaviours and language mixing on reasoning performance. |
+| ![Figure 9](assets/papers-explained-337-logic-rl/fig-9.webp) | Tracking the frequency of words in the first 1,800 training steps. |
+| ![Figure 10](assets/papers-explained-337-logic-rl/fig-10.webp) | Training Step vs. Accuracy on AIME (2021–2024) and AMC (2022–2023) Datasets. |
+| ![Figure 11](assets/papers-explained-337-logic-rl/fig-11.webp) | RFT memorizes while RL generalizes. |
+| ![Figure 12](assets/papers-explained-337-logic-rl/fig-12.webp) | Comparison of test scores for curriculum learning and mixed-difficulty training. |
+| ![Figure 13](assets/papers-explained-337-logic-rl/fig-13.webp) | Comparison of response length, validation accuracy, and mean reward across training steps for positive and negative example models. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-06-10_Papers-Explained-384--PerceptionLM-15787f8950f6.html`
+- Source file: `raw/2025-06-10_Papers-Explained-384--PerceptionLM-15787f8950f6.md`
 - Source title: Papers Explained 384: PerceptionLM
 - Published: 2025-06-10
 - Canonical: [https://medium.com/@ritvik19/papers-explained-384-perceptionlm-15787f8950f6](https://medium.com/@ritvik19/papers-explained-384-perceptionlm-15787f8950f6)
@@ -149,22 +149,22 @@ PerceptionLM: Open-Access Data and Models for Detailed Visual Understanding [250
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-06-10_Papers-Explained-384--PerceptionLM-15787f8950f6.html`); local copies under `wiki/assets/papers-explained-384-perceptionlm/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-06-10_Papers-Explained-384--PerceptionLM-15787f8950f6.md`); local copies under `wiki/assets/papers-explained-384-perceptionlm/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-384-perceptionlm/fig-1.png) | Title card: PerceptionLM. |
-| ![Figure 2](assets/papers-explained-384-perceptionlm/fig-2.png) | Summary of three training stages to train PLM. |
-| ![Figure 3](assets/papers-explained-384-perceptionlm/fig-3.png) | The data engine is designed to target base capabilities of VLMs for image and video understanding. |
-| ![Figure 4](assets/papers-explained-384-perceptionlm/fig-4.png) | Image Captions: High-quality images are captioned using Llama 3.1V 90B. |
-| ![Figure 5](assets/papers-explained-384-perceptionlm/fig-5.png) | OCR QAs: Pre-extracted OCR is leveraged and used as input for a LLM (i.e., Llama 3.3 70B) to generate a set of five question-answer pairs. |
-| ![Figure 6](assets/papers-explained-384-perceptionlm/fig-6.png) | PLM is trained in three stages. |
-| ![Figure 7](assets/papers-explained-384-perceptionlm/fig-7.png) | Summary of the data mix for training PLM. |
-| ![Figure 8](assets/papers-explained-384-perceptionlm/fig-8.png) | Overview of PLM–VideoBench tasks. |
-| ![Figure 9](assets/papers-explained-384-perceptionlm/fig-9.png) | Image benchmark results. |
-| ![Figure 10](assets/papers-explained-384-perceptionlm/fig-10.png) | Image Grounding results on RefCOCO/+/g. |
-| ![Figure 11](assets/papers-explained-384-perceptionlm/fig-11.png) | Video benchmark results on general video understanding benchmarks. |
-| ![Figure 12](assets/papers-explained-384-perceptionlm/fig-12.png) | PLM-VideoBench results. |
+| ![Figure 1](assets/papers-explained-384-perceptionlm/fig-1.webp) | Title card: PerceptionLM. |
+| ![Figure 2](assets/papers-explained-384-perceptionlm/fig-2.webp) | Summary of three training stages to train PLM. |
+| ![Figure 3](assets/papers-explained-384-perceptionlm/fig-3.webp) | The data engine is designed to target base capabilities of VLMs for image and video understanding. |
+| ![Figure 4](assets/papers-explained-384-perceptionlm/fig-4.webp) | Image Captions: High-quality images are captioned using Llama 3.1V 90B. |
+| ![Figure 5](assets/papers-explained-384-perceptionlm/fig-5.webp) | OCR QAs: Pre-extracted OCR is leveraged and used as input for a LLM (i.e., Llama 3.3 70B) to generate a set of five question-answer pairs. |
+| ![Figure 6](assets/papers-explained-384-perceptionlm/fig-6.webp) | PLM is trained in three stages. |
+| ![Figure 7](assets/papers-explained-384-perceptionlm/fig-7.webp) | Summary of the data mix for training PLM. |
+| ![Figure 8](assets/papers-explained-384-perceptionlm/fig-8.webp) | Overview of PLM–VideoBench tasks. |
+| ![Figure 9](assets/papers-explained-384-perceptionlm/fig-9.webp) | Image benchmark results. |
+| ![Figure 10](assets/papers-explained-384-perceptionlm/fig-10.webp) | Image Grounding results on RefCOCO/+/g. |
+| ![Figure 11](assets/papers-explained-384-perceptionlm/fig-11.webp) | Video benchmark results on general video understanding benchmarks. |
+| ![Figure 12](assets/papers-explained-384-perceptionlm/fig-12.webp) | PLM-VideoBench results. |
 ## Related
 
 - [[Papers Explained Corpus]]

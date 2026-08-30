@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-08-21_Papers-Explained-436--CoT-Self-Instruct-7c95400ef23c.html`
+- Source file: `raw/2025-08-21_Papers-Explained-436--CoT-Self-Instruct-7c95400ef23c.md`
 - Source title: Papers Explained 436: CoT-Self-Instruct
 - Published: 2025-08-21
 - Canonical: [https://medium.com/@ritvik19/papers-explained-436-cot-self-instruct-7c95400ef23c](https://medium.com/@ritvik19/papers-explained-436-cot-self-instruct-7c95400ef23c)
@@ -234,14 +234,14 @@ CoT-Self-Instruct: Building high-quality synthetic prompts for reasoning and non
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-08-21_Papers-Explained-436--CoT-Self-Instruct-7c95400ef23c.html`); local copies under `wiki/assets/papers-explained-436-cot-self-instruct/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-08-21_Papers-Explained-436--CoT-Self-Instruct-7c95400ef23c.md`); local copies under `wiki/assets/papers-explained-436-cot-self-instruct/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-436-cot-self-instruct/fig-1.png) | Title card: CoT-Self-Instruct. |
-| ![Figure 2](assets/papers-explained-436-cot-self-instruct/fig-2.png) | CoT-Self-Instruct. |
-| ![Figure 3](assets/papers-explained-436-cot-self-instruct/fig-3.png) | CoT-Self-Instruct results on reasoning tasks. |
-| ![Figure 4](assets/papers-explained-436-cot-self-instruct/fig-4.png) | CoT-Self-Instruct results on general instruction following tasks. |
+| ![Figure 1](assets/papers-explained-436-cot-self-instruct/fig-1.webp) | Title card: CoT-Self-Instruct. |
+| ![Figure 2](assets/papers-explained-436-cot-self-instruct/fig-2.webp) | CoT-Self-Instruct. |
+| ![Figure 3](assets/papers-explained-436-cot-self-instruct/fig-3.webp) | CoT-Self-Instruct results on reasoning tasks. |
+| ![Figure 4](assets/papers-explained-436-cot-self-instruct/fig-4.webp) | CoT-Self-Instruct results on general instruction following tasks. |
 ## Related
 
 - [[Papers Explained Corpus]]

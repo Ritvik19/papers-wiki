@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-05-27_Papers-Explained-142--Gemini-1-5-Flash-415e2dc6a989.html`
+- Source file: `raw/2024-05-27_Papers-Explained-142--Gemini-1-5-Flash-415e2dc6a989.md`
 - Source title: Papers Explained 142: Gemini 1.5 Flash
 - Published: 2024-05-27
 - Canonical: [https://medium.com/@ritvik19/papers-explained-142-gemini-1-5-flash-415e2dc6a989](https://medium.com/@ritvik19/papers-explained-142-gemini-1-5-flash-415e2dc6a989)
@@ -445,44 +445,44 @@ Recommended Reading [Gemini / Gemma Models](https://ritvik19.medium.com/list/gem
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-05-27_Papers-Explained-142--Gemini-1-5-Flash-415e2dc6a989.html`); local copies under `wiki/assets/papers-explained-142-gemini-1-5-flash/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-05-27_Papers-Explained-142--Gemini-1-5-Flash-415e2dc6a989.md`); local copies under `wiki/assets/papers-explained-142-gemini-1-5-flash/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-142-gemini-1-5-flash/fig-1.png) | Title slide of the Gemini 1.5 technical report (*Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context*). |
-| ![Figure 2](assets/papers-explained-142-gemini-1-5-flash/fig-2.png) | Time per output character (ms) for Gemini 1.5 Flash (highlighted), 1.5 Pro, GPT-3.5/4 Turbo, and Claude 3 Haiku/Sonnet/Opus on EN/JA/ZH/FR prompts (~10k input chars). |
-| ![Figure 3](assets/papers-explained-142-gemini-1-5-flash/fig-3.png) | Multimodal needle-in-a-haystack heatmaps for video (~10h), audio (~107h), and text (~10M tokens): depth vs span with successful retrieval (green) dominant across modalities. |
-| ![Figure 4](assets/papers-explained-142-gemini-1-5-flash/fig-4.png) | Cumulative average NLL vs sequence position for long documents (to 1M tokens) and code (to 10M): Gemini 1.5 Pro, 1.5 Flash, and 1.0 Pro vs dashed power-law fits ($R^2 \approx 0.997$ / $0.995$). |
-| ![Figure 5](assets/papers-explained-142-gemini-1-5-flash/fig-5.png) | Text haystack retrieval for Gemini 1.5 Pro (1k–1M and up to 10M tokens) vs GPT-4 Turbo (green only to 128k; grey for unsupported longer contexts). |
-| ![Figure 6](assets/papers-explained-142-gemini-1-5-flash/fig-6.png) | Video haystack: Gemini 1.5 Pro solid green to 10 hours vs GPT-4V collapsing to failure (grey) after a few minutes within the 1-hour grid. |
-| ![Figure 7](assets/papers-explained-142-gemini-1-5-flash/fig-7.png) | Audio haystack: Gemini 1.5 Pro through ~107 hours vs Whisper + GPT-4 Turbo with intermittent failures over ~12 minutes–11 hours. |
-| ![Figure 8](assets/papers-explained-142-gemini-1-5-flash/fig-8.png) | Multi-needle recall vs context length: Gemini 1.5 Pro to 1M tokens vs GPT-4 Turbo stopping at 128k (vertical dashed marker). |
-| ![Figure 9](assets/papers-explained-142-gemini-1-5-flash/fig-9.png) | MRCR cumulative average score vs context length to 1M tokens for Gemini 1.5 Pro/Flash vs GPT-4 Turbo and Claude 2.1 (GPT/Claude truncated near 128k). |
-| ![Figure 10](assets/papers-explained-142-gemini-1-5-flash/fig-10.png) | MTOB Kalamang→English: human ratings (and BLEURT %) under 0-shot, half-book, and full-book context for GPT-4 Turbo, Claude 3 variants, Gemini 1.5 Flash/Pro, and human learner. |
-| ![Figure 11](assets/papers-explained-142-gemini-1-5-flash/fig-11.png) | MTOB English→Kalamang with the same models; only Gemini 1.5 reaches full-book cells beside the human learner baseline. |
-| ![Figure 12](assets/papers-explained-142-gemini-1-5-flash/fig-12.png) | ASROB Kalamang ASR: Gemini 1.5 Pro character error rate (%) over audio-shot count × text-context type (best highlighted ~22.9%). |
-| ![Figure 13](assets/papers-explained-142-gemini-1-5-flash/fig-13.png) | Same ASROB grid for Gemini 1.5 Flash (best CER ~25.2%). |
-| ![Figure 14](assets/papers-explained-142-gemini-1-5-flash/fig-14.png) | Many-shot English→low-resource translation: chrF vs few-shot count ($2^0$–$2^{12}$) on six languages for Gemini 1.5 Pro/Flash vs GPT-4 Turbo (Flores + in-house splits). |
-| ![Figure 15](assets/papers-explained-142-gemini-1-5-flash/fig-15.png) | Long-document QA on *Les Misérables*: Bradley–Terry “strength” for 0k vs RAG@4k vs full ~710k-token Gemini 1.5 Pro vs GPT-4 Turbo / Gemini 1.0 Pro baselines. |
-| ![Figure 16](assets/papers-explained-142-gemini-1-5-flash/fig-16.png) | 15-minute video ASR word error rates for USM, Whisper (±30 s segmentation), Gemini 1.0 Pro (±segmentation), Gemini 1.5 Pro (5.5%), and 1.5 Flash (8.8%). |
-| ![Figure 17](assets/papers-explained-142-gemini-1-5-flash/fig-17.png) | Gemini 1.5 Pro on 1H-VideoQA vs EgoSchema: accuracy vs first-frame / 16 / 150 frames and full 1 fps video on the hour-long split. |
-| ![Figure 18](assets/papers-explained-142-gemini-1-5-flash/fig-18.png) | 1H-VideoQA table: GPT-4V vs Gemini 1.5 Pro and Flash at 16 frames, 150 frames, and full-video 1 fps (GPT-4V unsupported on full video). |
-| ![Figure 19](assets/papers-explained-142-gemini-1-5-flash/fig-19.png) | Few-shot planning accuracy vs exemplars (log-scaled) for BlocksWorld, Logistics, Mini-Grid, Trip Planning, Calendar: Gemini 1.5 Flash/Pro vs GPT-4 Turbo. |
-| ![Figure 20](assets/papers-explained-142-gemini-1-5-flash/fig-20.png) | Unstructured multimodal analytics benchmark: batched image→structured attribute extraction setup plus accuracy vs batch size for Gemini 1.5 Pro, GPT-4 Turbo, Claude 3 Opus. |
-| ![Figure 21](assets/papers-explained-142-gemini-1-5-flash/fig-21.png) | Core text evaluations table (Math & Science, General Reasoning, Coding, Multilinguality) comparing Gemini 1.0 Pro/Ultra with 1.5 Flash and 1.5 Pro. |
-| ![Figure 22](assets/papers-explained-142-gemini-1-5-flash/fig-22.png) | Function-calling leaderboard-style splits (simple / multiple / parallel / relevance) with weighted averages for Gemini 1.0 Pro, 1.5 Flash, and 1.5 Pro. |
-| ![Figure 23](assets/papers-explained-142-gemini-1-5-flash/fig-23.png) | Instruction-following accuracy on 1326 long prompts vs 406 shorter prompts: per-instruction vs full-response rates for Gemini 1.0 Pro/Ultra and 1.5 Flash/Pro (± CIs). |
-| ![Figure 24](assets/papers-explained-142-gemini-1-5-flash/fig-24.png) | Expertise QA: share of responses rated Accurate vs Severely inaccurate across Gemini 1.0 Pro/Ultra and 1.5 Flash/Pro with bootstrap error bars. |
-| ![Figure 25](assets/papers-explained-142-gemini-1-5-flash/fig-25.png) | Dolomites-style domain methodical tasks: LM-judge win rates topping at **55.3%** for Gemini 1.5 Pro among four Gemini variants. |
-| ![Figure 26](assets/papers-explained-142-gemini-1-5-flash/fig-26.png) | STEM QA with context on Qasper: proportions of accurate vs inaccurate vs severely inaccurate sentences (± bootstrap CIs) for four Gemini models. |
-| ![Figure 27](assets/papers-explained-142-gemini-1-5-flash/fig-27.png) | Preference breakdown (win / tie / loss %) for Gemini 1.5 Pro and Flash vs Gemini 1.0 Pro and Ultra on hard real-world GenAI prompts. |
-| ![Figure 28](assets/papers-explained-142-gemini-1-5-flash/fig-28.png) | Frequency-weighted percent time saved by occupation when completing prompts with Gemini 1.5 Pro vs 1.0 Pro (ten industries, ± CIs). |
-| ![Figure 29](assets/papers-explained-142-gemini-1-5-flash/fig-29.png) | Core vision & document multimodal benchmarks (reasoning, charts/documents, natural images) for Gemini 1.0 Pro/Ultra vs 1.5 Flash/Pro. |
-| ![Figure 30](assets/papers-explained-142-gemini-1-5-flash/fig-30.png) | Video understanding results on captioning (VATEX/YouCook2), QA (ActivityNet-QA, EgoSchema), and embodied OpenEQA across Gemini 1.0 and 1.5 variants. |
-| ![Figure 31](assets/papers-explained-142-gemini-1-5-flash/fig-31.png) | Speech benchmarks: ASR WER (YouTube, MLS, FLEURS) and AST BLEU (Covost 2) for USM, Whisper, and Gemini 1.0/1.5 models (best scores highlighted). |
-| ![Figure 32](assets/papers-explained-142-gemini-1-5-flash/fig-32.png) | Math-specialized Gemini 1.5 Pro vs baseline 1.5 Pro, Claude 3 Opus, and GPT‑4 Turbo on MATH (with rm@256), AIME, Math Odyssey, HiddenMath, IMO‑Bench. |
-| ![Figure 33](assets/papers-explained-142-gemini-1-5-flash/fig-33.png) | Long-context scaling for Gemini 1.5 Flash vs Flash‑8B: cumulative average NLL vs sequence position on documents (to 1M tokens) and code (to 2M) with power-law overlays. |
-| ![Figure 34](assets/papers-explained-142-gemini-1-5-flash/fig-34.png) | Capability sweep comparing Gemini 1.5 Flash‑8B with full Flash on math, reasoning, coding, MGSM, Covost 2, MMMU, DocVQA, TextVQA, VATEX, etc. |
+| ![Figure 1](assets/papers-explained-142-gemini-1-5-flash/fig-1.webp) | Title slide of the Gemini 1.5 technical report (*Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context*). |
+| ![Figure 2](assets/papers-explained-142-gemini-1-5-flash/fig-2.webp) | Time per output character (ms) for Gemini 1.5 Flash (highlighted), 1.5 Pro, GPT-3.5/4 Turbo, and Claude 3 Haiku/Sonnet/Opus on EN/JA/ZH/FR prompts (~10k input chars). |
+| ![Figure 3](assets/papers-explained-142-gemini-1-5-flash/fig-3.webp) | Multimodal needle-in-a-haystack heatmaps for video (~10h), audio (~107h), and text (~10M tokens): depth vs span with successful retrieval (green) dominant across modalities. |
+| ![Figure 4](assets/papers-explained-142-gemini-1-5-flash/fig-4.webp) | Cumulative average NLL vs sequence position for long documents (to 1M tokens) and code (to 10M): Gemini 1.5 Pro, 1.5 Flash, and 1.0 Pro vs dashed power-law fits ($R^2 \approx 0.997$ / $0.995$). |
+| ![Figure 5](assets/papers-explained-142-gemini-1-5-flash/fig-5.webp) | Text haystack retrieval for Gemini 1.5 Pro (1k–1M and up to 10M tokens) vs GPT-4 Turbo (green only to 128k; grey for unsupported longer contexts). |
+| ![Figure 6](assets/papers-explained-142-gemini-1-5-flash/fig-6.webp) | Video haystack: Gemini 1.5 Pro solid green to 10 hours vs GPT-4V collapsing to failure (grey) after a few minutes within the 1-hour grid. |
+| ![Figure 7](assets/papers-explained-142-gemini-1-5-flash/fig-7.webp) | Audio haystack: Gemini 1.5 Pro through ~107 hours vs Whisper + GPT-4 Turbo with intermittent failures over ~12 minutes–11 hours. |
+| ![Figure 8](assets/papers-explained-142-gemini-1-5-flash/fig-8.webp) | Multi-needle recall vs context length: Gemini 1.5 Pro to 1M tokens vs GPT-4 Turbo stopping at 128k (vertical dashed marker). |
+| ![Figure 9](assets/papers-explained-142-gemini-1-5-flash/fig-9.webp) | MRCR cumulative average score vs context length to 1M tokens for Gemini 1.5 Pro/Flash vs GPT-4 Turbo and Claude 2.1 (GPT/Claude truncated near 128k). |
+| ![Figure 10](assets/papers-explained-142-gemini-1-5-flash/fig-10.webp) | MTOB Kalamang→English: human ratings (and BLEURT %) under 0-shot, half-book, and full-book context for GPT-4 Turbo, Claude 3 variants, Gemini 1.5 Flash/Pro, and human learner. |
+| ![Figure 11](assets/papers-explained-142-gemini-1-5-flash/fig-11.webp) | MTOB English→Kalamang with the same models; only Gemini 1.5 reaches full-book cells beside the human learner baseline. |
+| ![Figure 12](assets/papers-explained-142-gemini-1-5-flash/fig-12.webp) | ASROB Kalamang ASR: Gemini 1.5 Pro character error rate (%) over audio-shot count × text-context type (best highlighted ~22.9%). |
+| ![Figure 13](assets/papers-explained-142-gemini-1-5-flash/fig-13.webp) | Same ASROB grid for Gemini 1.5 Flash (best CER ~25.2%). |
+| ![Figure 14](assets/papers-explained-142-gemini-1-5-flash/fig-14.webp) | Many-shot English→low-resource translation: chrF vs few-shot count ($2^0$–$2^{12}$) on six languages for Gemini 1.5 Pro/Flash vs GPT-4 Turbo (Flores + in-house splits). |
+| ![Figure 15](assets/papers-explained-142-gemini-1-5-flash/fig-15.webp) | Long-document QA on *Les Misérables*: Bradley–Terry “strength” for 0k vs RAG@4k vs full ~710k-token Gemini 1.5 Pro vs GPT-4 Turbo / Gemini 1.0 Pro baselines. |
+| ![Figure 16](assets/papers-explained-142-gemini-1-5-flash/fig-16.webp) | 15-minute video ASR word error rates for USM, Whisper (±30 s segmentation), Gemini 1.0 Pro (±segmentation), Gemini 1.5 Pro (5.5%), and 1.5 Flash (8.8%). |
+| ![Figure 17](assets/papers-explained-142-gemini-1-5-flash/fig-17.webp) | Gemini 1.5 Pro on 1H-VideoQA vs EgoSchema: accuracy vs first-frame / 16 / 150 frames and full 1 fps video on the hour-long split. |
+| ![Figure 18](assets/papers-explained-142-gemini-1-5-flash/fig-18.webp) | 1H-VideoQA table: GPT-4V vs Gemini 1.5 Pro and Flash at 16 frames, 150 frames, and full-video 1 fps (GPT-4V unsupported on full video). |
+| ![Figure 19](assets/papers-explained-142-gemini-1-5-flash/fig-19.webp) | Few-shot planning accuracy vs exemplars (log-scaled) for BlocksWorld, Logistics, Mini-Grid, Trip Planning, Calendar: Gemini 1.5 Flash/Pro vs GPT-4 Turbo. |
+| ![Figure 20](assets/papers-explained-142-gemini-1-5-flash/fig-20.webp) | Unstructured multimodal analytics benchmark: batched image→structured attribute extraction setup plus accuracy vs batch size for Gemini 1.5 Pro, GPT-4 Turbo, Claude 3 Opus. |
+| ![Figure 21](assets/papers-explained-142-gemini-1-5-flash/fig-21.webp) | Core text evaluations table (Math & Science, General Reasoning, Coding, Multilinguality) comparing Gemini 1.0 Pro/Ultra with 1.5 Flash and 1.5 Pro. |
+| ![Figure 22](assets/papers-explained-142-gemini-1-5-flash/fig-22.webp) | Function-calling leaderboard-style splits (simple / multiple / parallel / relevance) with weighted averages for Gemini 1.0 Pro, 1.5 Flash, and 1.5 Pro. |
+| ![Figure 23](assets/papers-explained-142-gemini-1-5-flash/fig-23.webp) | Instruction-following accuracy on 1326 long prompts vs 406 shorter prompts: per-instruction vs full-response rates for Gemini 1.0 Pro/Ultra and 1.5 Flash/Pro (± CIs). |
+| ![Figure 24](assets/papers-explained-142-gemini-1-5-flash/fig-24.webp) | Expertise QA: share of responses rated Accurate vs Severely inaccurate across Gemini 1.0 Pro/Ultra and 1.5 Flash/Pro with bootstrap error bars. |
+| ![Figure 25](assets/papers-explained-142-gemini-1-5-flash/fig-25.webp) | Dolomites-style domain methodical tasks: LM-judge win rates topping at **55.3%** for Gemini 1.5 Pro among four Gemini variants. |
+| ![Figure 26](assets/papers-explained-142-gemini-1-5-flash/fig-26.webp) | STEM QA with context on Qasper: proportions of accurate vs inaccurate vs severely inaccurate sentences (± bootstrap CIs) for four Gemini models. |
+| ![Figure 27](assets/papers-explained-142-gemini-1-5-flash/fig-27.webp) | Preference breakdown (win / tie / loss %) for Gemini 1.5 Pro and Flash vs Gemini 1.0 Pro and Ultra on hard real-world GenAI prompts. |
+| ![Figure 28](assets/papers-explained-142-gemini-1-5-flash/fig-28.webp) | Frequency-weighted percent time saved by occupation when completing prompts with Gemini 1.5 Pro vs 1.0 Pro (ten industries, ± CIs). |
+| ![Figure 29](assets/papers-explained-142-gemini-1-5-flash/fig-29.webp) | Core vision & document multimodal benchmarks (reasoning, charts/documents, natural images) for Gemini 1.0 Pro/Ultra vs 1.5 Flash/Pro. |
+| ![Figure 30](assets/papers-explained-142-gemini-1-5-flash/fig-30.webp) | Video understanding results on captioning (VATEX/YouCook2), QA (ActivityNet-QA, EgoSchema), and embodied OpenEQA across Gemini 1.0 and 1.5 variants. |
+| ![Figure 31](assets/papers-explained-142-gemini-1-5-flash/fig-31.webp) | Speech benchmarks: ASR WER (YouTube, MLS, FLEURS) and AST BLEU (Covost 2) for USM, Whisper, and Gemini 1.0/1.5 models (best scores highlighted). |
+| ![Figure 32](assets/papers-explained-142-gemini-1-5-flash/fig-32.webp) | Math-specialized Gemini 1.5 Pro vs baseline 1.5 Pro, Claude 3 Opus, and GPT‑4 Turbo on MATH (with rm@256), AIME, Math Odyssey, HiddenMath, IMO‑Bench. |
+| ![Figure 33](assets/papers-explained-142-gemini-1-5-flash/fig-33.webp) | Long-context scaling for Gemini 1.5 Flash vs Flash‑8B: cumulative average NLL vs sequence position on documents (to 1M tokens) and code (to 2M) with power-law overlays. |
+| ![Figure 34](assets/papers-explained-142-gemini-1-5-flash/fig-34.webp) | Capability sweep comparing Gemini 1.5 Flash‑8B with full Flash on math, reasoning, coding, MGSM, Covost 2, MMMU, DocVQA, TextVQA, VATEX, etc. |
 ## Related
 
 - [[Papers Explained Corpus]]

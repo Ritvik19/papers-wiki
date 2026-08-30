@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-10-15_Papers-Explained-475--ModernVBERT-05494fe9f391.html`
+- Source file: `raw/2025-10-15_Papers-Explained-475--ModernVBERT-05494fe9f391.md`
 - Source title: Papers Explained 475: ModernVBERT
 - Published: 2025-10-15
 - Canonical: [https://medium.com/@ritvik19/papers-explained-475-modernvbert-05494fe9f391](https://medium.com/@ritvik19/papers-explained-475-modernvbert-05494fe9f391)
@@ -187,22 +187,22 @@ ModernVBERT: Towards Smaller Visual Document Retrievers [2510.01149](https://arx
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-10-15_Papers-Explained-475--ModernVBERT-05494fe9f391.html`); local copies under `wiki/assets/papers-explained-475-modernvbert/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-10-15_Papers-Explained-475--ModernVBERT-05494fe9f391.md`); local copies under `wiki/assets/papers-explained-475-modernvbert/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-475-modernvbert/fig-1.png) | Title card: ModernVBERT. |
-| ![Figure 2](assets/papers-explained-475-modernvbert/fig-2.png) | MLM-based early fusion architecture. |
-| ![Figure 3](assets/papers-explained-475-modernvbert/fig-3.png) | For decoder-based models, training is done with Causal Language Modeling (CLM) loss on the text tokens, as standardly done in VLM modality... |
-| ![Figure 4](assets/papers-explained-475-modernvbert/fig-4.png) | This training scheme is generalized to bidirectional encoder models by using the Masked Language Modeling (MLM) loss on the textual tokens. |
-| ![Figure 5](assets/papers-explained-475-modernvbert/fig-5.png) | The InfoNCE loss is employed. |
-| ![Figure 6](assets/papers-explained-475-modernvbert/fig-6.png) | Impact of Modality Alignment objective on downstream tasks. |
-| ![Figure 7](assets/papers-explained-475-modernvbert/fig-7.png) | Modality alignment scaling of early fusion encoders for up to 1 epoch (3.5B tokens) of data. |
-| ![Figure 8](assets/papers-explained-475-modernvbert/fig-8.png) | Impact of attention masks and training objectives on document retrieval performances. |
-| ![Figure 9](assets/papers-explained-475-modernvbert/fig-9.png) | Effect of image resolution on VL encoder abilities. |
-| ![Figure 10](assets/papers-explained-475-modernvbert/fig-10.png) | Impact of contrastive training mixtures on downstream tasks. |
-| ![Figure 11](assets/papers-explained-475-modernvbert/fig-11.png) | Pareto efficiency. |
-| ![Figure 12](assets/papers-explained-475-modernvbert/fig-12.png) | ViDoRe Leaderboard. |
+| ![Figure 1](assets/papers-explained-475-modernvbert/fig-1.webp) | Title card: ModernVBERT. |
+| ![Figure 2](assets/papers-explained-475-modernvbert/fig-2.webp) | MLM-based early fusion architecture. |
+| ![Figure 3](assets/papers-explained-475-modernvbert/fig-3.webp) | For decoder-based models, training is done with Causal Language Modeling (CLM) loss on the text tokens, as standardly done in VLM modality... |
+| ![Figure 4](assets/papers-explained-475-modernvbert/fig-4.webp) | This training scheme is generalized to bidirectional encoder models by using the Masked Language Modeling (MLM) loss on the textual tokens. |
+| ![Figure 5](assets/papers-explained-475-modernvbert/fig-5.webp) | The InfoNCE loss is employed. |
+| ![Figure 6](assets/papers-explained-475-modernvbert/fig-6.webp) | Impact of Modality Alignment objective on downstream tasks. |
+| ![Figure 7](assets/papers-explained-475-modernvbert/fig-7.webp) | Modality alignment scaling of early fusion encoders for up to 1 epoch (3.5B tokens) of data. |
+| ![Figure 8](assets/papers-explained-475-modernvbert/fig-8.webp) | Impact of attention masks and training objectives on document retrieval performances. |
+| ![Figure 9](assets/papers-explained-475-modernvbert/fig-9.webp) | Effect of image resolution on VL encoder abilities. |
+| ![Figure 10](assets/papers-explained-475-modernvbert/fig-10.webp) | Impact of contrastive training mixtures on downstream tasks. |
+| ![Figure 11](assets/papers-explained-475-modernvbert/fig-11.webp) | Pareto efficiency. |
+| ![Figure 12](assets/papers-explained-475-modernvbert/fig-12.webp) | ViDoRe Leaderboard. |
 ## Related
 
 - [[Papers Explained Corpus]]

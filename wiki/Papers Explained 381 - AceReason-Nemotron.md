@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-06-05_Papers-Explained-381--AceReason-Nemotron-0b3bd6495890.html`
+- Source file: `raw/2025-06-05_Papers-Explained-381--AceReason-Nemotron-0b3bd6495890.md`
 - Source title: Papers Explained 381: AceReason-Nemotron
 - Published: 2025-06-05
 - Canonical: [https://medium.com/@ritvik19/papers-explained-381-acereason-nemotron-0b3bd6495890](https://medium.com/@ritvik19/papers-explained-381-acereason-nemotron-0b3bd6495890)
@@ -95,13 +95,13 @@ AceReason-Nemotron: Advancing Math and Code Reasoning through Reinforcement Lear
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-06-05_Papers-Explained-381--AceReason-Nemotron-0b3bd6495890.html`); local copies under `wiki/assets/papers-explained-381-acereason-nemotron/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-06-05_Papers-Explained-381--AceReason-Nemotron-0b3bd6495890.md`); local copies under `wiki/assets/papers-explained-381-acereason-nemotron/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-381-acereason-nemotron/fig-1.png) | Title card: AceReason-Nemotron. |
-| ![Figure 2](assets/papers-explained-381-acereason-nemotron/fig-2.png) | Math only RL. |
-| ![Figure 3](assets/papers-explained-381-acereason-nemotron/fig-3.png) | Math and Code reasoning evaluation. |
+| ![Figure 1](assets/papers-explained-381-acereason-nemotron/fig-1.webp) | Title card: AceReason-Nemotron. |
+| ![Figure 2](assets/papers-explained-381-acereason-nemotron/fig-2.webp) | Math only RL. |
+| ![Figure 3](assets/papers-explained-381-acereason-nemotron/fig-3.webp) | Math and Code reasoning evaluation. |
 ## Related
 
 - [[Papers Explained Corpus]]

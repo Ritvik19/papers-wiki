@@ -1,3 +1,3 @@
 # optimization
 
-Canonical HTML: `raw/optimization/full-article.html`
+Canonical HTML: `raw/optimization/full-article.md`

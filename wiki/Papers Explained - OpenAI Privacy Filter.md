@@ -8,7 +8,7 @@ Official source: [[OpenAI Privacy Filter]].
 
 ## Source Metadata
 
-- Source file: `raw/draft_Papers-Explained--OpenAI-Privacy-Filter-04d7eae93107.html`
+- Source file: `raw/draft_Papers-Explained--OpenAI-Privacy-Filter-04d7eae93107.md`
 - Source title: Papers Explained: OpenAI Privacy Filter
 - Canonical: [https://medium.com/p/04d7eae93107](https://medium.com/p/04d7eae93107)
 
@@ -88,13 +88,13 @@ Evaluation Datasets:
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/draft_Papers-Explained--OpenAI-Privacy-Filter-04d7eae93107.html`); local copies under `wiki/assets/papers-explained-openai-privacy-filter/` when download succeeded.
+Figures from the Medium HTML export (`raw/draft_Papers-Explained--OpenAI-Privacy-Filter-04d7eae93107.md`); local copies under `wiki/assets/papers-explained-openai-privacy-filter/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-openai-privacy-filter/fig-1.png) | Title page from the OpenAI Privacy Filter model card. |
-| ![Figure 2](assets/papers-explained-openai-privacy-filter/fig-2.png) | Benchmark summary on PII-Masking-300k and CredData, reporting token-level precision/recall/F1 and span-level F1. |
-| ![Figure 3](assets/papers-explained-openai-privacy-filter/fig-3.png) | SPY fine-tuning data-fraction ablation: performance climbs rapidly from 1% to 10% and nearly saturates by 50%. |
+| ![Figure 1](assets/papers-explained-openai-privacy-filter/fig-1.webp) | Title page from the OpenAI Privacy Filter model card. |
+| ![Figure 2](assets/papers-explained-openai-privacy-filter/fig-2.webp) | Benchmark summary on PII-Masking-300k and CredData, reporting token-level precision/recall/F1 and span-level F1. |
+| ![Figure 3](assets/papers-explained-openai-privacy-filter/fig-3.webp) | SPY fine-tuning data-fraction ablation: performance climbs rapidly from 1% to 10% and nearly saturates by 50%. |
 ## Related
 
 - [[Papers Explained Corpus]]

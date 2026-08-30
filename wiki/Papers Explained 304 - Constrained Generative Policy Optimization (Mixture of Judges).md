@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-02-06_Papers-Explained-304--Constrained-Generative-Policy-Optimization--Mixture-of-Judges--71ae4b508b74.html`
+- Source file: `raw/2025-02-06_Papers-Explained-304--Constrained-Generative-Policy-Optimization--Mixture-of-Judges--71ae4b508b74.md`
 - Source title: Papers Explained 304: Constrained Generative Policy Optimization (Mixture of Judges)
 - Published: 2025-02-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-304-constrained-generative-policy-optimization-mixture-of-judges-71ae4b508b74](https://medium.com/@ritvik19/papers-explained-304-constrained-generative-policy-optimization-mixture-of-judges-71ae4b508b74)
@@ -205,20 +205,20 @@ The Perfect Blend: Redefining RLHF with Mixture of Judges [2409.20370](https://a
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-02-06_Papers-Explained-304--Constrained-Generative-Policy-Optimization--Mixture-of-Judges--71ae4b508b74.html`); local copies under `wiki/assets/papers-explained-304-constrained-generative-policy-optimization-mixture-of-judges/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-02-06_Papers-Explained-304--Constrained-Generative-Policy-Optimization--Mixture-of-Judges--71ae4b508b74.md`); local copies under `wiki/assets/papers-explained-304-constrained-generative-policy-optimization-mixture-of-judges/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-304-constrained-generative-policy-optimization-mixture-of-judges/fig-1.png) | Title card: Constrained Generative Policy Optimization (Mixture of Judges). |
-| ![Figure 2](assets/papers-explained-304-constrained-generative-policy-optimization-mixture-of-judges/fig-2.png) | Overview of CGPO pipeline. |
-| ![Figure 3](assets/papers-explained-304-constrained-generative-policy-optimization-mixture-of-judges/fig-3.png) | The generations are subsequently split into “Positive” and “Negative” groups, depending on the constraint satisfaction label. |
-| ![Figure 4](assets/papers-explained-304-constrained-generative-policy-optimization-mixture-of-judges/fig-4.png) | CGPO in a multi-tasks setting. |
-| ![Figure 5](assets/papers-explained-304-constrained-generative-policy-optimization-mixture-of-judges/fig-5.png) | CGPO in Multi-Taks with Multi-Objectives. |
-| ![Figure 6](assets/papers-explained-304-constrained-generative-policy-optimization-mixture-of-judges/fig-6.png) | Tasks and their corresponding prompt sets, reward models, and MoJs. |
-| ![Figure 7](assets/papers-explained-304-constrained-generative-policy-optimization-mixture-of-judges/fig-7.png) | Comparison of CGPO variants with baseline RLHF algorithms PPO and DPO across various benchmarks. |
-| ![Figure 8](assets/papers-explained-304-constrained-generative-policy-optimization-mixture-of-judges/fig-8.png) | Evaluation results of SFT, DPO warm-up, DPO, PPO and CGPO variants. |
-| ![Figure 9](assets/papers-explained-304-constrained-generative-policy-optimization-mixture-of-judges/fig-9.png) | Comparison of CGPO (CRPG optimizer) with and without MoJs. |
-| ![Figure 10](assets/papers-explained-304-constrained-generative-policy-optimization-mixture-of-judges/fig-10.png) | Comparison of CGPO (CRPG optimizer) with different starting point. |
+| ![Figure 1](assets/papers-explained-304-constrained-generative-policy-optimization-mixture-of-judges/fig-1.webp) | Title card: Constrained Generative Policy Optimization (Mixture of Judges). |
+| ![Figure 2](assets/papers-explained-304-constrained-generative-policy-optimization-mixture-of-judges/fig-2.webp) | Overview of CGPO pipeline. |
+| ![Figure 3](assets/papers-explained-304-constrained-generative-policy-optimization-mixture-of-judges/fig-3.webp) | The generations are subsequently split into “Positive” and “Negative” groups, depending on the constraint satisfaction label. |
+| ![Figure 4](assets/papers-explained-304-constrained-generative-policy-optimization-mixture-of-judges/fig-4.webp) | CGPO in a multi-tasks setting. |
+| ![Figure 5](assets/papers-explained-304-constrained-generative-policy-optimization-mixture-of-judges/fig-5.webp) | CGPO in Multi-Taks with Multi-Objectives. |
+| ![Figure 6](assets/papers-explained-304-constrained-generative-policy-optimization-mixture-of-judges/fig-6.webp) | Tasks and their corresponding prompt sets, reward models, and MoJs. |
+| ![Figure 7](assets/papers-explained-304-constrained-generative-policy-optimization-mixture-of-judges/fig-7.webp) | Comparison of CGPO variants with baseline RLHF algorithms PPO and DPO across various benchmarks. |
+| ![Figure 8](assets/papers-explained-304-constrained-generative-policy-optimization-mixture-of-judges/fig-8.webp) | Evaluation results of SFT, DPO warm-up, DPO, PPO and CGPO variants. |
+| ![Figure 9](assets/papers-explained-304-constrained-generative-policy-optimization-mixture-of-judges/fig-9.webp) | Comparison of CGPO (CRPG optimizer) with and without MoJs. |
+| ![Figure 10](assets/papers-explained-304-constrained-generative-policy-optimization-mixture-of-judges/fig-10.webp) | Comparison of CGPO (CRPG optimizer) with different starting point. |
 ## Related
 
 - [[Papers Explained Corpus]]

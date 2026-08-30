@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-10-06_Papers-Explained-59--Falcon-26831087247f.html`
+- Source file: `raw/2023-10-06_Papers-Explained-59--Falcon-26831087247f.md`
 - Source title: Papers Explained 59: Falcon
 - Published: 2023-10-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-59-falcon-26831087247f](https://medium.com/@ritvik19/papers-explained-59-falcon-26831087247f)
@@ -123,18 +123,18 @@ The RefinedWeb Dataset for Falcon LLM: Outperforming Curated Corpora with Web Da
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-10-06_Papers-Explained-59--Falcon-26831087247f.html`); local copies under `wiki/assets/papers-explained-59-falcon/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-10-06_Papers-Explained-59--Falcon-26831087247f.md`); local copies under `wiki/assets/papers-explained-59-falcon/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-59-falcon/fig-1.png) | Title card: Falcon. |
-| ![Figure 2](assets/papers-explained-59-falcon/fig-2.png) | Subsequent stages of Macrodata Refinement remove nearly 90% of the documents originally in CommonCrawl. |
-| ![Figure 3](assets/papers-explained-59-falcon/fig-3.png) | To evaluate models trained on RefinedWeb and compare to the state-of-the-art, Four aggregates are built across 18 tasks on which to measure zero-shot performance. |
-| ![Figure 4](assets/papers-explained-59-falcon/fig-4.png) | Curation is not a silver bullet for zero-shot generalization: small-scale models trained on REFINEDWEB outperform models trained on web data (C4, OSCAR), and on curated corpora (The Pile). |
-| ![Figure 5](assets/papers-explained-59-falcon/fig-5.png) | Models trained on REFINEDWEB alone outperform models trained on curated corpora. |
-| ![Figure 6](assets/papers-explained-59-falcon/fig-6.png) | Models trained on REFINEDWEB alone outperform models trained on curated corpora. |
-| ![Figure 7](assets/papers-explained-59-falcon/fig-7.png) | Although improvements from filtering are not systematic across datasets, deduplication brings a steady performance boost across the board. |
-| ![Figure 8](assets/papers-explained-59-falcon/fig-8.png) | Toxic content in RefinedWeb is distributed similarly to The Pile. Cumulative proportion of documents below a given toxicity score, as evaluated by the Pespective API. |
+| ![Figure 1](assets/papers-explained-59-falcon/fig-1.webp) | Title card: Falcon. |
+| ![Figure 2](assets/papers-explained-59-falcon/fig-2.webp) | Subsequent stages of Macrodata Refinement remove nearly 90% of the documents originally in CommonCrawl. |
+| ![Figure 3](assets/papers-explained-59-falcon/fig-3.webp) | To evaluate models trained on RefinedWeb and compare to the state-of-the-art, Four aggregates are built across 18 tasks on which to measure zero-shot performance. |
+| ![Figure 4](assets/papers-explained-59-falcon/fig-4.webp) | Curation is not a silver bullet for zero-shot generalization: small-scale models trained on REFINEDWEB outperform models trained on web data (C4, OSCAR), and on curated corpora (The Pile). |
+| ![Figure 5](assets/papers-explained-59-falcon/fig-5.webp) | Models trained on REFINEDWEB alone outperform models trained on curated corpora. |
+| ![Figure 6](assets/papers-explained-59-falcon/fig-6.webp) | Models trained on REFINEDWEB alone outperform models trained on curated corpora. |
+| ![Figure 7](assets/papers-explained-59-falcon/fig-7.webp) | Although improvements from filtering are not systematic across datasets, deduplication brings a steady performance boost across the board. |
+| ![Figure 8](assets/papers-explained-59-falcon/fig-8.webp) | Toxic content in RefinedWeb is distributed similarly to The Pile. Cumulative proportion of documents below a given toxicity score, as evaluated by the Pespective API. |
 ## Related
 
 - [[Papers Explained Corpus]]

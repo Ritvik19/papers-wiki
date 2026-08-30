@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-03-20_Papers-Explained-38--Longformer-9a08416c532e.html`
+- Source file: `raw/2023-03-20_Papers-Explained-38--Longformer-9a08416c532e.md`
 - Source title: Papers Explained 38: Longformer
 - Published: 2023-03-20
 - Canonical: [https://medium.com/@ritvik19/papers-explained-38-longformer-9a08416c532e](https://medium.com/@ritvik19/papers-explained-38-longformer-9a08416c532e)
@@ -87,13 +87,13 @@ Longformer: The Long-Document Transformer [2004.05150](https://arxiv.org/abs/200
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-03-20_Papers-Explained-38--Longformer-9a08416c532e.html`); local copies under `wiki/assets/papers-explained-38-longformer/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-03-20_Papers-Explained-38--Longformer-9a08416c532e.md`); local copies under `wiki/assets/papers-explained-38-longformer/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-38-longformer/fig-1.png) | Title card: Longformer. |
-| ![Figure 2](assets/papers-explained-38-longformer/fig-2.png) | The original Transformer model has a self-attention component with O(n²) time and memory complexity where n is the input sequence length. |
-| ![Figure 3](assets/papers-explained-38-longformer/fig-3.png) | We pretrain Longformer using fairseq on a corpus of long documents. |
+| ![Figure 1](assets/papers-explained-38-longformer/fig-1.webp) | Title card: Longformer. |
+| ![Figure 2](assets/papers-explained-38-longformer/fig-2.webp) | The original Transformer model has a self-attention component with O(n²) time and memory complexity where n is the input sequence length. |
+| ![Figure 3](assets/papers-explained-38-longformer/fig-3.webp) | We pretrain Longformer using fairseq on a corpus of long documents. |
 ## Related
 
 - [[Papers Explained Corpus]]

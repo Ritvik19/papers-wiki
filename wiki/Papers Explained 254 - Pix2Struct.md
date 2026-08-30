@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-11-18_Papers-Explained-254--Pix2Struct-6adc95a01586.html`
+- Source file: `raw/2024-11-18_Papers-Explained-254--Pix2Struct-6adc95a01586.md`
 - Source title: Papers Explained 254: Pix2Struct
 - Published: 2024-11-18
 - Canonical: [https://medium.com/@ritvik19/papers-explained-254-pix2struct-6adc95a01586](https://medium.com/@ritvik19/papers-explained-254-pix2struct-6adc95a01586)
@@ -177,16 +177,16 @@ Recommended Reading: [Document Information Processing](https://ritvik19.medium.c
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-11-18_Papers-Explained-254--Pix2Struct-6adc95a01586.html`); local copies under `wiki/assets/papers-explained-254-pix2struct/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-11-18_Papers-Explained-254--Pix2Struct-6adc95a01586.md`); local copies under `wiki/assets/papers-explained-254-pix2struct/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-254-pix2struct/fig-1.png) | Title card: Pix2Struct. |
-| ![Figure 2](assets/papers-explained-254-pix2struct/fig-2.png) | Comparison of variable resolution inputs and the typical fixed resolution input. |
-| ![Figure 3](assets/papers-explained-254-pix2struct/fig-3.png) | Toy illustration of input-output pairs (right) sampled from the original web page (left). |
-| ![Figure 4](assets/papers-explained-254-pix2struct/fig-4.png) | Summary of proposed diverse benchmark for visually-situated language understanding. |
-| ![Figure 5](assets/papers-explained-254-pix2struct/fig-5.png) | Examples of visually-situated language understanding tasks, including pretraining task (screenshot parsing) diagram QA (AI2D), app captioning (Screen2Words), and document QA (DocVQA). |
-| ![Figure 6](assets/papers-explained-254-pix2struct/fig-6.png) | Pix2Struct outperforms prior visual methods on 8 out of 9 benchmarks with SotA results on 6. |
+| ![Figure 1](assets/papers-explained-254-pix2struct/fig-1.webp) | Title card: Pix2Struct. |
+| ![Figure 2](assets/papers-explained-254-pix2struct/fig-2.webp) | Comparison of variable resolution inputs and the typical fixed resolution input. |
+| ![Figure 3](assets/papers-explained-254-pix2struct/fig-3.webp) | Toy illustration of input-output pairs (right) sampled from the original web page (left). |
+| ![Figure 4](assets/papers-explained-254-pix2struct/fig-4.webp) | Summary of proposed diverse benchmark for visually-situated language understanding. |
+| ![Figure 5](assets/papers-explained-254-pix2struct/fig-5.webp) | Examples of visually-situated language understanding tasks, including pretraining task (screenshot parsing) diagram QA (AI2D), app captioning (Screen2Words), and document QA (DocVQA). |
+| ![Figure 6](assets/papers-explained-254-pix2struct/fig-6.webp) | Pix2Struct outperforms prior visual methods on 8 out of 9 benchmarks with SotA results on 6. |
 ## Related
 
 - [[Papers Explained Corpus]]

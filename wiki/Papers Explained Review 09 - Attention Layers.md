@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-12-27_Papers-Explained-Review-09--Attention-Layers-beeef323e7f5.html`
+- Source file: `raw/2024-12-27_Papers-Explained-Review-09--Attention-Layers-beeef323e7f5.md`
 - Source title: Papers Explained Review 09: Attention Layers
 - Published: 2024-12-27
 - Canonical: [https://medium.com/@ritvik19/papers-explained-review-09-attention-layers-beeef323e7f5](https://medium.com/@ritvik19/papers-explained-review-09-attention-layers-beeef323e7f5)
@@ -125,11 +125,11 @@ GQA differs from MQA in that MQA uses multiple query heads but only a single key
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-12-27_Papers-Explained-Review-09--Attention-Layers-beeef323e7f5.html`); local copies under `wiki/assets/papers-explained-review-09-attention-layers/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-12-27_Papers-Explained-Review-09--Attention-Layers-beeef323e7f5.md`); local copies under `wiki/assets/papers-explained-review-09-attention-layers/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-review-09-attention-layers/fig-1.png) | Title card: Attention Layers. |
+| ![Figure 1](assets/papers-explained-review-09-attention-layers/fig-1.webp) | Title card: Attention Layers. |
 ## Related
 
 - [[Papers Explained Corpus]]

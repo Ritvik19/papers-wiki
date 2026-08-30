@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-03-06_Papers-Explained-33--ELMo-76362a43e4.html`
+- Source file: `raw/2023-03-06_Papers-Explained-33--ELMo-76362a43e4.md`
 - Source title: Papers Explained 33: ELMo
 - Published: 2023-03-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-33-elmo-76362a43e4](https://medium.com/@ritvik19/papers-explained-33-elmo-76362a43e4)
@@ -65,12 +65,12 @@ Deep contextualized word representations [1802.05365](https://arxiv.org/abs/1802
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-03-06_Papers-Explained-33--ELMo-76362a43e4.html`); local copies under `wiki/assets/papers-explained-33-elmo/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-03-06_Papers-Explained-33--ELMo-76362a43e4.md`); local copies under `wiki/assets/papers-explained-33-elmo/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-33-elmo/fig-1.png) | Title card: ELMo. |
-| ![Figure 2](assets/papers-explained-33-elmo/fig-2.png) | The Elmo model consists of three main components. |
+| ![Figure 1](assets/papers-explained-33-elmo/fig-1.webp) | Title card: ELMo. |
+| ![Figure 2](assets/papers-explained-33-elmo/fig-2.webp) | The Elmo model consists of three main components. |
 ## Related
 
 - [[Papers Explained Corpus]]

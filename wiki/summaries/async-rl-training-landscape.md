@@ -1,6 +1,6 @@
 # Keep the Tokens Flowing: Lessons From 16 Open-Source RL Libraries
 
-**Source**: `raw/async-rl-training-landscape/full-article.html` (364 KB), `raw/async-rl-training-landscape/full-article.md`
+**Source**: `raw/async-rl-training-landscape/full-article.md` (364 KB), `raw/async-rl-training-landscape/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

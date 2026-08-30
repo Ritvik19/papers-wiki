@@ -1,6 +1,6 @@
 # Mistral Small 3.1
 
-**Source**: `raw/mistral-small-3-1/full-article.html` (217 KB), `raw/mistral-small-3-1/full-article.md` (markdown view)  
+**Source**: `raw/mistral-small-3-1/full-article.md` (217 KB), `raw/mistral-small-3-1/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/mistral-small-3-1/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -28,9 +28,9 @@ Deployment fits a single RTX 4090 or 32GB Mac. Weights on Hugging Face; API on l
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/mistral-small-3-1/fig-1.png) | GPQA Diamond and combined performance vs. Gemma 3 and GPT-4o Mini | — |
+| ![fig-1](../assets/mistral-small-3-1/fig-1.webp) | GPQA Diamond and combined performance vs. Gemma 3 and GPT-4o Mini | — |
 
-![Performance vs. proprietary small models](../assets/mistral-small-3-1/fig-1.png)
+![Performance vs. proprietary small models](../assets/mistral-small-3-1/fig-1.webp)
 
 ## Entities
 

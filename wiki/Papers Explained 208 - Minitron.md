@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-09-11_Papers-Explained-208--Minitron-e55ea374d9dd.html`
+- Source file: `raw/2024-09-11_Papers-Explained-208--Minitron-e55ea374d9dd.md`
 - Source title: Papers Explained 208: Minitron
 - Published: 2024-09-11
 - Canonical: [https://medium.com/@ritvik19/papers-explained-208-minitron-e55ea374d9dd](https://medium.com/@ritvik19/papers-explained-208-minitron-e55ea374d9dd)
@@ -133,23 +133,23 @@ Compact Language Models via Pruning and Knowledge Distillation [2407.14679](http
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-09-11_Papers-Explained-208--Minitron-e55ea374d9dd.html`); local copies under `wiki/assets/papers-explained-208-minitron/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-09-11_Papers-Explained-208--Minitron-e55ea374d9dd.md`); local copies under `wiki/assets/papers-explained-208-minitron/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-208-minitron/fig-1.png) | Compact Language Models via Pruning and Knowledge Distillation paper title. |
-| ![Figure 2](assets/papers-explained-208-minitron/fig-2.png) | Iterative pruning and distillation overview for Minitron. |
-| ![Figure 3](assets/papers-explained-208-minitron/fig-3.png) | Importance-score formulas aggregated over batch and sequence dimensions. |
-| ![Figure 4](assets/papers-explained-208-minitron/fig-4.png) | Block-importance formula used in architecture search. |
-| ![Figure 5](assets/papers-explained-208-minitron/fig-5.png) | Neural architecture search pipeline from search space to final model. |
-| ![Figure 6](assets/papers-explained-208-minitron/fig-6.png) | Distillation overview with teacher-student losses at embedding, block, head, and logits levels. |
-| ![Figure 7](assets/papers-explained-208-minitron/fig-7.png) | Temperature-softmax probability formula used in distillation. |
-| ![Figure 8](assets/papers-explained-208-minitron/fig-8.png) | Logits distillation loss formulation. |
-| ![Figure 9](assets/papers-explained-208-minitron/fig-9.png) | Hidden-state distillation loss formulation. |
-| ![Figure 10](assets/papers-explained-208-minitron/fig-10.png) | Architecture details for Nemotron and pruned Minitron variants. |
-| ![Figure 11](assets/papers-explained-208-minitron/fig-11.png) | Benchmark comparison vs Llama-3 8B, Llama-2, Mistral, Gemma, Nemotron-4, and Nemotron-3. |
-| ![Figure 12](assets/papers-explained-208-minitron/fig-12.png) | Benchmark comparison vs Phi-2, Gemma variants, Qwen2, and MiniCPM. |
-| ![Figure 13](assets/papers-explained-208-minitron/fig-13.png) | Compression-method comparison against LLMPruner, SliceGPT, LaCo, and ShortGPT. |
+| ![Figure 1](assets/papers-explained-208-minitron/fig-1.webp) | Compact Language Models via Pruning and Knowledge Distillation paper title. |
+| ![Figure 2](assets/papers-explained-208-minitron/fig-2.webp) | Iterative pruning and distillation overview for Minitron. |
+| ![Figure 3](assets/papers-explained-208-minitron/fig-3.webp) | Importance-score formulas aggregated over batch and sequence dimensions. |
+| ![Figure 4](assets/papers-explained-208-minitron/fig-4.webp) | Block-importance formula used in architecture search. |
+| ![Figure 5](assets/papers-explained-208-minitron/fig-5.webp) | Neural architecture search pipeline from search space to final model. |
+| ![Figure 6](assets/papers-explained-208-minitron/fig-6.webp) | Distillation overview with teacher-student losses at embedding, block, head, and logits levels. |
+| ![Figure 7](assets/papers-explained-208-minitron/fig-7.webp) | Temperature-softmax probability formula used in distillation. |
+| ![Figure 8](assets/papers-explained-208-minitron/fig-8.webp) | Logits distillation loss formulation. |
+| ![Figure 9](assets/papers-explained-208-minitron/fig-9.webp) | Hidden-state distillation loss formulation. |
+| ![Figure 10](assets/papers-explained-208-minitron/fig-10.webp) | Architecture details for Nemotron and pruned Minitron variants. |
+| ![Figure 11](assets/papers-explained-208-minitron/fig-11.webp) | Benchmark comparison vs Llama-3 8B, Llama-2, Mistral, Gemma, Nemotron-4, and Nemotron-3. |
+| ![Figure 12](assets/papers-explained-208-minitron/fig-12.webp) | Benchmark comparison vs Phi-2, Gemma variants, Qwen2, and MiniCPM. |
+| ![Figure 13](assets/papers-explained-208-minitron/fig-13.webp) | Compression-method comparison against LLMPruner, SliceGPT, LaCo, and ShortGPT. |
 ## Related
 
 - [[Papers Explained Corpus]]

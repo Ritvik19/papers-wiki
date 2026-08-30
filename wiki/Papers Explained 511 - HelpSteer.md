@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-12-29_Papers-Explained-511--HelpSteer-8653a643a462.html`
+- Source file: `raw/2025-12-29_Papers-Explained-511--HelpSteer-8653a643a462.md`
 - Source title: Papers Explained 511: HelpSteer
 - Published: 2025-12-29
 - Canonical: [https://medium.com/@ritvik19/papers-explained-511-helpsteer-8653a643a462](https://medium.com/@ritvik19/papers-explained-511-helpsteer-8653a643a462)
@@ -123,14 +123,14 @@ HelpSteer: Multi-attribute Helpfulness Dataset for SteerLM [2311.09528](https://
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-12-29_Papers-Explained-511--HelpSteer-8653a643a462.html`); local copies under `wiki/assets/papers-explained-511-helpsteer/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-12-29_Papers-Explained-511--HelpSteer-8653a643a462.md`); local copies under `wiki/assets/papers-explained-511-helpsteer/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-511-helpsteer/fig-1.png) | Title card: HelpSteer. |
-| ![Figure 2](assets/papers-explained-511-helpsteer/fig-2.png) | Descriptive statistics for helpfulness-relevant attributes in HelpSteer and Open Assistant. |
-| ![Figure 3](assets/papers-explained-511-helpsteer/fig-3.png) | Automatic evaluation of SteerLM against baseline models. |
-| ![Figure 4](assets/papers-explained-511-helpsteer/fig-4.png) | Human Evaluation. |
+| ![Figure 1](assets/papers-explained-511-helpsteer/fig-1.webp) | Title card: HelpSteer. |
+| ![Figure 2](assets/papers-explained-511-helpsteer/fig-2.webp) | Descriptive statistics for helpfulness-relevant attributes in HelpSteer and Open Assistant. |
+| ![Figure 3](assets/papers-explained-511-helpsteer/fig-3.webp) | Automatic evaluation of SteerLM against baseline models. |
+| ![Figure 4](assets/papers-explained-511-helpsteer/fig-4.webp) | Human Evaluation. |
 ## Related
 
 - [[Papers Explained Corpus]]

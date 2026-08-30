@@ -1,6 +1,6 @@
 # Trust Region and Proximal Policy Optimization (TRPO and PPO)
 
-**Source**: `raw/trpo-ppo/full-article.html` (331 KB), `raw/trpo-ppo/full-article.md` (markdown view)  
+**Source**: `raw/trpo-ppo/full-article.md` (331 KB), `raw/trpo-ppo/full-article.md` (markdown view)  
 **URL**: https://theaisummer.com/TRPO_PPO/  
 **Author**: Sergios Karagiannakos (AI Summer), 2019-01-11  
 **Ingested**: 2026-06-06  

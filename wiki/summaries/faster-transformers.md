@@ -1,6 +1,6 @@
 # Tricks From OpenAI gpt-oss You Can Use With Transformers
 
-**Source**: `raw/faster-transformers/full-article.html` (256 KB), `raw/faster-transformers/full-article.md`
+**Source**: `raw/faster-transformers/full-article.md` (256 KB), `raw/faster-transformers/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

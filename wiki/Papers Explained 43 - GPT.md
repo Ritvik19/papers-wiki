@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-04-24_Papers-Explained-43--GPT-30b6f1e6d226.html`
+- Source file: `raw/2023-04-24_Papers-Explained-43--GPT-30b6f1e6d226.md`
 - Source title: Papers Explained 43: GPT
 - Published: 2023-04-24
 - Canonical: [https://medium.com/@ritvik19/papers-explained-43-gpt-30b6f1e6d226](https://medium.com/@ritvik19/papers-explained-43-gpt-30b6f1e6d226)
@@ -81,20 +81,20 @@ Our model largely follows the original transformer work. We trained a 12-layer d
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-04-24_Papers-Explained-43--GPT-30b6f1e6d226.html`); local copies under `wiki/assets/papers-explained-43-gpt/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-04-24_Papers-Explained-43--GPT-30b6f1e6d226.md`); local copies under `wiki/assets/papers-explained-43-gpt/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-43-gpt/fig-1.png) | Title card: GPT. |
-| ![Figure 2](assets/papers-explained-43-gpt/fig-2.png) | (left) Transformer architecture and training objectives used in this work. (right) Input transformations for fine-tuning on different tasks. We convert all structured inputs into token sequences to be processed by our pre-trained model, followed by a linear+softmax layer. |
-| ![Figure 3](assets/papers-explained-43-gpt/fig-3.png) | Given an unsupervised corpus of tokens U = {u1,..., un}, we use a standard language modeling objective to maximize the following likelihood. |
-| ![Figure 4](assets/papers-explained-43-gpt/fig-4.png) | This gives us the following objective to maximize. |
-| ![Figure 5](assets/papers-explained-43-gpt/fig-5.png) | This gives us the following objective to maximize. |
-| ![Figure 6](assets/papers-explained-43-gpt/fig-6.png) | This gives us the following objective to maximize:: Overall, the only extra parameters we require during fine-tuning are Wy, and embeddings for delimiter tokens. |
-| ![Figure 7](assets/papers-explained-43-gpt/fig-7.png) | A list of the different tasks and datasets used in our experiments. |
-| ![Figure 8](assets/papers-explained-43-gpt/fig-8.png) | Experimental results on natural language inference tasks, comparing our model with current state-of-the-art methods. 5x indicates an ensemble of 5 models. All datasets use accuracy as the evaluation metric. |
-| ![Figure 9](assets/papers-explained-43-gpt/fig-9.png) | Results on question answering and commonsense reasoning, comparing our model with current state-of-the-art methods.. 9x means an ensemble of 9 models. |
-| ![Figure 10](assets/papers-explained-43-gpt/fig-10.png) | Semantic similarity and classification results, comparing our model with current state-of-theart methods. All task evaluations in this table were done using the GLUE benchmark. (mc= Mathews correlation, acc=Accuracy, pc=Pearson correlation). |
+| ![Figure 1](assets/papers-explained-43-gpt/fig-1.webp) | Title card: GPT. |
+| ![Figure 2](assets/papers-explained-43-gpt/fig-2.webp) | (left) Transformer architecture and training objectives used in this work. (right) Input transformations for fine-tuning on different tasks. We convert all structured inputs into token sequences to be processed by our pre-trained model, followed by a linear+softmax layer. |
+| ![Figure 3](assets/papers-explained-43-gpt/fig-3.webp) | Given an unsupervised corpus of tokens U = {u1,..., un}, we use a standard language modeling objective to maximize the following likelihood. |
+| ![Figure 4](assets/papers-explained-43-gpt/fig-4.webp) | This gives us the following objective to maximize. |
+| ![Figure 5](assets/papers-explained-43-gpt/fig-5.webp) | This gives us the following objective to maximize. |
+| ![Figure 6](assets/papers-explained-43-gpt/fig-6.webp) | This gives us the following objective to maximize:: Overall, the only extra parameters we require during fine-tuning are Wy, and embeddings for delimiter tokens. |
+| ![Figure 7](assets/papers-explained-43-gpt/fig-7.webp) | A list of the different tasks and datasets used in our experiments. |
+| ![Figure 8](assets/papers-explained-43-gpt/fig-8.webp) | Experimental results on natural language inference tasks, comparing our model with current state-of-the-art methods. 5x indicates an ensemble of 5 models. All datasets use accuracy as the evaluation metric. |
+| ![Figure 9](assets/papers-explained-43-gpt/fig-9.webp) | Results on question answering and commonsense reasoning, comparing our model with current state-of-the-art methods.. 9x means an ensemble of 9 models. |
+| ![Figure 10](assets/papers-explained-43-gpt/fig-10.webp) | Semantic similarity and classification results, comparing our model with current state-of-theart methods. All task evaluations in this table were done using the GLUE benchmark. (mc= Mathews correlation, acc=Accuracy, pc=Pearson correlation). |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -1,6 +1,6 @@
 ---
 Source URL: https://deploymentsafety.openai.com/sora-2
-Fetched via: WebFetch (canonical raw is full-article.html via curl; this is the markdown sibling)
+Fetched via: WebFetch (canonical raw is full-article.md via curl; this is the markdown sibling)
 ---
 
 # Sora 2 System Card - OpenAI Deployment Safety Hub

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-07-04_Papers-Explained-402--MVTamperBench-828a22e9e0b9.html`
+- Source file: `raw/2025-07-04_Papers-Explained-402--MVTamperBench-828a22e9e0b9.md`
 - Source title: Papers Explained 402: MVTamperBench
 - Published: 2025-07-04
 - Canonical: [https://medium.com/@ritvik19/papers-explained-402-mvtamperbench-828a22e9e0b9](https://medium.com/@ritvik19/papers-explained-402-mvtamperbench-828a22e9e0b9)
@@ -90,18 +90,18 @@ MVTamperBench: Evaluating Robustness of Vision-Language Models [2412.19794](http
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-07-04_Papers-Explained-402--MVTamperBench-828a22e9e0b9.html`); local copies under `wiki/assets/papers-explained-402-mvtamperbench/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-07-04_Papers-Explained-402--MVTamperBench-828a22e9e0b9.md`); local copies under `wiki/assets/papers-explained-402-mvtamperbench/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-402-mvtamperbench/fig-1.png) | Title card: MVTamperBench. |
-| ![Figure 2](assets/papers-explained-402-mvtamperbench/fig-2.png) | Illustration of the five video frame tampering techniques. |
-| ![Figure 3](assets/papers-explained-402-mvtamperbench/fig-3.png) | Summary of Datasets in MVTamperBench. |
-| ![Figure 4](assets/papers-explained-402-mvtamperbench/fig-4.png) | Comparison between Video and Image Analysis Benchmarks. |
-| ![Figure 5](assets/papers-explained-402-mvtamperbench/fig-5.png) | Distribution of F1 (overall) scores across models. |
-| ![Figure 6](assets/papers-explained-402-mvtamperbench/fig-6.png) | Scatter plot between model size and overall F1. |
-| ![Figure 7](assets/papers-explained-402-mvtamperbench/fig-7.png) | F1 scores across models and tampering types. |
-| ![Figure 8](assets/papers-explained-402-mvtamperbench/fig-8.png) | F1 (overall) scores for task categories in MVTamperBench. |
+| ![Figure 1](assets/papers-explained-402-mvtamperbench/fig-1.webp) | Title card: MVTamperBench. |
+| ![Figure 2](assets/papers-explained-402-mvtamperbench/fig-2.webp) | Illustration of the five video frame tampering techniques. |
+| ![Figure 3](assets/papers-explained-402-mvtamperbench/fig-3.webp) | Summary of Datasets in MVTamperBench. |
+| ![Figure 4](assets/papers-explained-402-mvtamperbench/fig-4.webp) | Comparison between Video and Image Analysis Benchmarks. |
+| ![Figure 5](assets/papers-explained-402-mvtamperbench/fig-5.webp) | Distribution of F1 (overall) scores across models. |
+| ![Figure 6](assets/papers-explained-402-mvtamperbench/fig-6.webp) | Scatter plot between model size and overall F1. |
+| ![Figure 7](assets/papers-explained-402-mvtamperbench/fig-7.webp) | F1 scores across models and tampering types. |
+| ![Figure 8](assets/papers-explained-402-mvtamperbench/fig-8.webp) | F1 (overall) scores for task categories in MVTamperBench. |
 ## Related
 
 - [[Papers Explained Corpus]]

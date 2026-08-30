@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-05-06_Papers-Explained-359--Phi-4-Mini-Reasoning-251652be3e39.html`
+- Source file: `raw/2025-05-06_Papers-Explained-359--Phi-4-Mini-Reasoning-251652be3e39.md`
 - Source title: Papers Explained 359: Phi-4-Mini-Reasoning
 - Published: 2025-05-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-359-phi-4-mini-reasoning-251652be3e39](https://medium.com/@ritvik19/papers-explained-359-phi-4-mini-reasoning-251652be3e39)
@@ -111,13 +111,13 @@ Phi-4-Mini-Reasoning: Exploring the Limits of Small Reasoning Language Models in
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-05-06_Papers-Explained-359--Phi-4-Mini-Reasoning-251652be3e39.html`); local copies under `wiki/assets/papers-explained-359-phi-4-mini-reasoning/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-05-06_Papers-Explained-359--Phi-4-Mini-Reasoning-251652be3e39.md`); local copies under `wiki/assets/papers-explained-359-phi-4-mini-reasoning/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-359-phi-4-mini-reasoning/fig-1.png) | Title card: Phi-4-Mini-Reasoning. |
-| ![Figure 2](assets/papers-explained-359-phi-4-mini-reasoning/fig-2.png) | Overview of the data resources used for constructing the reasoning dataset. |
-| ![Figure 3](assets/papers-explained-359-phi-4-mini-reasoning/fig-3.png) | Pass@1 CoT Reasoning results. |
+| ![Figure 1](assets/papers-explained-359-phi-4-mini-reasoning/fig-1.webp) | Title card: Phi-4-Mini-Reasoning. |
+| ![Figure 2](assets/papers-explained-359-phi-4-mini-reasoning/fig-2.webp) | Overview of the data resources used for constructing the reasoning dataset. |
+| ![Figure 3](assets/papers-explained-359-phi-4-mini-reasoning/fig-3.webp) | Pass@1 CoT Reasoning results. |
 ## Related
 
 - [[Papers Explained Corpus]]

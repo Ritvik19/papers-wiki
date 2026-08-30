@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-01-31_Papers-Explained-300--Shiksha-ad09f6db7f38.html`
+- Source file: `raw/2025-01-31_Papers-Explained-300--Shiksha-ad09f6db7f38.md`
 - Source title: Papers Explained 300: Shiksha
 - Published: 2025-01-31
 - Canonical: [https://medium.com/@ritvik19/papers-explained-300-shiksha-ad09f6db7f38](https://medium.com/@ritvik19/papers-explained-300-shiksha-ad09f6db7f38)
@@ -81,13 +81,13 @@ Shiksha: A Technical Domain focused Translation Dataset and Model for Indian Lan
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-01-31_Papers-Explained-300--Shiksha-ad09f6db7f38.html`); local copies under `wiki/assets/papers-explained-300-shiksha/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-01-31_Papers-Explained-300--Shiksha-ad09f6db7f38.md`); local copies under `wiki/assets/papers-explained-300-shiksha/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-300-shiksha/fig-1.png) | Title card: Shiksha. |
-| ![Figure 2](assets/papers-explained-300-shiksha/fig-2.png) | Example translations from English to Hindi in the Scientific/Technical domain. |
-| ![Figure 3](assets/papers-explained-300-shiksha/fig-3.png) | Results (bleu/chrf++). |
+| ![Figure 1](assets/papers-explained-300-shiksha/fig-1.webp) | Title card: Shiksha. |
+| ![Figure 2](assets/papers-explained-300-shiksha/fig-2.webp) | Example translations from English to Hindi in the Scientific/Technical domain. |
+| ![Figure 3](assets/papers-explained-300-shiksha/fig-3.webp) | Results (bleu/chrf++). |
 ## Related
 
 - [[Papers Explained Corpus]]

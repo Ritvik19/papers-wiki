@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-01-13_Papers-Explained-286--NuNER-03e092dfb6ff.html`
+- Source file: `raw/2025-01-13_Papers-Explained-286--NuNER-03e092dfb6ff.md`
 - Source title: Papers Explained 286: NuNER
 - Published: 2025-01-13
 - Canonical: [https://medium.com/@ritvik19/papers-explained-186-nuner-03e092dfb6ff](https://medium.com/@ritvik19/papers-explained-186-nuner-03e092dfb6ff)
@@ -105,19 +105,19 @@ NuNER: Entity Recognition Encoder Pre-training via LLM-Annotated Data [2402.1534
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-01-13_Papers-Explained-286--NuNER-03e092dfb6ff.html`); local copies under `wiki/assets/papers-explained-286-nuner/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-01-13_Papers-Explained-286--NuNER-03e092dfb6ff.md`); local copies under `wiki/assets/papers-explained-286-nuner/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-286-nuner/fig-1.png) | Title card: NuNER. |
-| ![Figure 2](assets/papers-explained-286-nuner/fig-2.png) | NuNER creation procedure. |
-| ![Figure 3](assets/papers-explained-286-nuner/fig-3.png) | Feature map of the 50k most common concepts extracted by gpt-3.5-turbo-0301. Embeddings are obtained from the concept encoder. |
-| ![Figure 4](assets/papers-explained-286-nuner/fig-4.png) | Frequency of each concept assigned by GPT-3.5. |
-| ![Figure 5](assets/papers-explained-286-nuner/fig-5.png) | NuNER’s pre-tranining procedure. |
-| ![Figure 6](assets/papers-explained-286-nuner/fig-6.png) | Comparing NuNER’s pre-training with an alternative large-scale NER dataset (NERBERT). |
-| ![Figure 7](assets/papers-explained-286-nuner/fig-7.png) | Few-NERD performance using TadNER and a modified TadNER using NuNER-BERT as the backbone. |
-| ![Figure 8](assets/papers-explained-286-nuner/fig-8.png) | Comparison of NuNER with LLMs. |
-| ![Figure 9](assets/papers-explained-286-nuner/fig-9.png) | NuNER vs. UniversalNER few-shot entity-level F1-score in the k ∼ 2k setting. |
+| ![Figure 1](assets/papers-explained-286-nuner/fig-1.webp) | Title card: NuNER. |
+| ![Figure 2](assets/papers-explained-286-nuner/fig-2.webp) | NuNER creation procedure. |
+| ![Figure 3](assets/papers-explained-286-nuner/fig-3.webp) | Feature map of the 50k most common concepts extracted by gpt-3.5-turbo-0301. Embeddings are obtained from the concept encoder. |
+| ![Figure 4](assets/papers-explained-286-nuner/fig-4.webp) | Frequency of each concept assigned by GPT-3.5. |
+| ![Figure 5](assets/papers-explained-286-nuner/fig-5.webp) | NuNER’s pre-tranining procedure. |
+| ![Figure 6](assets/papers-explained-286-nuner/fig-6.webp) | Comparing NuNER’s pre-training with an alternative large-scale NER dataset (NERBERT). |
+| ![Figure 7](assets/papers-explained-286-nuner/fig-7.webp) | Few-NERD performance using TadNER and a modified TadNER using NuNER-BERT as the backbone. |
+| ![Figure 8](assets/papers-explained-286-nuner/fig-8.webp) | Comparison of NuNER with LLMs. |
+| ![Figure 9](assets/papers-explained-286-nuner/fig-9.webp) | NuNER vs. UniversalNER few-shot entity-level F1-score in the k ∼ 2k setting. |
 ## Related
 
 - [[Papers Explained Corpus]]

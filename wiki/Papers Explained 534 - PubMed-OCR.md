@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-01-29_Papers-Explained-534--PubMed-OCR-704ef959e98e.html`
+- Source file: `raw/2026-01-29_Papers-Explained-534--PubMed-OCR-704ef959e98e.md`
 - Source title: Papers Explained 534: PubMed-OCR
 - Published: 2026-01-29
 - Canonical: [https://medium.com/@ritvik19/papers-explained-534-pubmed-ocr-704ef959e98e](https://medium.com/@ritvik19/papers-explained-534-pubmed-ocr-704ef959e98e)
@@ -89,16 +89,16 @@ PubMed-OCR: PMC Open Access OCR Annotations [2601.11425](https://arxiv.org/abs/2
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-01-29_Papers-Explained-534--PubMed-OCR-704ef959e98e.html`); local copies under `wiki/assets/papers-explained-534-pubmed-ocr/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-01-29_Papers-Explained-534--PubMed-OCR-704ef959e98e.md`); local copies under `wiki/assets/papers-explained-534-pubmed-ocr/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-534-pubmed-ocr/fig-1.png) | Title card: PubMed-OCR. |
-| ![Figure 2](assets/papers-explained-534-pubmed-ocr/fig-2.png) | Comparison of text resources by size and annotation granularity. |
-| ![Figure 3](assets/papers-explained-534-pubmed-ocr/fig-3.png) | PubMed-OCR corpus statistics versus reported statistics from OCR-IDL. |
-| ![Figure 4](assets/papers-explained-534-pubmed-ocr/fig-4.png) | Distribution of number of words, lines, and paragraphs per page. |
-| ![Figure 5](assets/papers-explained-534-pubmed-ocr/fig-5.png) | Distribution of number of words, lines, and paragraphs per document. |
-| ![Figure 6](assets/papers-explained-534-pubmed-ocr/fig-6.png) | Top 20 journals represented in PubMed-OCR. |
+| ![Figure 1](assets/papers-explained-534-pubmed-ocr/fig-1.webp) | Title card: PubMed-OCR. |
+| ![Figure 2](assets/papers-explained-534-pubmed-ocr/fig-2.webp) | Comparison of text resources by size and annotation granularity. |
+| ![Figure 3](assets/papers-explained-534-pubmed-ocr/fig-3.webp) | PubMed-OCR corpus statistics versus reported statistics from OCR-IDL. |
+| ![Figure 4](assets/papers-explained-534-pubmed-ocr/fig-4.webp) | Distribution of number of words, lines, and paragraphs per page. |
+| ![Figure 5](assets/papers-explained-534-pubmed-ocr/fig-5.webp) | Distribution of number of words, lines, and paragraphs per document. |
+| ![Figure 6](assets/papers-explained-534-pubmed-ocr/fig-6.webp) | Top 20 journals represented in PubMed-OCR. |
 ## Related
 
 - [[Papers Explained Corpus]]

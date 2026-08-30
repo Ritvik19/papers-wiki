@@ -1,6 +1,6 @@
 # Upgrading agentic coding capabilities with the new Devstral models
 
-**Source**: `raw/devstral-2507/full-article.html` (215 KB), `raw/devstral-2507/full-article.md` (markdown view)  
+**Source**: `raw/devstral-2507/full-article.md` (215 KB), `raw/devstral-2507/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/devstral-2507/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-06_Papers-Explained-04--Sentence-BERT-5159b8e07f21.html`
+- Source file: `raw/2023-02-06_Papers-Explained-04--Sentence-BERT-5159b8e07f21.md`
 - Source title: Papers Explained 04: Sentence BERT
 - Published: 2023-02-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-04-sentence-bert-5159b8e07f21](https://medium.com/@ritvik19/papers-explained-04-sentence-bert-5159b8e07f21)
@@ -67,15 +67,15 @@ Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks [1908.10084](http
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-06_Papers-Explained-04--Sentence-BERT-5159b8e07f21.html`); local copies under `wiki/assets/papers-explained-04-sentence-bert/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-06_Papers-Explained-04--Sentence-BERT-5159b8e07f21.md`); local copies under `wiki/assets/papers-explained-04-sentence-bert/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-04-sentence-bert/fig-1.png) | Title block of *Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks*. |
-| ![Figure 2](assets/papers-explained-04-sentence-bert/fig-2.png) | SBERT siamese architecture for training (classification objective) and inference (cosine similarity / regression objective). |
-| ![Figure 3](assets/papers-explained-04-sentence-bert/fig-3.png) | Classification objective formulation combining sentence embeddings \(u\), \(v\), and \(|u-v|\). |
-| ![Figure 4](assets/papers-explained-04-sentence-bert/fig-4.png) | Triplet-loss objective used to enforce \(d(a,p) < d(a,n)\) with margin. |
-| ![Figure 5](assets/papers-explained-04-sentence-bert/fig-5.png) | Pooling/concatenation ablation table showing STS-B performance, with mean pooling as the strongest default. |
+| ![Figure 1](assets/papers-explained-04-sentence-bert/fig-1.webp) | Title block of *Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks*. |
+| ![Figure 2](assets/papers-explained-04-sentence-bert/fig-2.webp) | SBERT siamese architecture for training (classification objective) and inference (cosine similarity / regression objective). |
+| ![Figure 3](assets/papers-explained-04-sentence-bert/fig-3.webp) | Classification objective formulation combining sentence embeddings \(u\), \(v\), and \(|u-v|\). |
+| ![Figure 4](assets/papers-explained-04-sentence-bert/fig-4.webp) | Triplet-loss objective used to enforce \(d(a,p) < d(a,n)\) with margin. |
+| ![Figure 5](assets/papers-explained-04-sentence-bert/fig-5.webp) | Pooling/concatenation ablation table showing STS-B performance, with mean pooling as the strongest default. |
 ## Related
 
 - [[Papers Explained Corpus]]

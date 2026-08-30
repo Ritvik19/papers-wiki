@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-06-20_Papers-Explained-152--SigLip-011c48f9d448.html`
+- Source file: `raw/2024-06-20_Papers-Explained-152--SigLip-011c48f9d448.md`
 - Source title: Papers Explained 152: SigLip
 - Published: 2024-06-20
 - Canonical: [https://medium.com/@ritvik19/papers-explained-152-siglip-011c48f9d448](https://medium.com/@ritvik19/papers-explained-152-siglip-011c48f9d448)
@@ -141,19 +141,19 @@ Recommended Reading: [Retrieval and Representation Learning](https://ritvik19.me
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-06-20_Papers-Explained-152--SigLip-011c48f9d448.html`); local copies under `wiki/assets/papers-explained-152-siglip/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-06-20_Papers-Explained-152--SigLip-011c48f9d448.md`); local copies under `wiki/assets/papers-explained-152-siglip/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-152-siglip/fig-1.png) | Title page of *Sigmoid Loss for Language Image Pre-Training* (Google DeepMind, Zürich). |
-| ![Figure 2](assets/papers-explained-152-siglip/fig-2.png) | Symmetric softmax contrastive objective: dual image→text and text→image cross-entropy over batch negatives with temperature $t$. |
-| ![Figure 3](assets/papers-explained-152-siglip/fig-3.png) | $L_2$-normalized image and text embeddings $\mathbf{x}_i$, $\mathbf{y}_i$ from encoders $f$, $g$. |
-| ![Figure 4](assets/papers-explained-152-siglip/fig-4.png) | Pairwise sigmoid loss summing $\mathcal{L}_{ij}$ over all batch pairs with labels $z_{ij}=\pm1$, temperature $t$, and learnable bias $b$. |
-| ![Figure 5](assets/papers-explained-152-siglip/fig-5.png) | Pseudocode: batched logits from normalized embeddings, diagonal-positive label matrix, and mean `log_sigmoid` SigLIP loss. |
-| ![Figure 6](assets/papers-explained-152-siglip/fig-6.png) | Effect of batch size (SigLiT ImageNet 0-shot, SigLIP accuracy, mSigLIP XM text→image avg): sigmoid vs softmax where compared; mSigLIP peaks then declines past ~32k. |
-| ![Figure 7](assets/papers-explained-152-siglip/fig-7.png) | ImageNet 0-shot vs training examples seen for 8k vs 262k vocabularies under sigmoid vs softmax—sigmoid leads at matched compute/vocab stages until large-scale convergence. |
-| ![Figure 8](assets/papers-explained-152-siglip/fig-8.png) | Multilingual tokenizer ablation (16k–240k vocab): ImageNet zero-shot and XM3600-style retrieval averages plus per-language XM rows. |
-| ![Figure 9](assets/papers-explained-152-siglip/fig-9.png) | Leaderboard-style comparison of CLIP/OpenCLIP/EVA-CLIP/CLIPA vs scaled **SigLIP** on ImageNet val/v2/ReaL/ObjectNet and MSCOCO recall@1 (image↔text) across ViT scales and patch counts. |
+| ![Figure 1](assets/papers-explained-152-siglip/fig-1.webp) | Title page of *Sigmoid Loss for Language Image Pre-Training* (Google DeepMind, Zürich). |
+| ![Figure 2](assets/papers-explained-152-siglip/fig-2.webp) | Symmetric softmax contrastive objective: dual image→text and text→image cross-entropy over batch negatives with temperature $t$. |
+| ![Figure 3](assets/papers-explained-152-siglip/fig-3.webp) | $L_2$-normalized image and text embeddings $\mathbf{x}_i$, $\mathbf{y}_i$ from encoders $f$, $g$. |
+| ![Figure 4](assets/papers-explained-152-siglip/fig-4.webp) | Pairwise sigmoid loss summing $\mathcal{L}_{ij}$ over all batch pairs with labels $z_{ij}=\pm1$, temperature $t$, and learnable bias $b$. |
+| ![Figure 5](assets/papers-explained-152-siglip/fig-5.webp) | Pseudocode: batched logits from normalized embeddings, diagonal-positive label matrix, and mean `log_sigmoid` SigLIP loss. |
+| ![Figure 6](assets/papers-explained-152-siglip/fig-6.webp) | Effect of batch size (SigLiT ImageNet 0-shot, SigLIP accuracy, mSigLIP XM text→image avg): sigmoid vs softmax where compared; mSigLIP peaks then declines past ~32k. |
+| ![Figure 7](assets/papers-explained-152-siglip/fig-7.webp) | ImageNet 0-shot vs training examples seen for 8k vs 262k vocabularies under sigmoid vs softmax—sigmoid leads at matched compute/vocab stages until large-scale convergence. |
+| ![Figure 8](assets/papers-explained-152-siglip/fig-8.webp) | Multilingual tokenizer ablation (16k–240k vocab): ImageNet zero-shot and XM3600-style retrieval averages plus per-language XM rows. |
+| ![Figure 9](assets/papers-explained-152-siglip/fig-9.webp) | Leaderboard-style comparison of CLIP/OpenCLIP/EVA-CLIP/CLIPA vs scaled **SigLIP** on ImageNet val/v2/ReaL/ObjectNet and MSCOCO recall@1 (image↔text) across ViT scales and patch counts. |
 ## Related
 
 - [[Papers Explained Corpus]]

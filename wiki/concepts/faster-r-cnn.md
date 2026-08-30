@@ -14,7 +14,7 @@
 
 ## Architecture
 
-![Faster R-CNN](../assets/2017-12-31-object-recognition-part-3/fig-7.png)
+![Faster R-CNN](../assets/2017-12-31-object-recognition-part-3/fig-7.webp)
 
 Shared conv trunk → **RPN** (objectness + box deltas per anchor) + **Fast R-CNN head** (class + box per RoI from RPN proposals).
 

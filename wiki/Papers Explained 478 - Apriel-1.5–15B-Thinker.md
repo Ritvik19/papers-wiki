@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-10-27_Papers-Explained-478--Apriel-1-5-15B-Thinker-228b6fab1efd.html`
+- Source file: `raw/2025-10-27_Papers-Explained-478--Apriel-1-5-15B-Thinker-228b6fab1efd.md`
 - Source title: Papers Explained 478: Apriel-1.5–15B-Thinker
 - Published: 2025-10-27
 - Canonical: [https://medium.com/@ritvik19/papers-explained-478-apriel-1-5-15b-thinker-228b6fab1efd](https://medium.com/@ritvik19/papers-explained-478-apriel-1-5-15b-thinker-228b6fab1efd)
@@ -121,16 +121,16 @@ Apriel-1.5–15b-Thinker [2510.01141](https://arxiv.org/abs/2510.01141)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-10-27_Papers-Explained-478--Apriel-1-5-15B-Thinker-228b6fab1efd.html`); local copies under `wiki/assets/papers-explained-478-apriel-1-5-15b-thinker/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-10-27_Papers-Explained-478--Apriel-1-5-15B-Thinker-228b6fab1efd.md`); local copies under `wiki/assets/papers-explained-478-apriel-1-5-15b-thinker/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-478-apriel-1-5-15b-thinker/fig-1.png) | Title card: Apriel-1.5–15B-Thinker. |
-| ![Figure 2](assets/papers-explained-478-apriel-1-5-15b-thinker/fig-2.png) | Text Benchmarks. |
-| ![Figure 3](assets/papers-explained-478-apriel-1-5-15b-thinker/fig-3.png) | Artificial Analysis Intelligence Index vs. Total Parameters (log scale). |
-| ![Figure 4](assets/papers-explained-478-apriel-1-5-15b-thinker/fig-4.png) | Evaluation (pass@1 or accuracy) on benchmarks with maximum reasoning. |
-| ![Figure 5](assets/papers-explained-478-apriel-1-5-15b-thinker/fig-5.png) | Average performance across the benchmark suite. |
-| ![Figure 6](assets/papers-explained-478-apriel-1-5-15b-thinker/fig-6.png) | Evaluation (pass@1 or accuracy, as applicable) on multimodal benchmarks. |
+| ![Figure 1](assets/papers-explained-478-apriel-1-5-15b-thinker/fig-1.webp) | Title card: Apriel-1.5–15B-Thinker. |
+| ![Figure 2](assets/papers-explained-478-apriel-1-5-15b-thinker/fig-2.webp) | Text Benchmarks. |
+| ![Figure 3](assets/papers-explained-478-apriel-1-5-15b-thinker/fig-3.webp) | Artificial Analysis Intelligence Index vs. Total Parameters (log scale). |
+| ![Figure 4](assets/papers-explained-478-apriel-1-5-15b-thinker/fig-4.webp) | Evaluation (pass@1 or accuracy) on benchmarks with maximum reasoning. |
+| ![Figure 5](assets/papers-explained-478-apriel-1-5-15b-thinker/fig-5.webp) | Average performance across the benchmark suite. |
+| ![Figure 6](assets/papers-explained-478-apriel-1-5-15b-thinker/fig-6.webp) | Evaluation (pass@1 or accuracy, as applicable) on multimodal benchmarks. |
 ## Related
 
 - [[Papers Explained Corpus]]

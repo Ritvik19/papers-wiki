@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-09-04_Papers-Explained-202--SynCLR-85b50ef0081b.html`
+- Source file: `raw/2024-09-04_Papers-Explained-202--SynCLR-85b50ef0081b.md`
 - Source title: Papers Explained 202: SynCLR
 - Published: 2024-09-04
 - Canonical: [https://medium.com/@ritvik19/papers-explained-202-synclr-85b50ef0081b](https://medium.com/@ritvik19/papers-explained-202-synclr-85b50ef0081b)
@@ -141,24 +141,24 @@ Recommended Reading [Retrieval and Representation Learning](https://ritvik19.med
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-09-04_Papers-Explained-202--SynCLR-85b50ef0081b.html`); local copies under `wiki/assets/papers-explained-202-synclr/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-09-04_Papers-Explained-202--SynCLR-85b50ef0081b.md`); local copies under `wiki/assets/papers-explained-202-synclr/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-202-synclr/fig-1.png) | Three visual-representation paradigms: supervised, SSL on real images, and synthetic-only SynCLR. |
-| ![Figure 2](assets/papers-explained-202-synclr/fig-2.png) | Example synthesis templates used to generate synthetic training data. |
-| ![Figure 3](assets/papers-explained-202-synclr/fig-3.png) | In-context caption generation pipeline with Llama-2. |
-| ![Figure 4](assets/papers-explained-202-synclr/fig-4.png) | Caption-synthesis strategy comparison. |
-| ![Figure 5](assets/papers-explained-202-synclr/fig-5.png) | Classifier-free guidance scale ablation. |
-| ![Figure 6](assets/papers-explained-202-synclr/fig-6.png) | Key SynCLR components ablation. |
-| ![Figure 7](assets/papers-explained-202-synclr/fig-7.png) | Learning-objective comparison for SynCLR training. |
-| ![Figure 8](assets/papers-explained-202-synclr/fig-8.png) | ImageNet linear and fine-grained classification comparison. |
-| ![Figure 9](assets/papers-explained-202-synclr/fig-9.png) | ADE20K semantic segmentation comparison using UperNet at 512x512. |
-| ![Figure 10](assets/papers-explained-202-synclr/fig-10.png) | ImageNet fine-tuning top-1 at 224x224 for different pretraining recipes. |
-| ![Figure 11](assets/papers-explained-202-synclr/fig-11.png) | ImageNet and average downstream comparison: Supervised CE vs SimCLR vs SynCLR. |
-| ![Figure 12](assets/papers-explained-202-synclr/fig-12.png) | Downstream classification transfer table across multiple datasets and ViT sizes. |
-| ![Figure 13](assets/papers-explained-202-synclr/fig-13.png) | Linear-probe benchmark against MoCo, MAE, iBOT, DINOv2, and others. |
-| ![Figure 14](assets/papers-explained-202-synclr/fig-14.png) | Fine-tuning benchmark against real-data pretraining baselines; SynCLR row highlighted. |
+| ![Figure 1](assets/papers-explained-202-synclr/fig-1.webp) | Three visual-representation paradigms: supervised, SSL on real images, and synthetic-only SynCLR. |
+| ![Figure 2](assets/papers-explained-202-synclr/fig-2.webp) | Example synthesis templates used to generate synthetic training data. |
+| ![Figure 3](assets/papers-explained-202-synclr/fig-3.webp) | In-context caption generation pipeline with Llama-2. |
+| ![Figure 4](assets/papers-explained-202-synclr/fig-4.webp) | Caption-synthesis strategy comparison. |
+| ![Figure 5](assets/papers-explained-202-synclr/fig-5.webp) | Classifier-free guidance scale ablation. |
+| ![Figure 6](assets/papers-explained-202-synclr/fig-6.webp) | Key SynCLR components ablation. |
+| ![Figure 7](assets/papers-explained-202-synclr/fig-7.webp) | Learning-objective comparison for SynCLR training. |
+| ![Figure 8](assets/papers-explained-202-synclr/fig-8.webp) | ImageNet linear and fine-grained classification comparison. |
+| ![Figure 9](assets/papers-explained-202-synclr/fig-9.webp) | ADE20K semantic segmentation comparison using UperNet at 512x512. |
+| ![Figure 10](assets/papers-explained-202-synclr/fig-10.webp) | ImageNet fine-tuning top-1 at 224x224 for different pretraining recipes. |
+| ![Figure 11](assets/papers-explained-202-synclr/fig-11.webp) | ImageNet and average downstream comparison: Supervised CE vs SimCLR vs SynCLR. |
+| ![Figure 12](assets/papers-explained-202-synclr/fig-12.webp) | Downstream classification transfer table across multiple datasets and ViT sizes. |
+| ![Figure 13](assets/papers-explained-202-synclr/fig-13.webp) | Linear-probe benchmark against MoCo, MAE, iBOT, DINOv2, and others. |
+| ![Figure 14](assets/papers-explained-202-synclr/fig-14.webp) | Fine-tuning benchmark against real-data pretraining baselines; SynCLR row highlighted. |
 ## Related
 
 - [[Papers Explained Corpus]]

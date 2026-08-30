@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-08-08_Papers-Explained-427--Paper2Poster-504437bba4cc.html`
+- Source file: `raw/2025-08-08_Papers-Explained-427--Paper2Poster-504437bba4cc.md`
 - Source title: Papers Explained 427: Paper2Poster
 - Published: 2025-08-08
 - Canonical: [https://medium.com/@ritvik19/papers-explained-427-paper2poster-504437bba4cc](https://medium.com/@ritvik19/papers-explained-427-paper2poster-504437bba4cc)
@@ -432,14 +432,14 @@ Paper2Poster: Towards Multimodal Poster Automation from Scientific Papers [2505.
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-08-08_Papers-Explained-427--Paper2Poster-504437bba4cc.html`); local copies under `wiki/assets/papers-explained-427-paper2poster/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-08-08_Papers-Explained-427--Paper2Poster-504437bba4cc.md`); local copies under `wiki/assets/papers-explained-427-paper2poster/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-427-paper2poster/fig-1.png) | Title card: Paper2Poster. |
-| ![Figure 2](assets/papers-explained-427-paper2poster/fig-2.png) | Illustration of the PosterAgent pipeline. |
-| ![Figure 3](assets/papers-explained-427-paper2poster/fig-3.png) | Detailed evaluation of Paper2Poster across four categories of baselines. |
-| ![Figure 4](assets/papers-explained-427-paper2poster/fig-4.png) | PaperQuiz Evaluation on Paper2Poster based on 6 different Readers. |
+| ![Figure 1](assets/papers-explained-427-paper2poster/fig-1.webp) | Title card: Paper2Poster. |
+| ![Figure 2](assets/papers-explained-427-paper2poster/fig-2.webp) | Illustration of the PosterAgent pipeline. |
+| ![Figure 3](assets/papers-explained-427-paper2poster/fig-3.webp) | Detailed evaluation of Paper2Poster across four categories of baselines. |
+| ![Figure 4](assets/papers-explained-427-paper2poster/fig-4.webp) | PaperQuiz Evaluation on Paper2Poster based on 6 different Readers. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -1,6 +1,6 @@
 # Papers Explained: Position Encodings in Transformers
 
-**Source**: `raw/draft_Papers-Explained--Position-Encodings-in-Transformers-3dafda9e6f47.html`  
+**Source**: `raw/draft_Papers-Explained--Position-Encodings-in-Transformers-3dafda9e6f47.md`  
 **Papers**: https://arxiv.org/abs/1706.03762, https://arxiv.org/abs/1705.03122, https://arxiv.org/abs/1803.02155  
 **Ingested**: 2026-08-23  
 **Tags**: #summary
@@ -22,7 +22,7 @@
 3. **Relative Positional Encodings (Shaw et al., 2018)**:
    - Replaces absolute coordinates with learnable relative distance vectors $a_{ij}^K, a_{ij}^V$ added directly into attention matrix multiplications, clipped at a maximum distance $k$: $\text{clip}(j - i, -k, k)$.
 
-![Mathematical Formulations and Attention Additions](../assets/papers-explained-position-encodings-in-transformers/fig-2.png)
+![Mathematical Formulations and Attention Additions](../assets/papers-explained-position-encodings-in-transformers/fig-2.webp)
 
 ## Key Claims
 
@@ -36,13 +36,13 @@
 | Figure | Caption | Page |
 |--------|---------|------|
 | ![fig-1](../assets/papers-explained-position-encodings-in-transformers/fig-1.png) | Position Encodings in Transformers banner. | Overview |
-| ![fig-2](../assets/papers-explained-position-encodings-in-transformers/fig-2.png) | Sinusoidal wave pattern and frequency spectrum across embedding dimensions. | Sinusoidal |
-| ![fig-3](../assets/papers-explained-position-encodings-in-transformers/fig-3.png) | Learned absolute embedding lookup matrix. | Learned |
-| ![fig-4](../assets/papers-explained-position-encodings-in-transformers/fig-4.png) | Shaw et al. relative position attention matrix modification. | Relative |
-| ![fig-5](../assets/papers-explained-position-encodings-in-transformers/fig-5.png) | Dot-product attention geometry with positional additions. | Geometry |
-| ![fig-6](../assets/papers-explained-position-encodings-in-transformers/fig-6.png) | Comparison of translation quality across position encoding types. | Evaluation |
-| ![fig-7](../assets/papers-explained-position-encodings-in-transformers/fig-7.png) | Attention distance decay heatmaps across transformer layers. | Analysis |
-| ![fig-8](../assets/papers-explained-position-encodings-in-transformers/fig-8.png) | Summary taxonomy of positional encoding methods. | Taxonomy |
+| ![fig-2](../assets/papers-explained-position-encodings-in-transformers/fig-2.webp) | Sinusoidal wave pattern and frequency spectrum across embedding dimensions. | Sinusoidal |
+| ![fig-3](../assets/papers-explained-position-encodings-in-transformers/fig-3.webp) | Learned absolute embedding lookup matrix. | Learned |
+| ![fig-4](../assets/papers-explained-position-encodings-in-transformers/fig-4.webp) | Shaw et al. relative position attention matrix modification. | Relative |
+| ![fig-5](../assets/papers-explained-position-encodings-in-transformers/fig-5.webp) | Dot-product attention geometry with positional additions. | Geometry |
+| ![fig-6](../assets/papers-explained-position-encodings-in-transformers/fig-6.webp) | Comparison of translation quality across position encoding types. | Evaluation |
+| ![fig-7](../assets/papers-explained-position-encodings-in-transformers/fig-7.webp) | Attention distance decay heatmaps across transformer layers. | Analysis |
+| ![fig-8](../assets/papers-explained-position-encodings-in-transformers/fig-8.webp) | Summary taxonomy of positional encoding methods. | Taxonomy |
 
 ## Entities
 

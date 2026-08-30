@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-07_Papers-Explained-19--Dit-b6d6eccd8c4e.html`
+- Source file: `raw/2023-02-07_Papers-Explained-19--Dit-b6d6eccd8c4e.md`
 - Source title: Papers Explained 19: Dit
 - Published: 2023-02-07
 - Canonical: [https://medium.com/@ritvik19/papers-explained-19-dit-b6d6eccd8c4e](https://medium.com/@ritvik19/papers-explained-19-dit-b6d6eccd8c4e)
@@ -69,13 +69,13 @@ DiT: Self-supervised Pre-training for Document Image Transformer [2203.02378](ht
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-07_Papers-Explained-19--Dit-b6d6eccd8c4e.html`); local copies under `wiki/assets/papers-explained-19-dit/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-07_Papers-Explained-19--Dit-b6d6eccd8c4e.md`); local copies under `wiki/assets/papers-explained-19-dit/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-19-dit/fig-1.png) | Title card: Dit. |
-| ![Figure 2](assets/papers-explained-19-dit/fig-2.png) | Model Architecture. |
-| ![Figure 3](assets/papers-explained-19-dit/fig-3.png) | Fine-Tuning. |
+| ![Figure 1](assets/papers-explained-19-dit/fig-1.webp) | Title card: Dit. |
+| ![Figure 2](assets/papers-explained-19-dit/fig-2.webp) | Model Architecture. |
+| ![Figure 3](assets/papers-explained-19-dit/fig-3.webp) | Fine-Tuning. |
 ## Related
 
 - [[Papers Explained Corpus]]

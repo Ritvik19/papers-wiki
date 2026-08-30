@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-04-23_Papers-Explained-353--s1-f071ec558fa0.html`
+- Source file: `raw/2025-04-23_Papers-Explained-353--s1-f071ec558fa0.md`
 - Source title: Papers Explained 353: s1
 - Published: 2025-04-23
 - Canonical: [https://medium.com/@ritvik19/papers-explained-353-s1-f071ec558fa0](https://medium.com/@ritvik19/papers-explained-353-s1-f071ec558fa0)
@@ -85,18 +85,18 @@ s1: Simple test-time scaling https://arxiv.org/abs/2501.19393
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-04-23_Papers-Explained-353--s1-f071ec558fa0.html`); local copies under `wiki/assets/papers-explained-353-s1/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-04-23_Papers-Explained-353--s1-f071ec558fa0.md`); local copies under `wiki/assets/papers-explained-353-s1/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-353-s1/fig-1.png) | Title card: s1. |
-| ![Figure 2](assets/papers-explained-353-s1/fig-2.png) | Composition of full 59K questions. |
-| ![Figure 3](assets/papers-explained-353-s1/fig-3.png) | Summary of s1K dataset. |
-| ![Figure 4](assets/papers-explained-353-s1/fig-4.png) | Budget forcing with s1–32B. |
-| ![Figure 5](assets/papers-explained-353-s1/fig-5.png) | Supervised finetuning is performed on Qwen2.5–32B-Instruct using s1K to obtain the model s1–32B. |
-| ![Figure 6](assets/papers-explained-353-s1/fig-6.png) | Test-time scaling with s1–32B. |
-| ![Figure 7](assets/papers-explained-353-s1/fig-7.png) | Sequential and parallel test-time scaling. |
-| ![Figure 8](assets/papers-explained-353-s1/fig-8.png) | Seven days after the release of s1, s1.1 is released. |
+| ![Figure 1](assets/papers-explained-353-s1/fig-1.webp) | Title card: s1. |
+| ![Figure 2](assets/papers-explained-353-s1/fig-2.webp) | Composition of full 59K questions. |
+| ![Figure 3](assets/papers-explained-353-s1/fig-3.webp) | Summary of s1K dataset. |
+| ![Figure 4](assets/papers-explained-353-s1/fig-4.webp) | Budget forcing with s1–32B. |
+| ![Figure 5](assets/papers-explained-353-s1/fig-5.webp) | Supervised finetuning is performed on Qwen2.5–32B-Instruct using s1K to obtain the model s1–32B. |
+| ![Figure 6](assets/papers-explained-353-s1/fig-6.webp) | Test-time scaling with s1–32B. |
+| ![Figure 7](assets/papers-explained-353-s1/fig-7.webp) | Sequential and parallel test-time scaling. |
+| ![Figure 8](assets/papers-explained-353-s1/fig-8.webp) | Seven days after the release of s1, s1.1 is released. |
 ## Related
 
 - [[Papers Explained Corpus]]

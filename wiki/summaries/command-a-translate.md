@@ -1,6 +1,6 @@
 # Command A Translate: Secure Translation for Global Enterprises
 
-**Source**: `raw/command-a-translate/full-article.html` (331 KB), `raw/command-a-translate/full-article.md` (markdown view)  
+**Source**: `raw/command-a-translate/full-article.md` (331 KB), `raw/command-a-translate/full-article.md` (markdown view)  
 **URL**: https://cohere.com/blog/command-a-translate  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -27,10 +27,10 @@ On WMT24++ (English→L2, 23 languages), Command A Translate reports an average 
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/command-a-translate/fig-1.png) | Command A Translate announcement hero — secure enterprise machine translation | — |
-| ![fig-2](../assets/command-a-translate/fig-2.png) | WMT24++ xCometXL scores: Command A Translate (83.8) vs competitors; 84.4 with Deep Translation | — |
+| ![fig-1](../assets/command-a-translate/fig-1.webp) | Command A Translate announcement hero — secure enterprise machine translation | — |
+| ![fig-2](../assets/command-a-translate/fig-2.webp) | WMT24++ xCometXL scores: Command A Translate (83.8) vs competitors; 84.4 with Deep Translation | — |
 
-![WMT24++ benchmark results](../assets/command-a-translate/fig-2.png)
+![WMT24++ benchmark results](../assets/command-a-translate/fig-2.webp)
 
 ## Entities
 

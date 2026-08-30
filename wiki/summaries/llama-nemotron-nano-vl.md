@@ -1,6 +1,6 @@
 # Welcome the NVIDIA Llama Nemotron Nano VLM to Hugging Face Hub
 
-**Source**: `raw/llama-nemotron-nano-vl/full-article.html` (236 KB), `raw/llama-nemotron-nano-vl/full-article.md`
+**Source**: `raw/llama-nemotron-nano-vl/full-article.md` (236 KB), `raw/llama-nemotron-nano-vl/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

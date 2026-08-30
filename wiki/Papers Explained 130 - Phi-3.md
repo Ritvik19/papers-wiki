@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-04-29_Papers-Explained-130--Phi-3-0dfc951dc404.html`
+- Source file: `raw/2024-04-29_Papers-Explained-130--Phi-3-0dfc951dc404.md`
 - Source title: Papers Explained 130: Phi-3
 - Published: 2024-04-29
 - Canonical: [https://medium.com/@ritvik19/papers-explained-130-phi-3-0dfc951dc404](https://medium.com/@ritvik19/papers-explained-130-phi-3-0dfc951dc404)
@@ -133,19 +133,19 @@ Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone [2
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-04-29_Papers-Explained-130--Phi-3-0dfc951dc404.html`); local copies under `wiki/assets/papers-explained-130-phi-3/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-04-29_Papers-Explained-130--Phi-3-0dfc951dc404.md`); local copies under `wiki/assets/papers-explained-130-phi-3/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-130-phi-3/fig-1.png) | Title page of *Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone* (Microsoft). |
-| ![Figure 2](assets/papers-explained-130-phi-3/fig-2.png) | Chat template using `<|user|>`, `<|end|>`, and `<|assistant|>` turn markers for instruction-tuned inference. |
-| ![Figure 3](assets/papers-explained-130-phi-3/fig-3.png) | Benchmark scorecard comparing Phi-3-mini/small/medium with Phi-2, Mistral, Gemma, Llama-3, Mixtral, and GPT-3.5. |
-| ![Figure 4](assets/papers-explained-130-phi-3/fig-4.png) | Harm-area breakdown showing reduced harmful-response rates after safety post-training and red teaming. |
-| ![Figure 5](assets/papers-explained-130-phi-3/fig-5.png) | Phi-3-Vision 4.2B vs leading VLMs on MMMU, ScienceQA, chart/OCR, and related multimodal benchmarks. |
-| ![Figure 6](assets/papers-explained-130-phi-3/fig-6.png) | Side-by-side RAI benchmark bars for Phi-3-Vision with and without safety post-training. |
-| ![Figure 7](assets/papers-explained-130-phi-3/fig-7.png) | June 2024 post-training gains on instruction hardness, structured JSON/XML outputs, GPQA, and MMLU. |
-| ![Figure 8](assets/papers-explained-130-phi-3/fig-8.png) | RULER long-context retrieval scores by evaluated window (4K–128K): original Phi-3-mini vs June 2024 update. |
-| ![Figure 9](assets/papers-explained-130-phi-3/fig-9.png) | RepoQA long-context code understanding scores by language: original vs June 2024 post-training. |
+| ![Figure 1](assets/papers-explained-130-phi-3/fig-1.webp) | Title page of *Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone* (Microsoft). |
+| ![Figure 2](assets/papers-explained-130-phi-3/fig-2.webp) | Chat template using `<|user|>`, `<|end|>`, and `<|assistant|>` turn markers for instruction-tuned inference. |
+| ![Figure 3](assets/papers-explained-130-phi-3/fig-3.webp) | Benchmark scorecard comparing Phi-3-mini/small/medium with Phi-2, Mistral, Gemma, Llama-3, Mixtral, and GPT-3.5. |
+| ![Figure 4](assets/papers-explained-130-phi-3/fig-4.webp) | Harm-area breakdown showing reduced harmful-response rates after safety post-training and red teaming. |
+| ![Figure 5](assets/papers-explained-130-phi-3/fig-5.webp) | Phi-3-Vision 4.2B vs leading VLMs on MMMU, ScienceQA, chart/OCR, and related multimodal benchmarks. |
+| ![Figure 6](assets/papers-explained-130-phi-3/fig-6.webp) | Side-by-side RAI benchmark bars for Phi-3-Vision with and without safety post-training. |
+| ![Figure 7](assets/papers-explained-130-phi-3/fig-7.webp) | June 2024 post-training gains on instruction hardness, structured JSON/XML outputs, GPQA, and MMLU. |
+| ![Figure 8](assets/papers-explained-130-phi-3/fig-8.webp) | RULER long-context retrieval scores by evaluated window (4K–128K): original Phi-3-mini vs June 2024 update. |
+| ![Figure 9](assets/papers-explained-130-phi-3/fig-9.webp) | RepoQA long-context code understanding scores by language: original vs June 2024 post-training. |
 ## Related
 
 - [[Papers Explained Corpus]]

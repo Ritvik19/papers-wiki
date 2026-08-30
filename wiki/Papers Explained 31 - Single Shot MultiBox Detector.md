@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-14_Papers-Explained-31--Single-Shot-MultiBox-Detector-14b0aa2f5a97.html`
+- Source file: `raw/2023-02-14_Papers-Explained-31--Single-Shot-MultiBox-Detector-14b0aa2f5a97.md`
 - Source title: Papers Explained 31: Single Shot MultiBox Detector
 - Published: 2023-02-14
 - Canonical: [https://medium.com/@ritvik19/papers-explained-31-single-shot-multibox-detector-14b0aa2f5a97](https://medium.com/@ritvik19/papers-explained-31-single-shot-multibox-detector-14b0aa2f5a97)
@@ -57,13 +57,13 @@ SSD: Single Shot MultiBox Detector [1512.02325](https://arxiv.org/abs/1512.02325
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-14_Papers-Explained-31--Single-Shot-MultiBox-Detector-14b0aa2f5a97.html`); local copies under `wiki/assets/papers-explained-31-single-shot-multibox-detector/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-14_Papers-Explained-31--Single-Shot-MultiBox-Detector-14b0aa2f5a97.md`); local copies under `wiki/assets/papers-explained-31-single-shot-multibox-detector/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-31-single-shot-multibox-detector/fig-1.png) | Title card: Single Shot MultiBox Detector. |
-| ![Figure 2](assets/papers-explained-31-single-shot-multibox-detector/fig-2.png) | Multi-scale feature maps for detection: Multi-scale feature maps for detection. |
-| ![Figure 3](assets/papers-explained-31-single-shot-multibox-detector/fig-3.png) | Our default boxes are similar to the anchor boxes used in Faster R-CNN, however we apply them to several feature maps of different... |
+| ![Figure 1](assets/papers-explained-31-single-shot-multibox-detector/fig-1.webp) | Title card: Single Shot MultiBox Detector. |
+| ![Figure 2](assets/papers-explained-31-single-shot-multibox-detector/fig-2.webp) | Multi-scale feature maps for detection: Multi-scale feature maps for detection. |
+| ![Figure 3](assets/papers-explained-31-single-shot-multibox-detector/fig-3.webp) | Our default boxes are similar to the anchor boxes used in Faster R-CNN, however we apply them to several feature maps of different... |
 ## Related
 
 - [[Papers Explained Corpus]]

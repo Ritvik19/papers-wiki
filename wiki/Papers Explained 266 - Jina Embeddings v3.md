@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-12-05_Papers-Explained-266--Jina-Embeddings-v3-9c38c9f69766.html`
+- Source file: `raw/2024-12-05_Papers-Explained-266--Jina-Embeddings-v3-9c38c9f69766.md`
 - Source title: Papers Explained 266: Jina Embeddings v3
 - Published: 2024-12-05
 - Canonical: [https://medium.com/@ritvik19/papers-explained-266-jina-embeddings-v3-9c38c9f69766](https://medium.com/@ritvik19/papers-explained-266-jina-embeddings-v3-9c38c9f69766)
@@ -173,24 +173,24 @@ Recommended Reading [Retrieval and Representation Learning](https://ritvik19.med
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-12-05_Papers-Explained-266--Jina-Embeddings-v3-9c38c9f69766.html`); local copies under `wiki/assets/papers-explained-266-jina-embeddings-v3/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-12-05_Papers-Explained-266--Jina-Embeddings-v3-9c38c9f69766.md`); local copies under `wiki/assets/papers-explained-266-jina-embeddings-v3/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-266-jina-embeddings-v3/fig-1.png) | Title card: Jina Embeddings v3. |
-| ![Figure 2](assets/papers-explained-266-jina-embeddings-v3/fig-2.png) | The architecture of jina-embeddings-v3. |
-| ![Figure 3](assets/papers-explained-266-jina-embeddings-v3/fig-3.png) | Model specification of jina-embeddings-v3. |
-| ![Figure 4](assets/papers-explained-266-jina-embeddings-v3/fig-4.png) | Fine-Tuning for the Embedding Task. |
-| ![Figure 5](assets/papers-explained-266-jina-embeddings-v3/fig-5.png) | The training data consists of over one billion text pairs, drawn from more than 300 distinct sub- datasets, each representing specific... |
-| ![Figure 6](assets/papers-explained-266-jina-embeddings-v3/fig-6.png) | Supported tasks of jina-embeddings-v3. |
-| ![Figure 7](assets/papers-explained-266-jina-embeddings-v3/fig-7.png) | From each dataset, tuples consisting of two text values from the same class (q, p) and seven text values from different classes (n1,. |
-| ![Figure 8](assets/papers-explained-266-jina-embeddings-v3/fig-8.png) | This adapter is trained to produce embeddings that quantify the similarity between two text values. |
-| ![Figure 9](assets/papers-explained-266-jina-embeddings-v3/fig-9.png) | The separation adapter is designed to perform well on clustering and reranking tasks. |
-| ![Figure 10](assets/papers-explained-266-jina-embeddings-v3/fig-10.png) | Evaluation of multilingual pre-trained models after short embedding training on pair-wise data. |
-| ![Figure 11](assets/papers-explained-266-jina-embeddings-v3/fig-11.png) | Performance of multilingual text embedding models on MTEB tasks as averages. |
-| ![Figure 12](assets/papers-explained-266-jina-embeddings-v3/fig-12.png) | To mitigate these failures. |
-| ![Figure 13](assets/papers-explained-266-jina-embeddings-v3/fig-13.png) | Evaluation of nDCG@10 [%] on MTEB LongEmbed Tasks. |
-| ![Figure 14](assets/papers-explained-266-jina-embeddings-v3/fig-14.png) | Evaluation of Failure Cases. |
+| ![Figure 1](assets/papers-explained-266-jina-embeddings-v3/fig-1.webp) | Title card: Jina Embeddings v3. |
+| ![Figure 2](assets/papers-explained-266-jina-embeddings-v3/fig-2.webp) | The architecture of jina-embeddings-v3. |
+| ![Figure 3](assets/papers-explained-266-jina-embeddings-v3/fig-3.webp) | Model specification of jina-embeddings-v3. |
+| ![Figure 4](assets/papers-explained-266-jina-embeddings-v3/fig-4.webp) | Fine-Tuning for the Embedding Task. |
+| ![Figure 5](assets/papers-explained-266-jina-embeddings-v3/fig-5.webp) | The training data consists of over one billion text pairs, drawn from more than 300 distinct sub- datasets, each representing specific... |
+| ![Figure 6](assets/papers-explained-266-jina-embeddings-v3/fig-6.webp) | Supported tasks of jina-embeddings-v3. |
+| ![Figure 7](assets/papers-explained-266-jina-embeddings-v3/fig-7.webp) | From each dataset, tuples consisting of two text values from the same class (q, p) and seven text values from different classes (n1,. |
+| ![Figure 8](assets/papers-explained-266-jina-embeddings-v3/fig-8.webp) | This adapter is trained to produce embeddings that quantify the similarity between two text values. |
+| ![Figure 9](assets/papers-explained-266-jina-embeddings-v3/fig-9.webp) | The separation adapter is designed to perform well on clustering and reranking tasks. |
+| ![Figure 10](assets/papers-explained-266-jina-embeddings-v3/fig-10.webp) | Evaluation of multilingual pre-trained models after short embedding training on pair-wise data. |
+| ![Figure 11](assets/papers-explained-266-jina-embeddings-v3/fig-11.webp) | Performance of multilingual text embedding models on MTEB tasks as averages. |
+| ![Figure 12](assets/papers-explained-266-jina-embeddings-v3/fig-12.webp) | To mitigate these failures. |
+| ![Figure 13](assets/papers-explained-266-jina-embeddings-v3/fig-13.webp) | Evaluation of nDCG@10 [%] on MTEB LongEmbed Tasks. |
+| ![Figure 14](assets/papers-explained-266-jina-embeddings-v3/fig-14.webp) | Evaluation of Failure Cases. |
 ## Related
 
 - [[Papers Explained Corpus]]

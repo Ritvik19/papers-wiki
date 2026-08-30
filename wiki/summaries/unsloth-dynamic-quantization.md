@@ -19,7 +19,7 @@ Unsloth's **dynamic quantization** line selectively quantizes layers by sensitiv
 
 | Figure | Caption |
 |--------|---------|
-| ![fig-1](../assets/unsloth-dynamic-quantization/fig-1.png) | Dynamic quant error vs uniform 4-bit (MMLU/KLD) |
+| ![fig-1](../assets/unsloth-dynamic-quantization/fig-1.webp) | Dynamic quant error vs uniform 4-bit (MMLU/KLD) |
 
 ## Entities
 
@@ -40,6 +40,6 @@ Unsloth's **dynamic quantization** line selectively quantizes layers by sensitiv
 
 ## Sources
 
-- `raw/dynamic-4bit/full-article.html`
-- `raw/deepseekr1-dynamic/full-article.html`
-- `raw/dynamic-v2/full-article.html`
+- `raw/dynamic-4bit/full-article.md`
+- `raw/deepseekr1-dynamic/full-article.md`
+- `raw/dynamic-v2/full-article.md`

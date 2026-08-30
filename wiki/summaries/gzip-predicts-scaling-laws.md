@@ -1,6 +1,6 @@
 # gzip Predicts Data-dependent Scaling Laws
 
-**Source**: `raw/gzip-predicts-scaling-laws/full-article.html`  
+**Source**: `raw/gzip-predicts-scaling-laws/full-article.md`  
 **Paper**: [arXiv 2405.16684](https://arxiv.org/abs/2405.16684)  
 **Ingested**: 2026-05-12  
 **Tags**: #summary
@@ -30,25 +30,25 @@ The paper also shows that compressibility, not vocabulary size or other syntacti
 
 | Figure | Caption |
 |--------|---------|
-| ![Header](../assets/gzip-predicts-scaling-laws/fig-1.png) | Article header image. |
-| ![Compressibility distributions](../assets/gzip-predicts-scaling-laws/fig-2.png) | Gzip compressibility of different linguistic distributions on raw string and token sequence. |
-| ![PCFG compressibility table](../assets/gzip-predicts-scaling-laws/fig-3.png) | Compressibility of each PCFG dataset alongside its syntactic parameters. |
-| ![Training curves](../assets/gzip-predicts-scaling-laws/fig-4-wide.png) | Training curves for models of 4.2M–1.4B parameters on 100M-token datasets of varying complexity. |
-| ![Standard scaling law formula](../assets/gzip-predicts-scaling-laws/fig-5.png) | The Chinchilla scaling law functional form: L(N,D) = E + A/N^α + B/D^β. |
-| ![Fitted scaling law parameters](../assets/gzip-predicts-scaling-laws/fig-6.png) | Per-dataset fitted scaling law parameters with gzip compressibility. |
-| ![Compute-optimal frontier formula](../assets/gzip-predicts-scaling-laws/fig-7.png) | Compute-optimal frontier equation in terms of FLOPs budget C. |
-| ![Compute-optimal frontiers plot](../assets/gzip-predicts-scaling-laws/fig-8.png) | Compute-optimal frontiers for each PCFG dataset vs. Chinchilla's frontier; more complex data is more data-preferent. |
-| ![Compressibility-parameterized formula](../assets/gzip-predicts-scaling-laws/fig-9.png) | Reparameterization of the scaling law to use linear functions of compressibility H. |
-| ![Linear regression formula](../assets/gzip-predicts-scaling-laws/fig-10.png) | Formula for predicting each scaling parameter as a linear function of H(D). |
-| ![Fitted linear regression values](../assets/gzip-predicts-scaling-laws/fig-11.png) | Fitted values for the linear functions x(H) for all five scaling parameters. |
-| ![Scaling parameters vs compressibility](../assets/gzip-predicts-scaling-laws/fig-12.png) | Plots of all five scaling parameters as functions of gzip compressibility. |
-| ![Data-dependent scaling law formula](../assets/gzip-predicts-scaling-laws/fig-13.png) | Full reparameterized scaling law with compressibility H as an explicit input. |
-| ![Chinchilla adjustment formula](../assets/gzip-predicts-scaling-laws/fig-14.png) | Proposed adjustment of Chinchilla using ε-weighted compressibility correction. |
-| ![Fixed-vocab PCFG table](../assets/gzip-predicts-scaling-laws/fig-15.png) | Syntactic parameters for PCFG datasets holding terminal count fixed; compressibility still varies. |
-| ![Scaling params, fixed vocab](../assets/gzip-predicts-scaling-laws/fig-16.png) | Scaling law parameters still shift with compressibility when vocabulary is held constant. |
-| ![Fixed-compressibility PCFG table](../assets/gzip-predicts-scaling-laws/fig-17.png) | Syntactic parameters for datasets with matched compressibility but different syntax. |
+| ![Header](../assets/gzip-predicts-scaling-laws/fig-1.webp) | Article header image. |
+| ![Compressibility distributions](../assets/gzip-predicts-scaling-laws/fig-2.webp) | Gzip compressibility of different linguistic distributions on raw string and token sequence. |
+| ![PCFG compressibility table](../assets/gzip-predicts-scaling-laws/fig-3.webp) | Compressibility of each PCFG dataset alongside its syntactic parameters. |
+| ![Training curves](../assets/gzip-predicts-scaling-laws/fig-4-wide.webp) | Training curves for models of 4.2M–1.4B parameters on 100M-token datasets of varying complexity. |
+| ![Standard scaling law formula](../assets/gzip-predicts-scaling-laws/fig-5.webp) | The Chinchilla scaling law functional form: L(N,D) = E + A/N^α + B/D^β. |
+| ![Fitted scaling law parameters](../assets/gzip-predicts-scaling-laws/fig-6.webp) | Per-dataset fitted scaling law parameters with gzip compressibility. |
+| ![Compute-optimal frontier formula](../assets/gzip-predicts-scaling-laws/fig-7.webp) | Compute-optimal frontier equation in terms of FLOPs budget C. |
+| ![Compute-optimal frontiers plot](../assets/gzip-predicts-scaling-laws/fig-8.webp) | Compute-optimal frontiers for each PCFG dataset vs. Chinchilla's frontier; more complex data is more data-preferent. |
+| ![Compressibility-parameterized formula](../assets/gzip-predicts-scaling-laws/fig-9.webp) | Reparameterization of the scaling law to use linear functions of compressibility H. |
+| ![Linear regression formula](../assets/gzip-predicts-scaling-laws/fig-10.webp) | Formula for predicting each scaling parameter as a linear function of H(D). |
+| ![Fitted linear regression values](../assets/gzip-predicts-scaling-laws/fig-11.webp) | Fitted values for the linear functions x(H) for all five scaling parameters. |
+| ![Scaling parameters vs compressibility](../assets/gzip-predicts-scaling-laws/fig-12.webp) | Plots of all five scaling parameters as functions of gzip compressibility. |
+| ![Data-dependent scaling law formula](../assets/gzip-predicts-scaling-laws/fig-13.webp) | Full reparameterized scaling law with compressibility H as an explicit input. |
+| ![Chinchilla adjustment formula](../assets/gzip-predicts-scaling-laws/fig-14.webp) | Proposed adjustment of Chinchilla using ε-weighted compressibility correction. |
+| ![Fixed-vocab PCFG table](../assets/gzip-predicts-scaling-laws/fig-15.webp) | Syntactic parameters for PCFG datasets holding terminal count fixed; compressibility still varies. |
+| ![Scaling params, fixed vocab](../assets/gzip-predicts-scaling-laws/fig-16.webp) | Scaling law parameters still shift with compressibility when vocabulary is held constant. |
+| ![Fixed-compressibility PCFG table](../assets/gzip-predicts-scaling-laws/fig-17.webp) | Syntactic parameters for datasets with matched compressibility but different syntax. |
 
-The training curves ![training curves](../assets/gzip-predicts-scaling-laws/fig-4-wide.png) show that more complex (less compressible) data makes convergence uniformly slower across all model sizes. The compute-optimal frontiers plot ![frontiers](../assets/gzip-predicts-scaling-laws/fig-8.png) is the core empirical result: each PCFG dataset's frontier diverges from Chinchilla in a compressibility-ordered way, with complex data strongly preferring more tokens.
+The training curves ![training curves](../assets/gzip-predicts-scaling-laws/fig-4-wide.webp) show that more complex (less compressible) data makes convergence uniformly slower across all model sizes. The compute-optimal frontiers plot ![frontiers](../assets/gzip-predicts-scaling-laws/fig-8.webp) is the core empirical result: each PCFG dataset's frontier diverges from Chinchilla in a compressibility-ordered way, with complex data strongly preferring more tokens.
 
 ## Entities
 

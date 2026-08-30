@@ -1,6 +1,6 @@
 # Introducing Command R+: A Scalable LLM Built for Business
 
-**Source**: `raw/command-r-plus/full-article.html` (338 KB), `raw/command-r-plus/full-article.md` (markdown view)  
+**Source**: `raw/command-r-plus/full-article.md` (338 KB), `raw/command-r-plus/full-article.md` (markdown view)  
 **URL**: https://cohere.com/blog/command-r-plus-microsoft-azure  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -28,14 +28,14 @@ A distinguishing production claim is the **Cohere tokenizer** for the R-series: 
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/command-r-plus/fig-1.png) | Command R+ blog header / hero image | — |
-| ![fig-2](../assets/command-r-plus/fig-2.png) | Azure performance (multilingual, RAG, tool use) and token-cost comparison | — |
-| ![fig-3](../assets/command-r-plus/fig-3.png) | Human preference RAG eval and multi-hop REACT agent accuracy | — |
-| ![fig-4](../assets/command-r-plus/fig-4.png) | ToolTalk (Hard) and BFCL function-calling benchmarks | — |
-| ![fig-5](../assets/command-r-plus/fig-5.png) | FLoRES and WMT23 multilingual translation evaluations | — |
-| ![fig-6](../assets/command-r-plus/fig-6.png) | Token-count comparison: Cohere vs Mistral vs OpenAI tokenizers | — |
+| ![fig-1](../assets/command-r-plus/fig-1.webp) | Command R+ blog header / hero image | — |
+| ![fig-2](../assets/command-r-plus/fig-2.webp) | Azure performance (multilingual, RAG, tool use) and token-cost comparison | — |
+| ![fig-3](../assets/command-r-plus/fig-3.webp) | Human preference RAG eval and multi-hop REACT agent accuracy | — |
+| ![fig-4](../assets/command-r-plus/fig-4.webp) | ToolTalk (Hard) and BFCL function-calling benchmarks | — |
+| ![fig-5](../assets/command-r-plus/fig-5.webp) | FLoRES and WMT23 multilingual translation evaluations | — |
+| ![fig-6](../assets/command-r-plus/fig-6.webp) | Token-count comparison: Cohere vs Mistral vs OpenAI tokenizers | — |
 
-![Azure performance comparison](../assets/command-r-plus/fig-2.png)
+![Azure performance comparison](../assets/command-r-plus/fig-2.webp)
 
 ## Entities
 

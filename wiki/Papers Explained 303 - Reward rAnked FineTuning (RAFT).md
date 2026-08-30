@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-02-05_Papers-Explained-303--Reward-rAnked-FineTuning--RAFT--791154585908.html`
+- Source file: `raw/2025-02-05_Papers-Explained-303--Reward-rAnked-FineTuning--RAFT--791154585908.md`
 - Source title: Papers Explained 303: Reward rAnked FineTuning (RAFT)
 - Published: 2025-02-05
 - Canonical: [https://medium.com/@ritvik19/papers-explained-303-reward-ranked-finetuning-raft-791154585908](https://medium.com/@ritvik19/papers-explained-303-reward-ranked-finetuning-raft-791154585908)
@@ -95,22 +95,22 @@ RAFT: Reward rAnked FineTuning for Generative Foundation Model Alignment [2304.0
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-02-05_Papers-Explained-303--Reward-rAnked-FineTuning--RAFT--791154585908.html`); local copies under `wiki/assets/papers-explained-303-reward-ranked-finetuning-raft/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-02-05_Papers-Explained-303--Reward-rAnked-FineTuning--RAFT--791154585908.md`); local copies under `wiki/assets/papers-explained-303-reward-ranked-finetuning-raft/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-303-reward-ranked-finetuning-raft/fig-1.png) | Title card: Reward rAnked FineTuning (RAFT). |
-| ![Figure 2](assets/papers-explained-303-reward-ranked-finetuning-raft/fig-2.png) | Consider an initial generative model G0 = g(w0, x) with model parameter w0. |
-| ![Figure 3](assets/papers-explained-303-reward-ranked-finetuning-raft/fig-3.png) | If the generative model is powerful enough to achieve the maximum at each prompt x, then the solution of [EQ 1] is. |
-| ![Figure 4](assets/papers-explained-303-reward-ranked-finetuning-raft/fig-4.png) | Complete table of results on HH-RLHF dataset. |
-| ![Figure 5](assets/papers-explained-303-reward-ranked-finetuning-raft/fig-5.png) | GPT-4 and Human evaluation results on the HH-RLHF dataset. |
-| ![Figure 6](assets/papers-explained-303-reward-ranked-finetuning-raft/fig-6.png) | Test results on the hand-out set under different K. |
-| ![Figure 7](assets/papers-explained-303-reward-ranked-finetuning-raft/fig-7.png) | Test results on the hand-out set under different temperatures λ. |
-| ![Figure 8](assets/papers-explained-303-reward-ranked-finetuning-raft/fig-8.png) | Test results on the hand-out set under different choices of the KL coefficient β. |
-| ![Figure 9](assets/papers-explained-303-reward-ranked-finetuning-raft/fig-9.png) | Test results on the hand-out set under different learning objectives. |
-| ![Figure 10](assets/papers-explained-303-reward-ranked-finetuning-raft/fig-10.png) | Resolution adaptation. |
-| ![Figure 11](assets/papers-explained-303-reward-ranked-finetuning-raft/fig-11.png) | Resolution Adaptation. (RAFT-aligned models can generate proper 256 × 256 samples). |
-| ![Figure 12](assets/papers-explained-303-reward-ranked-finetuning-raft/fig-12.png) | Text-Image Alignment with RAFT. (512×512 resolution). |
+| ![Figure 1](assets/papers-explained-303-reward-ranked-finetuning-raft/fig-1.webp) | Title card: Reward rAnked FineTuning (RAFT). |
+| ![Figure 2](assets/papers-explained-303-reward-ranked-finetuning-raft/fig-2.webp) | Consider an initial generative model G0 = g(w0, x) with model parameter w0. |
+| ![Figure 3](assets/papers-explained-303-reward-ranked-finetuning-raft/fig-3.webp) | If the generative model is powerful enough to achieve the maximum at each prompt x, then the solution of [EQ 1] is. |
+| ![Figure 4](assets/papers-explained-303-reward-ranked-finetuning-raft/fig-4.webp) | Complete table of results on HH-RLHF dataset. |
+| ![Figure 5](assets/papers-explained-303-reward-ranked-finetuning-raft/fig-5.webp) | GPT-4 and Human evaluation results on the HH-RLHF dataset. |
+| ![Figure 6](assets/papers-explained-303-reward-ranked-finetuning-raft/fig-6.webp) | Test results on the hand-out set under different K. |
+| ![Figure 7](assets/papers-explained-303-reward-ranked-finetuning-raft/fig-7.webp) | Test results on the hand-out set under different temperatures λ. |
+| ![Figure 8](assets/papers-explained-303-reward-ranked-finetuning-raft/fig-8.webp) | Test results on the hand-out set under different choices of the KL coefficient β. |
+| ![Figure 9](assets/papers-explained-303-reward-ranked-finetuning-raft/fig-9.webp) | Test results on the hand-out set under different learning objectives. |
+| ![Figure 10](assets/papers-explained-303-reward-ranked-finetuning-raft/fig-10.webp) | Resolution adaptation. |
+| ![Figure 11](assets/papers-explained-303-reward-ranked-finetuning-raft/fig-11.webp) | Resolution Adaptation. (RAFT-aligned models can generate proper 256 × 256 samples). |
+| ![Figure 12](assets/papers-explained-303-reward-ranked-finetuning-raft/fig-12.webp) | Text-Image Alignment with RAFT. (512×512 resolution). |
 ## Related
 
 - [[Papers Explained Corpus]]

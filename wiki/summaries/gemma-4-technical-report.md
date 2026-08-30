@@ -1,6 +1,6 @@
 # Gemma 4 Technical Report
 
-**Source**: `raw/gemma-4-technical-report/full-article.html` (251 KB)  
+**Source**: `raw/gemma-4-technical-report/full-article.md` (251 KB)  
 **URL**: https://arxiv.org/abs/2607.02770  
 **Ingested**: 2026-07-12  
 **Tags**: #summary

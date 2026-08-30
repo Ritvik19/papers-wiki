@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-12-17_Papers-Explained--GRAPE-22ce6da195a5.html`
+- Source file: `raw/2025-12-17_Papers-Explained--GRAPE-22ce6da195a5.md`
 - Source title: Papers Explained: GRAPE
 - Published: 2025-12-17
 - Canonical: [https://medium.com/@ritvik19/papers-explained-grape-22ce6da195a5](https://medium.com/@ritvik19/papers-explained-grape-22ce6da195a5)
@@ -97,14 +97,14 @@ The Best Instruction-Tuning Data are Those That Fit [2502.04194](https://arxiv.o
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-12-17_Papers-Explained--GRAPE-22ce6da195a5.html`); local copies under `wiki/assets/papers-explained-grape/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-12-17_Papers-Explained--GRAPE-22ce6da195a5.md`); local copies under `wiki/assets/papers-explained-grape/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-grape/fig-1.png) | GRAPE overview: score candidate instruction responses with the target LM and keep highest-scoring tuples for SFT. |
-| ![Figure 2](assets/papers-explained-grape/fig-2.png) | Synthetic UltraInteract-SFT ablations showing GRAPE-selected responses beating uniform sampling baselines. |
-| ![Figure 3](assets/papers-explained-grape/fig-3.png) | Tulu–OLMo merged preference pool experiments across reasoning and chat benchmarks. |
-| ![Figure 4](assets/papers-explained-grape/fig-4.png) | Compute-normalized comparison vs training on all responses and vs prior data-selection methods (e.g., S2L). |
+| ![Figure 1](assets/papers-explained-grape/fig-1.webp) | GRAPE overview: score candidate instruction responses with the target LM and keep highest-scoring tuples for SFT. |
+| ![Figure 2](assets/papers-explained-grape/fig-2.webp) | Synthetic UltraInteract-SFT ablations showing GRAPE-selected responses beating uniform sampling baselines. |
+| ![Figure 3](assets/papers-explained-grape/fig-3.webp) | Tulu–OLMo merged preference pool experiments across reasoning and chat benchmarks. |
+| ![Figure 4](assets/papers-explained-grape/fig-4.webp) | Compute-normalized comparison vs training on all responses and vs prior data-selection methods (e.g., S2L). |
 ## Related
 
 - [[Papers Explained Corpus]]

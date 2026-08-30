@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-07-19_Papers-Explained-165--Reformer-4445ad305191.html`
+- Source file: `raw/2024-07-19_Papers-Explained-165--Reformer-4445ad305191.md`
 - Source title: Papers Explained 165: Reformer
 - Published: 2024-07-19
 - Canonical: [https://medium.com/@ritvik19/papers-explained-165-reformer-4445ad305191](https://medium.com/@ritvik19/papers-explained-165-reformer-4445ad305191)
@@ -97,13 +97,13 @@ Reformer: The Efficient Transformer [2001.04451](https://arxiv.org/abs/2001.0445
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-07-19_Papers-Explained-165--Reformer-4445ad305191.html`); local copies under `wiki/assets/papers-explained-165-reformer/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-07-19_Papers-Explained-165--Reformer-4445ad305191.md`); local copies under `wiki/assets/papers-explained-165-reformer/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-165-reformer/fig-1.png) | Paper title block: *Reformer: The Efficient Transformer*. |
-| ![Figure 2](assets/papers-explained-165-reformer/fig-2.png) | **LSH attention** pipeline (shared Q=K): hash buckets, sort, chunking, and causal within-bucket patterns; (a–d) attention sparsity vs. full attention. |
-| ![Figure 3](assets/papers-explained-165-reformer/fig-3.png) | **Angular LSH** intuition: random rotations bin spherical projections so nearby vectors collide in the same bucket sequence. |
+| ![Figure 1](assets/papers-explained-165-reformer/fig-1.webp) | Paper title block: *Reformer: The Efficient Transformer*. |
+| ![Figure 2](assets/papers-explained-165-reformer/fig-2.webp) | **LSH attention** pipeline (shared Q=K): hash buckets, sort, chunking, and causal within-bucket patterns; (a–d) attention sparsity vs. full attention. |
+| ![Figure 3](assets/papers-explained-165-reformer/fig-3.webp) | **Angular LSH** intuition: random rotations bin spherical projections so nearby vectors collide in the same bucket sequence. |
 ## Related
 
 - [[Papers Explained Corpus]]

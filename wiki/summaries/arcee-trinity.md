@@ -1,6 +1,6 @@
 # Papers Explained: Arcee Trinity
 
-**Source**: `raw/arcee-trinity/full-article.html`  
+**Source**: `raw/arcee-trinity/full-article.md`  
 **Ingested**: 2026-05-12  
 **Tags**: #summary
 
@@ -31,27 +31,27 @@ Trinity Large Base achieves competitive scores with GLM 4.5 Base despite having 
 
 | Figure | Caption |
 |--------|---------|
-| ![fig-1](../assets/arcee-trinity/fig-1.png) | Title card / hero image for Arcee Trinity article. |
-| ![fig-2](../assets/arcee-trinity/fig-2.png) | Architecture overview of the Trinity model family. |
-| ![fig-3](../assets/arcee-trinity/fig-3.png) | Query, key, value projections and QK-norm attention equations. |
-| ![fig-4](../assets/arcee-trinity/fig-4.png) | Local (SWA+RoPE) vs. global (NoPE) attention key/query formulas. |
-| ![fig-5](../assets/arcee-trinity/fig-5.png) | GQA head mapping from query heads to shared KV heads. |
-| ![fig-6](../assets/arcee-trinity/fig-6.png) | Scaled dot-product attention with shared KV computation. |
-| ![fig-7](../assets/arcee-trinity/fig-7.png) | Gated attention elementwise gate applied before output projection. |
-| ![fig-8](../assets/arcee-trinity/fig-8.png) | MoE output formula combining shared and routed experts. |
-| ![fig-9](../assets/arcee-trinity/fig-9.png) | Sigmoid routing score formula for routed experts. |
-| ![fig-10](../assets/arcee-trinity/fig-10.png) | Top-K expert selection with sigmoid + expert bias. |
-| ![fig-11](../assets/arcee-trinity/fig-11.png) | Auxiliary-loss-free expert bias update with re-centering formula. |
-| ![fig-12](../assets/arcee-trinity/fig-12.png) | Sequence-wise load balance loss formula. |
-| ![fig-13](../assets/arcee-trinity/fig-13.png) | SMEBU: normalized per-expert violation + tanh soft-clamping formula. |
-| ![fig-14](../assets/arcee-trinity/fig-14.png) | SMEBU: momentum buffer for expert bias updates. |
-| ![fig-15](../assets/arcee-trinity/fig-15.png) | Depth-scaled sandwich norm formula. |
-| ![fig-16](../assets/arcee-trinity/fig-16.png) | Depth-scaled RMSNorm gain initialization per layer. |
-| ![fig-17](../assets/arcee-trinity/fig-17.png) | RMSNorm applied before the language modeling head. |
-| ![fig-19](../assets/arcee-trinity/fig-19.png) | Embedding layer scaling by √d during forward pass. |
-| ![fig-20](../assets/arcee-trinity/fig-20.png) | Model configurations table for all Trinity variants (Nano, Mini, Large). |
-| ![fig-21](../assets/arcee-trinity/fig-21.png) | Trinity Large Base performance on benchmarks. |
-| ![fig-22](../assets/arcee-trinity/fig-22.png) | Trinity Large Preview (instruct) performance on benchmarks. |
+| ![fig-1](../assets/arcee-trinity/fig-1.webp) | Title card / hero image for Arcee Trinity article. |
+| ![fig-2](../assets/arcee-trinity/fig-2.webp) | Architecture overview of the Trinity model family. |
+| ![fig-3](../assets/arcee-trinity/fig-3.webp) | Query, key, value projections and QK-norm attention equations. |
+| ![fig-4](../assets/arcee-trinity/fig-4.webp) | Local (SWA+RoPE) vs. global (NoPE) attention key/query formulas. |
+| ![fig-5](../assets/arcee-trinity/fig-5.webp) | GQA head mapping from query heads to shared KV heads. |
+| ![fig-6](../assets/arcee-trinity/fig-6.webp) | Scaled dot-product attention with shared KV computation. |
+| ![fig-7](../assets/arcee-trinity/fig-7.webp) | Gated attention elementwise gate applied before output projection. |
+| ![fig-8](../assets/arcee-trinity/fig-8.webp) | MoE output formula combining shared and routed experts. |
+| ![fig-9](../assets/arcee-trinity/fig-9.webp) | Sigmoid routing score formula for routed experts. |
+| ![fig-10](../assets/arcee-trinity/fig-10.webp) | Top-K expert selection with sigmoid + expert bias. |
+| ![fig-11](../assets/arcee-trinity/fig-11.webp) | Auxiliary-loss-free expert bias update with re-centering formula. |
+| ![fig-12](../assets/arcee-trinity/fig-12.webp) | Sequence-wise load balance loss formula. |
+| ![fig-13](../assets/arcee-trinity/fig-13.webp) | SMEBU: normalized per-expert violation + tanh soft-clamping formula. |
+| ![fig-14](../assets/arcee-trinity/fig-14.webp) | SMEBU: momentum buffer for expert bias updates. |
+| ![fig-15](../assets/arcee-trinity/fig-15.webp) | Depth-scaled sandwich norm formula. |
+| ![fig-16](../assets/arcee-trinity/fig-16.webp) | Depth-scaled RMSNorm gain initialization per layer. |
+| ![fig-17](../assets/arcee-trinity/fig-17.webp) | RMSNorm applied before the language modeling head. |
+| ![fig-19](../assets/arcee-trinity/fig-19.webp) | Embedding layer scaling by √d during forward pass. |
+| ![fig-20](../assets/arcee-trinity/fig-20.webp) | Model configurations table for all Trinity variants (Nano, Mini, Large). |
+| ![fig-21](../assets/arcee-trinity/fig-21.webp) | Trinity Large Base performance on benchmarks. |
+| ![fig-22](../assets/arcee-trinity/fig-22.webp) | Trinity Large Preview (instruct) performance on benchmarks. |
 
 > fig-18 (weight initialization standard deviation formula) was unavailable due to a corrupted URL in the source export.
 

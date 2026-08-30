@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-06-30_Papers-Explained-398--Evaluation-is-all-you-need-648b9ede2d5e.html`
+- Source file: `raw/2025-06-30_Papers-Explained-398--Evaluation-is-all-you-need-648b9ede2d5e.md`
 - Source title: Papers Explained 398: Evaluation is all you need
 - Published: 2025-06-30
 - Canonical: [https://medium.com/@ritvik19/papers-explained-398-evaluation-is-all-you-need-648b9ede2d5e](https://medium.com/@ritvik19/papers-explained-398-evaluation-is-all-you-need-648b9ede2d5e)
@@ -157,17 +157,17 @@ Evaluation is All You Need: Strategic Overclaiming of LLM Reasoning Capabilities
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-06-30_Papers-Explained-398--Evaluation-is-all-you-need-648b9ede2d5e.html`); local copies under `wiki/assets/papers-explained-398-evaluation-is-all-you-need/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-06-30_Papers-Explained-398--Evaluation-is-all-you-need-648b9ede2d5e.md`); local copies under `wiki/assets/papers-explained-398-evaluation-is-all-you-need/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-398-evaluation-is-all-you-need/fig-1.png) | Title card: Evaluation is all you need. |
-| ![Figure 2](assets/papers-explained-398-evaluation-is-all-you-need/fig-2.png) | Model performance is evaluated with different values of N (number of independent inferences). |
-| ![Figure 3](assets/papers-explained-398-evaluation-is-all-you-need/fig-3.png) | A “fixed-seed N-times inference setup” (1-Seed-N) is designed, where each sample is inferred N times using the same fixed seed. |
-| ![Figure 4](assets/papers-explained-398-evaluation-is-all-you-need/fig-4.png) | To investigate the extent to which differences between AIME dataset versions affect evaluation results of reasoning models. |
-| ![Figure 5](assets/papers-explained-398-evaluation-is-all-you-need/fig-5.png) | Two experimental groups are used: one with the instruction placed before the question and another with the instruction placed after the... |
-| ![Figure 6](assets/papers-explained-398-evaluation-is-all-you-need/fig-6.png) | Randomized Group: Options are ordered as (A → B → C → D), but the correct answer is randomly placed in one of the four positions. |
-| ![Figure 7](assets/papers-explained-398-evaluation-is-all-you-need/fig-7.png) | Evaluation dataset version. |
+| ![Figure 1](assets/papers-explained-398-evaluation-is-all-you-need/fig-1.webp) | Title card: Evaluation is all you need. |
+| ![Figure 2](assets/papers-explained-398-evaluation-is-all-you-need/fig-2.webp) | Model performance is evaluated with different values of N (number of independent inferences). |
+| ![Figure 3](assets/papers-explained-398-evaluation-is-all-you-need/fig-3.webp) | A “fixed-seed N-times inference setup” (1-Seed-N) is designed, where each sample is inferred N times using the same fixed seed. |
+| ![Figure 4](assets/papers-explained-398-evaluation-is-all-you-need/fig-4.webp) | To investigate the extent to which differences between AIME dataset versions affect evaluation results of reasoning models. |
+| ![Figure 5](assets/papers-explained-398-evaluation-is-all-you-need/fig-5.webp) | Two experimental groups are used: one with the instruction placed before the question and another with the instruction placed after the... |
+| ![Figure 6](assets/papers-explained-398-evaluation-is-all-you-need/fig-6.webp) | Randomized Group: Options are ordered as (A → B → C → D), but the correct answer is randomly placed in one of the four positions. |
+| ![Figure 7](assets/papers-explained-398-evaluation-is-all-you-need/fig-7.webp) | Evaluation dataset version. |
 ## Related
 
 - [[Papers Explained Corpus]]

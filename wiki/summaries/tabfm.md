@@ -1,6 +1,6 @@
 # TabFM
 
-**Source**: `raw/tabfm/full-article.html`, `raw/tabfm/full-article.md`  
+**Source**: `raw/tabfm/full-article.md`, `raw/tabfm/full-article.md`  
 **Ingested**: 2026-07-12  
 **Tags**: #summary
 
@@ -26,9 +26,9 @@ On [[Papers Explained 418 - TabArena|TabArena]] (38 classification and 13 regres
 
 | Figure | Caption |
 |--------|---------|
-| ![fig-1](../assets/tabfm/fig-1.png) | TabFM hero illustration |
-| ![fig-2](../assets/tabfm/fig-2.png) | TabFM model architecture (row/column attention, compression, ICL transformer) |
-| ![fig-3](../assets/tabfm/fig-3.png) | TabArena Elo ratings: TabFM and TabFM-Ensemble vs. tuned baselines |
+| ![fig-1](../assets/tabfm/fig-1.webp) | TabFM hero illustration |
+| ![fig-2](../assets/tabfm/fig-2.webp) | TabFM model architecture (row/column attention, compression, ICL transformer) |
+| ![fig-3](../assets/tabfm/fig-3.webp) | TabArena Elo ratings: TabFM and TabFM-Ensemble vs. tuned baselines |
 
 ## Entities
 

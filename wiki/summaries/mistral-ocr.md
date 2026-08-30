@@ -1,6 +1,6 @@
 # Mistral OCR
 
-**Source**: `raw/mistral-ocr/full-article.html` (244 KB), `raw/mistral-ocr/full-article.md` (markdown view)  
+**Source**: `raw/mistral-ocr/full-article.md` (244 KB), `raw/mistral-ocr/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/mistral-ocr/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-22_Papers-Explained--An-Introduction-to-Vision-Language-Modeling-89e7697da6e3.html`
+- Source file: `raw/2024-08-22_Papers-Explained--An-Introduction-to-Vision-Language-Modeling-89e7697da6e3.md`
 - Source title: Papers Explained: An Introduction to Vision-Language Modeling
 - Published: 2024-08-22
 - Canonical: [https://medium.com/@ritvik19/papers-explained-an-introduction-to-vision-language-modeling-89e7697da6e3](https://medium.com/@ritvik19/papers-explained-an-introduction-to-vision-language-modeling-89e7697da6e3)
@@ -337,14 +337,14 @@ Recommended Reading [Multi Modal Transformers](https://ritvik19.medium.com/list/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-22_Papers-Explained--An-Introduction-to-Vision-Language-Modeling-89e7697da6e3.html`); local copies under `wiki/assets/papers-explained-an-introduction-to-vision-language-modeling/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-22_Papers-Explained--An-Introduction-to-Vision-Language-Modeling-89e7697da6e3.md`); local copies under `wiki/assets/papers-explained-an-introduction-to-vision-language-modeling/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-an-introduction-to-vision-language-modeling/fig-1.png) | Vision-language modeling landscape: linking continuous vision with discrete language for assistants and generative use cases. |
-| ![Figure 2](assets/papers-explained-an-introduction-to-vision-language-modeling/fig-2.png) | Families of VLMs (contrastive, masking, generative, pretrained-backbone hybrids). |
-| ![Figure 3](assets/papers-explained-an-introduction-to-vision-language-modeling/fig-3.png) | Practical considerations for training VLMs (data quality, filtering, balancing, evaluation). |
-| ![Figure 4](assets/papers-explained-an-introduction-to-vision-language-modeling/fig-4.png) | Evaluation protocols and benchmarks for assessing VLMs across tasks and robustness axes. |
+| ![Figure 1](assets/papers-explained-an-introduction-to-vision-language-modeling/fig-1.webp) | Vision-language modeling landscape: linking continuous vision with discrete language for assistants and generative use cases. |
+| ![Figure 2](assets/papers-explained-an-introduction-to-vision-language-modeling/fig-2.webp) | Families of VLMs (contrastive, masking, generative, pretrained-backbone hybrids). |
+| ![Figure 3](assets/papers-explained-an-introduction-to-vision-language-modeling/fig-3.webp) | Practical considerations for training VLMs (data quality, filtering, balancing, evaluation). |
+| ![Figure 4](assets/papers-explained-an-introduction-to-vision-language-modeling/fig-4.webp) | Evaluation protocols and benchmarks for assessing VLMs across tasks and robustness axes. |
 ## Related
 
 - [[Papers Explained Corpus]]

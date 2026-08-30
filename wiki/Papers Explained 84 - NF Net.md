@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-12-29_Papers-Explained-84--NF-Net-b8efa03d6b26.html`
+- Source file: `raw/2023-12-29_Papers-Explained-84--NF-Net-b8efa03d6b26.md`
 - Source title: Papers Explained 84: NF Net
 - Published: 2023-12-29
 - Canonical: [https://medium.com/@ritvik19/papers-explained-84-nf-net-b8efa03d6b26](https://medium.com/@ritvik19/papers-explained-84-nf-net-b8efa03d6b26)
@@ -185,21 +185,21 @@ High-Performance Large-Scale Image Recognition Without Normalization [2102.06171
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-12-29_Papers-Explained-84--NF-Net-b8efa03d6b26.html`); local copies under `wiki/assets/papers-explained-84-nf-net/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-12-29_Papers-Explained-84--NF-Net-b8efa03d6b26.md`); local copies under `wiki/assets/papers-explained-84-nf-net/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-84-nf-net/fig-1.png) | Title card: NF Net. |
-| ![Figure 2](assets/papers-explained-84-nf-net/fig-2.png) | hi denotes the inputs to the i th residual block, and fi denotes the function computed by the i th residual branch. |
-| ![Figure 3](assets/papers-explained-84-nf-net/fig-3.png) | N denotes the fan-in. |
-| ![Figure 4](assets/papers-explained-84-nf-net/fig-4.png) | Activation functions are scaled by a non-linearity specific scalar gain (γ) to ensure variance preservation. |
-| ![Figure 5](assets/papers-explained-84-nf-net/fig-5.png) | This standard clipping algorithm is sensitive to the choice of the clipping threshold (λ). |
-| ![Figure 6](assets/papers-explained-84-nf-net/fig-6.png) | || · ||F denote the Frobenius norm. |
-| ![Figure 7](assets/papers-explained-84-nf-net/fig-7.png) | Summary of NFNet bottleneck block design and architectural differences. |
-| ![Figure 8](assets/papers-explained-84-nf-net/fig-8.png) | NFNet family depths, drop rates, and input resolutions. |
-| ![Figure 9](assets/papers-explained-84-nf-net/fig-9.png) | The effect of architectural modifications and data augmentation on ImageNet Top-1 accuracy,. |
-| ![Figure 10](assets/papers-explained-84-nf-net/fig-10.png) | ImageNet Accuracy comparison for NFNets and a representative set of models. |
-| ![Figure 11](assets/papers-explained-84-nf-net/fig-11.png) | ImageNet Transfer Top-1 accuracy after pre-training. |
+| ![Figure 1](assets/papers-explained-84-nf-net/fig-1.webp) | Title card: NF Net. |
+| ![Figure 2](assets/papers-explained-84-nf-net/fig-2.webp) | hi denotes the inputs to the i th residual block, and fi denotes the function computed by the i th residual branch. |
+| ![Figure 3](assets/papers-explained-84-nf-net/fig-3.webp) | N denotes the fan-in. |
+| ![Figure 4](assets/papers-explained-84-nf-net/fig-4.webp) | Activation functions are scaled by a non-linearity specific scalar gain (γ) to ensure variance preservation. |
+| ![Figure 5](assets/papers-explained-84-nf-net/fig-5.webp) | This standard clipping algorithm is sensitive to the choice of the clipping threshold (λ). |
+| ![Figure 6](assets/papers-explained-84-nf-net/fig-6.webp) | || · ||F denote the Frobenius norm. |
+| ![Figure 7](assets/papers-explained-84-nf-net/fig-7.webp) | Summary of NFNet bottleneck block design and architectural differences. |
+| ![Figure 8](assets/papers-explained-84-nf-net/fig-8.webp) | NFNet family depths, drop rates, and input resolutions. |
+| ![Figure 9](assets/papers-explained-84-nf-net/fig-9.webp) | The effect of architectural modifications and data augmentation on ImageNet Top-1 accuracy,. |
+| ![Figure 10](assets/papers-explained-84-nf-net/fig-10.webp) | ImageNet Accuracy comparison for NFNets and a representative set of models. |
+| ![Figure 11](assets/papers-explained-84-nf-net/fig-11.webp) | ImageNet Transfer Top-1 accuracy after pre-training. |
 ## Related
 
 - [[Papers Explained Corpus]]

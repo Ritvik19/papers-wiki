@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-12-03_Papers-Explained-264--Jina-Embeddings-v2-c5d540a9154f.html`
+- Source file: `raw/2024-12-03_Papers-Explained-264--Jina-Embeddings-v2-c5d540a9154f.md`
 - Source title: Papers Explained 264: Jina Embeddings v2
 - Published: 2024-12-03
 - Canonical: [https://medium.com/@ritvik19/papers-explained-264-jina-embeddings-v2-c5d540a9154f](https://medium.com/@ritvik19/papers-explained-264-jina-embeddings-v2-c5d540a9154f)
@@ -131,22 +131,22 @@ Recommended Reading [Retrieval and Representation Learning](https://ritvik19.med
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-12-03_Papers-Explained-264--Jina-Embeddings-v2-c5d540a9154f.html`); local copies under `wiki/assets/papers-explained-264-jina-embeddings-v2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-12-03_Papers-Explained-264--Jina-Embeddings-v2-c5d540a9154f.md`); local copies under `wiki/assets/papers-explained-264-jina-embeddings-v2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-264-jina-embeddings-v2/fig-1.png) | Title card: Jina Embeddings v2. |
-| ![Figure 2](assets/papers-explained-264-jina-embeddings-v2/fig-2.png) | Architecture specifications for the Jina BERT models of varying sizes. |
-| ![Figure 3](assets/papers-explained-264-jina-embeddings-v2/fig-3.png) | Each head’s scaling value, mi, out of the total n heads, is derived using. |
-| ![Figure 4](assets/papers-explained-264-jina-embeddings-v2/fig-4.png) | Each head’s scaling value, mi, out of the total n heads, is derived using. |
-| ![Figure 5](assets/papers-explained-264-jina-embeddings-v2/fig-5.png) | Fine-tuning with Text Pairs. |
-| ![Figure 6](assets/papers-explained-264-jina-embeddings-v2/fig-6.png) | Fine-tuning with Text Pairs. |
-| ![Figure 7](assets/papers-explained-264-jina-embeddings-v2/fig-7.png) | Fine-tuning with Text Pairs. |
-| ![Figure 8](assets/papers-explained-264-jina-embeddings-v2/fig-8.png) | The training employs a modified variant of the InfoNCE loss function, denoted as LNCE+. |
-| ![Figure 9](assets/papers-explained-264-jina-embeddings-v2/fig-9.png) | Evaluation of the Jina BERT models on the GLUE benchmark. |
-| ![Figure 10](assets/papers-explained-264-jina-embeddings-v2/fig-10.png) | Variation of model MLM accuracy w.r.t. the sequence length. |
-| ![Figure 11](assets/papers-explained-264-jina-embeddings-v2/fig-11.png) | Evaluation of the Jina Embeddings v2 models on the MTEB benchmark. |
-| ![Figure 12](assets/papers-explained-264-jina-embeddings-v2/fig-12.png) | Evaluation w.r.t. maximum sequence length. |
+| ![Figure 1](assets/papers-explained-264-jina-embeddings-v2/fig-1.webp) | Title card: Jina Embeddings v2. |
+| ![Figure 2](assets/papers-explained-264-jina-embeddings-v2/fig-2.webp) | Architecture specifications for the Jina BERT models of varying sizes. |
+| ![Figure 3](assets/papers-explained-264-jina-embeddings-v2/fig-3.webp) | Each head’s scaling value, mi, out of the total n heads, is derived using. |
+| ![Figure 4](assets/papers-explained-264-jina-embeddings-v2/fig-4.webp) | Each head’s scaling value, mi, out of the total n heads, is derived using. |
+| ![Figure 5](assets/papers-explained-264-jina-embeddings-v2/fig-5.webp) | Fine-tuning with Text Pairs. |
+| ![Figure 6](assets/papers-explained-264-jina-embeddings-v2/fig-6.webp) | Fine-tuning with Text Pairs. |
+| ![Figure 7](assets/papers-explained-264-jina-embeddings-v2/fig-7.webp) | Fine-tuning with Text Pairs. |
+| ![Figure 8](assets/papers-explained-264-jina-embeddings-v2/fig-8.webp) | The training employs a modified variant of the InfoNCE loss function, denoted as LNCE+. |
+| ![Figure 9](assets/papers-explained-264-jina-embeddings-v2/fig-9.webp) | Evaluation of the Jina BERT models on the GLUE benchmark. |
+| ![Figure 10](assets/papers-explained-264-jina-embeddings-v2/fig-10.webp) | Variation of model MLM accuracy w.r.t. the sequence length. |
+| ![Figure 11](assets/papers-explained-264-jina-embeddings-v2/fig-11.webp) | Evaluation of the Jina Embeddings v2 models on the MTEB benchmark. |
+| ![Figure 12](assets/papers-explained-264-jina-embeddings-v2/fig-12.webp) | Evaluation w.r.t. maximum sequence length. |
 ## Related
 
 - [[Papers Explained Corpus]]

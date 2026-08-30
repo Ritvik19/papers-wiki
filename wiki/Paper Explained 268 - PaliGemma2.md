@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-12-09_Paper-Explained-268--PaliGemma2-2a00d72fb428.html`
+- Source file: `raw/2024-12-09_Paper-Explained-268--PaliGemma2-2a00d72fb428.md`
 - Source title: Paper Explained 268: PaliGemma2
 - Published: 2024-12-09
 - Canonical: [https://medium.com/@ritvik19/paper-explained-268-paligemma2-2a00d72fb428](https://medium.com/@ritvik19/paper-explained-268-paligemma2-2a00d72fb428)
@@ -155,25 +155,25 @@ Recommended Reading [Gemini / Gemma Models](https://ritvik19.medium.com/list/gem
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-12-09_Paper-Explained-268--PaliGemma2-2a00d72fb428.html`); local copies under `wiki/assets/paper-explained-268-paligemma2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-12-09_Paper-Explained-268--PaliGemma2-2a00d72fb428.md`); local copies under `wiki/assets/paper-explained-268-paligemma2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/paper-explained-268-paligemma2/fig-1.png) | Overview of PaliGemma 2: Gemma 2 LM backbone with the SigLIP-So400m vision encoder kept from PaliGemma. |
-| ![Figure 2](assets/paper-explained-268-paligemma2/fig-2.png) | Architecture and inference flow (SigLIP embeddings projected into Gemma 2 space; multimodal prefill then LM decoding). |
-| ![Figure 3](assets/paper-explained-268-paligemma2/fig-3.png) | Three-stage multimodal training (joint mixture at 224px; high-res 448/896px stage 2; task-specific stage 3 fine-tuning). |
-| ![Figure 4](assets/paper-explained-268-paligemma2/fig-4.png) | Relative improvements after transfer when using a larger LM checkpoint vs higher-resolution pretraining. |
-| ![Figure 5](assets/paper-explained-268-paligemma2/fig-5.png) | Transfer performance vs model size and image resolution. |
-| ![Figure 6](assets/paper-explained-268-paligemma2/fig-6.png) | PaliGemma vs PaliGemma 2 at 3B (same-resolution comparison). |
-| ![Figure 7](assets/paper-explained-268-paligemma2/fig-7.png) | Text detection and recognition (ICDAR’15, Total-Text). |
-| ![Figure 8](assets/paper-explained-268-paligemma2/fig-8.png) | Table structure recognition on FinTabNet and PubTabNet (TEDS / GriTS). |
-| ![Figure 9](assets/paper-explained-268-paligemma2/fig-9.png) | Molecular structure recognition on ChemDraw-style renders vs MolScribe. |
-| ![Figure 10](assets/paper-explained-268-paligemma2/fig-10.png) | Optical music score recognition on GrandStaff (kern transcription). |
-| ![Figure 11](assets/paper-explained-268-paligemma2/fig-11.png) | Long fine-grained captioning on DOCCI (factual alignment). |
-| ![Figure 12](assets/paper-explained-268-paligemma2/fig-12.png) | Visual Spatial Reasoning (VSR), zeroshot vs random splits. |
-| ![Figure 13](assets/paper-explained-268-paligemma2/fig-13.png) | Radiology report generation on MIMIC-CXR (RadGraph F1). |
-| ![Figure 14](assets/paper-explained-268-paligemma2/fig-14.png) | CPU-only inference latency across architectures (`gemma.cpp`, batch size 1). |
-| ![Figure 15](assets/paper-explained-268-paligemma2/fig-15.png) | Quality of JAX fp32 on TPU vs 8-bit mixed quantization on CPU (`gemma.cpp`). |
+| ![Figure 1](assets/paper-explained-268-paligemma2/fig-1.webp) | Overview of PaliGemma 2: Gemma 2 LM backbone with the SigLIP-So400m vision encoder kept from PaliGemma. |
+| ![Figure 2](assets/paper-explained-268-paligemma2/fig-2.webp) | Architecture and inference flow (SigLIP embeddings projected into Gemma 2 space; multimodal prefill then LM decoding). |
+| ![Figure 3](assets/paper-explained-268-paligemma2/fig-3.webp) | Three-stage multimodal training (joint mixture at 224px; high-res 448/896px stage 2; task-specific stage 3 fine-tuning). |
+| ![Figure 4](assets/paper-explained-268-paligemma2/fig-4.webp) | Relative improvements after transfer when using a larger LM checkpoint vs higher-resolution pretraining. |
+| ![Figure 5](assets/paper-explained-268-paligemma2/fig-5.webp) | Transfer performance vs model size and image resolution. |
+| ![Figure 6](assets/paper-explained-268-paligemma2/fig-6.webp) | PaliGemma vs PaliGemma 2 at 3B (same-resolution comparison). |
+| ![Figure 7](assets/paper-explained-268-paligemma2/fig-7.webp) | Text detection and recognition (ICDAR’15, Total-Text). |
+| ![Figure 8](assets/paper-explained-268-paligemma2/fig-8.webp) | Table structure recognition on FinTabNet and PubTabNet (TEDS / GriTS). |
+| ![Figure 9](assets/paper-explained-268-paligemma2/fig-9.webp) | Molecular structure recognition on ChemDraw-style renders vs MolScribe. |
+| ![Figure 10](assets/paper-explained-268-paligemma2/fig-10.webp) | Optical music score recognition on GrandStaff (kern transcription). |
+| ![Figure 11](assets/paper-explained-268-paligemma2/fig-11.webp) | Long fine-grained captioning on DOCCI (factual alignment). |
+| ![Figure 12](assets/paper-explained-268-paligemma2/fig-12.webp) | Visual Spatial Reasoning (VSR), zeroshot vs random splits. |
+| ![Figure 13](assets/paper-explained-268-paligemma2/fig-13.webp) | Radiology report generation on MIMIC-CXR (RadGraph F1). |
+| ![Figure 14](assets/paper-explained-268-paligemma2/fig-14.webp) | CPU-only inference latency across architectures (`gemma.cpp`, batch size 1). |
+| ![Figure 15](assets/paper-explained-268-paligemma2/fig-15.webp) | Quality of JAX fp32 on TPU vs 8-bit mixed quantization on CPU (`gemma.cpp`). |
 ## HF Blog Cross-References
 
 - [PaliGemma 2 Mix - New Instruction Vision Language Models by Google](https://huggingface.co/blog/paligemma2mix) (2025-02-19) — a follow-up release fine-tuning the PaliGemma 2 **pt** checkpoints (3B/10B/28B) on a mix of vision-language tasks (OCR, long/short captioning, detection) rather than leaving them purely as transfer-learning bases; gives a preview of downstream performance without task-specific fine-tuning.

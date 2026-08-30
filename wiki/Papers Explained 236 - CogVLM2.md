@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-10-22_Papers-Explained-236--CogVLM2-db0261745cf5.html`
+- Source file: `raw/2024-10-22_Papers-Explained-236--CogVLM2-db0261745cf5.md`
 - Source title: Papers Explained 236: CogVLM2
 - Published: 2024-10-22
 - Canonical: [https://medium.com/@ritvik19/papers-explained-236-cogvlm2-db0261745cf5](https://medium.com/@ritvik19/papers-explained-236-cogvlm2-db0261745cf5)
@@ -143,19 +143,19 @@ Recommended Reading [Multi Modal Transformers](https://ritvik19.medium.com/list/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-10-22_Papers-Explained-236--CogVLM2-db0261745cf5.html`); local copies under `wiki/assets/papers-explained-236-cogvlm2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-10-22_Papers-Explained-236--CogVLM2-db0261745cf5.md`); local copies under `wiki/assets/papers-explained-236-cogvlm2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-236-cogvlm2/fig-1.png) | Title card: CogVLM2. |
-| ![Figure 2](assets/papers-explained-236-cogvlm2/fig-2.png) | Overview of CogVLM family. |
-| ![Figure 3](assets/papers-explained-236-cogvlm2/fig-3.png) | Comparison of different model architectures. |
-| ![Figure 4](assets/papers-explained-236-cogvlm2/fig-4.png) | The architecture of the CogVLM Family. |
-| ![Figure 5](assets/papers-explained-236-cogvlm2/fig-5.png) | VQA datasets used in image understanding models. The “Type” column signifies the format of the answers provided. “0” corresponds to concise responses, such as multiple-choice, Y/N, etc. “1” denotes comprehensive answers that incorporate a chain of thought processes. |
-| ![Figure 6](assets/papers-explained-236-cogvlm2/fig-6.png) | The pipeline for temporal grounding data generation. |
-| ![Figure 7](assets/papers-explained-236-cogvlm2/fig-7.png) | Datasets used in video understanding models. |
-| ![Figure 8](assets/papers-explained-236-cogvlm2/fig-8.png) | Image understanding performance comparison on popular benchmarks. |
-| ![Figure 9](assets/papers-explained-236-cogvlm2/fig-9.png) | Video understanding performance comparison. |
+| ![Figure 1](assets/papers-explained-236-cogvlm2/fig-1.webp) | Title card: CogVLM2. |
+| ![Figure 2](assets/papers-explained-236-cogvlm2/fig-2.webp) | Overview of CogVLM family. |
+| ![Figure 3](assets/papers-explained-236-cogvlm2/fig-3.webp) | Comparison of different model architectures. |
+| ![Figure 4](assets/papers-explained-236-cogvlm2/fig-4.webp) | The architecture of the CogVLM Family. |
+| ![Figure 5](assets/papers-explained-236-cogvlm2/fig-5.webp) | VQA datasets used in image understanding models. The “Type” column signifies the format of the answers provided. “0” corresponds to concise responses, such as multiple-choice, Y/N, etc. “1” denotes comprehensive answers that incorporate a chain of thought processes. |
+| ![Figure 6](assets/papers-explained-236-cogvlm2/fig-6.webp) | The pipeline for temporal grounding data generation. |
+| ![Figure 7](assets/papers-explained-236-cogvlm2/fig-7.webp) | Datasets used in video understanding models. |
+| ![Figure 8](assets/papers-explained-236-cogvlm2/fig-8.webp) | Image understanding performance comparison on popular benchmarks. |
+| ![Figure 9](assets/papers-explained-236-cogvlm2/fig-9.webp) | Video understanding performance comparison. |
 ## Related
 
 - [[Papers Explained Corpus]]

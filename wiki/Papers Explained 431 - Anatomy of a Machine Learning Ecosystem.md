@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-08-14_Papers-Explained-431--Anatomy-of-a-Machine-Learning-Ecosystem-f95f60950eb5.html`
+- Source file: `raw/2025-08-14_Papers-Explained-431--Anatomy-of-a-Machine-Learning-Ecosystem-f95f60950eb5.md`
 - Source title: Papers Explained 431: Anatomy of a Machine Learning Ecosystem
 - Published: 2025-08-14
 - Canonical: [https://medium.com/@ritvik19/papers-explained-431-anatomy-of-a-machine-learning-ecosystem-f95f60950eb5](https://medium.com/@ritvik19/papers-explained-431-anatomy-of-a-machine-learning-ecosystem-f95f60950eb5)
@@ -219,20 +219,20 @@ Anatomy of a Machine Learning Ecosystem: 2 Million Models on Hugging Face [2508.
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-08-14_Papers-Explained-431--Anatomy-of-a-Machine-Learning-Ecosystem-f95f60950eb5.html`); local copies under `wiki/assets/papers-explained-431-anatomy-of-a-machine-learning-ecosystem/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-08-14_Papers-Explained-431--Anatomy-of-a-Machine-Learning-Ecosystem-f95f60950eb5.md`); local copies under `wiki/assets/papers-explained-431-anatomy-of-a-machine-learning-ecosystem/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-431-anatomy-of-a-machine-learning-ecosystem/fig-1.png) | Title card: Anatomy of a Machine Learning Ecosystem. |
-| ![Figure 2](assets/papers-explained-431-anatomy-of-a-machine-learning-ecosystem/fig-2.png) | Model metadata comes in JSON format. |
-| ![Figure 3](assets/papers-explained-431-anatomy-of-a-machine-learning-ecosystem/fig-3.png) | The diff between two sequences of model metadata. |
-| ![Figure 4](assets/papers-explained-431-anatomy-of-a-machine-learning-ecosystem/fig-4.png) | Inspired by ecological and genetic perspectives and existing work on network diffusion, the relationship between family structure and... |
-| ![Figure 5](assets/papers-explained-431-anatomy-of-a-machine-learning-ecosystem/fig-5.png) | Subgraph patterns, their total occurrences, sampling conditions, and associated multiplicities conditioned on each pattern. |
-| ![Figure 6](assets/papers-explained-431-anatomy-of-a-machine-learning-ecosystem/fig-6.png) | Cosine similarity between TF-IDF embedding vectors, trained on terms appearing in the model metadata for all models in the dataset. |
-| ![Figure 7](assets/papers-explained-431-anatomy-of-a-machine-learning-ecosystem/fig-7.png) | Network Distance:: The Hugging Face Hub hosts 162 unique license types, with 98 being standardized categories. |
-| ![Figure 8](assets/papers-explained-431-anatomy-of-a-machine-learning-ecosystem/fig-8.png) | Network Distance. |
-| ![Figure 9](assets/papers-explained-431-anatomy-of-a-machine-learning-ecosystem/fig-9.png) | Network Distance:: For languages, partial mutations are allowed. |
-| ![Figure 10](assets/papers-explained-431-anatomy-of-a-machine-learning-ecosystem/fig-10.png) | The results suggest that tasks progress from. |
+| ![Figure 1](assets/papers-explained-431-anatomy-of-a-machine-learning-ecosystem/fig-1.webp) | Title card: Anatomy of a Machine Learning Ecosystem. |
+| ![Figure 2](assets/papers-explained-431-anatomy-of-a-machine-learning-ecosystem/fig-2.webp) | Model metadata comes in JSON format. |
+| ![Figure 3](assets/papers-explained-431-anatomy-of-a-machine-learning-ecosystem/fig-3.webp) | The diff between two sequences of model metadata. |
+| ![Figure 4](assets/papers-explained-431-anatomy-of-a-machine-learning-ecosystem/fig-4.webp) | Inspired by ecological and genetic perspectives and existing work on network diffusion, the relationship between family structure and... |
+| ![Figure 5](assets/papers-explained-431-anatomy-of-a-machine-learning-ecosystem/fig-5.webp) | Subgraph patterns, their total occurrences, sampling conditions, and associated multiplicities conditioned on each pattern. |
+| ![Figure 6](assets/papers-explained-431-anatomy-of-a-machine-learning-ecosystem/fig-6.webp) | Cosine similarity between TF-IDF embedding vectors, trained on terms appearing in the model metadata for all models in the dataset. |
+| ![Figure 7](assets/papers-explained-431-anatomy-of-a-machine-learning-ecosystem/fig-7.webp) | Network Distance:: The Hugging Face Hub hosts 162 unique license types, with 98 being standardized categories. |
+| ![Figure 8](assets/papers-explained-431-anatomy-of-a-machine-learning-ecosystem/fig-8.webp) | Network Distance. |
+| ![Figure 9](assets/papers-explained-431-anatomy-of-a-machine-learning-ecosystem/fig-9.webp) | Network Distance:: For languages, partial mutations are allowed. |
+| ![Figure 10](assets/papers-explained-431-anatomy-of-a-machine-learning-ecosystem/fig-10.webp) | The results suggest that tasks progress from. |
 ## Related
 
 - [[Papers Explained Corpus]]

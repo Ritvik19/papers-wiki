@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-01-07_Papers-Explained-518--Nemotron-Cascade-4fc163e3bdbf.html`
+- Source file: `raw/2026-01-07_Papers-Explained-518--Nemotron-Cascade-4fc163e3bdbf.md`
 - Source title: Papers Explained 518: Nemotron Cascade
 - Published: 2026-01-07
 - Canonical: [https://medium.com/@ritvik19/papers-explained-518-nemotron-cascade-4fc163e3bdbf](https://medium.com/@ritvik19/papers-explained-518-nemotron-cascade-4fc163e3bdbf)
@@ -313,33 +313,33 @@ Nemotron-Cascade: Scaling Cascaded Reinforcement Learning for General-Purpose Re
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-01-07_Papers-Explained-518--Nemotron-Cascade-4fc163e3bdbf.html`); local copies under `wiki/assets/papers-explained-518-nemotron-cascade/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-01-07_Papers-Explained-518--Nemotron-Cascade-4fc163e3bdbf.md`); local copies under `wiki/assets/papers-explained-518-nemotron-cascade/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-518-nemotron-cascade/fig-1.png) | Title card: Nemotron Cascade. |
-| ![Figure 2](assets/papers-explained-518-nemotron-cascade/fig-2.png) | The models and data are available at HuggingFace. |
-| ![Figure 3](assets/papers-explained-518-nemotron-cascade/fig-3.png) | Stage 2 (32K). |
-| ![Figure 4](assets/papers-explained-518-nemotron-cascade/fig-4.png) | Training hyperparameters of 8B and 14B models in multi-stage SFT. |
-| ![Figure 5](assets/papers-explained-518-nemotron-cascade/fig-5.png) | The evaluation results of 8B/14B-Thinking and the unified 8B models after SFT. |
-| ![Figure 6](assets/papers-explained-518-nemotron-cascade/fig-6.png) | Throughout the entire Cascade RL process, the GRPO algorithm is used. |
-| ![Figure 7](assets/papers-explained-518-nemotron-cascade/fig-7.png) | Tool Calling Data. |
-| ![Figure 8](assets/papers-explained-518-nemotron-cascade/fig-8.png) | Tool Calling Data. |
-| ![Figure 9](assets/papers-explained-518-nemotron-cascade/fig-9.png) | RewardBench performance showing ablation of RM’s LLM backbone choice. |
-| ![Figure 10](assets/papers-explained-518-nemotron-cascade/fig-10.png) | Training hyperparameters of 8B/14B models in RLHF. |
-| ![Figure 11](assets/papers-explained-518-nemotron-cascade/fig-11.png) | The evaluation results of our 8B/14B-Thinking and the unified 8B models after RLHF. |
-| ![Figure 12](assets/papers-explained-518-nemotron-cascade/fig-12.png) | Thinking Models. |
-| ![Figure 13](assets/papers-explained-518-nemotron-cascade/fig-13.png) | Training hyperparameters of 8B/14B models in IF-RL. |
-| ![Figure 14](assets/papers-explained-518-nemotron-cascade/fig-14.png) | The evaluation results of 8B/14B-Thinking and the unified 8B models after IF-RL. |
-| ![Figure 15](assets/papers-explained-518-nemotron-cascade/fig-15.png) | Training hyperparameters of 8B models in Math RL. |
-| ![Figure 16](assets/papers-explained-518-nemotron-cascade/fig-16.png) | Training hyperparameters of 14B-Thinking model in Math RL. |
-| ![Figure 17](assets/papers-explained-518-nemotron-cascade/fig-17.png) | The evaluation results of 8B/14B-Thinking and the unified 8B models after Math RL. |
-| ![Figure 18](assets/papers-explained-518-nemotron-cascade/fig-18.png) | Training hyperparameters of 8B-Thinking, 8B unified, and 14B-Thinking models in Code RL. |
-| ![Figure 19](assets/papers-explained-518-nemotron-cascade/fig-19.png) | The evaluation results of 8B/14B-Thinking and the unified 8B models after Code RL. |
-| ![Figure 20](assets/papers-explained-518-nemotron-cascade/fig-20.png) | Previous studies perform RL by executing model-generated code patches within Docker environments to obtain rewards. |
-| ![Figure 21](assets/papers-explained-518-nemotron-cascade/fig-21.png) | Training hyperparameters of 8B unified, 8B-Thinking, and 14B-Thinking models in SWE RL. |
-| ![Figure 22](assets/papers-explained-518-nemotron-cascade/fig-22.png) | The evaluation results of our final 8B/14B-Thinking and the unified 8B models after SWE RL. |
-| ![Figure 23](assets/papers-explained-518-nemotron-cascade/fig-23.png) | Main results. |
+| ![Figure 1](assets/papers-explained-518-nemotron-cascade/fig-1.webp) | Title card: Nemotron Cascade. |
+| ![Figure 2](assets/papers-explained-518-nemotron-cascade/fig-2.webp) | The models and data are available at HuggingFace. |
+| ![Figure 3](assets/papers-explained-518-nemotron-cascade/fig-3.webp) | Stage 2 (32K). |
+| ![Figure 4](assets/papers-explained-518-nemotron-cascade/fig-4.webp) | Training hyperparameters of 8B and 14B models in multi-stage SFT. |
+| ![Figure 5](assets/papers-explained-518-nemotron-cascade/fig-5.webp) | The evaluation results of 8B/14B-Thinking and the unified 8B models after SFT. |
+| ![Figure 6](assets/papers-explained-518-nemotron-cascade/fig-6.webp) | Throughout the entire Cascade RL process, the GRPO algorithm is used. |
+| ![Figure 7](assets/papers-explained-518-nemotron-cascade/fig-7.webp) | Tool Calling Data. |
+| ![Figure 8](assets/papers-explained-518-nemotron-cascade/fig-8.webp) | Tool Calling Data. |
+| ![Figure 9](assets/papers-explained-518-nemotron-cascade/fig-9.webp) | RewardBench performance showing ablation of RM’s LLM backbone choice. |
+| ![Figure 10](assets/papers-explained-518-nemotron-cascade/fig-10.webp) | Training hyperparameters of 8B/14B models in RLHF. |
+| ![Figure 11](assets/papers-explained-518-nemotron-cascade/fig-11.webp) | The evaluation results of our 8B/14B-Thinking and the unified 8B models after RLHF. |
+| ![Figure 12](assets/papers-explained-518-nemotron-cascade/fig-12.webp) | Thinking Models. |
+| ![Figure 13](assets/papers-explained-518-nemotron-cascade/fig-13.webp) | Training hyperparameters of 8B/14B models in IF-RL. |
+| ![Figure 14](assets/papers-explained-518-nemotron-cascade/fig-14.webp) | The evaluation results of 8B/14B-Thinking and the unified 8B models after IF-RL. |
+| ![Figure 15](assets/papers-explained-518-nemotron-cascade/fig-15.webp) | Training hyperparameters of 8B models in Math RL. |
+| ![Figure 16](assets/papers-explained-518-nemotron-cascade/fig-16.webp) | Training hyperparameters of 14B-Thinking model in Math RL. |
+| ![Figure 17](assets/papers-explained-518-nemotron-cascade/fig-17.webp) | The evaluation results of 8B/14B-Thinking and the unified 8B models after Math RL. |
+| ![Figure 18](assets/papers-explained-518-nemotron-cascade/fig-18.webp) | Training hyperparameters of 8B-Thinking, 8B unified, and 14B-Thinking models in Code RL. |
+| ![Figure 19](assets/papers-explained-518-nemotron-cascade/fig-19.webp) | The evaluation results of 8B/14B-Thinking and the unified 8B models after Code RL. |
+| ![Figure 20](assets/papers-explained-518-nemotron-cascade/fig-20.webp) | Previous studies perform RL by executing model-generated code patches within Docker environments to obtain rewards. |
+| ![Figure 21](assets/papers-explained-518-nemotron-cascade/fig-21.webp) | Training hyperparameters of 8B unified, 8B-Thinking, and 14B-Thinking models in SWE RL. |
+| ![Figure 22](assets/papers-explained-518-nemotron-cascade/fig-22.webp) | The evaluation results of our final 8B/14B-Thinking and the unified 8B models after SWE RL. |
+| ![Figure 23](assets/papers-explained-518-nemotron-cascade/fig-23.webp) | Main results. |
 ## Related
 
 - [[Papers Explained Corpus]]

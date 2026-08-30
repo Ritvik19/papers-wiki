@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-04-09_Papers-Explained-343--LSNet-22fc08fec1ae.html`
+- Source file: `raw/2025-04-09_Papers-Explained-343--LSNet-22fc08fec1ae.md`
 - Source title: Papers Explained 343: LSNet
 - Published: 2025-04-09
 - Canonical: [https://medium.com/@ritvik19/papers-explained-343-lsnet-22fc08fec1ae](https://medium.com/@ritvik19/papers-explained-343-lsnet-22fc08fec1ae)
@@ -189,23 +189,23 @@ LSNet: See Large, Focus Small [2503.23135](https://arxiv.org/abs/2503.23135)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-04-09_Papers-Explained-343--LSNet-22fc08fec1ae.html`); local copies under `wiki/assets/papers-explained-343-lsnet/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-04-09_Papers-Explained-343--LSNet-22fc08fec1ae.md`); local copies under `wiki/assets/papers-explained-343-lsnet/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-343-lsnet/fig-1.png) | Title card: LSNet. |
-| ![Figure 2](assets/papers-explained-343-lsnet/fig-2.png) | Comparison of self-attention, convolution, and LS conv. |
-| ![Figure 3](assets/papers-explained-343-lsnet/fig-3.png) | The general formula for token mixing is. |
-| ![Figure 4](assets/papers-explained-343-lsnet/fig-4.png) | Limitations of Self-Attention. |
-| ![Figure 5](assets/papers-explained-343-lsnet/fig-5.png) | Convolution utilizes a fixed kernel (Wconv) to aggregate features within a local neighborhood (NK(xi)) around the token (xi). |
-| ![Figure 6](assets/papers-explained-343-lsnet/fig-6.png) | Illustration of the proposed LS convolution. |
-| ![Figure 7](assets/papers-explained-343-lsnet/fig-7.png) | The fundamental process of LS Convolution is thus. |
-| ![Figure 8](assets/papers-explained-343-lsnet/fig-8.png) | where. |
-| ![Figure 9](assets/papers-explained-343-lsnet/fig-9.png) | where. |
-| ![Figure 10](assets/papers-explained-343-lsnet/fig-10.png) | Illustration of the proposed LSNet. |
-| ![Figure 11](assets/papers-explained-343-lsnet/fig-11.png) | Classification results on ImageNet-1K. |
-| ![Figure 12](assets/papers-explained-343-lsnet/fig-12.png) | Object detection and instance segmentation results on COCO. |
-| ![Figure 13](assets/papers-explained-343-lsnet/fig-13.png) | Semantic segmentation on ADE20K. |
+| ![Figure 1](assets/papers-explained-343-lsnet/fig-1.webp) | Title card: LSNet. |
+| ![Figure 2](assets/papers-explained-343-lsnet/fig-2.webp) | Comparison of self-attention, convolution, and LS conv. |
+| ![Figure 3](assets/papers-explained-343-lsnet/fig-3.webp) | The general formula for token mixing is. |
+| ![Figure 4](assets/papers-explained-343-lsnet/fig-4.webp) | Limitations of Self-Attention. |
+| ![Figure 5](assets/papers-explained-343-lsnet/fig-5.webp) | Convolution utilizes a fixed kernel (Wconv) to aggregate features within a local neighborhood (NK(xi)) around the token (xi). |
+| ![Figure 6](assets/papers-explained-343-lsnet/fig-6.webp) | Illustration of the proposed LS convolution. |
+| ![Figure 7](assets/papers-explained-343-lsnet/fig-7.webp) | The fundamental process of LS Convolution is thus. |
+| ![Figure 8](assets/papers-explained-343-lsnet/fig-8.webp) | where. |
+| ![Figure 9](assets/papers-explained-343-lsnet/fig-9.webp) | where. |
+| ![Figure 10](assets/papers-explained-343-lsnet/fig-10.webp) | Illustration of the proposed LSNet. |
+| ![Figure 11](assets/papers-explained-343-lsnet/fig-11.webp) | Classification results on ImageNet-1K. |
+| ![Figure 12](assets/papers-explained-343-lsnet/fig-12.webp) | Object detection and instance segmentation results on COCO. |
+| ![Figure 13](assets/papers-explained-343-lsnet/fig-13.webp) | Semantic segmentation on ADE20K. |
 ## Related
 
 - [[Papers Explained Corpus]]

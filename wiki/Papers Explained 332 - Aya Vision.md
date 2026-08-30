@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-03-18_Papers-Explained-332--Aya-Vision-5aec8dce396e.html`
+- Source file: `raw/2025-03-18_Papers-Explained-332--Aya-Vision-5aec8dce396e.md`
 - Source title: Papers Explained 332: Aya Vision
 - Published: 2025-03-18
 - Canonical: [https://medium.com/@ritvik19/papers-explained-332-aya-vision-5aec8dce396e](https://medium.com/@ritvik19/papers-explained-332-aya-vision-5aec8dce396e)
@@ -205,21 +205,21 @@ Aya Vision: Advancing the Frontier of Multilingual Multimodality [2505.08751](ht
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-03-18_Papers-Explained-332--Aya-Vision-5aec8dce396e.html`); local copies under `wiki/assets/papers-explained-332-aya-vision/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-03-18_Papers-Explained-332--Aya-Vision-5aec8dce396e.md`); local copies under `wiki/assets/papers-explained-332-aya-vision/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-332-aya-vision/fig-1.png) | Title card: Aya Vision. |
-| ![Figure 2](assets/papers-explained-332-aya-vision/fig-2.png) | The synthetic annotation pipeline. |
-| ![Figure 3](assets/papers-explained-332-aya-vision/fig-3.png) | Task-wise distribution in the curated dataset. |
-| ![Figure 4](assets/papers-explained-332-aya-vision/fig-4.png) | A linear interpolation is performed between the text-only LLM and the backbone LLM of the multi-modal model as the merging method. |
-| ![Figure 5](assets/papers-explained-332-aya-vision/fig-5.png) | In the Vision-Language Alignment step, only the vision-language connector is trained by keeping both the vision encoder and the language... |
-| ![Figure 6](assets/papers-explained-332-aya-vision/fig-6.png) | Overview of the multilingual multimodal SFT mixture from various task categories. |
-| ![Figure 7](assets/papers-explained-332-aya-vision/fig-7.png) | Pair-wise win-rates on AyaVisionBench and m-WildVision. |
-| ![Figure 8](assets/papers-explained-332-aya-vision/fig-8.png) | Pairwise winrates on AyaVisionBench and m-WildVision. |
-| ![Figure 9](assets/papers-explained-332-aya-vision/fig-9.png) | Evaluation on multilingual multimodal benchmarks for Aya-Vision-8B and AyaVision-32B. |
-| ![Figure 10](assets/papers-explained-332-aya-vision/fig-10.png) | Pairwise win-rates for Aya-Vision-8B (left) and 32B (right) on m-ArenaHard. |
-| ![Figure 11](assets/papers-explained-332-aya-vision/fig-11.png) | Degradation in text-only win-rates after multimodal training. |
+| ![Figure 1](assets/papers-explained-332-aya-vision/fig-1.webp) | Title card: Aya Vision. |
+| ![Figure 2](assets/papers-explained-332-aya-vision/fig-2.webp) | The synthetic annotation pipeline. |
+| ![Figure 3](assets/papers-explained-332-aya-vision/fig-3.webp) | Task-wise distribution in the curated dataset. |
+| ![Figure 4](assets/papers-explained-332-aya-vision/fig-4.webp) | A linear interpolation is performed between the text-only LLM and the backbone LLM of the multi-modal model as the merging method. |
+| ![Figure 5](assets/papers-explained-332-aya-vision/fig-5.webp) | In the Vision-Language Alignment step, only the vision-language connector is trained by keeping both the vision encoder and the language... |
+| ![Figure 6](assets/papers-explained-332-aya-vision/fig-6.webp) | Overview of the multilingual multimodal SFT mixture from various task categories. |
+| ![Figure 7](assets/papers-explained-332-aya-vision/fig-7.webp) | Pair-wise win-rates on AyaVisionBench and m-WildVision. |
+| ![Figure 8](assets/papers-explained-332-aya-vision/fig-8.webp) | Pairwise winrates on AyaVisionBench and m-WildVision. |
+| ![Figure 9](assets/papers-explained-332-aya-vision/fig-9.webp) | Evaluation on multilingual multimodal benchmarks for Aya-Vision-8B and AyaVision-32B. |
+| ![Figure 10](assets/papers-explained-332-aya-vision/fig-10.webp) | Pairwise win-rates for Aya-Vision-8B (left) and 32B (right) on m-ArenaHard. |
+| ![Figure 11](assets/papers-explained-332-aya-vision/fig-11.webp) | Degradation in text-only win-rates after multimodal training. |
 ## Related
 
 - [[Papers Explained Corpus]]

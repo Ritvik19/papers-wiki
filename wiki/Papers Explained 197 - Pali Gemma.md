@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-29_Papers-Explained-197--Pali-Gemma-6899e871998e.html`
+- Source file: `raw/2024-08-29_Papers-Explained-197--Pali-Gemma-6899e871998e.md`
 - Source title: Papers Explained 197: Pali Gemma
 - Published: 2024-08-29
 - Canonical: [https://medium.com/@ritvik19/papers-explained-197-pali-gemma-6899e871998e](https://medium.com/@ritvik19/papers-explained-197-pali-gemma-6899e871998e)
@@ -151,16 +151,16 @@ Recommended Reading [Small LLMs](https://ritvik19.medium.com/list/small-llms-411
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-29_Papers-Explained-197--Pali-Gemma-6899e871998e.html`); local copies under `wiki/assets/papers-explained-197-pali-gemma/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-29_Papers-Explained-197--Pali-Gemma-6899e871998e.md`); local copies under `wiki/assets/papers-explained-197-pali-gemma/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-197-pali-gemma/fig-1.png) | Technical report header — **PaliGemma: A versatile 3B VLM for transfer** (Google DeepMind, Jul 2024). |
-| ![Figure 2](assets/papers-explained-197-pali-gemma/fig-2.png) | **Architecture walkthrough** — **SigLIP-So400m** patches + tokenizer → concat → **Gemma 2B** decoder-only LM → VQA answer. |
-| ![Figure 3](assets/papers-explained-197-pali-gemma/fig-3.png) | **Token layout** — `[image…, BOS, prefix…, SEP, suffix…, EOS, PAD…]` multimodal sequence template. |
-| ![Figure 4](assets/papers-explained-197-pali-gemma/fig-4.png) | **Prefix-LM mask** — full (bidirectional) attention over image + prefix; **causal** decoding on suffix targets. |
-| ![Figure 5](assets/papers-explained-197-pali-gemma/fig-5.png) | **Stage-1 LR schedule** — slow **SigLIP** warmup vs **Gemma** cosine decay over **1B** multimodal examples (+ Stage2 / transfer markers). |
-| ![Figure 6](assets/papers-explained-197-pali-gemma/fig-6.png) | **Resolution ladder** — captioning, VQA (incl. OCR-heavy rows), RefCOCO segmentation, video @ **224 / 448 / 896** px checkpoints. |
+| ![Figure 1](assets/papers-explained-197-pali-gemma/fig-1.webp) | Technical report header — **PaliGemma: A versatile 3B VLM for transfer** (Google DeepMind, Jul 2024). |
+| ![Figure 2](assets/papers-explained-197-pali-gemma/fig-2.webp) | **Architecture walkthrough** — **SigLIP-So400m** patches + tokenizer → concat → **Gemma 2B** decoder-only LM → VQA answer. |
+| ![Figure 3](assets/papers-explained-197-pali-gemma/fig-3.webp) | **Token layout** — `[image…, BOS, prefix…, SEP, suffix…, EOS, PAD…]` multimodal sequence template. |
+| ![Figure 4](assets/papers-explained-197-pali-gemma/fig-4.webp) | **Prefix-LM mask** — full (bidirectional) attention over image + prefix; **causal** decoding on suffix targets. |
+| ![Figure 5](assets/papers-explained-197-pali-gemma/fig-5.webp) | **Stage-1 LR schedule** — slow **SigLIP** warmup vs **Gemma** cosine decay over **1B** multimodal examples (+ Stage2 / transfer markers). |
+| ![Figure 6](assets/papers-explained-197-pali-gemma/fig-6.webp) | **Resolution ladder** — captioning, VQA (incl. OCR-heavy rows), RefCOCO segmentation, video @ **224 / 448 / 896** px checkpoints. |
 ## Related
 
 - [[Papers Explained Corpus]]

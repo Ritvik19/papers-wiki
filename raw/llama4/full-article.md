@@ -2,4 +2,4 @@
 
 **URL**: https://unsloth.ai/blog/llama4
 
-(Canonical HTML: raw/llama4/full-article.html)
+(Canonical HTML: raw/llama4/full-article.md)

@@ -1,6 +1,6 @@
 # Pixtral Large
 
-**Source**: `raw/pixtral-large/full-article.html` (223 KB), `raw/pixtral-large/full-article.md` (markdown view)  
+**Source**: `raw/pixtral-large/full-article.md` (223 KB), `raw/pixtral-large/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/pixtral-large/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

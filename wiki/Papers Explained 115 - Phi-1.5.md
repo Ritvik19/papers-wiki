@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-03-20_Papers-Explained-115--Phi-1-5-2857e56dbd2a.html`
+- Source file: `raw/2024-03-20_Papers-Explained-115--Phi-1-5-2857e56dbd2a.md`
 - Source title: Papers Explained 115: Phi-1.5
 - Published: 2024-03-20
 - Canonical: [https://medium.com/@ritvik19/papers-explained-phi-1-5-2857e56dbd2a](https://medium.com/@ritvik19/papers-explained-phi-1-5-2857e56dbd2a)
@@ -111,18 +111,18 @@ Textbooks Are All You Need II: phi-1.5 technical report [2309.05463](https://arx
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-03-20_Papers-Explained-115--Phi-1-5-2857e56dbd2a.html`); local copies under `wiki/assets/papers-explained-115-phi-1-5/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-03-20_Papers-Explained-115--Phi-1-5-2857e56dbd2a.md`); local copies under `wiki/assets/papers-explained-115-phi-1-5/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-115-phi-1-5/fig-1.png) | Title page of *Textbooks Are All You Need II: phi-1.5 technical report*. |
-| ![Figure 2](assets/papers-explained-115-phi-1-5/fig-2.png) | Common-sense reasoning benchmark table for phi-1.5 variants vs open baselines. |
-| ![Figure 3](assets/papers-explained-115-phi-1-5/fig-3.png) | Language-understanding and knowledge benchmark comparison. |
-| ![Figure 4](assets/papers-explained-115-phi-1-5/fig-4.png) | Multi-step reasoning benchmark results (GSM8K, HumanEval, MBPP). |
-| ![Figure 5](assets/papers-explained-115-phi-1-5/fig-5.png) | Phi-2 vs Phi-1.5 grouped comparison across reasoning, language, math, and coding. |
-| ![Figure 6](assets/papers-explained-115-phi-1-5/fig-6.png) | ToxiGen safety scores across 13 demographic groups for Phi-1.5, Phi-2, and Llama2-7B. |
-| ![Figure 7](assets/papers-explained-115-phi-1-5/fig-7.png) | Grouped benchmark averages comparing Phi-2 with open-source small language models. |
-| ![Figure 8](assets/papers-explained-115-phi-1-5/fig-8.png) | Phi-2 vs Gemini Nano 2 benchmark comparison (BBH, BoolQ, MBPP, MMLU). |
+| ![Figure 1](assets/papers-explained-115-phi-1-5/fig-1.webp) | Title page of *Textbooks Are All You Need II: phi-1.5 technical report*. |
+| ![Figure 2](assets/papers-explained-115-phi-1-5/fig-2.webp) | Common-sense reasoning benchmark table for phi-1.5 variants vs open baselines. |
+| ![Figure 3](assets/papers-explained-115-phi-1-5/fig-3.webp) | Language-understanding and knowledge benchmark comparison. |
+| ![Figure 4](assets/papers-explained-115-phi-1-5/fig-4.webp) | Multi-step reasoning benchmark results (GSM8K, HumanEval, MBPP). |
+| ![Figure 5](assets/papers-explained-115-phi-1-5/fig-5.webp) | Phi-2 vs Phi-1.5 grouped comparison across reasoning, language, math, and coding. |
+| ![Figure 6](assets/papers-explained-115-phi-1-5/fig-6.webp) | ToxiGen safety scores across 13 demographic groups for Phi-1.5, Phi-2, and Llama2-7B. |
+| ![Figure 7](assets/papers-explained-115-phi-1-5/fig-7.webp) | Grouped benchmark averages comparing Phi-2 with open-source small language models. |
+| ![Figure 8](assets/papers-explained-115-phi-1-5/fig-8.webp) | Phi-2 vs Gemini Nano 2 benchmark comparison (BBH, BoolQ, MBPP, MMLU). |
 ## Related
 
 - [[Papers Explained Corpus]]

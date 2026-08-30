@@ -1,6 +1,6 @@
 # Object Detection for Dummies Part 2
 
-**Source**: `raw/2017-12-15-object-recognition-part-2/full-article.html` (51 KB); secondary: `raw/2017-12-15-object-recognition-part-2/full-article.md`  
+**Source**: `raw/2017-12-15-object-recognition-part-2/full-article.md` (51 KB); secondary: `raw/2017-12-15-object-recognition-part-2/full-article.md`  
 **Canonical URL**: https://lilianweng.github.io/posts/2017-12-15-object-recognition-part-2/  
 **Author**: Lilian Weng  
 **Published**: 2017-12-15  
@@ -36,20 +36,18 @@ AlexNet: five conv (+ pool) layers, two MLP layers, softmax; heavy data augmenta
 
 | Figure | Caption |
 |--------|---------|
-| ![2D convolution kernel slide](../assets/2017-12-15-object-recognition-part-2/fig-1.png) | Kernel sliding over input feature map to produce output activations. |
+| ![2D convolution kernel slide](../assets/2017-12-15-object-recognition-part-2/fig-1.webp) | Kernel sliding over input feature map to produce output activations. |
 | ![Convolution no padding 1x1 stride](../assets/2017-12-15-object-recognition-part-2/fig-2.gif) | 3×3 kernel on 5×5 input, no padding, stride 1. |
 | ![Convolution with padding and stride 2](../assets/2017-12-15-object-recognition-part-2/fig-3.gif) | Same with zero padding and stride 2. |
-| ![AlexNet architecture](../assets/2017-12-15-object-recognition-part-2/fig-4.png) | AlexNet layer stack (conv, pool, FC). |
-| ![ResNet residual block](../assets/2017-12-15-object-recognition-part-2/fig-5.png) | Skip connection adding input to conv block output. |
-| ![DPM components](../assets/2017-12-15-object-recognition-part-2/fig-6.png) | Root filter, part filters at 2× resolution, deformation model. |
-| ![DPM matching process](../assets/2017-12-15-object-recognition-part-2/fig-7.png) | Scoring object hypothesis from root and part placements. |
-| ![Overfeat training stages](../assets/2017-12-15-object-recognition-part-2/fig-8.png) | Train classifier CNN, then bbox regression head per class. |
+| ![AlexNet architecture](../assets/2017-12-15-object-recognition-part-2/fig-4.webp) | AlexNet layer stack (conv, pool, FC). |
+| ![DPM matching process](../assets/2017-12-15-object-recognition-part-2/fig-7.webp) | Scoring object hypothesis from root and part placements. |
+| ![Overfeat training stages](../assets/2017-12-15-object-recognition-part-2/fig-8.webp) | Train classifier CNN, then bbox regression head per class. |
 
 ## Convolution (2D)
 
 Slides a **kernel** (filter) over the input feature map; multiply-add → output map. Output spatial size set by **padding** (zero border) and **stride** (step size).
 
-![Convolution kernel](../assets/2017-12-15-object-recognition-part-2/fig-1.png) ![No padding](../assets/2017-12-15-object-recognition-part-2/fig-2.gif) ![Padding stride 2](../assets/2017-12-15-object-recognition-part-2/fig-3.gif)
+![Convolution kernel](../assets/2017-12-15-object-recognition-part-2/fig-1.webp) ![No padding](../assets/2017-12-15-object-recognition-part-2/fig-2.gif) ![Padding stride 2](../assets/2017-12-15-object-recognition-part-2/fig-3.gif)
 
 Reference: Dumoulin & Visin, [A guide to convolution arithmetic for deep learning](https://arxiv.org/pdf/1603.07285.pdf) (arXiv:1603.07285).
 
@@ -61,7 +59,7 @@ Reference: Dumoulin & Visin, [A guide to convolution arithmetic for deep learnin
 | **VGG** | 2014 | 19 layers, only 3×3 conv + 2×2 pool | Very deep uniform stacks; used in Fast R-CNN papers |
 | **ResNet** | 2015 | Up to 152 layers; **residual block** \(y=F(x)+x\) | Enables very deep nets; Faster/Mask R-CNN backbones |
 
-![AlexNet](../assets/2017-12-15-object-recognition-part-2/fig-4.png) ![ResNet block](../assets/2017-12-15-object-recognition-part-2/fig-5.png)
+![AlexNet](../assets/2017-12-15-object-recognition-part-2/fig-4.webp)
 
 **AlexNet** training tricks: translations, horizontal flips, patch sampling. **ResNet** addresses vanishing gradients when plain depth increases—skip paths pass gradients and raw input forward.
 

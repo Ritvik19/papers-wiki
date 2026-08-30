@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-11-04_Papers-Explained-484--wav2vec-f82a0cbde202.html`
+- Source file: `raw/2025-11-04_Papers-Explained-484--wav2vec-f82a0cbde202.md`
 - Source title: Papers Explained 484: wav2vec
 - Published: 2025-11-04
 - Canonical: [https://medium.com/@ritvik19/papers-explained-484-wav2vec-f82a0cbde202](https://medium.com/@ritvik19/papers-explained-484-wav2vec-f82a0cbde202)
@@ -145,16 +145,16 @@ wav2vec: Unsupervised Pre-training for Speech Recognition [1904.05862](https://a
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-11-04_Papers-Explained-484--wav2vec-f82a0cbde202.html`); local copies under `wiki/assets/papers-explained-484-wav2vec/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-11-04_Papers-Explained-484--wav2vec-f82a0cbde202.md`); local copies under `wiki/assets/papers-explained-484-wav2vec/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-484-wav2vec/fig-1.png) | Title card: wav2vec. |
-| ![Figure 2](assets/papers-explained-484-wav2vec/fig-2.png) | Illustration of pre-training from audio data. |
-| ![Figure 3](assets/papers-explained-484-wav2vec/fig-3.png) | The model minimizes the following contrastive loss for each future step k (where k ranges from 1 to K). |
-| ![Figure 4](assets/papers-explained-484-wav2vec/fig-4.png) | Language Models (LMs) Considered. |
-| ![Figure 5](assets/papers-explained-484-wav2vec/fig-5.png) | Language Models (LMs) Considered. |
-| ![Figure 6](assets/papers-explained-484-wav2vec/fig-6.png) | Language Models (LMs) Considered. |
+| ![Figure 1](assets/papers-explained-484-wav2vec/fig-1.webp) | Title card: wav2vec. |
+| ![Figure 2](assets/papers-explained-484-wav2vec/fig-2.webp) | Illustration of pre-training from audio data. |
+| ![Figure 3](assets/papers-explained-484-wav2vec/fig-3.webp) | The model minimizes the following contrastive loss for each future step k (where k ranges from 1 to K). |
+| ![Figure 4](assets/papers-explained-484-wav2vec/fig-4.webp) | Language Models (LMs) Considered. |
+| ![Figure 5](assets/papers-explained-484-wav2vec/fig-5.webp) | Language Models (LMs) Considered. |
+| ![Figure 6](assets/papers-explained-484-wav2vec/fig-6.webp) | Language Models (LMs) Considered. |
 ## Related
 
 - [[Papers Explained Corpus]]

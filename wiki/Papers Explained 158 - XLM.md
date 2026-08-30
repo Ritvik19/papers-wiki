@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-07-03_Papers-Explained-158--XLM-42a175e93caf.html`
+- Source file: `raw/2024-07-03_Papers-Explained-158--XLM-42a175e93caf.md`
 - Source title: Papers Explained 158: XLM
 - Published: 2024-07-03
 - Canonical: [https://medium.com/@ritvik19/papers-explained-158-xlm-42a175e93caf](https://medium.com/@ritvik19/papers-explained-158-xlm-42a175e93caf)
@@ -67,12 +67,12 @@ Cross-lingual Language Model Pretraining [1901.07291](https://arxiv.org/abs/1901
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-07-03_Papers-Explained-158--XLM-42a175e93caf.html`); local copies under `wiki/assets/papers-explained-158-xlm/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-07-03_Papers-Explained-158--XLM-42a175e93caf.md`); local copies under `wiki/assets/papers-explained-158-xlm/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-158-xlm/fig-1.png) | Title page of *Cross-lingual Language Model Pretraining* (Lample & Conneau, Facebook AI Research). |
-| ![Figure 2](assets/papers-explained-158-xlm/fig-2.png) | **MLM** on monolingual English vs **TLM** on concatenated parallel EN–FR sentences: summed language/position/token embeddings through a Transformer with masked-token predictions leveraging cross-lingual context. |
+| ![Figure 1](assets/papers-explained-158-xlm/fig-1.webp) | Title page of *Cross-lingual Language Model Pretraining* (Lample & Conneau, Facebook AI Research). |
+| ![Figure 2](assets/papers-explained-158-xlm/fig-2.webp) | **MLM** on monolingual English vs **TLM** on concatenated parallel EN–FR sentences: summed language/position/token embeddings through a Transformer with masked-token predictions leveraging cross-lingual context. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -53,7 +53,7 @@ Hugging Face is the open-source AI platform (Hub, `transformers`, `sentence-tran
 
 ## Notes
 
-Most posts in this batch were archived from `huggingface.co/blog/<slug>` with both `full-article.html` (canonical) and `full-article.md` (readability aid) saved under `raw/<slug>/`. No figures were downloaded for this batch; benchmark tables are preserved inline as markdown instead. Two URLs in this batch (mmBERT, EmbeddingGemma) turned out to already have dedicated Papers Explained pages and were downgraded to cross-reference notes rather than full ingests, with no raw archival.
+Most posts in this batch were archived from `huggingface.co/blog/<slug>` with both `full-article.md` (canonical) and `full-article.md` (readability aid) saved under `raw/<slug>/`. No figures were downloaded for this batch; benchmark tables are preserved inline as markdown instead. Two URLs in this batch (mmBERT, EmbeddingGemma) turned out to already have dedicated Papers Explained pages and were downgraded to cross-reference notes rather than full ingests, with no raw archival.
 
 ## Related
 

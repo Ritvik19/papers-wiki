@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-02-28_Papers-Explained-320--SigLIP-2-dba08ff09559.html`
+- Source file: `raw/2025-02-28_Papers-Explained-320--SigLIP-2-dba08ff09559.md`
 - Source title: Papers Explained 320: SigLIP 2
 - Published: 2025-02-28
 - Canonical: [https://medium.com/@ritvik19/papers-explained-320-siglip-2-dba08ff09559](https://medium.com/@ritvik19/papers-explained-320-siglip-2-dba08ff09559)
@@ -144,20 +144,20 @@ SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic Understan
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-02-28_Papers-Explained-320--SigLIP-2-dba08ff09559.html`); local copies under `wiki/assets/papers-explained-320-siglip-2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-02-28_Papers-Explained-320--SigLIP-2-dba08ff09559.md`); local copies under `wiki/assets/papers-explained-320-siglip-2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-320-siglip-2/fig-1.png) | Title card: SigLIP 2. |
-| ![Figure 2](assets/papers-explained-320-siglip-2/fig-2.png) | SigLIP 2 is a family of new multilingual vision-language encoders that build on SigLIP. |
-| ![Figure 3](assets/papers-explained-320-siglip-2/fig-3.png) | Zero-shot classification, 10-shot (10s) classification (on the validation set), and retrieval performance (recall@1). |
-| ![Figure 4](assets/papers-explained-320-siglip-2/fig-4.png) | Per-language image-text retrieval performance on Crossmodal-3600. |
-| ![Figure 5](assets/papers-explained-320-siglip-2/fig-5.png) | Comparing the NaFlex and the standard square-input SigLIP 2 variants. |
-| ![Figure 6](assets/papers-explained-320-siglip-2/fig-6.png) | Comparison of different vision encoders after training a Gemma 2 LLM. |
-| ![Figure 7](assets/papers-explained-320-siglip-2/fig-7.png) | Probing the frozen SigLIP 2 representation for a range of dense prediction tasks. |
-| ![Figure 8](assets/papers-explained-320-siglip-2/fig-8.png) | Cat-Seg framework is used to train on COCO-Stuff-164k with 172 classes. |
-| ![Figure 9](assets/papers-explained-320-siglip-2/fig-9.png) | Comparison on referring expression comprehension (Acc@0.5). |
-| ![Figure 10](assets/papers-explained-320-siglip-2/fig-10.png) | Fine-tuned SigLIP and SigLIP 2 for openvocabulary detection via OWL-ViT. |
+| ![Figure 1](assets/papers-explained-320-siglip-2/fig-1.webp) | Title card: SigLIP 2. |
+| ![Figure 2](assets/papers-explained-320-siglip-2/fig-2.webp) | SigLIP 2 is a family of new multilingual vision-language encoders that build on SigLIP. |
+| ![Figure 3](assets/papers-explained-320-siglip-2/fig-3.webp) | Zero-shot classification, 10-shot (10s) classification (on the validation set), and retrieval performance (recall@1). |
+| ![Figure 4](assets/papers-explained-320-siglip-2/fig-4.webp) | Per-language image-text retrieval performance on Crossmodal-3600. |
+| ![Figure 5](assets/papers-explained-320-siglip-2/fig-5.webp) | Comparing the NaFlex and the standard square-input SigLIP 2 variants. |
+| ![Figure 6](assets/papers-explained-320-siglip-2/fig-6.webp) | Comparison of different vision encoders after training a Gemma 2 LLM. |
+| ![Figure 7](assets/papers-explained-320-siglip-2/fig-7.webp) | Probing the frozen SigLIP 2 representation for a range of dense prediction tasks. |
+| ![Figure 8](assets/papers-explained-320-siglip-2/fig-8.webp) | Cat-Seg framework is used to train on COCO-Stuff-164k with 172 classes. |
+| ![Figure 9](assets/papers-explained-320-siglip-2/fig-9.webp) | Comparison on referring expression comprehension (Acc@0.5). |
+| ![Figure 10](assets/papers-explained-320-siglip-2/fig-10.webp) | Fine-tuned SigLIP and SigLIP 2 for openvocabulary detection via OWL-ViT. |
 ## HF Blog Cross-References
 
 - [SigLIP 2: A better multilingual vision language encoder](https://huggingface.co/blog/siglip2) (2025-02-21) — Hugging Face's explainer walks through the same additions covered above (decoder-based captioning, self-distillation with global-local loss, masked prediction, and the NaFlex variable-resolution variant) as an incremental "what did SigLIP 1 lack?" narrative, plus `transformers` code for zero-shot classification and image encoding.

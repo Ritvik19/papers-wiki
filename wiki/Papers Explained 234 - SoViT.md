@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-10-18_Papers-Explained-234--SoViT-a0ce3c7ef480.html`
+- Source file: `raw/2024-10-18_Papers-Explained-234--SoViT-a0ce3c7ef480.md`
 - Source title: Papers Explained 234: SoViT
 - Published: 2024-10-18
 - Canonical: [https://medium.com/@ritvik19/papers-explained-234-sovit-a0ce3c7ef480](https://medium.com/@ritvik19/papers-explained-234-sovit-a0ce3c7ef480)
@@ -115,17 +115,17 @@ Recommended Reading [Vision Transformers](https://ritvik19.medium.com/list/visio
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-10-18_Papers-Explained-234--SoViT-a0ce3c7ef480.html`); local copies under `wiki/assets/papers-explained-234-sovit/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-10-18_Papers-Explained-234--SoViT-a0ce3c7ef480.md`); local copies under `wiki/assets/papers-explained-234-sovit/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-234-sovit/fig-1.png) | Title card: SoViT. |
-| ![Figure 2](assets/papers-explained-234-sovit/fig-2.png) | A grid sweep over multiple ViT shapes pretrained on 600M JFT examples highlights the important role of shape. The two architectures marked in blue and red are compute-optimal for image classification and image-to-text tasks, respectively. |
-| ![Figure 3](assets/papers-explained-234-sovit/fig-3.png) | where αk, ak, βk, bk, c, ξk, εk > 0. |
-| ![Figure 4](assets/papers-explained-234-sovit/fig-4.png) | Optimizing for the compute-equivalent of ViT-g/14 results in the 2.5× smaller SoViT400m/14. |
-| ![Figure 5](assets/papers-explained-234-sovit/fig-5.png) | LEFT: Optimizing ViT shape for the compute-equivalent of ViT-B/14 results in SoViT150m/14, which improves performance significantly. CENTER & RIGHT: Impact of debiating from the optimal shape in SoViT-150m/14 (in green) while keeping compute fixed. |
-| ![Figure 6](assets/papers-explained-234-sovit/fig-6.png) | ImageNet fine-tuning. |
-| ![Figure 7](assets/papers-explained-234-sovit/fig-7.png) | Summary of multitask decoding and zero-shot transfer results. |
+| ![Figure 1](assets/papers-explained-234-sovit/fig-1.webp) | Title card: SoViT. |
+| ![Figure 2](assets/papers-explained-234-sovit/fig-2.webp) | A grid sweep over multiple ViT shapes pretrained on 600M JFT examples highlights the important role of shape. The two architectures marked in blue and red are compute-optimal for image classification and image-to-text tasks, respectively. |
+| ![Figure 3](assets/papers-explained-234-sovit/fig-3.webp) | where αk, ak, βk, bk, c, ξk, εk > 0. |
+| ![Figure 4](assets/papers-explained-234-sovit/fig-4.webp) | Optimizing for the compute-equivalent of ViT-g/14 results in the 2.5× smaller SoViT400m/14. |
+| ![Figure 5](assets/papers-explained-234-sovit/fig-5.webp) | LEFT: Optimizing ViT shape for the compute-equivalent of ViT-B/14 results in SoViT150m/14, which improves performance significantly. CENTER & RIGHT: Impact of debiating from the optimal shape in SoViT-150m/14 (in green) while keeping compute fixed. |
+| ![Figure 6](assets/papers-explained-234-sovit/fig-6.webp) | ImageNet fine-tuning. |
+| ![Figure 7](assets/papers-explained-234-sovit/fig-7.webp) | Summary of multitask decoding and zero-shot transfer results. |
 ## Related
 
 - [[Papers Explained Corpus]]

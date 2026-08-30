@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/draft_Papers-Explained-Review-06--Position-Encodings-3dafda9e6f47.html`
+- Source file: `raw/draft_Papers-Explained-Review-06--Position-Encodings-3dafda9e6f47.md`
 - Source title: Papers Explained Review 06: Position Encodings
 - Canonical: [https://medium.com/p/3dafda9e6f47](https://medium.com/p/3dafda9e6f47)
 
@@ -110,22 +110,22 @@ Back to Top
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/draft_Papers-Explained-Review-06--Position-Encodings-3dafda9e6f47.html`); local copies under `wiki/assets/papers-explained-review-06-position-encodings/` when download succeeded.
+Figures from the Medium HTML export (`raw/draft_Papers-Explained-Review-06--Position-Encodings-3dafda9e6f47.md`); local copies under `wiki/assets/papers-explained-review-06-position-encodings/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-review-06-position-encodings/fig-1.jpeg) | Title card: Position Encodings. |
-| ![Figure 2](assets/papers-explained-review-06-position-encodings/fig-2.png) | The formulation of positional encodings can vary, encompassing both learned and fixed strategies. |
-| ![Figure 3](assets/papers-explained-review-06-position-encodings/fig-3.png) | First, relative positional information is supplied to the model as an additional component to the keys. |
-| ![Figure 4](assets/papers-explained-review-06-position-encodings/fig-4.png) | The softmax operation remains unchanged from vanilla self-attention. |
-| ![Figure 5](assets/papers-explained-review-06-position-encodings/fig-5.png) | Lastly, relative positional information is supplied again as a sub-component of the values matrix. |
-| ![Figure 6](assets/papers-explained-review-06-position-encodings/fig-6.png) | Back to Top: Specifically, S_rel in the music transformer paper is simply. |
-| ![Figure 7](assets/papers-explained-review-06-position-encodings/fig-7.png) | Specifically, S_rel in the music transformer paper is simply. |
-| ![Figure 8](assets/papers-explained-review-06-position-encodings/fig-8.png) | Implementation of Rotary Position Embedding(RoPE). |
-| ![Figure 9](assets/papers-explained-review-06-position-encodings/fig-9.jpg) | In the simplest 2D case, the essence of RoPE can be captured by considering a vector (x_m) in a two-dimensional space. |
-| ![Figure 10](assets/papers-explained-review-06-position-encodings/fig-10.jpg) | In the simplest 2D case, the essence of RoPE can be captured by considering a vector (x_m) in a two-dimensional space. |
-| ![Figure 11](assets/papers-explained-review-06-position-encodings/fig-11.jpg) | The general form of the RoPE transformation is given by. |
-| ![Figure 12](assets/papers-explained-review-06-position-encodings/fig-12.png) | In the ALiBi method, instead of incorporating position embeddings at any layer, a static, non-learned bias is added to the attention... |
+| ![Figure 1](assets/papers-explained-review-06-position-encodings/fig-1.webp) | Title card: Position Encodings. |
+| ![Figure 2](assets/papers-explained-review-06-position-encodings/fig-2.webp) | The formulation of positional encodings can vary, encompassing both learned and fixed strategies. |
+| ![Figure 3](assets/papers-explained-review-06-position-encodings/fig-3.webp) | First, relative positional information is supplied to the model as an additional component to the keys. |
+| ![Figure 4](assets/papers-explained-review-06-position-encodings/fig-4.webp) | The softmax operation remains unchanged from vanilla self-attention. |
+| ![Figure 5](assets/papers-explained-review-06-position-encodings/fig-5.webp) | Lastly, relative positional information is supplied again as a sub-component of the values matrix. |
+| ![Figure 6](assets/papers-explained-review-06-position-encodings/fig-6.webp) | Back to Top: Specifically, S_rel in the music transformer paper is simply. |
+| ![Figure 7](assets/papers-explained-review-06-position-encodings/fig-7.webp) | Specifically, S_rel in the music transformer paper is simply. |
+| ![Figure 8](assets/papers-explained-review-06-position-encodings/fig-8.webp) | Implementation of Rotary Position Embedding(RoPE). |
+| ![Figure 9](assets/papers-explained-review-06-position-encodings/fig-9.webp) | In the simplest 2D case, the essence of RoPE can be captured by considering a vector (x_m) in a two-dimensional space. |
+| ![Figure 10](assets/papers-explained-review-06-position-encodings/fig-10.webp) | In the simplest 2D case, the essence of RoPE can be captured by considering a vector (x_m) in a two-dimensional space. |
+| ![Figure 11](assets/papers-explained-review-06-position-encodings/fig-11.webp) | The general form of the RoPE transformation is given by. |
+| ![Figure 12](assets/papers-explained-review-06-position-encodings/fig-12.webp) | In the ALiBi method, instead of incorporating position embeddings at any layer, a static, non-learned bias is added to the attention... |
 ## Related
 
 - [[Papers Explained Corpus]]

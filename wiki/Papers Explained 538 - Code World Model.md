@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-02-11_Papers-Explained-538--Code-World-Model-2c5959944cfd.html`
+- Source file: `raw/2026-02-11_Papers-Explained-538--Code-World-Model-2c5959944cfd.md`
 - Source title: Papers Explained 538: Code World Model
 - Published: 2026-02-11
 - Canonical: [https://medium.com/@ritvik19/papers-explained-538-code-world-model-2c5959944cfd](https://medium.com/@ritvik19/papers-explained-538-code-world-model-2c5959944cfd)
@@ -329,24 +329,24 @@ CWM: An Open-Weights LLM for Research on Code Generation with World Models [2510
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-02-11_Papers-Explained-538--Code-World-Model-2c5959944cfd.html`); local copies under `wiki/assets/papers-explained-538-code-world-model/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-02-11_Papers-Explained-538--Code-World-Model-2c5959944cfd.md`); local copies under `wiki/assets/papers-explained-538-code-world-model/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-538-code-world-model/fig-1.png) | Title card: Code World Model. |
-| ![Figure 2](assets/papers-explained-538-code-world-model/fig-2.png) | CWM format for Python traces. |
-| ![Figure 3](assets/papers-explained-538-code-world-model/fig-3.png) | Statistics of ForagerAgent trajectories. |
-| ![Figure 4](assets/papers-explained-538-code-world-model/fig-4.png) | The CWM Transformer architecture and the main types of data introduced in the different training steps and used at inference time. |
-| ![Figure 5](assets/papers-explained-538-code-world-model/fig-5.png) | Key hyper-parameters of the 32 B CWM. |
-| ![Figure 6](assets/papers-explained-538-code-world-model/fig-6.png) | SWE RL self-bootstrapping. |
-| ![Figure 7](assets/papers-explained-538-code-world-model/fig-7.png) | Mid‑training ablation. |
-| ![Figure 8](assets/papers-explained-538-code-world-model/fig-8.png) | SWE-bench Verified pass@1 scores. |
-| ![Figure 9](assets/papers-explained-538-code-world-model/fig-9.png) | SWE-bench Verified resolve rates. |
-| ![Figure 10](assets/papers-explained-538-code-world-model/fig-10.png) | Results on Aider Polyglot. |
-| ![Figure 11](assets/papers-explained-538-code-world-model/fig-11.png) | Results on Terminal-Bench for CWM and baselines from the official leaderboard. |
-| ![Figure 12](assets/papers-explained-538-code-world-model/fig-12.png) | Execution trace prediction. |
-| ![Figure 13](assets/papers-explained-538-code-world-model/fig-13.png) | HaltEval-prelim pass@1 scores for different LLMs in different prompting settings. |
-| ![Figure 14](assets/papers-explained-538-code-world-model/fig-14.png) | BigOBench results. |
+| ![Figure 1](assets/papers-explained-538-code-world-model/fig-1.webp) | Title card: Code World Model. |
+| ![Figure 2](assets/papers-explained-538-code-world-model/fig-2.webp) | CWM format for Python traces. |
+| ![Figure 3](assets/papers-explained-538-code-world-model/fig-3.webp) | Statistics of ForagerAgent trajectories. |
+| ![Figure 4](assets/papers-explained-538-code-world-model/fig-4.webp) | The CWM Transformer architecture and the main types of data introduced in the different training steps and used at inference time. |
+| ![Figure 5](assets/papers-explained-538-code-world-model/fig-5.webp) | Key hyper-parameters of the 32 B CWM. |
+| ![Figure 6](assets/papers-explained-538-code-world-model/fig-6.webp) | SWE RL self-bootstrapping. |
+| ![Figure 7](assets/papers-explained-538-code-world-model/fig-7.webp) | Mid‑training ablation. |
+| ![Figure 8](assets/papers-explained-538-code-world-model/fig-8.webp) | SWE-bench Verified pass@1 scores. |
+| ![Figure 9](assets/papers-explained-538-code-world-model/fig-9.webp) | SWE-bench Verified resolve rates. |
+| ![Figure 10](assets/papers-explained-538-code-world-model/fig-10.webp) | Results on Aider Polyglot. |
+| ![Figure 11](assets/papers-explained-538-code-world-model/fig-11.webp) | Results on Terminal-Bench for CWM and baselines from the official leaderboard. |
+| ![Figure 12](assets/papers-explained-538-code-world-model/fig-12.webp) | Execution trace prediction. |
+| ![Figure 13](assets/papers-explained-538-code-world-model/fig-13.webp) | HaltEval-prelim pass@1 scores for different LLMs in different prompting settings. |
+| ![Figure 14](assets/papers-explained-538-code-world-model/fig-14.webp) | BigOBench results. |
 ## Related
 
 - [[Papers Explained Corpus]]

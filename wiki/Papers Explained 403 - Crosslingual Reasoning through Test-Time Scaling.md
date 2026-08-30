@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-07-07_Papers-Explained-403--Crosslingual-Reasoning-through-Test-Time-Scaling-ee069fcca028.html`
+- Source file: `raw/2025-07-07_Papers-Explained-403--Crosslingual-Reasoning-through-Test-Time-Scaling-ee069fcca028.md`
 - Source title: Papers Explained 403: Crosslingual Reasoning through Test-Time Scaling
 - Published: 2025-07-07
 - Canonical: [https://medium.com/@ritvik19/papers-explained-403-crosslingual-reasoning-through-test-time-scaling-ee069fcca028](https://medium.com/@ritvik19/papers-explained-403-crosslingual-reasoning-through-test-time-scaling-ee069fcca028)
@@ -147,19 +147,19 @@ Crosslingual Reasoning through Test-Time Scaling [2505.05408](https://arxiv.org/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-07-07_Papers-Explained-403--Crosslingual-Reasoning-through-Test-Time-Scaling-ee069fcca028.html`); local copies under `wiki/assets/papers-explained-403-crosslingual-reasoning-through-test-time-scaling/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-07-07_Papers-Explained-403--Crosslingual-Reasoning-through-Test-Time-Scaling-ee069fcca028.md`); local copies under `wiki/assets/papers-explained-403-crosslingual-reasoning-through-test-time-scaling/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-403-crosslingual-reasoning-through-test-time-scaling/fig-1.png) | Title card: Crosslingual Reasoning through Test-Time Scaling. |
-| ![Figure 2](assets/papers-explained-403-crosslingual-reasoning-through-test-time-scaling/fig-2.png) | Crosslingual test-time scaling of s1 and Qwen models on the MGSM benchmark (excluding English) across different model sizes. |
-| ![Figure 3](assets/papers-explained-403-crosslingual-reasoning-through-test-time-scaling/fig-3.png) | MGSM performance comparison against 14B-sized s1 model with maximum 8k thinking tokens. |
-| ![Figure 4](assets/papers-explained-403-crosslingual-reasoning-through-test-time-scaling/fig-4.png) | Proportion of dominant languages in models’ entire responses when queried with multilingual math questions. |
-| ![Figure 5](assets/papers-explained-403-crosslingual-reasoning-through-test-time-scaling/fig-5.png) | Breakdown of language-mixing patterns in s1’s reasoning. |
-| ![Figure 6](assets/papers-explained-403-crosslingual-reasoning-through-test-time-scaling/fig-6.png) | Different language forcing techniques are experimented with on the MGSM benchmark using 11 languages. |
-| ![Figure 7](assets/papers-explained-403-crosslingual-reasoning-through-test-time-scaling/fig-7.png) | Performance scores across different reasoning languages given query language. |
-| ![Figure 8](assets/papers-explained-403-crosslingual-reasoning-through-test-time-scaling/fig-8.png) | MGSM accuracy against number of thinking tokens in s1 models’ outputs in different reasoning languages. |
-| ![Figure 9](assets/papers-explained-403-crosslingual-reasoning-through-test-time-scaling/fig-9.png) | Effects of thinking time for s1 models on different domains of Global-MMLU benchmark. |
+| ![Figure 1](assets/papers-explained-403-crosslingual-reasoning-through-test-time-scaling/fig-1.webp) | Title card: Crosslingual Reasoning through Test-Time Scaling. |
+| ![Figure 2](assets/papers-explained-403-crosslingual-reasoning-through-test-time-scaling/fig-2.webp) | Crosslingual test-time scaling of s1 and Qwen models on the MGSM benchmark (excluding English) across different model sizes. |
+| ![Figure 3](assets/papers-explained-403-crosslingual-reasoning-through-test-time-scaling/fig-3.webp) | MGSM performance comparison against 14B-sized s1 model with maximum 8k thinking tokens. |
+| ![Figure 4](assets/papers-explained-403-crosslingual-reasoning-through-test-time-scaling/fig-4.webp) | Proportion of dominant languages in models’ entire responses when queried with multilingual math questions. |
+| ![Figure 5](assets/papers-explained-403-crosslingual-reasoning-through-test-time-scaling/fig-5.webp) | Breakdown of language-mixing patterns in s1’s reasoning. |
+| ![Figure 6](assets/papers-explained-403-crosslingual-reasoning-through-test-time-scaling/fig-6.webp) | Different language forcing techniques are experimented with on the MGSM benchmark using 11 languages. |
+| ![Figure 7](assets/papers-explained-403-crosslingual-reasoning-through-test-time-scaling/fig-7.webp) | Performance scores across different reasoning languages given query language. |
+| ![Figure 8](assets/papers-explained-403-crosslingual-reasoning-through-test-time-scaling/fig-8.webp) | MGSM accuracy against number of thinking tokens in s1 models’ outputs in different reasoning languages. |
+| ![Figure 9](assets/papers-explained-403-crosslingual-reasoning-through-test-time-scaling/fig-9.webp) | Effects of thinking time for s1 models on different domains of Global-MMLU benchmark. |
 ## Related
 
 - [[Papers Explained Corpus]]

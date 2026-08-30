@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-03-08_Papers-Explained-110--Nomic-Embed-8ccae819dac2.html`
+- Source file: `raw/2024-03-08_Papers-Explained-110--Nomic-Embed-8ccae819dac2.md`
 - Source title: Papers Explained 110: Nomic Embed
 - Published: 2024-03-08
 - Canonical: [https://medium.com/@ritvik19/papers-explained-110-nomic-embed-8ccae819dac2](https://medium.com/@ritvik19/papers-explained-110-nomic-embed-8ccae819dac2)
@@ -181,21 +181,21 @@ Recommended Reading: [Retrieval and Representation Learning](https://ritvik19.me
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-03-08_Papers-Explained-110--Nomic-Embed-8ccae819dac2.html`); local copies under `wiki/assets/papers-explained-110-nomic-embed/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-03-08_Papers-Explained-110--Nomic-Embed-8ccae819dac2.md`); local copies under `wiki/assets/papers-explained-110-nomic-embed/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-110-nomic-embed/fig-1.png) | Title block of *Nomic Embed: Training a Reproducible Long Context Text Embedder*. |
-| ![Figure 2](assets/papers-explained-110-nomic-embed/fig-2.png) | Pretraining dataset distribution table across weakly supervised text-pair sources. |
-| ![Figure 3](assets/papers-explained-110-nomic-embed/fig-3.png) | InfoNCE contrastive loss used for unsupervised embedding pretraining. |
-| ![Figure 4](assets/papers-explained-110-nomic-embed/fig-4.png) | Long-context benchmark comparison versus OpenAI and Jina embedding models. |
-| ![Figure 5](assets/papers-explained-110-nomic-embed/fig-5.png) | GLUE dev-set results for nomic-bert-2048 against BERT-family baselines. |
-| ![Figure 6](assets/papers-explained-110-nomic-embed/fig-6.png) | MTEB category-level results comparing unsupervised and supervised embedding models. |
-| ![Figure 7](assets/papers-explained-110-nomic-embed/fig-7.png) | LoCo benchmark results across sequence lengths and long-context retrieval tasks. |
-| ![Figure 8](assets/papers-explained-110-nomic-embed/fig-8.png) | Jina Long Context benchmark table across quality dimensions and sequence lengths. |
-| ![Figure 9](assets/papers-explained-110-nomic-embed/fig-9.png) | MTEB performance vs embedding dimension, including nomic-embed v1 and competing models. |
-| ![Figure 10](assets/papers-explained-110-nomic-embed/fig-10.png) | Multimodal comparison on Datacomp, ImageNet zero-shot, and MTEB between Nomic Embed and CLIP baselines. |
-| ![Figure 11](assets/papers-explained-110-nomic-embed/fig-11.png) | Summary table for Nomic Embed v1/v1.5, OpenAI CLIP, and OpenAI text embeddings. |
+| ![Figure 1](assets/papers-explained-110-nomic-embed/fig-1.webp) | Title block of *Nomic Embed: Training a Reproducible Long Context Text Embedder*. |
+| ![Figure 2](assets/papers-explained-110-nomic-embed/fig-2.webp) | Pretraining dataset distribution table across weakly supervised text-pair sources. |
+| ![Figure 3](assets/papers-explained-110-nomic-embed/fig-3.webp) | InfoNCE contrastive loss used for unsupervised embedding pretraining. |
+| ![Figure 4](assets/papers-explained-110-nomic-embed/fig-4.webp) | Long-context benchmark comparison versus OpenAI and Jina embedding models. |
+| ![Figure 5](assets/papers-explained-110-nomic-embed/fig-5.webp) | GLUE dev-set results for nomic-bert-2048 against BERT-family baselines. |
+| ![Figure 6](assets/papers-explained-110-nomic-embed/fig-6.webp) | MTEB category-level results comparing unsupervised and supervised embedding models. |
+| ![Figure 7](assets/papers-explained-110-nomic-embed/fig-7.webp) | LoCo benchmark results across sequence lengths and long-context retrieval tasks. |
+| ![Figure 8](assets/papers-explained-110-nomic-embed/fig-8.webp) | Jina Long Context benchmark table across quality dimensions and sequence lengths. |
+| ![Figure 9](assets/papers-explained-110-nomic-embed/fig-9.webp) | MTEB performance vs embedding dimension, including nomic-embed v1 and competing models. |
+| ![Figure 10](assets/papers-explained-110-nomic-embed/fig-10.webp) | Multimodal comparison on Datacomp, ImageNet zero-shot, and MTEB between Nomic Embed and CLIP baselines. |
+| ![Figure 11](assets/papers-explained-110-nomic-embed/fig-11.webp) | Summary table for Nomic Embed v1/v1.5, OpenAI CLIP, and OpenAI text embeddings. |
 ## Related
 
 - [[Papers Explained Corpus]]

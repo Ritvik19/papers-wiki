@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-12-22_Papers-Explained-506--Nemotron-3-Nano-8c95d44b0540.html`
+- Source file: `raw/2025-12-22_Papers-Explained-506--Nemotron-3-Nano-8c95d44b0540.md`
 - Source title: Papers Explained 506: Nemotron 3 Nano
 - Published: 2025-12-22
 - Canonical: [https://medium.com/@ritvik19/papers-explained-506-nemotron-3-nano-8c95d44b0540](https://medium.com/@ritvik19/papers-explained-506-nemotron-3-nano-8c95d44b0540)
@@ -293,26 +293,26 @@ where 𝛽(think) and 𝛽(answer) are the reasoning and answer conciseness bonu
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-12-22_Papers-Explained-506--Nemotron-3-Nano-8c95d44b0540.html`); local copies under `wiki/assets/papers-explained-506-nemotron-3-nano/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-12-22_Papers-Explained-506--Nemotron-3-Nano-8c95d44b0540.md`); local copies under `wiki/assets/papers-explained-506-nemotron-3-nano/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-506-nemotron-3-nano/fig-1.png) | Title card: Nemotron 3 Nano. |
-| ![Figure 2](assets/papers-explained-506-nemotron-3-nano/fig-2.png) | The models and their training data are available on HuggingFace. |
-| ![Figure 3](assets/papers-explained-506-nemotron-3-nano/fig-3.png) | Nemotron 3 Nano Architecture. |
-| ![Figure 4](assets/papers-explained-506-nemotron-3-nano/fig-4.png) | Data mixtures for each phase of pre-training. |
-| ![Figure 5](assets/papers-explained-506-nemotron-3-nano/fig-5.png) | Example prompt materialization using the Nemotron 3 Nano chat template for a 2-turn conversation. |
-| ![Figure 6](assets/papers-explained-506-nemotron-3-nano/fig-6.png) | SFT data blend for Nemotron 3 Nano. |
-| ![Figure 7](assets/papers-explained-506-nemotron-3-nano/fig-7.png) | Batch-wise pass rates across the RL curriculum. |
-| ![Figure 8](assets/papers-explained-506-nemotron-3-nano/fig-8.png) | Generative reward models (GenRMs) generalize better than traditional Bradley-Terry models, reducing the risk of reward hacking during RLHF. |
-| ![Figure 9](assets/papers-explained-506-nemotron-3-nano/fig-9.png) | With a trained GenRM, RLHF is conducted on the same set of prompts. |
-| ![Figure 10](assets/papers-explained-506-nemotron-3-nano/fig-10.png) | A zero-mean, group-relative length bonus is computed to encourage shorter responses within a group. |
-| ![Figure 11](assets/papers-explained-506-nemotron-3-nano/fig-11.png) | The same procedure is applied to answer lengths to obtain˜𝑤(answer) 𝑖. The final reward for response 𝑟𝑖 is then. |
-| ![Figure 12](assets/papers-explained-506-nemotron-3-nano/fig-12.png) | The same procedure is applied to answer lengths to obtain˜𝑤(answer) 𝑖. The final reward for response 𝑟𝑖 is then. |
-| ![Figure 13](assets/papers-explained-506-nemotron-3-nano/fig-13.png) | Instruction Following: Two environments are used. |
-| ![Figure 14](assets/papers-explained-506-nemotron-3-nano/fig-14.png) | Instruction Following: Two environments are used. |
-| ![Figure 15](assets/papers-explained-506-nemotron-3-nano/fig-15.png) | Comparison of Qwen3–30B-A3B-Base and Nemotron 3 Nano 30B-A3B Base. |
-| ![Figure 16](assets/papers-explained-506-nemotron-3-nano/fig-16.png) | Nemotron 3 Nano compared to Qwen3–30B-A3B-Thinking-2507, and GPT-OSS 20B. |
+| ![Figure 1](assets/papers-explained-506-nemotron-3-nano/fig-1.webp) | Title card: Nemotron 3 Nano. |
+| ![Figure 2](assets/papers-explained-506-nemotron-3-nano/fig-2.webp) | The models and their training data are available on HuggingFace. |
+| ![Figure 3](assets/papers-explained-506-nemotron-3-nano/fig-3.webp) | Nemotron 3 Nano Architecture. |
+| ![Figure 4](assets/papers-explained-506-nemotron-3-nano/fig-4.webp) | Data mixtures for each phase of pre-training. |
+| ![Figure 5](assets/papers-explained-506-nemotron-3-nano/fig-5.webp) | Example prompt materialization using the Nemotron 3 Nano chat template for a 2-turn conversation. |
+| ![Figure 6](assets/papers-explained-506-nemotron-3-nano/fig-6.webp) | SFT data blend for Nemotron 3 Nano. |
+| ![Figure 7](assets/papers-explained-506-nemotron-3-nano/fig-7.webp) | Batch-wise pass rates across the RL curriculum. |
+| ![Figure 8](assets/papers-explained-506-nemotron-3-nano/fig-8.webp) | Generative reward models (GenRMs) generalize better than traditional Bradley-Terry models, reducing the risk of reward hacking during RLHF. |
+| ![Figure 9](assets/papers-explained-506-nemotron-3-nano/fig-9.webp) | With a trained GenRM, RLHF is conducted on the same set of prompts. |
+| ![Figure 10](assets/papers-explained-506-nemotron-3-nano/fig-10.webp) | A zero-mean, group-relative length bonus is computed to encourage shorter responses within a group. |
+| ![Figure 11](assets/papers-explained-506-nemotron-3-nano/fig-11.webp) | The same procedure is applied to answer lengths to obtain˜𝑤(answer) 𝑖. The final reward for response 𝑟𝑖 is then. |
+| ![Figure 12](assets/papers-explained-506-nemotron-3-nano/fig-12.webp) | The same procedure is applied to answer lengths to obtain˜𝑤(answer) 𝑖. The final reward for response 𝑟𝑖 is then. |
+| ![Figure 13](assets/papers-explained-506-nemotron-3-nano/fig-13.webp) | Instruction Following: Two environments are used. |
+| ![Figure 14](assets/papers-explained-506-nemotron-3-nano/fig-14.webp) | Instruction Following: Two environments are used. |
+| ![Figure 15](assets/papers-explained-506-nemotron-3-nano/fig-15.webp) | Comparison of Qwen3–30B-A3B-Base and Nemotron 3 Nano 30B-A3B Base. |
+| ![Figure 16](assets/papers-explained-506-nemotron-3-nano/fig-16.webp) | Nemotron 3 Nano compared to Qwen3–30B-A3B-Thinking-2507, and GPT-OSS 20B. |
 ## Related
 
 - [[Papers Explained Corpus]]

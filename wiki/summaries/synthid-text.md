@@ -1,6 +1,6 @@
 # Introducing SynthID Text
 
-**Source**: `raw/synthid-text/full-article.html`, `raw/synthid-text/full-article.md`
+**Source**: `raw/synthid-text/full-article.md`, `raw/synthid-text/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

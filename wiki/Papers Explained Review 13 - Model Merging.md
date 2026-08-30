@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-04-28_Papers-Explained-Review-13--Model-Merging-d0db49797b90.html`
+- Source file: `raw/2025-04-28_Papers-Explained-Review-13--Model-Merging-d0db49797b90.md`
 - Source title: Papers Explained Review 13: Model Merging
 - Published: 2025-04-28
 - Canonical: [https://medium.com/@ritvik19/papers-explained-review-13-model-merging-d0db49797b90](https://medium.com/@ritvik19/papers-explained-review-13-model-merging-d0db49797b90)
@@ -673,20 +673,20 @@ float16
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-04-28_Papers-Explained-Review-13--Model-Merging-d0db49797b90.html`); local copies under `wiki/assets/papers-explained-review-13-model-merging/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-04-28_Papers-Explained-Review-13--Model-Merging-d0db49797b90.md`); local copies under `wiki/assets/papers-explained-review-13-model-merging/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-review-13-model-merging/fig-1.jpeg) | Title card: Model Merging. |
-| ![Figure 2](assets/papers-explained-review-13-model-merging/fig-2.png) | Given a set of models with weights (W_1, W_2,…, W_N) and nonnegative coefficients (α_1, α_2, … α_N) that sum to 1, the merged model is. |
-| ![Figure 3](assets/papers-explained-review-13-model-merging/fig-3.png) | For two weight vectors (a) and (b) and an interpolation parameter (t in [0,1]). |
-| ![Figure 4](assets/papers-explained-review-13-model-merging/fig-4.png) | 2. Merge based on the threshold τ. |
-| ![Figure 5](assets/papers-explained-review-13-model-merging/fig-5.png) | 2. Merge based on the threshold τ. |
-| ![Figure 6](assets/papers-explained-review-13-model-merging/fig-6.png) | Task Arithmetic leverages the idea that model parameters often encode “directions” related to specific tasks. |
-| ![Figure 7](assets/papers-explained-review-13-model-merging/fig-7.png) | Task Arithmetic leverages the idea that model parameters often encode “directions” related to specific tasks. |
-| ![Figure 8](assets/papers-explained-review-13-model-merging/fig-8.png) | Back To Top: θ is the angle between the two fine-tuned model weight vectors (w1 and w2). |
-| ![Figure 9](assets/papers-explained-review-13-model-merging/fig-9.png) | (w1 + w2)/2 represents the average of the two fine-tuned weight vectors which relates to w12 in the original text. |
-| ![Figure 10](assets/papers-explained-review-13-model-merging/fig-10.png) | (w1 + w2)/2 represents the average of the two fine-tuned weight vectors which relates to w12 in the original text. |
+| ![Figure 1](assets/papers-explained-review-13-model-merging/fig-1.webp) | Title card: Model Merging. |
+| ![Figure 2](assets/papers-explained-review-13-model-merging/fig-2.webp) | Given a set of models with weights (W_1, W_2,…, W_N) and nonnegative coefficients (α_1, α_2, … α_N) that sum to 1, the merged model is. |
+| ![Figure 3](assets/papers-explained-review-13-model-merging/fig-3.webp) | For two weight vectors (a) and (b) and an interpolation parameter (t in [0,1]). |
+| ![Figure 4](assets/papers-explained-review-13-model-merging/fig-4.webp) | 2. Merge based on the threshold τ. |
+| ![Figure 5](assets/papers-explained-review-13-model-merging/fig-5.webp) | 2. Merge based on the threshold τ. |
+| ![Figure 6](assets/papers-explained-review-13-model-merging/fig-6.webp) | Task Arithmetic leverages the idea that model parameters often encode “directions” related to specific tasks. |
+| ![Figure 7](assets/papers-explained-review-13-model-merging/fig-7.webp) | Task Arithmetic leverages the idea that model parameters often encode “directions” related to specific tasks. |
+| ![Figure 8](assets/papers-explained-review-13-model-merging/fig-8.webp) | Back To Top: θ is the angle between the two fine-tuned model weight vectors (w1 and w2). |
+| ![Figure 9](assets/papers-explained-review-13-model-merging/fig-9.webp) | (w1 + w2)/2 represents the average of the two fine-tuned weight vectors which relates to w12 in the original text. |
+| ![Figure 10](assets/papers-explained-review-13-model-merging/fig-10.webp) | (w1 + w2)/2 represents the average of the two fine-tuned weight vectors which relates to w12 in the original text. |
 ## Related
 
 - [[Papers Explained Corpus]]

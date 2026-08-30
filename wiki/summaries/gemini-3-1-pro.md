@@ -1,6 +1,6 @@
 # Gemini 3.1 Pro
 
-**Source**: `raw/gemini-3-1-pro/full-article.html` (379 KB)  
+**Source**: `raw/gemini-3-1-pro/full-article.md` (379 KB)  
 **URL**: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

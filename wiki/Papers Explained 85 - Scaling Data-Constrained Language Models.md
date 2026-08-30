@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-01-01_Papers-Explained-85--Scaling-Data-Constrained-Language-Models-2a4c18bcc7d3.html`
+- Source file: `raw/2024-01-01_Papers-Explained-85--Scaling-Data-Constrained-Language-Models-2a4c18bcc7d3.md`
 - Source title: Papers Explained 85: Scaling Data-Constrained Language Models
 - Published: 2024-01-01
 - Canonical: [https://medium.com/@ritvik19/papers-explained-85-scaling-data-constrained-language-models-2a4c18bcc7d3](https://medium.com/@ritvik19/papers-explained-85-scaling-data-constrained-language-models-2a4c18bcc7d3)
@@ -193,17 +193,17 @@ Scaling Data-Constrained Language Models: [2305.16264](https://arxiv.org/abs/230
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-01-01_Papers-Explained-85--Scaling-Data-Constrained-Language-Models-2a4c18bcc7d3.html`); local copies under `wiki/assets/papers-explained-85-scaling-data-constrained-language-models/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-01-01_Papers-Explained-85--Scaling-Data-Constrained-Language-Models-2a4c18bcc7d3.md`); local copies under `wiki/assets/papers-explained-85-scaling-data-constrained-language-models/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-85-scaling-data-constrained-language-models/fig-1.png) | Title card: Scaling Data-Constrained Language Models. |
-| ![Figure 2](assets/papers-explained-85-scaling-data-constrained-language-models/fig-2.png) | Chinchilla uses three methods for making scaling predictions. |
-| ![Figure 3](assets/papers-explained-85-scaling-data-constrained-language-models/fig-3.png) | Dataset setup. |
-| ![Figure 4](assets/papers-explained-85-scaling-data-constrained-language-models/fig-4.png) | IsoLoss contours for 100 million unique tokens. (Left): 93 models trained with varying parameters and epochs on a fixed dataset. (Right): Comparison with the loss predictions from our proposed scaling laws for the same budget of 100 million unique tokens and the predicted efficient frontier. |
-| ![Figure 5](assets/papers-explained-85-scaling-data-constrained-language-models/fig-5.png) | Validation Loss for Different Data Constraints (IsoFLOP). |
-| ![Figure 6](assets/papers-explained-85-scaling-data-constrained-language-models/fig-6.png) | Empirical and Extrapolated loss with constrained data. (Left): Loss as a function of repeated tokens for three different training budgets each with fixed number of parameters.. (Right): Extrapolating from the proposed data-constrained scaling law. |
-| ![Figure 7](assets/papers-explained-85-scaling-data-constrained-language-models/fig-7.png) | Strategies for data-constrained settings and their downstream performance. |
+| ![Figure 1](assets/papers-explained-85-scaling-data-constrained-language-models/fig-1.webp) | Title card: Scaling Data-Constrained Language Models. |
+| ![Figure 2](assets/papers-explained-85-scaling-data-constrained-language-models/fig-2.webp) | Chinchilla uses three methods for making scaling predictions. |
+| ![Figure 3](assets/papers-explained-85-scaling-data-constrained-language-models/fig-3.webp) | Dataset setup. |
+| ![Figure 4](assets/papers-explained-85-scaling-data-constrained-language-models/fig-4.webp) | IsoLoss contours for 100 million unique tokens. (Left): 93 models trained with varying parameters and epochs on a fixed dataset. (Right): Comparison with the loss predictions from our proposed scaling laws for the same budget of 100 million unique tokens and the predicted efficient frontier. |
+| ![Figure 5](assets/papers-explained-85-scaling-data-constrained-language-models/fig-5.webp) | Validation Loss for Different Data Constraints (IsoFLOP). |
+| ![Figure 6](assets/papers-explained-85-scaling-data-constrained-language-models/fig-6.webp) | Empirical and Extrapolated loss with constrained data. (Left): Loss as a function of repeated tokens for three different training budgets each with fixed number of parameters.. (Right): Extrapolating from the proposed data-constrained scaling law. |
+| ![Figure 7](assets/papers-explained-85-scaling-data-constrained-language-models/fig-7.webp) | Strategies for data-constrained settings and their downstream performance. |
 ## Related
 
 - [[Papers Explained Corpus]]

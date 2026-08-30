@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-12-26_Papers-Explained-510--OEIS-Sequence-Benchmark-20b0eecb7d45.html`
+- Source file: `raw/2025-12-26_Papers-Explained-510--OEIS-Sequence-Benchmark-20b0eecb7d45.md`
 - Source title: Papers Explained 510: OEIS Sequence Benchmark
 - Published: 2025-12-26
 - Canonical: [https://medium.com/@ritvik19/papers-explained-510-oeis-sequence-benchmark-20b0eecb7d45](https://medium.com/@ritvik19/papers-explained-510-oeis-sequence-benchmark-20b0eecb7d45)
@@ -81,17 +81,17 @@ Benchmarking Large Language Models with Integer Sequence Generation Tasks [2411.
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-12-26_Papers-Explained-510--OEIS-Sequence-Benchmark-20b0eecb7d45.html`); local copies under `wiki/assets/papers-explained-510-oeis-sequence-benchmark/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-12-26_Papers-Explained-510--OEIS-Sequence-Benchmark-20b0eecb7d45.md`); local copies under `wiki/assets/papers-explained-510-oeis-sequence-benchmark/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-510-oeis-sequence-benchmark/fig-1.png) | Title card: OEIS Sequence Benchmark. |
-| ![Figure 2](assets/papers-explained-510-oeis-sequence-benchmark/fig-2.png) | Workflow for curating the OEIS-based benchmark dataset. |
-| ![Figure 3](assets/papers-explained-510-oeis-sequence-benchmark/fig-3.png) | where i0 is an offset indicating where the sequence starts. |
-| ![Figure 4](assets/papers-explained-510-oeis-sequence-benchmark/fig-4.png) | where i0 is an offset indicating where the sequence starts. |
-| ![Figure 5](assets/papers-explained-510-oeis-sequence-benchmark/fig-5.png) | The performance is measured using three factors: accuracy, efficiency, and avoiding lookup tables. For each sequence s, we define the accuracy As(n) as. |
-| ![Figure 6](assets/papers-explained-510-oeis-sequence-benchmark/fig-6.png) | The performance is measured using three factors: accuracy, efficiency, and avoiding lookup tables. For each sequence s, we define the accuracy As(n) as. |
-| ![Figure 7](assets/papers-explained-510-oeis-sequence-benchmark/fig-7.png) | Distribution of scores for the top three reasoning and non-reasoning models. |
+| ![Figure 1](assets/papers-explained-510-oeis-sequence-benchmark/fig-1.webp) | Title card: OEIS Sequence Benchmark. |
+| ![Figure 2](assets/papers-explained-510-oeis-sequence-benchmark/fig-2.webp) | Workflow for curating the OEIS-based benchmark dataset. |
+| ![Figure 3](assets/papers-explained-510-oeis-sequence-benchmark/fig-3.webp) | where i0 is an offset indicating where the sequence starts. |
+| ![Figure 4](assets/papers-explained-510-oeis-sequence-benchmark/fig-4.webp) | where i0 is an offset indicating where the sequence starts. |
+| ![Figure 5](assets/papers-explained-510-oeis-sequence-benchmark/fig-5.webp) | The performance is measured using three factors: accuracy, efficiency, and avoiding lookup tables. For each sequence s, we define the accuracy As(n) as. |
+| ![Figure 6](assets/papers-explained-510-oeis-sequence-benchmark/fig-6.webp) | The performance is measured using three factors: accuracy, efficiency, and avoiding lookup tables. For each sequence s, we define the accuracy As(n) as. |
+| ![Figure 7](assets/papers-explained-510-oeis-sequence-benchmark/fig-7.webp) | Distribution of scores for the top three reasoning and non-reasoning models. |
 ## Related
 
 - [[Papers Explained Corpus]]

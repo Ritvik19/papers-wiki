@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-03-04_Papers-Explained-108--Aya-Dataset-9e299ac74a19.html`
+- Source file: `raw/2024-03-04_Papers-Explained-108--Aya-Dataset-9e299ac74a19.md`
 - Source title: Papers Explained 108: Aya Dataset
 - Published: 2024-03-04
 - Canonical: [https://medium.com/@ritvik19/papers-explained-108-aya-dataset-9e299ac74a19](https://medium.com/@ritvik19/papers-explained-108-aya-dataset-9e299ac74a19)
@@ -193,27 +193,27 @@ Recommended Reading [Aya Series](https://ritvik19.medium.com/list/aya-series-83e
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-03-04_Papers-Explained-108--Aya-Dataset-9e299ac74a19.html`); local copies under `wiki/assets/papers-explained-108-aya-dataset/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-03-04_Papers-Explained-108--Aya-Dataset-9e299ac74a19.md`); local copies under `wiki/assets/papers-explained-108-aya-dataset/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-108-aya-dataset/fig-1.png) | Title page of *Aya Dataset: An Open-Access Collection for Multilingual Instruction Tuning*. |
-| ![Figure 2](assets/papers-explained-108-aya-dataset/fig-2.png) | Overview of Aya resources: Aya Dataset, Aya Collection, and Aya Evaluation Suite. |
-| ![Figure 3](assets/papers-explained-108-aya-dataset/fig-3.png) | Comparison of instruction-tuning datasets by scale, language coverage, generation method, and licensing. |
-| ![Figure 4](assets/papers-explained-108-aya-dataset/fig-4.png) | Geographic distribution of registered users on the Aya platform. |
-| ![Figure 5](assets/papers-explained-108-aya-dataset/fig-5.png) | Registered-user demographics by age and gender. |
-| ![Figure 6](assets/papers-explained-108-aya-dataset/fig-6.png) | Regional share of total Aya contributions. |
-| ![Figure 7](assets/papers-explained-108-aya-dataset/fig-7.png) | Aya Dataset composition counts: original annotations, re-annotations, and total size. |
-| ![Figure 8](assets/papers-explained-108-aya-dataset/fig-8.png) | Average completion length before and after re-annotation across data sources. |
-| ![Figure 9](assets/papers-explained-108-aya-dataset/fig-9.png) | Average prompt and completion lengths by language-resource category (HR/MR/LR). |
-| ![Figure 10](assets/papers-explained-108-aya-dataset/fig-10.png) | Correlation between approval ratio and prompt/completion length. |
-| ![Figure 11](assets/papers-explained-108-aya-dataset/fig-11.png) | Completion-length comparison between Aya Dataset, Aya Collection, and xP3. |
-| ![Figure 12](assets/papers-explained-108-aya-dataset/fig-12.png) | Per-language annotation share and concentration among top-k annotators. |
-| ![Figure 13](assets/papers-explained-108-aya-dataset/fig-13.png) | Effect of Aya Score introduction on submission volume and average completion length over time. |
-| ![Figure 14](assets/papers-explained-108-aya-dataset/fig-14.png) | Aya Collection task taxonomy with main and fine-grained NLP task types. |
-| ![Figure 15](assets/papers-explained-108-aya-dataset/fig-15.png) | Per-language instance counts in Aya Collection (templated) alongside Wikipedia article counts. |
-| ![Figure 16](assets/papers-explained-108-aya-dataset/fig-16.png) | Average prompt+completion length across languages, colored by resource category. |
-| ![Figure 17](assets/papers-explained-108-aya-dataset/fig-17.png) | Average approval ratio by dataset group (xP3, Aya Collection templates/translations, Aya original annotations). |
+| ![Figure 1](assets/papers-explained-108-aya-dataset/fig-1.webp) | Title page of *Aya Dataset: An Open-Access Collection for Multilingual Instruction Tuning*. |
+| ![Figure 2](assets/papers-explained-108-aya-dataset/fig-2.webp) | Overview of Aya resources: Aya Dataset, Aya Collection, and Aya Evaluation Suite. |
+| ![Figure 3](assets/papers-explained-108-aya-dataset/fig-3.webp) | Comparison of instruction-tuning datasets by scale, language coverage, generation method, and licensing. |
+| ![Figure 4](assets/papers-explained-108-aya-dataset/fig-4.webp) | Geographic distribution of registered users on the Aya platform. |
+| ![Figure 5](assets/papers-explained-108-aya-dataset/fig-5.webp) | Registered-user demographics by age and gender. |
+| ![Figure 6](assets/papers-explained-108-aya-dataset/fig-6.webp) | Regional share of total Aya contributions. |
+| ![Figure 7](assets/papers-explained-108-aya-dataset/fig-7.webp) | Aya Dataset composition counts: original annotations, re-annotations, and total size. |
+| ![Figure 8](assets/papers-explained-108-aya-dataset/fig-8.webp) | Average completion length before and after re-annotation across data sources. |
+| ![Figure 9](assets/papers-explained-108-aya-dataset/fig-9.webp) | Average prompt and completion lengths by language-resource category (HR/MR/LR). |
+| ![Figure 10](assets/papers-explained-108-aya-dataset/fig-10.webp) | Correlation between approval ratio and prompt/completion length. |
+| ![Figure 11](assets/papers-explained-108-aya-dataset/fig-11.webp) | Completion-length comparison between Aya Dataset, Aya Collection, and xP3. |
+| ![Figure 12](assets/papers-explained-108-aya-dataset/fig-12.webp) | Per-language annotation share and concentration among top-k annotators. |
+| ![Figure 13](assets/papers-explained-108-aya-dataset/fig-13.webp) | Effect of Aya Score introduction on submission volume and average completion length over time. |
+| ![Figure 14](assets/papers-explained-108-aya-dataset/fig-14.webp) | Aya Collection task taxonomy with main and fine-grained NLP task types. |
+| ![Figure 15](assets/papers-explained-108-aya-dataset/fig-15.webp) | Per-language instance counts in Aya Collection (templated) alongside Wikipedia article counts. |
+| ![Figure 16](assets/papers-explained-108-aya-dataset/fig-16.webp) | Average prompt+completion length across languages, colored by resource category. |
+| ![Figure 17](assets/papers-explained-108-aya-dataset/fig-17.webp) | Average approval ratio by dataset group (xP3, Aya Collection templates/translations, Aya original annotations). |
 ## Related
 
 - [[Papers Explained Corpus]]

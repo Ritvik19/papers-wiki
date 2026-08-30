@@ -1,6 +1,6 @@
 # A Visual Guide to Attention Variants in Modern LLMs
 
-**Source**: `raw/visual-attention-variants/full-article.html` (595 KB), `raw/visual-attention-variants/full-article.md` (markdown view)  
+**Source**: `raw/visual-attention-variants/full-article.md` (595 KB), `raw/visual-attention-variants/full-article.md` (markdown view)  
 **URL**: https://magazine.sebastianraschka.com/p/visual-attention-variants  
 **Ingested**: 2026-06-07  
 **Tags**: #summary
@@ -35,42 +35,42 @@ Raschka closes pragmatically: no public apples-to-apples architecture bake-off e
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/visual-attention-variants/fig-1.png) | LLM architecture gallery overview with visual model cards | — |
-| ![fig-2](../assets/visual-attention-variants/fig-2.jpg) | Printed poster version with scale objects | — |
-| ![fig-3](../assets/visual-attention-variants/fig-3.png) | OLMo 2 as an MHA example architecture | — |
+| ![fig-1](../assets/visual-attention-variants/fig-1.webp) | LLM architecture gallery overview with visual model cards | — |
+| ![fig-2](../assets/visual-attention-variants/fig-2.webp) | Printed poster version with scale objects | — |
+| ![fig-3](../assets/visual-attention-variants/fig-3.webp) | OLMo 2 as an MHA example architecture | — |
 | ![fig-4](../assets/visual-attention-variants/fig-4.webp) | Word-by-word translation failure illustrating sentence-level structure needs | — |
 | ![fig-5](../assets/visual-attention-variants/fig-5.webp) | Attention lets decoders revisit full input instead of one compressed state | — |
 | ![fig-6](../assets/visual-attention-variants/fig-6.webp) | Causal masked attention matrix (\(T \times T\)) | — |
-| ![fig-7](../assets/visual-attention-variants/fig-7.png) | Self-attention pipeline: \(X \to Q,K,V \to A \to Z\) | — |
-| ![fig-8](../assets/visual-attention-variants/fig-8.png) | Single-head scaled dot-product attention (compact view) | — |
-| ![fig-9](../assets/visual-attention-variants/fig-9.png) | Multi-head attention: parallel heads with separate projections | — |
-| ![fig-10](../assets/visual-attention-variants/fig-10.png) | GQA: multiple query heads share key-value projections | — |
-| ![fig-11](../assets/visual-attention-variants/fig-11.png) | KV-cache memory savings: lower is better as context grows | — |
+| ![fig-7](../assets/visual-attention-variants/fig-7.webp) | Self-attention pipeline: \(X \to Q,K,V \to A \to Z\) | — |
+| ![fig-8](../assets/visual-attention-variants/fig-8.webp) | Single-head scaled dot-product attention (compact view) | — |
+| ![fig-9](../assets/visual-attention-variants/fig-9.webp) | Multi-head attention: parallel heads with separate projections | — |
+| ![fig-10](../assets/visual-attention-variants/fig-10.webp) | GQA: multiple query heads share key-value projections | — |
+| ![fig-11](../assets/visual-attention-variants/fig-11.webp) | KV-cache memory savings: lower is better as context grows | — |
 | ![fig-12](../assets/visual-attention-variants/fig-12.webp) | Total KV cache: Sarvam 105B MLA vs 30B GQA vs plain MHA | — |
 | ![fig-13](../assets/visual-attention-variants/fig-13.webp) | MLA caches latent representation instead of grouping K/V heads | — |
-| ![fig-14](../assets/visual-attention-variants/fig-14.png) | MLA latent-cache savings vs full K/V tensors at long context | — |
-| ![fig-15](../assets/visual-attention-variants/fig-15.png) | DeepSeek-V2 ablation: GQA below MHA; MLA competitive or better | — |
+| ![fig-14](../assets/visual-attention-variants/fig-14.webp) | MLA latent-cache savings vs full K/V tensors at long context | — |
+| ![fig-15](../assets/visual-attention-variants/fig-15.webp) | DeepSeek-V2 ablation: GQA below MHA; MLA competitive or better | — |
 | ![fig-16](../assets/visual-attention-variants/fig-16.webp) | GQA vs MLA: simplicity vs modeling performance at scale | — |
-| ![fig-17](../assets/visual-attention-variants/fig-17.png) | SWA: global attention vs local sliding-window layers | — |
+| ![fig-17](../assets/visual-attention-variants/fig-17.webp) | SWA: global attention vs local sliding-window layers | — |
 | ![fig-18](../assets/visual-attention-variants/fig-18.webp) | Gemma 3 SWA ablation: aggressive local:global ratio barely hurts perplexity | — |
 | ![fig-19](../assets/visual-attention-variants/fig-19.webp) | Long-context savings from interleaving local SWA layers | — |
 | ![fig-20](../assets/visual-attention-variants/fig-20.webp) | DSA: learned sparse subset vs fixed SWA window | — |
 | ![fig-21](../assets/visual-attention-variants/fig-21.webp) | DeepSeek V3.2 combines MLA cache compression with DSA sparse pattern | — |
-| ![fig-22](../assets/visual-attention-variants/fig-22.png) | DSA lightning indexer + token selector mechanism | — |
+| ![fig-22](../assets/visual-attention-variants/fig-22.webp) | DSA lightning indexer + token selector mechanism | — |
 | ![fig-23](../assets/visual-attention-variants/fig-23.webp) | Gated attention in Trinity (output gate before projection) | — |
 | ![fig-24](../assets/visual-attention-variants/fig-24.webp) | Qwen3-Next/3.5: gated full attention among Gated DeltaNet blocks | — |
 | ![fig-25](../assets/visual-attention-variants/fig-25.webp) | Hybrid 3:1 pattern: cheap mixers + periodic full attention | — |
-| ![fig-26](../assets/visual-attention-variants/fig-26.png) | Memory curve: Gated DeltaNet hybrid vs full attention | — |
-| ![fig-27](../assets/visual-attention-variants/fig-27.png) | Qwen3.5 promotes Qwen3-Next hybrid into flagship line | — |
+| ![fig-26](../assets/visual-attention-variants/fig-26.webp) | Memory curve: Gated DeltaNet hybrid vs full attention | — |
+| ![fig-27](../assets/visual-attention-variants/fig-27.webp) | Qwen3.5 promotes Qwen3-Next hybrid into flagship line | — |
 | ![fig-28](../assets/visual-attention-variants/fig-28.webp) | Kimi Linear: Kimi Delta Attention + gated MLA in 3:1 hybrid | — |
-| ![fig-29](../assets/visual-attention-variants/fig-29.png) | Ling 2.5: Lightning Attention + MLA hybrid | — |
-| ![fig-30](../assets/visual-attention-variants/fig-30.png) | Ling 2.5 reported 32k-token throughput vs Kimi K2 | — |
+| ![fig-29](../assets/visual-attention-variants/fig-29.webp) | Ling 2.5: Lightning Attention + MLA hybrid | — |
+| ![fig-30](../assets/visual-attention-variants/fig-30.webp) | Ling 2.5 reported 32k-token throughput vs Kimi K2 | — |
 | ![fig-31](../assets/visual-attention-variants/fig-31.webp) | Nemotron 3 Nano: Mamba-2-heavy hybrid with sparse MoE | — |
-| ![fig-32](../assets/visual-attention-variants/fig-32.png) | Nemotron 3 Super: Mamba-2 hybrid + latent MoE + shared-weight MTP | — |
+| ![fig-32](../assets/visual-attention-variants/fig-32.webp) | Nemotron 3 Super: Mamba-2 hybrid + latent MoE + shared-weight MTP | — |
 
 Gallery and attention-variant landscape:
 
-![LLM architecture gallery](../assets/visual-attention-variants/fig-1.png)
+![LLM architecture gallery](../assets/visual-attention-variants/fig-1.webp)
 
 MHA vs GQA vs MLA on KV cache size (Sarvam comparison):
 

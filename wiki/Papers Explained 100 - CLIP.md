@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-02-14_Papers-Explained-100--CLIP-f9873c65134.html`
+- Source file: `raw/2024-02-14_Papers-Explained-100--CLIP-f9873c65134.md`
 - Source title: Papers Explained 100: CLIP
 - Published: 2024-02-14
 - Canonical: [https://medium.com/@ritvik19/papers-explained-100-clip-f9873c65134](https://medium.com/@ritvik19/papers-explained-100-clip-f9873c65134)
@@ -155,29 +155,29 @@ Recommended Reading: [Retrieval and Representation Learning](https://ritvik19.me
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-02-14_Papers-Explained-100--CLIP-f9873c65134.html`); local copies under `wiki/assets/papers-explained-100-clip/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-02-14_Papers-Explained-100--CLIP-f9873c65134.md`); local copies under `wiki/assets/papers-explained-100-clip/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-100-clip/fig-1.png) | Title block of *Learning Transferable Visual Models From Natural Language Supervision*. |
-| ![Figure 2](assets/papers-explained-100-clip/fig-2.png) | CLIP overview: contrastive pretraining on image-text pairs, text-prompt classifier construction, and zero-shot prediction. |
-| ![Figure 3](assets/papers-explained-100-clip/fig-3.png) | Numpy-style pseudocode for CLIP’s symmetric contrastive loss with learned temperature scaling. |
-| ![Figure 4](assets/papers-explained-100-clip/fig-4.png) | Initial zero-shot transfer comparison showing CLIP vs Visual N-Grams on aYahoo, ImageNet, and SUN. |
-| ![Figure 5](assets/papers-explained-100-clip/fig-5.png) | Prompt engineering and prompt ensembling improve zero-shot score across CLIP model scales. |
-| ![Figure 6](assets/papers-explained-100-clip/fig-6.png) | Per-dataset delta between zero-shot CLIP and a supervised linear probe on ResNet-50 features. |
-| ![Figure 7](assets/papers-explained-100-clip/fig-7.png) | Zero-shot CLIP vs few-shot linear probes as labeled examples per class increase. |
-| ![Figure 8](assets/papers-explained-100-clip/fig-8.png) | Labeled examples per class needed for a linear probe to match zero-shot CLIP across datasets. |
-| ![Figure 9](assets/papers-explained-100-clip/fig-9.png) | Correlation plot between linear-probe and zero-shot CLIP performance across benchmarks. |
-| ![Figure 10](assets/papers-explained-100-clip/fig-10.png) | Zero-shot CLIP error scaling trend vs model compute (GFLOPs). |
-| ![Figure 11](assets/papers-explained-100-clip/fig-11.png) | Linear-probe comparison of CLIP models against prior vision backbones over compute budgets. |
-| ![Figure 12](assets/papers-explained-100-clip/fig-12.png) | Per-dataset linear-probe gains of CLIP features over EfficientNet-L2 Noisy Student. |
-| ![Figure 13](assets/papers-explained-100-clip/fig-13.png) | Transfer score vs ImageNet score for CLIP and prior approaches across benchmark suites. |
-| ![Figure 14](assets/papers-explained-100-clip/fig-14.png) | Distribution-shift robustness: CLIP vs standard ImageNet models, with banana-class examples across shifted datasets. |
-| ![Figure 15](assets/papers-explained-100-clip/fig-15.png) | Robustness interventions: adapting CLIP to ImageNet vs adapting zero-shot classifier to class shift. |
-| ![Figure 16](assets/papers-explained-100-clip/fig-16.png) | Few-shot CLIP robustness tradeoff as adaptation shots increase from 1 to 128. |
-| ![Figure 17](assets/papers-explained-100-clip/fig-17.png) | Human vs CLIP performance table on Oxford-IIT Pets under zero-shot/one-shot and majority-vote settings. |
-| ![Figure 18](assets/papers-explained-100-clip/fig-18.png) | Per-class accuracy on Oxford-IIT Pets showing hardest classes for zero-shot humans and zero-shot CLIP. |
-| ![Figure 19](assets/papers-explained-100-clip/fig-19.png) | Data-overlap analysis: accuracy difference on overlapping samples and overall effect size across datasets. |
+| ![Figure 1](assets/papers-explained-100-clip/fig-1.webp) | Title block of *Learning Transferable Visual Models From Natural Language Supervision*. |
+| ![Figure 2](assets/papers-explained-100-clip/fig-2.webp) | CLIP overview: contrastive pretraining on image-text pairs, text-prompt classifier construction, and zero-shot prediction. |
+| ![Figure 3](assets/papers-explained-100-clip/fig-3.webp) | Numpy-style pseudocode for CLIP’s symmetric contrastive loss with learned temperature scaling. |
+| ![Figure 4](assets/papers-explained-100-clip/fig-4.webp) | Initial zero-shot transfer comparison showing CLIP vs Visual N-Grams on aYahoo, ImageNet, and SUN. |
+| ![Figure 5](assets/papers-explained-100-clip/fig-5.webp) | Prompt engineering and prompt ensembling improve zero-shot score across CLIP model scales. |
+| ![Figure 6](assets/papers-explained-100-clip/fig-6.webp) | Per-dataset delta between zero-shot CLIP and a supervised linear probe on ResNet-50 features. |
+| ![Figure 7](assets/papers-explained-100-clip/fig-7.webp) | Zero-shot CLIP vs few-shot linear probes as labeled examples per class increase. |
+| ![Figure 8](assets/papers-explained-100-clip/fig-8.webp) | Labeled examples per class needed for a linear probe to match zero-shot CLIP across datasets. |
+| ![Figure 9](assets/papers-explained-100-clip/fig-9.webp) | Correlation plot between linear-probe and zero-shot CLIP performance across benchmarks. |
+| ![Figure 10](assets/papers-explained-100-clip/fig-10.webp) | Zero-shot CLIP error scaling trend vs model compute (GFLOPs). |
+| ![Figure 11](assets/papers-explained-100-clip/fig-11.webp) | Linear-probe comparison of CLIP models against prior vision backbones over compute budgets. |
+| ![Figure 12](assets/papers-explained-100-clip/fig-12.webp) | Per-dataset linear-probe gains of CLIP features over EfficientNet-L2 Noisy Student. |
+| ![Figure 13](assets/papers-explained-100-clip/fig-13.webp) | Transfer score vs ImageNet score for CLIP and prior approaches across benchmark suites. |
+| ![Figure 14](assets/papers-explained-100-clip/fig-14.webp) | Distribution-shift robustness: CLIP vs standard ImageNet models, with banana-class examples across shifted datasets. |
+| ![Figure 15](assets/papers-explained-100-clip/fig-15.webp) | Robustness interventions: adapting CLIP to ImageNet vs adapting zero-shot classifier to class shift. |
+| ![Figure 16](assets/papers-explained-100-clip/fig-16.webp) | Few-shot CLIP robustness tradeoff as adaptation shots increase from 1 to 128. |
+| ![Figure 17](assets/papers-explained-100-clip/fig-17.webp) | Human vs CLIP performance table on Oxford-IIT Pets under zero-shot/one-shot and majority-vote settings. |
+| ![Figure 18](assets/papers-explained-100-clip/fig-18.webp) | Per-class accuracy on Oxford-IIT Pets showing hardest classes for zero-shot humans and zero-shot CLIP. |
+| ![Figure 19](assets/papers-explained-100-clip/fig-19.webp) | Data-overlap analysis: accuracy difference on overlapping samples and overall effect size across datasets. |
 ## Related
 
 - [[Papers Explained Corpus]]

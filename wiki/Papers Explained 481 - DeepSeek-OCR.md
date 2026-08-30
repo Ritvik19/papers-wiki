@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-10-30_Papers-Explained-481--DeepSeek-OCR-d7e1c19499d7.html`
+- Source file: `raw/2025-10-30_Papers-Explained-481--DeepSeek-OCR-d7e1c19499d7.md`
 - Source title: Papers Explained 481: DeepSeek-OCR
 - Published: 2025-10-30
 - Canonical: [https://medium.com/@ritvik19/papers-explained-481-deepseek-ocr-d7e1c19499d7](https://medium.com/@ritvik19/papers-explained-481-deepseek-ocr-d7e1c19499d7)
@@ -137,18 +137,18 @@ DeepSeek-OCR: Contexts Optical Compression [2510.18234](https://www.arxiv.org/ab
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-10-30_Papers-Explained-481--DeepSeek-OCR-d7e1c19499d7.html`); local copies under `wiki/assets/papers-explained-481-deepseek-ocr/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-10-30_Papers-Explained-481--DeepSeek-OCR-d7e1c19499d7.md`); local copies under `wiki/assets/papers-explained-481-deepseek-ocr/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-481-deepseek-ocr/fig-1.png) | Title card: DeepSeek-OCR. |
-| ![Figure 2](assets/papers-explained-481-deepseek-ocr/fig-2.png) | Typical vision encoders in popular VLMs. |
-| ![Figure 3](assets/papers-explained-481-deepseek-ocr/fig-3.png) | The architecture of DeepSeek-OCR. |
-| ![Figure 4](assets/papers-explained-481-deepseek-ocr/fig-4.png) | A vision encoder needs the following features. |
-| ![Figure 5](assets/papers-explained-481-deepseek-ocr/fig-5.png) | Dynamic resolution can be composed of two native resolutions. |
-| ![Figure 6](assets/papers-explained-481-deepseek-ocr/fig-6.png) | DeepSeek-OCR’s vision-text compression ratio. |
-| ![Figure 7](assets/papers-explained-481-deepseek-ocr/fig-7.png) | After DeepEncoder is ready, all the data is used to train DeepSeek-OCR. |
-| ![Figure 8](assets/papers-explained-481-deepseek-ocr/fig-8.png) | Edit distances for different categories of documents in OmniDocBench. |
+| ![Figure 1](assets/papers-explained-481-deepseek-ocr/fig-1.webp) | Title card: DeepSeek-OCR. |
+| ![Figure 2](assets/papers-explained-481-deepseek-ocr/fig-2.webp) | Typical vision encoders in popular VLMs. |
+| ![Figure 3](assets/papers-explained-481-deepseek-ocr/fig-3.webp) | The architecture of DeepSeek-OCR. |
+| ![Figure 4](assets/papers-explained-481-deepseek-ocr/fig-4.webp) | A vision encoder needs the following features. |
+| ![Figure 5](assets/papers-explained-481-deepseek-ocr/fig-5.webp) | Dynamic resolution can be composed of two native resolutions. |
+| ![Figure 6](assets/papers-explained-481-deepseek-ocr/fig-6.webp) | DeepSeek-OCR’s vision-text compression ratio. |
+| ![Figure 7](assets/papers-explained-481-deepseek-ocr/fig-7.webp) | After DeepEncoder is ready, all the data is used to train DeepSeek-OCR. |
+| ![Figure 8](assets/papers-explained-481-deepseek-ocr/fig-8.webp) | Edit distances for different categories of documents in OmniDocBench. |
 ## Related
 
 - [[Papers Explained Corpus]]

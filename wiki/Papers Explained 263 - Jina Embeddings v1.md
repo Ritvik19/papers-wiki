@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-12-02_Papers-Explained-263--Jina-Embeddings-v1-33336e9efb0f.html`
+- Source file: `raw/2024-12-02_Papers-Explained-263--Jina-Embeddings-v1-33336e9efb0f.md`
 - Source title: Papers Explained 263: Jina Embeddings v1
 - Published: 2024-12-02
 - Canonical: [https://medium.com/@ritvik19/papers-explained-263-jina-embeddings-v1-33336e9efb0f](https://medium.com/@ritvik19/papers-explained-263-jina-embeddings-v1-33336e9efb0f)
@@ -157,22 +157,22 @@ Recommended Reading [Retrieval and Representation Learning](https://ritvik19.med
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-12-02_Papers-Explained-263--Jina-Embeddings-v1-33336e9efb0f.html`); local copies under `wiki/assets/papers-explained-263-jina-embeddings-v1/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-12-02_Papers-Explained-263--Jina-Embeddings-v1-33336e9efb0f.md`); local copies under `wiki/assets/papers-explained-263-jina-embeddings-v1/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-263-jina-embeddings-v1/fig-1.png) | Title card: Jina Embeddings v1. |
-| ![Figure 2](assets/papers-explained-263-jina-embeddings-v1/fig-2.png) | The composition of 385 million pairwise data. |
-| ![Figure 3](assets/papers-explained-263-jina-embeddings-v1/fig-3.png) | The composition of 927,000 triplets data. |
-| ![Figure 4](assets/papers-explained-263-jina-embeddings-v1/fig-4.png) | Model sizes and output dimensions. |
-| ![Figure 5](assets/papers-explained-263-jina-embeddings-v1/fig-5.png) | For the training on the pairwise data, the InfoNCE, a contrastive loss function is used. |
-| ![Figure 6](assets/papers-explained-263-jina-embeddings-v1/fig-6.png) | Training on Pairwise Data. |
-| ![Figure 7](assets/papers-explained-263-jina-embeddings-v1/fig-7.png) | Training on Triplet Data. |
-| ![Figure 8](assets/papers-explained-263-jina-embeddings-v1/fig-8.png) | Spearman Correlation for Sentence Similarity Tasks. |
-| ![Figure 9](assets/papers-explained-263-jina-embeddings-v1/fig-9.png) | Mean Average Precision (mAP@10) for Reranking Tasks. |
-| ![Figure 10](assets/papers-explained-263-jina-embeddings-v1/fig-10.png) | Normalized Discounted Cumulative Gain (nDCG@10) for retrieval tasks. |
-| ![Figure 11](assets/papers-explained-263-jina-embeddings-v1/fig-11.png) | Evaluation of Data-Preparation Effectiveness on the Reddit Dataset. Retrieval evaluated on nDCG@10, Sentence Similarity on Spearman. |
-| ![Figure 12](assets/papers-explained-263-jina-embeddings-v1/fig-12.png) | Evaluating a Range of Models on the Negation Dataset. |
+| ![Figure 1](assets/papers-explained-263-jina-embeddings-v1/fig-1.webp) | Title card: Jina Embeddings v1. |
+| ![Figure 2](assets/papers-explained-263-jina-embeddings-v1/fig-2.webp) | The composition of 385 million pairwise data. |
+| ![Figure 3](assets/papers-explained-263-jina-embeddings-v1/fig-3.webp) | The composition of 927,000 triplets data. |
+| ![Figure 4](assets/papers-explained-263-jina-embeddings-v1/fig-4.webp) | Model sizes and output dimensions. |
+| ![Figure 5](assets/papers-explained-263-jina-embeddings-v1/fig-5.webp) | For the training on the pairwise data, the InfoNCE, a contrastive loss function is used. |
+| ![Figure 6](assets/papers-explained-263-jina-embeddings-v1/fig-6.webp) | Training on Pairwise Data. |
+| ![Figure 7](assets/papers-explained-263-jina-embeddings-v1/fig-7.webp) | Training on Triplet Data. |
+| ![Figure 8](assets/papers-explained-263-jina-embeddings-v1/fig-8.webp) | Spearman Correlation for Sentence Similarity Tasks. |
+| ![Figure 9](assets/papers-explained-263-jina-embeddings-v1/fig-9.webp) | Mean Average Precision (mAP@10) for Reranking Tasks. |
+| ![Figure 10](assets/papers-explained-263-jina-embeddings-v1/fig-10.webp) | Normalized Discounted Cumulative Gain (nDCG@10) for retrieval tasks. |
+| ![Figure 11](assets/papers-explained-263-jina-embeddings-v1/fig-11.webp) | Evaluation of Data-Preparation Effectiveness on the Reddit Dataset. Retrieval evaluated on nDCG@10, Sentence Similarity on Spearman. |
+| ![Figure 12](assets/papers-explained-263-jina-embeddings-v1/fig-12.webp) | Evaluating a Range of Models on the Negation Dataset. |
 ## Related
 
 - [[Papers Explained Corpus]]

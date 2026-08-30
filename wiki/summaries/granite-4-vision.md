@@ -1,6 +1,6 @@
 # Granite 4.0 3B Vision: Compact Multimodal Intelligence for Enterprise Documents
 
-**Source**: `raw/granite-4-vision/full-article.html` (173 KB), `raw/granite-4-vision/full-article.md`
+**Source**: `raw/granite-4-vision/full-article.md` (173 KB), `raw/granite-4-vision/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

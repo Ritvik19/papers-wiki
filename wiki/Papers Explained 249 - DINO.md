@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-11-11_Papers-Explained-249--DINO-f7e2c7f438ab.html`
+- Source file: `raw/2024-11-11_Papers-Explained-249--DINO-f7e2c7f438ab.md`
 - Source title: Papers Explained 249: DINO
 - Published: 2024-11-11
 - Canonical: [https://medium.com/@ritvik19/papers-explained-249-dino-f7e2c7f438ab](https://medium.com/@ritvik19/papers-explained-249-dino-f7e2c7f438ab)
@@ -179,21 +179,21 @@ Recommended Reading [Vision Transformers](https://ritvik19.medium.com/list/visio
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-11-11_Papers-Explained-249--DINO-f7e2c7f438ab.html`); local copies under `wiki/assets/papers-explained-249-dino/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-11-11_Papers-Explained-249--DINO-f7e2c7f438ab.md`); local copies under `wiki/assets/papers-explained-249-dino/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-249-dino/fig-1.png) | Title card: DINO. |
-| ![Figure 2](assets/papers-explained-249-dino/fig-2.png) | Self-distillation with no labels. |
-| ![Figure 3](assets/papers-explained-249-dino/fig-3.png) | From a given image, a set V of different views are generated. |
-| ![Figure 4](assets/papers-explained-249-dino/fig-4.png) | From a given image, a set V of different views are generated. |
-| ![Figure 5](assets/papers-explained-249-dino/fig-5.png) | Networks configuration. |
-| ![Figure 6](assets/papers-explained-249-dino/fig-6.png) | Linear and k-NN classification on ImageNet. |
-| ![Figure 7](assets/papers-explained-249-dino/fig-7.png) | Image retrieval. |
-| ![Figure 8](assets/papers-explained-249-dino/fig-8.png) | Copy detection. |
-| ![Figure 9](assets/papers-explained-249-dino/fig-9.png) | DAVIS 2017 Video object segmentation. |
-| ![Figure 10](assets/papers-explained-249-dino/fig-10.png) | Segmentations from supervised versus DINO. |
-| ![Figure 11](assets/papers-explained-249-dino/fig-11.png) | Transfer learning by finetuning pretrained models on different datasets. |
+| ![Figure 1](assets/papers-explained-249-dino/fig-1.webp) | Title card: DINO. |
+| ![Figure 2](assets/papers-explained-249-dino/fig-2.webp) | Self-distillation with no labels. |
+| ![Figure 3](assets/papers-explained-249-dino/fig-3.webp) | From a given image, a set V of different views are generated. |
+| ![Figure 4](assets/papers-explained-249-dino/fig-4.webp) | From a given image, a set V of different views are generated. |
+| ![Figure 5](assets/papers-explained-249-dino/fig-5.webp) | Networks configuration. |
+| ![Figure 6](assets/papers-explained-249-dino/fig-6.webp) | Linear and k-NN classification on ImageNet. |
+| ![Figure 7](assets/papers-explained-249-dino/fig-7.webp) | Image retrieval. |
+| ![Figure 8](assets/papers-explained-249-dino/fig-8.webp) | Copy detection. |
+| ![Figure 9](assets/papers-explained-249-dino/fig-9.webp) | DAVIS 2017 Video object segmentation. |
+| ![Figure 10](assets/papers-explained-249-dino/fig-10.webp) | Segmentations from supervised versus DINO. |
+| ![Figure 11](assets/papers-explained-249-dino/fig-11.webp) | Transfer learning by finetuning pretrained models on different datasets. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -1,6 +1,6 @@
 # Open R1: Update #2
 
-**Source**: `raw/open-r1-update-2/full-article.html` (448 KB), `raw/open-r1-update-2/full-article.md`
+**Source**: `raw/open-r1-update-2/full-article.md` (448 KB), `raw/open-r1-update-2/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

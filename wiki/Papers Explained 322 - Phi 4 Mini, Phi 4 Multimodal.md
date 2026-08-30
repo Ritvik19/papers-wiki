@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-03-04_Papers-Explained-322--Phi-4-Mini--Phi-4-Multimodal-2be1a69be78c.html`
+- Source file: `raw/2025-03-04_Papers-Explained-322--Phi-4-Mini--Phi-4-Multimodal-2be1a69be78c.md`
 - Source title: Papers Explained 322: Phi 4 Mini, Phi 4 Multimodal
 - Published: 2025-03-04
 - Canonical: [https://medium.com/@ritvik19/papers-explained-322-phi-4-mini-phi-4-multimodal-2be1a69be78c](https://medium.com/@ritvik19/papers-explained-322-phi-4-mini-phi-4-multimodal-2be1a69be78c)
@@ -218,21 +218,21 @@ languages.*
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-03-04_Papers-Explained-322--Phi-4-Mini--Phi-4-Multimodal-2be1a69be78c.html`); local copies under `wiki/assets/papers-explained-322-phi-4-mini-phi-4-multimodal/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-03-04_Papers-Explained-322--Phi-4-Mini--Phi-4-Multimodal-2be1a69be78c.md`); local copies under `wiki/assets/papers-explained-322-phi-4-mini-phi-4-multimodal/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-322-phi-4-mini-phi-4-multimodal/fig-1.png) | Title card: Phi 4 Mini, Phi 4 Multimodal. |
-| ![Figure 2](assets/papers-explained-322-phi-4-mini-phi-4-multimodal/fig-2.png) | A overview of the Multimodal architecture for Phi-4-Multimodal. |
-| ![Figure 3](assets/papers-explained-322-phi-4-mini-phi-4-multimodal/fig-3.png) | Phi-4-Mini language benchmark scores. |
-| ![Figure 4](assets/papers-explained-322-phi-4-mini-phi-4-multimodal/fig-4.png) | Phi-4-Mini coding performance comparison. |
-| ![Figure 5](assets/papers-explained-322-phi-4-mini-phi-4-multimodal/fig-5.png) | CoT Reasoning results of reasoning-enhanced Phi-4-Mini. |
-| ![Figure 6](assets/papers-explained-322-phi-4-mini-phi-4-multimodal/fig-6.png) | Comparison results on public vision-language benchmarks. |
-| ![Figure 7](assets/papers-explained-322-phi-4-mini-phi-4-multimodal/fig-7.png) | Comparison results on public vision-speech benchmarks. |
-| ![Figure 8](assets/papers-explained-322-phi-4-mini-phi-4-multimodal/fig-8.png) | Main Results on the speech benchmarks. |
-| ![Figure 9](assets/papers-explained-322-phi-4-mini-phi-4-multimodal/fig-9.png) | Detailed results on ASR benchmarks, with CER (↓) for JA and ZH, and WER (↓) for other languages. |
-| ![Figure 10](assets/papers-explained-322-phi-4-mini-phi-4-multimodal/fig-10.png) | Detailed results on AST benchmarks with BLEU (↑) score reported. |
-| ![Figure 11](assets/papers-explained-322-phi-4-mini-phi-4-multimodal/fig-11.png) | Result details on speech QA/summarization/audio understanding tasks for multi-modal models. |
+| ![Figure 1](assets/papers-explained-322-phi-4-mini-phi-4-multimodal/fig-1.webp) | Title card: Phi 4 Mini, Phi 4 Multimodal. |
+| ![Figure 2](assets/papers-explained-322-phi-4-mini-phi-4-multimodal/fig-2.webp) | A overview of the Multimodal architecture for Phi-4-Multimodal. |
+| ![Figure 3](assets/papers-explained-322-phi-4-mini-phi-4-multimodal/fig-3.webp) | Phi-4-Mini language benchmark scores. |
+| ![Figure 4](assets/papers-explained-322-phi-4-mini-phi-4-multimodal/fig-4.webp) | Phi-4-Mini coding performance comparison. |
+| ![Figure 5](assets/papers-explained-322-phi-4-mini-phi-4-multimodal/fig-5.webp) | CoT Reasoning results of reasoning-enhanced Phi-4-Mini. |
+| ![Figure 6](assets/papers-explained-322-phi-4-mini-phi-4-multimodal/fig-6.webp) | Comparison results on public vision-language benchmarks. |
+| ![Figure 7](assets/papers-explained-322-phi-4-mini-phi-4-multimodal/fig-7.webp) | Comparison results on public vision-speech benchmarks. |
+| ![Figure 8](assets/papers-explained-322-phi-4-mini-phi-4-multimodal/fig-8.webp) | Main Results on the speech benchmarks. |
+| ![Figure 9](assets/papers-explained-322-phi-4-mini-phi-4-multimodal/fig-9.webp) | Detailed results on ASR benchmarks, with CER (↓) for JA and ZH, and WER (↓) for other languages. |
+| ![Figure 10](assets/papers-explained-322-phi-4-mini-phi-4-multimodal/fig-10.webp) | Detailed results on AST benchmarks with BLEU (↑) score reported. |
+| ![Figure 11](assets/papers-explained-322-phi-4-mini-phi-4-multimodal/fig-11.webp) | Result details on speech QA/summarization/audio understanding tasks for multi-modal models. |
 ## Related
 
 - [[Papers Explained Corpus]]

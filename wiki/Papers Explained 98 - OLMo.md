@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-02-07_Papers-Explained-98--OLMo-fdc358326f9b.html`
+- Source file: `raw/2024-02-07_Papers-Explained-98--OLMo-fdc358326f9b.md`
 - Source title: Papers Explained 98: OLMo
 - Published: 2024-02-07
 - Canonical: [https://medium.com/@ritvik19/papers-explained-98-olmo-fdc358326f9b](https://medium.com/@ritvik19/papers-explained-98-olmo-fdc358326f9b)
@@ -107,19 +107,19 @@ Recommended Reading: [Decoder-Only Language Transformers](https://ritvik19.mediu
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-02-07_Papers-Explained-98--OLMo-fdc358326f9b.html`); local copies under `wiki/assets/papers-explained-98-olmo/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-02-07_Papers-Explained-98--OLMo-fdc358326f9b.md`); local copies under `wiki/assets/papers-explained-98-olmo/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-98-olmo/fig-1.png) | Title card: OLMo. |
-| ![Figure 2](assets/papers-explained-98-olmo/fig-2.png) | OLMo model sizes and the maximum number of tokens trained to. |
-| ![Figure 3](assets/papers-explained-98-olmo/fig-3.png) | LM architecture comparison at the 7–8B scale. |
-| ![Figure 4](assets/papers-explained-98-olmo/fig-4.png) | Composition of Dolma. |
-| ![Figure 5](assets/papers-explained-98-olmo/fig-5.png) | Zero-shot evaluation of OLMo-7B and 6 other publicly available comparable model checkpoints on 9 core tasks. |
-| ![Figure 6](assets/papers-explained-98-olmo/fig-6.png) | Accuracy score progression of OLMo-7B on 9 core end-tasks,. |
-| ![Figure 7](assets/papers-explained-98-olmo/fig-7.png) | Zero-shot evaluation of OLMo-7B on 6 additional end-tasks. |
-| ![Figure 8](assets/papers-explained-98-olmo/fig-8.png) | Accuracy score progression of OLMo-7B on 6 additional end-tasks. |
-| ![Figure 9](assets/papers-explained-98-olmo/fig-9.png) | Comparison of Olmo-1b against other similarly sized language models. |
+| ![Figure 1](assets/papers-explained-98-olmo/fig-1.webp) | Title card: OLMo. |
+| ![Figure 2](assets/papers-explained-98-olmo/fig-2.webp) | OLMo model sizes and the maximum number of tokens trained to. |
+| ![Figure 3](assets/papers-explained-98-olmo/fig-3.webp) | LM architecture comparison at the 7–8B scale. |
+| ![Figure 4](assets/papers-explained-98-olmo/fig-4.webp) | Composition of Dolma. |
+| ![Figure 5](assets/papers-explained-98-olmo/fig-5.webp) | Zero-shot evaluation of OLMo-7B and 6 other publicly available comparable model checkpoints on 9 core tasks. |
+| ![Figure 6](assets/papers-explained-98-olmo/fig-6.webp) | Accuracy score progression of OLMo-7B on 9 core end-tasks,. |
+| ![Figure 7](assets/papers-explained-98-olmo/fig-7.webp) | Zero-shot evaluation of OLMo-7B on 6 additional end-tasks. |
+| ![Figure 8](assets/papers-explained-98-olmo/fig-8.webp) | Accuracy score progression of OLMo-7B on 6 additional end-tasks. |
+| ![Figure 9](assets/papers-explained-98-olmo/fig-9.webp) | Comparison of Olmo-1b against other similarly sized language models. |
 ## Related
 
 - [[Papers Explained Corpus]]

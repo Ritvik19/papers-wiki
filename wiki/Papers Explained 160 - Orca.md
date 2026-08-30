@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-07-08_Papers-Explained-160--Orca-928eff06e7f9.html`
+- Source file: `raw/2024-07-08_Papers-Explained-160--Orca-928eff06e7f9.md`
 - Source title: Papers Explained 160: Orca
 - Published: 2024-07-08
 - Canonical: [https://medium.com/@ritvik19/papers-explained-160-orca-928eff06e7f9](https://medium.com/@ritvik19/papers-explained-160-orca-928eff06e7f9)
@@ -111,21 +111,21 @@ Recommended Reading [Orca Series](https://ritvik19.medium.com/list/orca-series-1
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-07-08_Papers-Explained-160--Orca-928eff06e7f9.html`); local copies under `wiki/assets/papers-explained-160-orca/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-07-08_Papers-Explained-160--Orca-928eff06e7f9.md`); local copies under `wiki/assets/papers-explained-160-orca/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-160-orca/fig-1.png) | Title page of *Orca: Progressive Learning from Complex Explanation Traces of GPT-4* (Microsoft Research). |
-| ![Figure 2](assets/papers-explained-160-orca/fig-2.png) | Instruction-tuning landscape: Alpaca/Vicuna/Dolly/WizardLM vs **Orca** on method, dataset scale, and teacher stack (ChatGPT‑scale data plus GPT‑4 traces). |
-| ![Figure 3](assets/papers-explained-160-orca/fig-3.png) | Vanilla instruction imitation: user instruction + task input → **GPT‑4** outputs short solves (math, multilingual MCQ, trivia-style QA). |
-| ![Figure 4](assets/papers-explained-160-orca/fig-4.png) | Explanation tuning: same tasks with rich **system** prompts elicit step-by-step rationales, detailed MCQ justification, and structured research-style answers from **GPT‑4**. |
-| ![Figure 5](assets/papers-explained-160-orca/fig-5.png) | Sixteen enumerated system messages used to diversify teacher behaviors (empty prompt through teacher-style and decomposition prompts). |
-| ![Figure 6](assets/papers-explained-160-orca/fig-6.png) | FLAN‑v2 mixture downsampling recipe: CoT / NiV2 / FLAN‑2021 / T0 / Dialog strata with sampling strategy and final counts. |
-| ![Figure 7](assets/papers-explained-160-orca/fig-7.png) | GPT‑4–graded open-ended quality: **Orca‑13B** vs Vicuna‑13B on Vicuna, Awesome, and WizardLM prompt suites vs ChatGPT / GPT‑4 references (percent gains in parentheses). |
-| ![Figure 8](assets/papers-explained-160-orca/fig-8.png) | AGIEval zero-shot accuracy: human baselines, TD‑003, ChatGPT, GPT‑4, Vicuna‑13B, **Orca‑13B** with gap-closure percentages vs Vicuna. |
-| ![Figure 9](assets/papers-explained-160-orca/fig-9.png) | AGIEval sensitivity of **Orca‑13B** to three representative system-message styles (empty vs follow-well vs detailed-answer variants). |
-| ![Figure 10](assets/papers-explained-160-orca/fig-10.png) | Two-stage training ablation on AGIEval: full **Orca** (ChatGPT‑scale FLAN‑5M warm‑start + GPT‑4 FLAN‑1M) vs GPT‑4‑only **Orca‑FLAN‑1M**. |
-| ![Figure 11](assets/papers-explained-160-orca/fig-11.png) | Big-Bench Hard per-task accuracy: ChatGPT, GPT‑4, Vicuna‑13B, **Orca‑13B** with relative lift over Vicuna noted parenthetically. |
+| ![Figure 1](assets/papers-explained-160-orca/fig-1.webp) | Title page of *Orca: Progressive Learning from Complex Explanation Traces of GPT-4* (Microsoft Research). |
+| ![Figure 2](assets/papers-explained-160-orca/fig-2.webp) | Instruction-tuning landscape: Alpaca/Vicuna/Dolly/WizardLM vs **Orca** on method, dataset scale, and teacher stack (ChatGPT‑scale data plus GPT‑4 traces). |
+| ![Figure 3](assets/papers-explained-160-orca/fig-3.webp) | Vanilla instruction imitation: user instruction + task input → **GPT‑4** outputs short solves (math, multilingual MCQ, trivia-style QA). |
+| ![Figure 4](assets/papers-explained-160-orca/fig-4.webp) | Explanation tuning: same tasks with rich **system** prompts elicit step-by-step rationales, detailed MCQ justification, and structured research-style answers from **GPT‑4**. |
+| ![Figure 5](assets/papers-explained-160-orca/fig-5.webp) | Sixteen enumerated system messages used to diversify teacher behaviors (empty prompt through teacher-style and decomposition prompts). |
+| ![Figure 6](assets/papers-explained-160-orca/fig-6.webp) | FLAN‑v2 mixture downsampling recipe: CoT / NiV2 / FLAN‑2021 / T0 / Dialog strata with sampling strategy and final counts. |
+| ![Figure 7](assets/papers-explained-160-orca/fig-7.webp) | GPT‑4–graded open-ended quality: **Orca‑13B** vs Vicuna‑13B on Vicuna, Awesome, and WizardLM prompt suites vs ChatGPT / GPT‑4 references (percent gains in parentheses). |
+| ![Figure 8](assets/papers-explained-160-orca/fig-8.webp) | AGIEval zero-shot accuracy: human baselines, TD‑003, ChatGPT, GPT‑4, Vicuna‑13B, **Orca‑13B** with gap-closure percentages vs Vicuna. |
+| ![Figure 9](assets/papers-explained-160-orca/fig-9.webp) | AGIEval sensitivity of **Orca‑13B** to three representative system-message styles (empty vs follow-well vs detailed-answer variants). |
+| ![Figure 10](assets/papers-explained-160-orca/fig-10.webp) | Two-stage training ablation on AGIEval: full **Orca** (ChatGPT‑scale FLAN‑5M warm‑start + GPT‑4 FLAN‑1M) vs GPT‑4‑only **Orca‑FLAN‑1M**. |
+| ![Figure 11](assets/papers-explained-160-orca/fig-11.webp) | Big-Bench Hard per-task accuracy: ChatGPT, GPT‑4, Vicuna‑13B, **Orca‑13B** with relative lift over Vicuna noted parenthetically. |
 ## Related
 
 - [[Papers Explained Corpus]]

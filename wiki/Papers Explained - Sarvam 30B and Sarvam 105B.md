@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/draft_Papers-Explained--Sarvam-30B-and-Sarvam-105B-fea8e76080fa.html`
+- Source file: `raw/draft_Papers-Explained--Sarvam-30B-and-Sarvam-105B-fea8e76080fa.md`
 - Source title: Papers Explained: Sarvam 30B and Sarvam 105B
 - Canonical: [https://medium.com/p/fea8e76080fa](https://medium.com/p/fea8e76080fa)
 
@@ -196,16 +196,16 @@ Overall, Sarvam 30B wins on average:
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/draft_Papers-Explained--Sarvam-30B-and-Sarvam-105B-fea8e76080fa.html`); local copies under `wiki/assets/papers-explained-sarvam-30b-and-sarvam-105b/` when download succeeded.
+Figures from the Medium HTML export (`raw/draft_Papers-Explained--Sarvam-30B-and-Sarvam-105B-fea8e76080fa.md`); local copies under `wiki/assets/papers-explained-sarvam-30b-and-sarvam-105b/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-sarvam-30b-and-sarvam-105b/fig-1.jpg) | Sarvam release cover image introducing the “Sovereign Models” theme. |
-| ![Figure 2](assets/papers-explained-sarvam-30b-and-sarvam-105b/fig-2.png) | Sarvam 105B benchmark table against GLM-4.5-Air, GPT-OSS-120B, and Qwen3-Next across general, reasoning, and agentic tasks. |
-| ![Figure 3](assets/papers-explained-sarvam-30b-and-sarvam-105b/fig-3.png) | Sarvam 30B benchmark table against similarly sized open models on math, code, reasoning, and agentic evaluations. |
-| ![Figure 4](assets/papers-explained-sarvam-30b-and-sarvam-105b/fig-4.png) | Sarvam 105B pairwise Indic win rates: chat and technical domains vs Qwen3-Next-80B-A3B, GLM-4.5-Air, and GPT-OSS-120B. |
-| ![Figure 5](assets/papers-explained-sarvam-30b-and-sarvam-105b/fig-5.png) | Sarvam 30B pairwise win rates (chat and technical) against GPT-OSS-20B, Nemotron-3-Nano-30B, Qwen3-30B, Gemma-3-27B, and others. |
-| ![Figure 6](assets/papers-explained-sarvam-30b-and-sarvam-105b/fig-6.png) | Tokenizer fertility comparison on Indic text (lower is better), with Sarvam-2 leading efficiency. |
+| ![Figure 1](assets/papers-explained-sarvam-30b-and-sarvam-105b/fig-1.webp) | Sarvam release cover image introducing the “Sovereign Models” theme. |
+| ![Figure 2](assets/papers-explained-sarvam-30b-and-sarvam-105b/fig-2.webp) | Sarvam 105B benchmark table against GLM-4.5-Air, GPT-OSS-120B, and Qwen3-Next across general, reasoning, and agentic tasks. |
+| ![Figure 3](assets/papers-explained-sarvam-30b-and-sarvam-105b/fig-3.webp) | Sarvam 30B benchmark table against similarly sized open models on math, code, reasoning, and agentic evaluations. |
+| ![Figure 4](assets/papers-explained-sarvam-30b-and-sarvam-105b/fig-4.webp) | Sarvam 105B pairwise Indic win rates: chat and technical domains vs Qwen3-Next-80B-A3B, GLM-4.5-Air, and GPT-OSS-120B. |
+| ![Figure 5](assets/papers-explained-sarvam-30b-and-sarvam-105b/fig-5.webp) | Sarvam 30B pairwise win rates (chat and technical) against GPT-OSS-20B, Nemotron-3-Nano-30B, Qwen3-30B, Gemma-3-27B, and others. |
+| ![Figure 6](assets/papers-explained-sarvam-30b-and-sarvam-105b/fig-6.webp) | Tokenizer fertility comparison on Indic text (lower is better), with Sarvam-2 leading efficiency. |
 ## Related
 
 - [[Papers Explained Corpus]]

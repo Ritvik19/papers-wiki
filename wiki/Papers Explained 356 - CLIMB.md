@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-05-01_Papers-Explained-356--CLIMB-875e43e8357e.html`
+- Source file: `raw/2025-05-01_Papers-Explained-356--CLIMB-875e43e8357e.md`
 - Source title: Papers Explained 356: CLIMB
 - Published: 2025-05-01
 - Canonical: [https://medium.com/@ritvik19/papers-explained-356-climb-875e43e8357e](https://medium.com/@ritvik19/papers-explained-356-climb-875e43e8357e)
@@ -139,15 +139,15 @@ CLIMB: CLustering-based Iterative Data Mixture Bootstrapping for Language Model 
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-05-01_Papers-Explained-356--CLIMB-875e43e8357e.html`); local copies under `wiki/assets/papers-explained-356-climb/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-05-01_Papers-Explained-356--CLIMB-875e43e8357e.md`); local copies under `wiki/assets/papers-explained-356-climb/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-356-climb/fig-1.png) | Title card: CLIMB. |
-| ![Figure 2](assets/papers-explained-356-climb/fig-2.png) | The CLIMB framework overview. |
-| ![Figure 3](assets/papers-explained-356-climb/fig-3.png) | Comparison with data mixture methods. |
-| ![Figure 4](assets/papers-explained-356-climb/fig-4.png) | Comparison with state-of-the-art language models on general reasoning benchmarks. |
-| ![Figure 5](assets/papers-explained-356-climb/fig-5.png) | Pre-training a 1B model on ClimbMix shows better scaling effects than training on other datasets. |
+| ![Figure 1](assets/papers-explained-356-climb/fig-1.webp) | Title card: CLIMB. |
+| ![Figure 2](assets/papers-explained-356-climb/fig-2.webp) | The CLIMB framework overview. |
+| ![Figure 3](assets/papers-explained-356-climb/fig-3.webp) | Comparison with data mixture methods. |
+| ![Figure 4](assets/papers-explained-356-climb/fig-4.webp) | Comparison with state-of-the-art language models on general reasoning benchmarks. |
+| ![Figure 5](assets/papers-explained-356-climb/fig-5.webp) | Pre-training a 1B model on ClimbMix shows better scaling effects than training on other datasets. |
 ## Related
 
 - [[Papers Explained Corpus]]

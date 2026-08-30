@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-06-12_Papers-Explained-386--ProRL-261c9ac00bc7.html`
+- Source file: `raw/2025-06-12_Papers-Explained-386--ProRL-261c9ac00bc7.md`
 - Source title: Papers Explained 386: ProRL
 - Published: 2025-06-12
 - Canonical: [https://medium.com/@ritvik19/papers-explained-386-prorl-261c9ac00bc7](https://medium.com/@ritvik19/papers-explained-386-prorl-261c9ac00bc7)
@@ -247,30 +247,30 @@ ProRL: Prolonged Reinforcement Learning Expands Reasoning Boundaries in Large La
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-06-12_Papers-Explained-386--ProRL-261c9ac00bc7.html`); local copies under `wiki/assets/papers-explained-386-prorl/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-06-12_Papers-Explained-386--ProRL-261c9ac00bc7.md`); local copies under `wiki/assets/papers-explained-386-prorl/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-386-prorl/fig-1.png) | Title card: ProRL. |
-| ![Figure 2](assets/papers-explained-386-prorl/fig-2.png) | where. |
-| ![Figure 3](assets/papers-explained-386-prorl/fig-3.png) | The advantage used in GRPO foregoes the critic model of PPO, and instead estimates baseline from group scores {Ri}. |
-| ![Figure 4](assets/papers-explained-386-prorl/fig-4.png) | where. |
-| ![Figure 5](assets/papers-explained-386-prorl/fig-5.png) | where. |
-| ![Figure 6](assets/papers-explained-386-prorl/fig-6.png) | Math. |
-| ![Figure 7](assets/papers-explained-386-prorl/fig-7.png) | KL divergence across training runs. |
-| ![Figure 8](assets/papers-explained-386-prorl/fig-8.png) | Performance (pass@1) comparison for benchmarks across Math domain. |
-| ![Figure 9](assets/papers-explained-386-prorl/fig-9.png) | Performance (pass@1) comparison across benchmarks for Code. |
-| ![Figure 10](assets/papers-explained-386-prorl/fig-10.png) | Performance comparison on STEM reasoning (GPQA Diamond), instruction following (IFEval), and logic puzzles (Reasoning Gym) tasks. |
-| ![Figure 11](assets/papers-explained-386-prorl/fig-11.png) | At ProRL’s core is the clipped PPO loss, which stabilizes policy updates by restricting how much the new policy can diverge from the old ones. |
-| ![Figure 12](assets/papers-explained-386-prorl/fig-12.png) | A higher upper bound of PPO’s clipping range is used to mitigate policy entropy collapse and promote sampling diversity. |
-| ![Figure 13](assets/papers-explained-386-prorl/fig-13.png) | To promote concise, token-efficient outputs, a scheduled cosine penalty is applied. |
-| ![Figure 14](assets/papers-explained-386-prorl/fig-14.png) | The length reward is incorporated into the total reward. |
-| ![Figure 15](assets/papers-explained-386-prorl/fig-15.png) | KL divergence in REINFORCE++-baseline is regularized using a k_2 estimator. |
-| ![Figure 16](assets/papers-explained-386-prorl/fig-16.png) | KL divergence in REINFORCE++-baseline is regularized using a k_2 estimator. |
-| ![Figure 17](assets/papers-explained-386-prorl/fig-17.png) | ProRL was evaluated across math, code generation, and diverse reasoning gym benchmarks. Scores are reported for. |
-| ![Figure 18](assets/papers-explained-386-prorl/fig-18.png) | ProRL was evaluated across math, code generation, and diverse reasoning gym benchmarks. Scores are reported for. |
-| ![Figure 19](assets/papers-explained-386-prorl/fig-19.png) | ProRL was evaluated across math, code generation, and diverse reasoning gym benchmarks. Scores are reported for. |
-| ![Figure 20](assets/papers-explained-386-prorl/fig-20.png) | ProRL was evaluated across math, code generation, and diverse reasoning gym benchmarks. Scores are reported for. |
+| ![Figure 1](assets/papers-explained-386-prorl/fig-1.webp) | Title card: ProRL. |
+| ![Figure 2](assets/papers-explained-386-prorl/fig-2.webp) | where. |
+| ![Figure 3](assets/papers-explained-386-prorl/fig-3.webp) | The advantage used in GRPO foregoes the critic model of PPO, and instead estimates baseline from group scores {Ri}. |
+| ![Figure 4](assets/papers-explained-386-prorl/fig-4.webp) | where. |
+| ![Figure 5](assets/papers-explained-386-prorl/fig-5.webp) | where. |
+| ![Figure 6](assets/papers-explained-386-prorl/fig-6.webp) | Math. |
+| ![Figure 7](assets/papers-explained-386-prorl/fig-7.webp) | KL divergence across training runs. |
+| ![Figure 8](assets/papers-explained-386-prorl/fig-8.webp) | Performance (pass@1) comparison for benchmarks across Math domain. |
+| ![Figure 9](assets/papers-explained-386-prorl/fig-9.webp) | Performance (pass@1) comparison across benchmarks for Code. |
+| ![Figure 10](assets/papers-explained-386-prorl/fig-10.webp) | Performance comparison on STEM reasoning (GPQA Diamond), instruction following (IFEval), and logic puzzles (Reasoning Gym) tasks. |
+| ![Figure 11](assets/papers-explained-386-prorl/fig-11.webp) | At ProRL’s core is the clipped PPO loss, which stabilizes policy updates by restricting how much the new policy can diverge from the old ones. |
+| ![Figure 12](assets/papers-explained-386-prorl/fig-12.webp) | A higher upper bound of PPO’s clipping range is used to mitigate policy entropy collapse and promote sampling diversity. |
+| ![Figure 13](assets/papers-explained-386-prorl/fig-13.webp) | To promote concise, token-efficient outputs, a scheduled cosine penalty is applied. |
+| ![Figure 14](assets/papers-explained-386-prorl/fig-14.webp) | The length reward is incorporated into the total reward. |
+| ![Figure 15](assets/papers-explained-386-prorl/fig-15.webp) | KL divergence in REINFORCE++-baseline is regularized using a k_2 estimator. |
+| ![Figure 16](assets/papers-explained-386-prorl/fig-16.webp) | KL divergence in REINFORCE++-baseline is regularized using a k_2 estimator. |
+| ![Figure 17](assets/papers-explained-386-prorl/fig-17.webp) | ProRL was evaluated across math, code generation, and diverse reasoning gym benchmarks. Scores are reported for. |
+| ![Figure 18](assets/papers-explained-386-prorl/fig-18.webp) | ProRL was evaluated across math, code generation, and diverse reasoning gym benchmarks. Scores are reported for. |
+| ![Figure 19](assets/papers-explained-386-prorl/fig-19.webp) | ProRL was evaluated across math, code generation, and diverse reasoning gym benchmarks. Scores are reported for. |
+| ![Figure 20](assets/papers-explained-386-prorl/fig-20.webp) | ProRL was evaluated across math, code generation, and diverse reasoning gym benchmarks. Scores are reported for. |
 ## Related
 
 - [[Papers Explained Corpus]]

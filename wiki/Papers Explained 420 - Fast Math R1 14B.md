@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-07-30_Papers-Explained-420--Fast-Math-R1-14B-442d09c48987.html`
+- Source file: `raw/2025-07-30_Papers-Explained-420--Fast-Math-R1-14B-442d09c48987.md`
 - Source title: Papers Explained 420: Fast Math R1 14B
 - Published: 2025-07-30
 - Canonical: [https://medium.com/@ritvik19/papers-explained-420-fast-math-r1-14b-442d09c48987](https://medium.com/@ritvik19/papers-explained-420-fast-math-r1-14b-442d09c48987)
@@ -133,16 +133,16 @@ A Practical Two-Stage Recipe for Mathematical LLMs: Maximizing Accuracy with SFT
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-07-30_Papers-Explained-420--Fast-Math-R1-14B-442d09c48987.html`); local copies under `wiki/assets/papers-explained-420-fast-math-r1-14b/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-07-30_Papers-Explained-420--Fast-Math-R1-14B-442d09c48987.md`); local copies under `wiki/assets/papers-explained-420-fast-math-r1-14b/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-420-fast-math-r1-14b/fig-1.png) | Title card: Fast Math R1 14B. |
-| ![Figure 2](assets/papers-explained-420-fast-math-r1-14b/fig-2.png) | Performance and the mean token usage across model sizes for AIME 2024 and 2025. |
-| ![Figure 3](assets/papers-explained-420-fast-math-r1-14b/fig-3.png) | Mean Pass@1 (%) and mean output token length on MATH500. |
-| ![Figure 4](assets/papers-explained-420-fast-math-r1-14b/fig-4.png) | Performance comparison SFT on AIME 2024 and 2025. |
-| ![Figure 5](assets/papers-explained-420-fast-math-r1-14b/fig-5.png) | Ablation study of Reward functions. |
-| ![Figure 6](assets/papers-explained-420-fast-math-r1-14b/fig-6.png) | Per-problem changes in mean pass@1 and token length from the original model to the proposed recipe. |
+| ![Figure 1](assets/papers-explained-420-fast-math-r1-14b/fig-1.webp) | Title card: Fast Math R1 14B. |
+| ![Figure 2](assets/papers-explained-420-fast-math-r1-14b/fig-2.webp) | Performance and the mean token usage across model sizes for AIME 2024 and 2025. |
+| ![Figure 3](assets/papers-explained-420-fast-math-r1-14b/fig-3.webp) | Mean Pass@1 (%) and mean output token length on MATH500. |
+| ![Figure 4](assets/papers-explained-420-fast-math-r1-14b/fig-4.webp) | Performance comparison SFT on AIME 2024 and 2025. |
+| ![Figure 5](assets/papers-explained-420-fast-math-r1-14b/fig-5.webp) | Ablation study of Reward functions. |
+| ![Figure 6](assets/papers-explained-420-fast-math-r1-14b/fig-6.webp) | Per-problem changes in mean pass@1 and token length from the original model to the proposed recipe. |
 ## Related
 
 - [[Papers Explained Corpus]]

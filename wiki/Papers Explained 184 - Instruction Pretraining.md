@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-13_Papers-Explained-184--Instruction-Pretraining-ee0466f0fd33.html`
+- Source file: `raw/2024-08-13_Papers-Explained-184--Instruction-Pretraining-ee0466f0fd33.md`
 - Source title: Papers Explained 184: Instruction Pretraining
 - Published: 2024-08-13
 - Canonical: [https://medium.com/@ritvik19/papers-explained-184-instruction-pretraining-ee0466f0fd33](https://medium.com/@ritvik19/papers-explained-184-instruction-pretraining-ee0466f0fd33)
@@ -117,22 +117,22 @@ Instruction Pre-Training: Language Models are Supervised Multitask Learners [240
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-13_Papers-Explained-184--Instruction-Pretraining-ee0466f0fd33.html`); local copies under `wiki/assets/papers-explained-184-instruction-pretraining/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-13_Papers-Explained-184--Instruction-Pretraining-ee0466f0fd33.md`); local copies under `wiki/assets/papers-explained-184-instruction-pretraining/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-184-instruction-pretraining/fig-1.png) | Paper title: **Instruction Pre-Training** — language models as supervised multitask learners; link to **Hugging Face** checkpoints (`instruction-pretrain`). |
-| ![Figure 2](assets/papers-explained-184-instruction-pretraining/fig-2.png) | **Vanilla pre-training** (raw corpora → LM) vs **instruction pre-training** — raw text passes through an **instruction synthesizer** into **instruction-augmented** sequences before **Pre-train**. |
-| ![Figure 3](assets/papers-explained-184-instruction-pretraining/fig-3.png) | **Multitask tuning** of the synthesizer on labeled QA/etc. datasets vs **inference** on **raw pre-training text** → synthetic **instruction–response** pairs (HotpotQA / RACE / SQuAD-style sketches). |
-| ![Figure 4](assets/papers-explained-184-instruction-pretraining/fig-4.png) | **Synthesizer fine-tuning data**: QA datasets grouped by domain (encyclopedia, fiction, news, exams, …) with **multiple-choice** and **chain-of-thought** availability flags. |
-| ![Figure 5](assets/papers-explained-184-instruction-pretraining/fig-5.png) | **Tuning**: concatenate contexts \(T_n\) with \(I_n \oplus R_n\); **loss only on instruction–response spans**. **Inference**: multi-round synthesis conditioned on prior pairs \(I'_k \oplus R'_k\) and new text \(T'_k\). |
-| ![Figure 6](assets/papers-explained-184-instruction-pretraining/fig-6.png) | **`<QUE>` / `<ANS>` / `</END>`** templates — free-form, multiple-choice, and CoT variants (standardizes synthesized pair formats). |
-| ![Figure 7](assets/papers-explained-184-instruction-pretraining/fig-7.png) | **LM pre-training chunk**: interleaved raw spans \(T'_m\) and augmented spans \(I'_m \oplus R'_m\) (multi-turn synthesized supervision mixed into PT sequences). |
-| ![Figure 8](assets/papers-explained-184-instruction-pretraining/fig-8.png) | **Hyper-parameters**: **from scratch** (500M / 1.3B Mistral-style) vs **continual** **Llama-3–8B** — architecture, tokenizer, batch, LR, steps, hardware. |
-| ![Figure 9](assets/papers-explained-184-instruction-pretraining/fig-9.png) | **Zero-shot** commonsense / QA benchmarks — **Vanilla PT**, **Mix PT**, **Instruct PT** at **500M** and **1.3B** (ARC, BoolQ, SIQA, WinoGrande, PIQA, OBQA, HellaSwag, **MMLU**). |
-| ![Figure 10](assets/papers-explained-184-instruction-pretraining/fig-10.png) | **Data-efficiency**: **Instruct PT** at **100B tokens** vs **GPT-2**, **Pythia**, **BLOOM**, **OPT** at similar or larger params/token budgets — zero-shot grid. |
-| ![Figure 11](assets/papers-explained-184-instruction-pretraining/fig-11.png) | **MMLU during downstream instruction tuning** — **Instruct PT** vs **Vanilla PT** (**zero-shot** vs **few-shot**) vs instruction-tune steps (0–120K). |
-| ![Figure 12](assets/papers-explained-184-instruction-pretraining/fig-12.png) | **Domain-adaptive continual PT**: **BioMed** (PubMedQA, ChemProt, …) and **Finance** (ConvFinQA, FiQA, …) — **Llama3–8B** vanilla vs **Instruct PT** vs base **Llama3–8B** / reference **Llama3–70B**. |
+| ![Figure 1](assets/papers-explained-184-instruction-pretraining/fig-1.webp) | Paper title: **Instruction Pre-Training** — language models as supervised multitask learners; link to **Hugging Face** checkpoints (`instruction-pretrain`). |
+| ![Figure 2](assets/papers-explained-184-instruction-pretraining/fig-2.webp) | **Vanilla pre-training** (raw corpora → LM) vs **instruction pre-training** — raw text passes through an **instruction synthesizer** into **instruction-augmented** sequences before **Pre-train**. |
+| ![Figure 3](assets/papers-explained-184-instruction-pretraining/fig-3.webp) | **Multitask tuning** of the synthesizer on labeled QA/etc. datasets vs **inference** on **raw pre-training text** → synthetic **instruction–response** pairs (HotpotQA / RACE / SQuAD-style sketches). |
+| ![Figure 4](assets/papers-explained-184-instruction-pretraining/fig-4.webp) | **Synthesizer fine-tuning data**: QA datasets grouped by domain (encyclopedia, fiction, news, exams, …) with **multiple-choice** and **chain-of-thought** availability flags. |
+| ![Figure 5](assets/papers-explained-184-instruction-pretraining/fig-5.webp) | **Tuning**: concatenate contexts \(T_n\) with \(I_n \oplus R_n\); **loss only on instruction–response spans**. **Inference**: multi-round synthesis conditioned on prior pairs \(I'_k \oplus R'_k\) and new text \(T'_k\). |
+| ![Figure 6](assets/papers-explained-184-instruction-pretraining/fig-6.webp) | **`<QUE>` / `<ANS>` / `</END>`** templates — free-form, multiple-choice, and CoT variants (standardizes synthesized pair formats). |
+| ![Figure 7](assets/papers-explained-184-instruction-pretraining/fig-7.webp) | **LM pre-training chunk**: interleaved raw spans \(T'_m\) and augmented spans \(I'_m \oplus R'_m\) (multi-turn synthesized supervision mixed into PT sequences). |
+| ![Figure 8](assets/papers-explained-184-instruction-pretraining/fig-8.webp) | **Hyper-parameters**: **from scratch** (500M / 1.3B Mistral-style) vs **continual** **Llama-3–8B** — architecture, tokenizer, batch, LR, steps, hardware. |
+| ![Figure 9](assets/papers-explained-184-instruction-pretraining/fig-9.webp) | **Zero-shot** commonsense / QA benchmarks — **Vanilla PT**, **Mix PT**, **Instruct PT** at **500M** and **1.3B** (ARC, BoolQ, SIQA, WinoGrande, PIQA, OBQA, HellaSwag, **MMLU**). |
+| ![Figure 10](assets/papers-explained-184-instruction-pretraining/fig-10.webp) | **Data-efficiency**: **Instruct PT** at **100B tokens** vs **GPT-2**, **Pythia**, **BLOOM**, **OPT** at similar or larger params/token budgets — zero-shot grid. |
+| ![Figure 11](assets/papers-explained-184-instruction-pretraining/fig-11.webp) | **MMLU during downstream instruction tuning** — **Instruct PT** vs **Vanilla PT** (**zero-shot** vs **few-shot**) vs instruction-tune steps (0–120K). |
+| ![Figure 12](assets/papers-explained-184-instruction-pretraining/fig-12.webp) | **Domain-adaptive continual PT**: **BioMed** (PubMedQA, ChemProt, …) and **Finance** (ConvFinQA, FiQA, …) — **Llama3–8B** vanilla vs **Instruct PT** vs base **Llama3–8B** / reference **Llama3–70B**. |
 ## Related
 
 - [[Papers Explained Corpus]]

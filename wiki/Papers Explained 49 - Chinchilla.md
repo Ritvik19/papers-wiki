@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-07-31_Papers-Explained-49--Chinchilla-a7ad826d945e.html`
+- Source file: `raw/2023-07-31_Papers-Explained-49--Chinchilla-a7ad826d945e.md`
 - Source title: Papers Explained 49: Chinchilla
 - Published: 2023-07-31
 - Canonical: [https://medium.com/@ritvik19/papers-explained-49-chinchilla-a7ad826d945e](https://medium.com/@ritvik19/papers-explained-49-chinchilla-a7ad826d945e)
@@ -95,22 +95,22 @@ Training Compute-Optimal Large Language Models [2203.15556](https://arxiv.org/ab
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-07-31_Papers-Explained-49--Chinchilla-a7ad826d945e.html`); local copies under `wiki/assets/papers-explained-49-chinchilla/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-07-31_Papers-Explained-49--Chinchilla-a7ad826d945e.md`); local copies under `wiki/assets/papers-explained-49-chinchilla/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-49-chinchilla/fig-1.png) | Title card: Chinchilla. |
-| ![Figure 2](assets/papers-explained-49-chinchilla/fig-2.png) | Shows that current large models should be substantially smaller and therefore trained much longer than is currently done. |
-| ![Figure 3](assets/papers-explained-49-chinchilla/fig-3.png) | Estimated optimal training FLOPs and training tokens for various model sizes. |
-| ![Figure 4](assets/papers-explained-49-chinchilla/fig-4.png) | Chinchilla architecture details. |
-| ![Figure 5](assets/papers-explained-49-chinchilla/fig-5.png) | All evaluation tasks. We evaluate Chinchilla on a collection of language modeling along with downstream tasks. |
-| ![Figure 6](assets/papers-explained-49-chinchilla/fig-6.png) | Pile Evaluation. For the different evaluation sets in The Pile, we show the bits-per-byte (bpb) improvement (decrease) of Chinchilla compared to Gopher. On all subsets, Chinchilla outperforms Gopher. |
-| ![Figure 7](assets/papers-explained-49-chinchilla/fig-7.png) | Massive Multitask Language Understanding (MMLU). We report the average 5-shot accuracy over 57 tasks with model and human accuracy comparisons. We also include the average prediction for state-of-the-art accuracy in June 2022/2023 made by 73 competitive human forecasters. |
-| ![Figure 8](assets/papers-explained-49-chinchilla/fig-8.png) | MMLU results compared to Gopher We find that Chinchilla outperforms Gopher by 7.6% on average in addition to performing better on 51/57 individual tasks, the same on 2/57, and worse on only 4/57 tasks. |
-| ![Figure 9](assets/papers-explained-49-chinchilla/fig-9.png) | Reading comprehension. On RACE-h and RACE-m, Chinchilla considerably improves performance over Gopher. Note that GPT-3 and MT-NLG 530B use a different prompt format than we do on RACE-h/m, so the results are not comparable to Gopher and Chinchilla. On LAMBADA, Chinchilla outperforms both Gopher and MT-NLG 530B. |
-| ![Figure 10](assets/papers-explained-49-chinchilla/fig-10.png) | BIG-bench results compared to Gopher Chinchilla outperforms Gopher on all but four BIG-bench tasks considered. |
-| ![Figure 11](assets/papers-explained-49-chinchilla/fig-11.png) | Zero-shot comparison on Common Sense benchmarks. We show a comparison between Chinchilla, Gopher, and MT-NLG 530B on various Common Sense benchmarks. We see that Chinchilla matches or outperforms Gopher and GPT-3 on all tasks. On all but one Chinchilla outperforms the much larger MT-NLG 530B model. |
-| ![Figure 12](assets/papers-explained-49-chinchilla/fig-12.png) | Closed-book question answering. For Natural Questions and TriviaQA, Chinchilla outperforms Gopher in all cases. On Natural Questions, Chinchilla outperforms GPT-3. On TriviaQA we show results on two different evaluation sets to allow for comparison to GPT-3 and to open book SOTA. |
+| ![Figure 1](assets/papers-explained-49-chinchilla/fig-1.webp) | Title card: Chinchilla. |
+| ![Figure 2](assets/papers-explained-49-chinchilla/fig-2.webp) | Shows that current large models should be substantially smaller and therefore trained much longer than is currently done. |
+| ![Figure 3](assets/papers-explained-49-chinchilla/fig-3.webp) | Estimated optimal training FLOPs and training tokens for various model sizes. |
+| ![Figure 4](assets/papers-explained-49-chinchilla/fig-4.webp) | Chinchilla architecture details. |
+| ![Figure 5](assets/papers-explained-49-chinchilla/fig-5.webp) | All evaluation tasks. We evaluate Chinchilla on a collection of language modeling along with downstream tasks. |
+| ![Figure 6](assets/papers-explained-49-chinchilla/fig-6.webp) | Pile Evaluation. For the different evaluation sets in The Pile, we show the bits-per-byte (bpb) improvement (decrease) of Chinchilla compared to Gopher. On all subsets, Chinchilla outperforms Gopher. |
+| ![Figure 7](assets/papers-explained-49-chinchilla/fig-7.webp) | Massive Multitask Language Understanding (MMLU). We report the average 5-shot accuracy over 57 tasks with model and human accuracy comparisons. We also include the average prediction for state-of-the-art accuracy in June 2022/2023 made by 73 competitive human forecasters. |
+| ![Figure 8](assets/papers-explained-49-chinchilla/fig-8.webp) | MMLU results compared to Gopher We find that Chinchilla outperforms Gopher by 7.6% on average in addition to performing better on 51/57 individual tasks, the same on 2/57, and worse on only 4/57 tasks. |
+| ![Figure 9](assets/papers-explained-49-chinchilla/fig-9.webp) | Reading comprehension. On RACE-h and RACE-m, Chinchilla considerably improves performance over Gopher. Note that GPT-3 and MT-NLG 530B use a different prompt format than we do on RACE-h/m, so the results are not comparable to Gopher and Chinchilla. On LAMBADA, Chinchilla outperforms both Gopher and MT-NLG 530B. |
+| ![Figure 10](assets/papers-explained-49-chinchilla/fig-10.webp) | BIG-bench results compared to Gopher Chinchilla outperforms Gopher on all but four BIG-bench tasks considered. |
+| ![Figure 11](assets/papers-explained-49-chinchilla/fig-11.webp) | Zero-shot comparison on Common Sense benchmarks. We show a comparison between Chinchilla, Gopher, and MT-NLG 530B on various Common Sense benchmarks. We see that Chinchilla matches or outperforms Gopher and GPT-3 on all tasks. On all but one Chinchilla outperforms the much larger MT-NLG 530B model. |
+| ![Figure 12](assets/papers-explained-49-chinchilla/fig-12.webp) | Closed-book question answering. For Natural Questions and TriviaQA, Chinchilla outperforms Gopher in all cases. On Natural Questions, Chinchilla outperforms GPT-3. On TriviaQA we show results on two different evaluation sets to allow for comparison to GPT-3 and to open book SOTA. |
 ## Related
 
 - [[Papers Explained Corpus]]

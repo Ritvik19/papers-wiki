@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-07-03_Papers-Explained-401--Prometheus-Vision-10ce3fbdf5a0.html`
+- Source file: `raw/2025-07-03_Papers-Explained-401--Prometheus-Vision-10ce3fbdf5a0.md`
 - Source title: Papers Explained 401: Prometheus-Vision
 - Published: 2025-07-03
 - Canonical: [https://medium.com/@ritvik19/papers-explained-401-prometheus-vision-10ce3fbdf5a0](https://medium.com/@ritvik19/papers-explained-401-prometheus-vision-10ce3fbdf5a0)
@@ -145,18 +145,18 @@ Prometheus-Vision: Vision-Language Model as a Judge for Fine-Grained Evaluation 
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-07-03_Papers-Explained-401--Prometheus-Vision-10ce3fbdf5a0.html`); local copies under `wiki/assets/papers-explained-401-prometheus-vision/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-07-03_Papers-Explained-401--Prometheus-Vision-10ce3fbdf5a0.md`); local copies under `wiki/assets/papers-explained-401-prometheus-vision/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-401-prometheus-vision/fig-1.png) | Title card: Prometheus-Vision. |
-| ![Figure 2](assets/papers-explained-401-prometheus-vision/fig-2.png) | The project is available at GitHub. |
-| ![Figure 3](assets/papers-explained-401-prometheus-vision/fig-3.png) | The number of each component included in the Perception Collection. |
-| ![Figure 4](assets/papers-explained-401-prometheus-vision/fig-4.png) | Pearson Correlation between score decisions from human evaluators and score decisions. |
-| ![Figure 5](assets/papers-explained-401-prometheus-vision/fig-5.png) | Pairwise comparison of the quality of the language feedback generated. |
-| ![Figure 6](assets/papers-explained-401-prometheus-vision/fig-6.png) | Pearson, Kendall-Tau, Spearman correlation with scores sampled from GPT-4V across 3 inferences on visual instruction following benchmarks. |
-| ![Figure 7](assets/papers-explained-401-prometheus-vision/fig-7.png) | Pearson, Kendall-Tau, Spearman correlation with scores sampled from GPT-4V across 3 inferences on visual question answering benchmarks. |
-| ![Figure 8](assets/papers-explained-401-prometheus-vision/fig-8.png) | Pearson, Kendall-Tau, Spearman correlation with scores sampled from GPT-4V across 3 inferences on captioning benchmarks. |
+| ![Figure 1](assets/papers-explained-401-prometheus-vision/fig-1.webp) | Title card: Prometheus-Vision. |
+| ![Figure 2](assets/papers-explained-401-prometheus-vision/fig-2.webp) | The project is available at GitHub. |
+| ![Figure 3](assets/papers-explained-401-prometheus-vision/fig-3.webp) | The number of each component included in the Perception Collection. |
+| ![Figure 4](assets/papers-explained-401-prometheus-vision/fig-4.webp) | Pearson Correlation between score decisions from human evaluators and score decisions. |
+| ![Figure 5](assets/papers-explained-401-prometheus-vision/fig-5.webp) | Pairwise comparison of the quality of the language feedback generated. |
+| ![Figure 6](assets/papers-explained-401-prometheus-vision/fig-6.webp) | Pearson, Kendall-Tau, Spearman correlation with scores sampled from GPT-4V across 3 inferences on visual instruction following benchmarks. |
+| ![Figure 7](assets/papers-explained-401-prometheus-vision/fig-7.webp) | Pearson, Kendall-Tau, Spearman correlation with scores sampled from GPT-4V across 3 inferences on visual question answering benchmarks. |
+| ![Figure 8](assets/papers-explained-401-prometheus-vision/fig-8.webp) | Pearson, Kendall-Tau, Spearman correlation with scores sampled from GPT-4V across 3 inferences on captioning benchmarks. |
 ## Related
 
 - [[Papers Explained Corpus]]

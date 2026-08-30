@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-03-30_Papers-Explained-551--QED-Nano-dd7f19dec9d7.html`
+- Source file: `raw/2026-03-30_Papers-Explained-551--QED-Nano-dd7f19dec9d7.md`
 - Source title: Papers Explained 551: QED Nano
 - Published: 2026-03-30
 - Canonical: [https://medium.com/@ritvik19/papers-explained-551-qed-nano-dd7f19dec9d7](https://medium.com/@ritvik19/papers-explained-551-qed-nano-dd7f19dec9d7)
@@ -137,19 +137,19 @@ The final recipe consists of an initial SFT step to imbue the model with the abi
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-03-30_Papers-Explained-551--QED-Nano-dd7f19dec9d7.html`); local copies under `wiki/assets/papers-explained-551-qed-nano/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-03-30_Papers-Explained-551--QED-Nano-dd7f19dec9d7.md`); local copies under `wiki/assets/papers-explained-551-qed-nano/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-551-qed-nano/fig-1.png) | Title card: QED Nano. |
-| ![Figure 2](assets/papers-explained-551-qed-nano/fig-2.png) | Problem Category Distribution. |
-| ![Figure 3](assets/papers-explained-551-qed-nano/fig-3.png) | Results on the MathArena grading benchmark. Lower is better. |
-| ![Figure 4](assets/papers-explained-551-qed-nano/fig-4.png) | Results on our in-distribution grading benchmark. Lower is better. |
-| ![Figure 5](assets/papers-explained-551-qed-nano/fig-5.png) | An illustration of thepipeline for outcome-reward RL training of QED-Nano. |
-| ![Figure 6](assets/papers-explained-551-qed-nano/fig-6.png) | An illustration of an asynchronous, streaming variant of GRPO that is employed in the PipelineRL implementation. |
-| ![Figure 7](assets/papers-explained-551-qed-nano/fig-7.png) | Illustration of the RC algorithm. |
-| ![Figure 8](assets/papers-explained-551-qed-nano/fig-8.png) | Comparison of QED-Nano (4B) with leading open- and closed-source models. |
-| ![Figure 9](assets/papers-explained-551-qed-nano/fig-9.png) | Performance of QED-Nano (4B) within just a single response turn of 50,000 tokens. |
+| ![Figure 1](assets/papers-explained-551-qed-nano/fig-1.webp) | Title card: QED Nano. |
+| ![Figure 2](assets/papers-explained-551-qed-nano/fig-2.webp) | Problem Category Distribution. |
+| ![Figure 3](assets/papers-explained-551-qed-nano/fig-3.webp) | Results on the MathArena grading benchmark. Lower is better. |
+| ![Figure 4](assets/papers-explained-551-qed-nano/fig-4.webp) | Results on our in-distribution grading benchmark. Lower is better. |
+| ![Figure 5](assets/papers-explained-551-qed-nano/fig-5.webp) | An illustration of thepipeline for outcome-reward RL training of QED-Nano. |
+| ![Figure 6](assets/papers-explained-551-qed-nano/fig-6.webp) | An illustration of an asynchronous, streaming variant of GRPO that is employed in the PipelineRL implementation. |
+| ![Figure 7](assets/papers-explained-551-qed-nano/fig-7.webp) | Illustration of the RC algorithm. |
+| ![Figure 8](assets/papers-explained-551-qed-nano/fig-8.webp) | Comparison of QED-Nano (4B) with leading open- and closed-source models. |
+| ![Figure 9](assets/papers-explained-551-qed-nano/fig-9.webp) | Performance of QED-Nano (4B) within just a single response turn of 50,000 tokens. |
 ## Related
 
 - [[Papers Explained Corpus]]

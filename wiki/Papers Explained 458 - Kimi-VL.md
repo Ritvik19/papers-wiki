@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-09-22_Papers-Explained-458--Kimi-VL-70c65b517f19.html`
+- Source file: `raw/2025-09-22_Papers-Explained-458--Kimi-VL-70c65b517f19.md`
 - Source title: Papers Explained 458: Kimi-VL
 - Published: 2025-09-22
 - Canonical: [https://medium.com/@ritvik19/papers-explained-458-kimi-vl-70c65b517f19](https://medium.com/@ritvik19/papers-explained-458-kimi-vl-70c65b517f19)
@@ -281,19 +281,19 @@ Kimi-VL Technical Report [2504.07491](https://arxiv.org/abs/2504.07491)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-09-22_Papers-Explained-458--Kimi-VL-70c65b517f19.html`); local copies under `wiki/assets/papers-explained-458-kimi-vl/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-09-22_Papers-Explained-458--Kimi-VL-70c65b517f19.md`); local copies under `wiki/assets/papers-explained-458-kimi-vl/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-458-kimi-vl/fig-1.png) | Title card: Kimi-VL. |
-| ![Figure 2](assets/papers-explained-458-kimi-vl/fig-2.png) | The model architecture of Kimi-VL and Kimi-VL-Thinking. |
-| ![Figure 3](assets/papers-explained-458-kimi-vl/fig-3.png) | The pre-training stages of Kimi-VL. |
-| ![Figure 4](assets/papers-explained-458-kimi-vl/fig-4.png) | Overview of training stages: data composition, token volumes, sequence lengths, and trainable components. |
-| ![Figure 5](assets/papers-explained-458-kimi-vl/fig-5.png) | The post-training stages of Kimi-VL and Kimi-VL-Thinking. |
-| ![Figure 6](assets/papers-explained-458-kimi-vl/fig-6.png) | Mixture-of-Experts Language Model. |
-| ![Figure 7](assets/papers-explained-458-kimi-vl/fig-7.png) | Performance of Kimi-VL against proprietary and open-source efficient VLMs. |
-| ![Figure 8](assets/papers-explained-458-kimi-vl/fig-8.png) | Performance of Kimi-VL-Thinking and Kimi-VL-Thinking-2506 on multimodal reasoning benchmarks. |
-| ![Figure 9](assets/papers-explained-458-kimi-vl/fig-9.png) | Performance of Kimi-VL-A3B-Thinking-2506 on multimodal benchmarks that do not require extensive reasoning. |
+| ![Figure 1](assets/papers-explained-458-kimi-vl/fig-1.webp) | Title card: Kimi-VL. |
+| ![Figure 2](assets/papers-explained-458-kimi-vl/fig-2.webp) | The model architecture of Kimi-VL and Kimi-VL-Thinking. |
+| ![Figure 3](assets/papers-explained-458-kimi-vl/fig-3.webp) | The pre-training stages of Kimi-VL. |
+| ![Figure 4](assets/papers-explained-458-kimi-vl/fig-4.webp) | Overview of training stages: data composition, token volumes, sequence lengths, and trainable components. |
+| ![Figure 5](assets/papers-explained-458-kimi-vl/fig-5.webp) | The post-training stages of Kimi-VL and Kimi-VL-Thinking. |
+| ![Figure 6](assets/papers-explained-458-kimi-vl/fig-6.webp) | Mixture-of-Experts Language Model. |
+| ![Figure 7](assets/papers-explained-458-kimi-vl/fig-7.webp) | Performance of Kimi-VL against proprietary and open-source efficient VLMs. |
+| ![Figure 8](assets/papers-explained-458-kimi-vl/fig-8.webp) | Performance of Kimi-VL-Thinking and Kimi-VL-Thinking-2506 on multimodal reasoning benchmarks. |
+| ![Figure 9](assets/papers-explained-458-kimi-vl/fig-9.webp) | Performance of Kimi-VL-A3B-Thinking-2506 on multimodal benchmarks that do not require extensive reasoning. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -1,3 +1,3 @@
 # inference-engineering
 
-Canonical HTML: `raw/inference-engineering/full-article.html`
+Canonical HTML: `raw/inference-engineering/full-article.md`

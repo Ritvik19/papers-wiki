@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-04-22_Papers-Explained-352--Skywork-Math-d8f2aa59ddcf.html`
+- Source file: `raw/2025-04-22_Papers-Explained-352--Skywork-Math-d8f2aa59ddcf.md`
 - Source title: Papers Explained 352: Skywork-Math
 - Published: 2025-04-22
 - Canonical: [https://medium.com/@ritvik19/papers-explained-352-skywork-math-d8f2aa59ddcf](https://medium.com/@ritvik19/papers-explained-352-skywork-math-d8f2aa59ddcf)
@@ -95,14 +95,14 @@ Skywork-Math: Data Scaling Laws for Mathematical Reasoning in Large Language Mod
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-04-22_Papers-Explained-352--Skywork-Math-d8f2aa59ddcf.html`); local copies under `wiki/assets/papers-explained-352-skywork-math/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-04-22_Papers-Explained-352--Skywork-Math-d8f2aa59ddcf.md`); local copies under `wiki/assets/papers-explained-352-skywork-math/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-352-skywork-math/fig-1.png) | Title card: Skywork-Math. |
-| ![Figure 2](assets/papers-explained-352-skywork-math/fig-2.png) | Overview of the proposed two-stage method. |
-| ![Figure 3](assets/papers-explained-352-skywork-math/fig-3.png) | Summary of math reasoning performance of closed- and open-source LLM models in terms of accuracy (%). |
-| ![Figure 4](assets/papers-explained-352-skywork-math/fig-4.png) | The zero-shot top1 performance of Skywork-Math 7B model series. |
+| ![Figure 1](assets/papers-explained-352-skywork-math/fig-1.webp) | Title card: Skywork-Math. |
+| ![Figure 2](assets/papers-explained-352-skywork-math/fig-2.webp) | Overview of the proposed two-stage method. |
+| ![Figure 3](assets/papers-explained-352-skywork-math/fig-3.webp) | Summary of math reasoning performance of closed- and open-source LLM models in terms of accuracy (%). |
+| ![Figure 4](assets/papers-explained-352-skywork-math/fig-4.webp) | The zero-shot top1 performance of Skywork-Math 7B model series. |
 ## Related
 
 - [[Papers Explained Corpus]]

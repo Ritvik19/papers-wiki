@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-12-19_Papers-Explained-505--Rnj-1-43be78ab4b40.html`
+- Source file: `raw/2025-12-19_Papers-Explained-505--Rnj-1-43be78ab4b40.md`
 - Source title: Papers Explained 505: Rnj-1
 - Published: 2025-12-19
 - Canonical: [https://medium.com/@ritvik19/papers-explained-505-rnj-1-43be78ab4b40](https://medium.com/@ritvik19/papers-explained-505-rnj-1-43be78ab4b40)
@@ -83,14 +83,14 @@ Post-training: Inspired by long context mid-training with YaRN, Nemotron, and si
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-12-19_Papers-Explained-505--Rnj-1-43be78ab4b40.html`); local copies under `wiki/assets/papers-explained-505-rnj-1/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-12-19_Papers-Explained-505--Rnj-1-43be78ab4b40.md`); local copies under `wiki/assets/papers-explained-505-rnj-1/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-505-rnj-1/fig-1.png) | Title card: Rnj-1. |
-| ![Figure 2](assets/papers-explained-505-rnj-1/fig-2.png) | Post-training: Inspired by long context mid-training with YaRN, Nemotron, and simple agentic environments. |
-| ![Figure 3](assets/papers-explained-505-rnj-1/fig-3.png) | Post-training: Inspired by long context mid-training with YaRN, Nemotron, and simple agentic environments. |
-| ![Figure 4](assets/papers-explained-505-rnj-1/fig-4.png) | Post-training: Inspired by long context mid-training with YaRN, Nemotron, and simple agentic environments. |
+| ![Figure 1](assets/papers-explained-505-rnj-1/fig-1.webp) | Title card: Rnj-1. |
+| ![Figure 2](assets/papers-explained-505-rnj-1/fig-2.webp) | Post-training: Inspired by long context mid-training with YaRN, Nemotron, and simple agentic environments. |
+| ![Figure 3](assets/papers-explained-505-rnj-1/fig-3.webp) | Post-training: Inspired by long context mid-training with YaRN, Nemotron, and simple agentic environments. |
+| ![Figure 4](assets/papers-explained-505-rnj-1/fig-4.webp) | Post-training: Inspired by long context mid-training with YaRN, Nemotron, and simple agentic environments. |
 ## Related
 
 - [[Papers Explained Corpus]]

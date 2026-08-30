@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-05-06_Papers-Explained-133--Rho-1-788125e42241.html`
+- Source file: `raw/2024-05-06_Papers-Explained-133--Rho-1-788125e42241.md`
 - Source title: Papers Explained 133: Rho-1
 - Published: 2024-05-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-132-rho-1-788125e42241](https://medium.com/@ritvik19/papers-explained-132-rho-1-788125e42241)
@@ -121,22 +121,22 @@ Rho-1: Not All Tokens Are What You Need [2404.07965](https://arxiv.org/abs/2404.
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-05-06_Papers-Explained-133--Rho-1-788125e42241.html`); local copies under `wiki/assets/papers-explained-133-rho-1/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-05-06_Papers-Explained-133--Rho-1-788125e42241.md`); local copies under `wiki/assets/papers-explained-133-rho-1/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-133-rho-1/fig-1.png) | Title page of *RHO-1: Not All Tokens Are What You Need*. |
-| ![Figure 2](assets/papers-explained-133-rho-1/fig-2.png) | Noisy-web example contrasting CLM (loss on every token) with SLM (mask loss on undesired tokens only). |
-| ![Figure 3](assets/papers-explained-133-rho-1/fig-3.png) | Token-loss trajectories by category (L→L, H→L, L→H, H→H) plus example token traces for stable vs stubborn high-loss types. |
-| ![Figure 4](assets/papers-explained-133-rho-1/fig-4.png) | SLM pipeline: train reference on clean text, score pretraining tokens, then train LM with selective loss on high-signal tokens. |
-| ![Figure 5](assets/papers-explained-133-rho-1/fig-5.png) | Reference loss $\mathcal{L}_{\text{ref}}$ as negative log-probability under the reference model. |
-| ![Figure 6](assets/papers-explained-133-rho-1/fig-6.png) | Standard causal LM objective $\mathcal{L}_{\text{CLM}}$ averaged over all positions. |
-| ![Figure 7](assets/papers-explained-133-rho-1/fig-7.png) | Excess loss $\mathcal{L}_{\Delta}$ defined as training-model loss minus reference loss per token. |
-| ![Figure 8](assets/papers-explained-133-rho-1/fig-8.png) | Selective LM objective $\mathcal{L}_{\text{SLM}}$ summing log-loss only over top-$k\%$ excess-loss tokens. |
-| ![Figure 9](assets/papers-explained-133-rho-1/fig-9.png) | Indicator mask $I_{k\%}$ selecting tokens in the top $k\%$ of excess loss for gradient updates. |
-| ![Figure 10](assets/papers-explained-133-rho-1/fig-10.png) | Few-shot chain-of-thought math benchmark table for RHO-1-Math continual pretrain vs baselines (1B and 7B regimes). |
-| ![Figure 11](assets/papers-explained-133-rho-1/fig-11.png) | Tool-integrated reasoning results after ToRA-style SFT, highlighting RHO-1-Math gains over TinyLlama-CT and Mistral-CT. |
-| ![Figure 12](assets/papers-explained-133-rho-1/fig-12.png) | General-domain pretraining bar charts: Rho-1-1B vs TinyLlama baselines on reasoning, math, code, and knowledge tasks. |
+| ![Figure 1](assets/papers-explained-133-rho-1/fig-1.webp) | Title page of *RHO-1: Not All Tokens Are What You Need*. |
+| ![Figure 2](assets/papers-explained-133-rho-1/fig-2.webp) | Noisy-web example contrasting CLM (loss on every token) with SLM (mask loss on undesired tokens only). |
+| ![Figure 3](assets/papers-explained-133-rho-1/fig-3.webp) | Token-loss trajectories by category (L→L, H→L, L→H, H→H) plus example token traces for stable vs stubborn high-loss types. |
+| ![Figure 4](assets/papers-explained-133-rho-1/fig-4.webp) | SLM pipeline: train reference on clean text, score pretraining tokens, then train LM with selective loss on high-signal tokens. |
+| ![Figure 5](assets/papers-explained-133-rho-1/fig-5.webp) | Reference loss $\mathcal{L}_{\text{ref}}$ as negative log-probability under the reference model. |
+| ![Figure 6](assets/papers-explained-133-rho-1/fig-6.webp) | Standard causal LM objective $\mathcal{L}_{\text{CLM}}$ averaged over all positions. |
+| ![Figure 7](assets/papers-explained-133-rho-1/fig-7.webp) | Excess loss $\mathcal{L}_{\Delta}$ defined as training-model loss minus reference loss per token. |
+| ![Figure 8](assets/papers-explained-133-rho-1/fig-8.webp) | Selective LM objective $\mathcal{L}_{\text{SLM}}$ summing log-loss only over top-$k\%$ excess-loss tokens. |
+| ![Figure 9](assets/papers-explained-133-rho-1/fig-9.webp) | Indicator mask $I_{k\%}$ selecting tokens in the top $k\%$ of excess loss for gradient updates. |
+| ![Figure 10](assets/papers-explained-133-rho-1/fig-10.webp) | Few-shot chain-of-thought math benchmark table for RHO-1-Math continual pretrain vs baselines (1B and 7B regimes). |
+| ![Figure 11](assets/papers-explained-133-rho-1/fig-11.webp) | Tool-integrated reasoning results after ToRA-style SFT, highlighting RHO-1-Math gains over TinyLlama-CT and Mistral-CT. |
+| ![Figure 12](assets/papers-explained-133-rho-1/fig-12.webp) | General-domain pretraining bar charts: Rho-1-1B vs TinyLlama baselines on reasoning, math, code, and knowledge tasks. |
 ## Related
 
 - [[Papers Explained Corpus]]

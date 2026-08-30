@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-02-13_Papers-Explained---AceCoder-2611b3feef6c.html`
+- Source file: `raw/2025-02-13_Papers-Explained---AceCoder-2611b3feef6c.md`
 - Source title: Papers Explained : AceCoder
 - Published: 2025-02-13
 - Canonical: [https://medium.com/@ritvik19/papers-explained-acecoder-2611b3feef6c](https://medium.com/@ritvik19/papers-explained-acecoder-2611b3feef6c)
@@ -101,18 +101,18 @@ ACECODER: Acing Coder RL via Automated Test-Case Synthesis [2502.01718](https://
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-02-13_Papers-Explained---AceCoder-2611b3feef6c.html`); local copies under `wiki/assets/papers-explained-acecoder/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-02-13_Papers-Explained---AceCoder-2611b3feef6c.md`); local copies under `wiki/assets/papers-explained-acecoder/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-acecoder/fig-1.png) | AceCoder overview: synthesizing large-scale (question, test-case) pairs from code seeds for reward learning and RL. |
-| ![Figure 2](assets/papers-explained-acecoder/fig-2.png) | Bradley-Terry pairwise preference setup over sampled programs with test-pass scores. |
-| ![Figure 3](assets/papers-explained-acecoder/fig-3.png) | Reward-model training objective and Best-of-N ranking over candidate completions. |
-| ![Figure 4](assets/papers-explained-acecoder/fig-4.png) | AceCode-89K dataset statistics before and after hallucination-heavy test-case filtering. |
-| ![Figure 5](assets/papers-explained-acecoder/fig-5.png) | Preference-pair construction when pass-rate gaps exceed thresholds (modified rules vs naive score ordering). |
-| ![Figure 6](assets/papers-explained-acecoder/fig-6.png) | Best-of-N gains with AceCode-RM across Mistral, Llama 3.1, and Qwen2.5 inference stacks. |
-| ![Figure 7](assets/papers-explained-acecoder/fig-7.png) | RL with AceCode-RM or rule-based pass rewards on HumanEval / MBPP-style suites across policy checkpoints. |
-| ![Figure 8](assets/papers-explained-acecoder/fig-8.png) | AceCode-RM vs general-purpose reward models (InternLM2-RM, Skywork variants) on code generation metrics. |
+| ![Figure 1](assets/papers-explained-acecoder/fig-1.webp) | AceCoder overview: synthesizing large-scale (question, test-case) pairs from code seeds for reward learning and RL. |
+| ![Figure 2](assets/papers-explained-acecoder/fig-2.webp) | Bradley-Terry pairwise preference setup over sampled programs with test-pass scores. |
+| ![Figure 3](assets/papers-explained-acecoder/fig-3.webp) | Reward-model training objective and Best-of-N ranking over candidate completions. |
+| ![Figure 4](assets/papers-explained-acecoder/fig-4.webp) | AceCode-89K dataset statistics before and after hallucination-heavy test-case filtering. |
+| ![Figure 5](assets/papers-explained-acecoder/fig-5.webp) | Preference-pair construction when pass-rate gaps exceed thresholds (modified rules vs naive score ordering). |
+| ![Figure 6](assets/papers-explained-acecoder/fig-6.webp) | Best-of-N gains with AceCode-RM across Mistral, Llama 3.1, and Qwen2.5 inference stacks. |
+| ![Figure 7](assets/papers-explained-acecoder/fig-7.webp) | RL with AceCode-RM or rule-based pass rewards on HumanEval / MBPP-style suites across policy checkpoints. |
+| ![Figure 8](assets/papers-explained-acecoder/fig-8.webp) | AceCode-RM vs general-purpose reward models (InternLM2-RM, Skywork variants) on code generation metrics. |
 ## Related
 
 - [[Papers Explained Corpus]]

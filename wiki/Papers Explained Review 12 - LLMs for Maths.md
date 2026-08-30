@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-01-01_Papers-Explained-Review-12--LLMs-for-Maths-1597e3c7251c.html`
+- Source file: `raw/2025-01-01_Papers-Explained-Review-12--LLMs-for-Maths-1597e3c7251c.md`
 - Source title: Papers Explained Review 12: LLMs for Maths
 - Published: 2025-01-01
 - Canonical: [https://medium.com/@ritvik19/papers-explained-review-12-llms-for-maths-1597e3c7251c](https://medium.com/@ritvik19/papers-explained-review-12-llms-for-maths-1597e3c7251c)
@@ -573,31 +573,31 @@ SFT is done in two stages on Qwen 2.5-Math models.
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-01-01_Papers-Explained-Review-12--LLMs-for-Maths-1597e3c7251c.html`); local copies under `wiki/assets/papers-explained-review-12-llms-for-maths/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-01-01_Papers-Explained-Review-12--LLMs-for-Maths-1597e3c7251c.md`); local copies under `wiki/assets/papers-explained-review-12-llms-for-maths/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-review-12-llms-for-maths/fig-1.png) | Title card: LLMs for Maths. |
-| ![Figure 2](assets/papers-explained-review-12-llms-for-maths/fig-2.png) | WizardMath: Empowering Mathematical Reasoning for Large Language Models via Reinforced Evol-Instruct. |
-| ![Figure 3](assets/papers-explained-review-12-llms-for-maths/fig-3.png) | Back to Top. |
-| ![Figure 4](assets/papers-explained-review-12-llms-for-maths/fig-4.png) | Back to Top. |
-| ![Figure 5](assets/papers-explained-review-12-llms-for-maths/fig-5.png) | Back to Top. |
-| ![Figure 6](assets/papers-explained-review-12-llms-for-maths/fig-6.png) | Back to Top. |
-| ![Figure 7](assets/papers-explained-review-12-llms-for-maths/fig-7.png) | Back to Top. |
-| ![Figure 8](assets/papers-explained-review-12-llms-for-maths/fig-8.png) | Back to Top. |
-| ![Figure 9](assets/papers-explained-review-12-llms-for-maths/fig-9.png) | Back to Top. |
-| ![Figure 10](assets/papers-explained-review-12-llms-for-maths/fig-10.png) | Back to Top. |
-| ![Figure 11](assets/papers-explained-review-12-llms-for-maths/fig-11.png) | Back to Top. |
-| ![Figure 12](assets/papers-explained-review-12-llms-for-maths/fig-12.png) | Back to Top. |
-| ![Figure 13](assets/papers-explained-review-12-llms-for-maths/fig-13.png) | Back to Top. |
-| ![Figure 14](assets/papers-explained-review-12-llms-for-maths/fig-14.png) | Back to Top. |
-| ![Figure 15](assets/papers-explained-review-12-llms-for-maths/fig-15.png) | Back to Top. |
-| ![Figure 16](assets/papers-explained-review-12-llms-for-maths/fig-16.png) | Back to Top. |
-| ![Figure 17](assets/papers-explained-review-12-llms-for-maths/fig-17.png) | Back to Top. |
-| ![Figure 18](assets/papers-explained-review-12-llms-for-maths/fig-18.png) | Back to Top. |
-| ![Figure 19](assets/papers-explained-review-12-llms-for-maths/fig-19.png) | Back to Top. |
-| ![Figure 20](assets/papers-explained-review-12-llms-for-maths/fig-20.png) | Back to Top. |
-| ![Figure 21](assets/papers-explained-review-12-llms-for-maths/fig-21.png) | Back to Top. |
+| ![Figure 1](assets/papers-explained-review-12-llms-for-maths/fig-1.webp) | Title card: LLMs for Maths. |
+| ![Figure 2](assets/papers-explained-review-12-llms-for-maths/fig-2.webp) | WizardMath: Empowering Mathematical Reasoning for Large Language Models via Reinforced Evol-Instruct. |
+| ![Figure 3](assets/papers-explained-review-12-llms-for-maths/fig-3.webp) | Back to Top. |
+| ![Figure 4](assets/papers-explained-review-12-llms-for-maths/fig-4.webp) | Back to Top. |
+| ![Figure 5](assets/papers-explained-review-12-llms-for-maths/fig-5.webp) | Back to Top. |
+| ![Figure 6](assets/papers-explained-review-12-llms-for-maths/fig-6.webp) | Back to Top. |
+| ![Figure 7](assets/papers-explained-review-12-llms-for-maths/fig-7.webp) | Back to Top. |
+| ![Figure 8](assets/papers-explained-review-12-llms-for-maths/fig-8.webp) | Back to Top. |
+| ![Figure 9](assets/papers-explained-review-12-llms-for-maths/fig-9.webp) | Back to Top. |
+| ![Figure 10](assets/papers-explained-review-12-llms-for-maths/fig-10.webp) | Back to Top. |
+| ![Figure 11](assets/papers-explained-review-12-llms-for-maths/fig-11.webp) | Back to Top. |
+| ![Figure 12](assets/papers-explained-review-12-llms-for-maths/fig-12.webp) | Back to Top. |
+| ![Figure 13](assets/papers-explained-review-12-llms-for-maths/fig-13.webp) | Back to Top. |
+| ![Figure 14](assets/papers-explained-review-12-llms-for-maths/fig-14.webp) | Back to Top. |
+| ![Figure 15](assets/papers-explained-review-12-llms-for-maths/fig-15.webp) | Back to Top. |
+| ![Figure 16](assets/papers-explained-review-12-llms-for-maths/fig-16.webp) | Back to Top. |
+| ![Figure 17](assets/papers-explained-review-12-llms-for-maths/fig-17.webp) | Back to Top. |
+| ![Figure 18](assets/papers-explained-review-12-llms-for-maths/fig-18.webp) | Back to Top. |
+| ![Figure 19](assets/papers-explained-review-12-llms-for-maths/fig-19.webp) | Back to Top. |
+| ![Figure 20](assets/papers-explained-review-12-llms-for-maths/fig-20.webp) | Back to Top. |
+| ![Figure 21](assets/papers-explained-review-12-llms-for-maths/fig-21.webp) | Back to Top. |
 ## Related
 
 - [[Papers Explained Corpus]]

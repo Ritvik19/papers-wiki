@@ -8,7 +8,7 @@ Official source: [[Instruction Hierarchy Challenge]].
 
 ## Source Metadata
 
-- Source file: `raw/2026-04-03_Papers-Explained-555--IH-Challenge-cf2433051b7e.html`
+- Source file: `raw/2026-04-03_Papers-Explained-555--IH-Challenge-cf2433051b7e.md`
 - Source title: Papers Explained 555: IH Challenge
 - Published: 2026-04-03
 - Canonical: [https://medium.com/@ritvik19/papers-explained-555-ih-challenge-cf2433051b7e](https://medium.com/@ritvik19/papers-explained-555-ih-challenge-cf2433051b7e)
@@ -197,22 +197,22 @@ IH-Challenge: A Training Dataset to Improve Instruction Hierarchy on Frontier LL
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-04-03_Papers-Explained-555--IH-Challenge-cf2433051b7e.html`); local copies under `wiki/assets/papers-explained-555-ih-challenge/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-04-03_Papers-Explained-555--IH-Challenge-cf2433051b7e.md`); local copies under `wiki/assets/papers-explained-555-ih-challenge/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-555-ih-challenge/fig-1.png) | Title card: IH Challenge. |
-| ![Figure 2](assets/papers-explained-555-ih-challenge/fig-2.png) | Illustration of the task design and training data pipeline. |
-| ![Figure 3](assets/papers-explained-555-ih-challenge/fig-3.png) | Summary of IH-Challenge task skeletons. |
-| ![Figure 4](assets/papers-explained-555-ih-challenge/fig-4.png) | Training and test robustness of GPT-5-Mini-R on IH-Challenge tasks. |
-| ![Figure 5](assets/papers-explained-555-ih-challenge/fig-5.png) | Overrefusal and capability. |
-| ![Figure 6](assets/papers-explained-555-ih-challenge/fig-6.png) | Robustness on OOD tasks. |
-| ![Figure 7](assets/papers-explained-555-ih-challenge/fig-7.png) | Robustness on academic evaluations. |
-| ![Figure 8](assets/papers-explained-555-ih-challenge/fig-8.png) | Safety scores on OpenAI’s Production Benchmarks. |
-| ![Figure 9](assets/papers-explained-555-ih-challenge/fig-9.png) | Helpfulness on OpenAI Production Benchmarks. |
-| ![Figure 10](assets/papers-explained-555-ih-challenge/fig-10.png) | Robustness on prompt injection evaluations. |
-| ![Figure 11](assets/papers-explained-555-ih-challenge/fig-11.png) | Evaluation of GPT-5-Mini and GPT-5-Mini-R with various system mitigations. |
-| ![Figure 12](assets/papers-explained-555-ih-challenge/fig-12.png) | Ablation on training task splits. |
+| ![Figure 1](assets/papers-explained-555-ih-challenge/fig-1.webp) | Title card: IH Challenge. |
+| ![Figure 2](assets/papers-explained-555-ih-challenge/fig-2.webp) | Illustration of the task design and training data pipeline. |
+| ![Figure 3](assets/papers-explained-555-ih-challenge/fig-3.webp) | Summary of IH-Challenge task skeletons. |
+| ![Figure 4](assets/papers-explained-555-ih-challenge/fig-4.webp) | Training and test robustness of GPT-5-Mini-R on IH-Challenge tasks. |
+| ![Figure 5](assets/papers-explained-555-ih-challenge/fig-5.webp) | Overrefusal and capability. |
+| ![Figure 6](assets/papers-explained-555-ih-challenge/fig-6.webp) | Robustness on OOD tasks. |
+| ![Figure 7](assets/papers-explained-555-ih-challenge/fig-7.webp) | Robustness on academic evaluations. |
+| ![Figure 8](assets/papers-explained-555-ih-challenge/fig-8.webp) | Safety scores on OpenAI’s Production Benchmarks. |
+| ![Figure 9](assets/papers-explained-555-ih-challenge/fig-9.webp) | Helpfulness on OpenAI Production Benchmarks. |
+| ![Figure 10](assets/papers-explained-555-ih-challenge/fig-10.webp) | Robustness on prompt injection evaluations. |
+| ![Figure 11](assets/papers-explained-555-ih-challenge/fig-11.webp) | Evaluation of GPT-5-Mini and GPT-5-Mini-R with various system mitigations. |
+| ![Figure 12](assets/papers-explained-555-ih-challenge/fig-12.webp) | Ablation on training task splits. |
 ## Related
 
 - [[Papers Explained Corpus]]

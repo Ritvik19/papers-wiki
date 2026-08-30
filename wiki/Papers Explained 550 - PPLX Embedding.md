@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-03-27_Papers-Explained-550--PPLX-Embedding-706ce04596af.html`
+- Source file: `raw/2026-03-27_Papers-Explained-550--PPLX-Embedding-706ce04596af.md`
 - Source title: Papers Explained 550: PPLX Embedding
 - Published: 2026-03-27
 - Canonical: [https://medium.com/@ritvik19/papers-explained-550-pplx-embedding-706ce04596af](https://medium.com/@ritvik19/papers-explained-550-pplx-embedding-706ce04596af)
@@ -155,26 +155,26 @@ Diffusion-Pretrained Dense and Contextual Embeddings [2602.11151](https://arxiv.
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-03-27_Papers-Explained-550--PPLX-Embedding-706ce04596af.html`); local copies under `wiki/assets/papers-explained-550-pplx-embedding/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-03-27_Papers-Explained-550--PPLX-Embedding-706ce04596af.md`); local copies under `wiki/assets/papers-explained-550-pplx-embedding/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-550-pplx-embedding/fig-1.png) | Title card: PPLX Embedding. |
-| ![Figure 2](assets/papers-explained-550-pplx-embedding/fig-2.png) | Training pipeline of pplx-embed-v1 and pplx-embed-context-v1. |
-| ![Figure 3](assets/papers-explained-550-pplx-embedding/fig-3.png) | To produce embeddings, token-level representations extracted from the backbone model are pooled into a sequence-level representation. |
-| ![Figure 4](assets/papers-explained-550-pplx-embedding/fig-4.png) | Binary quantization is also supported, which reduces the size of output embeddings by setting each entry of the mean-pooled embedding vector to−1 or 1. |
-| ![Figure 5](assets/papers-explained-550-pplx-embedding/fig-5.png) | Pair training represents the first contrastive learning stage, establishing foundational semantic alignment between queries and documents. |
-| ![Figure 6](assets/papers-explained-550-pplx-embedding/fig-6.png) | with c𝑖*representing the embedding of the gold chunk. Furthermore, the in-batch loss is. |
-| ![Figure 7](assets/papers-explained-550-pplx-embedding/fig-7.png) | with c𝑖*representing the embedding of the gold chunk. Furthermore, the in-batch loss is. |
-| ![Figure 8](assets/papers-explained-550-pplx-embedding/fig-8.png) | The final local loss is then calculated by. |
-| ![Figure 9](assets/papers-explained-550-pplx-embedding/fig-9.png) | In experiments, 𝛼= 0.2 is set. |
-| ![Figure 10](assets/papers-explained-550-pplx-embedding/fig-10.png) | For the total loss, pplx-embed-context-v1 combines local and global losses with a scheduled weight 𝛽. |
-| ![Figure 11](assets/papers-explained-550-pplx-embedding/fig-11.png) | The final local loss is then calculated by. |
-| ![Figure 12](assets/papers-explained-550-pplx-embedding/fig-12.png) | For contrastive training, English, multilingual, and synthetic datasets are employed. |
-| ![Figure 13](assets/papers-explained-550-pplx-embedding/fig-13.png) | nDCG@10 on the MIRACLRetrievalHardNegatives task per language. |
-| ![Figure 14](assets/papers-explained-550-pplx-embedding/fig-14.png) | Comparison of performance on ConTEB. |
-| ![Figure 15](assets/papers-explained-550-pplx-embedding/fig-15.png) | Match metric on the BERGEN benchmark with Qwen/Qwen2.5–32B-Instruct as a generator. |
-| ![Figure 16](assets/papers-explained-550-pplx-embedding/fig-16.png) | Results on ToolRet benchmark. |
+| ![Figure 1](assets/papers-explained-550-pplx-embedding/fig-1.webp) | Title card: PPLX Embedding. |
+| ![Figure 2](assets/papers-explained-550-pplx-embedding/fig-2.webp) | Training pipeline of pplx-embed-v1 and pplx-embed-context-v1. |
+| ![Figure 3](assets/papers-explained-550-pplx-embedding/fig-3.webp) | To produce embeddings, token-level representations extracted from the backbone model are pooled into a sequence-level representation. |
+| ![Figure 4](assets/papers-explained-550-pplx-embedding/fig-4.webp) | Binary quantization is also supported, which reduces the size of output embeddings by setting each entry of the mean-pooled embedding vector to−1 or 1. |
+| ![Figure 5](assets/papers-explained-550-pplx-embedding/fig-5.webp) | Pair training represents the first contrastive learning stage, establishing foundational semantic alignment between queries and documents. |
+| ![Figure 6](assets/papers-explained-550-pplx-embedding/fig-6.webp) | with c𝑖*representing the embedding of the gold chunk. Furthermore, the in-batch loss is. |
+| ![Figure 7](assets/papers-explained-550-pplx-embedding/fig-7.webp) | with c𝑖*representing the embedding of the gold chunk. Furthermore, the in-batch loss is. |
+| ![Figure 8](assets/papers-explained-550-pplx-embedding/fig-8.webp) | The final local loss is then calculated by. |
+| ![Figure 9](assets/papers-explained-550-pplx-embedding/fig-9.webp) | In experiments, 𝛼= 0.2 is set. |
+| ![Figure 10](assets/papers-explained-550-pplx-embedding/fig-10.webp) | For the total loss, pplx-embed-context-v1 combines local and global losses with a scheduled weight 𝛽. |
+| ![Figure 11](assets/papers-explained-550-pplx-embedding/fig-11.webp) | The final local loss is then calculated by. |
+| ![Figure 12](assets/papers-explained-550-pplx-embedding/fig-12.webp) | For contrastive training, English, multilingual, and synthetic datasets are employed. |
+| ![Figure 13](assets/papers-explained-550-pplx-embedding/fig-13.webp) | nDCG@10 on the MIRACLRetrievalHardNegatives task per language. |
+| ![Figure 14](assets/papers-explained-550-pplx-embedding/fig-14.webp) | Comparison of performance on ConTEB. |
+| ![Figure 15](assets/papers-explained-550-pplx-embedding/fig-15.webp) | Match metric on the BERGEN benchmark with Qwen/Qwen2.5–32B-Instruct as a generator. |
+| ![Figure 16](assets/papers-explained-550-pplx-embedding/fig-16.webp) | Results on ToolRet benchmark. |
 ## Related
 
 - [[pplx-embed: State-of-the-Art Embedding Models for Web-Scale Retrieval]] — official Perplexity Research release post and benchmarks (`raw/pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval/`).

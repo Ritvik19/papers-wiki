@@ -1,6 +1,6 @@
 # Granite Embedding Multilingual R2
 
-**Source**: `raw/granite-embedding-multilingual-r2/full-article.html` (243 KB), `raw/granite-embedding-multilingual-r2/full-article.md`
+**Source**: `raw/granite-embedding-multilingual-r2/full-article.md` (243 KB), `raw/granite-embedding-multilingual-r2/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

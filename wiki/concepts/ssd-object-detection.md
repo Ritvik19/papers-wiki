@@ -14,14 +14,14 @@
 
 ## Architecture
 
-![SSD architecture](../assets/2018-12-27-object-recognition-part-4/fig-4.png)
+![SSD architecture](../assets/2018-12-27-object-recognition-part-4/fig-4.webp)
 
 - Base: **VGG-16** pre-trained on ImageNet.
 - Extra conv layers → **feature pyramid** (large maps → small maps).
 - **Fine maps** (e.g. 8×8): small objects, small anchors on input.
 - **Coarse maps** (e.g. 4×4): large objects, large anchors.
 
-![SSD framework](../assets/2018-12-27-object-recognition-part-4/fig-5.png)
+![SSD framework](../assets/2018-12-27-object-recognition-part-4/fig-5.webp)
 
 ## Default boxes per cell
 
@@ -38,7 +38,7 @@ w_\ell^r = s_\ell \sqrt{r}, \quad h_\ell^r = s_\ell / \sqrt{r}, \quad
 (x_\ell^i, y_\ell^j) = \left(\frac{i+0.5}{m}, \frac{j+0.5}{n}\right)
 \]
 
-![Anchor scales](../assets/2018-12-27-object-recognition-part-4/fig-6.png)
+![Anchor scales](../assets/2018-12-27-object-recognition-part-4/fig-6.webp)
 
 **3×3×p** conv per anchor predicts **4 offsets + c class scores** → \(kmn(c+4)\) filters per map.
 

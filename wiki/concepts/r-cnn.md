@@ -14,7 +14,7 @@
 
 ## Workflow (5 steps)
 
-![R-CNN architecture](../assets/2017-12-31-object-recognition-part-3/fig-1.png)
+![R-CNN architecture](../assets/2017-12-31-object-recognition-part-3/fig-1.webp)
 
 1. **Pre-train** CNN on ImageNet (AlexNet, VGG, ResNet, etc.) for \(N\) classes.
 2. **Proposals**: [[Selective Search]] → ~**2000** category-independent boxes per image.

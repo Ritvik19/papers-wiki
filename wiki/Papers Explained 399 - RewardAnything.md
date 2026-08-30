@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-07-01_Papers-Explained-399--RewardAnything-f100d1d97c8b.html`
+- Source file: `raw/2025-07-01_Papers-Explained-399--RewardAnything-f100d1d97c8b.md`
 - Source title: Papers Explained 399: RewardAnything
 - Published: 2025-07-01
 - Canonical: [https://medium.com/@ritvik19/papers-explained-399-rewardanything-f100d1d97c8b](https://medium.com/@ritvik19/papers-explained-399-rewardanything-f100d1d97c8b)
@@ -232,20 +232,20 @@ RewardAnything: Generalizable Principle-Following Reward Models [2506.03637](htt
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-07-01_Papers-Explained-399--RewardAnything-f100d1d97c8b.html`); local copies under `wiki/assets/papers-explained-399-rewardanything/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-07-01_Papers-Explained-399--RewardAnything-f100d1d97c8b.md`); local copies under `wiki/assets/papers-explained-399-rewardanything/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-399-rewardanything/fig-1.png) | Title card: RewardAnything. |
-| ![Figure 2](assets/papers-explained-399-rewardanything/fig-2.png) | Principle-following RMs explicitly condition on natural language principles i.e. |
-| ![Figure 3](assets/papers-explained-399-rewardanything/fig-3.png) | To ensure the quality and reliability of the algorithmically determined consensus judgments for the RABench evaluation set, a rigorous... |
-| ![Figure 4](assets/papers-explained-399-rewardanything/fig-4.png) | An Overview of RewardAnything. |
-| ![Figure 5](assets/papers-explained-399-rewardanything/fig-5.png) | To train RewardAnything, Group Relative Policy Optimization (GRPO) is employed to finetune the Qwen3–8B model. |
-| ![Figure 6](assets/papers-explained-399-rewardanything/fig-6.png) | This component incentivizes comprehensive, well-structured, and consistent evaluation outputs. It is a weighted sum of scores from five key formatting criteria. |
-| ![Figure 7](assets/papers-explained-399-rewardanything/fig-7.png) | The four sub-metrics are. |
-| ![Figure 8](assets/papers-explained-399-rewardanything/fig-8.png) | Accuracies (%) of reward models on RM-Bench. |
-| ![Figure 9](assets/papers-explained-399-rewardanything/fig-9.png) | Performance of reward models on RABench. |
-| ![Figure 10](assets/papers-explained-399-rewardanything/fig-10.png) | RewardAnything System Prompt. |
+| ![Figure 1](assets/papers-explained-399-rewardanything/fig-1.webp) | Title card: RewardAnything. |
+| ![Figure 2](assets/papers-explained-399-rewardanything/fig-2.webp) | Principle-following RMs explicitly condition on natural language principles i.e. |
+| ![Figure 3](assets/papers-explained-399-rewardanything/fig-3.webp) | To ensure the quality and reliability of the algorithmically determined consensus judgments for the RABench evaluation set, a rigorous... |
+| ![Figure 4](assets/papers-explained-399-rewardanything/fig-4.webp) | An Overview of RewardAnything. |
+| ![Figure 5](assets/papers-explained-399-rewardanything/fig-5.webp) | To train RewardAnything, Group Relative Policy Optimization (GRPO) is employed to finetune the Qwen3–8B model. |
+| ![Figure 6](assets/papers-explained-399-rewardanything/fig-6.webp) | This component incentivizes comprehensive, well-structured, and consistent evaluation outputs. It is a weighted sum of scores from five key formatting criteria. |
+| ![Figure 7](assets/papers-explained-399-rewardanything/fig-7.webp) | The four sub-metrics are. |
+| ![Figure 8](assets/papers-explained-399-rewardanything/fig-8.webp) | Accuracies (%) of reward models on RM-Bench. |
+| ![Figure 9](assets/papers-explained-399-rewardanything/fig-9.webp) | Performance of reward models on RABench. |
+| ![Figure 10](assets/papers-explained-399-rewardanything/fig-10.webp) | RewardAnything System Prompt. |
 ## Related
 
 - [[Papers Explained Corpus]]

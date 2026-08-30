@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-03-27_Papers-Explained-339--Code-Guided-Synthetic-data-generation-system--CoSyn--22b7f371906b.html`
+- Source file: `raw/2025-03-27_Papers-Explained-339--Code-Guided-Synthetic-data-generation-system--CoSyn--22b7f371906b.md`
 - Source title: Papers Explained 339: Code Guided Synthetic data generation system (CoSyn)
 - Published: 2025-03-27
 - Canonical: [https://medium.com/@ritvik19/papers-explained-339-code-guided-synthetic-data-generation-system-cosyn-22b7f371906b](https://medium.com/@ritvik19/papers-explained-339-code-guided-synthetic-data-generation-system-cosyn-22b7f371906b)
@@ -129,21 +129,21 @@ Scaling Text-Rich Image Understanding via Code-Guided Synthetic Multimodal Data 
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-03-27_Papers-Explained-339--Code-Guided-Synthetic-data-generation-system--CoSyn--22b7f371906b.html`); local copies under `wiki/assets/papers-explained-339-code-guided-synthetic-data-generation-system-cosyn/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-03-27_Papers-Explained-339--Code-Guided-Synthetic-data-generation-system--CoSyn--22b7f371906b.md`); local copies under `wiki/assets/papers-explained-339-code-guided-synthetic-data-generation-system-cosyn/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-339-code-guided-synthetic-data-generation-system-cosyn/fig-1.png) | Title card: Code Guided Synthetic data generation system (CoSyn). |
-| ![Figure 2](assets/papers-explained-339-code-guided-synthetic-data-generation-system-cosyn/fig-2.png) | The overview of CoSyn. |
-| ![Figure 3](assets/papers-explained-339-code-guided-synthetic-data-generation-system-cosyn/fig-3.png) | CoSyn-400K dataset. |
-| ![Figure 4](assets/papers-explained-339-code-guided-synthetic-data-generation-system-cosyn/fig-4.png) | Results on 7 text-rich benchmarks. |
-| ![Figure 5](assets/papers-explained-339-code-guided-synthetic-data-generation-system-cosyn/fig-5.png) | Ablation studies are conducted on different combinations of fine-tuning datasets (synthetic, auxiliary, and in-domain). |
-| ![Figure 6](assets/papers-explained-339-code-guided-synthetic-data-generation-system-cosyn/fig-6.png) | Ablation on training data selection. |
-| ![Figure 7](assets/papers-explained-339-code-guided-synthetic-data-generation-system-cosyn/fig-7.png) | Zero shot performance on NutritionQA. |
-| ![Figure 8](assets/papers-explained-339-code-guided-synthetic-data-generation-system-cosyn/fig-8.png) | Ablation of using Chain-of-Thought reasoning. |
-| ![Figure 9](assets/papers-explained-339-code-guided-synthetic-data-generation-system-cosyn/fig-9.png) | Results on human and machine-generated questions of ChartQA. |
-| ![Figure 10](assets/papers-explained-339-code-guided-synthetic-data-generation-system-cosyn/fig-10.png) | The overview of enabling VLMs to point through synthetic data. |
-| ![Figure 11](assets/papers-explained-339-code-guided-synthetic-data-generation-system-cosyn/fig-11.png) | Click accuracy on ScreenSpot. |
+| ![Figure 1](assets/papers-explained-339-code-guided-synthetic-data-generation-system-cosyn/fig-1.webp) | Title card: Code Guided Synthetic data generation system (CoSyn). |
+| ![Figure 2](assets/papers-explained-339-code-guided-synthetic-data-generation-system-cosyn/fig-2.webp) | The overview of CoSyn. |
+| ![Figure 3](assets/papers-explained-339-code-guided-synthetic-data-generation-system-cosyn/fig-3.webp) | CoSyn-400K dataset. |
+| ![Figure 4](assets/papers-explained-339-code-guided-synthetic-data-generation-system-cosyn/fig-4.webp) | Results on 7 text-rich benchmarks. |
+| ![Figure 5](assets/papers-explained-339-code-guided-synthetic-data-generation-system-cosyn/fig-5.webp) | Ablation studies are conducted on different combinations of fine-tuning datasets (synthetic, auxiliary, and in-domain). |
+| ![Figure 6](assets/papers-explained-339-code-guided-synthetic-data-generation-system-cosyn/fig-6.webp) | Ablation on training data selection. |
+| ![Figure 7](assets/papers-explained-339-code-guided-synthetic-data-generation-system-cosyn/fig-7.webp) | Zero shot performance on NutritionQA. |
+| ![Figure 8](assets/papers-explained-339-code-guided-synthetic-data-generation-system-cosyn/fig-8.webp) | Ablation of using Chain-of-Thought reasoning. |
+| ![Figure 9](assets/papers-explained-339-code-guided-synthetic-data-generation-system-cosyn/fig-9.webp) | Results on human and machine-generated questions of ChartQA. |
+| ![Figure 10](assets/papers-explained-339-code-guided-synthetic-data-generation-system-cosyn/fig-10.webp) | The overview of enabling VLMs to point through synthetic data. |
+| ![Figure 11](assets/papers-explained-339-code-guided-synthetic-data-generation-system-cosyn/fig-11.webp) | Click accuracy on ScreenSpot. |
 ## Related
 
 - [[Papers Explained Corpus]]

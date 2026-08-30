@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-05_Papers-Explained-174--FineWeb-280bbc08068b.html`
+- Source file: `raw/2024-08-05_Papers-Explained-174--FineWeb-280bbc08068b.md`
 - Source title: Papers Explained 174: FineWeb
 - Published: 2024-08-05
 - Canonical: [https://medium.com/@ritvik19/papers-explained-174-fineweb-280bbc08068b](https://medium.com/@ritvik19/papers-explained-174-fineweb-280bbc08068b)
@@ -213,20 +213,20 @@ Recommended Reading [Datasets](https://ritvik19.medium.com/list/datasets-b465a5d
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-05_Papers-Explained-174--FineWeb-280bbc08068b.html`); local copies under `wiki/assets/papers-explained-174-fineweb/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-05_Papers-Explained-174--FineWeb-280bbc08068b.md`); local copies under `wiki/assets/papers-explained-174-fineweb/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-174-fineweb/fig-1.png) | Hugging Face blog header: **FineWeb** — decanting the web for large-scale text data (authors, May 2024). |
-| ![Figure 2](assets/papers-explained-174-fineweb/fig-2.png) | **FineWeb pipeline** cartoon: URL filter → text extract → language → Gopher filters → MinHash dedup → C4 → custom filters → PII removal. |
-| ![Figure 3](assets/papers-explained-174-fineweb/fig-3.png) | **WARC-extracted** text beats **WET** CommonCrawl text on aggregate score vs training tokens (1.8B LM ablation). |
-| ![Figure 4](assets/papers-explained-174-fineweb/fig-4.png) | **Processing ablations**: base → independent MinHash → +C4 → +custom filters (aggregate score vs tokens). |
-| ![Figure 5](assets/papers-explained-174-fineweb/fig-5.png) | **Dataset comparison**: FineWeb vs RefinedWeb, C4, Dolma, SlimPajama, RedPajama2, The Pile (aggregate vs 350B-scale training). |
-| ![Figure 6](assets/papers-explained-174-fineweb/fig-6.png) | **Llama-3 prompt** for 0–5 **educational quality** scoring of a web extract (FineWeb-Edu labeling). |
-| ![Figure 7](assets/papers-explained-174-fineweb/fig-7.png) | **FineWeb-Edu threshold** sweep vs **MMLU** (threshold 2–4 vs full FineWeb). |
-| ![Figure 8](assets/papers-explained-174-fineweb/fig-8.png) | **MMLU at ~350B tokens**: FineWeb-Edu vs other open web corpora (C4, Dolma, RefinedWeb, …). |
-| ![Figure 9](assets/papers-explained-174-fineweb/fig-9.png) | **Aggregate score by Common Crawl dump** (2013–2024): crawl-to-crawl quality drift. |
-| ![Figure 10](assets/papers-explained-174-fineweb/fig-10.png) | **Synthetic proxy phrases** rate in crawls vs aggregate score; vertical line at **ChatGPT** release (mid-2023 spike in proxy words). |
+| ![Figure 1](assets/papers-explained-174-fineweb/fig-1.webp) | Hugging Face blog header: **FineWeb** — decanting the web for large-scale text data (authors, May 2024). |
+| ![Figure 2](assets/papers-explained-174-fineweb/fig-2.webp) | **FineWeb pipeline** cartoon: URL filter → text extract → language → Gopher filters → MinHash dedup → C4 → custom filters → PII removal. |
+| ![Figure 3](assets/papers-explained-174-fineweb/fig-3.webp) | **WARC-extracted** text beats **WET** CommonCrawl text on aggregate score vs training tokens (1.8B LM ablation). |
+| ![Figure 4](assets/papers-explained-174-fineweb/fig-4.webp) | **Processing ablations**: base → independent MinHash → +C4 → +custom filters (aggregate score vs tokens). |
+| ![Figure 5](assets/papers-explained-174-fineweb/fig-5.webp) | **Dataset comparison**: FineWeb vs RefinedWeb, C4, Dolma, SlimPajama, RedPajama2, The Pile (aggregate vs 350B-scale training). |
+| ![Figure 6](assets/papers-explained-174-fineweb/fig-6.webp) | **Llama-3 prompt** for 0–5 **educational quality** scoring of a web extract (FineWeb-Edu labeling). |
+| ![Figure 7](assets/papers-explained-174-fineweb/fig-7.webp) | **FineWeb-Edu threshold** sweep vs **MMLU** (threshold 2–4 vs full FineWeb). |
+| ![Figure 8](assets/papers-explained-174-fineweb/fig-8.webp) | **MMLU at ~350B tokens**: FineWeb-Edu vs other open web corpora (C4, Dolma, RefinedWeb, …). |
+| ![Figure 9](assets/papers-explained-174-fineweb/fig-9.webp) | **Aggregate score by Common Crawl dump** (2013–2024): crawl-to-crawl quality drift. |
+| ![Figure 10](assets/papers-explained-174-fineweb/fig-10.webp) | **Synthetic proxy phrases** rate in crawls vs aggregate score; vertical line at **ChatGPT** release (mid-2023 spike in proxy words). |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-06-03_Papers-Explained-145--LoRA-a48359cecbfa.html`
+- Source file: `raw/2024-06-03_Papers-Explained-145--LoRA-a48359cecbfa.md`
 - Source title: Papers Explained 145: LoRA
 - Published: 2024-06-03
 - Canonical: [https://medium.com/@ritvik19/papers-explained-lora-a48359cecbfa](https://medium.com/@ritvik19/papers-explained-lora-a48359cecbfa)
@@ -168,19 +168,19 @@ Recommended Reading [Parameter Efficient Fine Tuning](https://ritvik19.medium.co
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-06-03_Papers-Explained-145--LoRA-a48359cecbfa.html`); local copies under `wiki/assets/papers-explained-145-lora/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-06-03_Papers-Explained-145--LoRA-a48359cecbfa.md`); local copies under `wiki/assets/papers-explained-145-lora/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-145-lora/fig-1.png) | Title page of *LoRA: Low-Rank Adaptation of Large Language Models*. |
-| ![Figure 2](assets/papers-explained-145-lora/fig-2.png) | Frozen pretrained weights plus parallel rank-$r$ adapters ($A,B$) summed into the linear layer output. |
-| ![Figure 3](assets/papers-explained-145-lora/fig-3.png) | Forward pass $h=W_0x+\Delta Wx=W_0x+BAx$ showing additive low-rank updates on frozen $W_0$. |
-| ![Figure 4](assets/papers-explained-145-lora/fig-4.png) | GLUE averages for RoBERTa-base/large and DeBERTa-XXL: LoRA matches or beats full fine-tuning with $\ll1\%$ trainable params. |
-| ![Figure 5](assets/papers-explained-145-lora/fig-5.png) | E2E NLG Challenge BLEU/ROUGE/CIDEr for GPT-2 Medium/Large comparing adapters, prefix tuning, and LoRA. |
-| ![Figure 6](assets/papers-explained-145-lora/fig-6.png) | GPT-3 175B adaptation on WikiSQL, MNLI-matched, and SAMSum Rouge under BitFit, prefix tuning, adapters, and LoRA. |
-| ![Figure 7](assets/papers-explained-145-lora/fig-7.png) | Fixed 18M-parameter budget ablations over which attention matrices receive LoRA on WikiSQL and MultiNLI. |
-| ![Figure 8](assets/papers-explained-145-lora/fig-8.png) | Sensitivity of WikiSQL/MultiNLI accuracy to rank $r$ when adapting $W_q$, $(W_q,W_v)$, or all four attention projections. |
-| ![Figure 9](assets/papers-explained-145-lora/fig-9.png) | Practical “LoRA tips” mind map covering layer coverage, $\alpha$ heuristics, hardware footprint, optimizers, and QLoRA trade-offs. |
+| ![Figure 1](assets/papers-explained-145-lora/fig-1.webp) | Title page of *LoRA: Low-Rank Adaptation of Large Language Models*. |
+| ![Figure 2](assets/papers-explained-145-lora/fig-2.webp) | Frozen pretrained weights plus parallel rank-$r$ adapters ($A,B$) summed into the linear layer output. |
+| ![Figure 3](assets/papers-explained-145-lora/fig-3.webp) | Forward pass $h=W_0x+\Delta Wx=W_0x+BAx$ showing additive low-rank updates on frozen $W_0$. |
+| ![Figure 4](assets/papers-explained-145-lora/fig-4.webp) | GLUE averages for RoBERTa-base/large and DeBERTa-XXL: LoRA matches or beats full fine-tuning with $\ll1\%$ trainable params. |
+| ![Figure 5](assets/papers-explained-145-lora/fig-5.webp) | E2E NLG Challenge BLEU/ROUGE/CIDEr for GPT-2 Medium/Large comparing adapters, prefix tuning, and LoRA. |
+| ![Figure 6](assets/papers-explained-145-lora/fig-6.webp) | GPT-3 175B adaptation on WikiSQL, MNLI-matched, and SAMSum Rouge under BitFit, prefix tuning, adapters, and LoRA. |
+| ![Figure 7](assets/papers-explained-145-lora/fig-7.webp) | Fixed 18M-parameter budget ablations over which attention matrices receive LoRA on WikiSQL and MultiNLI. |
+| ![Figure 8](assets/papers-explained-145-lora/fig-8.webp) | Sensitivity of WikiSQL/MultiNLI accuracy to rank $r$ when adapting $W_q$, $(W_q,W_v)$, or all four attention projections. |
+| ![Figure 9](assets/papers-explained-145-lora/fig-9.webp) | Practical “LoRA tips” mind map covering layer coverage, $\alpha$ heuristics, hardware footprint, optimizers, and QLoRA trade-offs. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-05-09_Papers-Explained-362--Llama-Nemotron-d6b64f407e28.html`
+- Source file: `raw/2025-05-09_Papers-Explained-362--Llama-Nemotron-d6b64f407e28.md`
 - Source title: Papers Explained 362: Llama-Nemotron
 - Published: 2025-05-09
 - Canonical: [https://medium.com/@ritvik19/papers-explained-362-llama-nemotron-d6b64f407e28](https://medium.com/@ritvik19/papers-explained-362-llama-nemotron-d6b64f407e28)
@@ -175,17 +175,17 @@ Llama-Nemotron: Efficient Reasoning Models [2505.00949](https://arxiv.org/abs/25
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-05-09_Papers-Explained-362--Llama-Nemotron-d6b64f407e28.html`); local copies under `wiki/assets/papers-explained-362-llama-nemotron/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-05-09_Papers-Explained-362--Llama-Nemotron-d6b64f407e28.md`); local copies under `wiki/assets/papers-explained-362-llama-nemotron/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-362-llama-nemotron/fig-1.png) | Title card: Llama-Nemotron. |
-| ![Figure 2](assets/papers-explained-362-llama-nemotron/fig-2.png) | Overview of the Puzzle framework. |
-| ![Figure 3](assets/papers-explained-362-llama-nemotron/fig-3.png) | Ablation on curriculum vs non-curriculum. |
-| ![Figure 4](assets/papers-explained-362-llama-nemotron/fig-4.png) | LN-Nano and LN-Nano-SFT versus comparably sized models, split by Reasoning mode. |
-| ![Figure 5](assets/papers-explained-362-llama-nemotron/fig-5.png) | LN-Super versus comparably sized models, split by Reasoning mode. |
-| ![Figure 6](assets/papers-explained-362-llama-nemotron/fig-6.png) | LN-Ultra versus the strongest open-weight models, split by reasoning mode. |
-| ![Figure 7](assets/papers-explained-362-llama-nemotron/fig-7.png) | Llama-Nemotron models demonstrate strong performance on JudgeBench. |
+| ![Figure 1](assets/papers-explained-362-llama-nemotron/fig-1.webp) | Title card: Llama-Nemotron. |
+| ![Figure 2](assets/papers-explained-362-llama-nemotron/fig-2.webp) | Overview of the Puzzle framework. |
+| ![Figure 3](assets/papers-explained-362-llama-nemotron/fig-3.webp) | Ablation on curriculum vs non-curriculum. |
+| ![Figure 4](assets/papers-explained-362-llama-nemotron/fig-4.webp) | LN-Nano and LN-Nano-SFT versus comparably sized models, split by Reasoning mode. |
+| ![Figure 5](assets/papers-explained-362-llama-nemotron/fig-5.webp) | LN-Super versus comparably sized models, split by Reasoning mode. |
+| ![Figure 6](assets/papers-explained-362-llama-nemotron/fig-6.webp) | LN-Ultra versus the strongest open-weight models, split by reasoning mode. |
+| ![Figure 7](assets/papers-explained-362-llama-nemotron/fig-7.webp) | Llama-Nemotron models demonstrate strong performance on JudgeBench. |
 ## Related
 
 - [[Papers Explained Corpus]]

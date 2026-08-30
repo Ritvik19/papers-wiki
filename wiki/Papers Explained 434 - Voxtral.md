@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-08-19_Papers-Explained-434--Voxtral-d178cdc242ca.html`
+- Source file: `raw/2025-08-19_Papers-Explained-434--Voxtral-d178cdc242ca.md`
 - Source title: Papers Explained 434: Voxtral
 - Published: 2025-08-19
 - Canonical: [https://medium.com/@ritvik19/papers-explained-434-voxtral-d178cdc242ca](https://medium.com/@ritvik19/papers-explained-434-voxtral-d178cdc242ca)
@@ -219,22 +219,22 @@ Voxtral [2507.13264](https://arxiv.org/abs/2507.13264)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-08-19_Papers-Explained-434--Voxtral-d178cdc242ca.html`); local copies under `wiki/assets/papers-explained-434-voxtral/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-08-19_Papers-Explained-434--Voxtral-d178cdc242ca.md`); local copies under `wiki/assets/papers-explained-434-voxtral/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-434-voxtral/fig-1.png) | Title card: Voxtral. |
-| ![Figure 2](assets/papers-explained-434-voxtral/fig-2.png) | Voxtral Architecture. |
-| ![Figure 3](assets/papers-explained-434-voxtral/fig-3.png) | Parameter Counts. |
-| ![Figure 4](assets/papers-explained-434-voxtral/fig-4.png) | Pretraining patterns. |
-| ![Figure 5](assets/papers-explained-434-voxtral/fig-5.png) | Speech Recognition Benchmarks. |
-| ![Figure 6](assets/papers-explained-434-voxtral/fig-6.png) | FLEURS Translation. |
-| ![Figure 7](assets/papers-explained-434-voxtral/fig-7.png) | Speech Understanding Benchmarks. |
-| ![Figure 8](assets/papers-explained-434-voxtral/fig-8.png) | Text-Only Benchmarks. |
-| ![Figure 9](assets/papers-explained-434-voxtral/fig-9.png) | Effect of Padding. |
-| ![Figure 10](assets/papers-explained-434-voxtral/fig-10.png) | Effect of Downsampling. |
-| ![Figure 11](assets/papers-explained-434-voxtral/fig-11.png) | Pattern Proportions. |
-| ![Figure 12](assets/papers-explained-434-voxtral/fig-12.png) | Response Improvements with Online DPO. |
+| ![Figure 1](assets/papers-explained-434-voxtral/fig-1.webp) | Title card: Voxtral. |
+| ![Figure 2](assets/papers-explained-434-voxtral/fig-2.webp) | Voxtral Architecture. |
+| ![Figure 3](assets/papers-explained-434-voxtral/fig-3.webp) | Parameter Counts. |
+| ![Figure 4](assets/papers-explained-434-voxtral/fig-4.webp) | Pretraining patterns. |
+| ![Figure 5](assets/papers-explained-434-voxtral/fig-5.webp) | Speech Recognition Benchmarks. |
+| ![Figure 6](assets/papers-explained-434-voxtral/fig-6.webp) | FLEURS Translation. |
+| ![Figure 7](assets/papers-explained-434-voxtral/fig-7.webp) | Speech Understanding Benchmarks. |
+| ![Figure 8](assets/papers-explained-434-voxtral/fig-8.webp) | Text-Only Benchmarks. |
+| ![Figure 9](assets/papers-explained-434-voxtral/fig-9.webp) | Effect of Padding. |
+| ![Figure 10](assets/papers-explained-434-voxtral/fig-10.webp) | Effect of Downsampling. |
+| ![Figure 11](assets/papers-explained-434-voxtral/fig-11.webp) | Pattern Proportions. |
+| ![Figure 12](assets/papers-explained-434-voxtral/fig-12.webp) | Response Improvements with Online DPO. |
 ## Related
 
 - [[Voxtral]] — official Mistral AI Voxtral speech understanding launch blog.

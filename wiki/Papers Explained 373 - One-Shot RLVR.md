@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-05-26_Papers-Explained-373--One-Shot-RLVR-2258fffd857f.html`
+- Source file: `raw/2025-05-26_Papers-Explained-373--One-Shot-RLVR-2258fffd857f.md`
 - Source title: Papers Explained 373: One-Shot RLVR
 - Published: 2025-05-26
 - Canonical: [https://medium.com/@ritvik19/papers-explained-373-one-shot-rlvr-2258fffd857f](https://medium.com/@ritvik19/papers-explained-373-one-shot-rlvr-2258fffd857f)
@@ -93,18 +93,18 @@ Reinforcement Learning for Reasoning in Large Language Models with One Training 
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-05-26_Papers-Explained-373--One-Shot-RLVR-2258fffd857f.html`); local copies under `wiki/assets/papers-explained-373-one-shot-rlvr/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-05-26_Papers-Explained-373--One-Shot-RLVR-2258fffd857f.md`); local copies under `wiki/assets/papers-explained-373-one-shot-rlvr/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-373-one-shot-rlvr/fig-1.png) | Title card: One-Shot RLVR. |
-| ![Figure 2](assets/papers-explained-373-one-shot-rlvr/fig-2.png) | Detailed performance of 1/2-shot RLVR for Qwen2.5-Math-1.5B. |
-| ![Figure 3](assets/papers-explained-373-one-shot-rlvr/fig-3.png) | Example π1 and π13. |
-| ![Figure 4](assets/papers-explained-373-one-shot-rlvr/fig-4.png) | Post-saturation generalization in 1-shot RLVR. |
-| ![Figure 5](assets/papers-explained-373-one-shot-rlvr/fig-5.png) | The model can still generalize on test data after overfitting training example for 1-shot RLVR’s post-saturation generalization. |
-| ![Figure 6](assets/papers-explained-373-one-shot-rlvr/fig-6.png) | 1(Few)-Shot RLVR performance (%) for different domains in MATH500. |
-| ![Figure 7](assets/papers-explained-373-one-shot-rlvr/fig-7.png) | Number of reflection words detected in evaluation tasks. |
-| ![Figure 8](assets/papers-explained-373-one-shot-rlvr/fig-8.png) | 1(few)-shot RLVR is still viable for different models and RL algorithm. |
+| ![Figure 1](assets/papers-explained-373-one-shot-rlvr/fig-1.webp) | Title card: One-Shot RLVR. |
+| ![Figure 2](assets/papers-explained-373-one-shot-rlvr/fig-2.webp) | Detailed performance of 1/2-shot RLVR for Qwen2.5-Math-1.5B. |
+| ![Figure 3](assets/papers-explained-373-one-shot-rlvr/fig-3.webp) | Example π1 and π13. |
+| ![Figure 4](assets/papers-explained-373-one-shot-rlvr/fig-4.webp) | Post-saturation generalization in 1-shot RLVR. |
+| ![Figure 5](assets/papers-explained-373-one-shot-rlvr/fig-5.webp) | The model can still generalize on test data after overfitting training example for 1-shot RLVR’s post-saturation generalization. |
+| ![Figure 6](assets/papers-explained-373-one-shot-rlvr/fig-6.webp) | 1(Few)-Shot RLVR performance (%) for different domains in MATH500. |
+| ![Figure 7](assets/papers-explained-373-one-shot-rlvr/fig-7.webp) | Number of reflection words detected in evaluation tasks. |
+| ![Figure 8](assets/papers-explained-373-one-shot-rlvr/fig-8.webp) | 1(few)-shot RLVR is still viable for different models and RL algorithm. |
 ## Related
 
 - [[Papers Explained Corpus]]

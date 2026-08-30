@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-02_Papers-Explained-173--ELECTRA-501c175ae9d8.html`
+- Source file: `raw/2024-08-02_Papers-Explained-173--ELECTRA-501c175ae9d8.md`
 - Source title: Papers Explained 173: ELECTRA
 - Published: 2024-08-02
 - Canonical: [https://medium.com/@ritvik19/papers-explained-173-electra-501c175ae9d8](https://medium.com/@ritvik19/papers-explained-173-electra-501c175ae9d8)
@@ -51,15 +51,15 @@ ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators [20
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-02_Papers-Explained-173--ELECTRA-501c175ae9d8.html`); local copies under `wiki/assets/papers-explained-173-electra/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-02_Papers-Explained-173--ELECTRA-501c175ae9d8.md`); local copies under `wiki/assets/papers-explained-173-electra/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-173-electra/fig-1.png) | Paper title block: **ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators**. |
-| ![Figure 2](assets/papers-explained-173-electra/fig-2.png) | **Replaced token detection**: small **generator** MLM fills masks; **discriminator** labels each token original vs replaced (“the chef **ate** the meal”). |
-| ![Figure 3](assets/papers-explained-173-electra/fig-3.png) | **Corruption construction**: sample mask positions, `[MASK]` input, generator samples \(\hat{x}_i\), build \(x^{\text{corrupt}}\). |
-| ![Figure 4](assets/papers-explained-173-electra/fig-4.png) | **Losses**: generator **MLM** \(\mathcal{L}_{\text{MLM}}\) and discriminator **binary** \(\mathcal{L}_{\text{Disc}}\) over all positions. |
-| ![Figure 5](assets/papers-explained-173-electra/fig-5.png) | **Joint objective**: minimize \(\sum_x \mathcal{L}_{\text{MLM}}(x,\theta_G) + \lambda \mathcal{L}_{\text{Disc}}(x,\theta_D)\). |
+| ![Figure 1](assets/papers-explained-173-electra/fig-1.webp) | Paper title block: **ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators**. |
+| ![Figure 2](assets/papers-explained-173-electra/fig-2.webp) | **Replaced token detection**: small **generator** MLM fills masks; **discriminator** labels each token original vs replaced (“the chef **ate** the meal”). |
+| ![Figure 3](assets/papers-explained-173-electra/fig-3.webp) | **Corruption construction**: sample mask positions, `[MASK]` input, generator samples \(\hat{x}_i\), build \(x^{\text{corrupt}}\). |
+| ![Figure 4](assets/papers-explained-173-electra/fig-4.webp) | **Losses**: generator **MLM** \(\mathcal{L}_{\text{MLM}}\) and discriminator **binary** \(\mathcal{L}_{\text{Disc}}\) over all positions. |
+| ![Figure 5](assets/papers-explained-173-electra/fig-5.webp) | **Joint objective**: minimize \(\sum_x \mathcal{L}_{\text{MLM}}(x,\theta_G) + \lambda \mathcal{L}_{\text{Disc}}(x,\theta_D)\). |
 ## Related
 
 - [[Papers Explained Corpus]]

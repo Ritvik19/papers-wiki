@@ -1,3 +1,3 @@
 # gemini-3-search-ai-mode
 
-Canonical HTML: `raw/gemini-3-search-ai-mode/full-article.html`
+Canonical HTML: `raw/gemini-3-search-ai-mode/full-article.md`

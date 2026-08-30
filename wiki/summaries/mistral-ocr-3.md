@@ -1,6 +1,6 @@
 # Introducing Mistral OCR 3
 
-**Source**: `raw/mistral-ocr-3/full-article.html` (218 KB), `raw/mistral-ocr-3/full-article.md` (markdown view)  
+**Source**: `raw/mistral-ocr-3/full-article.md` (218 KB), `raw/mistral-ocr-3/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/mistral-ocr-3/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-01-26_Papers-Explained-Review-05--Generative-Adversarial-Networks-bbb51b160d5e.html`
+- Source file: `raw/2024-01-26_Papers-Explained-Review-05--Generative-Adversarial-Networks-bbb51b160d5e.md`
 - Source title: Papers Explained Review 05: Generative Adversarial Networks
 - Published: 2024-01-26
 - Canonical: [https://medium.com/@ritvik19/papers-explained-review-05-generative-adversarial-networks-bbb51b160d5e](https://medium.com/@ritvik19/papers-explained-review-05-generative-adversarial-networks-bbb51b160d5e)
@@ -225,20 +225,20 @@ Where the aim is to solve
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-01-26_Papers-Explained-Review-05--Generative-Adversarial-Networks-bbb51b160d5e.html`); local copies under `wiki/assets/papers-explained-review-05-generative-adversarial-networks/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-01-26_Papers-Explained-Review-05--Generative-Adversarial-Networks-bbb51b160d5e.md`); local copies under `wiki/assets/papers-explained-review-05-generative-adversarial-networks/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-review-05-generative-adversarial-networks/fig-1.png) | Title card: Generative Adversarial Networks. |
-| ![Figure 2](assets/papers-explained-review-05-generative-adversarial-networks/fig-2.png) | GAN Algorithm. |
-| ![Figure 3](assets/papers-explained-review-05-generative-adversarial-networks/fig-3.png) | cGAN. |
-| ![Figure 4](assets/papers-explained-review-05-generative-adversarial-networks/fig-4.png) | DCGAN generator used for LSUN scene modeling. |
-| ![Figure 5](assets/papers-explained-review-05-generative-adversarial-networks/fig-5.png) | WGAN Algorithm. |
-| ![Figure 6](assets/papers-explained-review-05-generative-adversarial-networks/fig-6.png) | Back to Top. |
-| ![Figure 7](assets/papers-explained-review-05-generative-adversarial-networks/fig-7.png) | Adversarial losses are applied to both mapping functions. For the mapping function G: X → Y and its discriminator DY, the objective is. |
-| ![Figure 8](assets/papers-explained-review-05-generative-adversarial-networks/fig-8.png) | Back to Top. |
-| ![Figure 9](assets/papers-explained-review-05-generative-adversarial-networks/fig-9.png) | Back to Top. |
-| ![Figure 10](assets/papers-explained-review-05-generative-adversarial-networks/fig-10.png) | Where the aim is to solve: Back to Top. |
+| ![Figure 1](assets/papers-explained-review-05-generative-adversarial-networks/fig-1.webp) | Title card: Generative Adversarial Networks. |
+| ![Figure 2](assets/papers-explained-review-05-generative-adversarial-networks/fig-2.webp) | GAN Algorithm. |
+| ![Figure 3](assets/papers-explained-review-05-generative-adversarial-networks/fig-3.webp) | cGAN. |
+| ![Figure 4](assets/papers-explained-review-05-generative-adversarial-networks/fig-4.webp) | DCGAN generator used for LSUN scene modeling. |
+| ![Figure 5](assets/papers-explained-review-05-generative-adversarial-networks/fig-5.webp) | WGAN Algorithm. |
+| ![Figure 6](assets/papers-explained-review-05-generative-adversarial-networks/fig-6.webp) | Back to Top. |
+| ![Figure 7](assets/papers-explained-review-05-generative-adversarial-networks/fig-7.webp) | Adversarial losses are applied to both mapping functions. For the mapping function G: X → Y and its discriminator DY, the objective is. |
+| ![Figure 8](assets/papers-explained-review-05-generative-adversarial-networks/fig-8.webp) | Back to Top. |
+| ![Figure 9](assets/papers-explained-review-05-generative-adversarial-networks/fig-9.webp) | Back to Top. |
+| ![Figure 10](assets/papers-explained-review-05-generative-adversarial-networks/fig-10.webp) | Where the aim is to solve: Back to Top. |
 ## Related
 
 - [[Papers Explained Corpus]]

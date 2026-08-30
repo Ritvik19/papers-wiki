@@ -1,6 +1,6 @@
 # Object Detection Part 4
 
-**Source**: `raw/2018-12-27-object-recognition-part-4/full-article.html` (88 KB); secondary: `raw/2018-12-27-object-recognition-part-4/full-article.md`  
+**Source**: `raw/2018-12-27-object-recognition-part-4/full-article.md` (88 KB); secondary: `raw/2018-12-27-object-recognition-part-4/full-article.md`  
 **Canonical URL**: https://lilianweng.github.io/posts/2018-12-27-object-recognition-part-4/  
 **Author**: Lilian Weng  
 **Published**: 2018-12-27  
@@ -39,19 +39,19 @@ Part 4 covers **one-stage object detectors** that skip explicit region proposal 
 
 | Figure | Caption |
 |--------|---------|
-| ![YOLO workflow](../assets/2018-12-27-object-recognition-part-4/fig-1.png) | Grid cells, box predictions, confidence and class outputs. |
-| ![YOLO network](../assets/2018-12-27-object-recognition-part-4/fig-2.png) | GoogLeNet-style backbone + FC output tensor. |
-| ![YOLO responsible predictor](../assets/2018-12-27-object-recognition-part-4/fig-3.png) | Highest-IoU box in cell handles object loss. |
-| ![SSD architecture](../assets/2018-12-27-object-recognition-part-4/fig-4.png) | VGG-16 + extra conv pyramid layers. |
-| ![SSD framework](../assets/2018-12-27-object-recognition-part-4/fig-5.png) | Multi-scale anchors on 8×8 vs 4×4 maps. |
-| ![SSD anchor scales](../assets/2018-12-27-object-recognition-part-4/fig-6.png) | Box size vs layer index \(\ell\). |
-| ![YOLOv2 location prediction](../assets/2018-12-27-object-recognition-part-4/fig-7.png) | Anchor-relative sigmoid/exp parameterization. |
-| ![WordTree](../assets/2018-12-27-object-recognition-part-4/fig-8.png) | COCO + ImageNet hierarchy for YOLO9000. |
-| ![Focal loss curve](../assets/2018-12-27-object-recognition-part-4/fig-9.png) | \((1-p_t)^\gamma\) down-weights easy examples. |
-| ![Focal loss weights](../assets/2018-12-27-object-recognition-part-4/fig-10.png) | \(\alpha(1-p_t)^\gamma\) vs \(p_t\) for different hyperparameters. |
-| ![FPN pyramid](../assets/2018-12-27-object-recognition-part-4/fig-11.png) | Top-down pathway merging coarse and fine features. |
-| ![RetinaNet architecture](../assets/2018-12-27-object-recognition-part-4/fig-12.png) | ResNet + FPN + classification/regression subnets. |
-| ![Speed vs mAP chart](../assets/2018-12-27-object-recognition-part-4/fig-13.png) | YOLOv3, SSD, RetinaNet compared on COCO-style metrics. |
+| ![YOLO workflow](../assets/2018-12-27-object-recognition-part-4/fig-1.webp) | Grid cells, box predictions, confidence and class outputs. |
+| ![YOLO network](../assets/2018-12-27-object-recognition-part-4/fig-2.webp) | GoogLeNet-style backbone + FC output tensor. |
+| ![YOLO responsible predictor](../assets/2018-12-27-object-recognition-part-4/fig-3.webp) | Highest-IoU box in cell handles object loss. |
+| ![SSD architecture](../assets/2018-12-27-object-recognition-part-4/fig-4.webp) | VGG-16 + extra conv pyramid layers. |
+| ![SSD framework](../assets/2018-12-27-object-recognition-part-4/fig-5.webp) | Multi-scale anchors on 8×8 vs 4×4 maps. |
+| ![SSD anchor scales](../assets/2018-12-27-object-recognition-part-4/fig-6.webp) | Box size vs layer index \(\ell\). |
+| ![YOLOv2 location prediction](../assets/2018-12-27-object-recognition-part-4/fig-7.webp) | Anchor-relative sigmoid/exp parameterization. |
+| ![WordTree](../assets/2018-12-27-object-recognition-part-4/fig-8.webp) | COCO + ImageNet hierarchy for YOLO9000. |
+| ![Focal loss curve](../assets/2018-12-27-object-recognition-part-4/fig-9.webp) | \((1-p_t)^\gamma\) down-weights easy examples. |
+| ![Focal loss weights](../assets/2018-12-27-object-recognition-part-4/fig-10.webp) | \(\alpha(1-p_t)^\gamma\) vs \(p_t\) for different hyperparameters. |
+| ![FPN pyramid](../assets/2018-12-27-object-recognition-part-4/fig-11.webp) | Top-down pathway merging coarse and fine features. |
+| ![RetinaNet architecture](../assets/2018-12-27-object-recognition-part-4/fig-12.webp) | ResNet + FPN + classification/regression subnets. |
+| ![Speed vs mAP chart](../assets/2018-12-27-object-recognition-part-4/fig-13.webp) | YOLOv3, SSD, RetinaNet compared on COCO-style metrics. |
 
 ## YOLO v1 (detailed)
 
@@ -82,7 +82,7 @@ VGG-16 + extra conv layers → pyramid; **default boxes** per feature cell; scal
 
 CE on objectness: \(\text{CE}(p_t) = -\log p_t\) where \(p_t = p\) if \(y=1\) else \(1-p\). **Focal**: \(\text{FL}(p_t) = -(1-p_t)^\gamma \log p_t\); easy examples (\(p_t \to 1\)) down-weighted. Best: \(\alpha=0.25, \gamma=2\). Backbone: [[Papers Explained 21 - Feature Pyramid Network|FPN]] on ResNet—see featurized pyramid figure.
 
-![Speed vs mAP](../assets/2018-12-27-object-recognition-part-4/fig-13.png)
+![Speed vs mAP](../assets/2018-12-27-object-recognition-part-4/fig-13.webp)
 
 ## Entities
 

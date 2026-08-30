@@ -1,6 +1,6 @@
 # Kimina-Prover-RL
 
-**Source**: `raw/kimina-prover-rl/full-article.html` (236 KB), `raw/kimina-prover-rl/full-article.md`
+**Source**: `raw/kimina-prover-rl/full-article.md` (236 KB), `raw/kimina-prover-rl/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

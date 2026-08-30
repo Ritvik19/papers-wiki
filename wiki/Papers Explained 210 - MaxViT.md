@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-09-13_Papers-Explained-210--MaxViT-6c68cc515413.html`
+- Source file: `raw/2024-09-13_Papers-Explained-210--MaxViT-6c68cc515413.md`
 - Source title: Papers Explained 210: MaxViT
 - Published: 2024-09-13
 - Canonical: [https://medium.com/@ritvik19/papers-explained-210-maxvit-6c68cc515413](https://medium.com/@ritvik19/papers-explained-210-maxvit-6c68cc515413)
@@ -107,17 +107,17 @@ Recommended Reading. [Vision Transformers](https://ritvik19.medium.com/list/visi
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-09-13_Papers-Explained-210--MaxViT-6c68cc515413.html`); local copies under `wiki/assets/papers-explained-210-maxvit/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-09-13_Papers-Explained-210--MaxViT-6c68cc515413.md`); local copies under `wiki/assets/papers-explained-210-maxvit/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-210-maxvit/fig-1.png) | MaxViT: Multi-Axis Vision Transformer Overview. |
-| ![Figure 2](assets/papers-explained-210-maxvit/fig-2.png) | Multi-axis self-attention (Max-SA): Blocked local and dilated global attention. |
-| ![Figure 3](assets/papers-explained-210-maxvit/fig-3.png) | MaxViT Architecture: Sequential stacking of local and global interactions. |
-| ![Figure 4](assets/papers-explained-210-maxvit/fig-4.png) | MaxViT Architecture Variants: Hierarchical backbone configuration. |
-| ![Figure 5](assets/papers-explained-210-maxvit/fig-5.png) | Performance comparison under ImageNet-1K setting. |
-| ![Figure 6](assets/papers-explained-210-maxvit/fig-6.png) | Performance comparison for large-scale data regimes: ImageNet21K and JFT pretrained models. |
-| ![Figure 7](assets/papers-explained-210-maxvit/fig-7.png) | Comparison of two-stage object detection and instance segmentation on COCO2017. |
+| ![Figure 1](assets/papers-explained-210-maxvit/fig-1.webp) | MaxViT: Multi-Axis Vision Transformer Overview. |
+| ![Figure 2](assets/papers-explained-210-maxvit/fig-2.webp) | Multi-axis self-attention (Max-SA): Blocked local and dilated global attention. |
+| ![Figure 3](assets/papers-explained-210-maxvit/fig-3.webp) | MaxViT Architecture: Sequential stacking of local and global interactions. |
+| ![Figure 4](assets/papers-explained-210-maxvit/fig-4.webp) | MaxViT Architecture Variants: Hierarchical backbone configuration. |
+| ![Figure 5](assets/papers-explained-210-maxvit/fig-5.webp) | Performance comparison under ImageNet-1K setting. |
+| ![Figure 6](assets/papers-explained-210-maxvit/fig-6.webp) | Performance comparison for large-scale data regimes: ImageNet21K and JFT pretrained models. |
+| ![Figure 7](assets/papers-explained-210-maxvit/fig-7.webp) | Comparison of two-stage object detection and instance segmentation on COCO2017. |
 ## Related
 
 - [[Papers Explained Corpus]]

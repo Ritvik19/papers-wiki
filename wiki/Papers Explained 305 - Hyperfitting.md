@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-02-07_Papers-Explained-305--Hyperfitting-8d9ad63797cd.html`
+- Source file: `raw/2025-02-07_Papers-Explained-305--Hyperfitting-8d9ad63797cd.md`
 - Source title: Papers Explained 305: Hyperfitting
 - Published: 2025-02-07
 - Canonical: [https://medium.com/@ritvik19/papers-explained-305-hyperfitting-8d9ad63797cd](https://medium.com/@ritvik19/papers-explained-305-hyperfitting-8d9ad63797cd)
@@ -109,18 +109,18 @@ The Hyperfitting Phenomenon: Sharpening and Stabilizing LLMs for Open-Ended Text
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-02-07_Papers-Explained-305--Hyperfitting-8d9ad63797cd.html`); local copies under `wiki/assets/papers-explained-305-hyperfitting/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-02-07_Papers-Explained-305--Hyperfitting-8d9ad63797cd.md`); local copies under `wiki/assets/papers-explained-305-hyperfitting/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-305-hyperfitting/fig-1.png) | Title card: Hyperfitting. |
-| ![Figure 2](assets/papers-explained-305-hyperfitting/fig-2.png) | Training and validation loss for TinyLlama during overfitting, along with the resulting mean type-token-ratio when greedily generating 96 tokens from contexts in the validation data. |
-| ![Figure 3](assets/papers-explained-305-hyperfitting/fig-3.png) | Comparison of perplexity over contexts, human preference of generated texts, and lexical variation (as measured by TTR). |
-| ![Figure 4](assets/papers-explained-305-hyperfitting/fig-4.png) | Diversity metrics for generated texts of 96 tokens. |
-| ![Figure 5](assets/papers-explained-305-hyperfitting/fig-5.png) | Distributions predicted for the original texts (context + continuation). |
-| ![Figure 6](assets/papers-explained-305-hyperfitting/fig-6.png) | Left: Top-1 rank similarity matrix of Llama 3.1 (8B) hyperfitted on identical, but shuffled, data. Right: The resulting mean TTR of 300 generated texts as the number of training samples vary. |
-| ![Figure 7](assets/papers-explained-305-hyperfitting/fig-7.png) | Human success ratio for 256 token lengths across Fiction, Wiki, and News datasets. |
-| ![Figure 8](assets/papers-explained-305-hyperfitting/fig-8.png) | Examples of generated images using greedy decoding when passed 25% of an image. |
+| ![Figure 1](assets/papers-explained-305-hyperfitting/fig-1.webp) | Title card: Hyperfitting. |
+| ![Figure 2](assets/papers-explained-305-hyperfitting/fig-2.webp) | Training and validation loss for TinyLlama during overfitting, along with the resulting mean type-token-ratio when greedily generating 96 tokens from contexts in the validation data. |
+| ![Figure 3](assets/papers-explained-305-hyperfitting/fig-3.webp) | Comparison of perplexity over contexts, human preference of generated texts, and lexical variation (as measured by TTR). |
+| ![Figure 4](assets/papers-explained-305-hyperfitting/fig-4.webp) | Diversity metrics for generated texts of 96 tokens. |
+| ![Figure 5](assets/papers-explained-305-hyperfitting/fig-5.webp) | Distributions predicted for the original texts (context + continuation). |
+| ![Figure 6](assets/papers-explained-305-hyperfitting/fig-6.webp) | Left: Top-1 rank similarity matrix of Llama 3.1 (8B) hyperfitted on identical, but shuffled, data. Right: The resulting mean TTR of 300 generated texts as the number of training samples vary. |
+| ![Figure 7](assets/papers-explained-305-hyperfitting/fig-7.webp) | Human success ratio for 256 token lengths across Fiction, Wiki, and News datasets. |
+| ![Figure 8](assets/papers-explained-305-hyperfitting/fig-8.webp) | Examples of generated images using greedy decoding when passed 25% of an image. |
 ## Related
 
 - [[Papers Explained Corpus]]

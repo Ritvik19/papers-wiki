@@ -1,6 +1,6 @@
 # Open-R1: A Fully Open Reproduction of DeepSeek-R1
 
-**Source**: `raw/open-r1/full-article.html` (500 KB), `raw/open-r1/full-article.md`
+**Source**: `raw/open-r1/full-article.md` (500 KB), `raw/open-r1/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

@@ -1,6 +1,6 @@
 # Mixtral of experts
 
-**Source**: `raw/mixtral-of-experts/full-article.html` (217 KB), `raw/mixtral-of-experts/full-article.md` (markdown view)  
+**Source**: `raw/mixtral-of-experts/full-article.md` (217 KB), `raw/mixtral-of-experts/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/mixtral-of-experts/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

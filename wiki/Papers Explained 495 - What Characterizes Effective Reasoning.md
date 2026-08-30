@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-11-19_Papers-Explained-495--What-Characterizes-Effective-Reasoning-8cf140bdb4e1.html`
+- Source file: `raw/2025-11-19_Papers-Explained-495--What-Characterizes-Effective-Reasoning-8cf140bdb4e1.md`
 - Source title: Papers Explained 495: What Characterizes Effective Reasoning
 - Published: 2025-11-19
 - Canonical: [https://medium.com/@ritvik19/papers-explained-495-what-characterizes-effective-reasoning-8cf140bdb4e1](https://medium.com/@ritvik19/papers-explained-495-what-characterizes-effective-reasoning-8cf140bdb4e1)
@@ -181,21 +181,21 @@ What Characterizes Effective Reasoning? Revisiting Length, Review, and Structure
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-11-19_Papers-Explained-495--What-Characterizes-Effective-Reasoning-8cf140bdb4e1.html`); local copies under `wiki/assets/papers-explained-495-what-characterizes-effective-reasoning/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-11-19_Papers-Explained-495--What-Characterizes-Effective-Reasoning-8cf140bdb4e1.md`); local copies under `wiki/assets/papers-explained-495-what-characterizes-effective-reasoning/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-495-what-characterizes-effective-reasoning/fig-1.png) | Title card: What Characterizes Effective Reasoning. |
-| ![Figure 2](assets/papers-explained-495-what-characterizes-effective-reasoning/fig-2.png) | Review behaviors are measured with an LLM-as-a-judge procedure. |
-| ![Figure 3](assets/papers-explained-495-what-characterizes-effective-reasoning/fig-3.png) | With the annotation, the character-level Review Ratio for each reasoning trace is calculated. |
-| ![Figure 4](assets/papers-explained-495-what-characterizes-effective-reasoning/fig-4.png) | Failed-Step Fraction, the fraction of reasoning nodes in the graph that are marked as failed/abandoned. |
-| ![Figure 5](assets/papers-explained-495-what-characterizes-effective-reasoning/fig-5.png) | Failed-Step Fraction, the fraction of reasoning nodes in the graph that are marked as failed/abandoned. |
-| ![Figure 6](assets/papers-explained-495-what-characterizes-effective-reasoning/fig-6.png) | Distribution of the three metrics — Length, Review Ratio, and Failed-Step Fraction and their correlation with accuracy. |
-| ![Figure 7](assets/papers-explained-495-what-characterizes-effective-reasoning/fig-7.png) | Conditional correlations computed on the full dataset. |
-| ![Figure 8](assets/papers-explained-495-what-characterizes-effective-reasoning/fig-8.png) | Conditional correlation by human-labeled difficulty level for generated CoTs. |
-| ![Figure 9](assets/papers-explained-495-what-characterizes-effective-reasoning/fig-9.png) | Pass@1 with test-time selection by length, Review Ratio, and FSF. |
-| ![Figure 10](assets/papers-explained-495-what-characterizes-effective-reasoning/fig-10.png) | Visualization of the continuation generation setup. |
-| ![Figure 11](assets/papers-explained-495-what-characterizes-effective-reasoning/fig-11.png) | Accuracy reported as mean ± standard deviation (in %). |
+| ![Figure 1](assets/papers-explained-495-what-characterizes-effective-reasoning/fig-1.webp) | Title card: What Characterizes Effective Reasoning. |
+| ![Figure 2](assets/papers-explained-495-what-characterizes-effective-reasoning/fig-2.webp) | Review behaviors are measured with an LLM-as-a-judge procedure. |
+| ![Figure 3](assets/papers-explained-495-what-characterizes-effective-reasoning/fig-3.webp) | With the annotation, the character-level Review Ratio for each reasoning trace is calculated. |
+| ![Figure 4](assets/papers-explained-495-what-characterizes-effective-reasoning/fig-4.webp) | Failed-Step Fraction, the fraction of reasoning nodes in the graph that are marked as failed/abandoned. |
+| ![Figure 5](assets/papers-explained-495-what-characterizes-effective-reasoning/fig-5.webp) | Failed-Step Fraction, the fraction of reasoning nodes in the graph that are marked as failed/abandoned. |
+| ![Figure 6](assets/papers-explained-495-what-characterizes-effective-reasoning/fig-6.webp) | Distribution of the three metrics — Length, Review Ratio, and Failed-Step Fraction and their correlation with accuracy. |
+| ![Figure 7](assets/papers-explained-495-what-characterizes-effective-reasoning/fig-7.webp) | Conditional correlations computed on the full dataset. |
+| ![Figure 8](assets/papers-explained-495-what-characterizes-effective-reasoning/fig-8.webp) | Conditional correlation by human-labeled difficulty level for generated CoTs. |
+| ![Figure 9](assets/papers-explained-495-what-characterizes-effective-reasoning/fig-9.webp) | Pass@1 with test-time selection by length, Review Ratio, and FSF. |
+| ![Figure 10](assets/papers-explained-495-what-characterizes-effective-reasoning/fig-10.webp) | Visualization of the continuation generation setup. |
+| ![Figure 11](assets/papers-explained-495-what-characterizes-effective-reasoning/fig-11.webp) | Accuracy reported as mean ± standard deviation (in %). |
 ## Related
 
 - [[Papers Explained Corpus]]

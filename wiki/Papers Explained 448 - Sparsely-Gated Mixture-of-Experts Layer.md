@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-09-08_Papers-Explained-448--Sparsely-Gated-Mixture-of-Experts-Layer-e3462e8c0232.html`
+- Source file: `raw/2025-09-08_Papers-Explained-448--Sparsely-Gated-Mixture-of-Experts-Layer-e3462e8c0232.md`
 - Source title: Papers Explained 448: Sparsely-Gated Mixture-of-Experts Layer
 - Published: 2025-09-08
 - Canonical: [https://medium.com/@ritvik19/papers-explained-448-sparsely-gated-mixture-of-experts-layer-e3462e8c0232](https://medium.com/@ritvik19/papers-explained-448-sparsely-gated-mixture-of-experts-layer-e3462e8c0232)
@@ -141,26 +141,26 @@ Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer 
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-09-08_Papers-Explained-448--Sparsely-Gated-Mixture-of-Experts-Layer-e3462e8c0232.html`); local copies under `wiki/assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-09-08_Papers-Explained-448--Sparsely-Gated-Mixture-of-Experts-Layer-e3462e8c0232.md`); local copies under `wiki/assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-1.png) | Title card: Sparsely-Gated Mixture-of-Experts Layer. |
-| ![Figure 2](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-2.png) | A Mixture of Experts (MoE) layer embedded within a recurrent language model. |
-| ![Figure 3](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-3.png) | Computation is saved based on the sparsity of the output of G(x). |
-| ![Figure 4](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-4.png) | Noisy Top-K Gating: Two components are added to the Softmax gating network: sparsity and noise. |
-| ![Figure 5](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-5.png) | Noisy Top-K Gating: Two components are added to the Softmax gating network: sparsity and noise. |
-| ![Figure 6](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-6.png) | The importance of an expert relative to a batch of training examples is defined as the batchwise sum of the gate values for that expert. |
-| ![Figure 7](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-7.png) | Where kth_excluding(v, k, i) means the kth highest component of v, excluding component i. Simplifying. |
-| ![Figure 8](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-8.png) | Where kth_excluding(v, k, i) means the kth highest component of v, excluding component i. Simplifying. |
-| ![Figure 9](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-9.png) | Increasing Batch Size for a Recurrent MoE. |
-| ![Figure 10](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-10.png) | The load loss can now be defined to be the square of the coefficient of variation of the load vector, multiplied by a hand-tuned scaling... |
-| ![Figure 11](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-11.png) | Model comparison on 1-Billion-Word Language-Modeling Benchmark. |
-| ![Figure 12](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-12.png) | Language modeling on a 100 billion word corpus. |
-| ![Figure 13](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-13.png) | Results on WMT’14 En→ Fr newstest2014. |
-| ![Figure 14](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-14.png) | Results on WMT’14 En → De newstest2014. |
-| ![Figure 15](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-15.png) | Results on the Google Production En→ Fr dataset. |
-| ![Figure 16](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-16.png) | Multilingual Machine Translation. |
+| ![Figure 1](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-1.webp) | Title card: Sparsely-Gated Mixture-of-Experts Layer. |
+| ![Figure 2](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-2.webp) | A Mixture of Experts (MoE) layer embedded within a recurrent language model. |
+| ![Figure 3](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-3.webp) | Computation is saved based on the sparsity of the output of G(x). |
+| ![Figure 4](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-4.webp) | Noisy Top-K Gating: Two components are added to the Softmax gating network: sparsity and noise. |
+| ![Figure 5](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-5.webp) | Noisy Top-K Gating: Two components are added to the Softmax gating network: sparsity and noise. |
+| ![Figure 6](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-6.webp) | The importance of an expert relative to a batch of training examples is defined as the batchwise sum of the gate values for that expert. |
+| ![Figure 7](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-7.webp) | Where kth_excluding(v, k, i) means the kth highest component of v, excluding component i. Simplifying. |
+| ![Figure 8](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-8.webp) | Where kth_excluding(v, k, i) means the kth highest component of v, excluding component i. Simplifying. |
+| ![Figure 9](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-9.webp) | Increasing Batch Size for a Recurrent MoE. |
+| ![Figure 10](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-10.webp) | The load loss can now be defined to be the square of the coefficient of variation of the load vector, multiplied by a hand-tuned scaling... |
+| ![Figure 11](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-11.webp) | Model comparison on 1-Billion-Word Language-Modeling Benchmark. |
+| ![Figure 12](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-12.webp) | Language modeling on a 100 billion word corpus. |
+| ![Figure 13](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-13.webp) | Results on WMT’14 En→ Fr newstest2014. |
+| ![Figure 14](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-14.webp) | Results on WMT’14 En → De newstest2014. |
+| ![Figure 15](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-15.webp) | Results on the Google Production En→ Fr dataset. |
+| ![Figure 16](assets/papers-explained-448-sparsely-gated-mixture-of-experts-layer/fig-16.webp) | Multilingual Machine Translation. |
 ## Related
 
 - [[Papers Explained Corpus]]

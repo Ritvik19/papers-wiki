@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-03-17_Papers-Explained-542--Composition-RL-f537cd947a10.html`
+- Source file: `raw/2026-03-17_Papers-Explained-542--Composition-RL-f537cd947a10.md`
 - Source title: Papers Explained 542: Composition RL
 - Published: 2026-03-17
 - Canonical: [https://medium.com/@ritvik19/papers-explained-542-composition-rl-f537cd947a10](https://medium.com/@ritvik19/papers-explained-542-composition-rl-f537cd947a10)
@@ -121,14 +121,14 @@ Composition-RL: Compose Your Verifiable Prompts for Reinforcement Learning of La
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-03-17_Papers-Explained-542--Composition-RL-f537cd947a10.html`); local copies under `wiki/assets/papers-explained-542-composition-rl/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-03-17_Papers-Explained-542--Composition-RL-f537cd947a10.md`); local copies under `wiki/assets/papers-explained-542-composition-rl/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-542-composition-rl/fig-1.png) | Title card: Composition RL. |
-| ![Figure 2](assets/papers-explained-542-composition-rl/fig-2.png) | Overview of Composition-RL. |
-| ![Figure 3](assets/papers-explained-542-composition-rl/fig-3.png) | Results of Composition-RL across different benchmarks. |
-| ![Figure 4](assets/papers-explained-542-composition-rl/fig-4.png) | Results of cross-topic experiments across multiple benchmarks. |
+| ![Figure 1](assets/papers-explained-542-composition-rl/fig-1.webp) | Title card: Composition RL. |
+| ![Figure 2](assets/papers-explained-542-composition-rl/fig-2.webp) | Overview of Composition-RL. |
+| ![Figure 3](assets/papers-explained-542-composition-rl/fig-3.webp) | Results of Composition-RL across different benchmarks. |
+| ![Figure 4](assets/papers-explained-542-composition-rl/fig-4.webp) | Results of cross-topic experiments across multiple benchmarks. |
 ## Related
 
 - [[Papers Explained Corpus]]

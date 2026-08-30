@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-09-30_Papers-Explained-221--Reader-LM-7382b9eb6ed9.html`
+- Source file: `raw/2024-09-30_Papers-Explained-221--Reader-LM-7382b9eb6ed9.md`
 - Source title: Papers Explained 221: Reader-LM
 - Published: 2024-09-30
 - Canonical: [https://medium.com/@ritvik19/papers-explained-221-reader-lm-7382b9eb6ed9](https://medium.com/@ritvik19/papers-explained-221-reader-lm-7382b9eb6ed9)
@@ -125,16 +125,16 @@ The following uniform instruction is used as the prefix prompt:
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-09-30_Papers-Explained-221--Reader-LM-7382b9eb6ed9.html`); local copies under `wiki/assets/papers-explained-221-reader-lm/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-09-30_Papers-Explained-221--Reader-LM-7382b9eb6ed9.md`); local copies under `wiki/assets/papers-explained-221-reader-lm/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-221-reader-lm/fig-1.png) | Title card: Reader-LM. |
-| ![Figure 2](assets/papers-explained-221-reader-lm/fig-2.png) | Illustration of reader-lm. |
-| ![Figure 3](assets/papers-explained-221-reader-lm/fig-3.png) | The model training is conducted in two stages. |
-| ![Figure 4](assets/papers-explained-221-reader-lm/fig-4.png) | An example of degeneration occurs when the model begins with normal markdown generation but suddenly gets stuck in “dull loops,” as indicated by the red arrows. |
-| ![Figure 5](assets/papers-explained-221-reader-lm/fig-5.png) | Two models are developed of sizes 0.5B and 1.5B. |
-| ![Figure 6](assets/papers-explained-221-reader-lm/fig-6.png) | The following uniform instruction is used as the prefix prompt. |
+| ![Figure 1](assets/papers-explained-221-reader-lm/fig-1.webp) | Title card: Reader-LM. |
+| ![Figure 2](assets/papers-explained-221-reader-lm/fig-2.webp) | Illustration of reader-lm. |
+| ![Figure 3](assets/papers-explained-221-reader-lm/fig-3.webp) | The model training is conducted in two stages. |
+| ![Figure 4](assets/papers-explained-221-reader-lm/fig-4.webp) | An example of degeneration occurs when the model begins with normal markdown generation but suddenly gets stuck in “dull loops,” as indicated by the red arrows. |
+| ![Figure 5](assets/papers-explained-221-reader-lm/fig-5.webp) | Two models are developed of sizes 0.5B and 1.5B. |
+| ![Figure 6](assets/papers-explained-221-reader-lm/fig-6.webp) | The following uniform instruction is used as the prefix prompt. |
 ## Related
 
 - [[Papers Explained Corpus]]

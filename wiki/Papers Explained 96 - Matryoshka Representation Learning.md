@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-01-31_Papers-Explained-96--Matryoshka-Representation-Learning-e7a139f6ad27.html`
+- Source file: `raw/2024-01-31_Papers-Explained-96--Matryoshka-Representation-Learning-e7a139f6ad27.md`
 - Source title: Papers Explained 96: Matryoshka Representation Learning
 - Published: 2024-01-31
 - Canonical: [https://medium.com/@ritvik19/papers-explained-matryoshka-representation-learning-e7a139f6ad27](https://medium.com/@ritvik19/papers-explained-matryoshka-representation-learning-e7a139f6ad27)
@@ -213,18 +213,18 @@ Recommended Reading: [Retrieval and Representation Learning](https://ritvik19.me
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-01-31_Papers-Explained-96--Matryoshka-Representation-Learning-e7a139f6ad27.html`); local copies under `wiki/assets/papers-explained-96-matryoshka-representation-learning/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-01-31_Papers-Explained-96--Matryoshka-Representation-Learning-e7a139f6ad27.md`); local copies under `wiki/assets/papers-explained-96-matryoshka-representation-learning/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-96-matryoshka-representation-learning/fig-1.png) | Title card: Matryoshka Representation Learning. |
-| ![Figure 2](assets/papers-explained-96-matryoshka-representation-learning/fig-2.png) | MRL code and pretrained models are available at GitHub. |
-| ![Figure 3](assets/papers-explained-96-matryoshka-representation-learning/fig-3.png) | Given a labeled dataset, D = {(x1, y1),. |
-| ![Figure 4](assets/papers-explained-96-matryoshka-representation-learning/fig-4.png) | ImageNet-1K linear classification accuracy of ResNet50 models. |
-| ![Figure 5](assets/papers-explained-96-matryoshka-representation-learning/fig-5.png) | ImageNet-1K 1-NN accuracy of ResNet50 models measuring the representation quality for downstream task. |
-| ![Figure 6](assets/papers-explained-96-matryoshka-representation-learning/fig-6.png) | ImageNet-1K 1-NN accuracy for ViT-B/16 models trained on JFT-300M & as part of ALIGN. |
-| ![Figure 7](assets/papers-explained-96-matryoshka-representation-learning/fig-7.png) | ImageNet-1K 1-NN accuracy for various models. |
-| ![Figure 8](assets/papers-explained-96-matryoshka-representation-learning/fig-8.png) | mAP@10 for Image Retrieval on ImageNet-1K with ResNet50. |
+| ![Figure 1](assets/papers-explained-96-matryoshka-representation-learning/fig-1.webp) | Title card: Matryoshka Representation Learning. |
+| ![Figure 2](assets/papers-explained-96-matryoshka-representation-learning/fig-2.webp) | MRL code and pretrained models are available at GitHub. |
+| ![Figure 3](assets/papers-explained-96-matryoshka-representation-learning/fig-3.webp) | Given a labeled dataset, D = {(x1, y1),. |
+| ![Figure 4](assets/papers-explained-96-matryoshka-representation-learning/fig-4.webp) | ImageNet-1K linear classification accuracy of ResNet50 models. |
+| ![Figure 5](assets/papers-explained-96-matryoshka-representation-learning/fig-5.webp) | ImageNet-1K 1-NN accuracy of ResNet50 models measuring the representation quality for downstream task. |
+| ![Figure 6](assets/papers-explained-96-matryoshka-representation-learning/fig-6.webp) | ImageNet-1K 1-NN accuracy for ViT-B/16 models trained on JFT-300M & as part of ALIGN. |
+| ![Figure 7](assets/papers-explained-96-matryoshka-representation-learning/fig-7.webp) | ImageNet-1K 1-NN accuracy for various models. |
+| ![Figure 8](assets/papers-explained-96-matryoshka-representation-learning/fig-8.webp) | mAP@10 for Image Retrieval on ImageNet-1K with ResNet50. |
 ## HF Blog Cross-References
 
 - [Introduction to Matryoshka Embedding Models](https://huggingface.co/blog/matryoshka) — a practical Sentence Transformers guide to training and using Matryoshka embedding models (applying the MRL idea above to text embeddings): truncating a single embedding to shorter prefixes for a storage/speed-vs-accuracy trade-off, with a `MatryoshkaLoss` wrapper usable on top of any base loss. Distinct from [[Papers Explained 204 - Matryoshka Adaptor]], which adapts frozen embeddings post-hoc rather than training nested representations directly.

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-03-27_Papers-Explained-549--TinyLoRA-e70da95c5d44.html`
+- Source file: `raw/2026-03-27_Papers-Explained-549--TinyLoRA-e70da95c5d44.md`
 - Source title: Papers Explained 549: TinyLoRA
 - Published: 2026-03-27
 - Canonical: [https://medium.com/@ritvik19/papers-explained-449-tinylora-e70da95c5d44](https://medium.com/@ritvik19/papers-explained-449-tinylora-e70da95c5d44)
@@ -159,21 +159,21 @@ Learning to Reason in 13 Parameters [2602.04118](https://arxiv.org/abs/2602.0411
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-03-27_Papers-Explained-549--TinyLoRA-e70da95c5d44.html`); local copies under `wiki/assets/papers-explained-549-tinylora/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-03-27_Papers-Explained-549--TinyLoRA-e70da95c5d44.md`); local copies under `wiki/assets/papers-explained-549-tinylora/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-549-tinylora/fig-1.png) | Title card: TinyLoRA. |
-| ![Figure 2](assets/papers-explained-549-tinylora/fig-2.png) | Training Data and Information Content. |
-| ![Figure 3](assets/papers-explained-549-tinylora/fig-3.png) | Training Data and Information Content. |
-| ![Figure 4](assets/papers-explained-549-tinylora/fig-4.png) | Even with r= 1, LoRA-XS requires at least one parameter per adapted module. |
-| ![Figure 5](assets/papers-explained-549-tinylora/fig-5.png) | Parameter usage comparison per-layer with m adapted modules per layer, model width d, rank r, and TinyLoRA projection dimension u. |
-| ![Figure 6](assets/papers-explained-549-tinylora/fig-6.png) | Training specifics differ for each dataset:: Efficiency of TinyLoRA on GSM8K. |
-| ![Figure 7](assets/papers-explained-549-tinylora/fig-7.png) | Qwen vs. |
-| ![Figure 8](assets/papers-explained-549-tinylora/fig-8.png) | Performance on math reasoning using Qwen2.5 models. |
-| ![Figure 9](assets/papers-explained-549-tinylora/fig-9.png) | TinyLoRA performance (on GSM8K GRPO). |
-| ![Figure 10](assets/papers-explained-549-tinylora/fig-10.png) | LoRA vs. |
-| ![Figure 11](assets/papers-explained-549-tinylora/fig-11.png) | Model size vs. |
+| ![Figure 1](assets/papers-explained-549-tinylora/fig-1.webp) | Title card: TinyLoRA. |
+| ![Figure 2](assets/papers-explained-549-tinylora/fig-2.webp) | Training Data and Information Content. |
+| ![Figure 3](assets/papers-explained-549-tinylora/fig-3.webp) | Training Data and Information Content. |
+| ![Figure 4](assets/papers-explained-549-tinylora/fig-4.webp) | Even with r= 1, LoRA-XS requires at least one parameter per adapted module. |
+| ![Figure 5](assets/papers-explained-549-tinylora/fig-5.webp) | Parameter usage comparison per-layer with m adapted modules per layer, model width d, rank r, and TinyLoRA projection dimension u. |
+| ![Figure 6](assets/papers-explained-549-tinylora/fig-6.webp) | Training specifics differ for each dataset:: Efficiency of TinyLoRA on GSM8K. |
+| ![Figure 7](assets/papers-explained-549-tinylora/fig-7.webp) | Qwen vs. |
+| ![Figure 8](assets/papers-explained-549-tinylora/fig-8.webp) | Performance on math reasoning using Qwen2.5 models. |
+| ![Figure 9](assets/papers-explained-549-tinylora/fig-9.webp) | TinyLoRA performance (on GSM8K GRPO). |
+| ![Figure 10](assets/papers-explained-549-tinylora/fig-10.webp) | LoRA vs. |
+| ![Figure 11](assets/papers-explained-549-tinylora/fig-11.webp) | Model size vs. |
 ## Related
 
 - [[Papers Explained Corpus]]

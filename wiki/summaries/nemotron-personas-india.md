@@ -1,6 +1,6 @@
 # Nemotron-Personas-India: Synthesized Data for Sovereign AI
 
-**Source**: `raw/nemotron-personas-india/full-article.html`, `raw/nemotron-personas-india/full-article.md`
+**Source**: `raw/nemotron-personas-india/full-article.md`, `raw/nemotron-personas-india/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

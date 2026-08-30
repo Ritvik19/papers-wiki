@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-10-06_Papers-Explained-468--NaturalThoughts-360e8075f17c.html`
+- Source file: `raw/2025-10-06_Papers-Explained-468--NaturalThoughts-360e8075f17c.md`
 - Source title: Papers Explained 468: NaturalThoughts
 - Published: 2025-10-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-468-naturalthoughts-360e8075f17c](https://medium.com/@ritvik19/papers-explained-468-naturalthoughts-360e8075f17c)
@@ -127,18 +127,18 @@ NaturalThoughts: Selecting and Distilling Reasoning Traces for General Reasoning
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-10-06_Papers-Explained-468--NaturalThoughts-360e8075f17c.html`); local copies under `wiki/assets/papers-explained-468-naturalthoughts/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-10-06_Papers-Explained-468--NaturalThoughts-360e8075f17c.md`); local copies under `wiki/assets/papers-explained-468-naturalthoughts/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-468-naturalthoughts/fig-1.png) | Title card: NaturalThoughts. |
-| ![Figure 2](assets/papers-explained-468-naturalthoughts/fig-2.png) | NaturalThoughts Overview. |
-| ![Figure 3](assets/papers-explained-468-naturalthoughts/fig-3.png) | Reasoning data scaling and selection for the Llama-3.1–8b-Instruct student model. |
-| ![Figure 4](assets/papers-explained-468-naturalthoughts/fig-4.png) | Reasoning data scaling and selection for the Qwen-2.5–7B-Instruct student model. |
-| ![Figure 5](assets/papers-explained-468-naturalthoughts/fig-5.png) | Comparison of NaturalThoughts (NT) with existing distillation datasets, when training Llama-3.1–8BInstruct (Top) and Qwen-2.5–7B-Instruct (Bottom) respectively. |
-| ![Figure 6](assets/papers-explained-468-naturalthoughts/fig-6.png) | Generation length distributions of System-1 and System-2 reasoning for GPQA-Diamond. |
-| ![Figure 7](assets/papers-explained-468-naturalthoughts/fig-7.png) | Scaling results with a larger model. |
-| ![Figure 8](assets/papers-explained-468-naturalthoughts/fig-8.png) | Mixed Reasoning Distillation. |
+| ![Figure 1](assets/papers-explained-468-naturalthoughts/fig-1.webp) | Title card: NaturalThoughts. |
+| ![Figure 2](assets/papers-explained-468-naturalthoughts/fig-2.webp) | NaturalThoughts Overview. |
+| ![Figure 3](assets/papers-explained-468-naturalthoughts/fig-3.webp) | Reasoning data scaling and selection for the Llama-3.1–8b-Instruct student model. |
+| ![Figure 4](assets/papers-explained-468-naturalthoughts/fig-4.webp) | Reasoning data scaling and selection for the Qwen-2.5–7B-Instruct student model. |
+| ![Figure 5](assets/papers-explained-468-naturalthoughts/fig-5.webp) | Comparison of NaturalThoughts (NT) with existing distillation datasets, when training Llama-3.1–8BInstruct (Top) and Qwen-2.5–7B-Instruct (Bottom) respectively. |
+| ![Figure 6](assets/papers-explained-468-naturalthoughts/fig-6.webp) | Generation length distributions of System-1 and System-2 reasoning for GPQA-Diamond. |
+| ![Figure 7](assets/papers-explained-468-naturalthoughts/fig-7.webp) | Scaling results with a larger model. |
+| ![Figure 8](assets/papers-explained-468-naturalthoughts/fig-8.webp) | Mixed Reasoning Distillation. |
 ## Related
 
 - [[Papers Explained Corpus]]

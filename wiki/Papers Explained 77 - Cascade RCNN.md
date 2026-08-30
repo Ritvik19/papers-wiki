@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-12-08_Papers-Explained-77--Cascade-RCNN-720b161d86e4.html`
+- Source file: `raw/2023-12-08_Papers-Explained-77--Cascade-RCNN-720b161d86e4.md`
 - Source title: Papers Explained 77: Cascade RCNN
 - Published: 2023-12-08
 - Canonical: [https://medium.com/@ritvik19/papers-explained-77-cascade-rcnn-720b161d86e4](https://medium.com/@ritvik19/papers-explained-77-cascade-rcnn-720b161d86e4)
@@ -47,14 +47,14 @@ Cascade R-CNN: Delving into High Quality Object Detection [1712.00726](https://a
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-12-08_Papers-Explained-77--Cascade-RCNN-720b161d86e4.html`); local copies under `wiki/assets/papers-explained-77-cascade-rcnn/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-12-08_Papers-Explained-77--Cascade-RCNN-720b161d86e4.md`); local copies under `wiki/assets/papers-explained-77-cascade-rcnn/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-77-cascade-rcnn/fig-1.png) | Title card: Cascade RCNN. |
-| ![Figure 2](assets/papers-explained-77-cascade-rcnn/fig-2.png) | The architectures of different frameworks. “I” is input image, “conv” backbone convolutions, “pool” region-wise feature extraction, “H” network head, “B” bounding box, and “C” classification. “B0” is proposals in all architectures. |
-| ![Figure 3](assets/papers-explained-77-cascade-rcnn/fig-3.png) | In Cascade R-CNN, bounding box regression is framed as a cascaded regression problem, relying on a cascade of specialized regressors. |
-| ![Figure 4](assets/papers-explained-77-cascade-rcnn/fig-4.png) | At each stage t, the R-CNN includes a classifier ht and a regressor ft optimized for IoU threshold ut, where ut > ut−1. |
+| ![Figure 1](assets/papers-explained-77-cascade-rcnn/fig-1.webp) | Title card: Cascade RCNN. |
+| ![Figure 2](assets/papers-explained-77-cascade-rcnn/fig-2.webp) | The architectures of different frameworks. “I” is input image, “conv” backbone convolutions, “pool” region-wise feature extraction, “H” network head, “B” bounding box, and “C” classification. “B0” is proposals in all architectures. |
+| ![Figure 3](assets/papers-explained-77-cascade-rcnn/fig-3.webp) | In Cascade R-CNN, bounding box regression is framed as a cascaded regression problem, relying on a cascade of specialized regressors. |
+| ![Figure 4](assets/papers-explained-77-cascade-rcnn/fig-4.webp) | At each stage t, the R-CNN includes a classifier ht and a regressor ft optimized for IoU threshold ut, where ut > ut−1. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-06-25_Papers-Explained-395--AceReason-Nemotron-1-1-f2747af699a5.html`
+- Source file: `raw/2025-06-25_Papers-Explained-395--AceReason-Nemotron-1-1-f2747af699a5.md`
 - Source title: Papers Explained 395: AceReason-Nemotron 1.1
 - Published: 2025-06-25
 - Canonical: [https://medium.com/@ritvik19/papers-explained-395-acereason-nemotron-1-1-f2747af699a5](https://medium.com/@ritvik19/papers-explained-395-acereason-nemotron-1-1-f2747af699a5)
@@ -161,23 +161,23 @@ AceReason-Nemotron 1.1: Advancing Math and Code Reasoning through SFT and RL Syn
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-06-25_Papers-Explained-395--AceReason-Nemotron-1-1-f2747af699a5.html`); local copies under `wiki/assets/papers-explained-395-acereason-nemotron-1-1/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-06-25_Papers-Explained-395--AceReason-Nemotron-1-1-f2747af699a5.md`); local copies under `wiki/assets/papers-explained-395-acereason-nemotron-1-1/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-395-acereason-nemotron-1-1/fig-1.png) | Title card: AceReason-Nemotron 1.1. |
-| ![Figure 2](assets/papers-explained-395-acereason-nemotron-1-1/fig-2.png) | Training Pipeline of AceReason-Nemotron 1.1. |
-| ![Figure 3](assets/papers-explained-395-acereason-nemotron-1-1/fig-3.png) | where a question-answer pair (𝑞, 𝑎) is sampled from the training dataset 𝒟, {𝑜𝑖} are responses generated for 𝑞 by the current policy... |
-| ![Figure 4](assets/papers-explained-395-acereason-nemotron-1-1/fig-4.png) | Reinforcement Learning. |
-| ![Figure 5](assets/papers-explained-395-acereason-nemotron-1-1/fig-5.png) | Evaluation of reasoning models primarily based on Qwen2.5-Math 7B and Llama-3.1 8B to disentangle the impact of pretraining. |
-| ![Figure 6](assets/papers-explained-395-acereason-nemotron-1-1/fig-6.png) | Log-scaled data statistics for the number of math and code prompts and the average number of responses per prompt. |
-| ![Figure 7](assets/papers-explained-395-acereason-nemotron-1-1/fig-7.png) | Accuracies on AIME24, AIME25, and LiveCodeBench V5 and V6 for different SFT datasets. |
-| ![Figure 8](assets/papers-explained-395-acereason-nemotron-1-1/fig-8.png) | To determine the relative importance of each scaling factor, a multiple linear regression analysis is performed. |
-| ![Figure 9](assets/papers-explained-395-acereason-nemotron-1-1/fig-9.png) | Accuracies over different epochs of training for SFT dataset v6 and v7. |
-| ![Figure 10](assets/papers-explained-395-acereason-nemotron-1-1/fig-10.png) | Math-only RL training starting from different SFT (distillation) models. |
-| ![Figure 11](assets/papers-explained-395-acereason-nemotron-1-1/fig-11.png) | Impact of varying temperatures for inference and RL training. |
-| ![Figure 12](assets/papers-explained-395-acereason-nemotron-1-1/fig-12.png) | Comparison of pass@K scores between AceReason-Nemotron-1.1–7B and the SFT-7B v7 model it is trained from. |
-| ![Figure 13](assets/papers-explained-395-acereason-nemotron-1-1/fig-13.png) | Comparison of problem-level solving rates between AceReason-Nemotron1.1–7B and the SFT-7B v7 model it is trained from. |
+| ![Figure 1](assets/papers-explained-395-acereason-nemotron-1-1/fig-1.webp) | Title card: AceReason-Nemotron 1.1. |
+| ![Figure 2](assets/papers-explained-395-acereason-nemotron-1-1/fig-2.webp) | Training Pipeline of AceReason-Nemotron 1.1. |
+| ![Figure 3](assets/papers-explained-395-acereason-nemotron-1-1/fig-3.webp) | where a question-answer pair (𝑞, 𝑎) is sampled from the training dataset 𝒟, {𝑜𝑖} are responses generated for 𝑞 by the current policy... |
+| ![Figure 4](assets/papers-explained-395-acereason-nemotron-1-1/fig-4.webp) | Reinforcement Learning. |
+| ![Figure 5](assets/papers-explained-395-acereason-nemotron-1-1/fig-5.webp) | Evaluation of reasoning models primarily based on Qwen2.5-Math 7B and Llama-3.1 8B to disentangle the impact of pretraining. |
+| ![Figure 6](assets/papers-explained-395-acereason-nemotron-1-1/fig-6.webp) | Log-scaled data statistics for the number of math and code prompts and the average number of responses per prompt. |
+| ![Figure 7](assets/papers-explained-395-acereason-nemotron-1-1/fig-7.webp) | Accuracies on AIME24, AIME25, and LiveCodeBench V5 and V6 for different SFT datasets. |
+| ![Figure 8](assets/papers-explained-395-acereason-nemotron-1-1/fig-8.webp) | To determine the relative importance of each scaling factor, a multiple linear regression analysis is performed. |
+| ![Figure 9](assets/papers-explained-395-acereason-nemotron-1-1/fig-9.webp) | Accuracies over different epochs of training for SFT dataset v6 and v7. |
+| ![Figure 10](assets/papers-explained-395-acereason-nemotron-1-1/fig-10.webp) | Math-only RL training starting from different SFT (distillation) models. |
+| ![Figure 11](assets/papers-explained-395-acereason-nemotron-1-1/fig-11.webp) | Impact of varying temperatures for inference and RL training. |
+| ![Figure 12](assets/papers-explained-395-acereason-nemotron-1-1/fig-12.webp) | Comparison of pass@K scores between AceReason-Nemotron-1.1–7B and the SFT-7B v7 model it is trained from. |
+| ![Figure 13](assets/papers-explained-395-acereason-nemotron-1-1/fig-13.webp) | Comparison of problem-level solving rates between AceReason-Nemotron1.1–7B and the SFT-7B v7 model it is trained from. |
 ## Related
 
 - [[Papers Explained Corpus]]

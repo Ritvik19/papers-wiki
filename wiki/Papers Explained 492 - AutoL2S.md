@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-11-14_Papers-Explained-492--AutoL2S-9ab82981a24c.html`
+- Source file: `raw/2025-11-14_Papers-Explained-492--AutoL2S-9ab82981a24c.md`
 - Source title: Papers Explained 492: AutoL2S
 - Published: 2025-11-14
 - Canonical: [https://medium.com/@ritvik19/papers-explained-492-autol2s-9ab82981a24c](https://medium.com/@ritvik19/papers-explained-492-autol2s-9ab82981a24c)
@@ -105,18 +105,18 @@ AutoL2S: Auto Long-Short Reasoning for Efficient Large Language Models [2505.226
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-11-14_Papers-Explained-492--AutoL2S-9ab82981a24c.html`); local copies under `wiki/assets/papers-explained-492-autol2s/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-11-14_Papers-Explained-492--AutoL2S-9ab82981a24c.md`); local copies under `wiki/assets/papers-explained-492-autol2s/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-492-autol2s/fig-1.png) | Title card: AutoL2S. |
-| ![Figure 2](assets/papers-explained-492-autol2s/fig-2.png) | Constructing Long CoT Reasoning Paths: Bespoke-Stratos-17k is used as the source of questions. |
-| ![Figure 3](assets/papers-explained-492-autol2s/fig-3.png) | An EASY question has a,, and to mark the beginning of long reasoning, short reasoning, and answer, respectively. |
-| ![Figure 4](assets/papers-explained-492-autol2s/fig-4.png) | During the inference stage, AutoL2S automatically determines whether to reason with long or short CoT reasoning paths. |
-| ![Figure 5](assets/papers-explained-492-autol2s/fig-5.png) | Accuracy and Token Length across four reasoning benchmarks for 3B and 7B models. |
-| ![Figure 6](assets/papers-explained-492-autol2s/fig-6.png) | Ablation studies of different annotation strategies on training the AutoL2S framework. |
-| ![Figure 7](assets/papers-explained-492-autol2s/fig-7.png) | Ablation studies of auto long-short reasoning using token. |
-| ![Figure 8](assets/papers-explained-492-autol2s/fig-8.png) | RQ3: Mechanism behind the Auto Long-short Reasoning. |
+| ![Figure 1](assets/papers-explained-492-autol2s/fig-1.webp) | Title card: AutoL2S. |
+| ![Figure 2](assets/papers-explained-492-autol2s/fig-2.webp) | Constructing Long CoT Reasoning Paths: Bespoke-Stratos-17k is used as the source of questions. |
+| ![Figure 3](assets/papers-explained-492-autol2s/fig-3.webp) | An EASY question has a,, and to mark the beginning of long reasoning, short reasoning, and answer, respectively. |
+| ![Figure 4](assets/papers-explained-492-autol2s/fig-4.webp) | During the inference stage, AutoL2S automatically determines whether to reason with long or short CoT reasoning paths. |
+| ![Figure 5](assets/papers-explained-492-autol2s/fig-5.webp) | Accuracy and Token Length across four reasoning benchmarks for 3B and 7B models. |
+| ![Figure 6](assets/papers-explained-492-autol2s/fig-6.webp) | Ablation studies of different annotation strategies on training the AutoL2S framework. |
+| ![Figure 7](assets/papers-explained-492-autol2s/fig-7.webp) | Ablation studies of auto long-short reasoning using token. |
+| ![Figure 8](assets/papers-explained-492-autol2s/fig-8.webp) | RQ3: Mechanism behind the Auto Long-short Reasoning. |
 ## Related
 
 - [[Papers Explained Corpus]]

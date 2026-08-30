@@ -1,6 +1,6 @@
 # Introducing Composer 2.5
 
-**Source**: `raw/composer-2-5/full-article.html` (195 KB), `raw/composer-2-5/full-article.md` (markdown view)  
+**Source**: `raw/composer-2-5/full-article.md` (195 KB), `raw/composer-2-5/full-article.md` (markdown view)  
 **URL**: https://cursor.com/blog/composer-2-5  
 **Ingested**: 2026-05-19  
 **Tags**: #summary
@@ -33,19 +33,19 @@ Pricing: standard $0.50/M in, $2.50/M out; fast tier (same intelligence) $3.00/M
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/composer-2-5/fig-1.png) | Composer 2.5 benchmark results (light) | — |
-| ![fig-2](../assets/composer-2-5/fig-2.png) | Composer 2.5 effort curves | — |
-| ![fig-3](../assets/composer-2-5/fig-3.png) | Composer 2.5 training stack overview | — |
-| ![fig-4](../assets/composer-2-5/fig-4.png) | Targeted textual feedback / on-policy distillation diagram | — |
-| ![fig-5](../assets/composer-2-5/fig-5.png) | Synthetic data / feature-deletion task illustration | — |
+| ![fig-1](../assets/composer-2-5/fig-1.webp) | Composer 2.5 benchmark results (light) | — |
+| ![fig-2](../assets/composer-2-5/fig-2.webp) | Composer 2.5 effort curves | — |
+| ![fig-3](../assets/composer-2-5/fig-3.webp) | Composer 2.5 training stack overview | — |
+| ![fig-4](../assets/composer-2-5/fig-4.webp) | Targeted textual feedback / on-policy distillation diagram | — |
+| ![fig-5](../assets/composer-2-5/fig-5.webp) | Synthetic data / feature-deletion task illustration | — |
 
 Light and dark variants (`fig-N-dark.png`) are in `wiki/assets/composer-2-5/`.
 
-![Composer 2.5 benchmark results](../assets/composer-2-5/fig-1.png)
+![Composer 2.5 benchmark results](../assets/composer-2-5/fig-1.webp)
 
-![Composer 2.5 effort curves](../assets/composer-2-5/fig-2.png)
+![Composer 2.5 effort curves](../assets/composer-2-5/fig-2.webp)
 
-![Targeted textual feedback](../assets/composer-2-5/fig-4.png)
+![Targeted textual feedback](../assets/composer-2-5/fig-4.webp)
 
 ## Entities
 

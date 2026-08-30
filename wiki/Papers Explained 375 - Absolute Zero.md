@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-05-28_Papers-Explained-375--Absolute-Zero-dc2e175488c3.html`
+- Source file: `raw/2025-05-28_Papers-Explained-375--Absolute-Zero-dc2e175488c3.md`
 - Source title: Papers Explained 375: Absolute Zero
 - Published: 2025-05-28
 - Canonical: [https://medium.com/@ritvik19/papers-explained-375-absolute-zero-dc2e175488c3](https://medium.com/@ritvik19/papers-explained-375-absolute-zero-dc2e175488c3)
@@ -307,23 +307,23 @@ Absolute Zero: Reinforced Self-play Reasoning with Zero Data [2505.03335](https:
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-05-28_Papers-Explained-375--Absolute-Zero-dc2e175488c3.html`); local copies under `wiki/assets/papers-explained-375-absolute-zero/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-05-28_Papers-Explained-375--Absolute-Zero-dc2e175488c3.md`); local copies under `wiki/assets/papers-explained-375-absolute-zero/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-375-absolute-zero/fig-1.png) | Title card: Absolute Zero. |
-| ![Figure 2](assets/papers-explained-375-absolute-zero/fig-2.png) | The Absolute Zero Loop. |
-| ![Figure 3](assets/papers-explained-375-absolute-zero/fig-3.png) | The model plays two roles. |
-| ![Figure 4](assets/papers-explained-375-absolute-zero/fig-4.png) | Absolute Zero Reasoner Training Overview. |
-| ![Figure 5](assets/papers-explained-375-absolute-zero/fig-5.png) | The proposer’s reward is then defined as. |
-| ![Figure 6](assets/papers-explained-375-absolute-zero/fig-6.png) | The proposer’s reward is then defined as. |
-| ![Figure 7](assets/papers-explained-375-absolute-zero/fig-7.png) | For the solver, a simple binary reward based on the correctness of its final output is assigned,. |
-| ![Figure 8](assets/papers-explained-375-absolute-zero/fig-8.png) | The proposer’s reward is then defined as:: where yπ is the response of the language model. |
-| ![Figure 9](assets/papers-explained-375-absolute-zero/fig-9.png) | The AZR algorithm involves the following key steps. |
-| ![Figure 10](assets/papers-explained-375-absolute-zero/fig-10.png) | The normalized advantage is computed as. |
-| ![Figure 11](assets/papers-explained-375-absolute-zero/fig-11.png) | Performance of RL-Trained Reasoner on Reasoning Benchmarks Based on Qwen2.5–7B Models. |
-| ![Figure 12](assets/papers-explained-375-absolute-zero/fig-12.png) | (a) In-Distribution & (b) Out-of-Distribution Reasoning Task Performances. |
-| ![Figure 13](assets/papers-explained-375-absolute-zero/fig-13.png) | Ablation Results. |
+| ![Figure 1](assets/papers-explained-375-absolute-zero/fig-1.webp) | Title card: Absolute Zero. |
+| ![Figure 2](assets/papers-explained-375-absolute-zero/fig-2.webp) | The Absolute Zero Loop. |
+| ![Figure 3](assets/papers-explained-375-absolute-zero/fig-3.webp) | The model plays two roles. |
+| ![Figure 4](assets/papers-explained-375-absolute-zero/fig-4.webp) | Absolute Zero Reasoner Training Overview. |
+| ![Figure 5](assets/papers-explained-375-absolute-zero/fig-5.webp) | The proposer’s reward is then defined as. |
+| ![Figure 6](assets/papers-explained-375-absolute-zero/fig-6.webp) | The proposer’s reward is then defined as. |
+| ![Figure 7](assets/papers-explained-375-absolute-zero/fig-7.webp) | For the solver, a simple binary reward based on the correctness of its final output is assigned,. |
+| ![Figure 8](assets/papers-explained-375-absolute-zero/fig-8.webp) | The proposer’s reward is then defined as:: where yπ is the response of the language model. |
+| ![Figure 9](assets/papers-explained-375-absolute-zero/fig-9.webp) | The AZR algorithm involves the following key steps. |
+| ![Figure 10](assets/papers-explained-375-absolute-zero/fig-10.webp) | The normalized advantage is computed as. |
+| ![Figure 11](assets/papers-explained-375-absolute-zero/fig-11.webp) | Performance of RL-Trained Reasoner on Reasoning Benchmarks Based on Qwen2.5–7B Models. |
+| ![Figure 12](assets/papers-explained-375-absolute-zero/fig-12.webp) | (a) In-Distribution & (b) Out-of-Distribution Reasoning Task Performances. |
+| ![Figure 13](assets/papers-explained-375-absolute-zero/fig-13.webp) | Ablation Results. |
 ## Related
 
 - [[Papers Explained Corpus]]

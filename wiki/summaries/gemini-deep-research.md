@@ -1,6 +1,6 @@
 # Gemini Deep Research
 
-**Source**: `raw/deep-research-agent-gemini-api/full-article.html`  
+**Source**: `raw/deep-research-agent-gemini-api/full-article.md`  
 **URL**: https://blog.google/innovation-and-ai/technology/developers-tools/deep-research-agent-gemini-api/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

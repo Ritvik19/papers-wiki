@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-09-17_Papers-Explained-455--Shepherd-4a43cc226a38.html`
+- Source file: `raw/2025-09-17_Papers-Explained-455--Shepherd-4a43cc226a38.md`
 - Source title: Papers Explained 455: Shepherd
 - Published: 2025-09-17
 - Canonical: [https://medium.com/@ritvik19/papers-explained-455-shepherd-4a43cc226a38](https://medium.com/@ritvik19/papers-explained-455-shepherd-4a43cc226a38)
@@ -159,18 +159,18 @@ Shepherd: A Critic for Language Model Generation [2308.04592](https://arxiv.org/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-09-17_Papers-Explained-455--Shepherd-4a43cc226a38.html`); local copies under `wiki/assets/papers-explained-455-shepherd/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-09-17_Papers-Explained-455--Shepherd-4a43cc226a38.md`); local copies under `wiki/assets/papers-explained-455-shepherd/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-455-shepherd/fig-1.png) | Title card: Shepherd. |
-| ![Figure 2](assets/papers-explained-455-shepherd/fig-2.png) | Error types for human data collection. |
-| ![Figure 3](assets/papers-explained-455-shepherd/fig-3.png) | Distribution of collected prompts and the identified error types from each dataset used in human annotation. |
-| ![Figure 4](assets/papers-explained-455-shepherd/fig-4.png) | Examples of the training data collected from Stack Exchange and Human Annotation. |
-| ![Figure 5](assets/papers-explained-455-shepherd/fig-5.png) | Preference evaluation using GPT-4 as the evaluator. |
-| ![Figure 6](assets/papers-explained-455-shepherd/fig-6.png) | Human preference evaluation. |
-| ![Figure 7](assets/papers-explained-455-shepherd/fig-7.png) | Win rate (%) by GPT-4 evaluation. |
-| ![Figure 8](assets/papers-explained-455-shepherd/fig-8.png) | Win rate (%) by human evaluation. |
+| ![Figure 1](assets/papers-explained-455-shepherd/fig-1.webp) | Title card: Shepherd. |
+| ![Figure 2](assets/papers-explained-455-shepherd/fig-2.webp) | Error types for human data collection. |
+| ![Figure 3](assets/papers-explained-455-shepherd/fig-3.webp) | Distribution of collected prompts and the identified error types from each dataset used in human annotation. |
+| ![Figure 4](assets/papers-explained-455-shepherd/fig-4.webp) | Examples of the training data collected from Stack Exchange and Human Annotation. |
+| ![Figure 5](assets/papers-explained-455-shepherd/fig-5.webp) | Preference evaluation using GPT-4 as the evaluator. |
+| ![Figure 6](assets/papers-explained-455-shepherd/fig-6.webp) | Human preference evaluation. |
+| ![Figure 7](assets/papers-explained-455-shepherd/fig-7.webp) | Win rate (%) by GPT-4 evaluation. |
+| ![Figure 8](assets/papers-explained-455-shepherd/fig-8.webp) | Win rate (%) by human evaluation. |
 ## Related
 
 - [[Papers Explained Corpus]]

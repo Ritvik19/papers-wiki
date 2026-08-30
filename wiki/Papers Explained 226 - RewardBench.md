@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-10-08_Papers-Explained-226--RewardBench-31c79c15eb52.html`
+- Source file: `raw/2024-10-08_Papers-Explained-226--RewardBench-31c79c15eb52.md`
 - Source title: Papers Explained 226: RewardBench
 - Published: 2024-10-08
 - Canonical: [https://medium.com/@ritvik19/papers-explained-226-rewardbench-31c79c15eb52](https://medium.com/@ritvik19/papers-explained-226-rewardbench-31c79c15eb52)
@@ -121,21 +121,21 @@ Recommended Reading [LLM Evaluation](https://ritvik19.medium.com/list/llm-evalua
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-10-08_Papers-Explained-226--RewardBench-31c79c15eb52.html`); local copies under `wiki/assets/papers-explained-226-rewardbench/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-10-08_Papers-Explained-226--RewardBench-31c79c15eb52.md`); local copies under `wiki/assets/papers-explained-226-rewardbench/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-226-rewardbench/fig-1.png) | Title card: RewardBench. |
-| ![Figure 2](assets/papers-explained-226-rewardbench/fig-2.png) | The scoring method of the RewardBench evaluation suite. |
-| ![Figure 3](assets/papers-explained-226-rewardbench/fig-3.png) | Summary of the dataset used. |
-| ![Figure 4](assets/papers-explained-226-rewardbench/fig-4.png) | Top-20 Leaderboard results. |
-| ![Figure 5](assets/papers-explained-226-rewardbench/fig-5.png) | Results for two model groups. |
-| ![Figure 6](assets/papers-explained-226-rewardbench/fig-6.png) | Comparing all 7B class models. |
-| ![Figure 7](assets/papers-explained-226-rewardbench/fig-7.png) | The distribution of rewards outputted by reward models for the chosen and rejected responses. |
-| ![Figure 8](assets/papers-explained-226-rewardbench/fig-8.png) | Different categories of performance on the Chat Hard category. |
-| ![Figure 9](assets/papers-explained-226-rewardbench/fig-9.png) | Results for the Reasoning category. |
-| ![Figure 10](assets/papers-explained-226-rewardbench/fig-10.png) | A subset of results for the Safety category grouped by behavior type. |
-| ![Figure 11](assets/papers-explained-226-rewardbench/fig-11.png) | Results for Prior Sets. |
+| ![Figure 1](assets/papers-explained-226-rewardbench/fig-1.webp) | Title card: RewardBench. |
+| ![Figure 2](assets/papers-explained-226-rewardbench/fig-2.webp) | The scoring method of the RewardBench evaluation suite. |
+| ![Figure 3](assets/papers-explained-226-rewardbench/fig-3.webp) | Summary of the dataset used. |
+| ![Figure 4](assets/papers-explained-226-rewardbench/fig-4.webp) | Top-20 Leaderboard results. |
+| ![Figure 5](assets/papers-explained-226-rewardbench/fig-5.webp) | Results for two model groups. |
+| ![Figure 6](assets/papers-explained-226-rewardbench/fig-6.webp) | Comparing all 7B class models. |
+| ![Figure 7](assets/papers-explained-226-rewardbench/fig-7.webp) | The distribution of rewards outputted by reward models for the chosen and rejected responses. |
+| ![Figure 8](assets/papers-explained-226-rewardbench/fig-8.webp) | Different categories of performance on the Chat Hard category. |
+| ![Figure 9](assets/papers-explained-226-rewardbench/fig-9.webp) | Results for the Reasoning category. |
+| ![Figure 10](assets/papers-explained-226-rewardbench/fig-10.webp) | A subset of results for the Safety category grouped by behavior type. |
+| ![Figure 11](assets/papers-explained-226-rewardbench/fig-11.webp) | Results for Prior Sets. |
 ## Related
 
 - [[Papers Explained Corpus]]

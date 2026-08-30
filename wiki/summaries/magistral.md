@@ -1,6 +1,6 @@
 # Magistral
 
-**Source**: `raw/magistral/full-article.html` (220 KB), `raw/magistral/full-article.md` (markdown view)  
+**Source**: `raw/magistral/full-article.md` (220 KB), `raw/magistral/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/magistral/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

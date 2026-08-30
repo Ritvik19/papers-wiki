@@ -19,12 +19,12 @@
 3. **Cells**: tile image into **8×8** pixel cells; each cell gets a **9-bin** orientation histogram.
 4. **Soft binning**: if \(\theta\) falls between bin centers, split magnitude between adjacent bins (e.g. mag 8 at 15° → 2 to 0° bin, 6 to 20° bin)—improves robustness to small deformations.
 
-![HOG soft binning](../assets/2017-10-29-object-recognition-part-1/fig-4.png)
+![HOG soft binning](../assets/2017-10-29-object-recognition-part-1/fig-4.webp)
 
 5. **Blocks**: group **2×2 cells** (16×16 px); concatenate four 9-bin histograms → **36-D** vector; **L2-normalize** the block vector to unit weight.
 6. **Descriptor**: concatenate all block vectors over the detection window → input to linear SVM (or similar).
 
-![HOG block histogram](../assets/2017-10-29-object-recognition-part-1/fig-5.png)
+![HOG block histogram](../assets/2017-10-29-object-recognition-part-1/fig-5.webp)
 
 ## Parameters (Weng defaults)
 

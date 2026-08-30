@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-07-03_Papers-Explained-46--FLAN-1c5e0d5db7c9.html`
+- Source file: `raw/2023-07-03_Papers-Explained-46--FLAN-1c5e0d5db7c9.md`
 - Source title: Papers Explained 46: FLAN
 - Published: 2023-07-03
 - Canonical: [https://medium.com/@ritvik19/papers-explained-46-flan-1c5e0d5db7c9](https://medium.com/@ritvik19/papers-explained-46-flan-1c5e0d5db7c9)
@@ -83,18 +83,18 @@ Fine-tuned Language Models Are Zero-Shot Learners [2109.01652](https://arxiv.org
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-07-03_Papers-Explained-46--FLAN-1c5e0d5db7c9.html`); local copies under `wiki/assets/papers-explained-46-flan/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-07-03_Papers-Explained-46--FLAN-1c5e0d5db7c9.md`); local copies under `wiki/assets/papers-explained-46-flan/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-46-flan/fig-1.png) | Title card: FLAN. |
-| ![Figure 2](assets/papers-explained-46-flan/fig-2.png) | Comparing instruction tuning with pretrain–finetune and prompting. |
-| ![Figure 3](assets/papers-explained-46-flan/fig-3.png) | Top: an overview of instruction tuning and FLAN. Instruction tuning finetunes a pretrained language model on a mixture of tasks phrased as instructions. At inference time, we evaluate on an unseen task type; for instance, we could evaluate the model on natural language inference (NLI) when no NLI tasks were seen during instruction tuning. Bottom: performance of zero-shot FLAN, compared with zero-shot and few-shot GPT-3, on three unseen task types where instruction tuning improved performance substantially out of ten we evaluate. NLI datasets: ANLI R1–R3, CB, RTE. Reading comprehension datasets: BoolQ, MultiRC, OBQA. Closed-book QA datasets: ARC-easy, ARC-challenge, NQ, TriviaQA. |
-| ![Figure 4](assets/papers-explained-46-flan/fig-4.png) | Datasets and task clusters used in this paper (NLU tasks in blue; NLG tasks in teal). |
-| ![Figure 5](assets/papers-explained-46-flan/fig-5.png) | Multiple instruction templates describing a natural language inference task. |
-| ![Figure 6](assets/papers-explained-46-flan/fig-6.png) | Zero-shot performance of FLAN compared to LaMDA-PT 137B, GPT-3 175B, and GLaM 64B/64E on natural language inference, reading comprehension, closed-book QA, and translation. Performance of FLAN is the mean of up to 10 instructional templates per task. Supervised models were either T5, BERT, or translation models. |
-| ![Figure 7](assets/papers-explained-46-flan/fig-7.png) | Results for translation and struct-to-text tasks. [k] indicates the number of few-shot exemplars. #t indicates the number of templates that FLAN is evaluated on. |
-| ![Figure 8](assets/papers-explained-46-flan/fig-8.png) | Results for eight NLU task clusters. All values shown are for accuracy (or exact match) except DROP, MultiRC, and SQuAD v1 and v2, which are F1. [k] indicates the number of few-shot exemplars. #t indicates the number of templates that FLAN is evaluated on. |
+| ![Figure 1](assets/papers-explained-46-flan/fig-1.webp) | Title card: FLAN. |
+| ![Figure 2](assets/papers-explained-46-flan/fig-2.webp) | Comparing instruction tuning with pretrain–finetune and prompting. |
+| ![Figure 3](assets/papers-explained-46-flan/fig-3.webp) | Top: an overview of instruction tuning and FLAN. Instruction tuning finetunes a pretrained language model on a mixture of tasks phrased as instructions. At inference time, we evaluate on an unseen task type; for instance, we could evaluate the model on natural language inference (NLI) when no NLI tasks were seen during instruction tuning. Bottom: performance of zero-shot FLAN, compared with zero-shot and few-shot GPT-3, on three unseen task types where instruction tuning improved performance substantially out of ten we evaluate. NLI datasets: ANLI R1–R3, CB, RTE. Reading comprehension datasets: BoolQ, MultiRC, OBQA. Closed-book QA datasets: ARC-easy, ARC-challenge, NQ, TriviaQA. |
+| ![Figure 4](assets/papers-explained-46-flan/fig-4.webp) | Datasets and task clusters used in this paper (NLU tasks in blue; NLG tasks in teal). |
+| ![Figure 5](assets/papers-explained-46-flan/fig-5.webp) | Multiple instruction templates describing a natural language inference task. |
+| ![Figure 6](assets/papers-explained-46-flan/fig-6.webp) | Zero-shot performance of FLAN compared to LaMDA-PT 137B, GPT-3 175B, and GLaM 64B/64E on natural language inference, reading comprehension, closed-book QA, and translation. Performance of FLAN is the mean of up to 10 instructional templates per task. Supervised models were either T5, BERT, or translation models. |
+| ![Figure 7](assets/papers-explained-46-flan/fig-7.webp) | Results for translation and struct-to-text tasks. [k] indicates the number of few-shot exemplars. #t indicates the number of templates that FLAN is evaluated on. |
+| ![Figure 8](assets/papers-explained-46-flan/fig-8.webp) | Results for eight NLU task clusters. All values shown are for accuracy (or exact match) except DROP, MultiRC, and SQuAD v1 and v2, which are F1. [k] indicates the number of few-shot exemplars. #t indicates the number of templates that FLAN is evaluated on. |
 ## Related
 
 - [[Papers Explained Corpus]]

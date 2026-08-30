@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-10-30_Papers-Explained-66--GPT-3-352f5a1b397.html`
+- Source file: `raw/2023-10-30_Papers-Explained-66--GPT-3-352f5a1b397.md`
 - Source title: Papers Explained 66: GPT-3
 - Published: 2023-10-30
 - Canonical: [https://medium.com/@ritvik19/papers-explained-66-gpt-3-352f5a1b397](https://medium.com/@ritvik19/papers-explained-66-gpt-3-352f5a1b397)
@@ -183,24 +183,24 @@ Language Models are Few-Shot Learners [2005.14165](https://arxiv.org/abs/2005.14
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-10-30_Papers-Explained-66--GPT-3-352f5a1b397.html`); local copies under `wiki/assets/papers-explained-66-gpt-3/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-10-30_Papers-Explained-66--GPT-3-352f5a1b397.md`); local copies under `wiki/assets/papers-explained-66-gpt-3/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-66-gpt-3/fig-1.png) | Title card: GPT-3. |
-| ![Figure 2](assets/papers-explained-66-gpt-3/fig-2.png) | Sizes, architectures, and learning hyper-parameters (batch size in tokens and learning rate) of the models which we trained. All models were trained for a total of 300 billion tokens. |
-| ![Figure 3](assets/papers-explained-66-gpt-3/fig-3.png) | Total compute used during training. |
-| ![Figure 4](assets/papers-explained-66-gpt-3/fig-4.png) | Datasets used to train GPT-3. |
-| ![Figure 5](assets/papers-explained-66-gpt-3/fig-5.png) | Zero-shot results on PTB language modeling dataset. |
-| ![Figure 6](assets/papers-explained-66-gpt-3/fig-6.png) | Performance on cloze and completion tasks. |
-| ![Figure 7](assets/papers-explained-66-gpt-3/fig-7.png) | Results on three Open-Domain QA tasks. |
-| ![Figure 8](assets/papers-explained-66-gpt-3/fig-8.png) | Results on Language Translation Tasks. |
-| ![Figure 9](assets/papers-explained-66-gpt-3/fig-9.png) | GPT-3 results on three commonsense reasoning tasks, PIQA, ARC, and OpenBookQA. |
-| ![Figure 10](assets/papers-explained-66-gpt-3/fig-10.png) | Results on reading comprehension tasks. All scores are F1 except results for RACE which report accuracy. |
-| ![Figure 11](assets/papers-explained-66-gpt-3/fig-11.png) | Performance of GPT-3 on SuperGLUE compared to fine-tuned baselines and SOTA. |
-| ![Figure 12](assets/papers-explained-66-gpt-3/fig-12.png) | Performance of GPT-3 on ANLI Round 3. |
-| ![Figure 13](assets/papers-explained-66-gpt-3/fig-13.png) | Results on basic arithmetic tasks for GPT-3 175B. {2,3,4,5}D{+,-} is 2, 3, 4, and 5 digit addition or subtraction, 2Dx is 2 digit multiplication. 1DC is 1 digit composite operations. |
-| ![Figure 14](assets/papers-explained-66-gpt-3/fig-14.png) | GPT-3 175B performance on various word unscrambling and word manipulation tasks, in zero-, one-, and few-shot settings. CL is “cycle letters in word”, A1 is anagrams of but the first and last letters, A2 is anagrams of all but the first and last two letters, RI is “Random insertion in word”, RW is “reversed words”. |
+| ![Figure 1](assets/papers-explained-66-gpt-3/fig-1.webp) | Title card: GPT-3. |
+| ![Figure 2](assets/papers-explained-66-gpt-3/fig-2.webp) | Sizes, architectures, and learning hyper-parameters (batch size in tokens and learning rate) of the models which we trained. All models were trained for a total of 300 billion tokens. |
+| ![Figure 3](assets/papers-explained-66-gpt-3/fig-3.webp) | Total compute used during training. |
+| ![Figure 4](assets/papers-explained-66-gpt-3/fig-4.webp) | Datasets used to train GPT-3. |
+| ![Figure 5](assets/papers-explained-66-gpt-3/fig-5.webp) | Zero-shot results on PTB language modeling dataset. |
+| ![Figure 6](assets/papers-explained-66-gpt-3/fig-6.webp) | Performance on cloze and completion tasks. |
+| ![Figure 7](assets/papers-explained-66-gpt-3/fig-7.webp) | Results on three Open-Domain QA tasks. |
+| ![Figure 8](assets/papers-explained-66-gpt-3/fig-8.webp) | Results on Language Translation Tasks. |
+| ![Figure 9](assets/papers-explained-66-gpt-3/fig-9.webp) | GPT-3 results on three commonsense reasoning tasks, PIQA, ARC, and OpenBookQA. |
+| ![Figure 10](assets/papers-explained-66-gpt-3/fig-10.webp) | Results on reading comprehension tasks. All scores are F1 except results for RACE which report accuracy. |
+| ![Figure 11](assets/papers-explained-66-gpt-3/fig-11.webp) | Performance of GPT-3 on SuperGLUE compared to fine-tuned baselines and SOTA. |
+| ![Figure 12](assets/papers-explained-66-gpt-3/fig-12.webp) | Performance of GPT-3 on ANLI Round 3. |
+| ![Figure 13](assets/papers-explained-66-gpt-3/fig-13.webp) | Results on basic arithmetic tasks for GPT-3 175B. {2,3,4,5}D{+,-} is 2, 3, 4, and 5 digit addition or subtraction, 2Dx is 2 digit multiplication. 1DC is 1 digit composite operations. |
+| ![Figure 14](assets/papers-explained-66-gpt-3/fig-14.webp) | GPT-3 175B performance on various word unscrambling and word manipulation tasks, in zero-, one-, and few-shot settings. CL is “cycle letters in word”, A1 is anagrams of but the first and last letters, A2 is anagrams of all but the first and last two letters, RI is “Random insertion in word”, RW is “reversed words”. |
 ## Related
 
 - [[Papers Explained Corpus]]

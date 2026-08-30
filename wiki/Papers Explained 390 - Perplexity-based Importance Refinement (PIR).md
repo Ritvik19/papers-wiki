@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-06-18_Papers-Explained-390--Perplexity-based-Importance-Refinement--PIR--68103a8da269.html`
+- Source file: `raw/2025-06-18_Papers-Explained-390--Perplexity-based-Importance-Refinement--PIR--68103a8da269.md`
 - Source title: Papers Explained 390: Perplexity-based Importance Refinement (PIR)
 - Published: 2025-06-18
 - Canonical: [https://medium.com/@ritvik19/papers-explained-390-perplexity-based-importance-refinement-pir-68103a8da269](https://medium.com/@ritvik19/papers-explained-390-perplexity-based-importance-refinement-pir-68103a8da269)
@@ -105,19 +105,19 @@ LIMOPro: Reasoning Refinement for Efficient and Effective Test-time Scaling [250
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-06-18_Papers-Explained-390--Perplexity-based-Importance-Refinement--PIR--68103a8da269.html`); local copies under `wiki/assets/papers-explained-390-perplexity-based-importance-refinement-pir/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-06-18_Papers-Explained-390--Perplexity-based-Importance-Refinement--PIR--68103a8da269.md`); local copies under `wiki/assets/papers-explained-390-perplexity-based-importance-refinement-pir/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-390-perplexity-based-importance-refinement-pir/fig-1.png) | Title card: Perplexity-based Importance Refinement (PIR). |
-| ![Figure 2](assets/papers-explained-390-perplexity-based-importance-refinement-pir/fig-2.png) | PIR quantifies the importance of each reasoning step. |
-| ![Figure 3](assets/papers-explained-390-perplexity-based-importance-refinement-pir/fig-3.png) | PIR framework pipeline for reasoning optimization. |
-| ![Figure 4](assets/papers-explained-390-perplexity-based-importance-refinement-pir/fig-4.png) | Reasoning chains are divided into logical steps using Claude 3.7 Sonnet. |
-| ![Figure 5](assets/papers-explained-390-perplexity-based-importance-refinement-pir/fig-5.png) | Experimental results comparing baseline models with their PIR-optimized variants (-P) across reasoning benchmarks. |
-| ![Figure 6](assets/papers-explained-390-perplexity-based-importance-refinement-pir/fig-6.png) | Experimental results comparing PIR(S1–32B-P) with different optimization approaches. |
-| ![Figure 7](assets/papers-explained-390-perplexity-based-importance-refinement-pir/fig-7.png) | The models are evaluated on three reasoning-intensive benchmarks: AIME24, GPQA Diamond, and AMC23. |
-| ![Figure 8](assets/papers-explained-390-perplexity-based-importance-refinement-pir/fig-8.png) | Impact of pruning ratio on model performance. |
-| ![Figure 9](assets/papers-explained-390-perplexity-based-importance-refinement-pir/fig-9.png) | Impact of PIR refinement across model sizes and benchmarks. |
+| ![Figure 1](assets/papers-explained-390-perplexity-based-importance-refinement-pir/fig-1.webp) | Title card: Perplexity-based Importance Refinement (PIR). |
+| ![Figure 2](assets/papers-explained-390-perplexity-based-importance-refinement-pir/fig-2.webp) | PIR quantifies the importance of each reasoning step. |
+| ![Figure 3](assets/papers-explained-390-perplexity-based-importance-refinement-pir/fig-3.webp) | PIR framework pipeline for reasoning optimization. |
+| ![Figure 4](assets/papers-explained-390-perplexity-based-importance-refinement-pir/fig-4.webp) | Reasoning chains are divided into logical steps using Claude 3.7 Sonnet. |
+| ![Figure 5](assets/papers-explained-390-perplexity-based-importance-refinement-pir/fig-5.webp) | Experimental results comparing baseline models with their PIR-optimized variants (-P) across reasoning benchmarks. |
+| ![Figure 6](assets/papers-explained-390-perplexity-based-importance-refinement-pir/fig-6.webp) | Experimental results comparing PIR(S1–32B-P) with different optimization approaches. |
+| ![Figure 7](assets/papers-explained-390-perplexity-based-importance-refinement-pir/fig-7.webp) | The models are evaluated on three reasoning-intensive benchmarks: AIME24, GPQA Diamond, and AMC23. |
+| ![Figure 8](assets/papers-explained-390-perplexity-based-importance-refinement-pir/fig-8.webp) | Impact of pruning ratio on model performance. |
+| ![Figure 9](assets/papers-explained-390-perplexity-based-importance-refinement-pir/fig-9.webp) | Impact of PIR refinement across model sizes and benchmarks. |
 ## Related
 
 - [[Papers Explained Corpus]]

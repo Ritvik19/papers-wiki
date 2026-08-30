@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-02-11_Papers-Explained-307--Diverse-Preference-Optimization-7f99326e264c.html`
+- Source file: `raw/2025-02-11_Papers-Explained-307--Diverse-Preference-Optimization-7f99326e264c.md`
 - Source title: Papers Explained 307: Diverse Preference Optimization
 - Published: 2025-02-11
 - Canonical: [https://medium.com/@ritvik19/papers-explained-307-diverse-preference-optimization-7f99326e264c](https://medium.com/@ritvik19/papers-explained-307-diverse-preference-optimization-7f99326e264c)
@@ -111,22 +111,22 @@ Diverse Preference Optimization [2501.18101](https://arxiv.org/abs/2501.18101)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-02-11_Papers-Explained-307--Diverse-Preference-Optimization-7f99326e264c.html`); local copies under `wiki/assets/papers-explained-307-diverse-preference-optimization/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-02-11_Papers-Explained-307--Diverse-Preference-Optimization-7f99326e264c.md`); local copies under `wiki/assets/papers-explained-307-diverse-preference-optimization/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-307-diverse-preference-optimization/fig-1.png) | Title card: Diverse Preference Optimization. |
-| ![Figure 2](assets/papers-explained-307-diverse-preference-optimization/fig-2.png) | Diverse Preference Optimization (DivPO). |
-| ![Figure 3](assets/papers-explained-307-diverse-preference-optimization/fig-3.png) | Rather than selecting the highest rewarded response for the chosen, the most diverse response that meets a certain reward threshold is... |
-| ![Figure 4](assets/papers-explained-307-diverse-preference-optimization/fig-4.png) | Here β is used to control the deviation from a reference model πref (β=0.1 is used for all DivPO experiments). |
-| ![Figure 5](assets/papers-explained-307-diverse-preference-optimization/fig-5.png) | Diversity Criterion D: Three different methods are used to determine the most and least diverse from a set. |
-| ![Figure 6](assets/papers-explained-307-diverse-preference-optimization/fig-6.png) | The Llama-3.1–8b Instruct model is used as the baseline model and as initialization checkpoint in the experiments. |
-| ![Figure 7](assets/papers-explained-307-diverse-preference-optimization/fig-7.png) | Persona Generation Task Results. |
-| ![Figure 8](assets/papers-explained-307-diverse-preference-optimization/fig-8.png) | Persona Generation Statistics. |
-| ![Figure 9](assets/papers-explained-307-diverse-preference-optimization/fig-9.png) | Diversity is encouraged using either “Word Frequency” or “Probability” criteria. |
-| ![Figure 10](assets/papers-explained-307-diverse-preference-optimization/fig-10.png) | Keyword Story Generation Results. |
-| ![Figure 11](assets/papers-explained-307-diverse-preference-optimization/fig-11.png) | Diversity is encouraged using probability-based, frequency-based, and LLM as a diversity judge approaches. |
-| ![Figure 12](assets/papers-explained-307-diverse-preference-optimization/fig-12.png) | Full Story Generation Results. |
+| ![Figure 1](assets/papers-explained-307-diverse-preference-optimization/fig-1.webp) | Title card: Diverse Preference Optimization. |
+| ![Figure 2](assets/papers-explained-307-diverse-preference-optimization/fig-2.webp) | Diverse Preference Optimization (DivPO). |
+| ![Figure 3](assets/papers-explained-307-diverse-preference-optimization/fig-3.webp) | Rather than selecting the highest rewarded response for the chosen, the most diverse response that meets a certain reward threshold is... |
+| ![Figure 4](assets/papers-explained-307-diverse-preference-optimization/fig-4.webp) | Here β is used to control the deviation from a reference model πref (β=0.1 is used for all DivPO experiments). |
+| ![Figure 5](assets/papers-explained-307-diverse-preference-optimization/fig-5.webp) | Diversity Criterion D: Three different methods are used to determine the most and least diverse from a set. |
+| ![Figure 6](assets/papers-explained-307-diverse-preference-optimization/fig-6.webp) | The Llama-3.1–8b Instruct model is used as the baseline model and as initialization checkpoint in the experiments. |
+| ![Figure 7](assets/papers-explained-307-diverse-preference-optimization/fig-7.webp) | Persona Generation Task Results. |
+| ![Figure 8](assets/papers-explained-307-diverse-preference-optimization/fig-8.webp) | Persona Generation Statistics. |
+| ![Figure 9](assets/papers-explained-307-diverse-preference-optimization/fig-9.webp) | Diversity is encouraged using either “Word Frequency” or “Probability” criteria. |
+| ![Figure 10](assets/papers-explained-307-diverse-preference-optimization/fig-10.webp) | Keyword Story Generation Results. |
+| ![Figure 11](assets/papers-explained-307-diverse-preference-optimization/fig-11.webp) | Diversity is encouraged using probability-based, frequency-based, and LLM as a diversity judge approaches. |
+| ![Figure 12](assets/papers-explained-307-diverse-preference-optimization/fig-12.webp) | Full Story Generation Results. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -1,6 +1,6 @@
 # Controlling Reasoning Effort in LLMs
 
-**Source**: `raw/controlling-reasoning-effort-in-llms/full-article.html`, `raw/controlling-reasoning-effort-in-llms/full-article.md`  
+**Source**: `raw/controlling-reasoning-effort-in-llms/full-article.md`, `raw/controlling-reasoning-effort-in-llms/full-article.md`  
 **Ingested**: 2026-07-21  
 **Tags**: #summary
 
@@ -32,23 +32,23 @@ The closing prediction: effort will remain an explicit input for now, but agent 
 
 | Figure | Caption | Section |
 |--------|---------|---------|
-| ![fig-1](../assets/controlling-reasoning-effort-in-llms/fig-1.png) | GPT-5.6 Sol with multiple reasoning-effort settings | §5 |
-| ![fig-3](../assets/controlling-reasoning-effort-in-llms/fig-3.png) | Conventional LLM answer vs. reasoning-model trace | §1 |
-| ![fig-4](../assets/controlling-reasoning-effort-in-llms/fig-4.png) | Training scaling vs. inference scaling | §2 |
-| ![fig-5](../assets/controlling-reasoning-effort-in-llms/fig-5.png) | Accuracy and format rewards during RLVR | §2.1 |
-| ![fig-7](../assets/controlling-reasoning-effort-in-llms/fig-7.png) | "Aha moment" self-correction in a reasoning trace | §2.2 |
-| ![fig-10](../assets/controlling-reasoning-effort-in-llms/fig-10.png) | Self-consistency / majority voting at inference | §2.3 |
-| ![fig-12](../assets/controlling-reasoning-effort-in-llms/fig-12.png) | Common formatting tokens in reasoning models | §3 |
-| ![fig-14](../assets/controlling-reasoning-effort-in-llms/fig-14.png) | Qwen3 with `thinking=False` vs `thinking=True` | §4 |
-| ![fig-17](../assets/controlling-reasoning-effort-in-llms/fig-17.png) | gpt-oss chat template inserts reasoning effort into system message | §5.1 |
-| ![fig-18](../assets/controlling-reasoning-effort-in-llms/fig-18.png) | Response length and quality vs. reasoning effort (gpt-oss) | §5.1 |
-| ![fig-21](../assets/controlling-reasoning-effort-in-llms/fig-21.png) | Effort-conditioned RLVR and SFT (illustrative) | §5.2 |
-| ![fig-22](../assets/controlling-reasoning-effort-in-llms/fig-22.png) | Inkling continuous effort vs. tokens and benchmarks | §5.3 |
-| ![fig-23](../assets/controlling-reasoning-effort-in-llms/fig-23.png) | Model selection vs. reasoning effort as two scaling axes | §5.4 |
-| ![fig-25](../assets/controlling-reasoning-effort-in-llms/fig-25.png) | DeepSeek V4 reasoning-effort control overview | §6.1 |
-| ![fig-28](../assets/controlling-reasoning-effort-in-llms/fig-28.png) | Nemotron 3 Ultra medium-effort and budget-aware training | §6.2 |
-| ![fig-30](../assets/controlling-reasoning-effort-in-llms/fig-30.png) | Kimi K2.5 Toggle: budgeted vs. unconstrained RL phases | §6.3 |
-| ![fig-32](../assets/controlling-reasoning-effort-in-llms/fig-32.png) | Comparison of six open-weight effort-training recipes | §6.7 |
+| ![fig-1](../assets/controlling-reasoning-effort-in-llms/fig-1.webp) | GPT-5.6 Sol with multiple reasoning-effort settings | §5 |
+| ![fig-3](../assets/controlling-reasoning-effort-in-llms/fig-3.webp) | Conventional LLM answer vs. reasoning-model trace | §1 |
+| ![fig-4](../assets/controlling-reasoning-effort-in-llms/fig-4.webp) | Training scaling vs. inference scaling | §2 |
+| ![fig-5](../assets/controlling-reasoning-effort-in-llms/fig-5.webp) | Accuracy and format rewards during RLVR | §2.1 |
+| ![fig-7](../assets/controlling-reasoning-effort-in-llms/fig-7.webp) | "Aha moment" self-correction in a reasoning trace | §2.2 |
+| ![fig-10](../assets/controlling-reasoning-effort-in-llms/fig-10.webp) | Self-consistency / majority voting at inference | §2.3 |
+| ![fig-12](../assets/controlling-reasoning-effort-in-llms/fig-12.webp) | Common formatting tokens in reasoning models | §3 |
+| ![fig-14](../assets/controlling-reasoning-effort-in-llms/fig-14.webp) | Qwen3 with `thinking=False` vs `thinking=True` | §4 |
+| ![fig-17](../assets/controlling-reasoning-effort-in-llms/fig-17.webp) | gpt-oss chat template inserts reasoning effort into system message | §5.1 |
+| ![fig-18](../assets/controlling-reasoning-effort-in-llms/fig-18.webp) | Response length and quality vs. reasoning effort (gpt-oss) | §5.1 |
+| ![fig-21](../assets/controlling-reasoning-effort-in-llms/fig-21.webp) | Effort-conditioned RLVR and SFT (illustrative) | §5.2 |
+| ![fig-22](../assets/controlling-reasoning-effort-in-llms/fig-22.webp) | Inkling continuous effort vs. tokens and benchmarks | §5.3 |
+| ![fig-23](../assets/controlling-reasoning-effort-in-llms/fig-23.webp) | Model selection vs. reasoning effort as two scaling axes | §5.4 |
+| ![fig-25](../assets/controlling-reasoning-effort-in-llms/fig-25.webp) | DeepSeek V4 reasoning-effort control overview | §6.1 |
+| ![fig-28](../assets/controlling-reasoning-effort-in-llms/fig-28.webp) | Nemotron 3 Ultra medium-effort and budget-aware training | §6.2 |
+| ![fig-30](../assets/controlling-reasoning-effort-in-llms/fig-30.webp) | Kimi K2.5 Toggle: budgeted vs. unconstrained RL phases | §6.3 |
+| ![fig-32](../assets/controlling-reasoning-effort-in-llms/fig-32.webp) | Comparison of six open-weight effort-training recipes | §6.7 |
 
 ## Entities
 

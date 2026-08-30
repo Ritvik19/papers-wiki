@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-01-26_Papers-Explained-531--OctoThinker-bdec24e27301.html`
+- Source file: `raw/2026-01-26_Papers-Explained-531--OctoThinker-bdec24e27301.md`
 - Source title: Papers Explained 531: OctoThinker
 - Published: 2026-01-26
 - Canonical: [https://medium.com/@ritvik19/papers-explained-531-octothinker-bdec24e27301](https://medium.com/@ritvik19/papers-explained-531-octothinker-bdec24e27301)
@@ -175,25 +175,25 @@ OctoThinker: Mid-training Incentivizes Reinforcement Learning Scaling [2506.2051
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-01-26_Papers-Explained-531--OctoThinker-bdec24e27301.html`); local copies under `wiki/assets/papers-explained-531-octothinker/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-01-26_Papers-Explained-531--OctoThinker-bdec24e27301.md`); local copies under `wiki/assets/papers-explained-531-octothinker/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-531-octothinker/fig-1.png) | Title card: OctoThinker. |
-| ![Figure 2](assets/papers-explained-531-octothinker/fig-2.png) | Statistics and Types of different datasets used in the experiments. |
-| ![Figure 3](assets/papers-explained-531-octothinker/fig-3.png) | The effect of different math web corpora during mid-training. |
-| ![Figure 4](assets/papers-explained-531-octothinker/fig-4.png) | Impact of incorporating CoT data with varying characteristics during mid-training (9:1 mixture ratio). |
-| ![Figure 5](assets/papers-explained-531-octothinker/fig-5.png) | Impact of incorporating instruction-following data during mid-training with a mixture of web, short-CoT and instruction data in a ratio of 89: 10: 1. |
-| ![Figure 6](assets/papers-explained-531-octothinker/fig-6.png) | Impact of incorporating instruction-following data during mid-training with a mixture of web, long-CoT and instruction data in a ratio of 89: 10: 1. |
-| ![Figure 7](assets/papers-explained-531-octothinker/fig-7.png) | Impact of scaling up the mid-training budget. |
-| ![Figure 8](assets/papers-explained-531-octothinker/fig-8.png) | Dataset composition and weights in the first-stage. |
-| ![Figure 9](assets/papers-explained-531-octothinker/fig-9.png) | Hyper-parameters in stable stage. |
-| ![Figure 10](assets/papers-explained-531-octothinker/fig-10.png) | RL dynamics under different QA datasets and mixing ratios during the decay stage. |
-| ![Figure 11](assets/papers-explained-531-octothinker/fig-11.png) | Hyper-parameters for decay stage. |
-| ![Figure 12](assets/papers-explained-531-octothinker/fig-12.png) | Specific data mixture for each branch in the decay stage. |
-| ![Figure 13](assets/papers-explained-531-octothinker/fig-13.png) | The RL training dynamics across different branches for OctoThinker-1B series. |
-| ![Figure 14](assets/papers-explained-531-octothinker/fig-14.png) | The RL training dynamics across different branches for OctoThinker-3B series. |
-| ![Figure 15](assets/papers-explained-531-octothinker/fig-15.png) | RL training dynamics among Llama-3.2–3B-Base, OctoThinker series and Qwen2.5-Base. |
+| ![Figure 1](assets/papers-explained-531-octothinker/fig-1.webp) | Title card: OctoThinker. |
+| ![Figure 2](assets/papers-explained-531-octothinker/fig-2.webp) | Statistics and Types of different datasets used in the experiments. |
+| ![Figure 3](assets/papers-explained-531-octothinker/fig-3.webp) | The effect of different math web corpora during mid-training. |
+| ![Figure 4](assets/papers-explained-531-octothinker/fig-4.webp) | Impact of incorporating CoT data with varying characteristics during mid-training (9:1 mixture ratio). |
+| ![Figure 5](assets/papers-explained-531-octothinker/fig-5.webp) | Impact of incorporating instruction-following data during mid-training with a mixture of web, short-CoT and instruction data in a ratio of 89: 10: 1. |
+| ![Figure 6](assets/papers-explained-531-octothinker/fig-6.webp) | Impact of incorporating instruction-following data during mid-training with a mixture of web, long-CoT and instruction data in a ratio of 89: 10: 1. |
+| ![Figure 7](assets/papers-explained-531-octothinker/fig-7.webp) | Impact of scaling up the mid-training budget. |
+| ![Figure 8](assets/papers-explained-531-octothinker/fig-8.webp) | Dataset composition and weights in the first-stage. |
+| ![Figure 9](assets/papers-explained-531-octothinker/fig-9.webp) | Hyper-parameters in stable stage. |
+| ![Figure 10](assets/papers-explained-531-octothinker/fig-10.webp) | RL dynamics under different QA datasets and mixing ratios during the decay stage. |
+| ![Figure 11](assets/papers-explained-531-octothinker/fig-11.webp) | Hyper-parameters for decay stage. |
+| ![Figure 12](assets/papers-explained-531-octothinker/fig-12.webp) | Specific data mixture for each branch in the decay stage. |
+| ![Figure 13](assets/papers-explained-531-octothinker/fig-13.webp) | The RL training dynamics across different branches for OctoThinker-1B series. |
+| ![Figure 14](assets/papers-explained-531-octothinker/fig-14.webp) | The RL training dynamics across different branches for OctoThinker-3B series. |
+| ![Figure 15](assets/papers-explained-531-octothinker/fig-15.webp) | RL training dynamics among Llama-3.2–3B-Base, OctoThinker series and Qwen2.5-Base. |
 ## Related
 
 - [[Papers Explained Corpus]]

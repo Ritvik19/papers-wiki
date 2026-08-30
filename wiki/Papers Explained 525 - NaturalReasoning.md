@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-01-16_Papers-Explained-525--NaturalReasoning-9356f510b0a4.html`
+- Source file: `raw/2026-01-16_Papers-Explained-525--NaturalReasoning-9356f510b0a4.md`
 - Source title: Papers Explained 525: NaturalReasoning
 - Published: 2026-01-16
 - Canonical: [https://medium.com/@ritvik19/papers-explained-525-naturalreasoning-9356f510b0a4](https://medium.com/@ritvik19/papers-explained-525-naturalreasoning-9356f510b0a4)
@@ -189,18 +189,18 @@ NaturalReasoning: Reasoning in the Wild with 2.8M Challenging Questions [2502.13
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-01-16_Papers-Explained-525--NaturalReasoning-9356f510b0a4.html`); local copies under `wiki/assets/papers-explained-525-naturalreasoning/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-01-16_Papers-Explained-525--NaturalReasoning-9356f510b0a4.md`); local copies under `wiki/assets/papers-explained-525-naturalreasoning/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-525-naturalreasoning/fig-1.png) | Title card: NaturalReasoning. |
-| ![Figure 2](assets/papers-explained-525-naturalreasoning/fig-2.png) | An overview of the data creation approach of NaturalReasoning. |
-| ![Figure 3](assets/papers-explained-525-naturalreasoning/fig-3.png) | Comparison of four large publicly available reasoning datasets with NaturalReasoning. |
-| ![Figure 4](assets/papers-explained-525-naturalreasoning/fig-4.png) | Key Statistics. |
-| ![Figure 5](assets/papers-explained-525-naturalreasoning/fig-5.png) | Difficulty. |
-| ![Figure 6](assets/papers-explained-525-naturalreasoning/fig-6.png) | Scaling results for Llama3.1–8B-Base model. |
-| ![Figure 7](assets/papers-explained-525-naturalreasoning/fig-7.png) | Pass@1 of Llama-3.3–70B-Instruct after distilling DeepSeek-R1 responses. |
-| ![Figure 8](assets/papers-explained-525-naturalreasoning/fig-8.png) | Unsupervised self-training results. |
+| ![Figure 1](assets/papers-explained-525-naturalreasoning/fig-1.webp) | Title card: NaturalReasoning. |
+| ![Figure 2](assets/papers-explained-525-naturalreasoning/fig-2.webp) | An overview of the data creation approach of NaturalReasoning. |
+| ![Figure 3](assets/papers-explained-525-naturalreasoning/fig-3.webp) | Comparison of four large publicly available reasoning datasets with NaturalReasoning. |
+| ![Figure 4](assets/papers-explained-525-naturalreasoning/fig-4.webp) | Key Statistics. |
+| ![Figure 5](assets/papers-explained-525-naturalreasoning/fig-5.webp) | Difficulty. |
+| ![Figure 6](assets/papers-explained-525-naturalreasoning/fig-6.webp) | Scaling results for Llama3.1–8B-Base model. |
+| ![Figure 7](assets/papers-explained-525-naturalreasoning/fig-7.webp) | Pass@1 of Llama-3.3–70B-Instruct after distilling DeepSeek-R1 responses. |
+| ![Figure 8](assets/papers-explained-525-naturalreasoning/fig-8.webp) | Unsupervised self-training results. |
 ## Related
 
 - [[Papers Explained Corpus]]

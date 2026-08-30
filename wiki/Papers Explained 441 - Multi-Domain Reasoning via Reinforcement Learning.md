@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-08-28_Papers-Explained-441--Multi-Domain-Reasoning-via-Reinforcement-Learning-71568a744ecd.html`
+- Source file: `raw/2025-08-28_Papers-Explained-441--Multi-Domain-Reasoning-via-Reinforcement-Learning-71568a744ecd.md`
 - Source title: Papers Explained 441: Multi-Domain Reasoning via Reinforcement Learning
 - Published: 2025-08-28
 - Canonical: [https://medium.com/@ritvik19/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning-71568a744ecd](https://medium.com/@ritvik19/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning-71568a744ecd)
@@ -274,28 +274,28 @@ Can One Domain Help Others? A Data-Centric Study on Multi-Domain Reasoning via R
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-08-28_Papers-Explained-441--Multi-Domain-Reasoning-via-Reinforcement-Learning-71568a744ecd.html`); local copies under `wiki/assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-08-28_Papers-Explained-441--Multi-Domain-Reasoning-via-Reinforcement-Learning-71568a744ecd.md`); local copies under `wiki/assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-1.png) | Title card: Multi-Domain Reasoning via Reinforcement Learning. |
-| ![Figure 2](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-2.png) | Datasets for multi-domain training. |
-| ![Figure 3](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-3.png) | Model performance (%) after training in the math domain. |
-| ![Figure 4](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-4.png) | Models trained on the DSR dataset using the Base model and the Instruct model are represented by the notation Base-DSR and Instruct-DSR,... |
-| ![Figure 5](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-5.png) | Model performance (%) after training in the code domain. |
-| ![Figure 6](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-6.png) | Model performance (%) after training in the puzzle domain. |
-| ![Figure 7](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-7.png) | Performance (%) of the RL model with ∆ compared to Base. |
-| ![Figure 8](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-8.png) | Performance comparison of tripledomain and optimal dual-domain data. |
-| ![Figure 9](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-9.png) | Model performance under different templates. |
-| ![Figure 10](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-10.png) | The average test performance of base and instruct models on different templates. |
-| ![Figure 11](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-11.png) | Model performance on the KK dataset with different curriculum settings. |
-| ![Figure 12](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-12.png) | Formally, for the KK dataset, the reward function R(response) are defined as follows. |
-| ![Figure 13](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-13.png) | The reward function for the LPB dataset is defined as follows. |
-| ![Figure 14](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-14.png) | Performance on KK. |
-| ![Figure 15](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-15.png) | Performance on LPB. |
-| ![Figure 16](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-16.png) | KK-impact of reward configurations. |
-| ![Figure 17](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-17.png) | LPB-impact of reward configurations (base model shown with dashed lines). |
-| ![Figure 18](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-18.png) | The effect of different training language. |
+| ![Figure 1](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-1.webp) | Title card: Multi-Domain Reasoning via Reinforcement Learning. |
+| ![Figure 2](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-2.webp) | Datasets for multi-domain training. |
+| ![Figure 3](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-3.webp) | Model performance (%) after training in the math domain. |
+| ![Figure 4](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-4.webp) | Models trained on the DSR dataset using the Base model and the Instruct model are represented by the notation Base-DSR and Instruct-DSR,... |
+| ![Figure 5](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-5.webp) | Model performance (%) after training in the code domain. |
+| ![Figure 6](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-6.webp) | Model performance (%) after training in the puzzle domain. |
+| ![Figure 7](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-7.webp) | Performance (%) of the RL model with ∆ compared to Base. |
+| ![Figure 8](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-8.webp) | Performance comparison of tripledomain and optimal dual-domain data. |
+| ![Figure 9](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-9.webp) | Model performance under different templates. |
+| ![Figure 10](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-10.webp) | The average test performance of base and instruct models on different templates. |
+| ![Figure 11](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-11.webp) | Model performance on the KK dataset with different curriculum settings. |
+| ![Figure 12](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-12.webp) | Formally, for the KK dataset, the reward function R(response) are defined as follows. |
+| ![Figure 13](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-13.webp) | The reward function for the LPB dataset is defined as follows. |
+| ![Figure 14](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-14.webp) | Performance on KK. |
+| ![Figure 15](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-15.webp) | Performance on LPB. |
+| ![Figure 16](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-16.webp) | KK-impact of reward configurations. |
+| ![Figure 17](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-17.webp) | LPB-impact of reward configurations (base model shown with dashed lines). |
+| ![Figure 18](assets/papers-explained-441-multi-domain-reasoning-via-reinforcement-learning/fig-18.webp) | The effect of different training language. |
 ## Related
 
 - [[Papers Explained Corpus]]

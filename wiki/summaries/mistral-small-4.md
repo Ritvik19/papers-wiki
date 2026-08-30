@@ -1,6 +1,6 @@
 # Introducing Mistral Small 4
 
-**Source**: `raw/mistral-small-4/full-article.html` (221 KB), `raw/mistral-small-4/full-article.md` (markdown view)  
+**Source**: `raw/mistral-small-4/full-article.md` (221 KB), `raw/mistral-small-4/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/mistral-small-4/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

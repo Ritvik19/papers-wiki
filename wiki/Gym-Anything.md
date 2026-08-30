@@ -32,10 +32,10 @@ The output of that pipeline is [[CUA-World]], a 10K-plus task collection spannin
 
 | Figure | Caption | Page |
 | --- | --- | --- |
-| ![Overview](assets/gym-anything/overview-pipeline.png) | Four-phase overview: GDP-grounded software selection, creation-audit environment building, task scaling, and checklist-based evaluation. | 3 |
-| ![Selection](assets/gym-anything/software-selection.png) | The GDP-to-software funnel that narrows 894 occupations and ~16,600 products into 200 built environments. | 4 |
-| ![Audit loop](assets/gym-anything/creation-audit-loop.png) | Creation-audit loop with shared memory (this PNG is **page 7 prose**; the loop **diagram** is Phase 2 / orange panel in Figure 2 on page 3). | 7 |
-| ![Verification](assets/gym-anything/verification-example.png) | Checklist-based VLM verification (this PNG is **page 10** benchmark comparison + Figure 5 bars; the **checklist rubric** diagram is Phase 4 / purple panel in Figure 2 on page 3). | 10 |
+| ![Overview](assets/gym-anything/overview-pipeline.webp) | Four-phase overview: GDP-grounded software selection, creation-audit environment building, task scaling, and checklist-based evaluation. | 3 |
+| ![Selection](assets/gym-anything/software-selection.webp) | The GDP-to-software funnel that narrows 894 occupations and ~16,600 products into 200 built environments. | 4 |
+| ![Audit loop](assets/gym-anything/creation-audit-loop.webp) | Creation-audit loop with shared memory (this PNG is **page 7 prose**; the loop **diagram** is Phase 2 / orange panel in Figure 2 on page 3). | 7 |
+| ![Verification](assets/gym-anything/verification-example.webp) | Checklist-based VLM verification (this PNG is **page 10** benchmark comparison + Figure 5 bars; the **checklist rubric** diagram is Phase 4 / purple panel in Figure 2 on page 3). | 10 |
 
 ## Entities
 

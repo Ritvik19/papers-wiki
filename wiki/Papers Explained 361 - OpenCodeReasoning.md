@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-05-08_Papers-Explained-361--OpenCodeReasoning-0e0b4439324a.html`
+- Source file: `raw/2025-05-08_Papers-Explained-361--OpenCodeReasoning-0e0b4439324a.md`
 - Source title: Papers Explained 361: OpenCodeReasoning
 - Published: 2025-05-08
 - Canonical: [https://medium.com/@ritvik19/papers-explained-361-opencodereasoning-0e0b4439324a](https://medium.com/@ritvik19/papers-explained-361-opencodereasoning-0e0b4439324a)
@@ -71,15 +71,15 @@ OpenCodeReasoning: Advancing Data Distillation for Competitive Coding [2504.0194
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-05-08_Papers-Explained-361--OpenCodeReasoning-0e0b4439324a.html`); local copies under `wiki/assets/papers-explained-361-opencodereasoning/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-05-08_Papers-Explained-361--OpenCodeReasoning-0e0b4439324a.md`); local copies under `wiki/assets/papers-explained-361-opencodereasoning/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-361-opencodereasoning/fig-1.png) | Title card: OpenCodeReasoning. |
-| ![Figure 2](assets/papers-explained-361-opencodereasoning/fig-2.png) | OpenCodeReasoning statistics. |
-| ![Figure 3](assets/papers-explained-361-opencodereasoning/fig-3.png) | The average number of tokens per Python sample across dataset sources. |
-| ![Figure 4](assets/papers-explained-361-opencodereasoning/fig-4.png) | Impact of scaling up data from 25k to 736k samples. |
-| ![Figure 5](assets/papers-explained-361-opencodereasoning/fig-5.png) | Performance comparison of open-weight reasoning models on LiveCodeBench and CodeContest. |
+| ![Figure 1](assets/papers-explained-361-opencodereasoning/fig-1.webp) | Title card: OpenCodeReasoning. |
+| ![Figure 2](assets/papers-explained-361-opencodereasoning/fig-2.webp) | OpenCodeReasoning statistics. |
+| ![Figure 3](assets/papers-explained-361-opencodereasoning/fig-3.webp) | The average number of tokens per Python sample across dataset sources. |
+| ![Figure 4](assets/papers-explained-361-opencodereasoning/fig-4.webp) | Impact of scaling up data from 25k to 736k samples. |
+| ![Figure 5](assets/papers-explained-361-opencodereasoning/fig-5.webp) | Performance comparison of open-weight reasoning models on LiveCodeBench and CodeContest. |
 ## Related
 
 - [[Papers Explained Corpus]]

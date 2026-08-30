@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-02-26_Papers-Explained-318--Autoregressive-Image-Models--AIM--d6a90f93876f.html`
+- Source file: `raw/2025-02-26_Papers-Explained-318--Autoregressive-Image-Models--AIM--d6a90f93876f.md`
 - Source title: Papers Explained 318: Autoregressive Image Models (AIM)
 - Published: 2025-02-26
 - Canonical: [https://medium.com/@ritvik19/papers-explained-318-autoregressive-image-models-aim-d6a90f93876f](https://medium.com/@ritvik19/papers-explained-318-autoregressive-image-models-aim-d6a90f93876f)
@@ -127,23 +127,23 @@ Scalable Pre-training of Large Autoregressive Image Models [2401.08541](https://
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-02-26_Papers-Explained-318--Autoregressive-Image-Models--AIM--d6a90f93876f.html`); local copies under `wiki/assets/papers-explained-318-autoregressive-image-models-aim/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-02-26_Papers-Explained-318--Autoregressive-Image-Models--AIM--d6a90f93876f.md`); local copies under `wiki/assets/papers-explained-318-autoregressive-image-models-aim/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-318-autoregressive-image-models-aim/fig-1.png) | Title card: Autoregressive Image Models (AIM). |
-| ![Figure 2](assets/papers-explained-318-autoregressive-image-models-aim/fig-2.png) | AIM overview. |
-| ![Figure 3](assets/papers-explained-318-autoregressive-image-models-aim/fig-3.png) | As the backbone, the Vision Transformer architecture (ViT) is adopted. |
-| ![Figure 4](assets/papers-explained-318-autoregressive-image-models-aim/fig-4.png) | Prefix causal attention. |
-| ![Figure 5](assets/papers-explained-318-autoregressive-image-models-aim/fig-5.png) | The obtained pooled feature, denoted as pˆ, serves as the input to the linear classifier. |
-| ![Figure 6](assets/papers-explained-318-autoregressive-image-models-aim/fig-6.png) | Given the raster (row-major) ordering, the probability of an image can be factorized as a product of patch conditional probabilities. |
-| ![Figure 7](assets/papers-explained-318-autoregressive-image-models-aim/fig-7.png) | The training loss over a set X of images is then defined as the negative log-likelihood (NLL). |
-| ![Figure 8](assets/papers-explained-318-autoregressive-image-models-aim/fig-8.png) | By default, a normalized pixel-level regression loss is adopted. |
-| ![Figure 9](assets/papers-explained-318-autoregressive-image-models-aim/fig-9.png) | AIM pre-training across model sizes. |
-| ![Figure 10](assets/papers-explained-318-autoregressive-image-models-aim/fig-10.png) | Scaling in FLOPs. |
-| ![Figure 11](assets/papers-explained-318-autoregressive-image-models-aim/fig-11.png) | Autoregressive vs. Masking. |
-| ![Figure 12](assets/papers-explained-318-autoregressive-image-models-aim/fig-12.png) | Downstream evaluation with a frozen trunk. |
-| ![Figure 13](assets/papers-explained-318-autoregressive-image-models-aim/fig-13.png) | Feature extraction. |
+| ![Figure 1](assets/papers-explained-318-autoregressive-image-models-aim/fig-1.webp) | Title card: Autoregressive Image Models (AIM). |
+| ![Figure 2](assets/papers-explained-318-autoregressive-image-models-aim/fig-2.webp) | AIM overview. |
+| ![Figure 3](assets/papers-explained-318-autoregressive-image-models-aim/fig-3.webp) | As the backbone, the Vision Transformer architecture (ViT) is adopted. |
+| ![Figure 4](assets/papers-explained-318-autoregressive-image-models-aim/fig-4.webp) | Prefix causal attention. |
+| ![Figure 5](assets/papers-explained-318-autoregressive-image-models-aim/fig-5.webp) | The obtained pooled feature, denoted as pˆ, serves as the input to the linear classifier. |
+| ![Figure 6](assets/papers-explained-318-autoregressive-image-models-aim/fig-6.webp) | Given the raster (row-major) ordering, the probability of an image can be factorized as a product of patch conditional probabilities. |
+| ![Figure 7](assets/papers-explained-318-autoregressive-image-models-aim/fig-7.webp) | The training loss over a set X of images is then defined as the negative log-likelihood (NLL). |
+| ![Figure 8](assets/papers-explained-318-autoregressive-image-models-aim/fig-8.webp) | By default, a normalized pixel-level regression loss is adopted. |
+| ![Figure 9](assets/papers-explained-318-autoregressive-image-models-aim/fig-9.webp) | AIM pre-training across model sizes. |
+| ![Figure 10](assets/papers-explained-318-autoregressive-image-models-aim/fig-10.webp) | Scaling in FLOPs. |
+| ![Figure 11](assets/papers-explained-318-autoregressive-image-models-aim/fig-11.webp) | Autoregressive vs. Masking. |
+| ![Figure 12](assets/papers-explained-318-autoregressive-image-models-aim/fig-12.webp) | Downstream evaluation with a frozen trunk. |
+| ![Figure 13](assets/papers-explained-318-autoregressive-image-models-aim/fig-13.webp) | Feature extraction. |
 ## Related
 
 - [[Papers Explained Corpus]]

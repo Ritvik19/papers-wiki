@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-02-26_Papers-Explained-105--Gemini-1-5-Pro-029bbce3b067.html`
+- Source file: `raw/2024-02-26_Papers-Explained-105--Gemini-1-5-Pro-029bbce3b067.md`
 - Source title: Papers Explained 105: Gemini 1.5 Pro
 - Published: 2024-02-26
 - Canonical: [https://medium.com/@ritvik19/papers-explained-105-gemini-1-5-pro-029bbce3b067](https://medium.com/@ritvik19/papers-explained-105-gemini-1-5-pro-029bbce3b067)
@@ -295,26 +295,26 @@ Results/Conclusions: Generational improvement between 1.0 and 1.5 series, with 1
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-02-26_Papers-Explained-105--Gemini-1-5-Pro-029bbce3b067.html`); local copies under `wiki/assets/papers-explained-105-gemini-1-5-pro/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-02-26_Papers-Explained-105--Gemini-1-5-Pro-029bbce3b067.md`); local copies under `wiki/assets/papers-explained-105-gemini-1-5-pro/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-105-gemini-1-5-pro/fig-1.png) | Title page of the Gemini 1.5 technical report. |
-| ![Figure 2](assets/papers-explained-105-gemini-1-5-pro/fig-2.png) | Gemini 1.5 Pro capability summary vs Gemini 1.0 Pro and Ultra (core, text, vision, audio, and long-context). |
-| ![Figure 3](assets/papers-explained-105-gemini-1-5-pro/fig-3.png) | Needle-in-a-haystack retrieval heatmaps across video, audio, and text contexts up to multi-million tokens. |
-| ![Figure 4](assets/papers-explained-105-gemini-1-5-pro/fig-4.png) | Cumulative NLL vs sequence position for long-document and code settings, with power-law fits. |
-| ![Figure 5](assets/papers-explained-105-gemini-1-5-pro/fig-5.png) | Text-haystack recall comparison: Gemini 1.5 Pro vs GPT-4 Turbo as context length grows. |
-| ![Figure 6](assets/papers-explained-105-gemini-1-5-pro/fig-6.png) | Audio-haystack recall comparison: Gemini 1.5 Pro vs Whisper+GPT-4 Turbo over long durations. |
-| ![Figure 7](assets/papers-explained-105-gemini-1-5-pro/fig-7.png) | Multiple-needles diagnostic recall scatter vs context length for Gemini 1.5 Pro and GPT-4 Turbo. |
-| ![Figure 8](assets/papers-explained-105-gemini-1-5-pro/fig-8.png) | Kalamang↔English translation results on MTOB under 0-shot, half-book, and full-book context settings. |
-| ![Figure 9](assets/papers-explained-105-gemini-1-5-pro/fig-9.png) | Long-document QA results (AutoAIS + human AIS) across 0-shot, retrieved, and full-book contexts. |
-| ![Figure 10](assets/papers-explained-105-gemini-1-5-pro/fig-10.png) | Long-context audio ASR WER comparison across USM, Whisper, Gemini 1.0 Pro, and Gemini 1.5 Pro. |
-| ![Figure 11](assets/papers-explained-105-gemini-1-5-pro/fig-11.png) | 1H-VideoQA accuracy comparison of GPT-4V and Gemini 1.5 Pro under different frame budgets. |
-| ![Figure 12](assets/papers-explained-105-gemini-1-5-pro/fig-12.png) | Gemini 1.5 Pro performance vs context-frame strategy on 1H-VideoQA and EgoSchema. |
-| ![Figure 13](assets/papers-explained-105-gemini-1-5-pro/fig-13.png) | Relative core-capability gains of Gemini 1.5 Pro over Gemini 1.0 Pro and Ultra. |
-| ![Figure 14](assets/papers-explained-105-gemini-1-5-pro/fig-14.png) | Text benchmark table (reasoning, coding, multilingual) across Gemini 1.0 Pro/Ultra and 1.5 Pro. |
-| ![Figure 15](assets/papers-explained-105-gemini-1-5-pro/fig-15.png) | Vision and video benchmark table across Gemini 1.0 Pro/Ultra and 1.5 Pro. |
-| ![Figure 16](assets/papers-explained-105-gemini-1-5-pro/fig-16.png) | Audio benchmark table (ASR and speech translation) comparing specialist and Gemini models. |
+| ![Figure 1](assets/papers-explained-105-gemini-1-5-pro/fig-1.webp) | Title page of the Gemini 1.5 technical report. |
+| ![Figure 2](assets/papers-explained-105-gemini-1-5-pro/fig-2.webp) | Gemini 1.5 Pro capability summary vs Gemini 1.0 Pro and Ultra (core, text, vision, audio, and long-context). |
+| ![Figure 3](assets/papers-explained-105-gemini-1-5-pro/fig-3.webp) | Needle-in-a-haystack retrieval heatmaps across video, audio, and text contexts up to multi-million tokens. |
+| ![Figure 4](assets/papers-explained-105-gemini-1-5-pro/fig-4.webp) | Cumulative NLL vs sequence position for long-document and code settings, with power-law fits. |
+| ![Figure 5](assets/papers-explained-105-gemini-1-5-pro/fig-5.webp) | Text-haystack recall comparison: Gemini 1.5 Pro vs GPT-4 Turbo as context length grows. |
+| ![Figure 6](assets/papers-explained-105-gemini-1-5-pro/fig-6.webp) | Audio-haystack recall comparison: Gemini 1.5 Pro vs Whisper+GPT-4 Turbo over long durations. |
+| ![Figure 7](assets/papers-explained-105-gemini-1-5-pro/fig-7.webp) | Multiple-needles diagnostic recall scatter vs context length for Gemini 1.5 Pro and GPT-4 Turbo. |
+| ![Figure 8](assets/papers-explained-105-gemini-1-5-pro/fig-8.webp) | Kalamang↔English translation results on MTOB under 0-shot, half-book, and full-book context settings. |
+| ![Figure 9](assets/papers-explained-105-gemini-1-5-pro/fig-9.webp) | Long-document QA results (AutoAIS + human AIS) across 0-shot, retrieved, and full-book contexts. |
+| ![Figure 10](assets/papers-explained-105-gemini-1-5-pro/fig-10.webp) | Long-context audio ASR WER comparison across USM, Whisper, Gemini 1.0 Pro, and Gemini 1.5 Pro. |
+| ![Figure 11](assets/papers-explained-105-gemini-1-5-pro/fig-11.webp) | 1H-VideoQA accuracy comparison of GPT-4V and Gemini 1.5 Pro under different frame budgets. |
+| ![Figure 12](assets/papers-explained-105-gemini-1-5-pro/fig-12.webp) | Gemini 1.5 Pro performance vs context-frame strategy on 1H-VideoQA and EgoSchema. |
+| ![Figure 13](assets/papers-explained-105-gemini-1-5-pro/fig-13.webp) | Relative core-capability gains of Gemini 1.5 Pro over Gemini 1.0 Pro and Ultra. |
+| ![Figure 14](assets/papers-explained-105-gemini-1-5-pro/fig-14.webp) | Text benchmark table (reasoning, coding, multilingual) across Gemini 1.0 Pro/Ultra and 1.5 Pro. |
+| ![Figure 15](assets/papers-explained-105-gemini-1-5-pro/fig-15.webp) | Vision and video benchmark table across Gemini 1.0 Pro/Ultra and 1.5 Pro. |
+| ![Figure 16](assets/papers-explained-105-gemini-1-5-pro/fig-16.webp) | Audio benchmark table (ASR and speech translation) comparing specialist and Gemini models. |
 ## Related
 
 - [[Papers Explained Corpus]]

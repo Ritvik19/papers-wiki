@@ -1,6 +1,6 @@
 # Introducing Cohere Transcribe
 
-**Source**: `raw/transcribe/full-article.html` (379 KB), `raw/transcribe/full-article.md` (markdown view)  
+**Source**: `raw/transcribe/full-article.md` (379 KB), `raw/transcribe/full-article.md` (markdown view)  
 **URL**: https://cohere.com/blog/transcribe  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -25,13 +25,13 @@ The blog positions Transcribe as production-ready rather than a research artifac
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/transcribe/fig-1.png) | Conformer ASR architecture: speech audio to text across 14 languages | — |
-| ![fig-2](../assets/transcribe/fig-2.png) | HuggingFace Open ASR Leaderboard standings (Mar 26, 2026) | — |
-| ![fig-3](../assets/transcribe/fig-3.png) | Human preference evaluation on English transcripts (pairwise) | — |
-| ![fig-4](../assets/transcribe/fig-4.png) | Human evaluation of ASR accuracy across supported languages | — |
-| ![fig-5](../assets/transcribe/fig-5.png) | Throughput (RTFx) vs accuracy (WER) for 1B+ ASR models | — |
+| ![fig-1](../assets/transcribe/fig-1.webp) | Conformer ASR architecture: speech audio to text across 14 languages | — |
+| ![fig-2](../assets/transcribe/fig-2.webp) | HuggingFace Open ASR Leaderboard standings (Mar 26, 2026) | — |
+| ![fig-3](../assets/transcribe/fig-3.webp) | Human preference evaluation on English transcripts (pairwise) | — |
+| ![fig-4](../assets/transcribe/fig-4.webp) | Human evaluation of ASR accuracy across supported languages | — |
+| ![fig-5](../assets/transcribe/fig-5.webp) | Throughput (RTFx) vs accuracy (WER) for 1B+ ASR models | — |
 
-![Conformer ASR architecture overview](../assets/transcribe/fig-1.png)
+![Conformer ASR architecture overview](../assets/transcribe/fig-1.webp)
 
 ## Entities
 

@@ -1,6 +1,6 @@
 # MathΣtral
 
-**Source**: `raw/mathstral/full-article.html` (213 KB), `raw/mathstral/full-article.md` (markdown view)  
+**Source**: `raw/mathstral/full-article.md` (213 KB), `raw/mathstral/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/mathstral/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-10-01_Papers-Explained-222--Apple-Intelligence-Foundation-Language-Models-2b8a41371a42.html`
+- Source file: `raw/2024-10-01_Papers-Explained-222--Apple-Intelligence-Foundation-Language-Models-2b8a41371a42.md`
 - Source title: Papers Explained 222: Apple Intelligence Foundation Language Models
 - Published: 2024-10-01
 - Canonical: [https://medium.com/@ritvik19/papers-explained-222-apple-intelligence-foundation-language-models-2b8a41371a42](https://medium.com/@ritvik19/papers-explained-222-apple-intelligence-foundation-language-models-2b8a41371a42)
@@ -259,24 +259,24 @@ Apple Intelligence Foundation Language Models [2407.21075](https://arxiv.org/abs
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-10-01_Papers-Explained-222--Apple-Intelligence-Foundation-Language-Models-2b8a41371a42.html`); local copies under `wiki/assets/papers-explained-222-apple-intelligence-foundation-language-models/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-10-01_Papers-Explained-222--Apple-Intelligence-Foundation-Language-Models-2b8a41371a42.md`); local copies under `wiki/assets/papers-explained-222-apple-intelligence-foundation-language-models/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-1.png) | Title card: Apple Intelligence Foundation Language Models. |
-| ![Figure 2](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-2.png) | Modeling overview for the Apple foundation models. |
-| ![Figure 3](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-3.png) | AFM-on-device dimensions. |
-| ![Figure 4](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-4.png) | where D is the prompt distribution, DKL(·∥·) denotes the Kullback-Leibler divergence between two distributions, and β is the coefficient that controls the divergence between the behavior policy πθ and a reference policy πref, which is typically a model trained by SFT. |
-| ![Figure 5](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-5.png) | In the RL training, the reward function is used. |
-| ![Figure 6](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-6.png) | Architecture of Apple Intelligence with adapters for the language on-device and server models and the image models. |
-| ![Figure 7](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-7.png) | HELM MMLU-5s v1.5.0 evaluation results. |
-| ![Figure 8](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-8.png) | A subset of Open LLM Leaderboard V1 evaluation results. |
-| ![Figure 9](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-9.png) | HELM-Lite v1.5.0 pre-training evaluation results. |
-| ![Figure 10](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-10.png) | Side-by-side evaluation of AFM-on-device and AFM-server against comparable models. |
-| ![Figure 11](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-11.png) | Instruction-following capability (measured with IFEval) for AFM models and relevant comparison models (higher is better). |
-| ![Figure 12](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-12.png) | Berkeley Function Calling Leaderboard Benchmark evaluation results on Function Calling API. |
-| ![Figure 13](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-13.png) | Writing ability on internal summarization and composition benchmarks (higher is better) for AFM-on-device and AFM-server alongside relevant sampled comparisons. |
-| ![Figure 14](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-14.png) | Math benchmarks for AFM-on-device and AFM-server alongside relevant sampled comparisons. GSM8K is 8-shot and MATH is 4-shot. |
+| ![Figure 1](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-1.webp) | Title card: Apple Intelligence Foundation Language Models. |
+| ![Figure 2](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-2.webp) | Modeling overview for the Apple foundation models. |
+| ![Figure 3](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-3.webp) | AFM-on-device dimensions. |
+| ![Figure 4](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-4.webp) | where D is the prompt distribution, DKL(·∥·) denotes the Kullback-Leibler divergence between two distributions, and β is the coefficient that controls the divergence between the behavior policy πθ and a reference policy πref, which is typically a model trained by SFT. |
+| ![Figure 5](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-5.webp) | In the RL training, the reward function is used. |
+| ![Figure 6](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-6.webp) | Architecture of Apple Intelligence with adapters for the language on-device and server models and the image models. |
+| ![Figure 7](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-7.webp) | HELM MMLU-5s v1.5.0 evaluation results. |
+| ![Figure 8](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-8.webp) | A subset of Open LLM Leaderboard V1 evaluation results. |
+| ![Figure 9](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-9.webp) | HELM-Lite v1.5.0 pre-training evaluation results. |
+| ![Figure 10](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-10.webp) | Side-by-side evaluation of AFM-on-device and AFM-server against comparable models. |
+| ![Figure 11](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-11.webp) | Instruction-following capability (measured with IFEval) for AFM models and relevant comparison models (higher is better). |
+| ![Figure 12](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-12.webp) | Berkeley Function Calling Leaderboard Benchmark evaluation results on Function Calling API. |
+| ![Figure 13](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-13.webp) | Writing ability on internal summarization and composition benchmarks (higher is better) for AFM-on-device and AFM-server alongside relevant sampled comparisons. |
+| ![Figure 14](assets/papers-explained-222-apple-intelligence-foundation-language-models/fig-14.webp) | Math benchmarks for AFM-on-device and AFM-server alongside relevant sampled comparisons. GSM8K is 8-shot and MATH is 4-shot. |
 ## Related
 
 - [[Papers Explained Corpus]]

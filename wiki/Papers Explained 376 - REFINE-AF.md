@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-05-29_Papers-Explained-376--REFINE-AF-7879070779b2.html`
+- Source file: `raw/2025-05-29_Papers-Explained-376--REFINE-AF-7879070779b2.md`
 - Source title: Papers Explained 376: REFINE-AF
 - Published: 2025-05-29
 - Canonical: [https://medium.com/@ritvik19/papers-explained-376-refine-af-7879070779b2](https://medium.com/@ritvik19/papers-explained-376-refine-af-7879070779b2)
@@ -103,18 +103,18 @@ REFINE-AF: A Task-Agnostic Framework to Align Language Models via Self-Generated
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-05-29_Papers-Explained-376--REFINE-AF-7879070779b2.html`); local copies under `wiki/assets/papers-explained-376-refine-af/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-05-29_Papers-Explained-376--REFINE-AF-7879070779b2.md`); local copies under `wiki/assets/papers-explained-376-refine-af/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-376-refine-af/fig-1.png) | Title card: REFINE-AF. |
-| ![Figure 2](assets/papers-explained-376-refine-af/fig-2.png) | Schematic diagram of the stages in REFINE-AF pipeline. |
-| ![Figure 3](assets/papers-explained-376-refine-af/fig-3.png) | In REFINE-AF, human effort is minimized by replacing human feedback with automated feedback. |
-| ![Figure 4](assets/papers-explained-376-refine-af/fig-4.png) | The model output is then passed to the reward model described above and an automatic score is generated which serves as the feedback to the... |
-| ![Figure 5](assets/papers-explained-376-refine-af/fig-5.png) | Comparative results (Average ROUGE-L Scores) of REFINE-AF with Self Instruct method for different base models on 119 tasks in SUPER-NI. |
-| ![Figure 6](assets/papers-explained-376-refine-af/fig-6.png) | Task Category Wise Comparison of the average ROUGE-L Scores between the pipelines. |
-| ![Figure 7](assets/papers-explained-376-refine-af/fig-7.png) | Human Evaluation results using LLaMA 7B, LLaMA 2–13B, and Mistral 7B models trained on 15k instructions utilizing Self Instruct and our pipeline. |
-| ![Figure 8](assets/papers-explained-376-refine-af/fig-8.png) | Effect of data size on the performance of the model. |
+| ![Figure 1](assets/papers-explained-376-refine-af/fig-1.webp) | Title card: REFINE-AF. |
+| ![Figure 2](assets/papers-explained-376-refine-af/fig-2.webp) | Schematic diagram of the stages in REFINE-AF pipeline. |
+| ![Figure 3](assets/papers-explained-376-refine-af/fig-3.webp) | In REFINE-AF, human effort is minimized by replacing human feedback with automated feedback. |
+| ![Figure 4](assets/papers-explained-376-refine-af/fig-4.webp) | The model output is then passed to the reward model described above and an automatic score is generated which serves as the feedback to the... |
+| ![Figure 5](assets/papers-explained-376-refine-af/fig-5.webp) | Comparative results (Average ROUGE-L Scores) of REFINE-AF with Self Instruct method for different base models on 119 tasks in SUPER-NI. |
+| ![Figure 6](assets/papers-explained-376-refine-af/fig-6.webp) | Task Category Wise Comparison of the average ROUGE-L Scores between the pipelines. |
+| ![Figure 7](assets/papers-explained-376-refine-af/fig-7.webp) | Human Evaluation results using LLaMA 7B, LLaMA 2–13B, and Mistral 7B models trained on 15k instructions utilizing Self Instruct and our pipeline. |
+| ![Figure 8](assets/papers-explained-376-refine-af/fig-8.webp) | Effect of data size on the performance of the model. |
 ## Related
 
 - [[Papers Explained Corpus]]

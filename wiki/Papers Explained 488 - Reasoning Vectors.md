@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-11-07_Papers-Explained-488--Reasoning-Vectors-94cfbe4387bb.html`
+- Source file: `raw/2025-11-07_Papers-Explained-488--Reasoning-Vectors-94cfbe4387bb.md`
 - Source title: Papers Explained 488: Reasoning Vectors
 - Published: 2025-11-07
 - Canonical: [https://medium.com/@ritvik19/papers-explained-488-reasoning-vectors-94cfbe4387bb](https://medium.com/@ritvik19/papers-explained-488-reasoning-vectors-94cfbe4387bb)
@@ -115,15 +115,15 @@ Reasoning Vectors: Transferring Chain-of-Thought Capabilities via Task Arithmeti
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-11-07_Papers-Explained-488--Reasoning-Vectors-94cfbe4387bb.html`); local copies under `wiki/assets/papers-explained-488-reasoning-vectors/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-11-07_Papers-Explained-488--Reasoning-Vectors-94cfbe4387bb.md`); local copies under `wiki/assets/papers-explained-488-reasoning-vectors/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-488-reasoning-vectors/fig-1.png) | Title card: Reasoning Vectors. |
-| ![Figure 2](assets/papers-explained-488-reasoning-vectors/fig-2.png) | Merging the Fine-Tuning and Reasoning Vectors. |
-| ![Figure 3](assets/papers-explained-488-reasoning-vectors/fig-3.png) | Reasoning vector operations in weight space. |
-| ![Figure 4](assets/papers-explained-488-reasoning-vectors/fig-4.png) | Accuracy (%) of Qwen2.5 models on reasoning benchmarks. |
-| ![Figure 5](assets/papers-explained-488-reasoning-vectors/fig-5.png) | Accuracy improvements from reasoning vector transfer. |
+| ![Figure 1](assets/papers-explained-488-reasoning-vectors/fig-1.webp) | Title card: Reasoning Vectors. |
+| ![Figure 2](assets/papers-explained-488-reasoning-vectors/fig-2.webp) | Merging the Fine-Tuning and Reasoning Vectors. |
+| ![Figure 3](assets/papers-explained-488-reasoning-vectors/fig-3.webp) | Reasoning vector operations in weight space. |
+| ![Figure 4](assets/papers-explained-488-reasoning-vectors/fig-4.webp) | Accuracy (%) of Qwen2.5 models on reasoning benchmarks. |
+| ![Figure 5](assets/papers-explained-488-reasoning-vectors/fig-5.webp) | Accuracy improvements from reasoning vector transfer. |
 ## Related
 
 - [[Papers Explained Corpus]]

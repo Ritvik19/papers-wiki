@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-12-17_Papers-Explained-273--LongCite-4800340e51d7.html`
+- Source file: `raw/2024-12-17_Papers-Explained-273--LongCite-4800340e51d7.md`
 - Source title: Papers Explained 273: LongCite
 - Published: 2024-12-17
 - Canonical: [https://medium.com/@ritvik19/papers-explained-273-longcite-4800340e51d7](https://medium.com/@ritvik19/papers-explained-273-longcite-4800340e51d7)
@@ -113,15 +113,15 @@ LongCite: Enabling LLMs to Generate Fine-grained Citations in Long-context QA [2
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-12-17_Papers-Explained-273--LongCite-4800340e51d7.html`); local copies under `wiki/assets/papers-explained-273-longcite/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-12-17_Papers-Explained-273--LongCite-4800340e51d7.md`); local copies under `wiki/assets/papers-explained-273-longcite/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-273-longcite/fig-1.png) | Title card: LongCite. |
-| ![Figure 2](assets/papers-explained-273-longcite/fig-2.png) | Data Statistics in LongBench-Cite. |
-| ![Figure 3](assets/papers-explained-273-longcite/fig-3.png) | Overview of our CoF pipeline. |
-| ![Figure 4](assets/papers-explained-273-longcite/fig-4.png) | Citation recall (R), citation precision (P), citation F1 (F1), and citation length (CL) of different models on LongBench-Cite using LAC-S strategy. |
-| ![Figure 5](assets/papers-explained-273-longcite/fig-5.png) | Correctness in LQAC setting (C) using LAC-S strategy, correctness in vanilla long-context QA setting (CLQA), and correctness ratio (CR) of different models on LongBench-Cite. |
+| ![Figure 1](assets/papers-explained-273-longcite/fig-1.webp) | Title card: LongCite. |
+| ![Figure 2](assets/papers-explained-273-longcite/fig-2.webp) | Data Statistics in LongBench-Cite. |
+| ![Figure 3](assets/papers-explained-273-longcite/fig-3.webp) | Overview of our CoF pipeline. |
+| ![Figure 4](assets/papers-explained-273-longcite/fig-4.webp) | Citation recall (R), citation precision (P), citation F1 (F1), and citation length (CL) of different models on LongBench-Cite using LAC-S strategy. |
+| ![Figure 5](assets/papers-explained-273-longcite/fig-5.webp) | Correctness in LQAC setting (C) using LAC-S strategy, correctness in vanilla long-context QA setting (CLQA), and correctness ratio (CR) of different models on LongBench-Cite. |
 ## Related
 
 - [[Papers Explained Corpus]]

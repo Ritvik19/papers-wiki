@@ -27,7 +27,7 @@ Unsloth's RL stack centers on **GRPO** for reasoning models, extended to long co
 
 | Figure | Caption |
 |--------|---------|
-| ![fig-1](../assets/unsloth-reinforcement-learning/fig-1.png) | GRPO vs PPO: no value network |
+| ![fig-1](../assets/unsloth-reinforcement-learning/fig-1.webp) | GRPO vs PPO: no value network |
 | ![fig-2](../assets/unsloth-reinforcement-learning/fig-2.png) | GSPO vision-language reward flow |
 
 ## Entities
@@ -55,11 +55,11 @@ Unsloth's RL stack centers on **GRPO** for reasoning models, extended to long co
 
 ## Sources
 
-- `raw/r1-reasoning/full-article.html`
-- `raw/grpo/full-article.html`
-- `raw/grpo-long-context/full-article.html`
+- `raw/r1-reasoning/full-article.md`
+- `raw/grpo/full-article.md`
+- `raw/grpo-long-context/full-article.md`
 - `raw/memory-efficient-rl/full-article.md`
 - `raw/fp8-reinforcement-learning/full-article.md`
-- `raw/vision-reinforcement-learning-vlm-rl/full-article.html`
-- `raw/gpt-oss-reinforcement-learning/full-article.html`
+- `raw/vision-reinforcement-learning-vlm-rl/full-article.md`
+- `raw/gpt-oss-reinforcement-learning/full-article.md`
 - `raw/rl-environments/full-article.md`

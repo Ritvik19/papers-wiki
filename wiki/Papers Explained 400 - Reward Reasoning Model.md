@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-07-02_Papers-Explained-400--Reward-Reasoning-Model-109dba633c27.html`
+- Source file: `raw/2025-07-02_Papers-Explained-400--Reward-Reasoning-Model-109dba633c27.md`
 - Source title: Papers Explained 400: Reward Reasoning Model
 - Published: 2025-07-02
 - Canonical: [https://medium.com/@ritvik19/papers-explained-400-reward-reasoning-model-109dba633c27](https://medium.com/@ritvik19/papers-explained-400-reward-reasoning-model-109dba633c27)
@@ -170,20 +170,20 @@ Reward Reasoning Model [2505.14674](https://arxiv.org/abs/2505.14674)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-07-02_Papers-Explained-400--Reward-Reasoning-Model-109dba633c27.html`); local copies under `wiki/assets/papers-explained-400-reward-reasoning-model/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-07-02_Papers-Explained-400--Reward-Reasoning-Model-109dba633c27.md`); local copies under `wiki/assets/papers-explained-400-reward-reasoning-model/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-400-reward-reasoning-model/fig-1.png) | Title card: Reward Reasoning Model. |
-| ![Figure 2](assets/papers-explained-400-reward-reasoning-model/fig-2.png) | An overview of reward reasoning model (RRM). |
-| ![Figure 3](assets/papers-explained-400-reward-reasoning-model/fig-3.png) | GRPO for training. The reward function is defined as follows. |
-| ![Figure 4](assets/papers-explained-400-reward-reasoning-model/fig-4.png) | Evaluation results on RewardBench benchmark and PandaLM Test. |
-| ![Figure 5](assets/papers-explained-400-reward-reasoning-model/fig-5.png) | Evaluation results on reward-guided best-of-N inference. |
-| ![Figure 6](assets/papers-explained-400-reward-reasoning-model/fig-6.png) | Trained Deepseek-R1-Distill-Qwen-7B on WebInstruct queries using GRPO. |
-| ![Figure 7](assets/papers-explained-400-reward-reasoning-model/fig-7.png) | Performance of DPO post-trained Qwen2.5–7B models on Arena-Hard. |
-| ![Figure 8](assets/papers-explained-400-reward-reasoning-model/fig-8.png) | Comparison of scoring strategies using RRM verifiers. |
-| ![Figure 9](assets/papers-explained-400-reward-reasoning-model/fig-9.png) | Results on RewardBench varying thinking budgets. |
-| ![Figure 10](assets/papers-explained-400-reward-reasoning-model/fig-10.png) | Used a small post-thinking budget to prevent compute hacking. |
+| ![Figure 1](assets/papers-explained-400-reward-reasoning-model/fig-1.webp) | Title card: Reward Reasoning Model. |
+| ![Figure 2](assets/papers-explained-400-reward-reasoning-model/fig-2.webp) | An overview of reward reasoning model (RRM). |
+| ![Figure 3](assets/papers-explained-400-reward-reasoning-model/fig-3.webp) | GRPO for training. The reward function is defined as follows. |
+| ![Figure 4](assets/papers-explained-400-reward-reasoning-model/fig-4.webp) | Evaluation results on RewardBench benchmark and PandaLM Test. |
+| ![Figure 5](assets/papers-explained-400-reward-reasoning-model/fig-5.webp) | Evaluation results on reward-guided best-of-N inference. |
+| ![Figure 6](assets/papers-explained-400-reward-reasoning-model/fig-6.webp) | Trained Deepseek-R1-Distill-Qwen-7B on WebInstruct queries using GRPO. |
+| ![Figure 7](assets/papers-explained-400-reward-reasoning-model/fig-7.webp) | Performance of DPO post-trained Qwen2.5–7B models on Arena-Hard. |
+| ![Figure 8](assets/papers-explained-400-reward-reasoning-model/fig-8.webp) | Comparison of scoring strategies using RRM verifiers. |
+| ![Figure 9](assets/papers-explained-400-reward-reasoning-model/fig-9.webp) | Results on RewardBench varying thinking budgets. |
+| ![Figure 10](assets/papers-explained-400-reward-reasoning-model/fig-10.webp) | Used a small post-thinking budget to prevent compute hacking. |
 ## Related
 
 - [[Papers Explained Corpus]]

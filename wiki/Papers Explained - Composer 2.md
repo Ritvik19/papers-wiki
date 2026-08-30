@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/draft_Papers-Explained--Composer-2-9bc921210902.html`
+- Source file: `raw/draft_Papers-Explained--Composer-2-9bc921210902.md`
 - Source title: Papers Explained: Composer 2
 - Canonical: [https://medium.com/p/9bc921210902](https://medium.com/p/9bc921210902)
 
@@ -98,15 +98,15 @@ Composer 2 Technical Report [2603.24477](https://arxiv.org/abs/2603.24477)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/draft_Papers-Explained--Composer-2-9bc921210902.html`); local copies under `wiki/assets/papers-explained-composer-2/` when download succeeded.
+Figures from the Medium HTML export (`raw/draft_Papers-Explained--Composer-2-9bc921210902.md`); local copies under `wiki/assets/papers-explained-composer-2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-composer-2/fig-1.png) | Composer 2 overview: Cursor-deployed agentic coding model with CPT + RL in the production harness. |
-| ![Figure 2](assets/papers-explained-composer-2/fig-2.png) | Evidence for picking Kimi K2.5: FreshBench knowledge, LoCoDiff-style state tracking, private-repo codebase perplexity. |
-| ![Figure 3](assets/papers-explained-composer-2/fig-3.png) | RL training tasks and asynchronous rollout harness (multi-sample GRPO-style updates, KL-regularized). |
-| ![Figure 4](assets/papers-explained-composer-2/fig-4.png) | Benchmark tallies on CursorBench, SWE-bench Multilingual, Terminal-Bench vs Composer 1.x and Kimi K2.5. |
-| ![Figure 5](assets/papers-explained-composer-2/fig-5.png) | CursorBench cost vs accuracy Pareto (token-efficient frontier vs frontier general models). |
+| ![Figure 1](assets/papers-explained-composer-2/fig-1.webp) | Composer 2 overview: Cursor-deployed agentic coding model with CPT + RL in the production harness. |
+| ![Figure 2](assets/papers-explained-composer-2/fig-2.webp) | Evidence for picking Kimi K2.5: FreshBench knowledge, LoCoDiff-style state tracking, private-repo codebase perplexity. |
+| ![Figure 3](assets/papers-explained-composer-2/fig-3.webp) | RL training tasks and asynchronous rollout harness (multi-sample GRPO-style updates, KL-regularized). |
+| ![Figure 4](assets/papers-explained-composer-2/fig-4.webp) | Benchmark tallies on CursorBench, SWE-bench Multilingual, Terminal-Bench vs Composer 1.x and Kimi K2.5. |
+| ![Figure 5](assets/papers-explained-composer-2/fig-5.webp) | CursorBench cost vs accuracy Pareto (token-efficient frontier vs frontier general models). |
 ## Predecessor
 
 - [[Composer: Building a fast frontier model with RL]] — Cursor's Oct 2025 announcement of the first Composer agent model (MoE, Cursor Bench, MXFP8 RL infrastructure). Composer 2's reported CursorBench-3 lineage starts from Composer 1 at 38.0%.

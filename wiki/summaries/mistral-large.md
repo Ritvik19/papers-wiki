@@ -1,6 +1,6 @@
 # Au Large (Mistral Large)
 
-**Source**: `raw/mistral-large/full-article.html` (221 KB), `raw/mistral-large/full-article.md` (markdown view)  
+**Source**: `raw/mistral-large/full-article.md` (221 KB), `raw/mistral-large/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/mistral-large/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -28,12 +28,12 @@ The post also introduces **JSON format mode** and expanded **function calling** 
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/mistral-large/fig-1.png) | MMLU comparison: GPT-4, Mistral Large, Claude 2, Gemini Pro, GPT-3.5, Llama 2 70B | — |
-| ![fig-2](../assets/mistral-large/fig-2.png) | Reasoning and knowledge benchmarks (MMLU, HellaSwag, WinoGrande, Arc, TriviaQA, TruthfulQA) | — |
-| ![fig-3](../assets/mistral-large/fig-3.png) | Multilingual HellaSwag, Arc Challenge, and MMLU: Mistral Large vs. Mixtral 8x7B vs. Llama 2 70B | — |
-| ![fig-4](../assets/mistral-large/fig-4.png) | Coding and math benchmarks (HumanEval, MBPP, MATH, GSM8K) vs. leading models | — |
+| ![fig-1](../assets/mistral-large/fig-1.webp) | MMLU comparison: GPT-4, Mistral Large, Claude 2, Gemini Pro, GPT-3.5, Llama 2 70B | — |
+| ![fig-2](../assets/mistral-large/fig-2.webp) | Reasoning and knowledge benchmarks (MMLU, HellaSwag, WinoGrande, Arc, TriviaQA, TruthfulQA) | — |
+| ![fig-3](../assets/mistral-large/fig-3.webp) | Multilingual HellaSwag, Arc Challenge, and MMLU: Mistral Large vs. Mixtral 8x7B vs. Llama 2 70B | — |
+| ![fig-4](../assets/mistral-large/fig-4.webp) | Coding and math benchmarks (HumanEval, MBPP, MATH, GSM8K) vs. leading models | — |
 
-![MMLU flagship comparison](../assets/mistral-large/fig-1.png)
+![MMLU flagship comparison](../assets/mistral-large/fig-1.webp)
 
 ## Entities
 

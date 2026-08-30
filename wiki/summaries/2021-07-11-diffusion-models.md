@@ -1,6 +1,6 @@
 # What are Diffusion Models?
 
-**Source**: `raw/2021-07-11-diffusion-models/full-article.html`, `raw/2021-07-11-diffusion-models/full-article.md`  
+**Source**: `raw/2021-07-11-diffusion-models/full-article.md`, `raw/2021-07-11-diffusion-models/full-article.md`  
 **Ingested**: 2026-05-22  
 **Tags**: #summary
 
@@ -42,25 +42,25 @@ To accelerate sampling, the survey traces the transition from Markovian generati
 
 | Figure | Caption | Source Section |
 |--------|---------|----------------|
-| ![fig-1](../assets/2021-07-11-diffusion-models/fig-1.png) | Overview of generative model architectures: GANs (adversarial training), VAEs (variational lower bound), Flow-based models (invertible mapping), and Diffusion models (stochastic iterative denoising). | Introduction / Generative Taxonomies |
-| ![fig-2](../assets/2021-07-11-diffusion-models/fig-2.png) | Directed graphical model illustrating the forward Markovian chain $q(x_t \mid x_{t-1})$ adding Gaussian noise and the reverse generative process $p_\theta(x_{t-1} \mid x_t)$ predicting denoising parameters. | Denoising Diffusion Probabilistic Models |
-| ![fig-3](../assets/2021-07-11-diffusion-models/fig-3.png) | Visual demonstration of the forward and reverse diffusion processes over a toy tractor image. The image is progressively corrupted to pure Gaussian noise and reconstructed. | DDPM Processes |
-| ![fig-4](../assets/2021-07-11-diffusion-models/fig-4.png) | Algorithmic details of the DDPM framework showing (1) training optimization via simplified MSE noise prediction, and (2) reverse sampling step. | DDPM Training & Sampling |
-| ![fig-5](../assets/2021-07-11-diffusion-models/fig-5.png) | Comparison of linear and cosine variance schedules. The cosine schedule drops variance more gradually, preventing rapid data destruction early in the chain. | Improved DDPM / Variance Schedules |
-| ![fig-6](../assets/2021-07-11-diffusion-models/fig-6.png) | CIFAR-10 negative log-likelihood (NLL) comparing linear vs. cosine variance schedules. Cosine schedule yields better NLL scores. | Improved DDPM Results |
-| ![fig-7](../assets/2021-07-11-diffusion-models/fig-7.png) | Sampling trajectory under classifier-guided DDPM. The class-conditional mean is perturbed by the gradient of the log-probability of a classifier $\nabla_{x_t} \log p_\phi(y \mid x_t)$. | Guided Diffusion / Classifier Guidance |
-| ![fig-8](../assets/2021-07-11-diffusion-models/fig-8.png) | FID quality versus sampling steps for DDIM against standard DDPM. DDIM achieves competitive FID with a fraction of the steps ($50\times$ faster). | Denoising Diffusion Implicit Models |
-| ![fig-9](../assets/2021-07-11-diffusion-models/fig-9.png) | Concept of progressive distillation. A student sampler is trained to replicate two steps of a teacher sampler in a single step, recursively halving the step budget. | Speed up Diffusion Models |
-| ![fig-10](../assets/2021-07-11-diffusion-models/fig-10.png) | Algorithmic formulation of progressive distillation of a deterministic sampler. | Progressive Distillation Algorithm |
-| ![fig-11](../assets/2021-07-11-diffusion-models/fig-11.png) | Consistency Models training mechanism: enforcing the consistency function $f(x_t, t) = f(x_{t'}, t')$ along any point of a continuous-time probability flow ODE trajectory. | Consistency Models |
-| ![fig-12](../assets/2021-07-11-diffusion-models/fig-12.png) | Visual comparison of Consistency Training (CT) and Consistency Distillation (CD) on ImageNet. | Consistency Models Evaluation |
-| ![fig-13](../assets/2021-07-11-diffusion-models/fig-13.png) | Empirical performance (FID vs. Steps) comparing single-step generation capabilities of Consistency Models, progressive distillation, and standard samplers. | Distortion-Rate Tradeoffs |
-| ![fig-14](../assets/2021-07-11-diffusion-models/fig-14.png) | Architecture of Latent Diffusion Models (LDMs) showing how an autoencoder compresses high-dimensional pixels into a lower-dimensional latent space where the U-Net operates. | Latent Diffusion Models |
-| ![fig-15](../assets/2021-07-11-diffusion-models/fig-15.png) | Pipeline of Cascaded Diffusion Models producing high-resolution outputs by cascading a low-resolution base diffusion model with subsequent super-resolution models. | unCLIP / Cascaded Diffusion |
-| ![fig-16](../assets/2021-07-11-diffusion-models/fig-16.png) | Architecture of unCLIP (DALL-E 2) showing the prior mapping text embeddings to CLIP image embeddings and the diffusion decoder generating images. | unCLIP Architecture |
-| ![fig-17](../assets/2021-07-11-diffusion-models/fig-17.png) | Typical U-Net backbone design consisting of downsampling/upsampling blocks, residual blocks, self-attention, and cross-attention text-conditioning mechanisms. | Diffusion Backbones / U-Net |
-| ![fig-18](../assets/2021-07-11-diffusion-models/fig-18.png) | ControlNet architecture showing how spatial conditioning (e.g. Canny edges, depth maps) is integrated by locking base weights and copying active paths with zero convolutions. | Spatial Conditioning / ControlNet |
-| ![fig-19](../assets/2021-07-11-diffusion-models/fig-19.png) | Diffusion Transformer (DiT) architecture substituting U-Net with ViT-like block processing on latent patches, scaled via adaptive layer normalization (AdaLN). | Diffusion Transformer (DiT) |
+| ![fig-1](../assets/2021-07-11-diffusion-models/fig-1.webp) | Overview of generative model architectures: GANs (adversarial training), VAEs (variational lower bound), Flow-based models (invertible mapping), and Diffusion models (stochastic iterative denoising). | Introduction / Generative Taxonomies |
+| ![fig-2](../assets/2021-07-11-diffusion-models/fig-2.webp) | Directed graphical model illustrating the forward Markovian chain $q(x_t \mid x_{t-1})$ adding Gaussian noise and the reverse generative process $p_\theta(x_{t-1} \mid x_t)$ predicting denoising parameters. | Denoising Diffusion Probabilistic Models |
+| ![fig-3](../assets/2021-07-11-diffusion-models/fig-3.webp) | Visual demonstration of the forward and reverse diffusion processes over a toy tractor image. The image is progressively corrupted to pure Gaussian noise and reconstructed. | DDPM Processes |
+| ![fig-4](../assets/2021-07-11-diffusion-models/fig-4.webp) | Algorithmic details of the DDPM framework showing (1) training optimization via simplified MSE noise prediction, and (2) reverse sampling step. | DDPM Training & Sampling |
+| ![fig-5](../assets/2021-07-11-diffusion-models/fig-5.webp) | Comparison of linear and cosine variance schedules. The cosine schedule drops variance more gradually, preventing rapid data destruction early in the chain. | Improved DDPM / Variance Schedules |
+| ![fig-6](../assets/2021-07-11-diffusion-models/fig-6.webp) | CIFAR-10 negative log-likelihood (NLL) comparing linear vs. cosine variance schedules. Cosine schedule yields better NLL scores. | Improved DDPM Results |
+| ![fig-7](../assets/2021-07-11-diffusion-models/fig-7.webp) | Sampling trajectory under classifier-guided DDPM. The class-conditional mean is perturbed by the gradient of the log-probability of a classifier $\nabla_{x_t} \log p_\phi(y \mid x_t)$. | Guided Diffusion / Classifier Guidance |
+| ![fig-8](../assets/2021-07-11-diffusion-models/fig-8.webp) | FID quality versus sampling steps for DDIM against standard DDPM. DDIM achieves competitive FID with a fraction of the steps ($50\times$ faster). | Denoising Diffusion Implicit Models |
+| ![fig-9](../assets/2021-07-11-diffusion-models/fig-9.webp) | Concept of progressive distillation. A student sampler is trained to replicate two steps of a teacher sampler in a single step, recursively halving the step budget. | Speed up Diffusion Models |
+| ![fig-10](../assets/2021-07-11-diffusion-models/fig-10.webp) | Algorithmic formulation of progressive distillation of a deterministic sampler. | Progressive Distillation Algorithm |
+| ![fig-11](../assets/2021-07-11-diffusion-models/fig-11.webp) | Consistency Models training mechanism: enforcing the consistency function $f(x_t, t) = f(x_{t'}, t')$ along any point of a continuous-time probability flow ODE trajectory. | Consistency Models |
+| ![fig-12](../assets/2021-07-11-diffusion-models/fig-12.webp) | Visual comparison of Consistency Training (CT) and Consistency Distillation (CD) on ImageNet. | Consistency Models Evaluation |
+| ![fig-13](../assets/2021-07-11-diffusion-models/fig-13.webp) | Empirical performance (FID vs. Steps) comparing single-step generation capabilities of Consistency Models, progressive distillation, and standard samplers. | Distortion-Rate Tradeoffs |
+| ![fig-14](../assets/2021-07-11-diffusion-models/fig-14.webp) | Architecture of Latent Diffusion Models (LDMs) showing how an autoencoder compresses high-dimensional pixels into a lower-dimensional latent space where the U-Net operates. | Latent Diffusion Models |
+| ![fig-15](../assets/2021-07-11-diffusion-models/fig-15.webp) | Pipeline of Cascaded Diffusion Models producing high-resolution outputs by cascading a low-resolution base diffusion model with subsequent super-resolution models. | unCLIP / Cascaded Diffusion |
+| ![fig-16](../assets/2021-07-11-diffusion-models/fig-16.webp) | Architecture of unCLIP (DALL-E 2) showing the prior mapping text embeddings to CLIP image embeddings and the diffusion decoder generating images. | unCLIP Architecture |
+| ![fig-17](../assets/2021-07-11-diffusion-models/fig-17.webp) | Typical U-Net backbone design consisting of downsampling/upsampling blocks, residual blocks, self-attention, and cross-attention text-conditioning mechanisms. | Diffusion Backbones / U-Net |
+| ![fig-18](../assets/2021-07-11-diffusion-models/fig-18.webp) | ControlNet architecture showing how spatial conditioning (e.g. Canny edges, depth maps) is integrated by locking base weights and copying active paths with zero convolutions. | Spatial Conditioning / ControlNet |
+| ![fig-19](../assets/2021-07-11-diffusion-models/fig-19.webp) | Diffusion Transformer (DiT) architecture substituting U-Net with ViT-like block processing on latent patches, scaled via adaptive layer normalization (AdaLN). | Diffusion Transformer (DiT) |
 
 ## Entities
 

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-06-16_Papers-Explained-388--Magistral-d79523e0df6b.html`
+- Source file: `raw/2025-06-16_Papers-Explained-388--Magistral-d79523e0df6b.md`
 - Source title: Papers Explained 388: Magistral
 - Published: 2025-06-16
 - Canonical: [https://medium.com/@ritvik19/papers-explained-388-magistral-d79523e0df6b](https://medium.com/@ritvik19/papers-explained-388-magistral-d79523e0df6b)
@@ -253,19 +253,19 @@ Here, provide a self-contained response.
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-06-16_Papers-Explained-388--Magistral-d79523e0df6b.html`); local copies under `wiki/assets/papers-explained-388-magistral/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-06-16_Papers-Explained-388--Magistral-d79523e0df6b.md`); local copies under `wiki/assets/papers-explained-388-magistral/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-388-magistral/fig-1.png) | Title card: Magistral. |
-| ![Figure 2](assets/papers-explained-388-magistral/fig-2.png) | Group Relative Policy Optimization (GRPO) is used as the RL algorithm. |
-| ![Figure 3](assets/papers-explained-388-magistral/fig-3.png) | The final GRPO loss with all modifications highlighted in red is. |
-| ![Figure 4](assets/papers-explained-388-magistral/fig-4.png) | A soft length penalty (formula omitted) is applied to discourage exceeding the maximum completion length. |
-| ![Figure 5](assets/papers-explained-388-magistral/fig-5.png) | Overview of the filtering, training and RL stages. |
-| ![Figure 6](assets/papers-explained-388-magistral/fig-6.png) | Results of Magistral Medium. |
-| ![Figure 7](assets/papers-explained-388-magistral/fig-7.png) | Performance of Magistral Small compared with different training setups across various benchmarks. |
-| ![Figure 8](assets/papers-explained-388-magistral/fig-8.png) | Magistral Medium’s pass@1 performance on multilingual versions of the AIME 2024 benchmark. |
-| ![Figure 9](assets/papers-explained-388-magistral/fig-9.png) | The model is available on HuggingFace. |
+| ![Figure 1](assets/papers-explained-388-magistral/fig-1.webp) | Title card: Magistral. |
+| ![Figure 2](assets/papers-explained-388-magistral/fig-2.webp) | Group Relative Policy Optimization (GRPO) is used as the RL algorithm. |
+| ![Figure 3](assets/papers-explained-388-magistral/fig-3.webp) | The final GRPO loss with all modifications highlighted in red is. |
+| ![Figure 4](assets/papers-explained-388-magistral/fig-4.webp) | A soft length penalty (formula omitted) is applied to discourage exceeding the maximum completion length. |
+| ![Figure 5](assets/papers-explained-388-magistral/fig-5.webp) | Overview of the filtering, training and RL stages. |
+| ![Figure 6](assets/papers-explained-388-magistral/fig-6.webp) | Results of Magistral Medium. |
+| ![Figure 7](assets/papers-explained-388-magistral/fig-7.webp) | Performance of Magistral Small compared with different training setups across various benchmarks. |
+| ![Figure 8](assets/papers-explained-388-magistral/fig-8.webp) | Magistral Medium’s pass@1 performance on multilingual versions of the AIME 2024 benchmark. |
+| ![Figure 9](assets/papers-explained-388-magistral/fig-9.webp) | The model is available on HuggingFace. |
 ## Related
 
 - [[Magistral]] — official Mistral AI Magistral reasoning model launch blog.

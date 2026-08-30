@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-09-27_Papers-Explained-220--EfficientFormer-97c91540af19.html`
+- Source file: `raw/2024-09-27_Papers-Explained-220--EfficientFormer-97c91540af19.md`
 - Source title: Papers Explained 220: EfficientFormer
 - Published: 2024-09-27
 - Canonical: [https://medium.com/@ritvik19/papers-explained-220-efficientformer-97c91540af19](https://medium.com/@ritvik19/papers-explained-220-efficientformer-97c91540af19)
@@ -167,23 +167,23 @@ Recommended Reading [Vision Transformers](https://ritvik19.medium.com/list/visio
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-09-27_Papers-Explained-220--EfficientFormer-97c91540af19.html`); local copies under `wiki/assets/papers-explained-220-efficientformer/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-09-27_Papers-Explained-220--EfficientFormer-97c91540af19.md`); local copies under `wiki/assets/papers-explained-220-efficientformer/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-220-efficientformer/fig-1.png) | Title card: EfficientFormer. |
-| ![Figure 2](assets/papers-explained-220-efficientformer/fig-2.png) | Latency profiling. Results are obtained on iPhone 12 with CoreML. |
-| ![Figure 3](assets/papers-explained-220-efficientformer/fig-3.png) | Overview of EfficientFormer. |
-| ![Figure 4](assets/papers-explained-220-efficientformer/fig-4.png) | The network consists of a patch embedding (PatchEmbed) and stack of meta transformer blocks, denoted as MB. |
-| ![Figure 5](assets/papers-explained-220-efficientformer/fig-5.png) | where X0 is the input image with batch size as B and spatial size as [H,W], Y is the desired output, and m is the total number of blocks... |
-| ![Figure 6](assets/papers-explained-220-efficientformer/fig-6.png) | First, input images are processed by a CONV stem with two 3 × 3 convolutions with stride 2 as patch embedding,. |
-| ![Figure 7](assets/papers-explained-220-efficientformer/fig-7.png) | where Cj is the channel number (width) of the j th stage. |
-| ![Figure 8](assets/papers-explained-220-efficientformer/fig-8.png) | After processing all the MB4D blocks, a one-time reshaping is performed to transform the features size and enter the 3D partition. |
-| ![Figure 9](assets/papers-explained-220-efficientformer/fig-9.png) | where LinearG denotes the Linear followed by GeLU, and. |
-| ![Figure 10](assets/papers-explained-220-efficientformer/fig-10.png) | The supernet is designed based on the concept of a MetaPath (MP) that represents different possible blocks within each stage of the network. |
-| ![Figure 11](assets/papers-explained-220-efficientformer/fig-11.png) | The algorithm involves three major steps. |
-| ![Figure 12](assets/papers-explained-220-efficientformer/fig-12.png) | Comparison results on ImgeNet-1K. |
-| ![Figure 13](assets/papers-explained-220-efficientformer/fig-13.png) | Comparison results using EfficientFormer as backbone. |
+| ![Figure 1](assets/papers-explained-220-efficientformer/fig-1.webp) | Title card: EfficientFormer. |
+| ![Figure 2](assets/papers-explained-220-efficientformer/fig-2.webp) | Latency profiling. Results are obtained on iPhone 12 with CoreML. |
+| ![Figure 3](assets/papers-explained-220-efficientformer/fig-3.webp) | Overview of EfficientFormer. |
+| ![Figure 4](assets/papers-explained-220-efficientformer/fig-4.webp) | The network consists of a patch embedding (PatchEmbed) and stack of meta transformer blocks, denoted as MB. |
+| ![Figure 5](assets/papers-explained-220-efficientformer/fig-5.webp) | where X0 is the input image with batch size as B and spatial size as [H,W], Y is the desired output, and m is the total number of blocks... |
+| ![Figure 6](assets/papers-explained-220-efficientformer/fig-6.webp) | First, input images are processed by a CONV stem with two 3 × 3 convolutions with stride 2 as patch embedding,. |
+| ![Figure 7](assets/papers-explained-220-efficientformer/fig-7.webp) | where Cj is the channel number (width) of the j th stage. |
+| ![Figure 8](assets/papers-explained-220-efficientformer/fig-8.webp) | After processing all the MB4D blocks, a one-time reshaping is performed to transform the features size and enter the 3D partition. |
+| ![Figure 9](assets/papers-explained-220-efficientformer/fig-9.webp) | where LinearG denotes the Linear followed by GeLU, and. |
+| ![Figure 10](assets/papers-explained-220-efficientformer/fig-10.webp) | The supernet is designed based on the concept of a MetaPath (MP) that represents different possible blocks within each stage of the network. |
+| ![Figure 11](assets/papers-explained-220-efficientformer/fig-11.webp) | The algorithm involves three major steps. |
+| ![Figure 12](assets/papers-explained-220-efficientformer/fig-12.webp) | Comparison results on ImgeNet-1K. |
+| ![Figure 13](assets/papers-explained-220-efficientformer/fig-13.webp) | Comparison results using EfficientFormer as backbone. |
 ## Related
 
 - [[Papers Explained Corpus]]

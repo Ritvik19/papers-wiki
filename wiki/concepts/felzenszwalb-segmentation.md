@@ -18,7 +18,7 @@
 | **Grid** | Pixels | \(\|I(p_i) - I(p_j)\|\) on 4- or 8-neighbors |
 | **Nearest neighbor** | Pixels in \((x,y,r,g,b)\) | Euclidean distance in position + color |
 
-![Indoor segmentation](../assets/2017-10-29-object-recognition-part-1/fig-6.png)
+![Indoor segmentation](../assets/2017-10-29-object-recognition-part-1/fig-6.webp)
 
 ## Key quantities
 
@@ -44,7 +44,7 @@ Given \(|V|=n\), \(|E|=m\):
 
 Larger **\(k\)** → larger \(\tau\) → coarser segments (fewer, bigger regions).
 
-![Felzenszwalb k=100 vs k=1000](../assets/2017-10-29-object-recognition-part-1/fig-7.png) ![Segmentation on Manu 2013](../assets/2017-10-29-object-recognition-part-1/fig-8.png)
+![Felzenszwalb k=100 vs k=1000](../assets/2017-10-29-object-recognition-part-1/fig-7.webp) ![Segmentation on Manu 2013](../assets/2017-10-29-object-recognition-part-1/fig-8.webp)
 
 ```python
 import skimage.segmentation

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-05-24_Papers-Explained-141--Tool-LLM-856f99e79f55.html`
+- Source file: `raw/2024-05-24_Papers-Explained-141--Tool-LLM-856f99e79f55.md`
 - Source title: Papers Explained 141: Tool LLM
 - Published: 2024-05-24
 - Canonical: [https://medium.com/@ritvik19/papers-explained-141-tool-llm-856f99e79f55](https://medium.com/@ritvik19/papers-explained-141-tool-llm-856f99e79f55)
@@ -125,16 +125,16 @@ ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs [23
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-05-24_Papers-Explained-141--Tool-LLM-856f99e79f55.html`); local copies under `wiki/assets/papers-explained-141-tool-llm/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-05-24_Papers-Explained-141--Tool-LLM-856f99e79f55.md`); local copies under `wiki/assets/papers-explained-141-tool-llm/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-141-tool-llm/fig-1.png) | Title page of *ToolLLM: Facilitating Large Language Models to Master 16000+ Real-World APIs*. |
-| ![Figure 2](assets/papers-explained-141-tool-llm/fig-2.png) | End-to-end diagram: RapidAPI harvesting → ChatGPT instruction + trace labeling → ToolBench SFT of LLaMA into ToolLLaMA → retriever-grounded multi-hop RapidAPI execution evaluated by ToolEval. |
-| ![Figure 3](assets/papers-explained-141-tool-llm/fig-3.png) | RapidAPI hierarchy down to endpoint docs plus ChatGPT-driven instruction synthesis for single- and multi-tool scenarios. |
-| ![Figure 4](assets/papers-explained-141-tool-llm/fig-4.png) | DFSDT tree search recovers from failed RapidAPI branches versus linear CoT/ReACT traces; worked birthday-surprise example contrasts success vs give-up paths. |
-| ![Figure 5](assets/papers-explained-141-tool-llm/fig-5.png) | ToolBench test pass/win rates across instruction tiers for ReACT vs DFSDT with ChatGPT, Davinci, ToolLLaMA, and small instruct baselines. |
-| ![Figure 6](assets/papers-explained-141-tool-llm/fig-6.png) | Ablations replacing oracle APIs with the learned retriever, swapping DFSDT for ReACT, or swapping full FT for LoRA on ToolLLaMA. |
+| ![Figure 1](assets/papers-explained-141-tool-llm/fig-1.webp) | Title page of *ToolLLM: Facilitating Large Language Models to Master 16000+ Real-World APIs*. |
+| ![Figure 2](assets/papers-explained-141-tool-llm/fig-2.webp) | End-to-end diagram: RapidAPI harvesting → ChatGPT instruction + trace labeling → ToolBench SFT of LLaMA into ToolLLaMA → retriever-grounded multi-hop RapidAPI execution evaluated by ToolEval. |
+| ![Figure 3](assets/papers-explained-141-tool-llm/fig-3.webp) | RapidAPI hierarchy down to endpoint docs plus ChatGPT-driven instruction synthesis for single- and multi-tool scenarios. |
+| ![Figure 4](assets/papers-explained-141-tool-llm/fig-4.webp) | DFSDT tree search recovers from failed RapidAPI branches versus linear CoT/ReACT traces; worked birthday-surprise example contrasts success vs give-up paths. |
+| ![Figure 5](assets/papers-explained-141-tool-llm/fig-5.webp) | ToolBench test pass/win rates across instruction tiers for ReACT vs DFSDT with ChatGPT, Davinci, ToolLLaMA, and small instruct baselines. |
+| ![Figure 6](assets/papers-explained-141-tool-llm/fig-6.webp) | Ablations replacing oracle APIs with the learned retriever, swapping DFSDT for ReACT, or swapping full FT for LoRA on ToolLLaMA. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-01-08_Papers-Explained-283--Tulu-V3-fc7758b18724.html`
+- Source file: `raw/2025-01-08_Papers-Explained-283--Tulu-V3-fc7758b18724.md`
 - Source title: Papers Explained 283: Tulu V3
 - Published: 2025-01-08
 - Canonical: [https://medium.com/@ritvik19/papers-explained-183-tulu-v3-fc7758b18724](https://medium.com/@ritvik19/papers-explained-183-tulu-v3-fc7758b18724)
@@ -205,38 +205,38 @@ TÜLU 3: Pushing Frontiers in Open Language Model Post-Training [2411.15124](htt
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-01-08_Papers-Explained-283--Tulu-V3-fc7758b18724.html`); local copies under `wiki/assets/papers-explained-283-tulu-v3/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-01-08_Papers-Explained-283--Tulu-V3-fc7758b18724.md`); local copies under `wiki/assets/papers-explained-283-tulu-v3/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-283-tulu-v3/fig-1.png) | Title card: Tulu V3. |
-| ![Figure 2](assets/papers-explained-283-tulu-v3/fig-2.png) | An overview of the TÜLU 3 recipe. |
-| ![Figure 3](assets/papers-explained-283-tulu-v3/fig-3.png) | Summary of theprompt dataset. |
-| ![Figure 4](assets/papers-explained-283-tulu-v3/fig-4.png) | Decontaminated datasets. % is the percent of the dataset removed. |
-| ![Figure 5](assets/papers-explained-283-tulu-v3/fig-5.png) | Public datasets where significant (>5% eval overlap) contamination is found. |
-| ![Figure 6](assets/papers-explained-283-tulu-v3/fig-6.png) | Summary of the performance of TÜLU 3 SFT models against comparable baselines. |
-| ![Figure 7](assets/papers-explained-283-tulu-v3/fig-7.png) | Performance during the SFT ablations. |
-| ![Figure 8](assets/papers-explained-283-tulu-v3/fig-8.png) | Average and skill-specific performance on stratified subsamples of the final SFT mix. |
-| ![Figure 9](assets/papers-explained-283-tulu-v3/fig-9.png) | Mathematical performance of different base models trained on the mix. |
-| ![Figure 10](assets/papers-explained-283-tulu-v3/fig-10.png) | The impact of different chat templates on SFT model performance, trained using an intermediate SFT mixture on Llama 3.0. |
-| ![Figure 11](assets/papers-explained-283-tulu-v3/fig-11.png) | Average performance of our 8B and 70B SFT models using random seeds, and compared against the best model soup using the models trained with different seeds. |
-| ![Figure 12](assets/papers-explained-283-tulu-v3/fig-12.png) | Pipeline for generating and scaling preference data that is based from Ultrafeedback. |
-| ![Figure 13](assets/papers-explained-283-tulu-v3/fig-13.png) | Summary of the best preference dataset mixes for TÜLU 3 8B DPO and TÜLU 3 70B DPO. |
-| ![Figure 14](assets/papers-explained-283-tulu-v3/fig-14.png) | Effect of scaling the size of the preference dataset, specifically the number of unique prompts, on downstream DPO model performance. |
-| ![Figure 15](assets/papers-explained-283-tulu-v3/fig-15.png) | Effect of scaling a preference dataset by duplicating prompts on downstream DPO performance using the Ultrafeedback dataset. |
-| ![Figure 16](assets/papers-explained-283-tulu-v3/fig-16.png) | Effect of reusing prompts from SFT mix and new prompts from the same datasets subsampled for the SFT dataset mix. |
-| ![Figure 17](assets/papers-explained-283-tulu-v3/fig-17.png) | Effect of including on-policy data during the Response Generation stage of the synthetic preference data pipeline on downstream DPO model performance. |
-| ![Figure 18](assets/papers-explained-283-tulu-v3/fig-18.png) | Performance of DPO models trained on preference annotations by different LLM judges. |
-| ![Figure 19](assets/papers-explained-283-tulu-v3/fig-19.png) | Effect of different DPO mix on 8B and 70B models: UltraFeedback, Helpsteer2, and the best preference mix. |
-| ![Figure 20](assets/papers-explained-283-tulu-v3/fig-20.png) | Adding persona preference data to the SFT Reused mix for DPO. |
-| ![Figure 21](assets/papers-explained-283-tulu-v3/fig-21.png) | Performance of different IF-targeted preference mixes, average and IFEval. |
-| ![Figure 22](assets/papers-explained-283-tulu-v3/fig-22.png) | Comparing the use of the original completions to regenerating completions using our synthetic preference pipeline. |
-| ![Figure 23](assets/papers-explained-283-tulu-v3/fig-23.png) | An overview of how Reinforcement Learning with Verifiable Rewards (RLVR) works. |
-| ![Figure 24](assets/papers-explained-283-tulu-v3/fig-24.png) | Summary of the verifiable prompt dataset. |
-| ![Figure 25](assets/papers-explained-283-tulu-v3/fig-25.png) | With these prompts and verification functions, models are trained via Proximal Policy Optimization (PPO). |
-| ![Figure 26](assets/papers-explained-283-tulu-v3/fig-26.png) | The comparison of RLVR’s performance on GSM8K between starting from a DPO checkpoint and starting from a weaker SFT checkpoint. |
-| ![Figure 27](assets/papers-explained-283-tulu-v3/fig-27.png) | The performance of RLVR vs KL Divergence under different value model initialization. |
-| ![Figure 28](assets/papers-explained-283-tulu-v3/fig-28.png) | Comparison of 1) using scores from on top of the verifiable rewards and 2) using only the verifiable rewards. |
+| ![Figure 1](assets/papers-explained-283-tulu-v3/fig-1.webp) | Title card: Tulu V3. |
+| ![Figure 2](assets/papers-explained-283-tulu-v3/fig-2.webp) | An overview of the TÜLU 3 recipe. |
+| ![Figure 3](assets/papers-explained-283-tulu-v3/fig-3.webp) | Summary of theprompt dataset. |
+| ![Figure 4](assets/papers-explained-283-tulu-v3/fig-4.webp) | Decontaminated datasets. % is the percent of the dataset removed. |
+| ![Figure 5](assets/papers-explained-283-tulu-v3/fig-5.webp) | Public datasets where significant (>5% eval overlap) contamination is found. |
+| ![Figure 6](assets/papers-explained-283-tulu-v3/fig-6.webp) | Summary of the performance of TÜLU 3 SFT models against comparable baselines. |
+| ![Figure 7](assets/papers-explained-283-tulu-v3/fig-7.webp) | Performance during the SFT ablations. |
+| ![Figure 8](assets/papers-explained-283-tulu-v3/fig-8.webp) | Average and skill-specific performance on stratified subsamples of the final SFT mix. |
+| ![Figure 9](assets/papers-explained-283-tulu-v3/fig-9.webp) | Mathematical performance of different base models trained on the mix. |
+| ![Figure 10](assets/papers-explained-283-tulu-v3/fig-10.webp) | The impact of different chat templates on SFT model performance, trained using an intermediate SFT mixture on Llama 3.0. |
+| ![Figure 11](assets/papers-explained-283-tulu-v3/fig-11.webp) | Average performance of our 8B and 70B SFT models using random seeds, and compared against the best model soup using the models trained with different seeds. |
+| ![Figure 12](assets/papers-explained-283-tulu-v3/fig-12.webp) | Pipeline for generating and scaling preference data that is based from Ultrafeedback. |
+| ![Figure 13](assets/papers-explained-283-tulu-v3/fig-13.webp) | Summary of the best preference dataset mixes for TÜLU 3 8B DPO and TÜLU 3 70B DPO. |
+| ![Figure 14](assets/papers-explained-283-tulu-v3/fig-14.webp) | Effect of scaling the size of the preference dataset, specifically the number of unique prompts, on downstream DPO model performance. |
+| ![Figure 15](assets/papers-explained-283-tulu-v3/fig-15.webp) | Effect of scaling a preference dataset by duplicating prompts on downstream DPO performance using the Ultrafeedback dataset. |
+| ![Figure 16](assets/papers-explained-283-tulu-v3/fig-16.webp) | Effect of reusing prompts from SFT mix and new prompts from the same datasets subsampled for the SFT dataset mix. |
+| ![Figure 17](assets/papers-explained-283-tulu-v3/fig-17.webp) | Effect of including on-policy data during the Response Generation stage of the synthetic preference data pipeline on downstream DPO model performance. |
+| ![Figure 18](assets/papers-explained-283-tulu-v3/fig-18.webp) | Performance of DPO models trained on preference annotations by different LLM judges. |
+| ![Figure 19](assets/papers-explained-283-tulu-v3/fig-19.webp) | Effect of different DPO mix on 8B and 70B models: UltraFeedback, Helpsteer2, and the best preference mix. |
+| ![Figure 20](assets/papers-explained-283-tulu-v3/fig-20.webp) | Adding persona preference data to the SFT Reused mix for DPO. |
+| ![Figure 21](assets/papers-explained-283-tulu-v3/fig-21.webp) | Performance of different IF-targeted preference mixes, average and IFEval. |
+| ![Figure 22](assets/papers-explained-283-tulu-v3/fig-22.webp) | Comparing the use of the original completions to regenerating completions using our synthetic preference pipeline. |
+| ![Figure 23](assets/papers-explained-283-tulu-v3/fig-23.webp) | An overview of how Reinforcement Learning with Verifiable Rewards (RLVR) works. |
+| ![Figure 24](assets/papers-explained-283-tulu-v3/fig-24.webp) | Summary of the verifiable prompt dataset. |
+| ![Figure 25](assets/papers-explained-283-tulu-v3/fig-25.webp) | With these prompts and verification functions, models are trained via Proximal Policy Optimization (PPO). |
+| ![Figure 26](assets/papers-explained-283-tulu-v3/fig-26.webp) | The comparison of RLVR’s performance on GSM8K between starting from a DPO checkpoint and starting from a weaker SFT checkpoint. |
+| ![Figure 27](assets/papers-explained-283-tulu-v3/fig-27.webp) | The performance of RLVR vs KL Divergence under different value model initialization. |
+| ![Figure 28](assets/papers-explained-283-tulu-v3/fig-28.webp) | Comparison of 1) using scores from on top of the verifiable rewards and 2) using only the verifiable rewards. |
 ## Related
 
 - [[Papers Explained Corpus]]

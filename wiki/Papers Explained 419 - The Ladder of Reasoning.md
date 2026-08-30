@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-07-29_Papers-Explained-419--The-Ladder-of-Reasoning-e58f9727abec.html`
+- Source file: `raw/2025-07-29_Papers-Explained-419--The-Ladder-of-Reasoning-e58f9727abec.md`
 - Source title: Papers Explained 419: The Ladder of Reasoning
 - Published: 2025-07-29
 - Canonical: [https://medium.com/@ritvik19/papers-explained-419-the-ladder-of-reasoning-e58f9727abec](https://medium.com/@ritvik19/papers-explained-419-the-ladder-of-reasoning-e58f9727abec)
@@ -185,15 +185,15 @@ Climbing the Ladder of Reasoning: What LLMs Can-and Still Can’t-Solve after SF
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-07-29_Papers-Explained-419--The-Ladder-of-Reasoning-e58f9727abec.html`); local copies under `wiki/assets/papers-explained-419-the-ladder-of-reasoning/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-07-29_Papers-Explained-419--The-Ladder-of-Reasoning-e58f9727abec.md`); local copies under `wiki/assets/papers-explained-419-the-ladder-of-reasoning/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-419-the-ladder-of-reasoning/fig-1.png) | Title card: The Ladder of Reasoning. |
-| ![Figure 2](assets/papers-explained-419-the-ladder-of-reasoning/fig-2.png) | Performance comparison of the base model across various SFT trajectory settings. |
-| ![Figure 3](assets/papers-explained-419-the-ladder-of-reasoning/fig-3.png) | Trajectory similarity scores between various models (SFT-ed in different math domains) and Deepseek-R1 when solving Med-level math problems. |
-| ![Figure 4](assets/papers-explained-419-the-ladder-of-reasoning/fig-4.png) | Comparison between small-scale SFT-ed models and the model with large-scale post-training on subquestions from two hard-level AIME24 problems. |
-| ![Figure 5](assets/papers-explained-419-the-ladder-of-reasoning/fig-5.png) | Performance scaling of models via SFT on Hard-level reasoning tasks. |
+| ![Figure 1](assets/papers-explained-419-the-ladder-of-reasoning/fig-1.webp) | Title card: The Ladder of Reasoning. |
+| ![Figure 2](assets/papers-explained-419-the-ladder-of-reasoning/fig-2.webp) | Performance comparison of the base model across various SFT trajectory settings. |
+| ![Figure 3](assets/papers-explained-419-the-ladder-of-reasoning/fig-3.webp) | Trajectory similarity scores between various models (SFT-ed in different math domains) and Deepseek-R1 when solving Med-level math problems. |
+| ![Figure 4](assets/papers-explained-419-the-ladder-of-reasoning/fig-4.webp) | Comparison between small-scale SFT-ed models and the model with large-scale post-training on subquestions from two hard-level AIME24 problems. |
+| ![Figure 5](assets/papers-explained-419-the-ladder-of-reasoning/fig-5.webp) | Performance scaling of models via SFT on Hard-level reasoning tasks. |
 ## Related
 
 - [[Papers Explained Corpus]]

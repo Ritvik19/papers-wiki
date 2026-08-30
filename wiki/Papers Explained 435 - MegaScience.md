@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-08-20_Papers-Explained-435--MegaScience-ffe3fe3a8040.html`
+- Source file: `raw/2025-08-20_Papers-Explained-435--MegaScience-ffe3fe3a8040.md`
 - Source title: Papers Explained 435: MegaScience
 - Published: 2025-08-20
 - Canonical: [https://medium.com/@ritvik19/papers-explained-435-megascience-ffe3fe3a8040](https://medium.com/@ritvik19/papers-explained-435-megascience-ffe3fe3a8040)
@@ -132,19 +132,19 @@ MegaScience: Pushing the Frontiers of Post-Training Datasets for Science Reasoni
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-08-20_Papers-Explained-435--MegaScience-ffe3fe3a8040.html`); local copies under `wiki/assets/papers-explained-435-megascience/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-08-20_Papers-Explained-435--MegaScience-ffe3fe3a8040.md`); local copies under `wiki/assets/papers-explained-435-megascience/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-435-megascience/fig-1.png) | Title card: MegaScience. |
-| ![Figure 2](assets/papers-explained-435-megascience/fig-2.png) | The pipeline of TextBookReasoning data curation. |
-| ![Figure 3](assets/papers-explained-435-megascience/fig-3.png) | Q-A Extraction Statistics. |
-| ![Figure 4](assets/papers-explained-435-megascience/fig-4.png) | The numerical changes during TextBookReasoning curation. |
-| ![Figure 5](assets/papers-explained-435-megascience/fig-5.png) | The overall of MegaScience data recipe. |
-| ![Figure 6](assets/papers-explained-435-megascience/fig-6.png) | Statistics of the MegaScience dataset. |
-| ![Figure 7](assets/papers-explained-435-megascience/fig-7.png) | Hyperparameters of supervised finetuning. |
-| ![Figure 8](assets/papers-explained-435-megascience/fig-8.png) | The main results for scientific reasoning. |
-| ![Figure 9](assets/papers-explained-435-megascience/fig-9.png) | Comparison between models trained on MegaScience and official instruction-tuned models. |
+| ![Figure 1](assets/papers-explained-435-megascience/fig-1.webp) | Title card: MegaScience. |
+| ![Figure 2](assets/papers-explained-435-megascience/fig-2.webp) | The pipeline of TextBookReasoning data curation. |
+| ![Figure 3](assets/papers-explained-435-megascience/fig-3.webp) | Q-A Extraction Statistics. |
+| ![Figure 4](assets/papers-explained-435-megascience/fig-4.webp) | The numerical changes during TextBookReasoning curation. |
+| ![Figure 5](assets/papers-explained-435-megascience/fig-5.webp) | The overall of MegaScience data recipe. |
+| ![Figure 6](assets/papers-explained-435-megascience/fig-6.webp) | Statistics of the MegaScience dataset. |
+| ![Figure 7](assets/papers-explained-435-megascience/fig-7.webp) | Hyperparameters of supervised finetuning. |
+| ![Figure 8](assets/papers-explained-435-megascience/fig-8.webp) | The main results for scientific reasoning. |
+| ![Figure 9](assets/papers-explained-435-megascience/fig-9.webp) | Comparison between models trained on MegaScience and official instruction-tuned models. |
 ## Related
 
 - [[Papers Explained Corpus]]

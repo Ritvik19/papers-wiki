@@ -1,6 +1,6 @@
 # C4AI Launches Aya 23, 8B and 35B Parameter Open Weights Release
 
-**Source**: `raw/aya23/full-article.html` (321 KB), `raw/aya23/full-article.md` (markdown view)  
+**Source**: `raw/aya23/full-article.md` (321 KB), `raw/aya23/full-article.md` (markdown view)  
 **URL**: https://cohere.com/blog/aya23  
 **Published**: 2024-05-22  
 **Ingested**: 2026-06-06  
@@ -28,11 +28,11 @@ Models are released for fundamental research and safety auditing on Hugging Face
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/aya23/fig-1.png) | Blog featured image — Aya 23 open-weights announcement | — |
-| ![fig-2](../assets/aya23/fig-2.png) | LLM-as-a-judge win rates across 10 languages (Aya 23 vs baselines) | — |
-| ![fig-3](../assets/aya23/fig-3.png) | Multilingual benchmark comparison for Aya 23 8B and 35B | — |
+| ![fig-1](../assets/aya23/fig-1.webp) | Blog featured image — Aya 23 open-weights announcement | — |
+| ![fig-2](../assets/aya23/fig-2.webp) | LLM-as-a-judge win rates across 10 languages (Aya 23 vs baselines) | — |
+| ![fig-3](../assets/aya23/fig-3.webp) | Multilingual benchmark comparison for Aya 23 8B and 35B | — |
 
-![LLM-as-a-judge win rates](../assets/aya23/fig-2.png)
+![LLM-as-a-judge win rates](../assets/aya23/fig-2.webp)
 
 ## Entities
 

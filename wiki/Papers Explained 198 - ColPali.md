@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-30_Papers-Explained-198--ColPali-b3be70cbe252.html`
+- Source file: `raw/2024-08-30_Papers-Explained-198--ColPali-b3be70cbe252.md`
 - Source title: Papers Explained 198: ColPali
 - Published: 2024-08-30
 - Canonical: [https://medium.com/@ritvik19/papers-explained-198-colpali-b3be70cbe252](https://medium.com/@ritvik19/papers-explained-198-colpali-b3be70cbe252)
@@ -123,16 +123,16 @@ Recommended Reading [Retrieval and Representation Learning](https://ritvik19.med
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-30_Papers-Explained-198--ColPali-b3be70cbe252.html`); local copies under `wiki/assets/papers-explained-198-colpali/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-30_Papers-Explained-198--ColPali-b3be70cbe252.md`); local copies under `wiki/assets/papers-explained-198-colpali/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-198-colpali/fig-1.png) | Paper title — **ColPali: Efficient Document Retrieval with Vision Language Models** (Illuin / Equall.ai / CentraleSupélec / ETH). |
-| ![Figure 2](assets/papers-explained-198-colpali/fig-2.png) | **ViDoRe tasks** — academic QA splits (DocVQA, InfoVQA, ArxivQA, TabFQuAD, …) vs practical **100-query** domain slices (Energy, Gov, Health, …). |
-| ![Figure 3](assets/papers-explained-198-colpali/fig-3.png) | **Pipelines** — classical OCR → chunk → text embed vs **ColPali** page-image → VLM → multi-vector doc embed; **MaxSim** late interaction + **NDCG@5** callouts. |
-| ![Figure 4](assets/papers-explained-198-colpali/fig-4.png) | **Late interaction score** — sum over query tokens of **max** patch similarity (**ColBERT-style** MaxSim). |
-| ![Figure 5](assets/papers-explained-198-colpali/fig-5.png) | **ViDoRe leaderboard** — BM25 / BGE-M3 / VLMs / BiSigLIP / BiPali vs **ColPali + late interaction** (**NDCG@5**, dataset columns + average). |
-| ![Figure 6](assets/papers-explained-198-colpali/fig-6.png) | **Offline indexing latency** — stacked PDF parser (layout + OCR + captioning) vs single-pass **SigLIP** vs **ColPali** page encoding bars (seconds per page). |
+| ![Figure 1](assets/papers-explained-198-colpali/fig-1.webp) | Paper title — **ColPali: Efficient Document Retrieval with Vision Language Models** (Illuin / Equall.ai / CentraleSupélec / ETH). |
+| ![Figure 2](assets/papers-explained-198-colpali/fig-2.webp) | **ViDoRe tasks** — academic QA splits (DocVQA, InfoVQA, ArxivQA, TabFQuAD, …) vs practical **100-query** domain slices (Energy, Gov, Health, …). |
+| ![Figure 3](assets/papers-explained-198-colpali/fig-3.webp) | **Pipelines** — classical OCR → chunk → text embed vs **ColPali** page-image → VLM → multi-vector doc embed; **MaxSim** late interaction + **NDCG@5** callouts. |
+| ![Figure 4](assets/papers-explained-198-colpali/fig-4.webp) | **Late interaction score** — sum over query tokens of **max** patch similarity (**ColBERT-style** MaxSim). |
+| ![Figure 5](assets/papers-explained-198-colpali/fig-5.webp) | **ViDoRe leaderboard** — BM25 / BGE-M3 / VLMs / BiSigLIP / BiPali vs **ColPali + late interaction** (**NDCG@5**, dataset columns + average). |
+| ![Figure 6](assets/papers-explained-198-colpali/fig-6.webp) | **Offline indexing latency** — stacked PDF parser (layout + OCR + captioning) vs single-pass **SigLIP** vs **ColPali** page encoding bars (seconds per page). |
 ## Related
 
 - [[Papers Explained Corpus]]

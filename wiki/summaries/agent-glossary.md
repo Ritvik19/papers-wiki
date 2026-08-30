@@ -1,6 +1,6 @@
 # Harness, Scaffold, and the AI Agent Terms Worth Getting Right
 
-**Source**: `raw/agent-glossary/full-article.html`, `raw/agent-glossary/full-article.md`
+**Source**: `raw/agent-glossary/full-article.md`, `raw/agent-glossary/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

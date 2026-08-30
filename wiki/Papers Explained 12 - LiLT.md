@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-06_Papers-Explained-12--LiLT-701057ec6d9e.html`
+- Source file: `raw/2023-02-06_Papers-Explained-12--LiLT-701057ec6d9e.md`
 - Source title: Papers Explained 12: LiLT
 - Published: 2023-02-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-12-lilt-701057ec6d9e](https://medium.com/@ritvik19/papers-explained-12-lilt-701057ec6d9e)
@@ -61,18 +61,18 @@ LiLT: A Simple yet Effective Language-Independent Layout Transformer for Structu
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-06_Papers-Explained-12--LiLT-701057ec6d9e.html`); local copies under `wiki/assets/papers-explained-12-lilt/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-06_Papers-Explained-12--LiLT-701057ec6d9e.md`); local copies under `wiki/assets/papers-explained-12-lilt/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-12-lilt/fig-1.png) | Title block of *LiLT: A Simple yet Effective Language-Independent Layout Transformer for Structured Document Understanding*. |
-| ![Figure 2](assets/papers-explained-12-lilt/fig-2.png) | LiLT dual-stream framework with text/layout flows, BiACM cross-modality attention complementation, and pretraining/fine-tuning task heads. |
-| ![Figure 3](assets/papers-explained-12-lilt/fig-3.png) | Text-embedding formulation for the textual stream (token, position, and segment composition). |
-| ![Figure 4](assets/papers-explained-12-lilt/fig-4.png) | Layout-embedding construction from normalized box coordinates (x, y, width, height feature embeddings). |
-| ![Figure 5](assets/papers-explained-12-lilt/fig-5.png) | BiACM attention-sharing setup combining text-flow and layout-flow attention scores. |
-| ![Figure 6](assets/papers-explained-12-lilt/fig-6.png) | Detached-attention variant used to preserve compatibility with off-the-shelf text backbones during pretraining. |
-| ![Figure 7](assets/papers-explained-12-lilt/fig-7.png) | Key Point Location (KPL) objective for masked box-region prediction in pretraining. |
-| ![Figure 8](assets/papers-explained-12-lilt/fig-8.png) | Cross-modal Alignment Identification (CMAI) objective for token-box pair alignment classification. |
+| ![Figure 1](assets/papers-explained-12-lilt/fig-1.webp) | Title block of *LiLT: A Simple yet Effective Language-Independent Layout Transformer for Structured Document Understanding*. |
+| ![Figure 2](assets/papers-explained-12-lilt/fig-2.webp) | LiLT dual-stream framework with text/layout flows, BiACM cross-modality attention complementation, and pretraining/fine-tuning task heads. |
+| ![Figure 3](assets/papers-explained-12-lilt/fig-3.webp) | Text-embedding formulation for the textual stream (token, position, and segment composition). |
+| ![Figure 4](assets/papers-explained-12-lilt/fig-4.webp) | Layout-embedding construction from normalized box coordinates (x, y, width, height feature embeddings). |
+| ![Figure 5](assets/papers-explained-12-lilt/fig-5.webp) | BiACM attention-sharing setup combining text-flow and layout-flow attention scores. |
+| ![Figure 6](assets/papers-explained-12-lilt/fig-6.webp) | Detached-attention variant used to preserve compatibility with off-the-shelf text backbones during pretraining. |
+| ![Figure 7](assets/papers-explained-12-lilt/fig-7.webp) | Key Point Location (KPL) objective for masked box-region prediction in pretraining. |
+| ![Figure 8](assets/papers-explained-12-lilt/fig-8.webp) | Cross-modal Alignment Identification (CMAI) objective for token-box pair alignment classification. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-01-27_Papers-Explained-296--MAmmoTH-VL-6abec7a58831.html`
+- Source file: `raw/2025-01-27_Papers-Explained-296--MAmmoTH-VL-6abec7a58831.md`
 - Source title: Papers Explained 296: MAmmoTH-VL
 - Published: 2025-01-27
 - Canonical: [https://medium.com/@ritvik19/papers-explained-296-mammoth-vl-6abec7a58831](https://medium.com/@ritvik19/papers-explained-296-mammoth-vl-6abec7a58831)
@@ -101,17 +101,17 @@ MAmmoTH-VL: Eliciting Multimodal Reasoning with Instruction Tuning at Scale [241
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-01-27_Papers-Explained-296--MAmmoTH-VL-6abec7a58831.html`); local copies under `wiki/assets/papers-explained-296-mammoth-vl/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-01-27_Papers-Explained-296--MAmmoTH-VL-6abec7a58831.md`); local copies under `wiki/assets/papers-explained-296-mammoth-vl/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-296-mammoth-vl/fig-1.png) | Title card: MAmmoTH-VL. |
-| ![Figure 2](assets/papers-explained-296-mammoth-vl/fig-2.png) | Overview of the visual instruction data rewriting pipeline. |
-| ![Figure 3](assets/papers-explained-296-mammoth-vl/fig-3.png) | The data distribution of MAmmoTH-VL-Instruct (12M). |
-| ![Figure 4](assets/papers-explained-296-mammoth-vl/fig-4.png) | Detailed configuration for each training stage of the MAmmoTH-VL-8B model. |
-| ![Figure 5](assets/papers-explained-296-mammoth-vl/fig-5.png) | Performance on multi-discipline knowledge and mathematical reasoning benchmarks. |
-| ![Figure 6](assets/papers-explained-296-mammoth-vl/fig-6.png) | Main results on Chart, Diagram, and Document Understanding, and Real-world Multimodal Interactions and Human Preferences benchmarks. |
-| ![Figure 7](assets/papers-explained-296-mammoth-vl/fig-7.png) | Main results on Multi-Image and Video benchmarks. |
+| ![Figure 1](assets/papers-explained-296-mammoth-vl/fig-1.webp) | Title card: MAmmoTH-VL. |
+| ![Figure 2](assets/papers-explained-296-mammoth-vl/fig-2.webp) | Overview of the visual instruction data rewriting pipeline. |
+| ![Figure 3](assets/papers-explained-296-mammoth-vl/fig-3.webp) | The data distribution of MAmmoTH-VL-Instruct (12M). |
+| ![Figure 4](assets/papers-explained-296-mammoth-vl/fig-4.webp) | Detailed configuration for each training stage of the MAmmoTH-VL-8B model. |
+| ![Figure 5](assets/papers-explained-296-mammoth-vl/fig-5.webp) | Performance on multi-discipline knowledge and mathematical reasoning benchmarks. |
+| ![Figure 6](assets/papers-explained-296-mammoth-vl/fig-6.webp) | Main results on Chart, Diagram, and Document Understanding, and Real-world Multimodal Interactions and Human Preferences benchmarks. |
+| ![Figure 7](assets/papers-explained-296-mammoth-vl/fig-7.webp) | Main results on Multi-Image and Video benchmarks. |
 ## Related
 
 - [[Papers Explained Corpus]]

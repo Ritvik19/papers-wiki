@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-11-26_Papers-Explained-500--P1-15520a79edd3.html`
+- Source file: `raw/2025-11-26_Papers-Explained-500--P1-15520a79edd3.md`
 - Source title: Papers Explained 500: P1
 - Published: 2025-11-26
 - Canonical: [https://medium.com/@ritvik19/papers-explained-500-p1-15520a79edd3](https://medium.com/@ritvik19/papers-explained-500-p1-15520a79edd3)
@@ -140,23 +140,23 @@ P1: Mastering Physics Olympiads with Reinforcement Learning [2511.13612](https:/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-11-26_Papers-Explained-500--P1-15520a79edd3.html`); local copies under `wiki/assets/papers-explained-500-p1/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-11-26_Papers-Explained-500--P1-15520a79edd3.md`); local copies under `wiki/assets/papers-explained-500-p1/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-500-p1/fig-1.png) | Title card: P1. |
-| ![Figure 2](assets/papers-explained-500-p1/fig-2.png) | Each instance in the dataset follows a structured Question–Solution–Answer schema, enriched with metadata, providing a well-organized... |
-| ![Figure 3](assets/papers-explained-500-p1/fig-3.png) | Two complementary sources are assembled. |
-| ![Figure 4](assets/papers-explained-500-p1/fig-4.png) | GSPO is used as it elevates optimization from the token level to the sequence level, employing length-normalized sequence likelihood importance ratios. |
-| ![Figure 5](assets/papers-explained-500-p1/fig-5.png) | GSPO is used as it elevates optimization from the token level to the sequence level, employing length-normalized sequence likelihood importance ratios. |
-| ![Figure 6](assets/papers-explained-500-p1/fig-6.png) | with the objective function. |
-| ![Figure 7](assets/papers-explained-500-p1/fig-7.png) | with the objective function. |
-| ![Figure 8](assets/papers-explained-500-p1/fig-8.png) | Following the Correct-or-Not design in RLVR methods, a binary reward scheme based on answer correctness is employed. |
-| ![Figure 9](assets/papers-explained-500-p1/fig-9.png) | Configuration of different phrases in P1 training. |
-| ![Figure 10](assets/papers-explained-500-p1/fig-10.png) | Recent studies have noticed that the train-inference engine difference is a key cause of instability in training. |
-| ![Figure 11](assets/papers-explained-500-p1/fig-11.png) | with the objective function:: where 𝐶 is a truncation hyperparameter that controls the variance of the importance weights. |
-| ![Figure 12](assets/papers-explained-500-p1/fig-12.png) | Evaluation results on the HiPhO benchmark. |
-| ![Figure 13](assets/papers-explained-500-p1/fig-13.png) | Performance comparison between P1–235B-A22B and top-1 human medalist on CPhO 2025. |
+| ![Figure 1](assets/papers-explained-500-p1/fig-1.webp) | Title card: P1. |
+| ![Figure 2](assets/papers-explained-500-p1/fig-2.webp) | Each instance in the dataset follows a structured Question–Solution–Answer schema, enriched with metadata, providing a well-organized... |
+| ![Figure 3](assets/papers-explained-500-p1/fig-3.webp) | Two complementary sources are assembled. |
+| ![Figure 4](assets/papers-explained-500-p1/fig-4.webp) | GSPO is used as it elevates optimization from the token level to the sequence level, employing length-normalized sequence likelihood importance ratios. |
+| ![Figure 5](assets/papers-explained-500-p1/fig-5.webp) | GSPO is used as it elevates optimization from the token level to the sequence level, employing length-normalized sequence likelihood importance ratios. |
+| ![Figure 6](assets/papers-explained-500-p1/fig-6.webp) | with the objective function. |
+| ![Figure 7](assets/papers-explained-500-p1/fig-7.webp) | with the objective function. |
+| ![Figure 8](assets/papers-explained-500-p1/fig-8.webp) | Following the Correct-or-Not design in RLVR methods, a binary reward scheme based on answer correctness is employed. |
+| ![Figure 9](assets/papers-explained-500-p1/fig-9.webp) | Configuration of different phrases in P1 training. |
+| ![Figure 10](assets/papers-explained-500-p1/fig-10.webp) | Recent studies have noticed that the train-inference engine difference is a key cause of instability in training. |
+| ![Figure 11](assets/papers-explained-500-p1/fig-11.webp) | with the objective function:: where 𝐶 is a truncation hyperparameter that controls the variance of the importance weights. |
+| ![Figure 12](assets/papers-explained-500-p1/fig-12.webp) | Evaluation results on the HiPhO benchmark. |
+| ![Figure 13](assets/papers-explained-500-p1/fig-13.webp) | Performance comparison between P1–235B-A22B and top-1 human medalist on CPhO 2025. |
 ## Related
 
 - [[Papers Explained Corpus]]

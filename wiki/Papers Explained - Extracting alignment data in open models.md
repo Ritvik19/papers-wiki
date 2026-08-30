@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-11-13_Papers-Explained--Extracting-alignment-data-in-open-models-699673967849.html`
+- Source file: `raw/2025-11-13_Papers-Explained--Extracting-alignment-data-in-open-models-699673967849.md`
 - Source title: Papers Explained: Extracting alignment data in open models
 - Published: 2025-11-13
 - Canonical: [https://medium.com/@ritvik19/papers-explained-extracting-alignment-data-in-open-models-699673967849](https://medium.com/@ritvik19/papers-explained-extracting-alignment-data-in-open-models-699673967849)
@@ -97,20 +97,20 @@ Extracting alignment data in open models [2510.18554](https://arxiv.org/abs/2510
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-11-13_Papers-Explained--Extracting-alignment-data-in-open-models-699673967849.html`); local copies under `wiki/assets/papers-explained-extracting-alignment-data-in-open-models/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-11-13_Papers-Explained--Extracting-alignment-data-in-open-models-699673967849.md`); local copies under `wiki/assets/papers-explained-extracting-alignment-data-in-open-models/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-extracting-alignment-data-in-open-models/fig-1.png) | Hypothesis graphic: chat-template tokens introduced only during alignment can elicit training-like completions. |
-| ![Figure 2](assets/papers-explained-extracting-alignment-data-in-open-models/fig-2.png) | End-to-end extraction loop: embed PT corpus, generate from template prefixes, retrieve nearest neighbors with similarity scores. |
-| ![Figure 3](assets/papers-explained-extracting-alignment-data-in-open-models/fig-3.png) | Distribution of string-similarity scores (Levenshtein / Indel) for 100k OLMo 13B generations vs PT answers. |
-| ![Figure 4](assets/papers-explained-extracting-alignment-data-in-open-models/fig-4.png) | Neural embedding matches reveal semantic regurgitation beyond negligible exact-match rates. |
-| ![Figure 5](assets/papers-explained-extracting-alignment-data-in-open-models/fig-5.png) | Similarity threshold analysis linking memorization spikes to overlapping pre/mid-training content. |
-| ![Figure 6](assets/papers-explained-extracting-alignment-data-in-open-models/fig-6.png) | Benchmark scores after SFT on ~930k real posts vs ~930k extracted synthetic pairs (OLMo suite). |
-| ![Figure 7](assets/papers-explained-extracting-alignment-data-in-open-models/fig-7.png) | Task-by-task gaps highlighting Instruction-Following-Eval coverage deficits from extraction filtering. |
-| ![Figure 8](assets/papers-explained-extracting-alignment-data-in-open-models/fig-8.png) | Prompt likelihood histograms for ORZ training questions under Qwen2.5 base vs Open-Reasoner-Zero checkpoints. |
-| ![Figure 9](assets/papers-explained-extracting-alignment-data-in-open-models/fig-9.png) | Likelihood-threshold counts showing RL boosts mass above probability cutoffs (memorisation probe). |
-| ![Figure 10](assets/papers-explained-extracting-alignment-data-in-open-models/fig-10.png) | Dr.GRPO RL comparing authentic ORZ data vs Gemini-cleaned extracts matched at 57k prompts. |
+| ![Figure 1](assets/papers-explained-extracting-alignment-data-in-open-models/fig-1.webp) | Hypothesis graphic: chat-template tokens introduced only during alignment can elicit training-like completions. |
+| ![Figure 2](assets/papers-explained-extracting-alignment-data-in-open-models/fig-2.webp) | End-to-end extraction loop: embed PT corpus, generate from template prefixes, retrieve nearest neighbors with similarity scores. |
+| ![Figure 3](assets/papers-explained-extracting-alignment-data-in-open-models/fig-3.webp) | Distribution of string-similarity scores (Levenshtein / Indel) for 100k OLMo 13B generations vs PT answers. |
+| ![Figure 4](assets/papers-explained-extracting-alignment-data-in-open-models/fig-4.webp) | Neural embedding matches reveal semantic regurgitation beyond negligible exact-match rates. |
+| ![Figure 5](assets/papers-explained-extracting-alignment-data-in-open-models/fig-5.webp) | Similarity threshold analysis linking memorization spikes to overlapping pre/mid-training content. |
+| ![Figure 6](assets/papers-explained-extracting-alignment-data-in-open-models/fig-6.webp) | Benchmark scores after SFT on ~930k real posts vs ~930k extracted synthetic pairs (OLMo suite). |
+| ![Figure 7](assets/papers-explained-extracting-alignment-data-in-open-models/fig-7.webp) | Task-by-task gaps highlighting Instruction-Following-Eval coverage deficits from extraction filtering. |
+| ![Figure 8](assets/papers-explained-extracting-alignment-data-in-open-models/fig-8.webp) | Prompt likelihood histograms for ORZ training questions under Qwen2.5 base vs Open-Reasoner-Zero checkpoints. |
+| ![Figure 9](assets/papers-explained-extracting-alignment-data-in-open-models/fig-9.webp) | Likelihood-threshold counts showing RL boosts mass above probability cutoffs (memorisation probe). |
+| ![Figure 10](assets/papers-explained-extracting-alignment-data-in-open-models/fig-10.webp) | Dr.GRPO RL comparing authentic ORZ data vs Gemini-cleaned extracts matched at 57k prompts. |
 ## Related
 
 - [[Papers Explained Corpus]]

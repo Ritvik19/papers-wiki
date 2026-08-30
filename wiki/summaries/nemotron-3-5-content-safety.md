@@ -1,6 +1,6 @@
 # Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI
 
-**Source**: `raw/nemotron-3-5-content-safety/full-article.html`, `raw/nemotron-3-5-content-safety/full-article.md`
+**Source**: `raw/nemotron-3-5-content-safety/full-article.md`, `raw/nemotron-3-5-content-safety/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

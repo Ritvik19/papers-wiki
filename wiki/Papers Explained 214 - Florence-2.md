@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-09-19_Papers-Explained-214--Florence-2-c4e17246d14b.html`
+- Source file: `raw/2024-09-19_Papers-Explained-214--Florence-2-c4e17246d14b.md`
 - Source title: Papers Explained 214: Florence-2
 - Published: 2024-09-19
 - Canonical: [https://medium.com/@ritvik19/papers-explained-214-florence-2-c4e17246d14b](https://medium.com/@ritvik19/papers-explained-214-florence-2-c4e17246d14b)
@@ -223,25 +223,25 @@ Recommended Reading [Multi Modal Transformers](https://ritvik19.medium.com/list/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-09-19_Papers-Explained-214--Florence-2-c4e17246d14b.html`); local copies under `wiki/assets/papers-explained-214-florence-2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-09-19_Papers-Explained-214--Florence-2-c4e17246d14b.md`); local copies under `wiki/assets/papers-explained-214-florence-2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-214-florence-2/fig-1.png) | Florence-2 Overview: A unified vision foundation model for various tasks. |
-| ![Figure 2](assets/papers-explained-214-florence-2/fig-2.png) | Florence-2 Model Architecture: A sequence-to-sequence learning paradigm. |
-| ![Figure 2](assets/papers-explained-214-florence-2/fig-3.png) | Supported Tasks and annotations used for Florence-2 pretraining. |
-| ![Figure 4](assets/papers-explained-214-florence-2/fig-4.png) | Optimization objective formula using standard language modeling with cross-entropy loss. |
-| ![Figure 5](assets/papers-explained-214-florence-2/fig-5.png) | Florence-2 Data Engine: Iterative annotation and refinement process. |
-| ![Figure 6](assets/papers-explained-214-florence-2/fig-6.png) | Illustrative example of an image and its corresponding annotations in FLD-5B dataset. |
-| ![Figure 7](assets/papers-explained-214-florence-2/fig-7.png) | Comparison with existing datasets in vision foundation model training. |
-| ![Figure 8](assets/papers-explained-214-florence-2/fig-8.png) | Model configuration of Florence-2-B and Florence-2-L variants. |
-| ![Figure 9](assets/papers-explained-214-florence-2/fig-9.png) | Collection of datasets used for fine-tuning the generalist model. |
-| ![Figure 10](assets/papers-explained-214-florence-2/fig-10.png) | Zero-shot performance of generalist vision foundation models on various tasks. |
-| ![Figure 11](assets/papers-explained-214-florence-2/fig-11.png) | Performance of specialist and generalist models on captioning and VQA tasks. |
-| ![Figure 12](assets/papers-explained-214-florence-2/fig-12.png) | Performance of specialist and generalist models on region-level tasks. |
-| ![Figure 13](assets/papers-explained-214-florence-2/fig-13.png) | COCO object detection and instance segmentation results (Mask-RCNN and DINO frameworks). |
-| ![Figure 14](assets/papers-explained-214-florence-2/fig-14.png) | Downstream task fine-tuning results on COCO and ADE20K datasets. |
-| ![Figure 15](assets/papers-explained-214-florence-2/fig-15.png) | ADE20K semantic segmentation results using the UperNet framework. |
+| ![Figure 1](assets/papers-explained-214-florence-2/fig-1.webp) | Florence-2 Overview: A unified vision foundation model for various tasks. |
+| ![Figure 2](assets/papers-explained-214-florence-2/fig-2.webp) | Florence-2 Model Architecture: A sequence-to-sequence learning paradigm. |
+| ![Figure 2](assets/papers-explained-214-florence-2/fig-3.webp) | Supported Tasks and annotations used for Florence-2 pretraining. |
+| ![Figure 4](assets/papers-explained-214-florence-2/fig-4.webp) | Optimization objective formula using standard language modeling with cross-entropy loss. |
+| ![Figure 5](assets/papers-explained-214-florence-2/fig-5.webp) | Florence-2 Data Engine: Iterative annotation and refinement process. |
+| ![Figure 6](assets/papers-explained-214-florence-2/fig-6.webp) | Illustrative example of an image and its corresponding annotations in FLD-5B dataset. |
+| ![Figure 7](assets/papers-explained-214-florence-2/fig-7.webp) | Comparison with existing datasets in vision foundation model training. |
+| ![Figure 8](assets/papers-explained-214-florence-2/fig-8.webp) | Model configuration of Florence-2-B and Florence-2-L variants. |
+| ![Figure 9](assets/papers-explained-214-florence-2/fig-9.webp) | Collection of datasets used for fine-tuning the generalist model. |
+| ![Figure 10](assets/papers-explained-214-florence-2/fig-10.webp) | Zero-shot performance of generalist vision foundation models on various tasks. |
+| ![Figure 11](assets/papers-explained-214-florence-2/fig-11.webp) | Performance of specialist and generalist models on captioning and VQA tasks. |
+| ![Figure 12](assets/papers-explained-214-florence-2/fig-12.webp) | Performance of specialist and generalist models on region-level tasks. |
+| ![Figure 13](assets/papers-explained-214-florence-2/fig-13.webp) | COCO object detection and instance segmentation results (Mask-RCNN and DINO frameworks). |
+| ![Figure 14](assets/papers-explained-214-florence-2/fig-14.webp) | Downstream task fine-tuning results on COCO and ADE20K datasets. |
+| ![Figure 15](assets/papers-explained-214-florence-2/fig-15.webp) | ADE20K semantic segmentation results using the UperNet framework. |
 ## Related
 
 - [[Papers Explained Corpus]]

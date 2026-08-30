@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-11-07_Papers-Explained-247--Layout-Reader-248b27db1234.html`
+- Source file: `raw/2024-11-07_Papers-Explained-247--Layout-Reader-248b27db1234.md`
 - Source title: Papers Explained 247: Layout Reader
 - Published: 2024-11-07
 - Canonical: [https://medium.com/@ritvik19/papers-explained-247-layout-reader-248b27db1234](https://medium.com/@ritvik19/papers-explained-247-layout-reader-248b27db1234)
@@ -137,19 +137,19 @@ Recommended Reading [Document Information Processing](https://ritvik19.medium.co
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-11-07_Papers-Explained-247--Layout-Reader-248b27db1234.html`); local copies under `wiki/assets/papers-explained-247-layout-reader/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-11-07_Papers-Explained-247--Layout-Reader-248b27db1234.md`); local copies under `wiki/assets/papers-explained-247-layout-reader/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-247-layout-reader/fig-1.png) | Title card: Layout Reader. |
-| ![Figure 2](assets/papers-explained-247-layout-reader/fig-2.png) | Document image examples in ReadingBank with the reading order information. The colored areas show the paragraph-level reading order. |
-| ![Figure 3](assets/papers-explained-247-layout-reader/fig-3.png) | Building pipeline of ReadingBank, where (w, i) is the pair of word and its appearance index and (w 0, c, x0, y0, x1, y1, w, h) is the word, word color and layout information. |
-| ![Figure 4](assets/papers-explained-247-layout-reader/fig-4.png) | LayoutReader architecture for the reading order detection. The self-attention is designed for sequenceto-sequence modeling and the generation step is modified to predict the indices in the source segment. |
-| ![Figure 5](assets/papers-explained-247-layout-reader/fig-5.png) | The contributions of this paper are. |
-| ![Figure 6](assets/papers-explained-247-layout-reader/fig-6.png) | In the decoding stage, since the source and target are reordered sequences, the prediction candidates can be constrained to the source... |
-| ![Figure 7](assets/papers-explained-247-layout-reader/fig-7.png) | Evaluation results of the LayoutReader on the reading order detection task, where the source-side of training/testing data is in the left-to-right and top-to-bottom order. |
-| ![Figure 8](assets/papers-explained-247-layout-reader/fig-8.png) | Input order study with left-to-right and top-to-bottom inputs in evaluation, where r is the proportion of shuffled samples in training. |
-| ![Figure 9](assets/papers-explained-247-layout-reader/fig-9.png) | Input order study with token-shuffled inputs in evaluation, where r is the proportion of shuffled samples in training. |
+| ![Figure 1](assets/papers-explained-247-layout-reader/fig-1.webp) | Title card: Layout Reader. |
+| ![Figure 2](assets/papers-explained-247-layout-reader/fig-2.webp) | Document image examples in ReadingBank with the reading order information. The colored areas show the paragraph-level reading order. |
+| ![Figure 3](assets/papers-explained-247-layout-reader/fig-3.webp) | Building pipeline of ReadingBank, where (w, i) is the pair of word and its appearance index and (w 0, c, x0, y0, x1, y1, w, h) is the word, word color and layout information. |
+| ![Figure 4](assets/papers-explained-247-layout-reader/fig-4.webp) | LayoutReader architecture for the reading order detection. The self-attention is designed for sequenceto-sequence modeling and the generation step is modified to predict the indices in the source segment. |
+| ![Figure 5](assets/papers-explained-247-layout-reader/fig-5.webp) | The contributions of this paper are. |
+| ![Figure 6](assets/papers-explained-247-layout-reader/fig-6.webp) | In the decoding stage, since the source and target are reordered sequences, the prediction candidates can be constrained to the source... |
+| ![Figure 7](assets/papers-explained-247-layout-reader/fig-7.webp) | Evaluation results of the LayoutReader on the reading order detection task, where the source-side of training/testing data is in the left-to-right and top-to-bottom order. |
+| ![Figure 8](assets/papers-explained-247-layout-reader/fig-8.webp) | Input order study with left-to-right and top-to-bottom inputs in evaluation, where r is the proportion of shuffled samples in training. |
+| ![Figure 9](assets/papers-explained-247-layout-reader/fig-9.webp) | Input order study with token-shuffled inputs in evaluation, where r is the proportion of shuffled samples in training. |
 ## Related
 
 - [[Papers Explained Corpus]]

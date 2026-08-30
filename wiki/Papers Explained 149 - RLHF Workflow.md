@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-06-12_Papers-Explained-149--RLHF-Workflow-56b4e00019ed.html`
+- Source file: `raw/2024-06-12_Papers-Explained-149--RLHF-Workflow-56b4e00019ed.md`
 - Source title: Papers Explained 149: RLHF Workflow
 - Published: 2024-06-12
 - Canonical: [https://medium.com/@ritvik19/papers-explained-149-rlhf-workflow-56b4e00019ed](https://medium.com/@ritvik19/papers-explained-149-rlhf-workflow-56b4e00019ed)
@@ -195,20 +195,20 @@ RLHF Workflow: From Reward Modeling to Online RLHF [2405.07863](https://arxiv.or
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-06-12_Papers-Explained-149--RLHF-Workflow-56b4e00019ed.html`); local copies under `wiki/assets/papers-explained-149-rlhf-workflow/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-06-12_Papers-Explained-149--RLHF-Workflow-56b4e00019ed.md`); local copies under `wiki/assets/papers-explained-149-rlhf-workflow/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-149-rlhf-workflow/fig-1.png) | Title slide for *RLHF Workflow: From Reward Modeling to Online RLHF*. |
-| ![Figure 2](assets/papers-explained-149-rlhf-workflow/fig-2.png) | Offline reward-model training on labeled preferences versus online loops that sample policy outputs, score them, and update the aligned LLM. |
-| ![Figure 3](assets/papers-explained-149-rlhf-workflow/fig-3.png) | Preference corpus statistics: prompt counts, lengths, completion sources, annotators (human vs GPT-4), and pair totals. |
-| ![Figure 4](assets/papers-explained-149-rlhf-workflow/fig-4.png) | Bradley–Terry scalar reward heads vs a joint preference head emitting logits fed through a sigmoid. |
-| ![Figure 5](assets/papers-explained-149-rlhf-workflow/fig-5.png) | RewardBench breakdown for LLaMA-3/Gemma variants comparing prompting, Bradley–Terry heads, and preference models on mix1/mix2. |
-| ![Figure 6](assets/papers-explained-149-rlhf-workflow/fig-6.png) | Heatmaps of reward–length Pearson correlation against mean response length for diagnosing length bias. |
-| ![Figure 7](assets/papers-explained-149-rlhf-workflow/fig-7.png) | Iterative DPO workflow: expand preference buffer via best-of-$n$ / worst-of-$n$ ranking from a frozen reward model, then re-run DPO. |
-| ![Figure 8](assets/papers-explained-149-rlhf-workflow/fig-8.png) | Benchmark card listing metrics and shot counts for chat arenas, math, code, knowledge, and truthfulness evaluations. |
-| ![Figure 9](assets/papers-explained-149-rlhf-workflow/fig-9.png) | Instruction-centric leaderboard scores comparing iterative RLHF 8B models with larger open and proprietary chat systems. |
-| ![Figure 10](assets/papers-explained-149-rlhf-workflow/fig-10.png) | Academic suite (GSM8K, MMLU, HumanEval, TruthfulQA, ARC, MBPP) comparing SFT, vanilla DPO, and iterative DPO baselines. |
+| ![Figure 1](assets/papers-explained-149-rlhf-workflow/fig-1.webp) | Title slide for *RLHF Workflow: From Reward Modeling to Online RLHF*. |
+| ![Figure 2](assets/papers-explained-149-rlhf-workflow/fig-2.webp) | Offline reward-model training on labeled preferences versus online loops that sample policy outputs, score them, and update the aligned LLM. |
+| ![Figure 3](assets/papers-explained-149-rlhf-workflow/fig-3.webp) | Preference corpus statistics: prompt counts, lengths, completion sources, annotators (human vs GPT-4), and pair totals. |
+| ![Figure 4](assets/papers-explained-149-rlhf-workflow/fig-4.webp) | Bradley–Terry scalar reward heads vs a joint preference head emitting logits fed through a sigmoid. |
+| ![Figure 5](assets/papers-explained-149-rlhf-workflow/fig-5.webp) | RewardBench breakdown for LLaMA-3/Gemma variants comparing prompting, Bradley–Terry heads, and preference models on mix1/mix2. |
+| ![Figure 6](assets/papers-explained-149-rlhf-workflow/fig-6.webp) | Heatmaps of reward–length Pearson correlation against mean response length for diagnosing length bias. |
+| ![Figure 7](assets/papers-explained-149-rlhf-workflow/fig-7.webp) | Iterative DPO workflow: expand preference buffer via best-of-$n$ / worst-of-$n$ ranking from a frozen reward model, then re-run DPO. |
+| ![Figure 8](assets/papers-explained-149-rlhf-workflow/fig-8.webp) | Benchmark card listing metrics and shot counts for chat arenas, math, code, knowledge, and truthfulness evaluations. |
+| ![Figure 9](assets/papers-explained-149-rlhf-workflow/fig-9.webp) | Instruction-centric leaderboard scores comparing iterative RLHF 8B models with larger open and proprietary chat systems. |
+| ![Figure 10](assets/papers-explained-149-rlhf-workflow/fig-10.webp) | Academic suite (GSM8K, MMLU, HumanEval, TruthfulQA, ARC, MBPP) comparing SFT, vanilla DPO, and iterative DPO baselines. |
 ## Related
 
 - [[Papers Explained Corpus]]

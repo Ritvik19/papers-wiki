@@ -1,6 +1,6 @@
 # Mistral Saba
 
-**Source**: `raw/mistral-saba/full-article.html` (217 KB), `raw/mistral-saba/full-article.md` (markdown view)  
+**Source**: `raw/mistral-saba/full-article.md` (217 KB), `raw/mistral-saba/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/mistral-saba/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -28,11 +28,11 @@ Use cases emerging with regional customers include Arabic conversational virtual
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/mistral-saba/fig-1.png) | Mistral Saba Instruct benchmark results | — |
-| ![fig-2](../assets/mistral-saba/fig-2.png) | Mistral Saba pretrained benchmark results | — |
-| ![fig-3](../assets/mistral-saba/fig-3.png) | Regional benchmark comparison (Saba vs. larger general models) | — |
+| ![fig-1](../assets/mistral-saba/fig-1.webp) | Mistral Saba Instruct benchmark results | — |
+| ![fig-2](../assets/mistral-saba/fig-2.webp) | Mistral Saba pretrained benchmark results | — |
+| ![fig-3](../assets/mistral-saba/fig-3.webp) | Regional benchmark comparison (Saba vs. larger general models) | — |
 
-![Instruct model regional benchmarks](../assets/mistral-saba/fig-1.png)
+![Instruct model regional benchmarks](../assets/mistral-saba/fig-1.webp)
 
 ## Entities
 

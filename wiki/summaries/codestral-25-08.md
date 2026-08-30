@@ -1,6 +1,6 @@
 # Announcing Codestral 25.08 and the Complete Mistral Coding Stack for Enterprise
 
-**Source**: `raw/codestral-25-08/full-article.html` (232 KB), `raw/codestral-25-08/full-article.md` (markdown view)  
+**Source**: `raw/codestral-25-08/full-article.md` (232 KB), `raw/codestral-25-08/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/codestral-25-08/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

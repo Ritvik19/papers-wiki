@@ -1,6 +1,6 @@
 # Gemma 4 12B
 
-**Source**: `raw/gemma-4-12b/full-article.html` (384 KB)  
+**Source**: `raw/gemma-4-12b/full-article.md` (384 KB)  
 **URL**: https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

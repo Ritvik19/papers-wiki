@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-14_Papers-Explained-186--Grok-0d9f1aef69be.html`
+- Source file: `raw/2024-08-14_Papers-Explained-186--Grok-0d9f1aef69be.md`
 - Source title: Papers Explained 186: Grok
 - Published: 2024-08-14
 - Canonical: [https://medium.com/@ritvik19/papers-explained-186-grok-0d9f1aef69be](https://medium.com/@ritvik19/papers-explained-186-grok-0d9f1aef69be)
@@ -167,25 +167,25 @@ Grok 4.1 introduces significant enhancements focused on real-world usability, wh
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-14_Papers-Explained-186--Grok-0d9f1aef69be.html`); local copies under `wiki/assets/papers-explained-186-grok/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-14_Papers-Explained-186--Grok-0d9f1aef69be.md`); local copies under `wiki/assets/papers-explained-186-grok/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-186-grok/fig-1.png) | Title card: Grok. |
-| ![Figure 2](assets/papers-explained-186-grok/fig-2.png) | Grok-1 displayed strong results, surpassing all other models in its compute class, including ChatGPT-3.5. |
-| ![Figure 3](assets/papers-explained-186-grok/fig-3.png) | Grok-1.5 is an advancement over grok, capable of long context understanding up to 128k tokens and advanced reasoning. |
-| ![Figure 4](assets/papers-explained-186-grok/fig-4.png) | Grok-1.5V, is the first multimodal model in the grok series. |
-| ![Figure 5](assets/papers-explained-186-grok/fig-5.jpg) | On the lmsys arena Grok-2 outperforms both Claude 3.5 Sonnet and GPT-4-Turbo. |
-| ![Figure 6](assets/papers-explained-186-grok/fig-6.jpg) | On the lmsys arena Grok-2 outperforms both Claude 3.5 Sonnet and GPT-4-Turbo. |
-| ![Figure 7](assets/papers-explained-186-grok/fig-7.png) | Both Grok-2 and Grok-2 mini demonstrate significant improvements over the previous Grok-1.5 model. |
-| ![Figure 8](assets/papers-explained-186-grok/fig-8.png) | Grok 3 is a cutting-edge language model developed with a focus on strong reasoning and extensive pretraining knowledge. |
-| ![Figure 9](assets/papers-explained-186-grok/fig-9.png) | Grok 3 is a cutting-edge language model developed with a focus on strong reasoning and extensive pretraining knowledge. |
-| ![Figure 10](assets/papers-explained-186-grok/fig-10.png) | Grok 3 is a cutting-edge language model developed with a focus on strong reasoning and extensive pretraining knowledge. |
-| ![Figure 11](assets/papers-explained-186-grok/fig-11.png) | Grok 4’s development leveraged insights and infrastructure from Grok 3, scaling up key training methodologies. |
-| ![Figure 12](assets/papers-explained-186-grok/fig-12.png) | Grok 4 Heavy. |
-| ![Figure 13](assets/papers-explained-186-grok/fig-13.png) | Grok 4 Fast is a cost-efficient reasoning model, built upon the learnings from Grok 4. |
-| ![Figure 14](assets/papers-explained-186-grok/fig-14.png) | Visual Analysis (See What You See). |
-| ![Figure 15](assets/papers-explained-186-grok/fig-15.png) | Visual Analysis (See What You See):: Hungry for more insights? |
+| ![Figure 1](assets/papers-explained-186-grok/fig-1.webp) | Title card: Grok. |
+| ![Figure 2](assets/papers-explained-186-grok/fig-2.webp) | Grok-1 displayed strong results, surpassing all other models in its compute class, including ChatGPT-3.5. |
+| ![Figure 3](assets/papers-explained-186-grok/fig-3.webp) | Grok-1.5 is an advancement over grok, capable of long context understanding up to 128k tokens and advanced reasoning. |
+| ![Figure 4](assets/papers-explained-186-grok/fig-4.webp) | Grok-1.5V, is the first multimodal model in the grok series. |
+| ![Figure 5](assets/papers-explained-186-grok/fig-5.webp) | On the lmsys arena Grok-2 outperforms both Claude 3.5 Sonnet and GPT-4-Turbo. |
+| ![Figure 6](assets/papers-explained-186-grok/fig-6.webp) | On the lmsys arena Grok-2 outperforms both Claude 3.5 Sonnet and GPT-4-Turbo. |
+| ![Figure 7](assets/papers-explained-186-grok/fig-7.webp) | Both Grok-2 and Grok-2 mini demonstrate significant improvements over the previous Grok-1.5 model. |
+| ![Figure 8](assets/papers-explained-186-grok/fig-8.webp) | Grok 3 is a cutting-edge language model developed with a focus on strong reasoning and extensive pretraining knowledge. |
+| ![Figure 9](assets/papers-explained-186-grok/fig-9.webp) | Grok 3 is a cutting-edge language model developed with a focus on strong reasoning and extensive pretraining knowledge. |
+| ![Figure 10](assets/papers-explained-186-grok/fig-10.webp) | Grok 3 is a cutting-edge language model developed with a focus on strong reasoning and extensive pretraining knowledge. |
+| ![Figure 11](assets/papers-explained-186-grok/fig-11.webp) | Grok 4’s development leveraged insights and infrastructure from Grok 3, scaling up key training methodologies. |
+| ![Figure 12](assets/papers-explained-186-grok/fig-12.webp) | Grok 4 Heavy. |
+| ![Figure 13](assets/papers-explained-186-grok/fig-13.webp) | Grok 4 Fast is a cost-efficient reasoning model, built upon the learnings from Grok 4. |
+| ![Figure 14](assets/papers-explained-186-grok/fig-14.webp) | Visual Analysis (See What You See). |
+| ![Figure 15](assets/papers-explained-186-grok/fig-15.webp) | Visual Analysis (See What You See):: Hungry for more insights? |
 ## Related
 
 - [[Grok Models]] — official xAI timeline (primary source for releases through Imagine 1.5).

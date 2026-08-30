@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-07-24_Papers-Explained-168--NV-Embed-48bd25d83258.html`
+- Source file: `raw/2024-07-24_Papers-Explained-168--NV-Embed-48bd25d83258.md`
 - Source title: Papers Explained 168: NV-Embed
 - Published: 2024-07-24
 - Canonical: [https://medium.com/@ritvik19/papers-explained-168-nv-embed-48bd25d83258](https://medium.com/@ritvik19/papers-explained-168-nv-embed-48bd25d83258)
@@ -125,20 +125,20 @@ Recommended Reading [Representation Learning](https://ritvik19.medium.com/list/r
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-07-24_Papers-Explained-168--NV-Embed-48bd25d83258.html`); local copies under `wiki/assets/papers-explained-168-nv-embed/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-07-24_Papers-Explained-168--NV-Embed-48bd25d83258.md`); local copies under `wiki/assets/papers-explained-168-nv-embed/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-168-nv-embed/fig-1.png) | Paper title: **NV-Embed** — LLM as generalist embedding model (NVIDIA). |
-| ![Figure 2](assets/papers-explained-168-nv-embed/fig-2.png) | **Latent attention** block: decoder states query a trainable latent array (K/V), then MLP + **mean pool**. |
-| ![Figure 3](assets/papers-explained-168-nv-embed/fig-3.png) | Latent attention output: **softmax\((QK^\top)V\)** pooling step. |
-| ![Figure 4](assets/papers-explained-168-nv-embed/fig-4.png) | Training hyperparameters: batch size, hard negatives, **two-stage** steps/LR, **LoRA**, **512 latents** / **4096** dim / **8** heads. |
-| ![Figure 5](assets/papers-explained-168-nv-embed/fig-5.png) | Instruction format: `Instruct: {task}` + `Query: {q+}` for contrastive pairs. |
-| ![Figure 6](assets/papers-explained-168-nv-embed/fig-6.png) | **Training** tasks: instruction templates and sample counts (retrieval, NLI, classification, clustering, STS). |
-| ![Figure 7](assets/papers-explained-168-nv-embed/fig-7.png) | **MTEB evaluation** instruction templates per task family. |
-| ![Figure 8](assets/papers-explained-168-nv-embed/fig-8.png) | **MTEB (56-task)** leaderboard snapshot: **NV-Embed** at **69.32** avg, **59.36** on 15 retrieval tasks. |
-| ![Figure 9](assets/papers-explained-168-nv-embed/fig-9.png) | Ablation after **stage 1**: **EOS / mean / latent / self** pooling × **causal vs bidirectional** mask across MTEB groups. |
-| ![Figure 10](assets/papers-explained-168-nv-embed/fig-10.png) | Ablation after **stage 2**: **Latent-attention + bidirectional** reaches **69.32** overall (full two-stage pipeline). |
+| ![Figure 1](assets/papers-explained-168-nv-embed/fig-1.webp) | Paper title: **NV-Embed** — LLM as generalist embedding model (NVIDIA). |
+| ![Figure 2](assets/papers-explained-168-nv-embed/fig-2.webp) | **Latent attention** block: decoder states query a trainable latent array (K/V), then MLP + **mean pool**. |
+| ![Figure 3](assets/papers-explained-168-nv-embed/fig-3.webp) | Latent attention output: **softmax\((QK^\top)V\)** pooling step. |
+| ![Figure 4](assets/papers-explained-168-nv-embed/fig-4.webp) | Training hyperparameters: batch size, hard negatives, **two-stage** steps/LR, **LoRA**, **512 latents** / **4096** dim / **8** heads. |
+| ![Figure 5](assets/papers-explained-168-nv-embed/fig-5.webp) | Instruction format: `Instruct: {task}` + `Query: {q+}` for contrastive pairs. |
+| ![Figure 6](assets/papers-explained-168-nv-embed/fig-6.webp) | **Training** tasks: instruction templates and sample counts (retrieval, NLI, classification, clustering, STS). |
+| ![Figure 7](assets/papers-explained-168-nv-embed/fig-7.webp) | **MTEB evaluation** instruction templates per task family. |
+| ![Figure 8](assets/papers-explained-168-nv-embed/fig-8.webp) | **MTEB (56-task)** leaderboard snapshot: **NV-Embed** at **69.32** avg, **59.36** on 15 retrieval tasks. |
+| ![Figure 9](assets/papers-explained-168-nv-embed/fig-9.webp) | Ablation after **stage 1**: **EOS / mean / latent / self** pooling × **causal vs bidirectional** mask across MTEB groups. |
+| ![Figure 10](assets/papers-explained-168-nv-embed/fig-10.webp) | Ablation after **stage 2**: **Latent-attention + bidirectional** reaches **69.32** overall (full two-stage pipeline). |
 ## Related
 
 - [[Papers Explained Corpus]]

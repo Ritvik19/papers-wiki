@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-01-12_Papers-Explained-89--ColBERTv2-7d921ee6e0d9.html`
+- Source file: `raw/2024-01-12_Papers-Explained-89--ColBERTv2-7d921ee6e0d9.md`
 - Source title: Papers Explained 89: ColBERTv2
 - Published: 2024-01-12
 - Canonical: [https://medium.com/@ritvik19/papers-explained-89-colbertv2-7d921ee6e0d9](https://medium.com/@ritvik19/papers-explained-89-colbertv2-7d921ee6e0d9)
@@ -151,16 +151,16 @@ Recommended Reading: [Retrieval and Representation Learning](https://ritvik19.me
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-01-12_Papers-Explained-89--ColBERTv2-7d921ee6e0d9.html`); local copies under `wiki/assets/papers-explained-89-colbertv2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-01-12_Papers-Explained-89--ColBERTv2-7d921ee6e0d9.md`); local copies under `wiki/assets/papers-explained-89-colbertv2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-89-colbertv2/fig-1.png) | Title card: ColBERTv2. |
-| ![Figure 2](assets/papers-explained-89-colbertv2/fig-2.png) | The late interaction architecture. |
-| ![Figure 3](assets/papers-explained-89-colbertv2/fig-3.png) | During offline indexing, every passage d in the corpus is encoded into a set of vectors, and these vectors are stored. |
-| ![Figure 4](assets/papers-explained-89-colbertv2/fig-4.png) | Composition of LoTTE. |
-| ![Figure 5](assets/papers-explained-89-colbertv2/fig-5.png) | In-domain performance on the development set of MS MARCO Passage Ranking as well the “Local Eval” test set. |
-| ![Figure 6](assets/papers-explained-89-colbertv2/fig-6.png) | Zero-shot evaluation results. |
+| ![Figure 1](assets/papers-explained-89-colbertv2/fig-1.webp) | Title card: ColBERTv2. |
+| ![Figure 2](assets/papers-explained-89-colbertv2/fig-2.webp) | The late interaction architecture. |
+| ![Figure 3](assets/papers-explained-89-colbertv2/fig-3.webp) | During offline indexing, every passage d in the corpus is encoded into a set of vectors, and these vectors are stored. |
+| ![Figure 4](assets/papers-explained-89-colbertv2/fig-4.webp) | Composition of LoTTE. |
+| ![Figure 5](assets/papers-explained-89-colbertv2/fig-5.webp) | In-domain performance on the development set of MS MARCO Passage Ranking as well the “Local Eval” test set. |
+| ![Figure 6](assets/papers-explained-89-colbertv2/fig-6.webp) | Zero-shot evaluation results. |
 ## Related
 
 - [[Papers Explained Corpus]]

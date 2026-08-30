@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-02-18_Papers-Explained-312--It-s-All-in-The--MASK--8c010744924e.html`
+- Source file: `raw/2025-02-18_Papers-Explained-312--It-s-All-in-The--MASK--8c010744924e.md`
 - Source title: Papers Explained 312: It’s All in The [MASK]
 - Published: 2025-02-18
 - Canonical: [https://medium.com/@ritvik19/papers-explained-312-its-all-in-the-mask-8c010744924e](https://medium.com/@ritvik19/papers-explained-312-its-all-in-the-mask-8c010744924e)
@@ -89,16 +89,16 @@ It’s All in The [MASK]: Simple Instruction-Tuning Enables BERT-like Masked Lan
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-02-18_Papers-Explained-312--It-s-All-in-The--MASK--8c010744924e.html`); local copies under `wiki/assets/papers-explained-312-it-s-all-in-the-mask/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-02-18_Papers-Explained-312--It-s-All-in-The--MASK--8c010744924e.md`); local copies under `wiki/assets/papers-explained-312-it-s-all-in-the-mask/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-312-it-s-all-in-the-mask/fig-1.png) | Title card: It’s All in The MASK. |
-| ![Figure 2](assets/papers-explained-312-it-s-all-in-the-mask/fig-2.png) | High level overview of the process. |
-| ![Figure 3](assets/papers-explained-312-it-s-all-in-the-mask/fig-3.png) | High level overview of our data processing pipeline. |
-| ![Figure 4](assets/papers-explained-312-it-s-all-in-the-mask/fig-4.png) | Result for the models across the zero-shot tasks. |
-| ![Figure 5](assets/papers-explained-312-it-s-all-in-the-mask/fig-5.png) | Results comparing the proposed approach with a traditional classification head when fully fine-tuned on downstream NLU tasks. |
-| ![Figure 6](assets/papers-explained-312-it-s-all-in-the-mask/fig-6.png) | Downstream results of using different backbone with the same instruction-tuning process. |
+| ![Figure 1](assets/papers-explained-312-it-s-all-in-the-mask/fig-1.webp) | Title card: It’s All in The MASK. |
+| ![Figure 2](assets/papers-explained-312-it-s-all-in-the-mask/fig-2.webp) | High level overview of the process. |
+| ![Figure 3](assets/papers-explained-312-it-s-all-in-the-mask/fig-3.webp) | High level overview of our data processing pipeline. |
+| ![Figure 4](assets/papers-explained-312-it-s-all-in-the-mask/fig-4.webp) | Result for the models across the zero-shot tasks. |
+| ![Figure 5](assets/papers-explained-312-it-s-all-in-the-mask/fig-5.webp) | Results comparing the proposed approach with a traditional classification head when fully fine-tuned on downstream NLU tasks. |
+| ![Figure 6](assets/papers-explained-312-it-s-all-in-the-mask/fig-6.webp) | Downstream results of using different backbone with the same instruction-tuning process. |
 ## Related
 
 - [[Papers Explained Corpus]]

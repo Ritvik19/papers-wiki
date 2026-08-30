@@ -12,4 +12,4 @@ Visual explainer for the Gemma 4 family (E2B, E4B, 31B dense, 26B A4B MoE): shar
 - KV cache sharing: drafter cross-attends target's last local KV slice and global KV (last target layer is always global).
 - Efficient embedder (E2B/E4B): vocabulary clustered; LM head predicts cluster logits first, then token logits within top clusters.
 
-See full article HTML in `raw/a-visual-guide-to-gemma-4/full-article.html`.
+See full article HTML in `raw/a-visual-guide-to-gemma-4/full-article.md`.

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-01-20_Papers-Explained-527--TranslateGemma-016d61e37245.html`
+- Source file: `raw/2026-01-20_Papers-Explained-527--TranslateGemma-016d61e37245.md`
 - Source title: Papers Explained 527: TranslateGemma
 - Published: 2026-01-20
 - Canonical: [https://medium.com/@ritvik19/papers-explained-527-translategemma-016d61e37245](https://medium.com/@ritvik19/papers-explained-527-translategemma-016d61e37245)
@@ -139,18 +139,18 @@ TranslateGemma Technical Report [2601.09012](https://arxiv.org/abs/2601.09012)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-01-20_Papers-Explained-527--TranslateGemma-016d61e37245.html`); local copies under `wiki/assets/papers-explained-527-translategemma/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-01-20_Papers-Explained-527--TranslateGemma-016d61e37245.md`); local copies under `wiki/assets/papers-explained-527-translategemma/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-527-translategemma/fig-1.png) | Title card: TranslateGemma. |
-| ![Figure 2](assets/papers-explained-527-translategemma/fig-2.png) | To increase the diversity, human-generated parallel data for lower-resource languages is included. |
-| ![Figure 3](assets/papers-explained-527-translategemma/fig-3.png) | Languages paired with English in both directions. |
-| ![Figure 4](assets/papers-explained-527-translategemma/fig-4.png) | Languages from English. |
-| ![Figure 5](assets/papers-explained-527-translategemma/fig-5.png) | Non-English language pairs. |
-| ![Figure 6](assets/papers-explained-527-translategemma/fig-6.png) | Automatic evaluation results using MetricX and Comet22 (C22) on WMT24++. |
-| ![Figure 7](assets/papers-explained-527-translategemma/fig-7.png) | Automatic evaluation results using MetricX and Comet22 (C22) for image translation performance, on the Vistra corpus. |
-| ![Figure 8](assets/papers-explained-527-translategemma/fig-8.png) | MQM results of the human evaluation for TranslateGemma and Gemma 3. |
+| ![Figure 1](assets/papers-explained-527-translategemma/fig-1.webp) | Title card: TranslateGemma. |
+| ![Figure 2](assets/papers-explained-527-translategemma/fig-2.webp) | To increase the diversity, human-generated parallel data for lower-resource languages is included. |
+| ![Figure 3](assets/papers-explained-527-translategemma/fig-3.webp) | Languages paired with English in both directions. |
+| ![Figure 4](assets/papers-explained-527-translategemma/fig-4.webp) | Languages from English. |
+| ![Figure 5](assets/papers-explained-527-translategemma/fig-5.webp) | Non-English language pairs. |
+| ![Figure 6](assets/papers-explained-527-translategemma/fig-6.webp) | Automatic evaluation results using MetricX and Comet22 (C22) on WMT24++. |
+| ![Figure 7](assets/papers-explained-527-translategemma/fig-7.webp) | Automatic evaluation results using MetricX and Comet22 (C22) for image translation performance, on the Vistra corpus. |
+| ![Figure 8](assets/papers-explained-527-translategemma/fig-8.webp) | MQM results of the human evaluation for TranslateGemma and Gemma 3. |
 ## Related
 
 - [[Papers Explained Corpus]]

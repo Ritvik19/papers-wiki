@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-03-22_Papers-Explained-116--Phi-2-cef4a0bee146.html`
+- Source file: `raw/2024-03-22_Papers-Explained-116--Phi-2-cef4a0bee146.md`
 - Source title: Papers Explained 116: Phi-2
 - Published: 2024-03-22
 - Canonical: [https://medium.com/@ritvik19/papers-explained-116-phi-2-cef4a0bee146](https://medium.com/@ritvik19/papers-explained-116-phi-2-cef4a0bee146)
@@ -71,15 +71,15 @@ On complex benchmarks Phi-2 matches or outperforms models up to 25x larger, than
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-03-22_Papers-Explained-116--Phi-2-cef4a0bee146.html`); local copies under `wiki/assets/papers-explained-116-phi-2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-03-22_Papers-Explained-116--Phi-2-cef4a0bee146.md`); local copies under `wiki/assets/papers-explained-116-phi-2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-116-phi-2/fig-1.png) | Header image from Microsoft’s Phi-2 announcement page. |
-| ![Figure 2](assets/papers-explained-116-phi-2/fig-2.png) | Phi-2 vs Phi-1.5 grouped benchmark comparison across reasoning, language, math, and coding. |
-| ![Figure 3](assets/papers-explained-116-phi-2/fig-3.png) | Safety scores across demographics from ToxiGen for Phi models and Llama2-7B. |
-| ![Figure 4](assets/papers-explained-116-phi-2/fig-4.png) | Averaged grouped benchmark performance compared with open-source SLM baselines. |
-| ![Figure 5](assets/papers-explained-116-phi-2/fig-5.png) | Phi-2 and Gemini Nano 2 comparison on selected reported benchmarks. |
+| ![Figure 1](assets/papers-explained-116-phi-2/fig-1.webp) | Header image from Microsoft’s Phi-2 announcement page. |
+| ![Figure 2](assets/papers-explained-116-phi-2/fig-2.webp) | Phi-2 vs Phi-1.5 grouped benchmark comparison across reasoning, language, math, and coding. |
+| ![Figure 3](assets/papers-explained-116-phi-2/fig-3.webp) | Safety scores across demographics from ToxiGen for Phi models and Llama2-7B. |
+| ![Figure 4](assets/papers-explained-116-phi-2/fig-4.webp) | Averaged grouped benchmark performance compared with open-source SLM baselines. |
+| ![Figure 5](assets/papers-explained-116-phi-2/fig-5.webp) | Phi-2 and Gemini Nano 2 comparison on selected reported benchmarks. |
 ## Related
 
 - [[Papers Explained Corpus]]

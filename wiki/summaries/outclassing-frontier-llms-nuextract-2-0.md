@@ -1,6 +1,6 @@
 # NuExtract 2.0: Outclassing Frontier LLMs in Information Extraction
 
-**Source**: `raw/outclassing-frontier-llms-nuextract-2-0/full-article.html` (SPA shell; readable markdown from WebFetch), https://about.nuextract.ai/blog/outclassing-frontier-llms-nuextract-2-0  
+**Source**: `raw/outclassing-frontier-llms-nuextract-2-0/full-article.md` (SPA shell; readable markdown from WebFetch), https://about.nuextract.ai/blog/outclassing-frontier-llms-nuextract-2-0  
 **Ingested**: 2026-06-12  
 **Tags**: #summary
 
@@ -29,16 +29,16 @@
 | Figure | Caption | Page |
 |--------|---------|------|
 | ![fig-1](../assets/outclassing-frontier-llms-nuextract-2-0/fig-1.svg) | NuExtract 2.0 creation / training procedure | — |
-| ![fig-2](../assets/outclassing-frontier-llms-nuextract-2-0/fig-2.png) | PRO zero-shot vs frontier LLMs (+9 over GPT-4.1) | — |
-| ![fig-3](../assets/outclassing-frontier-llms-nuextract-2-0/fig-3.png) | Scanned ID card structured extraction | — |
-| ![fig-7](../assets/outclassing-frontier-llms-nuextract-2-0/fig-7.png) | Typed template field specifications | — |
-| ![fig-9](../assets/outclassing-frontier-llms-nuextract-2-0/fig-9.png) | Example NuExtract 2.0 template + output | — |
-| ![fig-11](../assets/outclassing-frontier-llms-nuextract-2-0/fig-11.png) | ICL training example format | — |
-| ![fig-12](../assets/outclassing-frontier-llms-nuextract-2-0/fig-12.png) | ICL gains on benchmark (+6 F-Score at 3 examples) | — |
-| ![fig-14](../assets/outclassing-frontier-llms-nuextract-2-0/fig-14.png) | PRO vs reasoning frontier models | — |
-| ![fig-15](../assets/outclassing-frontier-llms-nuextract-2-0/fig-15.png) | Precision vs recall (precision-favored design) | — |
+| ![fig-2](../assets/outclassing-frontier-llms-nuextract-2-0/fig-2.webp) | PRO zero-shot vs frontier LLMs (+9 over GPT-4.1) | — |
+| ![fig-3](../assets/outclassing-frontier-llms-nuextract-2-0/fig-3.webp) | Scanned ID card structured extraction | — |
+| ![fig-7](../assets/outclassing-frontier-llms-nuextract-2-0/fig-7.webp) | Typed template field specifications | — |
+| ![fig-9](../assets/outclassing-frontier-llms-nuextract-2-0/fig-9.webp) | Example NuExtract 2.0 template + output | — |
+| ![fig-11](../assets/outclassing-frontier-llms-nuextract-2-0/fig-11.webp) | ICL training example format | — |
+| ![fig-12](../assets/outclassing-frontier-llms-nuextract-2-0/fig-12.webp) | ICL gains on benchmark (+6 F-Score at 3 examples) | — |
+| ![fig-14](../assets/outclassing-frontier-llms-nuextract-2-0/fig-14.webp) | PRO vs reasoning frontier models | — |
+| ![fig-15](../assets/outclassing-frontier-llms-nuextract-2-0/fig-15.webp) | Precision vs recall (precision-favored design) | — |
 
-![PRO vs GPT-4.1](../assets/outclassing-frontier-llms-nuextract-2-0/fig-2.png)
+![PRO vs GPT-4.1](../assets/outclassing-frontier-llms-nuextract-2-0/fig-2.webp)
 
 ## Entities
 

@@ -221,6 +221,7 @@ __marimo__/
 
 scripts/*
 !scripts/reduce_storage.py
+!scripts/compact_further.py
 content/*
 inbox/*
 

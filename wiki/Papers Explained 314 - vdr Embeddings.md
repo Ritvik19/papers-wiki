@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-02-20_Papers-Explained-314--vdr-Embeddings-1482b79e12a4.html`
+- Source file: `raw/2025-02-20_Papers-Explained-314--vdr-Embeddings-1482b79e12a4.md`
 - Source title: Papers Explained 314: vdr Embeddings
 - Published: 2025-02-20
 - Canonical: [https://medium.com/@ritvik19/papers-explained-314-vdr-embeddings-1482b79e12a4](https://medium.com/@ritvik19/papers-explained-314-vdr-embeddings-1482b79e12a4)
@@ -109,18 +109,18 @@ The models are evaluated using the ViDoRe benchmark.
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-02-20_Papers-Explained-314--vdr-Embeddings-1482b79e12a4.html`); local copies under `wiki/assets/papers-explained-314-vdr-embeddings/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-02-20_Papers-Explained-314--vdr-Embeddings-1482b79e12a4.md`); local copies under `wiki/assets/papers-explained-314-vdr-embeddings/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-314-vdr-embeddings/fig-1.png) | Title card: vdr Embeddings. |
-| ![Figure 2](assets/papers-explained-314-vdr-embeddings/fig-2.png) | The vdr-2b-multi-v1 and vdr-2b-v1 models are based on the MrLight/dse-qwen2–2b-mrl-v1 architecture. |
-| ![Figure 3](assets/papers-explained-314-vdr-embeddings/fig-3.png) | The training dataset, vdr-multilingual-train, consists of 496,167 PDF pages, with 280,679 associated with filtered queries. |
-| ![Figure 4](assets/papers-explained-314-vdr-embeddings/fig-4.png) | The models are evaluated using the ViDoRe benchmark. |
-| ![Figure 5](assets/papers-explained-314-vdr-embeddings/fig-5.png) | The models are evaluated using the ViDoRe benchmark. |
-| ![Figure 6](assets/papers-explained-314-vdr-embeddings/fig-6.png) | The models are evaluated using the ViDoRe benchmark. |
-| ![Figure 7](assets/papers-explained-314-vdr-embeddings/fig-7.png) | NDCG@5 (float). |
-| ![Figure 8](assets/papers-explained-314-vdr-embeddings/fig-8.png) | NDCG@5 (binary). |
+| ![Figure 1](assets/papers-explained-314-vdr-embeddings/fig-1.webp) | Title card: vdr Embeddings. |
+| ![Figure 2](assets/papers-explained-314-vdr-embeddings/fig-2.webp) | The vdr-2b-multi-v1 and vdr-2b-v1 models are based on the MrLight/dse-qwen2–2b-mrl-v1 architecture. |
+| ![Figure 3](assets/papers-explained-314-vdr-embeddings/fig-3.webp) | The training dataset, vdr-multilingual-train, consists of 496,167 PDF pages, with 280,679 associated with filtered queries. |
+| ![Figure 4](assets/papers-explained-314-vdr-embeddings/fig-4.webp) | The models are evaluated using the ViDoRe benchmark. |
+| ![Figure 5](assets/papers-explained-314-vdr-embeddings/fig-5.webp) | The models are evaluated using the ViDoRe benchmark. |
+| ![Figure 6](assets/papers-explained-314-vdr-embeddings/fig-6.webp) | The models are evaluated using the ViDoRe benchmark. |
+| ![Figure 7](assets/papers-explained-314-vdr-embeddings/fig-7.webp) | NDCG@5 (float). |
+| ![Figure 8](assets/papers-explained-314-vdr-embeddings/fig-8.webp) | NDCG@5 (binary). |
 ## Related
 
 - [[Papers Explained Corpus]]

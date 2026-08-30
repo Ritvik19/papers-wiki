@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-07-23_Papers-Explained-415--Gemini-2-5-Pro-Capable-of-Winning-Gold-at-IMO-2025-0e76cc8ae940.html`
+- Source file: `raw/2025-07-23_Papers-Explained-415--Gemini-2-5-Pro-Capable-of-Winning-Gold-at-IMO-2025-0e76cc8ae940.md`
 - Source title: Papers Explained 415: Gemini 2.5 Pro Capable of Winning Gold at IMO 2025
 - Published: 2025-07-23
 - Canonical: [https://medium.com/@ritvik19/papers-explained-415-gemini-2-5-pro-capable-of-winning-gold-at-imo-2025-0e76cc8ae940](https://medium.com/@ritvik19/papers-explained-415-gemini-2-5-pro-capable-of-winning-gold-at-imo-2025-0e76cc8ae940)
@@ -181,11 +181,11 @@ Gemini 2.5 Pro Capable of Winning Gold at IMO 2025 [2507.15855](https://arxiv.or
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-07-23_Papers-Explained-415--Gemini-2-5-Pro-Capable-of-Winning-Gold-at-IMO-2025-0e76cc8ae940.html`); local copies under `wiki/assets/papers-explained-415-gemini-2-5-pro-capable-of-winning-gold-at-imo-2025/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-07-23_Papers-Explained-415--Gemini-2-5-Pro-Capable-of-Winning-Gold-at-IMO-2025-0e76cc8ae940.md`); local copies under `wiki/assets/papers-explained-415-gemini-2-5-pro-capable-of-winning-gold-at-imo-2025/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-415-gemini-2-5-pro-capable-of-winning-gold-at-imo-2025/fig-1.png) | Title card: Gemini 2.5 Pro Capable of Winning Gold at IMO 2025. |
+| ![Figure 1](assets/papers-explained-415-gemini-2-5-pro-capable-of-winning-gold-at-imo-2025/fig-1.webp) | Title card: Gemini 2.5 Pro Capable of Winning Gold at IMO 2025. |
 ## Related
 
 - [[Papers Explained Corpus]]

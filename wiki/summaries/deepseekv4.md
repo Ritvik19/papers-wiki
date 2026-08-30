@@ -1,6 +1,6 @@
 # DeepSeek-V4: A Million-Token Context That Agents Can Actually Use
 
-**Source**: `raw/deepseekv4/full-article.html` (181 KB), `raw/deepseekv4/full-article.md`
+**Source**: `raw/deepseekv4/full-article.md` (181 KB), `raw/deepseekv4/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

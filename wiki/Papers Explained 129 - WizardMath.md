@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-04-26_Papers-Explained-129--WizardMath-265e6e784341.html`
+- Source file: `raw/2024-04-26_Papers-Explained-129--WizardMath-265e6e784341.md`
 - Source title: Papers Explained 129: WizardMath
 - Published: 2024-04-26
 - Canonical: [https://medium.com/@ritvik19/papers-explained-129-wizardmath-265e6e784341](https://medium.com/@ritvik19/papers-explained-129-wizardmath-265e6e784341)
@@ -93,15 +93,15 @@ Recommended Reading [Wizard Models](https://ritvik19.medium.com/list/wizard-mode
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-04-26_Papers-Explained-129--WizardMath-265e6e784341.html`); local copies under `wiki/assets/papers-explained-129-wizardmath/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-04-26_Papers-Explained-129--WizardMath-265e6e784341.md`); local copies under `wiki/assets/papers-explained-129-wizardmath/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-129-wizardmath/fig-1.png) | Title page of *WizardMath: Empowering Mathematical Reasoning for Large Language Models via Reinforced Evol-Instruct*. |
-| ![Figure 2](assets/papers-explained-129-wizardmath/fig-2.png) | Three-stage RLEIF pipeline: SFT, reward-model training, and active Evol-Instruct with PPO. |
-| ![Figure 3](assets/papers-explained-129-wizardmath/fig-3.png) | Instruction-response training prompt format used for WizardMath. |
-| ![Figure 4](assets/papers-explained-129-wizardmath/fig-4.png) | GSM8K pass@1 leaderboard comparison of WizardMath with open and closed models. |
-| ![Figure 5](assets/papers-explained-129-wizardmath/fig-5.png) | GSM8K and MATH pass@1 benchmark table across closed-source and open-source baselines. |
+| ![Figure 1](assets/papers-explained-129-wizardmath/fig-1.webp) | Title page of *WizardMath: Empowering Mathematical Reasoning for Large Language Models via Reinforced Evol-Instruct*. |
+| ![Figure 2](assets/papers-explained-129-wizardmath/fig-2.webp) | Three-stage RLEIF pipeline: SFT, reward-model training, and active Evol-Instruct with PPO. |
+| ![Figure 3](assets/papers-explained-129-wizardmath/fig-3.webp) | Instruction-response training prompt format used for WizardMath. |
+| ![Figure 4](assets/papers-explained-129-wizardmath/fig-4.webp) | GSM8K pass@1 leaderboard comparison of WizardMath with open and closed models. |
+| ![Figure 5](assets/papers-explained-129-wizardmath/fig-5.webp) | GSM8K and MATH pass@1 benchmark table across closed-source and open-source baselines. |
 ## Related
 
 - [[Papers Explained Corpus]]

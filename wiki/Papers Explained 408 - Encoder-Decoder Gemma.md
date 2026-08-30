@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-07-14_Papers-Explained-408--Encoder-Decoder-Gemma-a6f9ee73a5f4.html`
+- Source file: `raw/2025-07-14_Papers-Explained-408--Encoder-Decoder-Gemma-a6f9ee73a5f4.md`
 - Source title: Papers Explained 408: Encoder-Decoder Gemma
 - Published: 2025-07-14
 - Canonical: [https://medium.com/@ritvik19/papers-explained-408-encoder-decoder-gemma-a6f9ee73a5f4](https://medium.com/@ritvik19/papers-explained-408-encoder-decoder-gemma-a6f9ee73a5f4)
@@ -149,18 +149,18 @@ Encoder-Decoder Gemma: Improving the Quality-Efficiency Trade-Off via Adaptation
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-07-14_Papers-Explained-408--Encoder-Decoder-Gemma-a6f9ee73a5f4.html`); local copies under `wiki/assets/papers-explained-408-encoder-decoder-gemma/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-07-14_Papers-Explained-408--Encoder-Decoder-Gemma-a6f9ee73a5f4.md`); local copies under `wiki/assets/papers-explained-408-encoder-decoder-gemma/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-408-encoder-decoder-gemma/fig-1.png) | Title card: Encoder-Decoder Gemma. |
-| ![Figure 2](assets/papers-explained-408-encoder-decoder-gemma/fig-2.png) | Overview of the approach. |
-| ![Figure 3](assets/papers-explained-408-encoder-decoder-gemma/fig-3.png) | Model configurations. |
-| ![Figure 4](assets/papers-explained-408-encoder-decoder-gemma/fig-4.png) | Pretraining performance as a function of the number of pretrained tokens during the adaptation. |
-| ![Figure 5](assets/papers-explained-408-encoder-decoder-gemma/fig-5.png) | Main results on PT, IT, and SuperGLUE benchmarks. |
-| ![Figure 6](assets/papers-explained-408-encoder-decoder-gemma/fig-6.png) | Detailed results on different tasks for PT and RLHFed models. |
-| ![Figure 7](assets/papers-explained-408-encoder-decoder-gemma/fig-7.png) | Comparisons of decoder-only LLMs with adapted encoder-decoder models under inference flops. |
-| ![Figure 8](assets/papers-explained-408-encoder-decoder-gemma/fig-8.png) | Results for encoder-decoder models adapted with PrefixLM (Adaptation) and pretrained from scratch (Scratch). |
+| ![Figure 1](assets/papers-explained-408-encoder-decoder-gemma/fig-1.webp) | Title card: Encoder-Decoder Gemma. |
+| ![Figure 2](assets/papers-explained-408-encoder-decoder-gemma/fig-2.webp) | Overview of the approach. |
+| ![Figure 3](assets/papers-explained-408-encoder-decoder-gemma/fig-3.webp) | Model configurations. |
+| ![Figure 4](assets/papers-explained-408-encoder-decoder-gemma/fig-4.webp) | Pretraining performance as a function of the number of pretrained tokens during the adaptation. |
+| ![Figure 5](assets/papers-explained-408-encoder-decoder-gemma/fig-5.webp) | Main results on PT, IT, and SuperGLUE benchmarks. |
+| ![Figure 6](assets/papers-explained-408-encoder-decoder-gemma/fig-6.webp) | Detailed results on different tasks for PT and RLHFed models. |
+| ![Figure 7](assets/papers-explained-408-encoder-decoder-gemma/fig-7.webp) | Comparisons of decoder-only LLMs with adapted encoder-decoder models under inference flops. |
+| ![Figure 8](assets/papers-explained-408-encoder-decoder-gemma/fig-8.webp) | Results for encoder-decoder models adapted with PrefixLM (Adaptation) and pretrained from scratch (Scratch). |
 ## Related
 
 - [[Papers Explained Corpus]]

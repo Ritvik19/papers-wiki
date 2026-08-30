@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-02-23_Papers-Explained-104--MoE-LLaVA-cf14fda01e6f.html`
+- Source file: `raw/2024-02-23_Papers-Explained-104--MoE-LLaVA-cf14fda01e6f.md`
 - Source title: Papers Explained 104: MoE-LLaVA
 - Published: 2024-02-23
 - Canonical: [https://medium.com/@ritvik19/papers-explained-104-moe-llava-cf14fda01e6f](https://medium.com/@ritvik19/papers-explained-104-moe-llava-cf14fda01e6f)
@@ -143,25 +143,25 @@ Recommended Reading [Multi Modal Transformers](https://ritvik19.medium.com/list/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-02-23_Papers-Explained-104--MoE-LLaVA-cf14fda01e6f.html`); local copies under `wiki/assets/papers-explained-104-moe-llava/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-02-23_Papers-Explained-104--MoE-LLaVA-cf14fda01e6f.md`); local copies under `wiki/assets/papers-explained-104-moe-llava/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-104-moe-llava/fig-1.png) | Title block of *MoE-LLaVA: Mixture of Experts for Large Vision-Language Models*. |
-| ![Figure 2](assets/papers-explained-104-moe-llava/fig-2.png) | Architecture/hyperparameter table for dense backbones and MoE-LLaVA variants (experts, top-k, activated params). |
-| ![Figure 3](assets/papers-explained-104-moe-llava/fig-3.png) | Router softmax probability formulation for token-to-expert assignment. |
-| ![Figure 4](assets/papers-explained-104-moe-llava/fig-4.png) | MoE forward equation aggregating top-k expert outputs with routing weights. |
-| ![Figure 5](assets/papers-explained-104-moe-llava/fig-5.png) | Three-stage MoE-Tuning pipeline from dense initialization to routed sparse LVLM training. |
-| ![Figure 6](assets/papers-explained-104-moe-llava/fig-6.png) | Total objective combining autoregressive loss and auxiliary load-balancing loss. |
-| ![Figure 7](assets/papers-explained-104-moe-llava/fig-7.png) | Autoregressive language-modeling loss over multimodal token sequence. |
-| ![Figure 8](assets/papers-explained-104-moe-llava/fig-8.png) | Auxiliary load-balancing loss for expert utilization regularization. |
-| ![Figure 9](assets/papers-explained-104-moe-llava/fig-9.png) | Definitions of expert token fraction and mean routing probability terms used in balancing. |
-| ![Figure 10](assets/papers-explained-104-moe-llava/fig-10.png) | Training-data composition by stage (LLaVA-PT, Hybrid-FT, LLaVA-FT). |
-| ![Figure 11](assets/papers-explained-104-moe-llava/fig-11.png) | Image-question-answering benchmark comparison: MoE-LLaVA vs dense LVLM baselines. |
-| ![Figure 12](assets/papers-explained-104-moe-llava/fig-12.png) | Zero-shot object hallucination results under adversarial/popular/random sampling. |
-| ![Figure 13](assets/papers-explained-104-moe-llava/fig-13.png) | Expert-loading distribution across MoE layers, separated by expert and modality. |
-| ![Figure 14](assets/papers-explained-104-moe-llava/fig-14.png) | Text vs image modality distributions routed to each expert across layers. |
-| ![Figure 15](assets/papers-explained-104-moe-llava/fig-15.png) | Token-level activated pathway visualization showing top-1/top-2 expert routing in text and image streams. |
+| ![Figure 1](assets/papers-explained-104-moe-llava/fig-1.webp) | Title block of *MoE-LLaVA: Mixture of Experts for Large Vision-Language Models*. |
+| ![Figure 2](assets/papers-explained-104-moe-llava/fig-2.webp) | Architecture/hyperparameter table for dense backbones and MoE-LLaVA variants (experts, top-k, activated params). |
+| ![Figure 3](assets/papers-explained-104-moe-llava/fig-3.webp) | Router softmax probability formulation for token-to-expert assignment. |
+| ![Figure 4](assets/papers-explained-104-moe-llava/fig-4.webp) | MoE forward equation aggregating top-k expert outputs with routing weights. |
+| ![Figure 5](assets/papers-explained-104-moe-llava/fig-5.webp) | Three-stage MoE-Tuning pipeline from dense initialization to routed sparse LVLM training. |
+| ![Figure 6](assets/papers-explained-104-moe-llava/fig-6.webp) | Total objective combining autoregressive loss and auxiliary load-balancing loss. |
+| ![Figure 7](assets/papers-explained-104-moe-llava/fig-7.webp) | Autoregressive language-modeling loss over multimodal token sequence. |
+| ![Figure 8](assets/papers-explained-104-moe-llava/fig-8.webp) | Auxiliary load-balancing loss for expert utilization regularization. |
+| ![Figure 9](assets/papers-explained-104-moe-llava/fig-9.webp) | Definitions of expert token fraction and mean routing probability terms used in balancing. |
+| ![Figure 10](assets/papers-explained-104-moe-llava/fig-10.webp) | Training-data composition by stage (LLaVA-PT, Hybrid-FT, LLaVA-FT). |
+| ![Figure 11](assets/papers-explained-104-moe-llava/fig-11.webp) | Image-question-answering benchmark comparison: MoE-LLaVA vs dense LVLM baselines. |
+| ![Figure 12](assets/papers-explained-104-moe-llava/fig-12.webp) | Zero-shot object hallucination results under adversarial/popular/random sampling. |
+| ![Figure 13](assets/papers-explained-104-moe-llava/fig-13.webp) | Expert-loading distribution across MoE layers, separated by expert and modality. |
+| ![Figure 14](assets/papers-explained-104-moe-llava/fig-14.webp) | Text vs image modality distributions routed to each expert across layers. |
+| ![Figure 15](assets/papers-explained-104-moe-llava/fig-15.webp) | Token-level activated pathway visualization showing top-1/top-2 expert routing in text and image streams. |
 ## Related
 
 - [[Papers Explained Corpus]]

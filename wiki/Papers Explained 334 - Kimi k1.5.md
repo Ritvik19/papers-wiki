@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-03-20_Papers-Explained-334--Kimi-k1-5-c41e914cae7b.html`
+- Source file: `raw/2025-03-20_Papers-Explained-334--Kimi-k1-5-c41e914cae7b.md`
 - Source title: Papers Explained 334: Kimi k1.5
 - Published: 2025-03-20
 - Canonical: [https://medium.com/@ritvik19/papers-explained-334-kimi-k1-5-c41e914cae7b](https://medium.com/@ritvik19/papers-explained-334-kimi-k1-5-c41e914cae7b)
@@ -155,17 +155,17 @@ Kimi k1.5: Scaling Reinforcement Learning with LLMs [2501.12599](https://arxiv.o
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-03-20_Papers-Explained-334--Kimi-k1-5-c41e914cae7b.html`); local copies under `wiki/assets/papers-explained-334-kimi-k1-5/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-03-20_Papers-Explained-334--Kimi-k1-5-c41e914cae7b.md`); local copies under `wiki/assets/papers-explained-334-kimi-k1-5/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-334-kimi-k1-5/fig-1.png) | Title card: Kimi k1.5. |
-| ![Figure 2](assets/papers-explained-334-kimi-k1-5/fig-2.png) | An overthinking phenomenon is observed where the model’s response length significantly increases during RL training. |
-| ![Figure 3](assets/papers-explained-334-kimi-k1-5/fig-3.png) | Performance of Kimi k1.5 long-CoT and flagship open-source and proprietary models. |
-| ![Figure 4](assets/papers-explained-334-kimi-k1-5/fig-4.png) | Performance of Kimi k1.5 short-CoT and flagship open-source and proprietary models. |
-| ![Figure 5](assets/papers-explained-334-kimi-k1-5/fig-5.png) | The changes on the training accuracy and length as train iterations grow. |
-| ![Figure 6](assets/papers-explained-334-kimi-k1-5/fig-6.png) | Model Performance Increases with Response Length. |
-| ![Figure 7](assets/papers-explained-334-kimi-k1-5/fig-7.png) | Long2Short Performance. |
+| ![Figure 1](assets/papers-explained-334-kimi-k1-5/fig-1.webp) | Title card: Kimi k1.5. |
+| ![Figure 2](assets/papers-explained-334-kimi-k1-5/fig-2.webp) | An overthinking phenomenon is observed where the model’s response length significantly increases during RL training. |
+| ![Figure 3](assets/papers-explained-334-kimi-k1-5/fig-3.webp) | Performance of Kimi k1.5 long-CoT and flagship open-source and proprietary models. |
+| ![Figure 4](assets/papers-explained-334-kimi-k1-5/fig-4.webp) | Performance of Kimi k1.5 short-CoT and flagship open-source and proprietary models. |
+| ![Figure 5](assets/papers-explained-334-kimi-k1-5/fig-5.webp) | The changes on the training accuracy and length as train iterations grow. |
+| ![Figure 6](assets/papers-explained-334-kimi-k1-5/fig-6.webp) | Model Performance Increases with Response Length. |
+| ![Figure 7](assets/papers-explained-334-kimi-k1-5/fig-7.webp) | Long2Short Performance. |
 ## Related
 
 - [[Papers Explained Corpus]]

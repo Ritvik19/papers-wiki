@@ -1,6 +1,6 @@
 # NuExtract3: The Reasoning Open-Source OCR & Structured Extraction LLM
 
-**Source**: `raw/nuextract-3-release/full-article.html` (SPA shell), `raw/nuextract-3-release/full-article.md`, https://about.nuextract.ai/blog/nuextract-3-release  
+**Source**: `raw/nuextract-3-release/full-article.md` (SPA shell), `raw/nuextract-3-release/full-article.md`, https://about.nuextract.ai/blog/nuextract-3-release  
 **Ingested**: 2026-06-12  
 **Tags**: #summary
 
@@ -26,18 +26,18 @@
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/nuextract-3-release/fig-1.png) | Unified JSON + Markdown extraction for automation/agents | — |
-| ![fig-2](../assets/nuextract-3-release/fig-2.png) | Structured extraction task (schema → JSON) | — |
-| ![fig-3](../assets/nuextract-3-release/fig-3.png) | Content extraction / OCR task (document → Markdown) | — |
-| ![fig-4](../assets/nuextract-3-release/fig-4.png) | Challenging split/overlapping table document | — |
+| ![fig-1](../assets/nuextract-3-release/fig-1.webp) | Unified JSON + Markdown extraction for automation/agents | — |
+| ![fig-2](../assets/nuextract-3-release/fig-2.webp) | Structured extraction task (schema → JSON) | — |
+| ![fig-3](../assets/nuextract-3-release/fig-3.webp) | Content extraction / OCR task (document → Markdown) | — |
+| ![fig-4](../assets/nuextract-3-release/fig-4.webp) | Challenging split/overlapping table document | — |
 | ![fig-6](../assets/nuextract-3-release/fig-6.svg) | Training: dataset → SFT + RL on Qwen3.5-4B | — |
 | ![fig-7](../assets/nuextract-3-release/fig-7.svg) | Structured extraction benchmark (similar-size models) | — |
 | ![fig-9](../assets/nuextract-3-release/fig-9.svg) | OCR battle win rates vs NuExtract3 (LLM judge) | — |
 | ![fig-10](../assets/nuextract-3-release/fig-10.svg) | Downstream OCR benchmark via Markdown → LLM extract | — |
-| ![fig-11](../assets/nuextract-3-release/fig-11.png) | NuExtract 2.0 typed template example | — |
-| ![fig-12](../assets/nuextract-3-release/fig-12.png) | French ID card — instruction-based field extraction | — |
+| ![fig-11](../assets/nuextract-3-release/fig-11.webp) | NuExtract 2.0 typed template example | — |
+| ![fig-12](../assets/nuextract-3-release/fig-12.webp) | French ID card — instruction-based field extraction | — |
 
-![Unified extractor](../assets/nuextract-3-release/fig-1.png)
+![Unified extractor](../assets/nuextract-3-release/fig-1.webp)
 
 ![Downstream OCR benchmark](../assets/nuextract-3-release/fig-10.svg)
 

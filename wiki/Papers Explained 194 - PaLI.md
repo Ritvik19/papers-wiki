@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-26_Papers-Explained-194--PaLI-c1fffc14068c.html`
+- Source file: `raw/2024-08-26_Papers-Explained-194--PaLI-c1fffc14068c.md`
 - Source title: Papers Explained 194: PaLI
 - Published: 2024-08-26
 - Canonical: [https://medium.com/@ritvik19/papers-explained-194-pali-c1fffc14068c](https://medium.com/@ritvik19/papers-explained-194-pali-c1fffc14068c)
@@ -159,24 +159,24 @@ Recommended Reading [Multi Modal Transformers](https://ritvik19.medium.com/list/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-26_Papers-Explained-194--PaLI-c1fffc14068c.html`); local copies under `wiki/assets/papers-explained-194-pali/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-26_Papers-Explained-194--PaLI-c1fffc14068c.md`); local copies under `wiki/assets/papers-explained-194-pali/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-194-pali/fig-1.png) | Paper title block — **PaLI: A Jointly-Scaled Multilingual Language-Image Model** (Google Research). |
-| ![Figure 2](assets/papers-explained-194-pali/fig-2.png) | **PaLI inference schematic** — ViT image tokens + text into encoder–decoder (example VQA: sunflowers in buckets). |
-| ![Figure 3](assets/papers-explained-194-pali/fig-3.png) | **ViT scaling ladder** — g/14 vs **G/14** vs **e/14** width, depth, params, GFLOPs at 224² / 384². |
-| ![Figure 4](assets/papers-explained-194-pali/fig-4.png) | **PaLI checkpoints** — 3B / 15B / 17B: ViT-G vs **ViT-e**, mT5-L vs **mT5-XXL**, encoder-decoder and total params. |
-| ![Figure 5](assets/papers-explained-194-pali/fig-5.png) | **Pretraining mixture sizes** — millions of examples per objective (WebLI alt-text, OCR, CC3M-35L, VQA/VQG, OA, detection… **~1.57B** total). |
-| ![Figure 6](assets/papers-explained-194-pali/fig-6.png) | **English captioning leaderboard** — COCO (Karpathy-test), NoCaps, TextCaps, VizWiz-Cap; PaLI-**17B** bolded vs GIT2, BEiT-3, Flamingo, etc. |
-| ![Figure 7](assets/papers-explained-194-pali/fig-7.png) | **Crossmodal-3600** — per-language scores + **35-language average**; baseline vs PaLI-3B vs PaLI-**17B**. |
-| ![Figure 8](assets/papers-explained-194-pali/fig-8.png) | **VQA suite** — VQAv2, OKVQA, TextVQA, VizWiz-QA, ST-VQA (val/test); PaLI scales vs SoTA rows. |
-| ![Figure 9](assets/papers-explained-194-pali/fig-9.png) | **Multilingual VQA** — **xGQA** (8 langs) and **MaXM** (7 langs); PaLI-17B vs MPT. |
-| ![Figure 10](assets/papers-explained-194-pali/fig-10.png) | **Language encoder quality** — SuperGLUE FT + XNLI / XQuAD / TyDi QA zero-shot; PaLI-17B vs mT5-XXL repro settings. |
-| ![Figure 11](assets/papers-explained-194-pali/fig-11.png) | **Zero-shot classification** — ImageNet + robustness splits + ObjectNet; PaLI vs Flamingo shots. |
-| ![Figure 12](assets/papers-explained-194-pali/fig-12.png) | **Scaling ablations** — absolute gains vs PaLI-3B across caption/VQA tasks; **high-resolution** phase stacked on PaLI-17B. |
-| ![Figure 13](assets/papers-explained-194-pali/fig-13.png) | **Vision vs language scaling** — COCO-Cap / OKVQA @490px and **gain per +1B params** when scaling ViT-e vs mT5-XXL. |
-| ![Figure 14](assets/papers-explained-194-pali/fig-14.png) | **Crossmodal-3600 bars** — direct CIDEr vs EN **back-translation** subset; baseline vs PaLI-3B vs PaLI-17B. |
+| ![Figure 1](assets/papers-explained-194-pali/fig-1.webp) | Paper title block — **PaLI: A Jointly-Scaled Multilingual Language-Image Model** (Google Research). |
+| ![Figure 2](assets/papers-explained-194-pali/fig-2.webp) | **PaLI inference schematic** — ViT image tokens + text into encoder–decoder (example VQA: sunflowers in buckets). |
+| ![Figure 3](assets/papers-explained-194-pali/fig-3.webp) | **ViT scaling ladder** — g/14 vs **G/14** vs **e/14** width, depth, params, GFLOPs at 224² / 384². |
+| ![Figure 4](assets/papers-explained-194-pali/fig-4.webp) | **PaLI checkpoints** — 3B / 15B / 17B: ViT-G vs **ViT-e**, mT5-L vs **mT5-XXL**, encoder-decoder and total params. |
+| ![Figure 5](assets/papers-explained-194-pali/fig-5.webp) | **Pretraining mixture sizes** — millions of examples per objective (WebLI alt-text, OCR, CC3M-35L, VQA/VQG, OA, detection… **~1.57B** total). |
+| ![Figure 6](assets/papers-explained-194-pali/fig-6.webp) | **English captioning leaderboard** — COCO (Karpathy-test), NoCaps, TextCaps, VizWiz-Cap; PaLI-**17B** bolded vs GIT2, BEiT-3, Flamingo, etc. |
+| ![Figure 7](assets/papers-explained-194-pali/fig-7.webp) | **Crossmodal-3600** — per-language scores + **35-language average**; baseline vs PaLI-3B vs PaLI-**17B**. |
+| ![Figure 8](assets/papers-explained-194-pali/fig-8.webp) | **VQA suite** — VQAv2, OKVQA, TextVQA, VizWiz-QA, ST-VQA (val/test); PaLI scales vs SoTA rows. |
+| ![Figure 9](assets/papers-explained-194-pali/fig-9.webp) | **Multilingual VQA** — **xGQA** (8 langs) and **MaXM** (7 langs); PaLI-17B vs MPT. |
+| ![Figure 10](assets/papers-explained-194-pali/fig-10.webp) | **Language encoder quality** — SuperGLUE FT + XNLI / XQuAD / TyDi QA zero-shot; PaLI-17B vs mT5-XXL repro settings. |
+| ![Figure 11](assets/papers-explained-194-pali/fig-11.webp) | **Zero-shot classification** — ImageNet + robustness splits + ObjectNet; PaLI vs Flamingo shots. |
+| ![Figure 12](assets/papers-explained-194-pali/fig-12.webp) | **Scaling ablations** — absolute gains vs PaLI-3B across caption/VQA tasks; **high-resolution** phase stacked on PaLI-17B. |
+| ![Figure 13](assets/papers-explained-194-pali/fig-13.webp) | **Vision vs language scaling** — COCO-Cap / OKVQA @490px and **gain per +1B params** when scaling ViT-e vs mT5-XXL. |
+| ![Figure 14](assets/papers-explained-194-pali/fig-14.webp) | **Crossmodal-3600 bars** — direct CIDEr vs EN **back-translation** subset; baseline vs PaLI-3B vs PaLI-17B. |
 ## Related
 
 - [[Papers Explained Corpus]]

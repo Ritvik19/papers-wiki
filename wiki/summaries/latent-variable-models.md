@@ -1,6 +1,6 @@
 # The Theory behind Latent Variable Models: Formulating a Variational Autoencoder
 
-**Source**: `raw/latent-variable-models/full-article.html` (464 KB), `raw/latent-variable-models/full-article.md` (markdown view)  
+**Source**: `raw/latent-variable-models/full-article.md` (464 KB), `raw/latent-variable-models/full-article.md` (markdown view)  
 **URL**: https://theaisummer.com/latent-variable-models/  
 **Author**: Sergios Karagiannakos (AI Summer), 2021-02-04  
 **Ingested**: 2026-06-06  
@@ -10,11 +10,11 @@
 
 Sergios Karagiannakos provides a full probabilistic derivation of [[Variational Autoencoders]] from first principles. The article opens by contrasting **discriminative** models \(p(y|x)\), **generative** models \(p(x)\), and **conditional generative** models \(p(x|y)\), noting they interconnect via Bayes' rule. Generative models aim to learn a density matching \(p_{data}(x)\); VAEs sit in the **explicit approximate density** branch of a taxonomy that also includes exact density models and **implicit** samplers such as GANs.
 
-![Discriminative vs generative model taxonomy](../assets/latent-variable-models/fig-1.png)
+![Discriminative vs generative model taxonomy](../assets/latent-variable-models/fig-1.webp)
 
 **Latent variable models** introduce unobserved variables \(z\) that "explain" data in a lower-dimensional space. Five distributions govern the setup: prior \(p(z)\), likelihood \(p(x|z)\), joint \(p(x,z)=p(x|z)p(z)\), marginal \(p(x)\) (the training objective), and posterior \(p(z|x)\). **Generation** samples \(z \sim p(z)\) then \(x \sim p(x|z)\); **inference** is the inverse. Training uses **maximum likelihood** on \(\log p_\theta(x)\), but the marginal log-likelihood gradient requires the intractable posterior—motivating approximate inference.
 
-![Generative model taxonomy: explicit vs implicit density](../assets/latent-variable-models/fig-2.png)
+![Generative model taxonomy: explicit vs implicit density](../assets/latent-variable-models/fig-2.webp)
 
 **[[Variational Inference]]** replaces the true posterior with a tractable variational distribution \(q_\phi(z|x)\) and maximizes the **ELBO** (Evidence Lower Bound):
 
@@ -22,17 +22,17 @@ Sergios Karagiannakos provides a full probabilistic derivation of [[Variational 
 
 Equivalently, ELBO = \(\log p_\theta(x) - \mathrm{KL}(q_\phi(z|x) \| p_\theta(z|x))\); the KL gap measures approximation quality. **Amortized inference** trains a neural network to output \(\phi\) for any datapoint rather than optimizing per-example variational parameters.
 
-![Generation vs inference in latent variable models](../assets/latent-variable-models/fig-3.png)
+![Generation vs inference in latent variable models](../assets/latent-variable-models/fig-3.webp)
 
 Gradients w.r.t. model parameters \(\theta\) use Monte Carlo samples from \(q_\phi\). Gradients w.r.t. \(\phi\) require the **reparameterization trick** (\(z = \mu + \sigma\epsilon\), \(\epsilon \sim \mathcal{N}(0,1)\)) to backprop through stochastic latents.
 
-![Reparameterization trick diagram (MIT 6.S191)](../assets/latent-variable-models/fig-4.png)
+![Reparameterization trick diagram (MIT 6.S191)](../assets/latent-variable-models/fig-4.webp)
 
 The VAE instantiation uses conv encoder/decoder networks on MNIST (TensorFlow/Keras). With a standard normal prior, the ELBO decomposes into **negative reconstruction error** plus **KL to prior**:
 
 \[L = \mathbb{E}_{q_\phi(z|x)}[\log p_\theta(x|z)] - \mathrm{KL}(q_\phi(z|x) \| p(z))\]
 
-![VAE architecture: encoder, latent sampling, decoder](../assets/latent-variable-models/fig-5.png)
+![VAE architecture: encoder, latent sampling, decoder](../assets/latent-variable-models/fig-5.webp)
 
 The article cites Kingma & Welling (2013), the [[Deep Learning]] textbook, and Lilian Weng's Beta-VAE post, and points readers to the earlier [[How to Generate Images using Autoencoders]] intuitive primer.
 
@@ -55,11 +55,11 @@ The article cites Kingma & Welling (2013), the [[Deep Learning]] textbook, and L
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/latent-variable-models/fig-1.png) | Discriminative vs generative vs conditional generative models and their probabilistic formulations | — |
-| ![fig-2](../assets/latent-variable-models/fig-2.png) | Generative model taxonomy: explicit vs implicit density; VAEs as approximate explicit / latent-variable models | — |
-| ![fig-3](../assets/latent-variable-models/fig-3.png) | Latent variable model: generation (prior → likelihood) vs inference (marginal → posterior) | — |
-| ![fig-4](../assets/latent-variable-models/fig-4.png) | Reparameterization trick for backprop through stochastic latents (MIT 6.S191) | — |
-| ![fig-5](../assets/latent-variable-models/fig-5.png) | VAE architecture with encoder, reparameterized latent sampling, and decoder | — |
+| ![fig-1](../assets/latent-variable-models/fig-1.webp) | Discriminative vs generative vs conditional generative models and their probabilistic formulations | — |
+| ![fig-2](../assets/latent-variable-models/fig-2.webp) | Generative model taxonomy: explicit vs implicit density; VAEs as approximate explicit / latent-variable models | — |
+| ![fig-3](../assets/latent-variable-models/fig-3.webp) | Latent variable model: generation (prior → likelihood) vs inference (marginal → posterior) | — |
+| ![fig-4](../assets/latent-variable-models/fig-4.webp) | Reparameterization trick for backprop through stochastic latents (MIT 6.S191) | — |
+| ![fig-5](../assets/latent-variable-models/fig-5.webp) | VAE architecture with encoder, reparameterized latent sampling, and decoder | — |
 
 ## Entities
 

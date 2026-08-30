@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-06-04_Papers-Explained-380--Self-Evolved-Preference-Optimization--SPHERE--f256c1a7bb0f.html`
+- Source file: `raw/2025-06-04_Papers-Explained-380--Self-Evolved-Preference-Optimization--SPHERE--f256c1a7bb0f.md`
 - Source title: Papers Explained 380: Self-Evolved Preference Optimization (SPHERE)
 - Published: 2025-06-04
 - Canonical: [https://medium.com/@ritvik19/papers-explained-380-self-evolved-preference-optimization-sphere-f256c1a7bb0f](https://medium.com/@ritvik19/papers-explained-380-self-evolved-preference-optimization-sphere-f256c1a7bb0f)
@@ -105,17 +105,17 @@ Self-Evolved Preference Optimization for Enhancing Mathematical Reasoning in Sma
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-06-04_Papers-Explained-380--Self-Evolved-Preference-Optimization--SPHERE--f256c1a7bb0f.html`); local copies under `wiki/assets/papers-explained-380-self-evolved-preference-optimization-sphere/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-06-04_Papers-Explained-380--Self-Evolved-Preference-Optimization--SPHERE--f256c1a7bb0f.md`); local copies under `wiki/assets/papers-explained-380-self-evolved-preference-optimization-sphere/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-380-self-evolved-preference-optimization-sphere/fig-1.png) | Title card: Self-Evolved Preference Optimization (SPHERE). |
-| ![Figure 2](assets/papers-explained-380-self-evolved-preference-optimization-sphere/fig-2.png) | Illustration of all stages in Pruned MCTS. |
-| ![Figure 3](assets/papers-explained-380-self-evolved-preference-optimization-sphere/fig-3.png) | To ensure efficient exploration, only two steps per rollout are retained. |
-| ![Figure 4](assets/papers-explained-380-self-evolved-preference-optimization-sphere/fig-4.png) | These steps are scored using PRM, πprm, which evaluates their likelihood of leading to the correct solution. |
-| ![Figure 5](assets/papers-explained-380-self-evolved-preference-optimization-sphere/fig-5.png) | In some cases, both Smax and Smin may be missing due to. |
-| ![Figure 6](assets/papers-explained-380-self-evolved-preference-optimization-sphere/fig-6.png) | A large dataset of 20K math word problems with final answer ground-truth labels, primarily sampled from NuminaMath and MetaMath is used. |
-| ![Figure 7](assets/papers-explained-380-self-evolved-preference-optimization-sphere/fig-7.png) | Performance of SPHERE on Pass@1 accuracy (Qwen2.5–7B as the generation policy). |
+| ![Figure 1](assets/papers-explained-380-self-evolved-preference-optimization-sphere/fig-1.webp) | Title card: Self-Evolved Preference Optimization (SPHERE). |
+| ![Figure 2](assets/papers-explained-380-self-evolved-preference-optimization-sphere/fig-2.webp) | Illustration of all stages in Pruned MCTS. |
+| ![Figure 3](assets/papers-explained-380-self-evolved-preference-optimization-sphere/fig-3.webp) | To ensure efficient exploration, only two steps per rollout are retained. |
+| ![Figure 4](assets/papers-explained-380-self-evolved-preference-optimization-sphere/fig-4.webp) | These steps are scored using PRM, πprm, which evaluates their likelihood of leading to the correct solution. |
+| ![Figure 5](assets/papers-explained-380-self-evolved-preference-optimization-sphere/fig-5.webp) | In some cases, both Smax and Smin may be missing due to. |
+| ![Figure 6](assets/papers-explained-380-self-evolved-preference-optimization-sphere/fig-6.webp) | A large dataset of 20K math word problems with final answer ground-truth labels, primarily sampled from NuminaMath and MetaMath is used. |
+| ![Figure 7](assets/papers-explained-380-self-evolved-preference-optimization-sphere/fig-7.webp) | Performance of SPHERE on Pass@1 accuracy (Qwen2.5–7B as the generation policy). |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-10-09_Papers-Explained-471--mmBERT-53c062841b7a.html`
+- Source file: `raw/2025-10-09_Papers-Explained-471--mmBERT-53c062841b7a.md`
 - Source title: Papers Explained 471: mmBERT
 - Published: 2025-10-09
 - Canonical: [https://medium.com/@ritvik19/papers-explained-471-mmbert-53c062841b7a](https://medium.com/@ritvik19/papers-explained-471-mmbert-53c062841b7a)
@@ -103,22 +103,22 @@ mmBERT: A Modern Multilingual Encoder with Annealed Language Learning [2509.0688
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-10-09_Papers-Explained-471--mmBERT-53c062841b7a.html`); local copies under `wiki/assets/papers-explained-471-mmbert/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-10-09_Papers-Explained-471--mmBERT-53c062841b7a.md`); local copies under `wiki/assets/papers-explained-471-mmbert/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-471-mmbert/fig-1.png) | Title card: mmBERT. |
-| ![Figure 2](assets/papers-explained-471-mmbert/fig-2.png) | Common Configuration Parameters. |
-| ![Figure 3](assets/papers-explained-471-mmbert/fig-3.png) | Inverse temperature sampling ratio throughout training from Fineweb2 data, from τ of 0.7 to 0.5 to 0.3. |
-| ![Figure 4](assets/papers-explained-471-mmbert/fig-4.png) | Training data mixture across the various training stages. |
-| ![Figure 5](assets/papers-explained-471-mmbert/fig-5.png) | GLUE (English) benchmark results. |
-| ![Figure 6](assets/papers-explained-471-mmbert/fig-6.png) | XTREME benchmark results. |
-| ![Figure 7](assets/papers-explained-471-mmbert/fig-7.png) | MTEB v2 English results. |
-| ![Figure 8](assets/papers-explained-471-mmbert/fig-8.png) | MTEB v2 multilingual results. |
-| ![Figure 9](assets/papers-explained-471-mmbert/fig-9.png) | Retrieval scores on the CoIR Benchmark. |
-| ![Figure 10](assets/papers-explained-471-mmbert/fig-10.png) | Comparing EuroBERT and MMBERT on EuroBERT’s in-distribution languages on XNLI and PAWS-X. |
-| ![Figure 11](assets/papers-explained-471-mmbert/fig-11.png) | Performance of models using different decay phases on two languages (Tigray and Faroese) only added during the decay phase. |
-| ![Figure 12](assets/papers-explained-471-mmbert/fig-12.png) | Throughput efficiency for various sequence lengths and variable input length. |
+| ![Figure 1](assets/papers-explained-471-mmbert/fig-1.webp) | Title card: mmBERT. |
+| ![Figure 2](assets/papers-explained-471-mmbert/fig-2.webp) | Common Configuration Parameters. |
+| ![Figure 3](assets/papers-explained-471-mmbert/fig-3.webp) | Inverse temperature sampling ratio throughout training from Fineweb2 data, from τ of 0.7 to 0.5 to 0.3. |
+| ![Figure 4](assets/papers-explained-471-mmbert/fig-4.webp) | Training data mixture across the various training stages. |
+| ![Figure 5](assets/papers-explained-471-mmbert/fig-5.webp) | GLUE (English) benchmark results. |
+| ![Figure 6](assets/papers-explained-471-mmbert/fig-6.webp) | XTREME benchmark results. |
+| ![Figure 7](assets/papers-explained-471-mmbert/fig-7.webp) | MTEB v2 English results. |
+| ![Figure 8](assets/papers-explained-471-mmbert/fig-8.webp) | MTEB v2 multilingual results. |
+| ![Figure 9](assets/papers-explained-471-mmbert/fig-9.webp) | Retrieval scores on the CoIR Benchmark. |
+| ![Figure 10](assets/papers-explained-471-mmbert/fig-10.webp) | Comparing EuroBERT and MMBERT on EuroBERT’s in-distribution languages on XNLI and PAWS-X. |
+| ![Figure 11](assets/papers-explained-471-mmbert/fig-11.webp) | Performance of models using different decay phases on two languages (Tigray and Faroese) only added during the decay phase. |
+| ![Figure 12](assets/papers-explained-471-mmbert/fig-12.webp) | Throughput efficiency for various sequence lengths and variable input length. |
 ## HF Blog Cross-References
 
 - "mmBERT: ModernBERT goes Multilingual" (`huggingface.co/blog/mmbert`, 2025-09-09) is the JHU CLSP team's own announcement of this model, largely mirroring the architecture and evaluation content already captured above. It adds usage snippets for masked-token prediction with `transformers`, and four Sentence Transformers fine-tuning recipes (dense embeddings, PyLate multi-vector/ColBERT, SPLADE sparse retrieval, and CrossEncoder reranking) built on top of `jhu-clsp/mmBERT-small`/`mmBERT-base`. No new benchmark claims beyond the paper.

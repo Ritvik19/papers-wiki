@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-09-30_Papers-Explained-464--AggLM-d3ee0e491a98.html`
+- Source file: `raw/2025-09-30_Papers-Explained-464--AggLM-d3ee0e491a98.md`
 - Source title: Papers Explained 464: AggLM
 - Published: 2025-09-30
 - Canonical: [https://medium.com/@ritvik19/papers-explained-464-agglm-d3ee0e491a98](https://medium.com/@ritvik19/papers-explained-464-agglm-d3ee0e491a98)
@@ -73,17 +73,17 @@ The Majority is not always right: RL training for solution aggregation [2509.068
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-09-30_Papers-Explained-464--AggLM-d3ee0e491a98.html`); local copies under `wiki/assets/papers-explained-464-agglm/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-09-30_Papers-Explained-464--AggLM-d3ee0e491a98.md`); local copies under `wiki/assets/papers-explained-464-agglm/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-464-agglm/fig-1.png) | Title card: AggLM. |
-| ![Figure 2](assets/papers-explained-464-agglm/fig-2.png) | This work proposes to learn aggregation as an explicit reasoning skill. |
-| ![Figure 3](assets/papers-explained-464-agglm/fig-3.png) | AggLM. |
-| ![Figure 4](assets/papers-explained-464-agglm/fig-4.png) | Results when aggregating eight solutions sampled from Qwen3–1.7B in thinking mode. |
-| ![Figure 5](assets/papers-explained-464-agglm/fig-5.png) | Results when aggregating eight solutions sampled from Qwen3–8B in thinking mode. |
-| ![Figure 6](assets/papers-explained-464-agglm/fig-6.png) | Results when aggregating eight solutions sampled from Qwen3–1.7B in non-thinking mode. |
-| ![Figure 7](assets/papers-explained-464-agglm/fig-7.png) | Ablation of training mixtures. |
+| ![Figure 1](assets/papers-explained-464-agglm/fig-1.webp) | Title card: AggLM. |
+| ![Figure 2](assets/papers-explained-464-agglm/fig-2.webp) | This work proposes to learn aggregation as an explicit reasoning skill. |
+| ![Figure 3](assets/papers-explained-464-agglm/fig-3.webp) | AggLM. |
+| ![Figure 4](assets/papers-explained-464-agglm/fig-4.webp) | Results when aggregating eight solutions sampled from Qwen3–1.7B in thinking mode. |
+| ![Figure 5](assets/papers-explained-464-agglm/fig-5.webp) | Results when aggregating eight solutions sampled from Qwen3–8B in thinking mode. |
+| ![Figure 6](assets/papers-explained-464-agglm/fig-6.webp) | Results when aggregating eight solutions sampled from Qwen3–1.7B in non-thinking mode. |
+| ![Figure 7](assets/papers-explained-464-agglm/fig-7.webp) | Ablation of training mixtures. |
 ## Related
 
 - [[Papers Explained Corpus]]

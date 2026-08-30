@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-07_Papers-Explained-20--Donut-cb1523bf3281.html`
+- Source file: `raw/2023-02-07_Papers-Explained-20--Donut-cb1523bf3281.md`
 - Source title: Papers Explained 20: Donut
 - Published: 2023-02-07
 - Canonical: [https://medium.com/@ritvik19/papers-explained-20-donut-cb1523bf3281](https://medium.com/@ritvik19/papers-explained-20-donut-cb1523bf3281)
@@ -68,12 +68,12 @@ OCR-free Document Understanding Transformer [2111.15664](https://arxiv.org/abs/2
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-07_Papers-Explained-20--Donut-cb1523bf3281.html`); local copies under `wiki/assets/papers-explained-20-donut/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-07_Papers-Explained-20--Donut-cb1523bf3281.md`); local copies under `wiki/assets/papers-explained-20-donut/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-20-donut/fig-1.png) | Title card: Donut. |
-| ![Figure 2](assets/papers-explained-20-donut/fig-2.png) | Donut does not rely on any modules related to OCR functionality but uses a visual encoder for extracting features from a given document... |
+| ![Figure 1](assets/papers-explained-20-donut/fig-1.webp) | Title card: Donut. |
+| ![Figure 2](assets/papers-explained-20-donut/fig-2.webp) | Donut does not rely on any modules related to OCR functionality but uses a visual encoder for extracting features from a given document... |
 ## Related
 
 - [[Papers Explained Corpus]]

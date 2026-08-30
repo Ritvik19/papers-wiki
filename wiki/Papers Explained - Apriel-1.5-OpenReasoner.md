@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/draft_Papers-Explained--Apriel-1-5-OpenReasoner-5826103aac57.html`
+- Source file: `raw/draft_Papers-Explained--Apriel-1-5-OpenReasoner-5826103aac57.md`
 - Source title: Papers Explained: Apriel-1.5-OpenReasoner
 - Canonical: [https://medium.com/p/5826103aac57](https://medium.com/p/5826103aac57)
 
@@ -124,22 +124,22 @@ Apriel-1.5-OpenReasoner: RL Post-Training for General-Purpose and Efficient Reas
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/draft_Papers-Explained--Apriel-1-5-OpenReasoner-5826103aac57.html`); local copies under `wiki/assets/papers-explained-apriel-1-5-openreasoner/` when download succeeded.
+Figures from the Medium HTML export (`raw/draft_Papers-Explained--Apriel-1-5-OpenReasoner-5826103aac57.md`); local copies under `wiki/assets/papers-explained-apriel-1-5-openreasoner/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-apriel-1-5-openreasoner/fig-1.png) | Apriel-1.5-OpenReasoner overview: multi-domain verifiable RL on the 15B Apriel-Base decoder (math, code, IF, puzzles, tools). |
-| ![Figure 2](assets/papers-explained-apriel-1-5-openreasoner/fig-2.png) | PipelineRL stack with adaptive domain sampling plus difficulty-aware length penalty extensions. |
-| ![Figure 3](assets/papers-explained-apriel-1-5-openreasoner/fig-3.png) | Adaptive sampling correction factors αd keeping empirical domain counts near configured weights wd. |
-| ![Figure 4](assets/papers-explained-apriel-1-5-openreasoner/fig-4.png) | Length penalty with buffer B near max length combined with task rewards for rollouts. |
-| ![Figure 5](assets/papers-explained-apriel-1-5-openreasoner/fig-5.png) | Difficulty-aware penalty scaling from group solve rates (relax λ on hard problems that remain partially unsolved). |
-| ![Figure 6](assets/papers-explained-apriel-1-5-openreasoner/fig-6.png) | Summary of five RL environments, datasets, and verifier styles used jointly. |
-| ![Figure 7](assets/papers-explained-apriel-1-5-openreasoner/fig-7.png) | GSPO training with DAP, BF16 actors, FP32 logits, mixture schedule (40% math … 10% tools). |
-| ![Figure 8](assets/papers-explained-apriel-1-5-openreasoner/fig-8.png) | Test accuracy vs mean output tokens versus Nemotron/Qwen baselines on AIME-25, LiveCodeBench, GPQA, MMLU-Pro. |
-| ![Figure 9](assets/papers-explained-apriel-1-5-openreasoner/fig-9.png) | DAP vs fixed length penalty: benchmark accuracy and token deltas highlighted in the Evaluation section. |
-| ![Figure 10](assets/papers-explained-apriel-1-5-openreasoner/fig-10.png) | Domain mixture ablations (proposed vs math/code-only vs uniform) across the headline benchmarks. |
-| ![Figure 11](assets/papers-explained-apriel-1-5-openreasoner/fig-11.png) | Detailed per-benchmark efficiency comparison panels (token budgets alongside accuracy lifts). |
-| ![Figure 12](assets/papers-explained-apriel-1-5-openreasoner/fig-12.png) | Validation-driven checkpoint selection (optimization steps vs held-out domain accuracy). |
+| ![Figure 1](assets/papers-explained-apriel-1-5-openreasoner/fig-1.webp) | Apriel-1.5-OpenReasoner overview: multi-domain verifiable RL on the 15B Apriel-Base decoder (math, code, IF, puzzles, tools). |
+| ![Figure 2](assets/papers-explained-apriel-1-5-openreasoner/fig-2.webp) | PipelineRL stack with adaptive domain sampling plus difficulty-aware length penalty extensions. |
+| ![Figure 3](assets/papers-explained-apriel-1-5-openreasoner/fig-3.webp) | Adaptive sampling correction factors αd keeping empirical domain counts near configured weights wd. |
+| ![Figure 4](assets/papers-explained-apriel-1-5-openreasoner/fig-4.webp) | Length penalty with buffer B near max length combined with task rewards for rollouts. |
+| ![Figure 5](assets/papers-explained-apriel-1-5-openreasoner/fig-5.webp) | Difficulty-aware penalty scaling from group solve rates (relax λ on hard problems that remain partially unsolved). |
+| ![Figure 6](assets/papers-explained-apriel-1-5-openreasoner/fig-6.webp) | Summary of five RL environments, datasets, and verifier styles used jointly. |
+| ![Figure 7](assets/papers-explained-apriel-1-5-openreasoner/fig-7.webp) | GSPO training with DAP, BF16 actors, FP32 logits, mixture schedule (40% math … 10% tools). |
+| ![Figure 8](assets/papers-explained-apriel-1-5-openreasoner/fig-8.webp) | Test accuracy vs mean output tokens versus Nemotron/Qwen baselines on AIME-25, LiveCodeBench, GPQA, MMLU-Pro. |
+| ![Figure 9](assets/papers-explained-apriel-1-5-openreasoner/fig-9.webp) | DAP vs fixed length penalty: benchmark accuracy and token deltas highlighted in the Evaluation section. |
+| ![Figure 10](assets/papers-explained-apriel-1-5-openreasoner/fig-10.webp) | Domain mixture ablations (proposed vs math/code-only vs uniform) across the headline benchmarks. |
+| ![Figure 11](assets/papers-explained-apriel-1-5-openreasoner/fig-11.webp) | Detailed per-benchmark efficiency comparison panels (token budgets alongside accuracy lifts). |
+| ![Figure 12](assets/papers-explained-apriel-1-5-openreasoner/fig-12.webp) | Validation-driven checkpoint selection (optimization steps vs held-out domain accuracy). |
 ## Related
 
 - [[Papers Explained Corpus]]

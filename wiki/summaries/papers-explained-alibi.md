@@ -1,6 +1,6 @@
 # Papers Explained: Attention with Linear Biases (ALiBi)
 
-**Source**: `raw/draft_Papers-Explained--Attention-with-Linear-Biases--ALiBi--66ff030750bf.html`  
+**Source**: `raw/draft_Papers-Explained--Attention-with-Linear-Biases--ALiBi--66ff030750bf.md`  
 **Paper**: https://arxiv.org/abs/2108.12409  
 **Ingested**: 2026-08-23  
 **Tags**: #summary
@@ -9,7 +9,7 @@
 
 **Attention with Linear Biases (ALiBi)** is a simple, parameter-free positional encoding method introduced by Press et al. (2021) that enables autoregressive Transformer language models to train on short context lengths (e.g. 512 or 1024 tokens) and extrapolate to much longer sequences (e.g. 2048+ tokens) at inference time without any degradation in perplexity. Unlike sinusoidal or learned positional embeddings that add vectors to word embeddings at the bottom of the network, ALiBi applies a static, non-learned linear penalty directly to query-key attention scores proportional to their relative token distance.
 
-![Papers Explained ALiBi banner](../assets/papers-explained-alibi/fig-1.png)
+![Papers Explained ALiBi banner](../assets/papers-explained-alibi/fig-1.webp)
 
 ### Method & Slope Assignment
 
@@ -21,7 +21,7 @@ where $i - j \ge 0$ is the token distance and $m$ is a head-specific scalar slop
 - For $H$ heads, $m = 2^{-8/H \cdot h}$ for $h \in \{1, \dots, H\}$.
 - Heads with steep slopes focus exclusively on immediate local context, while heads with flatter slopes attend across the entire sequence.
 
-![ALiBi Attention Matrix and Slope Distribution](../assets/papers-explained-alibi/fig-2.png)
+![ALiBi Attention Matrix and Slope Distribution](../assets/papers-explained-alibi/fig-2.webp)
 
 ## Key Claims
 
@@ -34,16 +34,16 @@ where $i - j \ge 0$ is the token distance and $m$ is a head-specific scalar slop
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/papers-explained-alibi/fig-1.png) | ALiBi overview banner. | Overview |
-| ![fig-2](../assets/papers-explained-alibi/fig-2.png) | ALiBi linear bias attention matrix. | Method |
-| ![fig-3](../assets/papers-explained-alibi/fig-3.png) | Head slope geometric decay formulation. | Method |
-| ![fig-4](../assets/papers-explained-alibi/fig-4.png) | Length extrapolation comparison: ALiBi vs Sinusoidal vs Rotary. | Evaluation |
-| ![fig-5](../assets/papers-explained-alibi/fig-5.png) | Perplexity curves on WikiText-103 across extended context lengths. | Evaluation |
-| ![fig-6](../assets/papers-explained-alibi/fig-6.png) | Training speedup and memory efficiency gains. | Efficiency |
-| ![fig-7](../assets/papers-explained-alibi/fig-7.png) | Impact of slope schedule variations. | Ablations |
-| ![fig-8](../assets/papers-explained-alibi/fig-8.png) | Downstream fine-tuning transfer on GLUE/SuperGLUE. | Transfer |
-| ![fig-9](../assets/papers-explained-alibi/fig-9.png) | Multi-scale context extrapolation up to 8k tokens. | Scaling |
-| ![fig-10](../assets/papers-explained-alibi/fig-10.png) | Qualitative attention pattern visualizations across heads. | Qualitative |
+| ![fig-1](../assets/papers-explained-alibi/fig-1.webp) | ALiBi overview banner. | Overview |
+| ![fig-2](../assets/papers-explained-alibi/fig-2.webp) | ALiBi linear bias attention matrix. | Method |
+| ![fig-3](../assets/papers-explained-alibi/fig-3.webp) | Head slope geometric decay formulation. | Method |
+| ![fig-4](../assets/papers-explained-alibi/fig-4.webp) | Length extrapolation comparison: ALiBi vs Sinusoidal vs Rotary. | Evaluation |
+| ![fig-5](../assets/papers-explained-alibi/fig-5.webp) | Perplexity curves on WikiText-103 across extended context lengths. | Evaluation |
+| ![fig-6](../assets/papers-explained-alibi/fig-6.webp) | Training speedup and memory efficiency gains. | Efficiency |
+| ![fig-7](../assets/papers-explained-alibi/fig-7.webp) | Impact of slope schedule variations. | Ablations |
+| ![fig-8](../assets/papers-explained-alibi/fig-8.webp) | Downstream fine-tuning transfer on GLUE/SuperGLUE. | Transfer |
+| ![fig-9](../assets/papers-explained-alibi/fig-9.webp) | Multi-scale context extrapolation up to 8k tokens. | Scaling |
+| ![fig-10](../assets/papers-explained-alibi/fig-10.webp) | Qualitative attention pattern visualizations across heads. | Qualitative |
 
 ## Entities
 

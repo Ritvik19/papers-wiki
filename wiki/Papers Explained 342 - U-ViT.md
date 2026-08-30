@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-04-08_Papers-Explained-342--U-ViT-54c907b849c8.html`
+- Source file: `raw/2025-04-08_Papers-Explained-342--U-ViT-54c907b849c8.md`
 - Source title: Papers Explained 342: U-ViT
 - Published: 2025-04-08
 - Canonical: [https://medium.com/@ritvik19/papers-explained-342-u-vit-54c907b849c8](https://medium.com/@ritvik19/papers-explained-342-u-vit-54c907b849c8)
@@ -153,21 +153,21 @@ All are Worth Words: A ViT Backbone for Diffusion Models [2209.12152](https://ar
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-04-08_Papers-Explained-342--U-ViT-54c907b849c8.html`); local copies under `wiki/assets/papers-explained-342-u-vit/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-04-08_Papers-Explained-342--U-ViT-54c907b849c8.md`); local copies under `wiki/assets/papers-explained-342-u-vit/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-342-u-vit/fig-1.png) | Title card: U-ViT. |
-| ![Figure 2](assets/papers-explained-342-u-vit/fig-2.png) | The U-ViT architecture for diffusion models. |
-| ![Figure 3](assets/papers-explained-342-u-vit/fig-3.png) | U-ViT takes the time t, the condition c and the noisy image xt as inputs and predicts the noise injected into xt. |
-| ![Figure 4](assets/papers-explained-342-u-vit/fig-4.png) | Directly adding hm and hs doesn’t significantly benefit as hm already contains information from hs through its skip connections. |
-| ![Figure 5](assets/papers-explained-342-u-vit/fig-5.png) | Despite the simplicity of treating time as a token, it performs better than AdaLN. |
-| ![Figure 6](assets/papers-explained-342-u-vit/fig-6.png) | The first method yields slightly better performance than the other two choices. |
-| ![Figure 7](assets/papers-explained-342-u-vit/fig-7.png) | The original patch embedding technique outperforms the convolutional approach. |
-| ![Figure 8](assets/papers-explained-342-u-vit/fig-8.png) | Effect of depth, width and patch size. |
-| ![Figure 9](assets/papers-explained-342-u-vit/fig-9.png) | Discrete texts are converted to a sequence of embeddings using a CLIP text. |
-| ![Figure 10](assets/papers-explained-342-u-vit/fig-10.png) | FID results of unconditional image generation on CIFAR10 and CelebA 64×64, and class-conditional image generation on ImageNet 64×64, 256×256 and 512×512. |
-| ![Figure 11](assets/papers-explained-342-u-vit/fig-11.png) | FID results of different models on MS-COCO validation (256 × 256). |
+| ![Figure 1](assets/papers-explained-342-u-vit/fig-1.webp) | Title card: U-ViT. |
+| ![Figure 2](assets/papers-explained-342-u-vit/fig-2.webp) | The U-ViT architecture for diffusion models. |
+| ![Figure 3](assets/papers-explained-342-u-vit/fig-3.webp) | U-ViT takes the time t, the condition c and the noisy image xt as inputs and predicts the noise injected into xt. |
+| ![Figure 4](assets/papers-explained-342-u-vit/fig-4.webp) | Directly adding hm and hs doesn’t significantly benefit as hm already contains information from hs through its skip connections. |
+| ![Figure 5](assets/papers-explained-342-u-vit/fig-5.webp) | Despite the simplicity of treating time as a token, it performs better than AdaLN. |
+| ![Figure 6](assets/papers-explained-342-u-vit/fig-6.webp) | The first method yields slightly better performance than the other two choices. |
+| ![Figure 7](assets/papers-explained-342-u-vit/fig-7.webp) | The original patch embedding technique outperforms the convolutional approach. |
+| ![Figure 8](assets/papers-explained-342-u-vit/fig-8.webp) | Effect of depth, width and patch size. |
+| ![Figure 9](assets/papers-explained-342-u-vit/fig-9.webp) | Discrete texts are converted to a sequence of embeddings using a CLIP text. |
+| ![Figure 10](assets/papers-explained-342-u-vit/fig-10.webp) | FID results of unconditional image generation on CIFAR10 and CelebA 64×64, and class-conditional image generation on ImageNet 64×64, 256×256 and 512×512. |
+| ![Figure 11](assets/papers-explained-342-u-vit/fig-11.webp) | FID results of different models on MS-COCO validation (256 × 256). |
 ## Related
 
 - [[Papers Explained Corpus]]

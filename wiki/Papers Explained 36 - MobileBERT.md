@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-03-15_Papers-Explained-36--MobileBERT-933abbd5aaf1.html`
+- Source file: `raw/2023-03-15_Papers-Explained-36--MobileBERT-933abbd5aaf1.md`
 - Source title: Papers Explained 36: MobileBERT
 - Published: 2023-03-15
 - Canonical: [https://medium.com/@ritvik19/papers-explained-36-mobilebert-933abbd5aaf1](https://medium.com/@ritvik19/papers-explained-36-mobilebert-933abbd5aaf1)
@@ -71,17 +71,17 @@ MobileBERT: a Compact Task-Agnostic BERT for Resource-Limited Devices [2004.0298
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-03-15_Papers-Explained-36--MobileBERT-933abbd5aaf1.html`); local copies under `wiki/assets/papers-explained-36-mobilebert/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-03-15_Papers-Explained-36--MobileBERT-933abbd5aaf1.md`); local copies under `wiki/assets/papers-explained-36-mobilebert/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-36-mobilebert/fig-1.png) | Title card: MobileBERT. |
-| ![Figure 2](assets/papers-explained-36-mobilebert/fig-2.png) | It is challenging to train such a deep and thin network. |
-| ![Figure 3](assets/papers-explained-36-mobilebert/fig-3.png) | The teacher network is just BERT-LARGE while augmented with inverted-bottleneck structures to adjust its feature map size to 512. |
-| ![Figure 4](assets/papers-explained-36-mobilebert/fig-4.png) | We replace the layer normalization of a n-channel hidden state h with an element-wise linear transformation. |
-| ![Figure 5](assets/papers-explained-36-mobilebert/fig-5.png) | The embedding table in BERT models accounts for a substantial proportion of model size. |
-| ![Figure 6](assets/papers-explained-36-mobilebert/fig-6.png) | The embedding table in BERT models accounts for a substantial proportion of model size. |
-| ![Figure 7](assets/papers-explained-36-mobilebert/fig-7.png) | Evaluation. |
+| ![Figure 1](assets/papers-explained-36-mobilebert/fig-1.webp) | Title card: MobileBERT. |
+| ![Figure 2](assets/papers-explained-36-mobilebert/fig-2.webp) | It is challenging to train such a deep and thin network. |
+| ![Figure 3](assets/papers-explained-36-mobilebert/fig-3.webp) | The teacher network is just BERT-LARGE while augmented with inverted-bottleneck structures to adjust its feature map size to 512. |
+| ![Figure 4](assets/papers-explained-36-mobilebert/fig-4.webp) | We replace the layer normalization of a n-channel hidden state h with an element-wise linear transformation. |
+| ![Figure 5](assets/papers-explained-36-mobilebert/fig-5.webp) | The embedding table in BERT models accounts for a substantial proportion of model size. |
+| ![Figure 6](assets/papers-explained-36-mobilebert/fig-6.webp) | The embedding table in BERT models accounts for a substantial proportion of model size. |
+| ![Figure 7](assets/papers-explained-36-mobilebert/fig-7.webp) | Evaluation. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-11-20_Papers-Explained-72--UniLM-672f0ecc6a4a.html`
+- Source file: `raw/2023-11-20_Papers-Explained-72--UniLM-672f0ecc6a4a.md`
 - Source title: Papers Explained 72: UniLM
 - Published: 2023-11-20
 - Canonical: [https://medium.com/@ritvik19/papers-explained-72-unilm-672f0ecc6a4a](https://medium.com/@ritvik19/papers-explained-72-unilm-672f0ecc6a4a)
@@ -91,20 +91,20 @@ Unified Language Model Pre-training for Natural Language Understanding and Gener
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-11-20_Papers-Explained-72--UniLM-672f0ecc6a4a.html`); local copies under `wiki/assets/papers-explained-72-unilm/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-11-20_Papers-Explained-72--UniLM-672f0ecc6a4a.md`); local copies under `wiki/assets/papers-explained-72-unilm/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-72-unilm/fig-1.png) | Title card: UniLM. |
-| ![Figure 2](assets/papers-explained-72-unilm/fig-2.png) | Overview of unified LM pre-training. |
-| ![Figure 3](assets/papers-explained-72-unilm/fig-3.png) | where the previous layer’s output Hl−1 is linearly projected to a triple of queries, keys and values using respective parameter matrices,... |
-| ![Figure 4](assets/papers-explained-72-unilm/fig-4.png) | The unified LM is jointly pre-trained by multiple language modeling objectives, sharing the same parameters. |
-| ![Figure 5](assets/papers-explained-72-unilm/fig-5.png) | Evaluation results on CNN/DailyMail summarization. |
-| ![Figure 6](assets/papers-explained-72-unilm/fig-6.png) | Results on Gigaword abstractive summarization. |
-| ![Figure 7](assets/papers-explained-72-unilm/fig-7.png) | Extractive QA results on the SQuAD development set. |
-| ![Figure 8](assets/papers-explained-72-unilm/fig-8.png) | Extractive QA results on the CoQA development set. |
-| ![Figure 9](assets/papers-explained-72-unilm/fig-9.png) | Generative QA results on the CoQA development set. |
-| ![Figure 10](assets/papers-explained-72-unilm/fig-10.png) | GLUE test set results scored using the GLUE evaluation server. |
+| ![Figure 1](assets/papers-explained-72-unilm/fig-1.webp) | Title card: UniLM. |
+| ![Figure 2](assets/papers-explained-72-unilm/fig-2.webp) | Overview of unified LM pre-training. |
+| ![Figure 3](assets/papers-explained-72-unilm/fig-3.webp) | where the previous layer’s output Hl−1 is linearly projected to a triple of queries, keys and values using respective parameter matrices,... |
+| ![Figure 4](assets/papers-explained-72-unilm/fig-4.webp) | The unified LM is jointly pre-trained by multiple language modeling objectives, sharing the same parameters. |
+| ![Figure 5](assets/papers-explained-72-unilm/fig-5.webp) | Evaluation results on CNN/DailyMail summarization. |
+| ![Figure 6](assets/papers-explained-72-unilm/fig-6.webp) | Results on Gigaword abstractive summarization. |
+| ![Figure 7](assets/papers-explained-72-unilm/fig-7.webp) | Extractive QA results on the SQuAD development set. |
+| ![Figure 8](assets/papers-explained-72-unilm/fig-8.webp) | Extractive QA results on the CoQA development set. |
+| ![Figure 9](assets/papers-explained-72-unilm/fig-9.webp) | Generative QA results on the CoQA development set. |
+| ![Figure 10](assets/papers-explained-72-unilm/fig-10.webp) | GLUE test set results scored using the GLUE evaluation server. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -1,6 +1,6 @@
 # Codestral
 
-**Source**: `raw/codestral/full-article.html` (223 KB), `raw/codestral/full-article.md` (markdown view)  
+**Source**: `raw/codestral/full-article.md` (223 KB), `raw/codestral/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/codestral/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

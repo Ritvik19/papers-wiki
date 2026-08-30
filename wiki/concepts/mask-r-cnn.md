@@ -14,7 +14,7 @@
 
 ## Heads
 
-![Mask R-CNN](../assets/2017-12-31-object-recognition-part-3/fig-8.png) ![COCO masks](../assets/2017-12-31-object-recognition-part-3/fig-9.png)
+![Mask R-CNN](../assets/2017-12-31-object-recognition-part-3/fig-8.webp) ![COCO masks](../assets/2017-12-31-object-recognition-part-3/fig-9.webp)
 
 | Branch | Output |
 |--------|--------|

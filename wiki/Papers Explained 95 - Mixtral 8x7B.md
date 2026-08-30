@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-01-29_Papers-Explained-95--Mixtral-8x7B-9e9f40ebb745.html`
+- Source file: `raw/2024-01-29_Papers-Explained-95--Mixtral-8x7B-9e9f40ebb745.md`
 - Source title: Papers Explained 95: Mixtral 8x7B
 - Published: 2024-01-29
 - Canonical: [https://medium.com/@ritvik19/papers-explained-95-mixtral-8x7b-9e9f40ebb745](https://medium.com/@ritvik19/papers-explained-95-mixtral-8x7b-9e9f40ebb745)
@@ -133,27 +133,27 @@ https://mistral.ai/news/mixtral-8x22b/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-01-29_Papers-Explained-95--Mixtral-8x7B-9e9f40ebb745.html`); local copies under `wiki/assets/papers-explained-95-mixtral-8x7b/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-01-29_Papers-Explained-95--Mixtral-8x7B-9e9f40ebb745.md`); local copies under `wiki/assets/papers-explained-95-mixtral-8x7b/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-95-mixtral-8x7b/fig-1.png) | Title card: Mixtral 8x7B. |
-| ![Figure 2](assets/papers-explained-95-mixtral-8x7b/fig-2.png) | Model Architecture Hyperparameters. |
-| ![Figure 3](assets/papers-explained-95-mixtral-8x7b/fig-3.png) | Mixture of Experts Layer. Each input vector is assigned to 2 of the 8 experts by a router. The layer’s output is the weighted sum of the outputs of the two selected experts. |
-| ![Figure 4](assets/papers-explained-95-mixtral-8x7b/fig-4.png) | The code is available at GitHub. |
-| ![Figure 5](assets/papers-explained-95-mixtral-8x7b/fig-5.png) | Here, G(x)i denotes the n-dimensional output of the gating network for the i-th expert, and Ei(x) is the output of the i-th expert network. |
-| ![Figure 6](assets/papers-explained-95-mixtral-8x7b/fig-6.png) | In a Transformer model, the MoE layer is applied independently per token and replaces the feed-forward (FFN) sub-block of the transformer... |
-| ![Figure 7](assets/papers-explained-95-mixtral-8x7b/fig-7.png) | Performance of Mixtral and different Llama models on a wide range of benchmarks. |
-| ![Figure 8](assets/papers-explained-95-mixtral-8x7b/fig-8.png) | Comparison of Mixtral with Llama. |
-| ![Figure 9](assets/papers-explained-95-mixtral-8x7b/fig-9.png) | Results on MMLU, commonsense reasoning, world knowledge and reading comprehension, math and code for Mistral (7B/8x7B) vs Llama 2 (7B/13B/70B). |
-| ![Figure 10](assets/papers-explained-95-mixtral-8x7b/fig-10.png) | Comparison of Mixtral with Llama 2 70B and GPT-3.5. |
-| ![Figure 11](assets/papers-explained-95-mixtral-8x7b/fig-11.png) | Comparison of Mixtral with Llama on Multilingual Benchmarks. |
-| ![Figure 12](assets/papers-explained-95-mixtral-8x7b/fig-12.png) | Proportion of tokens assigned to each expert on different domains from The Pile dataset for layers 0, 15, and 31. |
-| ![Figure 13](assets/papers-explained-95-mixtral-8x7b/fig-13.png) | Percentage of expert assignment repetitions. |
-| ![Figure 14](assets/papers-explained-95-mixtral-8x7b/fig-14.png) | Measure of the performance (MMLU) versus inference budget tradeoff (number of active parameters). |
-| ![Figure 15](assets/papers-explained-95-mixtral-8x7b/fig-15.png) | Performance on widespread common sense, reasoning and knowledge benchmarks of the top-leading LLM open models. |
-| ![Figure 16](assets/papers-explained-95-mixtral-8x7b/fig-16.png) | Comparison of Mistral open source models and LLaMA 2 70B on HellaSwag, Arc Challenge and MMLU in French, German, Spanish and Italian. |
-| ![Figure 17](assets/papers-explained-95-mixtral-8x7b/fig-17.png) | Performance on popular coding and maths benchmarks of the leading open models. |
+| ![Figure 1](assets/papers-explained-95-mixtral-8x7b/fig-1.webp) | Title card: Mixtral 8x7B. |
+| ![Figure 2](assets/papers-explained-95-mixtral-8x7b/fig-2.webp) | Model Architecture Hyperparameters. |
+| ![Figure 3](assets/papers-explained-95-mixtral-8x7b/fig-3.webp) | Mixture of Experts Layer. Each input vector is assigned to 2 of the 8 experts by a router. The layer’s output is the weighted sum of the outputs of the two selected experts. |
+| ![Figure 4](assets/papers-explained-95-mixtral-8x7b/fig-4.webp) | The code is available at GitHub. |
+| ![Figure 5](assets/papers-explained-95-mixtral-8x7b/fig-5.webp) | Here, G(x)i denotes the n-dimensional output of the gating network for the i-th expert, and Ei(x) is the output of the i-th expert network. |
+| ![Figure 6](assets/papers-explained-95-mixtral-8x7b/fig-6.webp) | In a Transformer model, the MoE layer is applied independently per token and replaces the feed-forward (FFN) sub-block of the transformer... |
+| ![Figure 7](assets/papers-explained-95-mixtral-8x7b/fig-7.webp) | Performance of Mixtral and different Llama models on a wide range of benchmarks. |
+| ![Figure 8](assets/papers-explained-95-mixtral-8x7b/fig-8.webp) | Comparison of Mixtral with Llama. |
+| ![Figure 9](assets/papers-explained-95-mixtral-8x7b/fig-9.webp) | Results on MMLU, commonsense reasoning, world knowledge and reading comprehension, math and code for Mistral (7B/8x7B) vs Llama 2 (7B/13B/70B). |
+| ![Figure 10](assets/papers-explained-95-mixtral-8x7b/fig-10.webp) | Comparison of Mixtral with Llama 2 70B and GPT-3.5. |
+| ![Figure 11](assets/papers-explained-95-mixtral-8x7b/fig-11.webp) | Comparison of Mixtral with Llama on Multilingual Benchmarks. |
+| ![Figure 12](assets/papers-explained-95-mixtral-8x7b/fig-12.webp) | Proportion of tokens assigned to each expert on different domains from The Pile dataset for layers 0, 15, and 31. |
+| ![Figure 13](assets/papers-explained-95-mixtral-8x7b/fig-13.webp) | Percentage of expert assignment repetitions. |
+| ![Figure 14](assets/papers-explained-95-mixtral-8x7b/fig-14.webp) | Measure of the performance (MMLU) versus inference budget tradeoff (number of active parameters). |
+| ![Figure 15](assets/papers-explained-95-mixtral-8x7b/fig-15.webp) | Performance on widespread common sense, reasoning and knowledge benchmarks of the top-leading LLM open models. |
+| ![Figure 16](assets/papers-explained-95-mixtral-8x7b/fig-16.webp) | Comparison of Mistral open source models and LLaMA 2 70B on HellaSwag, Arc Challenge and MMLU in French, German, Spanish and Italian. |
+| ![Figure 17](assets/papers-explained-95-mixtral-8x7b/fig-17.webp) | Performance on popular coding and maths benchmarks of the leading open models. |
 ## Related
 
 - [[Mixtral of experts]] — official Mistral AI Mixtral 8x7B launch blog (Apache 2.0, DPO instruct, vLLM).

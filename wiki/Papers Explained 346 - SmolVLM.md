@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-04-14_Papers-Explained-346--SmolVLM-9b4e208fa66b.html`
+- Source file: `raw/2025-04-14_Papers-Explained-346--SmolVLM-9b4e208fa66b.md`
 - Source title: Papers Explained 346: SmolVLM
 - Published: 2025-04-14
 - Canonical: [https://medium.com/@ritvik19/papers-explained-346-smolvlm-9b4e208fa66b](https://medium.com/@ritvik19/papers-explained-346-smolvlm-9b4e208fa66b)
@@ -235,27 +235,27 @@ SmolVLM: Redefining small and efficient multimodal models [2504.05299](https://a
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-04-14_Papers-Explained-346--SmolVLM-9b4e208fa66b.html`); local copies under `wiki/assets/papers-explained-346-smolvlm/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-04-14_Papers-Explained-346--SmolVLM-9b4e208fa66b.md`); local copies under `wiki/assets/papers-explained-346-smolvlm/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-346-smolvlm/fig-1.png) | Title card: SmolVLM. |
-| ![Figure 2](assets/papers-explained-346-smolvlm/fig-2.png) | SmolVLM Architecture. |
-| ![Figure 3](assets/papers-explained-346-smolvlm/fig-3.png) | Impact of vision encoder and language model sizes. |
-| ![Figure 4](assets/papers-explained-346-smolvlm/fig-4.png) | Performance significantly improves with increased context lengths. |
-| ![Figure 5](assets/papers-explained-346-smolvlm/fig-5.png) | Pixel shuffle. |
-| ![Figure 6](assets/papers-explained-346-smolvlm/fig-6.png) | Optimal pixel shuffle factor (PS=2 vs. PS=4) varies by model size. |
-| ![Figure 7](assets/papers-explained-346-smolvlm/fig-7.png) | Frame averaging reduces video performance. |
-| ![Figure 8](assets/papers-explained-346-smolvlm/fig-8.png) | Tokenization Strategy Comparisons. |
-| ![Figure 9](assets/papers-explained-346-smolvlm/fig-9.png) | Cumulative Effect of Training Strategies on SmolVLM Performance. |
-| ![Figure 10](assets/papers-explained-346-smolvlm/fig-10.png) | Masking User Prompts: To reduce overfitting, user-prompt masking is explored during supervised fine-tuning. |
-| ![Figure 11](assets/papers-explained-346-smolvlm/fig-11.png) | Chain-of-Thought (CoT) prompting, which exposes models to explicit reasoning steps during training, generally enhances reasoning... |
-| ![Figure 12](assets/papers-explained-346-smolvlm/fig-12.png) | Increasing video duration during training offers richer temporal context but comes at a greater computational cost. |
-| ![Figure 13](assets/papers-explained-346-smolvlm/fig-13.png) | Data Details. |
-| ![Figure 14](assets/papers-explained-346-smolvlm/fig-14.png) | Benchmark comparison of SmolVLM variants across vision-language tasks. |
-| ![Figure 15](assets/papers-explained-346-smolvlm/fig-15.png) | Comparison of SmolVLM with other state-of-the-art small VLM models. |
-| ![Figure 16](assets/papers-explained-346-smolvlm/fig-16.png) | Throughput in tokens per second. |
-| ![Figure 17](assets/papers-explained-346-smolvlm/fig-17.png) | Despite their compact size, SmolVLM2 models demonstrate superior performance per memory consumption compared to existing models. |
+| ![Figure 1](assets/papers-explained-346-smolvlm/fig-1.webp) | Title card: SmolVLM. |
+| ![Figure 2](assets/papers-explained-346-smolvlm/fig-2.webp) | SmolVLM Architecture. |
+| ![Figure 3](assets/papers-explained-346-smolvlm/fig-3.webp) | Impact of vision encoder and language model sizes. |
+| ![Figure 4](assets/papers-explained-346-smolvlm/fig-4.webp) | Performance significantly improves with increased context lengths. |
+| ![Figure 5](assets/papers-explained-346-smolvlm/fig-5.webp) | Pixel shuffle. |
+| ![Figure 6](assets/papers-explained-346-smolvlm/fig-6.webp) | Optimal pixel shuffle factor (PS=2 vs. PS=4) varies by model size. |
+| ![Figure 7](assets/papers-explained-346-smolvlm/fig-7.webp) | Frame averaging reduces video performance. |
+| ![Figure 8](assets/papers-explained-346-smolvlm/fig-8.webp) | Tokenization Strategy Comparisons. |
+| ![Figure 9](assets/papers-explained-346-smolvlm/fig-9.webp) | Cumulative Effect of Training Strategies on SmolVLM Performance. |
+| ![Figure 10](assets/papers-explained-346-smolvlm/fig-10.webp) | Masking User Prompts: To reduce overfitting, user-prompt masking is explored during supervised fine-tuning. |
+| ![Figure 11](assets/papers-explained-346-smolvlm/fig-11.webp) | Chain-of-Thought (CoT) prompting, which exposes models to explicit reasoning steps during training, generally enhances reasoning... |
+| ![Figure 12](assets/papers-explained-346-smolvlm/fig-12.webp) | Increasing video duration during training offers richer temporal context but comes at a greater computational cost. |
+| ![Figure 13](assets/papers-explained-346-smolvlm/fig-13.webp) | Data Details. |
+| ![Figure 14](assets/papers-explained-346-smolvlm/fig-14.webp) | Benchmark comparison of SmolVLM variants across vision-language tasks. |
+| ![Figure 15](assets/papers-explained-346-smolvlm/fig-15.webp) | Comparison of SmolVLM with other state-of-the-art small VLM models. |
+| ![Figure 16](assets/papers-explained-346-smolvlm/fig-16.webp) | Throughput in tokens per second. |
+| ![Figure 17](assets/papers-explained-346-smolvlm/fig-17.webp) | Despite their compact size, SmolVLM2 models demonstrate superior performance per memory consumption compared to existing models. |
 ## Related
 
 - [[Papers Explained Corpus]]

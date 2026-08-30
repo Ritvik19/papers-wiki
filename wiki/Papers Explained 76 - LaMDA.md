@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-12-04_Papers-Explained-76--LaMDA-a580ebba1ca2.html`
+- Source file: `raw/2023-12-04_Papers-Explained-76--LaMDA-a580ebba1ca2.md`
 - Source title: Papers Explained 76: LaMDA
 - Published: 2023-12-04
 - Canonical: [https://medium.com/@ritvik19/papers-explained-76-lamda-a580ebba1ca2](https://medium.com/@ritvik19/papers-explained-76-lamda-a580ebba1ca2)
@@ -147,17 +147,17 @@ LaMDA: Language Models for Dialog Applications [2201.08239](https://arxiv.org/ab
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-12-04_Papers-Explained-76--LaMDA-a580ebba1ca2.html`); local copies under `wiki/assets/papers-explained-76-lamda/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-12-04_Papers-Explained-76--LaMDA-a580ebba1ca2.md`); local copies under `wiki/assets/papers-explained-76-lamda/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-76-lamda/fig-1.png) | Title card: LaMDA. |
-| ![Figure 2](assets/papers-explained-76-lamda/fig-2.png) | LaMDA pre-training as a language model. |
-| ![Figure 3](assets/papers-explained-76-lamda/fig-3.png) | Hyper-parameters for pre-training 2B, 8B and 137B models. All models were trained with 256K tokens per batch. |
-| ![Figure 4](assets/papers-explained-76-lamda/fig-4.png) | Summary of the datasets to improve safety, groundedness, and quality. |
-| ![Figure 5](assets/papers-explained-76-lamda/fig-5.png) | Results for Foundation Metrics. |
-| ![Figure 6](assets/papers-explained-76-lamda/fig-6.png) | Effects of model scaling and fine-tuning on six foundation metrics. |
-| ![Figure 7](assets/papers-explained-76-lamda/fig-7.png) | The two domains we experiment with LaMDA for domain grounding. |
+| ![Figure 1](assets/papers-explained-76-lamda/fig-1.webp) | Title card: LaMDA. |
+| ![Figure 2](assets/papers-explained-76-lamda/fig-2.webp) | LaMDA pre-training as a language model. |
+| ![Figure 3](assets/papers-explained-76-lamda/fig-3.webp) | Hyper-parameters for pre-training 2B, 8B and 137B models. All models were trained with 256K tokens per batch. |
+| ![Figure 4](assets/papers-explained-76-lamda/fig-4.webp) | Summary of the datasets to improve safety, groundedness, and quality. |
+| ![Figure 5](assets/papers-explained-76-lamda/fig-5.webp) | Results for Foundation Metrics. |
+| ![Figure 6](assets/papers-explained-76-lamda/fig-6.webp) | Effects of model scaling and fine-tuning on six foundation metrics. |
+| ![Figure 7](assets/papers-explained-76-lamda/fig-7.webp) | The two domains we experiment with LaMDA for domain grounding. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-03-13_Papers-Explained-112--Self-Instruct-5c192580103a.html`
+- Source file: `raw/2024-03-13_Papers-Explained-112--Self-Instruct-5c192580103a.md`
 - Source title: Papers Explained 112: Self Instruct
 - Published: 2024-03-13
 - Canonical: [https://medium.com/@ritvik19/papers-explained-112-self-instruct-5c192580103a](https://medium.com/@ritvik19/papers-explained-112-self-instruct-5c192580103a)
@@ -143,24 +143,24 @@ Self-Instruct: Aligning Language Models with Self-Generated Instructions [2212.1
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-03-13_Papers-Explained-112--Self-Instruct-5c192580103a.html`); local copies under `wiki/assets/papers-explained-112-self-instruct/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-03-13_Papers-Explained-112--Self-Instruct-5c192580103a.md`); local copies under `wiki/assets/papers-explained-112-self-instruct/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-112-self-instruct/fig-1.png) | Title page of *Self-Instruct: Aligning Language Models with Self-Generated Instructions*. |
-| ![Figure 2](assets/papers-explained-112-self-instruct/fig-2.png) | End-to-end Self-Instruct pipeline: instruction generation, task classification, instance generation, and filtering. |
-| ![Figure 3](assets/papers-explained-112-self-instruct/fig-3.png) | In-context prompt template for generating new task instructions from seed tasks. |
-| ![Figure 4](assets/papers-explained-112-self-instruct/fig-4.png) | Prompt template for deciding whether an instruction is a classification task. |
-| ![Figure 5](assets/papers-explained-112-self-instruct/fig-5.png) | Input-first instance-generation prompt for non-classification tasks. |
-| ![Figure 6](assets/papers-explained-112-self-instruct/fig-6.png) | Output-first instance-generation prompt for classification tasks. |
-| ![Figure 7](assets/papers-explained-112-self-instruct/fig-7.png) | Generated-data statistics: instruction counts, instance counts, and average lengths. |
-| ![Figure 8](assets/papers-explained-112-self-instruct/fig-8.png) | Sunburst of common verb-noun intent patterns in generated instructions. |
-| ![Figure 9](assets/papers-explained-112-self-instruct/fig-9.png) | ROUGE-L overlap distribution between generated instructions and nearest seed instructions. |
-| ![Figure 10](assets/papers-explained-112-self-instruct/fig-10.png) | Length distributions for instructions, non-empty inputs, and outputs. |
-| ![Figure 11](assets/papers-explained-112-self-instruct/fig-11.png) | Human quality review of generated instruction/input/output validity. |
-| ![Figure 12](assets/papers-explained-112-self-instruct/fig-12.png) | SUPERNI unseen-task evaluation table comparing vanilla, instruction-tuned, and Self-Instruct variants. |
-| ![Figure 13](assets/papers-explained-112-self-instruct/fig-13.png) | Human expert ratings (A-D) across GPT-3 variants, T0, and InstructGPT models. |
-| ![Figure 14](assets/papers-explained-112-self-instruct/fig-14.png) | Effect of instruction data size and improved outputs on acceptable-response rate. |
+| ![Figure 1](assets/papers-explained-112-self-instruct/fig-1.webp) | Title page of *Self-Instruct: Aligning Language Models with Self-Generated Instructions*. |
+| ![Figure 2](assets/papers-explained-112-self-instruct/fig-2.webp) | End-to-end Self-Instruct pipeline: instruction generation, task classification, instance generation, and filtering. |
+| ![Figure 3](assets/papers-explained-112-self-instruct/fig-3.webp) | In-context prompt template for generating new task instructions from seed tasks. |
+| ![Figure 4](assets/papers-explained-112-self-instruct/fig-4.webp) | Prompt template for deciding whether an instruction is a classification task. |
+| ![Figure 5](assets/papers-explained-112-self-instruct/fig-5.webp) | Input-first instance-generation prompt for non-classification tasks. |
+| ![Figure 6](assets/papers-explained-112-self-instruct/fig-6.webp) | Output-first instance-generation prompt for classification tasks. |
+| ![Figure 7](assets/papers-explained-112-self-instruct/fig-7.webp) | Generated-data statistics: instruction counts, instance counts, and average lengths. |
+| ![Figure 8](assets/papers-explained-112-self-instruct/fig-8.webp) | Sunburst of common verb-noun intent patterns in generated instructions. |
+| ![Figure 9](assets/papers-explained-112-self-instruct/fig-9.webp) | ROUGE-L overlap distribution between generated instructions and nearest seed instructions. |
+| ![Figure 10](assets/papers-explained-112-self-instruct/fig-10.webp) | Length distributions for instructions, non-empty inputs, and outputs. |
+| ![Figure 11](assets/papers-explained-112-self-instruct/fig-11.webp) | Human quality review of generated instruction/input/output validity. |
+| ![Figure 12](assets/papers-explained-112-self-instruct/fig-12.webp) | SUPERNI unseen-task evaluation table comparing vanilla, instruction-tuned, and Self-Instruct variants. |
+| ![Figure 13](assets/papers-explained-112-self-instruct/fig-13.webp) | Human expert ratings (A-D) across GPT-3 variants, T0, and InstructGPT models. |
+| ![Figure 14](assets/papers-explained-112-self-instruct/fig-14.webp) | Effect of instruction data size and improved outputs on acceptable-response rate. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-05-07_Papers-Explained-360--Nemotron-CrossThink-3e804e878541.html`
+- Source file: `raw/2025-05-07_Papers-Explained-360--Nemotron-CrossThink-3e804e878541.md`
 - Source title: Papers Explained 360: Nemotron CrossThink
 - Published: 2025-05-07
 - Canonical: [https://medium.com/@ritvik19/papers-explained-360-nemotron-crossthink-3e804e878541](https://medium.com/@ritvik19/papers-explained-360-nemotron-crossthink-3e804e878541)
@@ -117,18 +117,18 @@ NEMOTRON-CROSSTHINK: Scaling Self-Learning beyond Math Reasoning [2504.13941](ht
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-05-07_Papers-Explained-360--Nemotron-CrossThink-3e804e878541.html`); local copies under `wiki/assets/papers-explained-360-nemotron-crossthink/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-05-07_Papers-Explained-360--Nemotron-CrossThink-3e804e878541.md`); local copies under `wiki/assets/papers-explained-360-nemotron-crossthink/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-360-nemotron-crossthink/fig-1.png) | Title card: Nemotron CrossThink. |
-| ![Figure 2](assets/papers-explained-360-nemotron-crossthink/fig-2.png) | Nemotron-Crossthink Overview. |
-| ![Figure 3](assets/papers-explained-360-nemotron-crossthink/fig-3.png) | Overview of Data Blending Strategies. |
-| ![Figure 4](assets/papers-explained-360-nemotron-crossthink/fig-4.png) | Proportion of each dataset in different blends. |
-| ![Figure 5](assets/papers-explained-360-nemotron-crossthink/fig-5.png) | Mathematical Reasoning, Dmr. |
-| ![Figure 6](assets/papers-explained-360-nemotron-crossthink/fig-6.png) | Mathematical Reasoning, Dmr. |
-| ![Figure 7](assets/papers-explained-360-nemotron-crossthink/fig-7.png) | Results of Self-Learning on Individual Datasets. |
-| ![Figure 8](assets/papers-explained-360-nemotron-crossthink/fig-8.png) | Results across Blends. |
+| ![Figure 1](assets/papers-explained-360-nemotron-crossthink/fig-1.webp) | Title card: Nemotron CrossThink. |
+| ![Figure 2](assets/papers-explained-360-nemotron-crossthink/fig-2.webp) | Nemotron-Crossthink Overview. |
+| ![Figure 3](assets/papers-explained-360-nemotron-crossthink/fig-3.webp) | Overview of Data Blending Strategies. |
+| ![Figure 4](assets/papers-explained-360-nemotron-crossthink/fig-4.webp) | Proportion of each dataset in different blends. |
+| ![Figure 5](assets/papers-explained-360-nemotron-crossthink/fig-5.webp) | Mathematical Reasoning, Dmr. |
+| ![Figure 6](assets/papers-explained-360-nemotron-crossthink/fig-6.webp) | Mathematical Reasoning, Dmr. |
+| ![Figure 7](assets/papers-explained-360-nemotron-crossthink/fig-7.webp) | Results of Self-Learning on Individual Datasets. |
+| ![Figure 8](assets/papers-explained-360-nemotron-crossthink/fig-8.webp) | Results across Blends. |
 ## Related
 
 - [[Papers Explained Corpus]]

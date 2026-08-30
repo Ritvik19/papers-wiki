@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-05-01_Papers-Explained-131--Hawk--Griffin-dfc8c77f5dcd.html`
+- Source file: `raw/2024-05-01_Papers-Explained-131--Hawk--Griffin-dfc8c77f5dcd.md`
 - Source title: Papers Explained 131: Hawk, Griffin
 - Published: 2024-05-01
 - Canonical: [https://medium.com/@ritvik19/papers-explained-131-hawk-griffin-dfc8c77f5dcd](https://medium.com/@ritvik19/papers-explained-131-hawk-griffin-dfc8c77f5dcd)
@@ -155,18 +155,18 @@ Recommended Reading [Beyond Transformers](https://ritvik19.medium.com/list/beyon
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-05-01_Papers-Explained-131--Hawk--Griffin-dfc8c77f5dcd.html`); local copies under `wiki/assets/papers-explained-131-hawk-griffin/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-05-01_Papers-Explained-131--Hawk--Griffin-dfc8c77f5dcd.md`); local copies under `wiki/assets/papers-explained-131-hawk-griffin/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-131-hawk-griffin/fig-1.png) | Title page of *Griffin: Mixing Gated Linear Recurrences with Local Attention for Efficient Language Models*. |
-| ![Figure 2](assets/papers-explained-131-hawk-griffin/fig-2.png) | Model blocks: pre-norm residual stack (a), gated GeGLU-style MLP (b), and RG-LRU recurrent temporal mixer (c). |
-| ![Figure 3](assets/papers-explained-131-hawk-griffin/fig-3.png) | RG-LRU gating equations for recurrence gate, input gate, scaled recurrence weight, and hidden-state update. |
-| ![Figure 4](assets/papers-explained-131-hawk-griffin/fig-4.png) | Scaling table of width, RNN width, depth, heads, and Chinchilla-matched token budgets from 100M to 14B parameters. |
-| ![Figure 5](assets/papers-explained-131-hawk-griffin/fig-5.png) | Validation loss vs training FLOPs for MQA, Hawk, and Griffin (Griffin lowest at matched compute). |
-| ![Figure 6](assets/papers-explained-131-hawk-griffin/fig-6.png) | Downstream accuracy vs Mamba, Llama-2, and MQA baselines across MMLU, HellaSwag, PIQA, WinoGrande, and ARC. |
-| ![Figure 7](assets/papers-explained-131-hawk-griffin/fig-7.png) | Mean NLL vs token position on book-like eval: Griffin/Hawk vs MQA, and effect of 2K vs 8K train contexts. |
-| ![Figure 8](assets/papers-explained-131-hawk-griffin/fig-8.png) | Synthetic copying/induction/phonebook tasks comparing MQA, Hawk, and Griffin extrapolation past train length. |
+| ![Figure 1](assets/papers-explained-131-hawk-griffin/fig-1.webp) | Title page of *Griffin: Mixing Gated Linear Recurrences with Local Attention for Efficient Language Models*. |
+| ![Figure 2](assets/papers-explained-131-hawk-griffin/fig-2.webp) | Model blocks: pre-norm residual stack (a), gated GeGLU-style MLP (b), and RG-LRU recurrent temporal mixer (c). |
+| ![Figure 3](assets/papers-explained-131-hawk-griffin/fig-3.webp) | RG-LRU gating equations for recurrence gate, input gate, scaled recurrence weight, and hidden-state update. |
+| ![Figure 4](assets/papers-explained-131-hawk-griffin/fig-4.webp) | Scaling table of width, RNN width, depth, heads, and Chinchilla-matched token budgets from 100M to 14B parameters. |
+| ![Figure 5](assets/papers-explained-131-hawk-griffin/fig-5.webp) | Validation loss vs training FLOPs for MQA, Hawk, and Griffin (Griffin lowest at matched compute). |
+| ![Figure 6](assets/papers-explained-131-hawk-griffin/fig-6.webp) | Downstream accuracy vs Mamba, Llama-2, and MQA baselines across MMLU, HellaSwag, PIQA, WinoGrande, and ARC. |
+| ![Figure 7](assets/papers-explained-131-hawk-griffin/fig-7.webp) | Mean NLL vs token position on book-like eval: Griffin/Hawk vs MQA, and effect of 2K vs 8K train contexts. |
+| ![Figure 8](assets/papers-explained-131-hawk-griffin/fig-8.webp) | Synthetic copying/induction/phonebook tasks comparing MQA, Hawk, and Griffin extrapolation past train length. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -68,8 +68,8 @@ No direct figures were extracted in the initial OpenAI announcement due to downl
 
 | Figure | Caption | Page |
 |---|---|---|
-| ![fig-2](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-2.jpg) | Classic "benchmark grid" comparing GPT-5.5 and GPT-5.4 across Terminal-Bench 2.0, Expert-SWE, GDPval, OSWorld-Verified, Toolathlon, BrowseComp, FrontierMath, and CyberGym | [[Implications of Large-Scale Test-Time Compute]] |
-| ![fig-3](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-3.jpg) | Left: CyberGym scalar comparison vs Right: CTF challenges plotted against output tokens showing GPT-5.5's massive capability step-change when controlling for inference compute | [[Implications of Large-Scale Test-Time Compute]] |
+| ![fig-2](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-2.webp) | Classic "benchmark grid" comparing GPT-5.5 and GPT-5.4 across Terminal-Bench 2.0, Expert-SWE, GDPval, OSWorld-Verified, Toolathlon, BrowseComp, FrontierMath, and CyberGym | [[Implications of Large-Scale Test-Time Compute]] |
+| ![fig-3](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-3.webp) | Left: CyberGym scalar comparison vs Right: CTF challenges plotted against output tokens showing GPT-5.5's massive capability step-change when controlling for inference compute | [[Implications of Large-Scale Test-Time Compute]] |
 
 ## Entities
 

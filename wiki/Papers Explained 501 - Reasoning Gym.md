@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-12-15_Papers-Explained-501--Reasoning-Gym-3202ebfddeec.html`
+- Source file: `raw/2025-12-15_Papers-Explained-501--Reasoning-Gym-3202ebfddeec.md`
 - Source title: Papers Explained 501: Reasoning Gym
 - Published: 2025-12-15
 - Canonical: [https://medium.com/@ritvik19/papers-explained-501-reasoning-gym-3202ebfddeec](https://medium.com/@ritvik19/papers-explained-501-reasoning-gym-3202ebfddeec)
@@ -167,23 +167,23 @@ REASONING GYM: Reasoning Environments for Reinforcement Learning with Verifiable
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-12-15_Papers-Explained-501--Reasoning-Gym-3202ebfddeec.html`); local copies under `wiki/assets/papers-explained-501-reasoning-gym/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-12-15_Papers-Explained-501--Reasoning-Gym-3202ebfddeec.md`); local copies under `wiki/assets/papers-explained-501-reasoning-gym/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-501-reasoning-gym/fig-1.png) | Title card: Reasoning Gym. |
-| ![Figure 2](assets/papers-explained-501-reasoning-gym/fig-2.png) | Overview of Reasoning Gym Datasets by Category. |
-| ![Figure 3](assets/papers-explained-501-reasoning-gym/fig-3.png) | Per task accuracy ion easy and hard settings. |
-| ![Figure 4](assets/papers-explained-501-reasoning-gym/fig-4.png) | Frontier models struggle with challenging RG configurations. |
-| ![Figure 5](assets/papers-explained-501-reasoning-gym/fig-5.png) | Model and task difficulty comparison. |
-| ![Figure 6](assets/papers-explained-501-reasoning-gym/fig-6.png) | Rewards of Intra-Domain Generalization RL. |
-| ![Figure 7](assets/papers-explained-501-reasoning-gym/fig-7.png) | Intra-Domain Generalization. |
-| ![Figure 8](assets/papers-explained-501-reasoning-gym/fig-8.png) | Rewards of Cross-Domain Generalization RL. |
-| ![Figure 9](assets/papers-explained-501-reasoning-gym/fig-9.png) | Cross-Domain Generalization. |
-| ![Figure 10](assets/papers-explained-501-reasoning-gym/fig-10.png) | External Generalization on GSM8K, MATH, and Big-Bench Hard. |
-| ![Figure 11](assets/papers-explained-501-reasoning-gym/fig-11.png) | External generalization on tasks from MMLU-Pro. |
-| ![Figure 12](assets/papers-explained-501-reasoning-gym/fig-12.png) | Rewards for the Curriculum Learning experiments. |
-| ![Figure 13](assets/papers-explained-501-reasoning-gym/fig-13.png) | Curriculum learning. |
+| ![Figure 1](assets/papers-explained-501-reasoning-gym/fig-1.webp) | Title card: Reasoning Gym. |
+| ![Figure 2](assets/papers-explained-501-reasoning-gym/fig-2.webp) | Overview of Reasoning Gym Datasets by Category. |
+| ![Figure 3](assets/papers-explained-501-reasoning-gym/fig-3.webp) | Per task accuracy ion easy and hard settings. |
+| ![Figure 4](assets/papers-explained-501-reasoning-gym/fig-4.webp) | Frontier models struggle with challenging RG configurations. |
+| ![Figure 5](assets/papers-explained-501-reasoning-gym/fig-5.webp) | Model and task difficulty comparison. |
+| ![Figure 6](assets/papers-explained-501-reasoning-gym/fig-6.webp) | Rewards of Intra-Domain Generalization RL. |
+| ![Figure 7](assets/papers-explained-501-reasoning-gym/fig-7.webp) | Intra-Domain Generalization. |
+| ![Figure 8](assets/papers-explained-501-reasoning-gym/fig-8.webp) | Rewards of Cross-Domain Generalization RL. |
+| ![Figure 9](assets/papers-explained-501-reasoning-gym/fig-9.webp) | Cross-Domain Generalization. |
+| ![Figure 10](assets/papers-explained-501-reasoning-gym/fig-10.webp) | External Generalization on GSM8K, MATH, and Big-Bench Hard. |
+| ![Figure 11](assets/papers-explained-501-reasoning-gym/fig-11.webp) | External generalization on tasks from MMLU-Pro. |
+| ![Figure 12](assets/papers-explained-501-reasoning-gym/fig-12.webp) | Rewards for the Curriculum Learning experiments. |
+| ![Figure 13](assets/papers-explained-501-reasoning-gym/fig-13.webp) | Curriculum learning. |
 ## Related
 
 - [[Papers Explained Corpus]]

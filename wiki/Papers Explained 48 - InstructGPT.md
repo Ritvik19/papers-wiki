@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-07-24_Papers-Explained-48--InstructGPT-e9bcd51f03ec.html`
+- Source file: `raw/2023-07-24_Papers-Explained-48--InstructGPT-e9bcd51f03ec.md`
 - Source title: Papers Explained 48: InstructGPT
 - Published: 2023-07-24
 - Canonical: [https://medium.com/@ritvik19/papers-explained-48-instructgpt-e9bcd51f03ec](https://medium.com/@ritvik19/papers-explained-48-instructgpt-e9bcd51f03ec)
@@ -101,15 +101,15 @@ Training language models to follow instructions with human feedback [2203.02155]
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-07-24_Papers-Explained-48--InstructGPT-e9bcd51f03ec.html`); local copies under `wiki/assets/papers-explained-48-instructgpt/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-07-24_Papers-Explained-48--InstructGPT-e9bcd51f03ec.md`); local copies under `wiki/assets/papers-explained-48-instructgpt/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-48-instructgpt/fig-1.png) | Title card: InstructGPT. |
-| ![Figure 2](assets/papers-explained-48-instructgpt/fig-2.png) | A diagram illustrating the three steps of training. |
-| ![Figure 3](assets/papers-explained-48-instructgpt/fig-3.png) | Distribution of use case categories from our API prompt dataset. |
-| ![Figure 4](assets/papers-explained-48-instructgpt/fig-4.png) | The loss function for the reward model. |
-| ![Figure 5](assets/papers-explained-48-instructgpt/fig-5.png) | Maximization objective function in RL training. |
+| ![Figure 1](assets/papers-explained-48-instructgpt/fig-1.webp) | Title card: InstructGPT. |
+| ![Figure 2](assets/papers-explained-48-instructgpt/fig-2.webp) | A diagram illustrating the three steps of training. |
+| ![Figure 3](assets/papers-explained-48-instructgpt/fig-3.webp) | Distribution of use case categories from our API prompt dataset. |
+| ![Figure 4](assets/papers-explained-48-instructgpt/fig-4.webp) | The loss function for the reward model. |
+| ![Figure 5](assets/papers-explained-48-instructgpt/fig-5.webp) | Maximization objective function in RL training. |
 ## Related
 
 - [[Papers Explained Corpus]]

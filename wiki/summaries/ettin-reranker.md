@@ -1,6 +1,6 @@
 # Introducing the Ettin Reranker Family
 
-**Source**: `raw/ettin-reranker/full-article.html` (490 KB), `raw/ettin-reranker/full-article.md`
+**Source**: `raw/ettin-reranker/full-article.md` (490 KB), `raw/ettin-reranker/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

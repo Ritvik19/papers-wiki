@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-09_Papers-Explained-25--Vision-Transformers-e286ee8bc06b.html`
+- Source file: `raw/2023-02-09_Papers-Explained-25--Vision-Transformers-e286ee8bc06b.md`
 - Source title: Papers Explained 25: Vision Transformers
 - Published: 2023-02-09
 - Canonical: [https://medium.com/@ritvik19/papers-explained-25-vision-transformers-e286ee8bc06b](https://medium.com/@ritvik19/papers-explained-25-vision-transformers-e286ee8bc06b)
@@ -57,15 +57,15 @@ Recommended Reading [Vision Transformers](https://ritvik19.medium.com/list/visio
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-09_Papers-Explained-25--Vision-Transformers-e286ee8bc06b.html`); local copies under `wiki/assets/papers-explained-25-vision-transformers/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-09_Papers-Explained-25--Vision-Transformers-e286ee8bc06b.md`); local copies under `wiki/assets/papers-explained-25-vision-transformers/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-25-vision-transformers/fig-1.png) | Title card: Vision Transformers. |
-| ![Figure 2](assets/papers-explained-25-vision-transformers/fig-2.png) | The standard Transformer receives as input a 1D sequence of token embeddings. |
-| ![Figure 3](assets/papers-explained-25-vision-transformers/fig-3.png) | The standard Transformer receives as input a 1D sequence of token embeddings. |
-| ![Figure 4](assets/papers-explained-25-vision-transformers/fig-4.png) | into a sequence of flattened 2D patches. |
-| ![Figure 5](assets/papers-explained-25-vision-transformers/fig-5.png) | where (H, W) is the resolution of the original image, C is the number of channels, (P, P) is the resolution of each image patch, and. |
+| ![Figure 1](assets/papers-explained-25-vision-transformers/fig-1.webp) | Title card: Vision Transformers. |
+| ![Figure 2](assets/papers-explained-25-vision-transformers/fig-2.webp) | The standard Transformer receives as input a 1D sequence of token embeddings. |
+| ![Figure 3](assets/papers-explained-25-vision-transformers/fig-3.webp) | The standard Transformer receives as input a 1D sequence of token embeddings. |
+| ![Figure 4](assets/papers-explained-25-vision-transformers/fig-4.webp) | into a sequence of flattened 2D patches. |
+| ![Figure 5](assets/papers-explained-25-vision-transformers/fig-5.webp) | where (H, W) is the resolution of the original image, C is the number of channels, (P, P) is the resolution of each image patch, and. |
 ## Related
 
 - [[How the Vision Transformer (ViT) Works in 10 Minutes: An Image Is Worth 16×16 Words]] — AI Summer tutorial on the same Dosovitskiy et al. architecture with attention-distance analysis and PyTorch code.

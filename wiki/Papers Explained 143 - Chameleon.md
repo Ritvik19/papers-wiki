@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-05-29_Papers-Explained-143--Chameleon-6cddfdbceaa8.html`
+- Source file: `raw/2024-05-29_Papers-Explained-143--Chameleon-6cddfdbceaa8.md`
 - Source title: Papers Explained 143: Chameleon
 - Published: 2024-05-29
 - Canonical: [https://medium.com/@ritvik19/papers-explained-143-chameleon-6cddfdbceaa8](https://medium.com/@ritvik19/papers-explained-143-chameleon-6cddfdbceaa8)
@@ -181,21 +181,21 @@ Recommended Reading [Multi Modal Transformers](https://ritvik19.medium.com/list/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-05-29_Papers-Explained-143--Chameleon-6cddfdbceaa8.html`); local copies under `wiki/assets/papers-explained-143-chameleon/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-05-29_Papers-Explained-143--Chameleon-6cddfdbceaa8.md`); local copies under `wiki/assets/papers-explained-143-chameleon/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-143-chameleon/fig-1.png) | Title slide for *Chameleon: Mixed-Modal Early-Fusion Foundation Models* (FAIR at Meta). |
-| ![Figure 2](assets/papers-explained-143-chameleon/fig-2.png) | Early-fusion tokenizer LM consumes interleaved text and discrete image tokens for multimodal pretraining and autoregressive generation with paired image decoder outputs. |
-| ![Figure 3](assets/papers-explained-143-chameleon/fig-3.png) | Residual ordering contrast: Chameleon-34B applies attention/FFN norms inside the residual branch versus Llama 2’s pre-norm stacking. |
-| ![Figure 4](assets/papers-explained-143-chameleon/fig-4.png) | Training recipe comparison among Llama 1/2 and Chameleon at 7B and 33–34B scales—tokens seen, LR, dropout, z-loss, and QK-norm usage. |
-| ![Figure 5](assets/papers-explained-143-chameleon/fig-5.png) | Supervised fine-tuning mixture counts across text, code, visual chat, T2I, interleaved generation, and safety buckets (samples, tokens, images). |
-| ![Figure 6](assets/papers-explained-143-chameleon/fig-6.png) | Human study fulfillment buckets plus pairwise win/tie/loss bars for Chameleon against Gemini+ / GPT-4V+ / Gemini / GPT-4V. |
-| ![Figure 7](assets/papers-explained-143-chameleon/fig-7.png) | Absolute-evaluation inter-annotator agreement histograms across accuracy, multimodal relevance, safety, and related rubric axes. |
-| ![Figure 8](assets/papers-explained-143-chameleon/fig-8.png) | Pairwise relative-eval consensus rates (3/3, 2/3, none) when judging Chameleon versus each closed multimodal baseline. |
-| ![Figure 9](assets/papers-explained-143-chameleon/fig-9.png) | Safety outcome percentages on crowdsourced probes vs interactive red-teaming for Chameleon-7B and Chameleon-34B. |
-| ![Figure 10](assets/papers-explained-143-chameleon/fig-10.png) | Academic text benchmarks spanning commonsense QA, GSM8K/MATH aggregates, and MMLU vs Llama 2, Mistral, Gemini Pro, and GPT-4 variants. |
-| ![Figure 11](assets/papers-explained-143-chameleon/fig-11.png) | Image-to-text scores on COCO captioning, Flickr30k, and VQA-v2 for pretrained, Chameleon-tuned, open fine-tuned, and proprietary VLMs. |
+| ![Figure 1](assets/papers-explained-143-chameleon/fig-1.webp) | Title slide for *Chameleon: Mixed-Modal Early-Fusion Foundation Models* (FAIR at Meta). |
+| ![Figure 2](assets/papers-explained-143-chameleon/fig-2.webp) | Early-fusion tokenizer LM consumes interleaved text and discrete image tokens for multimodal pretraining and autoregressive generation with paired image decoder outputs. |
+| ![Figure 3](assets/papers-explained-143-chameleon/fig-3.webp) | Residual ordering contrast: Chameleon-34B applies attention/FFN norms inside the residual branch versus Llama 2’s pre-norm stacking. |
+| ![Figure 4](assets/papers-explained-143-chameleon/fig-4.webp) | Training recipe comparison among Llama 1/2 and Chameleon at 7B and 33–34B scales—tokens seen, LR, dropout, z-loss, and QK-norm usage. |
+| ![Figure 5](assets/papers-explained-143-chameleon/fig-5.webp) | Supervised fine-tuning mixture counts across text, code, visual chat, T2I, interleaved generation, and safety buckets (samples, tokens, images). |
+| ![Figure 6](assets/papers-explained-143-chameleon/fig-6.webp) | Human study fulfillment buckets plus pairwise win/tie/loss bars for Chameleon against Gemini+ / GPT-4V+ / Gemini / GPT-4V. |
+| ![Figure 7](assets/papers-explained-143-chameleon/fig-7.webp) | Absolute-evaluation inter-annotator agreement histograms across accuracy, multimodal relevance, safety, and related rubric axes. |
+| ![Figure 8](assets/papers-explained-143-chameleon/fig-8.webp) | Pairwise relative-eval consensus rates (3/3, 2/3, none) when judging Chameleon versus each closed multimodal baseline. |
+| ![Figure 9](assets/papers-explained-143-chameleon/fig-9.webp) | Safety outcome percentages on crowdsourced probes vs interactive red-teaming for Chameleon-7B and Chameleon-34B. |
+| ![Figure 10](assets/papers-explained-143-chameleon/fig-10.webp) | Academic text benchmarks spanning commonsense QA, GSM8K/MATH aggregates, and MMLU vs Llama 2, Mistral, Gemini Pro, and GPT-4 variants. |
+| ![Figure 11](assets/papers-explained-143-chameleon/fig-11.webp) | Image-to-text scores on COCO captioning, Flickr30k, and VQA-v2 for pretrained, Chameleon-tuned, open fine-tuned, and proprietary VLMs. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/draft_Papers-Explained--GLIDE-33ac1a6eee14.html`
+- Source file: `raw/draft_Papers-Explained--GLIDE-33ac1a6eee14.md`
 - Source title: Papers Explained: GLIDE
 - Canonical: [https://medium.com/p/33ac1a6eee14](https://medium.com/p/33ac1a6eee14)
 
@@ -108,19 +108,19 @@ GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diff
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/draft_Papers-Explained--GLIDE-33ac1a6eee14.html`); local copies under `wiki/assets/papers-explained-glide/` when download succeeded.
+Figures from the Medium HTML export (`raw/draft_Papers-Explained--GLIDE-33ac1a6eee14.md`); local copies under `wiki/assets/papers-explained-glide/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-glide/fig-1.png) | GLIDE overview comparing classifier-free guidance vs CLIP-based guidance for text-to-image diffusion. |
-| ![Figure 2](assets/papers-explained-glide/fig-2.png) | Classifier guidance perturbs reverse-process means with classifier logits over noisy latents. |
-| ![Figure 3](assets/papers-explained-glide/fig-3.png) | Classifier-free guidance blends conditional and unconditional score predictions during sampling. |
-| ![Figure 4](assets/papers-explained-glide/fig-4.png) | CLIP guidance perturbs diffusion means using gradients of CLIP image-text similarity on noisy xt. |
-| ![Figure 5](assets/papers-explained-glide/fig-5.png) | Text-conditional ADM backbone plus Transformer caption encoder feeding cross-attention contexts (64² base + upsampler). |
-| ![Figure 6](assets/papers-explained-glide/fig-6.png) | MS-COCO 64² Pareto curves for diversity vs fidelity under classifier-free vs CLIP guidance scales. |
-| ![Figure 7](assets/papers-explained-glide/fig-7.png) | Human Elo sweeps isolating optimal guidance scales for each guidance family before head-to-head judging. |
-| ![Figure 8](assets/papers-explained-glide/fig-8.png) | Human Elo at 256² comparing unguided, classifier-free (scale 3.0), and CLIP-guided (scale 2.0) sampling. |
-| ![Figure 9](assets/papers-explained-glide/fig-9.png) | MS-COCO FID at 256² plus GLIDE vs prior text-conditional generators; bottom row compares GLIDE to DALL-E with human win rates (photorealism & caption match). |
+| ![Figure 1](assets/papers-explained-glide/fig-1.webp) | GLIDE overview comparing classifier-free guidance vs CLIP-based guidance for text-to-image diffusion. |
+| ![Figure 2](assets/papers-explained-glide/fig-2.webp) | Classifier guidance perturbs reverse-process means with classifier logits over noisy latents. |
+| ![Figure 3](assets/papers-explained-glide/fig-3.webp) | Classifier-free guidance blends conditional and unconditional score predictions during sampling. |
+| ![Figure 4](assets/papers-explained-glide/fig-4.webp) | CLIP guidance perturbs diffusion means using gradients of CLIP image-text similarity on noisy xt. |
+| ![Figure 5](assets/papers-explained-glide/fig-5.webp) | Text-conditional ADM backbone plus Transformer caption encoder feeding cross-attention contexts (64² base + upsampler). |
+| ![Figure 6](assets/papers-explained-glide/fig-6.webp) | MS-COCO 64² Pareto curves for diversity vs fidelity under classifier-free vs CLIP guidance scales. |
+| ![Figure 7](assets/papers-explained-glide/fig-7.webp) | Human Elo sweeps isolating optimal guidance scales for each guidance family before head-to-head judging. |
+| ![Figure 8](assets/papers-explained-glide/fig-8.webp) | Human Elo at 256² comparing unguided, classifier-free (scale 3.0), and CLIP-guided (scale 2.0) sampling. |
+| ![Figure 9](assets/papers-explained-glide/fig-9.webp) | MS-COCO FID at 256² plus GLIDE vs prior text-conditional generators; bottom row compares GLIDE to DALL-E with human win rates (photorealism & caption match). |
 ## Related
 
 - [[Papers Explained Corpus]]

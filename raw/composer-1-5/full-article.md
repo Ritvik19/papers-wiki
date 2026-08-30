@@ -1,7 +1,7 @@
 # Introducing Composer 1.5
 
 **Source URL**: https://cursor.com/blog/composer-1-5  
-**Canonical HTML**: `raw/composer-1-5/full-article.html`
+**Canonical HTML**: `raw/composer-1-5/full-article.md`
 
 A few months ago, we released our first agentic coding model, [Composer 1](https://cursor.com/blog/composer). Since then, we've made significant improvements to the model's coding ability.
 

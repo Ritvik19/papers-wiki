@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-08-26_Papers-Explained-439--Reinforcement-Learning-with-Calibration-Rewards--RLCR--bafda59538fd.html`
+- Source file: `raw/2025-08-26_Papers-Explained-439--Reinforcement-Learning-with-Calibration-Rewards--RLCR--bafda59538fd.md`
 - Source title: Papers Explained 439: Reinforcement Learning with Calibration Rewards (RLCR)
 - Published: 2025-08-26
 - Canonical: [https://medium.com/@ritvik19/papers-explained-439-reinforcement-learning-with-calibration-rewards-rlcr-bafda59538fd](https://medium.com/@ritvik19/papers-explained-439-reinforcement-learning-with-calibration-rewards-rlcr-bafda59538fd)
@@ -198,14 +198,14 @@ Beyond Binary Rewards: Training LMs to Reason About Their Uncertainty [2507.1680
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-08-26_Papers-Explained-439--Reinforcement-Learning-with-Calibration-Rewards--RLCR--bafda59538fd.html`); local copies under `wiki/assets/papers-explained-439-reinforcement-learning-with-calibration-rewards-rlcr/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-08-26_Papers-Explained-439--Reinforcement-Learning-with-Calibration-Rewards--RLCR--bafda59538fd.md`); local copies under `wiki/assets/papers-explained-439-reinforcement-learning-with-calibration-rewards-rlcr/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-439-reinforcement-learning-with-calibration-rewards-rlcr/fig-1.png) | Title card: Reinforcement Learning with Calibration Rewards (RLCR). |
-| ![Figure 2](assets/papers-explained-439-reinforcement-learning-with-calibration-rewards-rlcr/fig-2.png) | Examples of Proper Scoring Rules. |
-| ![Figure 3](assets/papers-explained-439-reinforcement-learning-with-calibration-rewards-rlcr/fig-3.png) | Accuracy and calibration metrics for models trained on HotpotQA. |
-| ![Figure 4](assets/papers-explained-439-reinforcement-learning-with-calibration-rewards-rlcr/fig-4.png) | Accuracy and calibration metrics for models trained on BigMath. |
+| ![Figure 1](assets/papers-explained-439-reinforcement-learning-with-calibration-rewards-rlcr/fig-1.webp) | Title card: Reinforcement Learning with Calibration Rewards (RLCR). |
+| ![Figure 2](assets/papers-explained-439-reinforcement-learning-with-calibration-rewards-rlcr/fig-2.webp) | Examples of Proper Scoring Rules. |
+| ![Figure 3](assets/papers-explained-439-reinforcement-learning-with-calibration-rewards-rlcr/fig-3.webp) | Accuracy and calibration metrics for models trained on HotpotQA. |
+| ![Figure 4](assets/papers-explained-439-reinforcement-learning-with-calibration-rewards-rlcr/fig-4.webp) | Accuracy and calibration metrics for models trained on BigMath. |
 ## Related
 
 - [[Papers Explained Corpus]]

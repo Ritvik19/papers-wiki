@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-01-22_Papers-Explained-93--TinyLlama-6ef140170da9.html`
+- Source file: `raw/2024-01-22_Papers-Explained-93--TinyLlama-6ef140170da9.md`
 - Source title: Papers Explained 93: TinyLlama
 - Published: 2024-01-22
 - Canonical: [https://medium.com/@ritvik19/papers-explained-93-tinyllama-6ef140170da9](https://medium.com/@ritvik19/papers-explained-93-tinyllama-6ef140170da9)
@@ -85,15 +85,15 @@ Recommended Reading [Decoder-Only Language Transformers](https://ritvik19.medium
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-01-22_Papers-Explained-93--TinyLlama-6ef140170da9.html`); local copies under `wiki/assets/papers-explained-93-tinyllama/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-01-22_Papers-Explained-93--TinyLlama-6ef140170da9.md`); local copies under `wiki/assets/papers-explained-93-tinyllama/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-93-tinyllama/fig-1.png) | Title card: TinyLlama. |
-| ![Figure 2](assets/papers-explained-93-tinyllama/fig-2.png) | Details of model architecture. |
-| ![Figure 3](assets/papers-explained-93-tinyllama/fig-3.png) | Zero-shot performance on commonsense reasoning tasks. |
-| ![Figure 4](assets/papers-explained-93-tinyllama/fig-4.png) | Evolution of performance in commonsense reasoning benchmarks during pre-training. |
-| ![Figure 5](assets/papers-explained-93-tinyllama/fig-5.png) | Performance of problem-solving tasks on the InstructEval Benchmark. |
+| ![Figure 1](assets/papers-explained-93-tinyllama/fig-1.webp) | Title card: TinyLlama. |
+| ![Figure 2](assets/papers-explained-93-tinyllama/fig-2.webp) | Details of model architecture. |
+| ![Figure 3](assets/papers-explained-93-tinyllama/fig-3.webp) | Zero-shot performance on commonsense reasoning tasks. |
+| ![Figure 4](assets/papers-explained-93-tinyllama/fig-4.webp) | Evolution of performance in commonsense reasoning benchmarks during pre-training. |
+| ![Figure 5](assets/papers-explained-93-tinyllama/fig-5.webp) | Performance of problem-solving tasks on the InstructEval Benchmark. |
 ## Related
 
 - [[Papers Explained Corpus]]

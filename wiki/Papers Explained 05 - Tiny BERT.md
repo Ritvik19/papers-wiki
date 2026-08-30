@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-06_Papers-Explained-05--Tiny-BERT-5e36fe0ee173.html`
+- Source file: `raw/2023-02-06_Papers-Explained-05--Tiny-BERT-5e36fe0ee173.md`
 - Source title: Papers Explained 05: Tiny BERT
 - Published: 2023-02-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-05-tiny-bert-5e36fe0ee173](https://medium.com/@ritvik19/papers-explained-05-tiny-bert-5e36fe0ee173)
@@ -83,21 +83,21 @@ TinyBERT: Distilling BERT for Natural Language Understanding [1909.10351](https:
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-06_Papers-Explained-05--Tiny-BERT-5e36fe0ee173.html`); local copies under `wiki/assets/papers-explained-05-tiny-bert/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-06_Papers-Explained-05--Tiny-BERT-5e36fe0ee173.md`); local copies under `wiki/assets/papers-explained-05-tiny-bert/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-05-tiny-bert/fig-1.png) | Title block of *TinyBERT: Distilling BERT for Natural Language Understanding*. |
-| ![Figure 2](assets/papers-explained-05-tiny-bert/fig-2.png) | Two-stage TinyBERT pipeline: general distillation, data augmentation, and task-specific distillation. |
-| ![Figure 3](assets/papers-explained-05-tiny-bert/fig-3.png) | Core knowledge-distillation objective matching teacher and student behavior on pretraining data. |
-| ![Figure 4](assets/papers-explained-05-tiny-bert/fig-4.png) | Layer-mapped distillation objective across student/teacher Transformer depths. |
-| ![Figure 5](assets/papers-explained-05-tiny-bert/fig-5.png) | Transformer-layer distillation details: attention-matrix loss and hidden-state loss between teacher and student layers. |
-| ![Figure 6](assets/papers-explained-05-tiny-bert/fig-6.png) | Attention distillation loss formulation over per-head attention matrices. |
-| ![Figure 7](assets/papers-explained-05-tiny-bert/fig-7.png) | Hidden-state distillation loss with student-to-teacher projection matrix \(W_h\). |
-| ![Figure 8](assets/papers-explained-05-tiny-bert/fig-8.png) | Embedding-layer distillation loss with embedding projection matrix \(W_e\). |
-| ![Figure 9](assets/papers-explained-05-tiny-bert/fig-9.png) | Prediction-layer distillation objective with temperature-scaled logits. |
-| ![Figure 10](assets/papers-explained-05-tiny-bert/fig-10.png) | Unified TinyBERT distillation loss combining embedding, layer, and prediction objectives. |
-| ![Figure 11](assets/papers-explained-05-tiny-bert/fig-11.png) | GLUE benchmark comparison vs BERT-base and compact baselines, showing strong TinyBERT4/6 efficiency-accuracy tradeoffs. |
+| ![Figure 1](assets/papers-explained-05-tiny-bert/fig-1.webp) | Title block of *TinyBERT: Distilling BERT for Natural Language Understanding*. |
+| ![Figure 2](assets/papers-explained-05-tiny-bert/fig-2.webp) | Two-stage TinyBERT pipeline: general distillation, data augmentation, and task-specific distillation. |
+| ![Figure 3](assets/papers-explained-05-tiny-bert/fig-3.webp) | Core knowledge-distillation objective matching teacher and student behavior on pretraining data. |
+| ![Figure 4](assets/papers-explained-05-tiny-bert/fig-4.webp) | Layer-mapped distillation objective across student/teacher Transformer depths. |
+| ![Figure 5](assets/papers-explained-05-tiny-bert/fig-5.webp) | Transformer-layer distillation details: attention-matrix loss and hidden-state loss between teacher and student layers. |
+| ![Figure 6](assets/papers-explained-05-tiny-bert/fig-6.webp) | Attention distillation loss formulation over per-head attention matrices. |
+| ![Figure 7](assets/papers-explained-05-tiny-bert/fig-7.webp) | Hidden-state distillation loss with student-to-teacher projection matrix \(W_h\). |
+| ![Figure 8](assets/papers-explained-05-tiny-bert/fig-8.webp) | Embedding-layer distillation loss with embedding projection matrix \(W_e\). |
+| ![Figure 9](assets/papers-explained-05-tiny-bert/fig-9.webp) | Prediction-layer distillation objective with temperature-scaled logits. |
+| ![Figure 10](assets/papers-explained-05-tiny-bert/fig-10.webp) | Unified TinyBERT distillation loss combining embedding, layer, and prediction objectives. |
+| ![Figure 11](assets/papers-explained-05-tiny-bert/fig-11.webp) | GLUE benchmark comparison vs BERT-base and compact baselines, showing strong TinyBERT4/6 efficiency-accuracy tradeoffs. |
 ## Related
 
 - [[Papers Explained Corpus]]

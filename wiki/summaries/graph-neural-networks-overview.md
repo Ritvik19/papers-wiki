@@ -1,6 +1,6 @@
 # Graph Neural Networks — An Overview
 
-**Source**: `raw/graph-neural-networks-overview/full-article.html` (markdown view: `raw/graph-neural-networks-overview/full-article.md`)  
+**Source**: `raw/graph-neural-networks-overview/full-article.md` (markdown view: `raw/graph-neural-networks-overview/full-article.md`)  
 **URL**: https://theaisummer.com/Graph_Neural_Networks/  
 **Author**: Sergios Karagiannakos (AI Summer), 2020-02-01  
 **Ingested**: 2026-06-06  
@@ -10,11 +10,11 @@
 
 Sergios Karagiannakos's short AI Summer primer (2020) introduces **[[Graph Neural Networks]]** before the later math-heavy tutorials in the series. While CNNs and RNNs excel on grid- and sequence-structured (Euclidean) data, many real-world datasets — social networks, molecules, maps, transportation — are naturally **graphs**. The core problem is learning a function \(F(\text{Graph}) = \text{embedding}\) that maps an entire graph to a numeric representation usable for classification, regression, or clustering (e.g. predicting drug viability from molecular graphs).
 
-![GNN conceptual overview](../assets/graph-neural-networks-overview/fig-1.png)
+![GNN conceptual overview](../assets/graph-neural-networks-overview/fig-1.webp)
 
 The article's key pedagogical move is linking GNNs to familiar **[[Recurrent Neural Networks]]**: an RNN on a time series is already a GNN on a **chained graph** (nodes = timestamps, edges = temporal links). Embeddings pass along the chain like messages; recurrence prevents information loss. Generalizing to arbitrary graphs: replace each node with an RNN cell, replace each edge with a small neural network encoding edge weights, and let **envelope-shaped embeddings** propagate across the topology (slide from Microsoft Research's GNN talk).
 
-![GNN as RNN units on graph nodes with message embeddings](../assets/graph-neural-networks-overview/fig-3.png)
+![GNN as RNN units on graph nodes with message embeddings](../assets/graph-neural-networks-overview/fig-3.webp)
 
 **Learning dynamics**: at each synchronous time step, every node sums neighbor embeddings, concatenates with its own, and feeds the result through its RNN to produce an updated embedding. After \(t\) steps, embeddings contain information from \(t\)-hop neighborhoods; iterating until each node has incorporated information from **all** other nodes yields a full-graph receptive field. The final **readout** sums all node embeddings into one graph vector — an early permutation-invariant pooling scheme. Downstream models consume this embedding for any supervised task.
 
@@ -34,11 +34,11 @@ This conceptual frame predates the spectral/spatial formalism in [[How Graph Neu
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/graph-neural-networks-overview/fig-1.png) | Article preview / GNN overview hero image | — |
-| ![fig-2](../assets/graph-neural-networks-overview/fig-2.png) | Supplementary GNN illustration | — |
-| ![fig-3](../assets/graph-neural-networks-overview/fig-3.png) | GNN variations: nodes as RNN units, envelopes as embeddings, edges as neural nets (Microsoft Research talk) | — |
+| ![fig-1](../assets/graph-neural-networks-overview/fig-1.webp) | Article preview / GNN overview hero image | — |
+| ![fig-2](../assets/graph-neural-networks-overview/fig-2.webp) | Supplementary GNN illustration | — |
+| ![fig-3](../assets/graph-neural-networks-overview/fig-3.webp) | GNN variations: nodes as RNN units, envelopes as embeddings, edges as neural nets (Microsoft Research talk) | — |
 
-![Message-passing GNN schematic](../assets/graph-neural-networks-overview/fig-3.png)
+![Message-passing GNN schematic](../assets/graph-neural-networks-overview/fig-3.webp)
 
 Each node aggregates neighbor embeddings through an RNN; edge networks encode edge weights; synchronous steps spread information until full-graph coverage.
 

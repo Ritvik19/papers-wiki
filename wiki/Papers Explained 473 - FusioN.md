@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-10-10_Papers-Explained-473--FusioN-0c884d0a465c.html`
+- Source file: `raw/2025-10-10_Papers-Explained-473--FusioN-0c884d0a465c.md`
 - Source title: Papers Explained 473: FusioN
 - Published: 2025-10-10
 - Canonical: [https://medium.com/@ritvik19/papers-explained-473-fusion-0c884d0a465c](https://medium.com/@ritvik19/papers-explained-473-fusion-0c884d0a465c)
@@ -145,18 +145,18 @@ Making, not Taking, the Best of N [2510.00931](https://arxiv.org/abs/2510.00931)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-10-10_Papers-Explained-473--FusioN-0c884d0a465c.html`); local copies under `wiki/assets/papers-explained-473-fusion/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-10-10_Papers-Explained-473--FusioN-0c884d0a465c.md`); local copies under `wiki/assets/papers-explained-473-fusion/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-473-fusion/fig-1.png) | Title card: FusioN. |
-| ![Figure 2](assets/papers-explained-473-fusion/fig-2.png) | Given a prompt x, a pool of candidates y ∈Y, and a scoring function S, the BoN method selects the optimal candidate y∗by maximizing a scalar score. |
-| ![Figure 3](assets/papers-explained-473-fusion/fig-3.png) | FusioN principle. |
-| ![Figure 4](assets/papers-explained-473-fusion/fig-4.png) | A fusor model F (a standard LLM) generates a new response y⋆ based on the input prompt X, and a pool of candidates Y. |
-| ![Figure 5](assets/papers-explained-473-fusion/fig-5.png) | Test-time scaling with N = 5. |
-| ![Figure 6](assets/papers-explained-473-fusion/fig-6.png) | FusioN vs BoN vs Oracle in Translation, error bar show std-err. |
-| ![Figure 7](assets/papers-explained-473-fusion/fig-7.png) | Downstream evaluation of BoN/FusioN-fine-tuned 111B models on Arena (% win rate against Gemini2.5-Flash) and WMT (XCometXL, en→ ·). |
-| ![Figure 8](assets/papers-explained-473-fusion/fig-8.png) | Downstream evaluation on multilingual factual reasoning on the GeoFactX test set. |
+| ![Figure 1](assets/papers-explained-473-fusion/fig-1.webp) | Title card: FusioN. |
+| ![Figure 2](assets/papers-explained-473-fusion/fig-2.webp) | Given a prompt x, a pool of candidates y ∈Y, and a scoring function S, the BoN method selects the optimal candidate y∗by maximizing a scalar score. |
+| ![Figure 3](assets/papers-explained-473-fusion/fig-3.webp) | FusioN principle. |
+| ![Figure 4](assets/papers-explained-473-fusion/fig-4.webp) | A fusor model F (a standard LLM) generates a new response y⋆ based on the input prompt X, and a pool of candidates Y. |
+| ![Figure 5](assets/papers-explained-473-fusion/fig-5.webp) | Test-time scaling with N = 5. |
+| ![Figure 6](assets/papers-explained-473-fusion/fig-6.webp) | FusioN vs BoN vs Oracle in Translation, error bar show std-err. |
+| ![Figure 7](assets/papers-explained-473-fusion/fig-7.webp) | Downstream evaluation of BoN/FusioN-fine-tuned 111B models on Arena (% win rate against Gemini2.5-Flash) and WMT (XCometXL, en→ ·). |
+| ![Figure 8](assets/papers-explained-473-fusion/fig-8.webp) | Downstream evaluation on multilingual factual reasoning on the GeoFactX test set. |
 ## Related
 
 - [[Papers Explained Corpus]]

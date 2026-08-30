@@ -1,6 +1,6 @@
 # Contrastive Representation Learning
 
-**Source**: `raw/2021-05-31-contrastive/full-article.html` (HTML) and `raw/2021-05-31-contrastive/full-article.md` (Markdown Sibling)  
+**Source**: `raw/2021-05-31-contrastive/full-article.md` (HTML) and `raw/2021-05-31-contrastive/full-article.md` (Markdown Sibling)  
 **Ingested**: 2026-05-21  
 **Tags**: #summary
 
@@ -45,36 +45,36 @@ Below is the mapping of all 30 figures extracted from the canonical source.
 
 | Figure | Caption | Section |
 |--------|---------|---------|
-| ![fig-1](../assets/2021-05-31-contrastive/fig-1.png) | Triplet Loss anchor, positive, and negative mapping optimization (Schroff et al. 2015). | Triplet Loss |
-| ![fig-2](../assets/2021-05-31-contrastive/fig-2.png) | Pairwise structured connections comparison across Contrastive, Triplet, and Lifted Structured Loss (Song et al. 2015). | Lifted Structured Loss |
-| ![fig-3](../assets/2021-05-31-contrastive/fig-3.png) | Sampling bias where false negative samples in unsupervised learning lead to performance drop (Chuang et al. 2020). | Hard Negative Mining |
-| ![fig-4](../assets/2021-05-31-contrastive/fig-4.png) | t-SNE visual comparison of standard unsupervised vs debiased contrastive learned spaces (Chuang et al. 2020). | Hard Negative Mining |
-| ![fig-5](../assets/2021-05-31-contrastive/fig-5.png) | PyTorch-style pseudo-code for NCE, Debiased Contrastive, and Hard Negative objectives (Robinson et al. 2021). | Hard Negative Mining |
-| ![fig-6](../assets/2021-05-31-contrastive/fig-6.png) | The SimCLR parallel visual augmentation learning framework (Chen et al. 2020). | SimCLR |
-| ![fig-7](../assets/2021-05-31-contrastive/fig-7.png) | Mathematical optimization algorithm details for the SimCLR training loop (Chen et al. 2020). | SimCLR |
-| ![fig-8](../assets/2021-05-31-contrastive/fig-8.png) | Barlow Twins pipeline mapping two distorted views to a cross-correlation identity matrix (Zbontar et al. 2021). | Barlow Twins |
-| ![fig-9](../assets/2021-05-31-contrastive/fig-9.png) | PyTorch-style pseudo-code implementing the Barlow Twins redundancy loss (Zbontar et al. 2021). | Barlow Twins |
-| ![fig-10](../assets/2021-05-31-contrastive/fig-10.png) | The BYOL framework incorporating interacting Online and Target networks (Grill et al. 2020). | BYOL |
-| ![fig-11](../assets/2021-05-31-contrastive/fig-11.png) | Unsupervised non-parametric instance discrimination utilizing an external memory bank (Wu et al. 2018). | Instance Discrimination |
-| ![fig-12](../assets/2021-05-31-contrastive/fig-12.png) | MoCo visual representation framework using a momentum key encoder and FIFO queue (He et al. 2019). | MoCo |
-| ![fig-13](../assets/2021-05-31-contrastive/fig-13.png) | CURL contrastive learning framework applied over Reinforcement Learning frame stacks (Srinivas et al. 2020). | CURL |
-| ![fig-14](../assets/2021-05-31-contrastive/fig-14.png) | DeepCluster iterative training pipeline clustering deep features for pseudo-label generation (Caron et al. 2018). | DeepCluster |
-| ![fig-15](../assets/2021-05-31-contrastive/fig-15.png) | SwAV online clustering swapped prototype assignment prediction framework (Caron et al. 2020). | SwAV |
-| ![fig-16](../assets/2021-05-31-contrastive/fig-16.png) | CLIP joint pretraining architecture matching image and text caption dense matrices (Radford et al. 2021). | CLIP |
-| ![fig-17](../assets/2021-05-31-contrastive/fig-17.png) | Numpy-style pseudo-code detail of the symmetric cross entropy CLIP loss (Radford et al. 2021). | CLIP |
-| ![fig-18](../assets/2021-05-31-contrastive/fig-18.png) | CLIP data and sample efficiency comparison against generative transformer models (Radford et al. 2021). | CLIP |
-| ![fig-19](../assets/2021-05-31-contrastive/fig-19.png) | Supervised Contrastive Learning (SupCon) clustering multi-class positives vs self-supervised (Khosla et al. 2021). | Supervised Contrastive |
-| ![fig-20](../assets/2021-05-31-contrastive/fig-20.png) | Easy Data Augmentation (EDA) lexical edit performance comparison under varying training dataset sizes (Wei & Zou 2019). | Lexical Augmentation |
-| ![fig-21](../assets/2021-05-31-contrastive/fig-21.png) | Cutoff data augmentation method masking feature dimensions or spans in sentence encodings (Shen et al. 2020). | Lexical Augmentation |
-| ![fig-22](../assets/2021-05-31-contrastive/fig-22.png) | SimCSE dropout-driven unsupervised and supervised sentence embedding framework (Gao et al. 2021). | SimCSE |
-| ![fig-23](../assets/2021-05-31-contrastive/fig-23.png) | SimCSE semantic textual similarity (STS) evaluation results comparison (Gao et al. 2021). | SimCSE |
-| ![fig-24](../assets/2021-05-31-contrastive/fig-24.png) | Sentence-BERT (SBERT) dual-encoder classification and regression architecture mapping (Reimers & Gurevych 2019). | SBERT |
-| ![fig-25](../assets/2021-05-31-contrastive/fig-25.png) | SBERT SentEval evaluation metrics compared to baseline models (Reimers & Gurevych 2019). | SBERT |
-| ![fig-26](../assets/2021-05-31-contrastive/fig-26.png) | BERT-flow semantic representation space flow transformation to standard Gaussian (Li et al. 2020). | Whitening vs Flow |
-| ![fig-27](../assets/2021-05-31-contrastive/fig-27.png) | Embedding whitening geometric space realignment compared to flow-based architectures (Su et al. 2021). | Whitening vs Flow |
-| ![fig-28](../assets/2021-05-31-contrastive/fig-28.png) | Quick-Thought unsupervised sentence representation mapping using neighboring context predictions (Logeswaran & Lee 2018). | Sentence Representation |
-| ![fig-29](../assets/2021-05-31-contrastive/fig-29.png) | IS-BERT pooling and CNN-based context feature sentence extraction framework (Zhang et al. 2020). | Sentence Representation |
-| ![fig-30](../assets/2021-05-31-contrastive/fig-30.png) | IS-BERT vs SBERT SentEval performance comparison across standard benchmarks (Zhang et al. 2020). | Sentence Representation |
+| ![fig-1](../assets/2021-05-31-contrastive/fig-1.webp) | Triplet Loss anchor, positive, and negative mapping optimization (Schroff et al. 2015). | Triplet Loss |
+| ![fig-2](../assets/2021-05-31-contrastive/fig-2.webp) | Pairwise structured connections comparison across Contrastive, Triplet, and Lifted Structured Loss (Song et al. 2015). | Lifted Structured Loss |
+| ![fig-3](../assets/2021-05-31-contrastive/fig-3.webp) | Sampling bias where false negative samples in unsupervised learning lead to performance drop (Chuang et al. 2020). | Hard Negative Mining |
+| ![fig-4](../assets/2021-05-31-contrastive/fig-4.webp) | t-SNE visual comparison of standard unsupervised vs debiased contrastive learned spaces (Chuang et al. 2020). | Hard Negative Mining |
+| ![fig-5](../assets/2021-05-31-contrastive/fig-5.webp) | PyTorch-style pseudo-code for NCE, Debiased Contrastive, and Hard Negative objectives (Robinson et al. 2021). | Hard Negative Mining |
+| ![fig-6](../assets/2021-05-31-contrastive/fig-6.webp) | The SimCLR parallel visual augmentation learning framework (Chen et al. 2020). | SimCLR |
+| ![fig-7](../assets/2021-05-31-contrastive/fig-7.webp) | Mathematical optimization algorithm details for the SimCLR training loop (Chen et al. 2020). | SimCLR |
+| ![fig-8](../assets/2021-05-31-contrastive/fig-8.webp) | Barlow Twins pipeline mapping two distorted views to a cross-correlation identity matrix (Zbontar et al. 2021). | Barlow Twins |
+| ![fig-9](../assets/2021-05-31-contrastive/fig-9.webp) | PyTorch-style pseudo-code implementing the Barlow Twins redundancy loss (Zbontar et al. 2021). | Barlow Twins |
+| ![fig-10](../assets/2021-05-31-contrastive/fig-10.webp) | The BYOL framework incorporating interacting Online and Target networks (Grill et al. 2020). | BYOL |
+| ![fig-11](../assets/2021-05-31-contrastive/fig-11.webp) | Unsupervised non-parametric instance discrimination utilizing an external memory bank (Wu et al. 2018). | Instance Discrimination |
+| ![fig-12](../assets/2021-05-31-contrastive/fig-12.webp) | MoCo visual representation framework using a momentum key encoder and FIFO queue (He et al. 2019). | MoCo |
+| ![fig-13](../assets/2021-05-31-contrastive/fig-13.webp) | CURL contrastive learning framework applied over Reinforcement Learning frame stacks (Srinivas et al. 2020). | CURL |
+| ![fig-14](../assets/2021-05-31-contrastive/fig-14.webp) | DeepCluster iterative training pipeline clustering deep features for pseudo-label generation (Caron et al. 2018). | DeepCluster |
+| ![fig-15](../assets/2021-05-31-contrastive/fig-15.webp) | SwAV online clustering swapped prototype assignment prediction framework (Caron et al. 2020). | SwAV |
+| ![fig-16](../assets/2021-05-31-contrastive/fig-16.webp) | CLIP joint pretraining architecture matching image and text caption dense matrices (Radford et al. 2021). | CLIP |
+| ![fig-17](../assets/2021-05-31-contrastive/fig-17.webp) | Numpy-style pseudo-code detail of the symmetric cross entropy CLIP loss (Radford et al. 2021). | CLIP |
+| ![fig-18](../assets/2021-05-31-contrastive/fig-18.webp) | CLIP data and sample efficiency comparison against generative transformer models (Radford et al. 2021). | CLIP |
+| ![fig-19](../assets/2021-05-31-contrastive/fig-19.webp) | Supervised Contrastive Learning (SupCon) clustering multi-class positives vs self-supervised (Khosla et al. 2021). | Supervised Contrastive |
+| ![fig-20](../assets/2021-05-31-contrastive/fig-20.webp) | Easy Data Augmentation (EDA) lexical edit performance comparison under varying training dataset sizes (Wei & Zou 2019). | Lexical Augmentation |
+| ![fig-21](../assets/2021-05-31-contrastive/fig-21.webp) | Cutoff data augmentation method masking feature dimensions or spans in sentence encodings (Shen et al. 2020). | Lexical Augmentation |
+| ![fig-22](../assets/2021-05-31-contrastive/fig-22.webp) | SimCSE dropout-driven unsupervised and supervised sentence embedding framework (Gao et al. 2021). | SimCSE |
+| ![fig-23](../assets/2021-05-31-contrastive/fig-23.webp) | SimCSE semantic textual similarity (STS) evaluation results comparison (Gao et al. 2021). | SimCSE |
+| ![fig-24](../assets/2021-05-31-contrastive/fig-24.webp) | Sentence-BERT (SBERT) dual-encoder classification and regression architecture mapping (Reimers & Gurevych 2019). | SBERT |
+| ![fig-25](../assets/2021-05-31-contrastive/fig-25.webp) | SBERT SentEval evaluation metrics compared to baseline models (Reimers & Gurevych 2019). | SBERT |
+| ![fig-26](../assets/2021-05-31-contrastive/fig-26.webp) | BERT-flow semantic representation space flow transformation to standard Gaussian (Li et al. 2020). | Whitening vs Flow |
+| ![fig-27](../assets/2021-05-31-contrastive/fig-27.webp) | Embedding whitening geometric space realignment compared to flow-based architectures (Su et al. 2021). | Whitening vs Flow |
+| ![fig-28](../assets/2021-05-31-contrastive/fig-28.webp) | Quick-Thought unsupervised sentence representation mapping using neighboring context predictions (Logeswaran & Lee 2018). | Sentence Representation |
+| ![fig-29](../assets/2021-05-31-contrastive/fig-29.webp) | IS-BERT pooling and CNN-based context feature sentence extraction framework (Zhang et al. 2020). | Sentence Representation |
+| ![fig-30](../assets/2021-05-31-contrastive/fig-30.webp) | IS-BERT vs SBERT SentEval performance comparison across standard benchmarks (Zhang et al. 2020). | Sentence Representation |
 
 ---
 

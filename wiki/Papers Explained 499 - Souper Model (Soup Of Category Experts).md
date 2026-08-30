@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-11-25_Papers-Explained-499--Souper-Model--Soup-Of-Category-Experts--998a8b33a3e0.html`
+- Source file: `raw/2025-11-25_Papers-Explained-499--Souper-Model--Soup-Of-Category-Experts--998a8b33a3e0.md`
 - Source title: Papers Explained 499: Souper Model (Soup Of Category Experts)
 - Published: 2025-11-25
 - Canonical: [https://medium.com/@ritvik19/papers-explained-499-souper-model-soup-of-category-experts-998a8b33a3e0](https://medium.com/@ritvik19/papers-explained-499-souper-model-soup-of-category-experts-998a8b33a3e0)
@@ -79,15 +79,15 @@ Souper-Model: How Simple Arithmetic Unlocks State-of-the-Art LLM Performance [25
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-11-25_Papers-Explained-499--Souper-Model--Soup-Of-Category-Experts--998a8b33a3e0.html`); local copies under `wiki/assets/papers-explained-499-souper-model-soup-of-category-experts/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-11-25_Papers-Explained-499--Souper-Model--Soup-Of-Category-Experts--998a8b33a3e0.md`); local copies under `wiki/assets/papers-explained-499-souper-model-soup-of-category-experts/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-499-souper-model-soup-of-category-experts/fig-1.png) | Title card: Souper Model (Soup Of Category Experts). |
-| ![Figure 2](assets/papers-explained-499-souper-model-soup-of-category-experts/fig-2.png) | Pearson Correlation of model performance from BFCL leaderboard. |
-| ![Figure 3](assets/papers-explained-499-souper-model-soup-of-category-experts/fig-3.png) | For weight optimization, a search is performed over a uniform set of weights. |
-| ![Figure 4](assets/papers-explained-499-souper-model-soup-of-category-experts/fig-4.png) | BFCL Performance. |
-| ![Figure 5](assets/papers-explained-499-souper-model-soup-of-category-experts/fig-5.png) | Baselines. |
+| ![Figure 1](assets/papers-explained-499-souper-model-soup-of-category-experts/fig-1.webp) | Title card: Souper Model (Soup Of Category Experts). |
+| ![Figure 2](assets/papers-explained-499-souper-model-soup-of-category-experts/fig-2.webp) | Pearson Correlation of model performance from BFCL leaderboard. |
+| ![Figure 3](assets/papers-explained-499-souper-model-soup-of-category-experts/fig-3.webp) | For weight optimization, a search is performed over a uniform set of weights. |
+| ![Figure 4](assets/papers-explained-499-souper-model-soup-of-category-experts/fig-4.webp) | BFCL Performance. |
+| ![Figure 5](assets/papers-explained-499-souper-model-soup-of-category-experts/fig-5.webp) | Baselines. |
 ## Related
 
 - [[Papers Explained Corpus]]

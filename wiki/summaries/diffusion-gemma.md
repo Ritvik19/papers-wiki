@@ -1,6 +1,6 @@
 # DiffusionGemma
 
-**Source**: `raw/diffusion-gemma/full-article.html` (385 KB), `raw/diffusion-gemma/full-article.md`; `raw/diffusiongemma-developer-guide/full-article.html` (44 KB), `raw/diffusiongemma-developer-guide/full-article.md`  
+**Source**: `raw/diffusion-gemma/full-article.md` (385 KB), `raw/diffusion-gemma/full-article.md`; `raw/diffusiongemma-developer-guide/full-article.md` (44 KB), `raw/diffusiongemma-developer-guide/full-article.md`  
 **URLs**: https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/ · https://developers.googleblog.com/diffusiongemma-the-developer-guide/  
 **Ingested**: 2026-06-11  
 **Tags**: #summary
@@ -34,14 +34,14 @@ Fine-tuning demonstrates the bidirectional advantage on constrained tasks. The b
 | ![fig-2](../assets/diffusion-gemma/fig-2.webp) | Intelligence vs latency trade-off chart | Launch blog |
 | ![fig-3](../assets/diffusion-gemma/fig-3.webp) | DiffusionGemma benchmark bar chart | Launch blog |
 | ![fig-4](../assets/diffusion-gemma/fig-4.gif) | Fine-tuned DiffusionGemma solving Sudoku | Launch blog |
-| ![fig-1](../assets/diffusiongemma-developer-guide/fig-1.png) | DiffusionGemma developer guide banner | Developer guide |
-| ![fig-2](../assets/diffusiongemma-developer-guide/fig-2.png) | Sudoku: autoregressive vs DiffusionGemma bidirectional denoising | Developer guide |
-| ![fig-3](../assets/diffusiongemma-developer-guide/fig-3.png) | Block autoregressive denoising architecture (prefill + denoise) | Developer guide |
-| ![fig-4](../assets/diffusiongemma-developer-guide/fig-4.jpg) | Sudoku generation video poster (base vs SFT-tuned) | Developer guide |
+| ![fig-1](../assets/diffusiongemma-developer-guide/fig-1.webp) | DiffusionGemma developer guide banner | Developer guide |
+| ![fig-2](../assets/diffusiongemma-developer-guide/fig-2.webp) | Sudoku: autoregressive vs DiffusionGemma bidirectional denoising | Developer guide |
+| ![fig-3](../assets/diffusiongemma-developer-guide/fig-3.webp) | Block autoregressive denoising architecture (prefill + denoise) | Developer guide |
+| ![fig-4](../assets/diffusiongemma-developer-guide/fig-4.webp) | Sudoku generation video poster (base vs SFT-tuned) | Developer guide |
 
 ![Intelligence vs latency trade-off](../assets/diffusion-gemma/fig-2.webp)
 
-![Block autoregressive denoising architecture](../assets/diffusiongemma-developer-guide/fig-3.png)
+![Block autoregressive denoising architecture](../assets/diffusiongemma-developer-guide/fig-3.webp)
 
 ## Entities
 

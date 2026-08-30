@@ -1,3 +1,3 @@
 # ifbench
 
-Canonical HTML: `raw/ifbench/full-article.html`
+Canonical HTML: `raw/ifbench/full-article.md`

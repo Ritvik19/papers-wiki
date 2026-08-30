@@ -1,6 +1,6 @@
 # Introducing Command R7B: Fast and efficient generative AI
 
-**Source**: `raw/command-r7b/full-article.html` (324 KB), `raw/command-r7b/full-article.md` (markdown view)  
+**Source**: `raw/command-r7b/full-article.md` (324 KB), `raw/command-r7b/full-article.md` (markdown view)  
 **URL**: https://cohere.com/blog/command-r7b  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -23,9 +23,9 @@ Cohere positions R7B as class-leading among similarly sized open models on the H
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/command-r7b/fig-1.png) | Blog hero — Command R7B announcement | — |
+| ![fig-1](../assets/command-r7b/fig-1.webp) | Blog hero — Command R7B announcement | — |
 
-![Command R7B announcement](../assets/command-r7b/fig-1.png)
+![Command R7B announcement](../assets/command-r7b/fig-1.webp)
 
 ## Entities
 

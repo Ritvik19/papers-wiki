@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-04-25_Papers-Explained-355--OpenMath-Nemotron-d73c6000148a.html`
+- Source file: `raw/2025-04-25_Papers-Explained-355--OpenMath-Nemotron-d73c6000148a.md`
 - Source title: Papers Explained 355: OpenMath Nemotron
 - Published: 2025-04-25
 - Canonical: [https://medium.com/@ritvik19/papers-explained-355-openmath-nemotron-d73c6000148a](https://medium.com/@ritvik19/papers-explained-355-openmath-nemotron-d73c6000148a)
@@ -1016,19 +1016,19 @@ AIMO-2 Winning Solution: Building State-of-the-Art Mathematical Reasoning Models
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-04-25_Papers-Explained-355--OpenMath-Nemotron-d73c6000148a.html`); local copies under `wiki/assets/papers-explained-355-openmath-nemotron/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-04-25_Papers-Explained-355--OpenMath-Nemotron-d73c6000148a.md`); local copies under `wiki/assets/papers-explained-355-openmath-nemotron/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-355-openmath-nemotron/fig-1.png) | Title card: OpenMath Nemotron. |
-| ![Figure 2](assets/papers-explained-355-openmath-nemotron/fig-2.png) | Qwen2.5–32B-Instruct is used for all processing steps. |
-| ![Figure 3](assets/papers-explained-355-openmath-nemotron/fig-3.png) | Composition of the Comp-Math-24–25 validation dataset. |
-| ![Figure 4](assets/papers-explained-355-openmath-nemotron/fig-4.png) | Final distribution of CoT solutions in the dataset. |
-| ![Figure 5](assets/papers-explained-355-openmath-nemotron/fig-5.png) | Data construction pipeline of GenSelect. |
-| ![Figure 6](assets/papers-explained-355-openmath-nemotron/fig-6.png) | Accuracy improvement through the course of training. |
-| ![Figure 7](assets/papers-explained-355-openmath-nemotron/fig-7.png) | Accuracy with majority@64 on the Comp-Math-24–25 benchmark after the first and second SFT rounds. |
-| ![Figure 8](assets/papers-explained-355-openmath-nemotron/fig-8.png) | Evaluation results on mathematical benchmarks. |
-| ![Figure 9](assets/papers-explained-355-openmath-nemotron/fig-9.png) | Percentage of unfinished solutions on the Comp-Math-24–25 dataset. |
+| ![Figure 1](assets/papers-explained-355-openmath-nemotron/fig-1.webp) | Title card: OpenMath Nemotron. |
+| ![Figure 2](assets/papers-explained-355-openmath-nemotron/fig-2.webp) | Qwen2.5–32B-Instruct is used for all processing steps. |
+| ![Figure 3](assets/papers-explained-355-openmath-nemotron/fig-3.webp) | Composition of the Comp-Math-24–25 validation dataset. |
+| ![Figure 4](assets/papers-explained-355-openmath-nemotron/fig-4.webp) | Final distribution of CoT solutions in the dataset. |
+| ![Figure 5](assets/papers-explained-355-openmath-nemotron/fig-5.webp) | Data construction pipeline of GenSelect. |
+| ![Figure 6](assets/papers-explained-355-openmath-nemotron/fig-6.webp) | Accuracy improvement through the course of training. |
+| ![Figure 7](assets/papers-explained-355-openmath-nemotron/fig-7.webp) | Accuracy with majority@64 on the Comp-Math-24–25 benchmark after the first and second SFT rounds. |
+| ![Figure 8](assets/papers-explained-355-openmath-nemotron/fig-8.webp) | Evaluation results on mathematical benchmarks. |
+| ![Figure 9](assets/papers-explained-355-openmath-nemotron/fig-9.webp) | Percentage of unfinished solutions on the Comp-Math-24–25 dataset. |
 ## Related
 
 - [[Papers Explained Corpus]]

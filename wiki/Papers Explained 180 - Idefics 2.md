@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-08_Papers-Explained-180--Idefics-2-0adf35cef4ee.html`
+- Source file: `raw/2024-08-08_Papers-Explained-180--Idefics-2-0adf35cef4ee.md`
 - Source title: Papers Explained 180: Idefics 2
 - Published: 2024-08-08
 - Canonical: [https://medium.com/@ritvik19/papers-explained-180-idefics-2-0adf35cef4ee](https://medium.com/@ritvik19/papers-explained-180-idefics-2-0adf35cef4ee)
@@ -105,14 +105,14 @@ Recommended Reading [Multi Modal Transformers](https://ritvik19.medium.com/list/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-08_Papers-Explained-180--Idefics-2-0adf35cef4ee.html`); local copies under `wiki/assets/papers-explained-180-idefics-2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-08_Papers-Explained-180--Idefics-2-0adf35cef4ee.md`); local copies under `wiki/assets/papers-explained-180-idefics-2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-180-idefics-2/fig-1.png) | Blog header: **Introducing Idefics2** — 8B vision–language model for the community (April 2024). |
-| ![Figure 2](assets/papers-explained-180-idefics-2/fig-2.png) | **Instruction-tuning data** inventory (**The Cauldron**): datasets by task (VQA, captioning, OCR/doc, charts, tables, reasoning, WebSight, …) with image/QA/token counts. |
-| ![Figure 3](assets/papers-explained-180-idefics-2/fig-3.png) | **Architecture**: images → **vision encoder** → **connector** (Perceiver/MLP) → concatenated with text in **LLM decoder**. |
-| ![Figure 4](assets/papers-explained-180-idefics-2/fig-4.png) | **Benchmark bars**: **Idefics2 (8B)** vs LLaVA-NeXT-Mistral 7B, MM1-Chat 7B, DeepSeek-VL 7B on **MMMU**, **MathVista**, **TextVQA**, **MMBench**. |
+| ![Figure 1](assets/papers-explained-180-idefics-2/fig-1.webp) | Blog header: **Introducing Idefics2** — 8B vision–language model for the community (April 2024). |
+| ![Figure 2](assets/papers-explained-180-idefics-2/fig-2.webp) | **Instruction-tuning data** inventory (**The Cauldron**): datasets by task (VQA, captioning, OCR/doc, charts, tables, reasoning, WebSight, …) with image/QA/token counts. |
+| ![Figure 3](assets/papers-explained-180-idefics-2/fig-3.webp) | **Architecture**: images → **vision encoder** → **connector** (Perceiver/MLP) → concatenated with text in **LLM decoder**. |
+| ![Figure 4](assets/papers-explained-180-idefics-2/fig-4.webp) | **Benchmark bars**: **Idefics2 (8B)** vs LLaVA-NeXT-Mistral 7B, MM1-Chat 7B, DeepSeek-VL 7B on **MMMU**, **MathVista**, **TextVQA**, **MMBench**. |
 ## HF Blog Cross-References
 
 - [Introducing Idefics2: A Powerful 8B Vision-Language Model for the community](https://huggingface.co/blog/idefics2) — this is the primary source already cited above (see the "Paper" section); no separate content to add.

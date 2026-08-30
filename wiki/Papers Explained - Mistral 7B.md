@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-10-23_Papers-Explained--Mistral-7B-b9632dedf580.html`
+- Source file: `raw/2023-10-23_Papers-Explained--Mistral-7B-b9632dedf580.md`
 - Source title: Papers Explained: Mistral 7B
 - Published: 2023-10-23
 - Canonical: [https://medium.com/@ritvik19/papers-explained-mistral-7b-b9632dedf580](https://medium.com/@ritvik19/papers-explained-mistral-7b-b9632dedf580)
@@ -399,56 +399,56 @@ The model is available on [HuggingFace](https://huggingface.co/mistralai/Leanstr
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-10-23_Papers-Explained--Mistral-7B-b9632dedf580.html`); local copies under `wiki/assets/papers-explained-mistral-7b/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-10-23_Papers-Explained--Mistral-7B-b9632dedf580.md`); local copies under `wiki/assets/papers-explained-mistral-7b/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-mistral-7b/fig-1.png) | Title block of the original *Mistral 7B* paper. |
-| ![Figure 2](assets/papers-explained-mistral-7b/fig-2.png) | Core Mistral 7B architecture hyperparameters (layers, heads, window size, context length, vocabulary). |
-| ![Figure 3](assets/papers-explained-mistral-7b/fig-3.png) | Vanilla attention vs sliding-window attention, plus effective context growth across stacked layers. |
-| ![Figure 4](assets/papers-explained-mistral-7b/fig-4.png) | Rolling KV-cache example showing overwrite-by-modulo behavior over timesteps. |
-| ![Figure 5](assets/papers-explained-mistral-7b/fig-5.png) | Chunked prefill attention mask over past/cache/current segments for long prompts. |
-| ![Figure 6](assets/papers-explained-mistral-7b/fig-6.png) | Mistral 7B vs Llama family aggregate benchmark bars across MMLU, knowledge, reasoning, comprehension, AGI-Eval, math, BBH, and code. |
-| ![Figure 7](assets/papers-explained-mistral-7b/fig-7.png) | Detailed benchmark table comparing Mistral 7B with Llama and CodeLlama on language, reasoning, code, and math tasks. |
-| ![Figure 8](assets/papers-explained-mistral-7b/fig-8.png) | Chat model comparison (Chatbot Arena Elo + MT-Bench), highlighting Mistral 7B Instruct. |
-| ![Figure 9](assets/papers-explained-mistral-7b/fig-9.png) | Codestral benchmark table across HumanEval, MBPP, CRUXEval-O, RepoBench, Spider, and FIM aggregates. |
-| ![Figure 10](assets/papers-explained-mistral-7b/fig-10.png) | HumanEval pass@1 by programming language for Codestral vs CodeLlama, DeepSeek Coder, and Llama 3. |
-| ![Figure 11](assets/papers-explained-mistral-7b/fig-11.png) | Fill-in-the-middle HumanEvalFIM performance for Python/JavaScript/Java. |
-| ![Figure 12](assets/papers-explained-mistral-7b/fig-12.png) | Subject-wise MMLU delta: Mathstral 7B minus Mistral 7B. |
-| ![Figure 13](assets/papers-explained-mistral-7b/fig-13.png) | Mathstral benchmark table on MATH, GSM8K, Odyssey/GRE/AMC/AIME-style evaluations. |
-| ![Figure 14](assets/papers-explained-mistral-7b/fig-14.png) | Tekken tokenizer compression ratio by language. |
-| ![Figure 15](assets/papers-explained-mistral-7b/fig-15.png) | Mistral NeMo base benchmark comparison vs Gemma 2 9B and Llama 3 8B. |
-| ![Figure 16](assets/papers-explained-mistral-7b/fig-16.png) | Mistral NeMo multilingual benchmark bars (HellaSwag, ARC-Challenge, MMLU) across FR/DE/ES/IT/NL/PT/RU/ZH. |
-| ![Figure 17](assets/papers-explained-mistral-7b/fig-17.png) | Mistral NeMo instruction-tuned results on MT-Bench and WildBench. |
-| ![Figure 18](assets/papers-explained-mistral-7b/fig-18.png) | Mistral Large 2 code/math benchmark comparisons and multilingual HumanEval summary by language. |
-| ![Figure 19](assets/papers-explained-mistral-7b/fig-19.png) | Mistral Large 2 chat-alignment plots: WildBench, ArenaHard, MT-Bench scores, and generation length. |
-| ![Figure 20](assets/papers-explained-mistral-7b/fig-20.png) | Multilingual MMLU comparison: parameter-efficiency scatter and per-language bars. |
-| ![Figure 21](assets/papers-explained-mistral-7b/fig-21.png) | Function-calling accuracy comparison for Mistral Large 2 vs Claude 3.5 Sonnet, GPT-4o, and Command R+. |
-| ![Figure 22](assets/papers-explained-mistral-7b/fig-22.png) | Mistral Small v24.02 vs v24.09 improvements across reasoning, general alignment, code generation, and function-calling. |
-| ![Figure 23](assets/papers-explained-mistral-7b/fig-23.png) | Ministral architecture/specification table (parameters, heads, context length, ragged attention pattern). |
-| ![Figure 24](assets/papers-explained-mistral-7b/fig-24.png) | Ministral 3B/8B benchmark overview with grouped tables/bars for knowledge, code, math, and multilingual metrics. |
-| ![Figure 25](assets/papers-explained-mistral-7b/fig-25.png) | Ministral instruct benchmark comparison including ChatArena, code, math, and function-calling metrics. |
-| ![Figure 26](assets/papers-explained-mistral-7b/fig-26.png) | Mistral Small 3 latency vs MMLU-Pro performance scatter against open compact models. |
-| ![Figure 27](assets/papers-explained-mistral-7b/fig-27.png) | Human rater preference breakdowns vs competing models (generalist/coding prompt types). |
-| ![Figure 28](assets/papers-explained-mistral-7b/fig-28.png) | Mistral Small 3.1 instruct benchmark comparison across reasoning, coding, and alignment tasks. |
-| ![Figure 29](assets/papers-explained-mistral-7b/fig-29.png) | Mistral Small 3.1 base-model benchmark comparison on math/knowledge plus multilingual MMLU slices. |
-| ![Figure 30](assets/papers-explained-mistral-7b/fig-30.png) | Mistral Saba 24B benchmark bars on Arabic/English tasks and instruction evaluations. |
-| ![Figure 31](assets/papers-explained-mistral-7b/fig-31.png) | Mistral Saba 24B efficiency plot: Arabic MMLU accuracy vs latency. |
-| ![Figure 32](assets/papers-explained-mistral-7b/fig-32.png) | Mistral Small 3.1 latency vs GPQA-Diamond performance scatter vs compact competitors. |
-| ![Figure 33](assets/papers-explained-mistral-7b/fig-33.png) | Mistral Small 3.1 text benchmark comparisons on SimpleQA/GPQA/MMLU/HumanEval/MATH. |
-| ![Figure 34](assets/papers-explained-mistral-7b/fig-34.png) | Mistral Small 3.1 multimodal benchmark comparisons (MMMU-Pro, MathVista, MMMU, MM-MT-Bench, ChartQA, DocVQA, AI2D). |
-| ![Figure 35](assets/papers-explained-mistral-7b/fig-35.png) | Mistral Small 3.1 multilingual and long-context benchmark comparisons (LongBench v2, RULER 32k/128k). |
-| ![Figure 36](assets/papers-explained-mistral-7b/fig-36.png) | Mistral Medium 3 table vs frontier/open models across coding, instruction, math, knowledge, long-context, and multimodal tasks. |
-| ![Figure 37](assets/papers-explained-mistral-7b/fig-37.png) | Devstral coding win-rate comparisons vs multiple competitors and domain-wise wins vs Llama 4 Maverick. |
-| ![Figure 38](assets/papers-explained-mistral-7b/fig-38.png) | Devstral SWE-Bench Verified performance/size frontier and direct comparison bars vs GPT-4.1-mini, Claude 3.5 Haiku, SWE-smith-LM. |
-| ![Figure 39](assets/papers-explained-mistral-7b/fig-39.png) | Devstral Small 1.1 vs prior/open code-agent models on SWE-Bench Verified vs parameter count. |
-| ![Figure 40](assets/papers-explained-mistral-7b/fig-40.png) | Magistral benchmark comparison across AIME, GPQA, LiveCodeBench, and Aider-Polyglot (including pass@k variants). |
-| ![Figure 41](assets/papers-explained-mistral-7b/fig-41.png) | Mistral 3 benchmark roll-up: base benchmarks, LM Arena score, and human win-rate comparisons vs DeepSeek V3.1 and Kimi K2. |
-| ![Figure 42](assets/papers-explained-mistral-7b/fig-42.png) | Multi-panel benchmark comparison across Mistral 3 family variants for pretraining, instruction, and reasoning tasks. |
-| ![Figure 43](assets/papers-explained-mistral-7b/fig-43.png) | Devstral 2 SWE-Bench Verified comparison vs open-weight/proprietary models and parameter-scaled frontier plot. |
-| ![Figure 44](assets/papers-explained-mistral-7b/fig-44.png) | Mistral Small 4 internal-model comparison across text and vision benchmarks (instruct vs reasoning modes). |
-| ![Figure 45](assets/papers-explained-mistral-7b/fig-45.png) | Mistral Small 4 score-vs-output-length tradeoffs on LCR, LiveCodeBench, and AIME 2025 (instruct vs reasoning). |
-| ![Figure 46](assets/papers-explained-mistral-7b/fig-46.jpg) | Leanstral FLTEval score scaling with increased pass counts, compared against OSS baselines. |
+| ![Figure 1](assets/papers-explained-mistral-7b/fig-1.webp) | Title block of the original *Mistral 7B* paper. |
+| ![Figure 2](assets/papers-explained-mistral-7b/fig-2.webp) | Core Mistral 7B architecture hyperparameters (layers, heads, window size, context length, vocabulary). |
+| ![Figure 3](assets/papers-explained-mistral-7b/fig-3.webp) | Vanilla attention vs sliding-window attention, plus effective context growth across stacked layers. |
+| ![Figure 4](assets/papers-explained-mistral-7b/fig-4.webp) | Rolling KV-cache example showing overwrite-by-modulo behavior over timesteps. |
+| ![Figure 5](assets/papers-explained-mistral-7b/fig-5.webp) | Chunked prefill attention mask over past/cache/current segments for long prompts. |
+| ![Figure 6](assets/papers-explained-mistral-7b/fig-6.webp) | Mistral 7B vs Llama family aggregate benchmark bars across MMLU, knowledge, reasoning, comprehension, AGI-Eval, math, BBH, and code. |
+| ![Figure 7](assets/papers-explained-mistral-7b/fig-7.webp) | Detailed benchmark table comparing Mistral 7B with Llama and CodeLlama on language, reasoning, code, and math tasks. |
+| ![Figure 8](assets/papers-explained-mistral-7b/fig-8.webp) | Chat model comparison (Chatbot Arena Elo + MT-Bench), highlighting Mistral 7B Instruct. |
+| ![Figure 9](assets/papers-explained-mistral-7b/fig-9.webp) | Codestral benchmark table across HumanEval, MBPP, CRUXEval-O, RepoBench, Spider, and FIM aggregates. |
+| ![Figure 10](assets/papers-explained-mistral-7b/fig-10.webp) | HumanEval pass@1 by programming language for Codestral vs CodeLlama, DeepSeek Coder, and Llama 3. |
+| ![Figure 11](assets/papers-explained-mistral-7b/fig-11.webp) | Fill-in-the-middle HumanEvalFIM performance for Python/JavaScript/Java. |
+| ![Figure 12](assets/papers-explained-mistral-7b/fig-12.webp) | Subject-wise MMLU delta: Mathstral 7B minus Mistral 7B. |
+| ![Figure 13](assets/papers-explained-mistral-7b/fig-13.webp) | Mathstral benchmark table on MATH, GSM8K, Odyssey/GRE/AMC/AIME-style evaluations. |
+| ![Figure 14](assets/papers-explained-mistral-7b/fig-14.webp) | Tekken tokenizer compression ratio by language. |
+| ![Figure 15](assets/papers-explained-mistral-7b/fig-15.webp) | Mistral NeMo base benchmark comparison vs Gemma 2 9B and Llama 3 8B. |
+| ![Figure 16](assets/papers-explained-mistral-7b/fig-16.webp) | Mistral NeMo multilingual benchmark bars (HellaSwag, ARC-Challenge, MMLU) across FR/DE/ES/IT/NL/PT/RU/ZH. |
+| ![Figure 17](assets/papers-explained-mistral-7b/fig-17.webp) | Mistral NeMo instruction-tuned results on MT-Bench and WildBench. |
+| ![Figure 18](assets/papers-explained-mistral-7b/fig-18.webp) | Mistral Large 2 code/math benchmark comparisons and multilingual HumanEval summary by language. |
+| ![Figure 19](assets/papers-explained-mistral-7b/fig-19.webp) | Mistral Large 2 chat-alignment plots: WildBench, ArenaHard, MT-Bench scores, and generation length. |
+| ![Figure 20](assets/papers-explained-mistral-7b/fig-20.webp) | Multilingual MMLU comparison: parameter-efficiency scatter and per-language bars. |
+| ![Figure 21](assets/papers-explained-mistral-7b/fig-21.webp) | Function-calling accuracy comparison for Mistral Large 2 vs Claude 3.5 Sonnet, GPT-4o, and Command R+. |
+| ![Figure 22](assets/papers-explained-mistral-7b/fig-22.webp) | Mistral Small v24.02 vs v24.09 improvements across reasoning, general alignment, code generation, and function-calling. |
+| ![Figure 23](assets/papers-explained-mistral-7b/fig-23.webp) | Ministral architecture/specification table (parameters, heads, context length, ragged attention pattern). |
+| ![Figure 24](assets/papers-explained-mistral-7b/fig-24.webp) | Ministral 3B/8B benchmark overview with grouped tables/bars for knowledge, code, math, and multilingual metrics. |
+| ![Figure 25](assets/papers-explained-mistral-7b/fig-25.webp) | Ministral instruct benchmark comparison including ChatArena, code, math, and function-calling metrics. |
+| ![Figure 26](assets/papers-explained-mistral-7b/fig-26.webp) | Mistral Small 3 latency vs MMLU-Pro performance scatter against open compact models. |
+| ![Figure 27](assets/papers-explained-mistral-7b/fig-27.webp) | Human rater preference breakdowns vs competing models (generalist/coding prompt types). |
+| ![Figure 28](assets/papers-explained-mistral-7b/fig-28.webp) | Mistral Small 3.1 instruct benchmark comparison across reasoning, coding, and alignment tasks. |
+| ![Figure 29](assets/papers-explained-mistral-7b/fig-29.webp) | Mistral Small 3.1 base-model benchmark comparison on math/knowledge plus multilingual MMLU slices. |
+| ![Figure 30](assets/papers-explained-mistral-7b/fig-30.webp) | Mistral Saba 24B benchmark bars on Arabic/English tasks and instruction evaluations. |
+| ![Figure 31](assets/papers-explained-mistral-7b/fig-31.webp) | Mistral Saba 24B efficiency plot: Arabic MMLU accuracy vs latency. |
+| ![Figure 32](assets/papers-explained-mistral-7b/fig-32.webp) | Mistral Small 3.1 latency vs GPQA-Diamond performance scatter vs compact competitors. |
+| ![Figure 33](assets/papers-explained-mistral-7b/fig-33.webp) | Mistral Small 3.1 text benchmark comparisons on SimpleQA/GPQA/MMLU/HumanEval/MATH. |
+| ![Figure 34](assets/papers-explained-mistral-7b/fig-34.webp) | Mistral Small 3.1 multimodal benchmark comparisons (MMMU-Pro, MathVista, MMMU, MM-MT-Bench, ChartQA, DocVQA, AI2D). |
+| ![Figure 35](assets/papers-explained-mistral-7b/fig-35.webp) | Mistral Small 3.1 multilingual and long-context benchmark comparisons (LongBench v2, RULER 32k/128k). |
+| ![Figure 36](assets/papers-explained-mistral-7b/fig-36.webp) | Mistral Medium 3 table vs frontier/open models across coding, instruction, math, knowledge, long-context, and multimodal tasks. |
+| ![Figure 37](assets/papers-explained-mistral-7b/fig-37.webp) | Devstral coding win-rate comparisons vs multiple competitors and domain-wise wins vs Llama 4 Maverick. |
+| ![Figure 38](assets/papers-explained-mistral-7b/fig-38.webp) | Devstral SWE-Bench Verified performance/size frontier and direct comparison bars vs GPT-4.1-mini, Claude 3.5 Haiku, SWE-smith-LM. |
+| ![Figure 39](assets/papers-explained-mistral-7b/fig-39.webp) | Devstral Small 1.1 vs prior/open code-agent models on SWE-Bench Verified vs parameter count. |
+| ![Figure 40](assets/papers-explained-mistral-7b/fig-40.webp) | Magistral benchmark comparison across AIME, GPQA, LiveCodeBench, and Aider-Polyglot (including pass@k variants). |
+| ![Figure 41](assets/papers-explained-mistral-7b/fig-41.webp) | Mistral 3 benchmark roll-up: base benchmarks, LM Arena score, and human win-rate comparisons vs DeepSeek V3.1 and Kimi K2. |
+| ![Figure 42](assets/papers-explained-mistral-7b/fig-42.webp) | Multi-panel benchmark comparison across Mistral 3 family variants for pretraining, instruction, and reasoning tasks. |
+| ![Figure 43](assets/papers-explained-mistral-7b/fig-43.webp) | Devstral 2 SWE-Bench Verified comparison vs open-weight/proprietary models and parameter-scaled frontier plot. |
+| ![Figure 44](assets/papers-explained-mistral-7b/fig-44.webp) | Mistral Small 4 internal-model comparison across text and vision benchmarks (instruct vs reasoning modes). |
+| ![Figure 45](assets/papers-explained-mistral-7b/fig-45.webp) | Mistral Small 4 score-vs-output-length tradeoffs on LCR, LiveCodeBench, and AIME 2025 (instruct vs reasoning). |
+| ![Figure 46](assets/papers-explained-mistral-7b/fig-46.webp) | Leanstral FLTEval score scaling with increased pass counts, compared against OSS baselines. |
 ## Related
 
 - [[Mistral 7B]] — official Mistral AI launch blog post (Apache 2.0, GQA, SWA, benchmark claims).

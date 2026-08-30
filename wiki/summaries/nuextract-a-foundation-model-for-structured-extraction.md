@@ -1,6 +1,6 @@
 # NuExtract: A Foundation Model for Structured Extraction
 
-**Source**: `raw/nuextract-a-foundation-model-for-structured-extraction/full-article.html` (SPA shell; readable markdown from WebFetch), https://about.nuextract.ai/blog/nuextract-a-foundation-model-for-structured-extraction  
+**Source**: `raw/nuextract-a-foundation-model-for-structured-extraction/full-article.md` (SPA shell; readable markdown from WebFetch), https://about.nuextract.ai/blog/nuextract-a-foundation-model-for-structured-extraction  
 **Ingested**: 2026-06-12  
 **Tags**: #summary
 
@@ -26,15 +26,15 @@
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/nuextract-a-foundation-model-for-structured-extraction/fig-1.png) | Zero-shot NuExtract vs frontier LLMs | — |
-| ![fig-2](../assets/nuextract-a-foundation-model-for-structured-extraction/fig-2.png) | Structured extraction toy tree (depth 4) | — |
+| ![fig-1](../assets/nuextract-a-foundation-model-for-structured-extraction/fig-1.webp) | Zero-shot NuExtract vs frontier LLMs | — |
+| ![fig-2](../assets/nuextract-a-foundation-model-for-structured-extraction/fig-2.webp) | Structured extraction toy tree (depth 4) | — |
 | ![fig-5](../assets/nuextract-a-foundation-model-for-structured-extraction/fig-5.svg) | ICL performance saturation vs training size | — |
-| ![fig-6](../assets/nuextract-a-foundation-model-for-structured-extraction/fig-6.png) | Creation pipeline: Phi-3 fine-tuned on Llama 3 synthetic data | — |
+| ![fig-6](../assets/nuextract-a-foundation-model-for-structured-extraction/fig-6.webp) | Creation pipeline: Phi-3 fine-tuned on Llama 3 synthetic data | — |
 | ![fig-8](../assets/nuextract-a-foundation-model-for-structured-extraction/fig-8.svg) | Example C4 annotation (16 words, depth 5) | — |
-| ![fig-9](../assets/nuextract-a-foundation-model-for-structured-extraction/fig-9.png) | Text length distribution in training set | — |
-| ![fig-10](../assets/nuextract-a-foundation-model-for-structured-extraction/fig-10.png) | Extraction-tree depth distribution | — |
+| ![fig-9](../assets/nuextract-a-foundation-model-for-structured-extraction/fig-9.webp) | Text length distribution in training set | — |
+| ![fig-10](../assets/nuextract-a-foundation-model-for-structured-extraction/fig-10.webp) | Extraction-tree depth distribution | — |
 
-![NuExtract creation procedure](../assets/nuextract-a-foundation-model-for-structured-extraction/fig-6.png)
+![NuExtract creation procedure](../assets/nuextract-a-foundation-model-for-structured-extraction/fig-6.webp)
 
 ## Entities
 

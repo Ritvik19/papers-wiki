@@ -4,7 +4,7 @@
 
 Cursor's research-blog post argues that a coding agent's quality is determined by the model and the [[Agent Harness]] together, and that most harness progress is "obsessively stacking small optimizations" rather than step-change ideas. The post traces how Cursor's harness has shifted from heavy static context and guardrails toward dynamic context, describes the online and offline measurement stack used to evaluate harness changes, explains how tool-call reliability is monitored and repaired, and lays out how the harness is customized per model and per session, including for mid-chat model switching and emerging multi-agent orchestration.
 
-Source: [Continually improving our agent harness](https://cursor.com/blog/continually-improving-agent-harness) by Stefan Heule and Jediah Katz on the Cursor research blog, published April 30, 2026. Canonical raw sources: `raw/continually-improving-agent-harness/full-article.html` (downloaded HTML) and `raw/continually-improving-agent-harness/full-article.md` (markdown export). Article figures saved to `raw/continually-improving-agent-harness/images/` with light and dark variants and mirrored to `wiki/assets/continually-improving-agent-harness/`.
+Source: [Continually improving our agent harness](https://cursor.com/blog/continually-improving-agent-harness) by Stefan Heule and Jediah Katz on the Cursor research blog, published April 30, 2026. Canonical raw sources: `raw/continually-improving-agent-harness/full-article.md` (downloaded HTML) and `raw/continually-improving-agent-harness/full-article.md` (markdown export). Article figures saved to `raw/continually-improving-agent-harness/images/` with light and dark variants and mirrored to `wiki/assets/continually-improving-agent-harness/`.
 
 ## Methodology Frame
 
@@ -16,7 +16,7 @@ The harness's core job is to populate and manage the context window: system prom
 
 Almost all of that has been removed. The current harness keeps a small static slice (operating system, git status, current and recently viewed files) and pushes the rest into [[Dynamic Context]] retrieval driven by the agent itself. The model can now decide when to pull past conversations, active terminal sessions, or relevant tools, and the team's ongoing work is to expand the surface of dynamic-context affordances rather than to script context up front. This shift connects directly to [[Long Context]] and to [[Papers Explained 445 - Context Rot]], because dynamic context is in part a response to the observation that more text in context does not always mean more capability.
 
-![With dynamic context, the model can decide when to pull additional information into the context window like past conversations, active terminal sessions, or relevant tools.](assets/continually-improving-agent-harness/fig-1.png)
+![With dynamic context, the model can decide when to pull additional information into the context window like past conversations, active terminal sessions, or relevant tools.](assets/continually-improving-agent-harness/fig-1.webp)
 
 ## Two Ways Of Assessing Harness Changes
 
@@ -45,7 +45,7 @@ Two operational pieces sit on top of this:
 
 A focused sprint earlier in 2026 drove all tool calls to two or often three nines of reliability and cut unknown tool-call errors by an order of magnitude.
 
-![In a focused sprint earlier this year, we drove all tool calls to at least 2 or often 3 9s of reliability.](assets/continually-improving-agent-harness/fig-2.png)
+![In a focused sprint earlier this year, we drove all tool calls to at least 2 or often 3 9s of reliability.](assets/continually-improving-agent-harness/fig-2.webp)
 
 ## Customizing The Harness For Different Models
 
@@ -67,7 +67,7 @@ Two main mitigations are described:
 
 The article's preferred sidestep is to launch a **subagent** with a fresh context window for the new model, and notes that the harness now lets users explicitly request a subagent run with a particular model.
 
-![Preventing models from calling tools that aren't in its toolset](assets/continually-improving-agent-harness/fig-3.png)
+![Preventing models from calling tools that aren't in its toolset](assets/continually-improving-agent-harness/fig-3.webp)
 
 ## The Harness And The Future Of Software Development
 
@@ -88,9 +88,9 @@ The post closes by predicting that AI-assisted software engineering will be mult
 
 | Figure | Caption | Section |
 |--------|---------|---------|
-| ![fig-1](assets/continually-improving-agent-harness/fig-1.png) | With dynamic context, the model can decide when to pull additional information into the context window like past conversations, active terminal sessions, or relevant tools. | Evolving the context window |
-| ![fig-2](assets/continually-improving-agent-harness/fig-2.png) | In a focused sprint earlier this year, we drove all tool calls to at least 2 or often 3 9s of reliability. | Tracking and repairing degradations |
-| ![fig-3](assets/continually-improving-agent-harness/fig-3.png) | Preventing models from calling tools that aren't in its toolset. | Facilitating mid-chat model switching |
+| ![fig-1](assets/continually-improving-agent-harness/fig-1.webp) | With dynamic context, the model can decide when to pull additional information into the context window like past conversations, active terminal sessions, or relevant tools. | Evolving the context window |
+| ![fig-2](assets/continually-improving-agent-harness/fig-2.webp) | In a focused sprint earlier this year, we drove all tool calls to at least 2 or often 3 9s of reliability. | Tracking and repairing degradations |
+| ![fig-3](assets/continually-improving-agent-harness/fig-3.webp) | Preventing models from calling tools that aren't in its toolset. | Facilitating mid-chat model switching |
 
 Dark-mode variants are saved next to each figure as `fig-N-dark.png`.
 

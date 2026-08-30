@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-08-05_Papers-Explained-424--One-Token-to-Fool-LLM-as-a-Judge-b8d30ed4d281.html`
+- Source file: `raw/2025-08-05_Papers-Explained-424--One-Token-to-Fool-LLM-as-a-Judge-b8d30ed4d281.md`
 - Source title: Papers Explained 424: One Token to Fool LLM-as-a-Judge
 - Published: 2025-08-05
 - Canonical: [https://medium.com/@ritvik19/papers-explained-424-one-token-to-fool-llm-as-a-judge-b8d30ed4d281](https://medium.com/@ritvik19/papers-explained-424-one-token-to-fool-llm-as-a-judge-b8d30ed4d281)
@@ -125,17 +125,17 @@ One Token to Fool LLM-as-a-Judge [2507.08794](https://arxiv.org/abs/2507.08794)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-08-05_Papers-Explained-424--One-Token-to-Fool-LLM-as-a-Judge-b8d30ed4d281.html`); local copies under `wiki/assets/papers-explained-424-one-token-to-fool-llm-as-a-judge/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-08-05_Papers-Explained-424--One-Token-to-Fool-LLM-as-a-Judge-b8d30ed4d281.md`); local copies under `wiki/assets/papers-explained-424-one-token-to-fool-llm-as-a-judge/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-424-one-token-to-fool-llm-as-a-judge/fig-1.png) | Title card: One Token to Fool LLM-as-a-Judge. |
-| ![Figure 2](assets/papers-explained-424-one-token-to-fool-llm-as-a-judge/fig-2.png) | Versions and sources of LLM judges used in our evaluation. |
-| ![Figure 3](assets/papers-explained-424-one-token-to-fool-llm-as-a-judge/fig-3.png) | Benchmark sizes for used in the evaluation. |
-| ![Figure 4](assets/papers-explained-424-one-token-to-fool-llm-as-a-judge/fig-4.png) | False positive rates (%, ↓) induced by “master key” responses across various LLM judges and diverse datasets. |
-| ![Figure 5](assets/papers-explained-424-one-token-to-fool-llm-as-a-judge/fig-5.png) | Parsing success and agreement with GPT-4o across LLM judges. |
-| ![Figure 6](assets/papers-explained-424-one-token-to-fool-llm-as-a-judge/fig-6.png) | False positive rate (FPR) versus scaling of Qwen models. |
-| ![Figure 7](assets/papers-explained-424-one-token-to-fool-llm-as-a-judge/fig-7.png) | False positive rates of GPT-4o induced by new “master key” responses. |
+| ![Figure 1](assets/papers-explained-424-one-token-to-fool-llm-as-a-judge/fig-1.webp) | Title card: One Token to Fool LLM-as-a-Judge. |
+| ![Figure 2](assets/papers-explained-424-one-token-to-fool-llm-as-a-judge/fig-2.webp) | Versions and sources of LLM judges used in our evaluation. |
+| ![Figure 3](assets/papers-explained-424-one-token-to-fool-llm-as-a-judge/fig-3.webp) | Benchmark sizes for used in the evaluation. |
+| ![Figure 4](assets/papers-explained-424-one-token-to-fool-llm-as-a-judge/fig-4.webp) | False positive rates (%, ↓) induced by “master key” responses across various LLM judges and diverse datasets. |
+| ![Figure 5](assets/papers-explained-424-one-token-to-fool-llm-as-a-judge/fig-5.webp) | Parsing success and agreement with GPT-4o across LLM judges. |
+| ![Figure 6](assets/papers-explained-424-one-token-to-fool-llm-as-a-judge/fig-6.webp) | False positive rate (FPR) versus scaling of Qwen models. |
+| ![Figure 7](assets/papers-explained-424-one-token-to-fool-llm-as-a-judge/fig-7.webp) | False positive rates of GPT-4o induced by new “master key” responses. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -2,7 +2,7 @@
 
 **Author**: Adam Mainz (@MainzOnX)  
 **Date**: July 16, 2026  
-**Canonical HTML**: `raw/two-speeds-of-a-gpu/full-article.html`  
+**Canonical HTML**: `raw/two-speeds-of-a-gpu/full-article.md`  
 
 ## Overview
 A first-principles guide to GPU performance limits, arithmetic intensity, and the Roofline Model. The article breaks down why GPUs have two distinct, independent ceilings—compute throughput (FLOP/s) and memory bandwidth (Bytes/s)—and uses a kitchen analogy (fast chef vs slow runner) and concrete mathematical derivations to explain why elementwise vector operations are deeply memory-bound while large matrix multiplications become compute-bound.

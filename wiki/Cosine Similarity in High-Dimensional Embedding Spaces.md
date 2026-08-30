@@ -1,6 +1,6 @@
 # Cosine Similarity in High-Dimensional Embedding Spaces
 
-**Source**: `raw/cosine-similarity-high-dimensions/full-article.html` · `raw/cosine-similarity-high-dimensions/full-article.md`  
+**Source**: `raw/cosine-similarity-high-dimensions/full-article.md` · `raw/cosine-similarity-high-dimensions/full-article.md`  
 **Ingested**: 2026-05-12  
 **Tags**: #summary
 

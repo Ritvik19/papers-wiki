@@ -1,6 +1,6 @@
 # Understanding the 4 Main Approaches to LLM Evaluation (From Scratch)
 
-**Source**: `raw/llm-evaluation-4-approaches/full-article.html` (452 KB), `raw/llm-evaluation-4-approaches/full-article.md` (markdown view)  
+**Source**: `raw/llm-evaluation-4-approaches/full-article.md` (452 KB), `raw/llm-evaluation-4-approaches/full-article.md` (markdown view)  
 **URL**: https://magazine.sebastianraschka.com/p/llm-evaluation-4-approaches  
 **Ingested**: 2026-06-07  
 **Tags**: #summary
@@ -19,7 +19,7 @@ Sebastian Raschka's October 2025 *Ahead of AI* article maps the four dominant wa
 
 The conclusion stresses that no single method is best: combine multiple signal types and, critically, tailor evaluation to your domain with proprietary data. A radar chart visualizes complementary strengths across the four axes.
 
-![Overview of four LLM evaluation approaches](../assets/llm-evaluation-4-approaches/fig-1.png)
+![Overview of four LLM evaluation approaches](../assets/llm-evaluation-4-approaches/fig-1.webp)
 
 ## Key Claims
 
@@ -38,33 +38,33 @@ The conclusion stresses that no single method is best: combine multiple signal t
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/llm-evaluation-4-approaches/fig-1.png) | Overview of the four evaluation methods and benchmark vs judgment grouping | — |
-| ![fig-2](../assets/llm-evaluation-4-approaches/fig-2.png) | MMLU multiple-choice evaluation: compare predicted letter to correct answer | — |
-| ![fig-3](../assets/llm-evaluation-4-approaches/fig-3.png) | MMLU letter-matching evaluation (Figure 3 repeat for code walkthrough) | — |
-| ![fig-4](../assets/llm-evaluation-4-approaches/fig-4.png) | Base vs reasoning Qwen3 0.6B on MMLU high_school_mathematics subset | — |
-| ![fig-5](../assets/llm-evaluation-4-approaches/fig-5.png) | Alternative MMLU scoring methods (log-probability variants on GitHub) | — |
-| ![fig-6](../assets/llm-evaluation-4-approaches/fig-6.png) | Verifier-based free-form evaluation: extract boxed answer and compare to ground truth | — |
-| ![fig-7](../assets/llm-evaluation-4-approaches/fig-7.png) | Excerpt from verification-based evaluation chapter (GitHub) | — |
-| ![fig-8](../assets/llm-evaluation-4-approaches/fig-8.png) | Mental model: benchmark-based vs judgment-based evaluation methods | — |
-| ![fig-9](../assets/llm-evaluation-4-approaches/fig-9.png) | LM Arena pairwise preference interface | — |
-| ![fig-10](../assets/llm-evaluation-4-approaches/fig-10.png) | LM Arena leaderboard snapshot (October 2025) | — |
-| ![fig-11](../assets/llm-evaluation-4-approaches/fig-11.png) | Elo vs Bradley–Terry ranking comparison | — |
-| ![fig-12](../assets/llm-evaluation-4-approaches/fig-12.png) | LLM-as-a-judge: candidate answer scored by judge LLM against rubric and reference | — |
-| ![fig-13](../assets/llm-evaluation-4-approaches/fig-13.png) | Options for keeping Ollama server running for API access | — |
-| ![fig-14](../assets/llm-evaluation-4-approaches/fig-14.png) | Qwen3 base vs reasoning on MATH-500 first 10 examples, judged by gpt-oss:20b | — |
-| ![fig-15](../assets/llm-evaluation-4-approaches/fig-15.png) | Radar chart of complementary LLM evaluation dimensions | — |
+| ![fig-1](../assets/llm-evaluation-4-approaches/fig-1.webp) | Overview of the four evaluation methods and benchmark vs judgment grouping | — |
+| ![fig-2](../assets/llm-evaluation-4-approaches/fig-2.webp) | MMLU multiple-choice evaluation: compare predicted letter to correct answer | — |
+| ![fig-3](../assets/llm-evaluation-4-approaches/fig-3.webp) | MMLU letter-matching evaluation (Figure 3 repeat for code walkthrough) | — |
+| ![fig-4](../assets/llm-evaluation-4-approaches/fig-4.webp) | Base vs reasoning Qwen3 0.6B on MMLU high_school_mathematics subset | — |
+| ![fig-5](../assets/llm-evaluation-4-approaches/fig-5.webp) | Alternative MMLU scoring methods (log-probability variants on GitHub) | — |
+| ![fig-6](../assets/llm-evaluation-4-approaches/fig-6.webp) | Verifier-based free-form evaluation: extract boxed answer and compare to ground truth | — |
+| ![fig-7](../assets/llm-evaluation-4-approaches/fig-7.webp) | Excerpt from verification-based evaluation chapter (GitHub) | — |
+| ![fig-8](../assets/llm-evaluation-4-approaches/fig-8.webp) | Mental model: benchmark-based vs judgment-based evaluation methods | — |
+| ![fig-9](../assets/llm-evaluation-4-approaches/fig-9.webp) | LM Arena pairwise preference interface | — |
+| ![fig-10](../assets/llm-evaluation-4-approaches/fig-10.webp) | LM Arena leaderboard snapshot (October 2025) | — |
+| ![fig-11](../assets/llm-evaluation-4-approaches/fig-11.webp) | Elo vs Bradley–Terry ranking comparison | — |
+| ![fig-12](../assets/llm-evaluation-4-approaches/fig-12.webp) | LLM-as-a-judge: candidate answer scored by judge LLM against rubric and reference | — |
+| ![fig-13](../assets/llm-evaluation-4-approaches/fig-13.webp) | Options for keeping Ollama server running for API access | — |
+| ![fig-14](../assets/llm-evaluation-4-approaches/fig-14.webp) | Qwen3 base vs reasoning on MATH-500 first 10 examples, judged by gpt-oss:20b | — |
+| ![fig-15](../assets/llm-evaluation-4-approaches/fig-15.webp) | Radar chart of complementary LLM evaluation dimensions | — |
 
 The four-method taxonomy:
 
-![Four evaluation approaches](../assets/llm-evaluation-4-approaches/fig-1.png)
+![Four evaluation approaches](../assets/llm-evaluation-4-approaches/fig-1.webp)
 
 MMLU letter-matching flow:
 
-![MMLU evaluation](../assets/llm-evaluation-4-approaches/fig-2.png)
+![MMLU evaluation](../assets/llm-evaluation-4-approaches/fig-2.webp)
 
 LLM-as-a-judge pipeline:
 
-![LLM judge evaluation](../assets/llm-evaluation-4-approaches/fig-12.png)
+![LLM judge evaluation](../assets/llm-evaluation-4-approaches/fig-12.webp)
 
 ## Entities
 

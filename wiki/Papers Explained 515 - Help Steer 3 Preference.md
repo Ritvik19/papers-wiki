@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-01-02_Papers-Explained-515--Help-Steer-3-Preference-2ebd5725a525.html`
+- Source file: `raw/2026-01-02_Papers-Explained-515--Help-Steer-3-Preference-2ebd5725a525.md`
 - Source title: Papers Explained 515: Help Steer 3 Preference
 - Published: 2026-01-02
 - Canonical: [https://medium.com/@ritvik19/papers-explained-515-help-steer-3-preference-2ebd5725a525](https://medium.com/@ritvik19/papers-explained-515-help-steer-3-preference-2ebd5725a525)
@@ -129,15 +129,15 @@ HelpSteer3-Preference: Open Human-Annotated Preference Data across Diverse Tasks
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-01-02_Papers-Explained-515--Help-Steer-3-Preference-2ebd5725a525.html`); local copies under `wiki/assets/papers-explained-515-help-steer-3-preference/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-01-02_Papers-Explained-515--Help-Steer-3-Preference-2ebd5725a525.md`); local copies under `wiki/assets/papers-explained-515-help-steer-3-preference/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-515-help-steer-3-preference/fig-1.png) | Title card: Help Steer 3 Preference. |
-| ![Figure 2](assets/papers-explained-515-help-steer-3-preference/fig-2.png) | Descriptive Statistics for HelpSteer3-Preference compared with HelpSteer2-Preference. |
-| ![Figure 3](assets/papers-explained-515-help-steer-3-preference/fig-3.png) | Languages in Code and Multilingual subsets. |
-| ![Figure 4](assets/papers-explained-515-help-steer-3-preference/fig-4.png) | Performance of Reward Models on RM-Bench and JudgeBench. |
-| ![Figure 5](assets/papers-explained-515-help-steer-3-preference/fig-5.png) | Performance of Aligned Models. |
+| ![Figure 1](assets/papers-explained-515-help-steer-3-preference/fig-1.webp) | Title card: Help Steer 3 Preference. |
+| ![Figure 2](assets/papers-explained-515-help-steer-3-preference/fig-2.webp) | Descriptive Statistics for HelpSteer3-Preference compared with HelpSteer2-Preference. |
+| ![Figure 3](assets/papers-explained-515-help-steer-3-preference/fig-3.webp) | Languages in Code and Multilingual subsets. |
+| ![Figure 4](assets/papers-explained-515-help-steer-3-preference/fig-4.webp) | Performance of Reward Models on RM-Bench and JudgeBench. |
+| ![Figure 5](assets/papers-explained-515-help-steer-3-preference/fig-5.webp) | Performance of Aligned Models. |
 ## Related
 
 - [[Papers Explained Corpus]]

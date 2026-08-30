@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-06_Papers-Explained-01--Transformer-474bb60a33f7.html`
+- Source file: `raw/2023-02-06_Papers-Explained-01--Transformer-474bb60a33f7.md`
 - Source title: Papers Explained 01: Transformer
 - Published: 2023-02-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-01-transformer-474bb60a33f7](https://medium.com/@ritvik19/papers-explained-01-transformer-474bb60a33f7)
@@ -74,19 +74,19 @@ For English-French, the significantly larger WMT 2014 English-French dataset con
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-06_Papers-Explained-01--Transformer-474bb60a33f7.html`); local copies under `wiki/assets/papers-explained-01-transformer/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-06_Papers-Explained-01--Transformer-474bb60a33f7.md`); local copies under `wiki/assets/papers-explained-01-transformer/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-01-transformer/fig-1.png) | Encoder maps inputs to continuous representations; decoder generates outputs autoregressively. |
-| ![Figure 2](assets/papers-explained-01-transformer/fig-2.png) | Overall Transformer architecture with stacked self-attention and feed-forward layers. |
-| ![Figure 3](assets/papers-explained-01-transformer/fig-3.png) | Output of each sub-layer: LayerNorm(x + Sublayer(x)) with residual connections. |
-| ![Figure 4](assets/papers-explained-01-transformer/fig-4.png) | Attention maps a query and key–value pairs to a weighted sum of values. |
-| ![Figure 5](assets/papers-explained-01-transformer/fig-5.png) | Form of the attention weights (scaled dot-product). |
-| ![Figure 6](assets/papers-explained-01-transformer/fig-6.png) | Parallel heads concatenated and projected to final values. |
-| ![Figure 7](assets/papers-explained-01-transformer/fig-7.png) | Linear projections of Q, K, V for each head. |
-| ![Figure 8](assets/papers-explained-01-transformer/fig-8.png) | Positional encodings added to input embeddings (sinusoidal form). |
-| ![Figure 9](assets/papers-explained-01-transformer/fig-9.png) | Related positional encoding expression from the article figures. |
+| ![Figure 1](assets/papers-explained-01-transformer/fig-1.webp) | Encoder maps inputs to continuous representations; decoder generates outputs autoregressively. |
+| ![Figure 2](assets/papers-explained-01-transformer/fig-2.webp) | Overall Transformer architecture with stacked self-attention and feed-forward layers. |
+| ![Figure 3](assets/papers-explained-01-transformer/fig-3.webp) | Output of each sub-layer: LayerNorm(x + Sublayer(x)) with residual connections. |
+| ![Figure 4](assets/papers-explained-01-transformer/fig-4.webp) | Attention maps a query and key–value pairs to a weighted sum of values. |
+| ![Figure 5](assets/papers-explained-01-transformer/fig-5.webp) | Form of the attention weights (scaled dot-product). |
+| ![Figure 6](assets/papers-explained-01-transformer/fig-6.webp) | Parallel heads concatenated and projected to final values. |
+| ![Figure 7](assets/papers-explained-01-transformer/fig-7.webp) | Linear projections of Q, K, V for each head. |
+| ![Figure 8](assets/papers-explained-01-transformer/fig-8.webp) | Positional encodings added to input embeddings (sinusoidal form). |
+| ![Figure 9](assets/papers-explained-01-transformer/fig-9.webp) | Related positional encoding expression from the article figures. |
 ## Paper
 
 Attention Is All You Need [1706.03762](https://arxiv.org/abs/1706.03762)

@@ -1,6 +1,6 @@
 # Leanstral: Open-Source foundation for trustworthy vibe-coding
 
-**Source**: `raw/leanstral/full-article.html` (234 KB), `raw/leanstral/full-article.md` (markdown view)  
+**Source**: `raw/leanstral/full-article.md` (234 KB), `raw/leanstral/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/leanstral/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-07_Papers-Explained-178--Docmatix-9f2731ff1654.html`
+- Source file: `raw/2024-08-07_Papers-Explained-178--Docmatix-9f2731ff1654.md`
 - Source title: Papers Explained 178: Docmatix
 - Published: 2024-08-07
 - Canonical: [https://medium.com/@ritvik19/papers-explained-178-docmatix-9f2731ff1654](https://medium.com/@ritvik19/papers-explained-178-docmatix-9f2731ff1654)
@@ -49,15 +49,15 @@ Recommended Reading [Datasets](https://ritvik19.medium.com/list/datasets-b465a5d
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-07_Papers-Explained-178--Docmatix-9f2731ff1654.html`); local copies under `wiki/assets/papers-explained-178-docmatix/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-07_Papers-Explained-178--Docmatix-9f2731ff1654.md`); local copies under `wiki/assets/papers-explained-178-docmatix/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-178-docmatix/fig-1.png) | Blog header: **Docmatix** — large-scale **DocVQA** dataset (July 2024). |
-| ![Figure 2](assets/papers-explained-178-docmatix/fig-2.png) | **Scale vs DocVQA / VisualMRC / InfoVQA**: images, Q/A pairs, tokens (log-scale; 240× style multiples). |
-| ![Figure 3](assets/papers-explained-178-docmatix/fig-3.png) | **Pipeline**: PDFA → short PDFs → page text → templated **Phi-3** Q/A → hallucination filter → 150 dpi page images + chat rows → Hub. |
-| ![Figure 4](assets/papers-explained-178-docmatix/fig-4.png) | **Prompt ablation** dashboards: volume, answer length, diversity, empty questions, Q/A per page, unique questions (five prompt IDs). |
-| ![Figure 5](assets/papers-explained-178-docmatix/fig-5.png) | **DocVQA ANSL**: Florence-2 **700M** on DocVQA vs **Docmatix** pretrain vs **Idefics2 8B**. |
+| ![Figure 1](assets/papers-explained-178-docmatix/fig-1.webp) | Blog header: **Docmatix** — large-scale **DocVQA** dataset (July 2024). |
+| ![Figure 2](assets/papers-explained-178-docmatix/fig-2.webp) | **Scale vs DocVQA / VisualMRC / InfoVQA**: images, Q/A pairs, tokens (log-scale; 240× style multiples). |
+| ![Figure 3](assets/papers-explained-178-docmatix/fig-3.webp) | **Pipeline**: PDFA → short PDFs → page text → templated **Phi-3** Q/A → hallucination filter → 150 dpi page images + chat rows → Hub. |
+| ![Figure 4](assets/papers-explained-178-docmatix/fig-4.webp) | **Prompt ablation** dashboards: volume, answer length, diversity, empty questions, Q/A per page, unique questions (five prompt IDs). |
+| ![Figure 5](assets/papers-explained-178-docmatix/fig-5.webp) | **DocVQA ANSL**: Florence-2 **700M** on DocVQA vs **Docmatix** pretrain vs **Idefics2 8B**. |
 ## HF Blog Cross-References
 
 - [Docmatix — A huge dataset for Document Visual Question Answering](https://huggingface.co/blog/docmatix) — this is the primary source already cited above (see the "Paper" section); no separate content to add.

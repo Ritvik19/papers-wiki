@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-02-12_Papers-Explained-99--BLOOMZ--mT0-8932577dcd1d.html`
+- Source file: `raw/2024-02-12_Papers-Explained-99--BLOOMZ--mT0-8932577dcd1d.md`
 - Source title: Papers Explained 99: BLOOMZ, mT0
 - Published: 2024-02-12
 - Canonical: [https://medium.com/@ritvik19/papers-explained-99-bloomz-mt0-8932577dcd1d](https://medium.com/@ritvik19/papers-explained-99-bloomz-mt0-8932577dcd1d)
@@ -153,21 +153,21 @@ Recommended Reading: [Multi Task Language Models](https://ritvik19.medium.com/li
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-02-12_Papers-Explained-99--BLOOMZ--mT0-8932577dcd1d.html`); local copies under `wiki/assets/papers-explained-99-bloomz-mt0/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-02-12_Papers-Explained-99--BLOOMZ--mT0-8932577dcd1d.md`); local copies under `wiki/assets/papers-explained-99-bloomz-mt0/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-99-bloomz-mt0/fig-1.png) | Title card: BLOOMZ, mT0. |
-| ![Figure 2](assets/papers-explained-99-bloomz-mt0/fig-2.png) | An overview of datasets in xP3. Datasets added to P3 in this work are marked bold. Yellow datasets are trained on. Green datasets are held out for evaluation. |
-| ![Figure 3](assets/papers-explained-99-bloomz-mt0/fig-3.png) | Language composition of xP3, ROOTS, and the corpus of mT5. All ROOTS and xP3 languages are depicted. The mT5 corpus covers additional languages that are not included in the graph. |
-| ![Figure 4](assets/papers-explained-99-bloomz-mt0/fig-4.png) | Comparison of dataset variants P3, xP3, and xP3mt on a sample from PAWS for P3 and PAWS-X for xP3 and xP3mt. |
-| ![Figure 5](assets/papers-explained-99-bloomz-mt0/fig-5.png) | Zero-shot multilingual task generalization with English prompts. |
-| ![Figure 6](assets/papers-explained-99-bloomz-mt0/fig-6.png) | Zero-shot task and language generalization using English prompts on tasks and languages not intentionally seen during pretraining nor finetuning. |
-| ![Figure 7](assets/papers-explained-99-bloomz-mt0/fig-7.png) | Comparison between EN (English), MT (machine-translated) and HT (human-translated) prompts for 176B BLOOMZ and 13B mT0 models finetuned on either only English or English and machine-translated multilingual prompts (-MT). |
-| ![Figure 8](assets/papers-explained-99-bloomz-mt0/fig-8.png) | Aggregate performance vs. size. Transparent lines correspond to individual languages, while thick lines are average accuracy scores. |
-| ![Figure 9](assets/papers-explained-99-bloomz-mt0/fig-9.png) | Validation performance during training on natural language understanding (NLU) and natural language generation (NLG) tasks. |
-| ![Figure 10](assets/papers-explained-99-bloomz-mt0/fig-10.png) | Code continuation on HumanEval. |
-| ![Figure 11](assets/papers-explained-99-bloomz-mt0/fig-11.png) | Performance across languages by size in the BLOOM pretraining corpus, ROOTS. |
+| ![Figure 1](assets/papers-explained-99-bloomz-mt0/fig-1.webp) | Title card: BLOOMZ, mT0. |
+| ![Figure 2](assets/papers-explained-99-bloomz-mt0/fig-2.webp) | An overview of datasets in xP3. Datasets added to P3 in this work are marked bold. Yellow datasets are trained on. Green datasets are held out for evaluation. |
+| ![Figure 3](assets/papers-explained-99-bloomz-mt0/fig-3.webp) | Language composition of xP3, ROOTS, and the corpus of mT5. All ROOTS and xP3 languages are depicted. The mT5 corpus covers additional languages that are not included in the graph. |
+| ![Figure 4](assets/papers-explained-99-bloomz-mt0/fig-4.webp) | Comparison of dataset variants P3, xP3, and xP3mt on a sample from PAWS for P3 and PAWS-X for xP3 and xP3mt. |
+| ![Figure 5](assets/papers-explained-99-bloomz-mt0/fig-5.webp) | Zero-shot multilingual task generalization with English prompts. |
+| ![Figure 6](assets/papers-explained-99-bloomz-mt0/fig-6.webp) | Zero-shot task and language generalization using English prompts on tasks and languages not intentionally seen during pretraining nor finetuning. |
+| ![Figure 7](assets/papers-explained-99-bloomz-mt0/fig-7.webp) | Comparison between EN (English), MT (machine-translated) and HT (human-translated) prompts for 176B BLOOMZ and 13B mT0 models finetuned on either only English or English and machine-translated multilingual prompts (-MT). |
+| ![Figure 8](assets/papers-explained-99-bloomz-mt0/fig-8.webp) | Aggregate performance vs. size. Transparent lines correspond to individual languages, while thick lines are average accuracy scores. |
+| ![Figure 9](assets/papers-explained-99-bloomz-mt0/fig-9.webp) | Validation performance during training on natural language understanding (NLU) and natural language generation (NLG) tasks. |
+| ![Figure 10](assets/papers-explained-99-bloomz-mt0/fig-10.webp) | Code continuation on HumanEval. |
+| ![Figure 11](assets/papers-explained-99-bloomz-mt0/fig-11.webp) | Performance across languages by size in the BLOOM pretraining corpus, ROOTS. |
 ## Related
 
 - [[Papers Explained Corpus]]

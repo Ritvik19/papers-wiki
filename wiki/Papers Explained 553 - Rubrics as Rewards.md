@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-04-01_Papers-Explained-553--Rubrics-as-Rewards-229ff69f7355.html`
+- Source file: `raw/2026-04-01_Papers-Explained-553--Rubrics-as-Rewards-229ff69f7355.md`
 - Source title: Papers Explained 553: Rubrics as Rewards
 - Published: 2026-04-01
 - Canonical: [https://medium.com/@ritvik19/papers-explained-553-rubrics-as-rewards-229ff69f7355](https://medium.com/@ritvik19/papers-explained-553-rubrics-as-rewards-229ff69f7355)
@@ -165,17 +165,17 @@ Rubrics as Rewards: Reinforcement Learning Beyond Verifiable Domains [2507.17746
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-04-01_Papers-Explained-553--Rubrics-as-Rewards-229ff69f7355.html`); local copies under `wiki/assets/papers-explained-553-rubrics-as-rewards/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-04-01_Papers-Explained-553--Rubrics-as-Rewards-229ff69f7355.md`); local copies under `wiki/assets/papers-explained-553-rubrics-as-rewards/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-553-rubrics-as-rewards/fig-1.png) | Title card: Rubrics as Rewards. |
-| ![Figure 2](assets/papers-explained-553-rubrics-as-rewards/fig-2.png) | Normalization makes rewards comparable across prompts that differ in rubric count or weights. |
-| ![Figure 3](assets/papers-explained-553-rubrics-as-rewards/fig-3.png) | Here, fϕ denotes an LLM-based judge that takes the prompt x, the response y^, and the set of rubric criteria dj as input. |
-| ![Figure 4](assets/papers-explained-553-rubrics-as-rewards/fig-4.png) | Overview of Rubrics as Rewards. |
-| ![Figure 5](assets/papers-explained-553-rubrics-as-rewards/fig-5.png) | GRPO hyperparameter settings for Medical and Science domains. |
-| ![Figure 6](assets/papers-explained-553-rubrics-as-rewards/fig-6.png) | Performance of baselines and RaR (Rubrics as Rewards) variants for the medicine and science domains. |
-| ![Figure 7](assets/papers-explained-553-rubrics-as-rewards/fig-7.png) | Alignment Study of LLM Judges across Model Scales. |
+| ![Figure 1](assets/papers-explained-553-rubrics-as-rewards/fig-1.webp) | Title card: Rubrics as Rewards. |
+| ![Figure 2](assets/papers-explained-553-rubrics-as-rewards/fig-2.webp) | Normalization makes rewards comparable across prompts that differ in rubric count or weights. |
+| ![Figure 3](assets/papers-explained-553-rubrics-as-rewards/fig-3.webp) | Here, fϕ denotes an LLM-based judge that takes the prompt x, the response y^, and the set of rubric criteria dj as input. |
+| ![Figure 4](assets/papers-explained-553-rubrics-as-rewards/fig-4.webp) | Overview of Rubrics as Rewards. |
+| ![Figure 5](assets/papers-explained-553-rubrics-as-rewards/fig-5.webp) | GRPO hyperparameter settings for Medical and Science domains. |
+| ![Figure 6](assets/papers-explained-553-rubrics-as-rewards/fig-6.webp) | Performance of baselines and RaR (Rubrics as Rewards) variants for the medicine and science domains. |
+| ![Figure 7](assets/papers-explained-553-rubrics-as-rewards/fig-7.webp) | Alignment Study of LLM Judges across Model Scales. |
 ## Related
 
 - [[Papers Explained Corpus]]

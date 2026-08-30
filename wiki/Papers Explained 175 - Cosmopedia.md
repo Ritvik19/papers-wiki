@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-05_Papers-Explained-175--Cosmopedia-5f7e81c76d14.html`
+- Source file: `raw/2024-08-05_Papers-Explained-175--Cosmopedia-5f7e81c76d14.md`
 - Source title: Papers Explained 175: Cosmopedia
 - Published: 2024-08-05
 - Canonical: [https://medium.com/@ritvik19/papers-explained-175-cosmopedia-5f7e81c76d14](https://medium.com/@ritvik19/papers-explained-175-cosmopedia-5f7e81c76d14)
@@ -123,18 +123,18 @@ Recommended Reading [Datasets](https://ritvik19.medium.com/list/datasets-b465a5d
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-05_Papers-Explained-175--Cosmopedia-5f7e81c76d14.html`); local copies under `wiki/assets/papers-explained-175-cosmopedia/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-05_Papers-Explained-175--Cosmopedia-5f7e81c76d14.md`); local copies under `wiki/assets/papers-explained-175-cosmopedia/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-175-cosmopedia/fig-1.png) | Hugging Face blog header: **Cosmopedia** — large-scale synthetic pre-training data (March 2024). |
-| ![Figure 2](assets/papers-explained-175-cosmopedia/fig-2.png) | **Prompt sources**: web vs curated vs instruction (pie); **curated** breakdown (Stanford, WikiHow, OpenStax, Khan Academy). |
-| ![Figure 3](assets/papers-explained-175-cosmopedia/fig-3.png) | Same textbook unit (**“Why go to space?”**) with prompts for **children**, **researchers**, and **high school** audiences. |
-| ![Figure 4](assets/papers-explained-175-cosmopedia/fig-4.png) | **Web seed** (medicine blurb + topic) → long **blog-post** generation prompt (inform / engage / illustrate rules). |
-| ![Figure 5](assets/papers-explained-175-cosmopedia/fig-5.png) | **Story prompts** from instruction-tuning seeds: young children, mature audience, **Reddit-style** thread. |
-| ![Figure 6](assets/papers-explained-175-cosmopedia/fig-6.png) | **text-clustering** pipeline: sample → sentence-transformers embed → **UMAP** → **DBSCAN** → Mixtral cluster labels → plot. |
-| ![Figure 7](assets/papers-explained-175-cosmopedia/fig-7.png) | **Decontamination** counts removed per benchmark split (ARC, BoolQ, HellaSwag, PIQA) by Cosmopedia slice (parentheticals = unique benchmark items). |
-| ![Figure 8](assets/papers-explained-175-cosmopedia/fig-8.png) | **Cosmo-1B** vs TinyLlama / Qwen1.5 / **Phi-1.5** on common-sense and knowledge benchmarks (two result tables). |
+| ![Figure 1](assets/papers-explained-175-cosmopedia/fig-1.webp) | Hugging Face blog header: **Cosmopedia** — large-scale synthetic pre-training data (March 2024). |
+| ![Figure 2](assets/papers-explained-175-cosmopedia/fig-2.webp) | **Prompt sources**: web vs curated vs instruction (pie); **curated** breakdown (Stanford, WikiHow, OpenStax, Khan Academy). |
+| ![Figure 3](assets/papers-explained-175-cosmopedia/fig-3.webp) | Same textbook unit (**“Why go to space?”**) with prompts for **children**, **researchers**, and **high school** audiences. |
+| ![Figure 4](assets/papers-explained-175-cosmopedia/fig-4.webp) | **Web seed** (medicine blurb + topic) → long **blog-post** generation prompt (inform / engage / illustrate rules). |
+| ![Figure 5](assets/papers-explained-175-cosmopedia/fig-5.webp) | **Story prompts** from instruction-tuning seeds: young children, mature audience, **Reddit-style** thread. |
+| ![Figure 6](assets/papers-explained-175-cosmopedia/fig-6.webp) | **text-clustering** pipeline: sample → sentence-transformers embed → **UMAP** → **DBSCAN** → Mixtral cluster labels → plot. |
+| ![Figure 7](assets/papers-explained-175-cosmopedia/fig-7.webp) | **Decontamination** counts removed per benchmark split (ARC, BoolQ, HellaSwag, PIQA) by Cosmopedia slice (parentheticals = unique benchmark items). |
+| ![Figure 8](assets/papers-explained-175-cosmopedia/fig-8.webp) | **Cosmo-1B** vs TinyLlama / Qwen1.5 / **Phi-1.5** on common-sense and knowledge benchmarks (two result tables). |
 ## HF Blog Cross-References
 
 - [Cosmopedia: how to create large-scale synthetic data for pre-training](https://huggingface.co/blog/cosmopedia) — this is the primary source already cited above (see the "Paper" section); no separate content to add.

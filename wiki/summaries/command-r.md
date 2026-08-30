@@ -1,6 +1,6 @@
 # Command R: Retrieval-Augmented Generation at Production Scale
 
-**Source**: `raw/command-r/full-article.html` (342 KB), `raw/command-r/full-article.md` (markdown view)  
+**Source**: `raw/command-r/full-article.md` (342 KB), `raw/command-r/full-article.md` (markdown view)  
 **URL**: https://cohere.com/blog/command-r  
 **Published**: 2024-03-11  
 **Ingested**: 2026-06-06  
@@ -29,14 +29,14 @@ Command R supports **128k-token** context, **10 major business languages** (Engl
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/command-r/fig-1.png) | RAG evaluation: (left) head-to-head human preference on enterprise RAG apps (fluency, utility, citations); (right) end-to-end accuracy on Natural Questions, TriviaQA, and HotpotQA | — |
-| ![fig-2](../assets/command-r/fig-2.png) | Tool-use evaluation: accuracy on 3-shot multi-hop REACT agents | — |
+| ![fig-1](../assets/command-r/fig-1.webp) | RAG evaluation: (left) head-to-head human preference on enterprise RAG apps (fluency, utility, citations); (right) end-to-end accuracy on Natural Questions, TriviaQA, and HotpotQA | — |
+| ![fig-2](../assets/command-r/fig-2.webp) | Tool-use evaluation: accuracy on 3-shot multi-hop REACT agents | — |
 
-![RAG benchmarks](../assets/command-r/fig-1.png)
+![RAG benchmarks](../assets/command-r/fig-1.webp)
 
 Command R leads scalable-model peers on enterprise RAG preference and multi-hop QA benchmarks; the full Embed + Rerank + Command R stack widens the margin on harder retrieval domains.
 
-![Tool-use benchmarks](../assets/command-r/fig-2.png)
+![Tool-use benchmarks](../assets/command-r/fig-2.webp)
 
 On multi-hop REACT agent tasks, Command R demonstrates strong tool-use accuracy for automating workflows across external APIs and internal systems—core to [[Agentic AI]] deployments.
 

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-01-01_Papers-Explained-514--HelpSteer-3-e2ba71915370.html`
+- Source file: `raw/2026-01-01_Papers-Explained-514--HelpSteer-3-e2ba71915370.md`
 - Source title: Papers Explained 514: HelpSteer 3
 - Published: 2026-01-01
 - Canonical: [https://medium.com/@ritvik19/papers-explained-514-helpsteer-3-e2ba71915370](https://medium.com/@ritvik19/papers-explained-514-helpsteer-3-e2ba71915370)
@@ -131,14 +131,14 @@ HelpSteer3: Human-Annotated Feedback and Edit Data to Empower Inference-Time Sca
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-01-01_Papers-Explained-514--HelpSteer-3-e2ba71915370.html`); local copies under `wiki/assets/papers-explained-514-helpsteer-3/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-01-01_Papers-Explained-514--HelpSteer-3-e2ba71915370.md`); local copies under `wiki/assets/papers-explained-514-helpsteer-3/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-514-helpsteer-3/fig-1.png) | Title card: HelpSteer 3. |
-| ![Figure 2](assets/papers-explained-514-helpsteer-3/fig-2.png) | Descriptive Statistics for Feedback and Edit Demonstration datasets. |
-| ![Figure 3](assets/papers-explained-514-helpsteer-3/fig-3.png) | Descriptive statistics for Edit Preference data. |
-| ![Figure 4](assets/papers-explained-514-helpsteer-3/fig-4.png) | Applying Feedback and Edit models with various Instruct models. |
+| ![Figure 1](assets/papers-explained-514-helpsteer-3/fig-1.webp) | Title card: HelpSteer 3. |
+| ![Figure 2](assets/papers-explained-514-helpsteer-3/fig-2.webp) | Descriptive Statistics for Feedback and Edit Demonstration datasets. |
+| ![Figure 3](assets/papers-explained-514-helpsteer-3/fig-3.webp) | Descriptive statistics for Edit Preference data. |
+| ![Figure 4](assets/papers-explained-514-helpsteer-3/fig-4.webp) | Applying Feedback and Edit models with various Instruct models. |
 ## Related
 
 - [[Papers Explained Corpus]]

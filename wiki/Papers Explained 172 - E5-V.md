@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-07-31_Papers-Explained-172--E5-V-9947d3925802.html`
+- Source file: `raw/2024-07-31_Papers-Explained-172--E5-V-9947d3925802.md`
 - Source title: Papers Explained 172: E5-V
 - Published: 2024-07-31
 - Canonical: [https://medium.com/@ritvik19/papers-explained-172-e5-v-9947d3925802](https://medium.com/@ritvik19/papers-explained-172-e5-v-9947d3925802)
@@ -109,21 +109,21 @@ Recommended Reading [Retrieval and Representation Learning](https://ritvik19.med
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-07-31_Papers-Explained-172--E5-V-9947d3925802.html`); local copies under `wiki/assets/papers-explained-172-e5-v/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-07-31_Papers-Explained-172--E5-V-9947d3925802.md`); local copies under `wiki/assets/papers-explained-172-e5-v/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-172-e5-v/fig-1.png) | Paper title: **E5-V: Universal Embeddings with Multimodal Large Language Models** (authors / Microsoft link). |
-| ![Figure 2](assets/papers-explained-172-e5-v/fig-2.png) | **MLLM** maps text, image, and interleaved prompts to dots in a shared **2D semantic** layout (“Plane” vs “Window/Dog” regions). |
-| ![Figure 3](assets/papers-explained-172-e5-v/fig-3.png) | **Modality gap**: image vs text clusters **without** the method vs **overlapping** embeddings **with** the one-word-summary prompts. |
-| ![Figure 4](assets/papers-explained-172-e5-v/fig-4.png) | **Text-only contrastive** pretrain on the LLM, then **transfer** to MLLM with vision encoder + projection; zero-shot multimodal prompts. |
-| ![Figure 5](assets/papers-explained-172-e5-v/fig-5.png) | **Contrastive loss** \(\mathcal{L}\): cosine similarities of anchors \(h_i\) to positives \(h^+\) and batch negatives \(h^\pm\), temperature \(\tau\). |
-| ![Figure 6](assets/papers-explained-172-e5-v/fig-6.png) | **Zero-shot text–image retrieval** on **Flickr30K** and **COCO** (image vs text retrieval); E5-V trained **only** on text pairs. |
-| ![Figure 7](assets/papers-explained-172-e5-v/fig-7.png) | **Composed-image retrieval** prompt patterns for **FashionIQ** and **CIRR** (`<image>` + modify text → “describe in one word”). |
-| ![Figure 8](assets/papers-explained-172-e5-v/fig-8.png) | **CIRR** **Recall@K** (K=1,5,10,50): E5-V vs Pic2Word, Context-I2W, iSEARLE-XL, etc. |
-| ![Figure 9](assets/papers-explained-172-e5-v/fig-9.png) | **FashionIQ** per-category **R@10 / R@50** (shirt, dress, toptee) and average. |
-| ![Figure 10](assets/papers-explained-172-e5-v/fig-10.png) | **Image–image** retrieval on **I2I-Flickr30K** / **I2I-COCO**: plain images vs **text rendered as image**. |
-| ![Figure 11](assets/papers-explained-172-e5-v/fig-11.png) | **Sentence embeddings** on **STS** tasks (STS12–16, STS-B, SICK-R): E5-V vs SimCSE, SGPT, ST5-Enc, PromptEOL. |
+| ![Figure 1](assets/papers-explained-172-e5-v/fig-1.webp) | Paper title: **E5-V: Universal Embeddings with Multimodal Large Language Models** (authors / Microsoft link). |
+| ![Figure 2](assets/papers-explained-172-e5-v/fig-2.webp) | **MLLM** maps text, image, and interleaved prompts to dots in a shared **2D semantic** layout (“Plane” vs “Window/Dog” regions). |
+| ![Figure 3](assets/papers-explained-172-e5-v/fig-3.webp) | **Modality gap**: image vs text clusters **without** the method vs **overlapping** embeddings **with** the one-word-summary prompts. |
+| ![Figure 4](assets/papers-explained-172-e5-v/fig-4.webp) | **Text-only contrastive** pretrain on the LLM, then **transfer** to MLLM with vision encoder + projection; zero-shot multimodal prompts. |
+| ![Figure 5](assets/papers-explained-172-e5-v/fig-5.webp) | **Contrastive loss** \(\mathcal{L}\): cosine similarities of anchors \(h_i\) to positives \(h^+\) and batch negatives \(h^\pm\), temperature \(\tau\). |
+| ![Figure 6](assets/papers-explained-172-e5-v/fig-6.webp) | **Zero-shot text–image retrieval** on **Flickr30K** and **COCO** (image vs text retrieval); E5-V trained **only** on text pairs. |
+| ![Figure 7](assets/papers-explained-172-e5-v/fig-7.webp) | **Composed-image retrieval** prompt patterns for **FashionIQ** and **CIRR** (`<image>` + modify text → “describe in one word”). |
+| ![Figure 8](assets/papers-explained-172-e5-v/fig-8.webp) | **CIRR** **Recall@K** (K=1,5,10,50): E5-V vs Pic2Word, Context-I2W, iSEARLE-XL, etc. |
+| ![Figure 9](assets/papers-explained-172-e5-v/fig-9.webp) | **FashionIQ** per-category **R@10 / R@50** (shirt, dress, toptee) and average. |
+| ![Figure 10](assets/papers-explained-172-e5-v/fig-10.webp) | **Image–image** retrieval on **I2I-Flickr30K** / **I2I-COCO**: plain images vs **text rendered as image**. |
+| ![Figure 11](assets/papers-explained-172-e5-v/fig-11.webp) | **Sentence embeddings** on **STS** tasks (STS12–16, STS-B, SICK-R): E5-V vs SimCSE, SGPT, ST5-Enc, PromptEOL. |
 ## Related
 
 - [[Papers Explained Corpus]]

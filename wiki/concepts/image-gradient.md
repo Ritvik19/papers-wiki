@@ -41,7 +41,7 @@ Center 255, neighbors yielding \(g_x = 55-105 = -50\), \(g_y = 90-40 = 50\):
 \|g\|_2 \approx 70.71, \quad \theta = -45^\circ
 \]
 
-![Pixel gradient example](../assets/2017-10-29-object-recognition-part-1/fig-1.png)
+![Pixel gradient example](../assets/2017-10-29-object-recognition-part-1/fig-1.webp)
 
 ## Convolution form
 
@@ -76,7 +76,7 @@ G_x = \begin{bmatrix} -1 & 0 & +1 \\ -2 & 0 & +2 \\ -1 & 0 & +1 \end{bmatrix} * 
 G_y = \begin{bmatrix} +1 & +2 & +1 \\ 0 & 0 & 0 \\ -1 & -2 & -1 \end{bmatrix} * A
 \]
 
-![Sobel Gx and Gy](../assets/2017-10-29-object-recognition-part-1/fig-2.png) ![Sobel outputs](../assets/2017-10-29-object-recognition-part-1/fig-3.png)
+![Sobel Gx and Gy](../assets/2017-10-29-object-recognition-part-1/fig-2.webp) ![Sobel outputs](../assets/2017-10-29-object-recognition-part-1/fig-3.webp)
 
 ## Display scaling
 

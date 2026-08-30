@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-11-06_Papers-Explained-246--BROS-1f1127476f73.html`
+- Source file: `raw/2024-11-06_Papers-Explained-246--BROS-1f1127476f73.md`
 - Source title: Papers Explained 246: BROS
 - Published: 2024-11-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-246-bros-1f1127476f73](https://medium.com/@ritvik19/papers-explained-246-bros-1f1127476f73)
@@ -73,17 +73,17 @@ Recommended Reading [Document Information Processing](https://ritvik19.medium.co
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-11-06_Papers-Explained-246--BROS-1f1127476f73.html`); local copies under `wiki/assets/papers-explained-246-bros/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-11-06_Papers-Explained-246--BROS-1f1127476f73.md`); local copies under `wiki/assets/papers-explained-246-bros/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-246-bros/fig-1.png) | Title card: BROS. |
-| ![Figure 2](assets/papers-explained-246-bros/fig-2.png) | An overview of BROS. The tokens in the document image are masked through token- and area-masking strategy. The position difference between text blocks is encoded directly to the attention mechanism in Transformer. The output token representations are used in both pre-training and fine-tuning. |
-| ![Figure 3](assets/papers-explained-246-bros/fig-3.png) | the relative positions of j th bounding box based on the i th bounding box are represented with the four vectors. |
-| ![Figure 4](assets/papers-explained-246-bros/fig-4.png) | the relative positions of j th bounding box based on the i th bounding box are represented with the four vectors. |
-| ![Figure 5](assets/papers-explained-246-bros/fig-5.png) | Finally, BROS combines the four relative positions by applying a linear transformation, bbi,j. |
-| ![Figure 6](assets/papers-explained-246-bros/fig-6.png) | BROS directly encodes the spatial relations to the contextualization of text blocks. |
-| ![Figure 7](assets/papers-explained-246-bros/fig-7.png) | Illustrations of two masking strategies. The blue boxes represent text blocks including masked tokens. In both figures, 15% of tokens are masked. |
+| ![Figure 1](assets/papers-explained-246-bros/fig-1.webp) | Title card: BROS. |
+| ![Figure 2](assets/papers-explained-246-bros/fig-2.webp) | An overview of BROS. The tokens in the document image are masked through token- and area-masking strategy. The position difference between text blocks is encoded directly to the attention mechanism in Transformer. The output token representations are used in both pre-training and fine-tuning. |
+| ![Figure 3](assets/papers-explained-246-bros/fig-3.webp) | the relative positions of j th bounding box based on the i th bounding box are represented with the four vectors. |
+| ![Figure 4](assets/papers-explained-246-bros/fig-4.webp) | the relative positions of j th bounding box based on the i th bounding box are represented with the four vectors. |
+| ![Figure 5](assets/papers-explained-246-bros/fig-5.webp) | Finally, BROS combines the four relative positions by applying a linear transformation, bbi,j. |
+| ![Figure 6](assets/papers-explained-246-bros/fig-6.webp) | BROS directly encodes the spatial relations to the contextualization of text blocks. |
+| ![Figure 7](assets/papers-explained-246-bros/fig-7.webp) | Illustrations of two masking strategies. The blue boxes represent text blocks including masked tokens. In both figures, 15% of tokens are masked. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -23,10 +23,9 @@ Confirm the file is a new ingest candidate and derive the destination path in `r
 Derive a stable kebab-case slug from the article (typically the URL's last path segment, lowercased and de-duped). Examples: a Cursor blog post at
 `cursor.com/blog/continually-improving-agent-harness` becomes `continually-improving-agent-harness`; an X article gets a `<author>-<title>` slug as in Step 3c.
 
-Create `raw/<slug>/` and download the canonical artifacts directly into it:
+Create `raw/<slug>/` and save the canonical artifact:
 
-- `raw/<slug>/full-article.html` — the original HTML, fetched with `curl -fsSL` and a normal `User-Agent`.
-- `raw/<slug>/full-article.md` — a readable markdown extraction. Prefer the WebFetch tool's markdown output, or run a markdown converter (e.g. `pandoc`, `readability`) over the saved HTML. The markdown is a convenience view; the HTML is canonical.
+- `raw/<slug>/full-article.md` — readable markdown extraction. Fetch HTML with `curl -fsSL` (or WebFetch) into a **temp file only**, convert to markdown (pandoc, WebFetch markdown, or html-to-text), then write `full-article.md`. **Do not** keep `full-article.html` in `raw/`.
 
 Do not store unrelated assets (fonts, scripts, avatars, OpenGraph/preview images, navigation chrome). Only article figures referenced from the article body should be saved (see Step 3b).
 
@@ -46,7 +45,7 @@ After the move (or initial save):
 - Use the `raw/` path in all wiki metadata, logs, and follow-up references
 
 Exception for browser exports: if the inbox source is a saved web page export with a companion assets directory, you may use the export as a staging source to create a clean canonical raw artifact. 
-Preserve only the cleaned article HTML; do not keep unused browser runtime files, avatars, preloaded JavaScript bundles, fonts, or unrelated page chrome unless the user explicitly asks for a forensic copy of the original export.
+Preserve only the cleaned article body as markdown; do not keep unused browser runtime files, avatars, preloaded JavaScript bundles, fonts, or unrelated page chrome unless the user explicitly asks for a forensic copy of the original export.
 
 Large source binaries (PDF, MP4) may be kept locally under `raw/` but are gitignored after ingest. Record the local path and any public URL on the wiki summary page; extracted figures still go to `wiki/assets/`.
 
@@ -62,11 +61,11 @@ Scan the source document for any embedded images, figures, diagrams,
 charts, or screenshots.
 
 For each image found:
-1. Extract it and save to `wiki/assets/<source-slug>/fig-<N>.<ext>` 
-   where N is a sequential number (fig-1.png, fig-2.png, etc.)
+1. Extract it and save to `wiki/assets/<source-slug>/fig-<N>.webp`
+   (use `.gif` or `.svg` only when the source requires animation or vector fidelity)
 2. Generate a short descriptive filename alias based on what the image 
    shows — store this in a local mapping for use in the summary page.
-   Example: fig-1.png → "transformer-architecture-overview"
+   Example: fig-1.webp → "transformer-architecture-overview"
 3. Write a one-line caption describing what the image shows.
 
 Image extraction strategy by file type:
@@ -76,13 +75,13 @@ Image extraction strategy by file type:
   or `ppt/media/`.
 - **Markdown / HTML**: copy any locally referenced images; 
   note any remote URLs.
-- **Fetched web article (URL ingest)**: parse `raw/<slug>/full-article.html` for
+- **Fetched web article (URL ingest)**: parse the fetched HTML (temp file or in-memory) for
   `<img>`, `<figure>`, `<source>`, and `srcSet` URLs that sit inside the article
   body. Download each unique article figure (and dark-mode variant when
-  present) into `wiki/assets/<slug>/fig-<N>.<ext>` only — do not create
-  `raw/<slug>/images/`. Rewrite `<img src>` in `full-article.html` to
-  `../../wiki/assets/<slug>/fig-<N>.<ext>`. Suffix dark-mode variants
-  `fig-<N>-dark.<ext>` so the light version remains the canonical reference.
+  present) into `wiki/assets/<slug>/fig-<N>.webp` only — do not create
+  `raw/<slug>/images/`. Reference figures from wiki pages as
+  `../assets/<slug>/fig-<N>.webp`. Suffix dark-mode variants
+  `fig-<N>-dark.webp` so the light version remains the canonical reference.
   Skip avatar images,
   navigation chrome, OpenGraph/preview images, related-post thumbnails, and
   CDN-rewritten next/image URLs that resolve to those assets. If the markdown
@@ -90,10 +89,9 @@ Image extraction strategy by file type:
   pages), prefer the figures discovered in the HTML and treat them as the
   authoritative figure set.
 - **X/Twitter article browser export**: treat the export as a noisy rendered
-  source. Extract longform article blocks in document order, save a readable
-  `raw/<source-slug>/full-article.html`, and save article figures only to
-  `wiki/assets/<source-slug>/fig-<N>.<ext>`. Point `full-article.html` image
-  refs at `../../wiki/assets/<source-slug>/fig-<N>.<ext>`. Exclude profile photos, avatars,
+  source. Extract longform article blocks in document order, save
+  `raw/<source-slug>/full-article.md`, and save article figures only to
+  `wiki/assets/<source-slug>/fig-<N>.webp`. Exclude profile photos, avatars,
   scripts, fonts, and unrelated `X_files/` assets from the final raw directory.
   If the export contains remote media URLs, download those images and store them
   with the same `fig-<N>` convention instead of linking to remote media.
@@ -108,45 +106,32 @@ When ingesting an X/Twitter article from a local browser export:
 
 1. Derive a stable slug from the author and title, for example
    `will-brown-on-sft-rl-on-policy-distillation`.
-2. Create `raw/<source-slug>/full-article.html` as the canonical readable raw
-   source. It should contain:
-   - Article title, author/date metadata, and source URL
-   - The article body in document order
-   - Image references under `../../wiki/assets/<source-slug>/fig-<N>.<ext>`
-   - Minimal inline CSS needed for readability
+2. Create `raw/<source-slug>/full-article.md` as the canonical readable raw
+   source with article title, author/date metadata, source URL, and body in
+   document order.
 3. Create `wiki/assets/<source-slug>/` with exactly the figures referenced by
-   `full-article.html`. Do not create `raw/<source-slug>/images/`.
+   the wiki summary. Do not create `raw/<source-slug>/images/`.
 4. Remove or skip unused export artifacts before finishing:
    - `browser-export/`, `X_files/`, scripts, fonts, preloads
    - profile/avatar images
-   - images not referenced by `full-article.html`
-5. Verify `full-article.html` has no stale references to removed files and that
-   every `<img src="../../wiki/assets/...">` exists on disk.
-6. In wiki pages and `log.md`, reference the readable raw source path, not a
+   - images not referenced by the wiki summary
+5. In wiki pages and `log.md`, reference `raw/<source-slug>/full-article.md`, not a
    removed browser-export path.
 
 ### Step 3d. Fetched web article cleanup
 When ingesting a public web article via URL (Step 1b):
 
-1. Confirm `raw/<slug>/full-article.html` exists and was downloaded with a normal
-   `User-Agent`. Note its byte size and the source URL in the wiki summary.
-2. If a markdown extraction was saved alongside it as `raw/<slug>/full-article.md`,
-   keep both. The HTML is canonical; the markdown is a readability aid. Do not
-   edit either after writing.
-3. Verify the downloaded HTML contains the article body, not a login wall or a
+1. Confirm `raw/<slug>/full-article.md` exists. Note its byte size and the source URL in the wiki summary.
+2. Verify the markdown contains the article body, not a login wall or a
    skeleton SPA shell. A reliable check: search for a known phrase from the
    user's request or the page title. If the body is missing, stop and ask the
    user for a saved browser export instead of silently writing wiki pages from
-   the markdown alone.
-4. Discover article figures from the HTML (see Step 3b's "Fetched web article"
-   bullet). Save them under `wiki/assets/<slug>/fig-<N>.<ext>` only. Update
-   `full-article.html` image `src` attributes to
-   `../../wiki/assets/<slug>/fig-<N>.<ext>`. Do not download avatars,
+   incomplete extraction.
+3. Discover article figures from the fetched HTML (see Step 3b's "Fetched web article"
+   bullet). Save them under `wiki/assets/<slug>/fig-<N>.webp` only. Do not download avatars,
    OpenGraph images, related-post thumbnails, fonts, or scripts.
-5. Reference the HTML path as the canonical raw source in the wiki summary
-   page. Reference the markdown path as a secondary view if you saved one.
-6. In `log.md`, list both the HTML and any markdown sibling. Note which
-   figures were saved and how many.
+4. Reference `raw/<slug>/full-article.md` as the canonical raw source in the wiki summary page.
+5. In `log.md`, list the markdown path. Note which figures were saved and how many.
 
 ### 4. Create the summary page
 Create `wiki/summaries/<slug>.md` where `<slug>` is a kebab-case version of 
@@ -156,7 +141,7 @@ Page format:
 ```
 # <Title>
 
-**Source**: `raw/<filename>` (or `raw/<slug>/full-article.html` for URL ingests; list both HTML and markdown when both exist)  
+**Source**: `raw/<filename>` (or `raw/<slug>/full-article.md` for URL ingests)  
 **Ingested**: <YYYY-MM-DD>  
 **Tags**: #summary
 
@@ -169,11 +154,11 @@ Page format:
 ## Figures
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/<source-slug>/fig-1.png) | <caption> | <page no.> |
-| ![fig-2](../assets/<source-slug>/fig-2.png) | <caption> | <page no.> |
+| ![fig-1](../assets/<source-slug>/fig-1.webp) | <caption> | <page no.> |
+| ![fig-2](../assets/<source-slug>/fig-2.webp) | <caption> | <page no.> |
 
 > Reference figures inline in the text above using 
-> ![caption](../assets/<source-slug>/fig-N.png) wherever the figure 
+> ![caption](../assets/<source-slug>/fig-N.webp) wherever the figure 
 > is directly relevant to a claim.
 
 ## Entities

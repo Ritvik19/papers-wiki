@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-10-31_Papers-Explained-482--Agent-Foundation-Models--Chain-of-Agents--725db27dc0e5.html`
+- Source file: `raw/2025-10-31_Papers-Explained-482--Agent-Foundation-Models--Chain-of-Agents--725db27dc0e5.md`
 - Source title: Papers Explained 482: Agent Foundation Models (Chain-of-Agents)
 - Published: 2025-10-31
 - Canonical: [https://medium.com/@ritvik19/papers-explained-482-agent-foundation-models-chain-of-agents-725db27dc0e5](https://medium.com/@ritvik19/papers-explained-482-agent-foundation-models-chain-of-agents-725db27dc0e5)
@@ -287,23 +287,23 @@ Chain-of-Agents: End-to-End Agent Foundation Models via Multi-Agent Distillation
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-10-31_Papers-Explained-482--Agent-Foundation-Models--Chain-of-Agents--725db27dc0e5.html`); local copies under `wiki/assets/papers-explained-482-agent-foundation-models-chain-of-agents/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-10-31_Papers-Explained-482--Agent-Foundation-Models--Chain-of-Agents--725db27dc0e5.md`); local copies under `wiki/assets/papers-explained-482-agent-foundation-models-chain-of-agents/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-482-agent-foundation-models-chain-of-agents/fig-1.png) | Title card: Agent Foundation Models (Chain-of-Agents). |
-| ![Figure 2](assets/papers-explained-482-agent-foundation-models-chain-of-agents/fig-2.png) | Illustration of TIR and CoA paradigms. |
-| ![Figure 3](assets/papers-explained-482-agent-foundation-models-chain-of-agents/fig-3.png) | CoA consists of two core components:: where St maintains persistent reasoning state, and ϕt ∈ {ϕthink, ϕplan, ϕsearch,...} denotes activated roles. |
-| ![Figure 4](assets/papers-explained-482-agent-foundation-models-chain-of-agents/fig-4.png) | Overview of the training framework. |
-| ![Figure 5](assets/papers-explained-482-agent-foundation-models-chain-of-agents/fig-5.png) | Illustration of the proposed multi-agent distillation framework. |
-| ![Figure 6](assets/papers-explained-482-agent-foundation-models-chain-of-agents/fig-6.png) | The training objective minimizes. |
-| ![Figure 7](assets/papers-explained-482-agent-foundation-models-chain-of-agents/fig-7.png) | Qwen-2.5-72B-Instruct is used to evaluate question solvability without tool assistance. For each query q in the QA dataset. |
-| ![Figure 8](assets/papers-explained-482-agent-foundation-models-chain-of-agents/fig-8.png) | Code Agent Reward Function. |
-| ![Figure 9](assets/papers-explained-482-agent-foundation-models-chain-of-agents/fig-9.png) | The reward function, Rcode(τ), considers both answer correctness and format correctness. |
-| ![Figure 10](assets/papers-explained-482-agent-foundation-models-chain-of-agents/fig-10.png) | Main results on 7 Multi-hop Question Answering (MHQA) benchmarks. |
-| ![Figure 11](assets/papers-explained-482-agent-foundation-models-chain-of-agents/fig-11.png) | Results on agentic benchmarks including GAIA, WebWalker, BrowseComp and HLE. |
-| ![Figure 12](assets/papers-explained-482-agent-foundation-models-chain-of-agents/fig-12.png) | SFT performance comparison of 32B models. |
-| ![Figure 13](assets/papers-explained-482-agent-foundation-models-chain-of-agents/fig-13.png) | Results comparison of mathematical benchmarks. |
+| ![Figure 1](assets/papers-explained-482-agent-foundation-models-chain-of-agents/fig-1.webp) | Title card: Agent Foundation Models (Chain-of-Agents). |
+| ![Figure 2](assets/papers-explained-482-agent-foundation-models-chain-of-agents/fig-2.webp) | Illustration of TIR and CoA paradigms. |
+| ![Figure 3](assets/papers-explained-482-agent-foundation-models-chain-of-agents/fig-3.webp) | CoA consists of two core components:: where St maintains persistent reasoning state, and ϕt ∈ {ϕthink, ϕplan, ϕsearch,...} denotes activated roles. |
+| ![Figure 4](assets/papers-explained-482-agent-foundation-models-chain-of-agents/fig-4.webp) | Overview of the training framework. |
+| ![Figure 5](assets/papers-explained-482-agent-foundation-models-chain-of-agents/fig-5.webp) | Illustration of the proposed multi-agent distillation framework. |
+| ![Figure 6](assets/papers-explained-482-agent-foundation-models-chain-of-agents/fig-6.webp) | The training objective minimizes. |
+| ![Figure 7](assets/papers-explained-482-agent-foundation-models-chain-of-agents/fig-7.webp) | Qwen-2.5-72B-Instruct is used to evaluate question solvability without tool assistance. For each query q in the QA dataset. |
+| ![Figure 8](assets/papers-explained-482-agent-foundation-models-chain-of-agents/fig-8.webp) | Code Agent Reward Function. |
+| ![Figure 9](assets/papers-explained-482-agent-foundation-models-chain-of-agents/fig-9.webp) | The reward function, Rcode(τ), considers both answer correctness and format correctness. |
+| ![Figure 10](assets/papers-explained-482-agent-foundation-models-chain-of-agents/fig-10.webp) | Main results on 7 Multi-hop Question Answering (MHQA) benchmarks. |
+| ![Figure 11](assets/papers-explained-482-agent-foundation-models-chain-of-agents/fig-11.webp) | Results on agentic benchmarks including GAIA, WebWalker, BrowseComp and HLE. |
+| ![Figure 12](assets/papers-explained-482-agent-foundation-models-chain-of-agents/fig-12.webp) | SFT performance comparison of 32B models. |
+| ![Figure 13](assets/papers-explained-482-agent-foundation-models-chain-of-agents/fig-13.webp) | Results comparison of mathematical benchmarks. |
 ## Related
 
 - [[Papers Explained Corpus]]

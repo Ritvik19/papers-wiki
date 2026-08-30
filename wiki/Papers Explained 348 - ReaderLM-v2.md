@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-04-16_Papers-Explained-348--ReaderLM-v2-b5bed3f57fbe.html`
+- Source file: `raw/2025-04-16_Papers-Explained-348--ReaderLM-v2-b5bed3f57fbe.md`
 - Source title: Papers Explained 348: ReaderLM-v2
 - Published: 2025-04-16
 - Canonical: [https://medium.com/@ritvik19/papers-explained-348-readerlm-v2-b5bed3f57fbe](https://medium.com/@ritvik19/papers-explained-348-readerlm-v2-b5bed3f57fbe)
@@ -131,15 +131,15 @@ ReaderLM-v2: Small Language Model for HTML to Markdown and JSON [2503.01151](htt
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-04-16_Papers-Explained-348--ReaderLM-v2-b5bed3f57fbe.html`); local copies under `wiki/assets/papers-explained-348-readerlm-v2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-04-16_Papers-Explained-348--ReaderLM-v2-b5bed3f57fbe.md`); local copies under `wiki/assets/papers-explained-348-readerlm-v2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-348-readerlm-v2/fig-1.png) | Title card: ReaderLM-v2. |
-| ![Figure 2](assets/papers-explained-348-readerlm-v2/fig-2.png) | The three-step data synthesis pipeline for ReaderLM-v2. |
-| ![Figure 3](assets/papers-explained-348-readerlm-v2/fig-3.png) | ReaderLM-v2’s iterative training process. |
-| ![Figure 4](assets/papers-explained-348-readerlm-v2/fig-4.png) | Markdown extraction performance. |
-| ![Figure 5](assets/papers-explained-348-readerlm-v2/fig-5.png) | JSON extraction performance. |
+| ![Figure 1](assets/papers-explained-348-readerlm-v2/fig-1.webp) | Title card: ReaderLM-v2. |
+| ![Figure 2](assets/papers-explained-348-readerlm-v2/fig-2.webp) | The three-step data synthesis pipeline for ReaderLM-v2. |
+| ![Figure 3](assets/papers-explained-348-readerlm-v2/fig-3.webp) | ReaderLM-v2’s iterative training process. |
+| ![Figure 4](assets/papers-explained-348-readerlm-v2/fig-4.webp) | Markdown extraction performance. |
+| ![Figure 5](assets/papers-explained-348-readerlm-v2/fig-5.webp) | JSON extraction performance. |
 ## Related
 
 - [[Papers Explained Corpus]]

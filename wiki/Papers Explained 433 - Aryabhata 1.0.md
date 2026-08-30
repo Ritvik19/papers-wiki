@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-08-18_Papers-Explained-433--Aryabhata-1-0-302d2eb383cc.html`
+- Source file: `raw/2025-08-18_Papers-Explained-433--Aryabhata-1-0-302d2eb383cc.md`
 - Source title: Papers Explained 433: Aryabhata 1.0
 - Published: 2025-08-18
 - Canonical: [https://medium.com/@ritvik19/papers-explained-433-aryabhata-1-0-302d2eb383cc](https://medium.com/@ritvik19/papers-explained-433-aryabhata-1-0-302d2eb383cc)
@@ -135,24 +135,24 @@ Aryabhata: An exam-focused language model for JEE Math [2508.08665](https://arxi
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-08-18_Papers-Explained-433--Aryabhata-1-0-302d2eb383cc.html`); local copies under `wiki/assets/papers-explained-433-aryabhata-1-0/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-08-18_Papers-Explained-433--Aryabhata-1-0-302d2eb383cc.md`); local copies under `wiki/assets/papers-explained-433-aryabhata-1-0/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-433-aryabhata-1-0/fig-1.png) | Title card: Aryabhata 1.0. |
-| ![Figure 2](assets/papers-explained-433-aryabhata-1-0/fig-2.png) | Linear merging is applied using the MergeKit framework. |
-| ![Figure 3](assets/papers-explained-433-aryabhata-1-0/fig-3.png) | Topic-wise Question Distribution. |
-| ![Figure 4](assets/papers-explained-433-aryabhata-1-0/fig-4.png) | Best-of-4 rejection sampling is employed using the merged model. |
-| ![Figure 5](assets/papers-explained-433-aryabhata-1-0/fig-5.png) | Prompts used for Answer Matching. |
-| ![Figure 6](assets/papers-explained-433-aryabhata-1-0/fig-6.png) | Chain-of-Thought generation outcomes from best-of-4 sampling. |
-| ![Figure 7](assets/papers-explained-433-aryabhata-1-0/fig-7.png) | PEFT configuration using LoRA. |
-| ![Figure 8](assets/papers-explained-433-aryabhata-1-0/fig-8.png) | Training configuration used for supervised fine-tuning. |
-| ![Figure 9](assets/papers-explained-433-aryabhata-1-0/fig-9.png) | Specifically it optimizes an A2C objective with group-relative advantage estimation, defined as. |
-| ![Figure 10](assets/papers-explained-433-aryabhata-1-0/fig-10.png) | A simple binary reward structure is employed to provide unambiguous feedback for mathematical reasoning tasks. |
-| ![Figure 11](assets/papers-explained-433-aryabhata-1-0/fig-11.png) | The advantage function is computed using group-relative normalization. |
-| ![Figure 12](assets/papers-explained-433-aryabhata-1-0/fig-12.png) | The filtering uses a difficulty assessment function. |
-| ![Figure 13](assets/papers-explained-433-aryabhata-1-0/fig-13.png) | Accuracy vs. Tokens for JEE Jan and JEE Apr. |
-| ![Figure 14](assets/papers-explained-433-aryabhata-1-0/fig-14.png) | Performance comparison on MATH 500 and GSM8K benchmarks. |
+| ![Figure 1](assets/papers-explained-433-aryabhata-1-0/fig-1.webp) | Title card: Aryabhata 1.0. |
+| ![Figure 2](assets/papers-explained-433-aryabhata-1-0/fig-2.webp) | Linear merging is applied using the MergeKit framework. |
+| ![Figure 3](assets/papers-explained-433-aryabhata-1-0/fig-3.webp) | Topic-wise Question Distribution. |
+| ![Figure 4](assets/papers-explained-433-aryabhata-1-0/fig-4.webp) | Best-of-4 rejection sampling is employed using the merged model. |
+| ![Figure 5](assets/papers-explained-433-aryabhata-1-0/fig-5.webp) | Prompts used for Answer Matching. |
+| ![Figure 6](assets/papers-explained-433-aryabhata-1-0/fig-6.webp) | Chain-of-Thought generation outcomes from best-of-4 sampling. |
+| ![Figure 7](assets/papers-explained-433-aryabhata-1-0/fig-7.webp) | PEFT configuration using LoRA. |
+| ![Figure 8](assets/papers-explained-433-aryabhata-1-0/fig-8.webp) | Training configuration used for supervised fine-tuning. |
+| ![Figure 9](assets/papers-explained-433-aryabhata-1-0/fig-9.webp) | Specifically it optimizes an A2C objective with group-relative advantage estimation, defined as. |
+| ![Figure 10](assets/papers-explained-433-aryabhata-1-0/fig-10.webp) | A simple binary reward structure is employed to provide unambiguous feedback for mathematical reasoning tasks. |
+| ![Figure 11](assets/papers-explained-433-aryabhata-1-0/fig-11.webp) | The advantage function is computed using group-relative normalization. |
+| ![Figure 12](assets/papers-explained-433-aryabhata-1-0/fig-12.webp) | The filtering uses a difficulty assessment function. |
+| ![Figure 13](assets/papers-explained-433-aryabhata-1-0/fig-13.webp) | Accuracy vs. Tokens for JEE Jan and JEE Apr. |
+| ![Figure 14](assets/papers-explained-433-aryabhata-1-0/fig-14.webp) | Performance comparison on MATH 500 and GSM8K benchmarks. |
 ## Related
 
 - [[Papers Explained Corpus]]

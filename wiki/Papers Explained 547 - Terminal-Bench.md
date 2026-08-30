@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-03-24_Papers-Explained-547--Terminal-Bench-67116f963f93.html`
+- Source file: `raw/2026-03-24_Papers-Explained-547--Terminal-Bench-67116f963f93.md`
 - Source title: Papers Explained 547: Terminal-Bench
 - Published: 2026-03-24
 - Canonical: [https://medium.com/@ritvik19/papers-explained-547-terminal-bench-67116f963f93](https://medium.com/@ritvik19/papers-explained-547-terminal-bench-67116f963f93)
@@ -129,18 +129,18 @@ Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Int
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-03-24_Papers-Explained-547--Terminal-Bench-67116f963f93.html`); local copies under `wiki/assets/papers-explained-547-terminal-bench/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-03-24_Papers-Explained-547--Terminal-Bench-67116f963f93.md`); local copies under `wiki/assets/papers-explained-547-terminal-bench/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-547-terminal-bench/fig-1.png) | Title card: Terminal-Bench. |
-| ![Figure 2](assets/papers-explained-547-terminal-bench/fig-2.png) | A Terminal-Bench task is composed of an instruction, a Dockerfile, a set of tests, and an oracle solution. |
-| ![Figure 3](assets/papers-explained-547-terminal-bench/fig-3.png) | The task audit process. |
-| ![Figure 4](assets/papers-explained-547-terminal-bench/fig-4.png) | Distribution of task completion times for expert and junior engineers across all tasks in Terminal-Bench 2.0, as estimated by the task authors. |
-| ![Figure 5](assets/papers-explained-547-terminal-bench/fig-5.png) | Tasks per category in Terminal-Bench 2.0. |
-| ![Figure 6](assets/papers-explained-547-terminal-bench/fig-6.png) | Task resolution rate per model on Terminal-Bench 2.0. |
-| ![Figure 7](assets/papers-explained-547-terminal-bench/fig-7.png) | The Pareto frontier of agent performance showing the tradeoff between performance and cost (log scale) on Terminal-Bench 2.0. |
-| ![Figure 8](assets/papers-explained-547-terminal-bench/fig-8.png) | Performance of each model with its best agent harness as a function of release date. |
+| ![Figure 1](assets/papers-explained-547-terminal-bench/fig-1.webp) | Title card: Terminal-Bench. |
+| ![Figure 2](assets/papers-explained-547-terminal-bench/fig-2.webp) | A Terminal-Bench task is composed of an instruction, a Dockerfile, a set of tests, and an oracle solution. |
+| ![Figure 3](assets/papers-explained-547-terminal-bench/fig-3.webp) | The task audit process. |
+| ![Figure 4](assets/papers-explained-547-terminal-bench/fig-4.webp) | Distribution of task completion times for expert and junior engineers across all tasks in Terminal-Bench 2.0, as estimated by the task authors. |
+| ![Figure 5](assets/papers-explained-547-terminal-bench/fig-5.webp) | Tasks per category in Terminal-Bench 2.0. |
+| ![Figure 6](assets/papers-explained-547-terminal-bench/fig-6.webp) | Task resolution rate per model on Terminal-Bench 2.0. |
+| ![Figure 7](assets/papers-explained-547-terminal-bench/fig-7.webp) | The Pareto frontier of agent performance showing the tradeoff between performance and cost (log scale) on Terminal-Bench 2.0. |
+| ![Figure 8](assets/papers-explained-547-terminal-bench/fig-8.webp) | Performance of each model with its best agent harness as a function of release date. |
 ## Related
 
 - [[Papers Explained Corpus]]

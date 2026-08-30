@@ -1,6 +1,6 @@
 # Gemini 3.5 Flash
 
-**Source**: `raw/gemini-3-5/full-article.html` (434 KB)  
+**Source**: `raw/gemini-3-5/full-article.md` (434 KB)  
 **URL**: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -30,11 +30,11 @@ Safety work follows the Frontier Safety Framework with strengthened cyber and CB
 | Figure | Caption | Page |
 |--------|---------|------|
 | ![fig-1](../assets/gemini-3-5-flash/fig-1.gif) | Benchmark comparison table: Gemini 3.5 Flash vs. Claude and GPT models across coding, agentic, and multimodal tasks | — |
-| ![fig-2](../assets/gemini-3-5-flash/fig-2.png) | Artificial Analysis Intelligence Index vs. output speed; 3.5 Flash in top-right (frontier intelligence, exceptional speed) | — |
+| ![fig-2](../assets/gemini-3-5-flash/fig-2.webp) | Artificial Analysis Intelligence Index vs. output speed; 3.5 Flash in top-right (frontier intelligence, exceptional speed) | — |
 
 ![Benchmark comparison table](../assets/gemini-3-5-flash/fig-1.gif)
 
-![Artificial Analysis intelligence vs. speed](../assets/gemini-3-5-flash/fig-2.png)
+![Artificial Analysis intelligence vs. speed](../assets/gemini-3-5-flash/fig-2.webp)
 
 ## Entities
 

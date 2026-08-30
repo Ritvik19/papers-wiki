@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-05-12_Papers-Explained-363--UltraLong-981e997e4e19.html`
+- Source file: `raw/2025-05-12_Papers-Explained-363--UltraLong-981e997e4e19.md`
 - Source title: Papers Explained 363: UltraLong
 - Published: 2025-05-12
 - Canonical: [https://medium.com/@ritvik19/papers-explained-363-ultralong-981e997e4e19](https://medium.com/@ritvik19/papers-explained-363-ultralong-981e997e4e19)
@@ -133,16 +133,16 @@ From 128K to 4M: Efficient Training of Ultra-Long Context Large Language Models 
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-05-12_Papers-Explained-363--UltraLong-981e997e4e19.html`); local copies under `wiki/assets/papers-explained-363-ultralong/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-05-12_Papers-Explained-363--UltraLong-981e997e4e19.md`); local copies under `wiki/assets/papers-explained-363-ultralong/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-363-ultralong/fig-1.png) | Title card: UltraLong. |
-| ![Figure 2](assets/papers-explained-363-ultralong/fig-2.png) | Overview of the training pipeline. |
-| ![Figure 3](assets/papers-explained-363-ultralong/fig-3.png) | Overview of the training recipe for UltraLong-8B-Instruct models. |
-| ![Figure 4](assets/papers-explained-363-ultralong/fig-4.png) | Needle in a Haystack passkey retrieval test results. |
-| ![Figure 5](assets/papers-explained-363-ultralong/fig-5.png) | Long context evaluation results on the RULER, LV-Eval, and InfiniteBench benchmarks. |
-| ![Figure 6](assets/papers-explained-363-ultralong/fig-6.png) | Evaluation results on standard benchmarks including MMLU, MMLU-Pro, MATH, GSM-8K, and HumanEval. |
+| ![Figure 1](assets/papers-explained-363-ultralong/fig-1.webp) | Title card: UltraLong. |
+| ![Figure 2](assets/papers-explained-363-ultralong/fig-2.webp) | Overview of the training pipeline. |
+| ![Figure 3](assets/papers-explained-363-ultralong/fig-3.webp) | Overview of the training recipe for UltraLong-8B-Instruct models. |
+| ![Figure 4](assets/papers-explained-363-ultralong/fig-4.webp) | Needle in a Haystack passkey retrieval test results. |
+| ![Figure 5](assets/papers-explained-363-ultralong/fig-5.webp) | Long context evaluation results on the RULER, LV-Eval, and InfiniteBench benchmarks. |
+| ![Figure 6](assets/papers-explained-363-ultralong/fig-6.webp) | Evaluation results on standard benchmarks including MMLU, MMLU-Pro, MATH, GSM-8K, and HumanEval. |
 ## Related
 
 - [[Papers Explained Corpus]]

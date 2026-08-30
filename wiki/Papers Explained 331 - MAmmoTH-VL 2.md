@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-03-17_Papers-Explained-331--MAmmoTH-VL-2-108ac94dc3b3.html`
+- Source file: `raw/2025-03-17_Papers-Explained-331--MAmmoTH-VL-2-108ac94dc3b3.md`
 - Source title: Papers Explained 331: MAmmoTH-VL 2
 - Published: 2025-03-17
 - Canonical: [https://medium.com/@ritvik19/papers-explained-331-mammoth-vl-2-108ac94dc3b3](https://medium.com/@ritvik19/papers-explained-331-mammoth-vl-2-108ac94dc3b3)
@@ -107,17 +107,17 @@ VisualWebInstruct: Scaling up Multimodal Instruction Data through Web Search [25
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-03-17_Papers-Explained-331--MAmmoTH-VL-2-108ac94dc3b3.html`); local copies under `wiki/assets/papers-explained-331-mammoth-vl-2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-03-17_Papers-Explained-331--MAmmoTH-VL-2-108ac94dc3b3.md`); local copies under `wiki/assets/papers-explained-331-mammoth-vl-2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-331-mammoth-vl-2/fig-1.png) | Title card: MAmmoTH-VL 2. |
-| ![Figure 2](assets/papers-explained-331-mammoth-vl-2/fig-2.png) | Comprehensive Pipeline for VisualWebInstruct Dataset Generation. |
-| ![Figure 3](assets/papers-explained-331-mammoth-vl-2/fig-3.png) | Example of an accessibility tree structure extracted from an educational website. |
-| ![Figure 4](assets/papers-explained-331-mammoth-vl-2/fig-4.png) | Illustration of the consistency checking methodology. |
-| ![Figure 5](assets/papers-explained-331-mammoth-vl-2/fig-5.png) | In this step, Gemini-2.0-Flash is used to measure the alignment between GPT-generated responses and the original extracted answers, if... |
-| ![Figure 6](assets/papers-explained-331-mammoth-vl-2/fig-6.png) | Dataset Statistics. |
-| ![Figure 7](assets/papers-explained-331-mammoth-vl-2/fig-7.png) | Evaluation Results. |
+| ![Figure 1](assets/papers-explained-331-mammoth-vl-2/fig-1.webp) | Title card: MAmmoTH-VL 2. |
+| ![Figure 2](assets/papers-explained-331-mammoth-vl-2/fig-2.webp) | Comprehensive Pipeline for VisualWebInstruct Dataset Generation. |
+| ![Figure 3](assets/papers-explained-331-mammoth-vl-2/fig-3.webp) | Example of an accessibility tree structure extracted from an educational website. |
+| ![Figure 4](assets/papers-explained-331-mammoth-vl-2/fig-4.webp) | Illustration of the consistency checking methodology. |
+| ![Figure 5](assets/papers-explained-331-mammoth-vl-2/fig-5.webp) | In this step, Gemini-2.0-Flash is used to measure the alignment between GPT-generated responses and the original extracted answers, if... |
+| ![Figure 6](assets/papers-explained-331-mammoth-vl-2/fig-6.webp) | Dataset Statistics. |
+| ![Figure 7](assets/papers-explained-331-mammoth-vl-2/fig-7.webp) | Evaluation Results. |
 ## Related
 
 - [[Papers Explained Corpus]]

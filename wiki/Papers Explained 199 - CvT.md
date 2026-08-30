@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-31_Papers-Explained-199--CvT-fb4a5c05882e.html`
+- Source file: `raw/2024-08-31_Papers-Explained-199--CvT-fb4a5c05882e.md`
 - Source title: Papers Explained 199: CvT
 - Published: 2024-08-31
 - Canonical: [https://medium.com/@ritvik19/papers-explained-199-cvt-fb4a5c05882e](https://medium.com/@ritvik19/papers-explained-199-cvt-fb4a5c05882e)
@@ -103,20 +103,20 @@ Recommended Reading [Vision Transformers](https://ritvik19.medium.com/list/visio
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-31_Papers-Explained-199--CvT-fb4a5c05882e.html`); local copies under `wiki/assets/papers-explained-199-cvt/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-31_Papers-Explained-199--CvT-fb4a5c05882e.md`); local copies under `wiki/assets/papers-explained-199-cvt/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-199-cvt/fig-1.png) | **CvT pipeline** — hierarchical conv **token embedding** + conv **QKV projections** inside Transformer blocks (multi-stage ViT hybrid). |
-| ![Figure 2](assets/papers-explained-199-cvt/fig-2.png) | **Projection geometry** — (a) ViT linear patch projection vs (b) convolutional token embedding vs (c) squeezed conv projection foot-print. |
-| ![Figure 3](assets/papers-explained-199-cvt/fig-3.png) | **ImageNet architectures** — stage-wise depths, conv-embed / conv-proj headers, **MHSA** heads/dims per stage (**224×224** defaults). |
-| ![Figure 4](assets/papers-explained-199-cvt/fig-4.png) | **Top-1 accuracy** — manual CvT variants on ImageNet / **ReaL** / **V2** matched-frequency (**ImageNet-22k** pretrain rows noted). |
-| ![Figure 5](assets/papers-explained-199-cvt/fig-5.png) | **Transfer top-1** — downstream datasets with **IN-22k** pretraining (all conv projection variants summarized). |
-| ![Figure 6](assets/papers-explained-199-cvt/fig-6.png) | **Positional embedding ablations** — learned pos embed vs conv projections stages / pooling choices on ImageNet top-1. |
-| ![Figure 7](assets/papers-explained-199-cvt/fig-7.png) | **Convolutional token embedding** — kernel / stride choices vs flatten-patch ViT baseline (**top-1 %**). |
-| ![Figure 8](assets/papers-explained-199-cvt/fig-8.png) | **Conv projection strides** — effect of stride on **key/value** conv projections (full hierarchy of CvT blocks). |
-| ![Figure 9](assets/papers-explained-199-cvt/fig-9.png) | **Conv vs linear projection** — stage-wise toggles (✓ conv projection) vs linear baseline grid on ImageNet accuracy. |
-| ![Figure 10](assets/papers-explained-199-cvt/fig-10.png) | **Depth-wise rollout** — incrementally enable conv projection in stages **1→3**; ImageNet top-1 climbs **80.6 → 81.6%** (#blocks row). |
+| ![Figure 1](assets/papers-explained-199-cvt/fig-1.webp) | **CvT pipeline** — hierarchical conv **token embedding** + conv **QKV projections** inside Transformer blocks (multi-stage ViT hybrid). |
+| ![Figure 2](assets/papers-explained-199-cvt/fig-2.webp) | **Projection geometry** — (a) ViT linear patch projection vs (b) convolutional token embedding vs (c) squeezed conv projection foot-print. |
+| ![Figure 3](assets/papers-explained-199-cvt/fig-3.webp) | **ImageNet architectures** — stage-wise depths, conv-embed / conv-proj headers, **MHSA** heads/dims per stage (**224×224** defaults). |
+| ![Figure 4](assets/papers-explained-199-cvt/fig-4.webp) | **Top-1 accuracy** — manual CvT variants on ImageNet / **ReaL** / **V2** matched-frequency (**ImageNet-22k** pretrain rows noted). |
+| ![Figure 5](assets/papers-explained-199-cvt/fig-5.webp) | **Transfer top-1** — downstream datasets with **IN-22k** pretraining (all conv projection variants summarized). |
+| ![Figure 6](assets/papers-explained-199-cvt/fig-6.webp) | **Positional embedding ablations** — learned pos embed vs conv projections stages / pooling choices on ImageNet top-1. |
+| ![Figure 7](assets/papers-explained-199-cvt/fig-7.webp) | **Convolutional token embedding** — kernel / stride choices vs flatten-patch ViT baseline (**top-1 %**). |
+| ![Figure 8](assets/papers-explained-199-cvt/fig-8.webp) | **Conv projection strides** — effect of stride on **key/value** conv projections (full hierarchy of CvT blocks). |
+| ![Figure 9](assets/papers-explained-199-cvt/fig-9.webp) | **Conv vs linear projection** — stage-wise toggles (✓ conv projection) vs linear baseline grid on ImageNet accuracy. |
+| ![Figure 10](assets/papers-explained-199-cvt/fig-10.webp) | **Depth-wise rollout** — incrementally enable conv projection in stages **1→3**; ImageNet top-1 climbs **80.6 → 81.6%** (#blocks row). |
 ## Related
 
 - [[Papers Explained Corpus]]

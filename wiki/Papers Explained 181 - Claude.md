@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-08_Papers-Explained-181--Claude-89dd45e35d92.html`
+- Source file: `raw/2024-08-08_Papers-Explained-181--Claude-89dd45e35d92.md`
 - Source title: Papers Explained 181: Claude
 - Published: 2024-08-08
 - Canonical: [https://medium.com/@ritvik19/papers-explained-181-claude-89dd45e35d92](https://medium.com/@ritvik19/papers-explained-181-claude-89dd45e35d92)
@@ -384,44 +384,44 @@ Opus 4.7 is better at using file system-based memory:
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-08_Papers-Explained-181--Claude-89dd45e35d92.html`); local copies under `wiki/assets/papers-explained-181-claude/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-08_Papers-Explained-181--Claude-89dd45e35d92.md`); local copies under `wiki/assets/papers-explained-181-claude/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-181-claude/fig-1.jpg) | Series opener graphic for **Papers Explained 181: Claude**. |
-| ![Figure 2](assets/papers-explained-181-claude/fig-2.jpg) | **Claude 3** family on the **intelligence vs cost** frontier — Haiku, Sonnet, Opus along one pricing curve. |
-| ![Figure 3](assets/papers-explained-181-claude/fig-3.png) | **Claude 3** vs GPT-4 / GPT-3.5 / Gemini 1.0 — MMLU, GPQA, GSM8K, MATH, MGSM, HumanEval, DROP, BBH, ARC, HellaSwag. |
-| ![Figure 4](assets/papers-explained-181-claude/fig-4.jpg) | **Vision benchmarks**: Claude 3 Opus/Sonnet/Haiku vs GPT-4V / Gemini — MMMU, DocVQA, MathVista, AI2D, chart QA. |
-| ![Figure 5](assets/papers-explained-181-claude/fig-5.jpg) | **Incorrect refusals** on harmless prompts — Claude 3 models vs **Claude 2.1**. |
-| ![Figure 6](assets/papers-explained-181-claude/fig-6.png) | **Hard questions**: correct vs incorrect vs unsure — **Claude 3 Opus** vs **Claude 2.1**. |
-| ![Figure 7](assets/papers-explained-181-claude/fig-7.jpg) | **Needle-in-a-haystack** recall heatmap — **Claude 3 Opus** through **200K** tokens (position vs context length). |
-| ![Figure 8](assets/papers-explained-181-claude/fig-8.jpg) | **Claude 3.5 Sonnet** lifts **intelligence** above **Claude 3 Opus** while staying at **Sonnet-tier cost** (vertical jump from faded Sonnet dot). |
-| ![Figure 9](assets/papers-explained-181-claude/fig-9.jpg) | **Claude 3.5 Sonnet** vs **Claude 3 Opus**, GPT-4o, Gemini 1.5 Pro, Llama-400B snapshot — GPQA, MMLU, HumanEval, math, DROP, BBH. |
-| ![Figure 10](assets/papers-explained-181-claude/fig-10.png) | **Updated Claude 3.5 Sonnet (Oct 2024)** vs prior 3.5 Sonnet, GPT-4o, Gemini — GPQA Diamond, MMLU-Pro, **SWE-bench Verified**, HumanEval, MATH, MGSM, DROP, **TAU-bench** retail/airline. |
-| ![Figure 11](assets/papers-explained-181-claude/fig-11.png) | **Vision benchmarks**: **Claude 3.5 Sonnet (new)** vs older 3.5 Sonnet, GPT-4o, Gemini — MMMU, MathVista, AI2D, charts, DocVQA. |
-| ![Figure 12](assets/papers-explained-181-claude/fig-12.png) | **Claude 3.5 Haiku** vs Claude 3 Haiku, GPT-4o mini, Gemini 1.5 Flash — reasoning, code (**SWE-bench Verified**), math, DROP, **TAU-bench**. |
-| ![Figure 13](assets/papers-explained-181-claude/fig-13.png) | **SWE-bench Verified**: **Claude 3.7 Sonnet** (62.3% base, 70.3% with scaffold) vs **new** 3.5 Sonnet, o1, o3-mini (high), DeepSeek R1. |
-| ![Figure 14](assets/papers-explained-181-claude/fig-14.jpg) | **TAU-bench** retail and airline — **3.7 Sonnet** vs **new** 3.5 Sonnet vs **OpenAI o1**. |
-| ![Figure 15](assets/papers-explained-181-claude/fig-15.png) | Broad scoresheet: **Claude 3.7 Sonnet** with vs without **extended thinking** vs **new** 3.5 Sonnet, o1, o3-mini (high), DeepSeek R1, Grok 3 — GPQA, SWE, TAU, MMMLU, MMMU, IFEval, MATH 500, **AIME 2024**. |
-| ![Figure 16](assets/papers-explained-181-claude/fig-16.jpg) | **OSWorld** pass@1 vs **max steps** (log scale) — **3.7 Sonnet** vs **new** 3.5 Sonnet. |
-| ![Figure 17](assets/papers-explained-181-claude/fig-17.jpg) | **AIME 2024** accuracy vs **average thinking tokens** per problem (budgets 2k–64k). |
-| ![Figure 18](assets/papers-explained-181-claude/fig-18.png) | **GPQA** mean pass rate vs parallel samples \(N\) — majority vote vs **scoring model** vs **pass@N** upper bound (All / Biology / Chemistry / Physics). |
-| ![Figure 19](assets/papers-explained-181-claude/fig-19.png) | **SWE-bench Verified** with **parallel test-time compute** — Opus 4 / Sonnet 4 / Sonnet 3.7 vs OpenAI Codex-1, o3, GPT-4.1, Gemini 2.5 Pro Preview. |
-| ![Figure 20](assets/papers-explained-181-claude/fig-20.png) | **Claude 4** announcement table — **Opus 4** / **Sonnet 4** vs Sonnet 3.7, OpenAI o3, GPT-4.1, Gemini 2.5 Pro — SWE-bench, Terminal-bench, GPQA, TAU-bench, MMMLU, MMMU, **AIME 2025** (dual scores = extra test-time compute where noted). |
-| ![Figure 21](assets/papers-explained-181-claude/fig-21.jpg) | **SWE-bench Verified** bar ladder — Sonnet 3.7 (62.3%), **Opus 4** (72.5%), **Opus 4.1** (74.5%). |
-| ![Figure 22](assets/papers-explained-181-claude/fig-22.jpg) | **Opus 4.1** vs Opus 4, Sonnet 4, OpenAI o3, Gemini 2.5 Pro — coding, terminal coding, GPQA, TAU-bench, MMMLU, MMMU, **AIME 2025**. |
-| ![Figure 23](assets/papers-explained-181-claude/fig-23.jpg) | **SWE-bench Verified (n=500)** — **Sonnet 4.5** / **Sonnet 4** / **Opus 4.1** with optional parallel compute vs GPT-5 Codex, GPT-5, Gemini 2.5 Pro. |
-| ![Figure 24](assets/papers-explained-181-claude/fig-24.jpg) | **Sonnet 4.5** spotlight table vs Opus 4.1, Sonnet 4, GPT-5, Gemini 2.5 Pro — SWE, Terminal-bench, τ2-bench retail/airline/telecom, **OSWorld**, AIME 2025, GPQA, MMMLU, MMMU, **Finance Agent**. |
-| ![Figure 25](assets/papers-explained-181-claude/fig-25.png) | Expert-study **win rate vs baseline** — Finance / Law / Medicine / STEM for Sonnet 4.5 (±16K thinking) vs prior Opus/Sonnet 4 variants. |
-| ![Figure 26](assets/papers-explained-181-claude/fig-26.jpg) | **Misaligned behavior** scores (simulated settings, 95% bootstrap CI) — Sonnet 4.5 vs Opus/Sonnet 4 vs Gemini / GPT / Grok baselines (**lower is better**). |
-| ![Figure 27](assets/papers-explained-181-claude/fig-27.jpg) | **SWE-bench Verified** — **Sonnet 4.5**, **Haiku 4.5**, Sonnet 4, GPT-5 Codex, GPT-5, Gemini 2.5 Pro (**Haiku 4.5** near Sonnet 4-tier coding). |
-| ![Figure 28](assets/papers-explained-181-claude/fig-28.png) | **Haiku 4.5** benchmark card vs Sonnet 4.5 / Sonnet 4 / GPT-5 / Gemini — SWE-bench, Terminal-bench, τ2-bench, **OSWorld**, AIME 2025, GPQA, MMMLU, MMMU. |
-| ![Figure 29](assets/papers-explained-181-claude/fig-29.png) | **Opus 4.5** eight-panel scorecard — SWE-bench (+effort curve), multilingual SWE-bench, **Aider Polyglot**, **BrowseComp-Plus**, **Vending-Bench**, misalignment score, **prompt-injection** success vs thinking variants. |
-| ![Figure 30](assets/papers-explained-181-claude/fig-30.jpg) | **Opus 4.5** vs Sonnet 4.5, Opus 4.1, Gemini 3 Pro, GPT-5.1 — SWE-bench, Terminal-bench 2.0, τ2-bench, **MCP Atlas**, **OSWorld**, **ARC-AGI-2**, GPQA, MMMU, MMMLU. |
-| ![Figure 31](assets/papers-explained-181-claude/fig-31.jpg) | **Opus 4.6** vs Opus 4.5, Sonnet 4.5, Gemini 3 Pro, GPT-5.2 — agentic coding, computer use (**OSWorld**), τ2-bench, **BrowseComp**, **Humanity’s Last Exam**, **Finance Agent**, **GDPval-AA** Elo, **ARC AGI 2**, GPQA Diamond, MMMU Pro, MMMLU. |
-| ![Figure 32](assets/papers-explained-181-claude/fig-32.png) | **Opus 4.6** specialty strip — **MRCR** long retrieval (256k vs 1M), **Graphwalks**, OpenRCA, SWE multilingual, **Vending-Bench 2**, **CyberGym**, **BioPipelineBench**, misalignment score. |
-| ![Figure 33](assets/papers-explained-181-claude/fig-33.jpg) | **Opus 4.7** vs Opus 4.6, GPT-5.4, Gemini 3.1 Pro (and Mythos Preview where shown) — SWE-bench Pro/Verified, Terminal-Bench 2.0, HLE, BrowseComp, MCP-Atlas, OSWorld-Verified, Finance Agent, CyberGym, GPQA Diamond, CharXiv/MMMU axes, MMMLU. |
-| ![Figure 34](assets/papers-explained-181-claude/fig-34.png) | **Opus 4.7** seven-chart lift vs Opus 4.6 — **GDPVal-AA** Elo, **ScreenSpot-Pro** (+tools), **OfficeQA Pro**, **Graphwalks** 1M, structural biology, **Vending-Bench 2**, multilingual vs multimodal SWE-bench. |
+| ![Figure 1](assets/papers-explained-181-claude/fig-1.webp) | Series opener graphic for **Papers Explained 181: Claude**. |
+| ![Figure 2](assets/papers-explained-181-claude/fig-2.webp) | **Claude 3** family on the **intelligence vs cost** frontier — Haiku, Sonnet, Opus along one pricing curve. |
+| ![Figure 3](assets/papers-explained-181-claude/fig-3.webp) | **Claude 3** vs GPT-4 / GPT-3.5 / Gemini 1.0 — MMLU, GPQA, GSM8K, MATH, MGSM, HumanEval, DROP, BBH, ARC, HellaSwag. |
+| ![Figure 4](assets/papers-explained-181-claude/fig-4.webp) | **Vision benchmarks**: Claude 3 Opus/Sonnet/Haiku vs GPT-4V / Gemini — MMMU, DocVQA, MathVista, AI2D, chart QA. |
+| ![Figure 5](assets/papers-explained-181-claude/fig-5.webp) | **Incorrect refusals** on harmless prompts — Claude 3 models vs **Claude 2.1**. |
+| ![Figure 6](assets/papers-explained-181-claude/fig-6.webp) | **Hard questions**: correct vs incorrect vs unsure — **Claude 3 Opus** vs **Claude 2.1**. |
+| ![Figure 7](assets/papers-explained-181-claude/fig-7.webp) | **Needle-in-a-haystack** recall heatmap — **Claude 3 Opus** through **200K** tokens (position vs context length). |
+| ![Figure 8](assets/papers-explained-181-claude/fig-8.webp) | **Claude 3.5 Sonnet** lifts **intelligence** above **Claude 3 Opus** while staying at **Sonnet-tier cost** (vertical jump from faded Sonnet dot). |
+| ![Figure 9](assets/papers-explained-181-claude/fig-9.webp) | **Claude 3.5 Sonnet** vs **Claude 3 Opus**, GPT-4o, Gemini 1.5 Pro, Llama-400B snapshot — GPQA, MMLU, HumanEval, math, DROP, BBH. |
+| ![Figure 10](assets/papers-explained-181-claude/fig-10.webp) | **Updated Claude 3.5 Sonnet (Oct 2024)** vs prior 3.5 Sonnet, GPT-4o, Gemini — GPQA Diamond, MMLU-Pro, **SWE-bench Verified**, HumanEval, MATH, MGSM, DROP, **TAU-bench** retail/airline. |
+| ![Figure 11](assets/papers-explained-181-claude/fig-11.webp) | **Vision benchmarks**: **Claude 3.5 Sonnet (new)** vs older 3.5 Sonnet, GPT-4o, Gemini — MMMU, MathVista, AI2D, charts, DocVQA. |
+| ![Figure 12](assets/papers-explained-181-claude/fig-12.webp) | **Claude 3.5 Haiku** vs Claude 3 Haiku, GPT-4o mini, Gemini 1.5 Flash — reasoning, code (**SWE-bench Verified**), math, DROP, **TAU-bench**. |
+| ![Figure 13](assets/papers-explained-181-claude/fig-13.webp) | **SWE-bench Verified**: **Claude 3.7 Sonnet** (62.3% base, 70.3% with scaffold) vs **new** 3.5 Sonnet, o1, o3-mini (high), DeepSeek R1. |
+| ![Figure 14](assets/papers-explained-181-claude/fig-14.webp) | **TAU-bench** retail and airline — **3.7 Sonnet** vs **new** 3.5 Sonnet vs **OpenAI o1**. |
+| ![Figure 15](assets/papers-explained-181-claude/fig-15.webp) | Broad scoresheet: **Claude 3.7 Sonnet** with vs without **extended thinking** vs **new** 3.5 Sonnet, o1, o3-mini (high), DeepSeek R1, Grok 3 — GPQA, SWE, TAU, MMMLU, MMMU, IFEval, MATH 500, **AIME 2024**. |
+| ![Figure 16](assets/papers-explained-181-claude/fig-16.webp) | **OSWorld** pass@1 vs **max steps** (log scale) — **3.7 Sonnet** vs **new** 3.5 Sonnet. |
+| ![Figure 17](assets/papers-explained-181-claude/fig-17.webp) | **AIME 2024** accuracy vs **average thinking tokens** per problem (budgets 2k–64k). |
+| ![Figure 18](assets/papers-explained-181-claude/fig-18.webp) | **GPQA** mean pass rate vs parallel samples \(N\) — majority vote vs **scoring model** vs **pass@N** upper bound (All / Biology / Chemistry / Physics). |
+| ![Figure 19](assets/papers-explained-181-claude/fig-19.webp) | **SWE-bench Verified** with **parallel test-time compute** — Opus 4 / Sonnet 4 / Sonnet 3.7 vs OpenAI Codex-1, o3, GPT-4.1, Gemini 2.5 Pro Preview. |
+| ![Figure 20](assets/papers-explained-181-claude/fig-20.webp) | **Claude 4** announcement table — **Opus 4** / **Sonnet 4** vs Sonnet 3.7, OpenAI o3, GPT-4.1, Gemini 2.5 Pro — SWE-bench, Terminal-bench, GPQA, TAU-bench, MMMLU, MMMU, **AIME 2025** (dual scores = extra test-time compute where noted). |
+| ![Figure 21](assets/papers-explained-181-claude/fig-21.webp) | **SWE-bench Verified** bar ladder — Sonnet 3.7 (62.3%), **Opus 4** (72.5%), **Opus 4.1** (74.5%). |
+| ![Figure 22](assets/papers-explained-181-claude/fig-22.webp) | **Opus 4.1** vs Opus 4, Sonnet 4, OpenAI o3, Gemini 2.5 Pro — coding, terminal coding, GPQA, TAU-bench, MMMLU, MMMU, **AIME 2025**. |
+| ![Figure 23](assets/papers-explained-181-claude/fig-23.webp) | **SWE-bench Verified (n=500)** — **Sonnet 4.5** / **Sonnet 4** / **Opus 4.1** with optional parallel compute vs GPT-5 Codex, GPT-5, Gemini 2.5 Pro. |
+| ![Figure 24](assets/papers-explained-181-claude/fig-24.webp) | **Sonnet 4.5** spotlight table vs Opus 4.1, Sonnet 4, GPT-5, Gemini 2.5 Pro — SWE, Terminal-bench, τ2-bench retail/airline/telecom, **OSWorld**, AIME 2025, GPQA, MMMLU, MMMU, **Finance Agent**. |
+| ![Figure 25](assets/papers-explained-181-claude/fig-25.webp) | Expert-study **win rate vs baseline** — Finance / Law / Medicine / STEM for Sonnet 4.5 (±16K thinking) vs prior Opus/Sonnet 4 variants. |
+| ![Figure 26](assets/papers-explained-181-claude/fig-26.webp) | **Misaligned behavior** scores (simulated settings, 95% bootstrap CI) — Sonnet 4.5 vs Opus/Sonnet 4 vs Gemini / GPT / Grok baselines (**lower is better**). |
+| ![Figure 27](assets/papers-explained-181-claude/fig-27.webp) | **SWE-bench Verified** — **Sonnet 4.5**, **Haiku 4.5**, Sonnet 4, GPT-5 Codex, GPT-5, Gemini 2.5 Pro (**Haiku 4.5** near Sonnet 4-tier coding). |
+| ![Figure 28](assets/papers-explained-181-claude/fig-28.webp) | **Haiku 4.5** benchmark card vs Sonnet 4.5 / Sonnet 4 / GPT-5 / Gemini — SWE-bench, Terminal-bench, τ2-bench, **OSWorld**, AIME 2025, GPQA, MMMLU, MMMU. |
+| ![Figure 29](assets/papers-explained-181-claude/fig-29.webp) | **Opus 4.5** eight-panel scorecard — SWE-bench (+effort curve), multilingual SWE-bench, **Aider Polyglot**, **BrowseComp-Plus**, **Vending-Bench**, misalignment score, **prompt-injection** success vs thinking variants. |
+| ![Figure 30](assets/papers-explained-181-claude/fig-30.webp) | **Opus 4.5** vs Sonnet 4.5, Opus 4.1, Gemini 3 Pro, GPT-5.1 — SWE-bench, Terminal-bench 2.0, τ2-bench, **MCP Atlas**, **OSWorld**, **ARC-AGI-2**, GPQA, MMMU, MMMLU. |
+| ![Figure 31](assets/papers-explained-181-claude/fig-31.webp) | **Opus 4.6** vs Opus 4.5, Sonnet 4.5, Gemini 3 Pro, GPT-5.2 — agentic coding, computer use (**OSWorld**), τ2-bench, **BrowseComp**, **Humanity’s Last Exam**, **Finance Agent**, **GDPval-AA** Elo, **ARC AGI 2**, GPQA Diamond, MMMU Pro, MMMLU. |
+| ![Figure 32](assets/papers-explained-181-claude/fig-32.webp) | **Opus 4.6** specialty strip — **MRCR** long retrieval (256k vs 1M), **Graphwalks**, OpenRCA, SWE multilingual, **Vending-Bench 2**, **CyberGym**, **BioPipelineBench**, misalignment score. |
+| ![Figure 33](assets/papers-explained-181-claude/fig-33.webp) | **Opus 4.7** vs Opus 4.6, GPT-5.4, Gemini 3.1 Pro (and Mythos Preview where shown) — SWE-bench Pro/Verified, Terminal-Bench 2.0, HLE, BrowseComp, MCP-Atlas, OSWorld-Verified, Finance Agent, CyberGym, GPQA Diamond, CharXiv/MMMU axes, MMMLU. |
+| ![Figure 34](assets/papers-explained-181-claude/fig-34.webp) | **Opus 4.7** seven-chart lift vs Opus 4.6 — **GDPVal-AA** Elo, **ScreenSpot-Pro** (+tools), **OfficeQA Pro**, **Graphwalks** 1M, structural biology, **Vending-Bench 2**, multilingual vs multimodal SWE-bench. |
 ## Related
 
 - [[Papers Explained Corpus]]

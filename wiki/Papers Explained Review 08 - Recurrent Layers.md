@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-12-26_Papers-Explained-Review-08--Recurrent-Layers-ff2f224af059.html`
+- Source file: `raw/2024-12-26_Papers-Explained-Review-08--Recurrent-Layers-ff2f224af059.md`
 - Source title: Papers Explained Review 08: Recurrent Layers
 - Published: 2024-12-26
 - Canonical: [https://medium.com/@ritvik19/papers-explained-review-08-recurrent-layers-ff2f224af059](https://medium.com/@ritvik19/papers-explained-review-08-recurrent-layers-ff2f224af059)
@@ -143,32 +143,32 @@ Where:
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-12-26_Papers-Explained-Review-08--Recurrent-Layers-ff2f224af059.html`); local copies under `wiki/assets/papers-explained-review-08-recurrent-layers/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-12-26_Papers-Explained-Review-08--Recurrent-Layers-ff2f224af059.md`); local copies under `wiki/assets/papers-explained-review-08-recurrent-layers/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-review-08-recurrent-layers/fig-1.png) | Compressed and unfolded basic recurrent neural network. |
-| ![Figure 2](assets/papers-explained-review-08-recurrent-layers/fig-2.png) | Simple Recurrent Cell. |
-| ![Figure 3](assets/papers-explained-review-08-recurrent-layers/fig-3.jpg) | Hidden State Update: The hidden state H(t) is computed using the following equation. |
-| ![Figure 4](assets/papers-explained-review-08-recurrent-layers/fig-4.jpg) | Where. |
-| ![Figure 5](assets/papers-explained-review-08-recurrent-layers/fig-5.png) | LSTM Cell. |
-| ![Figure 6](assets/papers-explained-review-08-recurrent-layers/fig-6.png) | Forget Gate. |
-| ![Figure 7](assets/papers-explained-review-08-recurrent-layers/fig-7.jpg) | The forget gate regulates the information that should be discarded from the memory cell. |
-| ![Figure 8](assets/papers-explained-review-08-recurrent-layers/fig-8.png) | Input Gate. |
-| ![Figure 9](assets/papers-explained-review-08-recurrent-layers/fig-9.jpg) | The input gate determines the relevance of new information coming into the cell. |
-| ![Figure 10](assets/papers-explained-review-08-recurrent-layers/fig-10.png) | Memory Cell. |
-| ![Figure 11](assets/papers-explained-review-08-recurrent-layers/fig-11.jpg) | The memory cell is responsible for retaining and updating information over time. |
-| ![Figure 12](assets/papers-explained-review-08-recurrent-layers/fig-12.png) | Output Gate. |
-| ![Figure 13](assets/papers-explained-review-08-recurrent-layers/fig-13.jpg) | Where. |
-| ![Figure 14](assets/papers-explained-review-08-recurrent-layers/fig-14.png) | GRU Cell. |
-| ![Figure 15](assets/papers-explained-review-08-recurrent-layers/fig-15.png) | Update Gate. |
-| ![Figure 16](assets/papers-explained-review-08-recurrent-layers/fig-16.jpg) | The update gate determines how much of the previous hidden state should be preserved for the current time step. |
-| ![Figure 17](assets/papers-explained-review-08-recurrent-layers/fig-17.png) | Reset Gate. |
-| ![Figure 18](assets/papers-explained-review-08-recurrent-layers/fig-18.jpg) | The reset gate controls how much of the previous hidden state should be forgotten when calculating the new candidate state. |
-| ![Figure 19](assets/papers-explained-review-08-recurrent-layers/fig-19.png) | Candidate State. |
-| ![Figure 20](assets/papers-explained-review-08-recurrent-layers/fig-20.jpg) | Back to Top. |
-| ![Figure 21](assets/papers-explained-review-08-recurrent-layers/fig-21.png) | Current Hidden State. |
-| ![Figure 22](assets/papers-explained-review-08-recurrent-layers/fig-22.jpg) | Where. |
+| ![Figure 1](assets/papers-explained-review-08-recurrent-layers/fig-1.webp) | Compressed and unfolded basic recurrent neural network. |
+| ![Figure 2](assets/papers-explained-review-08-recurrent-layers/fig-2.webp) | Simple Recurrent Cell. |
+| ![Figure 3](assets/papers-explained-review-08-recurrent-layers/fig-3.webp) | Hidden State Update: The hidden state H(t) is computed using the following equation. |
+| ![Figure 4](assets/papers-explained-review-08-recurrent-layers/fig-4.webp) | Where. |
+| ![Figure 5](assets/papers-explained-review-08-recurrent-layers/fig-5.webp) | LSTM Cell. |
+| ![Figure 6](assets/papers-explained-review-08-recurrent-layers/fig-6.webp) | Forget Gate. |
+| ![Figure 7](assets/papers-explained-review-08-recurrent-layers/fig-7.webp) | The forget gate regulates the information that should be discarded from the memory cell. |
+| ![Figure 8](assets/papers-explained-review-08-recurrent-layers/fig-8.webp) | Input Gate. |
+| ![Figure 9](assets/papers-explained-review-08-recurrent-layers/fig-9.webp) | The input gate determines the relevance of new information coming into the cell. |
+| ![Figure 10](assets/papers-explained-review-08-recurrent-layers/fig-10.webp) | Memory Cell. |
+| ![Figure 11](assets/papers-explained-review-08-recurrent-layers/fig-11.webp) | The memory cell is responsible for retaining and updating information over time. |
+| ![Figure 12](assets/papers-explained-review-08-recurrent-layers/fig-12.webp) | Output Gate. |
+| ![Figure 13](assets/papers-explained-review-08-recurrent-layers/fig-13.webp) | Where. |
+| ![Figure 14](assets/papers-explained-review-08-recurrent-layers/fig-14.webp) | GRU Cell. |
+| ![Figure 15](assets/papers-explained-review-08-recurrent-layers/fig-15.webp) | Update Gate. |
+| ![Figure 16](assets/papers-explained-review-08-recurrent-layers/fig-16.webp) | The update gate determines how much of the previous hidden state should be preserved for the current time step. |
+| ![Figure 17](assets/papers-explained-review-08-recurrent-layers/fig-17.webp) | Reset Gate. |
+| ![Figure 18](assets/papers-explained-review-08-recurrent-layers/fig-18.webp) | The reset gate controls how much of the previous hidden state should be forgotten when calculating the new candidate state. |
+| ![Figure 19](assets/papers-explained-review-08-recurrent-layers/fig-19.webp) | Candidate State. |
+| ![Figure 20](assets/papers-explained-review-08-recurrent-layers/fig-20.webp) | Back to Top. |
+| ![Figure 21](assets/papers-explained-review-08-recurrent-layers/fig-21.webp) | Current Hidden State. |
+| ![Figure 22](assets/papers-explained-review-08-recurrent-layers/fig-22.webp) | Where. |
 ## Related
 
 - [[Papers Explained Corpus]]

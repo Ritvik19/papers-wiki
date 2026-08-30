@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-02-12_Papers-Explained-308--SFT-Memorizes--RL-Generalizes-f51c5c66ea05.html`
+- Source file: `raw/2025-02-12_Papers-Explained-308--SFT-Memorizes--RL-Generalizes-f51c5c66ea05.md`
 - Source title: Papers Explained 308: SFT Memorizes, RL Generalizes
 - Published: 2025-02-12
 - Canonical: [https://medium.com/@ritvik19/papers-explained-308-sft-memorizes-rl-generalizes-f51c5c66ea05](https://medium.com/@ritvik19/papers-explained-308-sft-memorizes-rl-generalizes-f51c5c66ea05)
@@ -105,18 +105,18 @@ SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-trai
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-02-12_Papers-Explained-308--SFT-Memorizes--RL-Generalizes-f51c5c66ea05.html`); local copies under `wiki/assets/papers-explained-308-sft-memorizes-rl-generalizes/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-02-12_Papers-Explained-308--SFT-Memorizes--RL-Generalizes-f51c5c66ea05.md`); local copies under `wiki/assets/papers-explained-308-sft-memorizes-rl-generalizes/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-308-sft-memorizes-rl-generalizes/fig-1.png) | Title card: SFT Memorizes, RL Generalizes. |
-| ![Figure 2](assets/papers-explained-308-sft-memorizes-rl-generalizes/fig-2.png) | An example of the sequential revision formulation with a verifier. |
-| ![Figure 3](assets/papers-explained-308-sft-memorizes-rl-generalizes/fig-3.png) | Visual variations: The major visual challenge is to recognize the number of each card, agnostic to the color of the cards. |
-| ![Figure 4](assets/papers-explained-308-sft-memorizes-rl-generalizes/fig-4.png) | Demonstration of one navigation task in V-IRL. |
-| ![Figure 5](assets/papers-explained-308-sft-memorizes-rl-generalizes/fig-5.png) | Success rate (%) — GFLOPs trendlines for RL and SFT on GeneralPoints and V-IRL. |
-| ![Figure 6](assets/papers-explained-308-sft-memorizes-rl-generalizes/fig-6.png) | Comparison of out-of-distribution performance under rule variants. |
-| ![Figure 7](assets/papers-explained-308-sft-memorizes-rl-generalizes/fig-7.png) | Comparison of out-of-distribution performance under visual variants. |
-| ![Figure 8](assets/papers-explained-308-sft-memorizes-rl-generalizes/fig-8.png) | RL experiments on GP-L without SFT initialization. |
+| ![Figure 1](assets/papers-explained-308-sft-memorizes-rl-generalizes/fig-1.webp) | Title card: SFT Memorizes, RL Generalizes. |
+| ![Figure 2](assets/papers-explained-308-sft-memorizes-rl-generalizes/fig-2.webp) | An example of the sequential revision formulation with a verifier. |
+| ![Figure 3](assets/papers-explained-308-sft-memorizes-rl-generalizes/fig-3.webp) | Visual variations: The major visual challenge is to recognize the number of each card, agnostic to the color of the cards. |
+| ![Figure 4](assets/papers-explained-308-sft-memorizes-rl-generalizes/fig-4.webp) | Demonstration of one navigation task in V-IRL. |
+| ![Figure 5](assets/papers-explained-308-sft-memorizes-rl-generalizes/fig-5.webp) | Success rate (%) — GFLOPs trendlines for RL and SFT on GeneralPoints and V-IRL. |
+| ![Figure 6](assets/papers-explained-308-sft-memorizes-rl-generalizes/fig-6.webp) | Comparison of out-of-distribution performance under rule variants. |
+| ![Figure 7](assets/papers-explained-308-sft-memorizes-rl-generalizes/fig-7.webp) | Comparison of out-of-distribution performance under visual variants. |
+| ![Figure 8](assets/papers-explained-308-sft-memorizes-rl-generalizes/fig-8.webp) | RL experiments on GP-L without SFT initialization. |
 ## Related
 
 - [[Papers Explained Corpus]]

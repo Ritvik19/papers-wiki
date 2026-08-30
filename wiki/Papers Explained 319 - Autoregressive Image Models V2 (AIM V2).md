@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-02-27_Papers-Explained-319--Autoregressive-Image-Models-V2--AIM-V2--e28eadf5ba9b.html`
+- Source file: `raw/2025-02-27_Papers-Explained-319--Autoregressive-Image-Models-V2--AIM-V2--e28eadf5ba9b.md`
 - Source title: Papers Explained 319: Autoregressive Image Models V2 (AIM V2)
 - Published: 2025-02-27
 - Canonical: [https://medium.com/@ritvik19/papers-explained-319-autoregressive-image-models-v2-aim-v2-e28eadf5ba9b](https://medium.com/@ritvik19/papers-explained-319-autoregressive-image-models-v2-aim-v2-e28eadf5ba9b)
@@ -101,18 +101,18 @@ Multimodal Autoregressive Pre-training of Large Vision Encoders [2411.14402](htt
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-02-27_Papers-Explained-319--Autoregressive-Image-Models-V2--AIM-V2--e28eadf5ba9b.html`); local copies under `wiki/assets/papers-explained-319-autoregressive-image-models-v2-aim-v2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-02-27_Papers-Explained-319--Autoregressive-Image-Models-V2--AIM-V2--e28eadf5ba9b.md`); local copies under `wiki/assets/papers-explained-319-autoregressive-image-models-v2-aim-v2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-319-autoregressive-image-models-v2-aim-v2/fig-1.png) | Title card: Autoregressive Image Models V2 (AIM V2). |
-| ![Figure 2](assets/papers-explained-319-autoregressive-image-models-v2-aim-v2/fig-2.png) | AIMV2 family of models. |
-| ![Figure 3](assets/papers-explained-319-autoregressive-image-models-v2-aim-v2/fig-3.png) | AIMV2 pre-training Overview. |
-| ![Figure 4](assets/papers-explained-319-autoregressive-image-models-v2-aim-v2/fig-4.png) | Separate loss functions are defined for the image and text domains as follows. |
-| ![Figure 5](assets/papers-explained-319-autoregressive-image-models-v2-aim-v2/fig-5.png) | Pre-training data mixture. |
-| ![Figure 6](assets/papers-explained-319-autoregressive-image-models-v2-aim-v2/fig-6.png) | Scaling properties of AIMV2. |
-| ![Figure 7](assets/papers-explained-319-autoregressive-image-models-v2-aim-v2/fig-7.png) | AIMV2 vs. Captioning. |
-| ![Figure 8](assets/papers-explained-319-autoregressive-image-models-v2-aim-v2/fig-8.png) | Frozen trunk evaluation for recognition benchmarks. |
+| ![Figure 1](assets/papers-explained-319-autoregressive-image-models-v2-aim-v2/fig-1.webp) | Title card: Autoregressive Image Models V2 (AIM V2). |
+| ![Figure 2](assets/papers-explained-319-autoregressive-image-models-v2-aim-v2/fig-2.webp) | AIMV2 family of models. |
+| ![Figure 3](assets/papers-explained-319-autoregressive-image-models-v2-aim-v2/fig-3.webp) | AIMV2 pre-training Overview. |
+| ![Figure 4](assets/papers-explained-319-autoregressive-image-models-v2-aim-v2/fig-4.webp) | Separate loss functions are defined for the image and text domains as follows. |
+| ![Figure 5](assets/papers-explained-319-autoregressive-image-models-v2-aim-v2/fig-5.webp) | Pre-training data mixture. |
+| ![Figure 6](assets/papers-explained-319-autoregressive-image-models-v2-aim-v2/fig-6.webp) | Scaling properties of AIMV2. |
+| ![Figure 7](assets/papers-explained-319-autoregressive-image-models-v2-aim-v2/fig-7.webp) | AIMV2 vs. Captioning. |
+| ![Figure 8](assets/papers-explained-319-autoregressive-image-models-v2-aim-v2/fig-8.webp) | Frozen trunk evaluation for recognition benchmarks. |
 ## Related
 
 - [[Papers Explained Corpus]]

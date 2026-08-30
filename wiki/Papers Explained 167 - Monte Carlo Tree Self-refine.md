@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-07-22_Papers-Explained-167--Monte-Carlo-Tree-Self-refine-79bffb070c1a.html`
+- Source file: `raw/2024-07-22_Papers-Explained-167--Monte-Carlo-Tree-Self-refine-79bffb070c1a.md`
 - Source title: Papers Explained 167: Monte Carlo Tree Self-refine
 - Published: 2024-07-22
 - Canonical: [https://medium.com/@ritvik19/papers-explained-167-monte-carlo-tree-self-refine-79bffb070c1a](https://medium.com/@ritvik19/papers-explained-167-monte-carlo-tree-self-refine-79bffb070c1a)
@@ -153,19 +153,19 @@ Accessing GPT-4 level Mathematical Olympiad Solutions via Monte Carlo Tree Self-
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-07-22_Papers-Explained-167--Monte-Carlo-Tree-Self-refine-79bffb070c1a.html`); local copies under `wiki/assets/papers-explained-167-monte-carlo-tree-self-refine/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-07-22_Papers-Explained-167--Monte-Carlo-Tree-Self-refine-79bffb070c1a.md`); local copies under `wiki/assets/papers-explained-167-monte-carlo-tree-self-refine/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-167-monte-carlo-tree-self-refine/fig-1.png) | Paper title: MCTS **self-refine** with LLaMA-3 8B for Olympiad-level math (technical report header). |
-| ![Figure 2](assets/papers-explained-167-monte-carlo-tree-self-refine/fig-2.png) | Standard **UCT** selection formula used in MCTS. |
-| ![Figure 3](assets/papers-explained-167-monte-carlo-tree-self-refine/fig-3.png) | **MCTSr** node value \(Q(a)\) from self-reward samples (min + mean blend). |
-| ![Figure 4](assets/papers-explained-167-monte-carlo-tree-self-refine/fig-4.png) | Backpropagation update: parent \(Q'\) mixes own rewards with **max child** quality. |
-| ![Figure 5](assets/papers-explained-167-monte-carlo-tree-self-refine/fig-5.png) | **UCT** after Q updates (parent visit counts, exploration term with \(\epsilon\)). |
-| ![Figure 6](assets/papers-explained-167-monte-carlo-tree-self-refine/fig-6.png) | **GSM8K** / **GSM-Hard**: Zero-Shot CoT vs self-refine vs **4- / 8-rollout MCTSr**. |
-| ![Figure 7](assets/papers-explained-167-monte-carlo-tree-self-refine/fig-7.png) | **MATH** by difficulty level and overall: CoT → MCTSr rollouts. |
-| ![Figure 8](assets/papers-explained-167-monte-carlo-tree-self-refine/fig-8.png) | Olympiad-style sets (**AIME**, **Math Odyssey**, **OlympiadBench**): gains from more MCTSr rollouts. |
-| ![Figure 9](assets/papers-explained-167-monte-carlo-tree-self-refine/fig-9.png) | Closed-source baselines: **Gemini 1.5 Pro**, **Claude 3 Opus**, **GPT-4 Turbo** on MATH / Odyssey / GSM8K (reference table). |
+| ![Figure 1](assets/papers-explained-167-monte-carlo-tree-self-refine/fig-1.webp) | Paper title: MCTS **self-refine** with LLaMA-3 8B for Olympiad-level math (technical report header). |
+| ![Figure 2](assets/papers-explained-167-monte-carlo-tree-self-refine/fig-2.webp) | Standard **UCT** selection formula used in MCTS. |
+| ![Figure 3](assets/papers-explained-167-monte-carlo-tree-self-refine/fig-3.webp) | **MCTSr** node value \(Q(a)\) from self-reward samples (min + mean blend). |
+| ![Figure 4](assets/papers-explained-167-monte-carlo-tree-self-refine/fig-4.webp) | Backpropagation update: parent \(Q'\) mixes own rewards with **max child** quality. |
+| ![Figure 5](assets/papers-explained-167-monte-carlo-tree-self-refine/fig-5.webp) | **UCT** after Q updates (parent visit counts, exploration term with \(\epsilon\)). |
+| ![Figure 6](assets/papers-explained-167-monte-carlo-tree-self-refine/fig-6.webp) | **GSM8K** / **GSM-Hard**: Zero-Shot CoT vs self-refine vs **4- / 8-rollout MCTSr**. |
+| ![Figure 7](assets/papers-explained-167-monte-carlo-tree-self-refine/fig-7.webp) | **MATH** by difficulty level and overall: CoT → MCTSr rollouts. |
+| ![Figure 8](assets/papers-explained-167-monte-carlo-tree-self-refine/fig-8.webp) | Olympiad-style sets (**AIME**, **Math Odyssey**, **OlympiadBench**): gains from more MCTSr rollouts. |
+| ![Figure 9](assets/papers-explained-167-monte-carlo-tree-self-refine/fig-9.webp) | Closed-source baselines: **Gemini 1.5 Pro**, **Claude 3 Opus**, **GPT-4 Turbo** on MATH / Odyssey / GSM8K (reference table). |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -1,6 +1,6 @@
 # Understanding the Receptive Field of Deep Convolutional Networks
 
-**Source**: `raw/receptive-field/full-article.html` (356 KB), `raw/receptive-field/full-article.md` (markdown view)  
+**Source**: `raw/receptive-field/full-article.md` (356 KB), `raw/receptive-field/full-article.md` (markdown view)  
 **URL**: https://theaisummer.com/receptive-field/  
 **Author**: Nikolas Adaloglou (AI Summer), 2020-07-02  
 **Ingested**: 2026-06-06  
@@ -39,27 +39,27 @@ The article also covers RF accounting for upsampling (k=1), separable convolutio
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/receptive-field/fig-1.png) | Human visual system: field of view vs single-neuron receptive field patch | — |
-| ![fig-2](../assets/receptive-field/fig-2.png) | CNN receptive field: input patch associated with an output feature | — |
-| ![fig-3](../assets/receptive-field/fig-3.png) | Semantic segmentation: green vs orange receptive fields — larger context preferred | — |
-| ![fig-4](../assets/receptive-field/fig-4.png) | ImageNet accuracy vs receptive field radius for ResNet, Inception, MobileNet families | — |
-| ![fig-5](../assets/receptive-field/fig-5.png) | 1D visualization of sequential conv layers computing RF backward from output (Araujo et al.) | — |
-| ![fig-6](../assets/receptive-field/fig-6.png) | More layers increase theoretical RF but decrease ERF ratio (Luo et al.) | — |
-| ![fig-7](../assets/receptive-field/fig-7.png) | Dilated convolutions: RF grows 3×3 → 7×7 → 15×15 across three layers (Yu & Koltun) | — |
-| ![fig-8](../assets/receptive-field/fig-8.png) | Effective receptive field with pooling vs dilation (Luo et al.) | — |
-| ![fig-9](../assets/receptive-field/fig-9.png) | HighResNet: binomial distribution of receptive fields across skip paths | — |
-| ![fig-10](../assets/receptive-field/fig-10.png) | Nearest-neighbor upsampling: k=1 for RF computation when doubling resolution | — |
-| ![fig-11](../assets/receptive-field/fig-11.png) | ERF Gaussian distribution with and without non-linearities (Luo et al.) | — |
+| ![fig-1](../assets/receptive-field/fig-1.webp) | Human visual system: field of view vs single-neuron receptive field patch | — |
+| ![fig-2](../assets/receptive-field/fig-2.webp) | CNN receptive field: input patch associated with an output feature | — |
+| ![fig-3](../assets/receptive-field/fig-3.webp) | Semantic segmentation: green vs orange receptive fields — larger context preferred | — |
+| ![fig-4](../assets/receptive-field/fig-4.webp) | ImageNet accuracy vs receptive field radius for ResNet, Inception, MobileNet families | — |
+| ![fig-5](../assets/receptive-field/fig-5.webp) | 1D visualization of sequential conv layers computing RF backward from output (Araujo et al.) | — |
+| ![fig-6](../assets/receptive-field/fig-6.webp) | More layers increase theoretical RF but decrease ERF ratio (Luo et al.) | — |
+| ![fig-7](../assets/receptive-field/fig-7.webp) | Dilated convolutions: RF grows 3×3 → 7×7 → 15×15 across three layers (Yu & Koltun) | — |
+| ![fig-8](../assets/receptive-field/fig-8.webp) | Effective receptive field with pooling vs dilation (Luo et al.) | — |
+| ![fig-9](../assets/receptive-field/fig-9.webp) | HighResNet: binomial distribution of receptive fields across skip paths | — |
+| ![fig-10](../assets/receptive-field/fig-10.webp) | Nearest-neighbor upsampling: k=1 for RF computation when doubling resolution | — |
+| ![fig-11](../assets/receptive-field/fig-11.webp) | ERF Gaussian distribution with and without non-linearities (Luo et al.) | — |
 
-![Human visual receptive field](../assets/receptive-field/fig-1.png)
+![Human visual receptive field](../assets/receptive-field/fig-1.webp)
 
 The article opens by grounding CNN terminology in neuroscience: each neuron sees only a patch of the visual field.
 
-![Semantic segmentation receptive fields](../assets/receptive-field/fig-3.png)
+![Semantic segmentation receptive fields](../assets/receptive-field/fig-3.webp)
 
 Dense prediction tasks illustrate why RF size matters — boundary pixels need context from the full object.
 
-![Dilated convolution RF growth](../assets/receptive-field/fig-7.png)
+![Dilated convolution RF growth](../assets/receptive-field/fig-7.webp)
 
 Three stacked dilated convolutions expand receptive field exponentially while parameter count grows only linearly.
 

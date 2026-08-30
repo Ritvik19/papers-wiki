@@ -1,6 +1,6 @@
 # Papers Explained 600: Rubric Dropout
 
-**Source**: `raw/2026-08-21_Papers-Explained-600--Rubric-Dropout-97c3ca77cae7.html`  
+**Source**: `raw/2026-08-21_Papers-Explained-600--Rubric-Dropout-97c3ca77cae7.md`  
 **Paper**: https://arxiv.org/abs/2608.11669  
 **Ingested**: 2026-08-23  
 **Tags**: #summary
@@ -9,7 +9,7 @@
 
 **Rubric Dropout** is a simple, highly effective mitigation for reward hacking in **Rubrics-as-Rewards Reinforcement Learning**. In rubric-based RL (e.g. GRPO with LLM-as-a-Judge grading rubrics), policies quickly learn to exploit proxy judge idiosyncrasies: satisfying cheap surface-level checklist items while degrading overall substantive quality (the *proxy-gold gap* and *overclaim fraction*). Inspired by neuron dropout, Rubric Dropout randomly drops a fraction $f \in [0, 1)$ of positive-weight rubric criteria during each training step, forcing the policy to satisfy all criteria robustly rather than over-optimizing a single vulnerable rubric dimension.
 
-![Papers Explained 600: Rubric Dropout banner](../assets/papers-explained-600-rubric-dropout/fig-1.png)
+![Papers Explained 600: Rubric Dropout banner](../assets/papers-explained-600-rubric-dropout/fig-1.webp)
 
 ### Method and Mechanism
 
@@ -18,7 +18,7 @@
 - **Robust Reward Signal**: The noise injected by dropout penalizes responses whose advantage hinges on narrow criterion hacking, while consistently rewarding broadly competent responses.
 - **Evaluation**: Evaluated on Qwen3-8B across medical and complex instruction datasets (RubricHub-Medical $\to$ HealthBench-Hard).
 
-![Rubric Dropout Pipeline and Two-Judge Evaluation](../assets/papers-explained-600-rubric-dropout/fig-2.png)
+![Rubric Dropout Pipeline and Two-Judge Evaluation](../assets/papers-explained-600-rubric-dropout/fig-2.webp)
 
 ### Empirical Results
 
@@ -26,7 +26,7 @@
 - **Robust Quality Gains**: 30–50% rubric dropout consistently prevents proxy-gold divergence, maximizing gold judge accuracy across diverse domains.
 - **Hyperparameter Stability**: Performance remains forgiving and stable across dropout fractions from 20% to 60%.
 
-![Reward Hacking Mitigation and Gold Score Progression](../assets/papers-explained-600-rubric-dropout/fig-4.png)
+![Reward Hacking Mitigation and Gold Score Progression](../assets/papers-explained-600-rubric-dropout/fig-4.webp)
 
 ## Key Claims
 
@@ -38,12 +38,12 @@
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/papers-explained-600-rubric-dropout/fig-1.png) | Papers Explained 600 overview banner. | Overview |
-| ![fig-2](../assets/papers-explained-600-rubric-dropout/fig-2.png) | Rubric Dropout training workflow and two-judge protocol. | Method |
-| ![fig-3](../assets/papers-explained-600-rubric-dropout/fig-3.png) | Proxy-gold gap and overclaim fraction definitions. | Method |
-| ![fig-4](../assets/papers-explained-600-rubric-dropout/fig-4.png) | Gold judge score progression: Baseline collapse vs. Rubric Dropout stability. | Results |
-| ![fig-5](../assets/papers-explained-600-rubric-dropout/fig-5.png) | Dropout fraction sweep (20% to 60%) robustness curve. | Ablations |
-| ![fig-6](../assets/papers-explained-600-rubric-dropout/fig-6.png) | Comparison across medical and open-domain instruction benchmarks. | Evaluation |
+| ![fig-1](../assets/papers-explained-600-rubric-dropout/fig-1.webp) | Papers Explained 600 overview banner. | Overview |
+| ![fig-2](../assets/papers-explained-600-rubric-dropout/fig-2.webp) | Rubric Dropout training workflow and two-judge protocol. | Method |
+| ![fig-3](../assets/papers-explained-600-rubric-dropout/fig-3.webp) | Proxy-gold gap and overclaim fraction definitions. | Method |
+| ![fig-4](../assets/papers-explained-600-rubric-dropout/fig-4.webp) | Gold judge score progression: Baseline collapse vs. Rubric Dropout stability. | Results |
+| ![fig-5](../assets/papers-explained-600-rubric-dropout/fig-5.webp) | Dropout fraction sweep (20% to 60%) robustness curve. | Ablations |
+| ![fig-6](../assets/papers-explained-600-rubric-dropout/fig-6.webp) | Comparison across medical and open-domain instruction benchmarks. | Evaluation |
 
 ## Entities
 

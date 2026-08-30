@@ -1,6 +1,6 @@
 ---
 Source URL: https://deploymentsafety.openai.com/gpt-live
-Fetched via: WebFetch (canonical raw is full-article.html via curl; this is the markdown sibling)
+Fetched via: WebFetch (canonical raw is full-article.md via curl; this is the markdown sibling)
 ---
 
 # GPT-Live System Card - OpenAI Deployment Safety Hub

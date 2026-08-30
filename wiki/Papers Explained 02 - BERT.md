@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-06_Papers-Explained-02--BERT-31e59abc0615.html`
+- Source file: `raw/2023-02-06_Papers-Explained-02--BERT-31e59abc0615.md`
 - Source title: Papers Explained 02: BERT
 - Published: 2023-02-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-02-bert-31e59abc0615](https://medium.com/@ritvik19/papers-explained-02-bert-31e59abc0615)
@@ -93,14 +93,14 @@ It is critical to use a document-level corpus rather than a shuffled sentence-le
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-06_Papers-Explained-02--BERT-31e59abc0615.html`); local copies under `wiki/assets/papers-explained-02-bert/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-06_Papers-Explained-02--BERT-31e59abc0615.md`); local copies under `wiki/assets/papers-explained-02-bert/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-02-bert/fig-1.png) | Two-stage framework: pre-training on unlabeled data, then fine-tuning on labeled downstream tasks. |
-| ![Figure 2](assets/papers-explained-02-bert/fig-2.png) | Multi-layer bidirectional Transformer encoder (BERTBASE vs BERTLARGE context). |
-| ![Figure 3](assets/papers-explained-02-bert/fig-3.png) | Token, segment, and position embeddings summed for each input token ([CLS], [SEP], WordPiece). |
-| ![Figure 4](assets/papers-explained-02-bert/fig-4.png) | Task-specific fine-tuning heads over the shared BERT encoder. |
+| ![Figure 1](assets/papers-explained-02-bert/fig-1.webp) | Two-stage framework: pre-training on unlabeled data, then fine-tuning on labeled downstream tasks. |
+| ![Figure 2](assets/papers-explained-02-bert/fig-2.webp) | Multi-layer bidirectional Transformer encoder (BERTBASE vs BERTLARGE context). |
+| ![Figure 3](assets/papers-explained-02-bert/fig-3.webp) | Token, segment, and position embeddings summed for each input token ([CLS], [SEP], WordPiece). |
+| ![Figure 4](assets/papers-explained-02-bert/fig-4.webp) | Task-specific fine-tuning heads over the shared BERT encoder. |
 ## Paper
 
 BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding [1810.04805](https://arxiv.org/abs/1810.04805)

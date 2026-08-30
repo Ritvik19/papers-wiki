@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-10-17_Papers-Explained-477--General-Reasoner-d3b1c11bfc9a.html`
+- Source file: `raw/2025-10-17_Papers-Explained-477--General-Reasoner-d3b1c11bfc9a.md`
 - Source title: Papers Explained 477: General-Reasoner
 - Published: 2025-10-17
 - Canonical: [https://medium.com/@ritvik19/papers-explained-477-general-reasoner-d3b1c11bfc9a](https://medium.com/@ritvik19/papers-explained-477-general-reasoner-d3b1c11bfc9a)
@@ -101,18 +101,18 @@ General-Reasoner: Advancing LLM Reasoning Across All Domains [2505.14652](https:
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-10-17_Papers-Explained-477--General-Reasoner-d3b1c11bfc9a.html`); local copies under `wiki/assets/papers-explained-477-general-reasoner/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-10-17_Papers-Explained-477--General-Reasoner-d3b1c11bfc9a.md`); local copies under `wiki/assets/papers-explained-477-general-reasoner/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-477-general-reasoner/fig-1.png) | Title card: General-Reasoner. |
-| ![Figure 2](assets/papers-explained-477-general-reasoner/fig-2.png) | Data creation pipeline. |
-| ![Figure 3](assets/papers-explained-477-general-reasoner/fig-3.png) | Eventually, the processed dataset contains approximately 230,000 reasoning questions. |
-| ![Figure 4](assets/papers-explained-477-general-reasoner/fig-4.png) | Given a question-answer pair (q,a), a behavior policy πθold samples a group of G individual responses {oi}. |
-| ![Figure 5](assets/papers-explained-477-general-reasoner/fig-5.png) | Model-Based Verifier for GRPO. |
-| ![Figure 6](assets/papers-explained-477-general-reasoner/fig-6.png) | Hyperparameter settings for General-Reasoner variants. |
-| ![Figure 7](assets/papers-explained-477-general-reasoner/fig-7.png) | Accuracy comparison on general reasoning benchmarks. |
-| ![Figure 8](assets/papers-explained-477-general-reasoner/fig-8.png) | Math task accuracy across datasets. |
+| ![Figure 1](assets/papers-explained-477-general-reasoner/fig-1.webp) | Title card: General-Reasoner. |
+| ![Figure 2](assets/papers-explained-477-general-reasoner/fig-2.webp) | Data creation pipeline. |
+| ![Figure 3](assets/papers-explained-477-general-reasoner/fig-3.webp) | Eventually, the processed dataset contains approximately 230,000 reasoning questions. |
+| ![Figure 4](assets/papers-explained-477-general-reasoner/fig-4.webp) | Given a question-answer pair (q,a), a behavior policy πθold samples a group of G individual responses {oi}. |
+| ![Figure 5](assets/papers-explained-477-general-reasoner/fig-5.webp) | Model-Based Verifier for GRPO. |
+| ![Figure 6](assets/papers-explained-477-general-reasoner/fig-6.webp) | Hyperparameter settings for General-Reasoner variants. |
+| ![Figure 7](assets/papers-explained-477-general-reasoner/fig-7.webp) | Accuracy comparison on general reasoning benchmarks. |
+| ![Figure 8](assets/papers-explained-477-general-reasoner/fig-8.webp) | Math task accuracy across datasets. |
 ## Related
 
 - [[Papers Explained Corpus]]

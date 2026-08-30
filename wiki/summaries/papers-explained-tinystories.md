@@ -1,6 +1,6 @@
 # Papers Explained: TinyStories
 
-**Source**: `raw/draft_Papers-Explained--TinyStories-0218b6d43763.html`  
+**Source**: `raw/draft_Papers-Explained--TinyStories-0218b6d43763.md`  
 **Paper**: https://arxiv.org/abs/2305.07759  
 **Ingested**: 2026-08-23  
 **Tags**: #summary
@@ -9,7 +9,7 @@
 
 **TinyStories** (Eldan & Li, Microsoft Research) is a landmark paper demonstrating that language models with fewer than 10M–33M parameters can generate fluent, coherent, and grammatically perfect English stories with logical consistency when trained on a carefully curated synthetic dataset restricted to the vocabulary and cognitive concepts of 3-to-4-year-old children. Prior wisdom held that emergence of coherent grammar and reasoning required billions of parameters. TinyStories proved that the massive scale of traditional LLMs is largely driven by the high entropy, complexity, and noise of web-scale datasets, rather than an inherent capacity minimum for linguistic reasoning.
 
-![Papers Explained TinyStories banner](../assets/papers-explained-tinystories/fig-1.png)
+![Papers Explained TinyStories banner](../assets/papers-explained-tinystories/fig-1.webp)
 
 ### Dataset & Methodology
 
@@ -17,7 +17,7 @@
 - **Model Architectures**: Trains compact 1-layer, 2-layer, 4-layer, and 8-layer Transformers (1M to 33M parameters).
 - **GPT-4 Evaluation**: Evaluates grammatical correctness, plot consistency, creativity, and instruction-following using automated GPT-4 grading prompts.
 
-![TinyStories Architectures and Coherence Evaluation](../assets/papers-explained-tinystories/fig-2.png)
+![TinyStories Architectures and Coherence Evaluation](../assets/papers-explained-tinystories/fig-2.webp)
 
 ## Key Claims
 
@@ -29,23 +29,23 @@
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/papers-explained-tinystories/fig-1.png) | TinyStories overview banner. | Overview |
-| ![fig-2](../assets/papers-explained-tinystories/fig-2.png) | Synthetic story generation prompt and vocabulary constraint. | Method |
-| ![fig-3](../assets/papers-explained-tinystories/fig-3.png) | TinyStories-Instruct multi-turn prompt formatting. | Method |
-| ![fig-4](../assets/papers-explained-tinystories/fig-4.png) | GPT-4 automated evaluation rubric and grading schema. | Eval |
-| ![fig-5](../assets/papers-explained-tinystories/fig-5.png) | Model scale (1M to 33M) vs. grammatical coherence. | Results |
-| ![fig-6](../assets/papers-explained-tinystories/fig-6.png) | Training loss curves on TinyStories vs WebText. | Dynamics |
-| ![fig-7](../assets/papers-explained-tinystories/fig-7.png) | Reasoning and plot consistency scores across model depth. | Analysis |
-| ![fig-8](../assets/papers-explained-tinystories/fig-8.png) | Instruction following fidelity in small models. | Instruction |
-| ![fig-9](../assets/papers-explained-tinystories/fig-9.png) | Comparison: 1-layer transformer vs 8-layer transformer outputs. | Qualitative |
-| ![fig-10](../assets/papers-explained-tinystories/fig-10.png) | Attention head specialization on character tracking. | Mechanistic |
-| ![fig-11](../assets/papers-explained-tinystories/fig-11.png) | Generalization to novel word combinations. | Generalization |
-| ![fig-12](../assets/papers-explained-tinystories/fig-12.png) | Ablation of vocabulary size and prompt diversity. | Ablations |
-| ![fig-13](../assets/papers-explained-tinystories/fig-13.png) | Comparison with base GPT-Neo and GPT-2 models. | Comparison |
-| ![fig-14](../assets/papers-explained-tinystories/fig-14.png) | Parameter efficiency vs narrative complexity. | Scaling |
-| ![fig-15](../assets/papers-explained-tinystories/fig-15.png) | Failure mode analysis (repetition, early closure). | Failure Modes |
-| ![fig-16](../assets/papers-explained-tinystories/fig-16.png) | Synthetic data filtering and diversity metrics. | Curation |
-| ![fig-17](../assets/papers-explained-tinystories/fig-17.png) | Summary of linguistic emergence at small scales. | Conclusion |
+| ![fig-1](../assets/papers-explained-tinystories/fig-1.webp) | TinyStories overview banner. | Overview |
+| ![fig-2](../assets/papers-explained-tinystories/fig-2.webp) | Synthetic story generation prompt and vocabulary constraint. | Method |
+| ![fig-3](../assets/papers-explained-tinystories/fig-3.webp) | TinyStories-Instruct multi-turn prompt formatting. | Method |
+| ![fig-4](../assets/papers-explained-tinystories/fig-4.webp) | GPT-4 automated evaluation rubric and grading schema. | Eval |
+| ![fig-5](../assets/papers-explained-tinystories/fig-5.webp) | Model scale (1M to 33M) vs. grammatical coherence. | Results |
+| ![fig-6](../assets/papers-explained-tinystories/fig-6.webp) | Training loss curves on TinyStories vs WebText. | Dynamics |
+| ![fig-7](../assets/papers-explained-tinystories/fig-7.webp) | Reasoning and plot consistency scores across model depth. | Analysis |
+| ![fig-8](../assets/papers-explained-tinystories/fig-8.webp) | Instruction following fidelity in small models. | Instruction |
+| ![fig-9](../assets/papers-explained-tinystories/fig-9.webp) | Comparison: 1-layer transformer vs 8-layer transformer outputs. | Qualitative |
+| ![fig-10](../assets/papers-explained-tinystories/fig-10.webp) | Attention head specialization on character tracking. | Mechanistic |
+| ![fig-11](../assets/papers-explained-tinystories/fig-11.webp) | Generalization to novel word combinations. | Generalization |
+| ![fig-12](../assets/papers-explained-tinystories/fig-12.webp) | Ablation of vocabulary size and prompt diversity. | Ablations |
+| ![fig-13](../assets/papers-explained-tinystories/fig-13.webp) | Comparison with base GPT-Neo and GPT-2 models. | Comparison |
+| ![fig-14](../assets/papers-explained-tinystories/fig-14.webp) | Parameter efficiency vs narrative complexity. | Scaling |
+| ![fig-15](../assets/papers-explained-tinystories/fig-15.webp) | Failure mode analysis (repetition, early closure). | Failure Modes |
+| ![fig-16](../assets/papers-explained-tinystories/fig-16.webp) | Synthetic data filtering and diversity metrics. | Curation |
+| ![fig-17](../assets/papers-explained-tinystories/fig-17.webp) | Summary of linguistic emergence at small scales. | Conclusion |
 
 ## Entities
 

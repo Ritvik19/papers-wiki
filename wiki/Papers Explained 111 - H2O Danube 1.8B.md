@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-03-11_Papers-Explained-111--H2O-Danube-1-8B-b790c073d257.html`
+- Source file: `raw/2024-03-11_Papers-Explained-111--H2O-Danube-1-8B-b790c073d257.md`
 - Source title: Papers Explained 111: H2O Danube 1.8B
 - Published: 2024-03-11
 - Canonical: [https://medium.com/@ritvik19/papers-explained-111-h2o-danube-1-8b-b790c073d257](https://medium.com/@ritvik19/papers-explained-111-h2o-danube-1-8b-b790c073d257)
@@ -141,19 +141,19 @@ Recommended Reading [Decoder-Only Language Transformers](https://ritvik19.medium
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-03-11_Papers-Explained-111--H2O-Danube-1-8B-b790c073d257.html`); local copies under `wiki/assets/papers-explained-111-h2o-danube-1-8b/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-03-11_Papers-Explained-111--H2O-Danube-1-8B-b790c073d257.md`); local copies under `wiki/assets/papers-explained-111-h2o-danube-1-8b/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-111-h2o-danube-1-8b/fig-1.png) | Title page of the H2O-Danube-1.8B technical report. |
-| ![Figure 2](assets/papers-explained-111-h2o-danube-1-8b/fig-2.png) | Base-model commonsense, world-knowledge, and reading-comprehension benchmark comparison. |
-| ![Figure 3](assets/papers-explained-111-h2o-danube-1-8b/fig-3.png) | Open LLM Leaderboard-style benchmark table for base models (with and without GSM8K averaging). |
-| ![Figure 4](assets/papers-explained-111-h2o-danube-1-8b/fig-4.png) | MT-Bench chat results by category and turn for TinyLlama, Qwen, StableLM, and H2O-Danube chat variants. |
-| ![Figure 5](assets/papers-explained-111-h2o-danube-1-8b/fig-5.png) | Chat-model commonsense and reading-comprehension benchmark comparison. |
-| ![Figure 6](assets/papers-explained-111-h2o-danube-1-8b/fig-6.png) | Open LLM Leaderboard benchmark table for chat models. |
-| ![Figure 7](assets/papers-explained-111-h2o-danube-1-8b/fig-7.png) | Danube2 comparison against similarly sized models on major leaderboard tasks. |
-| ![Figure 8](assets/papers-explained-111-h2o-danube-1-8b/fig-8.png) | Hugging Face Open LLM leaderboard average-score chart highlighting Danube2 gains over Danube1. |
-| ![Figure 9](assets/papers-explained-111-h2o-danube-1-8b/fig-9.png) | Danube2 three-stage data-mixture composition showing reduced web share and higher-quality data increase. |
+| ![Figure 1](assets/papers-explained-111-h2o-danube-1-8b/fig-1.webp) | Title page of the H2O-Danube-1.8B technical report. |
+| ![Figure 2](assets/papers-explained-111-h2o-danube-1-8b/fig-2.webp) | Base-model commonsense, world-knowledge, and reading-comprehension benchmark comparison. |
+| ![Figure 3](assets/papers-explained-111-h2o-danube-1-8b/fig-3.webp) | Open LLM Leaderboard-style benchmark table for base models (with and without GSM8K averaging). |
+| ![Figure 4](assets/papers-explained-111-h2o-danube-1-8b/fig-4.webp) | MT-Bench chat results by category and turn for TinyLlama, Qwen, StableLM, and H2O-Danube chat variants. |
+| ![Figure 5](assets/papers-explained-111-h2o-danube-1-8b/fig-5.webp) | Chat-model commonsense and reading-comprehension benchmark comparison. |
+| ![Figure 6](assets/papers-explained-111-h2o-danube-1-8b/fig-6.webp) | Open LLM Leaderboard benchmark table for chat models. |
+| ![Figure 7](assets/papers-explained-111-h2o-danube-1-8b/fig-7.webp) | Danube2 comparison against similarly sized models on major leaderboard tasks. |
+| ![Figure 8](assets/papers-explained-111-h2o-danube-1-8b/fig-8.webp) | Hugging Face Open LLM leaderboard average-score chart highlighting Danube2 gains over Danube1. |
+| ![Figure 9](assets/papers-explained-111-h2o-danube-1-8b/fig-9.webp) | Danube2 three-stage data-mixture composition showing reduced web share and higher-quality data increase. |
 ## Related
 
 - [[Papers Explained Corpus]]

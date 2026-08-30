@@ -1,6 +1,6 @@
 # Speaking of Voxtral
 
-**Source**: `raw/voxtral-tts/full-article.html` (223 KB), `raw/voxtral-tts/full-article.md` (markdown view)  
+**Source**: `raw/voxtral-tts/full-article.md` (223 KB), `raw/voxtral-tts/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/voxtral-tts/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

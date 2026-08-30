@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-28_Papers-Explained-196--PaLI-3-2f5cf92f60a8.html`
+- Source file: `raw/2024-08-28_Papers-Explained-196--PaLI-3-2f5cf92f60a8.md`
 - Source title: Papers Explained 196: PaLI-3
 - Published: 2024-08-28
 - Canonical: [https://medium.com/@ritvik19/papers-explained-196-pali-3-2f5cf92f60a8](https://medium.com/@ritvik19/papers-explained-196-pali-3-2f5cf92f60a8)
@@ -139,18 +139,18 @@ Recommended Reading [Multi Modal Transformers](https://ritvik19.medium.com/list/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-28_Papers-Explained-196--PaLI-3-2f5cf92f60a8.html`); local copies under `wiki/assets/papers-explained-196-pali-3/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-28_Papers-Explained-196--PaLI-3-2f5cf92f60a8.md`); local copies under `wiki/assets/papers-explained-196-pali-3/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-196-pali-3/fig-1.png) | Title block — **PaLI-3: Smaller, Faster, Stronger** vision-language models (Google Research / DeepMind). |
-| ![Figure 2](assets/papers-explained-196-pali-3/fig-2.png) | **End-to-end diagram** — **SigLIP 2B** visual tokens + text tokens → **UL2 3B** encoder–decoder → answer string (VQA example). |
-| ![Figure 3](assets/papers-explained-196-pali-3/fig-3.png) | **SigLIP vs classification ViT** — probes, captioning, VQA, RefCOCO deltas for **G/14, L/16, B/16** (green gains vs red probe hits). |
-| ![Figure 4](assets/papers-explained-196-pali-3/fig-4.png) | **Visually situated text** — with / without OCR pipeline; PaLI-3 vs SoTA on TextCaps, TextVQA, DocVQA, ChartQA, Screen2Words, averages. |
-| ![Figure 5](assets/papers-explained-196-pali-3/fig-5.png) | **Referring-expression segmentation** — RefCOCO / RefCOCO+ / G-Ref vs RefTr, PolyFormer; **PaLI-3** bolded. |
-| ![Figure 6](assets/papers-explained-196-pali-3/fig-6.png) | **Natural-image benchmarks** — COCO caption, VQAv2, OKVQA, TallyQA; **PaLI-3 (5B)** vs PaLI-17B, PaLI-X (55B), Flamingo, … |
-| ![Figure 7](assets/papers-explained-196-pali-3/fig-7.png) | **Video caption / QA** — MSR-VTT, ActivityNet, VATEX, SMIT, NExT-QA; PaLI-3 vs prior SoTA refs (despite **no video pretraining**). |
-| ![Figure 8](assets/papers-explained-196-pali-3/fig-8.png) | **Vision encoder in isolation** — SigLIP **ViT-G** vs classif ViT-G / ViT-e / ViT-22B on ImageNet FT, **XM3600** retrieval, linear probes. |
+| ![Figure 1](assets/papers-explained-196-pali-3/fig-1.webp) | Title block — **PaLI-3: Smaller, Faster, Stronger** vision-language models (Google Research / DeepMind). |
+| ![Figure 2](assets/papers-explained-196-pali-3/fig-2.webp) | **End-to-end diagram** — **SigLIP 2B** visual tokens + text tokens → **UL2 3B** encoder–decoder → answer string (VQA example). |
+| ![Figure 3](assets/papers-explained-196-pali-3/fig-3.webp) | **SigLIP vs classification ViT** — probes, captioning, VQA, RefCOCO deltas for **G/14, L/16, B/16** (green gains vs red probe hits). |
+| ![Figure 4](assets/papers-explained-196-pali-3/fig-4.webp) | **Visually situated text** — with / without OCR pipeline; PaLI-3 vs SoTA on TextCaps, TextVQA, DocVQA, ChartQA, Screen2Words, averages. |
+| ![Figure 5](assets/papers-explained-196-pali-3/fig-5.webp) | **Referring-expression segmentation** — RefCOCO / RefCOCO+ / G-Ref vs RefTr, PolyFormer; **PaLI-3** bolded. |
+| ![Figure 6](assets/papers-explained-196-pali-3/fig-6.webp) | **Natural-image benchmarks** — COCO caption, VQAv2, OKVQA, TallyQA; **PaLI-3 (5B)** vs PaLI-17B, PaLI-X (55B), Flamingo, … |
+| ![Figure 7](assets/papers-explained-196-pali-3/fig-7.webp) | **Video caption / QA** — MSR-VTT, ActivityNet, VATEX, SMIT, NExT-QA; PaLI-3 vs prior SoTA refs (despite **no video pretraining**). |
+| ![Figure 8](assets/papers-explained-196-pali-3/fig-8.webp) | **Vision encoder in isolation** — SigLIP **ViT-G** vs classif ViT-G / ViT-e / ViT-22B on ImageNet FT, **XM3600** retrieval, linear probes. |
 ## Related
 
 - [[Papers Explained Corpus]]

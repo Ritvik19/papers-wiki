@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-11-18_Papers-Explained-494--Model-Interpolation-for-Efficient-Reasoning-9029e3301a8b.html`
+- Source file: `raw/2025-11-18_Papers-Explained-494--Model-Interpolation-for-Efficient-Reasoning-9029e3301a8b.md`
 - Source title: Papers Explained 494: Model Interpolation for Efficient Reasoning
 - Published: 2025-11-18
 - Canonical: [https://medium.com/@ritvik19/papers-explained-494-model-interpolation-for-efficient-reasoning-9029e3301a8b](https://medium.com/@ritvik19/papers-explained-494-model-interpolation-for-efficient-reasoning-9029e3301a8b)
@@ -149,20 +149,20 @@ Revisiting Model Interpolation for Efficient Reasoning [2510.10977](https://arxi
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-11-18_Papers-Explained-494--Model-Interpolation-for-Efficient-Reasoning-9029e3301a8b.html`); local copies under `wiki/assets/papers-explained-494-model-interpolation-for-efficient-reasoning/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-11-18_Papers-Explained-494--Model-Interpolation-for-Efficient-Reasoning-9029e3301a8b.md`); local copies under `wiki/assets/papers-explained-494-model-interpolation-for-efficient-reasoning/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-494-model-interpolation-for-efficient-reasoning/fig-1.png) | Title card: Model Interpolation for Efficient Reasoning. |
-| ![Figure 2](assets/papers-explained-494-model-interpolation-for-efficient-reasoning/fig-2.png) | This paper observes that model interpolation follows a three-stage evolutionary paradigm with distinct behaviors on the reasoning... |
-| ![Figure 3](assets/papers-explained-494-model-interpolation-for-efficient-reasoning/fig-3.png) | Weight similarity σ on paired models from Qwen3 series. |
-| ![Figure 4](assets/papers-explained-494-model-interpolation-for-efficient-reasoning/fig-4.png) | The performance dynamics of model interpolation on Qwen3–4B-Instruct-2507 and Qwen3–4B-Thinking-2507. |
-| ![Figure 5](assets/papers-explained-494-model-interpolation-for-efficient-reasoning/fig-5.png) | The performance dynamics of model interpolation on Qwen3–30B-A3B-Instruct-2507 and Qwen3–30B-A3B-Thinking-2507. |
-| ![Figure 6](assets/papers-explained-494-model-interpolation-for-efficient-reasoning/fig-6.png) | Performance comparison across AIME’25, IFEval, and GPQA-Diamond when merging Qwen3–4B-Instruct-2507 and Qwen3–4B-Thinking-2507. |
-| ![Figure 7](assets/papers-explained-494-model-interpolation-for-efficient-reasoning/fig-7.png) | Performance of MI-0.4 on IFEval and GPQA-Diamond under different decoding strategies on Qwen3–4B. |
-| ![Figure 8](assets/papers-explained-494-model-interpolation-for-efficient-reasoning/fig-8.png) | Ablation on different layers to apply model interpolation. |
-| ![Figure 9](assets/papers-explained-494-model-interpolation-for-efficient-reasoning/fig-9.png) | Ablation on modules to apply model interpolation. |
-| ![Figure 10](assets/papers-explained-494-model-interpolation-for-efficient-reasoning/fig-10.png) | The performance on Qwen3–4B when interpolating Thinking model with various backbones. |
+| ![Figure 1](assets/papers-explained-494-model-interpolation-for-efficient-reasoning/fig-1.webp) | Title card: Model Interpolation for Efficient Reasoning. |
+| ![Figure 2](assets/papers-explained-494-model-interpolation-for-efficient-reasoning/fig-2.webp) | This paper observes that model interpolation follows a three-stage evolutionary paradigm with distinct behaviors on the reasoning... |
+| ![Figure 3](assets/papers-explained-494-model-interpolation-for-efficient-reasoning/fig-3.webp) | Weight similarity σ on paired models from Qwen3 series. |
+| ![Figure 4](assets/papers-explained-494-model-interpolation-for-efficient-reasoning/fig-4.webp) | The performance dynamics of model interpolation on Qwen3–4B-Instruct-2507 and Qwen3–4B-Thinking-2507. |
+| ![Figure 5](assets/papers-explained-494-model-interpolation-for-efficient-reasoning/fig-5.webp) | The performance dynamics of model interpolation on Qwen3–30B-A3B-Instruct-2507 and Qwen3–30B-A3B-Thinking-2507. |
+| ![Figure 6](assets/papers-explained-494-model-interpolation-for-efficient-reasoning/fig-6.webp) | Performance comparison across AIME’25, IFEval, and GPQA-Diamond when merging Qwen3–4B-Instruct-2507 and Qwen3–4B-Thinking-2507. |
+| ![Figure 7](assets/papers-explained-494-model-interpolation-for-efficient-reasoning/fig-7.webp) | Performance of MI-0.4 on IFEval and GPQA-Diamond under different decoding strategies on Qwen3–4B. |
+| ![Figure 8](assets/papers-explained-494-model-interpolation-for-efficient-reasoning/fig-8.webp) | Ablation on different layers to apply model interpolation. |
+| ![Figure 9](assets/papers-explained-494-model-interpolation-for-efficient-reasoning/fig-9.webp) | Ablation on modules to apply model interpolation. |
+| ![Figure 10](assets/papers-explained-494-model-interpolation-for-efficient-reasoning/fig-10.webp) | The performance on Qwen3–4B when interpolating Thinking model with various backbones. |
 ## Related
 
 - [[Papers Explained Corpus]]

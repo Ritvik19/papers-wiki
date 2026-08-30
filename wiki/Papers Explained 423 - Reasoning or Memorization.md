@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-08-04_Papers-Explained-423--Reasoning-or-Memorization-29b5c073ed55.html`
+- Source file: `raw/2025-08-04_Papers-Explained-423--Reasoning-or-Memorization-29b5c073ed55.md`
 - Source title: Papers Explained 423: Reasoning or Memorization
 - Published: 2025-08-04
 - Canonical: [https://medium.com/@ritvik19/papers-explained-423-reasoning-or-memorization-29b5c073ed55](https://medium.com/@ritvik19/papers-explained-423-reasoning-or-memorization-29b5c073ed55)
@@ -141,20 +141,20 @@ Reasoning or Memorization? Unreliable Results of Reinforcement Learning Due to D
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-08-04_Papers-Explained-423--Reasoning-or-Memorization-29b5c073ed55.html`); local copies under `wiki/assets/papers-explained-423-reasoning-or-memorization/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-08-04_Papers-Explained-423--Reasoning-or-Memorization-29b5c073ed55.md`); local copies under `wiki/assets/papers-explained-423-reasoning-or-memorization/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-423-reasoning-or-memorization/fig-1.png) | Title card: Reasoning or Memorization. |
-| ![Figure 2](assets/papers-explained-423-reasoning-or-memorization/fig-2.png) | First the ROUGE -L score between the yand the y∗ is computed, then. |
-| ![Figure 3](assets/papers-explained-423-reasoning-or-memorization/fig-3.png) | Let a be the model output, b be the reference answer, and ϵ = 10e-6 be a small constant for numerical stability. The reward r is computed as. |
-| ![Figure 4](assets/papers-explained-423-reasoning-or-memorization/fig-4.png) | Accuracy (%) of Qwen and Llama models on the MATH-500 dataset under different generation configurations, using original questions as prompts. |
-| ![Figure 5](assets/papers-explained-423-reasoning-or-memorization/fig-5.png) | Accuracy (%) of Qwen and Llama models on the MATH-500 dataset under different generation configurations, using varying proportions of questions as prompts. |
-| ![Figure 6](assets/papers-explained-423-reasoning-or-memorization/fig-6.png) | Accuracy (%) of different base models on various math datasets under Greedy (w/o Template) configuration with varying proportions of problem prefixes used as prompts. |
-| ![Figure 7](assets/papers-explained-423-reasoning-or-memorization/fig-7.png) | Accuracy (Exact Match, EM) and ROUGE-L scores on several datasets (lower scores in gray ) under different prompt prefix ratios in greedy decoding mode without applying chat template, namely Greedy (w/o Template) configuration. |
-| ![Figure 8](assets/papers-explained-423-reasoning-or-memorization/fig-8.png) | The following rewards are considered:: A new, uncontaminated evaluation benchmark called RandomCalculation is constructed. |
-| ![Figure 9](assets/papers-explained-423-reasoning-or-memorization/fig-9.png) | Math reasoning performance of the Qwen2.5 series models on the RandomCalculation datasets under different generation configurations. |
-| ![Figure 10](assets/papers-explained-423-reasoning-or-memorization/fig-10.png) | Training performance of Qwen2.5-Math-7B and Llama3.1–8B-Instruct using the RLVR algorithm on the RandomCalculation dataset. |
+| ![Figure 1](assets/papers-explained-423-reasoning-or-memorization/fig-1.webp) | Title card: Reasoning or Memorization. |
+| ![Figure 2](assets/papers-explained-423-reasoning-or-memorization/fig-2.webp) | First the ROUGE -L score between the yand the y∗ is computed, then. |
+| ![Figure 3](assets/papers-explained-423-reasoning-or-memorization/fig-3.webp) | Let a be the model output, b be the reference answer, and ϵ = 10e-6 be a small constant for numerical stability. The reward r is computed as. |
+| ![Figure 4](assets/papers-explained-423-reasoning-or-memorization/fig-4.webp) | Accuracy (%) of Qwen and Llama models on the MATH-500 dataset under different generation configurations, using original questions as prompts. |
+| ![Figure 5](assets/papers-explained-423-reasoning-or-memorization/fig-5.webp) | Accuracy (%) of Qwen and Llama models on the MATH-500 dataset under different generation configurations, using varying proportions of questions as prompts. |
+| ![Figure 6](assets/papers-explained-423-reasoning-or-memorization/fig-6.webp) | Accuracy (%) of different base models on various math datasets under Greedy (w/o Template) configuration with varying proportions of problem prefixes used as prompts. |
+| ![Figure 7](assets/papers-explained-423-reasoning-or-memorization/fig-7.webp) | Accuracy (Exact Match, EM) and ROUGE-L scores on several datasets (lower scores in gray ) under different prompt prefix ratios in greedy decoding mode without applying chat template, namely Greedy (w/o Template) configuration. |
+| ![Figure 8](assets/papers-explained-423-reasoning-or-memorization/fig-8.webp) | The following rewards are considered:: A new, uncontaminated evaluation benchmark called RandomCalculation is constructed. |
+| ![Figure 9](assets/papers-explained-423-reasoning-or-memorization/fig-9.webp) | Math reasoning performance of the Qwen2.5 series models on the RandomCalculation datasets under different generation configurations. |
+| ![Figure 10](assets/papers-explained-423-reasoning-or-memorization/fig-10.webp) | Training performance of Qwen2.5-Math-7B and Llama3.1–8B-Instruct using the RLVR algorithm on the RandomCalculation dataset. |
 ## Related
 
 - [[Papers Explained Corpus]]

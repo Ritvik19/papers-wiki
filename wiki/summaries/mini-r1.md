@@ -1,6 +1,6 @@
 # Mini-R1: Reproduce Deepseek R1 "Aha Moment", a RL Tutorial
 
-**Source**: `raw/mini-r1/full-article.html` (176 KB), `raw/mini-r1/full-article.md`
+**Source**: `raw/mini-r1/full-article.md` (176 KB), `raw/mini-r1/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

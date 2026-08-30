@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-07-25_Papers-Explained-417--Kimi-Researcher-baa1c9f4ae68.html`
+- Source file: `raw/2025-07-25_Papers-Explained-417--Kimi-Researcher-baa1c9f4ae68.md`
 - Source title: Papers Explained 417: Kimi-Researcher
 - Published: 2025-07-25
 - Canonical: [https://medium.com/@ritvik19/papers-explained-417-kimi-researcher-baa1c9f4ae68](https://medium.com/@ritvik19/papers-explained-417-kimi-researcher-baa1c9f4ae68)
@@ -101,13 +101,13 @@ To address the efficiency and stability challenges of large-scale Agent RL, a sp
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-07-25_Papers-Explained-417--Kimi-Researcher-baa1c9f4ae68.html`); local copies under `wiki/assets/papers-explained-417-kimi-researcher/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-07-25_Papers-Explained-417--Kimi-Researcher-baa1c9f4ae68.md`); local copies under `wiki/assets/papers-explained-417-kimi-researcher/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-417-kimi-researcher/fig-1.png) | Title card: Kimi-Researcher. |
-| ![Figure 2](assets/papers-explained-417-kimi-researcher/fig-2.png) | To address the efficiency and stability challenges of large-scale Agent RL, a specialized infrastructure has been developed with the following key features. |
-| ![Figure 3](assets/papers-explained-417-kimi-researcher/fig-3.png) | To address the efficiency and stability challenges of large-scale Agent RL, a specialized infrastructure has been developed with the following key features. |
+| ![Figure 1](assets/papers-explained-417-kimi-researcher/fig-1.webp) | Title card: Kimi-Researcher. |
+| ![Figure 2](assets/papers-explained-417-kimi-researcher/fig-2.webp) | To address the efficiency and stability challenges of large-scale Agent RL, a specialized infrastructure has been developed with the following key features. |
+| ![Figure 3](assets/papers-explained-417-kimi-researcher/fig-3.webp) | To address the efficiency and stability challenges of large-scale Agent RL, a specialized infrastructure has been developed with the following key features. |
 ## Related
 
 - [[Papers Explained Corpus]]

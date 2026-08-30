@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-12-18_Papers-Explained-274--Thought-Preference-Optimization-4f365380ae74.html`
+- Source file: `raw/2024-12-18_Papers-Explained-274--Thought-Preference-Optimization-4f365380ae74.md`
 - Source title: Papers Explained 274: Thought Preference Optimization
 - Published: 2024-12-18
 - Canonical: [https://medium.com/@ritvik19/papers-explained-274-thought-preference-optimization-4f365380ae74](https://medium.com/@ritvik19/papers-explained-274-thought-preference-optimization-4f365380ae74)
@@ -104,20 +104,20 @@ Thinking LLMs: General Instruction Following with Thought Generation [2410.10630
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-12-18_Papers-Explained-274--Thought-Preference-Optimization-4f365380ae74.html`); local copies under `wiki/assets/papers-explained-274-thought-preference-optimization/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-12-18_Papers-Explained-274--Thought-Preference-Optimization-4f365380ae74.md`); local copies under `wiki/assets/papers-explained-274-thought-preference-optimization/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-274-thought-preference-optimization/fig-1.png) | Title card: Thought Preference Optimization. |
-| ![Figure 2](assets/papers-explained-274-thought-preference-optimization/fig-2.png) | Thought Preference Optimization. |
-| ![Figure 3](assets/papers-explained-274-thought-preference-optimization/fig-3.png) | Thought Prompting. |
-| ![Figure 4](assets/papers-explained-274-thought-preference-optimization/fig-4.png) | Training starts with a seed model M0 that is instruction-tuned to directly respond to the user instruction. |
-| ![Figure 5](assets/papers-explained-274-thought-preference-optimization/fig-5.png) | After extracting the response parts yik, they are fed to the judge model J for scoring. |
-| ![Figure 6](assets/papers-explained-274-thought-preference-optimization/fig-6.png) | The highest and lowest scoring responses are selected as “chosen” and “rejected” samples to construct a preference pair. |
-| ![Figure 7](assets/papers-explained-274-thought-preference-optimization/fig-7.png) | Some judge models exhibit a length-bias, favoring longer responses. |
-| ![Figure 8](assets/papers-explained-274-thought-preference-optimization/fig-8.png) | Benchmark win rates (%) for AlpacaEval (length-controlled (LC)) and Arena-Hard. |
-| ![Figure 9](assets/papers-explained-274-thought-preference-optimization/fig-9.png) | Training iterations on AlpacaEval (left) and Arena-Hard (right), comparing our TPO method to the direct baseline starting from the seed (iteration 0) model. |
-| ![Figure 10](assets/papers-explained-274-thought-preference-optimization/fig-10.png) | Breakdown of AlpacaEval results for different judge models, training instruction sets and Thought Prompts. |
+| ![Figure 1](assets/papers-explained-274-thought-preference-optimization/fig-1.webp) | Title card: Thought Preference Optimization. |
+| ![Figure 2](assets/papers-explained-274-thought-preference-optimization/fig-2.webp) | Thought Preference Optimization. |
+| ![Figure 3](assets/papers-explained-274-thought-preference-optimization/fig-3.webp) | Thought Prompting. |
+| ![Figure 4](assets/papers-explained-274-thought-preference-optimization/fig-4.webp) | Training starts with a seed model M0 that is instruction-tuned to directly respond to the user instruction. |
+| ![Figure 5](assets/papers-explained-274-thought-preference-optimization/fig-5.webp) | After extracting the response parts yik, they are fed to the judge model J for scoring. |
+| ![Figure 6](assets/papers-explained-274-thought-preference-optimization/fig-6.webp) | The highest and lowest scoring responses are selected as “chosen” and “rejected” samples to construct a preference pair. |
+| ![Figure 7](assets/papers-explained-274-thought-preference-optimization/fig-7.webp) | Some judge models exhibit a length-bias, favoring longer responses. |
+| ![Figure 8](assets/papers-explained-274-thought-preference-optimization/fig-8.webp) | Benchmark win rates (%) for AlpacaEval (length-controlled (LC)) and Arena-Hard. |
+| ![Figure 9](assets/papers-explained-274-thought-preference-optimization/fig-9.webp) | Training iterations on AlpacaEval (left) and Arena-Hard (right), comparing our TPO method to the direct baseline starting from the seed (iteration 0) model. |
+| ![Figure 10](assets/papers-explained-274-thought-preference-optimization/fig-10.webp) | Breakdown of AlpacaEval results for different judge models, training instruction sets and Thought Prompts. |
 ## Related
 
 - [[Papers Explained Corpus]]

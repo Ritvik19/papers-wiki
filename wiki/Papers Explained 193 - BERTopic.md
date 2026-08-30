@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-24_Papers-Explained-193--BERTopic-f9aec10cd5a6.html`
+- Source file: `raw/2024-08-24_Papers-Explained-193--BERTopic-f9aec10cd5a6.md`
 - Source title: Papers Explained 193: BERTopic
 - Published: 2024-08-24
 - Canonical: [https://medium.com/@ritvik19/papers-explained-193-bertopic-f9aec10cd5a6](https://medium.com/@ritvik19/papers-explained-193-bertopic-f9aec10cd5a6)
@@ -107,17 +107,17 @@ BERTopic: Neural topic modeling with a class-based TF-IDF procedure [2203.05794]
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-24_Papers-Explained-193--BERTopic-f9aec10cd5a6.html`); local copies under `wiki/assets/papers-explained-193-bertopic/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-24_Papers-Explained-193--BERTopic-f9aec10cd5a6.md`); local copies under `wiki/assets/papers-explained-193-bertopic/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-193-bertopic/fig-1.png) | Paper title block — **BERTopic: Neural topic modeling with a class-based TF-IDF procedure** (Maarten Grootendorst). |
-| ![Figure 2](assets/papers-explained-193-bertopic/fig-2.png) | **Class-based TF-IDF** weight **W_{t,c}** — cluster term-frequency scaled by a log IDF-like factor using global term frequency **tf_t**. |
-| ![Figure 3](assets/papers-explained-193-bertopic/fig-3.png) | **Dynamic topic modeling** local weight **W_{t,c,i}** — same IDF scaling using term frequencies conditioned on timestep **i**. |
-| ![Figure 4](assets/papers-explained-193-bertopic/fig-4.png) | **Topic count sweep (10–50)** — TC / TD averaged over runs; LDA, NMF, Top2Vec, CTM, **BERTopic** on 20 NewsGroups, BBC, Trump. |
-| ![Figure 5](assets/papers-explained-193-bertopic/fig-5.png) | **Embedding backends** — BERTopic with USE, Doc2Vec, MiniLM, MPNET across the same datasets (TC / TD). |
-| ![Figure 6](assets/papers-explained-193-bertopic/fig-6.png) | **Dynamic modeling** — Trump vs UN: LDA-sequence vs **BERTopic** vs **BERTopic-Evolve** (TC / TD). |
-| ![Figure 7](assets/papers-explained-193-bertopic/fig-7.png) | **Wall time vs vocabulary size** — Trump corpus; left: **CTM** outlier (~1500s); right: zoom without CTM (BERTopic, Top2Vec, LDA, NMF). |
+| ![Figure 1](assets/papers-explained-193-bertopic/fig-1.webp) | Paper title block — **BERTopic: Neural topic modeling with a class-based TF-IDF procedure** (Maarten Grootendorst). |
+| ![Figure 2](assets/papers-explained-193-bertopic/fig-2.webp) | **Class-based TF-IDF** weight **W_{t,c}** — cluster term-frequency scaled by a log IDF-like factor using global term frequency **tf_t**. |
+| ![Figure 3](assets/papers-explained-193-bertopic/fig-3.webp) | **Dynamic topic modeling** local weight **W_{t,c,i}** — same IDF scaling using term frequencies conditioned on timestep **i**. |
+| ![Figure 4](assets/papers-explained-193-bertopic/fig-4.webp) | **Topic count sweep (10–50)** — TC / TD averaged over runs; LDA, NMF, Top2Vec, CTM, **BERTopic** on 20 NewsGroups, BBC, Trump. |
+| ![Figure 5](assets/papers-explained-193-bertopic/fig-5.webp) | **Embedding backends** — BERTopic with USE, Doc2Vec, MiniLM, MPNET across the same datasets (TC / TD). |
+| ![Figure 6](assets/papers-explained-193-bertopic/fig-6.webp) | **Dynamic modeling** — Trump vs UN: LDA-sequence vs **BERTopic** vs **BERTopic-Evolve** (TC / TD). |
+| ![Figure 7](assets/papers-explained-193-bertopic/fig-7.webp) | **Wall time vs vocabulary size** — Trump corpus; left: **CTM** outlier (~1500s); right: zoom without CTM (BERTopic, Top2Vec, LDA, NMF). |
 ## Related
 
 - [[Papers Explained Corpus]]

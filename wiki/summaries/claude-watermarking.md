@@ -1,6 +1,6 @@
 # How Claude Watermarks AI-Generated Text
 
-**Source**: `raw/claude-watermarking/full-article.html`, `raw/claude-watermarking/full-article.md`  
+**Source**: `raw/claude-watermarking/full-article.md`, `raw/claude-watermarking/full-article.md`  
 **Ingested**: 2026-08-23  
 **Tags**: #summary
 
@@ -8,19 +8,19 @@
 
 A video lecture and comprehensive slide breakdown by [[Sebastian Raschka]] analyzing [[Anthropic]]'s deployment of cryptographic text watermarking across the [[Claude Models]] output stream. Prompted by Anthropic's public announcement—driven partly by regulatory compliance requirements such as the EU AI Act—the 52-slide explainer demystifies how statistical text watermarking operates directly at the token sampling stage without retraining the base model or modifying weight tensors. Raschka establishes that text generation transforms input prompt tokens into a vocabulary score distribution (logits) via an LLM forward pass, which is then mapped to probabilities via Softmax before sampling a token and detokenizing.
 
-![Figure 18: Claude text watermark overview](../assets/claude-watermarking/fig-18.png)
+![Figure 18: Claude text watermark overview](../assets/claude-watermarking/fig-18.webp)
 
 Claude's text watermarking works by substituting unconstrained random sampling with deterministic pseudorandom sampling keyed by a private secret key $K$ (held exclusively by Anthropic) and the preceding $h$ tokens of context ($n$-gram history, typically $h=4$ or $h=5$). When the LLM reaches a high-entropy decision point where multiple candidate tokens are plausible (e.g., "overcast" vs "grey"), the watermark algorithm deterministically seeds the token choice based on the secret key and context hash. On low-entropy or factual tokens (where only one token has high probability, such as "Berlin" in "The capital of Germany is [Berlin]"), the watermark is bypassed to prevent factual corruption or perceptual quality degradation.
 
-![Figure 23: Secret key and token context PRNG derivation](../assets/claude-watermarking/fig-23.png)
+![Figure 23: Secret key and token context PRNG derivation](../assets/claude-watermarking/fig-23.webp)
 
 To solve the detection bottleneck—where traditional pseudorandom watermarks require running a full LLM forward pass to reconstruct logit distributions during verification—Anthropic employs **[[Tournament Sampling]]** (derived from Google DeepMind's SynthID Text line). The vocabulary is evaluated by a bank of pseudorandom binary watermark functions $g_1, g_2, \dots, g_n: V \to \{0, 1\}$ derived from the key and context. Candidate tokens compete in a bracketed knockout tournament across rounds matching their bit signatures. This ensures generated text contains a statistically elevated proportion of watermark bits, allowing post-hoc verification to score arbitrary web text in milliseconds using simple string lookups and average bit calculations ($S = \frac{1}{T}\sum_t \frac{1}{n}\sum_j g_j$) without invoking any LLM.
 
-![Figure 35: Tournament sampling replacement for random choice](../assets/claude-watermarking/fig-35.png)
+![Figure 35: Tournament sampling replacement for random choice](../assets/claude-watermarking/fig-35.webp)
 
 Raschka concludes by examining watermark evasion and its systemic consequences for web text. Because adversaries do not possess the secret key or know precisely which token positions were biased, removing the watermark requires making multi-position surgical edits. In practice, users attempting to evade watermarking will likely route high-tier Claude outputs through unwatermarked local models (e.g., Llama, Qwen, or Gemma) for automated paraphrasing. Because automated paraphrasing alters syntax awkwardly and disrupts nuanced phrasing, the effort to strip watermarks threatens to degrade overall text quality, producing a paradoxical outcome where "undetectable" AI text is noticeably worse than the original model generation.
 
-![Figure 52: Local model editing pipeline](../assets/claude-watermarking/fig-52.png)
+![Figure 52: Local model editing pipeline](../assets/claude-watermarking/fig-52.webp)
 
 ## Key Claims
 
@@ -36,21 +36,21 @@ Raschka concludes by examining watermark evasion and its systemic consequences f
 
 | Figure | Caption | File |
 |--------|---------|------|
-| ![fig-3](../assets/claude-watermarking/fig-3.png) | Anthropic announcement about Claude text watermarking | `wiki/assets/claude-watermarking/fig-3.png` |
-| ![fig-9](../assets/claude-watermarking/fig-9.png) | Step 3: obtain next-token score distribution from LLM | `wiki/assets/claude-watermarking/fig-9.png` |
-| ![fig-15](../assets/claude-watermarking/fig-15.png) | Softmax conversion of logits into probabilities | `wiki/assets/claude-watermarking/fig-15.png` |
-| ![fig-18](../assets/claude-watermarking/fig-18.png) | Anthropic's explanation of Claude's text watermark | `wiki/assets/claude-watermarking/fig-18.png` |
-| ![fig-23](../assets/claude-watermarking/fig-23.png) | Deriving pseudorandom seeds from secret key and token context | `wiki/assets/claude-watermarking/fig-23.png` |
-| ![fig-27](../assets/claude-watermarking/fig-27.png) | Text generation lifecycle with vs. without watermarking | `wiki/assets/claude-watermarking/fig-27.png` |
-| ![fig-28](../assets/claude-watermarking/fig-28.png) | Watermark detection requiring secret key and hashing functions | `wiki/assets/claude-watermarking/fig-28.png` |
-| ![fig-32](../assets/claude-watermarking/fig-32.png) | Modified sampling stage enabling lightweight downstream scoring | `wiki/assets/claude-watermarking/fig-32.png` |
-| ![fig-35](../assets/claude-watermarking/fig-35.png) | Tournament sampling replacing ordinary weighted random choice | `wiki/assets/claude-watermarking/fig-35.png` |
-| ![fig-37](../assets/claude-watermarking/fig-37.png) | Assigning bit signatures across candidate vocabulary tokens | `wiki/assets/claude-watermarking/fig-37.png` |
-| ![fig-40](../assets/claude-watermarking/fig-40.png) | Tournament knockout rounds determining winning token | `wiki/assets/claude-watermarking/fig-40.png` |
-| ![fig-44](../assets/claude-watermarking/fig-44.png) | Comparing average watermark bit scores between watermarked and unwatermarked text | `wiki/assets/claude-watermarking/fig-44.png` |
-| ![fig-45](../assets/claude-watermarking/fig-45.png) | Threshold decision boundary classifying text as watermarked | `wiki/assets/claude-watermarking/fig-45.png` |
-| ![fig-50](../assets/claude-watermarking/fig-50.png) | Multi-position editing required to disrupt watermark detection | `wiki/assets/claude-watermarking/fig-50.png` |
-| ![fig-52](../assets/claude-watermarking/fig-52.png) | Local model paraphrasing pipeline and text quality degradation | `wiki/assets/claude-watermarking/fig-52.png` |
+| ![fig-3](../assets/claude-watermarking/fig-3.webp) | Anthropic announcement about Claude text watermarking | `wiki/assets/claude-watermarking/fig-3.webp` |
+| ![fig-9](../assets/claude-watermarking/fig-9.webp) | Step 3: obtain next-token score distribution from LLM | `wiki/assets/claude-watermarking/fig-9.webp` |
+| ![fig-15](../assets/claude-watermarking/fig-15.webp) | Softmax conversion of logits into probabilities | `wiki/assets/claude-watermarking/fig-15.webp` |
+| ![fig-18](../assets/claude-watermarking/fig-18.webp) | Anthropic's explanation of Claude's text watermark | `wiki/assets/claude-watermarking/fig-18.webp` |
+| ![fig-23](../assets/claude-watermarking/fig-23.webp) | Deriving pseudorandom seeds from secret key and token context | `wiki/assets/claude-watermarking/fig-23.webp` |
+| ![fig-27](../assets/claude-watermarking/fig-27.webp) | Text generation lifecycle with vs. without watermarking | `wiki/assets/claude-watermarking/fig-27.webp` |
+| ![fig-28](../assets/claude-watermarking/fig-28.webp) | Watermark detection requiring secret key and hashing functions | `wiki/assets/claude-watermarking/fig-28.webp` |
+| ![fig-32](../assets/claude-watermarking/fig-32.webp) | Modified sampling stage enabling lightweight downstream scoring | `wiki/assets/claude-watermarking/fig-32.webp` |
+| ![fig-35](../assets/claude-watermarking/fig-35.webp) | Tournament sampling replacing ordinary weighted random choice | `wiki/assets/claude-watermarking/fig-35.webp` |
+| ![fig-37](../assets/claude-watermarking/fig-37.webp) | Assigning bit signatures across candidate vocabulary tokens | `wiki/assets/claude-watermarking/fig-37.webp` |
+| ![fig-40](../assets/claude-watermarking/fig-40.webp) | Tournament knockout rounds determining winning token | `wiki/assets/claude-watermarking/fig-40.webp` |
+| ![fig-44](../assets/claude-watermarking/fig-44.webp) | Comparing average watermark bit scores between watermarked and unwatermarked text | `wiki/assets/claude-watermarking/fig-44.webp` |
+| ![fig-45](../assets/claude-watermarking/fig-45.webp) | Threshold decision boundary classifying text as watermarked | `wiki/assets/claude-watermarking/fig-45.webp` |
+| ![fig-50](../assets/claude-watermarking/fig-50.webp) | Multi-position editing required to disrupt watermark detection | `wiki/assets/claude-watermarking/fig-50.webp` |
+| ![fig-52](../assets/claude-watermarking/fig-52.webp) | Local model paraphrasing pipeline and text quality degradation | `wiki/assets/claude-watermarking/fig-52.webp` |
 
 ## Entities
 

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-01-28_Papers-Explained-533--OpenVision-3-87bc2a984c68.html`
+- Source file: `raw/2026-01-28_Papers-Explained-533--OpenVision-3-87bc2a984c68.md`
 - Source title: Papers Explained 533: OpenVision 3
 - Published: 2026-01-28
 - Canonical: [https://medium.com/@ritvik19/papers-explained-533-openvision-3-87bc2a984c68](https://medium.com/@ritvik19/papers-explained-533-openvision-3-87bc2a984c68)
@@ -131,23 +131,23 @@ OpenVision 3: A Family of Unified Visual Encoder for Both Understanding and Gene
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-01-28_Papers-Explained-533--OpenVision-3-87bc2a984c68.html`); local copies under `wiki/assets/papers-explained-533-openvision-3/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-01-28_Papers-Explained-533--OpenVision-3-87bc2a984c68.md`); local copies under `wiki/assets/papers-explained-533-openvision-3/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-533-openvision-3/fig-1.png) | Title card: OpenVision 3. |
-| ![Figure 2](assets/papers-explained-533-openvision-3/fig-2.png) | The project is available here. |
-| ![Figure 3](assets/papers-explained-533-openvision-3/fig-3.png) | The VAE latents are then fed into a Vision Transformer encoder, which uses a patch size of 2×2 on the VAE latent grid. |
-| ![Figure 4](assets/papers-explained-533-openvision-3/fig-4.png) | A noise tensor is sampled from a standard Gaussian distribution, with intensity value sampled uniformly from a range [0, tau] for each... |
-| ![Figure 5](assets/papers-explained-533-openvision-3/fig-5.png) | The reconstruction branch is trained using a combination of. |
-| ![Figure 6](assets/papers-explained-533-openvision-3/fig-6.png) | Formally, the understanding loss can be formulated as. |
-| ![Figure 7](assets/papers-explained-533-openvision-3/fig-7.png) | The overall training objective is. |
-| ![Figure 8](assets/papers-explained-533-openvision-3/fig-8.png) | Parameter configs for two stages of training. |
-| ![Figure 9](assets/papers-explained-533-openvision-3/fig-9.png) | Reconstruction performance of visual tokenizers. |
-| ![Figure 10](assets/papers-explained-533-openvision-3/fig-10.png) | Class-conditional image generation on ImageNet 256x256. |
-| ![Figure 11](assets/papers-explained-533-openvision-3/fig-11.png) | Comparison of OpenVision 3 with OpenAI CLIP under LLaVA-1.5 framework. |
-| ![Figure 12](assets/papers-explained-533-openvision-3/fig-12.png) | Loss visualization with only semantic loss. |
-| ![Figure 13](assets/papers-explained-533-openvision-3/fig-13.png) | Loss visualization with only reconstruction loss. |
+| ![Figure 1](assets/papers-explained-533-openvision-3/fig-1.webp) | Title card: OpenVision 3. |
+| ![Figure 2](assets/papers-explained-533-openvision-3/fig-2.webp) | The project is available here. |
+| ![Figure 3](assets/papers-explained-533-openvision-3/fig-3.webp) | The VAE latents are then fed into a Vision Transformer encoder, which uses a patch size of 2×2 on the VAE latent grid. |
+| ![Figure 4](assets/papers-explained-533-openvision-3/fig-4.webp) | A noise tensor is sampled from a standard Gaussian distribution, with intensity value sampled uniformly from a range [0, tau] for each... |
+| ![Figure 5](assets/papers-explained-533-openvision-3/fig-5.webp) | The reconstruction branch is trained using a combination of. |
+| ![Figure 6](assets/papers-explained-533-openvision-3/fig-6.webp) | Formally, the understanding loss can be formulated as. |
+| ![Figure 7](assets/papers-explained-533-openvision-3/fig-7.webp) | The overall training objective is. |
+| ![Figure 8](assets/papers-explained-533-openvision-3/fig-8.webp) | Parameter configs for two stages of training. |
+| ![Figure 9](assets/papers-explained-533-openvision-3/fig-9.webp) | Reconstruction performance of visual tokenizers. |
+| ![Figure 10](assets/papers-explained-533-openvision-3/fig-10.webp) | Class-conditional image generation on ImageNet 256x256. |
+| ![Figure 11](assets/papers-explained-533-openvision-3/fig-11.webp) | Comparison of OpenVision 3 with OpenAI CLIP under LLaVA-1.5 framework. |
+| ![Figure 12](assets/papers-explained-533-openvision-3/fig-12.webp) | Loss visualization with only semantic loss. |
+| ![Figure 13](assets/papers-explained-533-openvision-3/fig-13.webp) | Loss visualization with only reconstruction loss. |
 ## Related
 
 - [[Papers Explained Corpus]]

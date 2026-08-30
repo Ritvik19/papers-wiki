@@ -18,7 +18,7 @@ Mapping image RoI to feature map stride \(s\): pooling uses **rounded** discrete
 
 ## RoIAlign fix
 
-![RoIAlign](../assets/2017-12-31-object-recognition-part-3/fig-10.png)
+![RoIAlign](../assets/2017-12-31-object-recognition-part-3/fig-10.webp)
 
 - Use **floating** coordinates (e.g. \(x/16\) not \(\lfloor x/16 \rfloor\)).
 - For each output bin sample point, interpolate four neighboring feature cells with **bilinear** weights.

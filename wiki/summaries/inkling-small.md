@@ -1,6 +1,6 @@
 # Inkling-Small
 
-**Source**: `raw/inkling-small/full-article.html`, `raw/inkling-small/full-article.md` (secondary); `raw/thinkingmachines-inkling/full-article.html` (Small deployment sections)  
+**Source**: `raw/inkling-small/full-article.md`, `raw/inkling-small/full-article.md` (secondary); `raw/thinkingmachines-inkling/full-article.md` (Small deployment sections)  
 **URLs**: https://thinkingmachines.ai/news/inkling-small/ · https://huggingface.co/blog/thinkingmachines-inkling  
 **Ingested**: 2026-07-31  
 **Tags**: #summary
@@ -89,7 +89,7 @@ All evals at effort 0.99, temperature 1.0; coding evals with 256K max-token traj
 
 | Figure | Caption | Source |
 |--------|---------|--------|
-| ![fig-1](../assets/inkling-small/fig-1.png) | Release announcement cover | inkling-small |
+| ![fig-1](../assets/inkling-small/fig-1.webp) | Release announcement cover | inkling-small |
 
 TML announcement charts (spider plot, effort-sweep TFLOPs/cost curves, token-efficiency Pareto plots) are interactive in the HTML source and were not extracted as static images.
 

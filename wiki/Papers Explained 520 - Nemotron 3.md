@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-01-09_Papers-Explained-520--Nemotron-3-62e863712b21.html`
+- Source file: `raw/2026-01-09_Papers-Explained-520--Nemotron-3-62e863712b21.md`
 - Source title: Papers Explained 520: Nemotron 3
 - Published: 2026-01-09
 - Canonical: [https://medium.com/@ritvik19/papers-explained-520-nemotron-3-62e863712b21](https://medium.com/@ritvik19/papers-explained-520-nemotron-3-62e863712b21)
@@ -93,18 +93,18 @@ NVIDIA Nemotron 3: Efficient and Open Intelligence [2512.20856](https://arxiv.or
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-01-09_Papers-Explained-520--Nemotron-3-62e863712b21.html`); local copies under `wiki/assets/papers-explained-520-nemotron-3/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-01-09_Papers-Explained-520--Nemotron-3-62e863712b21.md`); local copies under `wiki/assets/papers-explained-520-nemotron-3/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-520-nemotron-3/fig-1.png) | Title card: Nemotron 3. |
-| ![Figure 2](assets/papers-explained-520-nemotron-3/fig-2.png) | The Nemotron 3 family of models utilize a hybrid Mamba-Transformer MoE architecture. |
-| ![Figure 3](assets/papers-explained-520-nemotron-3/fig-3.png) | By minimizing expensive self-attention layers, Nemotron 3 models can achieve higher inference throughput compared to similarly-sized... |
-| ![Figure 4](assets/papers-explained-520-nemotron-3/fig-4.png) | Standard MoE vs. LatentMoE architectures. |
-| ![Figure 5](assets/papers-explained-520-nemotron-3/fig-5.png) | Comparison of downstream task accuracy between Standard MoE and LatentMoE. |
-| ![Figure 6](assets/papers-explained-520-nemotron-3/fig-6.png) | Relative difference in train loss (left) and validation loss (right) between models trained with NVFP4 and BF16. |
-| ![Figure 7](assets/papers-explained-520-nemotron-3/fig-7.png) | Simultaneous training is found to be more stable, less prone to reward hacking, and overall better compared to previous staged approaches. |
-| ![Figure 8](assets/papers-explained-520-nemotron-3/fig-8.png) | Accuracy-efficiency trade-off with reasoning budget control at inference time. |
+| ![Figure 1](assets/papers-explained-520-nemotron-3/fig-1.webp) | Title card: Nemotron 3. |
+| ![Figure 2](assets/papers-explained-520-nemotron-3/fig-2.webp) | The Nemotron 3 family of models utilize a hybrid Mamba-Transformer MoE architecture. |
+| ![Figure 3](assets/papers-explained-520-nemotron-3/fig-3.webp) | By minimizing expensive self-attention layers, Nemotron 3 models can achieve higher inference throughput compared to similarly-sized... |
+| ![Figure 4](assets/papers-explained-520-nemotron-3/fig-4.webp) | Standard MoE vs. LatentMoE architectures. |
+| ![Figure 5](assets/papers-explained-520-nemotron-3/fig-5.webp) | Comparison of downstream task accuracy between Standard MoE and LatentMoE. |
+| ![Figure 6](assets/papers-explained-520-nemotron-3/fig-6.webp) | Relative difference in train loss (left) and validation loss (right) between models trained with NVFP4 and BF16. |
+| ![Figure 7](assets/papers-explained-520-nemotron-3/fig-7.webp) | Simultaneous training is found to be more stable, less prone to reward hacking, and overall better compared to previous staged approaches. |
+| ![Figure 8](assets/papers-explained-520-nemotron-3/fig-8.webp) | Accuracy-efficiency trade-off with reasoning budget control at inference time. |
 ## Related
 
 - [[Papers Explained Corpus]]

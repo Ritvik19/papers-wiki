@@ -1,6 +1,6 @@
 # Learning with not Enough Data Part 2: Active Learning
 
-**Source**: `raw/2022-02-20-active-learning/full-article.html` (106 KB HTML), `raw/2022-02-20-active-learning/full-article.md` (Markdown sibling)  
+**Source**: `raw/2022-02-20-active-learning/full-article.md` (106 KB HTML), `raw/2022-02-20-active-learning/full-article.md` (Markdown sibling)  
 **Canonical URL**: https://lilianweng.github.io/posts/2022-02-20-active-learning/  
 **Author**: Lilian Weng  
 **Published**: 2022-02-20  
@@ -15,7 +15,7 @@ The cyclic workflow: train on current labeled set → score all unlabeled points
 
 A central tension: deep classifiers are **overconfident and miscalibrated** — softmax scores poorly track true uncertainty. Naive ensembles work best but are expensive; MC dropout is the economical default; cheap snapshot/DEE ensembles underperform. Hybrid methods that fuse uncertainty with diversity (BADGE, MAL, SA, CEAL) generally beat pure uncertainty on vision benchmarks.
 
-![Active learning cyclic workflow](../assets/2022-02-20-active-learning/fig-01.png)
+![Active learning cyclic workflow](../assets/2022-02-20-active-learning/fig-01.webp)
 
 ## Notation
 
@@ -151,18 +151,18 @@ Combine VAAL diversity (low $D$) with classifier entropy $H(p(y|\mathbf{u}))$ fr
 
 | Figure | Caption | Section |
 |--------|---------|---------|
-| ![fig-01](../assets/2022-02-20-active-learning/fig-01.png) | Cyclic active learning workflow: train → acquire → label → repeat. | What is Active Learning? |
-| ![fig-02](../assets/2022-02-20-active-learning/fig-02.png) | DBAL (MC dropout) active learning results on MNIST (Gal et al. 2017). | MC dropout |
-| ![fig-03](../assets/2022-02-20-active-learning/fig-03.png) | Loss prediction module architecture for acquisition (Yoo & Kweon 2019). | Loss prediction |
-| ![fig-04](../assets/2022-02-20-active-learning/fig-04.png) | Loss-prediction-based AL vs entropy and core-set baselines (Yoo & Kweon 2019). | Loss prediction |
-| ![fig-05](../assets/2022-02-20-active-learning/fig-05.png) | VAAL: β-VAE + discriminator for latent-space acquisition (Sinha et al. 2019). | VAAL |
-| ![fig-06](../assets/2022-02-20-active-learning/fig-06.png) | VAAL experiment results on image classification (Sinha et al. 2019). | VAAL |
-| ![fig-07](../assets/2022-02-20-active-learning/fig-07.png) | MAL minimax encoder–classifier framework (Ebrahimi et al. 2021). | MAL |
-| ![fig-08](../assets/2022-02-20-active-learning/fig-08.png) | MAL ImageNet results vs BALD, VAAL, core-set (Ebrahimi et al. 2021). | MAL |
-| ![fig-09](../assets/2022-02-20-active-learning/fig-09.png) | Core-sets active learning vs baselines on CIFAR/SVHN (Sener & Savarese 2018). | Core-sets |
-| ![fig-10](../assets/2022-02-20-active-learning/fig-10.png) | BADGE algorithm: $k$-means++ on gradient embeddings (Ash et al. 2020). | BADGE |
-| ![fig-11](../assets/2022-02-20-active-learning/fig-11.png) | Label dispersion vs uncertainty for acquisition (Bengar et al. 2021). | Forgetting events |
-| ![fig-12](../assets/2022-02-20-active-learning/fig-12.png) | CEAL hybrid confidence + adversarial diversity framework. | Hybrid |
+| ![fig-01](../assets/2022-02-20-active-learning/fig-01.webp) | Cyclic active learning workflow: train → acquire → label → repeat. | What is Active Learning? |
+| ![fig-02](../assets/2022-02-20-active-learning/fig-02.webp) | DBAL (MC dropout) active learning results on MNIST (Gal et al. 2017). | MC dropout |
+| ![fig-03](../assets/2022-02-20-active-learning/fig-03.webp) | Loss prediction module architecture for acquisition (Yoo & Kweon 2019). | Loss prediction |
+| ![fig-04](../assets/2022-02-20-active-learning/fig-04.webp) | Loss-prediction-based AL vs entropy and core-set baselines (Yoo & Kweon 2019). | Loss prediction |
+| ![fig-05](../assets/2022-02-20-active-learning/fig-05.webp) | VAAL: β-VAE + discriminator for latent-space acquisition (Sinha et al. 2019). | VAAL |
+| ![fig-06](../assets/2022-02-20-active-learning/fig-06.webp) | VAAL experiment results on image classification (Sinha et al. 2019). | VAAL |
+| ![fig-07](../assets/2022-02-20-active-learning/fig-07.webp) | MAL minimax encoder–classifier framework (Ebrahimi et al. 2021). | MAL |
+| ![fig-08](../assets/2022-02-20-active-learning/fig-08.webp) | MAL ImageNet results vs BALD, VAAL, core-set (Ebrahimi et al. 2021). | MAL |
+| ![fig-09](../assets/2022-02-20-active-learning/fig-09.webp) | Core-sets active learning vs baselines on CIFAR/SVHN (Sener & Savarese 2018). | Core-sets |
+| ![fig-10](../assets/2022-02-20-active-learning/fig-10.webp) | BADGE algorithm: $k$-means++ on gradient embeddings (Ash et al. 2020). | BADGE |
+| ![fig-11](../assets/2022-02-20-active-learning/fig-11.webp) | Label dispersion vs uncertainty for acquisition (Bengar et al. 2021). | Forgetting events |
+| ![fig-12](../assets/2022-02-20-active-learning/fig-12.webp) | CEAL hybrid confidence + adversarial diversity framework. | Hybrid |
 
 ## Entities
 

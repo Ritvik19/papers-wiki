@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-07_Papers-Explained-21--Feature-Pyramid-Network-6baebcb7e4b8.html`
+- Source file: `raw/2023-02-07_Papers-Explained-21--Feature-Pyramid-Network-6baebcb7e4b8.md`
 - Source title: Papers Explained 21: Feature Pyramid Network
 - Published: 2023-02-07
 - Canonical: [https://medium.com/@ritvik19/papers-explained-21-feature-pyramid-network-6baebcb7e4b8](https://medium.com/@ritvik19/papers-explained-21-feature-pyramid-network-6baebcb7e4b8)
@@ -69,13 +69,13 @@ Feature Pyramid Networks for Object Detection [1612.03144](https://arxiv.org/abs
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-07_Papers-Explained-21--Feature-Pyramid-Network-6baebcb7e4b8.html`); local copies under `wiki/assets/papers-explained-21-feature-pyramid-network/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-07_Papers-Explained-21--Feature-Pyramid-Network-6baebcb7e4b8.md`); local copies under `wiki/assets/papers-explained-21-feature-pyramid-network/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-21-feature-pyramid-network/fig-1.png) | Feature Pyramid Network Overview: Comparison of different architectures for building pyramids. |
-| ![Figure 2](assets/papers-explained-21-feature-pyramid-network/fig-2.png) | Feature Pyramid Network Architecture: A top-down architecture with lateral connections. |
-| ![Figure 3](assets/papers-explained-21-feature-pyramid-network/fig-3.png) | A building block illustrating the lateral connection and the top-down pathway. |
+| ![Figure 1](assets/papers-explained-21-feature-pyramid-network/fig-1.webp) | Feature Pyramid Network Overview: Comparison of different architectures for building pyramids. |
+| ![Figure 2](assets/papers-explained-21-feature-pyramid-network/fig-2.webp) | Feature Pyramid Network Architecture: A top-down architecture with lateral connections. |
+| ![Figure 3](assets/papers-explained-21-feature-pyramid-network/fig-3.webp) | A building block illustrating the lateral connection and the top-down pathway. |
 ## Related
 
 - [[Papers Explained Corpus]]

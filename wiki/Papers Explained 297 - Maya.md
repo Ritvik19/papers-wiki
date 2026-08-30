@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-01-28_Papers-Explained-297--Maya-0a38799daa43.html`
+- Source file: `raw/2025-01-28_Papers-Explained-297--Maya-0a38799daa43.md`
 - Source title: Papers Explained 297: Maya
 - Published: 2025-01-28
 - Canonical: [https://medium.com/@ritvik19/papers-explained-297-maya-0a38799daa43](https://medium.com/@ritvik19/papers-explained-297-maya-0a38799daa43)
@@ -113,19 +113,19 @@ Maya: An Instruction Finetuned Multilingual Multimodal Model [2412.07112](https:
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-01-28_Papers-Explained-297--Maya-0a38799daa43.html`); local copies under `wiki/assets/papers-explained-297-maya/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-01-28_Papers-Explained-297--Maya-0a38799daa43.md`); local copies under `wiki/assets/papers-explained-297-maya/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-297-maya/fig-1.png) | Title card: Maya. |
-| ![Figure 2](assets/papers-explained-297-maya/fig-2.png) | Pretrain Dataset Preparation Process. |
-| ![Figure 3](assets/papers-explained-297-maya/fig-3.png) | Translation Instructions. |
-| ![Figure 4](assets/papers-explained-297-maya/fig-4.png) | Dataset Toxicity Filtering Method. |
-| ![Figure 5](assets/papers-explained-297-maya/fig-5.png) | Maya Architecture adapted from LLaVA. |
-| ![Figure 6](assets/papers-explained-297-maya/fig-6.png) | A comparison of LLaVA and PALO with Maya on eight languages adapted from LLaVA-Bench. |
-| ![Figure 7](assets/papers-explained-297-maya/fig-7.png) | Accuracy of Maya models on English Language across multiple benchmarks. |
-| ![Figure 8](assets/papers-explained-297-maya/fig-8.png) | Detailed accuracy results for VizWiz. |
-| ![Figure 9](assets/papers-explained-297-maya/fig-9.png) | MMVeT results including individual and integrated capabilities. |
+| ![Figure 1](assets/papers-explained-297-maya/fig-1.webp) | Title card: Maya. |
+| ![Figure 2](assets/papers-explained-297-maya/fig-2.webp) | Pretrain Dataset Preparation Process. |
+| ![Figure 3](assets/papers-explained-297-maya/fig-3.webp) | Translation Instructions. |
+| ![Figure 4](assets/papers-explained-297-maya/fig-4.webp) | Dataset Toxicity Filtering Method. |
+| ![Figure 5](assets/papers-explained-297-maya/fig-5.webp) | Maya Architecture adapted from LLaVA. |
+| ![Figure 6](assets/papers-explained-297-maya/fig-6.webp) | A comparison of LLaVA and PALO with Maya on eight languages adapted from LLaVA-Bench. |
+| ![Figure 7](assets/papers-explained-297-maya/fig-7.webp) | Accuracy of Maya models on English Language across multiple benchmarks. |
+| ![Figure 8](assets/papers-explained-297-maya/fig-8.webp) | Detailed accuracy results for VizWiz. |
+| ![Figure 9](assets/papers-explained-297-maya/fig-9.webp) | MMVeT results including individual and integrated capabilities. |
 ## Related
 
 - [[Papers Explained Corpus]]

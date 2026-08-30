@@ -1,6 +1,6 @@
 # Recurrent Neural Networks: Building a Custom LSTM Cell
 
-**Source**: `raw/understanding-lstm/full-article.html` (491 KB), `raw/understanding-lstm/full-article.md` (markdown view)  
+**Source**: `raw/understanding-lstm/full-article.md` (491 KB), `raw/understanding-lstm/full-article.md` (markdown view)  
 **URL**: https://theaisummer.com/understanding-lstm/  
 **Author**: Nikolas Adaloglou (AI Summer), 2020-09-10  
 **Ingested**: 2026-06-06  
@@ -33,21 +33,21 @@ The core of the piece is a gate-by-gate walkthrough of [[LSTM]] equations (input
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/understanding-lstm/fig-1.png) | RNN cell time unrolling: shared-weight cell repeated across timesteps | — |
-| ![fig-2](../assets/understanding-lstm/fig-2.png) | Input unrolling and backpropagation through time (BPTT) | — |
-| ![fig-3](../assets/understanding-lstm/fig-3.png) | LSTM unit structure: gates, cell state, and hidden state flow | — |
-| ![fig-4](../assets/understanding-lstm/fig-4.png) | Bidirectional LSTM: forward and backward passes with concatenated outputs | — |
-| ![fig-5](../assets/understanding-lstm/fig-5.png) | RNN input-to-hidden, hidden-to-hidden, and hidden-to-output connection patterns | — |
+| ![fig-1](../assets/understanding-lstm/fig-1.webp) | RNN cell time unrolling: shared-weight cell repeated across timesteps | — |
+| ![fig-2](../assets/understanding-lstm/fig-2.webp) | Input unrolling and backpropagation through time (BPTT) | — |
+| ![fig-3](../assets/understanding-lstm/fig-3.webp) | LSTM unit structure: gates, cell state, and hidden state flow | — |
+| ![fig-4](../assets/understanding-lstm/fig-4.webp) | Bidirectional LSTM: forward and backward passes with concatenated outputs | — |
+| ![fig-5](../assets/understanding-lstm/fig-5.webp) | RNN input-to-hidden, hidden-to-hidden, and hidden-to-output connection patterns | — |
 
-![RNN time unrolling](../assets/understanding-lstm/fig-1.png)
+![RNN time unrolling](../assets/understanding-lstm/fig-1.webp)
 
 Unrolling connects each timestep's hidden state to the next input, implementing memory with shared parameters.
 
-![BPTT unrolling](../assets/understanding-lstm/fig-2.png)
+![BPTT unrolling](../assets/understanding-lstm/fig-2.webp)
 
 BPTT treats the unrolled graph as a deep feedforward net; gradients from each timestep accumulate into the same weights.
 
-![LSTM unit diagram](../assets/understanding-lstm/fig-3.png)
+![LSTM unit diagram](../assets/understanding-lstm/fig-3.webp)
 
 Standard LSTM block diagram showing input, forget, and output gates modulating cell and hidden states.
 

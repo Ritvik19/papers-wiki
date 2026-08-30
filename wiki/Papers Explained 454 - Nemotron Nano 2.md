@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-09-16_Papers-Explained-454--Nemotron-Nano-2-d3cc3326fe5c.html`
+- Source file: `raw/2025-09-16_Papers-Explained-454--Nemotron-Nano-2-d3cc3326fe5c.md`
 - Source title: Papers Explained 454: Nemotron Nano 2
 - Published: 2025-09-16
 - Canonical: [https://medium.com/@ritvik19/papers-explained-454-nemotron-nano-2-d3cc3326fe5c](https://medium.com/@ritvik19/papers-explained-454-nemotron-nano-2-d3cc3326fe5c)
@@ -369,25 +369,25 @@ NVIDIA Nemotron Nano 2: An Accurate and Efficient Hybrid Mamba-Transformer Reaso
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-09-16_Papers-Explained-454--Nemotron-Nano-2-d3cc3326fe5c.html`); local copies under `wiki/assets/papers-explained-454-nemotron-nano-2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-09-16_Papers-Explained-454--Nemotron-Nano-2-d3cc3326fe5c.md`); local copies under `wiki/assets/papers-explained-454-nemotron-nano-2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-454-nemotron-nano-2/fig-1.png) | Title card: Nemotron Nano 2. |
-| ![Figure 2](assets/papers-explained-454-nemotron-nano-2/fig-2.png) | Nemotron-Nano-12B-v2-Base layer pattern. |
-| ![Figure 3](assets/papers-explained-454-nemotron-nano-2/fig-3.png) | Summary of Nemotron-Nano-12B-v2-Base architecture. |
-| ![Figure 4](assets/papers-explained-454-nemotron-nano-2/fig-4.png) | DeepSeek-V3 and Qwen3–30B-A3B are then prompted to synthesize more similar questions with corresponding options. |
-| ![Figure 5](assets/papers-explained-454-nemotron-nano-2/fig-5.png) | Flow of alignment procedures followed to arrive at the final “Merged” Nemotron Nano 2 12B checkpoint. |
-| ![Figure 6](assets/papers-explained-454-nemotron-nano-2/fig-6.png) | Evaluation results with reasoning “ON”. |
-| ![Figure 7](assets/papers-explained-454-nemotron-nano-2/fig-7.png) | FFN layers internally are composed of two linear operators with a non-linear activation in between. |
-| ![Figure 8](assets/papers-explained-454-nemotron-nano-2/fig-8.png) | The importance of each neuron in the first linear operator of each FFN layer is computed by examining the set of outputs it produces. |
-| ![Figure 9](assets/papers-explained-454-nemotron-nano-2/fig-9.png) | Model Merging:: where the aggregation is over the batch (B) and sequence (S) dimensions, using both mean and l2-norm metrics. |
-| ![Figure 10](assets/papers-explained-454-nemotron-nano-2/fig-10.png) | and heads are ranked within each Mamba group 𝒢𝑔 to preserve group-aware computation semantics. |
-| ![Figure 11](assets/papers-explained-454-nemotron-nano-2/fig-11.png) | and heads are ranked within each Mamba group 𝒢𝑔 to preserve group-aware computation semantics. |
-| ![Figure 12](assets/papers-explained-454-nemotron-nano-2/fig-12.png) | Effect of depth on reasoning accuracy. |
-| ![Figure 13](assets/papers-explained-454-nemotron-nano-2/fig-13.png) | Top 3 candidates for architecture selection. |
-| ![Figure 14](assets/papers-explained-454-nemotron-nano-2/fig-14.png) | Effect of varying reasoning data proportion on math accuracy after ∼ 6B tokens of KD. |
-| ![Figure 15](assets/papers-explained-454-nemotron-nano-2/fig-15.png) | Comparison of Nemotron Nano 2 and Qwen3–8B in terms of accuracy and throughput. |
+| ![Figure 1](assets/papers-explained-454-nemotron-nano-2/fig-1.webp) | Title card: Nemotron Nano 2. |
+| ![Figure 2](assets/papers-explained-454-nemotron-nano-2/fig-2.webp) | Nemotron-Nano-12B-v2-Base layer pattern. |
+| ![Figure 3](assets/papers-explained-454-nemotron-nano-2/fig-3.webp) | Summary of Nemotron-Nano-12B-v2-Base architecture. |
+| ![Figure 4](assets/papers-explained-454-nemotron-nano-2/fig-4.webp) | DeepSeek-V3 and Qwen3–30B-A3B are then prompted to synthesize more similar questions with corresponding options. |
+| ![Figure 5](assets/papers-explained-454-nemotron-nano-2/fig-5.webp) | Flow of alignment procedures followed to arrive at the final “Merged” Nemotron Nano 2 12B checkpoint. |
+| ![Figure 6](assets/papers-explained-454-nemotron-nano-2/fig-6.webp) | Evaluation results with reasoning “ON”. |
+| ![Figure 7](assets/papers-explained-454-nemotron-nano-2/fig-7.webp) | FFN layers internally are composed of two linear operators with a non-linear activation in between. |
+| ![Figure 8](assets/papers-explained-454-nemotron-nano-2/fig-8.webp) | The importance of each neuron in the first linear operator of each FFN layer is computed by examining the set of outputs it produces. |
+| ![Figure 9](assets/papers-explained-454-nemotron-nano-2/fig-9.webp) | Model Merging:: where the aggregation is over the batch (B) and sequence (S) dimensions, using both mean and l2-norm metrics. |
+| ![Figure 10](assets/papers-explained-454-nemotron-nano-2/fig-10.webp) | and heads are ranked within each Mamba group 𝒢𝑔 to preserve group-aware computation semantics. |
+| ![Figure 11](assets/papers-explained-454-nemotron-nano-2/fig-11.webp) | and heads are ranked within each Mamba group 𝒢𝑔 to preserve group-aware computation semantics. |
+| ![Figure 12](assets/papers-explained-454-nemotron-nano-2/fig-12.webp) | Effect of depth on reasoning accuracy. |
+| ![Figure 13](assets/papers-explained-454-nemotron-nano-2/fig-13.webp) | Top 3 candidates for architecture selection. |
+| ![Figure 14](assets/papers-explained-454-nemotron-nano-2/fig-14.webp) | Effect of varying reasoning data proportion on math accuracy after ∼ 6B tokens of KD. |
+| ![Figure 15](assets/papers-explained-454-nemotron-nano-2/fig-15.webp) | Comparison of Nemotron Nano 2 and Qwen3–8B in terms of accuracy and throughput. |
 ## Related
 
 - [[Papers Explained Corpus]]

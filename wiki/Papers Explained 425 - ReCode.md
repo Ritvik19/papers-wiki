@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-08-06_Papers-Explained-425--ReCode-a0a63c7705fe.html`
+- Source file: `raw/2025-08-06_Papers-Explained-425--ReCode-a0a63c7705fe.md`
 - Source title: Papers Explained 425: ReCode
 - Published: 2025-08-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-425-recode-a0a63c7705fe](https://medium.com/@ritvik19/papers-explained-425-recode-a0a63c7705fe)
@@ -126,18 +126,18 @@ ReCode: Updating Code API Knowledge with Reinforcement Learning [2506.20495](htt
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-08-06_Papers-Explained-425--ReCode-a0a63c7705fe.html`); local copies under `wiki/assets/papers-explained-425-recode/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-08-06_Papers-Explained-425--ReCode-a0a63c7705fe.md`); local copies under `wiki/assets/papers-explained-425-recode/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-425-recode/fig-1.png) | Title card: ReCode. |
-| ![Figure 2](assets/papers-explained-425-recode/fig-2.png) | LLMs struggle to adapt to frequent API updates due to reliance on outdated knowledge. |
-| ![Figure 3](assets/papers-explained-425-recode/fig-3.png) | The pipeline of data collection and training task with a running example. |
-| ![Figure 4](assets/papers-explained-425-recode/fig-4.png) | Statistics of our collected dataset. |
-| ![Figure 5](assets/papers-explained-425-recode/fig-5.png) | Correctness Rewards. |
-| ![Figure 6](assets/papers-explained-425-recode/fig-6.png) | Correctness Rewards. |
-| ![Figure 7](assets/papers-explained-425-recode/fig-7.png) | Exact Match (EM): EM calculates the rate at which predicted completions exactly match the target codes after normalizing return values. |
-| ![Figure 8](assets/papers-explained-425-recode/fig-8.png) | The performance results using the GRPO and DAPO algorithms on CodeUpdateArena and HumanEval+. |
+| ![Figure 1](assets/papers-explained-425-recode/fig-1.webp) | Title card: ReCode. |
+| ![Figure 2](assets/papers-explained-425-recode/fig-2.webp) | LLMs struggle to adapt to frequent API updates due to reliance on outdated knowledge. |
+| ![Figure 3](assets/papers-explained-425-recode/fig-3.webp) | The pipeline of data collection and training task with a running example. |
+| ![Figure 4](assets/papers-explained-425-recode/fig-4.webp) | Statistics of our collected dataset. |
+| ![Figure 5](assets/papers-explained-425-recode/fig-5.webp) | Correctness Rewards. |
+| ![Figure 6](assets/papers-explained-425-recode/fig-6.webp) | Correctness Rewards. |
+| ![Figure 7](assets/papers-explained-425-recode/fig-7.webp) | Exact Match (EM): EM calculates the rate at which predicted completions exactly match the target codes after normalizing return values. |
+| ![Figure 8](assets/papers-explained-425-recode/fig-8.webp) | The performance results using the GRPO and DAPO algorithms on CodeUpdateArena and HumanEval+. |
 ## Related
 
 - [[Papers Explained Corpus]]

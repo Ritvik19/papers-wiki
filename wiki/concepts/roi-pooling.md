@@ -14,7 +14,7 @@
 
 ## Procedure
 
-![RoI pooling](../assets/2017-12-31-object-recognition-part-3/fig-5.png)
+![RoI pooling](../assets/2017-12-31-object-recognition-part-3/fig-5.webp)
 
 Given RoI of size \(h \times w\) on feature map:
 

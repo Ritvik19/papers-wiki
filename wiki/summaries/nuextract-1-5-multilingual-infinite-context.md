@@ -1,6 +1,6 @@
 # NuExtract 1.5 — Multilingual, Infinite context, still small, and better than GPT-4o!
 
-**Source**: `raw/nuextract-1-5-multilingual-infinite-context/full-article.html` (SPA shell; readable markdown from WebFetch), https://about.nuextract.ai/blog/nuextract-1-5-multilingual-infinite-context  
+**Source**: `raw/nuextract-1-5-multilingual-infinite-context/full-article.md` (SPA shell; readable markdown from WebFetch), https://about.nuextract.ai/blog/nuextract-1-5-multilingual-infinite-context  
 **Ingested**: 2026-06-12  
 **Tags**: #summary
 
@@ -26,16 +26,16 @@
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/nuextract-1-5-multilingual-infinite-context/fig-1.png) | French document with English template training example | — |
-| ![fig-2](../assets/nuextract-1-5-multilingual-infinite-context/fig-2.png) | Inference memory vs token count (full attention) | — |
-| ![fig-3](../assets/nuextract-1-5-multilingual-infinite-context/fig-3.png) | Continuation extraction: template + text + prior JSON | — |
-| ![fig-4](../assets/nuextract-1-5-multilingual-infinite-context/fig-4.png) | GPU memory: full window vs 10k extraction window | — |
-| ![fig-5](../assets/nuextract-1-5-multilingual-infinite-context/fig-5.png) | English zero-shot benchmark vs GPT-4o | — |
-| ![fig-7](../assets/nuextract-1-5-multilingual-infinite-context/fig-7.png) | Multilingual zero-shot benchmark | — |
-| ![fig-8](../assets/nuextract-1-5-multilingual-infinite-context/fig-8.png) | Long-document performance (8k–10k tokens) | — |
-| ![fig-10](../assets/nuextract-1-5-multilingual-infinite-context/fig-10.png) | Performance vs extraction window size | — |
+| ![fig-1](../assets/nuextract-1-5-multilingual-infinite-context/fig-1.webp) | French document with English template training example | — |
+| ![fig-2](../assets/nuextract-1-5-multilingual-infinite-context/fig-2.webp) | Inference memory vs token count (full attention) | — |
+| ![fig-3](../assets/nuextract-1-5-multilingual-infinite-context/fig-3.webp) | Continuation extraction: template + text + prior JSON | — |
+| ![fig-4](../assets/nuextract-1-5-multilingual-infinite-context/fig-4.webp) | GPU memory: full window vs 10k extraction window | — |
+| ![fig-5](../assets/nuextract-1-5-multilingual-infinite-context/fig-5.webp) | English zero-shot benchmark vs GPT-4o | — |
+| ![fig-7](../assets/nuextract-1-5-multilingual-infinite-context/fig-7.webp) | Multilingual zero-shot benchmark | — |
+| ![fig-8](../assets/nuextract-1-5-multilingual-infinite-context/fig-8.webp) | Long-document performance (8k–10k tokens) | — |
+| ![fig-10](../assets/nuextract-1-5-multilingual-infinite-context/fig-10.webp) | Performance vs extraction window size | — |
 
-![Continuation extraction](../assets/nuextract-1-5-multilingual-infinite-context/fig-3.png)
+![Continuation extraction](../assets/nuextract-1-5-multilingual-infinite-context/fig-3.webp)
 
 ## Entities
 

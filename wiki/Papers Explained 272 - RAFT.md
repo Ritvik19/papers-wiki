@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-12-16_Papers-Explained-272--RAFT-5049520bcc26.html`
+- Source file: `raw/2024-12-16_Papers-Explained-272--RAFT-5049520bcc26.md`
 - Source title: Papers Explained 272: RAFT
 - Published: 2024-12-16
 - Canonical: [https://medium.com/@ritvik19/papers-explained-272-raft-5049520bcc26](https://medium.com/@ritvik19/papers-explained-272-raft-5049520bcc26)
@@ -97,19 +97,19 @@ RAFT: Adapting Language Model to Domain Specific RAG [2403.10131](https://arxiv.
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-12-16_Papers-Explained-272--RAFT-5049520bcc26.html`); local copies under `wiki/assets/papers-explained-272-raft/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-12-16_Papers-Explained-272--RAFT-5049520bcc26.md`); local copies under `wiki/assets/papers-explained-272-raft/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-272-raft/fig-1.png) | Title card: RAFT. |
-| ![Figure 2](assets/papers-explained-272-raft/fig-2.png) | Overview of the RAFT method. |
-| ![Figure 3](assets/papers-explained-272-raft/fig-3.png) | In RAFT, training data is prepared such that each data point contains a question (Q), a set of documents (Dk), and a corresponding... |
-| ![Figure 4](assets/papers-explained-272-raft/fig-4.png) | By removing the golden documents in some instances, the model is compelled to memorize answers instead of deriving them from the context. |
-| ![Figure 5](assets/papers-explained-272-raft/fig-5.png) | Sample RAFT training example. |
-| ![Figure 6](assets/papers-explained-272-raft/fig-6.png) | Creating a full reasoning chain and in-addition, clearly citing sources enhances the model’s accuracy in answering questions. |
-| ![Figure 7](assets/papers-explained-272-raft/fig-7.png) | Ablation on Chain-of-Thought. |
-| ![Figure 8](assets/papers-explained-272-raft/fig-8.png) | How many golden documents to involve? |
-| ![Figure 9](assets/papers-explained-272-raft/fig-9.png) | Test-Time Documents Varying. |
+| ![Figure 1](assets/papers-explained-272-raft/fig-1.webp) | Title card: RAFT. |
+| ![Figure 2](assets/papers-explained-272-raft/fig-2.webp) | Overview of the RAFT method. |
+| ![Figure 3](assets/papers-explained-272-raft/fig-3.webp) | In RAFT, training data is prepared such that each data point contains a question (Q), a set of documents (Dk), and a corresponding... |
+| ![Figure 4](assets/papers-explained-272-raft/fig-4.webp) | By removing the golden documents in some instances, the model is compelled to memorize answers instead of deriving them from the context. |
+| ![Figure 5](assets/papers-explained-272-raft/fig-5.webp) | Sample RAFT training example. |
+| ![Figure 6](assets/papers-explained-272-raft/fig-6.webp) | Creating a full reasoning chain and in-addition, clearly citing sources enhances the model’s accuracy in answering questions. |
+| ![Figure 7](assets/papers-explained-272-raft/fig-7.webp) | Ablation on Chain-of-Thought. |
+| ![Figure 8](assets/papers-explained-272-raft/fig-8.webp) | How many golden documents to involve? |
+| ![Figure 9](assets/papers-explained-272-raft/fig-9.webp) | Test-Time Documents Varying. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-10-27_Papers-Explained-65--GPT-2-98d0a642e520.html`
+- Source file: `raw/2023-10-27_Papers-Explained-65--GPT-2-98d0a642e520.md`
 - Source title: Papers Explained 65: GPT-2
 - Published: 2023-10-27
 - Canonical: [https://medium.com/@ritvik19/papers-explained-65-gpt-2-98d0a642e520](https://medium.com/@ritvik19/papers-explained-65-gpt-2-98d0a642e520)
@@ -173,17 +173,17 @@ The vocabulary has expanded to 50,257. The context size is also increased from 5
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-10-27_Papers-Explained-65--GPT-2-98d0a642e520.html`); local copies under `wiki/assets/papers-explained-65-gpt-2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-10-27_Papers-Explained-65--GPT-2-98d0a642e520.md`); local copies under `wiki/assets/papers-explained-65-gpt-2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-65-gpt-2/fig-1.png) | Title card: GPT-2. |
-| ![Figure 2](assets/papers-explained-65-gpt-2/fig-2.png) | Examples of naturally occurring demonstrations of English to French and French to English translation found throughout the WebText training set. |
-| ![Figure 3](assets/papers-explained-65-gpt-2/fig-3.png) | Architecture hyperparameters for the 4 model sizes. |
-| ![Figure 4](assets/papers-explained-65-gpt-2/fig-4.png) | Zero-shot results on many datasets. |
-| ![Figure 5](assets/papers-explained-65-gpt-2/fig-5.png) | Performance on the Children’s Book Test as a function of model capacity. |
-| ![Figure 6](assets/papers-explained-65-gpt-2/fig-6.png) | Performance on the Winograd Schema Challenge as a function of model capacity. |
-| ![Figure 7](assets/papers-explained-65-gpt-2/fig-7.png) | Summarization performance as measured by ROUGE F1 metrics on the CNN and Daily Mail dataset. |
+| ![Figure 1](assets/papers-explained-65-gpt-2/fig-1.webp) | Title card: GPT-2. |
+| ![Figure 2](assets/papers-explained-65-gpt-2/fig-2.webp) | Examples of naturally occurring demonstrations of English to French and French to English translation found throughout the WebText training set. |
+| ![Figure 3](assets/papers-explained-65-gpt-2/fig-3.webp) | Architecture hyperparameters for the 4 model sizes. |
+| ![Figure 4](assets/papers-explained-65-gpt-2/fig-4.webp) | Zero-shot results on many datasets. |
+| ![Figure 5](assets/papers-explained-65-gpt-2/fig-5.webp) | Performance on the Children’s Book Test as a function of model capacity. |
+| ![Figure 6](assets/papers-explained-65-gpt-2/fig-6.webp) | Performance on the Winograd Schema Challenge as a function of model capacity. |
+| ![Figure 7](assets/papers-explained-65-gpt-2/fig-7.webp) | Summarization performance as measured by ROUGE F1 metrics on the CNN and Daily Mail dataset. |
 ## Related
 
 - [[Papers Explained Corpus]]

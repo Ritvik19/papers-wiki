@@ -1,6 +1,6 @@
 # Kimina-Prover: Applying Test-Time RL Search on Large Formal Reasoning Models
 
-**Source**: `raw/kimina-prover/full-article.html` (224 KB), `raw/kimina-prover/full-article.md`
+**Source**: `raw/kimina-prover/full-article.md` (224 KB), `raw/kimina-prover/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

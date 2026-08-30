@@ -17,7 +17,7 @@
 L_1^{smooth}(x) = \begin{cases} 0.5 x^2 & |x| < 1 \\ |x| - 0.5 & \text{otherwise} \end{cases}
 \]
 
-![Smooth L1 curve](../assets/2017-12-31-object-recognition-part-3/fig-6.png)
+![Smooth L1 curve](../assets/2017-12-31-object-recognition-part-3/fig-6.webp)
 
 ## Behavior
 

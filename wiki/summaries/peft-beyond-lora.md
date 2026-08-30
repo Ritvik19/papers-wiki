@@ -1,6 +1,6 @@
 # Beyond LoRA: Can You Beat the Most Popular Fine-Tuning Technique?
 
-**Source**: `raw/peft-beyond-lora/full-article.html`, `raw/peft-beyond-lora/full-article.md`
+**Source**: `raw/peft-beyond-lora/full-article.md`, `raw/peft-beyond-lora/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

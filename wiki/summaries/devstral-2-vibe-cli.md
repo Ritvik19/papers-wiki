@@ -1,6 +1,6 @@
 # Introducing: Devstral 2 and Mistral Vibe CLI.
 
-**Source**: `raw/devstral-2-vibe-cli/full-article.html` (222 KB), `raw/devstral-2-vibe-cli/full-article.md` (markdown view)  
+**Source**: `raw/devstral-2-vibe-cli/full-article.md` (222 KB), `raw/devstral-2-vibe-cli/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/devstral-2-vibe-cli/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-07-08_Papers-Explained-404--Pangea-b5fbfecf9912.html`
+- Source file: `raw/2025-07-08_Papers-Explained-404--Pangea-b5fbfecf9912.md`
 - Source title: Papers Explained 404: Pangea
 - Published: 2025-07-08
 - Canonical: [https://medium.com/@ritvik19/papers-explained-404-pangea-b5fbfecf9912](https://medium.com/@ritvik19/papers-explained-404-pangea-b5fbfecf9912)
@@ -133,15 +133,15 @@ Pangea: A Fully Open Multilingual Multimodal LLM for 39 Languages [2410.16153](h
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-07-08_Papers-Explained-404--Pangea-b5fbfecf9912.html`); local copies under `wiki/assets/papers-explained-404-pangea/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-07-08_Papers-Explained-404--Pangea-b5fbfecf9912.md`); local copies under `wiki/assets/papers-explained-404-pangea/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-404-pangea/fig-1.png) | Title card: Pangea. |
-| ![Figure 2](assets/papers-explained-404-pangea/fig-2.png) | Overview of multicultural understanding instructions data generation pipeline. |
-| ![Figure 3](assets/papers-explained-404-pangea/fig-3.png) | Statistics of PangeaIns, comprising 6M multimodal instructions in 39 languages. |
-| ![Figure 4](assets/papers-explained-404-pangea/fig-4.png) | Overall performance on the multilingual multimodal benchmarks in PangeaBench. |
-| ![Figure 5](assets/papers-explained-404-pangea/fig-5.png) | Overall performance on text-only multilingual benchmarks in PangeaBench. |
+| ![Figure 1](assets/papers-explained-404-pangea/fig-1.webp) | Title card: Pangea. |
+| ![Figure 2](assets/papers-explained-404-pangea/fig-2.webp) | Overview of multicultural understanding instructions data generation pipeline. |
+| ![Figure 3](assets/papers-explained-404-pangea/fig-3.webp) | Statistics of PangeaIns, comprising 6M multimodal instructions in 39 languages. |
+| ![Figure 4](assets/papers-explained-404-pangea/fig-4.webp) | Overall performance on the multilingual multimodal benchmarks in PangeaBench. |
+| ![Figure 5](assets/papers-explained-404-pangea/fig-5.webp) | Overall performance on text-only multilingual benchmarks in PangeaBench. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-11-14_Papers-Explained-252--Nemotron-Mini-Hindi-c7adc3b2f759.html`
+- Source file: `raw/2024-11-14_Papers-Explained-252--Nemotron-Mini-Hindi-c7adc3b2f759.md`
 - Source title: Papers Explained 252: Nemotron-Mini-Hindi
 - Published: 2024-11-14
 - Canonical: [https://medium.com/@ritvik19/papers-explained-252-nemotron-mini-hindi-c7adc3b2f759](https://medium.com/@ritvik19/papers-explained-252-nemotron-mini-hindi-c7adc3b2f759)
@@ -85,20 +85,20 @@ Adapting Multilingual LLMs to Low-Resource Languages using Continued Pre-trainin
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-11-14_Papers-Explained-252--Nemotron-Mini-Hindi-c7adc3b2f759.html`); local copies under `wiki/assets/papers-explained-252-nemotron-mini-hindi/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-11-14_Papers-Explained-252--Nemotron-Mini-Hindi-c7adc3b2f759.md`); local copies under `wiki/assets/papers-explained-252-nemotron-mini-hindi/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-252-nemotron-mini-hindi/fig-1.png) | Title card: Nemotron-Mini-Hindi. |
-| ![Figure 2](assets/papers-explained-252-nemotron-mini-hindi/fig-2.png) | Adaptation of multilingual Nemotron-Mini4B model (also known as Minitron-4B). |
-| ![Figure 3](assets/papers-explained-252-nemotron-mini-hindi/fig-3.png) | Architecture details of Nemotron-Mini-4B model. |
-| ![Figure 4](assets/papers-explained-252-nemotron-mini-hindi/fig-4.png) | Performance metrics for various base models across different Hindi tasks. The results are zero-shot unless otherwise specified. |
-| ![Figure 5](assets/papers-explained-252-nemotron-mini-hindi/fig-5.png) | Performance of base models on English Benchmarks. |
-| ![Figure 6](assets/papers-explained-252-nemotron-mini-hindi/fig-6.png) | Performance metrics for various instruct models across different Hindi tasks. The results are zero-shot unless otherwise specified. |
-| ![Figure 7](assets/papers-explained-252-nemotron-mini-hindi/fig-7.png) | Comparison of different instruct models on various parameters using SubjectiveEval. |
-| ![Figure 8](assets/papers-explained-252-nemotron-mini-hindi/fig-8.png) | Comparison of different instruct models on various parameters using IndicQuest-Hi. |
-| ![Figure 9](assets/papers-explained-252-nemotron-mini-hindi/fig-9.png) | Comparison of different instruct models on Factuality score of IndicQuest. |
-| ![Figure 10](assets/papers-explained-252-nemotron-mini-hindi/fig-10.png) | Results of human evaluation on translated MT-Bench. A win indicates Nemotron-Mini-Hindi-4B model is preferred. |
+| ![Figure 1](assets/papers-explained-252-nemotron-mini-hindi/fig-1.webp) | Title card: Nemotron-Mini-Hindi. |
+| ![Figure 2](assets/papers-explained-252-nemotron-mini-hindi/fig-2.webp) | Adaptation of multilingual Nemotron-Mini4B model (also known as Minitron-4B). |
+| ![Figure 3](assets/papers-explained-252-nemotron-mini-hindi/fig-3.webp) | Architecture details of Nemotron-Mini-4B model. |
+| ![Figure 4](assets/papers-explained-252-nemotron-mini-hindi/fig-4.webp) | Performance metrics for various base models across different Hindi tasks. The results are zero-shot unless otherwise specified. |
+| ![Figure 5](assets/papers-explained-252-nemotron-mini-hindi/fig-5.webp) | Performance of base models on English Benchmarks. |
+| ![Figure 6](assets/papers-explained-252-nemotron-mini-hindi/fig-6.webp) | Performance metrics for various instruct models across different Hindi tasks. The results are zero-shot unless otherwise specified. |
+| ![Figure 7](assets/papers-explained-252-nemotron-mini-hindi/fig-7.webp) | Comparison of different instruct models on various parameters using SubjectiveEval. |
+| ![Figure 8](assets/papers-explained-252-nemotron-mini-hindi/fig-8.webp) | Comparison of different instruct models on various parameters using IndicQuest-Hi. |
+| ![Figure 9](assets/papers-explained-252-nemotron-mini-hindi/fig-9.webp) | Comparison of different instruct models on Factuality score of IndicQuest. |
+| ![Figure 10](assets/papers-explained-252-nemotron-mini-hindi/fig-10.webp) | Results of human evaluation on translated MT-Bench. A win indicates Nemotron-Mini-Hindi-4B model is preferred. |
 ## Related
 
 - [[Papers Explained Corpus]]

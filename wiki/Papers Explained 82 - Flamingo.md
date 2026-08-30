@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-12-22_Papers-Explained-82--Flamingo-8c124c394cdb.html`
+- Source file: `raw/2023-12-22_Papers-Explained-82--Flamingo-8c124c394cdb.md`
 - Source title: Papers Explained 82: Flamingo
 - Published: 2023-12-22
 - Canonical: [https://medium.com/@ritvik19/papers-explained-82-flamingo-8c124c394cdb](https://medium.com/@ritvik19/papers-explained-82-flamingo-8c124c394cdb)
@@ -111,18 +111,18 @@ Flamingo: a Visual Language Model for Few-Shot Learning [2204.14198](https://arx
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-12-22_Papers-Explained-82--Flamingo-8c124c394cdb.html`); local copies under `wiki/assets/papers-explained-82-flamingo/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-12-22_Papers-Explained-82--Flamingo-8c124c394cdb.md`); local copies under `wiki/assets/papers-explained-82-flamingo/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-82-flamingo/fig-1.png) | Title card: Flamingo. |
-| ![Figure 2](assets/papers-explained-82-flamingo/fig-2.png) | Flamingo architecture overview. |
-| ![Figure 3](assets/papers-explained-82-flamingo/fig-3.png) | The architectural components are chosen to leverage pretrained vision and language models and bridge them effectively. |
-| ![Figure 4](assets/papers-explained-82-flamingo/fig-4.png) | GATED XATTN-DENSE layers. |
-| ![Figure 5](assets/papers-explained-82-flamingo/fig-5.png) | The model are trained by minimizing a weighted sum of per-dataset expected negative log-likelihoods of text, given the visual inputs. |
-| ![Figure 6](assets/papers-explained-82-flamingo/fig-6.png) | Comparison to the state of the art. |
-| ![Figure 7](assets/papers-explained-82-flamingo/fig-7.png) | Comparison to SotA when fine-tuning Flamingo. |
-| ![Figure 8](assets/papers-explained-82-flamingo/fig-8.png) | Ablation studies. |
+| ![Figure 1](assets/papers-explained-82-flamingo/fig-1.webp) | Title card: Flamingo. |
+| ![Figure 2](assets/papers-explained-82-flamingo/fig-2.webp) | Flamingo architecture overview. |
+| ![Figure 3](assets/papers-explained-82-flamingo/fig-3.webp) | The architectural components are chosen to leverage pretrained vision and language models and bridge them effectively. |
+| ![Figure 4](assets/papers-explained-82-flamingo/fig-4.webp) | GATED XATTN-DENSE layers. |
+| ![Figure 5](assets/papers-explained-82-flamingo/fig-5.webp) | The model are trained by minimizing a weighted sum of per-dataset expected negative log-likelihoods of text, given the visual inputs. |
+| ![Figure 6](assets/papers-explained-82-flamingo/fig-6.webp) | Comparison to the state of the art. |
+| ![Figure 7](assets/papers-explained-82-flamingo/fig-7.webp) | Comparison to SotA when fine-tuning Flamingo. |
+| ![Figure 8](assets/papers-explained-82-flamingo/fig-8.webp) | Ablation studies. |
 ## Related
 
 - [[Papers Explained Corpus]]

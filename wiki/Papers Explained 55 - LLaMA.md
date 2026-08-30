@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-09-11_Papers-Explained-55--LLaMA-c4f302809d6b.html`
+- Source file: `raw/2023-09-11_Papers-Explained-55--LLaMA-c4f302809d6b.md`
 - Source title: Papers Explained 55: LLaMA
 - Published: 2023-09-11
 - Canonical: [https://medium.com/@ritvik19/papers-explained-55-llama-c4f302809d6b](https://medium.com/@ritvik19/papers-explained-55-llama-c4f302809d6b)
@@ -163,21 +163,21 @@ LLaMA: Open and Efficient Foundation Language Models [2302.13971](https://arxiv.
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-09-11_Papers-Explained-55--LLaMA-c4f302809d6b.html`); local copies under `wiki/assets/papers-explained-55-llama/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-09-11_Papers-Explained-55--LLaMA-c4f302809d6b.md`); local copies under `wiki/assets/papers-explained-55-llama/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-55-llama/fig-1.png) | Title card: LLaMA. |
-| ![Figure 2](assets/papers-explained-55-llama/fig-2.png) | Pre-training data. Data mixtures used for pretraining. |
-| ![Figure 3](assets/papers-explained-55-llama/fig-3.png) | Model sizes, architectures, and optimization hyper-parameters. |
-| ![Figure 4](assets/papers-explained-55-llama/fig-4.png) | Zero-shot performance on Common Sense Reasoning tasks. |
-| ![Figure 5](assets/papers-explained-55-llama/fig-5.png) | NaturalQuestions. Exact match performance. |
-| ![Figure 6](assets/papers-explained-55-llama/fig-6.png) | TriviaQA. Zero-shot and few-shot exact match performance on the filtered dev set. |
-| ![Figure 7](assets/papers-explained-55-llama/fig-7.png) | Reading Comprehension. Zero-shot accuracy. |
-| ![Figure 8](assets/papers-explained-55-llama/fig-8.png) | Model performance on quantitative reasoning datasets. |
-| ![Figure 9](assets/papers-explained-55-llama/fig-9.png) | Model performance for code generation. |
-| ![Figure 10](assets/papers-explained-55-llama/fig-10.png) | Massive Multitask Language Understanding (MMLU). Five-shot accuracy. |
-| ![Figure 11](assets/papers-explained-55-llama/fig-11.png) | Instruction finetuning — MMLU (5-shot). Comparison of models of moderate size with and without instruction finetuning on MMLU. |
+| ![Figure 1](assets/papers-explained-55-llama/fig-1.webp) | Title card: LLaMA. |
+| ![Figure 2](assets/papers-explained-55-llama/fig-2.webp) | Pre-training data. Data mixtures used for pretraining. |
+| ![Figure 3](assets/papers-explained-55-llama/fig-3.webp) | Model sizes, architectures, and optimization hyper-parameters. |
+| ![Figure 4](assets/papers-explained-55-llama/fig-4.webp) | Zero-shot performance on Common Sense Reasoning tasks. |
+| ![Figure 5](assets/papers-explained-55-llama/fig-5.webp) | NaturalQuestions. Exact match performance. |
+| ![Figure 6](assets/papers-explained-55-llama/fig-6.webp) | TriviaQA. Zero-shot and few-shot exact match performance on the filtered dev set. |
+| ![Figure 7](assets/papers-explained-55-llama/fig-7.webp) | Reading Comprehension. Zero-shot accuracy. |
+| ![Figure 8](assets/papers-explained-55-llama/fig-8.webp) | Model performance on quantitative reasoning datasets. |
+| ![Figure 9](assets/papers-explained-55-llama/fig-9.webp) | Model performance for code generation. |
+| ![Figure 10](assets/papers-explained-55-llama/fig-10.webp) | Massive Multitask Language Understanding (MMLU). Five-shot accuracy. |
+| ![Figure 11](assets/papers-explained-55-llama/fig-11.webp) | Instruction finetuning — MMLU (5-shot). Comparison of models of moderate size with and without instruction finetuning on MMLU. |
 ## Related
 
 - [[Papers Explained Corpus]]

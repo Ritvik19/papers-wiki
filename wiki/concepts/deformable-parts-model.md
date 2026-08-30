@@ -17,7 +17,7 @@ The **Deformable Parts Model (DPM)** (Felzenszwalb, Girshick, McAllester, Ramana
 2. **Part filters**: smaller parts at **2× resolution** relative to root.
 3. **Spatial model**: scores part placement relative to root; **deformation cost** if parts deviate from ideal layout.
 
-![DPM components](../assets/2017-12-15-object-recognition-part-2/fig-6.png)
+![DPM matching](../assets/2017-12-15-object-recognition-part-2/fig-7.webp)
 
 ## Matching score
 
@@ -28,7 +28,7 @@ f(\text{model}, x) = f(\beta_{root}, x) + \sum_{\beta_{part}} \max_y \big[ f(\be
 - \(x\): image at position/scale; \(y\): subregion for a part.
 - Base filter score: \(f(\beta, x) = \beta \cdot \Phi(x)\).
 
-![DPM matching](../assets/2017-12-15-object-recognition-part-2/fig-7.png)
+![DPM matching](../assets/2017-12-15-object-recognition-part-2/fig-7.webp)
 
 High root score proposes hypothesis; consistent high part scores **confirm** it. Training: **latent SVM** (parts' best alignment latent during learning).
 

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-05-23_Papers-Explained-372--QALIGN-977600e913fb.html`
+- Source file: `raw/2025-05-23_Papers-Explained-372--QALIGN-977600e913fb.md`
 - Source title: Papers Explained 372: QALIGN
 - Published: 2025-05-23
 - Canonical: [https://medium.com/@ritvik19/papers-explained-372-qalign-977600e913fb](https://medium.com/@ritvik19/papers-explained-372-qalign-977600e913fb)
@@ -195,18 +195,18 @@ Sample, Don’t Search: Rethinking Test-Time Alignment for Language Models [2504
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-05-23_Papers-Explained-372--QALIGN-977600e913fb.html`); local copies under `wiki/assets/papers-explained-372-qalign/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-05-23_Papers-Explained-372--QALIGN-977600e913fb.md`); local copies under `wiki/assets/papers-explained-372-qalign/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-372-qalign/fig-1.png) | Title card: QALIGN. |
-| ![Figure 2](assets/papers-explained-372-qalign/fig-2.png) | where. |
-| ![Figure 3](assets/papers-explained-372-qalign/fig-3.png) | where. |
-| ![Figure 4](assets/papers-explained-372-qalign/fig-4.png) | where. |
-| ![Figure 5](assets/papers-explained-372-qalign/fig-5.png) | Methods for Selecting the Best Response. |
-| ![Figure 6](assets/papers-explained-372-qalign/fig-6.png) | Average accuracy vs. floating point operations (FLOPS) in log scale. |
-| ![Figure 7](assets/papers-explained-372-qalign/fig-7.png) | Overview of the results on general alignment. |
-| ![Figure 8](assets/papers-explained-372-qalign/fig-8.png) | Average error rate as a function of inference-time floating point operations (FLOPS) in log scale. |
+| ![Figure 1](assets/papers-explained-372-qalign/fig-1.webp) | Title card: QALIGN. |
+| ![Figure 2](assets/papers-explained-372-qalign/fig-2.webp) | where. |
+| ![Figure 3](assets/papers-explained-372-qalign/fig-3.webp) | where. |
+| ![Figure 4](assets/papers-explained-372-qalign/fig-4.webp) | where. |
+| ![Figure 5](assets/papers-explained-372-qalign/fig-5.webp) | Methods for Selecting the Best Response. |
+| ![Figure 6](assets/papers-explained-372-qalign/fig-6.webp) | Average accuracy vs. floating point operations (FLOPS) in log scale. |
+| ![Figure 7](assets/papers-explained-372-qalign/fig-7.webp) | Overview of the results on general alignment. |
+| ![Figure 8](assets/papers-explained-372-qalign/fig-8.webp) | Average error rate as a function of inference-time floating point operations (FLOPS) in log scale. |
 ## Related
 
 - [[Papers Explained Corpus]]

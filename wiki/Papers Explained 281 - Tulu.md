@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-01-06_Papers-Explained-281--Tulu-ee85648cbf1b.html`
+- Source file: `raw/2025-01-06_Papers-Explained-281--Tulu-ee85648cbf1b.md`
 - Source title: Papers Explained 281: Tulu
 - Published: 2025-01-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-181-tulu-ee85648cbf1b](https://medium.com/@ritvik19/papers-explained-181-tulu-ee85648cbf1b)
@@ -159,21 +159,21 @@ How Far Can Camels Go? Exploring the State of Instruction Tuning on Open Resourc
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-01-06_Papers-Explained-281--Tulu-ee85648cbf1b.html`); local copies under `wiki/assets/papers-explained-281-tulu/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-01-06_Papers-Explained-281--Tulu-ee85648cbf1b.md`); local copies under `wiki/assets/papers-explained-281-tulu/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-281-tulu/fig-1.png) | Title card: Tulu. |
-| ![Figure 2](assets/papers-explained-281-tulu/fig-2.png) | Instruction datasets investigated in this work. CoT and FLAN V2 are sampled to 100K to match the sizes of other datasets. |
-| ![Figure 3](assets/papers-explained-281-tulu/fig-3.png) | Base models that are finetuned in this work. |
-| ![Figure 4](assets/papers-explained-281-tulu/fig-4.png) | An example from ShareGPT data. |
-| ![Figure 5](assets/papers-explained-281-tulu/fig-5.png) | Comparison of different instruction tuning datasets. |
-| ![Figure 6](assets/papers-explained-281-tulu/fig-6.png) | Performance of different base models after training on the Human+GPT data mixture. |
-| ![Figure 7](assets/papers-explained-281-tulu/fig-7.png) | Performance of TÜLU and other trained models to vanilla LLAMA models and the state-of-the-art proprietary models across evaluation settings. |
-| ![Figure 8](assets/papers-explained-281-tulu/fig-8.png) | Performance of models on ToxiGen and TruthfulQA. |
-| ![Figure 9](assets/papers-explained-281-tulu/fig-9.png) | Win-rate (%) of LLAMA models of varying sizes finetuned on the given dataset against Davinci-003 using AlpacaEval. |
-| ![Figure 10](assets/papers-explained-281-tulu/fig-10.png) | Win-rate scores of 13B models given by GPT-4 strongly correlate with the average numbers of unique tokens in the model responses (Pearson 𝑟 = 0.96). |
-| ![Figure 11](assets/papers-explained-281-tulu/fig-11.png) | Human acceptance and Human preference rates. |
+| ![Figure 1](assets/papers-explained-281-tulu/fig-1.webp) | Title card: Tulu. |
+| ![Figure 2](assets/papers-explained-281-tulu/fig-2.webp) | Instruction datasets investigated in this work. CoT and FLAN V2 are sampled to 100K to match the sizes of other datasets. |
+| ![Figure 3](assets/papers-explained-281-tulu/fig-3.webp) | Base models that are finetuned in this work. |
+| ![Figure 4](assets/papers-explained-281-tulu/fig-4.webp) | An example from ShareGPT data. |
+| ![Figure 5](assets/papers-explained-281-tulu/fig-5.webp) | Comparison of different instruction tuning datasets. |
+| ![Figure 6](assets/papers-explained-281-tulu/fig-6.webp) | Performance of different base models after training on the Human+GPT data mixture. |
+| ![Figure 7](assets/papers-explained-281-tulu/fig-7.webp) | Performance of TÜLU and other trained models to vanilla LLAMA models and the state-of-the-art proprietary models across evaluation settings. |
+| ![Figure 8](assets/papers-explained-281-tulu/fig-8.webp) | Performance of models on ToxiGen and TruthfulQA. |
+| ![Figure 9](assets/papers-explained-281-tulu/fig-9.webp) | Win-rate (%) of LLAMA models of varying sizes finetuned on the given dataset against Davinci-003 using AlpacaEval. |
+| ![Figure 10](assets/papers-explained-281-tulu/fig-10.webp) | Win-rate scores of 13B models given by GPT-4 strongly correlate with the average numbers of unique tokens in the model responses (Pearson 𝑟 = 0.96). |
+| ![Figure 11](assets/papers-explained-281-tulu/fig-11.webp) | Human acceptance and Human preference rates. |
 ## Related
 
 - [[Papers Explained Corpus]]

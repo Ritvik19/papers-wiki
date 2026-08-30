@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-07_Papers-Explained-16--Faster-RCNN-a7b874ffacd9.html`
+- Source file: `raw/2023-02-07_Papers-Explained-16--Faster-RCNN-a7b874ffacd9.md`
 - Source title: Papers Explained 16: Faster RCNN
 - Published: 2023-02-07
 - Canonical: [https://medium.com/@ritvik19/papers-explained-16-faster-rcnn-a7b874ffacd9](https://medium.com/@ritvik19/papers-explained-16-faster-rcnn-a7b874ffacd9)
@@ -54,13 +54,13 @@ Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks [
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-07_Papers-Explained-16--Faster-RCNN-a7b874ffacd9.html`); local copies under `wiki/assets/papers-explained-16-faster-rcnn/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-07_Papers-Explained-16--Faster-RCNN-a7b874ffacd9.md`); local copies under `wiki/assets/papers-explained-16-faster-rcnn/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-16-faster-rcnn/fig-1.png) | Title card: Faster RCNN. |
-| ![Figure 2](assets/papers-explained-16-faster-rcnn/fig-2.png) | Faster R-CNN, is composed of two modules. |
-| ![Figure 3](assets/papers-explained-16-faster-rcnn/fig-3.png) | Anchors. |
+| ![Figure 1](assets/papers-explained-16-faster-rcnn/fig-1.webp) | Title card: Faster RCNN. |
+| ![Figure 2](assets/papers-explained-16-faster-rcnn/fig-2.webp) | Faster R-CNN, is composed of two modules. |
+| ![Figure 3](assets/papers-explained-16-faster-rcnn/fig-3.webp) | Anchors. |
 ## Related
 
 - [[Papers Explained Corpus]]

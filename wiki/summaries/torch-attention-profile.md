@@ -1,6 +1,6 @@
 # Profiling in PyTorch (Part 3): Attention Is All You Profile
 
-**Source**: `raw/torch-attention-profile/full-article.html` (200 KB), `raw/torch-attention-profile/full-article.md`
+**Source**: `raw/torch-attention-profile/full-article.md` (200 KB), `raw/torch-attention-profile/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

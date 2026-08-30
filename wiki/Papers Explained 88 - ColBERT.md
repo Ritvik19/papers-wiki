@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-01-10_Papers-Explained-88--ColBERT-fe2fd0509649.html`
+- Source file: `raw/2024-01-10_Papers-Explained-88--ColBERT-fe2fd0509649.md`
 - Source title: Papers Explained 88: ColBERT
 - Published: 2024-01-10
 - Canonical: [https://medium.com/@ritvik19/papers-explained-88-colbert-fe2fd0509649](https://medium.com/@ritvik19/papers-explained-88-colbert-fe2fd0509649)
@@ -101,17 +101,17 @@ Recommended Reading: [Retrieval and Representation Learning](https://ritvik19.me
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-01-10_Papers-Explained-88--ColBERT-fe2fd0509649.html`); local copies under `wiki/assets/papers-explained-88-colbert/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-01-10_Papers-Explained-88--ColBERT-fe2fd0509649.md`); local copies under `wiki/assets/papers-explained-88-colbert/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-88-colbert/fig-1.png) | Title card: ColBERT. |
-| ![Figure 2](assets/papers-explained-88-colbert/fig-2.png) | Schematic diagrams illustrating query–document matching paradigms in neural IR. |
-| ![Figure 3](assets/papers-explained-88-colbert/fig-3.png) | The general architecture of ColBERT given a query q and a document d. |
-| ![Figure 4](assets/papers-explained-88-colbert/fig-4.png) | given q = q0q1…ql and d = d0d1…dn, we compute the bags of embeddings Eq and Ed in the following manner, where # refers to the [mask] tokens. |
-| ![Figure 5](assets/papers-explained-88-colbert/fig-5.png) | Given the representation of a query q and a document d, the relevance score of d to q, denoted as Sq,d, is estimated. |
-| ![Figure 6](assets/papers-explained-88-colbert/fig-6.png) | “Re-ranking” results on MS MARCO. |
-| ![Figure 7](assets/papers-explained-88-colbert/fig-7.png) | End-to-end retrieval results on MS MARCO. |
+| ![Figure 1](assets/papers-explained-88-colbert/fig-1.webp) | Title card: ColBERT. |
+| ![Figure 2](assets/papers-explained-88-colbert/fig-2.webp) | Schematic diagrams illustrating query–document matching paradigms in neural IR. |
+| ![Figure 3](assets/papers-explained-88-colbert/fig-3.webp) | The general architecture of ColBERT given a query q and a document d. |
+| ![Figure 4](assets/papers-explained-88-colbert/fig-4.webp) | given q = q0q1…ql and d = d0d1…dn, we compute the bags of embeddings Eq and Ed in the following manner, where # refers to the [mask] tokens. |
+| ![Figure 5](assets/papers-explained-88-colbert/fig-5.webp) | Given the representation of a query q and a document d, the relevance score of d to q, denoted as Sq,d, is estimated. |
+| ![Figure 6](assets/papers-explained-88-colbert/fig-6.webp) | “Re-ranking” results on MS MARCO. |
+| ![Figure 7](assets/papers-explained-88-colbert/fig-7.webp) | End-to-end retrieval results on MS MARCO. |
 ## Related
 
 - [[Papers Explained Corpus]]

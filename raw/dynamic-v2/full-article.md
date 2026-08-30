@@ -2,4 +2,4 @@
 
 **URL**: https://unsloth.ai/blog/dynamic-v2
 
-(Canonical HTML: raw/dynamic-v2/full-article.html)
+(Canonical HTML: raw/dynamic-v2/full-article.md)

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-01-21_Papers-Explained-528--FlexOlmo-27651ea5bf26.html`
+- Source file: `raw/2026-01-21_Papers-Explained-528--FlexOlmo-27651ea5bf26.md`
 - Source title: Papers Explained 528: FlexOlmo
 - Published: 2026-01-21
 - Canonical: [https://medium.com/@ritvik19/papers-explained-528-flexolmo-27651ea5bf26](https://medium.com/@ritvik19/papers-explained-528-flexolmo-27651ea5bf26)
@@ -201,19 +201,19 @@ FlexOlmo: Open Language Models for Flexible Data Use [2507.07024](https://arxiv.
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-01-21_Papers-Explained-528--FlexOlmo-27651ea5bf26.html`); local copies under `wiki/assets/papers-explained-528-flexolmo/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-01-21_Papers-Explained-528--FlexOlmo-27651ea5bf26.md`); local copies under `wiki/assets/papers-explained-528-flexolmo/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-528-flexolmo/fig-1.png) | Title card: FlexOlmo. |
-| ![Figure 2](assets/papers-explained-528-flexolmo/fig-2.png) | The key modeling challenges are:: where the router function r computes the expert probabilities from x. |
-| ![Figure 3](assets/papers-explained-528-flexolmo/fig-3.png) | An overview of FlexOlmo. |
-| ![Figure 4](assets/papers-explained-528-flexolmo/fig-4.png) | The key modeling challenges are. |
-| ![Figure 5](assets/papers-explained-528-flexolmo/fig-5.png) | In typical MoEs, Wr is trained end-to-end alongside all expert modules, using access to the full training dataset. |
-| ![Figure 6](assets/papers-explained-528-flexolmo/fig-6.png) | The key modeling challenges are:: Otherwise, default to Mpub. |
-| ![Figure 7](assets/papers-explained-528-flexolmo/fig-7.png) | Evaluation of FlexOlmo trained on four sets (public mix, math, educational text and code), tested on 24 tasks with 100 samples per subtask. |
-| ![Figure 8](assets/papers-explained-528-flexolmo/fig-8.png) | Impact of embedding initialization methods on model performance. |
-| ![Figure 9](assets/papers-explained-528-flexolmo/fig-9.png) | Routing pattern analysis. |
+| ![Figure 1](assets/papers-explained-528-flexolmo/fig-1.webp) | Title card: FlexOlmo. |
+| ![Figure 2](assets/papers-explained-528-flexolmo/fig-2.webp) | The key modeling challenges are:: where the router function r computes the expert probabilities from x. |
+| ![Figure 3](assets/papers-explained-528-flexolmo/fig-3.webp) | An overview of FlexOlmo. |
+| ![Figure 4](assets/papers-explained-528-flexolmo/fig-4.webp) | The key modeling challenges are. |
+| ![Figure 5](assets/papers-explained-528-flexolmo/fig-5.webp) | In typical MoEs, Wr is trained end-to-end alongside all expert modules, using access to the full training dataset. |
+| ![Figure 6](assets/papers-explained-528-flexolmo/fig-6.webp) | The key modeling challenges are:: Otherwise, default to Mpub. |
+| ![Figure 7](assets/papers-explained-528-flexolmo/fig-7.webp) | Evaluation of FlexOlmo trained on four sets (public mix, math, educational text and code), tested on 24 tasks with 100 samples per subtask. |
+| ![Figure 8](assets/papers-explained-528-flexolmo/fig-8.webp) | Impact of embedding initialization methods on model performance. |
+| ![Figure 9](assets/papers-explained-528-flexolmo/fig-9.webp) | Routing pattern analysis. |
 ## Related
 
 - [[Papers Explained Corpus]]

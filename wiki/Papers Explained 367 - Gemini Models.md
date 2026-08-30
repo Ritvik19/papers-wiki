@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-05-16_Papers-Explained-367--Gemini-Models-97b6b71e0054.html`
+- Source file: `raw/2025-05-16_Papers-Explained-367--Gemini-Models-97b6b71e0054.md`
 - Source title: Papers Explained 367: Gemini Models
 - Published: 2025-05-16
 - Canonical: [https://medium.com/@ritvik19/papers-explained-367-gemini-models-97b6b71e0054](https://medium.com/@ritvik19/papers-explained-367-gemini-models-97b6b71e0054)
@@ -105,17 +105,17 @@ Gemini 2.5 Flash is a new, fully hybrid reasoning model offered in preview. It b
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-05-16_Papers-Explained-367--Gemini-Models-97b6b71e0054.html`); local copies under `wiki/assets/papers-explained-367-gemini-models/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-05-16_Papers-Explained-367--Gemini-Models-97b6b71e0054.md`); local copies under `wiki/assets/papers-explained-367-gemini-models/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-367-gemini-models/fig-1.png) | Title card: Gemini Models. |
-| ![Figure 2](assets/papers-explained-367-gemini-models/fig-2.png) | Image Generation Capabilities: Gemini 2.0 Flash excels in generating and manipulating images through. |
-| ![Figure 3](assets/papers-explained-367-gemini-models/fig-3.png) | Gemini 2.5 Pro is Google’s most advanced AI model designed for complex tasks, boasting enhanced reasoning and coding capabilities. |
-| ![Figure 4](assets/papers-explained-367-gemini-models/fig-4.png) | Gemini 2.5 Pro is Google’s most advanced AI model designed for complex tasks, boasting enhanced reasoning and coding capabilities. |
-| ![Figure 5](assets/papers-explained-367-gemini-models/fig-5.png) | Gemini 2.5 Flash is a new, fully hybrid reasoning model offered in preview. |
-| ![Figure 6](assets/papers-explained-367-gemini-models/fig-6.png) | Gemini 2.5 Flash is a new, fully hybrid reasoning model offered in preview. |
-| ![Figure 7](assets/papers-explained-367-gemini-models/fig-7.png) | Gemini 2.5 Flash is a new, fully hybrid reasoning model offered in preview. |
+| ![Figure 1](assets/papers-explained-367-gemini-models/fig-1.webp) | Title card: Gemini Models. |
+| ![Figure 2](assets/papers-explained-367-gemini-models/fig-2.webp) | Image Generation Capabilities: Gemini 2.0 Flash excels in generating and manipulating images through. |
+| ![Figure 3](assets/papers-explained-367-gemini-models/fig-3.webp) | Gemini 2.5 Pro is Google’s most advanced AI model designed for complex tasks, boasting enhanced reasoning and coding capabilities. |
+| ![Figure 4](assets/papers-explained-367-gemini-models/fig-4.webp) | Gemini 2.5 Pro is Google’s most advanced AI model designed for complex tasks, boasting enhanced reasoning and coding capabilities. |
+| ![Figure 5](assets/papers-explained-367-gemini-models/fig-5.webp) | Gemini 2.5 Flash is a new, fully hybrid reasoning model offered in preview. |
+| ![Figure 6](assets/papers-explained-367-gemini-models/fig-6.webp) | Gemini 2.5 Flash is a new, fully hybrid reasoning model offered in preview. |
+| ![Figure 7](assets/papers-explained-367-gemini-models/fig-7.webp) | Gemini 2.5 Flash is a new, fully hybrid reasoning model offered in preview. |
 ## Related
 
 - [[Papers Explained Corpus]]

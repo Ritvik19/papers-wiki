@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-10-16_Papers-Explained-476--Klear-Reasoner-985624c5348e.html`
+- Source file: `raw/2025-10-16_Papers-Explained-476--Klear-Reasoner-985624c5348e.md`
 - Source title: Papers Explained 476: Klear-Reasoner
 - Published: 2025-10-16
 - Canonical: [https://medium.com/@ritvik19/papers-explained-476-klear-reasoner-985624c5348e](https://medium.com/@ritvik19/papers-explained-476-klear-reasoner-985624c5348e)
@@ -135,18 +135,18 @@ Klear-Reasoner: Advancing Reasoning Capability via Gradient-Preserving Clipping 
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-10-16_Papers-Explained-476--Klear-Reasoner-985624c5348e.html`); local copies under `wiki/assets/papers-explained-476-klear-reasoner/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-10-16_Papers-Explained-476--Klear-Reasoner-985624c5348e.md`); local copies under `wiki/assets/papers-explained-476-klear-reasoner/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-476-klear-reasoner/fig-1.png) | Title card: Klear-Reasoner. |
-| ![Figure 2](assets/papers-explained-476-klear-reasoner/fig-2.png) | In the classical PPO algorithm without clipping, the gradient of the loss function is given by. |
-| ![Figure 3](assets/papers-explained-476-klear-reasoner/fig-3.png) | This mechanism restricts the range of gradient updates, preventing over-encouragement for positive advantages and avoiding excessive... |
-| ![Figure 4](assets/papers-explained-476-klear-reasoner/fig-4.png) | Here, δ = r(j)t(θ) is the importance sampling ratio, and sg(·) denotes the stop-gradient operation. |
-| ![Figure 5](assets/papers-explained-476-klear-reasoner/fig-5.png) | GPPO Gradient Expression. |
-| ![Figure 6](assets/papers-explained-476-klear-reasoner/fig-6.png) | Similar to other works, GPPO incorporates a Supervised Fine-Tuning (SFT) loss into the RL training process. |
-| ![Figure 7](assets/papers-explained-476-klear-reasoner/fig-7.png) | Final Combined Loss: The final loss L(θ) is a weighted sum of the GPPO loss and the LLM loss. |
-| ![Figure 8](assets/papers-explained-476-klear-reasoner/fig-8.png) | Benefits of SFT Loss. |
+| ![Figure 1](assets/papers-explained-476-klear-reasoner/fig-1.webp) | Title card: Klear-Reasoner. |
+| ![Figure 2](assets/papers-explained-476-klear-reasoner/fig-2.webp) | In the classical PPO algorithm without clipping, the gradient of the loss function is given by. |
+| ![Figure 3](assets/papers-explained-476-klear-reasoner/fig-3.webp) | This mechanism restricts the range of gradient updates, preventing over-encouragement for positive advantages and avoiding excessive... |
+| ![Figure 4](assets/papers-explained-476-klear-reasoner/fig-4.webp) | Here, δ = r(j)t(θ) is the importance sampling ratio, and sg(·) denotes the stop-gradient operation. |
+| ![Figure 5](assets/papers-explained-476-klear-reasoner/fig-5.webp) | GPPO Gradient Expression. |
+| ![Figure 6](assets/papers-explained-476-klear-reasoner/fig-6.webp) | Similar to other works, GPPO incorporates a Supervised Fine-Tuning (SFT) loss into the RL training process. |
+| ![Figure 7](assets/papers-explained-476-klear-reasoner/fig-7.webp) | Final Combined Loss: The final loss L(θ) is a weighted sum of the GPPO loss and the LLM loss. |
+| ![Figure 8](assets/papers-explained-476-klear-reasoner/fig-8.webp) | Benefits of SFT Loss. |
 ## Related
 
 - [[Papers Explained Corpus]]

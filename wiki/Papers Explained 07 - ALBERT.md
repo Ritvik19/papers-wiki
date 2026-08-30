@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-06_Papers-Explained-07--ALBERT-46a2a0563693.html`
+- Source file: `raw/2023-02-06_Papers-Explained-07--ALBERT-46a2a0563693.md`
 - Source title: Papers Explained 07: ALBERT
 - Published: 2023-02-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-07-albert-46a2a0563693](https://medium.com/@ritvik19/papers-explained-07-albert-46a2a0563693)
@@ -69,12 +69,12 @@ ALBERT: A Lite BERT for Self-supervised Learning of Language Representations [19
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-06_Papers-Explained-07--ALBERT-46a2a0563693.html`); local copies under `wiki/assets/papers-explained-07-albert/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-06_Papers-Explained-07--ALBERT-46a2a0563693.md`); local copies under `wiki/assets/papers-explained-07-albert/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-07-albert/fig-1.png) | Title and author block of *ALBERT: A Lite BERT for Self-supervised Learning of Language Representations*. |
-| ![Figure 2](assets/papers-explained-07-albert/fig-2.png) | Dev-set comparison table for BERT vs ALBERT sizes showing parameter reductions with strong downstream accuracy. |
+| ![Figure 1](assets/papers-explained-07-albert/fig-1.webp) | Title and author block of *ALBERT: A Lite BERT for Self-supervised Learning of Language Representations*. |
+| ![Figure 2](assets/papers-explained-07-albert/fig-2.webp) | Dev-set comparison table for BERT vs ALBERT sizes showing parameter reductions with strong downstream accuracy. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-02-16_Papers-Explained-101--Vicuna-daed99725c7e.html`
+- Source file: `raw/2024-02-16_Papers-Explained-101--Vicuna-daed99725c7e.md`
 - Source title: Papers Explained 101: Vicuna
 - Published: 2024-02-16
 - Canonical: [https://medium.com/@ritvik19/papers-explained-101-vicuna-daed99725c7e](https://medium.com/@ritvik19/papers-explained-101-vicuna-daed99725c7e)
@@ -103,16 +103,16 @@ Recommended Reading [Decoder-Only Language Transformers](https://ritvik19.medium
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-02-16_Papers-Explained-101--Vicuna-daed99725c7e.html`); local copies under `wiki/assets/papers-explained-101-vicuna/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-02-16_Papers-Explained-101--Vicuna-daed99725c7e.md`); local copies under `wiki/assets/papers-explained-101-vicuna/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-101-vicuna/fig-1.png) | Title banner of the Vicuna release blog: “An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality.” |
-| ![Figure 2](assets/papers-explained-101-vicuna/fig-2.png) | ShareGPT-derived training data statistics comparing Alpaca, Selected, Single, and full datasets. |
-| ![Figure 3](assets/papers-explained-101-vicuna/fig-3.png) | Relative response quality (GPT-4 judged): Vicuna vs LLaMA, Alpaca, Bard, and ChatGPT. |
-| ![Figure 4](assets/papers-explained-101-vicuna/fig-4.png) | Comparison table of model data sources, training code, evaluation setup, and estimated training costs. |
-| ![Figure 5](assets/papers-explained-101-vicuna/fig-5.png) | Pairwise response comparison outcomes (Vicuna win/tie/loss) against LLaMA-13B, Alpaca-13B, Bard, and ChatGPT. |
-| ![Figure 6](assets/papers-explained-101-vicuna/fig-6.png) | GPT-4-assessed total score table showing Vicuna close to ChatGPT and stronger than other open baselines. |
+| ![Figure 1](assets/papers-explained-101-vicuna/fig-1.webp) | Title banner of the Vicuna release blog: “An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality.” |
+| ![Figure 2](assets/papers-explained-101-vicuna/fig-2.webp) | ShareGPT-derived training data statistics comparing Alpaca, Selected, Single, and full datasets. |
+| ![Figure 3](assets/papers-explained-101-vicuna/fig-3.webp) | Relative response quality (GPT-4 judged): Vicuna vs LLaMA, Alpaca, Bard, and ChatGPT. |
+| ![Figure 4](assets/papers-explained-101-vicuna/fig-4.webp) | Comparison table of model data sources, training code, evaluation setup, and estimated training costs. |
+| ![Figure 5](assets/papers-explained-101-vicuna/fig-5.webp) | Pairwise response comparison outcomes (Vicuna win/tie/loss) against LLaMA-13B, Alpaca-13B, Bard, and ChatGPT. |
+| ![Figure 6](assets/papers-explained-101-vicuna/fig-6.webp) | GPT-4-assessed total score table showing Vicuna close to ChatGPT and stronger than other open baselines. |
 ## Related
 
 - [[Papers Explained Corpus]]

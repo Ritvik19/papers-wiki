@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-04-10_Papers-Explained-41--LAMBERT-8f52d28f20d9.html`
+- Source file: `raw/2023-04-10_Papers-Explained-41--LAMBERT-8f52d28f20d9.md`
 - Source title: Papers Explained 41: LAMBERT
 - Published: 2023-04-10
 - Canonical: [https://medium.com/@ritvik19/papers-explained-41-lambert-8f52d28f20d9](https://medium.com/@ritvik19/papers-explained-41-lambert-8f52d28f20d9)
@@ -69,15 +69,15 @@ LAMBERT: Layout-Aware (Language) Modeling for information extraction [2002.08087
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-04-10_Papers-Explained-41--LAMBERT-8f52d28f20d9.html`); local copies under `wiki/assets/papers-explained-41-lambert/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-04-10_Papers-Explained-41--LAMBERT-8f52d28f20d9.md`); local copies under `wiki/assets/papers-explained-41-lambert/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-41-lambert/fig-1.png) | Title card: LAMBERT. |
-| ![Figure 2](assets/papers-explained-41-lambert/fig-2.png) | LAMBERT model architecture. Differences with the plain RoBERTa model are indicated by white text on dark blue background. |
-| ![Figure 3](assets/papers-explained-41-lambert/fig-3.png) | The layout embedding of a token will be defined as the concatenation of four embeddings of the individual coordinates of its bounding box. |
-| ![Figure 4](assets/papers-explained-41-lambert/fig-4.png) | We introduce a simple and natural extension of this mechanism to the two-dimensional context. |
-| ![Figure 5](assets/papers-explained-41-lambert/fig-5.png) | Comparison of F1-scores for the considered models. Best results in each column are indicated in bold. In parentheses, the length of training of our models, expressed in non-unique pages, is presented for comparison. For RoBERTa, the first row corresponds to the original pretrained model without any further training, while in the second row the model was trained on our dataset. a result obtained from relevant publication; b result of a single model, obtained from the SROIE leaderboard. |
+| ![Figure 1](assets/papers-explained-41-lambert/fig-1.webp) | Title card: LAMBERT. |
+| ![Figure 2](assets/papers-explained-41-lambert/fig-2.webp) | LAMBERT model architecture. Differences with the plain RoBERTa model are indicated by white text on dark blue background. |
+| ![Figure 3](assets/papers-explained-41-lambert/fig-3.webp) | The layout embedding of a token will be defined as the concatenation of four embeddings of the individual coordinates of its bounding box. |
+| ![Figure 4](assets/papers-explained-41-lambert/fig-4.webp) | We introduce a simple and natural extension of this mechanism to the two-dimensional context. |
+| ![Figure 5](assets/papers-explained-41-lambert/fig-5.webp) | Comparison of F1-scores for the considered models. Best results in each column are indicated in bold. In parentheses, the length of training of our models, expressed in non-unique pages, is presented for comparison. For RoBERTa, the first row corresponds to the original pretrained model without any further training, while in the second row the model was trained on our dataset. a result obtained from relevant publication; b result of a single model, obtained from the SROIE leaderboard. |
 ## Related
 
 - [[Papers Explained Corpus]]

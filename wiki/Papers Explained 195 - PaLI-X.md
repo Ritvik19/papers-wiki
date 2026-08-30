@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-27_Papers-Explained-195--PaLI-X-f9859e73fd97.html`
+- Source file: `raw/2024-08-27_Papers-Explained-195--PaLI-X-f9859e73fd97.md`
 - Source title: Papers Explained 195: PaLI-X
 - Published: 2024-08-27
 - Canonical: [https://medium.com/@ritvik19/papers-explained-195-pali-x-f9859e73fd97](https://medium.com/@ritvik19/papers-explained-195-pali-x-f9859e73fd97)
@@ -141,20 +141,20 @@ Recommended Reading [Multi Modal Transformers](https://ritvik19.medium.com/list/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-27_Papers-Explained-195--PaLI-X-f9859e73fd97.html`); local copies under `wiki/assets/papers-explained-195-pali-x/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-27_Papers-Explained-195--PaLI-X-f9859e73fd97.md`); local copies under `wiki/assets/papers-explained-195-pali-x/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-195-pali-x/fig-1.png) | Paper header — **PaLI-X: On Scaling up a Multilingual Vision and Language Model** (Google Research author list). |
-| ![Figure 2](assets/papers-explained-195-pali-x/fig-2.png) | **Video frames** — each frame encoded by **ViT** independently, patches **flatten**ed into a token sequence. |
-| ![Figure 3](assets/papers-explained-195-pali-x/fig-3.png) | **Few-shot multimodal encoder–decoder** — multi-shot text + images (**ViT-22B**) → **PaLI encoder** → cross-attn **decoder** → output tokens. |
-| ![Figure 4](assets/papers-explained-195-pali-x/fig-4.png) | **Caption / VQA leaderboard** — COCO, NoCaps, VQAv2, OKVQA, TallyQA; **PaLI-X (55B)** row vs GIT2, Flamingo, BEiT-3, PaLM-E, PaLI. |
-| ![Figure 5](assets/papers-explained-195-pali-x/fig-5.png) | **Scene-text / doc-heavy benchmarks** — with vs **without OCR pipeline**; PaLI-X vs prior SoTA across TextCaps, TextVQA, DocVQA, ChartQA, Screen2Words, … |
-| ![Figure 6](assets/papers-explained-195-pali-x/fig-6.png) | **Multitask vs single-task FT** — caption benchmarks (COCO, NoCaps, TextCaps, VizWiz, Screen2Words, Widget Cap); aggregate **±** row calls out Screen2Words outlier. |
-| ![Figure 7](assets/papers-explained-195-pali-x/fig-7.png) | **Few-shot** — COCO + **XM3600** caption + VQAv2 at **4 / 32 shots** vs prior SoTA (Flamingo). |
-| ![Figure 8](assets/papers-explained-195-pali-x/fig-8.png) | **Video** — MSR-VTT, ActivityNet, VATEX, SMIT, NExT-QA (cap / QA); **8fr vs 16fr** PaLI-X vs prior SoTA footnotes. |
-| ![Figure 9](assets/papers-explained-195-pali-x/fig-9.png) | **ImageNet classification FT** — GIT2 vs PaLI-17B vs **PaLI-X** at **224 vs 756** px (top-1, ReaL, variants). |
-| ![Figure 10](assets/papers-explained-195-pali-x/fig-10.png) | **LVIS detection** — specialized detectors vs **PaLI-X zero-shot** vs **detection-tuned** (**AP / AP_rare**). |
+| ![Figure 1](assets/papers-explained-195-pali-x/fig-1.webp) | Paper header — **PaLI-X: On Scaling up a Multilingual Vision and Language Model** (Google Research author list). |
+| ![Figure 2](assets/papers-explained-195-pali-x/fig-2.webp) | **Video frames** — each frame encoded by **ViT** independently, patches **flatten**ed into a token sequence. |
+| ![Figure 3](assets/papers-explained-195-pali-x/fig-3.webp) | **Few-shot multimodal encoder–decoder** — multi-shot text + images (**ViT-22B**) → **PaLI encoder** → cross-attn **decoder** → output tokens. |
+| ![Figure 4](assets/papers-explained-195-pali-x/fig-4.webp) | **Caption / VQA leaderboard** — COCO, NoCaps, VQAv2, OKVQA, TallyQA; **PaLI-X (55B)** row vs GIT2, Flamingo, BEiT-3, PaLM-E, PaLI. |
+| ![Figure 5](assets/papers-explained-195-pali-x/fig-5.webp) | **Scene-text / doc-heavy benchmarks** — with vs **without OCR pipeline**; PaLI-X vs prior SoTA across TextCaps, TextVQA, DocVQA, ChartQA, Screen2Words, … |
+| ![Figure 6](assets/papers-explained-195-pali-x/fig-6.webp) | **Multitask vs single-task FT** — caption benchmarks (COCO, NoCaps, TextCaps, VizWiz, Screen2Words, Widget Cap); aggregate **±** row calls out Screen2Words outlier. |
+| ![Figure 7](assets/papers-explained-195-pali-x/fig-7.webp) | **Few-shot** — COCO + **XM3600** caption + VQAv2 at **4 / 32 shots** vs prior SoTA (Flamingo). |
+| ![Figure 8](assets/papers-explained-195-pali-x/fig-8.webp) | **Video** — MSR-VTT, ActivityNet, VATEX, SMIT, NExT-QA (cap / QA); **8fr vs 16fr** PaLI-X vs prior SoTA footnotes. |
+| ![Figure 9](assets/papers-explained-195-pali-x/fig-9.webp) | **ImageNet classification FT** — GIT2 vs PaLI-17B vs **PaLI-X** at **224 vs 756** px (top-1, ReaL, variants). |
+| ![Figure 10](assets/papers-explained-195-pali-x/fig-10.webp) | **LVIS detection** — specialized detectors vs **PaLI-X zero-shot** vs **detection-tuned** (**AP / AP_rare**). |
 ## Related
 
 - [[Papers Explained Corpus]]

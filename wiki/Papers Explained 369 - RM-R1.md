@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-05-20_Papers-Explained-369--RM-R1-5a1b5f7ff27a.html`
+- Source file: `raw/2025-05-20_Papers-Explained-369--RM-R1-5a1b5f7ff27a.md`
 - Source title: Papers Explained 369: RM-R1
 - Published: 2025-05-20
 - Canonical: [https://medium.com/@ritvik19/papers-explained-369-rm-r1-5a1b5f7ff27a](https://medium.com/@ritvik19/papers-explained-369-rm-r1-5a1b5f7ff27a)
@@ -111,16 +111,16 @@ RM-R1: Reward Modeling as Reasoning [2505.02387](https://arxiv.org/abs/2505.0238
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-05-20_Papers-Explained-369--RM-R1-5a1b5f7ff27a.html`); local copies under `wiki/assets/papers-explained-369-rm-r1/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-05-20_Papers-Explained-369--RM-R1-5a1b5f7ff27a.md`); local copies under `wiki/assets/papers-explained-369-rm-r1/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-369-rm-r1/fig-1.png) | Title card: RM-R1. |
-| ![Figure 2](assets/papers-explained-369-rm-r1/fig-2.png) | Training pipeline of RM-R1. |
-| ![Figure 3](assets/papers-explained-369-rm-r1/fig-3.png) | The reward formulation of DeepSeek-R1 is further simplified and merely focuses on the correctness-based component. |
-| ![Figure 4](assets/papers-explained-369-rm-r1/fig-4.png) | Results on RewardBench. |
-| ![Figure 5](assets/papers-explained-369-rm-r1/fig-5.png) | Results onRM-Bench. |
-| ![Figure 6](assets/papers-explained-369-rm-r1/fig-6.png) | Leaderboard of RMB. |
+| ![Figure 1](assets/papers-explained-369-rm-r1/fig-1.webp) | Title card: RM-R1. |
+| ![Figure 2](assets/papers-explained-369-rm-r1/fig-2.webp) | Training pipeline of RM-R1. |
+| ![Figure 3](assets/papers-explained-369-rm-r1/fig-3.webp) | The reward formulation of DeepSeek-R1 is further simplified and merely focuses on the correctness-based component. |
+| ![Figure 4](assets/papers-explained-369-rm-r1/fig-4.webp) | Results on RewardBench. |
+| ![Figure 5](assets/papers-explained-369-rm-r1/fig-5.webp) | Results onRM-Bench. |
+| ![Figure 6](assets/papers-explained-369-rm-r1/fig-6.webp) | Leaderboard of RMB. |
 ## Related
 
 - [[Papers Explained Corpus]]

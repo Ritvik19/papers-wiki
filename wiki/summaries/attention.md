@@ -1,6 +1,6 @@
 # How Attention Works in Deep Learning: Understanding the Attention Mechanism in Sequence Models
 
-**Source**: `raw/attention/full-article.html` (387 KB), `raw/attention/full-article.md` (markdown view)  
+**Source**: `raw/attention/full-article.md` (387 KB), `raw/attention/full-article.md` (markdown view)  
 **URL**: https://theaisummer.com/attention/  
 **Author**: Nikolas Adaloglou (AI Summer), 2020-11-19  
 **Ingested**: 2026-06-06  
@@ -34,33 +34,33 @@ The piece closes with [[Self-Attention]] as the transformer building block (scor
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/attention/fig-1.png) | Seq2seq architecture before attention: encoder maps input tokens to output sequence | — |
-| ![fig-2](../assets/attention/fig-2.png) | Encoder: stacked RNN layers compress input into context vector \(z\) | — |
-| ![fig-3](../assets/attention/fig-3.png) | Decoder: generates output sequence conditioned on \(z\) | — |
-| ![fig-4](../assets/attention/fig-4.png) | RNN performance degrades as sequence length grows (bottleneck) | — |
-| ![fig-5](../assets/attention/fig-5.png) | Stacked RNN vanishing-gradient visualization (Distill) | — |
-| ![fig-6](../assets/attention/fig-6.png) | Implicit attention: self-supervised activations focus on human body parts (Misra et al. ECCV 2016) | — |
-| ![fig-7](../assets/attention/fig-7.png) | Hard attention intuition: discrete path choice in a labyrinth | — |
-| ![fig-8](../assets/attention/fig-8.png) | Hard attention: stochastic glimpse selection in image classification | — |
-| ![fig-9](../assets/attention/fig-9.png) | Encoder–decoder with attention: decoder queries all encoder hidden states | — |
-| ![fig-10](../assets/attention/fig-10.png) | Machine-translation attention alignment heatmap (Bahdanau et al.) | — |
-| ![fig-11](../assets/attention/fig-11.png) | Comparison of attention score functions (dot, additive, location, cosine) | — |
-| ![fig-12](../assets/attention/fig-12.png) | Attention vs convolution vs fully connected: dynamic vs slowly changing weights | — |
-| ![fig-13](../assets/attention/fig-13.png) | Self-attention as a weighted graph over sequence tokens | — |
+| ![fig-1](../assets/attention/fig-1.webp) | Seq2seq architecture before attention: encoder maps input tokens to output sequence | — |
+| ![fig-2](../assets/attention/fig-2.webp) | Encoder: stacked RNN layers compress input into context vector \(z\) | — |
+| ![fig-3](../assets/attention/fig-3.webp) | Decoder: generates output sequence conditioned on \(z\) | — |
+| ![fig-4](../assets/attention/fig-4.webp) | RNN performance degrades as sequence length grows (bottleneck) | — |
+| ![fig-5](../assets/attention/fig-5.webp) | Stacked RNN vanishing-gradient visualization (Distill) | — |
+| ![fig-6](../assets/attention/fig-6.webp) | Implicit attention: self-supervised activations focus on human body parts (Misra et al. ECCV 2016) | — |
+| ![fig-7](../assets/attention/fig-7.webp) | Hard attention intuition: discrete path choice in a labyrinth | — |
+| ![fig-8](../assets/attention/fig-8.webp) | Hard attention: stochastic glimpse selection in image classification | — |
+| ![fig-9](../assets/attention/fig-9.webp) | Encoder–decoder with attention: decoder queries all encoder hidden states | — |
+| ![fig-10](../assets/attention/fig-10.webp) | Machine-translation attention alignment heatmap (Bahdanau et al.) | — |
+| ![fig-11](../assets/attention/fig-11.webp) | Comparison of attention score functions (dot, additive, location, cosine) | — |
+| ![fig-12](../assets/attention/fig-12.webp) | Attention vs convolution vs fully connected: dynamic vs slowly changing weights | — |
+| ![fig-13](../assets/attention/fig-13.webp) | Self-attention as a weighted graph over sequence tokens | — |
 
-![Seq2seq overview](../assets/attention/fig-1.png)
+![Seq2seq overview](../assets/attention/fig-1.webp)
 
 Pre-attention seq2seq: encoder processes source tokens; decoder generates the target sequence.
 
-![Encoder bottleneck](../assets/attention/fig-4.png)
+![Encoder bottleneck](../assets/attention/fig-4.webp)
 
 Performance drops as sequence length increases because the fixed context vector cannot hold all information.
 
-![Bahdanau attention alignment](../assets/attention/fig-10.png)
+![Bahdanau attention alignment](../assets/attention/fig-10.webp)
 
 Attention heatmaps expose learned word alignments, including non-monotonic reordering in translation.
 
-![Self-attention graph](../assets/attention/fig-13.png)
+![Self-attention graph](../assets/attention/fig-13.webp)
 
 Self-attention connects every token to every other token with learned edge weights.
 

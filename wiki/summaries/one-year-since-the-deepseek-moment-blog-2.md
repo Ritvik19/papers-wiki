@@ -1,6 +1,6 @@
 # Architectural Choices in China's Open-Source AI Ecosystem: Building Beyond DeepSeek
 
-**Source**: `raw/one-year-since-the-deepseek-moment-blog-2/full-article.html`, `raw/one-year-since-the-deepseek-moment-blog-2/full-article.md`
+**Source**: `raw/one-year-since-the-deepseek-moment-blog-2/full-article.md`, `raw/one-year-since-the-deepseek-moment-blog-2/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

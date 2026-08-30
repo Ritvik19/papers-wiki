@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-05-01_Papers-Explained-44--T5-9d974a3b7957.html`
+- Source file: `raw/2023-05-01_Papers-Explained-44--T5-9d974a3b7957.md`
 - Source title: Papers Explained 44: T5
 - Published: 2023-05-01
 - Canonical: [https://medium.com/@ritvik19/papers-explained-44-t5-9d974a3b7957](https://medium.com/@ritvik19/papers-explained-44-t5-9d974a3b7957)
@@ -115,14 +115,14 @@ Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transforme
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-05-01_Papers-Explained-44--T5-9d974a3b7957.html`); local copies under `wiki/assets/papers-explained-44-t5/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-05-01_Papers-Explained-44--T5-9d974a3b7957.md`); local copies under `wiki/assets/papers-explained-44-t5/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-44-t5/fig-1.png) | Title card: T5. |
-| ![Figure 2](assets/papers-explained-44-t5/fig-2.png) | A diagram of our text-to-text framework. Every task we consider — including translation, question answering, and classification — is cast as feeding our model text as input and training it to generate some target text. This allows us to use the same model, loss function, hyperparameters, etc. across our diverse set of tasks. It also provides a standard testbed for the methods included in our empirical survey. “T5” refers to our model, which we dub the “Text-to-Text Transfer Transformer”. |
-| ![Figure 3](assets/papers-explained-44-t5/fig-3.png) | Schematic of the objective we use in our baseline model. In this example, we process the sentence “Thank you for inviting me to your party last week.” The words “for”, “inviting” and “last” (marked with an ×) are randomly chosen for corruption. Each consecutive span of corrupted tokens is replaced by a sentinel token (shown as and ) that is unique over the example. Since “for” and “inviting” occur consecutively, they are replaced by a single sentinel. The output sequence then consists of the dropped-out spans, delimited by the sentinel tokens used to replace them in the input plus a final sentinel token. |
-| ![Figure 4](assets/papers-explained-44-t5/fig-4.png) | The average and standard deviation of scores achieved by our baseline model and training procedure. For comparison, we also report performance when training on each task from scratch (i.e. without any pre-training) for the same number of steps used to fine-tune the baseline model. |
+| ![Figure 1](assets/papers-explained-44-t5/fig-1.webp) | Title card: T5. |
+| ![Figure 2](assets/papers-explained-44-t5/fig-2.webp) | A diagram of our text-to-text framework. Every task we consider — including translation, question answering, and classification — is cast as feeding our model text as input and training it to generate some target text. This allows us to use the same model, loss function, hyperparameters, etc. across our diverse set of tasks. It also provides a standard testbed for the methods included in our empirical survey. “T5” refers to our model, which we dub the “Text-to-Text Transfer Transformer”. |
+| ![Figure 3](assets/papers-explained-44-t5/fig-3.webp) | Schematic of the objective we use in our baseline model. In this example, we process the sentence “Thank you for inviting me to your party last week.” The words “for”, “inviting” and “last” (marked with an ×) are randomly chosen for corruption. Each consecutive span of corrupted tokens is replaced by a sentinel token (shown as and ) that is unique over the example. Since “for” and “inviting” occur consecutively, they are replaced by a single sentinel. The output sequence then consists of the dropped-out spans, delimited by the sentinel tokens used to replace them in the input plus a final sentinel token. |
+| ![Figure 4](assets/papers-explained-44-t5/fig-4.webp) | The average and standard deviation of scores achieved by our baseline model and training procedure. For comparison, we also report performance when training on each task from scratch (i.e. without any pre-training) for the same number of steps used to fine-tune the baseline model. |
 ## Related
 
 - [[Papers Explained Corpus]]

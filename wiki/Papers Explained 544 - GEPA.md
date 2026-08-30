@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-03-19_Papers-Explained-544--GEPA-fa0f055c2e43.html`
+- Source file: `raw/2026-03-19_Papers-Explained-544--GEPA-fa0f055c2e43.md`
 - Source title: Papers Explained 544: GEPA
 - Published: 2026-03-19
 - Canonical: [https://medium.com/@ritvik19/papers-explained-544-gepa-fa0f055c2e43](https://medium.com/@ritvik19/papers-explained-544-gepa-fa0f055c2e43)
@@ -216,16 +216,16 @@ GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning [2507.19
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-03-19_Papers-Explained-544--GEPA-fa0f055c2e43.html`); local copies under `wiki/assets/papers-explained-544-gepa/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-03-19_Papers-Explained-544--GEPA-fa0f055c2e43.md`); local copies under `wiki/assets/papers-explained-544-gepa/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-544-gepa/fig-1.png) | Title card: GEPA. |
-| ![Figure 2](assets/papers-explained-544-gepa/fig-2.png) | Sample-Efficient Optimization. |
-| ![Figure 3](assets/papers-explained-544-gepa/fig-3.png) | This strategy helps GEPA escape local optima and efficiently explore the prompt space within the given budget. |
-| ![Figure 4](assets/papers-explained-544-gepa/fig-4.png) | Benchmark results. |
-| ![Figure 5](assets/papers-explained-544-gepa/fig-5.png) | Benchmark results for different optimizers. |
-| ![Figure 6](assets/papers-explained-544-gepa/fig-6.png) | Final test set performance for aggregate and individual benchmarks. |
+| ![Figure 1](assets/papers-explained-544-gepa/fig-1.webp) | Title card: GEPA. |
+| ![Figure 2](assets/papers-explained-544-gepa/fig-2.webp) | Sample-Efficient Optimization. |
+| ![Figure 3](assets/papers-explained-544-gepa/fig-3.webp) | This strategy helps GEPA escape local optima and efficiently explore the prompt space within the given budget. |
+| ![Figure 4](assets/papers-explained-544-gepa/fig-4.webp) | Benchmark results. |
+| ![Figure 5](assets/papers-explained-544-gepa/fig-5.webp) | Benchmark results for different optimizers. |
+| ![Figure 6](assets/papers-explained-544-gepa/fig-6.webp) | Final test set performance for aggregate and individual benchmarks. |
 ## Related
 
 - [[Papers Explained Corpus]]

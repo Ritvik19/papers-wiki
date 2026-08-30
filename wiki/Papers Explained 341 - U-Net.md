@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-04-07_Papers-Explained-341--U-Net-18be21566d2.html`
+- Source file: `raw/2025-04-07_Papers-Explained-341--U-Net-18be21566d2.md`
 - Source title: Papers Explained 341: U-Net
 - Published: 2025-04-07
 - Canonical: [https://medium.com/@ritvik19/papers-explained-341-u-net-18be21566d2](https://medium.com/@ritvik19/papers-explained-341-u-net-18be21566d2)
@@ -55,15 +55,15 @@ U-Net: Convolutional Networks for Biomedical Image Segmentation [1505.04597](htt
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-04-07_Papers-Explained-341--U-Net-18be21566d2.html`); local copies under `wiki/assets/papers-explained-341-u-net/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-04-07_Papers-Explained-341--U-Net-18be21566d2.md`); local copies under `wiki/assets/papers-explained-341-u-net/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-341-u-net/fig-1.png) | Title card: U-Net. |
-| ![Figure 2](assets/papers-explained-341-u-net/fig-2.png) | U-net architecture. |
-| ![Figure 3](assets/papers-explained-341-u-net/fig-3.png) | Overlap-tile strategy for seamless segmentation of arbitrary large images. Prediction of the segmentation in the yellow area, requires image data within the blue area as input. Missing input data is extrapolated by mirroring. |
-| ![Figure 4](assets/papers-explained-341-u-net/fig-4.png) | Ranking on the EM segmentation challenge (march 6th, 2015), sorted by warping error. |
-| ![Figure 5](assets/papers-explained-341-u-net/fig-5.png) | Segmentation results (IOU) on the ISBI cell tracking challenge 2015. |
+| ![Figure 1](assets/papers-explained-341-u-net/fig-1.webp) | Title card: U-Net. |
+| ![Figure 2](assets/papers-explained-341-u-net/fig-2.webp) | U-net architecture. |
+| ![Figure 3](assets/papers-explained-341-u-net/fig-3.webp) | Overlap-tile strategy for seamless segmentation of arbitrary large images. Prediction of the segmentation in the yellow area, requires image data within the blue area as input. Missing input data is extrapolated by mirroring. |
+| ![Figure 4](assets/papers-explained-341-u-net/fig-4.webp) | Ranking on the EM segmentation challenge (march 6th, 2015), sorted by warping error. |
+| ![Figure 5](assets/papers-explained-341-u-net/fig-5.webp) | Segmentation results (IOU) on the ISBI cell tracking challenge 2015. |
 ## Related
 
 - [[Papers Explained Corpus]]

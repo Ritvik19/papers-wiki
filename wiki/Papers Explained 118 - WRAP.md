@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-03-28_Papers-Explained-118--WRAP-e563e009fe56.html`
+- Source file: `raw/2024-03-28_Papers-Explained-118--WRAP-e563e009fe56.md`
 - Source title: Papers Explained 118: WRAP
 - Published: 2024-03-28
 - Canonical: [https://medium.com/@ritvik19/papers-explained-118-wrap-e563e009fe56](https://medium.com/@ritvik19/papers-explained-118-wrap-e563e009fe56)
@@ -157,28 +157,28 @@ Rephrasing the Web: A Recipe for Compute and Data-Efficient Language Modeling [2
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-03-28_Papers-Explained-118--WRAP-e563e009fe56.html`); local copies under `wiki/assets/papers-explained-118-wrap/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-03-28_Papers-Explained-118--WRAP-e563e009fe56.md`); local copies under `wiki/assets/papers-explained-118-wrap/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-118-wrap/fig-1.png) | Title page of *Rephrasing the Web: A Recipe for Compute and Data-Efficient Language Modeling*. |
-| ![Figure 2](assets/papers-explained-118-wrap/fig-2.png) | WRAP training recipe: paraphrase noisy web text, mix real and synthetic data, then pre-train. |
-| ![Figure 3](assets/papers-explained-118-wrap/fig-3.png) | Prompt templates for Easy, Hard, Medium, and Q/A rephrase styles. |
-| ![Figure 4](assets/papers-explained-118-wrap/fig-4.png) | Model hyperparameter table for small, medium, and XL decoder-only models. |
-| ![Figure 5](assets/papers-explained-118-wrap/fig-5.png) | Weighted average Pile perplexity across model sizes and effective data pool sizes. |
-| ![Figure 6](assets/papers-explained-118-wrap/fig-6.png) | Domain-wise Pile perplexity comparing C4-only vs WRAP (C4 plus QA synthetic). |
-| ![Figure 7](assets/papers-explained-118-wrap/fig-7.png) | General understanding zero-shot benchmark results across real and synthetic training mixes. |
-| ![Figure 8](assets/papers-explained-118-wrap/fig-8.png) | Specialized knowledge task results for real-data and synthetic-data training recipes. |
-| ![Figure 9](assets/papers-explained-118-wrap/fig-9.png) | Pile perplexity comparison of synthetic-only vs mixed synthetic+real recipes. |
-| ![Figure 10](assets/papers-explained-118-wrap/fig-10.png) | General understanding task results for medium-style, QA-style, and mixed synthetic datasets. |
-| ![Figure 11](assets/papers-explained-118-wrap/fig-11.png) | Specialized knowledge benchmark results for medium-style and QA-style synthetic data mixes. |
-| ![Figure 12](assets/papers-explained-118-wrap/fig-12.png) | Pile perplexity when combining multiple synthetic rephrase styles during training. |
-| ![Figure 13](assets/papers-explained-118-wrap/fig-13.png) | Specialized knowledge results for combined synthetic-style training variants. |
-| ![Figure 14](assets/papers-explained-118-wrap/fig-14.png) | General understanding results for combined synthetic-style variants vs single-style mixes. |
-| ![Figure 15](assets/papers-explained-118-wrap/fig-15.png) | Impact of rephraser model choice (T5, Qwen, Mistral, Vicuna) on downstream perplexity. |
-| ![Figure 16](assets/papers-explained-118-wrap/fig-16.png) | Perplexity comparison across augmentation strategies (add, delete, substitute) vs baseline C4. |
-| ![Figure 17](assets/papers-explained-118-wrap/fig-17.png) | Perplexity across Pile domains for different synthetic style choices and combined style training. |
-| ![Figure 18](assets/papers-explained-118-wrap/fig-18.png) | Cosine-similarity distributions showing semantic preservation between real and synthetic rephrases. |
+| ![Figure 1](assets/papers-explained-118-wrap/fig-1.webp) | Title page of *Rephrasing the Web: A Recipe for Compute and Data-Efficient Language Modeling*. |
+| ![Figure 2](assets/papers-explained-118-wrap/fig-2.webp) | WRAP training recipe: paraphrase noisy web text, mix real and synthetic data, then pre-train. |
+| ![Figure 3](assets/papers-explained-118-wrap/fig-3.webp) | Prompt templates for Easy, Hard, Medium, and Q/A rephrase styles. |
+| ![Figure 4](assets/papers-explained-118-wrap/fig-4.webp) | Model hyperparameter table for small, medium, and XL decoder-only models. |
+| ![Figure 5](assets/papers-explained-118-wrap/fig-5.webp) | Weighted average Pile perplexity across model sizes and effective data pool sizes. |
+| ![Figure 6](assets/papers-explained-118-wrap/fig-6.webp) | Domain-wise Pile perplexity comparing C4-only vs WRAP (C4 plus QA synthetic). |
+| ![Figure 7](assets/papers-explained-118-wrap/fig-7.webp) | General understanding zero-shot benchmark results across real and synthetic training mixes. |
+| ![Figure 8](assets/papers-explained-118-wrap/fig-8.webp) | Specialized knowledge task results for real-data and synthetic-data training recipes. |
+| ![Figure 9](assets/papers-explained-118-wrap/fig-9.webp) | Pile perplexity comparison of synthetic-only vs mixed synthetic+real recipes. |
+| ![Figure 10](assets/papers-explained-118-wrap/fig-10.webp) | General understanding task results for medium-style, QA-style, and mixed synthetic datasets. |
+| ![Figure 11](assets/papers-explained-118-wrap/fig-11.webp) | Specialized knowledge benchmark results for medium-style and QA-style synthetic data mixes. |
+| ![Figure 12](assets/papers-explained-118-wrap/fig-12.webp) | Pile perplexity when combining multiple synthetic rephrase styles during training. |
+| ![Figure 13](assets/papers-explained-118-wrap/fig-13.webp) | Specialized knowledge results for combined synthetic-style training variants. |
+| ![Figure 14](assets/papers-explained-118-wrap/fig-14.webp) | General understanding results for combined synthetic-style variants vs single-style mixes. |
+| ![Figure 15](assets/papers-explained-118-wrap/fig-15.webp) | Impact of rephraser model choice (T5, Qwen, Mistral, Vicuna) on downstream perplexity. |
+| ![Figure 16](assets/papers-explained-118-wrap/fig-16.webp) | Perplexity comparison across augmentation strategies (add, delete, substitute) vs baseline C4. |
+| ![Figure 17](assets/papers-explained-118-wrap/fig-17.webp) | Perplexity across Pile domains for different synthetic style choices and combined style training. |
+| ![Figure 18](assets/papers-explained-118-wrap/fig-18.webp) | Cosine-similarity distributions showing semantic preservation between real and synthetic rephrases. |
 ## Related
 
 - [[Papers Explained Corpus]]

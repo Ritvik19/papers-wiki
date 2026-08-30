@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-01-08_Papers-Explained-87--DocLLM-93c188edfaef.html`
+- Source file: `raw/2024-01-08_Papers-Explained-87--DocLLM-93c188edfaef.md`
 - Source title: Papers Explained 87: DocLLM
 - Published: 2024-01-08
 - Canonical: [https://medium.com/@ritvik19/papers-explained-87-docllm-93c188edfaef](https://medium.com/@ritvik19/papers-explained-87-docllm-93c188edfaef)
@@ -134,21 +134,21 @@ Recommended Reading: [Document Information Processing](https://ritvik19.medium.c
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-01-08_Papers-Explained-87--DocLLM-93c188edfaef.html`); local copies under `wiki/assets/papers-explained-87-docllm/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-01-08_Papers-Explained-87--DocLLM-93c188edfaef.md`); local copies under `wiki/assets/papers-explained-87-docllm/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-87-docllm/fig-1.png) | Title card: DocLLM. |
-| ![Figure 2](assets/papers-explained-87-docllm/fig-2.png) | DocLLM model architecture with disentangled spatial attention and infilling objective. |
-| ![Figure 3](assets/papers-explained-87-docllm/fig-3.png) | Recommended Reading [ Papers Explained 42: UDOP ]: where Wq and Wk are projection matrices, and the superscript t indicates the text modality. |
-| ![Figure 4](assets/papers-explained-87-docllm/fig-4.png) | where Wq and Wk are projection matrices, and the superscript t indicates the text modality. |
-| ![Figure 5](assets/papers-explained-87-docllm/fig-5.png) | In DocLLM, the input is represented as x = {(xi, bi)}. |
-| ![Figure 6](assets/papers-explained-87-docllm/fig-6.png) | Model configurations. |
-| ![Figure 7](assets/papers-explained-87-docllm/fig-7.png) | The following cross-entropy loss is then minimized for the infilling objective. |
-| ![Figure 8](assets/papers-explained-87-docllm/fig-8.png) | Pre-training dataset statistics. |
-| ![Figure 9](assets/papers-explained-87-docllm/fig-9.png) | Instruction-tuning dataset statistics. |
-| ![Figure 10](assets/papers-explained-87-docllm/fig-10.png) | Prompt templates used for instruction-tuning. |
-| ![Figure 11](assets/papers-explained-87-docllm/fig-11.png) | The following instruction templates are used based on what end users would generally ask about documents. |
+| ![Figure 1](assets/papers-explained-87-docllm/fig-1.webp) | Title card: DocLLM. |
+| ![Figure 2](assets/papers-explained-87-docllm/fig-2.webp) | DocLLM model architecture with disentangled spatial attention and infilling objective. |
+| ![Figure 3](assets/papers-explained-87-docllm/fig-3.webp) | Recommended Reading [ Papers Explained 42: UDOP ]: where Wq and Wk are projection matrices, and the superscript t indicates the text modality. |
+| ![Figure 4](assets/papers-explained-87-docllm/fig-4.webp) | where Wq and Wk are projection matrices, and the superscript t indicates the text modality. |
+| ![Figure 5](assets/papers-explained-87-docllm/fig-5.webp) | In DocLLM, the input is represented as x = {(xi, bi)}. |
+| ![Figure 6](assets/papers-explained-87-docllm/fig-6.webp) | Model configurations. |
+| ![Figure 7](assets/papers-explained-87-docllm/fig-7.webp) | The following cross-entropy loss is then minimized for the infilling objective. |
+| ![Figure 8](assets/papers-explained-87-docllm/fig-8.webp) | Pre-training dataset statistics. |
+| ![Figure 9](assets/papers-explained-87-docllm/fig-9.webp) | Instruction-tuning dataset statistics. |
+| ![Figure 10](assets/papers-explained-87-docllm/fig-10.webp) | Prompt templates used for instruction-tuning. |
+| ![Figure 11](assets/papers-explained-87-docllm/fig-11.webp) | The following instruction templates are used based on what end users would generally ask about documents. |
 ## Related
 
 - [[Papers Explained Corpus]]

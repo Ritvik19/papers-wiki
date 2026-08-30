@@ -34,26 +34,26 @@ A central thesis is that the explosion of open models (2M+ on Hugging Face) — 
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![Inference stack](../assets/inference-engineering/fig-0.1-inference-stack.png) | A complete inference stack: runtime and infrastructure layers | 20 |
-| ![Speculation diagram](../assets/inference-engineering/fig-0.2-speculation-diagram.png) | Speculative decoding improving inference latency | 22 |
-| ![Multi-cloud serving](../assets/inference-engineering/fig-0.3-multi-cloud-serving.png) | Unifying capacity across multiple cloud providers | 23 |
-| ![Matmul](../assets/inference-engineering/fig-2.2-matmul.png) | Matrix Multiply: y = Wx + b | 46 |
-| ![Prefill vs decode](../assets/inference-engineering/fig-2.6-autoregressive-token-gen.png) | Autoregressive prefill and decode phases | 50 |
-| ![Transformer block](../assets/inference-engineering/fig-2.7-transformer-block.png) | Transformer block architecture | 53 |
-| ![MoE architecture](../assets/inference-engineering/fig-2.9-moe-architecture.png) | Mixture of Experts model architecture | 56 |
-| ![Roofline](../assets/inference-engineering/fig-2.13-prefill-roofline.png) | Prefill roofline model: compute vs memory bound | 66 |
-| ![GPU cache hierarchy](../assets/inference-engineering/fig-3.2-gpu-sm-cache.png) | GPU SMs, Tensor Cores, and L1/L2 cache hierarchy | 79 |
-| ![NVLink topology](../assets/inference-engineering/fig-3.4-nvlink-infiniband.png) | NVLink, NVSwitch, and InfiniBand interconnects | 87 |
-| ![vLLM architecture](../assets/inference-engineering/fig-4.4-vllm-architecture.png) | vLLM inference engine architecture | 109 |
-| ![Number formats](../assets/inference-engineering/fig-5.1-number-formats.png) | FP32, FP16, FP8, FP4 number format comparison | 125 |
-| ![Speculative decoding](../assets/inference-engineering/fig-5.3-speculative-decoding.png) | Speculative decoding: draft generation, validation, prefix acceptance | 132 |
-| ![EAGLE](../assets/inference-engineering/fig-5.5-eagle-hidden-states.png) | EAGLE takes hidden states as input, produces draft tokens | 136 |
-| ![Prefix caching](../assets/inference-engineering/fig-5.7-prefix-cache-match.png) | Prefix caching reusing KV cache across requests | 138 |
-| ![Tensor parallelism](../assets/inference-engineering/fig-5.12-tensor-parallelism.png) | Tensor Parallelism splitting weights across GPUs | 146 |
-| ![Expert parallelism](../assets/inference-engineering/fig-5.13-expert-parallelism.png) | Expert Parallelism: each expert within a single GPU | 147 |
-| ![Disaggregation](../assets/inference-engineering/fig-5.16-disaggregation.png) | Disaggregated serving: separate prefill and decode workers | 151 |
-| ![Autoscaling](../assets/inference-engineering/fig-7.3-autoscaling.png) | Autoscaling inference replicas based on load | 186 |
-| ![Multi-cloud](../assets/inference-engineering/fig-7.7-multi-cloud.png) | Multi-cloud capacity management | 195 |
+| ![Inference stack](../assets/inference-engineering/fig-0.1-inference-stack.webp) | A complete inference stack: runtime and infrastructure layers | 20 |
+| ![Speculation diagram](../assets/inference-engineering/fig-0.2-speculation-diagram.webp) | Speculative decoding improving inference latency | 22 |
+| ![Multi-cloud serving](../assets/inference-engineering/fig-0.3-multi-cloud-serving.webp) | Unifying capacity across multiple cloud providers | 23 |
+| ![Matmul](../assets/inference-engineering/fig-2.2-matmul.webp) | Matrix Multiply: y = Wx + b | 46 |
+| ![Prefill vs decode](../assets/inference-engineering/fig-2.6-autoregressive-token-gen.webp) | Autoregressive prefill and decode phases | 50 |
+| ![Transformer block](../assets/inference-engineering/fig-2.7-transformer-block.webp) | Transformer block architecture | 53 |
+| ![MoE architecture](../assets/inference-engineering/fig-2.9-moe-architecture.webp) | Mixture of Experts model architecture | 56 |
+| ![Roofline](../assets/inference-engineering/fig-2.13-prefill-roofline.webp) | Prefill roofline model: compute vs memory bound | 66 |
+| ![GPU cache hierarchy](../assets/inference-engineering/fig-3.2-gpu-sm-cache.webp) | GPU SMs, Tensor Cores, and L1/L2 cache hierarchy | 79 |
+| ![NVLink topology](../assets/inference-engineering/fig-3.4-nvlink-infiniband.webp) | NVLink, NVSwitch, and InfiniBand interconnects | 87 |
+| ![vLLM architecture](../assets/inference-engineering/fig-4.4-vllm-architecture.webp) | vLLM inference engine architecture | 109 |
+| ![Number formats](../assets/inference-engineering/fig-5.1-number-formats.webp) | FP32, FP16, FP8, FP4 number format comparison | 125 |
+| ![Speculative decoding](../assets/inference-engineering/fig-5.3-speculative-decoding.webp) | Speculative decoding: draft generation, validation, prefix acceptance | 132 |
+| ![EAGLE](../assets/inference-engineering/fig-5.5-eagle-hidden-states.webp) | EAGLE takes hidden states as input, produces draft tokens | 136 |
+| ![Prefix caching](../assets/inference-engineering/fig-5.7-prefix-cache-match.webp) | Prefix caching reusing KV cache across requests | 138 |
+| ![Tensor parallelism](../assets/inference-engineering/fig-5.12-tensor-parallelism.webp) | Tensor Parallelism splitting weights across GPUs | 146 |
+| ![Expert parallelism](../assets/inference-engineering/fig-5.13-expert-parallelism.webp) | Expert Parallelism: each expert within a single GPU | 147 |
+| ![Disaggregation](../assets/inference-engineering/fig-5.16-disaggregation.webp) | Disaggregated serving: separate prefill and decode workers | 151 |
+| ![Autoscaling](../assets/inference-engineering/fig-7.3-autoscaling.webp) | Autoscaling inference replicas based on load | 186 |
+| ![Multi-cloud](../assets/inference-engineering/fig-7.7-multi-cloud.webp) | Multi-cloud capacity management | 195 |
 
 ## Entities
 

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-07-29_Papers-Explained-170--Prometheus-5e72b8054729.html`
+- Source file: `raw/2024-07-29_Papers-Explained-170--Prometheus-5e72b8054729.md`
 - Source title: Papers Explained 170: Prometheus
 - Published: 2024-07-29
 - Canonical: [https://medium.com/@ritvik19/papers-explained-170-prometheus-5e72b8054729](https://medium.com/@ritvik19/papers-explained-170-prometheus-5e72b8054729)
@@ -173,26 +173,26 @@ Recommended Reading [LLM Evaluation](https://ritvik19.medium.com/list/llm-evalua
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-07-29_Papers-Explained-170--Prometheus-5e72b8054729.html`); local copies under `wiki/assets/papers-explained-170-prometheus/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-07-29_Papers-Explained-170--Prometheus-5e72b8054729.md`); local copies under `wiki/assets/papers-explained-170-prometheus/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-170-prometheus/fig-1.png) | Paper title: **PROMETHEUS** — fine-grained LLM evaluation (KAIST / NAVER). |
-| ![Figure 2](assets/papers-explained-170-prometheus/fig-2.png) | From coarse benchmarks vs **GPT-4 judge** to **rubric + reference**-based evaluation with an open **Prometheus** judge. |
-| ![Figure 3](assets/papers-explained-170-prometheus/fig-3.png) | Example **absolute** eval: instruction, rubric, response, reference → Prometheus **feedback** + **1–5 score**. |
-| ![Figure 4](assets/papers-explained-170-prometheus/fig-4.png) | **Feedback Collection** scale: **1K** rubrics, **20K** instructions w/ references, **100K** responses + feedback. |
-| ![Figure 5](assets/papers-explained-170-prometheus/fig-5.png) | Dataset build: seed rubrics → **1K** taxonomy (sunburst) → GPT-4 augmentation into full training instances. |
-| ![Figure 6](assets/papers-explained-170-prometheus/fig-6.png) | GPT-4 prompt: **brainstorm** new score rubrics from few-shot JSON examples. |
-| ![Figure 7](assets/papers-explained-170-prometheus/fig-7.png) | GPT-4 prompt: **paraphrase** rubric dictionaries for diversity. |
-| ![Figure 8](assets/papers-explained-170-prometheus/fig-8.png) | GPT-4 prompt: generate **instruction + reference (score 5)** aligned to a rubric. |
-| ![Figure 9](assets/papers-explained-170-prometheus/fig-9.png) | GPT-4 prompt: synthesize **lower-scored responses**, matching-length **feedback**, and target score. |
-| ![Figure 10](assets/papers-explained-170-prometheus/fig-10.png) | **Prometheus** inference template: rubric + reference + response → `Feedback: ... [RESULT] {score}`. |
-| ![Figure 11](assets/papers-explained-170-prometheus/fig-11.png) | **Pearson** correlation with humans: GPT-3.5 vs **GPT-4** vs **Prometheus-13B** on Feedback Collection, MT-Bench, Vicuna. |
-| ![Figure 12](assets/papers-explained-170-prometheus/fig-12.png) | Human **pairwise** feedback quality: Prometheus vs ChatGPT vs GPT-4 (win / both-good / both-bad counts). |
-| ![Figure 13](assets/papers-explained-170-prometheus/fig-13.png) | When feedback is rejected: GPT-4 often **too abstract**; Prometheus more **optimistic vs overly critical** errors. |
-| ![Figure 14](assets/papers-explained-170-prometheus/fig-14.png) | Correlation with **GPT-4–0613** labels on Feedback Collection test: **seen vs unseen** rubrics (Pearson / Kendall / Spearman). |
-| ![Figure 15](assets/papers-explained-170-prometheus/fig-15.png) | Correlation with GPT-4 scores on **Vicuna**, **MT-Bench**, **FLASK** across evaluator LMs. |
-| ![Figure 16](assets/papers-explained-170-prometheus/fig-16.png) | **Ranking** eval: **HHH** agreement breakdown + **MT-Bench human judgment** accuracy for reward-model-style use. |
+| ![Figure 1](assets/papers-explained-170-prometheus/fig-1.webp) | Paper title: **PROMETHEUS** — fine-grained LLM evaluation (KAIST / NAVER). |
+| ![Figure 2](assets/papers-explained-170-prometheus/fig-2.webp) | From coarse benchmarks vs **GPT-4 judge** to **rubric + reference**-based evaluation with an open **Prometheus** judge. |
+| ![Figure 3](assets/papers-explained-170-prometheus/fig-3.webp) | Example **absolute** eval: instruction, rubric, response, reference → Prometheus **feedback** + **1–5 score**. |
+| ![Figure 4](assets/papers-explained-170-prometheus/fig-4.webp) | **Feedback Collection** scale: **1K** rubrics, **20K** instructions w/ references, **100K** responses + feedback. |
+| ![Figure 5](assets/papers-explained-170-prometheus/fig-5.webp) | Dataset build: seed rubrics → **1K** taxonomy (sunburst) → GPT-4 augmentation into full training instances. |
+| ![Figure 6](assets/papers-explained-170-prometheus/fig-6.webp) | GPT-4 prompt: **brainstorm** new score rubrics from few-shot JSON examples. |
+| ![Figure 7](assets/papers-explained-170-prometheus/fig-7.webp) | GPT-4 prompt: **paraphrase** rubric dictionaries for diversity. |
+| ![Figure 8](assets/papers-explained-170-prometheus/fig-8.webp) | GPT-4 prompt: generate **instruction + reference (score 5)** aligned to a rubric. |
+| ![Figure 9](assets/papers-explained-170-prometheus/fig-9.webp) | GPT-4 prompt: synthesize **lower-scored responses**, matching-length **feedback**, and target score. |
+| ![Figure 10](assets/papers-explained-170-prometheus/fig-10.webp) | **Prometheus** inference template: rubric + reference + response → `Feedback: ... [RESULT] {score}`. |
+| ![Figure 11](assets/papers-explained-170-prometheus/fig-11.webp) | **Pearson** correlation with humans: GPT-3.5 vs **GPT-4** vs **Prometheus-13B** on Feedback Collection, MT-Bench, Vicuna. |
+| ![Figure 12](assets/papers-explained-170-prometheus/fig-12.webp) | Human **pairwise** feedback quality: Prometheus vs ChatGPT vs GPT-4 (win / both-good / both-bad counts). |
+| ![Figure 13](assets/papers-explained-170-prometheus/fig-13.webp) | When feedback is rejected: GPT-4 often **too abstract**; Prometheus more **optimistic vs overly critical** errors. |
+| ![Figure 14](assets/papers-explained-170-prometheus/fig-14.webp) | Correlation with **GPT-4–0613** labels on Feedback Collection test: **seen vs unseen** rubrics (Pearson / Kendall / Spearman). |
+| ![Figure 15](assets/papers-explained-170-prometheus/fig-15.webp) | Correlation with GPT-4 scores on **Vicuna**, **MT-Bench**, **FLASK** across evaluator LMs. |
+| ![Figure 16](assets/papers-explained-170-prometheus/fig-16.webp) | **Ranking** eval: **HHH** agreement breakdown + **MT-Bench human judgment** accuracy for reward-model-style use. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-03-21_Papers-Explained-335--Transformers-without-Normalization-a1cec27c2c4f.html`
+- Source file: `raw/2025-03-21_Papers-Explained-335--Transformers-without-Normalization-a1cec27c2c4f.md`
 - Source title: Papers Explained 335: Transformers without Normalization
 - Published: 2025-03-21
 - Canonical: [https://medium.com/@ritvik19/papers-explained-335-transformers-without-normalization-a1cec27c2c4f](https://medium.com/@ritvik19/papers-explained-335-transformers-without-normalization-a1cec27c2c4f)
@@ -155,23 +155,23 @@ Transformers without Normalization [2503.10622](https://arxiv.org/abs/2503.10622
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-03-21_Papers-Explained-335--Transformers-without-Normalization-a1cec27c2c4f.html`); local copies under `wiki/assets/papers-explained-335-transformers-without-normalization/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-03-21_Papers-Explained-335--Transformers-without-Normalization-a1cec27c2c4f.md`); local copies under `wiki/assets/papers-explained-335-transformers-without-normalization/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-335-transformers-without-normalization/fig-1.png) | Title card: Transformers without Normalization. |
-| ![Figure 2](assets/papers-explained-335-transformers-without-normalization/fig-2.png) | Most normalization layers share a common formulation. |
-| ![Figure 3](assets/papers-explained-335-transformers-without-normalization/fig-3.png) | Output vs. input of selected layer normalization (LN) layers. |
-| ![Figure 4](assets/papers-explained-335-transformers-without-normalization/fig-4.png) | where α is a learnable scalar parameter that allows scaling the input differently based on its range, accounting for varying x scales. |
-| ![Figure 5](assets/papers-explained-335-transformers-without-normalization/fig-5.png) | Supervised classification accuracy on ImageNet-1K. |
-| ![Figure 6](assets/papers-explained-335-transformers-without-normalization/fig-6.png) | Self-supervised learning accuracy on ImageNet-1K. |
-| ![Figure 7](assets/papers-explained-335-transformers-without-normalization/fig-7.png) | Image generation quality (FID, lower is better) on ImageNet. |
-| ![Figure 8](assets/papers-explained-335-transformers-without-normalization/fig-8.png) | Language models’ training loss and average performance with 15 zero-shot lm-eval tasks. |
-| ![Figure 9](assets/papers-explained-335-transformers-without-normalization/fig-9.png) | Speech pretraining validation loss on LibriSpeech. |
-| ![Figure 10](assets/papers-explained-335-transformers-without-normalization/fig-10.png) | DNA classification accuracy on GenomicBenchmarks. |
-| ![Figure 11](assets/papers-explained-335-transformers-without-normalization/fig-11.png) | Stability across varying α0 values, learning rates, and model sizes. |
-| ![Figure 12](assets/papers-explained-335-transformers-without-normalization/fig-12.png) | Optimal α0 for different LLaMA models. |
-| ![Figure 13](assets/papers-explained-335-transformers-without-normalization/fig-13.png) | Optimal α0 (attention / other) across model widths and depths in LLaMA training. |
+| ![Figure 1](assets/papers-explained-335-transformers-without-normalization/fig-1.webp) | Title card: Transformers without Normalization. |
+| ![Figure 2](assets/papers-explained-335-transformers-without-normalization/fig-2.webp) | Most normalization layers share a common formulation. |
+| ![Figure 3](assets/papers-explained-335-transformers-without-normalization/fig-3.webp) | Output vs. input of selected layer normalization (LN) layers. |
+| ![Figure 4](assets/papers-explained-335-transformers-without-normalization/fig-4.webp) | where α is a learnable scalar parameter that allows scaling the input differently based on its range, accounting for varying x scales. |
+| ![Figure 5](assets/papers-explained-335-transformers-without-normalization/fig-5.webp) | Supervised classification accuracy on ImageNet-1K. |
+| ![Figure 6](assets/papers-explained-335-transformers-without-normalization/fig-6.webp) | Self-supervised learning accuracy on ImageNet-1K. |
+| ![Figure 7](assets/papers-explained-335-transformers-without-normalization/fig-7.webp) | Image generation quality (FID, lower is better) on ImageNet. |
+| ![Figure 8](assets/papers-explained-335-transformers-without-normalization/fig-8.webp) | Language models’ training loss and average performance with 15 zero-shot lm-eval tasks. |
+| ![Figure 9](assets/papers-explained-335-transformers-without-normalization/fig-9.webp) | Speech pretraining validation loss on LibriSpeech. |
+| ![Figure 10](assets/papers-explained-335-transformers-without-normalization/fig-10.webp) | DNA classification accuracy on GenomicBenchmarks. |
+| ![Figure 11](assets/papers-explained-335-transformers-without-normalization/fig-11.webp) | Stability across varying α0 values, learning rates, and model sizes. |
+| ![Figure 12](assets/papers-explained-335-transformers-without-normalization/fig-12.webp) | Optimal α0 for different LLaMA models. |
+| ![Figure 13](assets/papers-explained-335-transformers-without-normalization/fig-13.webp) | Optimal α0 (attention / other) across model widths and depths in LLaMA training. |
 ## Related
 
 - [[Papers Explained Corpus]]

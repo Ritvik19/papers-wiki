@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-04-03_Papers-Explained-120--BloombergGPT-4bedd52ef54b.html`
+- Source file: `raw/2024-04-03_Papers-Explained-120--BloombergGPT-4bedd52ef54b.md`
 - Source title: Papers Explained 120: BloombergGPT
 - Published: 2024-04-03
 - Canonical: [https://medium.com/@ritvik19/papers-explained-120-bloomberggpt-4bedd52ef54b](https://medium.com/@ritvik19/papers-explained-120-bloomberggpt-4bedd52ef54b)
@@ -193,28 +193,28 @@ BloombergGPT: A Large Language Model for Finance [2303.17564](https://arxiv.org/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-04-03_Papers-Explained-120--BloombergGPT-4bedd52ef54b.html`); local copies under `wiki/assets/papers-explained-120-bloomberggpt/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-04-03_Papers-Explained-120--BloombergGPT-4bedd52ef54b.md`); local copies under `wiki/assets/papers-explained-120-bloomberggpt/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-120-bloomberggpt/fig-1.png) | Title page of *BloombergGPT: A Large Language Model for Finance*. |
-| ![Figure 2](assets/papers-explained-120-bloomberggpt/fig-2.jpeg) | Overview of pretraining/finetuning strategies, highlighting BloombergGPT’s mixed-domain approach. |
-| ![Figure 3](assets/papers-explained-120-bloomberggpt/fig-3.png) | FinPile and public-data training corpus breakdown by documents, characters, and tokens. |
-| ![Figure 4](assets/papers-explained-120-bloomberggpt/fig-4.png) | Tokenization efficiency comparison across BLOOM, NeoX, OPT/GPT2, and BloombergGPT tokenizers. |
-| ![Figure 5](assets/papers-explained-120-bloomberggpt/fig-5.png) | Decoder block equations for BloombergGPT’s transformer architecture. |
-| ![Figure 6](assets/papers-explained-120-bloomberggpt/fig-6.png) | Embedding-layer normalization formulation used before self-attention. |
-| ![Figure 7](assets/papers-explained-120-bloomberggpt/fig-7.png) | Evaluation benchmark suite summary across financial and general NLP tasks. |
-| ![Figure 8](assets/papers-explained-120-bloomberggpt/fig-8.png) | Evaluation cohort comparison by training tokens, parameter count, and compute. |
-| ![Figure 9](assets/papers-explained-120-bloomberggpt/fig-9.png) | Prompt templates for discriminative and generative financial tasks (sentiment, NER, NED, QA). |
-| ![Figure 10](assets/papers-explained-120-bloomberggpt/fig-10.png) | External financial-task results comparing BloombergGPT with GPT-NeoX, OPT-66B, and BLOOM-176B. |
-| ![Figure 11](assets/papers-explained-120-bloomberggpt/fig-11.png) | Bloomberg internal sentiment dataset overview across five domains. |
-| ![Figure 12](assets/papers-explained-120-bloomberggpt/fig-12.png) | Results on internal aspect-specific sentiment analysis tasks. |
-| ![Figure 13](assets/papers-explained-120-bloomberggpt/fig-13.png) | Internal NER and NER+NED benchmark comparison across financial domains. |
-| ![Figure 14](assets/papers-explained-120-bloomberggpt/fig-14.png) | BIG-bench Hard 3-shot results across reasoning and algorithmic tasks. |
-| ![Figure 15](assets/papers-explained-120-bloomberggpt/fig-15.png) | Knowledge-task 1-shot results (ARC, CommonsenseQA, PIQA) across model cohort. |
-| ![Figure 16](assets/papers-explained-120-bloomberggpt/fig-16.png) | MMLU 5-shot results by subject group (humanities, STEM, social sciences, other). |
-| ![Figure 17](assets/papers-explained-120-bloomberggpt/fig-17.png) | Reading-comprehension benchmark comparison across RC scenarios. |
-| ![Figure 18](assets/papers-explained-120-bloomberggpt/fig-18.png) | Linguistic-scenario benchmark results (RTE, ANLI, COPA, WIC, Winograd, HellaSwag, StoryCloze). |
+| ![Figure 1](assets/papers-explained-120-bloomberggpt/fig-1.webp) | Title page of *BloombergGPT: A Large Language Model for Finance*. |
+| ![Figure 2](assets/papers-explained-120-bloomberggpt/fig-2.webp) | Overview of pretraining/finetuning strategies, highlighting BloombergGPT’s mixed-domain approach. |
+| ![Figure 3](assets/papers-explained-120-bloomberggpt/fig-3.webp) | FinPile and public-data training corpus breakdown by documents, characters, and tokens. |
+| ![Figure 4](assets/papers-explained-120-bloomberggpt/fig-4.webp) | Tokenization efficiency comparison across BLOOM, NeoX, OPT/GPT2, and BloombergGPT tokenizers. |
+| ![Figure 5](assets/papers-explained-120-bloomberggpt/fig-5.webp) | Decoder block equations for BloombergGPT’s transformer architecture. |
+| ![Figure 6](assets/papers-explained-120-bloomberggpt/fig-6.webp) | Embedding-layer normalization formulation used before self-attention. |
+| ![Figure 7](assets/papers-explained-120-bloomberggpt/fig-7.webp) | Evaluation benchmark suite summary across financial and general NLP tasks. |
+| ![Figure 8](assets/papers-explained-120-bloomberggpt/fig-8.webp) | Evaluation cohort comparison by training tokens, parameter count, and compute. |
+| ![Figure 9](assets/papers-explained-120-bloomberggpt/fig-9.webp) | Prompt templates for discriminative and generative financial tasks (sentiment, NER, NED, QA). |
+| ![Figure 10](assets/papers-explained-120-bloomberggpt/fig-10.webp) | External financial-task results comparing BloombergGPT with GPT-NeoX, OPT-66B, and BLOOM-176B. |
+| ![Figure 11](assets/papers-explained-120-bloomberggpt/fig-11.webp) | Bloomberg internal sentiment dataset overview across five domains. |
+| ![Figure 12](assets/papers-explained-120-bloomberggpt/fig-12.webp) | Results on internal aspect-specific sentiment analysis tasks. |
+| ![Figure 13](assets/papers-explained-120-bloomberggpt/fig-13.webp) | Internal NER and NER+NED benchmark comparison across financial domains. |
+| ![Figure 14](assets/papers-explained-120-bloomberggpt/fig-14.webp) | BIG-bench Hard 3-shot results across reasoning and algorithmic tasks. |
+| ![Figure 15](assets/papers-explained-120-bloomberggpt/fig-15.webp) | Knowledge-task 1-shot results (ARC, CommonsenseQA, PIQA) across model cohort. |
+| ![Figure 16](assets/papers-explained-120-bloomberggpt/fig-16.webp) | MMLU 5-shot results by subject group (humanities, STEM, social sciences, other). |
+| ![Figure 17](assets/papers-explained-120-bloomberggpt/fig-17.webp) | Reading-comprehension benchmark comparison across RC scenarios. |
+| ![Figure 18](assets/papers-explained-120-bloomberggpt/fig-18.webp) | Linguistic-scenario benchmark results (RTE, ANLI, COPA, WIC, Winograd, HellaSwag, StoryCloze). |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -1,6 +1,6 @@
 # Introducing the Synthetic Data Generator - Build Datasets with Natural Language
 
-**Source**: `raw/synthetic-data-generator/full-article.html`, `raw/synthetic-data-generator/full-article.md`
+**Source**: `raw/synthetic-data-generator/full-article.md`, `raw/synthetic-data-generator/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

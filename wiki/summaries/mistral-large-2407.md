@@ -1,6 +1,6 @@
 # Large Enough (Mistral Large 2)
 
-**Source**: `raw/mistral-large-2407/full-article.html` (224 KB), `raw/mistral-large-2407/full-article.md` (markdown view)  
+**Source**: `raw/mistral-large-2407/full-article.md` (224 KB), `raw/mistral-large-2407/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/mistral-large-2407/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -28,19 +28,19 @@ On **MMLU**, the pretrained model reaches **84.0%** accuracy, claiming a new per
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/mistral-large-2407/fig-1.png) | Mistral Large 2 overview / general performance on MMLU and cost-efficiency | — |
-| ![fig-2](../assets/mistral-large-2407/fig-2.png) | Code generation benchmark accuracy (shared eval pipeline) | — |
-| ![fig-3](../assets/mistral-large-2407/fig-3.png) | MultiPL-E multilingual code benchmark accuracy | — |
-| ![fig-4](../assets/mistral-large-2407/fig-4.png) | GSM8K and MATH accuracy (8-shot / 0-shot) | — |
-| ![fig-5](../assets/mistral-large-2407/fig-5.png) | Alignment benchmarks: MT-Bench, WildBench, Arena Hard | — |
-| ![fig-6](../assets/mistral-large-2407/fig-6.png) | MT-Bench average generation length vs. other models (conciseness) | — |
-| ![fig-7](../assets/mistral-large-2407/fig-7.png) | Multilingual MMLU vs. Mistral Large v1, Llama 3.1, Command R+ | — |
-| ![fig-8](../assets/mistral-large-2407/fig-8.png) | Multilingual MMLU extended comparison | — |
-| ![fig-9](../assets/mistral-large-2407/fig-9.png) | Tool use and function-calling capabilities | — |
-| ![fig-10](../assets/mistral-large-2407/fig-10.png) | Additional benchmark detail | — |
-| ![fig-11](../assets/mistral-large-2407/fig-11.png) | Mistral AI model availability timeline | — |
+| ![fig-1](../assets/mistral-large-2407/fig-1.webp) | Mistral Large 2 overview / general performance on MMLU and cost-efficiency | — |
+| ![fig-2](../assets/mistral-large-2407/fig-2.webp) | Code generation benchmark accuracy (shared eval pipeline) | — |
+| ![fig-3](../assets/mistral-large-2407/fig-3.webp) | MultiPL-E multilingual code benchmark accuracy | — |
+| ![fig-4](../assets/mistral-large-2407/fig-4.webp) | GSM8K and MATH accuracy (8-shot / 0-shot) | — |
+| ![fig-5](../assets/mistral-large-2407/fig-5.webp) | Alignment benchmarks: MT-Bench, WildBench, Arena Hard | — |
+| ![fig-6](../assets/mistral-large-2407/fig-6.webp) | MT-Bench average generation length vs. other models (conciseness) | — |
+| ![fig-7](../assets/mistral-large-2407/fig-7.webp) | Multilingual MMLU vs. Mistral Large v1, Llama 3.1, Command R+ | — |
+| ![fig-8](../assets/mistral-large-2407/fig-8.webp) | Multilingual MMLU extended comparison | — |
+| ![fig-9](../assets/mistral-large-2407/fig-9.webp) | Tool use and function-calling capabilities | — |
+| ![fig-10](../assets/mistral-large-2407/fig-10.webp) | Additional benchmark detail | — |
+| ![fig-11](../assets/mistral-large-2407/fig-11.webp) | Mistral AI model availability timeline | — |
 
-![Mistral Large 2 performance overview](../assets/mistral-large-2407/fig-1.png)
+![Mistral Large 2 performance overview](../assets/mistral-large-2407/fig-1.webp)
 
 ## Entities
 

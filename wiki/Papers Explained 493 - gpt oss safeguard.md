@@ -8,7 +8,7 @@ Official source: [[gpt-oss-safeguard]].
 
 ## Source Metadata
 
-- Source file: `raw/2025-11-17_Papers-Explained-493--gpt-oss-safeguard-d8d36703a63e.html`
+- Source file: `raw/2025-11-17_Papers-Explained-493--gpt-oss-safeguard-d8d36703a63e.md`
 - Source title: Papers Explained 493: gpt oss safeguard
 - Published: 2025-11-17
 - Canonical: [https://medium.com/@ritvik19/papers-explained-493-gpt-oss-safeguard-d8d36703a63e](https://medium.com/@ritvik19/papers-explained-493-gpt-oss-safeguard-d8d36703a63e)
@@ -155,22 +155,22 @@ Models were evaluated using the BBQ evaluation.
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-11-17_Papers-Explained-493--gpt-oss-safeguard-d8d36703a63e.html`); local copies under `wiki/assets/papers-explained-493-gpt-oss-safeguard/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-11-17_Papers-Explained-493--gpt-oss-safeguard-d8d36703a63e.md`); local copies under `wiki/assets/papers-explained-493-gpt-oss-safeguard/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-493-gpt-oss-safeguard/fig-1.png) | Title card: gpt oss safeguard. |
-| ![Figure 2](assets/papers-explained-493-gpt-oss-safeguard/fig-2.png) | This reasoning-based approach performs especially well in situations where. |
-| ![Figure 3](assets/papers-explained-493-gpt-oss-safeguard/fig-3.png) | Internal moderation evaluation (multi-policy accuracy). |
-| ![Figure 4](assets/papers-explained-493-gpt-oss-safeguard/fig-4.png) | OpenAI Moderation API and ToxicChat evaulations. |
-| ![Figure 5](assets/papers-explained-493-gpt-oss-safeguard/fig-5.png) | MMMLU evaluation. |
-| ![Figure 6](assets/papers-explained-493-gpt-oss-safeguard/fig-6.png) | Standard Disallowed Content Evaluation. |
-| ![Figure 7](assets/papers-explained-493-gpt-oss-safeguard/fig-7.png) | Production Benchmarks. |
-| ![Figure 8](assets/papers-explained-493-gpt-oss-safeguard/fig-8.png) | Jailbreak evaluations. |
-| ![Figure 9](assets/papers-explained-493-gpt-oss-safeguard/fig-9.png) | Instruction Hierarchy Evaluation — System User message conflict. |
-| ![Figure 10](assets/papers-explained-493-gpt-oss-safeguard/fig-10.png) | Instruction Hierarchy Evaluation — Phrase and Password Protection. |
-| ![Figure 11](assets/papers-explained-493-gpt-oss-safeguard/fig-11.png) | Hallucination evaluations. |
-| ![Figure 12](assets/papers-explained-493-gpt-oss-safeguard/fig-12.png) | BBQ evaluation. |
+| ![Figure 1](assets/papers-explained-493-gpt-oss-safeguard/fig-1.webp) | Title card: gpt oss safeguard. |
+| ![Figure 2](assets/papers-explained-493-gpt-oss-safeguard/fig-2.webp) | [image missing — corrupt source export] |
+| ![Figure 3](assets/papers-explained-493-gpt-oss-safeguard/fig-3.webp) | Internal moderation evaluation (multi-policy accuracy). |
+| ![Figure 4](assets/papers-explained-493-gpt-oss-safeguard/fig-4.webp) | OpenAI Moderation API and ToxicChat evaulations. |
+| ![Figure 5](assets/papers-explained-493-gpt-oss-safeguard/fig-5.webp) | MMMLU evaluation. |
+| ![Figure 6](assets/papers-explained-493-gpt-oss-safeguard/fig-6.webp) | Standard Disallowed Content Evaluation. |
+| ![Figure 7](assets/papers-explained-493-gpt-oss-safeguard/fig-7.webp) | Production Benchmarks. |
+| ![Figure 8](assets/papers-explained-493-gpt-oss-safeguard/fig-8.webp) | Jailbreak evaluations. |
+| ![Figure 9](assets/papers-explained-493-gpt-oss-safeguard/fig-9.webp) | Instruction Hierarchy Evaluation — System User message conflict. |
+| ![Figure 10](assets/papers-explained-493-gpt-oss-safeguard/fig-10.webp) | Instruction Hierarchy Evaluation — Phrase and Password Protection. |
+| ![Figure 11](assets/papers-explained-493-gpt-oss-safeguard/fig-11.webp) | Hallucination evaluations. |
+| ![Figure 12](assets/papers-explained-493-gpt-oss-safeguard/fig-12.webp) | BBQ evaluation. |
 ## Related
 
 - [[Papers Explained Corpus]]

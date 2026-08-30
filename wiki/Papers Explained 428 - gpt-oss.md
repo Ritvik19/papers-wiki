@@ -8,7 +8,7 @@ A safety-reasoning variant fine-tuned from these models was later released as [[
 
 ## Source Metadata
 
-- Source file: `raw/2025-08-11_Papers-Explained-428--gpt-oss-e1aed3d15afe.html`
+- Source file: `raw/2025-08-11_Papers-Explained-428--gpt-oss-e1aed3d15afe.md`
 - Source title: Papers Explained 428: gpt-oss
 - Published: 2025-08-11
 - Canonical: [https://medium.com/@ritvik19/papers-explained-428-gpt-oss-e1aed3d15afe](https://medium.com/@ritvik19/papers-explained-428-gpt-oss-e1aed3d15afe)
@@ -333,22 +333,22 @@ You are a helpful shopping assistant
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-08-11_Papers-Explained-428--gpt-oss-e1aed3d15afe.html`); local copies under `wiki/assets/papers-explained-428-gpt-oss/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-08-11_Papers-Explained-428--gpt-oss-e1aed3d15afe.md`); local copies under `wiki/assets/papers-explained-428-gpt-oss/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-428-gpt-oss/fig-1.png) | Title card: gpt-oss. |
-| ![Figure 2](assets/papers-explained-428-gpt-oss/fig-2.png) | Model parameter counts. |
-| ![Figure 3](assets/papers-explained-428-gpt-oss/fig-3.png) | Main capabilities evaluations. |
-| ![Figure 4](assets/papers-explained-428-gpt-oss/fig-4.png) | Coding and tool use results. |
-| ![Figure 5](assets/papers-explained-428-gpt-oss/fig-5.png) | The models are post-trained with quantization of the MoE weights to MXFP4 format, where weights are quantized to 4.25 bits per parameter. |
-| ![Figure 6](assets/papers-explained-428-gpt-oss/fig-6.png) | Health performance. |
-| ![Figure 7](assets/papers-explained-428-gpt-oss/fig-7.png) | MMMLU evaluation. |
-| ![Figure 8](assets/papers-explained-428-gpt-oss/fig-8.png) | Evaluations across multiple benchmarks and reasoning levels. |
-| ![Figure 9](assets/papers-explained-428-gpt-oss/fig-9.png) | The models are post-trained with quantization of the MoE weights to MXFP4 format, where weights are quantized to 4.25 bits per parameter. |
-| ![Figure 10](assets/papers-explained-428-gpt-oss/fig-10.png) | Every message that the model processes has a role associated with it. The model knows about three types of roles. |
-| ![Figure 11](assets/papers-explained-428-gpt-oss/fig-11.png) | Assistant messages can be output in three different “channels”. |
-| ![Figure 12](assets/papers-explained-428-gpt-oss/fig-12.png) | The model uses a set of special tokens to identify the structure of your input. |
+| ![Figure 1](assets/papers-explained-428-gpt-oss/fig-1.webp) | Title card: gpt-oss. |
+| ![Figure 2](assets/papers-explained-428-gpt-oss/fig-2.webp) | Model parameter counts. |
+| ![Figure 3](assets/papers-explained-428-gpt-oss/fig-3.webp) | Main capabilities evaluations. |
+| ![Figure 4](assets/papers-explained-428-gpt-oss/fig-4.webp) | Coding and tool use results. |
+| ![Figure 5](assets/papers-explained-428-gpt-oss/fig-5.webp) | The models are post-trained with quantization of the MoE weights to MXFP4 format, where weights are quantized to 4.25 bits per parameter. |
+| ![Figure 6](assets/papers-explained-428-gpt-oss/fig-6.webp) | Health performance. |
+| ![Figure 7](assets/papers-explained-428-gpt-oss/fig-7.webp) | MMMLU evaluation. |
+| ![Figure 8](assets/papers-explained-428-gpt-oss/fig-8.webp) | Evaluations across multiple benchmarks and reasoning levels. |
+| ![Figure 9](assets/papers-explained-428-gpt-oss/fig-9.webp) | The models are post-trained with quantization of the MoE weights to MXFP4 format, where weights are quantized to 4.25 bits per parameter. |
+| ![Figure 10](assets/papers-explained-428-gpt-oss/fig-10.webp) | Every message that the model processes has a role associated with it. The model knows about three types of roles. |
+| ![Figure 11](assets/papers-explained-428-gpt-oss/fig-11.webp) | Assistant messages can be output in three different “channels”. |
+| ![Figure 12](assets/papers-explained-428-gpt-oss/fig-12.webp) | The model uses a set of special tokens to identify the structure of your input. |
 ## HF Blog Cross-References
 
 - [Welcome GPT OSS, the new open-source model family from OpenAI!](https://huggingface.co/blog/welcome-openai-gpt-oss) (2025-08-05) — Hugging Face's launch-day integration guide for the same gpt-oss-120b/20b models described above, covering Inference Providers API access, local inference (Transformers with Flash Attention 3, AMD ROCm, llama.cpp, vLLM, `transformers serve`), fine-tuning, deployment on Azure/Dell, and chat-template/tool-use walkthroughs for the harmony format.

@@ -1,6 +1,6 @@
 # Open-Source DeepResearch - Freeing Our Search Agents
 
-**Source**: `raw/open-deep-research/full-article.html`, `raw/open-deep-research/full-article.md`
+**Source**: `raw/open-deep-research/full-article.md`, `raw/open-deep-research/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

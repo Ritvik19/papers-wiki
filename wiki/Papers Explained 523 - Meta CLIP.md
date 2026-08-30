@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-01-14_Papers-Explained-523--Meta-CLIP-29a47642feff.html`
+- Source file: `raw/2026-01-14_Papers-Explained-523--Meta-CLIP-29a47642feff.md`
 - Source title: Papers Explained 523: Meta CLIP
 - Published: 2026-01-14
 - Canonical: [https://medium.com/@ritvik19/papers-explained-523-meta-clip-29a47642feff](https://medium.com/@ritvik19/papers-explained-523-meta-clip-29a47642feff)
@@ -151,18 +151,18 @@ Demystifying CLIP Data [2309.16671](https://arxiv.org/abs/2309.16671)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-01-14_Papers-Explained-523--Meta-CLIP-29a47642feff.html`); local copies under `wiki/assets/papers-explained-523-meta-clip/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-01-14_Papers-Explained-523--Meta-CLIP-29a47642feff.md`); local copies under `wiki/assets/papers-explained-523-meta-clip/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-523-meta-clip/fig-1.png) | Title card: Meta CLIP. |
-| ![Figure 2](assets/papers-explained-523-meta-clip/fig-2.png) | Composition of MetaCLIP Metadata. |
-| ![Figure 3](assets/papers-explained-523-meta-clip/fig-3.png) | Summary of counts for entries. |
-| ![Figure 4](assets/papers-explained-523-meta-clip/fig-4.png) | Top-20 entries with counts. |
-| ![Figure 5](assets/papers-explained-523-meta-clip/fig-5.png) | Cumulative sum of counts on entries from tail to head on a data pool with 1.6B image-text pairs (5.6B match counts). |
-| ![Figure 6](assets/papers-explained-523-meta-clip/fig-6.png) | The algorithm takes three inputs: metadata M, a data pool D, and a hyper-parameter t. |
-| ![Figure 7](assets/papers-explained-523-meta-clip/fig-7.png) | MetaCLIP-400M vs. CLIP (WIT400M data) and OpenCLIP (LAION-400M data). |
-| ![Figure 8](assets/papers-explained-523-meta-clip/fig-8.png) | Scaling MetaCLIP from 400M (t=20k) to 1B (t=20k) and 2.5B (t=170k) training data. |
+| ![Figure 1](assets/papers-explained-523-meta-clip/fig-1.webp) | Title card: Meta CLIP. |
+| ![Figure 2](assets/papers-explained-523-meta-clip/fig-2.webp) | Composition of MetaCLIP Metadata. |
+| ![Figure 3](assets/papers-explained-523-meta-clip/fig-3.webp) | Summary of counts for entries. |
+| ![Figure 4](assets/papers-explained-523-meta-clip/fig-4.webp) | Top-20 entries with counts. |
+| ![Figure 5](assets/papers-explained-523-meta-clip/fig-5.webp) | Cumulative sum of counts on entries from tail to head on a data pool with 1.6B image-text pairs (5.6B match counts). |
+| ![Figure 6](assets/papers-explained-523-meta-clip/fig-6.webp) | The algorithm takes three inputs: metadata M, a data pool D, and a hyper-parameter t. |
+| ![Figure 7](assets/papers-explained-523-meta-clip/fig-7.webp) | MetaCLIP-400M vs. CLIP (WIT400M data) and OpenCLIP (LAION-400M data). |
+| ![Figure 8](assets/papers-explained-523-meta-clip/fig-8.webp) | Scaling MetaCLIP from 400M (t=20k) to 1B (t=20k) and 2.5B (t=170k) training data. |
 ## Related
 
 - [[Papers Explained Corpus]]

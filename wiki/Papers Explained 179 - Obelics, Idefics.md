@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-07_Papers-Explained-179--Obelics--Idefics-a581f8d909b6.html`
+- Source file: `raw/2024-08-07_Papers-Explained-179--Obelics--Idefics-a581f8d909b6.md`
 - Source title: Papers Explained 179: Obelics, Idefics
 - Published: 2024-08-07
 - Canonical: [https://medium.com/@ritvik19/papers-explained-179-obelics-idefics-a581f8d909b6](https://medium.com/@ritvik19/papers-explained-179-obelics-idefics-a581f8d909b6)
@@ -121,17 +121,17 @@ Recommended Reading [Datasets](https://ritvik19.medium.com/list/datasets-b465a5d
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-07_Papers-Explained-179--Obelics--Idefics-a581f8d909b6.html`); local copies under `wiki/assets/papers-explained-179-obelics-idefics/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-07_Papers-Explained-179--Obelics--Idefics-a581f8d909b6.md`); local copies under `wiki/assets/papers-explained-179-obelics-idefics/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-179-obelics-idefics/fig-1.png) | Paper title: **OBELICS** — open web-scale **interleaved** image–text documents. |
-| ![Figure 2](assets/papers-explained-179-obelics-idefics/fig-2.png) | **Dataset pipeline** from Common Crawl → English/dedup/quality → DOM simplification → multimodal extract → filters → responsible steps → **141M docs / 353M images**. |
-| ![Figure 3](assets/papers-explained-179-obelics-idefics/fig-3.png) | **Idefics parameter split**: total vs **trainable** (Perceiver + cross-attn) vs frozen **LLM** and **vision** backbones — **9B** vs **80B**. |
-| ![Figure 4](assets/papers-explained-179-obelics-idefics/fig-4.png) | **Training hyperparameters**: Perceiver config, Llama-7b vs Llama-65b, CLIP ViT-H, batch/LR schedule, ZeRO-3, etc. |
-| ![Figure 5](assets/papers-explained-179-obelics-idefics/fig-5.png) | **Pretraining sources**: OBELICS, Wikipedia, LAION, PMD — tokens, images, epochs. |
-| ![Figure 6](assets/papers-explained-179-obelics-idefics/fig-6.png) | **Mixture ablations** vs final **IDEFICS-9B** recipe (percent OBELICS / Wiki / LAION / PMD). |
-| ![Figure 7](assets/papers-explained-179-obelics-idefics/fig-7.png) | **Few-shot benchmarks** (0–32 shots): Flamingo vs OpenFlamingo vs **IDEFICS** at **9B** and full scale (COCO, VQA, TextVQA, …). |
+| ![Figure 1](assets/papers-explained-179-obelics-idefics/fig-1.webp) | Paper title: **OBELICS** — open web-scale **interleaved** image–text documents. |
+| ![Figure 2](assets/papers-explained-179-obelics-idefics/fig-2.webp) | **Dataset pipeline** from Common Crawl → English/dedup/quality → DOM simplification → multimodal extract → filters → responsible steps → **141M docs / 353M images**. |
+| ![Figure 3](assets/papers-explained-179-obelics-idefics/fig-3.webp) | **Idefics parameter split**: total vs **trainable** (Perceiver + cross-attn) vs frozen **LLM** and **vision** backbones — **9B** vs **80B**. |
+| ![Figure 4](assets/papers-explained-179-obelics-idefics/fig-4.webp) | **Training hyperparameters**: Perceiver config, Llama-7b vs Llama-65b, CLIP ViT-H, batch/LR schedule, ZeRO-3, etc. |
+| ![Figure 5](assets/papers-explained-179-obelics-idefics/fig-5.webp) | **Pretraining sources**: OBELICS, Wikipedia, LAION, PMD — tokens, images, epochs. |
+| ![Figure 6](assets/papers-explained-179-obelics-idefics/fig-6.webp) | **Mixture ablations** vs final **IDEFICS-9B** recipe (percent OBELICS / Wiki / LAION / PMD). |
+| ![Figure 7](assets/papers-explained-179-obelics-idefics/fig-7.webp) | **Few-shot benchmarks** (0–32 shots): Flamingo vs OpenFlamingo vs **IDEFICS** at **9B** and full scale (COCO, VQA, TextVQA, …). |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -4,7 +4,7 @@
 
 Will Brown's article argues that the usual [[Supervised Fine-Tuning]] then [[Reinforcement Learning]] post-training pipeline is not just convention: SFT is cheap while the student is below the teacher, but RL becomes more attractive once fixed teacher data stops compounding; [[On-Policy Distillation]] occupies a useful middle ground when the teacher and student are from the same model family, while self-distillation methods expose new stability problems around dense, biased, concentrated gradients.
 
-Source: [On SFT, RL, and on-policy distillation](https://x.com/willccbb/article/2050038277454143918) by Will Brown and Claude Opus 4.7, published April 30, 2026, posted May 1, 2026. Readable raw source: `raw/will-brown-on-sft-rl-on-policy-distillation/full-article.html`.
+Source: [On SFT, RL, and on-policy distillation](https://x.com/willccbb/article/2050038277454143918) by Will Brown and Claude Opus 4.7, published April 30, 2026, posted May 1, 2026. Readable raw source: `raw/will-brown-on-sft-rl-on-policy-distillation/full-article.md`.
 
 ## Key Takeaways
 
@@ -26,19 +26,19 @@ The open research direction is an optimal-teacher problem: find a teacher policy
 
 | Figure | Caption | Source Location |
 | --- | --- | --- |
-| ![fig-1.jpg](assets/will-brown-on-sft-rl-on-policy-distillation/fig-1.jpg) | Conceptual phase diagram showing SFT giving strong early gains, RL compounding later, and OPD occupying a fast same-family middle regime. | Article export |
-| ![fig-2.jpg](assets/will-brown-on-sft-rl-on-policy-distillation/fig-2.jpg) | Figure 1: SFT, SFT-RS, RL, and OPD compared by performance ceiling, compute, and whether the sampling distribution compounds. | Article export |
-| ![fig-3.jpg](assets/will-brown-on-sft-rl-on-policy-distillation/fig-3.jpg) | RL gradient sketch: sparse outcome reward broadcasts noisy token-level gradients that tend to cancel except for reward-correlated directions. | Article export |
-| ![fig-4.jpg](assets/will-brown-on-sft-rl-on-policy-distillation/fig-4.jpg) | SFT gradient sketch: dense token labels create biased pressure toward the dataset distribution, but spread that pressure across many examples. | Article export |
-| ![fig-5.jpg](assets/will-brown-on-sft-rl-on-policy-distillation/fig-5.jpg) | OPSD gradient sketch: privileged-context teacher signal can concentrate on a rare pivot token that unlocks the answer. | Article export |
-| ![fig-6.jpg](assets/will-brown-on-sft-rl-on-policy-distillation/fig-6.jpg) | Back-of-envelope KL table contrasting the student and teacher probabilities for a pivotal reasoning token. | Article export |
-| ![fig-7.jpg](assets/will-brown-on-sft-rl-on-policy-distillation/fig-7.jpg) | Taxonomy table placing RL, SFT, OPD, and OPSD along sparsity, bias, concentration, and teacher-policy axes. | Article export |
-| ![fig-8.jpg](assets/will-brown-on-sft-rl-on-policy-distillation/fig-8.jpg) | Policy-gradient objective form used to unify SFT, RL, OPD, and OPSD. | Article export |
-| ![fig-9.jpg](assets/will-brown-on-sft-rl-on-policy-distillation/fig-9.jpg) | Expanded objective with knobs for on-policy sampling and teacher-KL versus reward weighting. | Article export |
-| ![fig-10.jpg](assets/will-brown-on-sft-rl-on-policy-distillation/fig-10.jpg) | Diagram of the meta-algorithm: sample under a partially on-policy distribution, choose a teacher policy, and update the student. | Article export |
-| ![fig-11.jpg](assets/will-brown-on-sft-rl-on-policy-distillation/fig-11.jpg) | Table mapping familiar methods to the meta-algorithm knobs and teacher choices. | Article export |
-| ![fig-12.jpg](assets/will-brown-on-sft-rl-on-policy-distillation/fig-12.jpg) | Lagrangian objective for the optimal-teacher problem under a KL budget. | Article export |
-| ![fig-13.jpg](assets/will-brown-on-sft-rl-on-policy-distillation/fig-13.jpg) | Pareto curve sketch for reward improvement versus KL, with SFT, OPD, OPSD, and RL occupying different points. | Article export |
+| ![fig-1.jpg](assets/will-brown-on-sft-rl-on-policy-distillation/fig-1.webp) | Conceptual phase diagram showing SFT giving strong early gains, RL compounding later, and OPD occupying a fast same-family middle regime. | Article export |
+| ![fig-2.jpg](assets/will-brown-on-sft-rl-on-policy-distillation/fig-2.webp) | Figure 1: SFT, SFT-RS, RL, and OPD compared by performance ceiling, compute, and whether the sampling distribution compounds. | Article export |
+| ![fig-3.jpg](assets/will-brown-on-sft-rl-on-policy-distillation/fig-3.webp) | RL gradient sketch: sparse outcome reward broadcasts noisy token-level gradients that tend to cancel except for reward-correlated directions. | Article export |
+| ![fig-4.jpg](assets/will-brown-on-sft-rl-on-policy-distillation/fig-4.webp) | SFT gradient sketch: dense token labels create biased pressure toward the dataset distribution, but spread that pressure across many examples. | Article export |
+| ![fig-5.jpg](assets/will-brown-on-sft-rl-on-policy-distillation/fig-5.webp) | OPSD gradient sketch: privileged-context teacher signal can concentrate on a rare pivot token that unlocks the answer. | Article export |
+| ![fig-6.jpg](assets/will-brown-on-sft-rl-on-policy-distillation/fig-6.webp) | Back-of-envelope KL table contrasting the student and teacher probabilities for a pivotal reasoning token. | Article export |
+| ![fig-7.jpg](assets/will-brown-on-sft-rl-on-policy-distillation/fig-7.webp) | Taxonomy table placing RL, SFT, OPD, and OPSD along sparsity, bias, concentration, and teacher-policy axes. | Article export |
+| ![fig-8.jpg](assets/will-brown-on-sft-rl-on-policy-distillation/fig-8.webp) | Policy-gradient objective form used to unify SFT, RL, OPD, and OPSD. | Article export |
+| ![fig-9.jpg](assets/will-brown-on-sft-rl-on-policy-distillation/fig-9.webp) | Expanded objective with knobs for on-policy sampling and teacher-KL versus reward weighting. | Article export |
+| ![fig-10.jpg](assets/will-brown-on-sft-rl-on-policy-distillation/fig-10.webp) | Diagram of the meta-algorithm: sample under a partially on-policy distribution, choose a teacher policy, and update the student. | Article export |
+| ![fig-11.jpg](assets/will-brown-on-sft-rl-on-policy-distillation/fig-11.webp) | Table mapping familiar methods to the meta-algorithm knobs and teacher choices. | Article export |
+| ![fig-12.jpg](assets/will-brown-on-sft-rl-on-policy-distillation/fig-12.webp) | Lagrangian objective for the optimal-teacher problem under a KL budget. | Article export |
+| ![fig-13.jpg](assets/will-brown-on-sft-rl-on-policy-distillation/fig-13.webp) | Pareto curve sketch for reward improvement versus KL, with SFT, OPD, OPSD, and RL occupying different points. | Article export |
 
 ## Implications
 

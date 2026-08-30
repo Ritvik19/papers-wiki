@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-12-04_Papers-Explained-265--Jina-Bilingual-Embeddings-39960d6f7a7c.html`
+- Source file: `raw/2024-12-04_Papers-Explained-265--Jina-Bilingual-Embeddings-39960d6f7a7c.md`
 - Source title: Papers Explained 265: Jina Bilingual Embeddings
 - Published: 2024-12-04
 - Canonical: [https://medium.com/@ritvik19/papers-explained-265-jina-bilingual-embeddings-39960d6f7a7c](https://medium.com/@ritvik19/papers-explained-265-jina-bilingual-embeddings-39960d6f7a7c)
@@ -185,21 +185,21 @@ Recommended Reading [Retrieval and Representation Learning](https://ritvik19.med
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-12-04_Papers-Explained-265--Jina-Bilingual-Embeddings-39960d6f7a7c.html`); local copies under `wiki/assets/papers-explained-265-jina-bilingual-embeddings/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-12-04_Papers-Explained-265--Jina-Bilingual-Embeddings-39960d6f7a7c.md`); local copies under `wiki/assets/papers-explained-265-jina-bilingual-embeddings/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-265-jina-bilingual-embeddings/fig-1.png) | Title card: Jina Bilingual Embeddings. |
-| ![Figure 2](assets/papers-explained-265-jina-bilingual-embeddings/fig-2.png) | Architecture specifications of different monolingual, bilingual and multilingual models. |
-| ![Figure 3](assets/papers-explained-265-jina-bilingual-embeddings/fig-3.png) | Following the previous work, a bi-directional InfoNCE loss is used. |
-| ![Figure 4](assets/papers-explained-265-jina-bilingual-embeddings/fig-4.png) | where B = ((p1, q1),. |
-| ![Figure 5](assets/papers-explained-265-jina-bilingual-embeddings/fig-5.png) | For each batch, the type of task is determined and a respective loss function is selected. For retrieval tasks, a bi-directional InfoNCE loss function is used. |
-| ![Figure 6](assets/papers-explained-265-jina-bilingual-embeddings/fig-6.png) | If the sampled batch comes from an STS dataset, the negative Pearson’s sample correlation is used as a loss function. |
-| ![Figure 7](assets/papers-explained-265-jina-bilingual-embeddings/fig-7.png) | Performance of Jina BERT models and multilingual models on GLUE dev set. |
-| ![Figure 8](assets/papers-explained-265-jina-bilingual-embeddings/fig-8.png) | Performance of Jina BERT models and multilingual models on XTREME dev set. |
-| ![Figure 9](assets/papers-explained-265-jina-bilingual-embeddings/fig-9.png) | Evaluation of the Jina models on MTEB tasks. |
-| ![Figure 10](assets/papers-explained-265-jina-bilingual-embeddings/fig-10.png) | Evaluation of multilingual and bilingual models after short embedding training on pairs. |
-| ![Figure 11](assets/papers-explained-265-jina-bilingual-embeddings/fig-11.png) | Spearman correlation on English STS tasks after triplet-tuning. |
+| ![Figure 1](assets/papers-explained-265-jina-bilingual-embeddings/fig-1.webp) | Title card: Jina Bilingual Embeddings. |
+| ![Figure 2](assets/papers-explained-265-jina-bilingual-embeddings/fig-2.webp) | Architecture specifications of different monolingual, bilingual and multilingual models. |
+| ![Figure 3](assets/papers-explained-265-jina-bilingual-embeddings/fig-3.webp) | Following the previous work, a bi-directional InfoNCE loss is used. |
+| ![Figure 4](assets/papers-explained-265-jina-bilingual-embeddings/fig-4.webp) | where B = ((p1, q1),. |
+| ![Figure 5](assets/papers-explained-265-jina-bilingual-embeddings/fig-5.webp) | For each batch, the type of task is determined and a respective loss function is selected. For retrieval tasks, a bi-directional InfoNCE loss function is used. |
+| ![Figure 6](assets/papers-explained-265-jina-bilingual-embeddings/fig-6.webp) | If the sampled batch comes from an STS dataset, the negative Pearson’s sample correlation is used as a loss function. |
+| ![Figure 7](assets/papers-explained-265-jina-bilingual-embeddings/fig-7.webp) | Performance of Jina BERT models and multilingual models on GLUE dev set. |
+| ![Figure 8](assets/papers-explained-265-jina-bilingual-embeddings/fig-8.webp) | Performance of Jina BERT models and multilingual models on XTREME dev set. |
+| ![Figure 9](assets/papers-explained-265-jina-bilingual-embeddings/fig-9.webp) | Evaluation of the Jina models on MTEB tasks. |
+| ![Figure 10](assets/papers-explained-265-jina-bilingual-embeddings/fig-10.webp) | Evaluation of multilingual and bilingual models after short embedding training on pairs. |
+| ![Figure 11](assets/papers-explained-265-jina-bilingual-embeddings/fig-11.webp) | Spearman correlation on English STS tasks after triplet-tuning. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-07-26_Papers-Explained-169--mBART-98432ef6fec.html`
+- Source file: `raw/2024-07-26_Papers-Explained-169--mBART-98432ef6fec.md`
 - Source title: Papers Explained 169: mBART
 - Published: 2024-07-26
 - Canonical: [https://medium.com/@ritvik19/papers-explained-169-mbart-98432ef6fec](https://medium.com/@ritvik19/papers-explained-169-mbart-98432ef6fec)
@@ -103,19 +103,19 @@ Multilingual Denoising Pre-training for Neural Machine Translation [2001.08210](
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-07-26_Papers-Explained-169--mBART-98432ef6fec.html`); local copies under `wiki/assets/papers-explained-169-mbart/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-07-26_Papers-Explained-169--mBART-98432ef6fec.md`); local copies under `wiki/assets/papers-explained-169-mbart/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-169-mbart/fig-1.png) | Paper title: **Multilingual Denoising Pre-training for Neural Machine Translation** (Facebook AI Research). |
-| ![Figure 2](assets/papers-explained-169-mbart/fig-2.png) | **mBART** pre-train (multilingual denoising) vs fine-tune for sentence-level (**Sent-MT**) and document-level (**Doc-MT**) MT. |
-| ![Figure 3](assets/papers-explained-169-mbart/fig-3.png) | **CC25** corpus: per-language tokens and size (GB) for 25-language pre-training. |
-| ![Figure 4](assets/papers-explained-169-mbart/fig-4.png) | Low/medium-resource **supervised MT**: random init vs **mBART25** across many En–X pairs (BLEU). |
-| ![Figure 5](assets/papers-explained-169-mbart/fig-5.png) | High-resource **WMT-style** pairs: random vs mBART25 when millions of parallel sentences are available. |
-| ![Figure 6](assets/papers-explained-169-mbart/fig-6.png) | **Unseen** language generalization: **mBART02** / **06** / **25** vs random on Nl, Ar, De transfer settings. |
-| ![Figure 7](assets/papers-explained-169-mbart/fig-7.png) | Document-level data stats: **WMT19 En–De** vs **TED15 Zh–En** (docs / instances / sentences). |
-| ![Figure 8](assets/papers-explained-169-mbart/fig-8.png) | Document MT: **s-BLEU** vs **d-BLEU** for Sent-MT vs Doc-MT, random vs **mBART25** (En–De and Zh–En). |
-| ![Figure 9](assets/papers-explained-169-mbart/fig-9.png) | Unsupervised MT: **(a)** back-translation loop on monolingual Ne/En; **(b)** **Hi–En** transfer to **Ne–En** without Ne–En training. |
+| ![Figure 1](assets/papers-explained-169-mbart/fig-1.webp) | Paper title: **Multilingual Denoising Pre-training for Neural Machine Translation** (Facebook AI Research). |
+| ![Figure 2](assets/papers-explained-169-mbart/fig-2.webp) | **mBART** pre-train (multilingual denoising) vs fine-tune for sentence-level (**Sent-MT**) and document-level (**Doc-MT**) MT. |
+| ![Figure 3](assets/papers-explained-169-mbart/fig-3.webp) | **CC25** corpus: per-language tokens and size (GB) for 25-language pre-training. |
+| ![Figure 4](assets/papers-explained-169-mbart/fig-4.webp) | Low/medium-resource **supervised MT**: random init vs **mBART25** across many En–X pairs (BLEU). |
+| ![Figure 5](assets/papers-explained-169-mbart/fig-5.webp) | High-resource **WMT-style** pairs: random vs mBART25 when millions of parallel sentences are available. |
+| ![Figure 6](assets/papers-explained-169-mbart/fig-6.webp) | **Unseen** language generalization: **mBART02** / **06** / **25** vs random on Nl, Ar, De transfer settings. |
+| ![Figure 7](assets/papers-explained-169-mbart/fig-7.webp) | Document-level data stats: **WMT19 En–De** vs **TED15 Zh–En** (docs / instances / sentences). |
+| ![Figure 8](assets/papers-explained-169-mbart/fig-8.webp) | Document MT: **s-BLEU** vs **d-BLEU** for Sent-MT vs Doc-MT, random vs **mBART25** (En–De and Zh–En). |
+| ![Figure 9](assets/papers-explained-169-mbart/fig-9.webp) | Unsupervised MT: **(a)** back-translation loop on monolingual Ne/En; **(b)** **Hi–En** transfer to **Ne–En** without Ne–En training. |
 ## Related
 
 - [[Papers Explained Corpus]]

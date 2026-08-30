@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-12-20_Papers-Explained-276--Self-Taught-Evaluators-8270905392ed.html`
+- Source file: `raw/2024-12-20_Papers-Explained-276--Self-Taught-Evaluators-8270905392ed.md`
 - Source title: Papers Explained 276: Self-Taught Evaluators
 - Published: 2024-12-20
 - Canonical: [https://medium.com/@ritvik19/papers-explained-276-self-taught-evaluators-8270905392ed](https://medium.com/@ritvik19/papers-explained-276-self-taught-evaluators-8270905392ed)
@@ -117,19 +117,19 @@ Self-Taught Evaluators [2408.02666](https://arxiv.org/abs/2408.02666)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-12-20_Papers-Explained-276--Self-Taught-Evaluators-8270905392ed.html`); local copies under `wiki/assets/papers-explained-276-self-taught-evaluators/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-12-20_Papers-Explained-276--Self-Taught-Evaluators-8270905392ed.md`); local copies under `wiki/assets/papers-explained-276-self-taught-evaluators/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-276-self-taught-evaluators/fig-1.png) | Title card: Self-Taught Evaluators. |
-| ![Figure 2](assets/papers-explained-276-self-taught-evaluators/fig-2.png) | Self-Taught Evaluator iterative training scheme. |
-| ![Figure 3](assets/papers-explained-276-self-taught-evaluators/fig-3.png) | Generating Synthetic Response Pairs. |
-| ![Figure 4](assets/papers-explained-276-self-taught-evaluators/fig-4.png) | Prompt template for Selecting Instructions. |
-| ![Figure 5](assets/papers-explained-276-self-taught-evaluators/fig-5.png) | Prompt template for Judgment Annotation. |
-| ![Figure 6](assets/papers-explained-276-self-taught-evaluators/fig-6.png) | Sampling parameters (temperature and top p) used during generations at each stage of training and evaluation. |
-| ![Figure 7](assets/papers-explained-276-self-taught-evaluators/fig-7.png) | RewardBench Results. |
-| ![Figure 8](assets/papers-explained-276-self-taught-evaluators/fig-8.png) | MT-Bench Results. |
-| ![Figure 9](assets/papers-explained-276-self-taught-evaluators/fig-9.png) | HelpSteer2 results. |
+| ![Figure 1](assets/papers-explained-276-self-taught-evaluators/fig-1.webp) | Title card: Self-Taught Evaluators. |
+| ![Figure 2](assets/papers-explained-276-self-taught-evaluators/fig-2.webp) | Self-Taught Evaluator iterative training scheme. |
+| ![Figure 3](assets/papers-explained-276-self-taught-evaluators/fig-3.webp) | Generating Synthetic Response Pairs. |
+| ![Figure 4](assets/papers-explained-276-self-taught-evaluators/fig-4.webp) | Prompt template for Selecting Instructions. |
+| ![Figure 5](assets/papers-explained-276-self-taught-evaluators/fig-5.webp) | Prompt template for Judgment Annotation. |
+| ![Figure 6](assets/papers-explained-276-self-taught-evaluators/fig-6.webp) | Sampling parameters (temperature and top p) used during generations at each stage of training and evaluation. |
+| ![Figure 7](assets/papers-explained-276-self-taught-evaluators/fig-7.webp) | RewardBench Results. |
+| ![Figure 8](assets/papers-explained-276-self-taught-evaluators/fig-8.webp) | MT-Bench Results. |
+| ![Figure 9](assets/papers-explained-276-self-taught-evaluators/fig-9.webp) | HelpSteer2 results. |
 ## Related
 
 - [[Papers Explained Corpus]]

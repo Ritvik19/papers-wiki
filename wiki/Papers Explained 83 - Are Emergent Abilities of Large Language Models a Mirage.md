@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-12-24_Papers-Explained-83--Are-Emergent-Abilities-of-Large-Language-Models-a-Mirage--4160cf0e44cb.html`
+- Source file: `raw/2023-12-24_Papers-Explained-83--Are-Emergent-Abilities-of-Large-Language-Models-a-Mirage--4160cf0e44cb.md`
 - Source title: Papers Explained 83: Are Emergent Abilities of Large Language Models a Mirage?
 - Published: 2023-12-24
 - Canonical: [https://medium.com/@ritvik19/papers-explained-are-emergent-abilities-of-large-language-models-a-mirage-4160cf0e44cb](https://medium.com/@ritvik19/papers-explained-are-emergent-abilities-of-large-language-models-a-mirage-4160cf0e44cb)
@@ -141,19 +141,19 @@ Are Emergent Abilities of Large Language Models a Mirage? [2304.15004](https://a
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-12-24_Papers-Explained-83--Are-Emergent-Abilities-of-Large-Language-Models-a-Mirage--4160cf0e44cb.html`); local copies under `wiki/assets/papers-explained-83-are-emergent-abilities-of-large-language-models-a-mirage/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-12-24_Papers-Explained-83--Are-Emergent-Abilities-of-Large-Language-Models-a-Mirage--4160cf0e44cb.md`); local copies under `wiki/assets/papers-explained-83-are-emergent-abilities-of-large-language-models-a-mirage/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-83-are-emergent-abilities-of-large-language-models-a-mirage/fig-1.png) | Title card: Are Emergent Abilities of Large Language Models a Mirage. |
-| ![Figure 2](assets/papers-explained-83-are-emergent-abilities-of-large-language-models-a-mirage/fig-2.png) | Emergent abilities of large language models are created by the researcher’s chosen metrics, not unpredictable changes in model behavior with scale. |
-| ![Figure 3](assets/papers-explained-83-are-emergent-abilities-of-large-language-models-a-mirage/fig-3.png) | Claimed emergent abilities evaporate upon changing the metric. |
-| ![Figure 4](assets/papers-explained-83-are-emergent-abilities-of-large-language-models-a-mirage/fig-4.png) | Claimed emergent abilities evaporate upon using better statistics. |
-| ![Figure 5](assets/papers-explained-83-are-emergent-abilities-of-large-language-models-a-mirage/fig-5.png) | To test this, an analysis was conducted on which metrics emergent abilities appear. |
-| ![Figure 6](assets/papers-explained-83-are-emergent-abilities-of-large-language-models-a-mirage/fig-6.png) | Emergent abilities appear only for specific metrics, not task-model families. |
-| ![Figure 7](assets/papers-explained-83-are-emergent-abilities-of-large-language-models-a-mirage/fig-7.png) | Changing the metric when evaluating task-model family pairs causes emergent abilities to disappear. |
-| ![Figure 8](assets/papers-explained-83-are-emergent-abilities-of-large-language-models-a-mirage/fig-8.png) | Induced emergent reconstruction ability in shallow nonlinear autoencoders. |
-| ![Figure 9](assets/papers-explained-83-are-emergent-abilities-of-large-language-models-a-mirage/fig-9.png) | Induced emergent classification ability in autoregressive Transformers. |
+| ![Figure 1](assets/papers-explained-83-are-emergent-abilities-of-large-language-models-a-mirage/fig-1.webp) | Title card: Are Emergent Abilities of Large Language Models a Mirage. |
+| ![Figure 2](assets/papers-explained-83-are-emergent-abilities-of-large-language-models-a-mirage/fig-2.webp) | Emergent abilities of large language models are created by the researcher’s chosen metrics, not unpredictable changes in model behavior with scale. |
+| ![Figure 3](assets/papers-explained-83-are-emergent-abilities-of-large-language-models-a-mirage/fig-3.webp) | Claimed emergent abilities evaporate upon changing the metric. |
+| ![Figure 4](assets/papers-explained-83-are-emergent-abilities-of-large-language-models-a-mirage/fig-4.webp) | Claimed emergent abilities evaporate upon using better statistics. |
+| ![Figure 5](assets/papers-explained-83-are-emergent-abilities-of-large-language-models-a-mirage/fig-5.webp) | To test this, an analysis was conducted on which metrics emergent abilities appear. |
+| ![Figure 6](assets/papers-explained-83-are-emergent-abilities-of-large-language-models-a-mirage/fig-6.webp) | Emergent abilities appear only for specific metrics, not task-model families. |
+| ![Figure 7](assets/papers-explained-83-are-emergent-abilities-of-large-language-models-a-mirage/fig-7.webp) | Changing the metric when evaluating task-model family pairs causes emergent abilities to disappear. |
+| ![Figure 8](assets/papers-explained-83-are-emergent-abilities-of-large-language-models-a-mirage/fig-8.webp) | Induced emergent reconstruction ability in shallow nonlinear autoencoders. |
+| ![Figure 9](assets/papers-explained-83-are-emergent-abilities-of-large-language-models-a-mirage/fig-9.webp) | Induced emergent classification ability in autoregressive Transformers. |
 ## Related
 
 - [[Papers Explained Corpus]]

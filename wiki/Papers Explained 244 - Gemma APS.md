@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-11-01_Papers-Explained-244--Gemma-APS-8fac1838b9ef.html`
+- Source file: `raw/2024-11-01_Papers-Explained-244--Gemma-APS-8fac1838b9ef.md`
 - Source title: Papers Explained 244: Gemma APS
 - Published: 2024-11-01
 - Canonical: [https://medium.com/@ritvik19/papers-explained-244-gemma-aps-8fac1838b9ef](https://medium.com/@ritvik19/papers-explained-244-gemma-aps-8fac1838b9ef)
@@ -181,19 +181,19 @@ Recommended Reading [Gemini / Gemma Models](https://ritvik19.medium.com/list/gem
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-11-01_Papers-Explained-244--Gemma-APS-8fac1838b9ef.html`); local copies under `wiki/assets/papers-explained-244-gemma-aps/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-11-01_Papers-Explained-244--Gemma-APS-8fac1838b9ef.md`); local copies under `wiki/assets/papers-explained-244-gemma-aps/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-244-gemma-aps/fig-1.png) | Title card: Gemma APS. |
-| ![Figure 2](assets/papers-explained-244-gemma-aps/fig-2.png) | The input and output for training an APS model with ungrouped propositions. |
-| ![Figure 3](assets/papers-explained-244-gemma-aps/fig-3.png) | The input and output for training an APS model with grouped propositions. |
-| ![Figure 4](assets/papers-explained-244-gemma-aps/fig-4.png) | Benefits of Grouped Propositions:: where Q ̄ is the space-concatenated version of Q to create a single text. |
-| ![Figure 5](assets/papers-explained-244-gemma-aps/fig-5.png) | Precision RBp and Recall RBr are calculated as follows. |
-| ![Figure 6](assets/papers-explained-244-gemma-aps/fig-6.png) | Precision RBp and Recall RBr are calculated as follows. |
-| ![Figure 7](assets/papers-explained-244-gemma-aps/fig-7.png) | Results on the ROSE dataset. |
-| ![Figure 8](assets/papers-explained-244-gemma-aps/fig-8.png) | Results on the REDDIT dataset. |
-| ![Figure 9](assets/papers-explained-244-gemma-aps/fig-9.png) | Results on the AMAZON REVIEW dataset. |
+| ![Figure 1](assets/papers-explained-244-gemma-aps/fig-1.webp) | Title card: Gemma APS. |
+| ![Figure 2](assets/papers-explained-244-gemma-aps/fig-2.webp) | The input and output for training an APS model with ungrouped propositions. |
+| ![Figure 3](assets/papers-explained-244-gemma-aps/fig-3.webp) | The input and output for training an APS model with grouped propositions. |
+| ![Figure 4](assets/papers-explained-244-gemma-aps/fig-4.webp) | Benefits of Grouped Propositions:: where Q ̄ is the space-concatenated version of Q to create a single text. |
+| ![Figure 5](assets/papers-explained-244-gemma-aps/fig-5.webp) | Precision RBp and Recall RBr are calculated as follows. |
+| ![Figure 6](assets/papers-explained-244-gemma-aps/fig-6.webp) | Precision RBp and Recall RBr are calculated as follows. |
+| ![Figure 7](assets/papers-explained-244-gemma-aps/fig-7.webp) | Results on the ROSE dataset. |
+| ![Figure 8](assets/papers-explained-244-gemma-aps/fig-8.webp) | Results on the REDDIT dataset. |
+| ![Figure 9](assets/papers-explained-244-gemma-aps/fig-9.webp) | Results on the AMAZON REVIEW dataset. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-08-29_Papers-Explained-53--Galactica-1308dbd318dc.html`
+- Source file: `raw/2023-08-29_Papers-Explained-53--Galactica-1308dbd318dc.md`
 - Source title: Papers Explained 53: Galactica
 - Published: 2023-08-29
 - Canonical: [https://medium.com/@ritvik19/papers-explained-53-galactica-1308dbd318dc](https://medium.com/@ritvik19/papers-explained-53-galactica-1308dbd318dc)
@@ -223,36 +223,36 @@ Galactica: A Large Language Model for Science [2211.09085](https://arxiv.org/abs
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-08-29_Papers-Explained-53--Galactica-1308dbd318dc.html`); local copies under `wiki/assets/papers-explained-53-galactica/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-08-29_Papers-Explained-53--Galactica-1308dbd318dc.md`); local copies under `wiki/assets/papers-explained-53-galactica/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-53-galactica/fig-1.png) | Title card: Galactica. |
-| ![Figure 2](assets/papers-explained-53-galactica/fig-2.png) | The Galactica Corpus. |
-| ![Figure 3](assets/papers-explained-53-galactica/fig-3.png) | An example answer with the working memory token. It performs exact steps for rearranging the equation, and when it reaches a calculation that it cannot solve reliably in a forward pass, it writes a program, which can then be offloaded to a classical computer. |
-| ![Figure 4](assets/papers-explained-53-galactica/fig-4.png) | Reasoning Datasets (to train the model to use a “work” token). |
-| ![Figure 5](assets/papers-explained-53-galactica/fig-5.png) | “Pre-training weighs all tokens equally as part of the self-supervised loss. This leads to a weak relative signal for tasks of interest, meaning the model scale has to be large to work. Instruction tuning boosts performance post hoc, and can generalize to unseen tasks of interest, but it risks performance in tasks that are distant from instruction set tasks. Prompt pre-training has a weaker task of interest bias than instruction tuning but less risk of degrading overall task generality.”. |
-| ![Figure 6](assets/papers-explained-53-galactica/fig-6.png) | Pre-training Prompts. |
-| ![Figure 7](assets/papers-explained-53-galactica/fig-7.png) | Details of the models trained. |
-| ![Figure 8](assets/papers-explained-53-galactica/fig-8.png) | LaTeX Equations Probe. |
-| ![Figure 9](assets/papers-explained-53-galactica/fig-9.png) | Results on LaTeX equation. |
-| ![Figure 10](assets/papers-explained-53-galactica/fig-10.png) | Chemical Reactions. |
-| ![Figure 11](assets/papers-explained-53-galactica/fig-11.png) | Results on Domain Probes. |
-| ![Figure 12](assets/papers-explained-53-galactica/fig-12.png) | Results on Mathematics MMLU. |
-| ![Figure 13](assets/papers-explained-53-galactica/fig-13.png) | Results on MATH. |
-| ![Figure 14](assets/papers-explained-53-galactica/fig-14.png) | Question Answering Results. |
-| ![Figure 15](assets/papers-explained-53-galactica/fig-15.png) | Citation Prediction Accuracy. |
-| ![Figure 16](assets/papers-explained-53-galactica/fig-16.png) | BIG-bench 57 Task Results. |
-| ![Figure 17](assets/papers-explained-53-galactica/fig-17.png) | Results on IUPAC Naming. |
-| ![Figure 18](assets/papers-explained-53-galactica/fig-18.png) | MoleculeNet datasets used for evaluation. |
-| ![Figure 19](assets/papers-explained-53-galactica/fig-19.png) | BBBP Prompt. We include the SMILES and pose the classification problem in natural language. |
-| ![Figure 20](assets/papers-explained-53-galactica/fig-20.png) | Tox21 Prompt. We include the protein sequence and the SMILES formula and pose the classification problem in natural language. |
-| ![Figure 21](assets/papers-explained-53-galactica/fig-21.png) | Results on MoleculeNet Classification. Results are scored by ROC-AUC. |
-| ![Figure 22](assets/papers-explained-53-galactica/fig-22.png) | Protein Validation Perplexity. Validation sets with higher potential sequence similarity with the training set have lower perplexity than the restricted sets (CASP validation sets). |
-| ![Figure 23](assets/papers-explained-53-galactica/fig-23.png) | Protein Keyword Prediction. The metric shown is F1 score. Performance increases with scale across the holdout sets. Note we do not include CASPSeq as these do not have UniProt keywords we can test against. |
-| ![Figure 24](assets/papers-explained-53-galactica/fig-24.png) | Protein Keyword Prediction. |
-| ![Figure 25](assets/papers-explained-53-galactica/fig-25.png) | Protein Function Prediction. The metric shown is ROUGE-L. Performance increases with scale. |
-| ![Figure 26](assets/papers-explained-53-galactica/fig-26.png) | Protein Description Prediction. |
+| ![Figure 1](assets/papers-explained-53-galactica/fig-1.webp) | Title card: Galactica. |
+| ![Figure 2](assets/papers-explained-53-galactica/fig-2.webp) | The Galactica Corpus. |
+| ![Figure 3](assets/papers-explained-53-galactica/fig-3.webp) | An example answer with the working memory token. It performs exact steps for rearranging the equation, and when it reaches a calculation that it cannot solve reliably in a forward pass, it writes a program, which can then be offloaded to a classical computer. |
+| ![Figure 4](assets/papers-explained-53-galactica/fig-4.webp) | Reasoning Datasets (to train the model to use a “work” token). |
+| ![Figure 5](assets/papers-explained-53-galactica/fig-5.webp) | “Pre-training weighs all tokens equally as part of the self-supervised loss. This leads to a weak relative signal for tasks of interest, meaning the model scale has to be large to work. Instruction tuning boosts performance post hoc, and can generalize to unseen tasks of interest, but it risks performance in tasks that are distant from instruction set tasks. Prompt pre-training has a weaker task of interest bias than instruction tuning but less risk of degrading overall task generality.”. |
+| ![Figure 6](assets/papers-explained-53-galactica/fig-6.webp) | Pre-training Prompts. |
+| ![Figure 7](assets/papers-explained-53-galactica/fig-7.webp) | Details of the models trained. |
+| ![Figure 8](assets/papers-explained-53-galactica/fig-8.webp) | LaTeX Equations Probe. |
+| ![Figure 9](assets/papers-explained-53-galactica/fig-9.webp) | Results on LaTeX equation. |
+| ![Figure 10](assets/papers-explained-53-galactica/fig-10.webp) | Chemical Reactions. |
+| ![Figure 11](assets/papers-explained-53-galactica/fig-11.webp) | Results on Domain Probes. |
+| ![Figure 12](assets/papers-explained-53-galactica/fig-12.webp) | Results on Mathematics MMLU. |
+| ![Figure 13](assets/papers-explained-53-galactica/fig-13.webp) | Results on MATH. |
+| ![Figure 14](assets/papers-explained-53-galactica/fig-14.webp) | Question Answering Results. |
+| ![Figure 15](assets/papers-explained-53-galactica/fig-15.webp) | Citation Prediction Accuracy. |
+| ![Figure 16](assets/papers-explained-53-galactica/fig-16.webp) | BIG-bench 57 Task Results. |
+| ![Figure 17](assets/papers-explained-53-galactica/fig-17.webp) | Results on IUPAC Naming. |
+| ![Figure 18](assets/papers-explained-53-galactica/fig-18.webp) | MoleculeNet datasets used for evaluation. |
+| ![Figure 19](assets/papers-explained-53-galactica/fig-19.webp) | BBBP Prompt. We include the SMILES and pose the classification problem in natural language. |
+| ![Figure 20](assets/papers-explained-53-galactica/fig-20.webp) | Tox21 Prompt. We include the protein sequence and the SMILES formula and pose the classification problem in natural language. |
+| ![Figure 21](assets/papers-explained-53-galactica/fig-21.webp) | Results on MoleculeNet Classification. Results are scored by ROC-AUC. |
+| ![Figure 22](assets/papers-explained-53-galactica/fig-22.webp) | Protein Validation Perplexity. Validation sets with higher potential sequence similarity with the training set have lower perplexity than the restricted sets (CASP validation sets). |
+| ![Figure 23](assets/papers-explained-53-galactica/fig-23.webp) | Protein Keyword Prediction. The metric shown is F1 score. Performance increases with scale across the holdout sets. Note we do not include CASPSeq as these do not have UniProt keywords we can test against. |
+| ![Figure 24](assets/papers-explained-53-galactica/fig-24.webp) | Protein Keyword Prediction. |
+| ![Figure 25](assets/papers-explained-53-galactica/fig-25.webp) | Protein Function Prediction. The metric shown is ROUGE-L. Performance increases with scale. |
+| ![Figure 26](assets/papers-explained-53-galactica/fig-26.webp) | Protein Description Prediction. |
 ## Related
 
 - [[Papers Explained Corpus]]

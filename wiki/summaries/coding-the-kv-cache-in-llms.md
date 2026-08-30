@@ -1,6 +1,6 @@
 # Understanding and Coding the KV Cache in LLMs from Scratch
 
-**Source**: `raw/coding-the-kv-cache-in-llms/full-article.html` (363 KB), `raw/coding-the-kv-cache-in-llms/full-article.md` (markdown view)  
+**Source**: `raw/coding-the-kv-cache-in-llms/full-article.md` (363 KB), `raw/coding-the-kv-cache-in-llms/full-article.md` (markdown view)  
 **URL**: https://magazine.sebastianraschka.com/p/coding-the-kv-cache-in-llms  
 **Ingested**: 2026-06-07  
 **Tags**: #summary
@@ -32,30 +32,30 @@ Raschka closes with trade-offs and production notes that complement [[Inference 
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/coding-the-kv-cache-in-llms/fig-1.png) | Autoregressive generation: prompt "Time" → "flies" → "fast" one token at a time | — |
-| ![fig-2](../assets/coding-the-kv-cache-in-llms/fig-2.png) | Redundant reprocessing of prefix "Time flies" at each step without caching | — |
-| ![fig-3](../assets/coding-the-kv-cache-in-llms/fig-3.png) | Attention excerpt: token embeddings projected via W_k, W_v, W_q | — |
-| ![fig-4](../assets/coding-the-kv-cache-in-llms/fig-4.png) | Key and value vectors derived from embeddings for "Time" and "flies" | — |
-| ![fig-5](../assets/coding-the-kv-cache-in-llms/fig-5.png) | Recomputed k(1)/v(1) and k(2)/v(2) when generating "fast" without cache | — |
-| ![fig-6](../assets/coding-the-kv-cache-in-llms/fig-6.png) | Generation without KV cache: redundant recomputation of prior tokens | — |
-| ![fig-7](../assets/coding-the-kv-cache-in-llms/fig-7.png) | Generation with KV cache: store, append, and reuse prior keys/values | — |
-| ![fig-8](../assets/coding-the-kv-cache-in-llms/fig-8.png) | Side-by-side step 3: with vs without KV cache | — |
-| ![fig-9](../assets/coding-the-kv-cache-in-llms/fig-9.png) | Code diff: `# NEW` markers in `gpt_with_kv_cache.py` | — |
-| ![fig-10](../assets/coding-the-kv-cache-in-llms/fig-10.png) | ~5× CPU speedup: 124M GPT, 200 tokens, M4 Mac Mini | — |
-| ![fig-11](../assets/coding-the-kv-cache-in-llms/fig-11.png) | Optimized vs readable KV cache runtime on M4 CPU | — |
-| ![fig-12](../assets/coding-the-kv-cache-in-llms/fig-12.png) | Qwen3 0.6B: KV cache + compile on CPU vs GPU | — |
-| ![fig-13](../assets/coding-the-kv-cache-in-llms/fig-13.png) | Llama 3 1B: KV cache + compile on CPU vs GPU | — |
-| ![fig-14](../assets/coding-the-kv-cache-in-llms/fig-14.png) | KV cache advantages (O(n) compute) vs disadvantages (linear memory) | — |
+| ![fig-1](../assets/coding-the-kv-cache-in-llms/fig-1.webp) | Autoregressive generation: prompt "Time" → "flies" → "fast" one token at a time | — |
+| ![fig-2](../assets/coding-the-kv-cache-in-llms/fig-2.webp) | Redundant reprocessing of prefix "Time flies" at each step without caching | — |
+| ![fig-3](../assets/coding-the-kv-cache-in-llms/fig-3.webp) | Attention excerpt: token embeddings projected via W_k, W_v, W_q | — |
+| ![fig-4](../assets/coding-the-kv-cache-in-llms/fig-4.webp) | Key and value vectors derived from embeddings for "Time" and "flies" | — |
+| ![fig-5](../assets/coding-the-kv-cache-in-llms/fig-5.webp) | Recomputed k(1)/v(1) and k(2)/v(2) when generating "fast" without cache | — |
+| ![fig-6](../assets/coding-the-kv-cache-in-llms/fig-6.webp) | Generation without KV cache: redundant recomputation of prior tokens | — |
+| ![fig-7](../assets/coding-the-kv-cache-in-llms/fig-7.webp) | Generation with KV cache: store, append, and reuse prior keys/values | — |
+| ![fig-8](../assets/coding-the-kv-cache-in-llms/fig-8.webp) | Side-by-side step 3: with vs without KV cache | — |
+| ![fig-9](../assets/coding-the-kv-cache-in-llms/fig-9.webp) | Code diff: `# NEW` markers in `gpt_with_kv_cache.py` | — |
+| ![fig-10](../assets/coding-the-kv-cache-in-llms/fig-10.webp) | ~5× CPU speedup: 124M GPT, 200 tokens, M4 Mac Mini | — |
+| ![fig-11](../assets/coding-the-kv-cache-in-llms/fig-11.webp) | Optimized vs readable KV cache runtime on M4 CPU | — |
+| ![fig-12](../assets/coding-the-kv-cache-in-llms/fig-12.webp) | Qwen3 0.6B: KV cache + compile on CPU vs GPU | — |
+| ![fig-13](../assets/coding-the-kv-cache-in-llms/fig-13.webp) | Llama 3 1B: KV cache + compile on CPU vs GPU | — |
+| ![fig-14](../assets/coding-the-kv-cache-in-llms/fig-14.webp) | KV cache advantages (O(n) compute) vs disadvantages (linear memory) | — |
 
 The redundancy problem that motivates caching:
 
-![Autoregressive token generation](../assets/coding-the-kv-cache-in-llms/fig-1.png)
+![Autoregressive token generation](../assets/coding-the-kv-cache-in-llms/fig-1.webp)
 
-![Prefix reprocessed every step without cache](../assets/coding-the-kv-cache-in-llms/fig-2.png)
+![Prefix reprocessed every step without cache](../assets/coding-the-kv-cache-in-llms/fig-2.webp)
 
 Cached vs uncached generation at step 3:
 
-![With vs without KV cache](../assets/coding-the-kv-cache-in-llms/fig-8.png)
+![With vs without KV cache](../assets/coding-the-kv-cache-in-llms/fig-8.webp)
 
 ## Entities
 

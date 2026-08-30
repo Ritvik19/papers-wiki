@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-09-15_Papers-Explained-453--Nemotron-H-bc40f4b899cb.html`
+- Source file: `raw/2025-09-15_Papers-Explained-453--Nemotron-H-bc40f4b899cb.md`
 - Source title: Papers Explained 453: Nemotron-H
 - Published: 2025-09-15
 - Canonical: [https://medium.com/@ritvik19/papers-explained-453-nemotron-h-bc40f4b899cb](https://medium.com/@ritvik19/papers-explained-453-nemotron-h-bc40f4b899cb)
@@ -277,29 +277,29 @@ Nemotron-H: A Family of Accurate and Efficient Hybrid Mamba-Transformer Models [
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-09-15_Papers-Explained-453--Nemotron-H-bc40f4b899cb.html`); local copies under `wiki/assets/papers-explained-453-nemotron-h/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-09-15_Papers-Explained-453--Nemotron-H-bc40f4b899cb.md`); local copies under `wiki/assets/papers-explained-453-nemotron-h/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-453-nemotron-h/fig-1.png) | Title card: Nemotron-H. |
-| ![Figure 2](assets/papers-explained-453-nemotron-h/fig-2.png) | Nemotron-H-8B/56B model architectures. |
-| ![Figure 3](assets/papers-explained-453-nemotron-h/fig-3.png) | Summary of the Nemotron-H hybrid Mamba-Transformer architectures. |
-| ![Figure 4](assets/papers-explained-453-nemotron-h/fig-4.png) | Quality distribution of the 6.3 trillion English Common Crawl tokens. |
-| ![Figure 5](assets/papers-explained-453-nemotron-h/fig-5.png) | Data mixtures for each phase of Nemotron-H pre-training. |
-| ![Figure 6](assets/papers-explained-453-nemotron-h/fig-6.png) | MiniPuzzle’s optimization process. |
-| ![Figure 7](assets/papers-explained-453-nemotron-h/fig-7.png) | Layer importance. |
-| ![Figure 8](assets/papers-explained-453-nemotron-h/fig-8.png) | FFN importance: FFN layers internally are composed of two linear operators with a non-linear activation in between. |
-| ![Figure 9](assets/papers-explained-453-nemotron-h/fig-9.png) | SFT-style data: Here, 𝑊𝑖1 refers to the 𝑖th row of the weight matrix 𝑊1. |
-| ![Figure 10](assets/papers-explained-453-nemotron-h/fig-10.png) | Comparison of benchmark scores for pruned candidates before and after lightweight distillation. |
-| ![Figure 11](assets/papers-explained-453-nemotron-h/fig-11.png) | MMLU-Pro accuracy versus per-GPU inference throughput for Nemotron-H-56B/47B-Base compared to existing similarly-sized Transformer models. |
-| ![Figure 12](assets/papers-explained-453-nemotron-h/fig-12.png) | Accuracy of Nemotron-H-56B-Base (and its distilled version Nemotron-H-47B-Base) versus existing SoTA models. |
-| ![Figure 13](assets/papers-explained-453-nemotron-h/fig-13.png) | Accuracy of Nemotron-H-8B-Base versus existing SoTA models and a Transformer (Nemotron-T-8B-Base) trained on exactly the same data. |
-| ![Figure 14](assets/papers-explained-453-nemotron-h/fig-14.png) | Evaluation of Nemotron-H-8B-VLM on vision-language benchmarks. |
-| ![Figure 15](assets/papers-explained-453-nemotron-h/fig-15.png) | Evaluation ofNemotron-H-56B-VLM on a range of vision-language benchmarks, compared to a VLM built using Qwen2.5–72B-Instruct with the same training recipe. |
-| ![Figure 16](assets/papers-explained-453-nemotron-h/fig-16.png) | Comparison of benchmarks after post-training. |
-| ![Figure 17](assets/papers-explained-453-nemotron-h/fig-17.png) | Comparison of RULER scores across sequence lengths. |
-| ![Figure 18](assets/papers-explained-453-nemotron-h/fig-18.png) | Comparison of experimental Transformer and hybrid base models on various tasks. |
-| ![Figure 19](assets/papers-explained-453-nemotron-h/fig-19.png) | Comparison of experimental aligned models on key alignment benchmarks. |
+| ![Figure 1](assets/papers-explained-453-nemotron-h/fig-1.webp) | Title card: Nemotron-H. |
+| ![Figure 2](assets/papers-explained-453-nemotron-h/fig-2.webp) | Nemotron-H-8B/56B model architectures. |
+| ![Figure 3](assets/papers-explained-453-nemotron-h/fig-3.webp) | Summary of the Nemotron-H hybrid Mamba-Transformer architectures. |
+| ![Figure 4](assets/papers-explained-453-nemotron-h/fig-4.webp) | Quality distribution of the 6.3 trillion English Common Crawl tokens. |
+| ![Figure 5](assets/papers-explained-453-nemotron-h/fig-5.webp) | Data mixtures for each phase of Nemotron-H pre-training. |
+| ![Figure 6](assets/papers-explained-453-nemotron-h/fig-6.webp) | MiniPuzzle’s optimization process. |
+| ![Figure 7](assets/papers-explained-453-nemotron-h/fig-7.webp) | Layer importance. |
+| ![Figure 8](assets/papers-explained-453-nemotron-h/fig-8.webp) | FFN importance: FFN layers internally are composed of two linear operators with a non-linear activation in between. |
+| ![Figure 9](assets/papers-explained-453-nemotron-h/fig-9.webp) | SFT-style data: Here, 𝑊𝑖1 refers to the 𝑖th row of the weight matrix 𝑊1. |
+| ![Figure 10](assets/papers-explained-453-nemotron-h/fig-10.webp) | Comparison of benchmark scores for pruned candidates before and after lightweight distillation. |
+| ![Figure 11](assets/papers-explained-453-nemotron-h/fig-11.webp) | MMLU-Pro accuracy versus per-GPU inference throughput for Nemotron-H-56B/47B-Base compared to existing similarly-sized Transformer models. |
+| ![Figure 12](assets/papers-explained-453-nemotron-h/fig-12.webp) | Accuracy of Nemotron-H-56B-Base (and its distilled version Nemotron-H-47B-Base) versus existing SoTA models. |
+| ![Figure 13](assets/papers-explained-453-nemotron-h/fig-13.webp) | Accuracy of Nemotron-H-8B-Base versus existing SoTA models and a Transformer (Nemotron-T-8B-Base) trained on exactly the same data. |
+| ![Figure 14](assets/papers-explained-453-nemotron-h/fig-14.webp) | Evaluation of Nemotron-H-8B-VLM on vision-language benchmarks. |
+| ![Figure 15](assets/papers-explained-453-nemotron-h/fig-15.webp) | Evaluation ofNemotron-H-56B-VLM on a range of vision-language benchmarks, compared to a VLM built using Qwen2.5–72B-Instruct with the same training recipe. |
+| ![Figure 16](assets/papers-explained-453-nemotron-h/fig-16.webp) | Comparison of benchmarks after post-training. |
+| ![Figure 17](assets/papers-explained-453-nemotron-h/fig-17.webp) | Comparison of RULER scores across sequence lengths. |
+| ![Figure 18](assets/papers-explained-453-nemotron-h/fig-18.webp) | Comparison of experimental Transformer and hybrid base models on various tasks. |
+| ![Figure 19](assets/papers-explained-453-nemotron-h/fig-19.webp) | Comparison of experimental aligned models on key alignment benchmarks. |
 ## Related
 
 - [[Papers Explained Corpus]]

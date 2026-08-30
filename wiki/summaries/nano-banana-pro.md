@@ -1,6 +1,6 @@
 # Nano Banana Pro
 
-**Source**: `raw/nano-banana-pro/full-article.html`, `raw/nano-banana-pro/full-article.md`; `raw/gemini-3-pro-image-developers/full-article.html`  
+**Source**: `raw/nano-banana-pro/full-article.md`, `raw/nano-banana-pro/full-article.md`; `raw/gemini-3-pro-image-developers/full-article.md`  
 **Canonical URLs**: https://blog.google/innovation-and-ai/products/nano-banana-pro/ (consumer launch, Nov 20 2025); https://developers.googleblog.com/en/gemini-3-pro-image-developers/ (developer launch)  
 **Author**: Naina Raisinghani (Product Manager, [[Google DeepMind]])  
 **Published**: 2025-11-20  

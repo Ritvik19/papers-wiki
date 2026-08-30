@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/draft_Papers-Explained--Beyond-Web-eb0483a21dff.html`
+- Source file: `raw/draft_Papers-Explained--Beyond-Web-eb0483a21dff.md`
 - Source title: Papers Explained: Beyond Web
 - Canonical: [https://medium.com/p/eb0483a21dff](https://medium.com/p/eb0483a21dff)
 
@@ -256,22 +256,22 @@ BeyondWeb: Lessons from Scaling Synthetic Data for Trillion-scale Pretraining [2
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/draft_Papers-Explained--Beyond-Web-eb0483a21dff.html`); local copies under `wiki/assets/papers-explained-beyond-web/` when download succeeded.
+Figures from the Medium HTML export (`raw/draft_Papers-Explained--Beyond-Web-eb0483a21dff.md`); local copies under `wiki/assets/papers-explained-beyond-web/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-beyond-web/fig-1.png) | Synthetic data for pretraining when raw web scaling hits diminishing returns. |
-| ![Figure 2](assets/papers-explained-beyond-web/fig-2.png) | Generator-driven vs source-rephrasing paradigms for synthetic corpus construction. |
-| ![Figure 3](assets/papers-explained-beyond-web/fig-3.png) | Average accuracy (0-shot and 5-shot) across tasks vs model scale and data curation mixes. |
-| ![Figure 4](assets/papers-explained-beyond-web/fig-4.png) | Thematic summary of empirical findings from BeyondWeb-style experiments. |
-| ![Figure 5](assets/papers-explained-beyond-web/fig-5.png) | Knowledge transfer across synthetic data strategies (relative gains vs baselines). |
-| ![Figure 6](assets/papers-explained-beyond-web/fig-6.png) | Controlled splits and corpus construction for fair RedPajama / Cosmopedia / WRAP / Nemotron-Synth comparisons. |
-| ![Figure 7](assets/papers-explained-beyond-web/fig-7.png) | Effect of data augmentation strategies applied during training. |
-| ![Figure 8](assets/papers-explained-beyond-web/fig-8.png) | Accuracy vs blends of high/low perceived-quality subsamples inside training mixtures. |
-| ![Figure 9](assets/papers-explained-beyond-web/fig-9.png) | Conversational-style fraction of synthetic data vs downstream accuracy. |
-| ![Figure 10](assets/papers-explained-beyond-web/fig-10.png) | Training dynamics by model scale vs RedPajama baseline trajectories. |
-| ![Figure 11](assets/papers-explained-beyond-web/fig-11.png) | Synthetic gains across generator families (quality of generator vs downstream lift). |
-| ![Figure 12](assets/papers-explained-beyond-web/fig-12.png) | Generator scale vs measured synthetic-data usefulness for pretraining. |
+| ![Figure 1](assets/papers-explained-beyond-web/fig-1.webp) | Synthetic data for pretraining when raw web scaling hits diminishing returns. |
+| ![Figure 2](assets/papers-explained-beyond-web/fig-2.webp) | Generator-driven vs source-rephrasing paradigms for synthetic corpus construction. |
+| ![Figure 3](assets/papers-explained-beyond-web/fig-3.webp) | Average accuracy (0-shot and 5-shot) across tasks vs model scale and data curation mixes. |
+| ![Figure 4](assets/papers-explained-beyond-web/fig-4.webp) | Thematic summary of empirical findings from BeyondWeb-style experiments. |
+| ![Figure 5](assets/papers-explained-beyond-web/fig-5.webp) | Knowledge transfer across synthetic data strategies (relative gains vs baselines). |
+| ![Figure 6](assets/papers-explained-beyond-web/fig-6.webp) | Controlled splits and corpus construction for fair RedPajama / Cosmopedia / WRAP / Nemotron-Synth comparisons. |
+| ![Figure 7](assets/papers-explained-beyond-web/fig-7.webp) | Effect of data augmentation strategies applied during training. |
+| ![Figure 8](assets/papers-explained-beyond-web/fig-8.webp) | Accuracy vs blends of high/low perceived-quality subsamples inside training mixtures. |
+| ![Figure 9](assets/papers-explained-beyond-web/fig-9.webp) | Conversational-style fraction of synthetic data vs downstream accuracy. |
+| ![Figure 10](assets/papers-explained-beyond-web/fig-10.webp) | Training dynamics by model scale vs RedPajama baseline trajectories. |
+| ![Figure 11](assets/papers-explained-beyond-web/fig-11.webp) | Synthetic gains across generator families (quality of generator vs downstream lift). |
+| ![Figure 12](assets/papers-explained-beyond-web/fig-12.webp) | Generator scale vs measured synthetic-data usefulness for pretraining. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -8,7 +8,7 @@ OpenAI's reasoning-model line continued with [[GPT-5]], which routes between an 
 
 ## Source Metadata
 
-- Source file: `raw/2024-09-16_Papers-Explained-211--o1-163fd9c7308e.html`
+- Source file: `raw/2024-09-16_Papers-Explained-211--o1-163fd9c7308e.md`
 - Source title: Papers Explained 211: o1
 - Published: 2024-09-16
 - Canonical: [https://medium.com/@ritvik19/papers-explained-211-o1-163fd9c7308e](https://medium.com/@ritvik19/papers-explained-211-o1-163fd9c7308e)
@@ -189,35 +189,35 @@ Efficiency and Cost-Effectiveness: While more intelligent, o3 and o4-mini are of
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-09-16_Papers-Explained-211--o1-163fd9c7308e.html`); local copies under `wiki/assets/papers-explained-211-o1/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-09-16_Papers-Explained-211--o1-163fd9c7308e.md`); local copies under `wiki/assets/papers-explained-211-o1/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-211-o1/fig-1.png) | OpenAI o1 Overview: A large language model trained with reinforcement learning for complex reasoning. |
-| ![Figure 2](assets/papers-explained-211-o1/fig-2.png) | o1 performance smoothly improves with both train-time and test-time compute. |
-| ![Figure 3](assets/papers-explained-211-o1/fig-3.png) | o1 greatly improves over GPT-4o on challenging reasoning benchmarks (AIME, GPQA, Codeforces). |
-| ![Figure 4](assets/papers-explained-211-o1/fig-4.png) | o1 improves over GPT-4o on a wide range of benchmarks, including 54/57 MMLU subcategories. |
-| ![Figure 5](assets/papers-explained-211-o1/fig-5.png) | o1-mini evaluation on AIME: Competitive with o1 while being significantly cheaper. |
-| ![Figure 6](assets/papers-explained-211-o1/fig-6.png) | o1-mini evaluation on Codeforces: Achieving 1650 Elo, competitive with o1. |
-| ![Figure 7](assets/papers-explained-211-o1/fig-7.png) | o1-mini performance on STEM benchmarks (GPQA, MATH-500) compared to GPT-4o. |
-| ![Figure 8](assets/papers-explained-211-o1/fig-8.png) | o1 pro mode performance: 4/4 reliability on challenging ML benchmarks. |
-| ![Figure 9](assets/papers-explained-211-o1/fig-9.png) | o3-mini performance on Competition Math (AIME 2024). |
-| ![Figure 10](assets/papers-explained-211-o1/fig-10.png) | o3-mini performance on PhD-level Science Questions (GPQA Diamond). |
-| ![Figure 11](assets/papers-explained-211-o1/fig-11.png) | o3-mini performance on FrontierMath with high reasoning effort. |
-| ![Figure 12](assets/papers-explained-211-o1/fig-12.png) | o3-mini performance on Competition Code (Codeforces). |
-| ![Figure 13](assets/papers-explained-211-o1/fig-13.png) | o3-mini performance on Software Engineering (SWE-bench Verified). |
-| ![Figure 14](assets/papers-explained-211-o1/fig-14.png) | o3-mini performance on LiveBench Coding. |
-| ![Figure 15](assets/papers-explained-211-o1/fig-15.png) | o3-mini general knowledge evaluation compared to o1-mini. |
-| ![Figure 16](assets/papers-explained-211-o1/fig-16.png) | o3 and o4-mini overview: Next generation of reasoning models. |
-| ![Figure 17](assets/papers-explained-211-o1/fig-17.png) | Scaling and Reinforcement Learning: More "thinking time" improves performance. |
-| ![Figure 18](assets/papers-explained-211-o1/fig-18.png) | Coding Benchmarks for o3 and o4-mini. |
-| ![Figure 19](assets/papers-explained-211-o1/fig-19.png) | Agentic Tool Use: Reasoning about when to use tools like Python and Web Search. |
-| ![Figure 20](assets/papers-explained-211-o1/fig-20.png) | Integrated Visual Reasoning: Interpreting whiteboards, diagrams, and sketches. |
-| ![Figure 21](assets/papers-explained-211-o1/fig-21.png) | Efficiency and Cost-Effectiveness: o3 and o4-mini comparison on AIME 2025. |
-| ![Figure 22](assets/papers-explained-211-o1/fig-22.png) | Visual reasoning example: Analyzing charts and graphics. |
-| ![Figure 23](assets/papers-explained-211-o1/fig-23.png) | Visual reasoning example: Multi-faceted analysis of complex visual queries. |
-| ![Figure 24](assets/papers-explained-211-o1/fig-24.png) | Reasoning with images: Best-in-class accuracy on visual perception tasks. |
-| ![Figure 25](assets/papers-explained-211-o1/fig-25.png) | Performance gains from increased training compute and inference-time reasoning. |
+| ![Figure 1](assets/papers-explained-211-o1/fig-1.webp) | OpenAI o1 Overview: A large language model trained with reinforcement learning for complex reasoning. |
+| ![Figure 2](assets/papers-explained-211-o1/fig-2.webp) | o1 performance smoothly improves with both train-time and test-time compute. |
+| ![Figure 3](assets/papers-explained-211-o1/fig-3.webp) | o1 greatly improves over GPT-4o on challenging reasoning benchmarks (AIME, GPQA, Codeforces). |
+| ![Figure 4](assets/papers-explained-211-o1/fig-4.webp) | o1 improves over GPT-4o on a wide range of benchmarks, including 54/57 MMLU subcategories. |
+| ![Figure 5](assets/papers-explained-211-o1/fig-5.webp) | o1-mini evaluation on AIME: Competitive with o1 while being significantly cheaper. |
+| ![Figure 6](assets/papers-explained-211-o1/fig-6.webp) | o1-mini evaluation on Codeforces: Achieving 1650 Elo, competitive with o1. |
+| ![Figure 7](assets/papers-explained-211-o1/fig-7.webp) | o1-mini performance on STEM benchmarks (GPQA, MATH-500) compared to GPT-4o. |
+| ![Figure 8](assets/papers-explained-211-o1/fig-8.webp) | o1 pro mode performance: 4/4 reliability on challenging ML benchmarks. |
+| ![Figure 9](assets/papers-explained-211-o1/fig-9.webp) | o3-mini performance on Competition Math (AIME 2024). |
+| ![Figure 10](assets/papers-explained-211-o1/fig-10.webp) | o3-mini performance on PhD-level Science Questions (GPQA Diamond). |
+| ![Figure 11](assets/papers-explained-211-o1/fig-11.webp) | o3-mini performance on FrontierMath with high reasoning effort. |
+| ![Figure 12](assets/papers-explained-211-o1/fig-12.webp) | o3-mini performance on Competition Code (Codeforces). |
+| ![Figure 13](assets/papers-explained-211-o1/fig-13.webp) | o3-mini performance on Software Engineering (SWE-bench Verified). |
+| ![Figure 14](assets/papers-explained-211-o1/fig-14.webp) | o3-mini performance on LiveBench Coding. |
+| ![Figure 15](assets/papers-explained-211-o1/fig-15.webp) | o3-mini general knowledge evaluation compared to o1-mini. |
+| ![Figure 16](assets/papers-explained-211-o1/fig-16.webp) | o3 and o4-mini overview: Next generation of reasoning models. |
+| ![Figure 17](assets/papers-explained-211-o1/fig-17.webp) | Scaling and Reinforcement Learning: More "thinking time" improves performance. |
+| ![Figure 18](assets/papers-explained-211-o1/fig-18.webp) | Coding Benchmarks for o3 and o4-mini. |
+| ![Figure 19](assets/papers-explained-211-o1/fig-19.webp) | Agentic Tool Use: Reasoning about when to use tools like Python and Web Search. |
+| ![Figure 20](assets/papers-explained-211-o1/fig-20.webp) | Integrated Visual Reasoning: Interpreting whiteboards, diagrams, and sketches. |
+| ![Figure 21](assets/papers-explained-211-o1/fig-21.webp) | Efficiency and Cost-Effectiveness: o3 and o4-mini comparison on AIME 2025. |
+| ![Figure 22](assets/papers-explained-211-o1/fig-22.webp) | Visual reasoning example: Analyzing charts and graphics. |
+| ![Figure 23](assets/papers-explained-211-o1/fig-23.webp) | Visual reasoning example: Multi-faceted analysis of complex visual queries. |
+| ![Figure 24](assets/papers-explained-211-o1/fig-24.webp) | Reasoning with images: Best-in-class accuracy on visual perception tasks. |
+| ![Figure 25](assets/papers-explained-211-o1/fig-25.webp) | Performance gains from increased training compute and inference-time reasoning. |
 ## Related
 
 - [[Papers Explained Corpus]]

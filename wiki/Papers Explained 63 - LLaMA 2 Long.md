@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-10-20_Papers-Explained-63--LLaMA-2-Long-84d33c26d14a.html`
+- Source file: `raw/2023-10-20_Papers-Explained-63--LLaMA-2-Long-84d33c26d14a.md`
 - Source title: Papers Explained 63: LLaMA 2 Long
 - Published: 2023-10-20
 - Canonical: [https://medium.com/@ritvik19/papers-explained-63-llama-2-long-84d33c26d14a](https://medium.com/@ritvik19/papers-explained-63-llama-2-long-84d33c26d14a)
@@ -111,17 +111,17 @@ Effective Long-Context Scaling of Foundation Models [2309.16039](https://arxiv.o
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-10-20_Papers-Explained-63--LLaMA-2-Long-84d33c26d14a.html`); local copies under `wiki/assets/papers-explained-63-llama-2-long/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-10-20_Papers-Explained-63--LLaMA-2-Long-84d33c26d14a.md`); local copies under `wiki/assets/papers-explained-63-llama-2-long/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-63-llama-2-long/fig-1.png) | Title card: LLaMA 2 Long. |
-| ![Figure 2](assets/papers-explained-63-llama-2-long/fig-2.png) | Performance on standard short-context benchmarks. |
-| ![Figure 3](assets/papers-explained-63-llama-2-long/fig-3.png) | Comparison with closed models on standard short tasks. |
-| ![Figure 4](assets/papers-explained-63-llama-2-long/fig-4.png) | For short instruction data, the data points are concatenated as sequences of up to 16,384 tokens. |
-| ![Figure 5](assets/papers-explained-63-llama-2-long/fig-5.png) | Comparison with open-source long-context models on research benchmarks. |
-| ![Figure 6](assets/papers-explained-63-llama-2-long/fig-6.png) | Performance on long-context tasks as the maximum context lengths of prompts increase. |
-| ![Figure 7](assets/papers-explained-63-llama-2-long/fig-7.png) | ZeroSCROLLS long-context leaderboard results. |
+| ![Figure 1](assets/papers-explained-63-llama-2-long/fig-1.webp) | Title card: LLaMA 2 Long. |
+| ![Figure 2](assets/papers-explained-63-llama-2-long/fig-2.webp) | Performance on standard short-context benchmarks. |
+| ![Figure 3](assets/papers-explained-63-llama-2-long/fig-3.webp) | Comparison with closed models on standard short tasks. |
+| ![Figure 4](assets/papers-explained-63-llama-2-long/fig-4.webp) | For short instruction data, the data points are concatenated as sequences of up to 16,384 tokens. |
+| ![Figure 5](assets/papers-explained-63-llama-2-long/fig-5.webp) | Comparison with open-source long-context models on research benchmarks. |
+| ![Figure 6](assets/papers-explained-63-llama-2-long/fig-6.webp) | Performance on long-context tasks as the maximum context lengths of prompts increase. |
+| ![Figure 7](assets/papers-explained-63-llama-2-long/fig-7.webp) | ZeroSCROLLS long-context leaderboard results. |
 ## Related
 
 - [[Papers Explained Corpus]]

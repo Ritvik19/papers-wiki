@@ -1,6 +1,6 @@
 # Unravel Policy Gradients and REINFORCE
 
-**Source**: `raw/policy-gradients/full-article.html` (335 KB), `raw/policy-gradients/full-article.md` (markdown view)  
+**Source**: `raw/policy-gradients/full-article.md` (335 KB), `raw/policy-gradients/full-article.md` (markdown view)  
 **URL**: https://theaisummer.com/Policy-Gradients/  
 **Author**: Sergios Karagiannakos (AI Summer), 2018-11-01  
 **Ingested**: 2026-06-06  
@@ -37,9 +37,9 @@ This 2018 primer complements [[Reinforcement Learning: An Introduction]] (Chapte
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/policy-gradients/fig-1.jpg) | Karpathy Pong agent: CNN policy network outputs up/down probabilities from game frames ([karpathy.github.io](http://karpathy.github.io/2016/05/31/rl/)) | — |
+| ![fig-1](../assets/policy-gradients/fig-1.webp) | Karpathy Pong agent: CNN policy network outputs up/down probabilities from game frames ([karpathy.github.io](http://karpathy.github.io/2016/05/31/rl/)) | — |
 
-![Karpathy Pong policy gradient agent](../assets/policy-gradients/fig-1.jpg)
+![Karpathy Pong policy gradient agent](../assets/policy-gradients/fig-1.webp)
 
 A convolutional network maps Pong frames to action probabilities; REINFORCE updates weights from episode returns — the canonical deep policy-gradient visual.
 

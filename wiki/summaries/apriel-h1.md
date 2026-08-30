@@ -1,6 +1,6 @@
 # Apriel-H1: The Surprising Key to Distilling Efficient Reasoning Models
 
-**Source**: `raw/apriel-h1/full-article.html` (172 KB), `raw/apriel-h1/full-article.md`
+**Source**: `raw/apriel-h1/full-article.md` (172 KB), `raw/apriel-h1/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

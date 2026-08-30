@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-03-25_Papers-Explained-548--CHIMERA-e3a368a1830c.html`
+- Source file: `raw/2026-03-25_Papers-Explained-548--CHIMERA-e3a368a1830c.md`
 - Source title: Papers Explained 548: CHIMERA
 - Published: 2026-03-25
 - Canonical: [https://medium.com/@ritvik19/papers-explained-548-chimera-e3a368a1830c](https://medium.com/@ritvik19/papers-explained-548-chimera-e3a368a1830c)
@@ -109,17 +109,17 @@ CHIMERA: Compact Synthetic Data for Generalizable LLM Reasoning [2603.00889](htt
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-03-25_Papers-Explained-548--CHIMERA-e3a368a1830c.html`); local copies under `wiki/assets/papers-explained-548-chimera/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-03-25_Papers-Explained-548--CHIMERA-e3a368a1830c.md`); local copies under `wiki/assets/papers-explained-548-chimera/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-548-chimera/fig-1.png) | Title card: CHIMERA. |
-| ![Figure 2](assets/papers-explained-548-chimera/fig-2.png) | Data synthesis pipeline overview. |
-| ![Figure 3](assets/papers-explained-548-chimera/fig-3.png) | All the stages are separate and intermediate artifacts are saved, enabling subsequent dataset filtering and curation. |
-| ![Figure 4](assets/papers-explained-548-chimera/fig-4.png) | Prompts used for the data synthesis pipline. |
-| ![Figure 5](assets/papers-explained-548-chimera/fig-5.png) | Statistics of commonly used reasoning datasets. |
-| ![Figure 6](assets/papers-explained-548-chimera/fig-6.png) | Distribution of problem subjects in CHIMERA. |
-| ![Figure 7](assets/papers-explained-548-chimera/fig-7.png) | Main results on reasoning benchmarks. |
+| ![Figure 1](assets/papers-explained-548-chimera/fig-1.webp) | Title card: CHIMERA. |
+| ![Figure 2](assets/papers-explained-548-chimera/fig-2.webp) | Data synthesis pipeline overview. |
+| ![Figure 3](assets/papers-explained-548-chimera/fig-3.webp) | All the stages are separate and intermediate artifacts are saved, enabling subsequent dataset filtering and curation. |
+| ![Figure 4](assets/papers-explained-548-chimera/fig-4.webp) | Prompts used for the data synthesis pipline. |
+| ![Figure 5](assets/papers-explained-548-chimera/fig-5.webp) | Statistics of commonly used reasoning datasets. |
+| ![Figure 6](assets/papers-explained-548-chimera/fig-6.webp) | Distribution of problem subjects in CHIMERA. |
+| ![Figure 7](assets/papers-explained-548-chimera/fig-7.webp) | Main results on reasoning benchmarks. |
 ## Related
 
 - [[Papers Explained Corpus]]

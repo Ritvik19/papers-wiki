@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-02-14_Papers-Explained-310--SmolLM2-53991a485d7b.html`
+- Source file: `raw/2025-02-14_Papers-Explained-310--SmolLM2-53991a485d7b.md`
 - Source title: Papers Explained 310: SmolLM2
 - Published: 2025-02-14
 - Canonical: [https://medium.com/@ritvik19/papers-explained-310-smollm2-53991a485d7b](https://medium.com/@ritvik19/papers-explained-310-smollm2-53991a485d7b)
@@ -259,20 +259,20 @@ SmolLM2: When Smol Goes Big — Data-Centric Training of a Small Language Model 
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-02-14_Papers-Explained-310--SmolLM2-53991a485d7b.html`); local copies under `wiki/assets/papers-explained-310-smollm2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-02-14_Papers-Explained-310--SmolLM2-53991a485d7b.md`); local copies under `wiki/assets/papers-explained-310-smollm2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-310-smollm2/fig-1.png) | Title card: SmolLM2. |
-| ![Figure 2](assets/papers-explained-310-smollm2/fig-2.png) | Overview of the architecture of SmolLM2. |
-| ![Figure 3](assets/papers-explained-310-smollm2/fig-3.png) | Evaluation of models trained on FineWeb-Edu and DCLM for 350B tokens. |
-| ![Figure 4](assets/papers-explained-310-smollm2/fig-4.png) | Performance of models trained on different subsets of FineMath and other math datasets. |
-| ![Figure 5](assets/papers-explained-310-smollm2/fig-5.png) | Stack-Edu dataset statistics and MultiPL-E scores for the top 4 programming languages. |
-| ![Figure 6](assets/papers-explained-310-smollm2/fig-6.png) | Average model performance on different benchmark categories after each training stage. |
-| ![Figure 7](assets/papers-explained-310-smollm2/fig-7.png) | Dataset mixtures across training stages. |
-| ![Figure 8](assets/papers-explained-310-smollm2/fig-8.png) | Composition of the SmolTalk dataset. |
-| ![Figure 9](assets/papers-explained-310-smollm2/fig-9.png) | Performance comparison of SmolLM2 and other 1–2B base models across benchmarks. |
-| ![Figure 10](assets/papers-explained-310-smollm2/fig-10.png) | Comparison of 1–2B instruction-tuned models across benchmarks. |
+| ![Figure 1](assets/papers-explained-310-smollm2/fig-1.webp) | Title card: SmolLM2. |
+| ![Figure 2](assets/papers-explained-310-smollm2/fig-2.webp) | Overview of the architecture of SmolLM2. |
+| ![Figure 3](assets/papers-explained-310-smollm2/fig-3.webp) | Evaluation of models trained on FineWeb-Edu and DCLM for 350B tokens. |
+| ![Figure 4](assets/papers-explained-310-smollm2/fig-4.webp) | Performance of models trained on different subsets of FineMath and other math datasets. |
+| ![Figure 5](assets/papers-explained-310-smollm2/fig-5.webp) | Stack-Edu dataset statistics and MultiPL-E scores for the top 4 programming languages. |
+| ![Figure 6](assets/papers-explained-310-smollm2/fig-6.webp) | Average model performance on different benchmark categories after each training stage. |
+| ![Figure 7](assets/papers-explained-310-smollm2/fig-7.webp) | Dataset mixtures across training stages. |
+| ![Figure 8](assets/papers-explained-310-smollm2/fig-8.webp) | Composition of the SmolTalk dataset. |
+| ![Figure 9](assets/papers-explained-310-smollm2/fig-9.webp) | Performance comparison of SmolLM2 and other 1–2B base models across benchmarks. |
+| ![Figure 10](assets/papers-explained-310-smollm2/fig-10.webp) | Comparison of 1–2B instruction-tuned models across benchmarks. |
 ## Related
 
 - [[Papers Explained Corpus]]

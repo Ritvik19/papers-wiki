@@ -1,6 +1,6 @@
 # Components of A Coding Agent
 
-**Source**: `raw/components-of-a-coding-agent/full-article.html` (366 KB), `raw/components-of-a-coding-agent/full-article.md` (markdown view)  
+**Source**: `raw/components-of-a-coding-agent/full-article.md` (366 KB), `raw/components-of-a-coding-agent/full-article.md` (markdown view)  
 **URL**: https://magazine.sebastianraschka.com/p/components-of-a-coding-agent  
 **Ingested**: 2026-06-07  
 **Tags**: #summary
@@ -30,27 +30,27 @@ The piece complements [[Continually Improving Our Agent Harness]] from Cursor: w
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/components-of-a-coding-agent/fig-1.png) | Claude Code CLI, Codex CLI, and Mini Coding Agent | — |
-| ![fig-2](../assets/components-of-a-coding-agent/fig-2.png) | Relationship between conventional LLM, reasoning LLM, and agent harness | — |
-| ![fig-3](../assets/components-of-a-coding-agent/fig-3.png) | Coding harness layers: model family, agent loop (observe/inspect/choose/act), runtime supports | — |
-| ![fig-4](../assets/components-of-a-coding-agent/fig-4.png) | Six main harness features discussed in the article | — |
-| ![fig-5](../assets/components-of-a-coding-agent/fig-5.png) | Minimal from-scratch Mini Coding Agent (pure Python) | — |
-| ![fig-6](../assets/components-of-a-coding-agent/fig-6.png) | Workspace summary combined with user request for repo context | — |
-| ![fig-7](../assets/components-of-a-coding-agent/fig-7.png) | Stable prompt prefix plus changing session state fed to the model | — |
-| ![fig-8](../assets/components-of-a-coding-agent/fig-8.png) | Structured tool loop: emit → validate → approve → execute → bounded feedback | — |
-| ![fig-9](../assets/components-of-a-coding-agent/fig-9.png) | Tool-call approval prompt in Mini Coding Agent | — |
-| ![fig-10](../assets/components-of-a-coding-agent/fig-10.png) | Context compaction: clip outputs, deduplicate reads, compress transcript | — |
-| ![fig-11](../assets/components-of-a-coding-agent/fig-11.png) | Full transcript vs working memory stored as JSON session files | — |
-| ![fig-12](../assets/components-of-a-coding-agent/fig-12.png) | Bounded subagent with inherited but constrained context | — |
-| ![fig-13](../assets/components-of-a-coding-agent/fig-13.png) | Summary of six coding-harness components | — |
+| ![fig-1](../assets/components-of-a-coding-agent/fig-1.webp) | Claude Code CLI, Codex CLI, and Mini Coding Agent | — |
+| ![fig-2](../assets/components-of-a-coding-agent/fig-2.webp) | Relationship between conventional LLM, reasoning LLM, and agent harness | — |
+| ![fig-3](../assets/components-of-a-coding-agent/fig-3.webp) | Coding harness layers: model family, agent loop (observe/inspect/choose/act), runtime supports | — |
+| ![fig-4](../assets/components-of-a-coding-agent/fig-4.webp) | Six main harness features discussed in the article | — |
+| ![fig-5](../assets/components-of-a-coding-agent/fig-5.webp) | Minimal from-scratch Mini Coding Agent (pure Python) | — |
+| ![fig-6](../assets/components-of-a-coding-agent/fig-6.webp) | Workspace summary combined with user request for repo context | — |
+| ![fig-7](../assets/components-of-a-coding-agent/fig-7.webp) | Stable prompt prefix plus changing session state fed to the model | — |
+| ![fig-8](../assets/components-of-a-coding-agent/fig-8.webp) | Structured tool loop: emit → validate → approve → execute → bounded feedback | — |
+| ![fig-9](../assets/components-of-a-coding-agent/fig-9.webp) | Tool-call approval prompt in Mini Coding Agent | — |
+| ![fig-10](../assets/components-of-a-coding-agent/fig-10.webp) | Context compaction: clip outputs, deduplicate reads, compress transcript | — |
+| ![fig-11](../assets/components-of-a-coding-agent/fig-11.webp) | Full transcript vs working memory stored as JSON session files | — |
+| ![fig-12](../assets/components-of-a-coding-agent/fig-12.webp) | Bounded subagent with inherited but constrained context | — |
+| ![fig-13](../assets/components-of-a-coding-agent/fig-13.webp) | Summary of six coding-harness components | — |
 
-![Claude Code, Codex CLI, and Mini Coding Agent](../assets/components-of-a-coding-agent/fig-1.png)
+![Claude Code, Codex CLI, and Mini Coding Agent](../assets/components-of-a-coding-agent/fig-1.webp)
 
 The engine-vs-harness distinction is central to the article's framing:
 
-![LLM, reasoning model, and agent harness relationship](../assets/components-of-a-coding-agent/fig-2.png)
+![LLM, reasoning model, and agent harness relationship](../assets/components-of-a-coding-agent/fig-2.webp)
 
-![Coding harness three-layer architecture](../assets/components-of-a-coding-agent/fig-3.png)
+![Coding harness three-layer architecture](../assets/components-of-a-coding-agent/fig-3.webp)
 
 ## Entities
 

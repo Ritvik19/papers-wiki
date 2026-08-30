@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-03-09_Papers-Explained-34--TransformerXL-2e407e780e8.html`
+- Source file: `raw/2023-03-09_Papers-Explained-34--TransformerXL-2e407e780e8.md`
 - Source title: Papers Explained 34: TransformerXL
 - Published: 2023-03-09
 - Canonical: [https://medium.com/@ritvik19/papers-explained-34-transformerxl-2e407e780e8](https://medium.com/@ritvik19/papers-explained-34-transformerxl-2e407e780e8)
@@ -65,13 +65,13 @@ Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context [1901.02
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-03-09_Papers-Explained-34--TransformerXL-2e407e780e8.html`); local copies under `wiki/assets/papers-explained-34-transformerxl/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-03-09_Papers-Explained-34--TransformerXL-2e407e780e8.md`); local copies under `wiki/assets/papers-explained-34-transformerxl/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-34-transformerxl/fig-1.png) | Title card: TransformerXL. |
-| ![Figure 2](assets/papers-explained-34-transformerxl/fig-2.png) | The Transformer XL architecture is an extension of the original Transformer model for sequence-to-sequence tasks such as machine... |
-| ![Figure 3](assets/papers-explained-34-transformerxl/fig-3.png) | The basic building blocks of Transformer XL are the same as in the original Transformer model. |
+| ![Figure 1](assets/papers-explained-34-transformerxl/fig-1.webp) | Title card: TransformerXL. |
+| ![Figure 2](assets/papers-explained-34-transformerxl/fig-2.webp) | The Transformer XL architecture is an extension of the original Transformer model for sequence-to-sequence tasks such as machine... |
+| ![Figure 3](assets/papers-explained-34-transformerxl/fig-3.webp) | The basic building blocks of Transformer XL are the same as in the original Transformer model. |
 ## Related
 
 - [[Papers Explained Corpus]]

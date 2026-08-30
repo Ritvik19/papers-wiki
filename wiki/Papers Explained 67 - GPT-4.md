@@ -8,7 +8,7 @@ OpenAI's flagship line continued with [[GPT-5]].
 
 ## Source Metadata
 
-- Source file: `raw/2023-11-03_Papers-Explained-67--GPT-4-fc77069b613e.html`
+- Source file: `raw/2023-11-03_Papers-Explained-67--GPT-4-fc77069b613e.md`
 - Source title: Papers Explained 67: GPT-4
 - Published: 2023-11-03
 - Canonical: [https://medium.com/@ritvik19/papers-explained-67-gpt-4-fc77069b613e](https://medium.com/@ritvik19/papers-explained-67-gpt-4-fc77069b613e)
@@ -99,18 +99,18 @@ GPT-4 [Blog Post](https://openai.com/research/gpt-4)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-11-03_Papers-Explained-67--GPT-4-fc77069b613e.html`); local copies under `wiki/assets/papers-explained-67-gpt-4/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-11-03_Papers-Explained-67--GPT-4-fc77069b613e.md`); local copies under `wiki/assets/papers-explained-67-gpt-4/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-67-gpt-4/fig-1.png) | Title card: GPT-4. |
-| ![Figure 2](assets/papers-explained-67-gpt-4/fig-2.png) | GPT performance on academic and professional exams. |
-| ![Figure 3](assets/papers-explained-67-gpt-4/fig-3.png) | Performance of GPT-4 on academic benchmarks. |
-| ![Figure 4](assets/papers-explained-67-gpt-4/fig-4.png) | Performance of GPT-4 in a variety of languages compared to prior models in English on MMLU. |
-| ![Figure 5](assets/papers-explained-67-gpt-4/fig-5.png) | GPT-4’s performance on standard academic vision benchmarks. |
-| ![Figure 6](assets/papers-explained-67-gpt-4/fig-6.png) | Performance of GPT-4 on nine internal adversarially-designed factuality evaluations. |
-| ![Figure 7](assets/papers-explained-67-gpt-4/fig-7.png) | Performance of GPT-4 on TruthfulQA. |
-| ![Figure 8](assets/papers-explained-67-gpt-4/fig-8.png) | Left: Calibration plot of the pre-trained GPT-4 model on a subset of the MMLU dataset. Right: Calibration plot of the post-trained GPT-4 model on the same subset of MMLU. |
+| ![Figure 1](assets/papers-explained-67-gpt-4/fig-1.webp) | Title card: GPT-4. |
+| ![Figure 2](assets/papers-explained-67-gpt-4/fig-2.webp) | GPT performance on academic and professional exams. |
+| ![Figure 3](assets/papers-explained-67-gpt-4/fig-3.webp) | Performance of GPT-4 on academic benchmarks. |
+| ![Figure 4](assets/papers-explained-67-gpt-4/fig-4.webp) | Performance of GPT-4 in a variety of languages compared to prior models in English on MMLU. |
+| ![Figure 5](assets/papers-explained-67-gpt-4/fig-5.webp) | GPT-4’s performance on standard academic vision benchmarks. |
+| ![Figure 6](assets/papers-explained-67-gpt-4/fig-6.webp) | Performance of GPT-4 on nine internal adversarially-designed factuality evaluations. |
+| ![Figure 7](assets/papers-explained-67-gpt-4/fig-7.webp) | Performance of GPT-4 on TruthfulQA. |
+| ![Figure 8](assets/papers-explained-67-gpt-4/fig-8.webp) | Left: Calibration plot of the pre-trained GPT-4 model on a subset of the MMLU dataset. Right: Calibration plot of the post-trained GPT-4 model on the same subset of MMLU. |
 ## Related
 
 - [[Papers Explained Corpus]]

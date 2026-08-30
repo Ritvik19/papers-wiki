@@ -1,6 +1,6 @@
 # How Transformers Work in Deep Learning and NLP: An Intuitive Introduction
 
-**Source**: `raw/transformer/full-article.html` (472 KB), `raw/transformer/full-article.md` (markdown view)  
+**Source**: `raw/transformer/full-article.md` (472 KB), `raw/transformer/full-article.md` (markdown view)  
 **URL**: https://theaisummer.com/transformer/  
 **Author**: Nikolas Adaloglou (AI Summer), 2020-12-24  
 **Ingested**: 2026-06-06  
@@ -36,34 +36,34 @@ The decoder adds **masked** self-attention (causal mask prevents peeking at futu
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/transformer/fig-1.png) | Tokenization: sentence split into discrete tokens | — |
-| ![fig-2](../assets/transformer/fig-2.png) | Input pipeline: tokenization, embedding, positional encoding | — |
-| ![fig-3](../assets/transformer/fig-3.png) | Sinusoidal positional encoding visualization (Lil'Log) | — |
-| ![fig-4](../assets/transformer/fig-4.png) | Attention as database query: Q/K/V retrieval analogy | — |
-| ![fig-5](../assets/transformer/fig-5.png) | Vector similarity via normalized inner product (cosine) | — |
-| ![fig-6](../assets/transformer/fig-6.png) | Self-attention probability score matrix for "Hello I love you" | — |
-| ![fig-7](../assets/transformer/fig-7.png) | Q, K, V matrix projections from input embeddings | — |
-| ![fig-8](../assets/transformer/fig-8.png) | Layer normalization across feature dimensions | — |
-| ![fig-9](../assets/transformer/fig-9.png) | Encoder sublayer: self-attention + LN + residual | — |
-| ![fig-10](../assets/transformer/fig-10.png) | Full encoder block without multi-head (single attention path) | — |
-| ![fig-11](../assets/transformer/fig-11.png) | Parallel multi-head attention computation | — |
-| ![fig-12](../assets/transformer/fig-12.png) | Multi-head attention diagram (concatenated heads) | — |
-| ![fig-13](../assets/transformer/fig-13.png) | Complete Transformer encoder stack (6 blocks) | — |
-| ![fig-14](../assets/transformer/fig-14.png) | Transformer decoder with masked and cross-attention | — |
+| ![fig-1](../assets/transformer/fig-1.webp) | Tokenization: sentence split into discrete tokens | — |
+| ![fig-2](../assets/transformer/fig-2.webp) | Input pipeline: tokenization, embedding, positional encoding | — |
+| ![fig-3](../assets/transformer/fig-3.webp) | Sinusoidal positional encoding visualization (Lil'Log) | — |
+| ![fig-4](../assets/transformer/fig-4.webp) | Attention as database query: Q/K/V retrieval analogy | — |
+| ![fig-5](../assets/transformer/fig-5.webp) | Vector similarity via normalized inner product (cosine) | — |
+| ![fig-6](../assets/transformer/fig-6.webp) | Self-attention probability score matrix for "Hello I love you" | — |
+| ![fig-7](../assets/transformer/fig-7.webp) | Q, K, V matrix projections from input embeddings | — |
+| ![fig-8](../assets/transformer/fig-8.webp) | Layer normalization across feature dimensions | — |
+| ![fig-9](../assets/transformer/fig-9.webp) | Encoder sublayer: self-attention + LN + residual | — |
+| ![fig-10](../assets/transformer/fig-10.webp) | Full encoder block without multi-head (single attention path) | — |
+| ![fig-11](../assets/transformer/fig-11.webp) | Parallel multi-head attention computation | — |
+| ![fig-12](../assets/transformer/fig-12.webp) | Multi-head attention diagram (concatenated heads) | — |
+| ![fig-13](../assets/transformer/fig-13.webp) | Complete Transformer encoder stack (6 blocks) | — |
+| ![fig-14](../assets/transformer/fig-14.webp) | Transformer decoder with masked and cross-attention | — |
 
-![Input processing pipeline](../assets/transformer/fig-2.png)
+![Input processing pipeline](../assets/transformer/fig-2.webp)
 
 Three-step input prep: tokenize, embed, add positional encodings before the first attention layer.
 
-![Scaled dot-product self-attention](../assets/transformer/fig-7.png)
+![Scaled dot-product self-attention](../assets/transformer/fig-7.webp)
 
 Input \(X\) is linearly projected into query, key, and value matrices for attention scoring.
 
-![Multi-head attention](../assets/transformer/fig-12.png)
+![Multi-head attention](../assets/transformer/fig-12.webp)
 
 Multiple parallel attention heads attend to different subspaces; outputs are concatenated and projected.
 
-![Transformer decoder](../assets/transformer/fig-14.png)
+![Transformer decoder](../assets/transformer/fig-14.webp)
 
 Decoder blocks add causal masking and encoder–decoder cross-attention for seq2seq generation.
 

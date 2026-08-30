@@ -1,6 +1,6 @@
 # AprielGuard: A Guardrail for Safety and Adversarial Robustness in Modern LLM Systems
 
-**Source**: `raw/aprielguard/full-article.html`, `raw/aprielguard/full-article.md`
+**Source**: `raw/aprielguard/full-article.md`, `raw/aprielguard/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

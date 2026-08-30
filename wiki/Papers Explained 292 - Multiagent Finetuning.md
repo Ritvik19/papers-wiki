@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-01-21_Papers-Explained-292--Multiagent-Finetuning-a199fc4d8446.html`
+- Source file: `raw/2025-01-21_Papers-Explained-292--Multiagent-Finetuning-a199fc4d8446.md`
 - Source title: Papers Explained 292: Multiagent Finetuning
 - Published: 2025-01-21
 - Canonical: [https://medium.com/@ritvik19/papers-explained-292-multiagent-finetuning-a199fc4d8446](https://medium.com/@ritvik19/papers-explained-292-multiagent-finetuning-a199fc4d8446)
@@ -81,17 +81,17 @@ Multiagent Finetuning: Self Improvement with Diverse Reasoning Chains [2501.0570
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-01-21_Papers-Explained-292--Multiagent-Finetuning-a199fc4d8446.html`); local copies under `wiki/assets/papers-explained-292-multiagent-finetuning/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-01-21_Papers-Explained-292--Multiagent-Finetuning-a199fc4d8446.md`); local copies under `wiki/assets/papers-explained-292-multiagent-finetuning/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-292-multiagent-finetuning/fig-1.png) | Title card: Multiagent Finetuning. |
-| ![Figure 2](assets/papers-explained-292-multiagent-finetuning/fig-2.png) | Overview of Multiagent Finetuning. |
-| ![Figure 3](assets/papers-explained-292-multiagent-finetuning/fig-3.png) | Given a set of natural language inputs Dtask = {xi}, a multiagent debate method with N agents and M rounds is used to generate responses... |
-| ![Figure 4](assets/papers-explained-292-multiagent-finetuning/fig-4.png) | At inference time, a multiagent debate is conducted among the finetuned agents. |
-| ![Figure 5](assets/papers-explained-292-multiagent-finetuning/fig-5.png) | Quantitative results of the proposed method and baselines. |
-| ![Figure 6](assets/papers-explained-292-multiagent-finetuning/fig-6.png) | Multiagent finetuning improves reasoning performance over multiple rounds of finetuning. |
-| ![Figure 7](assets/papers-explained-292-multiagent-finetuning/fig-7.png) | Diversity is preserved and can improve across iterations of finetuning. |
+| ![Figure 1](assets/papers-explained-292-multiagent-finetuning/fig-1.webp) | Title card: Multiagent Finetuning. |
+| ![Figure 2](assets/papers-explained-292-multiagent-finetuning/fig-2.webp) | Overview of Multiagent Finetuning. |
+| ![Figure 3](assets/papers-explained-292-multiagent-finetuning/fig-3.webp) | Given a set of natural language inputs Dtask = {xi}, a multiagent debate method with N agents and M rounds is used to generate responses... |
+| ![Figure 4](assets/papers-explained-292-multiagent-finetuning/fig-4.webp) | At inference time, a multiagent debate is conducted among the finetuned agents. |
+| ![Figure 5](assets/papers-explained-292-multiagent-finetuning/fig-5.webp) | Quantitative results of the proposed method and baselines. |
+| ![Figure 6](assets/papers-explained-292-multiagent-finetuning/fig-6.webp) | Multiagent finetuning improves reasoning performance over multiple rounds of finetuning. |
+| ![Figure 7](assets/papers-explained-292-multiagent-finetuning/fig-7.webp) | Diversity is preserved and can improve across iterations of finetuning. |
 ## Related
 
 - [[Papers Explained Corpus]]

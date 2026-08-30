@@ -2,4 +2,4 @@
 
 **URL**: https://unsloth.ai/blog/gemma-bugs
 
-(Canonical HTML: raw/gemma-bugs/full-article.html)
+(Canonical HTML: raw/gemma-bugs/full-article.md)

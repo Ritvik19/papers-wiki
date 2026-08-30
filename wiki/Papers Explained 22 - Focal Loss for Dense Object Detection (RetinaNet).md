@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-07_Papers-Explained-22--Focal-Loss-for-Dense-Object-Detection--RetinaNet--733b70ce0cb1.html`
+- Source file: `raw/2023-02-07_Papers-Explained-22--Focal-Loss-for-Dense-Object-Detection--RetinaNet--733b70ce0cb1.md`
 - Source title: Papers Explained 22: Focal Loss for Dense Object Detection (RetinaNet)
 - Published: 2023-02-07
 - Canonical: [https://medium.com/@ritvik19/papers-explained-22-focal-loss-for-dense-object-detection-retinanet-733b70ce0cb1](https://medium.com/@ritvik19/papers-explained-22-focal-loss-for-dense-object-detection-retinanet-733b70ce0cb1)
@@ -93,13 +93,13 @@ Feature Pyramid Networks for Object Detection [1708.02002](https://arxiv.org/abs
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-07_Papers-Explained-22--Focal-Loss-for-Dense-Object-Detection--RetinaNet--733b70ce0cb1.html`); local copies under `wiki/assets/papers-explained-22-focal-loss-for-dense-object-detection-retinanet/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-07_Papers-Explained-22--Focal-Loss-for-Dense-Object-Detection--RetinaNet--733b70ce0cb1.md`); local copies under `wiki/assets/papers-explained-22-focal-loss-for-dense-object-detection-retinanet/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-22-focal-loss-for-dense-object-detection-retinanet/fig-1.png) | Title card: Focal Loss for Dense Object Detection (RetinaNet). |
-| ![Figure 2](assets/papers-explained-22-focal-loss-for-dense-object-detection-retinanet/fig-2.png) | To evaluate the effectiveness of this loss, the authors design and train a simple dense detector called RetinaNet. |
-| ![Figure 3](assets/papers-explained-22-focal-loss-for-dense-object-detection-retinanet/fig-3.png) | In practice an α-balanced variant of the focal loss is used: FL(pt) = −αt(1 − pt)^γ log(pt). |
+| ![Figure 1](assets/papers-explained-22-focal-loss-for-dense-object-detection-retinanet/fig-1.webp) | Title card: Focal Loss for Dense Object Detection (RetinaNet). |
+| ![Figure 2](assets/papers-explained-22-focal-loss-for-dense-object-detection-retinanet/fig-2.webp) | To evaluate the effectiveness of this loss, the authors design and train a simple dense detector called RetinaNet. |
+| ![Figure 3](assets/papers-explained-22-focal-loss-for-dense-object-detection-retinanet/fig-3.webp) | In practice an α-balanced variant of the focal loss is used: FL(pt) = −αt(1 − pt)^γ log(pt). |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-08_Papers-Explained-24--ERNIE-Layout-47a5a38e321b.html`
+- Source file: `raw/2023-02-08_Papers-Explained-24--ERNIE-Layout-47a5a38e321b.md`
 - Source title: Papers Explained 24: ERNIE Layout
 - Published: 2023-02-08
 - Canonical: [https://medium.com/@ritvik19/papers-explained-24-ernie-layout-47a5a38e321b](https://medium.com/@ritvik19/papers-explained-24-ernie-layout-47a5a38e321b)
@@ -78,18 +78,18 @@ ERNIE-Layout: Layout Knowledge Enhanced Pre-training for Visually-rich Document 
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-08_Papers-Explained-24--ERNIE-Layout-47a5a38e321b.html`); local copies under `wiki/assets/papers-explained-24-ernie-layout/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-08_Papers-Explained-24--ERNIE-Layout-47a5a38e321b.md`); local copies under `wiki/assets/papers-explained-24-ernie-layout/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-24-ernie-layout/fig-1.png) | Title card: ERNIE Layout. |
-| ![Figure 2](assets/papers-explained-24-ernie-layout/fig-2.png) | Given a document, ERNIE-Layout rearranges the token sequence with the layout knowledge and extracts visual features from the visual encoder. |
-| ![Figure 3](assets/papers-explained-24-ernie-layout/fig-3.png) | Serialization Module. |
-| ![Figure 4](assets/papers-explained-24-ernie-layout/fig-4.png) | The text embedding of token sequence T is expressed as. |
-| ![Figure 5](assets/papers-explained-24-ernie-layout/fig-5.png) | To extract the visual features of documents, we employ Faster-RCNN as the backbone of visual encoder. |
-| ![Figure 6](assets/papers-explained-24-ernie-layout/fig-6.png) | Separate embedding layers are constructed in the horizontal and vertical directions. |
-| ![Figure 7](assets/papers-explained-24-ernie-layout/fig-7.png) | The ultimate input representation H of ERNIE-Layout. |
-| ![Figure 8](assets/papers-explained-24-ernie-layout/fig-8.png) | Multi-modal Transformer. |
+| ![Figure 1](assets/papers-explained-24-ernie-layout/fig-1.webp) | Title card: ERNIE Layout. |
+| ![Figure 2](assets/papers-explained-24-ernie-layout/fig-2.webp) | Given a document, ERNIE-Layout rearranges the token sequence with the layout knowledge and extracts visual features from the visual encoder. |
+| ![Figure 3](assets/papers-explained-24-ernie-layout/fig-3.webp) | Serialization Module. |
+| ![Figure 4](assets/papers-explained-24-ernie-layout/fig-4.webp) | The text embedding of token sequence T is expressed as. |
+| ![Figure 5](assets/papers-explained-24-ernie-layout/fig-5.webp) | To extract the visual features of documents, we employ Faster-RCNN as the backbone of visual encoder. |
+| ![Figure 6](assets/papers-explained-24-ernie-layout/fig-6.webp) | Separate embedding layers are constructed in the horizontal and vertical directions. |
+| ![Figure 7](assets/papers-explained-24-ernie-layout/fig-7.webp) | The ultimate input representation H of ERNIE-Layout. |
+| ![Figure 8](assets/papers-explained-24-ernie-layout/fig-8.webp) | Multi-modal Transformer. |
 ## Related
 
 - [[Papers Explained Corpus]]

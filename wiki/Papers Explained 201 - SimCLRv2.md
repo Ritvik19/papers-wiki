@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-09-03_Papers-Explained-201--SimCLRv2-bc3fe72b8b48.html`
+- Source file: `raw/2024-09-03_Papers-Explained-201--SimCLRv2-bc3fe72b8b48.md`
 - Source title: Papers Explained 201: SimCLRv2
 - Published: 2024-09-03
 - Canonical: [https://medium.com/@ritvik19/papers-explained-201-simclrv2-bc3fe72b8b48](https://medium.com/@ritvik19/papers-explained-201-simclrv2-bc3fe72b8b48)
@@ -119,20 +119,20 @@ Recommended Reading [Retrieval and Representation Learning](https://ritvik19.med
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-09-03_Papers-Explained-201--SimCLRv2-bc3fe72b8b48.html`); local copies under `wiki/assets/papers-explained-201-simclrv2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-09-03_Papers-Explained-201--SimCLRv2-bc3fe72b8b48.md`); local copies under `wiki/assets/papers-explained-201-simclrv2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-201-simclrv2/fig-1.png) | SimCLRv2 paper header from the arXiv preprint. |
-| ![Figure 2](assets/papers-explained-201-simclrv2/fig-2.png) | Proposed SimCLRv2 semi-supervised workflow: pretrain then fine-tune or distill. |
-| ![Figure 3](assets/papers-explained-201-simclrv2/fig-3.png) | Top-1 accuracy for linear evaluation vs full fine-tuning across model sizes. |
-| ![Figure 4](assets/papers-explained-201-simclrv2/fig-4.png) | Supervised vs SimCLRv2 fine-tuning across model sizes and low-label fractions. |
-| ![Figure 5](assets/papers-explained-201-simclrv2/fig-5.png) | Projection-head ablation on ResNet-50 under different label fractions. |
-| ![Figure 6](assets/papers-explained-201-simclrv2/fig-6.png) | Target-type ablation for ResNet-50 training objectives. |
-| ![Figure 7](assets/papers-explained-201-simclrv2/fig-7.png) | Distilled SimCLRv2 vs fine-tuned and fully supervised baselines. |
-| ![Figure 8](assets/papers-explained-201-simclrv2/fig-8.png) | Label-only vs distillation-loss variants at 1% and 10% labels. |
-| ![Figure 9](assets/papers-explained-201-simclrv2/fig-9.png) | Accuracy vs parameter count for 1% and 10% labels: fine-tuned, self-distilled, and supervised. |
-| ![Figure 10](assets/papers-explained-201-simclrv2/fig-10.png) | ImageNet semi-supervised leaderboard: SimCLRv2 distilled and self-distilled vs prior methods. |
+| ![Figure 1](assets/papers-explained-201-simclrv2/fig-1.webp) | SimCLRv2 paper header from the arXiv preprint. |
+| ![Figure 2](assets/papers-explained-201-simclrv2/fig-2.webp) | Proposed SimCLRv2 semi-supervised workflow: pretrain then fine-tune or distill. |
+| ![Figure 3](assets/papers-explained-201-simclrv2/fig-3.webp) | Top-1 accuracy for linear evaluation vs full fine-tuning across model sizes. |
+| ![Figure 4](assets/papers-explained-201-simclrv2/fig-4.webp) | Supervised vs SimCLRv2 fine-tuning across model sizes and low-label fractions. |
+| ![Figure 5](assets/papers-explained-201-simclrv2/fig-5.webp) | Projection-head ablation on ResNet-50 under different label fractions. |
+| ![Figure 6](assets/papers-explained-201-simclrv2/fig-6.webp) | Target-type ablation for ResNet-50 training objectives. |
+| ![Figure 7](assets/papers-explained-201-simclrv2/fig-7.webp) | Distilled SimCLRv2 vs fine-tuned and fully supervised baselines. |
+| ![Figure 8](assets/papers-explained-201-simclrv2/fig-8.webp) | Label-only vs distillation-loss variants at 1% and 10% labels. |
+| ![Figure 9](assets/papers-explained-201-simclrv2/fig-9.webp) | Accuracy vs parameter count for 1% and 10% labels: fine-tuned, self-distilled, and supervised. |
+| ![Figure 10](assets/papers-explained-201-simclrv2/fig-10.webp) | ImageNet semi-supervised leaderboard: SimCLRv2 distilled and self-distilled vs prior methods. |
 ## Related
 
 - [[Papers Explained Corpus]]

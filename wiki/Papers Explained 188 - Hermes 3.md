@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-19_Papers-Explained-188--Hermes-3-67d36cfe07d8.html`
+- Source file: `raw/2024-08-19_Papers-Explained-188--Hermes-3-67d36cfe07d8.md`
 - Source title: Papers Explained 188: Hermes 3
 - Published: 2024-08-19
 - Canonical: [https://medium.com/@ritvik19/papers-explained-188-hermes-3-67d36cfe07d8](https://medium.com/@ritvik19/papers-explained-188-hermes-3-67d36cfe07d8)
@@ -83,13 +83,13 @@ For the 405B models, evaluations are performed under FP8 quantization.
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-19_Papers-Explained-188--Hermes-3-67d36cfe07d8.html`); local copies under `wiki/assets/papers-explained-188-hermes-3/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-19_Papers-Explained-188--Hermes-3-67d36cfe07d8.md`); local copies under `wiki/assets/papers-explained-188-hermes-3/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-188-hermes-3/fig-1.png) | **Hermes 3 Technical Report** title card — Nous Research authors. |
-| ![Figure 2](assets/papers-explained-188-hermes-3/fig-2.png) | **Hermes 3** instruction dataset mix — proportion and **token counts** (~**390M** total) across general, domain expert, math, roleplay, code, tools/RAG, generation, steering. |
-| ![Figure 3](assets/papers-explained-188-hermes-3/fig-3.png) | **Hermes 3** vs **Llama 3.1 Instruct** at **405B / 70B / 8B** — AGIEval, ARC, BBH, GPQA, MMLU(-PRO), MT-Bench, TruthfulQA, etc. (**405B eval under FP8** per article). |
+| ![Figure 1](assets/papers-explained-188-hermes-3/fig-1.webp) | **Hermes 3 Technical Report** title card — Nous Research authors. |
+| ![Figure 2](assets/papers-explained-188-hermes-3/fig-2.webp) | **Hermes 3** instruction dataset mix — proportion and **token counts** (~**390M** total) across general, domain expert, math, roleplay, code, tools/RAG, generation, steering. |
+| ![Figure 3](assets/papers-explained-188-hermes-3/fig-3.webp) | **Hermes 3** vs **Llama 3.1 Instruct** at **405B / 70B / 8B** — AGIEval, ARC, BBH, GPQA, MMLU(-PRO), MT-Bench, TruthfulQA, etc. (**405B eval under FP8** per article). |
 ## Related
 
 - [[Papers Explained Corpus]]

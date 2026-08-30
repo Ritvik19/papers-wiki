@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-10-14_Papers-Explained-230--MAmmoTH-06189e929910.html`
+- Source file: `raw/2024-10-14_Papers-Explained-230--MAmmoTH-06189e929910.md`
 - Source title: Papers Explained 230: MAmmoTH
 - Published: 2024-10-14
 - Canonical: [https://medium.com/@ritvik19/papers-explained-230-mammoth-06189e929910](https://medium.com/@ritvik19/papers-explained-230-mammoth-06189e929910)
@@ -81,16 +81,16 @@ MAmmoTH: Building Math Generalist Models through Hybrid Instruction Tuning [2309
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-10-14_Papers-Explained-230--MAmmoTH-06189e929910.html`); local copies under `wiki/assets/papers-explained-230-mammoth/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-10-14_Papers-Explained-230--MAmmoTH-06189e929910.md`); local copies under `wiki/assets/papers-explained-230-mammoth/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-230-mammoth/fig-1.png) | Title card: MAmmoTH. |
-| ![Figure 2](assets/papers-explained-230-mammoth/fig-2.png) | Overview of our MathInstruct. * means with NEW rationales curated by prompting GPT-4. |
-| ![Figure 3](assets/papers-explained-230-mammoth/fig-3.png) | Evaluation Datasets. |
-| ![Figure 4](assets/papers-explained-230-mammoth/fig-4.png) | In-domain evaluation results. |
-| ![Figure 5](assets/papers-explained-230-mammoth/fig-5.png) | Out-of-domain evaluation results. |
-| ![Figure 6](assets/papers-explained-230-mammoth/fig-6.png) | Investigation of the influence of CoT & PoT hybrid training on the 7B Llama-2 model. |
+| ![Figure 1](assets/papers-explained-230-mammoth/fig-1.webp) | Title card: MAmmoTH. |
+| ![Figure 2](assets/papers-explained-230-mammoth/fig-2.webp) | Overview of our MathInstruct. * means with NEW rationales curated by prompting GPT-4. |
+| ![Figure 3](assets/papers-explained-230-mammoth/fig-3.webp) | Evaluation Datasets. |
+| ![Figure 4](assets/papers-explained-230-mammoth/fig-4.webp) | In-domain evaluation results. |
+| ![Figure 5](assets/papers-explained-230-mammoth/fig-5.webp) | Out-of-domain evaluation results. |
+| ![Figure 6](assets/papers-explained-230-mammoth/fig-6.webp) | Investigation of the influence of CoT & PoT hybrid training on the 7B Llama-2 model. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -1,6 +1,6 @@
 # Welcome Llama 4 Maverick & Scout on Hugging Face
 
-**Source**: `raw/llama4-release/full-article.html` (204 KB), `raw/llama4-release/full-article.md`
+**Source**: `raw/llama4-release/full-article.md` (204 KB), `raw/llama4-release/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

@@ -1,6 +1,6 @@
 # Papers Explained: Yet another RoPE extensioN method (YaRN)
 
-**Source**: `raw/draft_Papers-Explained--Yet-another-RoPE-extensioN-method--YaRN--3eb0225c90db.html`  
+**Source**: `raw/draft_Papers-Explained--Yet-another-RoPE-extensioN-method--YaRN--3eb0225c90db.md`  
 **Paper**: https://arxiv.org/abs/2309.00071  
 **Ingested**: 2026-08-23  
 **Tags**: #summary
@@ -9,7 +9,7 @@
 
 **YaRN (Yet another RoPE extensioN method)** (Peng et al., 2023) is a compute-efficient technique for extending the context window of language models trained with **Rotary Position Embeddings (RoPE)**. While linear Positional Interpolation (PI) compresses all RoPE frequency dimensions equally (destroying high-frequency local information), YaRN combines **NTK-by-Parts frequency interpolation** with **Attention Temperature Scaling** to extend context windows (e.g. from 4k to 64k or 128k tokens) using as little as $0.1\%$ of the original pretraining compute and fewer than 400 fine-tuning steps.
 
-![Papers Explained YaRN banner](../assets/papers-explained-yarn/fig-1.png)
+![Papers Explained YaRN banner](../assets/papers-explained-yarn/fig-1.webp)
 
 ### NTK-by-Parts & Temperature Scaling
 
@@ -23,7 +23,7 @@
 3. **Dynamic Scaling**:
    - Computes $s = \max(1, l'/L)$ dynamically per forward-pass, allowing graceful zero-shot extrapolation to variable sequence lengths without short-context degradation.
 
-![YaRN Frequency Partitioning and Attention Scaling](../assets/papers-explained-yarn/fig-2.png)
+![YaRN Frequency Partitioning and Attention Scaling](../assets/papers-explained-yarn/fig-2.webp)
 
 ## Key Claims
 
@@ -36,21 +36,21 @@
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/papers-explained-yarn/fig-1.png) | YaRN overview banner. | Overview |
-| ![fig-2](../assets/papers-explained-yarn/fig-2.png) | RoPE wavelength spectrum across hidden dimensions. | Background |
-| ![fig-3](../assets/papers-explained-yarn/fig-3.png) | Linear Positional Interpolation (PI) vs. NTK-Aware scaling. | Method |
-| ![fig-4](../assets/papers-explained-yarn/fig-4.png) | NTK-by-Parts piecewise ramp function and dimension split. | Method |
-| ![fig-5](../assets/papers-explained-yarn/fig-5.png) | Attention temperature scaling formulation and entropy correction. | Method |
-| ![fig-6](../assets/papers-explained-yarn/fig-6.png) | Dynamic context scaling for variable-length inference. | Dynamic |
-| ![fig-7](../assets/papers-explained-yarn/fig-7.png) | Perplexity curves on long-context extrapolation up to 128k. | Evaluation |
-| ![fig-8](../assets/papers-explained-yarn/fig-8.png) | Passkey retrieval accuracy across extended context depths. | Retrieval |
-| ![fig-9](../assets/papers-explained-yarn/fig-9.png) | Short-context benchmark performance preservation (MMLU, GSM8K). | Evaluation |
-| ![fig-10](../assets/papers-explained-yarn/fig-10.png) | Comparison: YaRN vs PI vs NTK-Aware vs CodeLLaMA frequency scaling. | Comparison |
-| ![fig-11](../assets/papers-explained-yarn/fig-11.png) | Fine-tuning step convergence curves (converges in <400 steps). | Efficiency |
-| ![fig-12](../assets/papers-explained-yarn/fig-12.png) | Attention score distribution before and after temperature scaling. | Analysis |
-| ![fig-13](../assets/papers-explained-yarn/fig-13.png) | Zero-shot non-finetuned YaRN extrapolation results. | Zero-Shot |
-| ![fig-14](../assets/papers-explained-yarn/fig-14.png) | Multi-scale evaluation on LLaMA-2 7B and 13B. | Scaling |
-| ![fig-15](../assets/papers-explained-yarn/fig-15.png) | Summary of RoPE context extension techniques. | Taxonomy |
+| ![fig-1](../assets/papers-explained-yarn/fig-1.webp) | YaRN overview banner. | Overview |
+| ![fig-2](../assets/papers-explained-yarn/fig-2.webp) | RoPE wavelength spectrum across hidden dimensions. | Background |
+| ![fig-3](../assets/papers-explained-yarn/fig-3.webp) | Linear Positional Interpolation (PI) vs. NTK-Aware scaling. | Method |
+| ![fig-4](../assets/papers-explained-yarn/fig-4.webp) | NTK-by-Parts piecewise ramp function and dimension split. | Method |
+| ![fig-5](../assets/papers-explained-yarn/fig-5.webp) | Attention temperature scaling formulation and entropy correction. | Method |
+| ![fig-6](../assets/papers-explained-yarn/fig-6.webp) | Dynamic context scaling for variable-length inference. | Dynamic |
+| ![fig-7](../assets/papers-explained-yarn/fig-7.webp) | Perplexity curves on long-context extrapolation up to 128k. | Evaluation |
+| ![fig-8](../assets/papers-explained-yarn/fig-8.webp) | Passkey retrieval accuracy across extended context depths. | Retrieval |
+| ![fig-9](../assets/papers-explained-yarn/fig-9.webp) | Short-context benchmark performance preservation (MMLU, GSM8K). | Evaluation |
+| ![fig-10](../assets/papers-explained-yarn/fig-10.webp) | Comparison: YaRN vs PI vs NTK-Aware vs CodeLLaMA frequency scaling. | Comparison |
+| ![fig-11](../assets/papers-explained-yarn/fig-11.webp) | Fine-tuning step convergence curves (converges in <400 steps). | Efficiency |
+| ![fig-12](../assets/papers-explained-yarn/fig-12.webp) | Attention score distribution before and after temperature scaling. | Analysis |
+| ![fig-13](../assets/papers-explained-yarn/fig-13.webp) | Zero-shot non-finetuned YaRN extrapolation results. | Zero-Shot |
+| ![fig-14](../assets/papers-explained-yarn/fig-14.webp) | Multi-scale evaluation on LLaMA-2 7B and 13B. | Scaling |
+| ![fig-15](../assets/papers-explained-yarn/fig-15.webp) | Summary of RoPE context extension techniques. | Taxonomy |
 
 ## Entities
 

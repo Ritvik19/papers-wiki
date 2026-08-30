@@ -1,6 +1,6 @@
 # Beyond Standard LLMs
 
-**Source**: `raw/beyond-standard-llms/full-article.html` (566 KB), `raw/beyond-standard-llms/full-article.md` (markdown view)  
+**Source**: `raw/beyond-standard-llms/full-article.md` (566 KB), `raw/beyond-standard-llms/full-article.md` (markdown view)  
 **URL**: https://magazine.sebastianraschka.com/p/beyond-standard-llms  
 **Ingested**: 2026-06-07  
 **Tags**: #summary
@@ -36,38 +36,38 @@ The longest section covers **linear attention hybrids**. Raschka revisits classi
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/beyond-standard-llms/fig-1.png) | LLM landscape overview; black-framed architectures covered in this article | — |
-| ![fig-2](../assets/beyond-standard-llms/fig-2.png) | Notable decoder-style transformers released in the past year | — |
-| ![fig-3](../assets/beyond-standard-llms/fig-3.png) | Subset of architectures from the Big LLM Architecture Comparison | — |
-| ![fig-4](../assets/beyond-standard-llms/fig-4.png) | Traditional scaled-dot-product attention; quadratic cost in sequence length n | — |
-| ![fig-5](../assets/beyond-standard-llms/fig-5.png) | Timeline of linear attention hybrid architectures (MiniMax-M1 through Kimi Linear) | — |
-| ![fig-6](../assets/beyond-standard-llms/fig-6.png) | Qwen3-Next: gated attention and Gated DeltaNet blocks | — |
-| ![fig-7](../assets/beyond-standard-llms/fig-7.png) | Regular Qwen3 (left) vs Qwen3-Next (right) | — |
-| ![fig-8](../assets/beyond-standard-llms/fig-8.png) | Gated attention vs Gated DeltaNet | — |
-| ![fig-9](../assets/beyond-standard-llms/fig-9.png) | Traditional attention mechanism (quadratic in n) | — |
-| ![fig-10](../assets/beyond-standard-llms/fig-10.png) | KV cache growth: full attention vs 3:1 Gated DeltaNet hybrid | — |
-| ![fig-11](../assets/beyond-standard-llms/fig-11.png) | Qwen3-Next and Kimi Linear architectures side by side | — |
-| ![fig-12](../assets/beyond-standard-llms/fig-12.png) | Kimi Linear speed/accuracy vs GatedDeltaNet-H1 and MLA baselines | — |
-| ![fig-13](../assets/beyond-standard-llms/fig-13.png) | Image diffusion denoising (forward noise, reverse denoise) | — |
-| ![fig-14](../assets/beyond-standard-llms/fig-14.png) | Text diffusion models section overview | — |
+| ![fig-1](../assets/beyond-standard-llms/fig-1.webp) | LLM landscape overview; black-framed architectures covered in this article | — |
+| ![fig-2](../assets/beyond-standard-llms/fig-2.webp) | Notable decoder-style transformers released in the past year | — |
+| ![fig-3](../assets/beyond-standard-llms/fig-3.webp) | Subset of architectures from the Big LLM Architecture Comparison | — |
+| ![fig-4](../assets/beyond-standard-llms/fig-4.webp) | Traditional scaled-dot-product attention; quadratic cost in sequence length n | — |
+| ![fig-5](../assets/beyond-standard-llms/fig-5.webp) | Timeline of linear attention hybrid architectures (MiniMax-M1 through Kimi Linear) | — |
+| ![fig-6](../assets/beyond-standard-llms/fig-6.webp) | Qwen3-Next: gated attention and Gated DeltaNet blocks | — |
+| ![fig-7](../assets/beyond-standard-llms/fig-7.webp) | Regular Qwen3 (left) vs Qwen3-Next (right) | — |
+| ![fig-8](../assets/beyond-standard-llms/fig-8.webp) | Gated attention vs Gated DeltaNet | — |
+| ![fig-9](../assets/beyond-standard-llms/fig-9.webp) | Traditional attention mechanism (quadratic in n) | — |
+| ![fig-10](../assets/beyond-standard-llms/fig-10.webp) | KV cache growth: full attention vs 3:1 Gated DeltaNet hybrid | — |
+| ![fig-11](../assets/beyond-standard-llms/fig-11.webp) | Qwen3-Next and Kimi Linear architectures side by side | — |
+| ![fig-12](../assets/beyond-standard-llms/fig-12.webp) | Kimi Linear speed/accuracy vs GatedDeltaNet-H1 and MLA baselines | — |
+| ![fig-13](../assets/beyond-standard-llms/fig-13.webp) | Image diffusion denoising (forward noise, reverse denoise) | — |
+| ![fig-14](../assets/beyond-standard-llms/fig-14.webp) | Text diffusion models section overview | — |
 | ![fig-15](../assets/beyond-standard-llms/fig-15.gif) | LLaDA 8B instruct: iterative mask-to-text denoising | — |
-| ![fig-16](../assets/beyond-standard-llms/fig-16.png) | ParallelBench: parallel decoding breaks token dependencies | — |
-| ![fig-17](../assets/beyond-standard-llms/fig-17.png) | Gemini Diffusion vs Gemini 2.0 Flash-Lite benchmark comparison | — |
-| ![fig-18](../assets/beyond-standard-llms/fig-18.png) | Conceptual world model: agent observes, acts, and simulates outcomes internally | — |
-| ![fig-19](../assets/beyond-standard-llms/fig-19.png) | CWM step-by-step variable-state prediction during code execution | — |
-| ![fig-20](../assets/beyond-standard-llms/fig-20.png) | CWM vs other LLMs on SWE-bench | — |
-| ![fig-21](../assets/beyond-standard-llms/fig-21.png) | LLM landscape highlighting small recursive transformers | — |
-| ![fig-22](../assets/beyond-standard-llms/fig-22.png) | ARC-AGI-1 example task and HRM leaderboard placement | — |
-| ![fig-23](../assets/beyond-standard-llms/fig-23.png) | Tiny Recursive Model (TRM) architecture | — |
+| ![fig-16](../assets/beyond-standard-llms/fig-16.webp) | ParallelBench: parallel decoding breaks token dependencies | — |
+| ![fig-17](../assets/beyond-standard-llms/fig-17.webp) | Gemini Diffusion vs Gemini 2.0 Flash-Lite benchmark comparison | — |
+| ![fig-18](../assets/beyond-standard-llms/fig-18.webp) | Conceptual world model: agent observes, acts, and simulates outcomes internally | — |
+| ![fig-19](../assets/beyond-standard-llms/fig-19.webp) | CWM step-by-step variable-state prediction during code execution | — |
+| ![fig-20](../assets/beyond-standard-llms/fig-20.webp) | CWM vs other LLMs on SWE-bench | — |
+| ![fig-21](../assets/beyond-standard-llms/fig-21.webp) | LLM landscape highlighting small recursive transformers | — |
+| ![fig-22](../assets/beyond-standard-llms/fig-22.webp) | ARC-AGI-1 example task and HRM leaderboard placement | — |
+| ![fig-23](../assets/beyond-standard-llms/fig-23.webp) | Tiny Recursive Model (TRM) architecture | — |
 | ![fig-24](../assets/beyond-standard-llms/fig-24.webp) | HRM vs TRM performance on puzzle benchmarks | — |
 
 The article's scope within the broader LLM landscape:
 
-![LLM landscape overview](../assets/beyond-standard-llms/fig-1.png)
+![LLM landscape overview](../assets/beyond-standard-llms/fig-1.webp)
 
 Gated DeltaNet vs full attention KV memory:
 
-![KV cache comparison for attention hybrids](../assets/beyond-standard-llms/fig-10.png)
+![KV cache comparison for attention hybrids](../assets/beyond-standard-llms/fig-10.webp)
 
 LLaDA text diffusion denoising:
 

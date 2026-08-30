@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-12-23_Papers-Explained-277--ModernBERT-59f25989f685.html`
+- Source file: `raw/2024-12-23_Papers-Explained-277--ModernBERT-59f25989f685.md`
 - Source title: Papers Explained 277: ModernBERT
 - Published: 2024-12-23
 - Canonical: [https://medium.com/@ritvik19/papers-explained-277-modernbert-59f25989f685](https://medium.com/@ritvik19/papers-explained-277-modernbert-59f25989f685)
@@ -115,15 +115,15 @@ Smarter, Better, Faster, Longer: A Modern Bidirectional Encoder for Fast, Memory
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-12-23_Papers-Explained-277--ModernBERT-59f25989f685.html`); local copies under `wiki/assets/papers-explained-277-modernbert/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-12-23_Papers-Explained-277--ModernBERT-59f25989f685.md`); local copies under `wiki/assets/papers-explained-277-modernbert/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-277-modernbert/fig-1.png) | Title card: ModernBERT. |
-| ![Figure 2](assets/papers-explained-277-modernbert/fig-2.png) | ModernBERT model design. |
-| ![Figure 3](assets/papers-explained-277-modernbert/fig-3.png) | ModernBERT training settings. Dropout and below are shared across all phases. |
-| ![Figure 4](assets/papers-explained-277-modernbert/fig-4.png) | Results for all models across an overview of all tasks. |
-| ![Figure 5](assets/papers-explained-277-modernbert/fig-5.png) | Memory (max batch size, BS) and Inference (in thousands of tokens per second) efficiency results on an NVIDIA RTX 4090, averaged over 10 runs. |
+| ![Figure 1](assets/papers-explained-277-modernbert/fig-1.webp) | Title card: ModernBERT. |
+| ![Figure 2](assets/papers-explained-277-modernbert/fig-2.webp) | ModernBERT model design. |
+| ![Figure 3](assets/papers-explained-277-modernbert/fig-3.webp) | ModernBERT training settings. Dropout and below are shared across all phases. |
+| ![Figure 4](assets/papers-explained-277-modernbert/fig-4.webp) | Results for all models across an overview of all tasks. |
+| ![Figure 5](assets/papers-explained-277-modernbert/fig-5.webp) | Memory (max batch size, BS) and Inference (in thousands of tokens per second) efficiency results on an NVIDIA RTX 4090, averaged over 10 runs. |
 ## HF Blog Cross-References
 
 - [Finally, a Replacement for BERT: Introducing ModernBERT](https://huggingface.co/blog/modernbert) (2024-12-19) — the joint Answer.AI / LightOn / Hugging Face / NVIDIA announcement post covering the same base/large release described above, with added practical framing on why encoder-only models still matter for retrieval and classification workloads despite the industry's shift to decoder-only LLMs.

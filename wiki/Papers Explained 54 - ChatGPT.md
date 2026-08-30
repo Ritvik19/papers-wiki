@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-09-04_Papers-Explained-54--ChatGPT-78387333268f.html`
+- Source file: `raw/2023-09-04_Papers-Explained-54--ChatGPT-78387333268f.md`
 - Source title: Papers Explained 54: ChatGPT
 - Published: 2023-09-04
 - Canonical: [https://medium.com/@ritvik19/papers-explained-54-chatgpt-78387333268f](https://medium.com/@ritvik19/papers-explained-54-chatgpt-78387333268f)
@@ -51,11 +51,11 @@ ChatGPT is a fine-tuned version of a model from the GPT-3.5 series, which comple
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-09-04_Papers-Explained-54--ChatGPT-78387333268f.html`); local copies under `wiki/assets/papers-explained-54-chatgpt/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-09-04_Papers-Explained-54--ChatGPT-78387333268f.md`); local copies under `wiki/assets/papers-explained-54-chatgpt/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-54-chatgpt/fig-1.png) | ChatGPT training methodology. |
+| ![Figure 1](assets/papers-explained-54-chatgpt/fig-1.webp) | ChatGPT training methodology. |
 ## Related
 
 - [[Papers Explained Corpus]]

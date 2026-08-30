@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-27_Papers-Explained-32--ColD-Fusion-452f33101a91.html`
+- Source file: `raw/2023-02-27_Papers-Explained-32--ColD-Fusion-452f33101a91.md`
 - Source title: Papers Explained 32: ColD Fusion
 - Published: 2023-02-27
 - Canonical: [https://medium.com/@ritvik19/papers-explained-32-cold-fusion-452f33101a91](https://medium.com/@ritvik19/papers-explained-32-cold-fusion-452f33101a91)
@@ -54,13 +54,13 @@ ColD Fusion: Collaborative Descent for Distributed Multitask Finetuning [2212.01
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-27_Papers-Explained-32--ColD-Fusion-452f33101a91.html`); local copies under `wiki/assets/papers-explained-32-cold-fusion/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-27_Papers-Explained-32--ColD-Fusion-452f33101a91.md`); local copies under `wiki/assets/papers-explained-32-cold-fusion/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-32-cold-fusion/fig-1.png) | Title card: ColD Fusion. |
-| ![Figure 2](assets/papers-explained-32-cold-fusion/fig-2.png) | However, by requiring only the finetuned model to be shared, the finetuning step can be recast as a training step for the collective’s... |
-| ![Figure 3](assets/papers-explained-32-cold-fusion/fig-3.png) | During finetuning, we use the following hyperparameters: learning rate of 5e-5 with linear decay 0.0006 and batch size 256. |
+| ![Figure 1](assets/papers-explained-32-cold-fusion/fig-1.webp) | Title card: ColD Fusion. |
+| ![Figure 2](assets/papers-explained-32-cold-fusion/fig-2.webp) | However, by requiring only the finetuned model to be shared, the finetuning step can be recast as a training step for the collective’s... |
+| ![Figure 3](assets/papers-explained-32-cold-fusion/fig-3.webp) | During finetuning, we use the following hyperparameters: learning rate of 5e-5 with linear decay 0.0006 and batch size 256. |
 ## Related
 
 - [[Papers Explained Corpus]]

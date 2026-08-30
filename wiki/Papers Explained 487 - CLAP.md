@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-11-06_Papers-Explained-487--CLAP-3d13ce1e0b40.html`
+- Source file: `raw/2025-11-06_Papers-Explained-487--CLAP-3d13ce1e0b40.md`
 - Source title: Papers Explained 487: CLAP
 - Published: 2025-11-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-487-clap-3d13ce1e0b40](https://medium.com/@ritvik19/papers-explained-487-clap-3d13ce1e0b40)
@@ -143,17 +143,17 @@ CLAP: Learning Audio Concepts From Natural Language Supervision [2206.04769](htt
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-11-06_Papers-Explained-487--CLAP-3d13ce1e0b40.html`); local copies under `wiki/assets/papers-explained-487-clap/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-11-06_Papers-Explained-487--CLAP-3d13ce1e0b40.md`); local copies under `wiki/assets/papers-explained-487-clap/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-487-clap/fig-1.png) | Title card: CLAP. |
-| ![Figure 2](assets/papers-explained-487-clap/fig-2.png) | The input consists of audio and text pairs passed to an audio encoder and a text encoder. |
-| ![Figure 3](assets/papers-explained-487-clap/fig-3.png) | Training dataset statistics. |
-| ![Figure 4](assets/papers-explained-487-clap/fig-4.png) | Datasets used as Downstream Tasks. |
-| ![Figure 5](assets/papers-explained-487-clap/fig-5.png) | The CNN14 model was chosen as the audio encoder. |
-| ![Figure 6](assets/papers-explained-487-clap/fig-6.png) | Training involved unfreezing both encoders for 40 epochs. |
-| ![Figure 7](assets/papers-explained-487-clap/fig-7.png) | Training involved unfreezing both encoders for 40 epochs. |
+| ![Figure 1](assets/papers-explained-487-clap/fig-1.webp) | Title card: CLAP. |
+| ![Figure 2](assets/papers-explained-487-clap/fig-2.webp) | The input consists of audio and text pairs passed to an audio encoder and a text encoder. |
+| ![Figure 3](assets/papers-explained-487-clap/fig-3.webp) | Training dataset statistics. |
+| ![Figure 4](assets/papers-explained-487-clap/fig-4.webp) | Datasets used as Downstream Tasks. |
+| ![Figure 5](assets/papers-explained-487-clap/fig-5.webp) | The CNN14 model was chosen as the audio encoder. |
+| ![Figure 6](assets/papers-explained-487-clap/fig-6.webp) | Training involved unfreezing both encoders for 40 epochs. |
+| ![Figure 7](assets/papers-explained-487-clap/fig-7.webp) | Training involved unfreezing both encoders for 40 epochs. |
 ## Related
 
 - [[Papers Explained Corpus]]

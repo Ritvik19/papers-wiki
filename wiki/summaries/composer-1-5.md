@@ -1,6 +1,6 @@
 # Introducing Composer 1.5
 
-**Source**: `raw/composer-1-5/full-article.html` (163 KB), `raw/composer-1-5/full-article.md` (markdown view)  
+**Source**: `raw/composer-1-5/full-article.md` (163 KB), `raw/composer-1-5/full-article.md` (markdown view)  
 **URL**: https://cursor.com/blog/composer-1-5  
 **Ingested**: 2026-05-19  
 **Tags**: #summary
@@ -30,14 +30,14 @@ Public evaluation in the post focuses on **[[Papers Explained 547 - Terminal-Ben
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/composer-1-5/fig-1.png) | Internal coding-ability scaling vs. RL compute (Composer 1 → 1.5) | — |
-| ![fig-2](../assets/composer-1-5/fig-2.png) | Composer 1.5 benchmark results on Terminal-Bench 2.0 | — |
+| ![fig-1](../assets/composer-1-5/fig-1.webp) | Internal coding-ability scaling vs. RL compute (Composer 1 → 1.5) | — |
+| ![fig-2](../assets/composer-1-5/fig-2.webp) | Composer 1.5 benchmark results on Terminal-Bench 2.0 | — |
 
 Light and dark variants (`fig-N-dark.png`) are in `wiki/assets/composer-1-5/`.
 
-![Internal coding ability scaling](../assets/composer-1-5/fig-1.png)
+![Internal coding ability scaling](../assets/composer-1-5/fig-1.webp)
 
-![Terminal-Bench 2.0 results](../assets/composer-1-5/fig-2.png)
+![Terminal-Bench 2.0 results](../assets/composer-1-5/fig-2.webp)
 
 ## Entities
 

@@ -1,6 +1,6 @@
 # Un Ministral, des Ministraux
 
-**Source**: `raw/ministraux/full-article.html` (220 KB), `raw/ministraux/full-article.md` (markdown view)  
+**Source**: `raw/ministraux/full-article.md` (220 KB), `raw/ministraux/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/ministraux/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

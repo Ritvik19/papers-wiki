@@ -1,6 +1,6 @@
 # StarCoder2-Instruct: Fully Transparent and Permissive Self-Alignment for Code Generation
 
-**Source**: `raw/sc2-instruct/full-article.html` (190 KB), `raw/sc2-instruct/full-article.md`
+**Source**: `raw/sc2-instruct/full-article.md` (190 KB), `raw/sc2-instruct/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

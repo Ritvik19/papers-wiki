@@ -1,6 +1,6 @@
 # Prefill and Decode for Concurrent Requests - Optimizing LLM Performance
 
-**Source**: `raw/llm-performance-prefill-decode-concurrent-requests/full-article.html` (156 KB), `raw/llm-performance-prefill-decode-concurrent-requests/full-article.md`
+**Source**: `raw/llm-performance-prefill-decode-concurrent-requests/full-article.md` (156 KB), `raw/llm-performance-prefill-decode-concurrent-requests/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

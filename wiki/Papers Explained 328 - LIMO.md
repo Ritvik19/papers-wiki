@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-03-12_Papers-Explained-328--LIMO-261765a5616c.html`
+- Source file: `raw/2025-03-12_Papers-Explained-328--LIMO-261765a5616c.md`
 - Source title: Papers Explained 328: LIMO
 - Published: 2025-03-12
 - Canonical: [https://medium.com/@ritvik19/papers-explained-328-limo-261765a5616c](https://medium.com/@ritvik19/papers-explained-328-limo-261765a5616c)
@@ -169,17 +169,17 @@ LIMO: Less is More for Reasoning [2502.03387](https://arxiv.org/abs/2502.03387)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-03-12_Papers-Explained-328--LIMO-261765a5616c.html`); local copies under `wiki/assets/papers-explained-328-limo/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-03-12_Papers-Explained-328--LIMO-261765a5616c.md`); local copies under `wiki/assets/papers-explained-328-limo/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-328-limo/fig-1.png) | Title card: LIMO. |
-| ![Figure 2](assets/papers-explained-328-limo/fig-2.png) | Comparative Analysis: Less-is-More Phenomena in Language Models. |
-| ![Figure 3](assets/papers-explained-328-limo/fig-3.png) | Comparative Analysis of LIMO and RL Scaling Approaches. |
-| ![Figure 4](assets/papers-explained-328-limo/fig-4.png) | Comparison of model performance (pass@1) across various mathematical reasoning benchmarks. |
-| ![Figure 5](assets/papers-explained-328-limo/fig-5.png) | Comparison of models trained on reasoning chains of different quality levels. |
-| ![Figure 6](assets/papers-explained-328-limo/fig-6.png) | Performance comparison on MATH and AIME benchmarks. |
-| ![Figure 7](assets/papers-explained-328-limo/fig-7.png) | Impact of Pre-trained Model Choice on Mathematical Reasoning Performance. |
+| ![Figure 1](assets/papers-explained-328-limo/fig-1.webp) | Title card: LIMO. |
+| ![Figure 2](assets/papers-explained-328-limo/fig-2.webp) | Comparative Analysis: Less-is-More Phenomena in Language Models. |
+| ![Figure 3](assets/papers-explained-328-limo/fig-3.webp) | Comparative Analysis of LIMO and RL Scaling Approaches. |
+| ![Figure 4](assets/papers-explained-328-limo/fig-4.webp) | Comparison of model performance (pass@1) across various mathematical reasoning benchmarks. |
+| ![Figure 5](assets/papers-explained-328-limo/fig-5.webp) | Comparison of models trained on reasoning chains of different quality levels. |
+| ![Figure 6](assets/papers-explained-328-limo/fig-6.webp) | Performance comparison on MATH and AIME benchmarks. |
+| ![Figure 7](assets/papers-explained-328-limo/fig-7.webp) | Impact of Pre-trained Model Choice on Mathematical Reasoning Performance. |
 ## Related
 
 - [[Papers Explained Corpus]]

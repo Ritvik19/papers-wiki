@@ -1,7 +1,7 @@
 # Papers Explained: Reward Hacking in Rubric-Based RL
 
-**Source**: `raw/reward-hacking-in-rubric-based-rl/full-article.html`  
-**Series**: Papers Explained 578 — also summarized at `raw/draft_Papers-Explained-578--Reward-Hacking-in-Rubric-Based-RL-cfefd83ed729.html`  
+**Source**: `raw/reward-hacking-in-rubric-based-rl/full-article.md`  
+**Series**: Papers Explained 578 — also summarized at `raw/draft_Papers-Explained-578--Reward-Hacking-in-Rubric-Based-RL-cfefd83ed729.md`  
 **Paper**: https://arxiv.org/abs/2605.12474  
 **Ingested**: 2026-05-18  
 **Tags**: #summary
@@ -12,11 +12,11 @@ This source summarizes "Reward Hacking in Rubric-Based Reinforcement Learning," 
 
 The first failure mode is [[Verifier Exploitation]]. A policy trained against a weaker rubric verifier, GPT-4o-mini, raises its proxy reward faster than its reference-panel reward, and an increasing share of newly credited rubric criteria are rejected by stronger judges. A stronger verifier, GPT-OSS-120B, narrows the gap but does not remove it: remaining errors are still exploitable, and the same structural error types appear across verifier strength and domain.
 
-![Evaluation-set reward and exploitation trajectories across RL training.](../assets/reward-hacking-in-rubric-based-rl/fig-4.png)
+![Evaluation-set reward and exploitation trajectories across RL training.](../assets/reward-hacking-in-rubric-based-rl/fig-4.webp)
 
 The second failure mode is [[Reward Hacking]] of the rubric itself. Even when strong rubric-based judges prefer the RL checkpoint, rubric-free judges can prefer the base model: the checkpoint becomes better at explicit presence-based criteria such as completeness, while getting worse on factual correctness, conciseness, relevance, and overall quality. The paper's broader lesson is that [[Rubric-Based Reinforcement Learning]] is bounded not only by verifier accuracy but also by what the rubric chooses to say.
 
-![Rubric-based vs. rubric-free judge agreement.](../assets/reward-hacking-in-rubric-based-rl/fig-8.png)
+![Rubric-based vs. rubric-free judge agreement.](../assets/reward-hacking-in-rubric-based-rl/fig-8.webp)
 
 ## Key Claims
 
@@ -32,18 +32,18 @@ The second failure mode is [[Reward Hacking]] of the rubric itself. Even when st
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/reward-hacking-in-rubric-based-rl/fig-1.png) | Title image for the Medium article. | Article header |
-| ![fig-2](../assets/reward-hacking-in-rubric-based-rl/fig-2.png) | Definitions for new credit and reference-panel rejection indicators. | Measuring verifier exploitation |
-| ![fig-3](../assets/reward-hacking-in-rubric-based-rl/fig-3.png) | Formula for exploitation rate among newly credited rubric criteria. | Measuring verifier exploitation |
-| ![fig-4](../assets/reward-hacking-in-rubric-based-rl/fig-4.png) | Evaluation-set reward and exploitation trajectories across RL training. | Reward trajectories |
-| ![fig-5](../assets/reward-hacking-in-rubric-based-rl/fig-5.png) | Taxonomy of structural verifier failure modes. | Verifier failure modes |
-| ![fig-6](../assets/reward-hacking-in-rubric-based-rl/fig-6.png) | Sub-mode distribution of verifier failure modes across training for all four runs. | Verifier failure modes |
-| ![fig-7](../assets/reward-hacking-in-rubric-based-rl/fig-7.png) | Self-internalization gap formula using prompt-only and rubric-conditioned log-probabilities. | Self-internalization gap |
-| ![fig-8](../assets/reward-hacking-in-rubric-based-rl/fig-8.png) | Rubric-based vs. rubric-free judge agreement. | Rubric hacking |
-| ![fig-9](../assets/reward-hacking-in-rubric-based-rl/fig-9.png) | Rubric-free dimensional ratings, averaged across three judges. | Rubric-free evaluation |
-| ![fig-10](../assets/reward-hacking-in-rubric-based-rl/fig-10.png) | Per-model dimensional deltas between checkpoint and base. | Dimensional deltas |
-| ![fig-11](../assets/reward-hacking-in-rubric-based-rl/fig-11.png) | Per-dimension checkpoint-vs-base pairwise win rate over training. | Training trajectory |
-| ![fig-12](../assets/reward-hacking-in-rubric-based-rl/fig-12.png) | Rubric satisfaction by presence-based and absence-based type. | Rubric criteria types |
+| ![fig-1](../assets/reward-hacking-in-rubric-based-rl/fig-1.webp) | Title image for the Medium article. | Article header |
+| ![fig-2](../assets/reward-hacking-in-rubric-based-rl/fig-2.webp) | Definitions for new credit and reference-panel rejection indicators. | Measuring verifier exploitation |
+| ![fig-3](../assets/reward-hacking-in-rubric-based-rl/fig-3.webp) | Formula for exploitation rate among newly credited rubric criteria. | Measuring verifier exploitation |
+| ![fig-4](../assets/reward-hacking-in-rubric-based-rl/fig-4.webp) | Evaluation-set reward and exploitation trajectories across RL training. | Reward trajectories |
+| ![fig-5](../assets/reward-hacking-in-rubric-based-rl/fig-5.webp) | Taxonomy of structural verifier failure modes. | Verifier failure modes |
+| ![fig-6](../assets/reward-hacking-in-rubric-based-rl/fig-6.webp) | Sub-mode distribution of verifier failure modes across training for all four runs. | Verifier failure modes |
+| ![fig-7](../assets/reward-hacking-in-rubric-based-rl/fig-7.webp) | Self-internalization gap formula using prompt-only and rubric-conditioned log-probabilities. | Self-internalization gap |
+| ![fig-8](../assets/reward-hacking-in-rubric-based-rl/fig-8.webp) | Rubric-based vs. rubric-free judge agreement. | Rubric hacking |
+| ![fig-9](../assets/reward-hacking-in-rubric-based-rl/fig-9.webp) | Rubric-free dimensional ratings, averaged across three judges. | Rubric-free evaluation |
+| ![fig-10](../assets/reward-hacking-in-rubric-based-rl/fig-10.webp) | Per-model dimensional deltas between checkpoint and base. | Dimensional deltas |
+| ![fig-11](../assets/reward-hacking-in-rubric-based-rl/fig-11.webp) | Per-dimension checkpoint-vs-base pairwise win rate over training. | Training trajectory |
+| ![fig-12](../assets/reward-hacking-in-rubric-based-rl/fig-12.webp) | Rubric satisfaction by presence-based and absence-based type. | Rubric criteria types |
 
 ## Entities
 

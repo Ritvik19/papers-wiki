@@ -1,3 +1,3 @@
 # arcee-trinity
 
-Canonical HTML: `raw/arcee-trinity/full-article.html`
+Canonical HTML: `raw/arcee-trinity/full-article.md`

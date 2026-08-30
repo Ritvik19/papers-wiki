@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-11-26_Papers-Explained-259--OmniParser-2e895f6f2c15.html`
+- Source file: `raw/2024-11-26_Papers-Explained-259--OmniParser-2e895f6f2c15.md`
 - Source title: Papers Explained 259: OmniParser
 - Published: 2024-11-26
 - Canonical: [https://medium.com/@ritvik19/papers-explained-259-omniparser-2e895f6f2c15](https://medium.com/@ritvik19/papers-explained-259-omniparser-2e895f6f2c15)
@@ -141,17 +141,17 @@ OmniParser for Pure Vision Based GUI Agent [2408.00203](https://arxiv.org/abs/24
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-11-26_Papers-Explained-259--OmniParser-2e895f6f2c15.html`); local copies under `wiki/assets/papers-explained-259-omniparser/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-11-26_Papers-Explained-259--OmniParser-2e895f6f2c15.md`); local copies under `wiki/assets/papers-explained-259-omniparser/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-259-omniparser/fig-1.png) | Title card: OmniParser. |
-| ![Figure 2](assets/papers-explained-259-omniparser/fig-2.png) | The model is available on HuggingFace. |
-| ![Figure 3](assets/papers-explained-259-omniparser/fig-3.png) | Comparison of GPT-4V with and without local semantics. |
-| ![Figure 4](assets/papers-explained-259-omniparser/fig-4.png) | Comparison of different approaches on ScreenSpot Benchmark. |
-| ![Figure 5](assets/papers-explained-259-omniparser/fig-5.png) | Comparison of different methods across various categories on Mind2Web benchmark. |
-| ![Figure 6](assets/papers-explained-259-omniparser/fig-6.png) | Comparison of different methods across various tasks and overall performance in AITW benchmark. |
-| ![Figure 7](assets/papers-explained-259-omniparser/fig-7.png) | OmniParser V2 builds upon its predecessor with several key enhancements. |
+| ![Figure 1](assets/papers-explained-259-omniparser/fig-1.webp) | Title card: OmniParser. |
+| ![Figure 2](assets/papers-explained-259-omniparser/fig-2.webp) | The model is available on HuggingFace. |
+| ![Figure 3](assets/papers-explained-259-omniparser/fig-3.webp) | Comparison of GPT-4V with and without local semantics. |
+| ![Figure 4](assets/papers-explained-259-omniparser/fig-4.webp) | Comparison of different approaches on ScreenSpot Benchmark. |
+| ![Figure 5](assets/papers-explained-259-omniparser/fig-5.webp) | Comparison of different methods across various categories on Mind2Web benchmark. |
+| ![Figure 6](assets/papers-explained-259-omniparser/fig-6.webp) | Comparison of different methods across various tasks and overall performance in AITW benchmark. |
+| ![Figure 7](assets/papers-explained-259-omniparser/fig-7.webp) | OmniParser V2 builds upon its predecessor with several key enhancements. |
 ## Related
 
 - [[Papers Explained Corpus]]

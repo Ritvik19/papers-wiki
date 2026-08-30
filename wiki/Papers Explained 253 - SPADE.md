@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-11-15_Papers-Explained-253--SPADE-f564ce612501.html`
+- Source file: `raw/2024-11-15_Papers-Explained-253--SPADE-f564ce612501.md`
 - Source title: Papers Explained 253: SPADE
 - Published: 2024-11-15
 - Canonical: [https://medium.com/@ritvik19/papers-explained-253-spade-f564ce612501](https://medium.com/@ritvik19/papers-explained-253-spade-f564ce612501)
@@ -103,17 +103,17 @@ Recommended Reading: [Document Information Processing](https://ritvik19.medium.c
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-11-15_Papers-Explained-253--SPADE-f564ce612501.html`); local copies under `wiki/assets/papers-explained-253-spade/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-11-15_Papers-Explained-253--SPADE-f564ce612501.md`); local copies under `wiki/assets/papers-explained-253-spade/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-253-spade/fig-1.png) | Title card: SPADE. |
-| ![Figure 2](assets/papers-explained-253-spade/fig-2.png) | The illustration of spatial dependency parsing problem. |
-| ![Figure 3](assets/papers-explained-253-spade/fig-3.png) | The illustration of SPADE. |
-| ![Figure 4](assets/papers-explained-253-spade/fig-4.png) | Unlike the original Transformer, there is no order among the input tokens, making the model invariant under the permutation of the input... |
-| ![Figure 5](assets/papers-explained-253-spade/fig-5.png) | M(r) is obtained as follows. The probability that there exists a directed edge i → j, related by r is computed by. |
-| ![Figure 6](assets/papers-explained-253-spade/fig-6.png) | M (r) ij is obtained by binarizing p (r) ij as follows. |
-| ![Figure 7](assets/papers-explained-253-spade/fig-7.png) | A formal description of the parse decoding process. s and g stand for rel-s and rel-g respectively. |
+| ![Figure 1](assets/papers-explained-253-spade/fig-1.webp) | Title card: SPADE. |
+| ![Figure 2](assets/papers-explained-253-spade/fig-2.webp) | The illustration of spatial dependency parsing problem. |
+| ![Figure 3](assets/papers-explained-253-spade/fig-3.webp) | The illustration of SPADE. |
+| ![Figure 4](assets/papers-explained-253-spade/fig-4.webp) | Unlike the original Transformer, there is no order among the input tokens, making the model invariant under the permutation of the input... |
+| ![Figure 5](assets/papers-explained-253-spade/fig-5.webp) | M(r) is obtained as follows. The probability that there exists a directed edge i → j, related by r is computed by. |
+| ![Figure 6](assets/papers-explained-253-spade/fig-6.webp) | M (r) ij is obtained by binarizing p (r) ij as follows. |
+| ![Figure 7](assets/papers-explained-253-spade/fig-7.webp) | A formal description of the parse decoding process. s and g stand for rel-s and rel-g respectively. |
 ## Related
 
 - [[Papers Explained Corpus]]

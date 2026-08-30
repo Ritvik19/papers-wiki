@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-04-15_Papers-Explained-347--Command-A-4e0512baee56.html`
+- Source file: `raw/2025-04-15_Papers-Explained-347--Command-A-4e0512baee56.md`
 - Source title: Papers Explained 347: Command A
 - Published: 2025-04-15
 - Canonical: [https://medium.com/@ritvik19/papers-explained-347-command-a-4e0512baee56](https://medium.com/@ritvik19/papers-explained-347-command-a-4e0512baee56)
@@ -307,31 +307,31 @@ Command A: An Enterprise-Ready Large Language Model [2504.00698](https://arxiv.o
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-04-15_Papers-Explained-347--Command-A-4e0512baee56.html`); local copies under `wiki/assets/papers-explained-347-command-a/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-04-15_Papers-Explained-347--Command-A-4e0512baee56.md`); local copies under `wiki/assets/papers-explained-347-command-a/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-347-command-a/fig-1.png) | Title card: Command A. |
-| ![Figure 2](assets/papers-explained-347-command-a/fig-2.png) | Schematic of the Command A model architecture. |
-| ![Figure 3](assets/papers-explained-347-command-a/fig-3.png) | Command A post-training phases. |
-| ![Figure 4](assets/papers-explained-347-command-a/fig-4.png) | This novel approach introduces a continuous improvement mechanism for model alignment and robustness. |
-| ![Figure 5](assets/papers-explained-347-command-a/fig-5.png) | CoPG is used to optimize the above objective. It works by comparing the rewards of multiple completions for the same prompt. CoPG Loss. |
-| ![Figure 6](assets/papers-explained-347-command-a/fig-6.png) | The safety training process involves pre-training filtering to remove CSEA and sexual content domains, and low-quality content. |
-| ![Figure 7](assets/papers-explained-347-command-a/fig-7.png) | Results for Command A on standard academic benchmarks. |
-| ![Figure 8](assets/papers-explained-347-command-a/fig-8.png) | Standard RAG evaluations. |
-| ![Figure 9](assets/papers-explained-347-command-a/fig-9.png) | BFCL Results. |
-| ![Figure 10](assets/papers-explained-347-command-a/fig-10.png) | Taubench Results. |
-| ![Figure 11](assets/papers-explained-347-command-a/fig-11.png) | Machine translation (COMET-20) scores on NTREX. |
-| ![Figure 12](assets/papers-explained-347-command-a/fig-12.png) | Command A mArenaHard winrates against on 23 languages against open-weights models. |
-| ![Figure 13](assets/papers-explained-347-command-a/fig-13.png) | Multilingual Taubench Results. |
-| ![Figure 14](assets/papers-explained-347-command-a/fig-14.png) | Crosslingual line-level pass rate (LPR) from the Language Confusion Benchmark. |
-| ![Figure 15](assets/papers-explained-347-command-a/fig-15.png) | ADI2 score over monolingual and crosslingual prompts in 4 Arabic dialects (Egyptian, Saudi, Syrian, Moroccan). |
-| ![Figure 16](assets/papers-explained-347-command-a/fig-16.png) | Code Understanding Benchmarks. |
-| ![Figure 17](assets/papers-explained-347-command-a/fig-17.png) | Code Editing Benchmarks. |
-| ![Figure 18](assets/papers-explained-347-command-a/fig-18.png) | SQL Generation Benchmarks. |
-| ![Figure 19](assets/papers-explained-347-command-a/fig-19.png) | Reasoning performance of Command A compared to similarly-sized models. |
-| ![Figure 20](assets/papers-explained-347-command-a/fig-20.png) | Results on the RULER long context benchmark. |
-| ![Figure 21](assets/papers-explained-347-command-a/fig-21.png) | LongBench-V2 results for Command A. |
+| ![Figure 1](assets/papers-explained-347-command-a/fig-1.webp) | Title card: Command A. |
+| ![Figure 2](assets/papers-explained-347-command-a/fig-2.webp) | Schematic of the Command A model architecture. |
+| ![Figure 3](assets/papers-explained-347-command-a/fig-3.webp) | Command A post-training phases. |
+| ![Figure 4](assets/papers-explained-347-command-a/fig-4.webp) | This novel approach introduces a continuous improvement mechanism for model alignment and robustness. |
+| ![Figure 5](assets/papers-explained-347-command-a/fig-5.webp) | CoPG is used to optimize the above objective. It works by comparing the rewards of multiple completions for the same prompt. CoPG Loss. |
+| ![Figure 6](assets/papers-explained-347-command-a/fig-6.webp) | The safety training process involves pre-training filtering to remove CSEA and sexual content domains, and low-quality content. |
+| ![Figure 7](assets/papers-explained-347-command-a/fig-7.webp) | Results for Command A on standard academic benchmarks. |
+| ![Figure 8](assets/papers-explained-347-command-a/fig-8.webp) | Standard RAG evaluations. |
+| ![Figure 9](assets/papers-explained-347-command-a/fig-9.webp) | BFCL Results. |
+| ![Figure 10](assets/papers-explained-347-command-a/fig-10.webp) | Taubench Results. |
+| ![Figure 11](assets/papers-explained-347-command-a/fig-11.webp) | Machine translation (COMET-20) scores on NTREX. |
+| ![Figure 12](assets/papers-explained-347-command-a/fig-12.webp) | Command A mArenaHard winrates against on 23 languages against open-weights models. |
+| ![Figure 13](assets/papers-explained-347-command-a/fig-13.webp) | Multilingual Taubench Results. |
+| ![Figure 14](assets/papers-explained-347-command-a/fig-14.webp) | Crosslingual line-level pass rate (LPR) from the Language Confusion Benchmark. |
+| ![Figure 15](assets/papers-explained-347-command-a/fig-15.webp) | ADI2 score over monolingual and crosslingual prompts in 4 Arabic dialects (Egyptian, Saudi, Syrian, Moroccan). |
+| ![Figure 16](assets/papers-explained-347-command-a/fig-16.webp) | Code Understanding Benchmarks. |
+| ![Figure 17](assets/papers-explained-347-command-a/fig-17.webp) | Code Editing Benchmarks. |
+| ![Figure 18](assets/papers-explained-347-command-a/fig-18.webp) | SQL Generation Benchmarks. |
+| ![Figure 19](assets/papers-explained-347-command-a/fig-19.webp) | Reasoning performance of Command A compared to similarly-sized models. |
+| ![Figure 20](assets/papers-explained-347-command-a/fig-20.webp) | Results on the RULER long context benchmark. |
+| ![Figure 21](assets/papers-explained-347-command-a/fig-21.webp) | LongBench-V2 results for Command A. |
 ## Related
 
 - [[Introducing Command A: Max performance, minimal compute]] — Cohere blog announcement (canonical marketing source).

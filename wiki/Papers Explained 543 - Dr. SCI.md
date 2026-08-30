@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-03-18_Papers-Explained-543--Dr--SCI-bbfaf7a332fd.html`
+- Source file: `raw/2026-03-18_Papers-Explained-543--Dr--SCI-bbfaf7a332fd.md`
 - Source title: Papers Explained 543: Dr. SCI
 - Published: 2026-03-18
 - Canonical: [https://medium.com/@ritvik19/papers-explained-543-dr-sci-bbfaf7a332fd](https://medium.com/@ritvik19/papers-explained-543-dr-sci-bbfaf7a332fd)
@@ -199,19 +199,19 @@ Improving Data and Reward Design for Scientific Reasoning in Large Language Mode
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-03-18_Papers-Explained-543--Dr--SCI-bbfaf7a332fd.html`); local copies under `wiki/assets/papers-explained-543-dr-sci/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-03-18_Papers-Explained-543--Dr--SCI-bbfaf7a332fd.md`); local copies under `wiki/assets/papers-explained-543-dr-sci/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-543-dr-sci/fig-1.png) | Title card: Dr. SCI. |
-| ![Figure 2](assets/papers-explained-543-dr-sci/fig-2.png) | Subject distribution of Dr. SCI dataset. |
-| ![Figure 3](assets/papers-explained-543-dr-sci/fig-3.png) | Length Distribution of Dr. SCI dataset. |
-| ![Figure 4](assets/papers-explained-543-dr-sci/fig-4.png) | Difficulty Distribution of Dr. SCI dataset. |
-| ![Figure 5](assets/papers-explained-543-dr-sci/fig-5.png) | Hyperparameters for SFT and RL algorithm. |
-| ![Figure 6](assets/papers-explained-543-dr-sci/fig-6.png) | Full experiment results of models across scientific reasoning benchmarks. |
-| ![Figure 7](assets/papers-explained-543-dr-sci/fig-7.png) | Ablation Study of Exploration Expanding SFT. |
-| ![Figure 8](assets/papers-explained-543-dr-sci/fig-8.png) | Ablation of the dynamic difficulty curriculum. |
-| ![Figure 9](assets/papers-explained-543-dr-sci/fig-9.png) | Ablation of SciRubric-Guided RL. |
+| ![Figure 1](assets/papers-explained-543-dr-sci/fig-1.webp) | Title card: Dr. SCI. |
+| ![Figure 2](assets/papers-explained-543-dr-sci/fig-2.webp) | Subject distribution of Dr. SCI dataset. |
+| ![Figure 3](assets/papers-explained-543-dr-sci/fig-3.webp) | Length Distribution of Dr. SCI dataset. |
+| ![Figure 4](assets/papers-explained-543-dr-sci/fig-4.webp) | Difficulty Distribution of Dr. SCI dataset. |
+| ![Figure 5](assets/papers-explained-543-dr-sci/fig-5.webp) | Hyperparameters for SFT and RL algorithm. |
+| ![Figure 6](assets/papers-explained-543-dr-sci/fig-6.webp) | Full experiment results of models across scientific reasoning benchmarks. |
+| ![Figure 7](assets/papers-explained-543-dr-sci/fig-7.webp) | Ablation Study of Exploration Expanding SFT. |
+| ![Figure 8](assets/papers-explained-543-dr-sci/fig-8.webp) | Ablation of the dynamic difficulty curriculum. |
+| ![Figure 9](assets/papers-explained-543-dr-sci/fig-9.webp) | Ablation of SciRubric-Guided RL. |
 ## Related
 
 - [[Papers Explained Corpus]]

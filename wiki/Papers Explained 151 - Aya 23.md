@@ -6,11 +6,11 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-06-17_Papers-Explained-151--Aya-23-d01605c3ee80.html`
+- Source file: `raw/2024-06-17_Papers-Explained-151--Aya-23-d01605c3ee80.md`
 - Source title: Papers Explained 151: Aya 23
 - Published: 2024-06-17
 - Canonical: [https://medium.com/@ritvik19/papers-explained-151-aya-23-d01605c3ee80](https://medium.com/@ritvik19/papers-explained-151-aya-23-d01605c3ee80)
-- Launch blog: [[C4AI Launches Aya 23, 8B and 35B Parameter Open Weights Release]] (`raw/aya23/full-article.html`)
+- Launch blog: [[C4AI Launches Aya 23, 8B and 35B Parameter Open Weights Release]] (`raw/aya23/full-article.md`)
 
 ## Key Ideas
 
@@ -194,27 +194,27 @@ Recommended Reading [Aya Series](https://ritvik19.medium.com/list/aya-series-83e
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-06-17_Papers-Explained-151--Aya-23-d01605c3ee80.html`); local copies under `wiki/assets/papers-explained-151-aya-23/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-06-17_Papers-Explained-151--Aya-23-d01605c3ee80.md`); local copies under `wiki/assets/papers-explained-151-aya-23/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-151-aya-23/fig-1.png) | Title page of *Aya 23: Open Weight Releases to Further Multilingual Progress* (Cohere For AI / Cohere authors). |
-| ![Figure 2](assets/papers-explained-151-aya-23/fig-2.png) | The 23 covered languages with ISO codes, scripts, families/subgroups, and approximate native-speaker counts. |
-| ![Figure 3](assets/papers-explained-151-aya-23/fig-3.png) | Architecture table for **Aya-23-8B** vs **Aya-23-35B**: widths, depths, FFN dims, attention heads/KV heads, vocabulary, and embedding vs non-embedding parameter counts. |
-| ![Figure 4](assets/papers-explained-151-aya-23/fig-4.png) | Instruction-tuning chat template: special tokens delimiting user turns vs assistant completions around a sample prompt. |
-| ![Figure 5](assets/papers-explained-151-aya-23/fig-5.png) | Zero-shot held-out discriminative tasks (XCOPA, XSC, XWG) with per-task and average accuracy for mid-size baselines vs **Aya-23-8B**, and Mixtral vs **Aya-23-35B**. |
-| ![Figure 6](assets/papers-explained-151-aya-23/fig-6.png) | Multilingual MMLU (5-shot) scores across 14 languages plus average; **Aya-23-8B** leads most locales in its tier and **Aya-23-35B** edges Mixtral on average with larger gains on Arabic/Hindi/Vietnamese. |
-| ![Figure 7](assets/papers-explained-151-aya-23/fig-7.png) | MGSM (5-shot chain-of-thought) accuracy by language subset with averages; **Aya-23-8B** at **36.6** vs **Aya-101-13B** at 8.1, **Aya-23-35B** at **53.7** vs Mixtral **50.2**. |
-| ![Figure 8](assets/papers-explained-151-aya-23/fig-8.png) | Generative evaluation: FLORES-200 spBLEU (X→En / En→X) and XLSum RougeL for translation and multilingual summarization across model tiers. |
-| ![Figure 9](assets/papers-explained-151-aya-23/fig-9.png) | LLM-as-judge preference breakdown (win / tie / loss %) over ten languages: **Aya-23-8B** vs Aya-101, Gemma-1.1, Mistral; **Aya-23-35B** vs Mixtral-8×7B-Instruct. |
-| ![Figure 10](assets/papers-explained-151-aya-23/fig-10.png) | Human evaluation headline win rates on EN/FR/HI/RU/ES for Aya-101 vs Aya-23-8B, Aya-101 vs Aya-23-35B, and Aya-23-8B vs Aya-23-35B. |
-| ![Figure 11](assets/papers-explained-151-aya-23/fig-11.png) | Multilingual AdvBench: GPT-4-judged harmful-response rates (↓) across locales for **Aya-101-13B**, **Aya-23-8B**, and **Aya-23-35B**. |
-| ![Figure 12](assets/papers-explained-151-aya-23/fig-12.png) | Toxicity analysis with Perspective-style metrics: expected maximum toxicity and toxicity probability by language for the three Aya checkpoints. |
-| ![Figure 13](assets/papers-explained-151-aya-23/fig-13.png) | Identity-descriptor prompts: toxicity distributions by racial group × gender (box plots) comparing **Aya-101-13B**, **Aya-23-8B**, and **Aya-23-35B**. |
-| ![Figure 14](assets/papers-explained-151-aya-23/fig-14.png) | **Aya Expanse 8B** pipeline ablation: win rate vs Gemma-2 9B after May baseline, +multilingual arbitrage SFT, +merging, +iterative DPO with merging. |
-| ![Figure 15](assets/papers-explained-151-aya-23/fig-15.png) | **Aya Expanse 8B** language-specific win/tie/loss on m-ArenaHard against Gemma-2 9B (EN, AR, ZH, FR, HI, JA, KO, TR). |
-| ![Figure 16](assets/papers-explained-151-aya-23/fig-16.png) | **Aya Expanse 8B** aggregate m-ArenaHard outcomes vs Gemma-2 9B, Llama-3.1 8B, and Ministral 8B. |
-| ![Figure 17](assets/papers-explained-151-aya-23/fig-17.png) | **Aya Expanse 32B** m-ArenaHard win/tie/loss vs Gemma-2 27B, Llama-3.1 70B, and Mixtral 8×22B. |
+| ![Figure 1](assets/papers-explained-151-aya-23/fig-1.webp) | Title page of *Aya 23: Open Weight Releases to Further Multilingual Progress* (Cohere For AI / Cohere authors). |
+| ![Figure 2](assets/papers-explained-151-aya-23/fig-2.webp) | The 23 covered languages with ISO codes, scripts, families/subgroups, and approximate native-speaker counts. |
+| ![Figure 3](assets/papers-explained-151-aya-23/fig-3.webp) | Architecture table for **Aya-23-8B** vs **Aya-23-35B**: widths, depths, FFN dims, attention heads/KV heads, vocabulary, and embedding vs non-embedding parameter counts. |
+| ![Figure 4](assets/papers-explained-151-aya-23/fig-4.webp) | Instruction-tuning chat template: special tokens delimiting user turns vs assistant completions around a sample prompt. |
+| ![Figure 5](assets/papers-explained-151-aya-23/fig-5.webp) | Zero-shot held-out discriminative tasks (XCOPA, XSC, XWG) with per-task and average accuracy for mid-size baselines vs **Aya-23-8B**, and Mixtral vs **Aya-23-35B**. |
+| ![Figure 6](assets/papers-explained-151-aya-23/fig-6.webp) | Multilingual MMLU (5-shot) scores across 14 languages plus average; **Aya-23-8B** leads most locales in its tier and **Aya-23-35B** edges Mixtral on average with larger gains on Arabic/Hindi/Vietnamese. |
+| ![Figure 7](assets/papers-explained-151-aya-23/fig-7.webp) | MGSM (5-shot chain-of-thought) accuracy by language subset with averages; **Aya-23-8B** at **36.6** vs **Aya-101-13B** at 8.1, **Aya-23-35B** at **53.7** vs Mixtral **50.2**. |
+| ![Figure 8](assets/papers-explained-151-aya-23/fig-8.webp) | Generative evaluation: FLORES-200 spBLEU (X→En / En→X) and XLSum RougeL for translation and multilingual summarization across model tiers. |
+| ![Figure 9](assets/papers-explained-151-aya-23/fig-9.webp) | LLM-as-judge preference breakdown (win / tie / loss %) over ten languages: **Aya-23-8B** vs Aya-101, Gemma-1.1, Mistral; **Aya-23-35B** vs Mixtral-8×7B-Instruct. |
+| ![Figure 10](assets/papers-explained-151-aya-23/fig-10.webp) | Human evaluation headline win rates on EN/FR/HI/RU/ES for Aya-101 vs Aya-23-8B, Aya-101 vs Aya-23-35B, and Aya-23-8B vs Aya-23-35B. |
+| ![Figure 11](assets/papers-explained-151-aya-23/fig-11.webp) | Multilingual AdvBench: GPT-4-judged harmful-response rates (↓) across locales for **Aya-101-13B**, **Aya-23-8B**, and **Aya-23-35B**. |
+| ![Figure 12](assets/papers-explained-151-aya-23/fig-12.webp) | Toxicity analysis with Perspective-style metrics: expected maximum toxicity and toxicity probability by language for the three Aya checkpoints. |
+| ![Figure 13](assets/papers-explained-151-aya-23/fig-13.webp) | Identity-descriptor prompts: toxicity distributions by racial group × gender (box plots) comparing **Aya-101-13B**, **Aya-23-8B**, and **Aya-23-35B**. |
+| ![Figure 14](assets/papers-explained-151-aya-23/fig-14.webp) | **Aya Expanse 8B** pipeline ablation: win rate vs Gemma-2 9B after May baseline, +multilingual arbitrage SFT, +merging, +iterative DPO with merging. |
+| ![Figure 15](assets/papers-explained-151-aya-23/fig-15.webp) | **Aya Expanse 8B** language-specific win/tie/loss on m-ArenaHard against Gemma-2 9B (EN, AR, ZH, FR, HI, JA, KO, TR). |
+| ![Figure 16](assets/papers-explained-151-aya-23/fig-16.webp) | **Aya Expanse 8B** aggregate m-ArenaHard outcomes vs Gemma-2 9B, Llama-3.1 8B, and Ministral 8B. |
+| ![Figure 17](assets/papers-explained-151-aya-23/fig-17.webp) | **Aya Expanse 32B** m-ArenaHard win/tie/loss vs Gemma-2 27B, Llama-3.1 70B, and Mixtral 8×22B. |
 ## Related
 
 - [[Papers Explained Corpus]]

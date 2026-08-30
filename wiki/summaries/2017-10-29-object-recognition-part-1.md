@@ -1,6 +1,6 @@
 # Object Detection for Dummies Part 1
 
-**Source**: `raw/2017-10-29-object-recognition-part-1/full-article.html` (93 KB); secondary: `raw/2017-10-29-object-recognition-part-1/full-article.md`  
+**Source**: `raw/2017-10-29-object-recognition-part-1/full-article.md` (93 KB); secondary: `raw/2017-10-29-object-recognition-part-1/full-article.md`  
 **Canonical URL**: https://lilianweng.github.io/posts/2017-10-29-object-recognition-part-1/  
 **Author**: Lilian Weng  
 **Published**: 2017-10-29  
@@ -37,17 +37,17 @@ The second half covers **region formation**: Felzenszwalb–Huttenlocher graph s
 
 | Figure | Caption |
 |--------|---------|
-| ![Pixel gradient example](../assets/2017-10-29-object-recognition-part-1/fig-1.png) | 3×3 pixel patch with gradient vector components \(g_x, g_y\) at center pixel. |
-| ![Manu Ginobili 2004](../assets/2017-10-29-object-recognition-part-1/fig-2.png) | Grayscale example image (Manu Ginobili, 2004) for gradient/HOG demos. |
-| ![Sobel Gx and Gy](../assets/2017-10-29-object-recognition-part-1/fig-3.png) | Sobel operator outputs \(G_x\) and \(G_y\) on the 2004 photo. |
-| ![HOG soft binning](../assets/2017-10-29-object-recognition-part-1/fig-4.png) | Splitting gradient magnitude between two orientation bins when angle falls between bucket centers. |
-| ![HOG block histogram](../assets/2017-10-29-object-recognition-part-1/fig-5.png) | Normalized 36-D HOG histogram for one 2×2-cell block at location [200,200]. |
-| ![Indoor Felzenszwalb segmentation](../assets/2017-10-29-object-recognition-part-1/fig-6.png) | Indoor scene segmented with grid-graph Felzenszwalb algorithm (\(k=300\)). |
-| ![Manu Ginobili 2013](../assets/2017-10-29-object-recognition-part-1/fig-7.png) | Grayscale example (2013) for segmentation comparison. |
-| ![Felzenszwalb k=100 vs k=1000](../assets/2017-10-29-object-recognition-part-1/fig-8.png) | Fine vs coarse segmentation on Manu 2013 (\(k=100\) left, \(k=1000\) right). |
-| ![Selective Search algorithm](../assets/2017-10-29-object-recognition-part-1/fig-9.png) | Flowchart of Selective Search hierarchical region grouping. |
+| ![Pixel gradient example](../assets/2017-10-29-object-recognition-part-1/fig-1.webp) | 3×3 pixel patch with gradient vector components \(g_x, g_y\) at center pixel. |
+| ![Manu Ginobili 2004](../assets/2017-10-29-object-recognition-part-1/fig-2.webp) | Grayscale example image (Manu Ginobili, 2004) for gradient/HOG demos. |
+| ![Sobel Gx and Gy](../assets/2017-10-29-object-recognition-part-1/fig-3.webp) | Sobel operator outputs \(G_x\) and \(G_y\) on the 2004 photo. |
+| ![HOG soft binning](../assets/2017-10-29-object-recognition-part-1/fig-4.webp) | Splitting gradient magnitude between two orientation bins when angle falls between bucket centers. |
+| ![HOG block histogram](../assets/2017-10-29-object-recognition-part-1/fig-5.webp) | Normalized 36-D HOG histogram for one 2×2-cell block at location [200,200]. |
+| ![Indoor Felzenszwalb segmentation](../assets/2017-10-29-object-recognition-part-1/fig-6.webp) | Indoor scene segmented with grid-graph Felzenszwalb algorithm (\(k=300\)). |
+| ![Manu Ginobili 2013](../assets/2017-10-29-object-recognition-part-1/fig-7.webp) | Grayscale example (2013) for segmentation comparison. |
+| ![Felzenszwalb k=100 vs k=1000](../assets/2017-10-29-object-recognition-part-1/fig-8.webp) | Fine vs coarse segmentation on Manu 2013 (\(k=100\) left, \(k=1000\) right). |
+| ![Selective Search algorithm](../assets/2017-10-29-object-recognition-part-1/fig-9.webp) | Flowchart of Selective Search hierarchical region grouping. |
 
-The gradient patch ![Pixel gradient example](../assets/2017-10-29-object-recognition-part-1/fig-1.png) grounds the discrete \(\nabla f\) definition. HOG soft binning ![HOG soft binning](../assets/2017-10-29-object-recognition-part-1/fig-4.png) explains why small pose shifts do not destabilize descriptors. Selective Search ![Selective Search algorithm](../assets/2017-10-29-object-recognition-part-1/fig-9.png) is the bridge to ~2k region proposals per image in R-CNN.
+The gradient patch ![Pixel gradient example](../assets/2017-10-29-object-recognition-part-1/fig-1.webp) grounds the discrete \(\nabla f\) definition. HOG soft binning ![HOG soft binning](../assets/2017-10-29-object-recognition-part-1/fig-4.webp) explains why small pose shifts do not destabilize descriptors. Selective Search ![Selective Search algorithm](../assets/2017-10-29-object-recognition-part-1/fig-9.webp) is the bridge to ~2k region proposals per image in R-CNN.
 
 ## Recognition vs detection
 

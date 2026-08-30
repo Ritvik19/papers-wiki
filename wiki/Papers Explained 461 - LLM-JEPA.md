@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-09-25_Papers-Explained-461--LLM-JEPA-ceedfd0e63d8.html`
+- Source file: `raw/2025-09-25_Papers-Explained-461--LLM-JEPA-ceedfd0e63d8.md`
 - Source title: Papers Explained 461: LLM-JEPA
 - Published: 2025-09-25
 - Canonical: [https://medium.com/@ritvik19/papers-explained-461-llm-jepa-ceedfd0e63d8](https://medium.com/@ritvik19/papers-explained-461-llm-jepa-ceedfd0e63d8)
@@ -73,19 +73,19 @@ LLM-JEPA: Large Language Models Meet Joint Embedding Predictive Architectures [2
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-09-25_Papers-Explained-461--LLM-JEPA-ceedfd0e63d8.html`); local copies under `wiki/assets/papers-explained-461-llm-jepa/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-09-25_Papers-Explained-461--LLM-JEPA-ceedfd0e63d8.md`); local copies under `wiki/assets/papers-explained-461-llm-jepa/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-461-llm-jepa/fig-1.png) | Title card: LLM-JEPA. |
-| ![Figure 2](assets/papers-explained-461-llm-jepa/fig-2.png) | JEPA applied to NLP tasks that has Text and Code. |
-| ![Figure 3](assets/papers-explained-461-llm-jepa/fig-3.png) | Text and Code can be used as concrete examples of having different views of the same underlying knowledge. |
-| ![Figure 4](assets/papers-explained-461-llm-jepa/fig-4.png) | The research aims to improve the abstraction capabilities of LLMs using the joint embedding prediction task. |
-| ![Figure 5](assets/papers-explained-461-llm-jepa/fig-5.png) | Fine-tuning accuracy on dataset NL-RX-SYNTH. |
-| ![Figure 6](assets/papers-explained-461-llm-jepa/fig-6.png) | Fine-tuning accuracy by model Llama-3.2–1B-Instruct. |
-| ![Figure 7](assets/papers-explained-461-llm-jepa/fig-7.png) | Fine-tuning accuracy on NL-RX-SYNTH. |
-| ![Figure 8](assets/papers-explained-461-llm-jepa/fig-8.png) | Pretraining accuracy on dataset NL-RX-SYNTH. |
-| ![Figure 9](assets/papers-explained-461-llm-jepa/fig-9.png) | Another pretraining experiment is conducted on cestwc/paraphrase containing groups of 5 paraphrases. |
+| ![Figure 1](assets/papers-explained-461-llm-jepa/fig-1.webp) | Title card: LLM-JEPA. |
+| ![Figure 2](assets/papers-explained-461-llm-jepa/fig-2.webp) | JEPA applied to NLP tasks that has Text and Code. |
+| ![Figure 3](assets/papers-explained-461-llm-jepa/fig-3.webp) | Text and Code can be used as concrete examples of having different views of the same underlying knowledge. |
+| ![Figure 4](assets/papers-explained-461-llm-jepa/fig-4.webp) | The research aims to improve the abstraction capabilities of LLMs using the joint embedding prediction task. |
+| ![Figure 5](assets/papers-explained-461-llm-jepa/fig-5.webp) | Fine-tuning accuracy on dataset NL-RX-SYNTH. |
+| ![Figure 6](assets/papers-explained-461-llm-jepa/fig-6.webp) | Fine-tuning accuracy by model Llama-3.2–1B-Instruct. |
+| ![Figure 7](assets/papers-explained-461-llm-jepa/fig-7.webp) | Fine-tuning accuracy on NL-RX-SYNTH. |
+| ![Figure 8](assets/papers-explained-461-llm-jepa/fig-8.webp) | Pretraining accuracy on dataset NL-RX-SYNTH. |
+| ![Figure 9](assets/papers-explained-461-llm-jepa/fig-9.webp) | Another pretraining experiment is conducted on cestwc/paraphrase containing groups of 5 paraphrases. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-11-20_Papers-Explained-256--DePlot-3e8a02eefc94.html`
+- Source file: `raw/2024-11-20_Papers-Explained-256--DePlot-3e8a02eefc94.md`
 - Source title: Papers Explained 256: DePlot
 - Published: 2024-11-20
 - Canonical: [https://medium.com/@ritvik19/papers-explained-256-deplot-3e8a02eefc94](https://medium.com/@ritvik19/papers-explained-256-deplot-3e8a02eefc94)
@@ -107,17 +107,17 @@ Recommended Reading: [Document Information Processing](https://ritvik19.medium.c
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-11-20_Papers-Explained-256--DePlot-3e8a02eefc94.html`); local copies under `wiki/assets/papers-explained-256-deplot/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-11-20_Papers-Explained-256--DePlot-3e8a02eefc94.md`); local copies under `wiki/assets/papers-explained-256-deplot/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-256-deplot/fig-1.png) | Title card: DePlot. |
-| ![Figure 2](assets/papers-explained-256-deplot/fig-2.png) | An illustration of the DEPLOT+LLM method. |
-| ![Figure 3](assets/papers-explained-256-deplot/fig-3.png) | Then the N ×M matrix of distances can be used to find a minimal cost matching between the elements in P and T, expressed in the form of... |
-| ![Figure 4](assets/papers-explained-256-deplot/fig-4.png) | However, RNSS has limitations, including not accounting for the position of numbers within the table, ignoring non-numeric content, giving... |
-| ![Figure 5](assets/papers-explained-256-deplot/fig-5.png) | A similarity matrix with shape N × M in then obtained which can be used to identify the minimal cost matching X ∈ R^N×M. |
-| ![Figure 6](assets/papers-explained-256-deplot/fig-6.png) | Benchmarking plot-to-table conversion accuracy on the PlotQA dataset. |
-| ![Figure 7](assets/papers-explained-256-deplot/fig-7.png) | Main experimental results on two plot/chart QA benchmarks ChartQA & PlotQA. |
+| ![Figure 1](assets/papers-explained-256-deplot/fig-1.webp) | Title card: DePlot. |
+| ![Figure 2](assets/papers-explained-256-deplot/fig-2.webp) | An illustration of the DEPLOT+LLM method. |
+| ![Figure 3](assets/papers-explained-256-deplot/fig-3.webp) | Then the N ×M matrix of distances can be used to find a minimal cost matching between the elements in P and T, expressed in the form of... |
+| ![Figure 4](assets/papers-explained-256-deplot/fig-4.webp) | However, RNSS has limitations, including not accounting for the position of numbers within the table, ignoring non-numeric content, giving... |
+| ![Figure 5](assets/papers-explained-256-deplot/fig-5.webp) | A similarity matrix with shape N × M in then obtained which can be used to identify the minimal cost matching X ∈ R^N×M. |
+| ![Figure 6](assets/papers-explained-256-deplot/fig-6.webp) | Benchmarking plot-to-table conversion accuracy on the PlotQA dataset. |
+| ![Figure 7](assets/papers-explained-256-deplot/fig-7.webp) | Main experimental results on two plot/chart QA benchmarks ChartQA & PlotQA. |
 ## Related
 
 - [[Papers Explained Corpus]]

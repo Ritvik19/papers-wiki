@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-05-30_Papers-Explainedv377--Fathom-R1-ba93dd040cbf.html`
+- Source file: `raw/2025-05-30_Papers-Explainedv377--Fathom-R1-ba93dd040cbf.md`
 - Source title: Papers Explainedv377: Fathom-R1
 - Published: 2025-05-30
 - Canonical: [https://medium.com/@ritvik19/papers-explainedv377-fathom-r1-ba93dd040cbf](https://medium.com/@ritvik19/papers-explainedv377-fathom-r1-ba93dd040cbf)
@@ -91,12 +91,12 @@ Given v0.6 and v0.4 models have been developed by following different training m
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-05-30_Papers-Explainedv377--Fathom-R1-ba93dd040cbf.html`); local copies under `wiki/assets/papers-explainedv377-fathom-r1/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-05-30_Papers-Explainedv377--Fathom-R1-ba93dd040cbf.md`); local copies under `wiki/assets/papers-explainedv377-fathom-r1/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explainedv377-fathom-r1/fig-1.png) | Title card: Papers Explainedv377 - Fathom-R1. |
-| ![Figure 2](assets/papers-explainedv377-fathom-r1/fig-2.png) | Evaluation. |
+| ![Figure 1](assets/papers-explainedv377-fathom-r1/fig-1.webp) | Title card: Papers Explainedv377 - Fathom-R1. |
+| ![Figure 2](assets/papers-explainedv377-fathom-r1/fig-2.webp) | Evaluation. |
 ## Related
 
 - [[Papers Explained Corpus]]

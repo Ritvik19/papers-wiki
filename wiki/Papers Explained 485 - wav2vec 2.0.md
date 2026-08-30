@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-11-05_Papers-Explained-485--wav2vec-2-0-fe05d2379da1.html`
+- Source file: `raw/2025-11-05_Papers-Explained-485--wav2vec-2-0-fe05d2379da1.md`
 - Source title: Papers Explained 485: wav2vec 2.0
 - Published: 2025-11-05
 - Canonical: [https://medium.com/@ritvik19/papers-explained-485-wav2vec-2-0-fe05d2379da1](https://medium.com/@ritvik19/papers-explained-485-wav2vec-2-0-fe05d2379da1)
@@ -153,18 +153,18 @@ wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations 
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-11-05_Papers-Explained-485--wav2vec-2-0-fe05d2379da1.html`); local copies under `wiki/assets/papers-explained-485-wav2vec-2-0/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-11-05_Papers-Explained-485--wav2vec-2-0-fe05d2379da1.md`); local copies under `wiki/assets/papers-explained-485-wav2vec-2-0/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-485-wav2vec-2-0/fig-1.png) | Title card: wav2vec 2.0. |
-| ![Figure 2](assets/papers-explained-485-wav2vec-2-0/fig-2.png) | Illustration of the framework. |
-| ![Figure 3](assets/papers-explained-485-wav2vec-2-0/fig-3.png) | To make the selection of codewords differentiable, the Gumbel softmax technique is used. |
-| ![Figure 4](assets/papers-explained-485-wav2vec-2-0/fig-4.png) | Contrastive Loss. |
-| ![Figure 5](assets/papers-explained-485-wav2vec-2-0/fig-5.png) | Diversity Loss. |
-| ![Figure 6](assets/papers-explained-485-wav2vec-2-0/fig-6.png) | WER on the Librispeech dev/test sets when training on the Libri-light low-resource labeled data setups of 10 min, 1 hour, 10 hours and the clean 100h subset of Librispeech. |
-| ![Figure 7](assets/papers-explained-485-wav2vec-2-0/fig-7.png) | WER on Librispeech when using all 960 hours of labeled data. |
-| ![Figure 8](assets/papers-explained-485-wav2vec-2-0/fig-8.png) | TIMIT phoneme recognition accuracy in terms of phoneme error rate (PER). |
+| ![Figure 1](assets/papers-explained-485-wav2vec-2-0/fig-1.webp) | Title card: wav2vec 2.0. |
+| ![Figure 2](assets/papers-explained-485-wav2vec-2-0/fig-2.webp) | Illustration of the framework. |
+| ![Figure 3](assets/papers-explained-485-wav2vec-2-0/fig-3.webp) | To make the selection of codewords differentiable, the Gumbel softmax technique is used. |
+| ![Figure 4](assets/papers-explained-485-wav2vec-2-0/fig-4.webp) | Contrastive Loss. |
+| ![Figure 5](assets/papers-explained-485-wav2vec-2-0/fig-5.webp) | Diversity Loss. |
+| ![Figure 6](assets/papers-explained-485-wav2vec-2-0/fig-6.webp) | WER on the Librispeech dev/test sets when training on the Libri-light low-resource labeled data setups of 10 min, 1 hour, 10 hours and the clean 100h subset of Librispeech. |
+| ![Figure 7](assets/papers-explained-485-wav2vec-2-0/fig-7.webp) | WER on Librispeech when using all 960 hours of labeled data. |
+| ![Figure 8](assets/papers-explained-485-wav2vec-2-0/fig-8.webp) | TIMIT phoneme recognition accuracy in terms of phoneme error rate (PER). |
 ## Related
 
 - [[Papers Explained Corpus]]

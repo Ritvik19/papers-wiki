@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-09-20_Papers-Explained-215--Swin-Transformer-V2-53bee16ab668.html`
+- Source file: `raw/2024-09-20_Papers-Explained-215--Swin-Transformer-V2-53bee16ab668.md`
 - Source title: Papers Explained 215: Swin Transformer V2
 - Published: 2024-09-20
 - Canonical: [https://medium.com/@ritvik19/papers-explained-215-swin-transformer-v2-53bee16ab668](https://medium.com/@ritvik19/papers-explained-215-swin-transformer-v2-53bee16ab668)
@@ -144,17 +144,17 @@ Recommended Reading [Vision Transformers](https://ritvik19.medium.com/list/visio
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-09-20_Papers-Explained-215--Swin-Transformer-V2-53bee16ab668.html`); local copies under `wiki/assets/papers-explained-215-swin-transformer-v2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-09-20_Papers-Explained-215--Swin-Transformer-V2-53bee16ab668.md`); local copies under `wiki/assets/papers-explained-215-swin-transformer-v2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-215-swin-transformer-v2/fig-1.png) | Swin Transformer V2 Overview: Scaling up capacity and resolution. |
-| ![Figure 2](assets/papers-explained-215-swin-transformer-v2/fig-2.png) | Architecture comparison: Swin Transformer V1 vs. Swin Transformer V2. |
-| ![Figure 3](assets/papers-explained-215-swin-transformer-v2/fig-3.png) | Scaled cosine attention formula for improved training stability. |
-| ![Figure 4](assets/papers-explained-215-swin-transformer-v2/fig-4.png) | Comparison on ImageNet-1K V1 and V2 classification results. |
-| ![Figure 5](assets/papers-explained-215-swin-transformer-v2/fig-5.png) | Comparison on COCO object detection and instance segmentation results. |
-| ![Figure 6](assets/papers-explained-215-swin-transformer-v2/fig-6.png) | Comparison on ADE20K semantic segmentation results. |
-| ![Figure 7](assets/papers-explained-215-swin-transformer-v2/fig-7.png) | Comparison on Kinetics-400 video action classification results. |
+| ![Figure 1](assets/papers-explained-215-swin-transformer-v2/fig-1.webp) | Swin Transformer V2 Overview: Scaling up capacity and resolution. |
+| ![Figure 2](assets/papers-explained-215-swin-transformer-v2/fig-2.webp) | Architecture comparison: Swin Transformer V1 vs. Swin Transformer V2. |
+| ![Figure 3](assets/papers-explained-215-swin-transformer-v2/fig-3.webp) | Scaled cosine attention formula for improved training stability. |
+| ![Figure 4](assets/papers-explained-215-swin-transformer-v2/fig-4.webp) | Comparison on ImageNet-1K V1 and V2 classification results. |
+| ![Figure 5](assets/papers-explained-215-swin-transformer-v2/fig-5.webp) | Comparison on COCO object detection and instance segmentation results. |
+| ![Figure 6](assets/papers-explained-215-swin-transformer-v2/fig-6.webp) | Comparison on ADE20K semantic segmentation results. |
+| ![Figure 7](assets/papers-explained-215-swin-transformer-v2/fig-7.webp) | Comparison on Kinetics-400 video action classification results. |
 ## Related
 
 - [[Papers Explained Corpus]]

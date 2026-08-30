@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-07-10_Papers-Explained-161--Orca-2-b6ffbccd1eef.html`
+- Source file: `raw/2024-07-10_Papers-Explained-161--Orca-2-b6ffbccd1eef.md`
 - Source title: Papers Explained 161: Orca 2
 - Published: 2024-07-10
 - Canonical: [https://medium.com/@ritvik19/papers-explained-161-orca-2-b6ffbccd1eef](https://medium.com/@ritvik19/papers-explained-161-orca-2-b6ffbccd1eef)
@@ -129,19 +129,19 @@ Recommended Reading [Orca Series](https://ritvik19.medium.com/list/orca-series-1
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-07-10_Papers-Explained-161--Orca-2-b6ffbccd1eef.html`); local copies under `wiki/assets/papers-explained-161-orca-2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-07-10_Papers-Explained-161--Orca-2-b6ffbccd1eef.md`); local copies under `wiki/assets/papers-explained-161-orca-2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-161-orca-2/fig-1.png) | Paper title block: *Orca 2: Teaching Small Language Models How to Reason* (Microsoft Research). |
-| ![Figure 2](assets/papers-explained-161-orca-2/fig-2.png) | Generic **cautious assistant** system message used for the student after **prompt erasing** (training-time replacement of task-specific teacher prompts). |
-| ![Figure 3](assets/papers-explained-161-orca-2/fig-3.png) | Macro-average **exact-match** reasoning across benchmarks; Orca-2 7B/13B vs baselines, with optional **cautious** system message. |
-| ![Figure 4](assets/papers-explained-161-orca-2/fig-4.png) | Zero-shot per-benchmark reasoning table (AGIEval, BBH, DROP, CRASS, RACE, GSM8K) including cautious-sm variants. |
-| ![Figure 5](assets/papers-explained-161-orca-2/fig-5.png) | **MMLU**, **ARC-Easy**, and **ARC-Challenge** vs 13B/70B chat baselines and GPT models. |
-| ![Figure 6](assets/papers-explained-161-orca-2/fig-6.png) | Text completion: **HellaSwag** and **LAMBADA** exact-match in zero-shot setting. |
-| ![Figure 7](assets/papers-explained-161-orca-2/fig-7.png) | **MT-Bench** scores by turn and average (multi-turn chat). |
-| ![Figure 8](assets/papers-explained-161-orca-2/fig-8.png) | Average **grounding fault** on abstractive summarization (GPT-4 as **discriminator**); lower bars are better. |
-| ![Figure 9](assets/papers-explained-161-orca-2/fig-9.png) | Per-dataset grounding / hallucination rates (ACI-BENCH, MS MARCO, QMSum) with GPT-4 as **judge**; lower is better. |
+| ![Figure 1](assets/papers-explained-161-orca-2/fig-1.webp) | Paper title block: *Orca 2: Teaching Small Language Models How to Reason* (Microsoft Research). |
+| ![Figure 2](assets/papers-explained-161-orca-2/fig-2.webp) | Generic **cautious assistant** system message used for the student after **prompt erasing** (training-time replacement of task-specific teacher prompts). |
+| ![Figure 3](assets/papers-explained-161-orca-2/fig-3.webp) | Macro-average **exact-match** reasoning across benchmarks; Orca-2 7B/13B vs baselines, with optional **cautious** system message. |
+| ![Figure 4](assets/papers-explained-161-orca-2/fig-4.webp) | Zero-shot per-benchmark reasoning table (AGIEval, BBH, DROP, CRASS, RACE, GSM8K) including cautious-sm variants. |
+| ![Figure 5](assets/papers-explained-161-orca-2/fig-5.webp) | **MMLU**, **ARC-Easy**, and **ARC-Challenge** vs 13B/70B chat baselines and GPT models. |
+| ![Figure 6](assets/papers-explained-161-orca-2/fig-6.webp) | Text completion: **HellaSwag** and **LAMBADA** exact-match in zero-shot setting. |
+| ![Figure 7](assets/papers-explained-161-orca-2/fig-7.webp) | **MT-Bench** scores by turn and average (multi-turn chat). |
+| ![Figure 8](assets/papers-explained-161-orca-2/fig-8.webp) | Average **grounding fault** on abstractive summarization (GPT-4 as **discriminator**); lower bars are better. |
+| ![Figure 9](assets/papers-explained-161-orca-2/fig-9.webp) | Per-dataset grounding / hallucination rates (ACI-BENCH, MS MARCO, QMSum) with GPT-4 as **judge**; lower is better. |
 ## Related
 
 - [[Papers Explained Corpus]]

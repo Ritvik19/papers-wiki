@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-09-03_Papers-Explained-445--Context-Rot-4bbd72d77631.html`
+- Source file: `raw/2025-09-03_Papers-Explained-445--Context-Rot-4bbd72d77631.md`
 - Source title: Papers Explained 445: Context Rot
 - Published: 2025-09-03
 - Canonical: [https://medium.com/@ritvik19/papers-explained-443-context-rot-4bbd72d77631](https://medium.com/@ritvik19/papers-explained-443-context-rot-4bbd72d77631)
@@ -265,31 +265,31 @@ For each word combination, 1090 variations of context lengths and unique word in
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-09-03_Papers-Explained-445--Context-Rot-4bbd72d77631.html`); local copies under `wiki/assets/papers-explained-445-context-rot/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-09-03_Papers-Explained-445--Context-Rot-4bbd72d77631.md`); local copies under `wiki/assets/papers-explained-445-context-rot/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-445-context-rot/fig-1.png) | Title card: Context Rot. |
-| ![Figure 2](assets/papers-explained-445-context-rot/fig-2.png) | Example Needle in a Haystack (NIAH) Setup. |
-| ![Figure 3](assets/papers-explained-445-context-rot/fig-3.png) | Comparison — Distractor vs. Irrelevant Context. |
-| ![Figure 4](assets/papers-explained-445-context-rot/fig-4.png) | NIAH: Needle-Question Similarity. |
-| ![Figure 5](assets/papers-explained-445-context-rot/fig-5.png) | Impact of Distractors — Three Conditions. |
-| ![Figure 6](assets/papers-explained-445-context-rot/fig-6.png) | Impact of Distractors: Performance by Number of Distractors — arXiv haystack/PG essay needles. |
-| ![Figure 7](assets/papers-explained-445-context-rot/fig-7.png) | Impact of Distractors: Performance by Individual Distractors — arXiv haystack/PG essay needles. |
-| ![Figure 8](assets/papers-explained-445-context-rot/fig-8.png) | Impact of Distractors: Failure Analysis — arXiv haystack/PG essay needles. |
-| ![Figure 9](assets/papers-explained-445-context-rot/fig-9.png) | Needle-Haystack Similarity: Experimental Setup. |
-| ![Figure 10](assets/papers-explained-445-context-rot/fig-10.png) | Needle-Haystack Similarity Results. |
-| ![Figure 11](assets/papers-explained-445-context-rot/fig-11.png) | Haystack Structure: Sample Experimental Setup. |
-| ![Figure 12](assets/papers-explained-445-context-rot/fig-12.png) | Haystack Structure: Averaged Performance Across 18 Models for Original vs Shuffled Haystacks. |
-| ![Figure 13](assets/papers-explained-445-context-rot/fig-13.png) | LongMemEval — Examples by Question Type. |
-| ![Figure 14](assets/papers-explained-445-context-rot/fig-14.png) | LongMemEval Results — Claude Family. |
-| ![Figure 15](assets/papers-explained-445-context-rot/fig-15.png) | LongMemEval Results — GPT Family. |
-| ![Figure 16](assets/papers-explained-445-context-rot/fig-16.png) | LongMemEval Results — Gemini Family. |
-| ![Figure 17](assets/papers-explained-445-context-rot/fig-17.png) | LongMemEval Results — Qwen Family. |
-| ![Figure 18](assets/papers-explained-445-context-rot/fig-18.png) | Repeated Words — Claude Family. |
-| ![Figure 19](assets/papers-explained-445-context-rot/fig-19.png) | Repeated Words — GPT Family. |
-| ![Figure 20](assets/papers-explained-445-context-rot/fig-20.png) | Repeated Words — Gemini Family. |
-| ![Figure 21](assets/papers-explained-445-context-rot/fig-21.png) | Repeated Words — Qwen Family. |
+| ![Figure 1](assets/papers-explained-445-context-rot/fig-1.webp) | Title card: Context Rot. |
+| ![Figure 2](assets/papers-explained-445-context-rot/fig-2.webp) | Example Needle in a Haystack (NIAH) Setup. |
+| ![Figure 3](assets/papers-explained-445-context-rot/fig-3.webp) | Comparison — Distractor vs. Irrelevant Context. |
+| ![Figure 4](assets/papers-explained-445-context-rot/fig-4.webp) | NIAH: Needle-Question Similarity. |
+| ![Figure 5](assets/papers-explained-445-context-rot/fig-5.webp) | Impact of Distractors — Three Conditions. |
+| ![Figure 6](assets/papers-explained-445-context-rot/fig-6.webp) | Impact of Distractors: Performance by Number of Distractors — arXiv haystack/PG essay needles. |
+| ![Figure 7](assets/papers-explained-445-context-rot/fig-7.webp) | Impact of Distractors: Performance by Individual Distractors — arXiv haystack/PG essay needles. |
+| ![Figure 8](assets/papers-explained-445-context-rot/fig-8.webp) | Impact of Distractors: Failure Analysis — arXiv haystack/PG essay needles. |
+| ![Figure 9](assets/papers-explained-445-context-rot/fig-9.webp) | Needle-Haystack Similarity: Experimental Setup. |
+| ![Figure 10](assets/papers-explained-445-context-rot/fig-10.webp) | Needle-Haystack Similarity Results. |
+| ![Figure 11](assets/papers-explained-445-context-rot/fig-11.webp) | Haystack Structure: Sample Experimental Setup. |
+| ![Figure 12](assets/papers-explained-445-context-rot/fig-12.webp) | Haystack Structure: Averaged Performance Across 18 Models for Original vs Shuffled Haystacks. |
+| ![Figure 13](assets/papers-explained-445-context-rot/fig-13.webp) | LongMemEval — Examples by Question Type. |
+| ![Figure 14](assets/papers-explained-445-context-rot/fig-14.webp) | LongMemEval Results — Claude Family. |
+| ![Figure 15](assets/papers-explained-445-context-rot/fig-15.webp) | LongMemEval Results — GPT Family. |
+| ![Figure 16](assets/papers-explained-445-context-rot/fig-16.webp) | LongMemEval Results — Gemini Family. |
+| ![Figure 17](assets/papers-explained-445-context-rot/fig-17.webp) | LongMemEval Results — Qwen Family. |
+| ![Figure 18](assets/papers-explained-445-context-rot/fig-18.webp) | Repeated Words — Claude Family. |
+| ![Figure 19](assets/papers-explained-445-context-rot/fig-19.webp) | Repeated Words — GPT Family. |
+| ![Figure 20](assets/papers-explained-445-context-rot/fig-20.webp) | Repeated Words — Gemini Family. |
+| ![Figure 21](assets/papers-explained-445-context-rot/fig-21.webp) | Repeated Words — Qwen Family. |
 ## Related
 
 - [[Papers Explained Corpus]]

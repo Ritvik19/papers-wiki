@@ -3,4 +3,4 @@
 **URL**: https://theaisummer.com/self-attention/  
 **Author**: Nikolas Adaloglou (AI Summer), 2021-03-25
 
-> Markdown readability export. Canonical source: `raw/self-attention/full-article.html`
+> Markdown readability export. Canonical source: `raw/self-attention/full-article.md`

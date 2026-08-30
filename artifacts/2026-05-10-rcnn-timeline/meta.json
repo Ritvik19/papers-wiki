@@ -41,37 +41,37 @@
   ],
   "figures": [
     {
-      "path": "../../wiki/assets/papers-explained-14-rcnn/fig-2.png",
+      "path": "../../wiki/assets/papers-explained-14-rcnn/fig-2.webp",
       "caption": "RCCN consists of three modules.",
       "verified": true,
       "note": "Opened image; it shows the R-CNN input, region proposals, warped region, CNN features, and classification flow."
     },
     {
-      "path": "../../wiki/assets/papers-explained-15-fast-rcnn/fig-2.png",
+      "path": "../../wiki/assets/papers-explained-15-fast-rcnn/fig-2.webp",
       "caption": "Spatial pyramid pooling networks (SPPnets) were proposed to speed up R-CNN by sharing computation.",
       "verified": true,
       "note": "Opened image; it shows the Fast R-CNN architecture with conv feature map, RoI pooling, fully connected layers, softmax, and bounding-box regressor."
     },
     {
-      "path": "../../wiki/assets/papers-explained-16-faster-rcnn/fig-2.png",
+      "path": "../../wiki/assets/papers-explained-16-faster-rcnn/fig-2.webp",
       "caption": "Faster R-CNN, is composed of two modules.",
       "verified": true,
       "note": "Opened image; it shows a unified Faster R-CNN network with Region Proposal Network, proposals, RoI pooling, and classifier."
     },
     {
-      "path": "../../wiki/assets/papers-explained-16-faster-rcnn/fig-3.png",
+      "path": "../../wiki/assets/papers-explained-16-faster-rcnn/fig-3.webp",
       "caption": "Anchors.",
       "verified": true,
       "note": "Opened image; it shows the RPN sliding window, class scores, regression coordinates, and anchor boxes."
     },
     {
-      "path": "../../wiki/assets/papers-explained-17-mask-rcnn/fig-2.png",
+      "path": "../../wiki/assets/papers-explained-17-mask-rcnn/fig-2.webp",
       "caption": "Faster R-CNN consists of two stages.",
       "verified": true,
       "note": "Opened image; it shows the Mask R-CNN framework with RoIAlign, class/box outputs, a convolutional mask branch, and segmented output."
     },
     {
-      "path": "../../wiki/assets/papers-explained-77-cascade-rcnn/fig-2.png",
+      "path": "../../wiki/assets/papers-explained-77-cascade-rcnn/fig-2.webp",
       "caption": "The architectures of different frameworks.",
       "verified": true,
       "note": "Opened image; it compares Faster R-CNN, iterative bounding-box inference, integral loss, and Cascade R-CNN."

@@ -26,55 +26,55 @@
   ],
   "figures": [
     {
-      "path": "../../wiki/assets/will-brown-on-sft-rl-on-policy-distillation/fig-1.jpg",
+      "path": "../../wiki/assets/will-brown-on-sft-rl-on-policy-distillation/fig-1.webp",
       "caption": "Conceptual phase diagram showing SFT giving strong early gains, RL compounding later, and OPD occupying a fast same-family middle regime.",
       "verified": true,
       "note": "Opened image and confirmed it shows SFT, SFT-RS, RL, and OPD performance over compute."
     },
     {
-      "path": "../../wiki/assets/will-brown-on-sft-rl-on-policy-distillation/fig-7.jpg",
+      "path": "../../wiki/assets/will-brown-on-sft-rl-on-policy-distillation/fig-7.webp",
       "caption": "Taxonomy table placing RL, SFT, OPD, and OPSD along sparsity, bias, concentration, and teacher-policy axes.",
       "verified": true,
       "note": "Opened image and confirmed it is the method-density-bias-concentration taxonomy."
     },
     {
-      "path": "../../wiki/assets/will-brown-on-sft-rl-on-policy-distillation/fig-10.jpg",
+      "path": "../../wiki/assets/will-brown-on-sft-rl-on-policy-distillation/fig-10.webp",
       "caption": "Diagram of the meta-algorithm: sample under a partially on-policy distribution, choose a teacher policy, and update the student.",
       "verified": true,
       "note": "Opened image and confirmed it shows three dials for sampling, advantage blend, and teacher choice."
     },
     {
-      "path": "../../wiki/assets/will-brown-on-sft-rl-on-policy-distillation/fig-13.jpg",
+      "path": "../../wiki/assets/will-brown-on-sft-rl-on-policy-distillation/fig-13.webp",
       "caption": "Pareto curve sketch for reward improvement versus KL, with SFT, OPD, OPSD, and RL occupying different points.",
       "verified": true,
       "note": "Opened image and confirmed it shows the teacher Pareto curve and KL-distance framing."
     },
     {
-      "path": "../../wiki/assets/x-nrehiew-on-policy-distillation/fig-1.jpg",
+      "path": "../../wiki/assets/x-nrehiew-on-policy-distillation/fig-1.webp",
       "caption": "SFT applies dense update pressure across a dataset target distribution, including useful task behavior and incidental style or dataset artifacts.",
       "verified": true,
       "note": "Opened image and confirmed it shows SFT update pressure from a starting model distribution to a dataset target distribution."
     },
     {
-      "path": "../../wiki/assets/x-nrehiew-on-policy-distillation/fig-2.jpg",
+      "path": "../../wiki/assets/x-nrehiew-on-policy-distillation/fig-2.webp",
       "caption": "RL updates only through behavior sampled from the current policy, concentrating probability mass around rewarded on-policy trajectories.",
       "verified": true,
       "note": "Opened image and confirmed it shows current-policy samples and a reward signal."
     },
     {
-      "path": "../../wiki/assets/x-nrehiew-on-policy-distillation/fig-4.jpg",
+      "path": "../../wiki/assets/x-nrehiew-on-policy-distillation/fig-4.webp",
       "caption": "A toy multimodal example showing reverse KL preserving an old mode better than forward-KL SFT while learning a new task mode.",
       "verified": true,
       "note": "Opened image and confirmed it compares forward KL and reverse KL in a multimodal setting."
     },
     {
-      "path": "../../wiki/assets/x-nrehiew-on-policy-distillation/fig-6.jpg",
+      "path": "../../wiki/assets/x-nrehiew-on-policy-distillation/fig-6.webp",
       "caption": "Reward and entropy curves showing OPD reward rising sharply while entropy collapses compared with a gradual RL teacher run.",
       "verified": true,
       "note": "Opened image and confirmed it shows reward and entropy plots for RL teacher and OPD variants."
     },
     {
-      "path": "../../wiki/assets/x-nrehiew-on-policy-distillation/fig-8.jpg",
+      "path": "../../wiki/assets/x-nrehiew-on-policy-distillation/fig-8.webp",
       "caption": "Per-token KL by token category under student and teacher thinking-mode configurations, with style tokens carrying the highest KL signal.",
       "verified": true,
       "note": "Opened image and confirmed it is a per-token KL table by style, math, and other token categories."

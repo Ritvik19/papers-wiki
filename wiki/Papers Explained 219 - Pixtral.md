@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-09-26_Papers-Explained-219--Pixtral-a714f94e59ac.html`
+- Source file: `raw/2024-09-26_Papers-Explained-219--Pixtral-a714f94e59ac.md`
 - Source title: Papers Explained 219: Pixtral
 - Published: 2024-09-26
 - Canonical: [https://medium.com/@ritvik19/papers-explained-219-pixtral-a714f94e59ac](https://medium.com/@ritvik19/papers-explained-219-pixtral-a714f94e59ac)
@@ -109,21 +109,21 @@ It comprises a 123B parameter multimodal decoder and a 1B parameter vision encod
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-09-26_Papers-Explained-219--Pixtral-a714f94e59ac.html`); local copies under `wiki/assets/papers-explained-219-pixtral/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-09-26_Papers-Explained-219--Pixtral-a714f94e59ac.md`); local copies under `wiki/assets/papers-explained-219-pixtral/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-219-pixtral/fig-1.png) | Title card: Pixtral. |
-| ![Figure 2](assets/papers-explained-219-pixtral/fig-2.png) | Pixtral is a 12B parameter natively multimodal vision-language model based on Mistral Nemo. |
-| ![Figure 3](assets/papers-explained-219-pixtral/fig-3.png) | In order for Pixtral 12B to ingest images, a new a 400 M vision encoder, named Pixtral- ViT, is trained from scratch. |
-| ![Figure 4](assets/papers-explained-219-pixtral/fig-4.png) | In order for Pixtral 12B to ingest images, a new a 400 M vision encoder, named Pixtral- ViT, is trained from scratch. |
-| ![Figure 5](assets/papers-explained-219-pixtral/fig-5.png) | Multimodal Performance. |
-| ![Figure 6](assets/papers-explained-219-pixtral/fig-6.png) | Language Performance. |
-| ![Figure 7](assets/papers-explained-219-pixtral/fig-7.png) | Language Performance. |
-| ![Figure 8](assets/papers-explained-219-pixtral/fig-8.png) | Language Performance. |
-| ![Figure 9](assets/papers-explained-219-pixtral/fig-9.png) | Flexible parsing ablations. |
-| ![Figure 10](assets/papers-explained-219-pixtral/fig-10.png) | It comprises a 123B parameter multimodal decoder and a 1B parameter vision encoder. |
-| ![Figure 11](assets/papers-explained-219-pixtral/fig-11.png) | It comprises a 123B parameter multimodal decoder and a 1B parameter vision encoder. |
+| ![Figure 1](assets/papers-explained-219-pixtral/fig-1.webp) | Title card: Pixtral. |
+| ![Figure 2](assets/papers-explained-219-pixtral/fig-2.webp) | Pixtral is a 12B parameter natively multimodal vision-language model based on Mistral Nemo. |
+| ![Figure 3](assets/papers-explained-219-pixtral/fig-3.webp) | In order for Pixtral 12B to ingest images, a new a 400 M vision encoder, named Pixtral- ViT, is trained from scratch. |
+| ![Figure 4](assets/papers-explained-219-pixtral/fig-4.webp) | In order for Pixtral 12B to ingest images, a new a 400 M vision encoder, named Pixtral- ViT, is trained from scratch. |
+| ![Figure 5](assets/papers-explained-219-pixtral/fig-5.webp) | Multimodal Performance. |
+| ![Figure 6](assets/papers-explained-219-pixtral/fig-6.webp) | Language Performance. |
+| ![Figure 7](assets/papers-explained-219-pixtral/fig-7.webp) | Language Performance. |
+| ![Figure 8](assets/papers-explained-219-pixtral/fig-8.webp) | Language Performance. |
+| ![Figure 9](assets/papers-explained-219-pixtral/fig-9.webp) | Flexible parsing ablations. |
+| ![Figure 10](assets/papers-explained-219-pixtral/fig-10.webp) | It comprises a 123B parameter multimodal decoder and a 1B parameter vision encoder. |
+| ![Figure 11](assets/papers-explained-219-pixtral/fig-11.webp) | It comprises a 123B parameter multimodal decoder and a 1B parameter vision encoder. |
 ## Related
 
 - [[Announcing Pixtral 12B]] — official Mistral AI Pixtral 12B launch blog (architecture, benchmarks, Apache 2.0).

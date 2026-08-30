@@ -1,6 +1,6 @@
 # Papers Explained: OLMo 3
 
-**Source**: `raw/olmo-3/full-article.html`  
+**Source**: `raw/olmo-3/full-article.md`  
 **Ingested**: 2026-05-12  
 **Tags**: #summary
 
@@ -30,30 +30,30 @@ OLMo 3 Base 32B achieves double-digit improvements over other fully-open 32B mod
 
 | Figure | Caption |
 |--------|---------|
-| ![fig-1](../assets/olmo-3/fig-1.png) | OLMo 3 title card. |
-| ![fig-2](../assets/olmo-3/fig-2.png) | Depiction of model flow for OLMo 3 (Base → Think / Instruct / RL-Zero). |
-| ![fig-3](../assets/olmo-3/fig-3.png) | Model architecture for OLMo 3 7B and 32B. |
-| ![fig-4](../assets/olmo-3/fig-4.png) | Training hyperparameters for each stage of OLMo 3 Base. |
-| ![fig-5](../assets/olmo-3/fig-5.png) | Task clustering for OlmoBaseEval. |
-| ![fig-6](../assets/olmo-3/fig-6.png) | Composition of Dolma 3 Mix (pretraining). |
-| ![fig-7](../assets/olmo-3/fig-7.png) | Data curation flow for pretraining data sources in Dolma 3 Mix. |
-| ![fig-8](../assets/olmo-3/fig-8.png) | Flow for midtraining data curation. |
-| ![fig-9](../assets/olmo-3/fig-9.png) | Composition of the midtraining data (Dolma 3 Dolmino Mix). |
-| ![fig-10](../assets/olmo-3/fig-10.png) | Five key components of the OLMo 3 long-context extension recipe. |
-| ![fig-11](../assets/olmo-3/fig-11.png) | Data pipeline for all OLMo 3 post-training stages. |
-| ![fig-12](../assets/olmo-3/fig-12.png) | OLMo 3 Think SFT prompt sources. |
-| ![fig-13](../assets/olmo-3/fig-13.png) | OLMo 3 Think DPO prompt sources. |
-| ![fig-14](../assets/olmo-3/fig-14.png) | OlmoRL algorithmic components overview. |
-| ![fig-15](../assets/olmo-3/fig-15.png) | Verifiers and reward design for OlmoRL. |
-| ![fig-16](../assets/olmo-3/fig-16.png) | Breakdown of Dolci-Think-RL datasets used for RL training. |
-| ![fig-17](../assets/olmo-3/fig-17.png) | Details of function calling datasets for OLMo 3 Instruct. |
-| ![fig-18](../assets/olmo-3/fig-18.png) | OLMo 3 Instruct prompt sources for SFT and DPO. |
-| ![fig-19](../assets/olmo-3/fig-19.png) | OLMo 3 Base evaluation results (32B scale). |
-| ![fig-20](../assets/olmo-3/fig-20.png) | OLMo 3 Base evaluation results (7B scale). |
-| ![fig-21](../assets/olmo-3/fig-21.png) | OLMo 3 Think 32B evaluation results. |
-| ![fig-22](../assets/olmo-3/fig-22.png) | OLMo 3 Think 7B evaluation results. |
-| ![fig-23](../assets/olmo-3/fig-23.png) | OLMo 3 Instruct 32B evaluation results. |
-| ![fig-24](../assets/olmo-3/fig-24.png) | OLMo 3 Instruct 7B evaluation results. |
+| ![fig-1](../assets/olmo-3/fig-1.webp) | OLMo 3 title card. |
+| ![fig-2](../assets/olmo-3/fig-2.webp) | Depiction of model flow for OLMo 3 (Base → Think / Instruct / RL-Zero). |
+| ![fig-3](../assets/olmo-3/fig-3.webp) | Model architecture for OLMo 3 7B and 32B. |
+| ![fig-4](../assets/olmo-3/fig-4.webp) | Training hyperparameters for each stage of OLMo 3 Base. |
+| ![fig-5](../assets/olmo-3/fig-5.webp) | Task clustering for OlmoBaseEval. |
+| ![fig-6](../assets/olmo-3/fig-6.webp) | Composition of Dolma 3 Mix (pretraining). |
+| ![fig-7](../assets/olmo-3/fig-7.webp) | Data curation flow for pretraining data sources in Dolma 3 Mix. |
+| ![fig-8](../assets/olmo-3/fig-8.webp) | Flow for midtraining data curation. |
+| ![fig-9](../assets/olmo-3/fig-9.webp) | Composition of the midtraining data (Dolma 3 Dolmino Mix). |
+| ![fig-10](../assets/olmo-3/fig-10.webp) | Five key components of the OLMo 3 long-context extension recipe. |
+| ![fig-11](../assets/olmo-3/fig-11.webp) | Data pipeline for all OLMo 3 post-training stages. |
+| ![fig-12](../assets/olmo-3/fig-12.webp) | OLMo 3 Think SFT prompt sources. |
+| ![fig-13](../assets/olmo-3/fig-13.webp) | OLMo 3 Think DPO prompt sources. |
+| ![fig-14](../assets/olmo-3/fig-14.webp) | OlmoRL algorithmic components overview. |
+| ![fig-15](../assets/olmo-3/fig-15.webp) | Verifiers and reward design for OlmoRL. |
+| ![fig-16](../assets/olmo-3/fig-16.webp) | Breakdown of Dolci-Think-RL datasets used for RL training. |
+| ![fig-17](../assets/olmo-3/fig-17.webp) | Details of function calling datasets for OLMo 3 Instruct. |
+| ![fig-18](../assets/olmo-3/fig-18.webp) | OLMo 3 Instruct prompt sources for SFT and DPO. |
+| ![fig-19](../assets/olmo-3/fig-19.webp) | OLMo 3 Base evaluation results (32B scale). |
+| ![fig-20](../assets/olmo-3/fig-20.webp) | OLMo 3 Base evaluation results (7B scale). |
+| ![fig-21](../assets/olmo-3/fig-21.webp) | OLMo 3 Think 32B evaluation results. |
+| ![fig-22](../assets/olmo-3/fig-22.webp) | OLMo 3 Think 7B evaluation results. |
+| ![fig-23](../assets/olmo-3/fig-23.webp) | OLMo 3 Instruct 32B evaluation results. |
+| ![fig-24](../assets/olmo-3/fig-24.webp) | OLMo 3 Instruct 7B evaluation results. |
 
 ## Entities
 

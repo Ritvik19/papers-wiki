@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-06-17_Papers-Explained-389--short-m-k-e0b516dbb7c0.html`
+- Source file: `raw/2025-06-17_Papers-Explained-389--short-m-k-e0b516dbb7c0.md`
 - Source title: Papers Explained 389: short-m@k
 - Published: 2025-06-17
 - Canonical: [https://medium.com/@ritvik19/papers-explained-389-short-m-k-e0b516dbb7c0](https://medium.com/@ritvik19/papers-explained-389-short-m-k-e0b516dbb7c0)
@@ -107,18 +107,18 @@ Don’t Overthink it. Preferring Shorter Thinking Chains for Improved LLM Reason
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-06-17_Papers-Explained-389--short-m-k-e0b516dbb7c0.html`); local copies under `wiki/assets/papers-explained-389-short-m-k/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-06-17_Papers-Explained-389--short-m-k-e0b516dbb7c0.md`); local copies under `wiki/assets/papers-explained-389-short-m-k/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-389-short-m-k/fig-1.png) | Title card: short-m@k. |
-| ![Figure 2](assets/papers-explained-389-short-m-k/fig-2.png) | Average thinking tokens for correct (C), incorrect (IC) and all (A) answers, per easier and harder questions. |
-| ![Figure 3](assets/papers-explained-389-short-m-k/fig-3.png) | Comparison between taking the shortest/longest/random generation per example. |
-| ![Figure 4](assets/papers-explained-389-short-m-k/fig-4.png) | Visual comparison between majority voting and the proposed method short-m@k with m = 1. |
-| ![Figure 5](assets/papers-explained-389-short-m-k/fig-5.png) | Comparing different inference methods under controlled sample size (k). |
-| ![Figure 6](assets/papers-explained-389-short-m-k/fig-6.png) | Comparing different inference methods under controlled thinking compute. |
-| ![Figure 7](assets/papers-explained-389-short-m-k/fig-7.png) | Comparing time-to-answer for different inference methods. |
-| ![Figure 8](assets/papers-explained-389-short-m-k/fig-8.png) | Results for our finetuned models over the S1 variants. |
+| ![Figure 1](assets/papers-explained-389-short-m-k/fig-1.webp) | Title card: short-m@k. |
+| ![Figure 2](assets/papers-explained-389-short-m-k/fig-2.webp) | Average thinking tokens for correct (C), incorrect (IC) and all (A) answers, per easier and harder questions. |
+| ![Figure 3](assets/papers-explained-389-short-m-k/fig-3.webp) | Comparison between taking the shortest/longest/random generation per example. |
+| ![Figure 4](assets/papers-explained-389-short-m-k/fig-4.webp) | Visual comparison between majority voting and the proposed method short-m@k with m = 1. |
+| ![Figure 5](assets/papers-explained-389-short-m-k/fig-5.webp) | Comparing different inference methods under controlled sample size (k). |
+| ![Figure 6](assets/papers-explained-389-short-m-k/fig-6.webp) | Comparing different inference methods under controlled thinking compute. |
+| ![Figure 7](assets/papers-explained-389-short-m-k/fig-7.webp) | Comparing time-to-answer for different inference methods. |
+| ![Figure 8](assets/papers-explained-389-short-m-k/fig-8.webp) | Results for our finetuned models over the S1 variants. |
 ## Related
 
 - [[Papers Explained Corpus]]

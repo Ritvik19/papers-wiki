@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-07_Papers-Explained-18--TableNet-3d4c62269bb3.html`
+- Source file: `raw/2023-02-07_Papers-Explained-18--TableNet-3d4c62269bb3.md`
 - Source title: Papers Explained 18: TableNet
 - Published: 2023-02-07
 - Canonical: [https://medium.com/@ritvik19/papers-explained-18-tablenet-3d4c62269bb3](https://medium.com/@ritvik19/papers-explained-18-tablenet-3d4c62269bb3)
@@ -77,12 +77,12 @@ TableNet: Deep Learning model for end-to-end Table detection and Tabular data ex
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-07_Papers-Explained-18--TableNet-3d4c62269bb3.html`); local copies under `wiki/assets/papers-explained-18-tablenet/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-07_Papers-Explained-18--TableNet-3d4c62269bb3.md`); local copies under `wiki/assets/papers-explained-18-tablenet/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-18-tablenet/fig-1.png) | Title card: TableNet. |
-| ![Figure 2](assets/papers-explained-18-tablenet/fig-2.png) | The encoder of the model is common across both tasks, but the decoder emerges as two different branches for tables and columns. |
+| ![Figure 1](assets/papers-explained-18-tablenet/fig-1.webp) | Title card: TableNet. |
+| ![Figure 2](assets/papers-explained-18-tablenet/fig-2.webp) | The encoder of the model is common across both tasks, but the decoder emerges as two different branches for tables and columns. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-09_Papers-Explained-182--DeBERTa-V3-65347208ce03.html`
+- Source file: `raw/2024-08-09_Papers-Explained-182--DeBERTa-V3-65347208ce03.md`
 - Source title: Papers Explained 182: DeBERTa V3
 - Published: 2024-08-09
 - Canonical: [https://medium.com/@ritvik19/papers-explained-182-deberta-v3-65347208ce03](https://medium.com/@ritvik19/papers-explained-182-deberta-v3-65347208ce03)
@@ -101,18 +101,18 @@ Recommended Reading [Encoder-Only Language Transformers](https://ritvik19.medium
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-09_Papers-Explained-182--DeBERTa-V3-65347208ce03.html`); local copies under `wiki/assets/papers-explained-182-deberta-v3/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-09_Papers-Explained-182--DeBERTa-V3-65347208ce03.md`); local copies under `wiki/assets/papers-explained-182-deberta-v3/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-182-deberta-v3/fig-1.png) | Paper title block: **DeBERTaV3** — ELECTRA-style pre-training with **gradient-disentangled embedding sharing** (GDES). |
-| ![Figure 2](assets/papers-explained-182-deberta-v3/fig-2.png) | **Embedding sharing** setups: (a) joint **ES**, (b) **NES**, (c) proposed **GDES** with stop-gradient and residual \(\Delta\) embeddings. |
-| ![Figure 3](assets/papers-explained-182-deberta-v3/fig-3.png) | **Generator vs discriminator embeddings**: reported \(E_G\), \(E_D\), and \(\Delta\) terms under **ES**, **NES**, and **GDES** (compact summary table). |
-| ![Figure 4](assets/papers-explained-182-deberta-v3/fig-4.png) | **Fine-tuning** on **MNLI** (m/mm) and **SQuAD v2.0**: **DeBERTa+RTD** variants — **GDES** beats vanilla **ES** / **NES**. |
-| ![Figure 5](assets/papers-explained-182-deberta-v3/fig-5.png) | **GLUE** dev scores: **DeBERTaV3_large** vs BERT / RoBERTa / XLNet / ELECTRA / DeBERTa (**large** tier). |
-| ![Figure 6](assets/papers-explained-182-deberta-v3/fig-6.png) | **Large-model NLU suite**: MNLI, SQuAD v2, **RACE**, **ReCoRD**, **SWAG**, **NER** — **DeBERTaV3_large** vs contemporaries and bigger Megatron stacks. |
-| ![Figure 7](assets/papers-explained-182-deberta-v3/fig-7.png) | **Base / small / xsmall** tiers on **MNLI** and **SQuAD v2.0** — **DeBERTaV3** wins each scale bucket (param & vocab noted). |
-| ![Figure 8](assets/papers-explained-182-deberta-v3/fig-8.png) | **mDeBERTaV3_base** vs XLM / mT5 / **XLM-R** on **XNLI** — cross-lingual transfer vs translate-train-all (per-language grid). |
+| ![Figure 1](assets/papers-explained-182-deberta-v3/fig-1.webp) | Paper title block: **DeBERTaV3** — ELECTRA-style pre-training with **gradient-disentangled embedding sharing** (GDES). |
+| ![Figure 2](assets/papers-explained-182-deberta-v3/fig-2.webp) | **Embedding sharing** setups: (a) joint **ES**, (b) **NES**, (c) proposed **GDES** with stop-gradient and residual \(\Delta\) embeddings. |
+| ![Figure 3](assets/papers-explained-182-deberta-v3/fig-3.webp) | **Generator vs discriminator embeddings**: reported \(E_G\), \(E_D\), and \(\Delta\) terms under **ES**, **NES**, and **GDES** (compact summary table). |
+| ![Figure 4](assets/papers-explained-182-deberta-v3/fig-4.webp) | **Fine-tuning** on **MNLI** (m/mm) and **SQuAD v2.0**: **DeBERTa+RTD** variants — **GDES** beats vanilla **ES** / **NES**. |
+| ![Figure 5](assets/papers-explained-182-deberta-v3/fig-5.webp) | **GLUE** dev scores: **DeBERTaV3_large** vs BERT / RoBERTa / XLNet / ELECTRA / DeBERTa (**large** tier). |
+| ![Figure 6](assets/papers-explained-182-deberta-v3/fig-6.webp) | **Large-model NLU suite**: MNLI, SQuAD v2, **RACE**, **ReCoRD**, **SWAG**, **NER** — **DeBERTaV3_large** vs contemporaries and bigger Megatron stacks. |
+| ![Figure 7](assets/papers-explained-182-deberta-v3/fig-7.webp) | **Base / small / xsmall** tiers on **MNLI** and **SQuAD v2.0** — **DeBERTaV3** wins each scale bucket (param & vocab noted). |
+| ![Figure 8](assets/papers-explained-182-deberta-v3/fig-8.webp) | **mDeBERTaV3_base** vs XLM / mT5 / **XLM-R** on **XNLI** — cross-lingual transfer vs translate-train-all (per-language grid). |
 ## Related
 
 - [[Papers Explained Corpus]]

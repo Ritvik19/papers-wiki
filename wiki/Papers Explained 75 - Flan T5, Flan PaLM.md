@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-12-01_Papers-Explained-75--Flan-T5--Flan-PaLM-caf168b6f76.html`
+- Source file: `raw/2023-12-01_Papers-Explained-75--Flan-T5--Flan-PaLM-caf168b6f76.md`
 - Source title: Papers Explained 75: Flan T5, Flan PaLM
 - Published: 2023-12-01
 - Canonical: [https://medium.com/@ritvik19/papers-explained-75-flan-t5-flan-palm-caf168b6f76](https://medium.com/@ritvik19/papers-explained-75-flan-t5-flan-palm-caf168b6f76)
@@ -103,21 +103,21 @@ Scaling Instruction-Finetuned Language Models [2210.11416](https://arxiv.org/abs
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-12-01_Papers-Explained-75--Flan-T5--Flan-PaLM-caf168b6f76.html`); local copies under `wiki/assets/papers-explained-75-flan-t5-flan-palm/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-12-01_Papers-Explained-75--Flan-T5--Flan-PaLM-caf168b6f76.md`); local copies under `wiki/assets/papers-explained-75-flan-t5-flan-palm/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-75-flan-t5-flan-palm/fig-1.png) | Title card: Flan T5, Flan PaLM. |
-| ![Figure 2](assets/papers-explained-75-flan-t5-flan-palm/fig-2.png) | The instruction finetuning is performed on a collection of data sources with a variety of instruction template types. |
-| ![Figure 3](assets/papers-explained-75-flan-t5-flan-palm/fig-3.png) | The finetuning data comprises 473 datasets, 146 task categories, and 1,836 total tasks. |
-| ![Figure 4](assets/papers-explained-75-flan-t5-flan-palm/fig-4.png) | Combinations of finetuning data formats. |
-| ![Figure 5](assets/papers-explained-75-flan-t5-flan-palm/fig-5.png) | Across several models, instruction finetuning only costs a small amount of compute relative to pre-training. |
-| ![Figure 6](assets/papers-explained-75-flan-t5-flan-palm/fig-6.png) | Scaling behavior of multi-task instruction finetuning with respect to model size (# parameters) and number of finetuning tasks. |
-| ![Figure 7](assets/papers-explained-75-flan-t5-flan-palm/fig-7.png) | Individual benchmark results. |
-| ![Figure 8](assets/papers-explained-75-flan-t5-flan-palm/fig-8.png) | CoT prompting abilities of Flan-PaLM. |
-| ![Figure 9](assets/papers-explained-75-flan-t5-flan-palm/fig-9.png) | The effect of including CoT datasets in instruction finetuning. |
-| ![Figure 10](assets/papers-explained-75-flan-t5-flan-palm/fig-10.png) | Zero-shot performance of PaLM and Flan-PaLM on a set of 23 challenging BIG-Bench tasks. |
-| ![Figure 11](assets/papers-explained-75-flan-t5-flan-palm/fig-11.png) | It is demonstrated that Flan works across several model sizes and architectures. |
+| ![Figure 1](assets/papers-explained-75-flan-t5-flan-palm/fig-1.webp) | Title card: Flan T5, Flan PaLM. |
+| ![Figure 2](assets/papers-explained-75-flan-t5-flan-palm/fig-2.webp) | The instruction finetuning is performed on a collection of data sources with a variety of instruction template types. |
+| ![Figure 3](assets/papers-explained-75-flan-t5-flan-palm/fig-3.webp) | The finetuning data comprises 473 datasets, 146 task categories, and 1,836 total tasks. |
+| ![Figure 4](assets/papers-explained-75-flan-t5-flan-palm/fig-4.webp) | Combinations of finetuning data formats. |
+| ![Figure 5](assets/papers-explained-75-flan-t5-flan-palm/fig-5.webp) | Across several models, instruction finetuning only costs a small amount of compute relative to pre-training. |
+| ![Figure 6](assets/papers-explained-75-flan-t5-flan-palm/fig-6.webp) | Scaling behavior of multi-task instruction finetuning with respect to model size (# parameters) and number of finetuning tasks. |
+| ![Figure 7](assets/papers-explained-75-flan-t5-flan-palm/fig-7.webp) | Individual benchmark results. |
+| ![Figure 8](assets/papers-explained-75-flan-t5-flan-palm/fig-8.webp) | CoT prompting abilities of Flan-PaLM. |
+| ![Figure 9](assets/papers-explained-75-flan-t5-flan-palm/fig-9.webp) | The effect of including CoT datasets in instruction finetuning. |
+| ![Figure 10](assets/papers-explained-75-flan-t5-flan-palm/fig-10.webp) | Zero-shot performance of PaLM and Flan-PaLM on a set of 23 challenging BIG-Bench tasks. |
+| ![Figure 11](assets/papers-explained-75-flan-t5-flan-palm/fig-11.webp) | It is demonstrated that Flan works across several model sizes and architectures. |
 ## Related
 
 - [[Papers Explained Corpus]]

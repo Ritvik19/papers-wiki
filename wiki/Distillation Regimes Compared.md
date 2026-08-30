@@ -24,7 +24,7 @@ Classical knowledge distillation assumes the teacher exposes rich training signa
 - Hidden-state distillation aligns teacher and student hidden states, again using a projection when needed.
 - Prediction-layer distillation matches teacher and student logits with temperature scaling.
 
-The raw TinyBERT export (`raw/2023-02-06_Papers-Explained-05--Tiny-BERT-5e36fe0ee173.html`) emphasizes that the output of an MHA layer, FFN layer, attention matrix, or other intermediate representation can serve as the behavior function. The raw DistilBERT export (`raw/2023-02-06_Papers-Explained-06--Distil-BERT-6f138849f871.html`) frames KD as training a compact model to reproduce the behavior of a larger teacher or ensemble.
+The raw TinyBERT export (`raw/2023-02-06_Papers-Explained-05--Tiny-BERT-5e36fe0ee173.md`) emphasizes that the output of an MHA layer, FFN layer, attention matrix, or other intermediate representation can serve as the behavior function. The raw DistilBERT export (`raw/2023-02-06_Papers-Explained-06--Distil-BERT-6f138849f871.md`) frames KD as training a compact model to reproduce the behavior of a larger teacher or ensemble.
 
 The "knowledge" here is not just a final answer. It is a dense geometry: how the teacher distributes probability mass, where it attends, how it represents tokens, and which hidden directions it uses. This makes classical KD especially natural for [[Model Compression and Efficiency]], where the goal is to make a smaller architecture inherit a larger architecture's competence without needing the original training budget.
 

@@ -1,6 +1,6 @@
 # The Idea behind Actor-Critics and How A2C and A3C Improve Them
 
-**Source**: `raw/actor-critics/full-article.html` (298 KB), `raw/actor-critics/full-article.md` (markdown view)  
+**Source**: `raw/actor-critics/full-article.md` (298 KB), `raw/actor-critics/full-article.md` (markdown view)  
 **URL**: https://theaisummer.com/Actor_critics/  
 **Author**: Sergios Karagiannakos (AI Summer), 2018-11-17  
 **Ingested**: 2026-06-06  
@@ -36,15 +36,15 @@ The article closes by naming DDPG, PPO, and TRPO as actor-critic descendants and
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/actor-critics/fig-1.jpg) | Actor-critic architecture: actor selects actions, critic evaluates Q-values for state–action pairs | — |
-| ![fig-2](../assets/actor-critics/fig-2.jpg) | A3C: multiple asynchronous workers explore parallel environments and update a global network | — |
-| ![fig-3](../assets/actor-critics/fig-3.jpg) | Synchronous A2C: parallel environment copies feed a step model; train model updates then syncs weights | — |
+| ![fig-1](../assets/actor-critics/fig-1.webp) | Actor-critic architecture: actor selects actions, critic evaluates Q-values for state–action pairs | — |
+| ![fig-2](../assets/actor-critics/fig-2.webp) | A3C: multiple asynchronous workers explore parallel environments and update a global network | — |
+| ![fig-3](../assets/actor-critics/fig-3.webp) | Synchronous A2C: parallel environment copies feed a step model; train model updates then syncs weights | — |
 
-![Actor-critic architecture](../assets/actor-critics/fig-1.jpg)
+![Actor-critic architecture](../assets/actor-critics/fig-1.webp)
 
 The actor proposes actions from state; the critic scores them with Q-values — the core two-network split.
 
-![A3C parallel workers](../assets/actor-critics/fig-2.jpg)
+![A3C parallel workers](../assets/actor-critics/fig-2.webp)
 
 Independent agents explore in parallel and asynchronously contribute to a shared global policy.
 

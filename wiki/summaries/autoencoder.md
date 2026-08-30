@@ -1,6 +1,6 @@
 # How to Generate Images using Autoencoders
 
-**Source**: `raw/autoencoder/full-article.html` (337 KB), `raw/autoencoder/full-article.md` (markdown view)  
+**Source**: `raw/autoencoder/full-article.md` (337 KB), `raw/autoencoder/full-article.md` (markdown view)  
 **URL**: https://theaisummer.com/Autoencoder/  
 **Author**: Sergios Karagiannakos (AI Summer), 2018-09-09  
 **Ingested**: 2026-06-06  
@@ -12,15 +12,15 @@ Sergios Karagiannakos introduces [[Unsupervised Learning]] as an alternative to 
 
 The article's generative pivot is the [[Variational Autoencoders|variational autoencoder (VAE)]]. Instead of a deterministic code, the encoder outputs parameters of a latent distribution (μ and log-variance); samples are drawn and passed to the decoder to reconstruct or generate data. Training maximizes a variational bound with two terms: reconstruction loss (binary cross-entropy on flattened MNIST pixels) and [[KL Divergence]] regularizing the latent toward a prior. Because sampling is stochastic, backprop uses the **reparameterization trick**: \(z = \mu + \sigma \odot \epsilon\) with \(\epsilon \sim \mathcal{N}(0, I)\), decoupling randomness from learnable parameters.
 
-![Autoencoder encoder–decoder bottleneck](../assets/autoencoder/fig-1.jpg)
+![Autoencoder encoder–decoder bottleneck](../assets/autoencoder/fig-1.webp)
 
 The article describes a minimal fully connected VAE trained on MNIST handwritten digits; reconstructions are reported as nearly indistinguishable from originals.
 
-![VAE latent sampling and decoding](../assets/autoencoder/fig-2.png)
+![VAE latent sampling and decoding](../assets/autoencoder/fig-2.webp)
 
 The post closes by distinguishing **generative** models (learn \(p(x,y)\), synthesize new data) from **discriminative** models (learn \(p(y|x)\), classify existing data), foreshadowing GANs as a follow-up topic.
 
-![MNIST originals (top) vs VAE reconstructions (bottom)](../assets/autoencoder/fig-3.jpg)
+![MNIST originals (top) vs VAE reconstructions (bottom)](../assets/autoencoder/fig-3.webp)
 
 ## Key Claims
 
@@ -39,9 +39,9 @@ The post closes by distinguishing **generative** models (learn \(p(x,y)\), synth
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/autoencoder/fig-1.jpg) | Classic autoencoder architecture: encoder compresses input to latent vector, decoder reconstructs output (ECG biometrics paper diagram) | — |
-| ![fig-2](../assets/autoencoder/fig-2.png) | VAE schematic: encoder outputs distribution parameters, latent samples feed decoder for generation (texture synthesis RNN-VAE) | — |
-| ![fig-3](../assets/autoencoder/fig-3.jpg) | MNIST training results: original digits (top row) vs VAE reconstructions (bottom row) | — |
+| ![fig-1](../assets/autoencoder/fig-1.webp) | Classic autoencoder architecture: encoder compresses input to latent vector, decoder reconstructs output (ECG biometrics paper diagram) | — |
+| ![fig-2](../assets/autoencoder/fig-2.webp) | VAE schematic: encoder outputs distribution parameters, latent samples feed decoder for generation (texture synthesis RNN-VAE) | — |
+| ![fig-3](../assets/autoencoder/fig-3.webp) | MNIST training results: original digits (top row) vs VAE reconstructions (bottom row) | — |
 
 ## Entities
 

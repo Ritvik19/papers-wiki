@@ -1,6 +1,6 @@
 # Build a Domain-Specific Embedding Model in Under a Day
 
-**Source**: `raw/domain-specific-embedding-finetune/full-article.html` (221 KB), `raw/domain-specific-embedding-finetune/full-article.md`
+**Source**: `raw/domain-specific-embedding-finetune/full-article.md` (221 KB), `raw/domain-specific-embedding-finetune/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

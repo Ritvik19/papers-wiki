@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-12-23_Papers-Explained-507--T5Gemma-2-c406dbdd3839.html`
+- Source file: `raw/2025-12-23_Papers-Explained-507--T5Gemma-2-c406dbdd3839.md`
 - Source title: Papers Explained 507: T5Gemma 2
 - Published: 2025-12-23
 - Canonical: [https://medium.com/@ritvik19/papers-explained-507-t5gemma-2-c406dbdd3839](https://medium.com/@ritvik19/papers-explained-507-t5gemma-2-c406dbdd3839)
@@ -99,18 +99,18 @@ T5Gemma 2: Seeing, Reading, and Understanding Longer [2512.14856](https://arxiv.
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-12-23_Papers-Explained-507--T5Gemma-2-c406dbdd3839.html`); local copies under `wiki/assets/papers-explained-507-t5gemma-2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-12-23_Papers-Explained-507--T5Gemma-2-c406dbdd3839.md`); local copies under `wiki/assets/papers-explained-507-t5gemma-2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-507-t5gemma-2/fig-1.png) | Title card: T5Gemma 2. |
-| ![Figure 2](assets/papers-explained-507-t5gemma-2/fig-2.png) | Overview of T5Gemma 2. |
-| ![Figure 3](assets/papers-explained-507-t5gemma-2/fig-3.png) | Number of parameters for T5Gemma 2 models. |
-| ![Figure 4](assets/papers-explained-507-t5gemma-2/fig-4.png) | Architectural ablations for T5Gemma 2B-2B based on Gemma 2 2B. |
-| ![Figure 5](assets/papers-explained-507-t5gemma-2/fig-5.png) | Concretely, given the encoder output H and the decoder self-attention input X the merged attention operates as below. |
-| ![Figure 6](assets/papers-explained-507-t5gemma-2/fig-6.png) | Data ablations for T5Gemma 2. |
-| ![Figure 7](assets/papers-explained-507-t5gemma-2/fig-7.png) | Detailed pretraining results for Gemma 3, T5Gemma, and T5Gemma 2. |
-| ![Figure 8](assets/papers-explained-507-t5gemma-2/fig-8.png) | Detailed post-training results for Gemma 3, T5Gemma, and T5Gemma 2. |
+| ![Figure 1](assets/papers-explained-507-t5gemma-2/fig-1.webp) | Title card: T5Gemma 2. |
+| ![Figure 2](assets/papers-explained-507-t5gemma-2/fig-2.webp) | Overview of T5Gemma 2. |
+| ![Figure 3](assets/papers-explained-507-t5gemma-2/fig-3.webp) | Number of parameters for T5Gemma 2 models. |
+| ![Figure 4](assets/papers-explained-507-t5gemma-2/fig-4.webp) | Architectural ablations for T5Gemma 2B-2B based on Gemma 2 2B. |
+| ![Figure 5](assets/papers-explained-507-t5gemma-2/fig-5.webp) | Concretely, given the encoder output H and the decoder self-attention input X the merged attention operates as below. |
+| ![Figure 6](assets/papers-explained-507-t5gemma-2/fig-6.webp) | Data ablations for T5Gemma 2. |
+| ![Figure 7](assets/papers-explained-507-t5gemma-2/fig-7.webp) | Detailed pretraining results for Gemma 3, T5Gemma, and T5Gemma 2. |
+| ![Figure 8](assets/papers-explained-507-t5gemma-2/fig-8.webp) | Detailed post-training results for Gemma 3, T5Gemma, and T5Gemma 2. |
 ## Related
 
 - [[Papers Explained Corpus]]

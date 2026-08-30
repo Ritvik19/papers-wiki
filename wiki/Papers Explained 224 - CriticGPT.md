@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-10-03_Papers-Explained-224--CriticGPT-6d9af57451fa.html`
+- Source file: `raw/2024-10-03_Papers-Explained-224--CriticGPT-6d9af57451fa.md`
 - Source title: Papers Explained 224: CriticGPT
 - Published: 2024-10-03
 - Canonical: [https://medium.com/@ritvik19/papers-explained-224-criticgpt-6d9af57451fa](https://medium.com/@ritvik19/papers-explained-224-criticgpt-6d9af57451fa)
@@ -107,17 +107,17 @@ In FSBS critiques are searched over by forcing the model to produce highlighted 
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-10-03_Papers-Explained-224--CriticGPT-6d9af57451fa.html`); local copies under `wiki/assets/papers-explained-224-criticgpt/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-10-03_Papers-Explained-224--CriticGPT-6d9af57451fa.md`); local copies under `wiki/assets/papers-explained-224-criticgpt/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-224-criticgpt/fig-1.png) | Title card: CriticGPT. |
-| ![Figure 2](assets/papers-explained-224-criticgpt/fig-2.png) | RLHF is fundamentally limited by the capacity of humans to correctly evaluate model output. |
-| ![Figure 3](assets/papers-explained-224-criticgpt/fig-3.png) | 4 values of LENGTH_MODIFIER are explored that map to the the 10th, 25th, 50th and 75th percentile of critique lengths sampled during the... |
-| ![Figure 4](assets/papers-explained-224-criticgpt/fig-4.png) | 4 values of LENGTH_MODIFIER are explored that map to the the 10th, 25th, 50th and 75th percentile of critique lengths sampled during the... |
-| ![Figure 5](assets/papers-explained-224-criticgpt/fig-5.png) | 4 values of LENGTH_MODIFIER are explored that map to the the 10th, 25th, 50th and 75th percentile of critique lengths sampled during the... |
-| ![Figure 6](assets/papers-explained-224-criticgpt/fig-6.png) | 4 values of LENGTH_MODIFIER are explored that map to the the 10th, 25th, 50th and 75th percentile of critique lengths sampled during the... |
-| ![Figure 7](assets/papers-explained-224-criticgpt/fig-7.png) | 4 values of LENGTH_MODIFIER are explored that map to the the 10th, 25th, 50th and 75th percentile of critique lengths sampled during the... |
+| ![Figure 1](assets/papers-explained-224-criticgpt/fig-1.webp) | Title card: CriticGPT. |
+| ![Figure 2](assets/papers-explained-224-criticgpt/fig-2.webp) | RLHF is fundamentally limited by the capacity of humans to correctly evaluate model output. |
+| ![Figure 3](assets/papers-explained-224-criticgpt/fig-3.webp) | 4 values of LENGTH_MODIFIER are explored that map to the the 10th, 25th, 50th and 75th percentile of critique lengths sampled during the... |
+| ![Figure 4](assets/papers-explained-224-criticgpt/fig-4.webp) | 4 values of LENGTH_MODIFIER are explored that map to the the 10th, 25th, 50th and 75th percentile of critique lengths sampled during the... |
+| ![Figure 5](assets/papers-explained-224-criticgpt/fig-5.webp) | 4 values of LENGTH_MODIFIER are explored that map to the the 10th, 25th, 50th and 75th percentile of critique lengths sampled during the... |
+| ![Figure 6](assets/papers-explained-224-criticgpt/fig-6.webp) | 4 values of LENGTH_MODIFIER are explored that map to the the 10th, 25th, 50th and 75th percentile of critique lengths sampled during the... |
+| ![Figure 7](assets/papers-explained-224-criticgpt/fig-7.webp) | 4 values of LENGTH_MODIFIER are explored that map to the the 10th, 25th, 50th and 75th percentile of critique lengths sampled during the... |
 ## Related
 
 - [[Papers Explained Corpus]]

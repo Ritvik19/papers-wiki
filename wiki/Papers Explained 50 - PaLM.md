@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-08-07_Papers-Explained-50--PaLM-480e72fa3fd5.html`
+- Source file: `raw/2023-08-07_Papers-Explained-50--PaLM-480e72fa3fd5.md`
 - Source title: Papers Explained 50: PaLM
 - Published: 2023-08-07
 - Canonical: [https://medium.com/@ritvik19/papers-explained-50-palm-480e72fa3fd5](https://medium.com/@ritvik19/papers-explained-50-palm-480e72fa3fd5)
@@ -231,33 +231,33 @@ PaLM: Scaling Language Modeling with Pathways [2204.02311](https://arxiv.org/abs
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-08-07_Papers-Explained-50--PaLM-480e72fa3fd5.html`); local copies under `wiki/assets/papers-explained-50-palm/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-08-07_Papers-Explained-50--PaLM-480e72fa3fd5.md`); local copies under `wiki/assets/papers-explained-50-palm/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-50-palm/fig-1.png) | Title card: PaLM. |
-| ![Figure 2](assets/papers-explained-50-palm/fig-2.png) | “Model architecture details. We list the number of layers, dmodel, the number of attention heads, and attention head size. The feed-forward size dff is always 4 × dmodel and the attention head size is always 256.”. |
-| ![Figure 3](assets/papers-explained-50-palm/fig-3.png) | “The proportion of data from each source in the training dataset. The multilingual corpus contains text from over 100 languages.”. |
-| ![Figure 4](assets/papers-explained-50-palm/fig-4.png) | “The Pathways system scales training across two TPU v4 pods using two-way data parallelism at the pod level.”. |
-| ![Figure 5](assets/papers-explained-50-palm/fig-5.png) | “Model FLOPs utilization of PaLM and prior large models. PaLM achieves a notably high MFU because of several optimizations across the model, compiler, and parallelism strategy. The corresponding hardware FLOPs utilization of PaLM is 57.8%.”. |
-| ![Figure 6](assets/papers-explained-50-palm/fig-6.png) | “Results obtained by the PaLM 540B model across 29 NLP benchmarks. For the few-shot results, the number of shots for each task are mentioned in parenthesis.”. |
-| ![Figure 7](assets/papers-explained-50-palm/fig-7.png) | “Average (Avg) Natural Language Generation (NLG) and Natural Language Understanding (NLU) results across 29 benchmarks using 1-shot evaluation. NLG benchmarks include eight tasks — TriviaQA, NQS, WebQS, SQuADv2, LAMBADA, DROP, QuAC and CoQA — while the remaining are NLU benchmarks.”. |
-| ![Figure 8](assets/papers-explained-50-palm/fig-8.png) | “Results (5-shot) of Chinchilla and PaLM models on the MMLU benchmark.”. |
-| ![Figure 9](assets/papers-explained-50-palm/fig-9.png) | “Results on SuperGLUE dev set. We compare with T5–11B and ST-MoE-32B. The scores reported are the peak validation scores per task.”. |
-| ![Figure 10](assets/papers-explained-50-palm/fig-10.png) | “Results on SuperGLUE dev set comparing PaLM-540B few-shot and finetuned.”. |
-| ![Figure 11](assets/papers-explained-50-palm/fig-11.png) | “Results on SuperGLUE test set (leaderboard). We compare with state-of-the-art span corruption based Encoder-Decoder and the best decoder-only language model.”. |
-| ![Figure 12](assets/papers-explained-50-palm/fig-12.png) | “BIG-bench evaluation of PaLM. (left) Evaluation of PaLM, GPT-3, Gopher, and Chinchilla. Previous models have only evaluated on a subset of tasks, so this graph shows aggregate results on the 58 tasks which all three models have evaluated on. (right) Evaluation of PaLM on a larger set of 150 BIG-bench tasks. For each task, the results of its preferred metric are used. The results are normalized by setting the maximum score to 100 and the random chance score to 0 for multiple-choice tasks, so that they are negative valued if the model performs worse than random chance. The normalized results are averaged over all tasks.”. |
-| ![Figure 13](assets/papers-explained-50-palm/fig-13.png) | “Distribution of score difference in “normalized preferred metric” between PaLM 540B 5-shot and the prior SOTA across a common subset of 58 BIG-bench text tasks. Positive numbers (blue) indicate that PaLM 540B achieves higher than the prior SOTA, while negative numbers (orange) indicate that the prior SOTA is higher than that of PaLM 540B. Prior SOTA includes GPT-3 175B 1-shot, Gopher 5-shot and Chinchilla 5-shot.”. |
-| ![Figure 14](assets/papers-explained-50-palm/fig-14.png) | “Distribution of score difference in “normalized preferred metric” between PaLM 540B and the average human performance across all 150 BIG-bench text tasks. Positive numbers (blue) indicate that PaLM 540B achieves higher than the average human performance, while negative numbers (orange) indicate that the average human performance is higher than that of PaLM 540B.”. |
-| ![Figure 15](assets/papers-explained-50-palm/fig-15.png) | “8-shot evaluation of PaLM on GSM8K with chain-of-thought in comparison to prior SOTA.”. |
-| ![Figure 16](assets/papers-explained-50-palm/fig-16.png) | “We analyzed 150 random GSM8K examples, and found that PaLM 62B makes reasoning errors on 45 of them. These were manually categorized into three general error types. Errors in the “Other” category included hallucinations, repetitive outputs, and symbol mapping errors. This figure shows the proportion of errors for each type that were fixed by scaling to PaLM 540B, which were substantial for all categories.”. |
-| ![Figure 17](assets/papers-explained-50-palm/fig-17.png) | “Via chain of thought prompting, PaLM achieves strong performance on a range of arithmetic and commonsense reasoning tasks. PaLM achieves new SOTA on GSM8K, MAWPS, SVAMP, and StrategyQA.”. |
-| ![Figure 18](assets/papers-explained-50-palm/fig-18.png) | “Results obtained by the PaLM 540B and PaLM-Coder 540B models across code synthesis and software engineering tasks.”. |
-| ![Figure 19](assets/papers-explained-50-palm/fig-19.png) | “DeepFix success rates as percentages, where “success” means the predicted code compiles and the prediction involves a small edit, under various ways of defining “small” edits. In parentheses, we show the percentage of predictions representing small edits. “Normalized Edit Distance” is computed as LevenshteinDistance(x, y)/ max{len(x), len(y)} for strings x and y. “Lines Changed” counts the total number of line insertions, deletions, and edits. In both cases, we ignore all indentation changes.”. |
-| ![Figure 20](assets/papers-explained-50-palm/fig-20.png) | “Translation BLEU scores on traditional WMT language pairs.”. |
-| ![Figure 21](assets/papers-explained-50-palm/fig-21.png) | “Translation BLEU scores on non-English centric and extremely-low resource language pairs.”. |
-| ![Figure 22](assets/papers-explained-50-palm/fig-22.png) | “ROUGE-2 results in GEM data-to-text and summarization datasets.”. |
-| ![Figure 23](assets/papers-explained-50-palm/fig-23.png) | “Comparison against SOTA on TyDiQA-GoldP validation set (exact match metric)”. |
+| ![Figure 1](assets/papers-explained-50-palm/fig-1.webp) | Title card: PaLM. |
+| ![Figure 2](assets/papers-explained-50-palm/fig-2.webp) | “Model architecture details. We list the number of layers, dmodel, the number of attention heads, and attention head size. The feed-forward size dff is always 4 × dmodel and the attention head size is always 256.”. |
+| ![Figure 3](assets/papers-explained-50-palm/fig-3.webp) | “The proportion of data from each source in the training dataset. The multilingual corpus contains text from over 100 languages.”. |
+| ![Figure 4](assets/papers-explained-50-palm/fig-4.webp) | “The Pathways system scales training across two TPU v4 pods using two-way data parallelism at the pod level.”. |
+| ![Figure 5](assets/papers-explained-50-palm/fig-5.webp) | “Model FLOPs utilization of PaLM and prior large models. PaLM achieves a notably high MFU because of several optimizations across the model, compiler, and parallelism strategy. The corresponding hardware FLOPs utilization of PaLM is 57.8%.”. |
+| ![Figure 6](assets/papers-explained-50-palm/fig-6.webp) | “Results obtained by the PaLM 540B model across 29 NLP benchmarks. For the few-shot results, the number of shots for each task are mentioned in parenthesis.”. |
+| ![Figure 7](assets/papers-explained-50-palm/fig-7.webp) | “Average (Avg) Natural Language Generation (NLG) and Natural Language Understanding (NLU) results across 29 benchmarks using 1-shot evaluation. NLG benchmarks include eight tasks — TriviaQA, NQS, WebQS, SQuADv2, LAMBADA, DROP, QuAC and CoQA — while the remaining are NLU benchmarks.”. |
+| ![Figure 8](assets/papers-explained-50-palm/fig-8.webp) | “Results (5-shot) of Chinchilla and PaLM models on the MMLU benchmark.”. |
+| ![Figure 9](assets/papers-explained-50-palm/fig-9.webp) | “Results on SuperGLUE dev set. We compare with T5–11B and ST-MoE-32B. The scores reported are the peak validation scores per task.”. |
+| ![Figure 10](assets/papers-explained-50-palm/fig-10.webp) | “Results on SuperGLUE dev set comparing PaLM-540B few-shot and finetuned.”. |
+| ![Figure 11](assets/papers-explained-50-palm/fig-11.webp) | “Results on SuperGLUE test set (leaderboard). We compare with state-of-the-art span corruption based Encoder-Decoder and the best decoder-only language model.”. |
+| ![Figure 12](assets/papers-explained-50-palm/fig-12.webp) | “BIG-bench evaluation of PaLM. (left) Evaluation of PaLM, GPT-3, Gopher, and Chinchilla. Previous models have only evaluated on a subset of tasks, so this graph shows aggregate results on the 58 tasks which all three models have evaluated on. (right) Evaluation of PaLM on a larger set of 150 BIG-bench tasks. For each task, the results of its preferred metric are used. The results are normalized by setting the maximum score to 100 and the random chance score to 0 for multiple-choice tasks, so that they are negative valued if the model performs worse than random chance. The normalized results are averaged over all tasks.”. |
+| ![Figure 13](assets/papers-explained-50-palm/fig-13.webp) | “Distribution of score difference in “normalized preferred metric” between PaLM 540B 5-shot and the prior SOTA across a common subset of 58 BIG-bench text tasks. Positive numbers (blue) indicate that PaLM 540B achieves higher than the prior SOTA, while negative numbers (orange) indicate that the prior SOTA is higher than that of PaLM 540B. Prior SOTA includes GPT-3 175B 1-shot, Gopher 5-shot and Chinchilla 5-shot.”. |
+| ![Figure 14](assets/papers-explained-50-palm/fig-14.webp) | “Distribution of score difference in “normalized preferred metric” between PaLM 540B and the average human performance across all 150 BIG-bench text tasks. Positive numbers (blue) indicate that PaLM 540B achieves higher than the average human performance, while negative numbers (orange) indicate that the average human performance is higher than that of PaLM 540B.”. |
+| ![Figure 15](assets/papers-explained-50-palm/fig-15.webp) | “8-shot evaluation of PaLM on GSM8K with chain-of-thought in comparison to prior SOTA.”. |
+| ![Figure 16](assets/papers-explained-50-palm/fig-16.webp) | “We analyzed 150 random GSM8K examples, and found that PaLM 62B makes reasoning errors on 45 of them. These were manually categorized into three general error types. Errors in the “Other” category included hallucinations, repetitive outputs, and symbol mapping errors. This figure shows the proportion of errors for each type that were fixed by scaling to PaLM 540B, which were substantial for all categories.”. |
+| ![Figure 17](assets/papers-explained-50-palm/fig-17.webp) | “Via chain of thought prompting, PaLM achieves strong performance on a range of arithmetic and commonsense reasoning tasks. PaLM achieves new SOTA on GSM8K, MAWPS, SVAMP, and StrategyQA.”. |
+| ![Figure 18](assets/papers-explained-50-palm/fig-18.webp) | “Results obtained by the PaLM 540B and PaLM-Coder 540B models across code synthesis and software engineering tasks.”. |
+| ![Figure 19](assets/papers-explained-50-palm/fig-19.webp) | “DeepFix success rates as percentages, where “success” means the predicted code compiles and the prediction involves a small edit, under various ways of defining “small” edits. In parentheses, we show the percentage of predictions representing small edits. “Normalized Edit Distance” is computed as LevenshteinDistance(x, y)/ max{len(x), len(y)} for strings x and y. “Lines Changed” counts the total number of line insertions, deletions, and edits. In both cases, we ignore all indentation changes.”. |
+| ![Figure 20](assets/papers-explained-50-palm/fig-20.webp) | “Translation BLEU scores on traditional WMT language pairs.”. |
+| ![Figure 21](assets/papers-explained-50-palm/fig-21.webp) | “Translation BLEU scores on non-English centric and extremely-low resource language pairs.”. |
+| ![Figure 22](assets/papers-explained-50-palm/fig-22.webp) | “ROUGE-2 results in GEM data-to-text and summarization datasets.”. |
+| ![Figure 23](assets/papers-explained-50-palm/fig-23.webp) | “Comparison against SOTA on TyDiQA-GoldP validation set (exact match metric)”. |
 ## Related
 
 - [[Papers Explained Corpus]]

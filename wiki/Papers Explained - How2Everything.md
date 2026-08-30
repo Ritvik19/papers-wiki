@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/draft_Papers-Explained--How2Everything-baef4f7ae61f.html`
+- Source file: `raw/draft_Papers-Explained--How2Everything-baef4f7ae61f.md`
 - Source title: Papers Explained: How2Everything
 - Canonical: [https://medium.com/p/baef4f7ae61f](https://medium.com/p/baef4f7ae61f)
 
@@ -112,16 +112,16 @@ How2Everything: Mining the Web for How-To Procedures to Evaluate and Improve LLM
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/draft_Papers-Explained--How2Everything-baef4f7ae61f.html`); local copies under `wiki/assets/papers-explained-how2everything/` when download succeeded.
+Figures from the Medium HTML export (`raw/draft_Papers-Explained--How2Everything-baef4f7ae61f.md`); local copies under `wiki/assets/papers-explained-how2everything/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-how2everything/fig-1.png) | Title block of *How2Everything: Mining the Web for How-To Procedures to Evaluate and Improve LLMs*. |
-| ![Figure 2](assets/papers-explained-how2everything/fig-2.png) | Framework overview: How2Mine data mining, How2Bench + How2Score + How2Judge scaling trends, and RL gains on How2Train. |
-| ![Figure 3](assets/papers-explained-how2everything/fig-3.png) | Data pipeline funnel showing candidate reduction across extraction, heuristics filtering, LLM filtering, postprocessing, and final validation. |
-| ![Figure 4](assets/papers-explained-how2everything/fig-4.png) | Agreement of multiple LLM judges with human-majority critical-failure labels (overall, has-failure, and no-failure subsets). |
-| ![Figure 5](assets/papers-explained-how2everything/fig-5.png) | How2Bench leaderboard (left) with average generated length (right) compared against reference length. |
-| ![Figure 6](assets/papers-explained-how2everything/fig-6.png) | Before-vs-after RL results on in-domain How2Bench plus out-of-domain benchmarks for Qwen3-4B, Qwen3-8B, and OLMo-3-7B. |
+| ![Figure 1](assets/papers-explained-how2everything/fig-1.webp) | Title block of *How2Everything: Mining the Web for How-To Procedures to Evaluate and Improve LLMs*. |
+| ![Figure 2](assets/papers-explained-how2everything/fig-2.webp) | Framework overview: How2Mine data mining, How2Bench + How2Score + How2Judge scaling trends, and RL gains on How2Train. |
+| ![Figure 3](assets/papers-explained-how2everything/fig-3.webp) | Data pipeline funnel showing candidate reduction across extraction, heuristics filtering, LLM filtering, postprocessing, and final validation. |
+| ![Figure 4](assets/papers-explained-how2everything/fig-4.webp) | Agreement of multiple LLM judges with human-majority critical-failure labels (overall, has-failure, and no-failure subsets). |
+| ![Figure 5](assets/papers-explained-how2everything/fig-5.webp) | How2Bench leaderboard (left) with average generated length (right) compared against reference length. |
+| ![Figure 6](assets/papers-explained-how2everything/fig-6.webp) | Before-vs-after RL results on in-domain How2Bench plus out-of-domain benchmarks for Qwen3-4B, Qwen3-8B, and OLMo-3-7B. |
 ## Related
 
 - [[Papers Explained Corpus]]

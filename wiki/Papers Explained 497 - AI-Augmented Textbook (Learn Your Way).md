@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-11-21_Papers-Explained-497--AI-Augmented-Textbook--Learn-Your-Way--97e47252096e.html`
+- Source file: `raw/2025-11-21_Papers-Explained-497--AI-Augmented-Textbook--Learn-Your-Way--97e47252096e.md`
 - Source title: Papers Explained 497: AI-Augmented Textbook (Learn Your Way)
 - Published: 2025-11-21
 - Canonical: [https://medium.com/@ritvik19/papers-explained-497-ai-augmented-textbook-learn-your-way-97e47252096e](https://medium.com/@ritvik19/papers-explained-497-ai-augmented-textbook-learn-your-way-97e47252096e)
@@ -133,18 +133,18 @@ For grade level personalization, three grade levels (7th grade, 10th grade and u
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-11-21_Papers-Explained-497--AI-Augmented-Textbook--Learn-Your-Way--97e47252096e.html`); local copies under `wiki/assets/papers-explained-497-ai-augmented-textbook-learn-your-way/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-11-21_Papers-Explained-497--AI-Augmented-Textbook--Learn-Your-Way--97e47252096e.md`); local copies under `wiki/assets/papers-explained-497-ai-augmented-textbook-learn-your-way/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-497-ai-augmented-textbook-learn-your-way/fig-1.png) | Title card: AI-Augmented Textbook (Learn Your Way). |
-| ![Figure 2](assets/papers-explained-497-ai-augmented-textbook-learn-your-way/fig-2.png) | An example of the Learn Your Way learning experience. |
-| ![Figure 3](assets/papers-explained-497-ai-augmented-textbook-learn-your-way/fig-3.png) | An illustration of the two step generation procedure used in Learn Your Way. |
-| ![Figure 4](assets/papers-explained-497-ai-augmented-textbook-learn-your-way/fig-4.png) | Example slide in the deck generated for OpenStax’s How To Organize Economies source and adapted to the learner interest in ‘soccer’. |
-| ![Figure 5](assets/papers-explained-497-ai-augmented-textbook-learn-your-way/fig-5.png) | An example mind map created for OpenStax’s How to Organize Economies source material. |
-| ![Figure 6](assets/papers-explained-497-ai-augmented-textbook-learn-your-way/fig-6.png) | The PDFs used as the souce-of-truth for the pedagogical evaluations. |
-| ![Figure 7](assets/papers-explained-497-ai-augmented-textbook-learn-your-way/fig-7.png) | Pedagogical rubrics used by experts to rate the various components of Learn Your Way. |
-| ![Figure 8](assets/papers-explained-497-ai-augmented-textbook-learn-your-way/fig-8.png) | Rating of the various components that make up Learn Your Way, as rated by pedagogy experts. |
+| ![Figure 1](assets/papers-explained-497-ai-augmented-textbook-learn-your-way/fig-1.webp) | Title card: AI-Augmented Textbook (Learn Your Way). |
+| ![Figure 2](assets/papers-explained-497-ai-augmented-textbook-learn-your-way/fig-2.webp) | An example of the Learn Your Way learning experience. |
+| ![Figure 3](assets/papers-explained-497-ai-augmented-textbook-learn-your-way/fig-3.webp) | An illustration of the two step generation procedure used in Learn Your Way. |
+| ![Figure 4](assets/papers-explained-497-ai-augmented-textbook-learn-your-way/fig-4.webp) | Example slide in the deck generated for OpenStax’s How To Organize Economies source and adapted to the learner interest in ‘soccer’. |
+| ![Figure 5](assets/papers-explained-497-ai-augmented-textbook-learn-your-way/fig-5.webp) | An example mind map created for OpenStax’s How to Organize Economies source material. |
+| ![Figure 6](assets/papers-explained-497-ai-augmented-textbook-learn-your-way/fig-6.webp) | The PDFs used as the souce-of-truth for the pedagogical evaluations. |
+| ![Figure 7](assets/papers-explained-497-ai-augmented-textbook-learn-your-way/fig-7.webp) | Pedagogical rubrics used by experts to rate the various components of Learn Your Way. |
+| ![Figure 8](assets/papers-explained-497-ai-augmented-textbook-learn-your-way/fig-8.webp) | Rating of the various components that make up Learn Your Way, as rated by pedagogy experts. |
 ## Related
 
 - [[Papers Explained Corpus]]

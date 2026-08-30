@@ -56,4 +56,4 @@ Command R7B Arabic is available today on the [Cohere platform](https://dashboard
 
 If you are interested in on-prem deployment please reach out to the [sales team](https://cohere.com/contact-sales).
 
-See canonical HTML at `raw/command-r7b-arabic/full-article.html` for the full bilingual (English + Arabic) article and figures.
+See canonical HTML at `raw/command-r7b-arabic/full-article.md` for the full bilingual (English + Arabic) article and figures.

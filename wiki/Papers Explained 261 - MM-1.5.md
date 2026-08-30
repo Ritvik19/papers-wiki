@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-11-28_Papers-Explained-261--MM-1-5-d0dd01a9b68b.html`
+- Source file: `raw/2024-11-28_Papers-Explained-261--MM-1-5-d0dd01a9b68b.md`
 - Source title: Papers Explained 261: MM-1.5
 - Published: 2024-11-28
 - Canonical: [https://medium.com/@ritvik19/papers-explained-261-mm-1-5-d0dd01a9b68b](https://medium.com/@ritvik19/papers-explained-261-mm-1-5-d0dd01a9b68b)
@@ -303,32 +303,32 @@ MM1.5: Methods, Analysis & Insights from Multimodal LLM Fine-tuning [2409.20566]
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-11-28_Papers-Explained-261--MM-1-5-d0dd01a9b68b.html`); local copies under `wiki/assets/papers-explained-261-mm-1-5/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-11-28_Papers-Explained-261--MM-1-5-d0dd01a9b68b.md`); local copies under `wiki/assets/papers-explained-261-mm-1-5/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-261-mm-1-5/fig-1.png) | Title card: MM-1.5. |
-| ![Figure 2](assets/papers-explained-261-mm-1-5/fig-2.png) | Recipe for building MM1.5. |
-| ![Figure 3](assets/papers-explained-261-mm-1-5/fig-3.png) | Data mixture used for MM1.5 supervised fine-tuning. |
-| ![Figure 4](assets/papers-explained-261-mm-1-5/fig-4.png) | Impact of different SFT data categories to different model capabilities. |
-| ![Figure 5](assets/papers-explained-261-mm-1-5/fig-5.png) | Impact of α for different data categories to a model’s different capabilities. |
-| ![Figure 6](assets/papers-explained-261-mm-1-5/fig-6.png) | Impact of the mixing ratio for text-only and multi-image SFT data. |
-| ![Figure 7](assets/papers-explained-261-mm-1-5/fig-7.png) | Ablation study of mixing all the SFT data. |
-| ![Figure 8](assets/papers-explained-261-mm-1-5/fig-8.png) | Ablation study of continual pre-training. |
-| ![Figure 9](assets/papers-explained-261-mm-1-5/fig-9.png) | Performance comparison of all categories across different text-only data and pre-training data ratio. |
-| ![Figure 10](assets/papers-explained-261-mm-1-5/fig-10.png) | Ablation on the image resolution and the number of image tokens used in dynamic image splitting. |
-| ![Figure 11](assets/papers-explained-261-mm-1-5/fig-11.png) | Ablation on the image grid configuration (nmin, nmax) used in dynamic image splitting. |
-| ![Figure 12](assets/papers-explained-261-mm-1-5/fig-12.png) | Ablation on the sub-image position indicator and the position of the overview image. |
-| ![Figure 13](assets/papers-explained-261-mm-1-5/fig-13.png) | The overview of model architecture. |
-| ![Figure 14](assets/papers-explained-261-mm-1-5/fig-14.png) | Comparison with SOTA mobile-friendly models across diverse benchmarks. |
-| ![Figure 15](assets/papers-explained-261-mm-1-5/fig-15.png) | Comparison with SOTA models on knowledge and general benchmarks. |
-| ![Figure 16](assets/papers-explained-261-mm-1-5/fig-16.png) | Comparison with SOTA models on text-rich benchmarks. |
-| ![Figure 17](assets/papers-explained-261-mm-1-5/fig-17.png) | Comparison with SOTA models on referring and grounding benchmarks. |
-| ![Figure 18](assets/papers-explained-261-mm-1-5/fig-18.png) | Comparison with SOTA models on VL-ICL benchmark for multimodal in-context learning. |
-| ![Figure 19](assets/papers-explained-261-mm-1-5/fig-19.png) | Comparison with SOTA models on multi-image benchmarks. |
-| ![Figure 20](assets/papers-explained-261-mm-1-5/fig-20.png) | Comparison with SOTA models on Open-Ended and Multiple Choice benchmarks. |
-| ![Figure 21](assets/papers-explained-261-mm-1-5/fig-21.png) | Comparison with SOTA models on LLaVA-Hound benchmarks. |
-| ![Figure 22](assets/papers-explained-261-mm-1-5/fig-22.png) | Comparison with SOTA models on UI benchmarks. |
+| ![Figure 1](assets/papers-explained-261-mm-1-5/fig-1.webp) | Title card: MM-1.5. |
+| ![Figure 2](assets/papers-explained-261-mm-1-5/fig-2.webp) | Recipe for building MM1.5. |
+| ![Figure 3](assets/papers-explained-261-mm-1-5/fig-3.webp) | Data mixture used for MM1.5 supervised fine-tuning. |
+| ![Figure 4](assets/papers-explained-261-mm-1-5/fig-4.webp) | Impact of different SFT data categories to different model capabilities. |
+| ![Figure 5](assets/papers-explained-261-mm-1-5/fig-5.webp) | Impact of α for different data categories to a model’s different capabilities. |
+| ![Figure 6](assets/papers-explained-261-mm-1-5/fig-6.webp) | Impact of the mixing ratio for text-only and multi-image SFT data. |
+| ![Figure 7](assets/papers-explained-261-mm-1-5/fig-7.webp) | Ablation study of mixing all the SFT data. |
+| ![Figure 8](assets/papers-explained-261-mm-1-5/fig-8.webp) | Ablation study of continual pre-training. |
+| ![Figure 9](assets/papers-explained-261-mm-1-5/fig-9.webp) | Performance comparison of all categories across different text-only data and pre-training data ratio. |
+| ![Figure 10](assets/papers-explained-261-mm-1-5/fig-10.webp) | Ablation on the image resolution and the number of image tokens used in dynamic image splitting. |
+| ![Figure 11](assets/papers-explained-261-mm-1-5/fig-11.webp) | Ablation on the image grid configuration (nmin, nmax) used in dynamic image splitting. |
+| ![Figure 12](assets/papers-explained-261-mm-1-5/fig-12.webp) | Ablation on the sub-image position indicator and the position of the overview image. |
+| ![Figure 13](assets/papers-explained-261-mm-1-5/fig-13.webp) | The overview of model architecture. |
+| ![Figure 14](assets/papers-explained-261-mm-1-5/fig-14.webp) | Comparison with SOTA mobile-friendly models across diverse benchmarks. |
+| ![Figure 15](assets/papers-explained-261-mm-1-5/fig-15.webp) | Comparison with SOTA models on knowledge and general benchmarks. |
+| ![Figure 16](assets/papers-explained-261-mm-1-5/fig-16.webp) | Comparison with SOTA models on text-rich benchmarks. |
+| ![Figure 17](assets/papers-explained-261-mm-1-5/fig-17.webp) | Comparison with SOTA models on referring and grounding benchmarks. |
+| ![Figure 18](assets/papers-explained-261-mm-1-5/fig-18.webp) | Comparison with SOTA models on VL-ICL benchmark for multimodal in-context learning. |
+| ![Figure 19](assets/papers-explained-261-mm-1-5/fig-19.webp) | Comparison with SOTA models on multi-image benchmarks. |
+| ![Figure 20](assets/papers-explained-261-mm-1-5/fig-20.webp) | Comparison with SOTA models on Open-Ended and Multiple Choice benchmarks. |
+| ![Figure 21](assets/papers-explained-261-mm-1-5/fig-21.webp) | Comparison with SOTA models on LLaVA-Hound benchmarks. |
+| ![Figure 22](assets/papers-explained-261-mm-1-5/fig-22.webp) | Comparison with SOTA models on UI benchmarks. |
 ## Related
 
 - [[Papers Explained Corpus]]

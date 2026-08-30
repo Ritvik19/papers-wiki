@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-01-09_Papers-Explained-284--OLMo-2-f4d34e886503.html`
+- Source file: `raw/2025-01-09_Papers-Explained-284--OLMo-2-f4d34e886503.md`
 - Source title: Papers Explained 284: OLMo 2
 - Published: 2025-01-09
 - Canonical: [https://medium.com/@ritvik19/papers-explained-olmo-2-f4d34e886503](https://medium.com/@ritvik19/papers-explained-olmo-2-f4d34e886503)
@@ -181,20 +181,20 @@ Modifications were made to the Tülu 3 recipe for training OLMo 2 32B Instruct:
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-01-09_Papers-Explained-284--OLMo-2-f4d34e886503.html`); local copies under `wiki/assets/papers-explained-284-olmo-2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-01-09_Papers-Explained-284--OLMo-2-f4d34e886503.md`); local copies under `wiki/assets/papers-explained-284-olmo-2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-284-olmo-2/fig-1.png) | Title card: OLMo 2. |
-| ![Figure 2](assets/papers-explained-284-olmo-2/fig-2.png) | OLMo 2 hyperparameters. |
-| ![Figure 3](assets/papers-explained-284-olmo-2/fig-3.png) | Summary of how OLMo family model architectures have evolved over time. |
-| ![Figure 4](assets/papers-explained-284-olmo-2/fig-4.png) | Composition of the pretraining data for OLMo 2. |
-| ![Figure 5](assets/papers-explained-284-olmo-2/fig-5.png) | Composition of the mid-training data (Dolmino). |
-| ![Figure 6](assets/papers-explained-284-olmo-2/fig-6.png) | External models used to sample off-policy data in the synthetic preference pipeline. |
-| ![Figure 7](assets/papers-explained-284-olmo-2/fig-7.png) | Prompt sources for preference finetuning datasets. |
-| ![Figure 8](assets/papers-explained-284-olmo-2/fig-8.png) | The results for OLMo 2 Instruct at both 7B and 13B relative to peer open weight models. |
-| ![Figure 9](assets/papers-explained-284-olmo-2/fig-9.png) | Comparison of performance for OLMo 2 Instruct after different training stages. |
-| ![Figure 10](assets/papers-explained-284-olmo-2/fig-10.png) | Modifications were made to the Tülu 3 recipe for training OLMo 2 32B Instruct. |
+| ![Figure 1](assets/papers-explained-284-olmo-2/fig-1.webp) | Title card: OLMo 2. |
+| ![Figure 2](assets/papers-explained-284-olmo-2/fig-2.webp) | OLMo 2 hyperparameters. |
+| ![Figure 3](assets/papers-explained-284-olmo-2/fig-3.webp) | Summary of how OLMo family model architectures have evolved over time. |
+| ![Figure 4](assets/papers-explained-284-olmo-2/fig-4.webp) | Composition of the pretraining data for OLMo 2. |
+| ![Figure 5](assets/papers-explained-284-olmo-2/fig-5.webp) | Composition of the mid-training data (Dolmino). |
+| ![Figure 6](assets/papers-explained-284-olmo-2/fig-6.webp) | External models used to sample off-policy data in the synthetic preference pipeline. |
+| ![Figure 7](assets/papers-explained-284-olmo-2/fig-7.webp) | Prompt sources for preference finetuning datasets. |
+| ![Figure 8](assets/papers-explained-284-olmo-2/fig-8.webp) | The results for OLMo 2 Instruct at both 7B and 13B relative to peer open weight models. |
+| ![Figure 9](assets/papers-explained-284-olmo-2/fig-9.webp) | Comparison of performance for OLMo 2 Instruct after different training stages. |
+| ![Figure 10](assets/papers-explained-284-olmo-2/fig-10.webp) | Modifications were made to the Tülu 3 recipe for training OLMo 2 32B Instruct. |
 ## Related
 
 - [[Papers Explained Corpus]]

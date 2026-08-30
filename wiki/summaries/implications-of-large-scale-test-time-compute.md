@@ -1,6 +1,6 @@
 # Implications of Large-Scale Test-Time Compute
 
-**Source**: `raw/noam-brown-implications-of-large-scale-test-time-compute/full-article.html`, `raw/noam-brown-implications-of-large-scale-test-time-compute/full-article.md`  
+**Source**: `raw/noam-brown-implications-of-large-scale-test-time-compute/full-article.md`, `raw/noam-brown-implications-of-large-scale-test-time-compute/full-article.md`  
 **Ingested**: 2026-08-23  
 **Tags**: #summary
 
@@ -31,36 +31,36 @@ To reconcile the computational impossibility of running millions of safety rollo
 
 | Figure | Caption | Source Context |
 |--------|---------|----------------|
-| ![fig-1](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-1.jpg) | Accuracy on Erdös unit distance problem scaling monotonically with log test-time compute | Header cover chart |
-| ![fig-2](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-2.jpg) | Classic "benchmark grid" comparing GPT-5.5, GPT-5.4, GPT-5.5 Pro, GPT-5.4 Pro, Claude Opus 4.7, and Gemini 3.1 Pro across 9 benchmarks | §1: Initial skepticism |
-| ![fig-3](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-3.jpg) | Left: CyberGym scalar comparison showing modest delta. Right: Capture-the-Flags challenges plotted against output tokens showing GPT-5.5's massive efficiency advantage | §1: Controlling for test-time compute |
-| ![fig-4](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-4.jpg) | Andrej Karpathy's autoresearch experiment autotuning nanoGPT across 276+ experiments without plateauing | §2: Pushing the plateau out |
-| ![fig-5](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-5.jpg) | AISI evaluation on "The Last Ones" milestones (M1–M9) per spent tokens up to 100M cumulative tokens | §2: Long-horizon cyber scaling |
-| ![fig-6](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-6.jpg) | ARC-AGI-2 Leaderboard (ARC Prize Verified) showing benchmark accuracy vs cost per task ($1e-3 to $100+) | §3: Cost-budgeted evaluations |
-| ![fig-7](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-7.jpg) | DeepMind's Gemini 3 Deep Think benchmark release graphic (84.6% ARC-AGI-2, 48.4% HLE, 81.5% MMMU-Pro, 3455 Codeforces) | §4: Safety evaluations and Deep Think |
-| ![fig-8](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-8.jpg) | Zvi Mowshowitz (@TheZvi) tweet criticizing Google DeepMind's claim that Deep Think runtime gains required no safety explanation | §4: Safety community reaction |
-| ![fig-9](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-9.jpg) | Proposed safety evaluation framework: Capability Index vs Inference budget per task ($100 to $1B) showing measured vs projected uncertainty curves crossing capability thresholds | §5: Projected safety framework |
+| ![fig-1](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-1.webp) | Accuracy on Erdös unit distance problem scaling monotonically with log test-time compute | Header cover chart |
+| ![fig-2](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-2.webp) | Classic "benchmark grid" comparing GPT-5.5, GPT-5.4, GPT-5.5 Pro, GPT-5.4 Pro, Claude Opus 4.7, and Gemini 3.1 Pro across 9 benchmarks | §1: Initial skepticism |
+| ![fig-3](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-3.webp) | Left: CyberGym scalar comparison showing modest delta. Right: Capture-the-Flags challenges plotted against output tokens showing GPT-5.5's massive efficiency advantage | §1: Controlling for test-time compute |
+| ![fig-4](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-4.webp) | Andrej Karpathy's autoresearch experiment autotuning nanoGPT across 276+ experiments without plateauing | §2: Pushing the plateau out |
+| ![fig-5](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-5.webp) | AISI evaluation on "The Last Ones" milestones (M1–M9) per spent tokens up to 100M cumulative tokens | §2: Long-horizon cyber scaling |
+| ![fig-6](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-6.webp) | ARC-AGI-2 Leaderboard (ARC Prize Verified) showing benchmark accuracy vs cost per task ($1e-3 to $100+) | §3: Cost-budgeted evaluations |
+| ![fig-7](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-7.webp) | DeepMind's Gemini 3 Deep Think benchmark release graphic (84.6% ARC-AGI-2, 48.4% HLE, 81.5% MMMU-Pro, 3455 Codeforces) | §4: Safety evaluations and Deep Think |
+| ![fig-8](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-8.webp) | Zvi Mowshowitz (@TheZvi) tweet criticizing Google DeepMind's claim that Deep Think runtime gains required no safety explanation | §4: Safety community reaction |
+| ![fig-9](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-9.webp) | Proposed safety evaluation framework: Capability Index vs Inference budget per task ($100 to $1B) showing measured vs projected uncertainty curves crossing capability thresholds | §5: Projected safety framework |
 
 > In the article, Figure 1 illustrates that even pure mathematical problems scale continuously with test-time compute:
-> ![Accuracy on Erdös unit distance problem](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-1.jpg)
+> ![Accuracy on Erdös unit distance problem](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-1.webp)
 >
 > Figure 2 and Figure 3 highlight how the traditional benchmark grid masks compute efficiency:
-> ![Classic benchmark grid](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-2.jpg)
-> ![Scalar vs token-scaled cyber eval](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-3.jpg)
+> ![Classic benchmark grid](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-2.webp)
+> ![Scalar vs token-scaled cyber eval](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-3.webp)
 >
 > Figure 4 and Figure 5 prove that frontier reasoning models and agent scaffolds continue scaling across hundreds of experiments and 100M+ tokens:
-> ![Karpathy autoresearch](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-4.jpg)
-> ![AISI cyber scaling](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-5.jpg)
+> ![Karpathy autoresearch](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-4.webp)
+> ![AISI cyber scaling](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-5.webp)
 >
 > Figure 6 demonstrates cost-budgeted evaluation on ARC-AGI-2:
-> ![ARC-AGI-2 Leaderboard](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-6.jpg)
+> ![ARC-AGI-2 Leaderboard](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-6.webp)
 >
 > Figures 7 and 8 frame the Gemini 3 Deep Think controversy:
-> ![Gemini 3 Deep Think benchmarks](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-7.jpg)
-> ![Zvi Mowshowitz tweet](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-8.jpg)
+> ![Gemini 3 Deep Think benchmarks](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-7.webp)
+> ![Zvi Mowshowitz tweet](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-8.webp)
 >
 > Figure 9 presents Brown's vision for future model system cards:
-> ![Proposed safety evaluation framework](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-9.jpg)
+> ![Proposed safety evaluation framework](../assets/noam-brown-implications-of-large-scale-test-time-compute/fig-9.webp)
 
 ## Entities
 

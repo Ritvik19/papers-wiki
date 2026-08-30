@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-09_Papers-Explained-26--Swin-Transformer-39cf88b00e3e.html`
+- Source file: `raw/2023-02-09_Papers-Explained-26--Swin-Transformer-39cf88b00e3e.md`
 - Source title: Papers Explained 26: Swin Transformer
 - Published: 2023-02-09
 - Canonical: [https://medium.com/@ritvik19/papers-explained-26-swin-transformer-39cf88b00e3e](https://medium.com/@ritvik19/papers-explained-26-swin-transformer-39cf88b00e3e)
@@ -65,14 +65,14 @@ Recommended Reading [Vision Transformers](https://ritvik19.medium.com/list/visio
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-09_Papers-Explained-26--Swin-Transformer-39cf88b00e3e.html`); local copies under `wiki/assets/papers-explained-26-swin-transformer/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-09_Papers-Explained-26--Swin-Transformer-39cf88b00e3e.md`); local copies under `wiki/assets/papers-explained-26-swin-transformer/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-26-swin-transformer/fig-1.png) | Title card: Swin Transformer. |
-| ![Figure 2](assets/papers-explained-26-swin-transformer/fig-2.png) | A key design element of Swin Transformer is its shift of the window partition between consecutive self-attention layers. |
-| ![Figure 3](assets/papers-explained-26-swin-transformer/fig-3.png) | A key design element of Swin Transformer is its shift of the window partition between consecutive self-attention layers. |
-| ![Figure 4](assets/papers-explained-26-swin-transformer/fig-4.png) | A key design element of Swin Transformer is its shift of the window partition between consecutive self-attention layers. |
+| ![Figure 1](assets/papers-explained-26-swin-transformer/fig-1.webp) | Title card: Swin Transformer. |
+| ![Figure 2](assets/papers-explained-26-swin-transformer/fig-2.webp) | A key design element of Swin Transformer is its shift of the window partition between consecutive self-attention layers. |
+| ![Figure 3](assets/papers-explained-26-swin-transformer/fig-3.webp) | A key design element of Swin Transformer is its shift of the window partition between consecutive self-attention layers. |
+| ![Figure 4](assets/papers-explained-26-swin-transformer/fig-4.webp) | A key design element of Swin Transformer is its shift of the window partition between consecutive self-attention layers. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -1,6 +1,6 @@
 # Advancing Search-Augmented Language Models
 
-**Source**: `raw/advancing-search-augmented-language-models/full-article.html` (433 KB), `raw/advancing-search-augmented-language-models/full-article.md` (markdown view)  
+**Source**: `raw/advancing-search-augmented-language-models/full-article.md` (433 KB), `raw/advancing-search-augmented-language-models/full-article.md` (markdown view)  
 **URL**: https://research.perplexity.ai/articles/advancing-search-augmented-language-models  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -29,18 +29,18 @@ Post-trained Qwen3.5-397B-SFT-RL matches or beats GPT-5.4 on FRAMES and Facts Op
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/advancing-search-augmented-language-models/fig-1.png) | Two-stage SFT → on-policy RL training pipeline overview | — |
-| ![fig-2](../assets/advancing-search-augmented-language-models/fig-2.png) | Reward design: gated baseline, preference, and efficiency components | — |
-| ![fig-3](../assets/advancing-search-augmented-language-models/fig-3.png) | Synthetic verifiable QA validation results (Table 1) | — |
-| ![fig-4](../assets/advancing-search-augmented-language-models/fig-4.png) | Rubric generation example for general-chat RL data | — |
-| ![fig-5](../assets/advancing-search-augmented-language-models/fig-5.png) | Evolution of baseline and preference signals during training (Figure 2) | — |
-| ![fig-6](../assets/advancing-search-augmented-language-models/fig-6.png) | Efficiency behavior and anchored shaping penalties (Figure 3) | — |
-| ![fig-17](../assets/advancing-search-augmented-language-models/fig-17.png) | Benchmark accuracy vs. max tool calls (Figure 5) | — |
-| ![fig-18](../assets/advancing-search-augmented-language-models/fig-18.png) | Cost per query vs. accuracy (Figure 6) | — |
+| ![fig-1](../assets/advancing-search-augmented-language-models/fig-1.webp) | Two-stage SFT → on-policy RL training pipeline overview | — |
+| ![fig-2](../assets/advancing-search-augmented-language-models/fig-2.webp) | Reward design: gated baseline, preference, and efficiency components | — |
+| ![fig-3](../assets/advancing-search-augmented-language-models/fig-3.webp) | Synthetic verifiable QA validation results (Table 1) | — |
+| ![fig-4](../assets/advancing-search-augmented-language-models/fig-4.webp) | Rubric generation example for general-chat RL data | — |
+| ![fig-5](../assets/advancing-search-augmented-language-models/fig-5.webp) | Evolution of baseline and preference signals during training (Figure 2) | — |
+| ![fig-6](../assets/advancing-search-augmented-language-models/fig-6.webp) | Efficiency behavior and anchored shaping penalties (Figure 3) | — |
+| ![fig-17](../assets/advancing-search-augmented-language-models/fig-17.webp) | Benchmark accuracy vs. max tool calls (Figure 5) | — |
+| ![fig-18](../assets/advancing-search-augmented-language-models/fig-18.webp) | Cost per query vs. accuracy (Figure 6) | — |
 
 22 figures total in `wiki/assets/advancing-search-augmented-language-models/` (tables, training curves, and benchmark charts).
 
-![Training pipeline](../assets/advancing-search-augmented-language-models/fig-1.png)
+![Training pipeline](../assets/advancing-search-augmented-language-models/fig-1.webp)
 
 ## Entities
 

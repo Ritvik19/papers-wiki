@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-11-02_Papers-Explained-187e--Quantized-Llama-3-2--Llama-3-3-cc6965f61370.html`
+- Source file: `raw/2024-11-02_Papers-Explained-187e--Quantized-Llama-3-2--Llama-3-3-cc6965f61370.md`
 - Source title: Papers Explained 187e: Quantized Llama 3.2, Llama 3.3
 - Published: 2024-11-02
 - Canonical: [https://medium.com/@ritvik19/papers-explained-187e-quantized-llama-3-2-cc6965f61370](https://medium.com/@ritvik19/papers-explained-187e-quantized-llama-3-2-cc6965f61370)
@@ -85,16 +85,16 @@ Recommended Reading [LLaMA Models](https://ritvik19.medium.com/list/llama-models
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-11-02_Papers-Explained-187e--Quantized-Llama-3-2--Llama-3-3-cc6965f61370.html`); local copies under `wiki/assets/papers-explained-187e-quantized-llama-3-2-llama-3-3/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-11-02_Papers-Explained-187e--Quantized-Llama-3-2--Llama-3-3-cc6965f61370.md`); local copies under `wiki/assets/papers-explained-187e-quantized-llama-3-2-llama-3-3/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-187e-quantized-llama-3-2-llama-3-3/fig-1.png) | Promo card — **quantized lightweight Llama** (**1B + 3B**). |
-| ![Figure 2](assets/papers-explained-187e-quantized-llama-3-2-llama-3-3/fig-2.png) | **Android** scatter — **Llama 3.2 1B**: avg accuracy vs decode speed (BF16 baseline vs **QLoRA**, **SpinQuant**, vanilla **PTQ**). |
-| ![Figure 3](assets/papers-explained-187e-quantized-llama-3-2-llama-3-3/fig-3.png) | **Quantized Llama 3.2 1B Instruct** — BF16 vs vanilla PTQ / SpinQuant / **QLoRA** across general, rewrite, summarization, IFEval, math, reasoning, tools, MGSM. |
-| ![Figure 4](assets/papers-explained-187e-quantized-llama-3-2-llama-3-3/fig-4.png) | Same matrix for **Llama 3.2 3B** — average gap vs BF16 smallest under **QLoRA**. |
-| ![Figure 5](assets/papers-explained-187e-quantized-llama-3-2-llama-3-3/fig-5.png) | **ExecuTorch on Android** — decode / TTFT / prefill throughput, **PTE size**, RSS memory for **BF16 vs SpinQuant vs QLoRA** (1B and 3B). |
-| ![Figure 6](assets/papers-explained-187e-quantized-llama-3-2-llama-3-3/fig-6.png) | **Llama 3.3 70B** vs Llama 3.1 70B/405B, Nova Pro, Gemini Pro 1.5, GPT-4o, Claude 3.5 Sonnet — benchmarks plus **$/1M tokens** pricing row. |
+| ![Figure 1](assets/papers-explained-187e-quantized-llama-3-2-llama-3-3/fig-1.webp) | Promo card — **quantized lightweight Llama** (**1B + 3B**). |
+| ![Figure 2](assets/papers-explained-187e-quantized-llama-3-2-llama-3-3/fig-2.webp) | **Android** scatter — **Llama 3.2 1B**: avg accuracy vs decode speed (BF16 baseline vs **QLoRA**, **SpinQuant**, vanilla **PTQ**). |
+| ![Figure 3](assets/papers-explained-187e-quantized-llama-3-2-llama-3-3/fig-3.webp) | **Quantized Llama 3.2 1B Instruct** — BF16 vs vanilla PTQ / SpinQuant / **QLoRA** across general, rewrite, summarization, IFEval, math, reasoning, tools, MGSM. |
+| ![Figure 4](assets/papers-explained-187e-quantized-llama-3-2-llama-3-3/fig-4.webp) | Same matrix for **Llama 3.2 3B** — average gap vs BF16 smallest under **QLoRA**. |
+| ![Figure 5](assets/papers-explained-187e-quantized-llama-3-2-llama-3-3/fig-5.webp) | **ExecuTorch on Android** — decode / TTFT / prefill throughput, **PTE size**, RSS memory for **BF16 vs SpinQuant vs QLoRA** (1B and 3B). |
+| ![Figure 6](assets/papers-explained-187e-quantized-llama-3-2-llama-3-3/fig-6.webp) | **Llama 3.3 70B** vs Llama 3.1 70B/405B, Nova Pro, Gemini Pro 1.5, GPT-4o, Claude 3.5 Sonnet — benchmarks plus **$/1M tokens** pricing row. |
 ## Related
 
 - [[Papers Explained Corpus]]

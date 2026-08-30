@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-01-27_Papers-Explained-532--Jina-VLM-3d83a03005ca.html`
+- Source file: `raw/2026-01-27_Papers-Explained-532--Jina-VLM-3d83a03005ca.md`
 - Source title: Papers Explained 532: Jina-VLM
 - Published: 2026-01-27
 - Canonical: [https://medium.com/@ritvik19/papers-explained-532-jina-vlm-3d83a03005ca](https://medium.com/@ritvik19/papers-explained-532-jina-vlm-3d83a03005ca)
@@ -97,24 +97,24 @@ Jina-VLM: Small Multilingual Vision Language Model [2512.04032](https://arxiv.or
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-01-27_Papers-Explained-532--Jina-VLM-3d83a03005ca.html`); local copies under `wiki/assets/papers-explained-532-jina-vlm/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-01-27_Papers-Explained-532--Jina-VLM-3d83a03005ca.md`); local copies under `wiki/assets/papers-explained-532-jina-vlm/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-532-jina-vlm/fig-1.png) | Title card: Jina-VLM. |
-| ![Figure 2](assets/papers-explained-532-jina-vlm/fig-2.png) | Architecture of Jina-VLM. |
-| ![Figure 3](assets/papers-explained-532-jina-vlm/fig-3.png) | The model uses overlapping image tiling, combined with attention-based token pooling to reduce sequence length while preserving spatial... |
-| ![Figure 4](assets/papers-explained-532-jina-vlm/fig-4.png) | Vision Language Connector. |
-| ![Figure 5](assets/papers-explained-532-jina-vlm/fig-5.png) | where Ni contains the four patches at positions (2ix, 2iy), (2ix + 1, 2iy), (2ix, 2iy + 1), and (2ix + 1, 2iy + 1) and M = N/4. |
-| ![Figure 6](assets/papers-explained-532-jina-vlm/fig-6.png) | where Ni contains the four patches at positions (2ix, 2iy), (2ix + 1, 2iy), (2ix, 2iy + 1), and (2ix + 1, 2iy + 1) and M = N/4. |
-| ![Figure 7](assets/papers-explained-532-jina-vlm/fig-7.png) | where Ni contains the four patches at positions (2ix, 2iy), (2ix + 1, 2iy), (2ix, 2iy + 1), and (2ix + 1, 2iy + 1) and M = N/4. |
-| ![Figure 8](assets/papers-explained-532-jina-vlm/fig-8.png) | Model training hyperparameters across pre-training and fine-tuning stages. |
-| ![Figure 9](assets/papers-explained-532-jina-vlm/fig-9.png) | Comparison of general visual question answering performance. |
-| ![Figure 10](assets/papers-explained-532-jina-vlm/fig-10.png) | Comparison of generic multimodal understanding and real-world understanding performance. |
-| ![Figure 11](assets/papers-explained-532-jina-vlm/fig-11.png) | Comparison of multi-image and hallucination performance. |
-| ![Figure 12](assets/papers-explained-532-jina-vlm/fig-12.png) | Comparison of multimodal reasoning and mathematical problem-solving performance. |
-| ![Figure 13](assets/papers-explained-532-jina-vlm/fig-13.png) | Comparison of Text-only benchmarks. |
-| ![Figure 14](assets/papers-explained-532-jina-vlm/fig-14.png) | Comparison of multilingual multimodal understanding performance. |
+| ![Figure 1](assets/papers-explained-532-jina-vlm/fig-1.webp) | Title card: Jina-VLM. |
+| ![Figure 2](assets/papers-explained-532-jina-vlm/fig-2.webp) | Architecture of Jina-VLM. |
+| ![Figure 3](assets/papers-explained-532-jina-vlm/fig-3.webp) | The model uses overlapping image tiling, combined with attention-based token pooling to reduce sequence length while preserving spatial... |
+| ![Figure 4](assets/papers-explained-532-jina-vlm/fig-4.webp) | Vision Language Connector. |
+| ![Figure 5](assets/papers-explained-532-jina-vlm/fig-5.webp) | where Ni contains the four patches at positions (2ix, 2iy), (2ix + 1, 2iy), (2ix, 2iy + 1), and (2ix + 1, 2iy + 1) and M = N/4. |
+| ![Figure 6](assets/papers-explained-532-jina-vlm/fig-6.webp) | where Ni contains the four patches at positions (2ix, 2iy), (2ix + 1, 2iy), (2ix, 2iy + 1), and (2ix + 1, 2iy + 1) and M = N/4. |
+| ![Figure 7](assets/papers-explained-532-jina-vlm/fig-7.webp) | where Ni contains the four patches at positions (2ix, 2iy), (2ix + 1, 2iy), (2ix, 2iy + 1), and (2ix + 1, 2iy + 1) and M = N/4. |
+| ![Figure 8](assets/papers-explained-532-jina-vlm/fig-8.webp) | Model training hyperparameters across pre-training and fine-tuning stages. |
+| ![Figure 9](assets/papers-explained-532-jina-vlm/fig-9.webp) | Comparison of general visual question answering performance. |
+| ![Figure 10](assets/papers-explained-532-jina-vlm/fig-10.webp) | Comparison of generic multimodal understanding and real-world understanding performance. |
+| ![Figure 11](assets/papers-explained-532-jina-vlm/fig-11.webp) | Comparison of multi-image and hallucination performance. |
+| ![Figure 12](assets/papers-explained-532-jina-vlm/fig-12.webp) | Comparison of multimodal reasoning and mathematical problem-solving performance. |
+| ![Figure 13](assets/papers-explained-532-jina-vlm/fig-13.webp) | Comparison of Text-only benchmarks. |
+| ![Figure 14](assets/papers-explained-532-jina-vlm/fig-14.webp) | Comparison of multilingual multimodal understanding performance. |
 ## Related
 
 - [[Papers Explained Corpus]]

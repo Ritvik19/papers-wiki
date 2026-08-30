@@ -1,6 +1,6 @@
 # Introducing Composer 2
 
-**Source**: `raw/composer-2/full-article.html` (177 KB), `raw/composer-2/full-article.md` (markdown view)  
+**Source**: `raw/composer-2/full-article.md` (177 KB), `raw/composer-2/full-article.md` (markdown view)  
 **URL**: https://cursor.com/blog/composer-2  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -29,17 +29,17 @@ Product-wise, Composer 2 ships with a **fast tier at the same intelligence** ($1
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/composer-2/fig-1.png) | Composer 2 efficiency and quality on CursorBench (scatter / Pareto) | — |
-| ![fig-2](../assets/composer-2/fig-2.png) | Composer 2 Terminal-Bench 2.0 results | — |
-| ![fig-3](../assets/composer-2/fig-3.png) | Fast variant speed and cost vs. other models | — |
+| ![fig-1](../assets/composer-2/fig-1.webp) | Composer 2 efficiency and quality on CursorBench (scatter / Pareto) | — |
+| ![fig-2](../assets/composer-2/fig-2.webp) | Composer 2 Terminal-Bench 2.0 results | — |
+| ![fig-3](../assets/composer-2/fig-3.webp) | Fast variant speed and cost vs. other models | — |
 
 Light and dark variants (`fig-N-dark.png`) are in `wiki/assets/composer-2/`.
 
-![CursorBench efficiency and quality](../assets/composer-2/fig-1.png)
+![CursorBench efficiency and quality](../assets/composer-2/fig-1.webp)
 
-![Terminal-Bench 2.0 results](../assets/composer-2/fig-2.png)
+![Terminal-Bench 2.0 results](../assets/composer-2/fig-2.webp)
 
-![Fast variant speed and cost](../assets/composer-2/fig-3.png)
+![Fast variant speed and cost](../assets/composer-2/fig-3.webp)
 
 ## Entities
 

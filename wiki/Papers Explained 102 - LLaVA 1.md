@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-02-19_Papers-Explained-102--LLaVA-1-eb0a3db7e43c.html`
+- Source file: `raw/2024-02-19_Papers-Explained-102--LLaVA-1-eb0a3db7e43c.md`
 - Source title: Papers Explained 102: LLaVA 1
 - Published: 2024-02-19
 - Canonical: [https://medium.com/@ritvik19/papers-explained-102-llava-1-eb0a3db7e43c](https://medium.com/@ritvik19/papers-explained-102-llava-1-eb0a3db7e43c)
@@ -143,21 +143,21 @@ Recommended Reading [Multi Modal Transformers](https://ritvik19.medium.com/list/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-02-19_Papers-Explained-102--LLaVA-1-eb0a3db7e43c.html`); local copies under `wiki/assets/papers-explained-102-llava-1/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-02-19_Papers-Explained-102--LLaVA-1-eb0a3db7e43c.md`); local copies under `wiki/assets/papers-explained-102-llava-1/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-102-llava-1/fig-1.png) | Title block of *Visual Instruction Tuning*. |
-| ![Figure 2](assets/papers-explained-102-llava-1/fig-2.png) | GPT prompt context inputs for data generation: caption descriptions plus object bounding boxes. |
-| ![Figure 3](assets/papers-explained-102-llava-1/fig-3.png) | Three generated response styles used in the dataset: conversation, detailed description, and complex reasoning. |
-| ![Figure 4](assets/papers-explained-102-llava-1/fig-4.png) | Prompt-construction template for querying GPT with few-shot examples and visual-context instructions. |
-| ![Figure 5](assets/papers-explained-102-llava-1/fig-5.png) | LLaVA architecture connecting CLIP visual features to Vicuna through a trainable projection layer. |
-| ![Figure 6](assets/papers-explained-102-llava-1/fig-6.png) | Visual-token projection equation mapping encoder features into LLM embedding space. |
-| ![Figure 7](assets/papers-explained-102-llava-1/fig-7.png) | Multi-turn instruction formatting rule for placing image tokens and user query across dialogue turns. |
-| ![Figure 8](assets/papers-explained-102-llava-1/fig-8.png) | Autoregressive objective used for visual instruction tuning over answer token sequence. |
-| ![Figure 9](assets/papers-explained-102-llava-1/fig-9.png) | Ablation on LLaVA-Bench (COCO): effect of conversation/detail/reasoning data on instruction-following performance. |
-| ![Figure 10](assets/papers-explained-102-llava-1/fig-10.png) | LLaVA-Bench (In-the-Wild) comparison vs OpenFlamingo and BLIP-2 across conversation, detail, and reasoning. |
-| ![Figure 11](assets/papers-explained-102-llava-1/fig-11.png) | ScienceQA accuracy breakdown by subject/context/grade, including LLaVA and GPT-4 combination strategies. |
+| ![Figure 1](assets/papers-explained-102-llava-1/fig-1.webp) | Title block of *Visual Instruction Tuning*. |
+| ![Figure 2](assets/papers-explained-102-llava-1/fig-2.webp) | GPT prompt context inputs for data generation: caption descriptions plus object bounding boxes. |
+| ![Figure 3](assets/papers-explained-102-llava-1/fig-3.webp) | Three generated response styles used in the dataset: conversation, detailed description, and complex reasoning. |
+| ![Figure 4](assets/papers-explained-102-llava-1/fig-4.webp) | Prompt-construction template for querying GPT with few-shot examples and visual-context instructions. |
+| ![Figure 5](assets/papers-explained-102-llava-1/fig-5.webp) | LLaVA architecture connecting CLIP visual features to Vicuna through a trainable projection layer. |
+| ![Figure 6](assets/papers-explained-102-llava-1/fig-6.webp) | Visual-token projection equation mapping encoder features into LLM embedding space. |
+| ![Figure 7](assets/papers-explained-102-llava-1/fig-7.webp) | Multi-turn instruction formatting rule for placing image tokens and user query across dialogue turns. |
+| ![Figure 8](assets/papers-explained-102-llava-1/fig-8.webp) | Autoregressive objective used for visual instruction tuning over answer token sequence. |
+| ![Figure 9](assets/papers-explained-102-llava-1/fig-9.webp) | Ablation on LLaVA-Bench (COCO): effect of conversation/detail/reasoning data on instruction-following performance. |
+| ![Figure 10](assets/papers-explained-102-llava-1/fig-10.webp) | LLaVA-Bench (In-the-Wild) comparison vs OpenFlamingo and BLIP-2 across conversation, detail, and reasoning. |
+| ![Figure 11](assets/papers-explained-102-llava-1/fig-11.webp) | ScienceQA accuracy breakdown by subject/context/grade, including LLaVA and GPT-4 combination strategies. |
 ## Related
 
 - [[Papers Explained Corpus]]

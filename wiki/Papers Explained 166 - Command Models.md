@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-07-22_Papers-Explained-166--Command-Models-94ba068ebd2b.html`
+- Source file: `raw/2024-07-22_Papers-Explained-166--Command-Models-94ba068ebd2b.md`
 - Source title: Papers Explained 166: Command Models
 - Published: 2024-07-22
 - Canonical: [https://medium.com/@ritvik19/papers-explained-166-command-r-models-94ba068ebd2b](https://medium.com/@ritvik19/papers-explained-166-command-r-models-94ba068ebd2b)
@@ -393,35 +393,35 @@ Foundational Safety:
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-07-22_Papers-Explained-166--Command-Models-94ba068ebd2b.html`); local copies under `wiki/assets/papers-explained-166-command-models/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-07-22_Papers-Explained-166--Command-Models-94ba068ebd2b.md`); local copies under `wiki/assets/papers-explained-166-command-models/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-166-command-models/fig-1.png) | Title card: **RAG at production scale** (Command R announcement). |
-| ![Figure 2](assets/papers-explained-166-command-models/fig-2.png) | **Command R** RAG: human win-rate on enterprise use cases vs Mixtral; **KILT** end-to-end accuracy with vs without Cohere **Embed + Rerank**. |
-| ![Figure 3](assets/papers-explained-166-command-models/fig-3.png) | Multi-step search agents: **HotpotQA** and **Bamboogle** accuracy vs Llama-2-70B-Chat, Mixtral, GPT-3.5-turbo. |
-| ![Figure 4](assets/papers-explained-166-command-models/fig-4.png) | Multilingual: **mMMLU** plus **FLoRES** en→L2 and L2→en. |
-| ![Figure 5](assets/papers-explained-166-command-models/fig-5.png) | Long-context **needle-in-a-haystack** heatmap up to **128k** tokens (depth vs length). |
-| ![Figure 6](assets/papers-explained-166-command-models/fig-6.png) | **Command R+** vs Mistral-Large vs GPT-4-turbo: multilingual BLEU, RAG accuracy, tool-use success; Azure **$/M token** price bars. |
-| ![Figure 7](assets/papers-explained-166-command-models/fig-7.png) | **Command R+** human preference on citation summarization vs Claude 3 Sonnet / GPT-4-turbo; multi-hop **Bamboogle**, **HotpotQA**, **StrategyQA**. |
-| ![Figure 8](assets/papers-explained-166-command-models/fig-8.png) | Conversational tools: **ToolTalk (Hard)** soft success; **Berkeley Function Calling** pass rate. |
-| ![Figure 9](assets/papers-explained-166-command-models/fig-9.png) | **Command R+** translation BLEU on **FLoRES** and **WMT23** (en↔L2) vs Claude 3 Sonnet, Mistral-Large, GPT-4-turbo. |
-| ![Figure 10](assets/papers-explained-166-command-models/fig-10.png) | **Multilingual token cost**: Cohere tokenizer vs Mistral vs OpenAI (relative tokens per language). |
-| ![Figure 11](assets/papers-explained-166-command-models/fig-11.png) | **Hugging Face Open LLM Leaderboard** slice: Command **R7B** vs Gemma-2-9B-IT, Ministral-8B, Llama-3.1-8B. |
-| ![Figure 12](assets/papers-explained-166-command-models/fig-12.png) | Command **R7B** vs peers on **MATH**, **GSM8K**, **MBPP+**, **LBPP**, **SQL**, **COBOL**. |
-| ![Figure 13](assets/papers-explained-166-command-models/fig-13.png) | Translation quality by language (ar, de, es, fr, it, ja, ko, pt, zh) for Command **R7B** vs Gemma-2-9B, Ministral-8B, Llama-3.1-8B. |
-| ![Figure 14](assets/papers-explained-166-command-models/fig-14.png) | Enterprise agents: **ChatRAGBench**, **BFCL v3** (overall / live / irrelevance), **StrategyQA**, **Bamboogle**, **ToolTalk-hard**. |
-| ![Figure 15](assets/papers-explained-166-command-models/fig-15.png) | Blind human head-to-head: Command **R7B** vs **Gemma 2 9B** across workplace / FAQ / summarization scenarios. |
-| ![Figure 16](assets/papers-explained-166-command-models/fig-16.png) | **Command A**: human win rates vs **GPT-4o** and **DeepSeek-V3** (business / STEM / code); output **tok/s** throughput. |
-| ![Figure 17](assets/papers-explained-166-command-models/fig-17.png) | **Command A** vs DeepSeek-V3 vs GPT-4o on academic (**MMLU**, **MATH**, **IFEval**), agent (**Tau-bench**, **BFCL**), and coding (**MBPP+**, **SQL**, **RepoQA 32k**). |
-| ![Figure 18](assets/papers-explained-166-command-models/fig-18.png) | **100k-context** requests: streaming tok/s and **time-to-first-token** vs GPT-4o and DeepSeek-V3. |
-| ![Figure 19](assets/papers-explained-166-command-models/fig-19.png) | Command **A** vs **GPT-4o** win/tie breakdown on enterprise RAG-style human eval buckets. |
-| ![Figure 20](assets/papers-explained-166-command-models/fig-20.png) | Multilingual human eval: **Command A** vs **DeepSeek-V3** by language. |
-| ![Figure 21](assets/papers-explained-166-command-models/fig-21.png) | **Command A Vision** vs Llama 4 Maverick, GPT-4.1, Mistral Medium 3 on chart / diagram / OCR / scene benchmarks. |
-| ![Figure 22](assets/papers-explained-166-command-models/fig-22.png) | Vision accuracy table: **ChartQA**, **InfoVQA**, **AI2D**, **MathVista**. |
-| ![Figure 23](assets/papers-explained-166-command-models/fig-23.png) | Document OCR table: **DocVQA**, **TextVQA**, **OCRBench**. |
-| ![Figure 24](assets/papers-explained-166-command-models/fig-24.png) | Multimodal examples: chart → markdown tables, invoice → **JSON**, photo → damage / risk summary. |
-| ![Figure 25](assets/papers-explained-166-command-models/fig-25.png) | **Command A Reasoning** (per Cohere charts): agentic benchmarks, **DeepResearch** RACE, safety vs over-refusal, North human scores, scaling with **thinking budget**. |
+| ![Figure 1](assets/papers-explained-166-command-models/fig-1.webp) | Title card: **RAG at production scale** (Command R announcement). |
+| ![Figure 2](assets/papers-explained-166-command-models/fig-2.webp) | **Command R** RAG: human win-rate on enterprise use cases vs Mixtral; **KILT** end-to-end accuracy with vs without Cohere **Embed + Rerank**. |
+| ![Figure 3](assets/papers-explained-166-command-models/fig-3.webp) | Multi-step search agents: **HotpotQA** and **Bamboogle** accuracy vs Llama-2-70B-Chat, Mixtral, GPT-3.5-turbo. |
+| ![Figure 4](assets/papers-explained-166-command-models/fig-4.webp) | Multilingual: **mMMLU** plus **FLoRES** en→L2 and L2→en. |
+| ![Figure 5](assets/papers-explained-166-command-models/fig-5.webp) | Long-context **needle-in-a-haystack** heatmap up to **128k** tokens (depth vs length). |
+| ![Figure 6](assets/papers-explained-166-command-models/fig-6.webp) | **Command R+** vs Mistral-Large vs GPT-4-turbo: multilingual BLEU, RAG accuracy, tool-use success; Azure **$/M token** price bars. |
+| ![Figure 7](assets/papers-explained-166-command-models/fig-7.webp) | **Command R+** human preference on citation summarization vs Claude 3 Sonnet / GPT-4-turbo; multi-hop **Bamboogle**, **HotpotQA**, **StrategyQA**. |
+| ![Figure 8](assets/papers-explained-166-command-models/fig-8.webp) | Conversational tools: **ToolTalk (Hard)** soft success; **Berkeley Function Calling** pass rate. |
+| ![Figure 9](assets/papers-explained-166-command-models/fig-9.webp) | **Command R+** translation BLEU on **FLoRES** and **WMT23** (en↔L2) vs Claude 3 Sonnet, Mistral-Large, GPT-4-turbo. |
+| ![Figure 10](assets/papers-explained-166-command-models/fig-10.webp) | **Multilingual token cost**: Cohere tokenizer vs Mistral vs OpenAI (relative tokens per language). |
+| ![Figure 11](assets/papers-explained-166-command-models/fig-11.webp) | **Hugging Face Open LLM Leaderboard** slice: Command **R7B** vs Gemma-2-9B-IT, Ministral-8B, Llama-3.1-8B. |
+| ![Figure 12](assets/papers-explained-166-command-models/fig-12.webp) | Command **R7B** vs peers on **MATH**, **GSM8K**, **MBPP+**, **LBPP**, **SQL**, **COBOL**. |
+| ![Figure 13](assets/papers-explained-166-command-models/fig-13.webp) | Translation quality by language (ar, de, es, fr, it, ja, ko, pt, zh) for Command **R7B** vs Gemma-2-9B, Ministral-8B, Llama-3.1-8B. |
+| ![Figure 14](assets/papers-explained-166-command-models/fig-14.webp) | Enterprise agents: **ChatRAGBench**, **BFCL v3** (overall / live / irrelevance), **StrategyQA**, **Bamboogle**, **ToolTalk-hard**. |
+| ![Figure 15](assets/papers-explained-166-command-models/fig-15.webp) | Blind human head-to-head: Command **R7B** vs **Gemma 2 9B** across workplace / FAQ / summarization scenarios. |
+| ![Figure 16](assets/papers-explained-166-command-models/fig-16.webp) | **Command A**: human win rates vs **GPT-4o** and **DeepSeek-V3** (business / STEM / code); output **tok/s** throughput. |
+| ![Figure 17](assets/papers-explained-166-command-models/fig-17.webp) | **Command A** vs DeepSeek-V3 vs GPT-4o on academic (**MMLU**, **MATH**, **IFEval**), agent (**Tau-bench**, **BFCL**), and coding (**MBPP+**, **SQL**, **RepoQA 32k**). |
+| ![Figure 18](assets/papers-explained-166-command-models/fig-18.webp) | **100k-context** requests: streaming tok/s and **time-to-first-token** vs GPT-4o and DeepSeek-V3. |
+| ![Figure 19](assets/papers-explained-166-command-models/fig-19.webp) | Command **A** vs **GPT-4o** win/tie breakdown on enterprise RAG-style human eval buckets. |
+| ![Figure 20](assets/papers-explained-166-command-models/fig-20.webp) | Multilingual human eval: **Command A** vs **DeepSeek-V3** by language. |
+| ![Figure 21](assets/papers-explained-166-command-models/fig-21.webp) | **Command A Vision** vs Llama 4 Maverick, GPT-4.1, Mistral Medium 3 on chart / diagram / OCR / scene benchmarks. |
+| ![Figure 22](assets/papers-explained-166-command-models/fig-22.webp) | Vision accuracy table: **ChartQA**, **InfoVQA**, **AI2D**, **MathVista**. |
+| ![Figure 23](assets/papers-explained-166-command-models/fig-23.webp) | Document OCR table: **DocVQA**, **TextVQA**, **OCRBench**. |
+| ![Figure 24](assets/papers-explained-166-command-models/fig-24.webp) | Multimodal examples: chart → markdown tables, invoice → **JSON**, photo → damage / risk summary. |
+| ![Figure 25](assets/papers-explained-166-command-models/fig-25.webp) | **Command A Reasoning** (per Cohere charts): agentic benchmarks, **DeepResearch** RACE, safety vs over-refusal, North human scores, scaling with **thinking budget**. |
 ## Related
 
 - [[Introducing Command R+: A Scalable LLM Built for Business]] — Cohere launch post for Command R+ (Azure, RAG, tool use, multilingual).

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-06-07_Papers-Explained-147--LongLoRA-24f095b93611.html`
+- Source file: `raw/2024-06-07_Papers-Explained-147--LongLoRA-24f095b93611.md`
 - Source title: Papers Explained 147: LongLoRA
 - Published: 2024-06-07
 - Canonical: [https://medium.com/@ritvik19/papers-explained-147-longlora-24f095b93611](https://medium.com/@ritvik19/papers-explained-147-longlora-24f095b93611)
@@ -93,19 +93,19 @@ Recommended Reading [Parameter Efficient Fine Tuning](https://ritvik19.medium.co
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-06-07_Papers-Explained-147--LongLoRA-24f095b93611.html`); local copies under `wiki/assets/papers-explained-147-longlora/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-06-07_Papers-Explained-147--LongLoRA-24f095b93611.md`); local copies under `wiki/assets/papers-explained-147-longlora/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-147-longlora/fig-1.png) | Title page of *LongLoRA: Efficient Fine-tuning of Long-Context Large Language Models*. |
-| ![Figure 2](assets/papers-explained-147-longlora/fig-2.png) | Shifted sparse attention ($S^2$-Attn): split heads, roll half by half a group, attend locally, then merge patterns for cross-group signal. |
-| ![Figure 3](assets/papers-explained-147-longlora/fig-3.png) | PyTorch-style pseudocode implementing head-wise chunking, rolling, grouped self-attention, and inverse roll. |
-| ![Figure 4](assets/papers-explained-147-longlora/fig-4.png) | Combined illustration of complementary sparse masks plus transformer stack where embeddings, norms, and LoRA adapters train while attention/MLP blocks stay frozen. |
-| ![Figure 5](assets/papers-explained-147-longlora/fig-5.png) | Proof-pile perplexity vs rank-only LoRA; opening embeddings/norms closes most of the gap to full fine-tuning at rank 8. |
-| ![Figure 6](assets/papers-explained-147-longlora/fig-6.png) | Llama2 7B/13B perplexities across train/eval context lengths with toggles for $S^2$-Attn and LoRA+. |
-| ![Figure 7](assets/papers-explained-147-longlora/fig-7.png) | Extreme-context scaling: 7B @100k, 13B @65k, 70B @32k train windows evaluated at increasing proof-pile lengths. |
-| ![Figure 8](assets/papers-explained-147-longlora/fig-8.png) | Topic retrieval accuracy vs evaluation context for LongChat-style baselines versus the LongLoRA 13B model. |
-| ![Figure 9](assets/papers-explained-147-longlora/fig-9.png) | Passkey retrieval accuracy out to 48k tokens for Llama2 7B vs LongLoRA 7B with optional extended position interpolation. |
+| ![Figure 1](assets/papers-explained-147-longlora/fig-1.webp) | Title page of *LongLoRA: Efficient Fine-tuning of Long-Context Large Language Models*. |
+| ![Figure 2](assets/papers-explained-147-longlora/fig-2.webp) | Shifted sparse attention ($S^2$-Attn): split heads, roll half by half a group, attend locally, then merge patterns for cross-group signal. |
+| ![Figure 3](assets/papers-explained-147-longlora/fig-3.webp) | PyTorch-style pseudocode implementing head-wise chunking, rolling, grouped self-attention, and inverse roll. |
+| ![Figure 4](assets/papers-explained-147-longlora/fig-4.webp) | Combined illustration of complementary sparse masks plus transformer stack where embeddings, norms, and LoRA adapters train while attention/MLP blocks stay frozen. |
+| ![Figure 5](assets/papers-explained-147-longlora/fig-5.webp) | Proof-pile perplexity vs rank-only LoRA; opening embeddings/norms closes most of the gap to full fine-tuning at rank 8. |
+| ![Figure 6](assets/papers-explained-147-longlora/fig-6.webp) | Llama2 7B/13B perplexities across train/eval context lengths with toggles for $S^2$-Attn and LoRA+. |
+| ![Figure 7](assets/papers-explained-147-longlora/fig-7.webp) | Extreme-context scaling: 7B @100k, 13B @65k, 70B @32k train windows evaluated at increasing proof-pile lengths. |
+| ![Figure 8](assets/papers-explained-147-longlora/fig-8.webp) | Topic retrieval accuracy vs evaluation context for LongChat-style baselines versus the LongLoRA 13B model. |
+| ![Figure 9](assets/papers-explained-147-longlora/fig-9.webp) | Passkey retrieval accuracy out to 48k tokens for Llama2 7B vs LongLoRA 7B with optional extended position interpolation. |
 ## Related
 
 - [[Papers Explained Corpus]]

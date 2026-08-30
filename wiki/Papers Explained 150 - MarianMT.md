@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-06-13_Papers-Explained-150--MarianMT-1b44479b0fd9.html`
+- Source file: `raw/2024-06-13_Papers-Explained-150--MarianMT-1b44479b0fd9.md`
 - Source title: Papers Explained 150: MarianMT
 - Published: 2024-06-13
 - Canonical: [https://medium.com/@ritvik19/papers-explained-150-marianmt-1b44479b0fd9](https://medium.com/@ritvik19/papers-explained-150-marianmt-1b44479b0fd9)
@@ -108,11 +108,11 @@ Marian: Fast Neural Machine Translation in C++ [1804.00344](https://arxiv.org/ab
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-06-13_Papers-Explained-150--MarianMT-1b44479b0fd9.html`); local copies under `wiki/assets/papers-explained-150-marianmt/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-06-13_Papers-Explained-150--MarianMT-1b44479b0fd9.md`); local copies under `wiki/assets/papers-explained-150-marianmt/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-150-marianmt/fig-1.png) | Title page of *Marian: Fast Neural Machine Translation in C++* with author list and institution footnotes (Microsoft, Adam Mickiewicz University, Edinburgh, Unbabel). |
+| ![Figure 1](assets/papers-explained-150-marianmt/fig-1.webp) | Title page of *Marian: Fast Neural Machine Translation in C++* with author list and institution footnotes (Microsoft, Adam Mickiewicz University, Edinburgh, Unbabel). |
 ## Related
 
 - [[Papers Explained Corpus]]

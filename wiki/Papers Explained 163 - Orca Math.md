@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-07-15_Papers-Explained-163--Orca-Math-ae6a157ce48d.html`
+- Source file: `raw/2024-07-15_Papers-Explained-163--Orca-Math-ae6a157ce48d.md`
 - Source title: Papers Explained 163: Orca Math
 - Published: 2024-07-15
 - Canonical: [https://medium.com/@ritvik19/papers-explained-163-orca-math-ae6a157ce48d](https://medium.com/@ritvik19/papers-explained-163-orca-math-ae6a157ce48d)
@@ -97,18 +97,18 @@ Recommended Reading [Orca Series](https://ritvik19.medium.com/list/orca-series-1
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-07-15_Papers-Explained-163--Orca-Math-ae6a157ce48d.html`); local copies under `wiki/assets/papers-explained-163-orca-math/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-07-15_Papers-Explained-163--Orca-Math-ae6a157ce48d.md`); local copies under `wiki/assets/papers-explained-163-orca-math/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-163-orca-math/fig-1.png) | Paper title: *Orca-Math: Unlocking the potential of SLMs in Grade School Math*. |
-| ![Figure 2](assets/papers-explained-163-orca-math/fig-2.png) | **Ask Me Anything** agent: turn one Q/A into many problems by converting to a factual statement, then re-asking for each numeric target. |
-| ![Figure 3](assets/papers-explained-163-orca-math/fig-3.png) | Truncated **few-shot** excerpt from that prompt (illustrative word problem + answer). |
-| ![Figure 4](assets/papers-explained-163-orca-math/fig-4.png) | **Suggester** / **Editor** example: two rounds that complexify a seed math word problem. |
-| ![Figure 5](assets/papers-explained-163-orca-math/fig-5.png) | Supervised fine-tuning format: `USER: {question}` / `ASSISTANT: {answer}` (loss on answer tokens). |
-| ![Figure 6](assets/papers-explained-163-orca-math/fig-6.png) | **GPT4-based-Exact-Match** system prompt: expert math teacher compares student vs. reference final answer. |
-| ![Figure 7](assets/papers-explained-163-orca-math/fig-7.png) | **GSM8K** Pass@1 for iterative pipelines (SFT, DPO, KTO, multi-stage); best row is final Orca-Math training. |
-| ![Figure 8](assets/papers-explained-163-orca-math/fig-8.png) | **GSM8K** leaderboard-style comparison: Orca-Math (Mistral-7B) vs. larger math-tuned and proprietary models. |
+| ![Figure 1](assets/papers-explained-163-orca-math/fig-1.webp) | Paper title: *Orca-Math: Unlocking the potential of SLMs in Grade School Math*. |
+| ![Figure 2](assets/papers-explained-163-orca-math/fig-2.webp) | **Ask Me Anything** agent: turn one Q/A into many problems by converting to a factual statement, then re-asking for each numeric target. |
+| ![Figure 3](assets/papers-explained-163-orca-math/fig-3.webp) | Truncated **few-shot** excerpt from that prompt (illustrative word problem + answer). |
+| ![Figure 4](assets/papers-explained-163-orca-math/fig-4.webp) | **Suggester** / **Editor** example: two rounds that complexify a seed math word problem. |
+| ![Figure 5](assets/papers-explained-163-orca-math/fig-5.webp) | Supervised fine-tuning format: `USER: {question}` / `ASSISTANT: {answer}` (loss on answer tokens). |
+| ![Figure 6](assets/papers-explained-163-orca-math/fig-6.webp) | **GPT4-based-Exact-Match** system prompt: expert math teacher compares student vs. reference final answer. |
+| ![Figure 7](assets/papers-explained-163-orca-math/fig-7.webp) | **GSM8K** Pass@1 for iterative pipelines (SFT, DPO, KTO, multi-stage); best row is final Orca-Math training. |
+| ![Figure 8](assets/papers-explained-163-orca-math/fig-8.webp) | **GSM8K** leaderboard-style comparison: Orca-Math (Mistral-7B) vs. larger math-tuned and proprietary models. |
 ## Related
 
 - [[Papers Explained Corpus]]

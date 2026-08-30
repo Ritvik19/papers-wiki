@@ -1,6 +1,6 @@
 # How Nano Banana Got Its Name
 
-**Source**: `raw/how-nano-banana-got-its-name/full-article.html`  
+**Source**: `raw/how-nano-banana-got-its-name/full-article.md`  
 **Canonical URL**: https://blog.google/products-and-platforms/products/gemini/how-nano-banana-got-its-name/  
 **Published**: 2025 (context: late July codename scramble; LMArena debut early August)  
 **Ingested**: 2026-06-06  

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-12-25_Papers-Explained-Review-07--Convolution-Layers-c083e7410cd3.html`
+- Source file: `raw/2024-12-25_Papers-Explained-Review-07--Convolution-Layers-c083e7410cd3.md`
 - Source title: Papers Explained Review 07: Convolution Layers
 - Published: 2024-12-25
 - Canonical: [https://medium.com/@ritvik19/papers-explained-review-07-convolution-layers-c083e7410cd3](https://medium.com/@ritvik19/papers-explained-review-07-convolution-layers-c083e7410cd3)
@@ -89,16 +89,16 @@ After the element-wise multiplication, the values at each position in the output
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-12-25_Papers-Explained-Review-07--Convolution-Layers-c083e7410cd3.html`); local copies under `wiki/assets/papers-explained-review-07-convolution-layers/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-12-25_Papers-Explained-Review-07--Convolution-Layers-c083e7410cd3.md`); local copies under `wiki/assets/papers-explained-review-07-convolution-layers/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-review-07-convolution-layers/fig-1.png) | Title card: Convolution Layers. |
-| ![Figure 2](assets/papers-explained-review-07-convolution-layers/fig-2.png) | Convolution. |
-| ![Figure 3](assets/papers-explained-review-07-convolution-layers/fig-3.png) | Pointwise Convolution. |
-| ![Figure 4](assets/papers-explained-review-07-convolution-layers/fig-4.png) | Depthwise Convolution. |
-| ![Figure 5](assets/papers-explained-review-07-convolution-layers/fig-5.png) | Separable Convolution. |
-| ![Figure 6](assets/papers-explained-review-07-convolution-layers/fig-6.png) | Convolution Transpose. |
+| ![Figure 1](assets/papers-explained-review-07-convolution-layers/fig-1.webp) | Title card: Convolution Layers. |
+| ![Figure 2](assets/papers-explained-review-07-convolution-layers/fig-2.webp) | Convolution. |
+| ![Figure 3](assets/papers-explained-review-07-convolution-layers/fig-3.webp) | Pointwise Convolution. |
+| ![Figure 4](assets/papers-explained-review-07-convolution-layers/fig-4.webp) | Depthwise Convolution. |
+| ![Figure 5](assets/papers-explained-review-07-convolution-layers/fig-5.webp) | Separable Convolution. |
+| ![Figure 6](assets/papers-explained-review-07-convolution-layers/fig-6.webp) | Convolution Transpose. |
 ## Related
 
 - [[Papers Explained Corpus]]

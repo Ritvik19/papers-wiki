@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-01-24_Papers-Explained-94--ConvNeXt-V2-2ecdabf2081c.html`
+- Source file: `raw/2024-01-24_Papers-Explained-94--ConvNeXt-V2-2ecdabf2081c.md`
 - Source title: Papers Explained 94: ConvNeXt V2
 - Published: 2024-01-24
 - Canonical: [https://medium.com/@ritvik19/papers-explained-94-convnext-v2-2ecdabf2081c](https://medium.com/@ritvik19/papers-explained-94-convnext-v2-2ecdabf2081c)
@@ -113,20 +113,20 @@ Recommended Reading [Convolutional Neural Networks](https://medium.com/@ritvik19
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-01-24_Papers-Explained-94--ConvNeXt-V2-2ecdabf2081c.html`); local copies under `wiki/assets/papers-explained-94-convnext-v2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-01-24_Papers-Explained-94--ConvNeXt-V2-2ecdabf2081c.md`); local copies under `wiki/assets/papers-explained-94-convnext-v2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-94-convnext-v2/fig-1.png) | Title card: ConvNeXt V2. |
-| ![Figure 2](assets/papers-explained-94-convnext-v2/fig-2.png) | Fully Convolutional Masked Autoencoder Framework. |
-| ![Figure 3](assets/papers-explained-94-convnext-v2/fig-3.png) | Pseudocode of GRN in a PyTorch-like style. |
-| ![Figure 4](assets/papers-explained-94-convnext-v2/fig-4.png) | ConvNeXt Block Designs. |
-| ![Figure 5](assets/papers-explained-94-convnext-v2/fig-5.png) | Co-design matters. |
-| ![Figure 6](assets/papers-explained-94-convnext-v2/fig-6.png) | Model Scaling. |
-| ![Figure 7](assets/papers-explained-94-convnext-v2/fig-7.png) | Comparisons with previous masked image modeling approaches. |
-| ![Figure 8](assets/papers-explained-94-convnext-v2/fig-8.png) | ImageNet-1K fine-tuning results using IN-21K labels. |
-| ![Figure 9](assets/papers-explained-94-convnext-v2/fig-9.png) | COCO object detection and instance segmentation results using Mask-RCNN. |
-| ![Figure 10](assets/papers-explained-94-convnext-v2/fig-10.png) | ADE20K semantic segmentation results using UPerNet. |
+| ![Figure 1](assets/papers-explained-94-convnext-v2/fig-1.webp) | Title card: ConvNeXt V2. |
+| ![Figure 2](assets/papers-explained-94-convnext-v2/fig-2.webp) | Fully Convolutional Masked Autoencoder Framework. |
+| ![Figure 3](assets/papers-explained-94-convnext-v2/fig-3.webp) | Pseudocode of GRN in a PyTorch-like style. |
+| ![Figure 4](assets/papers-explained-94-convnext-v2/fig-4.webp) | ConvNeXt Block Designs. |
+| ![Figure 5](assets/papers-explained-94-convnext-v2/fig-5.webp) | Co-design matters. |
+| ![Figure 6](assets/papers-explained-94-convnext-v2/fig-6.webp) | Model Scaling. |
+| ![Figure 7](assets/papers-explained-94-convnext-v2/fig-7.webp) | Comparisons with previous masked image modeling approaches. |
+| ![Figure 8](assets/papers-explained-94-convnext-v2/fig-8.webp) | ImageNet-1K fine-tuning results using IN-21K labels. |
+| ![Figure 9](assets/papers-explained-94-convnext-v2/fig-9.webp) | COCO object detection and instance segmentation results using Mask-RCNN. |
+| ![Figure 10](assets/papers-explained-94-convnext-v2/fig-10.webp) | ADE20K semantic segmentation results using UPerNet. |
 ## Related
 
 - [[Papers Explained Corpus]]

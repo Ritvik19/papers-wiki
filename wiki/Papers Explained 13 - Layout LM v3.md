@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-06_Papers-Explained-13--Layout-LM-v3-3b54910173aa.html`
+- Source file: `raw/2023-02-06_Papers-Explained-13--Layout-LM-v3-3b54910173aa.md`
 - Source title: Papers Explained 13: Layout LM v3
 - Published: 2023-02-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-13-layout-lm-v3-3b54910173aa](https://medium.com/@ritvik19/papers-explained-13-layout-lm-v3-3b54910173aa)
@@ -80,12 +80,12 @@ LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking [22
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-06_Papers-Explained-13--Layout-LM-v3-3b54910173aa.html`); local copies under `wiki/assets/papers-explained-13-layout-lm-v3/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-06_Papers-Explained-13--Layout-LM-v3-3b54910173aa.md`); local copies under `wiki/assets/papers-explained-13-layout-lm-v3/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-13-layout-lm-v3/fig-1.png) | Title block of *LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking*. |
-| ![Figure 2](assets/papers-explained-13-layout-lm-v3/fig-2.png) | LayoutLMv3 unified multimodal pretraining architecture with MLM, MIM, and word-patch alignment (WPA) objectives. |
+| ![Figure 1](assets/papers-explained-13-layout-lm-v3/fig-1.webp) | Title block of *LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking*. |
+| ![Figure 2](assets/papers-explained-13-layout-lm-v3/fig-2.webp) | LayoutLMv3 unified multimodal pretraining architecture with MLM, MIM, and word-patch alignment (WPA) objectives. |
 ## Related
 
 - [[Papers Explained Corpus]]

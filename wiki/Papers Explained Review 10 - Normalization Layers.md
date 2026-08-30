@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-12-30_Papers-Explained-Review-10--Normalization-Layers-56b556c9646e.html`
+- Source file: `raw/2024-12-30_Papers-Explained-Review-10--Normalization-Layers-56b556c9646e.md`
 - Source title: Papers Explained Review 10: Normalization Layers
 - Published: 2024-12-30
 - Canonical: [https://medium.com/@ritvik19/papers-explained-review-10-normalization-layers-56b556c9646e](https://medium.com/@ritvik19/papers-explained-review-10-normalization-layers-56b556c9646e)
@@ -584,22 +584,22 @@ tf.reshape(x_norm, x_shape)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-12-30_Papers-Explained-Review-10--Normalization-Layers-56b556c9646e.html`); local copies under `wiki/assets/papers-explained-review-10-normalization-layers/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-12-30_Papers-Explained-Review-10--Normalization-Layers-56b556c9646e.md`); local copies under `wiki/assets/papers-explained-review-10-normalization-layers/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-review-10-normalization-layers/fig-1.png) | Title card: Normalization Layers. |
-| ![Figure 2](assets/papers-explained-review-10-normalization-layers/fig-2.png) | Normalize each feature independently to have zero mean and unit variance. |
-| ![Figure 3](assets/papers-explained-review-10-normalization-layers/fig-3.png) | Normalizing each feature to zero mean and unit variance could affect what the layer can represent. |
-| ![Figure 4](assets/papers-explained-review-10-normalization-layers/fig-4.png) | Back to Top: Back to Top. |
-| ![Figure 5](assets/papers-explained-review-10-normalization-layers/fig-5.png) | Instance normalization was introduced in the paper Instance Normalization: The Missing Ingredient for Fast Stylization to improve style... |
-| ![Figure 6](assets/papers-explained-review-10-normalization-layers/fig-6.png) | All normalization layers can be defined by the following computation. |
-| ![Figure 7](assets/papers-explained-review-10-normalization-layers/fig-7.png) | where μi and σi are mean and standard deviation. |
-| ![Figure 8](assets/papers-explained-review-10-normalization-layers/fig-8.png) | Batch Normalization. |
-| ![Figure 9](assets/papers-explained-review-10-normalization-layers/fig-9.png) | Layer Normalization. |
-| ![Figure 10](assets/papers-explained-review-10-normalization-layers/fig-10.png) | Instance Normalization. |
-| ![Figure 11](assets/papers-explained-review-10-normalization-layers/fig-11.png) | Group Normalization. |
-| ![Figure 12](assets/papers-explained-review-10-normalization-layers/fig-12.png) | Back to Top. |
+| ![Figure 1](assets/papers-explained-review-10-normalization-layers/fig-1.webp) | Title card: Normalization Layers. |
+| ![Figure 2](assets/papers-explained-review-10-normalization-layers/fig-2.webp) | Normalize each feature independently to have zero mean and unit variance. |
+| ![Figure 3](assets/papers-explained-review-10-normalization-layers/fig-3.webp) | Normalizing each feature to zero mean and unit variance could affect what the layer can represent. |
+| ![Figure 4](assets/papers-explained-review-10-normalization-layers/fig-4.webp) | Back to Top: Back to Top. |
+| ![Figure 5](assets/papers-explained-review-10-normalization-layers/fig-5.webp) | Instance normalization was introduced in the paper Instance Normalization: The Missing Ingredient for Fast Stylization to improve style... |
+| ![Figure 6](assets/papers-explained-review-10-normalization-layers/fig-6.webp) | All normalization layers can be defined by the following computation. |
+| ![Figure 7](assets/papers-explained-review-10-normalization-layers/fig-7.webp) | where μi and σi are mean and standard deviation. |
+| ![Figure 8](assets/papers-explained-review-10-normalization-layers/fig-8.webp) | Batch Normalization. |
+| ![Figure 9](assets/papers-explained-review-10-normalization-layers/fig-9.webp) | Layer Normalization. |
+| ![Figure 10](assets/papers-explained-review-10-normalization-layers/fig-10.webp) | Instance Normalization. |
+| ![Figure 11](assets/papers-explained-review-10-normalization-layers/fig-11.webp) | Group Normalization. |
+| ![Figure 12](assets/papers-explained-review-10-normalization-layers/fig-12.webp) | Back to Top. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -31,54 +31,54 @@ Beyond the core loop, the book covers reward-model variants (outcome vs. process
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/reinforcement-learning-from-human-feedback/fig-1.png) | Early three-stage RLHF pipeline: SFT, reward model, then optimization. | 7 |
-| ![fig-2](../assets/reinforcement-learning-from-human-feedback/fig-2.png) | Timeline of RLHF-related research from origins through the ChatGPT era. | 18 |
-| ![fig-3](../assets/reinforcement-learning-from-human-feedback/fig-3.png) | Core RLHF loop from Christiano et al. (2017): learned reward predictor in the RL loop. | 19 |
-| ![fig-4](../assets/reinforcement-learning-from-human-feedback/fig-4.png) | Standard RL agent–environment loop. | 22 |
-| ![fig-5](../assets/reinforcement-learning-from-human-feedback/fig-5.png) | Thermostat control as an intuitive RL example. | 22 |
-| ![fig-6](../assets/reinforcement-learning-from-human-feedback/fig-6.png) | CartPole as a classic RL benchmark illustration. | 23 |
-| ![fig-7](../assets/reinforcement-learning-from-human-feedback/fig-7.png) | Standard RLHF loop with policy, reward model, and reference model. | 26 |
-| ![fig-8](../assets/reinforcement-learning-from-human-feedback/fig-8.png) | Early three-stage RLHF process (duplicate of fig-1 context). | 28 |
-| ![fig-9](../assets/reinforcement-learning-from-human-feedback/fig-9.png) | Tülu 3 multi-stage post-training recipe overview. | 29 |
-| ![fig-10](../assets/reinforcement-learning-from-human-feedback/fig-10.png) | Detailed Tülu 3 training stages and model versions. | 29 |
-| ![fig-11](../assets/reinforcement-learning-from-human-feedback/fig-11.png) | Reward model as a learnable environment returning preference-based rewards. | 37 |
-| ![fig-12](../assets/reinforcement-learning-from-human-feedback/fig-12.png) | Bradley–Terry preference loss equivalence formulations. | 39 |
-| ![fig-13](../assets/reinforcement-learning-from-human-feedback/fig-13.png) | Outcome reward model token-level scoring intuition. | 44 |
-| ![fig-14](../assets/reinforcement-learning-from-human-feedback/fig-14.png) | ORM training with masked binary cross-entropy on token logits. | 44 |
-| ![fig-15](../assets/reinforcement-learning-from-human-feedback/fig-15.png) | Process reward models scoring chain-of-thought steps. | 45 |
-| ![fig-16](../assets/reinforcement-learning-from-human-feedback/fig-16.png) | RLHF training loop: policy generates, reward model scores, KL anchors to initial policy. | 52 |
-| ![fig-17](../assets/reinforcement-learning-from-human-feedback/fig-17.png) | REINFORCE policy-gradient with baseline advantage. | 58 |
-| ![fig-18](../assets/reinforcement-learning-from-human-feedback/fig-18.png) | REINFORCE Leave-One-Out (RLOO) multi-sample baseline architecture. | 60 |
-| ![fig-19](../assets/reinforcement-learning-from-human-feedback/fig-19.png) | PPO clipped surrogate objective over token log-probability ratios. | 61 |
-| ![fig-20](../assets/reinforcement-learning-from-human-feedback/fig-20.png) | PPO clipping behavior for positive and negative advantages. | 62 |
-| ![fig-21](../assets/reinforcement-learning-from-human-feedback/fig-21.png) | Value-function training for PPO advantage estimation. | 65 |
-| ![fig-22](../assets/reinforcement-learning-from-human-feedback/fig-22.png) | GRPO architecture with group-relative advantage normalization. | 67 |
-| ![fig-23](../assets/reinforcement-learning-from-human-feedback/fig-23.png) | Asynchronous / distributed RL system with actor–learner queues. | 78 |
-| ![fig-24](../assets/reinforcement-learning-from-human-feedback/fig-24.png) | Example distributed RL system using Ray-style synchronization. | 79 |
-| ![fig-25](../assets/reinforcement-learning-from-human-feedback/fig-25.png) | RLVR role in reasoning post-training with verifiable checkers. | 91 |
-| ![fig-26](../assets/reinforcement-learning-from-human-feedback/fig-26.jpeg) | DPO as closed-form solution to the KL-constrained RLHF objective. | 103 |
-| ![fig-27](../assets/reinforcement-learning-from-human-feedback/fig-27.png) | Preference displacement: DPO vs discriminator-guided DPO (D2PO). | 109 |
-| ![fig-28](../assets/reinforcement-learning-from-human-feedback/fig-28.png) | Rejection sampling overview: generate, score, filter, fine-tune. | 113 |
-| ![fig-29](../assets/reinforcement-learning-from-human-feedback/fig-29.png) | Timeline integrating subfields into modern RLHF. | 120 |
-| ![fig-30](../assets/reinforcement-learning-from-human-feedback/fig-30.png) | Early Anthropic preference-collection interface (Bai et al. 2022). | 126 |
+| ![fig-1](../assets/reinforcement-learning-from-human-feedback/fig-1.webp) | Early three-stage RLHF pipeline: SFT, reward model, then optimization. | 7 |
+| ![fig-2](../assets/reinforcement-learning-from-human-feedback/fig-2.webp) | Timeline of RLHF-related research from origins through the ChatGPT era. | 18 |
+| ![fig-3](../assets/reinforcement-learning-from-human-feedback/fig-3.webp) | Core RLHF loop from Christiano et al. (2017): learned reward predictor in the RL loop. | 19 |
+| ![fig-4](../assets/reinforcement-learning-from-human-feedback/fig-4.webp) | Standard RL agent–environment loop. | 22 |
+| ![fig-5](../assets/reinforcement-learning-from-human-feedback/fig-5.webp) | Thermostat control as an intuitive RL example. | 22 |
+| ![fig-6](../assets/reinforcement-learning-from-human-feedback/fig-6.webp) | CartPole as a classic RL benchmark illustration. | 23 |
+| ![fig-7](../assets/reinforcement-learning-from-human-feedback/fig-7.webp) | Standard RLHF loop with policy, reward model, and reference model. | 26 |
+| ![fig-8](../assets/reinforcement-learning-from-human-feedback/fig-8.webp) | Early three-stage RLHF process (duplicate of fig-1 context). | 28 |
+| ![fig-9](../assets/reinforcement-learning-from-human-feedback/fig-9.webp) | Tülu 3 multi-stage post-training recipe overview. | 29 |
+| ![fig-10](../assets/reinforcement-learning-from-human-feedback/fig-10.webp) | Detailed Tülu 3 training stages and model versions. | 29 |
+| ![fig-11](../assets/reinforcement-learning-from-human-feedback/fig-11.webp) | Reward model as a learnable environment returning preference-based rewards. | 37 |
+| ![fig-12](../assets/reinforcement-learning-from-human-feedback/fig-12.webp) | Bradley–Terry preference loss equivalence formulations. | 39 |
+| ![fig-13](../assets/reinforcement-learning-from-human-feedback/fig-13.webp) | Outcome reward model token-level scoring intuition. | 44 |
+| ![fig-14](../assets/reinforcement-learning-from-human-feedback/fig-14.webp) | ORM training with masked binary cross-entropy on token logits. | 44 |
+| ![fig-15](../assets/reinforcement-learning-from-human-feedback/fig-15.webp) | Process reward models scoring chain-of-thought steps. | 45 |
+| ![fig-16](../assets/reinforcement-learning-from-human-feedback/fig-16.webp) | RLHF training loop: policy generates, reward model scores, KL anchors to initial policy. | 52 |
+| ![fig-17](../assets/reinforcement-learning-from-human-feedback/fig-17.webp) | REINFORCE policy-gradient with baseline advantage. | 58 |
+| ![fig-18](../assets/reinforcement-learning-from-human-feedback/fig-18.webp) | REINFORCE Leave-One-Out (RLOO) multi-sample baseline architecture. | 60 |
+| ![fig-19](../assets/reinforcement-learning-from-human-feedback/fig-19.webp) | PPO clipped surrogate objective over token log-probability ratios. | 61 |
+| ![fig-20](../assets/reinforcement-learning-from-human-feedback/fig-20.webp) | PPO clipping behavior for positive and negative advantages. | 62 |
+| ![fig-21](../assets/reinforcement-learning-from-human-feedback/fig-21.webp) | Value-function training for PPO advantage estimation. | 65 |
+| ![fig-22](../assets/reinforcement-learning-from-human-feedback/fig-22.webp) | GRPO architecture with group-relative advantage normalization. | 67 |
+| ![fig-23](../assets/reinforcement-learning-from-human-feedback/fig-23.webp) | Asynchronous / distributed RL system with actor–learner queues. | 78 |
+| ![fig-24](../assets/reinforcement-learning-from-human-feedback/fig-24.webp) | Example distributed RL system using Ray-style synchronization. | 79 |
+| ![fig-25](../assets/reinforcement-learning-from-human-feedback/fig-25.webp) | RLVR role in reasoning post-training with verifiable checkers. | 91 |
+| ![fig-26](../assets/reinforcement-learning-from-human-feedback/fig-26.webp) | DPO as closed-form solution to the KL-constrained RLHF objective. | 103 |
+| ![fig-27](../assets/reinforcement-learning-from-human-feedback/fig-27.webp) | Preference displacement: DPO vs discriminator-guided DPO (D2PO). | 109 |
+| ![fig-28](../assets/reinforcement-learning-from-human-feedback/fig-28.webp) | Rejection sampling overview: generate, score, filter, fine-tune. | 113 |
+| ![fig-29](../assets/reinforcement-learning-from-human-feedback/fig-29.webp) | Timeline integrating subfields into modern RLHF. | 120 |
+| ![fig-30](../assets/reinforcement-learning-from-human-feedback/fig-30.webp) | Early Anthropic preference-collection interface (Bai et al. 2022). | 126 |
 | ![fig-31](../assets/reinforcement-learning-from-human-feedback/fig-31.png) | Arena-style pairwise preference interface. | 127 |
-| ![fig-32](../assets/reinforcement-learning-from-human-feedback/fig-32.png) | Early ChatGPT Arena preference UI example. | 128 |
-| ![fig-33](../assets/reinforcement-learning-from-human-feedback/fig-33.png) | Allen AI up/down arrow preference interface. | 129 |
+| ![fig-32](../assets/reinforcement-learning-from-human-feedback/fig-32.webp) | Early ChatGPT Arena preference UI example. | 128 |
+| ![fig-33](../assets/reinforcement-learning-from-human-feedback/fig-33.webp) | Allen AI up/down arrow preference interface. | 129 |
 | ![fig-34](../assets/reinforcement-learning-from-human-feedback/fig-34.png) | Text-to-image preference collection UI. | 130 |
-| ![fig-35](../assets/reinforcement-learning-from-human-feedback/fig-35.png) | Preference data sourcing and pipeline integration considerations. | 134 |
-| ![fig-36](../assets/reinforcement-learning-from-human-feedback/fig-36.png) | Synthetic data scale growth in fine-tuning datasets. | 138 |
-| ![fig-37](../assets/reinforcement-learning-from-human-feedback/fig-37.png) | Distillation as a post-training data engine across stages. | 139 |
-| ![fig-38](../assets/reinforcement-learning-from-human-feedback/fig-38.png) | Sketch of RL over-optimization: healthy training reward vs flat downstream eval. | 160 |
-| ![fig-39](../assets/reinforcement-learning-from-human-feedback/fig-39.png) | Train vs test reward-model divergence under over-optimization (Bai et al. 2022). | 164 |
-| ![fig-40](../assets/reinforcement-learning-from-human-feedback/fig-40.png) | Over-optimization qualitative patterns. | 164 |
-| ![fig-41](../assets/reinforcement-learning-from-human-feedback/fig-41.png) | SFT vs RL objective: forward KL vs reverse KL perspectives. | 171 |
-| ![fig-42](../assets/reinforcement-learning-from-human-feedback/fig-42.png) | KL-minimal RL solutions retain more base-model capability (forgetting mitigation). | 173 |
+| ![fig-35](../assets/reinforcement-learning-from-human-feedback/fig-35.webp) | Preference data sourcing and pipeline integration considerations. | 134 |
+| ![fig-36](../assets/reinforcement-learning-from-human-feedback/fig-36.webp) | Synthetic data scale growth in fine-tuning datasets. | 138 |
+| ![fig-37](../assets/reinforcement-learning-from-human-feedback/fig-37.webp) | Distillation as a post-training data engine across stages. | 139 |
+| ![fig-38](../assets/reinforcement-learning-from-human-feedback/fig-38.webp) | Sketch of RL over-optimization: healthy training reward vs flat downstream eval. | 160 |
+| ![fig-39](../assets/reinforcement-learning-from-human-feedback/fig-39.webp) | Train vs test reward-model divergence under over-optimization (Bai et al. 2022). | 164 |
+| ![fig-40](../assets/reinforcement-learning-from-human-feedback/fig-40.webp) | Over-optimization qualitative patterns. | 164 |
+| ![fig-41](../assets/reinforcement-learning-from-human-feedback/fig-41.webp) | SFT vs RL objective: forward KL vs reverse KL perspectives. | 171 |
+| ![fig-42](../assets/reinforcement-learning-from-human-feedback/fig-42.webp) | KL-minimal RL solutions retain more base-model capability (forgetting mitigation). | 173 |
 | ![fig-43](../assets/reinforcement-learning-from-human-feedback/fig-43.png) | Epoch AI plot of benchmark saturation over time. | 181 |
-| ![fig-44](../assets/reinforcement-learning-from-human-feedback/fig-44.png) | Persona vector extraction and intervention pipeline. | 188 |
-| ![fig-45](../assets/reinforcement-learning-from-human-feedback/fig-45.png) | Assistant axis in persona-vector PCA space. | 190 |
-| ![fig-46](../assets/reinforcement-learning-from-human-feedback/fig-46.png) | Discussion figure on PPO vs capability trade-offs in DPO-era training. | 225 |
+| ![fig-44](../assets/reinforcement-learning-from-human-feedback/fig-44.webp) | Persona vector extraction and intervention pipeline. | 188 |
+| ![fig-45](../assets/reinforcement-learning-from-human-feedback/fig-45.webp) | Assistant axis in persona-vector PCA space. | 190 |
+| ![fig-46](../assets/reinforcement-learning-from-human-feedback/fig-46.webp) | Discussion figure on PPO vs capability trade-offs in DPO-era training. | 225 |
 
-The early pipeline ![three-stage RLHF](../assets/reinforcement-learning-from-human-feedback/fig-1.png) and modern Tülu-scale recipe ![Tülu 3 stages](../assets/reinforcement-learning-from-human-feedback/fig-10.png) bracket how post-training grew from three clean stages into many iterative model versions. The GRPO diagram ![GRPO architecture](../assets/reinforcement-learning-from-human-feedback/fig-22.png) is the book's reference implementation for critic-free group-relative RL now standard in reasoning training.
+The early pipeline ![three-stage RLHF](../assets/reinforcement-learning-from-human-feedback/fig-1.webp) and modern Tülu-scale recipe ![Tülu 3 stages](../assets/reinforcement-learning-from-human-feedback/fig-10.webp) bracket how post-training grew from three clean stages into many iterative model versions. The GRPO diagram ![GRPO architecture](../assets/reinforcement-learning-from-human-feedback/fig-22.webp) is the book's reference implementation for critic-free group-relative RL now standard in reasoning training.
 
 ## Entities
 

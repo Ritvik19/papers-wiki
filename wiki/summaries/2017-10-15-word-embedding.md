@@ -1,6 +1,6 @@
 # Learning Word Embedding
 
-**Source**: `raw/2017-10-15-word-embedding/full-article.html` (92 KB); secondary: `raw/2017-10-15-word-embedding/full-article.md`  
+**Source**: `raw/2017-10-15-word-embedding/full-article.md` (92 KB); secondary: `raw/2017-10-15-word-embedding/full-article.md`  
 **Canonical URL**: https://lilianweng.github.io/posts/2017-10-15-word-embedding/  
 **Author**: Lilian Weng  
 **Published**: 2017-10-15  
@@ -34,11 +34,11 @@ The exposition is equation-heavy: full softmax, hierarchical softmax, cross-entr
 
 | Figure | Caption | Source |
 |--------|---------|--------|
-| ![Skip-gram architecture](../assets/2017-10-15-word-embedding/fig-1.png) | Skip-gram model: one-hot input x and output y; hidden layer is N-dimensional embedding from matrix W (V×N); context matrix W′ (N×V) produces output probabilities. | Weng blog Fig. 1 |
-| ![CBOW architecture](../assets/2017-10-15-word-embedding/fig-2.png) | CBOW model: multiple context one-hot vectors averaged in the hidden layer before predicting the center target word. | Weng blog Fig. 2 |
-| ![Hierarchical softmax tree](../assets/2017-10-15-word-embedding/fig-3.png) | Hierarchical softmax binary tree: leaves are vocabulary words; internal nodes carry turn-left/right probabilities via sigmoid of embedding dot products along the path. | Weng blog Fig. 3 (after Xin Rong) |
+| ![Skip-gram architecture](../assets/2017-10-15-word-embedding/fig-1.webp) | Skip-gram model: one-hot input x and output y; hidden layer is N-dimensional embedding from matrix W (V×N); context matrix W′ (N×V) produces output probabilities. | Weng blog Fig. 1 |
+| ![CBOW architecture](../assets/2017-10-15-word-embedding/fig-2.webp) | CBOW model: multiple context one-hot vectors averaged in the hidden layer before predicting the center target word. | Weng blog Fig. 2 |
+| ![Hierarchical softmax tree](../assets/2017-10-15-word-embedding/fig-3.webp) | Hierarchical softmax binary tree: leaves are vocabulary words; internal nodes carry turn-left/right probabilities via sigmoid of embedding dot products along the path. | Weng blog Fig. 3 (after Xin Rong) |
 
-The skip-gram diagram ![Skip-gram architecture](../assets/2017-10-15-word-embedding/fig-1.png) shows why **W** and **W′** are independent matrices—input embeddings vs context embeddings. The hierarchical softmax tree ![Hierarchical softmax tree](../assets/2017-10-15-word-embedding/fig-3.png) illustrates path probability as a product of sigmoid decisions at each internal node.
+The skip-gram diagram ![Skip-gram architecture](../assets/2017-10-15-word-embedding/fig-1.webp) shows why **W** and **W′** are independent matrices—input embeddings vs context embeddings. The hierarchical softmax tree ![Hierarchical softmax tree](../assets/2017-10-15-word-embedding/fig-3.webp) illustrates path probability as a product of sigmoid decisions at each internal node.
 
 ## Problem Setup: From One-Hot to Dense Vectors
 
@@ -89,7 +89,7 @@ Each (target, context) pair is an independent training example. Target **"swing"
 
 ### Architecture ([[Skip-Gram]])
 
-![Skip-gram architecture](../assets/2017-10-15-word-embedding/fig-1.png)
+![Skip-gram architecture](../assets/2017-10-15-word-embedding/fig-1.webp)
 
 Given vocabulary size **V** and embedding dimension **N**:
 
@@ -104,7 +104,7 @@ Each context-target pair is one SGD observation; corpora yield billions of updat
 
 ## CBOW (Detailed)
 
-![CBOW architecture](../assets/2017-10-15-word-embedding/fig-2.png)
+![CBOW architecture](../assets/2017-10-15-word-embedding/fig-2.webp)
 
 [[Continuous Bag-of-Words]] predicts the **center** word from **context** words. For target "swing" with context {sentence, should, the, sword}:
 
@@ -134,7 +134,7 @@ p(w_O | w_I) = exp(v'_{w_O}^T v_{w_I}) / Σ_{i=1}^V exp(v'_{w_i}^T v_{w_I})
 
 ### Hierarchical softmax
 
-![Hierarchical softmax tree](../assets/2017-10-15-word-embedding/fig-3.png)
+![Hierarchical softmax tree](../assets/2017-10-15-word-embedding/fig-3.webp)
 
 [[Hierarchical Softmax]] (Morin & Bengio, 2005) encodes the output layer as a **binary tree**: leaves = words; internal nodes = binary decisions.
 

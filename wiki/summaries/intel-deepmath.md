@@ -1,6 +1,6 @@
 # DeepMath: A Lightweight Math Reasoning Agent With Smolagents
 
-**Source**: `raw/intel-deepmath/full-article.html` (216 KB), `raw/intel-deepmath/full-article.md`
+**Source**: `raw/intel-deepmath/full-article.md` (216 KB), `raw/intel-deepmath/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

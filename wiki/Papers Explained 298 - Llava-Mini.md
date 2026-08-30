@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-01-29_Papers-Explained-298--Llava-Mini-fe3a25b9e747.html`
+- Source file: `raw/2025-01-29_Papers-Explained-298--Llava-Mini-fe3a25b9e747.md`
 - Source title: Papers Explained 298: Llava-Mini
 - Published: 2025-01-29
 - Canonical: [https://medium.com/@ritvik19/papers-explained-298-llava-mini-fe3a25b9e747](https://medium.com/@ritvik19/papers-explained-298-llava-mini-fe3a25b9e747)
@@ -115,24 +115,24 @@ LLaVA-Mini: Efficient Image and Video Large Multimodal Models with One Vision To
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-01-29_Papers-Explained-298--Llava-Mini-fe3a25b9e747.html`); local copies under `wiki/assets/papers-explained-298-llava-mini/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-01-29_Papers-Explained-298--Llava-Mini-fe3a25b9e747.md`); local copies under `wiki/assets/papers-explained-298-llava-mini/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-298-llava-mini/fig-1.png) | Title card: Llava-Mini. |
-| ![Figure 2](assets/papers-explained-298-llava-mini/fig-2.png) | Layer-wise variation of attention weights assigned to different types of tokens (including instruction, vision, and response) in LMMs. |
-| ![Figure 3](assets/papers-explained-298-llava-mini/fig-3.png) | Attention entropy assigned to different types of tokens across different layers in LMMs. |
-| ![Figure 4](assets/papers-explained-298-llava-mini/fig-4.png) | Performance of LLaVA-v1.5 when removing all vision tokens in various layers of LMM. |
-| ![Figure 5](assets/papers-explained-298-llava-mini/fig-5.png) | Architecture of LLaVA-Mini. |
-| ![Figure 6](assets/papers-explained-298-llava-mini/fig-6.png) | The compression process can be expressed as. |
-| ![Figure 7](assets/papers-explained-298-llava-mini/fig-7.png) | However, this compression inevitably results in some loss of visual information. |
-| ![Figure 8](assets/papers-explained-298-llava-mini/fig-8.png) | Performance on 11 image-based benchmarks. |
-| ![Figure 9](assets/papers-explained-298-llava-mini/fig-9.png) | Performance on video-based open-ended generative benchmarks. |
-| ![Figure 10](assets/papers-explained-298-llava-mini/fig-10.png) | Performance on MVBench (accuracy). |
-| ![Figure 11](assets/papers-explained-298-llava-mini/fig-11.png) | Results on MLVU (accuracy) of long video understanding. |
-| ![Figure 12](assets/papers-explained-298-llava-mini/fig-12.png) | Results on EgoSchema (accuracy), a long-form video benchmark (∼ 3 minutes) for first-person view temporal reasoning. |
-| ![Figure 13](assets/papers-explained-298-llava-mini/fig-13.png) | Performance of LLaVA-Mini with different numbers of modality pre-fusion layers Nfusion. |
-| ![Figure 14](assets/papers-explained-298-llava-mini/fig-14.png) | Performance of LLaVA-Mini with various vision tokens. |
+| ![Figure 1](assets/papers-explained-298-llava-mini/fig-1.webp) | Title card: Llava-Mini. |
+| ![Figure 2](assets/papers-explained-298-llava-mini/fig-2.webp) | Layer-wise variation of attention weights assigned to different types of tokens (including instruction, vision, and response) in LMMs. |
+| ![Figure 3](assets/papers-explained-298-llava-mini/fig-3.webp) | Attention entropy assigned to different types of tokens across different layers in LMMs. |
+| ![Figure 4](assets/papers-explained-298-llava-mini/fig-4.webp) | Performance of LLaVA-v1.5 when removing all vision tokens in various layers of LMM. |
+| ![Figure 5](assets/papers-explained-298-llava-mini/fig-5.webp) | Architecture of LLaVA-Mini. |
+| ![Figure 6](assets/papers-explained-298-llava-mini/fig-6.webp) | The compression process can be expressed as. |
+| ![Figure 7](assets/papers-explained-298-llava-mini/fig-7.webp) | However, this compression inevitably results in some loss of visual information. |
+| ![Figure 8](assets/papers-explained-298-llava-mini/fig-8.webp) | Performance on 11 image-based benchmarks. |
+| ![Figure 9](assets/papers-explained-298-llava-mini/fig-9.webp) | Performance on video-based open-ended generative benchmarks. |
+| ![Figure 10](assets/papers-explained-298-llava-mini/fig-10.webp) | Performance on MVBench (accuracy). |
+| ![Figure 11](assets/papers-explained-298-llava-mini/fig-11.webp) | Results on MLVU (accuracy) of long video understanding. |
+| ![Figure 12](assets/papers-explained-298-llava-mini/fig-12.webp) | Results on EgoSchema (accuracy), a long-form video benchmark (∼ 3 minutes) for first-person view temporal reasoning. |
+| ![Figure 13](assets/papers-explained-298-llava-mini/fig-13.webp) | Performance of LLaVA-Mini with different numbers of modality pre-fusion layers Nfusion. |
+| ![Figure 14](assets/papers-explained-298-llava-mini/fig-14.webp) | Performance of LLaVA-Mini with various vision tokens. |
 ## Related
 
 - [[Papers Explained Corpus]]

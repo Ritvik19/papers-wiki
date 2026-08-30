@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-01-23_Papers-Explained-294--Multi-LLM-Text-Summarization-6141d1276772.html`
+- Source file: `raw/2025-01-23_Papers-Explained-294--Multi-LLM-Text-Summarization-6141d1276772.md`
 - Source title: Papers Explained 294: Multi-LLM Text Summarization
 - Published: 2025-01-23
 - Canonical: [https://medium.com/@ritvik19/papers-explained-294-multi-llm-text-summarization-6141d1276772](https://medium.com/@ritvik19/papers-explained-294-multi-llm-text-summarization-6141d1276772)
@@ -295,22 +295,22 @@ Multi-LLM Text Summarization [2412.15487](https://arxiv.org/abs/2412.15487)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-01-23_Papers-Explained-294--Multi-LLM-Text-Summarization-6141d1276772.html`); local copies under `wiki/assets/papers-explained-294-multi-llm-text-summarization/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-01-23_Papers-Explained-294--Multi-LLM-Text-Summarization-6141d1276772.md`); local copies under `wiki/assets/papers-explained-294-multi-llm-text-summarization/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-294-multi-llm-text-summarization/fig-1.png) | Title card: Multi-LLM Text Summarization. |
-| ![Figure 2](assets/papers-explained-294-multi-llm-text-summarization/fig-2.png) | Centralized and Decentralized approaches using a 5-LLM example. |
-| ![Figure 3](assets/papers-explained-294-multi-llm-text-summarization/fig-3.png) | Overview of Multi-LLM Summarization Framework. |
-| ![Figure 4](assets/papers-explained-294-multi-llm-text-summarization/fig-4.png) | Centralized Multi-LLM Summarization. |
-| ![Figure 5](assets/papers-explained-294-multi-llm-text-summarization/fig-5.png) | After collecting the set of candidate summaries S, a central agent C ∈ M evaluates these summaries. |
-| ![Figure 6](assets/papers-explained-294-multi-llm-text-summarization/fig-6.png) | After collecting the set of candidate summaries S, a central agent C ∈ M evaluates these summaries. |
-| ![Figure 7](assets/papers-explained-294-multi-llm-text-summarization/fig-7.png) | The first round of the conversational approach mirrors the single-round procedure. |
-| ![Figure 8](assets/papers-explained-294-multi-llm-text-summarization/fig-8.png) | Conversational. |
-| ![Figure 9](assets/papers-explained-294-multi-llm-text-summarization/fig-9.png) | Decentralized Multi-LLM Summarization. |
-| ![Figure 10](assets/papers-explained-294-multi-llm-text-summarization/fig-10.png) | Generation procedure is the same as that in the centralized approach. |
-| ![Figure 11](assets/papers-explained-294-multi-llm-text-summarization/fig-11.png) | Single Round. |
-| ![Figure 12](assets/papers-explained-294-multi-llm-text-summarization/fig-12.png) | Generation follows the methodology as in the centralised approach producing the set of summaries S = S1,. |
+| ![Figure 1](assets/papers-explained-294-multi-llm-text-summarization/fig-1.webp) | Title card: Multi-LLM Text Summarization. |
+| ![Figure 2](assets/papers-explained-294-multi-llm-text-summarization/fig-2.webp) | Centralized and Decentralized approaches using a 5-LLM example. |
+| ![Figure 3](assets/papers-explained-294-multi-llm-text-summarization/fig-3.webp) | Overview of Multi-LLM Summarization Framework. |
+| ![Figure 4](assets/papers-explained-294-multi-llm-text-summarization/fig-4.webp) | Centralized Multi-LLM Summarization. |
+| ![Figure 5](assets/papers-explained-294-multi-llm-text-summarization/fig-5.webp) | After collecting the set of candidate summaries S, a central agent C ∈ M evaluates these summaries. |
+| ![Figure 6](assets/papers-explained-294-multi-llm-text-summarization/fig-6.webp) | After collecting the set of candidate summaries S, a central agent C ∈ M evaluates these summaries. |
+| ![Figure 7](assets/papers-explained-294-multi-llm-text-summarization/fig-7.webp) | The first round of the conversational approach mirrors the single-round procedure. |
+| ![Figure 8](assets/papers-explained-294-multi-llm-text-summarization/fig-8.webp) | Conversational. |
+| ![Figure 9](assets/papers-explained-294-multi-llm-text-summarization/fig-9.webp) | Decentralized Multi-LLM Summarization. |
+| ![Figure 10](assets/papers-explained-294-multi-llm-text-summarization/fig-10.webp) | Generation procedure is the same as that in the centralized approach. |
+| ![Figure 11](assets/papers-explained-294-multi-llm-text-summarization/fig-11.webp) | Single Round. |
+| ![Figure 12](assets/papers-explained-294-multi-llm-text-summarization/fig-12.webp) | Generation follows the methodology as in the centralised approach producing the set of summaries S = S1,. |
 ## Related
 
 - [[Papers Explained Corpus]]

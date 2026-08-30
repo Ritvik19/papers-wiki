@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-05-22_Papers-Explained-371--ReasonIR-7ae7a6ceb54b.html`
+- Source file: `raw/2025-05-22_Papers-Explained-371--ReasonIR-7ae7a6ceb54b.md`
 - Source title: Papers Explained 371: ReasonIR
 - Published: 2025-05-22
 - Canonical: [https://medium.com/@ritvik19/papers-explained-371-reasonir-7ae7a6ceb54b](https://medium.com/@ritvik19/papers-explained-371-reasonir-7ae7a6ceb54b)
@@ -199,14 +199,14 @@ ReasonIR: Training Retrievers for Reasoning Tasks [2504.20595](https://arxiv.org
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-05-22_Papers-Explained-371--ReasonIR-7ae7a6ceb54b.html`); local copies under `wiki/assets/papers-explained-371-reasonir/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-05-22_Papers-Explained-371--ReasonIR-7ae7a6ceb54b.md`); local copies under `wiki/assets/papers-explained-371-reasonir/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-371-reasonir/fig-1.png) | Title card: ReasonIR. |
-| ![Figure 2](assets/papers-explained-371-reasonir/fig-2.png) | Three types of training data are considered. |
-| ![Figure 3](assets/papers-explained-371-reasonir/fig-3.png) | Llama3.1–70b-Instruct is used for synthetic data generation and a bi-encoder retriever, ReasonIR-8B, is trained using Llama3.1–8b as the... |
-| ![Figure 4](assets/papers-explained-371-reasonir/fig-4.png) | Llama3.1–70b-Instruct is used for synthetic data generation and a bi-encoder retriever, ReasonIR-8B, is trained using Llama3.1–8b as the... |
+| ![Figure 1](assets/papers-explained-371-reasonir/fig-1.webp) | Title card: ReasonIR. |
+| ![Figure 2](assets/papers-explained-371-reasonir/fig-2.webp) | Three types of training data are considered. |
+| ![Figure 3](assets/papers-explained-371-reasonir/fig-3.webp) | Llama3.1–70b-Instruct is used for synthetic data generation and a bi-encoder retriever, ReasonIR-8B, is trained using Llama3.1–8b as the... |
+| ![Figure 4](assets/papers-explained-371-reasonir/fig-4.webp) | Llama3.1–70b-Instruct is used for synthetic data generation and a bi-encoder retriever, ReasonIR-8B, is trained using Llama3.1–8b as the... |
 ## Related
 
 - [[Papers Explained Corpus]]

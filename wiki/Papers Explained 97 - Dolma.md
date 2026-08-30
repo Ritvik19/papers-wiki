@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-02-05_Papers-Explained-97--Dolma-a656169269cb.html`
+- Source file: `raw/2024-02-05_Papers-Explained-97--Dolma-a656169269cb.md`
 - Source title: Papers Explained 97: Dolma
 - Published: 2024-02-05
 - Canonical: [https://medium.com/@ritvik19/papers-explained-97-dolma-a656169269cb](https://medium.com/@ritvik19/papers-explained-97-dolma-a656169269cb)
@@ -164,21 +164,21 @@ Recommended Reading [Datasets](https://ritvik19.medium.com/list/datasets-b465a5d
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-02-05_Papers-Explained-97--Dolma-a656169269cb.html`); local copies under `wiki/assets/papers-explained-97-dolma/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-02-05_Papers-Explained-97--Dolma-a656169269cb.md`); local copies under `wiki/assets/papers-explained-97-dolma/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-97-dolma/fig-1.png) | Title card: Dolma. |
-| ![Figure 2](assets/papers-explained-97-dolma/fig-2.png) | The Dolma corpus at-a-glance. |
-| ![Figure 3](assets/papers-explained-97-dolma/fig-3.png) | The web subset of Dolma was derived from Common Crawl. |
-| ![Figure 4](assets/papers-explained-97-dolma/fig-4.png) | Data distribution. |
-| ![Figure 5](assets/papers-explained-97-dolma/fig-5.png) | The code subset of Dolma is derived from The Stack. |
-| ![Figure 6](assets/papers-explained-97-dolma/fig-6.png) | The conversational subset of Dolma was derived from the Pushshift Reddit dataset. |
-| ![Figure 7](assets/papers-explained-97-dolma/fig-7.png) | Performance differences with and without our decontamination on 1B models trained on RedPajama v1. |
-| ![Figure 8](assets/papers-explained-97-dolma/fig-8.png) | Contamination percentages of datasets from PromptSource. |
-| ![Figure 9](assets/papers-explained-97-dolma/fig-9.png) | Performance of three models pre-trained with increasing amounts of code on three datasets, across 5 random seeds. |
-| ![Figure 10](assets/papers-explained-97-dolma/fig-10.png) | Overview of the mixtures and their composition. |
-| ![Figure 11](assets/papers-explained-97-dolma/fig-11.png) | 1B model ablations for different proportions of Dolma data. |
+| ![Figure 1](assets/papers-explained-97-dolma/fig-1.webp) | Title card: Dolma. |
+| ![Figure 2](assets/papers-explained-97-dolma/fig-2.webp) | The Dolma corpus at-a-glance. |
+| ![Figure 3](assets/papers-explained-97-dolma/fig-3.webp) | The web subset of Dolma was derived from Common Crawl. |
+| ![Figure 4](assets/papers-explained-97-dolma/fig-4.webp) | Data distribution. |
+| ![Figure 5](assets/papers-explained-97-dolma/fig-5.webp) | The code subset of Dolma is derived from The Stack. |
+| ![Figure 6](assets/papers-explained-97-dolma/fig-6.webp) | The conversational subset of Dolma was derived from the Pushshift Reddit dataset. |
+| ![Figure 7](assets/papers-explained-97-dolma/fig-7.webp) | Performance differences with and without our decontamination on 1B models trained on RedPajama v1. |
+| ![Figure 8](assets/papers-explained-97-dolma/fig-8.webp) | Contamination percentages of datasets from PromptSource. |
+| ![Figure 9](assets/papers-explained-97-dolma/fig-9.webp) | Performance of three models pre-trained with increasing amounts of code on three datasets, across 5 random seeds. |
+| ![Figure 10](assets/papers-explained-97-dolma/fig-10.webp) | Overview of the mixtures and their composition. |
+| ![Figure 11](assets/papers-explained-97-dolma/fig-11.webp) | 1B model ablations for different proportions of Dolma data. |
 ## Related
 
 - [[Papers Explained Corpus]]

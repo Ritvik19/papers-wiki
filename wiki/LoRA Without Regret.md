@@ -1,6 +1,6 @@
 # LoRA Without Regret
 
-**Source**: `raw/lora/full-article.html` · `raw/lora/full-article.md`  
+**Source**: `raw/lora/full-article.md` · `raw/lora/full-article.md`  
 **URL**: https://thinkingmachines.ai/blog/lora/  
 **Authors**: John Schulman & Thinking Machines Lab  
 **Published**: September 2025  

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-05-20_Papers-Explained-139--Gorilla-79f4730913e9.html`
+- Source file: `raw/2024-05-20_Papers-Explained-139--Gorilla-79f4730913e9.md`
 - Source title: Papers Explained 139: Gorilla
 - Published: 2024-05-20
 - Canonical: [https://medium.com/@ritvik19/papers-explained-139-gorilla-79f4730913e9](https://medium.com/@ritvik19/papers-explained-139-gorilla-79f4730913e9)
@@ -139,15 +139,15 @@ Gorilla: Large Language Model Connected with Massive APIs [2305.15334](https://a
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-05-20_Papers-Explained-139--Gorilla-79f4730913e9.html`); local copies under `wiki/assets/papers-explained-139-gorilla/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-05-20_Papers-Explained-139--Gorilla-79f4730913e9.md`); local copies under `wiki/assets/papers-explained-139-gorilla/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-139-gorilla/fig-1.png) | Title page of *Gorilla: Large Language Model Connected with Massive APIs*. |
-| ![Figure 2](assets/papers-explained-139-gorilla/fig-2.png) | Dataset build from Torch Hub, TensorFlow Hub, and Hugging Face APIs plus self-instruct expansion; inference paths for zero-shot vs retrieval-augmented API synthesis with an executed Stable Diffusion example. |
-| ![Figure 3](assets/papers-explained-139-gorilla/fig-3.png) | Overall, hallucination, and argument-error rates on TorchHub, HuggingFace, and TensorFlow Hub across 0-shot, BM25, GPT-Index, and oracle retrieval for GPT-family models, Claude, LLaMA, and Gorilla. |
-| ![Figure 4](assets/papers-explained-139-gorilla/fig-4.png) | Gorilla trained without retrieval stays strong in pure zero-shot use; retriever-aware training peaks with oracle docs but collapses when retrieval is missing at test time. |
-| ![Figure 5](assets/papers-explained-139-gorilla/fig-5.png) | Torch Hub slice emphasizing constrained-parameter accuracy alongside overall, hallucination, and argument errors under varying retrievers. |
+| ![Figure 1](assets/papers-explained-139-gorilla/fig-1.webp) | Title page of *Gorilla: Large Language Model Connected with Massive APIs*. |
+| ![Figure 2](assets/papers-explained-139-gorilla/fig-2.webp) | Dataset build from Torch Hub, TensorFlow Hub, and Hugging Face APIs plus self-instruct expansion; inference paths for zero-shot vs retrieval-augmented API synthesis with an executed Stable Diffusion example. |
+| ![Figure 3](assets/papers-explained-139-gorilla/fig-3.webp) | Overall, hallucination, and argument-error rates on TorchHub, HuggingFace, and TensorFlow Hub across 0-shot, BM25, GPT-Index, and oracle retrieval for GPT-family models, Claude, LLaMA, and Gorilla. |
+| ![Figure 4](assets/papers-explained-139-gorilla/fig-4.webp) | Gorilla trained without retrieval stays strong in pure zero-shot use; retriever-aware training peaks with oracle docs but collapses when retrieval is missing at test time. |
+| ![Figure 5](assets/papers-explained-139-gorilla/fig-5.webp) | Torch Hub slice emphasizing constrained-parameter accuracy alongside overall, hallucination, and argument errors under varying retrievers. |
 ## Related
 
 - [[Papers Explained Corpus]]

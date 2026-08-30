@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-01-22_Papers-Explained-529--DR-Tulu-123b031776c5.html`
+- Source file: `raw/2026-01-22_Papers-Explained-529--DR-Tulu-123b031776c5.md`
 - Source title: Papers Explained 529: DR Tulu
 - Published: 2026-01-22
 - Canonical: [https://medium.com/@ritvik19/papers-explained-529-dr-tulu-123b031776c5](https://medium.com/@ritvik19/papers-explained-529-dr-tulu-123b031776c5)
@@ -207,20 +207,20 @@ DR Tulu: Reinforcement Learning with Evolving Rubrics for Deep Research [2511.19
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-01-22_Papers-Explained-529--DR-Tulu-123b031776c5.html`); local copies under `wiki/assets/papers-explained-529-dr-tulu/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-01-22_Papers-Explained-529--DR-Tulu-123b031776c5.md`); local copies under `wiki/assets/papers-explained-529-dr-tulu/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-529-dr-tulu/fig-1.png) | Title card: DR Tulu. |
-| ![Figure 2](assets/papers-explained-529-dr-tulu/fig-2.png) | Overview of training a deep research model with reinforcement learning with evolving rubrics. |
-| ![Figure 3](assets/papers-explained-529-dr-tulu/fig-3.png) | where ai specifies the action type. |
-| ![Figure 4](assets/papers-explained-529-dr-tulu/fig-4.png) | Training with RLER. |
-| ![Figure 5](assets/papers-explained-529-dr-tulu/fig-5.png) | Initial Search-Based Rubrics. |
-| ![Figure 6](assets/papers-explained-529-dr-tulu/fig-6.png) | SFT data stats. |
-| ![Figure 7](assets/papers-explained-529-dr-tulu/fig-7.png) | Hyperparameters used for SFT training. |
-| ![Figure 8](assets/papers-explained-529-dr-tulu/fig-8.png) | Hyperparameters used for GRPO training. |
-| ![Figure 9](assets/papers-explained-529-dr-tulu/fig-9.png) | Performance breakdown for Asta-ScholarQA-CS2 and DeepResearchBench. |
-| ![Figure 10](assets/papers-explained-529-dr-tulu/fig-10.png) | Comparison of model usage statistics on SQAv2. |
+| ![Figure 1](assets/papers-explained-529-dr-tulu/fig-1.webp) | Title card: DR Tulu. |
+| ![Figure 2](assets/papers-explained-529-dr-tulu/fig-2.webp) | Overview of training a deep research model with reinforcement learning with evolving rubrics. |
+| ![Figure 3](assets/papers-explained-529-dr-tulu/fig-3.webp) | where ai specifies the action type. |
+| ![Figure 4](assets/papers-explained-529-dr-tulu/fig-4.webp) | Training with RLER. |
+| ![Figure 5](assets/papers-explained-529-dr-tulu/fig-5.webp) | Initial Search-Based Rubrics. |
+| ![Figure 6](assets/papers-explained-529-dr-tulu/fig-6.webp) | SFT data stats. |
+| ![Figure 7](assets/papers-explained-529-dr-tulu/fig-7.webp) | Hyperparameters used for SFT training. |
+| ![Figure 8](assets/papers-explained-529-dr-tulu/fig-8.webp) | Hyperparameters used for GRPO training. |
+| ![Figure 9](assets/papers-explained-529-dr-tulu/fig-9.webp) | Performance breakdown for Asta-ScholarQA-CS2 and DeepResearchBench. |
+| ![Figure 10](assets/papers-explained-529-dr-tulu/fig-10.webp) | Comparison of model usage statistics on SQAv2. |
 ## Related
 
 - [[Papers Explained Corpus]]

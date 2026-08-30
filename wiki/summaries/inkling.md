@@ -1,6 +1,6 @@
 # Inkling
 
-**Source**: `raw/introducing-inkling/full-article.html`, `raw/thinkingmachines-inkling/full-article.html`, `raw/inkling-architecture-benchmark-notes/full-article.html` (markdown siblings in each directory)  
+**Source**: `raw/introducing-inkling/full-article.md`, `raw/thinkingmachines-inkling/full-article.md`, `raw/inkling-architecture-benchmark-notes/full-article.md` (markdown siblings in each directory)  
 **URLs**: https://thinkingmachines.ai/news/introducing-inkling/ · https://huggingface.co/blog/thinkingmachines-inkling · https://sebastianraschka.com/blog/2026/inkling-architecture-benchmark-notes.html  
 **Ingested**: 2026-07-31  
 **Tags**: #summary
@@ -41,9 +41,9 @@ Post-training relied heavily on large-scale asynchronous RL (30M+ rollouts) with
 | Pretraining | Muon for large matrices + Adam elsewhere; modular-manifold-inspired schedules |
 | Post-training | SFT bootstrap on synthetic data, then large-scale async RL across domains |
 
-![Relative attention mechanism](../assets/thinkingmachines-inkling/fig-1.png)
+![Relative attention mechanism](../assets/thinkingmachines-inkling/fig-1.webp)
 
-![Short convolution (SConv) placement](../assets/thinkingmachines-inkling/fig-2.png)
+![Short convolution (SConv) placement](../assets/thinkingmachines-inkling/fig-2.webp)
 
 ![Architecture and benchmark comparison (Raschka)](../assets/inkling-architecture-benchmark-notes/fig-1.webp)
 
@@ -85,13 +85,13 @@ Benchmark rows mix internally run and externally reported scores (Artificial Ana
 
 | Figure | Caption | Source |
 |--------|---------|--------|
-| ![fig-1](../assets/introducing-inkling/fig-1.png) | Social cover / release announcement | introducing-inkling |
-| ![fig-2](../assets/introducing-inkling/fig-2.jpg) | Agentic web-dev demo (job application app + browser-use agent) | introducing-inkling |
-| ![fig-3](../assets/introducing-inkling/fig-3.jpg) | Multiplayer snake game from long refinement loop | introducing-inkling |
-| ![fig-1](../assets/thinkingmachines-inkling/fig-1.png) | Relative attention architecture | thinkingmachines-inkling |
-| ![fig-2](../assets/thinkingmachines-inkling/fig-2.png) | Short convolution (SConv) architecture | thinkingmachines-inkling |
-| ![fig-4](../assets/thinkingmachines-inkling/fig-4.png) | Visual reasoning demo | thinkingmachines-inkling |
-| ![fig-5](../assets/thinkingmachines-inkling/fig-5.png) | Post-training metrics (Trackio) | thinkingmachines-inkling |
+| ![fig-1](../assets/introducing-inkling/fig-1.webp) | Social cover / release announcement | introducing-inkling |
+| ![fig-2](../assets/introducing-inkling/fig-2.webp) | Agentic web-dev demo (job application app + browser-use agent) | introducing-inkling |
+| ![fig-3](../assets/introducing-inkling/fig-3.webp) | Multiplayer snake game from long refinement loop | introducing-inkling |
+| ![fig-1](../assets/thinkingmachines-inkling/fig-1.webp) | Relative attention architecture | thinkingmachines-inkling |
+| ![fig-2](../assets/thinkingmachines-inkling/fig-2.webp) | Short convolution (SConv) architecture | thinkingmachines-inkling |
+| ![fig-4](../assets/thinkingmachines-inkling/fig-4.webp) | Visual reasoning demo | thinkingmachines-inkling |
+| ![fig-5](../assets/thinkingmachines-inkling/fig-5.webp) | Post-training metrics (Trackio) | thinkingmachines-inkling |
 | ![fig-1](../assets/inkling-architecture-benchmark-notes/fig-1.webp) | Architecture diagram and benchmark panels vs GLM-5.2, Kimi K2.5, etc. | Raschka notes |
 
 TML announcement charts (spider plots, effort-sweep curves) are interactive SVG/canvas in the HTML source and were not extracted as static images.

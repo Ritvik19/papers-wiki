@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-04-17_Papers-Explained-349--ReSearch-80c79cb22fed.html`
+- Source file: `raw/2025-04-17_Papers-Explained-349--ReSearch-80c79cb22fed.md`
 - Source title: Papers Explained 349: ReSearch
 - Published: 2025-04-17
 - Canonical: [https://medium.com/@ritvik19/papers-explained-349-research-80c79cb22fed](https://medium.com/@ritvik19/papers-explained-349-research-80c79cb22fed)
@@ -109,16 +109,16 @@ ReSearch: Learning to Reason with Search for LLMs via Reinforcement Learning [25
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-04-17_Papers-Explained-349--ReSearch-80c79cb22fed.html`); local copies under `wiki/assets/papers-explained-349-research/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-04-17_Papers-Explained-349--ReSearch-80c79cb22fed.md`); local copies under `wiki/assets/papers-explained-349-research/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-349-research/fig-1.png) | Title card: ReSearch. |
-| ![Figure 2](assets/papers-explained-349-research/fig-2.png) | The training overview of ReSearch. |
-| ![Figure 3](assets/papers-explained-349-research/fig-3.png) | Specifically, for the final reward of a rollout. |
-| ![Figure 4](assets/papers-explained-349-research/fig-4.png) | Exact Match (EM, %) and LLM-as-a-Judge (LJ, %) results on multi-hop question answering benchmarks. |
-| ![Figure 5](assets/papers-explained-349-research/fig-5.png) | Response length and number of search operations during training. |
-| ![Figure 6](assets/papers-explained-349-research/fig-6.png) | Training and validation reward during training. |
+| ![Figure 1](assets/papers-explained-349-research/fig-1.webp) | Title card: ReSearch. |
+| ![Figure 2](assets/papers-explained-349-research/fig-2.webp) | The training overview of ReSearch. |
+| ![Figure 3](assets/papers-explained-349-research/fig-3.webp) | Specifically, for the final reward of a rollout. |
+| ![Figure 4](assets/papers-explained-349-research/fig-4.webp) | Exact Match (EM, %) and LLM-as-a-Judge (LJ, %) results on multi-hop question answering benchmarks. |
+| ![Figure 5](assets/papers-explained-349-research/fig-5.webp) | Response length and number of search operations during training. |
+| ![Figure 6](assets/papers-explained-349-research/fig-6.webp) | Training and validation reward during training. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -1,6 +1,6 @@
 # Recurrent Neural Networks: Building GRU Cells VS LSTM Cells in PyTorch
 
-**Source**: `raw/gru/full-article.html` (361 KB), `raw/gru/full-article.md` (markdown view)  
+**Source**: `raw/gru/full-article.md` (361 KB), `raw/gru/full-article.md` (markdown view)  
 **URL**: https://theaisummer.com/gru/  
 **Author**: Nikolas Adaloglou (AI Summer), 2020-09-17  
 **Ingested**: 2026-06-06  
@@ -32,9 +32,9 @@ The LSTM-vs-GRU section is explicitly empirical: Greff et al. (2016) and Chung e
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/gru/fig-1.png) | GRU cell structure: reset gate, update gate, candidate hidden, and hidden state flow (Wikipedia diagram) | — |
+| ![fig-1](../assets/gru/fig-1.webp) | GRU cell structure: reset gate, update gate, candidate hidden, and hidden state flow (Wikipedia diagram) | — |
 
-![GRU cell diagram](../assets/gru/fig-1.png)
+![GRU cell diagram](../assets/gru/fig-1.webp)
 
 Standard GRU block diagram; author notes diagrams can mislead if read as scalars rather than vector-matrix operations.
 

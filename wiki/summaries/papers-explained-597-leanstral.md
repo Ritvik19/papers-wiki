@@ -1,6 +1,6 @@
 # Papers Explained 597: Leanstral
 
-**Source**: `raw/2026-08-18_Papers-Explained-597--Leanstral-06f0927fe5b0.html`  
+**Source**: `raw/2026-08-18_Papers-Explained-597--Leanstral-06f0927fe5b0.md`  
 **Paper**: https://github.com/mistralai/LeanstralSafeVerify/blob/main/LeanstralReport.pdf  
 **Ingested**: 2026-08-23  
 **Tags**: #summary
@@ -9,7 +9,7 @@
 
 **Leanstral** (and **Leanstral 1.5**) is Mistral AI's series of generalist code-agent models tailored for formal theorem proving and proof engineering in **Lean 4**. With **119B total parameters and only 6B active parameters**, Leanstral operates natively within the open-source **Mistral Vibe** code-agent scaffold rather than requiring custom, specialized search trees. It resolves formal verification issues across competition mathematics, graduate-level pure mathematics, mathematical finance, and verified software development.
 
-![Papers Explained 597: Leanstral banner](../assets/papers-explained-597-leanstral/fig-1.png)
+![Papers Explained 597: Leanstral banner](../assets/papers-explained-597-leanstral/fig-1.webp)
 
 ### Three-Stage Training Pipeline & Lean Environments
 
@@ -20,7 +20,7 @@
    - **LeanGym PR Environment**: Full repository interaction using `bash` and the Lean language server (`lean-lsp-mcp`), resolving missing theorems from real GitHub pull requests verified via SafeVerify.
    - **CISPO Training**: Uses Clipped Importance Sampling Policy Optimization with finite truncation thresholds $\bar{\rho}_{i,t}$ on interleaved tool-action trajectories.
 
-![CISPO Policy Gradient Objective and RL Architecture](../assets/papers-explained-597-leanstral/fig-2.png)
+![CISPO Policy Gradient Objective and RL Architecture](../assets/papers-explained-597-leanstral/fig-2.webp)
 
 ### Empirical Benchmarks
 
@@ -29,7 +29,7 @@
 - **FATE Benchmark**: Achieves 100% on undergraduate math (FATE-M), 87% on graduate math (FATE-H), and 34% on PhD/expert math (FATE-X).
 - **FLTEval**: Scores 43.2% at pass@8 on realistic Lean software engineering pull requests, surpassing Claude Opus 4.6 (pass@1) at less than 1/7th inference cost.
 
-![PutnamBench and FATE Benchmark Results](../assets/papers-explained-597-leanstral/fig-3.png)
+![PutnamBench and FATE Benchmark Results](../assets/papers-explained-597-leanstral/fig-3.webp)
 
 ## Key Claims
 
@@ -42,11 +42,11 @@
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/papers-explained-597-leanstral/fig-1.png) | Papers Explained 597: Leanstral banner. | Overview |
-| ![fig-2](../assets/papers-explained-597-leanstral/fig-2.png) | CISPO truncated importance sampling RL objective for LeanGym trajectories. | Training |
-| ![fig-3](../assets/papers-explained-597-leanstral/fig-3.png) | PutnamBench leaderboard results. | Evaluation |
-| ![fig-4](../assets/papers-explained-597-leanstral/fig-4.png) | FATE benchmark performance across M, H, and X difficulty tiers. | Evaluation |
-| ![fig-5](../assets/papers-explained-597-leanstral/fig-5.png) | FLTEval real-repository pull request verification results. | Evaluation |
+| ![fig-1](../assets/papers-explained-597-leanstral/fig-1.webp) | Papers Explained 597: Leanstral banner. | Overview |
+| ![fig-2](../assets/papers-explained-597-leanstral/fig-2.webp) | CISPO truncated importance sampling RL objective for LeanGym trajectories. | Training |
+| ![fig-3](../assets/papers-explained-597-leanstral/fig-3.webp) | PutnamBench leaderboard results. | Evaluation |
+| ![fig-4](../assets/papers-explained-597-leanstral/fig-4.webp) | FATE benchmark performance across M, H, and X difficulty tiers. | Evaluation |
+| ![fig-5](../assets/papers-explained-597-leanstral/fig-5.webp) | FLTEval real-repository pull request verification results. | Evaluation |
 
 ## Entities
 

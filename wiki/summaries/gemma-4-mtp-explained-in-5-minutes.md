@@ -1,6 +1,6 @@
 # Gemma 4 MTP Explained in 5 Minutes
 
-**Source**: `raw/gemma-4-mtp-explained-in-5-minutes/full-article.html` (231 KB)  
+**Source**: `raw/gemma-4-mtp-explained-in-5-minutes/full-article.md` (231 KB)  
 **URL**: https://tianhaozhou.medium.com/gemma-4-mtp-explained-in-5-minutes-0b12ad381240  
 **Ingested**: 2026-07-12  
 **Tags**: #summary

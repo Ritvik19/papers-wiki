@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-02-10_Papers-Explained-537--ScaleRL-14ccd31f7d63.html`
+- Source file: `raw/2026-02-10_Papers-Explained-537--ScaleRL-14ccd31f7d63.md`
 - Source title: Papers Explained 537: ScaleRL
 - Published: 2026-02-10
 - Canonical: [https://medium.com/@ritvik19/papers-explained-537-scalerl-14ccd31f7d63](https://medium.com/@ritvik19/papers-explained-537-scalerl-14ccd31f7d63)
@@ -257,26 +257,26 @@ The Art of Scaling Reinforcement Learning Compute for LLMs [2510.13786](https://
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-02-10_Papers-Explained-537--ScaleRL-14ccd31f7d63.html`); local copies under `wiki/assets/papers-explained-537-scalerl/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-02-10_Papers-Explained-537--ScaleRL-14ccd31f7d63.md`); local copies under `wiki/assets/papers-explained-537-scalerl/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-537-scalerl/fig-1.png) | Title card: ScaleRL. |
-| ![Figure 2](assets/papers-explained-537-scalerl/fig-2.png) | A base algorithm resembling GRPO (without KL regularization) is used. |
-| ![Figure 3](assets/papers-explained-537-scalerl/fig-3.png) | A base algorithm resembling GRPO (without KL regularization) is used. |
-| ![Figure 4](assets/papers-explained-537-scalerl/fig-4.png) | A base algorithm resembling GRPO (without KL regularization) is used. |
-| ![Figure 5](assets/papers-explained-537-scalerl/fig-5.png) | To measure the predictive performance of the model, a held-out validation set of 1,000 prompts from the Polaris-53k dataset is used. |
-| ![Figure 6](assets/papers-explained-537-scalerl/fig-6.png) | To measure the predictive performance of the model, a held-out validation set of 1,000 prompts from the Polaris-53k dataset is used. |
-| ![Figure 7](assets/papers-explained-537-scalerl/fig-7.png) | (a) Comparing “compute-scaling” of asynchronous off-policy RL setups. (b) Different max off-policyness with PipelineRL. |
-| ![Figure 8](assets/papers-explained-537-scalerl/fig-8.png) | (a) Comparing popular loss functions (b) Using FP32 precision in the final layer (LM head). |
-| ![Figure 9](assets/papers-explained-537-scalerl/fig-9.png) | “Zero” variance filtering. |
-| ![Figure 10](assets/papers-explained-537-scalerl/fig-10.png) | Adaptive prompt sampling. |
-| ![Figure 11](assets/papers-explained-537-scalerl/fig-11.png) | Adaptive Prompt Filtering. |
-| ![Figure 12](assets/papers-explained-537-scalerl/fig-12.png) | Leave-One-Out (LOO) Experiments. |
-| ![Figure 13](assets/papers-explained-537-scalerl/fig-13.png) | (a) Variance in scaling fits. (b) FP32 LOO on Scout. |
-| ![Figure 14](assets/papers-explained-537-scalerl/fig-14.png) | Predicatably Scaling RL compute to 100,000 GPU Hours. |
-| ![Figure 15](assets/papers-explained-537-scalerl/fig-15.png) | Scaling RL Generation Length. |
-| ![Figure 16](assets/papers-explained-537-scalerl/fig-16.png) | Scaling RL batch size. |
+| ![Figure 1](assets/papers-explained-537-scalerl/fig-1.webp) | Title card: ScaleRL. |
+| ![Figure 2](assets/papers-explained-537-scalerl/fig-2.webp) | A base algorithm resembling GRPO (without KL regularization) is used. |
+| ![Figure 3](assets/papers-explained-537-scalerl/fig-3.webp) | A base algorithm resembling GRPO (without KL regularization) is used. |
+| ![Figure 4](assets/papers-explained-537-scalerl/fig-4.webp) | A base algorithm resembling GRPO (without KL regularization) is used. |
+| ![Figure 5](assets/papers-explained-537-scalerl/fig-5.webp) | To measure the predictive performance of the model, a held-out validation set of 1,000 prompts from the Polaris-53k dataset is used. |
+| ![Figure 6](assets/papers-explained-537-scalerl/fig-6.webp) | To measure the predictive performance of the model, a held-out validation set of 1,000 prompts from the Polaris-53k dataset is used. |
+| ![Figure 7](assets/papers-explained-537-scalerl/fig-7.webp) | (a) Comparing “compute-scaling” of asynchronous off-policy RL setups. (b) Different max off-policyness with PipelineRL. |
+| ![Figure 8](assets/papers-explained-537-scalerl/fig-8.webp) | (a) Comparing popular loss functions (b) Using FP32 precision in the final layer (LM head). |
+| ![Figure 9](assets/papers-explained-537-scalerl/fig-9.webp) | “Zero” variance filtering. |
+| ![Figure 10](assets/papers-explained-537-scalerl/fig-10.webp) | Adaptive prompt sampling. |
+| ![Figure 11](assets/papers-explained-537-scalerl/fig-11.webp) | Adaptive Prompt Filtering. |
+| ![Figure 12](assets/papers-explained-537-scalerl/fig-12.webp) | Leave-One-Out (LOO) Experiments. |
+| ![Figure 13](assets/papers-explained-537-scalerl/fig-13.webp) | (a) Variance in scaling fits. (b) FP32 LOO on Scout. |
+| ![Figure 14](assets/papers-explained-537-scalerl/fig-14.webp) | Predicatably Scaling RL compute to 100,000 GPU Hours. |
+| ![Figure 15](assets/papers-explained-537-scalerl/fig-15.webp) | Scaling RL Generation Length. |
+| ![Figure 16](assets/papers-explained-537-scalerl/fig-16.webp) | Scaling RL batch size. |
 ## Related
 
 - [[Papers Explained Corpus]]

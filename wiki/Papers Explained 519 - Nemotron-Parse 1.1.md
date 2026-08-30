@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-01-08_Papers-Explained-519--Nemotron-Parse-1-1-e94225fc944d.html`
+- Source file: `raw/2026-01-08_Papers-Explained-519--Nemotron-Parse-1-1-e94225fc944d.md`
 - Source title: Papers Explained 519: Nemotron-Parse 1.1
 - Published: 2026-01-08
 - Canonical: [https://medium.com/@ritvik19/papers-explained-519-nemotron-parse-1-1-e94225fc944d](https://medium.com/@ritvik19/papers-explained-519-nemotron-parse-1-1-e94225fc944d)
@@ -151,18 +151,18 @@ NVIDIA Nemotron Parse 1.1 [2511.20478](https://arxiv.org/abs/2511.20478)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-01-08_Papers-Explained-519--Nemotron-Parse-1-1-e94225fc944d.html`); local copies under `wiki/assets/papers-explained-519-nemotron-parse-1-1/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-01-08_Papers-Explained-519--Nemotron-Parse-1-1-e94225fc944d.md`); local copies under `wiki/assets/papers-explained-519-nemotron-parse-1-1/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-519-nemotron-parse-1-1/fig-1.png) | Title card: Nemotron-Parse 1.1. |
-| ![Figure 2](assets/papers-explained-519-nemotron-parse-1-1/fig-2.png) | In the maximal information setting the output is in the following format. |
-| ![Figure 3](assets/papers-explained-519-nemotron-parse-1-1/fig-3.png) | Summary of the datasets used to train Nemotron-Parse. |
-| ![Figure 4](assets/papers-explained-519-nemotron-parse-1-1/fig-4.png) | OCR metrics on GOT benchmark. |
-| ![Figure 5](assets/papers-explained-519-nemotron-parse-1-1/fig-5.png) | Accuracy of Nemotron-Parse on OmniDocBench. |
-| ![Figure 6](assets/papers-explained-519-nemotron-parse-1-1/fig-6.png) | TEDS and S-TEDS of Nemotron-Parse on public table extraction benchmarks. |
-| ![Figure 7](assets/papers-explained-519-nemotron-parse-1-1/fig-7.png) | Table extraction accuracy on RD-TableBench benchmark. |
-| ![Figure 8](assets/papers-explained-519-nemotron-parse-1-1/fig-8.png) | OCR results on multilingual NVpdftex dataset. |
+| ![Figure 1](assets/papers-explained-519-nemotron-parse-1-1/fig-1.webp) | Title card: Nemotron-Parse 1.1. |
+| ![Figure 2](assets/papers-explained-519-nemotron-parse-1-1/fig-2.webp) | In the maximal information setting the output is in the following format. |
+| ![Figure 3](assets/papers-explained-519-nemotron-parse-1-1/fig-3.webp) | Summary of the datasets used to train Nemotron-Parse. |
+| ![Figure 4](assets/papers-explained-519-nemotron-parse-1-1/fig-4.webp) | OCR metrics on GOT benchmark. |
+| ![Figure 5](assets/papers-explained-519-nemotron-parse-1-1/fig-5.webp) | Accuracy of Nemotron-Parse on OmniDocBench. |
+| ![Figure 6](assets/papers-explained-519-nemotron-parse-1-1/fig-6.webp) | TEDS and S-TEDS of Nemotron-Parse on public table extraction benchmarks. |
+| ![Figure 7](assets/papers-explained-519-nemotron-parse-1-1/fig-7.webp) | Table extraction accuracy on RD-TableBench benchmark. |
+| ![Figure 8](assets/papers-explained-519-nemotron-parse-1-1/fig-8.webp) | OCR results on multilingual NVpdftex dataset. |
 ## Related
 
 - [[Papers Explained Corpus]]

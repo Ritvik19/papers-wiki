@@ -1,6 +1,6 @@
 # Exploration Strategies in Deep Reinforcement Learning
 
-**Source**: `raw/exploration-drl/full-article.html` (canonical HTML); `raw/exploration-drl/full-article.md` (markdown view)  
+**Source**: `raw/exploration-drl/full-article.md` (canonical HTML); `raw/exploration-drl/full-article.md` (markdown view)  
 **URL**: https://lilianweng.github.io/posts/2020-06-07-exploration-drl/  
 **Author**: Lilian Weng  
 **Published**: 2020-06-07 (updated 2020-06-17)  
@@ -33,23 +33,23 @@ The post also covers option frameworks: [[VALOR]] and [[Variational Intrinsic Co
 | Figure | Caption |
 |--------|---------|
 | ![noisy-TV-problem](../assets/exploration-drl/the-noisy-TV-problem.gif) | Agent attracted to noisy TV loses motivation to explore the maze |
-| ![noisy-TV-experiment](../assets/exploration-drl/noisy-TV-experiment.png) | Extrinsic reward curves with RF vs IDF features, noisy TV on/off |
-| ![IAC](../assets/exploration-drl/IAC.png) | IAC architecture: prediction error drives intrinsic reward via learning progress |
-| ![ICM](../assets/exploration-drl/ICM.png) | Intrinsic Curiosity Module: inverse dynamics model + forward prediction error |
-| ![large-scale-curiosity-learning](../assets/exploration-drl/large-scale-curiosity-learning.png) | Mean reward across Atari games under four feature encodings |
-| ![exploration-via-disagreement](../assets/exploration-drl/exploration-via-disagreement.png) | Ensemble disagreement-based exploration training architecture |
-| ![RND](../assets/exploration-drl/RND.png) | Random Network Distillation: predictor error against fixed random target |
-| ![count-hashing-exploration](../assets/exploration-drl/count-hashing-exploration.png) | SimHash + autoencoder for count-based exploration |
-| ![bootstrapped-DQN-algo](../assets/exploration-drl/bootstrapped-DQN-algo.png) | Bootstrapped DQN algorithm for directed exploration |
-| ![directed-exploration](../assets/exploration-drl/directed-exploration.png) | Directed exploration illustration |
-| ![NGU](../assets/exploration-drl/NGU.png) | Never Give Up: episodic novelty module + RND life-long module architecture |
-| ![episodic-memory-overview](../assets/exploration-drl/episodic-memory-overview.png) | Episodic Curiosity (EC) module using siamese reachability network |
-| ![transition-graph](../assets/exploration-drl/transition-graph.png) | Graph of states: blue = in memory, green = reachable (not novel), orange = novel |
-| ![agent57](../assets/exploration-drl/agent57.png) | Timeline from DQN to Agent57; first DRL to beat human benchmark on all 57 Atari games |
-| ![policy-based-Go-Explore](../assets/exploration-drl/policy-based-Go-Explore.png) | Policy-based Go-Explore overview: goal-conditioned policy removes need for resettable simulator |
-| ![DTSIL-algo](../assets/exploration-drl/DTSIL-algo.png) | DTSIL (Diverse Trajectory-conditioned Self-Imitation Learning) algorithm |
-| ![VIC-explicit-options](../assets/exploration-drl/VIC-explicit-options.png) | VIC (Variational Intrinsic Control): latent skill code maximises trajectory MI |
-| ![VALOR-decoder](../assets/exploration-drl/VALOR-decoder.png) | VALOR decoder predicts skill code from trajectory context |
+| ![noisy-TV-experiment](../assets/exploration-drl/noisy-TV-experiment.webp) | Extrinsic reward curves with RF vs IDF features, noisy TV on/off |
+| ![IAC](../assets/exploration-drl/IAC.webp) | IAC architecture: prediction error drives intrinsic reward via learning progress |
+| ![ICM](../assets/exploration-drl/ICM.webp) | Intrinsic Curiosity Module: inverse dynamics model + forward prediction error |
+| ![large-scale-curiosity-learning](../assets/exploration-drl/large-scale-curiosity-learning.webp) | Mean reward across Atari games under four feature encodings |
+| ![exploration-via-disagreement](../assets/exploration-drl/exploration-via-disagreement.webp) | Ensemble disagreement-based exploration training architecture |
+| ![RND](../assets/exploration-drl/RND.webp) | Random Network Distillation: predictor error against fixed random target |
+| ![count-hashing-exploration](../assets/exploration-drl/count-hashing-exploration.webp) | SimHash + autoencoder for count-based exploration |
+| ![bootstrapped-DQN-algo](../assets/exploration-drl/bootstrapped-DQN-algo.webp) | Bootstrapped DQN algorithm for directed exploration |
+| ![directed-exploration](../assets/exploration-drl/directed-exploration.webp) | Directed exploration illustration |
+| ![NGU](../assets/exploration-drl/NGU.webp) | Never Give Up: episodic novelty module + RND life-long module architecture |
+| ![episodic-memory-overview](../assets/exploration-drl/episodic-memory-overview.webp) | Episodic Curiosity (EC) module using siamese reachability network |
+| ![transition-graph](../assets/exploration-drl/transition-graph.webp) | Graph of states: blue = in memory, green = reachable (not novel), orange = novel |
+| ![agent57](../assets/exploration-drl/agent57.webp) | Timeline from DQN to Agent57; first DRL to beat human benchmark on all 57 Atari games |
+| ![policy-based-Go-Explore](../assets/exploration-drl/policy-based-Go-Explore.webp) | Policy-based Go-Explore overview: goal-conditioned policy removes need for resettable simulator |
+| ![DTSIL-algo](../assets/exploration-drl/DTSIL-algo.webp) | DTSIL (Diverse Trajectory-conditioned Self-Imitation Learning) algorithm |
+| ![VIC-explicit-options](../assets/exploration-drl/VIC-explicit-options.webp) | VIC (Variational Intrinsic Control): latent skill code maximises trajectory MI |
+| ![VALOR-decoder](../assets/exploration-drl/VALOR-decoder.webp) | VALOR decoder predicts skill code from trajectory context |
 
 ## Entities
 

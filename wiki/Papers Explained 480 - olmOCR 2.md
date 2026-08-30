@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-10-29_Papers-Explained-480--olmOCR-2-33fbf89757eb.html`
+- Source file: `raw/2025-10-29_Papers-Explained-480--olmOCR-2-33fbf89757eb.md`
 - Source title: Papers Explained 480: olmOCR 2
 - Published: 2025-10-29
 - Canonical: [https://medium.com/@ritvik19/papers-explained-480-olmocr-2-33fbf89757eb](https://medium.com/@ritvik19/papers-explained-480-olmocr-2-33fbf89757eb)
@@ -97,12 +97,12 @@ olmOCR 2: Unit Test Rewards for Document OCR [2510.19817](https://arxiv.org/abs/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-10-29_Papers-Explained-480--olmOCR-2-33fbf89757eb.html`); local copies under `wiki/assets/papers-explained-480-olmocr-2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-10-29_Papers-Explained-480--olmOCR-2-33fbf89757eb.md`); local copies under `wiki/assets/papers-explained-480-olmocr-2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-480-olmocr-2/fig-1.png) | Title card: olmOCR 2. |
-| ![Figure 2](assets/papers-explained-480-olmocr-2/fig-2.png) | OCR model performance comparison. |
+| ![Figure 1](assets/papers-explained-480-olmocr-2/fig-1.webp) | Title card: olmOCR 2. |
+| ![Figure 2](assets/papers-explained-480-olmocr-2/fig-2.webp) | OCR model performance comparison. |
 ## Related
 
 - [[Papers Explained Corpus]]

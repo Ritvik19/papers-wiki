@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-03-11_Papers-Explained-327--NeoBERT-b209f06dfc73.html`
+- Source file: `raw/2025-03-11_Papers-Explained-327--NeoBERT-b209f06dfc73.md`
 - Source title: Papers Explained 327: NeoBERT
 - Published: 2025-03-11
 - Canonical: [https://medium.com/@ritvik19/papers-explained-327-neobert-b209f06dfc73](https://medium.com/@ritvik19/papers-explained-327-neobert-b209f06dfc73)
@@ -117,18 +117,18 @@ NeoBERT: A Next-Generation BERT [2502.19587](https://arxiv.org/abs/2502.19587)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-03-11_Papers-Explained-327--NeoBERT-b209f06dfc73.html`); local copies under `wiki/assets/papers-explained-327-neobert/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-03-11_Papers-Explained-327--NeoBERT-b209f06dfc73.md`); local copies under `wiki/assets/papers-explained-327-neobert/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-327-neobert/fig-1.png) | Title card: NeoBERT. |
-| ![Figure 2](assets/papers-explained-327-neobert/fig-2.png) | Comparison of Model Architectures, Training Data, and Pre-Training Configurations. |
-| ![Figure 3](assets/papers-explained-327-neobert/fig-3.png) | Modifications between successive ablations. |
-| ![Figure 4](assets/papers-explained-327-neobert/fig-4.png) | GLUE ablation scores on the development set. |
-| ![Figure 5](assets/papers-explained-327-neobert/fig-5.png) | GLUE scores on the development set. |
-| ![Figure 6](assets/papers-explained-327-neobert/fig-6.png) | MTEB scores on the English subset after 2,000 steps of fine-tuning with contrastive learning. |
-| ![Figure 7](assets/papers-explained-327-neobert/fig-7.png) | Pseudo-Perplexity in function of the sequence length. |
-| ![Figure 8](assets/papers-explained-327-neobert/fig-8.png) | Model throughput (tokens per second) as a function of sequence length (↑ is better). |
+| ![Figure 1](assets/papers-explained-327-neobert/fig-1.webp) | Title card: NeoBERT. |
+| ![Figure 2](assets/papers-explained-327-neobert/fig-2.webp) | Comparison of Model Architectures, Training Data, and Pre-Training Configurations. |
+| ![Figure 3](assets/papers-explained-327-neobert/fig-3.webp) | Modifications between successive ablations. |
+| ![Figure 4](assets/papers-explained-327-neobert/fig-4.webp) | GLUE ablation scores on the development set. |
+| ![Figure 5](assets/papers-explained-327-neobert/fig-5.webp) | GLUE scores on the development set. |
+| ![Figure 6](assets/papers-explained-327-neobert/fig-6.webp) | MTEB scores on the English subset after 2,000 steps of fine-tuning with contrastive learning. |
+| ![Figure 7](assets/papers-explained-327-neobert/fig-7.webp) | Pseudo-Perplexity in function of the sequence length. |
+| ![Figure 8](assets/papers-explained-327-neobert/fig-8.webp) | Model throughput (tokens per second) as a function of sequence length (↑ is better). |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-01-12_Papers-Explained-521--Nemotron-Nano-V2-VL-80cdd141c3c8.html`
+- Source file: `raw/2026-01-12_Papers-Explained-521--Nemotron-Nano-V2-VL-80cdd141c3c8.md`
 - Source title: Papers Explained 521: Nemotron Nano V2 VL
 - Published: 2026-01-12
 - Canonical: [https://medium.com/@ritvik19/papers-explained-521-nemotron-nano-v2-vl-80cdd141c3c8](https://medium.com/@ritvik19/papers-explained-521-nemotron-nano-v2-vl-80cdd141c3c8)
@@ -149,18 +149,18 @@ NVIDIA Nemotron Nano V2 VL [2511.03929](https://arxiv.org/abs/2511.03929)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-01-12_Papers-Explained-521--Nemotron-Nano-V2-VL-80cdd141c3c8.html`); local copies under `wiki/assets/papers-explained-521-nemotron-nano-v2-vl/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-01-12_Papers-Explained-521--Nemotron-Nano-V2-VL-80cdd141c3c8.md`); local copies under `wiki/assets/papers-explained-521-nemotron-nano-v2-vl/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-521-nemotron-nano-v2-vl/fig-1.png) | Title card: Nemotron Nano V2 VL. |
-| ![Figure 2](assets/papers-explained-521-nemotron-nano-v2-vl/fig-2.png) | VLM architecture. |
-| ![Figure 3](assets/papers-explained-521-nemotron-nano-v2-vl/fig-3.png) | Overview of the training stages for the VLM. |
-| ![Figure 4](assets/papers-explained-521-nemotron-nano-v2-vl/fig-4.png) | Comparison of Nemotron Nano V2 VL with existing open-source multimodal models. |
-| ![Figure 5](assets/papers-explained-521-nemotron-nano-v2-vl/fig-5.png) | Vision benchmarks after each training stage of Nemotron Nano V2 VL with reasoning-off. |
-| ![Figure 6](assets/papers-explained-521-nemotron-nano-v2-vl/fig-6.png) | Comparison of Nemotron Nano V2 VL with SOTA multimodal models on multimodal multilingual benchmarks. |
-| ![Figure 7](assets/papers-explained-521-nemotron-nano-v2-vl/fig-7.png) | Text benchmarks with reasoning on for the different stages. |
-| ![Figure 8](assets/papers-explained-521-nemotron-nano-v2-vl/fig-8.png) | EVS Ablation. |
+| ![Figure 1](assets/papers-explained-521-nemotron-nano-v2-vl/fig-1.webp) | Title card: Nemotron Nano V2 VL. |
+| ![Figure 2](assets/papers-explained-521-nemotron-nano-v2-vl/fig-2.webp) | VLM architecture. |
+| ![Figure 3](assets/papers-explained-521-nemotron-nano-v2-vl/fig-3.webp) | Overview of the training stages for the VLM. |
+| ![Figure 4](assets/papers-explained-521-nemotron-nano-v2-vl/fig-4.webp) | Comparison of Nemotron Nano V2 VL with existing open-source multimodal models. |
+| ![Figure 5](assets/papers-explained-521-nemotron-nano-v2-vl/fig-5.webp) | Vision benchmarks after each training stage of Nemotron Nano V2 VL with reasoning-off. |
+| ![Figure 6](assets/papers-explained-521-nemotron-nano-v2-vl/fig-6.webp) | Comparison of Nemotron Nano V2 VL with SOTA multimodal models on multimodal multilingual benchmarks. |
+| ![Figure 7](assets/papers-explained-521-nemotron-nano-v2-vl/fig-7.webp) | Text benchmarks with reasoning on for the different stages. |
+| ![Figure 8](assets/papers-explained-521-nemotron-nano-v2-vl/fig-8.webp) | EVS Ablation. |
 ## Related
 
 - [[Papers Explained Corpus]]

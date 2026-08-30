@@ -1,6 +1,6 @@
 # Efficient MultiModal Data Pipeline
 
-**Source**: `raw/mmdp/full-article.html` (208 KB), `raw/mmdp/full-article.md`
+**Source**: `raw/mmdp/full-article.md` (208 KB), `raw/mmdp/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

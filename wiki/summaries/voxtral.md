@@ -1,6 +1,6 @@
 # Voxtral
 
-**Source**: `raw/voxtral/full-article.html` (225 KB), `raw/voxtral/full-article.md` (markdown view)  
+**Source**: `raw/voxtral/full-article.md` (225 KB), `raw/voxtral/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/voxtral/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

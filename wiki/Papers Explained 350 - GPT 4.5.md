@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-04-18_Papers-Explained-350--GPT-4-5-dc1d4b097ad1.html`
+- Source file: `raw/2025-04-18_Papers-Explained-350--GPT-4-5-dc1d4b097ad1.md`
 - Source title: Papers Explained 350: GPT 4.5
 - Published: 2025-04-18
 - Canonical: [https://medium.com/@ritvik19/papers-explained-350-gpt-4-5-dc1d4b097ad1](https://medium.com/@ritvik19/papers-explained-350-gpt-4-5-dc1d4b097ad1)
@@ -89,18 +89,18 @@ Availability and Deprecation:
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-04-18_Papers-Explained-350--GPT-4-5-dc1d4b097ad1.html`); local copies under `wiki/assets/papers-explained-350-gpt-4-5/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-04-18_Papers-Explained-350--GPT-4-5-dc1d4b097ad1.md`); local copies under `wiki/assets/papers-explained-350-gpt-4-5/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-350-gpt-4-5/fig-1.png) | Title card: GPT 4.5. |
-| ![Figure 2](assets/papers-explained-350-gpt-4-5/fig-2.png) | As models solve broader, more complex problems, it becomes increasingly important to teach them a greater understanding of human needs and... |
-| ![Figure 3](assets/papers-explained-350-gpt-4-5/fig-3.png) | As models solve broader, more complex problems, it becomes increasingly important to teach them a greater understanding of human needs and... |
-| ![Figure 4](assets/papers-explained-350-gpt-4-5/fig-4.png) | Coding: GPT-4.1 demonstrates a major leap in coding abilities, scoring 54.6% on SWE-bench Verified. |
-| ![Figure 5](assets/papers-explained-350-gpt-4-5/fig-5.png) | Long Context Evaluations. |
-| ![Figure 6](assets/papers-explained-350-gpt-4-5/fig-6.png) | OpenAI has released two new evaluations for long-context understanding. |
-| ![Figure 7](assets/papers-explained-350-gpt-4-5/fig-7.png) | Vision: The GPT-4.1 family excels in image understanding. |
-| ![Figure 8](assets/papers-explained-350-gpt-4-5/fig-8.png) | Benchmarks. |
+| ![Figure 1](assets/papers-explained-350-gpt-4-5/fig-1.webp) | Title card: GPT 4.5. |
+| ![Figure 2](assets/papers-explained-350-gpt-4-5/fig-2.webp) | As models solve broader, more complex problems, it becomes increasingly important to teach them a greater understanding of human needs and... |
+| ![Figure 3](assets/papers-explained-350-gpt-4-5/fig-3.webp) | As models solve broader, more complex problems, it becomes increasingly important to teach them a greater understanding of human needs and... |
+| ![Figure 4](assets/papers-explained-350-gpt-4-5/fig-4.webp) | Coding: GPT-4.1 demonstrates a major leap in coding abilities, scoring 54.6% on SWE-bench Verified. |
+| ![Figure 5](assets/papers-explained-350-gpt-4-5/fig-5.webp) | Long Context Evaluations. |
+| ![Figure 6](assets/papers-explained-350-gpt-4-5/fig-6.webp) | OpenAI has released two new evaluations for long-context understanding. |
+| ![Figure 7](assets/papers-explained-350-gpt-4-5/fig-7.webp) | Vision: The GPT-4.1 family excels in image understanding. |
+| ![Figure 8](assets/papers-explained-350-gpt-4-5/fig-8.webp) | Benchmarks. |
 ## Related
 
 - [[Papers Explained Corpus]]

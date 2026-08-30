@@ -13,7 +13,7 @@
 
 ## Training stages
 
-![Overfeat training](../assets/2017-12-15-object-recognition-part-2/fig-8.png)
+![Overfeat training](../assets/2017-12-15-object-recognition-part-2/fig-8.webp)
 
 | Stage | Input | Output | Loss |
 |-------|-------|--------|------|

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-11-20_Papers-Explained-496--Treasure-Hunt-be83ba0d6e1c.html`
+- Source file: `raw/2025-11-20_Papers-Explained-496--Treasure-Hunt-be83ba0d6e1c.md`
 - Source title: Papers Explained 496: Treasure Hunt
 - Published: 2025-11-20
 - Canonical: [https://medium.com/@ritvik19/papers-explained-496-treasure-hunt-be83ba0d6e1c](https://medium.com/@ritvik19/papers-explained-496-treasure-hunt-be83ba0d6e1c)
@@ -111,21 +111,21 @@ Treasure Hunt: Real-time Targeting of the Long Tail using Training-Time Markers 
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-11-20_Papers-Explained-496--Treasure-Hunt-be83ba0d6e1c.html`); local copies under `wiki/assets/papers-explained-496-treasure-hunt/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-11-20_Papers-Explained-496--Treasure-Hunt-be83ba0d6e1c.md`); local copies under `wiki/assets/papers-explained-496-treasure-hunt/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-496-treasure-hunt/fig-1.png) | Title card: Treasure Hunt. |
-| ![Figure 2](assets/papers-explained-496-treasure-hunt/fig-2.png) | The output sequence y is conditioned given an instruction x with added training markers m. |
-| ![Figure 3](assets/papers-explained-496-treasure-hunt/fig-3.png) | To avoid the model from becoming overly reliant on markers for completion or learning to trivially replicate the markers, dual dropout... |
-| ![Figure 4](assets/papers-explained-496-treasure-hunt/fig-4.png) | Methodology. |
-| ![Figure 5](assets/papers-explained-496-treasure-hunt/fig-5.png) | Comprehensive taxonomy for training time markers. |
-| ![Figure 6](assets/papers-explained-496-treasure-hunt/fig-6.png) | Long tail domains benefit more from training markers. |
-| ![Figure 7](assets/papers-explained-496-treasure-hunt/fig-7.png) | Levers for Controlling Quality. |
-| ![Figure 8](assets/papers-explained-496-treasure-hunt/fig-8.png) | Improvement on the Long Tail for Code tasks. |
-| ![Figure 9](assets/papers-explained-496-treasure-hunt/fig-9.png) | Length Instruction Following. |
-| ![Figure 10](assets/papers-explained-496-treasure-hunt/fig-10.png) | X-CometXL scores on WMT’24++ test sets. |
-| ![Figure 11](assets/papers-explained-496-treasure-hunt/fig-11.png) | Line-level pass rate on Complex Prompts from the Language Confusion Benchmark. |
+| ![Figure 1](assets/papers-explained-496-treasure-hunt/fig-1.webp) | Title card: Treasure Hunt. |
+| ![Figure 2](assets/papers-explained-496-treasure-hunt/fig-2.webp) | The output sequence y is conditioned given an instruction x with added training markers m. |
+| ![Figure 3](assets/papers-explained-496-treasure-hunt/fig-3.webp) | To avoid the model from becoming overly reliant on markers for completion or learning to trivially replicate the markers, dual dropout... |
+| ![Figure 4](assets/papers-explained-496-treasure-hunt/fig-4.webp) | Methodology. |
+| ![Figure 5](assets/papers-explained-496-treasure-hunt/fig-5.webp) | Comprehensive taxonomy for training time markers. |
+| ![Figure 6](assets/papers-explained-496-treasure-hunt/fig-6.webp) | Long tail domains benefit more from training markers. |
+| ![Figure 7](assets/papers-explained-496-treasure-hunt/fig-7.webp) | Levers for Controlling Quality. |
+| ![Figure 8](assets/papers-explained-496-treasure-hunt/fig-8.webp) | Improvement on the Long Tail for Code tasks. |
+| ![Figure 9](assets/papers-explained-496-treasure-hunt/fig-9.webp) | Length Instruction Following. |
+| ![Figure 10](assets/papers-explained-496-treasure-hunt/fig-10.webp) | X-CometXL scores on WMT’24++ test sets. |
+| ![Figure 11](assets/papers-explained-496-treasure-hunt/fig-11.webp) | Line-level pass rate on Complex Prompts from the Language Confusion Benchmark. |
 ## Related
 
 - [[Papers Explained Corpus]]

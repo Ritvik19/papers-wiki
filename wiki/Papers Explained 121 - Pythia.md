@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-04-05_Papers-Explained-121--Pythia-708284c32964.html`
+- Source file: `raw/2024-04-05_Papers-Explained-121--Pythia-708284c32964.md`
 - Source title: Papers Explained 121: Pythia
 - Published: 2024-04-05
 - Canonical: [https://medium.com/@ritvik19/papers-explained-121-pythia-708284c32964](https://medium.com/@ritvik19/papers-explained-121-pythia-708284c32964)
@@ -109,16 +109,16 @@ Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling 
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-04-05_Papers-Explained-121--Pythia-708284c32964.html`); local copies under `wiki/assets/papers-explained-121-pythia/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-04-05_Papers-Explained-121--Pythia-708284c32964.md`); local copies under `wiki/assets/papers-explained-121-pythia/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-121-pythia/fig-1.png) | Title page of *Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling*. |
-| ![Figure 2](assets/papers-explained-121-pythia/fig-2.png) | Pythia model suite sizes and key hyperparameters with GPT-Neo/OPT equivalents. |
-| ![Figure 3](assets/papers-explained-121-pythia/fig-3.png) | CrowS-Pairs gender-bias trajectory over training with pronoun-intervention variants. |
-| ![Figure 4](assets/papers-explained-121-pythia/fig-4.png) | WinoBias accuracy near late training stages for baseline and intervention runs. |
-| ![Figure 5](assets/papers-explained-121-pythia/fig-5.png) | Q-Q plots of memorized-sequence occurrence rates with and without deduplication. |
-| ![Figure 6](assets/papers-explained-121-pythia/fig-6.png) | TriviaQA accuracy vs entity-frequency bins across training checkpoints and model scales. |
+| ![Figure 1](assets/papers-explained-121-pythia/fig-1.webp) | Title page of *Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling*. |
+| ![Figure 2](assets/papers-explained-121-pythia/fig-2.webp) | Pythia model suite sizes and key hyperparameters with GPT-Neo/OPT equivalents. |
+| ![Figure 3](assets/papers-explained-121-pythia/fig-3.webp) | CrowS-Pairs gender-bias trajectory over training with pronoun-intervention variants. |
+| ![Figure 4](assets/papers-explained-121-pythia/fig-4.webp) | WinoBias accuracy near late training stages for baseline and intervention runs. |
+| ![Figure 5](assets/papers-explained-121-pythia/fig-5.webp) | Q-Q plots of memorized-sequence occurrence rates with and without deduplication. |
+| ![Figure 6](assets/papers-explained-121-pythia/fig-6.webp) | TriviaQA accuracy vs entity-frequency bins across training checkpoints and model scales. |
 ## Related
 
 - [[Papers Explained Corpus]]

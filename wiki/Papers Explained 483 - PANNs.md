@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-11-03_Papers-Explained-483--PANNs-a4baa79c5139.html`
+- Source file: `raw/2025-11-03_Papers-Explained-483--PANNs-a4baa79c5139.md`
 - Source title: Papers Explained 483: PANNs
 - Published: 2025-11-03
 - Canonical: [https://medium.com/@ritvik19/papers-explained-483-panns-a4baa79c5139](https://medium.com/@ritvik19/papers-explained-483-panns-a4baa79c5139)
@@ -176,25 +176,25 @@ PANNs: Large-Scale Pretrained Audio Neural Networks for Audio Pattern Recognitio
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-11-03_Papers-Explained-483--PANNs-a4baa79c5139.html`); local copies under `wiki/assets/papers-explained-483-panns/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-11-03_Papers-Explained-483--PANNs-a4baa79c5139.md`); local copies under `wiki/assets/papers-explained-483-panns/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-483-panns/fig-1.png) | Title card: PANNs. |
-| ![Figure 2](assets/papers-explained-483-panns/fig-2.png) | CNNs adopted for audio tagging often use log mel spectrograms as input. |
-| ![Figure 3](assets/papers-explained-483-panns/fig-3.png) | Two convolutional layers and a downsampling layer are applied on the log mel spectrogram to reduce the input log mel spectrogram size. |
-| ![Figure 4](assets/papers-explained-483-panns/fig-4.png) | Two convolutional layers and a downsampling layer are applied on the log mel spectrogram to reduce the input log mel spectrogram size. |
-| ![Figure 5](assets/papers-explained-483-panns/fig-5.png) | Architecture of Wavegram-Logmel-CNN. |
-| ![Figure 6](assets/papers-explained-483-panns/fig-6.png) | Some sound classes in AudioSet contain only a small number (e.g., hundreds) of training clips which may limit the performance of PANNs. |
-| ![Figure 7](assets/papers-explained-483-panns/fig-7.png) | Comparison with previous methods. |
-| ![Figure 8](assets/papers-explained-483-panns/fig-8.png) | Results with data balancing and augmentation. |
-| ![Figure 9](assets/papers-explained-483-panns/fig-9.png) | Results of different hop sizes. |
-| ![Figure 10](assets/papers-explained-483-panns/fig-10.png) | Results of different embedding dimensions. |
-| ![Figure 11](assets/papers-explained-483-panns/fig-11.png) | Results of partial training data. |
-| ![Figure 12](assets/papers-explained-483-panns/fig-12.png) | Results of different sample rates. |
-| ![Figure 13](assets/papers-explained-483-panns/fig-13.png) | Results of different Mel bins. |
-| ![Figure 14](assets/papers-explained-483-panns/fig-14.png) | Results of different systems. |
-| ![Figure 15](assets/papers-explained-483-panns/fig-15.png) | Number of multi-adds and parameters of different systems. |
+| ![Figure 1](assets/papers-explained-483-panns/fig-1.webp) | Title card: PANNs. |
+| ![Figure 2](assets/papers-explained-483-panns/fig-2.webp) | CNNs adopted for audio tagging often use log mel spectrograms as input. |
+| ![Figure 3](assets/papers-explained-483-panns/fig-3.webp) | Two convolutional layers and a downsampling layer are applied on the log mel spectrogram to reduce the input log mel spectrogram size. |
+| ![Figure 4](assets/papers-explained-483-panns/fig-4.webp) | Two convolutional layers and a downsampling layer are applied on the log mel spectrogram to reduce the input log mel spectrogram size. |
+| ![Figure 5](assets/papers-explained-483-panns/fig-5.webp) | Architecture of Wavegram-Logmel-CNN. |
+| ![Figure 6](assets/papers-explained-483-panns/fig-6.webp) | Some sound classes in AudioSet contain only a small number (e.g., hundreds) of training clips which may limit the performance of PANNs. |
+| ![Figure 7](assets/papers-explained-483-panns/fig-7.webp) | Comparison with previous methods. |
+| ![Figure 8](assets/papers-explained-483-panns/fig-8.webp) | Results with data balancing and augmentation. |
+| ![Figure 9](assets/papers-explained-483-panns/fig-9.webp) | Results of different hop sizes. |
+| ![Figure 10](assets/papers-explained-483-panns/fig-10.webp) | Results of different embedding dimensions. |
+| ![Figure 11](assets/papers-explained-483-panns/fig-11.webp) | Results of partial training data. |
+| ![Figure 12](assets/papers-explained-483-panns/fig-12.webp) | Results of different sample rates. |
+| ![Figure 13](assets/papers-explained-483-panns/fig-13.webp) | Results of different Mel bins. |
+| ![Figure 14](assets/papers-explained-483-panns/fig-14.webp) | Results of different systems. |
+| ![Figure 15](assets/papers-explained-483-panns/fig-15.webp) | Number of multi-adds and parameters of different systems. |
 ## Related
 
 - [[Papers Explained Corpus]]

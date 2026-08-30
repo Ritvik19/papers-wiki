@@ -41,6 +41,6 @@ Unsloth's product layer: **Studio** no-code fine-tuning UI, **OpenAI-compatible 
 
 ## Sources
 
-- `raw/studio/full-article.html`
-- `raw/api/full-article.html`
-- `raw/how-to-train-llms-with-unsloth-and-docker/full-article.html`
+- `raw/studio/full-article.md`
+- `raw/api/full-article.md`
+- `raw/how-to-train-llms-with-unsloth-and-docker/full-article.md`

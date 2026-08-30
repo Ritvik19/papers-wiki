@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-04-10_Papers-Explained-344--What-do-Vision-Transformers-Learn-ef4a80da46d8.html`
+- Source file: `raw/2025-04-10_Papers-Explained-344--What-do-Vision-Transformers-Learn-ef4a80da46d8.md`
 - Source title: Papers Explained 344: What do Vision Transformers Learn
 - Published: 2025-04-10
 - Canonical: [https://medium.com/@ritvik19/papers-explained-344-what-do-vision-transformers-learn-ef4a80da46d8](https://medium.com/@ritvik19/papers-explained-344-what-do-vision-transformers-learn-ef4a80da46d8)
@@ -113,23 +113,23 @@ What do Vision Transformers Learn? A Visual Exploration [2212.06727](https://arx
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-04-10_Papers-Explained-344--What-do-Vision-Transformers-Learn-ef4a80da46d8.html`); local copies under `wiki/assets/papers-explained-344-what-do-vision-transformers-learn/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-04-10_Papers-Explained-344--What-do-Vision-Transformers-Learn-ef4a80da46d8.md`); local copies under `wiki/assets/papers-explained-344-what-do-vision-transformers-learn/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-344-what-do-vision-transformers-learn/fig-1.png) | Title card: What do Vision Transformers Learn. |
-| ![Figure 2](assets/papers-explained-344-what-do-vision-transformers-learn/fig-2.png) | ViT represents each patch pof an input image x at a specific layer l by using arrays A with multiple entries for each patch. |
-| ![Figure 3](assets/papers-explained-344-what-do-vision-transformers-learn/fig-3.png) | Total variation regularization λTV(x) is introduced by adding a term to control the smoothness of the visualization. |
-| ![Figure 4](assets/papers-explained-344-what-do-vision-transformers-learn/fig-4.png) | The output of the GELU layers is visualized in the experiments. |
-| ![Figure 5](assets/papers-explained-344-what-do-vision-transformers-learn/fig-5.png) | “Isolating CLS” denotes the experiment where attention is only performed between patches before the final attention block, while “Patch Average” and “Patch Maximum” refer to the experiment in which the classification head is placed on top of individual patches without fine-tuning. |
-| ![Figure 6](assets/papers-explained-344-what-do-vision-transformers-learn/fig-6.png) | Heat map of classification accuracy on the validation set when the classification head trained to classify images is applied on the top of the CLS token to the other patches. |
-| ![Figure 7](assets/papers-explained-344-what-do-vision-transformers-learn/fig-7.png) | The progression for visualized features of ViT B-32. |
-| ![Figure 8](assets/papers-explained-344-what-do-vision-transformers-learn/fig-8.png) | Feature activation maps in internal layers can effectively segment the contents of an image with respect to a semantic concept. |
-| ![Figure 9](assets/papers-explained-344-what-do-vision-transformers-learn/fig-9.png) | ViTs more effectively correlate background information with correct class. |
-| ![Figure 10](assets/papers-explained-344-what-do-vision-transformers-learn/fig-10.png) | ViTs more effectively correlate background information with correct class. |
-| ![Figure 11](assets/papers-explained-344-what-do-vision-transformers-learn/fig-11.png) | Effect of low-pass filtering on top-1 ImageNet accuracy. |
-| ![Figure 12](assets/papers-explained-344-what-do-vision-transformers-learn/fig-12.png) | Left: Feature optimization shows sharp boundaries, and maximally activating ImageNet examples contain distinct, adjacent images. Middle: Feature optimization and maximally activating ImageNet photos all show images from an elevated vantage point. Right: Feature optimization shows a crowd of people, but maximally activating images indicate that the repetition of objects is more relevant than the type of object. |
-| ![Figure 13](assets/papers-explained-344-what-do-vision-transformers-learn/fig-13.png) | Features from ViT trained with CLIP that relates to the category of morbidity and music. Top-left image in each category: Image optimized to maximally activate a feature from layer 10. Rest: Seven of the ten ImageNet images that most activate the feature. |
+| ![Figure 1](assets/papers-explained-344-what-do-vision-transformers-learn/fig-1.webp) | Title card: What do Vision Transformers Learn. |
+| ![Figure 2](assets/papers-explained-344-what-do-vision-transformers-learn/fig-2.webp) | ViT represents each patch pof an input image x at a specific layer l by using arrays A with multiple entries for each patch. |
+| ![Figure 3](assets/papers-explained-344-what-do-vision-transformers-learn/fig-3.webp) | Total variation regularization λTV(x) is introduced by adding a term to control the smoothness of the visualization. |
+| ![Figure 4](assets/papers-explained-344-what-do-vision-transformers-learn/fig-4.webp) | The output of the GELU layers is visualized in the experiments. |
+| ![Figure 5](assets/papers-explained-344-what-do-vision-transformers-learn/fig-5.webp) | “Isolating CLS” denotes the experiment where attention is only performed between patches before the final attention block, while “Patch Average” and “Patch Maximum” refer to the experiment in which the classification head is placed on top of individual patches without fine-tuning. |
+| ![Figure 6](assets/papers-explained-344-what-do-vision-transformers-learn/fig-6.webp) | Heat map of classification accuracy on the validation set when the classification head trained to classify images is applied on the top of the CLS token to the other patches. |
+| ![Figure 7](assets/papers-explained-344-what-do-vision-transformers-learn/fig-7.webp) | The progression for visualized features of ViT B-32. |
+| ![Figure 8](assets/papers-explained-344-what-do-vision-transformers-learn/fig-8.webp) | Feature activation maps in internal layers can effectively segment the contents of an image with respect to a semantic concept. |
+| ![Figure 9](assets/papers-explained-344-what-do-vision-transformers-learn/fig-9.webp) | ViTs more effectively correlate background information with correct class. |
+| ![Figure 10](assets/papers-explained-344-what-do-vision-transformers-learn/fig-10.webp) | ViTs more effectively correlate background information with correct class. |
+| ![Figure 11](assets/papers-explained-344-what-do-vision-transformers-learn/fig-11.webp) | Effect of low-pass filtering on top-1 ImageNet accuracy. |
+| ![Figure 12](assets/papers-explained-344-what-do-vision-transformers-learn/fig-12.webp) | Left: Feature optimization shows sharp boundaries, and maximally activating ImageNet examples contain distinct, adjacent images. Middle: Feature optimization and maximally activating ImageNet photos all show images from an elevated vantage point. Right: Feature optimization shows a crowd of people, but maximally activating images indicate that the repetition of objects is more relevant than the type of object. |
+| ![Figure 13](assets/papers-explained-344-what-do-vision-transformers-learn/fig-13.webp) | Features from ViT trained with CLIP that relates to the category of morbidity and music. Top-left image in each category: Image optimized to maximally activate a feature from layer 10. Rest: Seven of the ten ImageNet images that most activate the feature. |
 ## Related
 
 - [[Papers Explained Corpus]]

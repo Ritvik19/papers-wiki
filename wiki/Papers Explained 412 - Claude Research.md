@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-07-18_Papers-Explained-412--Claude-Research-334b1f6a353b.html`
+- Source file: `raw/2025-07-18_Papers-Explained-412--Claude-Research-334b1f6a353b.md`
 - Source title: Papers Explained 412: Claude Research
 - Published: 2025-07-18
 - Canonical: [https://medium.com/@ritvik19/papers-explained-412-claude-research-334b1f6a353b](https://medium.com/@ritvik19/papers-explained-412-claude-research-334b1f6a353b)
@@ -71,13 +71,13 @@ Evaluating multi-agent systems presents unique challenges. Traditional evaluatio
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-07-18_Papers-Explained-412--Claude-Research-334b1f6a353b.html`); local copies under `wiki/assets/papers-explained-412-claude-research/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-07-18_Papers-Explained-412--Claude-Research-334b1f6a353b.md`); local copies under `wiki/assets/papers-explained-412-claude-research/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-412-claude-research/fig-1.png) | Title card: Claude Research. |
-| ![Figure 2](assets/papers-explained-412-claude-research/fig-2.png) | Research work is characterized by open-ended problems and unpredictable steps, making it difficult to predefine a fixed approach. |
-| ![Figure 3](assets/papers-explained-412-claude-research/fig-3.png) | Traditional approaches using Retrieval Augmented Generation (RAG) use static retrieval. |
+| ![Figure 1](assets/papers-explained-412-claude-research/fig-1.webp) | Title card: Claude Research. |
+| ![Figure 2](assets/papers-explained-412-claude-research/fig-2.webp) | Research work is characterized by open-ended problems and unpredictable steps, making it difficult to predefine a fixed approach. |
+| ![Figure 3](assets/papers-explained-412-claude-research/fig-3.webp) | Traditional approaches using Retrieval Augmented Generation (RAG) use static retrieval. |
 ## Related
 
 - [[Papers Explained Corpus]]

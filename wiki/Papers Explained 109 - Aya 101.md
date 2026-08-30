@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-03-06_Papers-Explained-109--Aya-101-d813ba17b83a.html`
+- Source file: `raw/2024-03-06_Papers-Explained-109--Aya-101-d813ba17b83a.md`
 - Source title: Papers Explained 109: Aya 101
 - Published: 2024-03-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-aya-101-d813ba17b83a](https://medium.com/@ritvik19/papers-explained-aya-101-d813ba17b83a)
@@ -199,20 +199,20 @@ Recommended Reading [Multi Task Language Models](https://ritvik19.medium.com/lis
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-03-06_Papers-Explained-109--Aya-101-d813ba17b83a.html`); local copies under `wiki/assets/papers-explained-109-aya-101/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-03-06_Papers-Explained-109--Aya-101-d813ba17b83a.md`); local copies under `wiki/assets/papers-explained-109-aya-101/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-109-aya-101/fig-1.png) | Title page of *Aya Model: An Instruction Finetuned Open-Access Multilingual Language Model*. |
-| ![Figure 2](assets/papers-explained-109-aya-101/fig-2.png) | Aya 101 pipeline overview linking finetuning sources to multilingual evaluation suites. |
-| ![Figure 3](assets/papers-explained-109-aya-101/fig-3.png) | Training-data source table with language mix across HR/MR/LR groups. |
-| ![Figure 4](assets/papers-explained-109-aya-101/fig-4.png) | Language grouping taxonomy used for Aya training (higher-, mid-, and lower-resourced clusters). |
-| ![Figure 5](assets/papers-explained-109-aya-101/fig-5.png) | Template-pruning statistics and post-pruning instruction-length gains. |
-| ![Figure 6](assets/papers-explained-109-aya-101/fig-6.png) | Data-source weighting schemes for Aya ablations (human-annotation-heavy, translation-heavy, template-heavy). |
-| ![Figure 7](assets/papers-explained-109-aya-101/fig-7.png) | Held-out discriminative-task results across 46-, 52-, and 101-language model settings. |
-| ![Figure 8](assets/papers-explained-109-aya-101/fig-8.png) | Multilingual MMLU score comparison of Okapi, mT0, mT0x, and Aya across languages. |
-| ![Figure 9](assets/papers-explained-109-aya-101/fig-9.png) | Generative-task benchmark results (FLORES-200, XLSum, Tydi-QA) for Aya weighting variants vs mT0x. |
-| ![Figure 10](assets/papers-explained-109-aya-101/fig-10.png) | Aya vs mT0x performance by resource group on unseen discriminative tasks, multilingual MMLU, and FLORES translation. |
+| ![Figure 1](assets/papers-explained-109-aya-101/fig-1.webp) | Title page of *Aya Model: An Instruction Finetuned Open-Access Multilingual Language Model*. |
+| ![Figure 2](assets/papers-explained-109-aya-101/fig-2.webp) | Aya 101 pipeline overview linking finetuning sources to multilingual evaluation suites. |
+| ![Figure 3](assets/papers-explained-109-aya-101/fig-3.webp) | Training-data source table with language mix across HR/MR/LR groups. |
+| ![Figure 4](assets/papers-explained-109-aya-101/fig-4.webp) | Language grouping taxonomy used for Aya training (higher-, mid-, and lower-resourced clusters). |
+| ![Figure 5](assets/papers-explained-109-aya-101/fig-5.webp) | Template-pruning statistics and post-pruning instruction-length gains. |
+| ![Figure 6](assets/papers-explained-109-aya-101/fig-6.webp) | Data-source weighting schemes for Aya ablations (human-annotation-heavy, translation-heavy, template-heavy). |
+| ![Figure 7](assets/papers-explained-109-aya-101/fig-7.webp) | Held-out discriminative-task results across 46-, 52-, and 101-language model settings. |
+| ![Figure 8](assets/papers-explained-109-aya-101/fig-8.webp) | Multilingual MMLU score comparison of Okapi, mT0, mT0x, and Aya across languages. |
+| ![Figure 9](assets/papers-explained-109-aya-101/fig-9.webp) | Generative-task benchmark results (FLORES-200, XLSum, Tydi-QA) for Aya weighting variants vs mT0x. |
+| ![Figure 10](assets/papers-explained-109-aya-101/fig-10.webp) | Aya vs mT0x performance by resource group on unseen discriminative tasks, multilingual MMLU, and FLORES translation. |
 ## Related
 
 - [[Papers Explained Corpus]]

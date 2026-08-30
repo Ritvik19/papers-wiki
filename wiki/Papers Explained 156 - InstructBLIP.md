@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-06-28_Papers-Explained-156--InstructBLIP-c3cf3291a823.html`
+- Source file: `raw/2024-06-28_Papers-Explained-156--InstructBLIP-c3cf3291a823.md`
 - Source title: Papers Explained 156: InstructBLIP
 - Published: 2024-06-28
 - Canonical: [https://medium.com/@ritvik19/papers-explained-156-instructblip-c3cf3291a823](https://medium.com/@ritvik19/papers-explained-156-instructblip-c3cf3291a823)
@@ -109,18 +109,18 @@ Recommended Reading [Multi Modal Transformers](https://ritvik19.medium.com/list/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-06-28_Papers-Explained-156--InstructBLIP-c3cf3291a823.html`); local copies under `wiki/assets/papers-explained-156-instructblip/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-06-28_Papers-Explained-156--InstructBLIP-c3cf3291a823.md`); local copies under `wiki/assets/papers-explained-156-instructblip/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-156-instructblip/fig-1.png) | Title page of *InstructBLIP: Towards General-purpose Vision-Language Models with Instruction Tuning* with Salesforce/HKUST/NTU authors and LAVIS project link. |
-| ![Figure 2](assets/papers-explained-156-instructblip/fig-2.png) | Eleven task families (captioning, VQA, reasoning, dialog, video QA, OCR QA, classification, LLaVA-mix, …) with constituent datasets—held-in vs held-out styling per paper legend. |
-| ![Figure 3](assets/papers-explained-156-instructblip/fig-3.png) | Dataset sheet: names, held-out markers (✓/✗), and brief corpus descriptions/splits for the 26 instruction sources. |
-| ![Figure 4](assets/papers-explained-156-instructblip/fig-4.png) | Example `<Image>`-prefixed instruction templates for captioning, VQA, and visual question generation. |
-| ![Figure 5](assets/papers-explained-156-instructblip/fig-5.png) | **InstructBLIP** diagram: frozen ViT, instruction-conditioned Q-Former (queries attend to image patches and instruction tokens), projection into frozen LLM for grounded answers. |
-| ![Figure 6](assets/papers-explained-156-instructblip/fig-6.png) | Zero-shot held-out leaderboard across 13 benchmarks: Flamingo vs BLIP-2 vs **InstructBLIP** with multiple frozen LLM backbones. |
-| ![Figure 7](assets/papers-explained-156-instructblip/fig-7.png) | Instruction tuning vs multitask baselines: held-in vs held-out averages showing **InstructBLIP** gains OOD generalization over plain multi-task training. |
-| ![Figure 8](assets/papers-explained-156-instructblip/fig-8.png) | Downstream finetuning gains: **InstructBLIP** vs BLIP-2 (FlanT5-XXL / Vicuna-7B) vs prior SOTA on ScienceQA (IMG), OCR-VQA, OKVQA, A-OKVQA splits. |
+| ![Figure 1](assets/papers-explained-156-instructblip/fig-1.webp) | Title page of *InstructBLIP: Towards General-purpose Vision-Language Models with Instruction Tuning* with Salesforce/HKUST/NTU authors and LAVIS project link. |
+| ![Figure 2](assets/papers-explained-156-instructblip/fig-2.webp) | Eleven task families (captioning, VQA, reasoning, dialog, video QA, OCR QA, classification, LLaVA-mix, …) with constituent datasets—held-in vs held-out styling per paper legend. |
+| ![Figure 3](assets/papers-explained-156-instructblip/fig-3.webp) | Dataset sheet: names, held-out markers (✓/✗), and brief corpus descriptions/splits for the 26 instruction sources. |
+| ![Figure 4](assets/papers-explained-156-instructblip/fig-4.webp) | Example `<Image>`-prefixed instruction templates for captioning, VQA, and visual question generation. |
+| ![Figure 5](assets/papers-explained-156-instructblip/fig-5.webp) | **InstructBLIP** diagram: frozen ViT, instruction-conditioned Q-Former (queries attend to image patches and instruction tokens), projection into frozen LLM for grounded answers. |
+| ![Figure 6](assets/papers-explained-156-instructblip/fig-6.webp) | Zero-shot held-out leaderboard across 13 benchmarks: Flamingo vs BLIP-2 vs **InstructBLIP** with multiple frozen LLM backbones. |
+| ![Figure 7](assets/papers-explained-156-instructblip/fig-7.webp) | Instruction tuning vs multitask baselines: held-in vs held-out averages showing **InstructBLIP** gains OOD generalization over plain multi-task training. |
+| ![Figure 8](assets/papers-explained-156-instructblip/fig-8.webp) | Downstream finetuning gains: **InstructBLIP** vs BLIP-2 (FlanT5-XXL / Vicuna-7B) vs prior SOTA on ScienceQA (IMG), OCR-VQA, OKVQA, A-OKVQA splits. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-11-22_Papers-Explained-258--GeoLayoutLM-f581eec8c8a2.html`
+- Source file: `raw/2024-11-22_Papers-Explained-258--GeoLayoutLM-f581eec8c8a2.md`
 - Source title: Papers Explained 258: GeoLayoutLM
 - Published: 2024-11-22
 - Canonical: [https://medium.com/@ritvik19/papers-explained-258-geolayoutlm-f581eec8c8a2](https://medium.com/@ritvik19/papers-explained-258-geolayoutlm-f581eec8c8a2)
@@ -117,21 +117,21 @@ Recommended Reading: [Document Information Processing](https://ritvik19.medium.c
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-11-22_Papers-Explained-258--GeoLayoutLM-f581eec8c8a2.html`); local copies under `wiki/assets/papers-explained-258-geolayoutlm/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-11-22_Papers-Explained-258--GeoLayoutLM-f581eec8c8a2.md`); local copies under `wiki/assets/papers-explained-258-geolayoutlm/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-258-geolayoutlm/fig-1.png) | Title card: GeoLayoutLM. |
-| ![Figure 2](assets/papers-explained-258-geolayoutlm/fig-2.png) | GeoLayoutLM tackle these issues as it explicitly models the geometric relations in pre-training, called geometric pre-training. |
-| ![Figure 3](assets/papers-explained-258-geolayoutlm/fig-3.png) | Relation heads. |
-| ![Figure 4](assets/papers-explained-258-geolayoutlm/fig-4.png) | Geometric Pretraining. |
-| ![Figure 5](assets/papers-explained-258-geolayoutlm/fig-5.png) | To better understand the relative position relationship of two textsegments. |
-| ![Figure 6](assets/papers-explained-258-geolayoutlm/fig-6.png) | The loss function L_DDM of DDM task is defined as. |
-| ![Figure 7](assets/papers-explained-258-geolayoutlm/fig-7.png) | The loss function L_DDM of DDM task is defined as. |
-| ![Figure 8](assets/papers-explained-258-geolayoutlm/fig-8.png) | The relationships within a certain document area usually have some common geometric attributes. |
-| ![Figure 9](assets/papers-explained-258-geolayoutlm/fig-9.png) | The full pre-training objective of GeoLayoutLM is. |
-| ![Figure 10](assets/papers-explained-258-geolayoutlm/fig-10.png) | The full pre-training objective of GeoLayoutLM is. |
-| ![Figure 11](assets/papers-explained-258-geolayoutlm/fig-11.png) | Comparison with existing models that explore both SER & RE. |
+| ![Figure 1](assets/papers-explained-258-geolayoutlm/fig-1.webp) | Title card: GeoLayoutLM. |
+| ![Figure 2](assets/papers-explained-258-geolayoutlm/fig-2.webp) | GeoLayoutLM tackle these issues as it explicitly models the geometric relations in pre-training, called geometric pre-training. |
+| ![Figure 3](assets/papers-explained-258-geolayoutlm/fig-3.webp) | Relation heads. |
+| ![Figure 4](assets/papers-explained-258-geolayoutlm/fig-4.webp) | Geometric Pretraining. |
+| ![Figure 5](assets/papers-explained-258-geolayoutlm/fig-5.webp) | To better understand the relative position relationship of two textsegments. |
+| ![Figure 6](assets/papers-explained-258-geolayoutlm/fig-6.webp) | The loss function L_DDM of DDM task is defined as. |
+| ![Figure 7](assets/papers-explained-258-geolayoutlm/fig-7.webp) | The loss function L_DDM of DDM task is defined as. |
+| ![Figure 8](assets/papers-explained-258-geolayoutlm/fig-8.webp) | The relationships within a certain document area usually have some common geometric attributes. |
+| ![Figure 9](assets/papers-explained-258-geolayoutlm/fig-9.webp) | The full pre-training objective of GeoLayoutLM is. |
+| ![Figure 10](assets/papers-explained-258-geolayoutlm/fig-10.webp) | The full pre-training objective of GeoLayoutLM is. |
+| ![Figure 11](assets/papers-explained-258-geolayoutlm/fig-11.webp) | Comparison with existing models that explore both SER & RE. |
 ## Related
 
 - [[Papers Explained Corpus]]

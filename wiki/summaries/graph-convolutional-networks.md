@@ -1,6 +1,6 @@
 # How Graph Neural Networks (GNN) Work: Introduction to Graph Convolutions from Scratch
 
-**Source**: `raw/graph-convolutional-networks/full-article.html` (markdown view: `raw/graph-convolutional-networks/full-article.md`)  
+**Source**: `raw/graph-convolutional-networks/full-article.md` (markdown view: `raw/graph-convolutional-networks/full-article.md`)  
 **URL**: https://theaisummer.com/graph-convolutional-networks/  
 **Author**: Nikolas Adaloglou (AI Summer), 2021-04-08  
 **Ingested**: 2026-06-06  
@@ -10,11 +10,11 @@
 
 Nikolas Adaloglou's AI Summer tutorial introduces **[[Graph Neural Networks]]** by decomposing data into **structure** (connectivity) and **signal** (node features). Images are the intuitive entry point: pixels live on a grid with strong locality, so convolutions aggregate neighborhood information. Graphs generalize this idea — any domain where you can define an adjacency matrix \(A \in \mathbb{R}^{N \times N}\) and node features \(X \in \mathbb{R}^{N \times F}\) (social networks, molecules, point clouds, brain graphs) becomes graph-structured data.
 
-![Pixel grid as structured image signal](../assets/graph-convolutional-networks/fig-2.png)
+![Pixel grid as structured image signal](../assets/graph-convolutional-networks/fig-2.webp)
 
 The article builds the mathematical toolkit: degree matrix \(D\), (normalized) **[[Graph Laplacian]]** \(L = D - A\) and \(L_{\text{norm}} = D^{-1/2}(A+I)D^{-1/2}\), Laplacian eigenvalues (connected-component multiplicity, spectral segmentation), directed/weighted graphs, and COO sparse storage. Two core task types are distinguished: **graph classification** (inductive — one label per graph, like image classification) and **node classification** (transductive/semi-supervised — few labeled nodes on one large graph, like segmentation).
 
-![Graph vs node classification tasks](../assets/graph-convolutional-networks/fig-10.png)
+![Graph vs node classification tasks](../assets/graph-convolutional-networks/fig-10.webp)
 
 **[[Graph Convolutional Networks]]** arise from the principle that vertex-domain convolution equals multiplication in the graph spectral domain. The simplest layer is \(Y = L_{\text{norm}} X W\); multiplying a graph operator by a signal performs a weighted neighborhood sum. Higher powers of \(L\) expand the receptive field (K-hop neighbors), analogous to larger CNN kernels. Defferrard et al.'s spectral filters use Chebyshev polynomial expansions of the rescaled Laplacian to avoid costly eigendecomposition while controlling K-hop aggregation.
 
@@ -35,24 +35,24 @@ The tutorial implements a batched 1-hop GCN in PyTorch (`GCN_AISUMMER`), trains 
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/graph-convolutional-networks/fig-1.png) | Article preview: graph structure and signal decomposition | — |
-| ![fig-2](../assets/graph-convolutional-networks/fig-2.png) | Image pixel grid: structure (layout) and signal (channel intensities) | — |
-| ![fig-3](../assets/graph-convolutional-networks/fig-3.png) | NLP decomposition: word embeddings as signal, positional order as structure | — |
-| ![fig-4](../assets/graph-convolutional-networks/fig-4.png) | General graph: adjacency matrix \(A\) and node feature matrix \(X\) | — |
-| ![fig-5](../assets/graph-convolutional-networks/fig-5.png) | Two disconnected subgraphs → two zero Laplacian eigenvalues | — |
-| ![fig-6](../assets/graph-convolutional-networks/fig-6.png) | Connected Petersen graph in multiple NetworkX layouts | — |
-| ![fig-7](../assets/graph-convolutional-networks/fig-7.png) | Spectral image segmentation into 3 clusters via graph Laplacian eigenvectors | — |
-| ![fig-8](../assets/graph-convolutional-networks/fig-8.png) | Directed vs undirected graphs; hop distance on undirected graph | — |
-| ![fig-9](../assets/graph-convolutional-networks/fig-9.png) | Weighted undirected graph with non-binary adjacency values | — |
-| ![fig-10](../assets/graph-convolutional-networks/fig-10.png) | Graph classification (inductive) vs node classification (transductive) | — |
+| ![fig-1](../assets/graph-convolutional-networks/fig-1.webp) | Article preview: graph structure and signal decomposition | — |
+| ![fig-2](../assets/graph-convolutional-networks/fig-2.webp) | Image pixel grid: structure (layout) and signal (channel intensities) | — |
+| ![fig-3](../assets/graph-convolutional-networks/fig-3.webp) | NLP decomposition: word embeddings as signal, positional order as structure | — |
+| ![fig-4](../assets/graph-convolutional-networks/fig-4.webp) | General graph: adjacency matrix \(A\) and node feature matrix \(X\) | — |
+| ![fig-5](../assets/graph-convolutional-networks/fig-5.webp) | Two disconnected subgraphs → two zero Laplacian eigenvalues | — |
+| ![fig-6](../assets/graph-convolutional-networks/fig-6.webp) | Connected Petersen graph in multiple NetworkX layouts | — |
+| ![fig-7](../assets/graph-convolutional-networks/fig-7.webp) | Spectral image segmentation into 3 clusters via graph Laplacian eigenvectors | — |
+| ![fig-8](../assets/graph-convolutional-networks/fig-8.webp) | Directed vs undirected graphs; hop distance on undirected graph | — |
+| ![fig-9](../assets/graph-convolutional-networks/fig-9.webp) | Weighted undirected graph with non-binary adjacency values | — |
+| ![fig-10](../assets/graph-convolutional-networks/fig-10.webp) | Graph classification (inductive) vs node classification (transductive) | — |
 | ![fig-11](../assets/graph-convolutional-networks/fig-11.gif) | 1D convolution as neighborhood aggregation analogy for graph operators | — |
-| ![fig-12](../assets/graph-convolutional-networks/fig-12.png) | Block-diagonal adjacency for batching two graphs (PyTorch Geometric) | — |
+| ![fig-12](../assets/graph-convolutional-networks/fig-12.webp) | Block-diagonal adjacency for batching two graphs (PyTorch Geometric) | — |
 
-![Graph structure and signal](../assets/graph-convolutional-networks/fig-4.png)
+![Graph structure and signal](../assets/graph-convolutional-networks/fig-4.webp)
 
 Any relational data with defined connectivity \(A\) and per-node features \(X\) can be modeled as a graph — from molecules to social networks to point clouds.
 
-![Spectral segmentation](../assets/graph-convolutional-networks/fig-7.png)
+![Spectral segmentation](../assets/graph-convolutional-networks/fig-7.webp)
 
 Converting a grayscale image to a graph and clustering via Laplacian eigenvectors performs unsupervised spectral segmentation (does not scale to large \(N \times N\) adjacency matrices).
 

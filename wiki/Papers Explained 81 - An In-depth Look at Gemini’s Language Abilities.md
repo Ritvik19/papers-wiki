@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-12-20_Papers-Explained-81--An-In-depth-Look-at-Gemini-s-Language-Abilities-540ca9046d8e.html`
+- Source file: `raw/2023-12-20_Papers-Explained-81--An-In-depth-Look-at-Gemini-s-Language-Abilities-540ca9046d8e.md`
 - Source title: Papers Explained 81: An In-depth Look at Gemini’s Language Abilities
 - Published: 2023-12-20
 - Canonical: [https://medium.com/@ritvik19/papers-explained-81-an-in-depth-look-at-geminis-language-abilities-540ca9046d8e](https://medium.com/@ritvik19/papers-explained-81-an-in-depth-look-at-geminis-language-abilities-540ca9046d8e)
@@ -211,36 +211,36 @@ An In-depth Look at Gemini’s Language Abilities [2312.11444](https://arxiv.org
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-12-20_Papers-Explained-81--An-In-depth-Look-at-Gemini-s-Language-Abilities-540ca9046d8e.html`); local copies under `wiki/assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-12-20_Papers-Explained-81--An-In-depth-Look-at-Gemini-s-Language-Abilities-540ca9046d8e.md`); local copies under `wiki/assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-1.png) | Title card: An In-depth Look at Gemini’s Language Abilities. |
-| ![Figure 2](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-2.png) | Main results of the benchmarking. |
-| ![Figure 3](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-3.png) | Overall accuracy on MMLU with 5-shot prompts and chain-of-thought prompts. |
-| ![Figure 4](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-4.png) | Ratio of multiple-choice answers being predicted by models. |
-| ![Figure 5](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-5.png) | Accuracy by each subtask on MMLU. |
-| ![Figure 6](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-6.png) | Tasks where Gemini Pro and GPT 3.5 prevail on MMLU. |
-| ![Figure 7](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-7.png) | Analysis of output length on MMLU. |
-| ![Figure 8](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-8.png) | Overall accuracy on BIG-BenchHard. |
-| ![Figure 9](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-9.png) | Accuracy by question length on BIGBench-Hard. |
-| ![Figure 10](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-10.png) | Tasks where GPT 3.5 Turbo excels over Gemini Pro. |
-| ![Figure 11](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-11.png) | Tasks where Gemini Pro excels over GPT 3.5 Turbo. |
-| ![Figure 12](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-12.png) | Accuracy by answer types. |
-| ![Figure 13](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-13.png) | Overall accuracy across four mathematical reasoning tasks. |
-| ![Figure 14](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-14.png) | Accuracy by question length across four mathematical reasoning tasks. |
-| ![Figure 15](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-15.png) | GSM8K accuracy by chain-of-thought length. |
-| ![Figure 16](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-16.png) | Accuracy by number of digits in the answer across four mathematical reasoning tasks. |
-| ![Figure 17](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-17.png) | Overall accuracy on code generation tasks. |
-| ![Figure 18](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-18.png) | Comparison of Pass@1 w.r.t. gold solution length. |
-| ![Figure 19](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-19.png) | Comparison of Pass@1 w.r.t. the libraries used by gold solution. |
-| ![Figure 20](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-20.png) | Machine translation performance (chRF (%) scores) across models for all languages using 0-shot prompt. Best scores are bolded, second best underlined. |
-| ![Figure 21](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-21.png) | Machine translation performance (chRF (%) scores) models for all languages using 5-shot prompt. Best scores are bolded, second best underlined. |
-| ![Figure 22](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-22.png) | Number of samples that are blocked by Gemini Pro. |
-| ![Figure 23](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-23.png) | Performance in chrf (%) on blocked and unblocked samples. |
-| ![Figure 24](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-24.png) | Performances on WebArena. |
-| ![Figure 25](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-25.png) | UA prediction count. |
-| ![Figure 26](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-26.png) | Model behaviors on WebArena. |
+| ![Figure 1](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-1.webp) | Title card: An In-depth Look at Gemini’s Language Abilities. |
+| ![Figure 2](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-2.webp) | Main results of the benchmarking. |
+| ![Figure 3](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-3.webp) | Overall accuracy on MMLU with 5-shot prompts and chain-of-thought prompts. |
+| ![Figure 4](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-4.webp) | Ratio of multiple-choice answers being predicted by models. |
+| ![Figure 5](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-5.webp) | Accuracy by each subtask on MMLU. |
+| ![Figure 6](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-6.webp) | Tasks where Gemini Pro and GPT 3.5 prevail on MMLU. |
+| ![Figure 7](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-7.webp) | Analysis of output length on MMLU. |
+| ![Figure 8](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-8.webp) | Overall accuracy on BIG-BenchHard. |
+| ![Figure 9](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-9.webp) | Accuracy by question length on BIGBench-Hard. |
+| ![Figure 10](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-10.webp) | Tasks where GPT 3.5 Turbo excels over Gemini Pro. |
+| ![Figure 11](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-11.webp) | Tasks where Gemini Pro excels over GPT 3.5 Turbo. |
+| ![Figure 12](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-12.webp) | Accuracy by answer types. |
+| ![Figure 13](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-13.webp) | Overall accuracy across four mathematical reasoning tasks. |
+| ![Figure 14](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-14.webp) | Accuracy by question length across four mathematical reasoning tasks. |
+| ![Figure 15](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-15.webp) | GSM8K accuracy by chain-of-thought length. |
+| ![Figure 16](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-16.webp) | Accuracy by number of digits in the answer across four mathematical reasoning tasks. |
+| ![Figure 17](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-17.webp) | Overall accuracy on code generation tasks. |
+| ![Figure 18](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-18.webp) | Comparison of Pass@1 w.r.t. gold solution length. |
+| ![Figure 19](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-19.webp) | Comparison of Pass@1 w.r.t. the libraries used by gold solution. |
+| ![Figure 20](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-20.webp) | Machine translation performance (chRF (%) scores) across models for all languages using 0-shot prompt. Best scores are bolded, second best underlined. |
+| ![Figure 21](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-21.webp) | Machine translation performance (chRF (%) scores) models for all languages using 5-shot prompt. Best scores are bolded, second best underlined. |
+| ![Figure 22](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-22.webp) | Number of samples that are blocked by Gemini Pro. |
+| ![Figure 23](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-23.webp) | Performance in chrf (%) on blocked and unblocked samples. |
+| ![Figure 24](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-24.webp) | Performances on WebArena. |
+| ![Figure 25](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-25.webp) | UA prediction count. |
+| ![Figure 26](assets/papers-explained-81-an-in-depth-look-at-gemini-s-language-abilities/fig-26.webp) | Model behaviors on WebArena. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -1,6 +1,6 @@
 # Papers Explained 595: Unsupervised On-Policy Self-Distillation
 
-**Source**: `raw/2026-08-14_Papers-Explained-595--Unsupervised-On-Policy-Self-Distillation-13e21a1df42d.html`  
+**Source**: `raw/2026-08-14_Papers-Explained-595--Unsupervised-On-Policy-Self-Distillation-13e21a1df42d.md`  
 **Paper**: https://arxiv.org/abs/2608.06296  
 **Ingested**: 2026-08-23  
 **Tags**: #summary
@@ -9,7 +9,7 @@
 
 **Unsupervised On-Policy Self-Distillation (U-OPSD)** demonstrates that large language models can self-improve reasoning and generation capabilities *without* ground-truth labels, verifiers, or external teachers. By leveraging the model's internal capability differences between thinking mode (long-form chain-of-thought exploration) and direct answering mode, U-OPSD formulates an unsupervised distillation objective: the model samples diverse reasoning rollouts in thinking mode, selects consensus answers via self-consistency or internal confidence, and distills the verified reasoning traces back into its base policy via on-policy alignment.
 
-![Papers Explained 595 banner](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-1.png)
+![Papers Explained 595 banner](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-1.webp)
 
 ### Method Formulation
 
@@ -18,7 +18,7 @@ U-OPSD operates across both non-thinking and thinking regimes:
 - **On-Policy Alignment**: The base student policy $p_\theta(\cdot \mid x)$ generates on-policy rollouts and minimizes divergence against the pseudo-supervised teacher distribution conditioned on the consensus prefix.
 - **Self-Supervised Filtering**: Prunes degenerative, repetitive, or low-confidence traces using internal entropy metrics.
 
-![U-OPSD Architecture and Rollout Selection](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-2.png)
+![U-OPSD Architecture and Rollout Selection](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-2.webp)
 
 ## Key Claims
 
@@ -30,19 +30,19 @@ U-OPSD operates across both non-thinking and thinking regimes:
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-1.png) | Papers Explained 595 overview banner. | Overview |
-| ![fig-2](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-2.png) | U-OPSD framework diagram: thinking-mode rollout to student distillation. | Method |
-| ![fig-3](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-3.png) | Unsupervised consensus filtering and confidence scoring. | Method |
-| ![fig-4](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-4.png) | Performance on non-thinking direct answering benchmarks. | Results |
-| ![fig-5](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-5.png) | Performance on thinking-mode reasoning benchmarks. | Results |
-| ![fig-6](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-6.png) | Instruction-tuned model self-distillation gains. | Results |
-| ![fig-7](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-7.png) | Number of self-consistency candidate rollouts ablation. | Ablations |
-| ![fig-8](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-8.png) | Confidence filtering threshold sensitivity. | Ablations |
-| ![fig-9](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-9.png) | Comparison against supervised RLVR and external distillation. | Comparison |
-| ![fig-10](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-10.png) | Generalization to out-of-domain reasoning datasets. | Evaluation |
-| ![fig-11](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-11.png) | Trajectory length and thinking efficiency curves. | Analysis |
-| ![fig-12](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-12.png) | Qualitative reasoning improvement examples. | Qualitative |
-| ![fig-13](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-13.png) | Error rate reduction across multi-round self-distillation. | Analysis |
+| ![fig-1](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-1.webp) | Papers Explained 595 overview banner. | Overview |
+| ![fig-2](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-2.webp) | U-OPSD framework diagram: thinking-mode rollout to student distillation. | Method |
+| ![fig-3](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-3.webp) | Unsupervised consensus filtering and confidence scoring. | Method |
+| ![fig-4](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-4.webp) | Performance on non-thinking direct answering benchmarks. | Results |
+| ![fig-5](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-5.webp) | Performance on thinking-mode reasoning benchmarks. | Results |
+| ![fig-6](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-6.webp) | Instruction-tuned model self-distillation gains. | Results |
+| ![fig-7](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-7.webp) | Number of self-consistency candidate rollouts ablation. | Ablations |
+| ![fig-8](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-8.webp) | Confidence filtering threshold sensitivity. | Ablations |
+| ![fig-9](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-9.webp) | Comparison against supervised RLVR and external distillation. | Comparison |
+| ![fig-10](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-10.webp) | Generalization to out-of-domain reasoning datasets. | Evaluation |
+| ![fig-11](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-11.webp) | Trajectory length and thinking efficiency curves. | Analysis |
+| ![fig-12](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-12.webp) | Qualitative reasoning improvement examples. | Qualitative |
+| ![fig-13](../assets/papers-explained-595-unsupervised-on-policy-self-distillation/fig-13.webp) | Error rate reduction across multi-round self-distillation. | Analysis |
 
 ## Entities
 

@@ -1,6 +1,6 @@
 # TranslateGemma
 
-**Source**: `raw/translategemma/full-article.html` (375 KB)  
+**Source**: `raw/translategemma/full-article.md` (375 KB)  
 **URL**: https://blog.google/innovation-and-ai/technology/developers-tools/translategemma/  
 **Published**: Jan 15, 2026  
 **Ingested**: 2026-06-06  

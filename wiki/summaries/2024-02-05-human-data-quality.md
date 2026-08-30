@@ -1,6 +1,6 @@
 # 2024-02-05-human-data-quality
 
-**Source**: `raw/2024-02-05-human-data-quality/full-article.html` (HTML) and `raw/2024-02-05-human-data-quality/full-article.md` (Markdown)  
+**Source**: `raw/2024-02-05-human-data-quality/full-article.md` (HTML) and `raw/2024-02-05-human-data-quality/full-article.md` (Markdown)  
 **Ingested**: 2026-05-22  
 **Tags**: #summary #topic
 
@@ -25,23 +25,23 @@ Once a dataset is collected and a model is trained, machine learning diagnostics
 
 | Figure | Description |
 |--------|-------------|
-| ![fig-1](../assets/2024-02-05-human-data-quality/fig-1.png) | **Operations vs. Training Dynamics**: The two directions for approaching high data quality: human raters/aggregation operations vs. training dynamics/model learning behavior. |
-| ![fig-2](../assets/2024-02-05-human-data-quality/fig-2.png) | **Crowdsourcing Quality Control Flow**: Daniel et al. (2018) quality model detailing assessment techniques, quality attributes, and assurance actions. |
-| ![fig-3](../assets/2024-02-05-human-data-quality/fig-3.png) | **Translation Evaluation Agreement**: Left: expert-expert vs. non-expert-expert agreement on translation. Right: BLEU comparison showing non-expert translations closely matching expert quality. |
-| ![fig-4](../assets/2024-02-05-human-data-quality/fig-4.png) | **Topic-Specific Safety Correlation**: Agreement rates between experts and non-expert annotators on chat safety vary wildly across topics, dropping lowest on personal/nuanced dialogues. |
-| ![fig-5](../assets/2024-02-05-human-data-quality/fig-5.png) | **Taxonomy of Rater Disagreement**: Causes categorized by individual errors (inattention, interface), cognitive difficulty (linguistic, task), and genuine diverse beliefs. |
-| ![fig-6](../assets/2024-02-05-human-data-quality/fig-6.png) | **Multi-Annotator Architectures**: Structural diagrams comparing Single-task majority vote baselines, Ensembles, Multi-label outputs, and Multi-task heads. |
-| ![fig-7](../assets/2024-02-05-human-data-quality/fig-7.png) | **Jury Learning Decision Pipeline**: Process of collecting demographically annotated labels, training individual juror predictors, and specifying a custom jury composition at runtime. |
-| ![fig-8](../assets/2024-02-05-human-data-quality/fig-8.png) | **Deep & Cross Network (DCN) for Jurors**: DCN structure combining text embeddings (BERT) with annotator and group characteristic embeddings. |
-| ![fig-9](../assets/2024-02-05-human-data-quality/fig-9.png) | **Jury Learning Performance**: Mean Absolute Error (MAE) comparing annotator-agnostic baselines with jury learning across multiple demographic splits. |
-| ![fig-10](../assets/2024-02-05-human-data-quality/fig-10.png) | **Influence Function Validation**: Influence estimates $\mathcal{I}_{\text{up,loss}}$ compared to actual leave-one-out retraining validation on a 10-class MNIST dataset. |
-| ![fig-11](../assets/2024-02-05-human-data-quality/fig-11.png) | **Dataset Cartography Map**: SNLI training dataset mapped along Confidence and Variability axes, dividing data into easy-to-learn, ambiguous, and hard-to-learn regions. |
-| ![fig-12](../assets/2024-02-05-human-data-quality/fig-12.png) | **Data Map Trajectory under Label Flipping**: High-confidence, low-variability instances move down and right (low confidence, high variability) when their labels are flipped. |
-| ![fig-13](../assets/2024-02-05-human-data-quality/fig-13.png) | **Area Under the Margin (AUM) Distribution**: Comparison of Margin distributions. AUM of randomly flipped samples sits significantly lower than clean samples, separated cleanly by threshold samples. |
-| ![fig-14](../assets/2024-02-05-human-data-quality/fig-14.png) | **Test Error under AUM Pruning**: Retrained test error on CIFAR 10/100 as a function of noisy label removal, showing AUM pruners outperform standard baselines. |
-| ![fig-15](../assets/2024-02-05-human-data-quality/fig-15.png) | **Iterative Noisy Cross-Validation (INCV)**: The flow of INCV using dual-split models to cross-evaluate clean candidates and prune noisy samples iteratively. |
+| ![fig-1](../assets/2024-02-05-human-data-quality/fig-1.webp) | **Operations vs. Training Dynamics**: The two directions for approaching high data quality: human raters/aggregation operations vs. training dynamics/model learning behavior. |
+| ![fig-2](../assets/2024-02-05-human-data-quality/fig-2.webp) | **Crowdsourcing Quality Control Flow**: Daniel et al. (2018) quality model detailing assessment techniques, quality attributes, and assurance actions. |
+| ![fig-3](../assets/2024-02-05-human-data-quality/fig-3.webp) | **Translation Evaluation Agreement**: Left: expert-expert vs. non-expert-expert agreement on translation. Right: BLEU comparison showing non-expert translations closely matching expert quality. |
+| ![fig-4](../assets/2024-02-05-human-data-quality/fig-4.webp) | **Topic-Specific Safety Correlation**: Agreement rates between experts and non-expert annotators on chat safety vary wildly across topics, dropping lowest on personal/nuanced dialogues. |
+| ![fig-5](../assets/2024-02-05-human-data-quality/fig-5.webp) | **Taxonomy of Rater Disagreement**: Causes categorized by individual errors (inattention, interface), cognitive difficulty (linguistic, task), and genuine diverse beliefs. |
+| ![fig-6](../assets/2024-02-05-human-data-quality/fig-6.webp) | **Multi-Annotator Architectures**: Structural diagrams comparing Single-task majority vote baselines, Ensembles, Multi-label outputs, and Multi-task heads. |
+| ![fig-7](../assets/2024-02-05-human-data-quality/fig-7.webp) | **Jury Learning Decision Pipeline**: Process of collecting demographically annotated labels, training individual juror predictors, and specifying a custom jury composition at runtime. |
+| ![fig-8](../assets/2024-02-05-human-data-quality/fig-8.webp) | **Deep & Cross Network (DCN) for Jurors**: DCN structure combining text embeddings (BERT) with annotator and group characteristic embeddings. |
+| ![fig-9](../assets/2024-02-05-human-data-quality/fig-9.webp) | **Jury Learning Performance**: Mean Absolute Error (MAE) comparing annotator-agnostic baselines with jury learning across multiple demographic splits. |
+| ![fig-10](../assets/2024-02-05-human-data-quality/fig-10.webp) | **Influence Function Validation**: Influence estimates $\mathcal{I}_{\text{up,loss}}$ compared to actual leave-one-out retraining validation on a 10-class MNIST dataset. |
+| ![fig-11](../assets/2024-02-05-human-data-quality/fig-11.webp) | **Dataset Cartography Map**: SNLI training dataset mapped along Confidence and Variability axes, dividing data into easy-to-learn, ambiguous, and hard-to-learn regions. |
+| ![fig-12](../assets/2024-02-05-human-data-quality/fig-12.webp) | **Data Map Trajectory under Label Flipping**: High-confidence, low-variability instances move down and right (low confidence, high variability) when their labels are flipped. |
+| ![fig-13](../assets/2024-02-05-human-data-quality/fig-13.webp) | **Area Under the Margin (AUM) Distribution**: Comparison of Margin distributions. AUM of randomly flipped samples sits significantly lower than clean samples, separated cleanly by threshold samples. |
+| ![fig-14](../assets/2024-02-05-human-data-quality/fig-14.webp) | **Test Error under AUM Pruning**: Retrained test error on CIFAR 10/100 as a function of noisy label removal, showing AUM pruners outperform standard baselines. |
+| ![fig-15](../assets/2024-02-05-human-data-quality/fig-15.webp) | **Iterative Noisy Cross-Validation (INCV)**: The flow of INCV using dual-split models to cross-evaluate clean candidates and prune noisy samples iteratively. |
 
-Reference figures inline as ![fig-1](../assets/2024-02-05-human-data-quality/fig-1.png) when mapping.
+Reference figures inline as ![fig-1](../assets/2024-02-05-human-data-quality/fig-1.webp) when mapping.
 
 ## Entities
 

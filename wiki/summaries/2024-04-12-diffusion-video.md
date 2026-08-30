@@ -1,6 +1,6 @@
 # Diffusion Models for Video Generation
 
-**Source**: `raw/2024-04-12-diffusion-video/full-article.html`, `raw/2024-04-12-diffusion-video/full-article.md`  
+**Source**: `raw/2024-04-12-diffusion-video/full-article.md`, `raw/2024-04-12-diffusion-video/full-article.md`  
 **Ingested**: 2026-05-22  
 **Tags**: #summary
 
@@ -37,21 +37,21 @@ To address these hurdles, the research community has evolved three primary model
 
 | Figure | Caption | Source Section |
 |--------|---------|----------------|
-| ![fig-1](../assets/2024-04-12-diffusion-video/fig-1.png) | Visualizing the diffusion update step in the angular coordinate, where DDIM evolves $\mathbf{z}_{\phi_s}$ by moving it along the $-\hat{\mathbf{v}}_{\phi_t}$ direction. | Video Generation from Scratch / Parameterization |
-| ![fig-2](../assets/2024-04-12-diffusion-video/fig-2.png) | The factorized 3D U-Net architecture separating spatial operations (convolutions, spatial attention) from temporal attention blocks. | Video Generation from Scratch / Architecture |
-| ![fig-3](../assets/2024-04-12-diffusion-video/fig-3.png) | The cascaded sampling pipeline of Imagen Video: base model followed by three temporal (TSR) and three spatial (SSR) super-resolution models. | Video Generation from Scratch / Imagen Video |
-| ![fig-4](../assets/2024-04-12-diffusion-video/fig-4.png) | The architecture of one space-time separable block in the Imagen Video model, featuring spatial convolution, spatial attention, and temporal attention. | Video Generation from Scratch / Imagen Video Block |
-| ![fig-5](../assets/2024-04-12-diffusion-video/fig-5.png) | Sora's Diffusion Transformer (DiT) architecture, which tokenizes visual inputs into spatiotemporal patches. | Video Generation from Scratch / Sora DiT |
-| ![fig-6](../assets/2024-04-12-diffusion-video/fig-6.png) | The Make-A-Video pipeline: text embeddings projected to prior, decoded to low-resolution frames, interpolated, and spatial-temporally upscaled. | Adapting Image Models / Make-A-Video |
-| ![fig-7](../assets/2024-04-12-diffusion-video/fig-7.png) | Pseudo-3D convolutions and attention blocks in Make-A-Video, stacking 1D temporal operations after 2D spatial ones. | Adapting Image Models / Pseudo-3D Blocks |
-| ![fig-8](../assets/2024-04-12-diffusion-video/fig-8.png) | Tune-A-Video one-shot tuning and inference pipeline, showing how ST-attention incorporates first-frame and previous-frame contexts. | Adapting Image Models / Tune-A-Video |
-| ![fig-9](../assets/2024-04-12-diffusion-video/fig-9.png) | Gen-1 training pipeline separating visual content conditioning (CLIP embeddings) from geometric structure conditioning (depth maps). | Adapting Image Models / Runway Gen-1 |
-| ![fig-10](../assets/2024-04-12-diffusion-video/fig-10.png) | Reshaping of latent sequences in Video LDM, interleaving frozen spatial blocks with newly inserted temporal attention and 3D convolutions. | Adapting Image Models / Video LDM |
-| ![fig-11](../assets/2024-04-12-diffusion-video/fig-11.png) | Fine-tuning the LDM autoencoder decoder with temporal layers and an across-frame discriminator to resolve independent frame flickering. | Adapting Image Models / Video LDM Decoder |
-| ![fig-12](../assets/2024-04-12-diffusion-video/fig-12.png) | Lumiere global Space-Time U-Net (STUNet) generating a complete sequence at once, compared to overlapping spatial-temporal super-resolution snippets. | Adapting Image Models / Lumiere |
-| ![fig-13](../assets/2024-04-12-diffusion-video/fig-13.png) | STUNet architecture details showing downsampling blocks in both spatial and temporal dimensions, and convolution/attention block designs. | Adapting Image Models / STUNet Details |
-| ![fig-14](../assets/2024-04-12-diffusion-video/fig-14.png) | Text2Video-Zero zero-shot, training-free video generation pipeline incorporating DDIM latent warping and cross-frame attention. | Training-Free Adaptation / Text2Video-Zero |
-| ![fig-15](../assets/2024-04-12-diffusion-video/fig-15.png) | ControlVideo controllable structure pipeline leveraging cross-frame attention, interleaved-frame smoothing, and hierarchical clip sampling. | Training-Free Adaptation / ControlVideo |
+| ![fig-1](../assets/2024-04-12-diffusion-video/fig-1.webp) | Visualizing the diffusion update step in the angular coordinate, where DDIM evolves $\mathbf{z}_{\phi_s}$ by moving it along the $-\hat{\mathbf{v}}_{\phi_t}$ direction. | Video Generation from Scratch / Parameterization |
+| ![fig-2](../assets/2024-04-12-diffusion-video/fig-2.webp) | The factorized 3D U-Net architecture separating spatial operations (convolutions, spatial attention) from temporal attention blocks. | Video Generation from Scratch / Architecture |
+| ![fig-3](../assets/2024-04-12-diffusion-video/fig-3.webp) | The cascaded sampling pipeline of Imagen Video: base model followed by three temporal (TSR) and three spatial (SSR) super-resolution models. | Video Generation from Scratch / Imagen Video |
+| ![fig-4](../assets/2024-04-12-diffusion-video/fig-4.webp) | The architecture of one space-time separable block in the Imagen Video model, featuring spatial convolution, spatial attention, and temporal attention. | Video Generation from Scratch / Imagen Video Block |
+| ![fig-5](../assets/2024-04-12-diffusion-video/fig-5.webp) | Sora's Diffusion Transformer (DiT) architecture, which tokenizes visual inputs into spatiotemporal patches. | Video Generation from Scratch / Sora DiT |
+| ![fig-6](../assets/2024-04-12-diffusion-video/fig-6.webp) | The Make-A-Video pipeline: text embeddings projected to prior, decoded to low-resolution frames, interpolated, and spatial-temporally upscaled. | Adapting Image Models / Make-A-Video |
+| ![fig-7](../assets/2024-04-12-diffusion-video/fig-7.webp) | Pseudo-3D convolutions and attention blocks in Make-A-Video, stacking 1D temporal operations after 2D spatial ones. | Adapting Image Models / Pseudo-3D Blocks |
+| ![fig-8](../assets/2024-04-12-diffusion-video/fig-8.webp) | Tune-A-Video one-shot tuning and inference pipeline, showing how ST-attention incorporates first-frame and previous-frame contexts. | Adapting Image Models / Tune-A-Video |
+| ![fig-9](../assets/2024-04-12-diffusion-video/fig-9.webp) | Gen-1 training pipeline separating visual content conditioning (CLIP embeddings) from geometric structure conditioning (depth maps). | Adapting Image Models / Runway Gen-1 |
+| ![fig-10](../assets/2024-04-12-diffusion-video/fig-10.webp) | Reshaping of latent sequences in Video LDM, interleaving frozen spatial blocks with newly inserted temporal attention and 3D convolutions. | Adapting Image Models / Video LDM |
+| ![fig-11](../assets/2024-04-12-diffusion-video/fig-11.webp) | Fine-tuning the LDM autoencoder decoder with temporal layers and an across-frame discriminator to resolve independent frame flickering. | Adapting Image Models / Video LDM Decoder |
+| ![fig-12](../assets/2024-04-12-diffusion-video/fig-12.webp) | Lumiere global Space-Time U-Net (STUNet) generating a complete sequence at once, compared to overlapping spatial-temporal super-resolution snippets. | Adapting Image Models / Lumiere |
+| ![fig-13](../assets/2024-04-12-diffusion-video/fig-13.webp) | STUNet architecture details showing downsampling blocks in both spatial and temporal dimensions, and convolution/attention block designs. | Adapting Image Models / STUNet Details |
+| ![fig-14](../assets/2024-04-12-diffusion-video/fig-14.webp) | Text2Video-Zero zero-shot, training-free video generation pipeline incorporating DDIM latent warping and cross-frame attention. | Training-Free Adaptation / Text2Video-Zero |
+| ![fig-15](../assets/2024-04-12-diffusion-video/fig-15.webp) | ControlVideo controllable structure pipeline leveraging cross-frame attention, interleaved-frame smoothing, and hierarchical clip sampling. | Training-Free Adaptation / ControlVideo |
 
 ---
 
@@ -59,15 +59,15 @@ To address these hurdles, the research community has evolved three primary model
 
 The trigonometric velocity formulation can be visualized as an angular rotation in the coordinate space:
 
-![fig-1](../assets/2024-04-12-diffusion-video/fig-1.png)
+![fig-1](../assets/2024-04-12-diffusion-video/fig-1.webp)
 
 When performing image model inflation, instead of full 3D spatiotemporal operations, pseudo-3D blocks stack 1D temporal convolutions immediately following pre-trained 2D spatial layers:
 
-![fig-7](../assets/2024-04-12-diffusion-video/fig-7.png)
+![fig-7](../assets/2024-04-12-diffusion-video/fig-7.webp)
 
 Lumiere addresses the artifacts caused by spatial-temporal super-resolution snippets (top) by modeling the entire sequence at once using a global Space-Time U-Net (bottom):
 
-![fig-12](../assets/2024-04-12-diffusion-video/fig-12.png)
+![fig-12](../assets/2024-04-12-diffusion-video/fig-12.webp)
 
 ---
 

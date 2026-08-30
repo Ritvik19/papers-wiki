@@ -1,6 +1,6 @@
 # Gemini 3 Deep Think
 
-**Source**: `raw/gemini-3-deep-think/full-article.html`; Also: `raw/gemini-3-deep-think-app/`  
+**Source**: `raw/gemini-3-deep-think/full-article.md`; Also: `raw/gemini-3-deep-think-app/`  
 **URL**: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

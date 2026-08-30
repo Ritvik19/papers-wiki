@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-01-05_Papers-Explained-86--Dense-Passage-Retriever-c4742fdf27ed.html`
+- Source file: `raw/2024-01-05_Papers-Explained-86--Dense-Passage-Retriever-c4742fdf27ed.md`
 - Source title: Papers Explained 86: Dense Passage Retriever
 - Published: 2024-01-05
 - Canonical: [https://medium.com/@ritvik19/papers-explained-86-dense-passage-retriever-c4742fdf27ed](https://medium.com/@ritvik19/papers-explained-86-dense-passage-retriever-c4742fdf27ed)
@@ -105,15 +105,15 @@ Recommended Reading: [Retrieval and Representation Learning](https://ritvik19.me
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-01-05_Papers-Explained-86--Dense-Passage-Retriever-c4742fdf27ed.html`); local copies under `wiki/assets/papers-explained-86-dense-passage-retriever/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-01-05_Papers-Explained-86--Dense-Passage-Retriever-c4742fdf27ed.md`); local copies under `wiki/assets/papers-explained-86-dense-passage-retriever/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-86-dense-passage-retriever/fig-1.png) | Title card: Dense Passage Retriever. |
-| ![Figure 2](assets/papers-explained-86-dense-passage-retriever/fig-2.png) | Although in principle the question and passage encoders can be implemented by any neural networks, this work uses two independent BERT... |
-| ![Figure 3](assets/papers-explained-86-dense-passage-retriever/fig-3.png) | Let D = {qi, p+i, p− i,1, · · ·, p− i,n}m i=1 be the training data that consists of m instances. |
-| ![Figure 4](assets/papers-explained-86-dense-passage-retriever/fig-4.png) | Number of questions in each QA dataset. The two columns of Train denote the original training examples in the dataset and the actual questions used for training DPR after filtering. |
-| ![Figure 5](assets/papers-explained-86-dense-passage-retriever/fig-5.png) | DPR is evaluated against BM25 and a hybrid approach, BM25+DPR, using BM25(q,p) + λ · sim(q, p) as the ranking function. |
+| ![Figure 1](assets/papers-explained-86-dense-passage-retriever/fig-1.webp) | Title card: Dense Passage Retriever. |
+| ![Figure 2](assets/papers-explained-86-dense-passage-retriever/fig-2.webp) | Although in principle the question and passage encoders can be implemented by any neural networks, this work uses two independent BERT... |
+| ![Figure 3](assets/papers-explained-86-dense-passage-retriever/fig-3.webp) | Let D = {qi, p+i, p− i,1, · · ·, p− i,n}m i=1 be the training data that consists of m instances. |
+| ![Figure 4](assets/papers-explained-86-dense-passage-retriever/fig-4.webp) | Number of questions in each QA dataset. The two columns of Train denote the original training examples in the dataset and the actual questions used for training DPR after filtering. |
+| ![Figure 5](assets/papers-explained-86-dense-passage-retriever/fig-5.webp) | DPR is evaluated against BM25 and a hybrid approach, BM25+DPR, using BM25(q,p) + λ · sim(q, p) as the ranking function. |
 ## Related
 
 - [[Papers Explained Corpus]]

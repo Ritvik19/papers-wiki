@@ -1,6 +1,6 @@
 # Mistral NeMo
 
-**Source**: `raw/mistral-nemo/full-article.html` (216 KB), `raw/mistral-nemo/full-article.md` (markdown view)  
+**Source**: `raw/mistral-nemo/full-article.md` (216 KB), `raw/mistral-nemo/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/mistral-nemo/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -28,12 +28,12 @@ Instruction tuning improves precise instruction-following, reasoning, multi-turn
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/mistral-nemo/fig-1.png) | Base model performance vs. Gemma 2 9B and Llama 3 8B | — |
-| ![fig-2](../assets/mistral-nemo/fig-2.png) | Multilingual benchmark performance | — |
-| ![fig-3](../assets/mistral-nemo/fig-3.png) | Tekken tokenizer compression rate vs. SentencePiece and Llama 3 | — |
-| ![fig-4](../assets/mistral-nemo/fig-4.png) | Instruction-tuned model accuracy (GPT-4o judge) | — |
+| ![fig-1](../assets/mistral-nemo/fig-1.webp) | Base model performance vs. Gemma 2 9B and Llama 3 8B | — |
+| ![fig-2](../assets/mistral-nemo/fig-2.webp) | Multilingual benchmark performance | — |
+| ![fig-3](../assets/mistral-nemo/fig-3.webp) | Tekken tokenizer compression rate vs. SentencePiece and Llama 3 | — |
+| ![fig-4](../assets/mistral-nemo/fig-4.webp) | Instruction-tuned model accuracy (GPT-4o judge) | — |
 
-![Base model benchmark comparison](../assets/mistral-nemo/fig-1.png)
+![Base model benchmark comparison](../assets/mistral-nemo/fig-1.webp)
 
 ## Entities
 

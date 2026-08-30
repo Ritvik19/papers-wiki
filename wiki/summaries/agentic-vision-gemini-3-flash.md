@@ -1,6 +1,6 @@
 # Agentic Vision in Gemini 3 Flash
 
-**Source**: `raw/agentic-vision-gemini-3-flash/full-article.html`  
+**Source**: `raw/agentic-vision-gemini-3-flash/full-article.md`  
 **URL**: https://blog.google/innovation-and-ai/technology/developers-tools/agentic-vision-gemini-3-flash/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

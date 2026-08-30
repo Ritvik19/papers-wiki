@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-01-15_Papers-Explained-90--E5-75ea1519efad.html`
+- Source file: `raw/2024-01-15_Papers-Explained-90--E5-75ea1519efad.md`
 - Source title: Papers Explained 90: E5
 - Published: 2024-01-15
 - Canonical: [https://medium.com/@ritvik19/papers-explained-90-e5-75ea1519efad](https://medium.com/@ritvik19/papers-explained-90-e5-75ea1519efad)
@@ -99,19 +99,19 @@ Recommended Reading: [Retrieval and Representation Learning](https://ritvik19.me
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-01-15_Papers-Explained-90--E5-75ea1519efad.html`); local copies under `wiki/assets/papers-explained-90-e5/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-01-15_Papers-Explained-90--E5-75ea1519efad.md`); local copies under `wiki/assets/papers-explained-90-e5/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-90-e5/fig-1.png) | Title card: E5. |
-| ![Figure 2](assets/papers-explained-90-e5/fig-2.png) | Overview of data curation pipeline. |
-| ![Figure 3](assets/papers-explained-90-e5/fig-3.png) | Overview of Model Architecture. |
-| ![Figure 4](assets/papers-explained-90-e5/fig-4.png) | Contrastive pre-training aims to distinguish the relevant text pairs from other irrelevant or negative pairs. |
-| ![Figure 5](assets/papers-explained-90-e5/fig-5.png) | where sθ(q, p) is a scoring function between query q and passage p parameterized by θ. |
-| ![Figure 6](assets/papers-explained-90-e5/fig-6.png) | Model configurations. |
-| ![Figure 7](assets/papers-explained-90-e5/fig-7.png) | Unsupervised methods on the BEIR benchmark. |
-| ![Figure 8](assets/papers-explained-90-e5/fig-8.png) | Supervised fine-tuning results on the BEIR benchmark. |
-| ![Figure 9](assets/papers-explained-90-e5/fig-9.png) | Results on the MTEB benchmark. |
+| ![Figure 1](assets/papers-explained-90-e5/fig-1.webp) | Title card: E5. |
+| ![Figure 2](assets/papers-explained-90-e5/fig-2.webp) | Overview of data curation pipeline. |
+| ![Figure 3](assets/papers-explained-90-e5/fig-3.webp) | Overview of Model Architecture. |
+| ![Figure 4](assets/papers-explained-90-e5/fig-4.webp) | Contrastive pre-training aims to distinguish the relevant text pairs from other irrelevant or negative pairs. |
+| ![Figure 5](assets/papers-explained-90-e5/fig-5.webp) | where sθ(q, p) is a scoring function between query q and passage p parameterized by θ. |
+| ![Figure 6](assets/papers-explained-90-e5/fig-6.webp) | Model configurations. |
+| ![Figure 7](assets/papers-explained-90-e5/fig-7.webp) | Unsupervised methods on the BEIR benchmark. |
+| ![Figure 8](assets/papers-explained-90-e5/fig-8.webp) | Supervised fine-tuning results on the BEIR benchmark. |
+| ![Figure 9](assets/papers-explained-90-e5/fig-9.webp) | Results on the MTEB benchmark. |
 ## Related
 
 - [[Papers Explained Corpus]]

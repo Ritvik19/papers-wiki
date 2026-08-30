@@ -1,6 +1,6 @@
 # Gemma 4 MTP Overview
 
-**Source**: `raw/gemma-4-mtp-overview/full-article.html` (136 KB)  
+**Source**: `raw/gemma-4-mtp-overview/full-article.md` (136 KB)  
 **URL**: https://ai.google.dev/gemma/docs/mtp/overview  
 **Ingested**: 2026-07-12  
 **Tags**: #summary

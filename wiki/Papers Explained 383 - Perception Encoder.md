@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-06-09_Papers-Explained-383--Perception-Encoder-86dda5791ddf.html`
+- Source file: `raw/2025-06-09_Papers-Explained-383--Perception-Encoder-86dda5791ddf.md`
 - Source title: Papers Explained 383: Perception Encoder
 - Published: 2025-06-09
 - Canonical: [https://medium.com/@ritvik19/papers-explained-383-perception-encoder-86dda5791ddf](https://medium.com/@ritvik19/papers-explained-383-perception-encoder-86dda5791ddf)
@@ -229,28 +229,28 @@ Perception Encoder: The best visual embeddings are not at the output of the netw
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-06-09_Papers-Explained-383--Perception-Encoder-86dda5791ddf.html`); local copies under `wiki/assets/papers-explained-383-perception-encoder/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-06-09_Papers-Explained-383--Perception-Encoder-86dda5791ddf.md`); local copies under `wiki/assets/papers-explained-383-perception-encoder/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-383-perception-encoder/fig-1.png) | Title card: Perception Encoder. |
-| ![Figure 2](assets/papers-explained-383-perception-encoder/fig-2.png) | Perception Encoder. |
-| ![Figure 3](assets/papers-explained-383-perception-encoder/fig-3.png) | Robust Image Pretraining. |
-| ![Figure 4](assets/papers-explained-383-perception-encoder/fig-4.png) | Video Data Engine. |
-| ![Figure 5](assets/papers-explained-383-perception-encoder/fig-5.png) | PE Model Configurations. |
-| ![Figure 6](assets/papers-explained-383-perception-encoder/fig-6.png) | Language Alignment. |
-| ![Figure 7](assets/papers-explained-383-perception-encoder/fig-7.png) | Language Alignment. |
-| ![Figure 8](assets/papers-explained-383-perception-encoder/fig-8.png) | SAM 2.1 Feature Similarity. |
-| ![Figure 9](assets/papers-explained-383-perception-encoder/fig-9.png) | Zero-Shot Image Results. |
-| ![Figure 10](assets/papers-explained-383-perception-encoder/fig-10.png) | Zero-Shot Video Results. |
-| ![Figure 11](assets/papers-explained-383-perception-encoder/fig-11.png) | Additional Zero-Shot Results. |
-| ![Figure 12](assets/papers-explained-383-perception-encoder/fig-12.png) | Encoder Probing Results. |
-| ![Figure 13](assets/papers-explained-383-perception-encoder/fig-13.png) | MLLM Results with Llama 3.1 8B. |
-| ![Figure 14](assets/papers-explained-383-perception-encoder/fig-14.png) | MLLM Results with QwenLM 2.5 7B. |
-| ![Figure 15](assets/papers-explained-383-perception-encoder/fig-15.png) | MLLM System-Level Comparison. |
-| ![Figure 16](assets/papers-explained-383-perception-encoder/fig-16.png) | Frozen Feature Dense Prediction. |
-| ![Figure 17](assets/papers-explained-383-perception-encoder/fig-17.png) | End-to-End Finetuning Detection and Segmentation. |
-| ![Figure 18](assets/papers-explained-383-perception-encoder/fig-18.png) | System-Level Comparison on Detection. |
+| ![Figure 1](assets/papers-explained-383-perception-encoder/fig-1.webp) | Title card: Perception Encoder. |
+| ![Figure 2](assets/papers-explained-383-perception-encoder/fig-2.webp) | Perception Encoder. |
+| ![Figure 3](assets/papers-explained-383-perception-encoder/fig-3.webp) | Robust Image Pretraining. |
+| ![Figure 4](assets/papers-explained-383-perception-encoder/fig-4.webp) | Video Data Engine. |
+| ![Figure 5](assets/papers-explained-383-perception-encoder/fig-5.webp) | PE Model Configurations. |
+| ![Figure 6](assets/papers-explained-383-perception-encoder/fig-6.webp) | Language Alignment. |
+| ![Figure 7](assets/papers-explained-383-perception-encoder/fig-7.webp) | Language Alignment. |
+| ![Figure 8](assets/papers-explained-383-perception-encoder/fig-8.webp) | SAM 2.1 Feature Similarity. |
+| ![Figure 9](assets/papers-explained-383-perception-encoder/fig-9.webp) | Zero-Shot Image Results. |
+| ![Figure 10](assets/papers-explained-383-perception-encoder/fig-10.webp) | Zero-Shot Video Results. |
+| ![Figure 11](assets/papers-explained-383-perception-encoder/fig-11.webp) | Additional Zero-Shot Results. |
+| ![Figure 12](assets/papers-explained-383-perception-encoder/fig-12.webp) | Encoder Probing Results. |
+| ![Figure 13](assets/papers-explained-383-perception-encoder/fig-13.webp) | MLLM Results with Llama 3.1 8B. |
+| ![Figure 14](assets/papers-explained-383-perception-encoder/fig-14.webp) | MLLM Results with QwenLM 2.5 7B. |
+| ![Figure 15](assets/papers-explained-383-perception-encoder/fig-15.webp) | MLLM System-Level Comparison. |
+| ![Figure 16](assets/papers-explained-383-perception-encoder/fig-16.webp) | Frozen Feature Dense Prediction. |
+| ![Figure 17](assets/papers-explained-383-perception-encoder/fig-17.webp) | End-to-End Finetuning Detection and Segmentation. |
+| ![Figure 18](assets/papers-explained-383-perception-encoder/fig-18.webp) | System-Level Comparison on Detection. |
 ## Related
 
 - [[Papers Explained Corpus]]

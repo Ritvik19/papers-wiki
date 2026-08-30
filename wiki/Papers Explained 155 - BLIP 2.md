@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-06-26_Papers-Explained-155--BLIP-2-135fff70bf65.html`
+- Source file: `raw/2024-06-26_Papers-Explained-155--BLIP-2-135fff70bf65.md`
 - Source title: Papers Explained 155: BLIP 2
 - Published: 2024-06-26
 - Canonical: [https://medium.com/@ritvik19/papers-explained-155-blip-2-135fff70bf65](https://medium.com/@ritvik19/papers-explained-155-blip-2-135fff70bf65)
@@ -139,20 +139,20 @@ Recommended Reading [Multi Modal Transformers](https://ritvik19.medium.com/list/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-06-26_Papers-Explained-155--BLIP-2-135fff70bf65.html`); local copies under `wiki/assets/papers-explained-155-blip-2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-06-26_Papers-Explained-155--BLIP-2-135fff70bf65.md`); local copies under `wiki/assets/papers-explained-155-blip-2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-155-blip-2/fig-1.png) | Title page of *BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models* (Salesforce Research). |
-| ![Figure 2](assets/papers-explained-155-blip-2/fig-2.png) | Two-stage blueprint: (left) frozen ViT + trainable Q-Former for vision-language representation; (right) frozen LLM conditioned on projected queries for open-ended generation. |
-| ![Figure 3](assets/papers-explained-155-blip-2/fig-3.png) | Q-Former internals: learned queries cross-attend frozen image patches while a parallel text tower supports ITC, ITG, and ITM heads under shared self-attention machinery. |
-| ![Figure 4](assets/papers-explained-155-blip-2/fig-4.png) | Query–text self-attention masks for ITM (bidirectional), image-grounded text generation (multimodal causal), and ITC (uni-modal blocks). |
-| ![Figure 5](assets/papers-explained-155-blip-2/fig-5.png) | Stage-2 wiring for decoder-only LLMs (e.g. OPT) vs encoder–decoder LLMs (e.g. FlanT5): linear projection of queries into LLM token space as soft visual prompts / prefixes. |
-| ![Figure 6](assets/papers-explained-155-blip-2/fig-6.png) | Zero-shot VQA comparison: trainable/total params vs VQAv2, OK-VQA, GQA for Flamingo-scale baselines and BLIP-2 variants (ViT-L/g × OPT/FlanT5). |
-| ![Figure 7](assets/papers-explained-155-blip-2/fig-7.png) | Image captioning leaderboard: NoCaps zero-shot (domain splits + overall) and Karpathy COCO fine-tune BLEU/CIDEr vs OSCAR, VinVL, BLIP, OFA, Flamingo, SimVLM, BLIP-2. |
-| ![Figure 8](assets/papers-explained-155-blip-2/fig-8.png) | Fine-tuned VQAv2 test-dev/test-std for open-ended generative models vs closed-classifier heads—BLIP-2 OPT$_\mathrm{6.7B}$ leads generative rows; BEIT-3 tops closed-set. |
-| ![Figure 9](assets/papers-explained-155-blip-2/fig-9.png) | Image–text retrieval: dual-encoder, fusion, and BLIP-style rerankers on Flickr30K zero-shot and COCO fine-tune with bidirectional R@1/5/10. |
-| ![Figure 10](assets/papers-explained-155-blip-2/fig-10.png) | COCO retrieval ablation: adding image-grounded generation (**ITG**) to **ITC+ITM** finetuning boosts image→text and text→image R@1/R@5. |
+| ![Figure 1](assets/papers-explained-155-blip-2/fig-1.webp) | Title page of *BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models* (Salesforce Research). |
+| ![Figure 2](assets/papers-explained-155-blip-2/fig-2.webp) | Two-stage blueprint: (left) frozen ViT + trainable Q-Former for vision-language representation; (right) frozen LLM conditioned on projected queries for open-ended generation. |
+| ![Figure 3](assets/papers-explained-155-blip-2/fig-3.webp) | Q-Former internals: learned queries cross-attend frozen image patches while a parallel text tower supports ITC, ITG, and ITM heads under shared self-attention machinery. |
+| ![Figure 4](assets/papers-explained-155-blip-2/fig-4.webp) | Query–text self-attention masks for ITM (bidirectional), image-grounded text generation (multimodal causal), and ITC (uni-modal blocks). |
+| ![Figure 5](assets/papers-explained-155-blip-2/fig-5.webp) | Stage-2 wiring for decoder-only LLMs (e.g. OPT) vs encoder–decoder LLMs (e.g. FlanT5): linear projection of queries into LLM token space as soft visual prompts / prefixes. |
+| ![Figure 6](assets/papers-explained-155-blip-2/fig-6.webp) | Zero-shot VQA comparison: trainable/total params vs VQAv2, OK-VQA, GQA for Flamingo-scale baselines and BLIP-2 variants (ViT-L/g × OPT/FlanT5). |
+| ![Figure 7](assets/papers-explained-155-blip-2/fig-7.webp) | Image captioning leaderboard: NoCaps zero-shot (domain splits + overall) and Karpathy COCO fine-tune BLEU/CIDEr vs OSCAR, VinVL, BLIP, OFA, Flamingo, SimVLM, BLIP-2. |
+| ![Figure 8](assets/papers-explained-155-blip-2/fig-8.webp) | Fine-tuned VQAv2 test-dev/test-std for open-ended generative models vs closed-classifier heads—BLIP-2 OPT$_\mathrm{6.7B}$ leads generative rows; BEIT-3 tops closed-set. |
+| ![Figure 9](assets/papers-explained-155-blip-2/fig-9.webp) | Image–text retrieval: dual-encoder, fusion, and BLIP-style rerankers on Flickr30K zero-shot and COCO fine-tune with bidirectional R@1/5/10. |
+| ![Figure 10](assets/papers-explained-155-blip-2/fig-10.webp) | COCO retrieval ablation: adding image-grounded generation (**ITG**) to **ITC+ITM** finetuning boosts image→text and text→image R@1/R@5. |
 ## Related
 
 - [[Papers Explained Corpus]]

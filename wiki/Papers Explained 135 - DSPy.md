@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-05-10_Papers-Explained-135--DSPy-fe8af7e35091.html`
+- Source file: `raw/2024-05-10_Papers-Explained-135--DSPy-fe8af7e35091.md`
 - Source title: Papers Explained 135: DSPy
 - Published: 2024-05-10
 - Canonical: [https://medium.com/@ritvik19/papers-explained-135-dspy-fe8af7e35091](https://medium.com/@ritvik19/papers-explained-135-dspy-fe8af7e35091)
@@ -256,12 +256,12 @@ DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines [
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-05-10_Papers-Explained-135--DSPy-fe8af7e35091.html`); local copies under `wiki/assets/papers-explained-135-dspy/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-05-10_Papers-Explained-135--DSPy-fe8af7e35091.md`); local copies under `wiki/assets/papers-explained-135-dspy/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-135-dspy/fig-1.png) | Title page of *DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines*. |
-| ![Figure 2](assets/papers-explained-135-dspy/fig-2.png) | GSM8K in-context learning accuracies for vanilla, Chain-of-Thought, and reflection-style DSPy programs under different compilation strategies for GPT-3.5 and Llama 2–13B-chat (dev/test splits). |
+| ![Figure 1](assets/papers-explained-135-dspy/fig-1.webp) | Title page of *DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines*. |
+| ![Figure 2](assets/papers-explained-135-dspy/fig-2.webp) | GSM8K in-context learning accuracies for vanilla, Chain-of-Thought, and reflection-style DSPy programs under different compilation strategies for GPT-3.5 and Llama 2–13B-chat (dev/test splits). |
 ## Related
 
 - [[Papers Explained Corpus]]

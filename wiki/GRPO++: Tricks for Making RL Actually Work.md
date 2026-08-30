@@ -1,6 +1,6 @@
 # GRPO++: Tricks for Making RL Actually Work
 
-**Source**: `raw/grpo-tricks/full-article.html` (928 KB HTML) · `raw/grpo-tricks/full-article.md` (markdown view)  
+**Source**: `raw/grpo-tricks/full-article.md` (928 KB HTML) · `raw/grpo-tricks/full-article.md` (markdown view)  
 **URL**: https://cameronrwolfe.substack.com/p/grpo-tricks  
 **Author**: Cameron R. Wolfe, Ph.D. (Deep (Learning) Focus newsletter)  
 **Ingested**: 2026-05-11  
@@ -34,16 +34,16 @@ Throughout, the article emphasizes that healthy RL training can be monitored via
 
 | Figure | Caption | Notes |
 |--------|---------|-------|
-| ![fig-1](../assets/grpo-tricks/fig-1.png) | RL training pipeline overview (RLHF vs. RLVR) | Intro section |
-| ![fig-2](../assets/grpo-tricks/fig-2.png) | RLVR verifiable reward setup (string matching for math) | RLVR section |
-| ![fig-3](../assets/grpo-tricks/fig-3.png) | Reasoning model training stages with RL-Zero | Training stages |
-| ![fig-4](../assets/grpo-tricks/fig-4.png) | PPO surrogate objective with clipping | PPO section |
-| ![fig-5](../assets/grpo-tricks/fig-5.png) | GRPO advantage estimation formula | GRPO section |
-| ![fig-6](../assets/grpo-tricks/fig-6.png) | DAPO health metrics (entropy, reward, response length) | DAPO analysis |
-| ![fig-7](../assets/grpo-tricks/fig-7.png) | Entropy collapse from symmetric clipping | Clip higher motivation |
-| ![fig-8](../assets/grpo-tricks/fig-8.png) | DAPO AIME 2024 accuracy vs. vanilla GRPO | DAPO experiments |
-| ![fig-9](../assets/grpo-tricks/fig-9.png) | GRPO length bias — incorrect responses grow longer | Dr. GRPO analysis |
-| ![fig-10](../assets/grpo-tricks/fig-10.png) | Token probability mismatch between sampler/learner engines | Off-policy engine gap |
+| ![fig-1](../assets/grpo-tricks/fig-1.webp) | RL training pipeline overview (RLHF vs. RLVR) | Intro section |
+| ![fig-2](../assets/grpo-tricks/fig-2.webp) | RLVR verifiable reward setup (string matching for math) | RLVR section |
+| ![fig-3](../assets/grpo-tricks/fig-3.webp) | Reasoning model training stages with RL-Zero | Training stages |
+| ![fig-4](../assets/grpo-tricks/fig-4.webp) | PPO surrogate objective with clipping | PPO section |
+| ![fig-5](../assets/grpo-tricks/fig-5.webp) | GRPO advantage estimation formula | GRPO section |
+| ![fig-6](../assets/grpo-tricks/fig-6.webp) | DAPO health metrics (entropy, reward, response length) | DAPO analysis |
+| ![fig-7](../assets/grpo-tricks/fig-7.webp) | Entropy collapse from symmetric clipping | Clip higher motivation |
+| ![fig-8](../assets/grpo-tricks/fig-8.webp) | DAPO AIME 2024 accuracy vs. vanilla GRPO | DAPO experiments |
+| ![fig-9](../assets/grpo-tricks/fig-9.webp) | GRPO length bias — incorrect responses grow longer | Dr. GRPO analysis |
+| ![fig-10](../assets/grpo-tricks/fig-10.webp) | Token probability mismatch between sampler/learner engines | Off-policy engine gap |
 
 ## Entities
 

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-01-20_Papers-Explained-291--Multiagent-Debate-1a1693d5fa5e.html`
+- Source file: `raw/2025-01-20_Papers-Explained-291--Multiagent-Debate-1a1693d5fa5e.md`
 - Source title: Papers Explained 291: Multiagent Debate
 - Published: 2025-01-20
 - Canonical: [https://medium.com/@ritvik19/papers-explained-291-multiagent-debate-1a1693d5fa5e](https://medium.com/@ritvik19/papers-explained-291-multiagent-debate-1a1693d5fa5e)
@@ -73,18 +73,18 @@ Improving Factuality and Reasoning in Language Models through Multiagent Debate 
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-01-20_Papers-Explained-291--Multiagent-Debate-1a1693d5fa5e.html`); local copies under `wiki/assets/papers-explained-291-multiagent-debate/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-01-20_Papers-Explained-291--Multiagent-Debate-1a1693d5fa5e.md`); local copies under `wiki/assets/papers-explained-291-multiagent-debate/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-291-multiagent-debate/fig-1.png) | Title card: Multiagent Debate. |
-| ![Figure 2](assets/papers-explained-291-multiagent-debate/fig-2.png) | Illustration of Debate. |
-| ![Figure 3](assets/papers-explained-291-multiagent-debate/fig-3.png) | Prompts to induce long and short form debate. |
-| ![Figure 4](assets/papers-explained-291-multiagent-debate/fig-4.png) | Multiagent Debate Improves Reasoning. |
-| ![Figure 5](assets/papers-explained-291-multiagent-debate/fig-5.png) | Illustration of Solving Math. |
-| ![Figure 6](assets/papers-explained-291-multiagent-debate/fig-6.png) | Synergy with Other Methods. |
-| ![Figure 7](assets/papers-explained-291-multiagent-debate/fig-7.png) | Multiagent Debate Improves Factual Accuracy. |
-| ![Figure 8](assets/papers-explained-291-multiagent-debate/fig-8.png) | Expressing Uncertainty with Multiple Answers. |
+| ![Figure 1](assets/papers-explained-291-multiagent-debate/fig-1.webp) | Title card: Multiagent Debate. |
+| ![Figure 2](assets/papers-explained-291-multiagent-debate/fig-2.webp) | Illustration of Debate. |
+| ![Figure 3](assets/papers-explained-291-multiagent-debate/fig-3.webp) | Prompts to induce long and short form debate. |
+| ![Figure 4](assets/papers-explained-291-multiagent-debate/fig-4.webp) | Multiagent Debate Improves Reasoning. |
+| ![Figure 5](assets/papers-explained-291-multiagent-debate/fig-5.webp) | Illustration of Solving Math. |
+| ![Figure 6](assets/papers-explained-291-multiagent-debate/fig-6.webp) | Synergy with Other Methods. |
+| ![Figure 7](assets/papers-explained-291-multiagent-debate/fig-7.webp) | Multiagent Debate Improves Factual Accuracy. |
+| ![Figure 8](assets/papers-explained-291-multiagent-debate/fig-8.webp) | Expressing Uncertainty with Multiple Answers. |
 ## Related
 
 - [[Papers Explained Corpus]]

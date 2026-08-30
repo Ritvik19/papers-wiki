@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-11-10_Papers-Explained-489--UserLM-33c5a51525bd.html`
+- Source file: `raw/2025-11-10_Papers-Explained-489--UserLM-33c5a51525bd.md`
 - Source title: Papers Explained 489: UserLM
 - Published: 2025-11-10
 - Canonical: [https://medium.com/@ritvik19/papers-explained-489-userlm-33c5a51525bd](https://medium.com/@ritvik19/papers-explained-489-userlm-33c5a51525bd)
@@ -195,16 +195,16 @@ Flipping the Dialogue: Training and Evaluating User Language Models [2510.06552]
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-11-10_Papers-Explained-489--UserLM-33c5a51525bd.html`); local copies under `wiki/assets/papers-explained-489-userlm/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-11-10_Papers-Explained-489--UserLM-33c5a51525bd.md`); local copies under `wiki/assets/papers-explained-489-userlm/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-489-userlm/fig-1.png) | Title card: UserLM. |
-| ![Figure 2](assets/papers-explained-489-userlm/fig-2.png) | Diagram illustrating the approach to train a UserLM. |
-| ![Figure 3](assets/papers-explained-489-userlm/fig-3.png) | Perplexity (PPL) of prompted and trained models. |
-| ![Figure 4](assets/papers-explained-489-userlm/fig-4.png) | Comparison of different training setups for the user LMs. |
-| ![Figure 5](assets/papers-explained-489-userlm/fig-5.png) | Results of user simulators based on prompted assistant LMs and trained user LMs. |
-| ![Figure 6](assets/papers-explained-489-userlm/fig-6.png) | Summary of results from simulated conversations. |
+| ![Figure 1](assets/papers-explained-489-userlm/fig-1.webp) | Title card: UserLM. |
+| ![Figure 2](assets/papers-explained-489-userlm/fig-2.webp) | Diagram illustrating the approach to train a UserLM. |
+| ![Figure 3](assets/papers-explained-489-userlm/fig-3.webp) | Perplexity (PPL) of prompted and trained models. |
+| ![Figure 4](assets/papers-explained-489-userlm/fig-4.webp) | Comparison of different training setups for the user LMs. |
+| ![Figure 5](assets/papers-explained-489-userlm/fig-5.webp) | Results of user simulators based on prompted assistant LMs and trained user LMs. |
+| ![Figure 6](assets/papers-explained-489-userlm/fig-6.webp) | Summary of results from simulated conversations. |
 ## Related
 
 - [[Papers Explained Corpus]]

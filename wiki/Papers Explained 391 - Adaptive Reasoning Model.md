@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-06-19_Papers-Explained-391--Adaptive-Reasoning-Model-9aacae6918a9.html`
+- Source file: `raw/2025-06-19_Papers-Explained-391--Adaptive-Reasoning-Model-9aacae6918a9.md`
 - Source title: Papers Explained 391: Adaptive Reasoning Model
 - Published: 2025-06-19
 - Canonical: [https://medium.com/@ritvik19/papers-explained-391-adaptive-reasoning-model-9aacae6918a9](https://medium.com/@ritvik19/papers-explained-391-adaptive-reasoning-model-9aacae6918a9)
@@ -123,20 +123,20 @@ ARM: Adaptive Reasoning Model [2505.20258](https://arxiv.org/abs/2505.20258)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-06-19_Papers-Explained-391--Adaptive-Reasoning-Model-9aacae6918a9.html`); local copies under `wiki/assets/papers-explained-391-adaptive-reasoning-model/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-06-19_Papers-Explained-391--Adaptive-Reasoning-Model-9aacae6918a9.md`); local copies under `wiki/assets/papers-explained-391-adaptive-reasoning-model/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-391-adaptive-reasoning-model/fig-1.png) | Title card: Adaptive Reasoning Model. |
-| ![Figure 2](assets/papers-explained-391-adaptive-reasoning-model/fig-2.png) | Traditional GRPO. |
-| ![Figure 3](assets/papers-explained-391-adaptive-reasoning-model/fig-3.png) | Reward Scaling: The reward ( r_i ) is scaled to ( r’_i ) to prevent the disappearance of less frequently sampled reasoning formats. |
-| ![Figure 4](assets/papers-explained-391-adaptive-reasoning-model/fig-4.png) | Format Diversity Scaling Factor: ( alpha_i(t) ) is defined as. |
-| ![Figure 5](assets/papers-explained-391-adaptive-reasoning-model/fig-5.png) | Decay Factor: The decay factor ( \text{decay}_i(t) ) is introduced to gradually reduce the influence of diversity over time. |
-| ![Figure 6](assets/papers-explained-391-adaptive-reasoning-model/fig-6.png) | Group Advantage Calculation: The group advantage for all tokens in each output is computed based on the group of reshaped rewards. |
-| ![Figure 7](assets/papers-explained-391-adaptive-reasoning-model/fig-7.png) | Objective Function: The model is optimized by maximizing the following objective. |
-| ![Figure 8](assets/papers-explained-391-adaptive-reasoning-model/fig-8.png) | Performance of various models across evaluation datasets. |
-| ![Figure 9](assets/papers-explained-391-adaptive-reasoning-model/fig-9.png) | Format distribution by task difficulty with Qwen2.5–7B. |
-| ![Figure 10](assets/papers-explained-391-adaptive-reasoning-model/fig-10.png) | Accuracy (Acc.) and token usage (Tok.) for the three reasoning modes supported by ARM-7B. |
+| ![Figure 1](assets/papers-explained-391-adaptive-reasoning-model/fig-1.webp) | Title card: Adaptive Reasoning Model. |
+| ![Figure 2](assets/papers-explained-391-adaptive-reasoning-model/fig-2.webp) | Traditional GRPO. |
+| ![Figure 3](assets/papers-explained-391-adaptive-reasoning-model/fig-3.webp) | Reward Scaling: The reward ( r_i ) is scaled to ( r’_i ) to prevent the disappearance of less frequently sampled reasoning formats. |
+| ![Figure 4](assets/papers-explained-391-adaptive-reasoning-model/fig-4.webp) | Format Diversity Scaling Factor: ( alpha_i(t) ) is defined as. |
+| ![Figure 5](assets/papers-explained-391-adaptive-reasoning-model/fig-5.webp) | Decay Factor: The decay factor ( \text{decay}_i(t) ) is introduced to gradually reduce the influence of diversity over time. |
+| ![Figure 6](assets/papers-explained-391-adaptive-reasoning-model/fig-6.webp) | Group Advantage Calculation: The group advantage for all tokens in each output is computed based on the group of reshaped rewards. |
+| ![Figure 7](assets/papers-explained-391-adaptive-reasoning-model/fig-7.webp) | Objective Function: The model is optimized by maximizing the following objective. |
+| ![Figure 8](assets/papers-explained-391-adaptive-reasoning-model/fig-8.webp) | Performance of various models across evaluation datasets. |
+| ![Figure 9](assets/papers-explained-391-adaptive-reasoning-model/fig-9.webp) | Format distribution by task difficulty with Qwen2.5–7B. |
+| ![Figure 10](assets/papers-explained-391-adaptive-reasoning-model/fig-10.webp) | Accuracy (Acc.) and token usage (Tok.) for the three reasoning modes supported by ARM-7B. |
 ## Related
 
 - [[Papers Explained Corpus]]

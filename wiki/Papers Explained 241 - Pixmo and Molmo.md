@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-10-29_Papers-Explained-241--Pixmo-and-Molmo-239d70abebff.html`
+- Source file: `raw/2024-10-29_Papers-Explained-241--Pixmo-and-Molmo-239d70abebff.md`
 - Source title: Papers Explained 241: Pixmo and Molmo
 - Published: 2024-10-29
 - Canonical: [https://medium.com/@ritvik19/papers-explained-241-pixmo-and-molmo-239d70abebff](https://medium.com/@ritvik19/papers-explained-241-pixmo-and-molmo-239d70abebff)
@@ -111,14 +111,14 @@ Molmo and PixMo: Open Weights and Open Data for State-of-the-Art Multimodal Mode
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-10-29_Papers-Explained-241--Pixmo-and-Molmo-239d70abebff.html`); local copies under `wiki/assets/papers-explained-241-pixmo-and-molmo/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-10-29_Papers-Explained-241--Pixmo-and-Molmo-239d70abebff.md`); local copies under `wiki/assets/papers-explained-241-pixmo-and-molmo/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-241-pixmo-and-molmo/fig-1.png) | Title card: Pixmo and Molmo. |
-| ![Figure 2](assets/papers-explained-241-pixmo-and-molmo/fig-2.png) | The Molmo architecture. |
-| ![Figure 3](assets/papers-explained-241-pixmo-and-molmo/fig-3.png) | Academic benchmark results. |
-| ![Figure 4](assets/papers-explained-241-pixmo-and-molmo/fig-4.png) | Elo human preference evaluations used 15k image and text prompt pairs. |
+| ![Figure 1](assets/papers-explained-241-pixmo-and-molmo/fig-1.webp) | Title card: Pixmo and Molmo. |
+| ![Figure 2](assets/papers-explained-241-pixmo-and-molmo/fig-2.webp) | The Molmo architecture. |
+| ![Figure 3](assets/papers-explained-241-pixmo-and-molmo/fig-3.webp) | Academic benchmark results. |
+| ![Figure 4](assets/papers-explained-241-pixmo-and-molmo/fig-4.webp) | Elo human preference evaluations used 15k image and text prompt pairs. |
 ## Related
 
 - [[Papers Explained Corpus]]

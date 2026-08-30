@@ -2,4 +2,4 @@
 
 **URL**: https://huggingface.co/blog/unsloth-trl
 
-(Canonical HTML: raw/unsloth-trl/full-article.html)
+(Canonical HTML: raw/unsloth-trl/full-article.md)

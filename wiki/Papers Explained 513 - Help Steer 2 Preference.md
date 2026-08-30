@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-12-31_Papers-Explained-513--Help-Steer-2-Preference-9e95fd369850.html`
+- Source file: `raw/2025-12-31_Papers-Explained-513--Help-Steer-2-Preference-9e95fd369850.md`
 - Source title: Papers Explained 513: Help Steer 2 Preference
 - Published: 2025-12-31
 - Canonical: [https://medium.com/@ritvik19/papers-explained-513-help-steer-2-preference-9e95fd369850](https://medium.com/@ritvik19/papers-explained-513-help-steer-2-preference-9e95fd369850)
@@ -153,17 +153,17 @@ HelpSteer2-Preference: Complementing Ratings with Preferences [2410.01257](https
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-12-31_Papers-Explained-513--Help-Steer-2-Preference-9e95fd369850.html`); local copies under `wiki/assets/papers-explained-513-help-steer-2-preference/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-12-31_Papers-Explained-513--Help-Steer-2-Preference-9e95fd369850.md`); local copies under `wiki/assets/papers-explained-513-help-steer-2-preference/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-513-help-steer-2-preference/fig-1.png) | Title card: Help Steer 2 Preference. |
-| ![Figure 2](assets/papers-explained-513-help-steer-2-preference/fig-2.png) | Distribution of preferences between responses in HelpSteer2-Preference against the difference in helpfulness scores between them from HelpSteer2. |
-| ![Figure 3](assets/papers-explained-513-help-steer-2-preference/fig-3.png) | Bradley-Terry. |
-| ![Figure 4](assets/papers-explained-513-help-steer-2-preference/fig-4.png) | Bradley-Terry: A new loss function named Scaled Bradley-Terry is introduced. |
-| ![Figure 5](assets/papers-explained-513-help-steer-2-preference/fig-5.png) | A new loss function named Scaled Bradley-Terry is introduced. |
-| ![Figure 6](assets/papers-explained-513-help-steer-2-preference/fig-6.png) | Performance of Models on RewardBench. |
-| ![Figure 7](assets/papers-explained-513-help-steer-2-preference/fig-7.png) | Performance of Aligned Models. |
+| ![Figure 1](assets/papers-explained-513-help-steer-2-preference/fig-1.webp) | Title card: Help Steer 2 Preference. |
+| ![Figure 2](assets/papers-explained-513-help-steer-2-preference/fig-2.webp) | Distribution of preferences between responses in HelpSteer2-Preference against the difference in helpfulness scores between them from HelpSteer2. |
+| ![Figure 3](assets/papers-explained-513-help-steer-2-preference/fig-3.webp) | Bradley-Terry. |
+| ![Figure 4](assets/papers-explained-513-help-steer-2-preference/fig-4.webp) | Bradley-Terry: A new loss function named Scaled Bradley-Terry is introduced. |
+| ![Figure 5](assets/papers-explained-513-help-steer-2-preference/fig-5.webp) | A new loss function named Scaled Bradley-Terry is introduced. |
+| ![Figure 6](assets/papers-explained-513-help-steer-2-preference/fig-6.webp) | Performance of Models on RewardBench. |
+| ![Figure 7](assets/papers-explained-513-help-steer-2-preference/fig-7.webp) | Performance of Aligned Models. |
 ## Related
 
 - [[Papers Explained Corpus]]

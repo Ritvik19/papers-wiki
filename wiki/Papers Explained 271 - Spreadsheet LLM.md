@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-12-12_Papers-Explained-271--Spreadsheet-LLM-25b9d70f06e3.html`
+- Source file: `raw/2024-12-12_Papers-Explained-271--Spreadsheet-LLM-25b9d70f06e3.md`
 - Source title: Papers Explained 271: Spreadsheet LLM
 - Published: 2024-12-12
 - Canonical: [https://medium.com/@ritvik19/papers-explained-271-spreadsheet-llm-25b9d70f06e3](https://medium.com/@ritvik19/papers-explained-271-spreadsheet-llm-25b9d70f06e3)
@@ -115,23 +115,23 @@ SpreadsheetLLM: Encoding Spreadsheets for Large Language Models [2407.09025](htt
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-12-12_Papers-Explained-271--Spreadsheet-LLM-25b9d70f06e3.html`); local copies under `wiki/assets/papers-explained-271-spreadsheet-llm/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-12-12_Papers-Explained-271--Spreadsheet-LLM-25b9d70f06e3.md`); local copies under `wiki/assets/papers-explained-271-spreadsheet-llm/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-271-spreadsheet-llm/fig-1.png) | Title card: Spreadsheet LLM. |
-| ![Figure 2](assets/papers-explained-271-spreadsheet-llm/fig-2.png) | The Spreadsheet LLM pipeline. |
-| ![Figure 3](assets/papers-explained-271-spreadsheet-llm/fig-3.png) | Sheet Compressor Framework. |
-| ![Figure 4](assets/papers-explained-271-spreadsheet-llm/fig-4.png) | A Markdown-like style representation is used. |
-| ![Figure 5](assets/papers-explained-271-spreadsheet-llm/fig-5.png) | This method identifies heterogeneous rows and columns at the edges of table bound- aries — termed structural anchors using heuristics. |
-| ![Figure 6](assets/papers-explained-271-spreadsheet-llm/fig-6.png) | The extracted rows and columns can be expressed as. |
-| ![Figure 7](assets/papers-explained-271-spreadsheet-llm/fig-7.png) | where the extracted “skeletons” are defined as: rp+ = {Celli,j}|i−p|≤k,j∈n and cq+ = {Celli,j}i∈m,|j−q|≤k. Then the extracted compact spreadsheet is obtained. |
-| ![Figure 8](assets/papers-explained-271-spreadsheet-llm/fig-8.png) | The inverted-index-based Translation method involves two stages. |
-| ![Figure 9](assets/papers-explained-271-spreadsheet-llm/fig-9.png) | Number Format String (NFS), a built-in cell attribute in spreadsheets, is used to describe the format of cell data as a string. |
-| ![Figure 10](assets/papers-explained-271-spreadsheet-llm/fig-10.png) | Number Format String (NFS), a built-in cell attribute in spreadsheets, is used to describe the format of cell data as a string. |
-| ![Figure 11](assets/papers-explained-271-spreadsheet-llm/fig-11.png) | Average Compression Ratio on test datasets. |
-| ![Figure 12](assets/papers-explained-271-spreadsheet-llm/fig-12.png) | Results of various Model & Method configurations on spreadsheet table detection. |
-| ![Figure 13](assets/papers-explained-271-spreadsheet-llm/fig-13.png) | The results for Spreadsheet QA. |
+| ![Figure 1](assets/papers-explained-271-spreadsheet-llm/fig-1.webp) | Title card: Spreadsheet LLM. |
+| ![Figure 2](assets/papers-explained-271-spreadsheet-llm/fig-2.webp) | The Spreadsheet LLM pipeline. |
+| ![Figure 3](assets/papers-explained-271-spreadsheet-llm/fig-3.webp) | Sheet Compressor Framework. |
+| ![Figure 4](assets/papers-explained-271-spreadsheet-llm/fig-4.webp) | A Markdown-like style representation is used. |
+| ![Figure 5](assets/papers-explained-271-spreadsheet-llm/fig-5.webp) | This method identifies heterogeneous rows and columns at the edges of table bound- aries — termed structural anchors using heuristics. |
+| ![Figure 6](assets/papers-explained-271-spreadsheet-llm/fig-6.webp) | The extracted rows and columns can be expressed as. |
+| ![Figure 7](assets/papers-explained-271-spreadsheet-llm/fig-7.webp) | where the extracted “skeletons” are defined as: rp+ = {Celli,j}|i−p|≤k,j∈n and cq+ = {Celli,j}i∈m,|j−q|≤k. Then the extracted compact spreadsheet is obtained. |
+| ![Figure 8](assets/papers-explained-271-spreadsheet-llm/fig-8.webp) | The inverted-index-based Translation method involves two stages. |
+| ![Figure 9](assets/papers-explained-271-spreadsheet-llm/fig-9.webp) | Number Format String (NFS), a built-in cell attribute in spreadsheets, is used to describe the format of cell data as a string. |
+| ![Figure 10](assets/papers-explained-271-spreadsheet-llm/fig-10.webp) | Number Format String (NFS), a built-in cell attribute in spreadsheets, is used to describe the format of cell data as a string. |
+| ![Figure 11](assets/papers-explained-271-spreadsheet-llm/fig-11.webp) | Average Compression Ratio on test datasets. |
+| ![Figure 12](assets/papers-explained-271-spreadsheet-llm/fig-12.webp) | Results of various Model & Method configurations on spreadsheet table detection. |
+| ![Figure 13](assets/papers-explained-271-spreadsheet-llm/fig-13.webp) | The results for Spreadsheet QA. |
 ## Related
 
 - [[Papers Explained Corpus]]

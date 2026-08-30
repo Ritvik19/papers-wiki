@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-02-03_Papers-Explained-301--ReST-6389371a68ac.html`
+- Source file: `raw/2025-02-03_Papers-Explained-301--ReST-6389371a68ac.md`
 - Source title: Papers Explained 301: ReST
 - Published: 2025-02-03
 - Canonical: [https://medium.com/@ritvik19/papers-explained-301-rest-6389371a68ac](https://medium.com/@ritvik19/papers-explained-301-rest-6389371a68ac)
@@ -91,20 +91,20 @@ Reinforced Self-Training (ReST) for Language Modeling [2308.08998](https://arxiv
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-02-03_Papers-Explained-301--ReST-6389371a68ac.html`); local copies under `wiki/assets/papers-explained-301-rest/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-02-03_Papers-Explained-301--ReST-6389371a68ac.md`); local copies under `wiki/assets/papers-explained-301-rest/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-301-rest/fig-1.png) | Title card: ReST. |
-| ![Figure 2](assets/papers-explained-301-rest/fig-2.png) | ReST method. |
-| ![Figure 3](assets/papers-explained-301-rest/fig-3.png) | ReST algorithm. |
-| ![Figure 4](assets/papers-explained-301-rest/fig-4.png) | When iterating over Improve steps, we increase the filtering thresholds: 𝜏1 < · · · < 𝜏𝑁 −1 < 𝜏𝑁. |
-| ![Figure 5](assets/papers-explained-301-rest/fig-5.png) | ReST with multiple Improve steps. |
-| ![Figure 6](assets/papers-explained-301-rest/fig-6.png) | ReST with two Grow steps. |
-| ![Figure 7](assets/papers-explained-301-rest/fig-7.png) | WMT 2020 zh-en (test). |
-| ![Figure 8](assets/papers-explained-301-rest/fig-8.png) | Best-of-N sampling at inference time. |
-| ![Figure 9](assets/papers-explained-301-rest/fig-9.png) | Online RL for IWSLT 2014. |
-| ![Figure 10](assets/papers-explained-301-rest/fig-10.png) | Comparison of performance based on learned reward and on human evaluation. |
+| ![Figure 1](assets/papers-explained-301-rest/fig-1.webp) | Title card: ReST. |
+| ![Figure 2](assets/papers-explained-301-rest/fig-2.webp) | ReST method. |
+| ![Figure 3](assets/papers-explained-301-rest/fig-3.webp) | ReST algorithm. |
+| ![Figure 4](assets/papers-explained-301-rest/fig-4.webp) | When iterating over Improve steps, we increase the filtering thresholds: 𝜏1 < · · · < 𝜏𝑁 −1 < 𝜏𝑁. |
+| ![Figure 5](assets/papers-explained-301-rest/fig-5.webp) | ReST with multiple Improve steps. |
+| ![Figure 6](assets/papers-explained-301-rest/fig-6.webp) | ReST with two Grow steps. |
+| ![Figure 7](assets/papers-explained-301-rest/fig-7.webp) | WMT 2020 zh-en (test). |
+| ![Figure 8](assets/papers-explained-301-rest/fig-8.webp) | Best-of-N sampling at inference time. |
+| ![Figure 9](assets/papers-explained-301-rest/fig-9.webp) | Online RL for IWSLT 2014. |
+| ![Figure 10](assets/papers-explained-301-rest/fig-10.webp) | Comparison of performance based on learned reward and on human evaluation. |
 ## Related
 
 - [[Papers Explained Corpus]]

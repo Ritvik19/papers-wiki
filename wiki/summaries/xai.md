@@ -1,6 +1,6 @@
 # Explainable AI (XAI): A Survey of Recent Methods, Applications and Frameworks
 
-**Source**: `raw/xai/full-article.html` (markdown view: `raw/xai/full-article.md`)  
+**Source**: `raw/xai/full-article.md` (markdown view: `raw/xai/full-article.md`)  
 **URL**: https://theaisummer.com/xai/  
 **Author**: Ilias Papastratis (AI Summer), 2021-03-04  
 **Ingested**: 2026-06-06  
@@ -10,7 +10,7 @@
 
 Ilias Papastratis's AI Summer survey introduces **[[Explainable AI]]** (XAI) as the response to deep learning's black-box problem: models that surpass humans on image, speech, and recommendation tasks still fail to justify their predictions, which is unacceptable in safety-critical domains like autonomous driving and medical diagnosis. The article organizes interpretability methods by **explanation modality** — visual (saliency maps, plots), textual (natural-language rationales), and numerical (concept scores, local linear approximations).
 
-![Black-box vs explainable model](../assets/xai/fig-2.png)
+![Black-box vs explainable model](../assets/xai/fig-2.webp)
 
 **Visual methods** dominate the survey. **[[Class Activation Mapping]]** (CAM) localizes CNN discriminative regions via global average pooling weights; **[[Grad-CAM]]** generalizes CAM by backpropagating class-specific gradients through the final conv layer to produce coarse heatmaps without architectural constraints. **[[Layer-Wise Relevance Propagation]]** (LRP) decomposes the classification decision backward through layers into pixel relevance scores. Additional visual techniques covered include PRM (weakly supervised segmentation peaks), CLEAR (class-enhanced attentive response), Zeiler deconvolution feature visualization, DeepResolve (feature importance maps for genomics), SCOUTER (slot-attention classifier), and visual-feedback filter attribution.
 
@@ -35,34 +35,34 @@ Application sections cover explainable autonomous driving (global scene context 
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/xai/fig-1.png) | ML models as black boxes lacking human-understandable justification | — |
-| ![fig-2](../assets/xai/fig-2.png) | Comparison of opaque deep learning vs explainable model | — |
-| ![fig-3](../assets/xai/fig-3.png) | Class Activation Mapping (CAM) highlighting class-important regions | — |
-| ![fig-4](../assets/xai/fig-4.png) | Grad-CAM gradient-weighted localization heatmap | — |
-| ![fig-5](../assets/xai/fig-5.png) | Layer-Wise Relevance Propagation pixel contributions | — |
-| ![fig-6](../assets/xai/fig-6.png) | Peak Response Maps for weakly supervised instance segmentation | — |
-| ![fig-7](../assets/xai/fig-7.png) | CLEAR class-enhanced attentive response overlay | — |
-| ![fig-8](../assets/xai/fig-8.png) | Deconvolutional network feature visualization (Zeiler & Fergus) | — |
-| ![fig-9](../assets/xai/fig-9.png) | DeepResolve feature importance maps and class similarity | — |
-| ![fig-10](../assets/xai/fig-10.png) | SCOUTER slot-attention explainable classifier | — |
-| ![fig-11](../assets/xai/fig-11.png) | Visual feedback relevant-feature attribution maps | — |
-| ![fig-12](../assets/xai/fig-12.png) | t-SNE visualization of hidden neural network activations | — |
-| ![fig-13](../assets/xai/fig-13.png) | PCA projection of CNN embeddings by scene factors | — |
-| ![fig-14](../assets/xai/fig-14.png) | TreeView feature-space partitioning decision tree | — |
-| ![fig-15](../assets/xai/fig-15.png) | Interpnet textual explanations from internal activations | — |
-| ![fig-16](../assets/xai/fig-16.png) | VQA hierarchical co-attention maps | — |
-| ![fig-17](../assets/xai/fig-17.png) | Semantic-information-guided interpretable video captioning | — |
-| ![fig-18](../assets/xai/fig-18.png) | Visual dialog: AI agent conversing about image content | — |
-| ![fig-19](../assets/xai/fig-19.png) | Explainable autonomous driving actions and visual explanations | — |
-| ![fig-20](../assets/xai/fig-20.png) | Advisable learning self-driving system overview with attention maps | — |
-| ![fig-21](../assets/xai/fig-21.png) | explAIner visual analytics framework pipeline | — |
-| ![fig-22](../assets/xai/fig-22.png) | InterpretML unified interpretability library usage | — |
+| ![fig-1](../assets/xai/fig-1.webp) | ML models as black boxes lacking human-understandable justification | — |
+| ![fig-2](../assets/xai/fig-2.webp) | Comparison of opaque deep learning vs explainable model | — |
+| ![fig-3](../assets/xai/fig-3.webp) | Class Activation Mapping (CAM) highlighting class-important regions | — |
+| ![fig-4](../assets/xai/fig-4.webp) | Grad-CAM gradient-weighted localization heatmap | — |
+| ![fig-5](../assets/xai/fig-5.webp) | Layer-Wise Relevance Propagation pixel contributions | — |
+| ![fig-6](../assets/xai/fig-6.webp) | Peak Response Maps for weakly supervised instance segmentation | — |
+| ![fig-7](../assets/xai/fig-7.webp) | CLEAR class-enhanced attentive response overlay | — |
+| ![fig-8](../assets/xai/fig-8.webp) | Deconvolutional network feature visualization (Zeiler & Fergus) | — |
+| ![fig-9](../assets/xai/fig-9.webp) | DeepResolve feature importance maps and class similarity | — |
+| ![fig-10](../assets/xai/fig-10.webp) | SCOUTER slot-attention explainable classifier | — |
+| ![fig-11](../assets/xai/fig-11.webp) | Visual feedback relevant-feature attribution maps | — |
+| ![fig-12](../assets/xai/fig-12.webp) | t-SNE visualization of hidden neural network activations | — |
+| ![fig-13](../assets/xai/fig-13.webp) | PCA projection of CNN embeddings by scene factors | — |
+| ![fig-14](../assets/xai/fig-14.webp) | TreeView feature-space partitioning decision tree | — |
+| ![fig-15](../assets/xai/fig-15.webp) | Interpnet textual explanations from internal activations | — |
+| ![fig-16](../assets/xai/fig-16.webp) | VQA hierarchical co-attention maps | — |
+| ![fig-17](../assets/xai/fig-17.webp) | Semantic-information-guided interpretable video captioning | — |
+| ![fig-18](../assets/xai/fig-18.webp) | Visual dialog: AI agent conversing about image content | — |
+| ![fig-19](../assets/xai/fig-19.webp) | Explainable autonomous driving actions and visual explanations | — |
+| ![fig-20](../assets/xai/fig-20.webp) | Advisable learning self-driving system overview with attention maps | — |
+| ![fig-21](../assets/xai/fig-21.webp) | explAIner visual analytics framework pipeline | — |
+| ![fig-22](../assets/xai/fig-22.webp) | InterpretML unified interpretability library usage | — |
 
-![Grad-CAM heatmap](../assets/xai/fig-4.png)
+![Grad-CAM heatmap](../assets/xai/fig-4.webp)
 
 Grad-CAM backpropagates class-specific gradients to the final conv layer, producing coarse localization maps without requiring a GAP layer — the most widely adopted CNN saliency method in practice.
 
-![LIME local surrogate concept](../assets/xai/fig-2.png)
+![LIME local surrogate concept](../assets/xai/fig-2.webp)
 
 Numerical methods like LIME and TCAV complement visual heatmaps by quantifying which input perturbations or abstract concepts most influence a specific prediction.
 

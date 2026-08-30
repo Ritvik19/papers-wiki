@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-09-23_Papers-Explained-216--MobileLLM-2d7fdd5acd86.html`
+- Source file: `raw/2024-09-23_Papers-Explained-216--MobileLLM-2d7fdd5acd86.md`
 - Source title: Papers Explained 216: MobileLLM
 - Published: 2024-09-23
 - Canonical: [https://medium.com/@ritvik19/papers-explained-216-mobilellm-2d7fdd5acd86](https://medium.com/@ritvik19/papers-explained-216-mobilellm-2d7fdd5acd86)
@@ -141,24 +141,24 @@ Recommended Reading [Small LLMs](https://ritvik19.medium.com/list/small-llms-411
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-09-23_Papers-Explained-216--MobileLLM-2d7fdd5acd86.html`); local copies under `wiki/assets/papers-explained-216-mobilellm/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-09-23_Papers-Explained-216--MobileLLM-2d7fdd5acd86.md`); local copies under `wiki/assets/papers-explained-216-mobilellm/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-216-mobilellm/fig-1.png) | MobileLLM Overview: Optimizing sub-billion parameter models for on-device use. |
-| ![Figure 2](assets/papers-explained-216-mobilellm/fig-2.png) | Design roadmap of MobileLLM development. |
-| ![Figure 3](assets/papers-explained-216-mobilellm/fig-3.png) | Architecture Depth vs Width: Performance impact on small models. |
-| ![Figure 4](assets/papers-explained-216-mobilellm/fig-4.png) | Embedding Sharing: Parameter efficiency in sub-billion scale models. |
-| ![Figure 5](assets/papers-explained-216-mobilellm/fig-5.png) | Number of Heads and K-V Heads: Impact on model performance and size. |
-| ![Figure 6](assets/papers-explained-216-mobilellm/fig-6.png) | Weight-sharing strategies: (a) Baseline, (b) Block-wise, (c) Repeat-all-over, (d) Reverse. |
-| ![Figure 7](assets/papers-explained-216-mobilellm/fig-7.png) | Performance comparison of different weight-sharing strategies. |
-| ![Figure 8](assets/papers-explained-216-mobilellm/fig-8.png) | Detailed architecture specifications of MobileLLM variants. |
-| ![Figure 9](assets/papers-explained-216-mobilellm/fig-9.png) | Zero-shot performance on Common Sense Reasoning tasks. |
-| ![Figure 10](assets/papers-explained-216-mobilellm/fig-10.png) | Performance on Trivia QA and RACE datasets for QA and reading comprehension. |
-| ![Figure 11](assets/papers-explained-216-mobilellm/fig-11.png) | Benchmark results on AlpacaEval and MT-Bench chat evaluations. |
-| ![Figure 12](assets/papers-explained-216-mobilellm/fig-12.png) | API calling evaluation scores: Intent and structure exact match results. |
-| ![Figure 13](assets/papers-explained-216-mobilellm/fig-13.png) | Quantization compatibility: Comparison between BFloat16 and W8A8 PTQ models. |
-| ![Figure 14](assets/papers-explained-216-mobilellm/fig-14.png) | Scaling performance: Zero-shot reasoning results for 600M to 1.5B variants. |
+| ![Figure 1](assets/papers-explained-216-mobilellm/fig-1.webp) | MobileLLM Overview: Optimizing sub-billion parameter models for on-device use. |
+| ![Figure 2](assets/papers-explained-216-mobilellm/fig-2.webp) | Design roadmap of MobileLLM development. |
+| ![Figure 3](assets/papers-explained-216-mobilellm/fig-3.webp) | Architecture Depth vs Width: Performance impact on small models. |
+| ![Figure 4](assets/papers-explained-216-mobilellm/fig-4.webp) | Embedding Sharing: Parameter efficiency in sub-billion scale models. |
+| ![Figure 5](assets/papers-explained-216-mobilellm/fig-5.webp) | Number of Heads and K-V Heads: Impact on model performance and size. |
+| ![Figure 6](assets/papers-explained-216-mobilellm/fig-6.webp) | Weight-sharing strategies: (a) Baseline, (b) Block-wise, (c) Repeat-all-over, (d) Reverse. |
+| ![Figure 7](assets/papers-explained-216-mobilellm/fig-7.webp) | Performance comparison of different weight-sharing strategies. |
+| ![Figure 8](assets/papers-explained-216-mobilellm/fig-8.webp) | Detailed architecture specifications of MobileLLM variants. |
+| ![Figure 9](assets/papers-explained-216-mobilellm/fig-9.webp) | Zero-shot performance on Common Sense Reasoning tasks. |
+| ![Figure 10](assets/papers-explained-216-mobilellm/fig-10.webp) | Performance on Trivia QA and RACE datasets for QA and reading comprehension. |
+| ![Figure 11](assets/papers-explained-216-mobilellm/fig-11.webp) | Benchmark results on AlpacaEval and MT-Bench chat evaluations. |
+| ![Figure 12](assets/papers-explained-216-mobilellm/fig-12.webp) | API calling evaluation scores: Intent and structure exact match results. |
+| ![Figure 13](assets/papers-explained-216-mobilellm/fig-13.webp) | Quantization compatibility: Comparison between BFloat16 and W8A8 PTQ models. |
+| ![Figure 14](assets/papers-explained-216-mobilellm/fig-14.webp) | Scaling performance: Zero-shot reasoning results for 600M to 1.5B variants. |
 ## Related
 
 - [[Papers Explained Corpus]]

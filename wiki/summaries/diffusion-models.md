@@ -1,6 +1,6 @@
 # How Diffusion Models Work: The Math from Scratch
 
-**Source**: `raw/diffusion-models/full-article.html` (836 KB), `raw/diffusion-models/full-article.md` (markdown view)  
+**Source**: `raw/diffusion-models/full-article.md` (836 KB), `raw/diffusion-models/full-article.md` (markdown view)  
 **URL**: https://theaisummer.com/diffusion-models/  
 **Authors**: Sergios Karagiannakos, Nikolas Adaloglou (AI Summer), 2022-09-29  
 **Ingested**: 2026-06-06  
@@ -44,27 +44,27 @@ This primer complements [[What are Diffusion Models?]] (Lilian Weng's broader su
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/diffusion-models/fig-1.png) | Forward diffusion Markov chain gradually adding Gaussian noise (Ho et al. 2020) | — |
-| ![fig-2](../assets/diffusion-models/fig-2.png) | Latent samples under linear (top) vs cosine (bottom) variance schedules (Nichol & Dhariwal 2021) | — |
-| ![fig-3](../assets/diffusion-models/fig-3.png) | Reverse diffusion process: denoise from \(x_T\) to \(x_0\) (Ho et al. 2020) | — |
-| ![fig-4](../assets/diffusion-models/fig-4.png) | DDPM training and sampling algorithms (Ho et al. 2020) | — |
-| ![fig-5](../assets/diffusion-models/fig-5.png) | U-Net architecture with encoder–decoder skip connections (Ronneberger et al.) | — |
-| ![fig-6](../assets/diffusion-models/fig-6.png) | Classifier-guided diffusion sampling algorithm (Dhariwal & Nichol 2021) | — |
-| ![fig-7](../assets/diffusion-models/fig-7.png) | Cascade diffusion pipeline: sequential super-resolution models (Ho & Saharia et al.) | — |
-| ![fig-8](../assets/diffusion-models/fig-8.png) | Latent diffusion: encode → diffuse in latent space → decode (Rombach et al.) | — |
-| ![fig-9](../assets/diffusion-models/fig-9.png) | Score-based generative modeling via score matching + Langevin dynamics (Song & Ermon) | — |
-| ![fig-10](../assets/diffusion-models/fig-10.png) | Score-based generative modeling through SDEs (Song et al. 2021) | — |
-| ![fig-11](../assets/diffusion-models/fig-11.png) | Overview of score-based generative modeling through SDEs (Song et al. 2021) | — |
+| ![fig-1](../assets/diffusion-models/fig-1.webp) | Forward diffusion Markov chain gradually adding Gaussian noise (Ho et al. 2020) | — |
+| ![fig-2](../assets/diffusion-models/fig-2.webp) | Latent samples under linear (top) vs cosine (bottom) variance schedules (Nichol & Dhariwal 2021) | — |
+| ![fig-3](../assets/diffusion-models/fig-3.webp) | Reverse diffusion process: denoise from \(x_T\) to \(x_0\) (Ho et al. 2020) | — |
+| ![fig-4](../assets/diffusion-models/fig-4.webp) | DDPM training and sampling algorithms (Ho et al. 2020) | — |
+| ![fig-5](../assets/diffusion-models/fig-5.webp) | U-Net architecture with encoder–decoder skip connections (Ronneberger et al.) | — |
+| ![fig-6](../assets/diffusion-models/fig-6.webp) | Classifier-guided diffusion sampling algorithm (Dhariwal & Nichol 2021) | — |
+| ![fig-7](../assets/diffusion-models/fig-7.webp) | Cascade diffusion pipeline: sequential super-resolution models (Ho & Saharia et al.) | — |
+| ![fig-8](../assets/diffusion-models/fig-8.webp) | Latent diffusion: encode → diffuse in latent space → decode (Rombach et al.) | — |
+| ![fig-9](../assets/diffusion-models/fig-9.webp) | Score-based generative modeling via score matching + Langevin dynamics (Song & Ermon) | — |
+| ![fig-10](../assets/diffusion-models/fig-10.webp) | Score-based generative modeling through SDEs (Song et al. 2021) | — |
+| ![fig-11](../assets/diffusion-models/fig-11.webp) | Overview of score-based generative modeling through SDEs (Song et al. 2021) | — |
 
-![Forward diffusion chain](../assets/diffusion-models/fig-1.png)
+![Forward diffusion chain](../assets/diffusion-models/fig-1.webp)
 
 The forward process corrupts data with scheduled Gaussian noise over \(T\) Markov steps.
 
-![DDPM training and sampling](../assets/diffusion-models/fig-4.png)
+![DDPM training and sampling](../assets/diffusion-models/fig-4.webp)
 
 Training predicts noise \(\epsilon_\theta\); sampling iteratively denoises from \(x_T \sim \mathcal{N}(0, \mathbf{I})\).
 
-![Latent diffusion architecture](../assets/diffusion-models/fig-8.png)
+![Latent diffusion architecture](../assets/diffusion-models/fig-8.webp)
 
 Stable Diffusion applies diffusion in a compressed latent space rather than pixel space.
 

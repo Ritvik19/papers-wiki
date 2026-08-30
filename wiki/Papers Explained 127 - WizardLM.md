@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-04-22_Papers-Explained-127--WizardLM-65099705dfa3.html`
+- Source file: `raw/2024-04-22_Papers-Explained-127--WizardLM-65099705dfa3.md`
 - Source title: Papers Explained 127: WizardLM
 - Published: 2024-04-22
 - Canonical: [https://medium.com/@ritvik19/papers-explained-127-wizardlm-65099705dfa3](https://medium.com/@ritvik19/papers-explained-127-wizardlm-65099705dfa3)
@@ -107,18 +107,18 @@ Recommended Reading [Wizard Models](https://ritvik19.medium.com/list/wizard-mode
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-04-22_Papers-Explained-127--WizardLM-65099705dfa3.html`); local copies under `wiki/assets/papers-explained-127-wizardlm/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-04-22_Papers-Explained-127--WizardLM-65099705dfa3.md`); local copies under `wiki/assets/papers-explained-127-wizardlm/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-127-wizardlm/fig-1.png) | Title page of *WizardLM: Empowering Large Language Models to Follow Complex Instructions*. |
-| ![Figure 2](assets/papers-explained-127-wizardlm/fig-2.png) | Running examples of Evol-Instruct transformations (deepening, constraints, breadth, and input complexity). |
-| ![Figure 3](assets/papers-explained-127-wizardlm/fig-3.png) | Pipeline overview of in-depth/in-breadth evolution, elimination, and instruction-pool training. |
-| ![Figure 4](assets/papers-explained-127-wizardlm/fig-4.png) | Core prompt template for in-depth instruction evolution. |
-| ![Figure 5](assets/papers-explained-127-wizardlm/fig-5.png) | Core prompt template for in-breadth instruction evolution. |
-| ![Figure 6](assets/papers-explained-127-wizardlm/fig-6.png) | Human evaluation win/lose/tie results on Evol-Instruct and Vicuna testsets. |
-| ![Figure 7](assets/papers-explained-127-wizardlm/fig-7.png) | GPT-4 automatic evaluation across datasets and instruction difficulty levels. |
-| ![Figure 8](assets/papers-explained-127-wizardlm/fig-8.png) | Skill-wise WizardLM-to-ChatGPT performance ratio on Evol-Instruct evaluations. |
+| ![Figure 1](assets/papers-explained-127-wizardlm/fig-1.webp) | Title page of *WizardLM: Empowering Large Language Models to Follow Complex Instructions*. |
+| ![Figure 2](assets/papers-explained-127-wizardlm/fig-2.webp) | Running examples of Evol-Instruct transformations (deepening, constraints, breadth, and input complexity). |
+| ![Figure 3](assets/papers-explained-127-wizardlm/fig-3.webp) | Pipeline overview of in-depth/in-breadth evolution, elimination, and instruction-pool training. |
+| ![Figure 4](assets/papers-explained-127-wizardlm/fig-4.webp) | Core prompt template for in-depth instruction evolution. |
+| ![Figure 5](assets/papers-explained-127-wizardlm/fig-5.webp) | Core prompt template for in-breadth instruction evolution. |
+| ![Figure 6](assets/papers-explained-127-wizardlm/fig-6.webp) | Human evaluation win/lose/tie results on Evol-Instruct and Vicuna testsets. |
+| ![Figure 7](assets/papers-explained-127-wizardlm/fig-7.webp) | GPT-4 automatic evaluation across datasets and instruction difficulty levels. |
+| ![Figure 8](assets/papers-explained-127-wizardlm/fig-8.webp) | Skill-wise WizardLM-to-ChatGPT performance ratio on Evol-Instruct evaluations. |
 ## Related
 
 - [[Papers Explained Corpus]]

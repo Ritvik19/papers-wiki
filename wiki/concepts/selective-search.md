@@ -21,7 +21,7 @@
    - Recompute similarities involving the new merged region.
 3. **Output**: all regions generated at any step in the hierarchy (multi-scale proposal set).
 
-![Selective Search flowchart](../assets/2017-10-29-object-recognition-part-1/fig-9.png)
+![Selective Search flowchart](../assets/2017-10-29-object-recognition-part-1/fig-9.webp)
 
 ## Four similarity measures (for pair \((r_i, r_j)\))
 

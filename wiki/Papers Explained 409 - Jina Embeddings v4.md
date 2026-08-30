@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-07-15_Papers-Explained-409--Jina-Embeddings-v4-9d266f0a6138.html`
+- Source file: `raw/2025-07-15_Papers-Explained-409--Jina-Embeddings-v4-9d266f0a6138.md`
 - Source title: Papers Explained 409: Jina Embeddings v4
 - Published: 2025-07-15
 - Canonical: [https://medium.com/@ritvik19/papers-explained-409-jina-embeddings-v4-9d266f0a6138](https://medium.com/@ritvik19/papers-explained-409-jina-embeddings-v4-9d266f0a6138)
@@ -225,37 +225,37 @@ jina-embeddings-v4: Universal Embeddings for Multimodal Multilingual Retrieval [
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-07-15_Papers-Explained-409--Jina-Embeddings-v4-9d266f0a6138.html`); local copies under `wiki/assets/papers-explained-409-jina-embeddings-v4/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-07-15_Papers-Explained-409--Jina-Embeddings-v4-9d266f0a6138.md`); local copies under `wiki/assets/papers-explained-409-jina-embeddings-v4/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-409-jina-embeddings-v4/fig-1.png) | Title card: Jina Embeddings v4. |
-| ![Figure 2](assets/papers-explained-409-jina-embeddings-v4/fig-2.png) | Architecture of Jina Embeddings v4. |
-| ![Figure 3](assets/papers-explained-409-jina-embeddings-v4/fig-3.png) | Basic specifications of Jina Embeddings v4. |
-| ![Figure 4](assets/papers-explained-409-jina-embeddings-v4/fig-4.png) | Supported tasks of Jina Embeddings v4. |
-| ![Figure 5](assets/papers-explained-409-jina-embeddings-v4/fig-5.png) | Single-vector and multi-vector embeddings are generated for all texts and images. |
-| ![Figure 6](assets/papers-explained-409-jina-embeddings-v4/fig-6.png) | The choice of loss function requires a normalized score, so the late interaction score is divided by the number of tokens in the query. |
-| ![Figure 7](assets/papers-explained-409-jina-embeddings-v4/fig-7.png) | The InfoNCE loss function (LNCE) is applied to each of the four similarity matrices. |
-| ![Figure 8](assets/papers-explained-409-jina-embeddings-v4/fig-8.png) | The resulting joint loss function, which is used in training, is defined as. |
-| ![Figure 9](assets/papers-explained-409-jina-embeddings-v4/fig-9.png) | The resulting joint loss function, which is used in training, is defined as. |
-| ![Figure 10](assets/papers-explained-409-jina-embeddings-v4/fig-10.png) | The training data includes hard negatives: triplets of a query, a matching document, and a semantically similar but incorrect document. |
-| ![Figure 11](assets/papers-explained-409-jina-embeddings-v4/fig-11.png) | The model utilizes the CoSENT loss function. |
-| ![Figure 12](assets/papers-explained-409-jina-embeddings-v4/fig-12.png) | Overview of the Dataset Collection. |
-| ![Figure 13](assets/papers-explained-409-jina-embeddings-v4/fig-13.png) | Evaluation Results for Various Models on MTEB Retrieval Tasks (nDCG@10%). |
-| ![Figure 14](assets/papers-explained-409-jina-embeddings-v4/fig-14.png) | Evaluation Results for Various Models on MMTEB Retrieval Tasks (nDCG@10%). |
-| ![Figure 15](assets/papers-explained-409-jina-embeddings-v4/fig-15.png) | Retrieval performance on MTEB LongEmbed (nDCG@10%). |
-| ![Figure 16](assets/papers-explained-409-jina-embeddings-v4/fig-16.png) | STS performance on MTEB v2 (Spearman correlation %). |
-| ![Figure 17](assets/papers-explained-409-jina-embeddings-v4/fig-17.png) | STS performance on MMTEB v2 (Spearman correlation %). |
-| ![Figure 18](assets/papers-explained-409-jina-embeddings-v4/fig-18.png) | GitHub Readme Retrieval Benchmark Results. |
-| ![Figure 19](assets/papers-explained-409-jina-embeddings-v4/fig-19.png) | Retrieval performance on ViDoRe (nDCG@10%). |
-| ![Figure 20](assets/papers-explained-409-jina-embeddings-v4/fig-20.png) | Wikimedia Commons Retreival Benchmark Results. |
-| ![Figure 21](assets/papers-explained-409-jina-embeddings-v4/fig-21.png) | Overview of JinaVDR Results for Various Models. |
-| ![Figure 22](assets/papers-explained-409-jina-embeddings-v4/fig-22.png) | Tweet Stock Retrieval Benchmark Results. |
-| ![Figure 23](assets/papers-explained-409-jina-embeddings-v4/fig-23.png) | AirBnB Retrieval Benchmark Results. |
-| ![Figure 24](assets/papers-explained-409-jina-embeddings-v4/fig-24.png) | Cross-modal (Text-to-image) retrieval performance (Recall@5%) on the CLIP benchmark. |
-| ![Figure 25](assets/papers-explained-409-jina-embeddings-v4/fig-25.png) | Text-to-image retrieval performance (Recall@5%) on xtd10 for all supported languages. |
-| ![Figure 26](assets/papers-explained-409-jina-embeddings-v4/fig-26.png) | Text-to-image retrieval performance (Recall@5%) on crossmodal3600 for all supported languages. |
-| ![Figure 27](assets/papers-explained-409-jina-embeddings-v4/fig-27.png) | Performance on MTEB Code Information Retrieval (MTEB-CoIR) (nDCG@10%). |
+| ![Figure 1](assets/papers-explained-409-jina-embeddings-v4/fig-1.webp) | Title card: Jina Embeddings v4. |
+| ![Figure 2](assets/papers-explained-409-jina-embeddings-v4/fig-2.webp) | Architecture of Jina Embeddings v4. |
+| ![Figure 3](assets/papers-explained-409-jina-embeddings-v4/fig-3.webp) | Basic specifications of Jina Embeddings v4. |
+| ![Figure 4](assets/papers-explained-409-jina-embeddings-v4/fig-4.webp) | Supported tasks of Jina Embeddings v4. |
+| ![Figure 5](assets/papers-explained-409-jina-embeddings-v4/fig-5.webp) | Single-vector and multi-vector embeddings are generated for all texts and images. |
+| ![Figure 6](assets/papers-explained-409-jina-embeddings-v4/fig-6.webp) | The choice of loss function requires a normalized score, so the late interaction score is divided by the number of tokens in the query. |
+| ![Figure 7](assets/papers-explained-409-jina-embeddings-v4/fig-7.webp) | The InfoNCE loss function (LNCE) is applied to each of the four similarity matrices. |
+| ![Figure 8](assets/papers-explained-409-jina-embeddings-v4/fig-8.webp) | The resulting joint loss function, which is used in training, is defined as. |
+| ![Figure 9](assets/papers-explained-409-jina-embeddings-v4/fig-9.webp) | The resulting joint loss function, which is used in training, is defined as. |
+| ![Figure 10](assets/papers-explained-409-jina-embeddings-v4/fig-10.webp) | The training data includes hard negatives: triplets of a query, a matching document, and a semantically similar but incorrect document. |
+| ![Figure 11](assets/papers-explained-409-jina-embeddings-v4/fig-11.webp) | The model utilizes the CoSENT loss function. |
+| ![Figure 12](assets/papers-explained-409-jina-embeddings-v4/fig-12.webp) | Overview of the Dataset Collection. |
+| ![Figure 13](assets/papers-explained-409-jina-embeddings-v4/fig-13.webp) | Evaluation Results for Various Models on MTEB Retrieval Tasks (nDCG@10%). |
+| ![Figure 14](assets/papers-explained-409-jina-embeddings-v4/fig-14.webp) | Evaluation Results for Various Models on MMTEB Retrieval Tasks (nDCG@10%). |
+| ![Figure 15](assets/papers-explained-409-jina-embeddings-v4/fig-15.webp) | Retrieval performance on MTEB LongEmbed (nDCG@10%). |
+| ![Figure 16](assets/papers-explained-409-jina-embeddings-v4/fig-16.webp) | STS performance on MTEB v2 (Spearman correlation %). |
+| ![Figure 17](assets/papers-explained-409-jina-embeddings-v4/fig-17.webp) | STS performance on MMTEB v2 (Spearman correlation %). |
+| ![Figure 18](assets/papers-explained-409-jina-embeddings-v4/fig-18.webp) | GitHub Readme Retrieval Benchmark Results. |
+| ![Figure 19](assets/papers-explained-409-jina-embeddings-v4/fig-19.webp) | Retrieval performance on ViDoRe (nDCG@10%). |
+| ![Figure 20](assets/papers-explained-409-jina-embeddings-v4/fig-20.webp) | Wikimedia Commons Retreival Benchmark Results. |
+| ![Figure 21](assets/papers-explained-409-jina-embeddings-v4/fig-21.webp) | Overview of JinaVDR Results for Various Models. |
+| ![Figure 22](assets/papers-explained-409-jina-embeddings-v4/fig-22.webp) | Tweet Stock Retrieval Benchmark Results. |
+| ![Figure 23](assets/papers-explained-409-jina-embeddings-v4/fig-23.webp) | AirBnB Retrieval Benchmark Results. |
+| ![Figure 24](assets/papers-explained-409-jina-embeddings-v4/fig-24.webp) | Cross-modal (Text-to-image) retrieval performance (Recall@5%) on the CLIP benchmark. |
+| ![Figure 25](assets/papers-explained-409-jina-embeddings-v4/fig-25.webp) | Text-to-image retrieval performance (Recall@5%) on xtd10 for all supported languages. |
+| ![Figure 26](assets/papers-explained-409-jina-embeddings-v4/fig-26.webp) | Text-to-image retrieval performance (Recall@5%) on crossmodal3600 for all supported languages. |
+| ![Figure 27](assets/papers-explained-409-jina-embeddings-v4/fig-27.webp) | Performance on MTEB Code Information Retrieval (MTEB-CoIR) (nDCG@10%). |
 ## Related
 
 - [[Papers Explained Corpus]]

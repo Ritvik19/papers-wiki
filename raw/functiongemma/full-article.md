@@ -1,3 +1,3 @@
 # functiongemma
 
-Canonical HTML: `raw/functiongemma/full-article.html`
+Canonical HTML: `raw/functiongemma/full-article.md`

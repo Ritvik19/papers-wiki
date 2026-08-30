@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-01-06_Papers-Explained-517--Nemotron-Math-6a956874571a.html`
+- Source file: `raw/2026-01-06_Papers-Explained-517--Nemotron-Math-6a956874571a.md`
 - Source title: Papers Explained 517: Nemotron-Math
 - Published: 2026-01-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-517-nemotron-math-6a956874571a](https://medium.com/@ritvik19/papers-explained-517-nemotron-math-6a956874571a)
@@ -95,17 +95,17 @@ Nemotron-Math: Efficient Long-Context Distillation of Mathematical Reasoning fro
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-01-06_Papers-Explained-517--Nemotron-Math-6a956874571a.html`); local copies under `wiki/assets/papers-explained-517-nemotron-math/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-01-06_Papers-Explained-517--Nemotron-Math-6a956874571a.md`); local copies under `wiki/assets/papers-explained-517-nemotron-math/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-517-nemotron-math/fig-1.png) | Title card: Nemotron-Math. |
-| ![Figure 2](assets/papers-explained-517-nemotron-math/fig-2.png) | Distribution of the 7.5M generated solutions across tool usage and reasoning modes for the AoPS and StackExchange-Math problem sets. |
-| ![Figure 3](assets/papers-explained-517-nemotron-math/fig-3.png) | Distribution of the 7.5M generated solutions by reasoning trace length bucket across AoPS and StackExchange-Math sources. |
-| ![Figure 4](assets/papers-explained-517-nemotron-math/fig-4.png) | Accuracy of Qwen3–30B-A3B fine-tuned with different datasets on three benchmarks. |
-| ![Figure 5](assets/papers-explained-517-nemotron-math/fig-5.png) | Accuracy comparison of AoPS-only and AoPS+StackExchange-Math subsets of Nemotron-Math. |
-| ![Figure 6](assets/papers-explained-517-nemotron-math/fig-6.png) | Accuracy comparison between full-length joint training and sequential bucketed training on three benchmarks. |
-| ![Figure 7](assets/papers-explained-517-nemotron-math/fig-7.png) | Scaling with model size and architecture on Nemotron-Math. |
+| ![Figure 1](assets/papers-explained-517-nemotron-math/fig-1.webp) | Title card: Nemotron-Math. |
+| ![Figure 2](assets/papers-explained-517-nemotron-math/fig-2.webp) | Distribution of the 7.5M generated solutions across tool usage and reasoning modes for the AoPS and StackExchange-Math problem sets. |
+| ![Figure 3](assets/papers-explained-517-nemotron-math/fig-3.webp) | Distribution of the 7.5M generated solutions by reasoning trace length bucket across AoPS and StackExchange-Math sources. |
+| ![Figure 4](assets/papers-explained-517-nemotron-math/fig-4.webp) | Accuracy of Qwen3–30B-A3B fine-tuned with different datasets on three benchmarks. |
+| ![Figure 5](assets/papers-explained-517-nemotron-math/fig-5.webp) | Accuracy comparison of AoPS-only and AoPS+StackExchange-Math subsets of Nemotron-Math. |
+| ![Figure 6](assets/papers-explained-517-nemotron-math/fig-6.webp) | Accuracy comparison between full-length joint training and sequential bucketed training on three benchmarks. |
+| ![Figure 7](assets/papers-explained-517-nemotron-math/fig-7.webp) | Scaling with model size and architecture on Nemotron-Math. |
 ## Related
 
 - [[Papers Explained Corpus]]

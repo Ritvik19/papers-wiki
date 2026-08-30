@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-10-02_Papers-Explained-58--PaLM-2-1a9a23f20d6c.html`
+- Source file: `raw/2023-10-02_Papers-Explained-58--PaLM-2-1a9a23f20d6c.md`
 - Source title: Papers Explained 58: PaLM 2
 - Published: 2023-10-02
 - Canonical: [https://medium.com/@ritvik19/papers-explained-58-palm-2-1a9a23f20d6c](https://medium.com/@ritvik19/papers-explained-58-palm-2-1a9a23f20d6c)
@@ -181,28 +181,28 @@ PaLM 2 Technical Report [2305.10403](https://arxiv.org/abs/2305.10403)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-10-02_Papers-Explained-58--PaLM-2-1a9a23f20d6c.html`); local copies under `wiki/assets/papers-explained-58-palm-2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-10-02_Papers-Explained-58--PaLM-2-1a9a23f20d6c.md`); local copies under `wiki/assets/papers-explained-58-palm-2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-58-palm-2/fig-1.png) | Title card: PaLM 2. |
-| ![Figure 2](assets/papers-explained-58-palm-2/fig-2.png) | Language distribution of the multilingual web documents (excluding English). |
-| ![Figure 3](assets/papers-explained-58-palm-2/fig-3.png) | The scaling law obtained from all 4 compute scales. |
-| ![Figure 4](assets/papers-explained-58-palm-2/fig-4.png) | Estimated optimal parameter size at a given number of FLOPs. |
-| ![Figure 5](assets/papers-explained-58-palm-2/fig-5.png) | Performance of PaLM 2 and PaLM on the latest available professional language proficiency exams. |
-| ![Figure 6](assets/papers-explained-58-palm-2/fig-6.png) | Evaluation on English QA and classification tasks in a 1-shot setting. |
-| ![Figure 7](assets/papers-explained-58-palm-2/fig-7.png) | F1 scores on the multilingual TyDi QA datasets in a 1-shot setting. |
-| ![Figure 8](assets/papers-explained-58-palm-2/fig-8.png) | Toxicity classification AUC-ROC on Multilingual Jigsaw and English Civil Comments. |
-| ![Figure 9](assets/papers-explained-58-palm-2/fig-9.png) | Evaluation on reasoning tasks. The number of exemplars are in brackets. Superscripts denote results from past work: a GPT-4, b PaLM, c PaLM+CoT+SC, d QDGAT, e DeBERTaV3-large+KEAR, f PaLM+CoT, g PaLM+CoT. |
-| ![Figure 10](assets/papers-explained-58-palm-2/fig-10.png) | BIG-Bench Hard 3-shot results. |
-| ![Figure 11](assets/papers-explained-58-palm-2/fig-11.png) | Evaluation results on MATH, GSM8K, and MGSM with chain-of-thought prompting / self-consistency. a Minerva, b GPT-4, c Flan-PaLM. |
-| ![Figure 12](assets/papers-explained-58-palm-2/fig-12.png) | Results on coding evaluations from the PaLM and PaLM 2-S* models. a PaLM. |
-| ![Figure 13](assets/papers-explained-58-palm-2/fig-13.png) | BabelCode-HumanEval results on 12 programming languages in the pass@1 setting. |
-| ![Figure 14](assets/papers-explained-58-palm-2/fig-14.png) | Results on WMT21 translation sets. |
-| ![Figure 15](assets/papers-explained-58-palm-2/fig-15.png) | Results on the FRMT (Few-shot Regional Machine Translation) benchmark of dialect-specific translation. |
-| ![Figure 16](assets/papers-explained-58-palm-2/fig-16.png) | One-shot NLG evaluation results. |
-| ![Figure 17](assets/papers-explained-58-palm-2/fig-17.png) | PaLM 2 on average, memorizes less training data than PaLM. Analysis is performed on English training data. |
-| ![Figure 18](assets/papers-explained-58-palm-2/fig-18.png) | Distribution of canaries across languages. |
+| ![Figure 1](assets/papers-explained-58-palm-2/fig-1.webp) | Title card: PaLM 2. |
+| ![Figure 2](assets/papers-explained-58-palm-2/fig-2.webp) | Language distribution of the multilingual web documents (excluding English). |
+| ![Figure 3](assets/papers-explained-58-palm-2/fig-3.webp) | The scaling law obtained from all 4 compute scales. |
+| ![Figure 4](assets/papers-explained-58-palm-2/fig-4.webp) | Estimated optimal parameter size at a given number of FLOPs. |
+| ![Figure 5](assets/papers-explained-58-palm-2/fig-5.webp) | Performance of PaLM 2 and PaLM on the latest available professional language proficiency exams. |
+| ![Figure 6](assets/papers-explained-58-palm-2/fig-6.webp) | Evaluation on English QA and classification tasks in a 1-shot setting. |
+| ![Figure 7](assets/papers-explained-58-palm-2/fig-7.webp) | F1 scores on the multilingual TyDi QA datasets in a 1-shot setting. |
+| ![Figure 8](assets/papers-explained-58-palm-2/fig-8.webp) | Toxicity classification AUC-ROC on Multilingual Jigsaw and English Civil Comments. |
+| ![Figure 9](assets/papers-explained-58-palm-2/fig-9.webp) | Evaluation on reasoning tasks. The number of exemplars are in brackets. Superscripts denote results from past work: a GPT-4, b PaLM, c PaLM+CoT+SC, d QDGAT, e DeBERTaV3-large+KEAR, f PaLM+CoT, g PaLM+CoT. |
+| ![Figure 10](assets/papers-explained-58-palm-2/fig-10.webp) | BIG-Bench Hard 3-shot results. |
+| ![Figure 11](assets/papers-explained-58-palm-2/fig-11.webp) | Evaluation results on MATH, GSM8K, and MGSM with chain-of-thought prompting / self-consistency. a Minerva, b GPT-4, c Flan-PaLM. |
+| ![Figure 12](assets/papers-explained-58-palm-2/fig-12.webp) | Results on coding evaluations from the PaLM and PaLM 2-S* models. a PaLM. |
+| ![Figure 13](assets/papers-explained-58-palm-2/fig-13.webp) | BabelCode-HumanEval results on 12 programming languages in the pass@1 setting. |
+| ![Figure 14](assets/papers-explained-58-palm-2/fig-14.webp) | Results on WMT21 translation sets. |
+| ![Figure 15](assets/papers-explained-58-palm-2/fig-15.webp) | Results on the FRMT (Few-shot Regional Machine Translation) benchmark of dialect-specific translation. |
+| ![Figure 16](assets/papers-explained-58-palm-2/fig-16.webp) | One-shot NLG evaluation results. |
+| ![Figure 17](assets/papers-explained-58-palm-2/fig-17.webp) | PaLM 2 on average, memorizes less training data than PaLM. Analysis is performed on English training data. |
+| ![Figure 18](assets/papers-explained-58-palm-2/fig-18.webp) | Distribution of canaries across languages. |
 ## Related
 
 - [[Papers Explained Corpus]]

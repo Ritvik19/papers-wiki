@@ -1,3 +1,3 @@
 # translategemma
 
-Canonical HTML: `raw/translategemma/full-article.html`
+Canonical HTML: `raw/translategemma/full-article.md`

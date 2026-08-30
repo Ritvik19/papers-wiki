@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-03-23_Papers-Explained-546--Tiny-Aya-5eccbb462932.html`
+- Source file: `raw/2026-03-23_Papers-Explained-546--Tiny-Aya-5eccbb462932.md`
 - Source title: Papers Explained 546: Tiny Aya
 - Published: 2026-03-23
 - Canonical: [https://medium.com/@ritvik19/papers-explained-546-tiny-aya-5eccbb462932](https://medium.com/@ritvik19/papers-explained-546-tiny-aya-5eccbb462932)
@@ -235,28 +235,28 @@ Tiny Aya: Bridging Scale and Multilingual Depth [2603.11510](https://arxiv.org/a
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-03-23_Papers-Explained-546--Tiny-Aya-5eccbb462932.html`); local copies under `wiki/assets/papers-explained-546-tiny-aya/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-03-23_Papers-Explained-546--Tiny-Aya-5eccbb462932.md`); local copies under `wiki/assets/papers-explained-546-tiny-aya/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-546-tiny-aya/fig-1.png) | Title card: Tiny Aya. |
-| ![Figure 2](assets/papers-explained-546-tiny-aya/fig-2.png) | A vocabulary size of 262k is used. |
-| ![Figure 3](assets/papers-explained-546-tiny-aya/fig-3.png) | Tokenization efficiency across scripts. |
-| ![Figure 4](assets/papers-explained-546-tiny-aya/fig-4.png) | Language coverage by region. |
-| ![Figure 5](assets/papers-explained-546-tiny-aya/fig-5.png) | Regional composition of posttraining data clusters. |
-| ![Figure 6](assets/papers-explained-546-tiny-aya/fig-6.png) | Tiny Aya architecture summary. |
-| ![Figure 7](assets/papers-explained-546-tiny-aya/fig-7.png) | Post Training pipeline and model construction. |
-| ![Figure 8](assets/papers-explained-546-tiny-aya/fig-8.png) | Discriminative benchmark results. |
-| ![Figure 9](assets/papers-explained-546-tiny-aya/fig-9.png) | Generative and translation benchmark summary. |
-| ![Figure 10](assets/papers-explained-546-tiny-aya/fig-10.png) | Language confusion in open-ended generations and mathematical reasoning. |
-| ![Figure 11](assets/papers-explained-546-tiny-aya/fig-11.png) | Translation quality on WMT24++. |
-| ![Figure 12](assets/papers-explained-546-tiny-aya/fig-12.png) | Translation quality on focus languages from Flores. |
-| ![Figure 13](assets/papers-explained-546-tiny-aya/fig-13.png) | Effect of regional specialization on translation. |
-| ![Figure 14](assets/papers-explained-546-tiny-aya/fig-14.png) | Safety evaluation summary across benchmarks. |
-| ![Figure 15](assets/papers-explained-546-tiny-aya/fig-15.png) | Cultural norm reasoning across countries on NormAd. |
-| ![Figure 16](assets/papers-explained-546-tiny-aya/fig-16.png) | Impact of test-time reasoning on model performance evaluated on NormAd. |
-| ![Figure 17](assets/papers-explained-546-tiny-aya/fig-17.png) | Cultural commonsense on BLEnD SQA. |
-| ![Figure 18](assets/papers-explained-546-tiny-aya/fig-18.png) | Effect of prompt language on BLEnD accuracy. |
+| ![Figure 1](assets/papers-explained-546-tiny-aya/fig-1.webp) | Title card: Tiny Aya. |
+| ![Figure 2](assets/papers-explained-546-tiny-aya/fig-2.webp) | A vocabulary size of 262k is used. |
+| ![Figure 3](assets/papers-explained-546-tiny-aya/fig-3.webp) | Tokenization efficiency across scripts. |
+| ![Figure 4](assets/papers-explained-546-tiny-aya/fig-4.webp) | Language coverage by region. |
+| ![Figure 5](assets/papers-explained-546-tiny-aya/fig-5.webp) | Regional composition of posttraining data clusters. |
+| ![Figure 6](assets/papers-explained-546-tiny-aya/fig-6.webp) | Tiny Aya architecture summary. |
+| ![Figure 7](assets/papers-explained-546-tiny-aya/fig-7.webp) | Post Training pipeline and model construction. |
+| ![Figure 8](assets/papers-explained-546-tiny-aya/fig-8.webp) | Discriminative benchmark results. |
+| ![Figure 9](assets/papers-explained-546-tiny-aya/fig-9.webp) | Generative and translation benchmark summary. |
+| ![Figure 10](assets/papers-explained-546-tiny-aya/fig-10.webp) | Language confusion in open-ended generations and mathematical reasoning. |
+| ![Figure 11](assets/papers-explained-546-tiny-aya/fig-11.webp) | Translation quality on WMT24++. |
+| ![Figure 12](assets/papers-explained-546-tiny-aya/fig-12.webp) | Translation quality on focus languages from Flores. |
+| ![Figure 13](assets/papers-explained-546-tiny-aya/fig-13.webp) | Effect of regional specialization on translation. |
+| ![Figure 14](assets/papers-explained-546-tiny-aya/fig-14.webp) | Safety evaluation summary across benchmarks. |
+| ![Figure 15](assets/papers-explained-546-tiny-aya/fig-15.webp) | Cultural norm reasoning across countries on NormAd. |
+| ![Figure 16](assets/papers-explained-546-tiny-aya/fig-16.webp) | Impact of test-time reasoning on model performance evaluated on NormAd. |
+| ![Figure 17](assets/papers-explained-546-tiny-aya/fig-17.webp) | Cultural commonsense on BLEnD SQA. |
+| ![Figure 18](assets/papers-explained-546-tiny-aya/fig-18.webp) | Effect of prompt language on BLEnD accuracy. |
 ## Related
 
 - [[Cohere Labs Launches Tiny Aya]] — official Cohere Labs blog announcement of the same model family.

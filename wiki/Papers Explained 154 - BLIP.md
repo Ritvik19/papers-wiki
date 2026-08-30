@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-06-24_Papers-Explained-154--BLIP-6d85c80a744d.html`
+- Source file: `raw/2024-06-24_Papers-Explained-154--BLIP-6d85c80a744d.md`
 - Source title: Papers Explained 154: BLIP
 - Published: 2024-06-24
 - Canonical: [https://medium.com/@ritvik19/papers-explained-154-blip-6d85c80a744d](https://medium.com/@ritvik19/papers-explained-154-blip-6d85c80a744d)
@@ -113,17 +113,17 @@ Recommended Reading [Multi Modal Transformers](https://ritvik19.medium.com/list/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-06-24_Papers-Explained-154--BLIP-6d85c80a744d.html`); local copies under `wiki/assets/papers-explained-154-blip/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-06-24_Papers-Explained-154--BLIP-6d85c80a744d.md`); local copies under `wiki/assets/papers-explained-154-blip/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-154-blip/fig-1.png) | Title page of *BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation* (Salesforce Research). |
-| ![Figure 2](assets/papers-explained-154-blip/fig-2.png) | MED pre-training architecture: ViT image encoder with unimodal text encoder (ITC), image-grounded encoder (ITM), and causal decoder (LM) sharing colors for tied parameters. |
-| ![Figure 3](assets/papers-explained-154-blip/fig-3.png) | CapFilt bootstrapping loop: pretrain MED on web+human pairs; fork captioner (LM) and filter (ITC+ITM); filter noisy web and synthetic captions; re-pretrain on cleaned union. |
-| ![Figure 4](assets/papers-explained-154-blip/fig-4.png) | CapFilt ablations on 14M vs 129M images, ViT-B vs ViT-L: retrieval (COCO FT, Flickr ZS) and captioning (COCO FT, NoCaps ZS) when enabling captioner/filter checkmarks. |
-| ![Figure 5](assets/papers-explained-154-blip/fig-5.png) | Synthetic-caption decoding: beam vs nucleus sampling trade-offs with reported filter noise ratios across retrieval and captioning benchmarks. |
-| ![Figure 6](assets/papers-explained-154-blip/fig-6.png) | Text encoder–decoder sharing study: which transformer layers are shared vs separate (#parameters vs TR/IR/BLEU/CIDEr/SPICE). |
-| ![Figure 7](assets/papers-explained-154-blip/fig-7.png) | Captioner vs filter parameter sharing: shared-weights (lower noise ratio) vs decoupled CapFilt (higher noise tolerance, better downstream metrics). |
+| ![Figure 1](assets/papers-explained-154-blip/fig-1.webp) | Title page of *BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation* (Salesforce Research). |
+| ![Figure 2](assets/papers-explained-154-blip/fig-2.webp) | MED pre-training architecture: ViT image encoder with unimodal text encoder (ITC), image-grounded encoder (ITM), and causal decoder (LM) sharing colors for tied parameters. |
+| ![Figure 3](assets/papers-explained-154-blip/fig-3.webp) | CapFilt bootstrapping loop: pretrain MED on web+human pairs; fork captioner (LM) and filter (ITC+ITM); filter noisy web and synthetic captions; re-pretrain on cleaned union. |
+| ![Figure 4](assets/papers-explained-154-blip/fig-4.webp) | CapFilt ablations on 14M vs 129M images, ViT-B vs ViT-L: retrieval (COCO FT, Flickr ZS) and captioning (COCO FT, NoCaps ZS) when enabling captioner/filter checkmarks. |
+| ![Figure 5](assets/papers-explained-154-blip/fig-5.webp) | Synthetic-caption decoding: beam vs nucleus sampling trade-offs with reported filter noise ratios across retrieval and captioning benchmarks. |
+| ![Figure 6](assets/papers-explained-154-blip/fig-6.webp) | Text encoder–decoder sharing study: which transformer layers are shared vs separate (#parameters vs TR/IR/BLEU/CIDEr/SPICE). |
+| ![Figure 7](assets/papers-explained-154-blip/fig-7.webp) | Captioner vs filter parameter sharing: shared-weights (lower noise ratio) vs decoupled CapFilt (higher noise tolerance, better downstream metrics). |
 ## Related
 
 - [[Papers Explained Corpus]]

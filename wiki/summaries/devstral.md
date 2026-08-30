@@ -1,6 +1,6 @@
 # Devstral
 
-**Source**: `raw/devstral/full-article.html` (217 KB), `raw/devstral/full-article.md` (markdown view)  
+**Source**: `raw/devstral/full-article.md` (217 KB), `raw/devstral/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/devstral/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-06_Papers-Explained-03--RoBERTa-81db014e35b9.html`
+- Source file: `raw/2023-02-06_Papers-Explained-03--RoBERTa-81db014e35b9.md`
 - Source title: Papers Explained 03: RoBERTa
 - Published: 2023-02-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-03-roberta-81db014e35b9](https://medium.com/@ritvik19/papers-explained-03-roberta-81db014e35b9)
@@ -73,12 +73,12 @@ RoBERTa: A Robustly Optimized BERT Pretraining Approach [1907.11692](https://arx
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-06_Papers-Explained-03--RoBERTa-81db014e35b9.html`); local copies under `wiki/assets/papers-explained-03-roberta/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-06_Papers-Explained-03--RoBERTa-81db014e35b9.md`); local copies under `wiki/assets/papers-explained-03-roberta/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-03-roberta/fig-1.png) | Title and author block of *RoBERTa: A Robustly Optimized BERT Pretraining Approach*. |
-| ![Figure 2](assets/papers-explained-03-roberta/fig-2.png) | GLUE results table comparing RoBERTa against BERT, XLNet, and leaderboard ensembles on dev/test splits. |
+| ![Figure 1](assets/papers-explained-03-roberta/fig-1.webp) | Title and author block of *RoBERTa: A Robustly Optimized BERT Pretraining Approach*. |
+| ![Figure 2](assets/papers-explained-03-roberta/fig-2.webp) | GLUE results table comparing RoBERTa against BERT, XLNet, and leaderboard ensembles on dev/test splits. |
 ## Related
 
 - [[Papers Explained Corpus]]

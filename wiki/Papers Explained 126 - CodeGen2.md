@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-04-19_Papers-Explained-126--CodeGen2-d2690d7eb831.html`
+- Source file: `raw/2024-04-19_Papers-Explained-126--CodeGen2-d2690d7eb831.md`
 - Source title: Papers Explained 126: CodeGen2
 - Published: 2024-04-19
 - Canonical: [https://medium.com/@ritvik19/papers-explained-codegen2-d2690d7eb831](https://medium.com/@ritvik19/papers-explained-codegen2-d2690d7eb831)
@@ -199,14 +199,14 @@ Recommended Reading [LLMs for Code](https://ritvik19.medium.com/list/llms-for-co
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-04-19_Papers-Explained-126--CodeGen2-d2690d7eb831.html`); local copies under `wiki/assets/papers-explained-126-codegen2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-04-19_Papers-Explained-126--CodeGen2-d2690d7eb831.md`); local copies under `wiki/assets/papers-explained-126-codegen2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-126-codegen2/fig-1.png) | Title page of *CodeGen2: Lessons for Training LLMs on Programming and Natural Languages*. |
-| ![Figure 2](assets/papers-explained-126-codegen2/fig-2.png) | Decoder vs Prefix-LM comparison across coding, summarization, and understanding tasks. |
-| ![Figure 3](assets/papers-explained-126-codegen2/fig-3.png) | Mixed natural/programming data training curves on LAMBADA, PIQA, and HumanEval. |
-| ![Figure 4](assets/papers-explained-126-codegen2/fig-4.png) | HumanEval pass@k comparison between CodeGen2.0 and multi-epoch CodeGen2.5. |
+| ![Figure 1](assets/papers-explained-126-codegen2/fig-1.webp) | Title page of *CodeGen2: Lessons for Training LLMs on Programming and Natural Languages*. |
+| ![Figure 2](assets/papers-explained-126-codegen2/fig-2.webp) | Decoder vs Prefix-LM comparison across coding, summarization, and understanding tasks. |
+| ![Figure 3](assets/papers-explained-126-codegen2/fig-3.webp) | Mixed natural/programming data training curves on LAMBADA, PIQA, and HumanEval. |
+| ![Figure 4](assets/papers-explained-126-codegen2/fig-4.webp) | HumanEval pass@k comparison between CodeGen2.0 and multi-epoch CodeGen2.5. |
 ## Related
 
 - [[Papers Explained Corpus]]

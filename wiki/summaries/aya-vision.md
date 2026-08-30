@@ -1,6 +1,6 @@
 # Aya Vision: Expanding the worlds AI can see
 
-**Source**: `raw/aya-vision/full-article.html` (326 KB), `raw/aya-vision/full-article.md` (markdown view)  
+**Source**: `raw/aya-vision/full-article.md` (326 KB), `raw/aya-vision/full-article.md` (markdown view)  
 **URL**: https://cohere.com/blog/aya-vision  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -26,12 +26,12 @@ Training builds on techniques unified from the Aya research line: **synthetic an
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/aya-vision/fig-1.png) | Aya Vision multilingual multimodal examples across languages | — |
-| ![fig-2](../assets/aya-vision/fig-2.png) | Aya Vision 8B combined win rates on AyaVisionBench and m-WildVision | — |
-| ![fig-3](../assets/aya-vision/fig-3.png) | Efficiency vs performance: 8B beating far larger vision models | — |
-| ![fig-4](../assets/aya-vision/fig-4.png) | Step-by-step improvement in multilingual multimodal win rates (8B) | — |
+| ![fig-1](../assets/aya-vision/fig-1.webp) | Aya Vision multilingual multimodal examples across languages | — |
+| ![fig-2](../assets/aya-vision/fig-2.webp) | Aya Vision 8B combined win rates on AyaVisionBench and m-WildVision | — |
+| ![fig-3](../assets/aya-vision/fig-3.webp) | Efficiency vs performance: 8B beating far larger vision models | — |
+| ![fig-4](../assets/aya-vision/fig-4.webp) | Step-by-step improvement in multilingual multimodal win rates (8B) | — |
 
-![Multilingual multimodal examples](../assets/aya-vision/fig-1.png)
+![Multilingual multimodal examples](../assets/aya-vision/fig-1.webp)
 
 ## Entities
 

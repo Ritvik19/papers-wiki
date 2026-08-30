@@ -1,6 +1,6 @@
 # A Foundation Model for Entity Recognition
 
-**Source**: `raw/a-foundation-model-for-entity-recognition/full-article.html` (SPA shell; readable markdown from WebFetch), https://about.nuextract.ai/blog/a-foundation-model-for-entity-recognition  
+**Source**: `raw/a-foundation-model-for-entity-recognition/full-article.md` (SPA shell; readable markdown from WebFetch), https://about.nuextract.ai/blog/a-foundation-model-for-entity-recognition  
 **Ingested**: 2026-06-12  
 **Tags**: #summary
 
@@ -26,7 +26,7 @@ On **MIT Movie**, **MIT Restaurant**, **OntoNotes 5**, and **BioNLP 2004** (line
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/a-foundation-model-for-entity-recognition/fig-1.png) | Legal document annotated with entities (NuMind UI) | — |
+| ![fig-1](../assets/a-foundation-model-for-entity-recognition/fig-1.webp) | Legal document annotated with entities (NuMind UI) | — |
 | ![fig-2](../assets/a-foundation-model-for-entity-recognition/fig-2.svg) | BERT embeddings: Amazon river vs company disambiguation | — |
 | ![fig-3](../assets/a-foundation-model-for-entity-recognition/fig-3.svg) | Per-token concept probability head on embeddings | — |
 | ![fig-4](../assets/a-foundation-model-for-entity-recognition/fig-4.svg) | RoBERTa-base transfer baseline (frozen encoder) | — |

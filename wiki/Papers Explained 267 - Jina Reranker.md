@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-12-06_Papers-Explained-267--Jina-Reranker-daf6fdf8b2a6.html`
+- Source file: `raw/2024-12-06_Papers-Explained-267--Jina-Reranker-daf6fdf8b2a6.md`
 - Source title: Papers Explained 267: Jina Reranker
 - Published: 2024-12-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-267-jina-reranker-daf6fdf8b2a6](https://medium.com/@ritvik19/papers-explained-267-jina-reranker-daf6fdf8b2a6)
@@ -113,25 +113,25 @@ Recommended Reading [Retrieval and Representation Learning](https://ritvik19.med
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-12-06_Papers-Explained-267--Jina-Reranker-daf6fdf8b2a6.html`); local copies under `wiki/assets/papers-explained-267-jina-reranker/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-12-06_Papers-Explained-267--Jina-Reranker-daf6fdf8b2a6.md`); local copies under `wiki/assets/papers-explained-267-jina-reranker/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-267-jina-reranker/fig-1.png) | Title card: Jina Reranker. |
-| ![Figure 2](assets/papers-explained-267-jina-reranker/fig-2.png) | The comparison of the representation-based cosine similarity (left) and the reranker (right). |
-| ![Figure 3](assets/papers-explained-267-jina-reranker/fig-3.png) | A practical search system often chains the embedding-based search and the reranker together to achieve the best search quality. |
-| ![Figure 4](assets/papers-explained-267-jina-reranker/fig-4.png) | This is where rerankers come into play. |
-| ![Figure 5](assets/papers-explained-267-jina-reranker/fig-5.png) | LlamaIndex RAG. |
-| ![Figure 6](assets/papers-explained-267-jina-reranker/fig-6.png) | BEIR. |
-| ![Figure 7](assets/papers-explained-267-jina-reranker/fig-7.png) | MTEB. |
-| ![Figure 8](assets/papers-explained-267-jina-reranker/fig-8.png) | LoCo. |
-| ![Figure 9](assets/papers-explained-267-jina-reranker/fig-9.png) | Recall@10 scores reported for different reranking models for MKQA dataset. |
-| ![Figure 10](assets/papers-explained-267-jina-reranker/fig-10.png) | NDCG@10 scores reported for different reranking models for Beir dataset. |
-| ![Figure 11](assets/papers-explained-267-jina-reranker/fig-11.png) | BEIR: Heterogeneous Benchmark on Diverse IR Tasks. |
-| ![Figure 12](assets/papers-explained-267-jina-reranker/fig-12.png) | Recall@3 scores reported for different reranking models for NSText2SQL dataset. |
-| ![Figure 13](assets/papers-explained-267-jina-reranker/fig-13.png) | BEIR: Heterogeneous Benchmark on Diverse IR Tasks. |
-| ![Figure 14](assets/papers-explained-267-jina-reranker/fig-14.png) | Recall@3 scores reported for different reranking models for ToolBench dataset. |
-| ![Figure 15](assets/papers-explained-267-jina-reranker/fig-15.png) | MRR@10 scores reported for different reranking models for CodeSearchNet dataset. |
+| ![Figure 1](assets/papers-explained-267-jina-reranker/fig-1.webp) | Title card: Jina Reranker. |
+| ![Figure 2](assets/papers-explained-267-jina-reranker/fig-2.webp) | The comparison of the representation-based cosine similarity (left) and the reranker (right). |
+| ![Figure 3](assets/papers-explained-267-jina-reranker/fig-3.webp) | A practical search system often chains the embedding-based search and the reranker together to achieve the best search quality. |
+| ![Figure 4](assets/papers-explained-267-jina-reranker/fig-4.webp) | This is where rerankers come into play. |
+| ![Figure 5](assets/papers-explained-267-jina-reranker/fig-5.webp) | LlamaIndex RAG. |
+| ![Figure 6](assets/papers-explained-267-jina-reranker/fig-6.webp) | BEIR. |
+| ![Figure 7](assets/papers-explained-267-jina-reranker/fig-7.webp) | MTEB. |
+| ![Figure 8](assets/papers-explained-267-jina-reranker/fig-8.webp) | LoCo. |
+| ![Figure 9](assets/papers-explained-267-jina-reranker/fig-9.webp) | Recall@10 scores reported for different reranking models for MKQA dataset. |
+| ![Figure 10](assets/papers-explained-267-jina-reranker/fig-10.webp) | NDCG@10 scores reported for different reranking models for Beir dataset. |
+| ![Figure 11](assets/papers-explained-267-jina-reranker/fig-11.webp) | BEIR: Heterogeneous Benchmark on Diverse IR Tasks. |
+| ![Figure 12](assets/papers-explained-267-jina-reranker/fig-12.webp) | Recall@3 scores reported for different reranking models for NSText2SQL dataset. |
+| ![Figure 13](assets/papers-explained-267-jina-reranker/fig-13.webp) | BEIR: Heterogeneous Benchmark on Diverse IR Tasks. |
+| ![Figure 14](assets/papers-explained-267-jina-reranker/fig-14.webp) | Recall@3 scores reported for different reranking models for ToolBench dataset. |
+| ![Figure 15](assets/papers-explained-267-jina-reranker/fig-15.webp) | MRR@10 scores reported for different reranking models for CodeSearchNet dataset. |
 ## Related
 
 - [[Papers Explained Corpus]]

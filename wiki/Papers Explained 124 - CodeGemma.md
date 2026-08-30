@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-04-15_Papers-Explained-124--CodeGemma-85faa98af20d.html`
+- Source file: `raw/2024-04-15_Papers-Explained-124--CodeGemma-85faa98af20d.md`
 - Source title: Papers Explained 124: CodeGemma
 - Published: 2024-04-15
 - Canonical: [https://medium.com/@ritvik19/papers-explained-124-codegemma-85faa98af20d](https://medium.com/@ritvik19/papers-explained-124-codegemma-85faa98af20d)
@@ -113,19 +113,19 @@ Recommended Reading [Gemini / Gemma Models](https://ritvik19.medium.com/list/gem
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-04-15_Papers-Explained-124--CodeGemma-85faa98af20d.html`); local copies under `wiki/assets/papers-explained-124-codegemma/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-04-15_Papers-Explained-124--CodeGemma-85faa98af20d.md`); local copies under `wiki/assets/papers-explained-124-codegemma/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-124-codegemma/fig-1.png) | Title page of *CodeGemma: Open Code Models Based on Gemma*. |
-| ![Figure 2](assets/papers-explained-124-codegemma/fig-2.png) | CodeGemma training lineage from Gemma base models to 2B/7B and 7B-Instruction checkpoints. |
-| ![Figure 3](assets/papers-explained-124-codegemma/fig-3.png) | FIM control-token mapping for prefix, middle, suffix, and file separator spans. |
-| ![Figure 4](assets/papers-explained-124-codegemma/fig-4.png) | Example code sequence formatted in prefix-suffix-middle infilling mode. |
-| ![Figure 5](assets/papers-explained-124-codegemma/fig-5.png) | Single-line and multi-line infilling speed/performance comparison against FIM-aware baselines. |
-| ![Figure 6](assets/papers-explained-124-codegemma/fig-6.png) | HumanEval and MBPP gains of CodeGemma over corresponding Gemma pretrained models. |
-| ![Figure 7](assets/papers-explained-124-codegemma/fig-7.png) | Multilingual coding results across HumanEval and MBPP translated benchmarks. |
-| ![Figure 8](assets/papers-explained-124-codegemma/fig-8.png) | Language capability comparison among Gemma IT, CodeGemma PT, and CodeGemma IT. |
-| ![Figure 9](assets/papers-explained-124-codegemma/fig-9.png) | Math reasoning comparison across 7B-class code models on GSM8K and MATH. |
+| ![Figure 1](assets/papers-explained-124-codegemma/fig-1.webp) | Title page of *CodeGemma: Open Code Models Based on Gemma*. |
+| ![Figure 2](assets/papers-explained-124-codegemma/fig-2.webp) | CodeGemma training lineage from Gemma base models to 2B/7B and 7B-Instruction checkpoints. |
+| ![Figure 3](assets/papers-explained-124-codegemma/fig-3.webp) | FIM control-token mapping for prefix, middle, suffix, and file separator spans. |
+| ![Figure 4](assets/papers-explained-124-codegemma/fig-4.webp) | Example code sequence formatted in prefix-suffix-middle infilling mode. |
+| ![Figure 5](assets/papers-explained-124-codegemma/fig-5.webp) | Single-line and multi-line infilling speed/performance comparison against FIM-aware baselines. |
+| ![Figure 6](assets/papers-explained-124-codegemma/fig-6.webp) | HumanEval and MBPP gains of CodeGemma over corresponding Gemma pretrained models. |
+| ![Figure 7](assets/papers-explained-124-codegemma/fig-7.webp) | Multilingual coding results across HumanEval and MBPP translated benchmarks. |
+| ![Figure 8](assets/papers-explained-124-codegemma/fig-8.webp) | Language capability comparison among Gemma IT, CodeGemma PT, and CodeGemma IT. |
+| ![Figure 9](assets/papers-explained-124-codegemma/fig-9.webp) | Math reasoning comparison across 7B-class code models on GSM8K and MATH. |
 ## HF Blog Cross-References
 
 - [CodeGemma — an official Google release for code LLMs](https://huggingface.co/blog/codegemma) (2024-04-09) — Hugging Face's release post for the same 2B/7B models covered above, focused on Transformers usage, quantization, and integration with local tools (VS Code, llama.cpp) rather than new technical content.

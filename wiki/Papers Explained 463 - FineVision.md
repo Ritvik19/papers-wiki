@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-09-29_Papers-Explained-463--FineVision-e4b1af24ecbf.html`
+- Source file: `raw/2025-09-29_Papers-Explained-463--FineVision-e4b1af24ecbf.md`
 - Source title: Papers Explained 463: FineVision
 - Published: 2025-09-29
 - Canonical: [https://medium.com/@ritvik19/papers-explained-463-finevision-e4b1af24ecbf](https://medium.com/@ritvik19/papers-explained-463-finevision-e4b1af24ecbf)
@@ -117,22 +117,22 @@ To evaluate the diversity of datasets:
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-09-29_Papers-Explained-463--FineVision-e4b1af24ecbf.html`); local copies under `wiki/assets/papers-explained-463-finevision/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-09-29_Papers-Explained-463--FineVision-e4b1af24ecbf.md`); local copies under `wiki/assets/papers-explained-463-finevision/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-463-finevision/fig-1.png) | Title card: FineVision. |
-| ![Figure 2](assets/papers-explained-463-finevision/fig-2.png) | Over 200 image-text datasets were manually collected from various publicly available sources and processed to unify their formatting. |
-| ![Figure 3](assets/papers-explained-463-finevision/fig-3.png) | Every single turn in the dataset is rated across 4 axes. |
-| ![Figure 4](assets/papers-explained-463-finevision/fig-4.png) | Data Collection. |
-| ![Figure 5](assets/papers-explained-463-finevision/fig-5.png) | Three similar open source alternatives are used as baselines to compare the dataset: The Cauldron, LLaVA-OneVision and Cambrian-7M. |
-| ![Figure 6](assets/papers-explained-463-finevision/fig-6.png) | How does FineVision compare to other open datasets? |
-| ![Figure 7](assets/papers-explained-463-finevision/fig-7.png) | How much test data is in publicly available datasets? |
-| ![Figure 8](assets/papers-explained-463-finevision/fig-8.png) | How much test data is in publicly available datasets? |
-| ![Figure 9](assets/papers-explained-463-finevision/fig-9.png) | To evaluate the diversity of datasets. |
-| ![Figure 10](assets/papers-explained-463-finevision/fig-10.png) | To evaluate the diversity of datasets. |
-| ![Figure 11](assets/papers-explained-463-finevision/fig-11.png) | To evaluate the diversity of datasets. |
-| ![Figure 12](assets/papers-explained-463-finevision/fig-12.png) | To evaluate the diversity of datasets. |
+| ![Figure 1](assets/papers-explained-463-finevision/fig-1.webp) | Title card: FineVision. |
+| ![Figure 2](assets/papers-explained-463-finevision/fig-2.webp) | Over 200 image-text datasets were manually collected from various publicly available sources and processed to unify their formatting. |
+| ![Figure 3](assets/papers-explained-463-finevision/fig-3.webp) | Every single turn in the dataset is rated across 4 axes. |
+| ![Figure 4](assets/papers-explained-463-finevision/fig-4.webp) | Data Collection. |
+| ![Figure 5](assets/papers-explained-463-finevision/fig-5.webp) | Three similar open source alternatives are used as baselines to compare the dataset: The Cauldron, LLaVA-OneVision and Cambrian-7M. |
+| ![Figure 6](assets/papers-explained-463-finevision/fig-6.webp) | How does FineVision compare to other open datasets? |
+| ![Figure 7](assets/papers-explained-463-finevision/fig-7.webp) | How much test data is in publicly available datasets? |
+| ![Figure 8](assets/papers-explained-463-finevision/fig-8.webp) | How much test data is in publicly available datasets? |
+| ![Figure 9](assets/papers-explained-463-finevision/fig-9.webp) | To evaluate the diversity of datasets. |
+| ![Figure 10](assets/papers-explained-463-finevision/fig-10.webp) | To evaluate the diversity of datasets. |
+| ![Figure 11](assets/papers-explained-463-finevision/fig-11.webp) | To evaluate the diversity of datasets. |
+| ![Figure 12](assets/papers-explained-463-finevision/fig-12.webp) | To evaluate the diversity of datasets. |
 ## Related
 
 - [[Papers Explained Corpus]]

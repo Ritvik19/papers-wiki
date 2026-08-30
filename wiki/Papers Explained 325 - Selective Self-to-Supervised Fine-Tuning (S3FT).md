@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-03-07_Papers-Explained-325--Selective-Self-to-Supervised-Fine-Tuning--S3FT--b2602400d938.html`
+- Source file: `raw/2025-03-07_Papers-Explained-325--Selective-Self-to-Supervised-Fine-Tuning--S3FT--b2602400d938.md`
 - Source title: Papers Explained 325: Selective Self-to-Supervised Fine-Tuning (S3FT)
 - Published: 2025-03-07
 - Canonical: [https://medium.com/@ritvik19/papers-explained-325-selective-self-to-supervised-fine-tuning-s3ft-b2602400d938](https://medium.com/@ritvik19/papers-explained-325-selective-self-to-supervised-fine-tuning-s3ft-b2602400d938)
@@ -83,17 +83,17 @@ Selective Self-to-Supervised Fine-Tuning for Generalization in Large Language Mo
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-03-07_Papers-Explained-325--Selective-Self-to-Supervised-Fine-Tuning--S3FT--b2602400d938.html`); local copies under `wiki/assets/papers-explained-325-selective-self-to-supervised-fine-tuning-s3ft/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-03-07_Papers-Explained-325--Selective-Self-to-Supervised-Fine-Tuning--S3FT--b2602400d938.md`); local copies under `wiki/assets/papers-explained-325-selective-self-to-supervised-fine-tuning-s3ft/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-325-selective-self-to-supervised-fine-tuning-s3ft/fig-1.png) | Title card: Selective Self-to-Supervised Fine-Tuning (S3FT). |
-| ![Figure 2](assets/papers-explained-325-selective-self-to-supervised-fine-tuning-s3ft/fig-2.png) | An overview of the proposed approach. |
-| ![Figure 3](assets/papers-explained-325-selective-self-to-supervised-fine-tuning-s3ft/fig-3.png) | Final Training Data Selection. |
-| ![Figure 4](assets/papers-explained-325-selective-self-to-supervised-fine-tuning-s3ft/fig-4.png) | Mistral-instruct-v2 (7B) is used as the base model and the judge model. |
-| ![Figure 5](assets/papers-explained-325-selective-self-to-supervised-fine-tuning-s3ft/fig-5.png) | Performance comparison of various fine tuning techniques using Accuracy(%) as the metric. |
-| ![Figure 6](assets/papers-explained-325-selective-self-to-supervised-fine-tuning-s3ft/fig-6.png) | Generalization over other benchmarks. |
-| ![Figure 7](assets/papers-explained-325-selective-self-to-supervised-fine-tuning-s3ft/fig-7.png) | Histogram of the log probability assigned by Mistral-7B-Instruct-v0.2 to the gold responses, paraphrase of gold responses and model’s own predictions. |
+| ![Figure 1](assets/papers-explained-325-selective-self-to-supervised-fine-tuning-s3ft/fig-1.webp) | Title card: Selective Self-to-Supervised Fine-Tuning (S3FT). |
+| ![Figure 2](assets/papers-explained-325-selective-self-to-supervised-fine-tuning-s3ft/fig-2.webp) | An overview of the proposed approach. |
+| ![Figure 3](assets/papers-explained-325-selective-self-to-supervised-fine-tuning-s3ft/fig-3.webp) | Final Training Data Selection. |
+| ![Figure 4](assets/papers-explained-325-selective-self-to-supervised-fine-tuning-s3ft/fig-4.webp) | Mistral-instruct-v2 (7B) is used as the base model and the judge model. |
+| ![Figure 5](assets/papers-explained-325-selective-self-to-supervised-fine-tuning-s3ft/fig-5.webp) | Performance comparison of various fine tuning techniques using Accuracy(%) as the metric. |
+| ![Figure 6](assets/papers-explained-325-selective-self-to-supervised-fine-tuning-s3ft/fig-6.webp) | Generalization over other benchmarks. |
+| ![Figure 7](assets/papers-explained-325-selective-self-to-supervised-fine-tuning-s3ft/fig-7.webp) | Histogram of the log probability assigned by Mistral-7B-Instruct-v0.2 to the gold responses, paraphrase of gold responses and model’s own predictions. |
 ## Related
 
 - [[Papers Explained Corpus]]

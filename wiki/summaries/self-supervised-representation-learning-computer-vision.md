@@ -1,6 +1,6 @@
 # Grokking Self-Supervised (Representation) Learning: How It Works in Computer Vision and Why
 
-**Source**: `raw/self-supervised-representation-learning-computer-vision/full-article.html` (markdown view: `raw/self-supervised-representation-learning-computer-vision/full-article.md`)  
+**Source**: `raw/self-supervised-representation-learning-computer-vision/full-article.md` (markdown view: `raw/self-supervised-representation-learning-computer-vision/full-article.md`)  
 **URL**: https://theaisummer.com/self-supervised-representation-learning-computer-vision/  
 **Author**: Nikolas Adaloglou (AI Summer), 2021-07-01  
 **Ingested**: 2026-06-06  
@@ -12,7 +12,7 @@ Nikolas Adaloglou's AI Summer tutorial explains **self-supervised representation
 
 The article presents a seven-step SSL workflow (unlabeled data → objective → augmentations → long pre-training → feature extractor → downstream fine-tune → baseline comparison) and centers on **contrastive learning**: align augmented views of the same image while pushing apart views from different images. Augmentations encode human prior knowledge — SimCLR's ablation shows **color distortion** and **cropping** dominate on ImageNet — but must preserve semantics, match the downstream task, and remain challenging enough to avoid trivial solutions.
 
-![Examples of image augmentations for contrastive SSL](../assets/self-supervised-representation-learning-computer-vision/fig-1.png)
+![Examples of image augmentations for contrastive SSL](../assets/self-supervised-representation-learning-computer-vision/fig-1.webp)
 
 The loss-function section demystifies SSL objectives through log-softmax algebra: contrastive losses maximize positive-pair similarity while a scalar **c** (from batch negatives, running averages, or batch-norm mean subtraction) provides implicit repulsion. **Mode collapse** — uniform or single-dimension dominated outputs — parallels GAN failure; mitigations include **EMA teacher networks** (stop-gradient targets), predictor heads ([[BYOL]]), heavy regularization (weight decay, LARS, warmup/decay, batch norm), and implicit contrast via BN statistics. The article closes with practical tips (Adam before LARS, normalize after augmentations, ResNet-18 for 300+ epochs, linear evaluation or k-NN monitoring).
 
@@ -34,15 +34,15 @@ The loss-function section demystifies SSL objectives through log-softmax algebra
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/self-supervised-representation-learning-computer-vision/fig-1.png) | Examples of image augmentations used in contrastive SSL (SimCLR) | — |
-| ![fig-2](../assets/self-supervised-representation-learning-computer-vision/fig-2.png) | SimCLR augmentation ablation: ImageNet Top-1 after pre-training per augmentation combo | — |
-| ![fig-3](../assets/self-supervised-representation-learning-computer-vision/fig-3.png) | BYOL architecture: online network, target EMA network, and predictor MLP | — |
+| ![fig-1](../assets/self-supervised-representation-learning-computer-vision/fig-1.webp) | Examples of image augmentations used in contrastive SSL (SimCLR) | — |
+| ![fig-2](../assets/self-supervised-representation-learning-computer-vision/fig-2.webp) | SimCLR augmentation ablation: ImageNet Top-1 after pre-training per augmentation combo | — |
+| ![fig-3](../assets/self-supervised-representation-learning-computer-vision/fig-3.webp) | BYOL architecture: online network, target EMA network, and predictor MLP | — |
 
-![SimCLR augmentation ablation](../assets/self-supervised-representation-learning-computer-vision/fig-2.png)
+![SimCLR augmentation ablation](../assets/self-supervised-representation-learning-computer-vision/fig-2.webp)
 
 Color distortion and cropping yield the strongest linear-probe accuracy among tested augmentation combinations on ImageNet.
 
-![BYOL model architecture](../assets/self-supervised-representation-learning-computer-vision/fig-3.png)
+![BYOL model architecture](../assets/self-supervised-representation-learning-computer-vision/fig-3.webp)
 
 BYOL's predictor breaks symmetry between online and EMA target networks without explicit negative pairs.
 

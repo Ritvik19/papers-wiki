@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-12-11_Papers-Explained-78--GPT-NeoX-20B-fe39b6d5aa5b.html`
+- Source file: `raw/2023-12-11_Papers-Explained-78--GPT-NeoX-20B-fe39b6d5aa5b.md`
 - Source title: Papers Explained 78: GPT-NeoX-20B
 - Published: 2023-12-11
 - Canonical: [https://medium.com/@ritvik19/papers-explained-78-gpt-neox-20b-fe39b6d5aa5b](https://medium.com/@ritvik19/papers-explained-78-gpt-neox-20b-fe39b6d5aa5b)
@@ -123,17 +123,17 @@ GPT-NeoX-20B: An Open-Source Autoregressive Language Model [2204.06745](https://
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-12-11_Papers-Explained-78--GPT-NeoX-20B-fe39b6d5aa5b.html`); local copies under `wiki/assets/papers-explained-78-gpt-neox-20b/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-12-11_Papers-Explained-78--GPT-NeoX-20B-fe39b6d5aa5b.md`); local copies under `wiki/assets/papers-explained-78-gpt-neox-20b/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-78-gpt-neox-20b/fig-1.png) | Title card: GPT-NeoX-20B. |
-| ![Figure 2](assets/papers-explained-78-gpt-neox-20b/fig-2.png) | Due to an oversight in the code, two independent Layer Norms are applied instead of using a tied layer norm. Instead of computing. |
-| ![Figure 3](assets/papers-explained-78-gpt-neox-20b/fig-3.png) | as intended, the codebase unties the layer norms. |
-| ![Figure 4](assets/papers-explained-78-gpt-neox-20b/fig-4.png) | GPT-2 tokenization vs. GPT-NeoX-20B tokenization. |
-| ![Figure 5](assets/papers-explained-78-gpt-neox-20b/fig-5.png) | Zero-shot performance on a variety of language modeling benchmarks. |
-| ![Figure 6](assets/papers-explained-78-gpt-neox-20b/fig-6.png) | Zero-shot performance on arithmetic tasks and MATH. |
-| ![Figure 7](assets/papers-explained-78-gpt-neox-20b/fig-7.png) | Five-shot performance on MMMLU. |
+| ![Figure 1](assets/papers-explained-78-gpt-neox-20b/fig-1.webp) | Title card: GPT-NeoX-20B. |
+| ![Figure 2](assets/papers-explained-78-gpt-neox-20b/fig-2.webp) | Due to an oversight in the code, two independent Layer Norms are applied instead of using a tied layer norm. Instead of computing. |
+| ![Figure 3](assets/papers-explained-78-gpt-neox-20b/fig-3.webp) | as intended, the codebase unties the layer norms. |
+| ![Figure 4](assets/papers-explained-78-gpt-neox-20b/fig-4.webp) | GPT-2 tokenization vs. GPT-NeoX-20B tokenization. |
+| ![Figure 5](assets/papers-explained-78-gpt-neox-20b/fig-5.webp) | Zero-shot performance on a variety of language modeling benchmarks. |
+| ![Figure 6](assets/papers-explained-78-gpt-neox-20b/fig-6.webp) | Zero-shot performance on arithmetic tasks and MATH. |
+| ![Figure 7](assets/papers-explained-78-gpt-neox-20b/fig-7.webp) | Five-shot performance on MMMLU. |
 ## Related
 
 - [[Papers Explained Corpus]]

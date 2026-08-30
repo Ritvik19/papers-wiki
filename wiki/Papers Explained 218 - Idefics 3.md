@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-09-25_Papers-Explained-218--Idefics-3-81791c4cde3f.html`
+- Source file: `raw/2024-09-25_Papers-Explained-218--Idefics-3-81791c4cde3f.md`
 - Source title: Papers Explained 218: Idefics 3
 - Published: 2024-09-25
 - Canonical: [https://medium.com/@ritvik19/papers-explained-218-idefics-3-81791c4cde3f](https://medium.com/@ritvik19/papers-explained-218-idefics-3-81791c4cde3f)
@@ -157,18 +157,18 @@ Recommended Reading [Multi Modal Transformers](https://ritvik19.medium.com/list/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-09-25_Papers-Explained-218--Idefics-3-81791c4cde3f.html`); local copies under `wiki/assets/papers-explained-218-idefics-3/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-09-25_Papers-Explained-218--Idefics-3-81791c4cde3f.md`); local copies under `wiki/assets/papers-explained-218-idefics-3/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-218-idefics-3/fig-1.png) | Idefics 3 Overview: A tutorial for building vision-language models. |
-| ![Figure 2](assets/papers-explained-218-idefics-3/fig-2.png) | The self-attention (fully-autoregressive) architecture in VLMs. |
-| ![Figure 3](assets/papers-explained-218-idefics-3/fig-3.png) | Different stages of training and the types of datasets used in VLMs. |
-| ![Figure 4](assets/papers-explained-218-idefics-3/fig-4.png) | Overview of The Cauldron dataset expansion for Idefics 3. |
-| ![Figure 5](assets/papers-explained-218-idefics-3/fig-5.png) | Pipeline used for the creation of Docmatix synthetic dataset. |
-| ![Figure 6](assets/papers-explained-218-idefics-3/fig-6.png) | The different training stages of Idefics3, parameters, and datasets. |
-| ![Figure 7](assets/papers-explained-218-idefics-3/fig-7.png) | Performance of Idefics3 against Idefics2–8B and Idefics2–70B on benchmarks. |
-| ![Figure 8](assets/papers-explained-218-idefics-3/fig-8.png) | Detailed performance of Idefics3 across each category of MMMU benchmark. |
+| ![Figure 1](assets/papers-explained-218-idefics-3/fig-1.webp) | Idefics 3 Overview: A tutorial for building vision-language models. |
+| ![Figure 2](assets/papers-explained-218-idefics-3/fig-2.webp) | The self-attention (fully-autoregressive) architecture in VLMs. |
+| ![Figure 3](assets/papers-explained-218-idefics-3/fig-3.webp) | Different stages of training and the types of datasets used in VLMs. |
+| ![Figure 4](assets/papers-explained-218-idefics-3/fig-4.webp) | Overview of The Cauldron dataset expansion for Idefics 3. |
+| ![Figure 5](assets/papers-explained-218-idefics-3/fig-5.webp) | Pipeline used for the creation of Docmatix synthetic dataset. |
+| ![Figure 6](assets/papers-explained-218-idefics-3/fig-6.webp) | The different training stages of Idefics3, parameters, and datasets. |
+| ![Figure 7](assets/papers-explained-218-idefics-3/fig-7.webp) | Performance of Idefics3 against Idefics2–8B and Idefics2–70B on benchmarks. |
+| ![Figure 8](assets/papers-explained-218-idefics-3/fig-8.webp) | Detailed performance of Idefics3 across each category of MMMU benchmark. |
 ## Related
 
 - [[Papers Explained Corpus]]

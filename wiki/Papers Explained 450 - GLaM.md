@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-09-10_Papers-Explained-450--GLaM-c02044027ba0.html`
+- Source file: `raw/2025-09-10_Papers-Explained-450--GLaM-c02044027ba0.md`
 - Source title: Papers Explained 450: GLaM
 - Published: 2025-09-10
 - Canonical: [https://medium.com/@ritvik19/papers-explained-450-glam-c02044027ba0](https://medium.com/@ritvik19/papers-explained-450-glam-c02044027ba0)
@@ -69,18 +69,18 @@ GLaM: Efficient Scaling of Language Models with Mixture-of-Experts [2112.06905](
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-09-10_Papers-Explained-450--GLaM-c02044027ba0.html`); local copies under `wiki/assets/papers-explained-450-glam/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-09-10_Papers-Explained-450--GLaM-c02044027ba0.md`); local copies under `wiki/assets/papers-explained-450-glam/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-450-glam/fig-1.png) | Title card: GLaM. |
-| ![Figure 2](assets/papers-explained-450-glam/fig-2.png) | Data and mixture weights in GLaM training set. |
-| ![Figure 3](assets/papers-explained-450-glam/fig-3.png) | GLaM model architecture. |
-| ![Figure 4](assets/papers-explained-450-glam/fig-4.png) | Sizes and architectures of both MoE and dense models trained in the experiments. |
-| ![Figure 5](assets/papers-explained-450-glam/fig-5.png) | An overview of the percentage change in predictive performance of GLaM (64B/64E) versus GPT-3 (175B). |
-| ![Figure 6](assets/papers-explained-450-glam/fig-6.png) | Evaluation. |
-| ![Figure 7](assets/papers-explained-450-glam/fig-7.png) | Average zero, one and few-shot performance of GLaM MoE models versus GLaM dense models for similar effective FLOPs per token over the 8 NLG task. |
-| ![Figure 8](assets/papers-explained-450-glam/fig-8.png) | Learning efficiency comparison. |
+| ![Figure 1](assets/papers-explained-450-glam/fig-1.webp) | Title card: GLaM. |
+| ![Figure 2](assets/papers-explained-450-glam/fig-2.webp) | Data and mixture weights in GLaM training set. |
+| ![Figure 3](assets/papers-explained-450-glam/fig-3.webp) | GLaM model architecture. |
+| ![Figure 4](assets/papers-explained-450-glam/fig-4.webp) | Sizes and architectures of both MoE and dense models trained in the experiments. |
+| ![Figure 5](assets/papers-explained-450-glam/fig-5.webp) | An overview of the percentage change in predictive performance of GLaM (64B/64E) versus GPT-3 (175B). |
+| ![Figure 6](assets/papers-explained-450-glam/fig-6.webp) | Evaluation. |
+| ![Figure 7](assets/papers-explained-450-glam/fig-7.webp) | Average zero, one and few-shot performance of GLaM MoE models versus GLaM dense models for similar effective FLOPs per token over the 8 NLG task. |
+| ![Figure 8](assets/papers-explained-450-glam/fig-8.webp) | Learning efficiency comparison. |
 ## Related
 
 - [[Papers Explained Corpus]]

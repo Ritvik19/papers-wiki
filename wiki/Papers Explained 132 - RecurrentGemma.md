@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-05-03_Papers-Explained-132--RecurrentGemma-52732d0f4273.html`
+- Source file: `raw/2024-05-03_Papers-Explained-132--RecurrentGemma-52732d0f4273.md`
 - Source title: Papers Explained 132: RecurrentGemma
 - Published: 2024-05-03
 - Canonical: [https://medium.com/@ritvik19/papers-explained-132-recurrentgemma-52732d0f4273](https://medium.com/@ritvik19/papers-explained-132-recurrentgemma-52732d0f4273)
@@ -99,19 +99,19 @@ Recommended Reading [Beyond Transformers](https://ritvik19.medium.com/list/beyon
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-05-03_Papers-Explained-132--RecurrentGemma-52732d0f4273.html`); local copies under `wiki/assets/papers-explained-132-recurrentgemma/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-05-03_Papers-Explained-132--RecurrentGemma-52732d0f4273.md`); local copies under `wiki/assets/papers-explained-132-recurrentgemma/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-132-recurrentgemma/fig-1.png) | Title and abstract of *RecurrentGemma: Moving Past Transformers for Efficient Open Language Models*. |
-| ![Figure 2](assets/papers-explained-132-recurrentgemma/fig-2.png) | RecurrentGemma-2B parameter split (total vs non-embedding) and core architecture hyperparameters. |
-| ![Figure 3](assets/papers-explained-132-recurrentgemma/fig-3.png) | Example Gemma-style dialogue with `<start_of_turn>` / `<end_of_turn>` control tokens. |
-| ![Figure 4](assets/papers-explained-132-recurrentgemma/fig-4.png) | Academic benchmarks comparing Gemma-2B and RecurrentGemma-2B (near-matched averages ~45.0 vs ~44.6). |
-| ![Figure 5](assets/papers-explained-132-recurrentgemma/fig-5.png) | Human-eval safety and instruction-following scores for RecurrentGemma vs Gemma 1.1 with confidence intervals. |
-| ![Figure 6](assets/papers-explained-132-recurrentgemma/fig-6.png) | Safety and bias benchmark scores for RecurrentGemma-2B vs its instruction-tuned RecurrentGemma-2B-IT variant. |
-| ![Figure 7](assets/papers-explained-132-recurrentgemma/fig-7.png) | RecurrentGemma-9B scores across MMLU, commonsense, QA, coding, math, and BIG-Bench-style evaluations. |
-| ![Figure 8](assets/papers-explained-132-recurrentgemma/fig-8.png) | Decoding throughput vs output length for Gemma-7B vs RecurrentGemma-9B after ~2K-token prefill. |
-| ![Figure 9](assets/papers-explained-132-recurrentgemma/fig-9.png) | Long-sequence sampling latency and memory: Gemma-7B OOMs while RecurrentGemma-9B completes up to 16K tokens. |
+| ![Figure 1](assets/papers-explained-132-recurrentgemma/fig-1.webp) | Title and abstract of *RecurrentGemma: Moving Past Transformers for Efficient Open Language Models*. |
+| ![Figure 2](assets/papers-explained-132-recurrentgemma/fig-2.webp) | RecurrentGemma-2B parameter split (total vs non-embedding) and core architecture hyperparameters. |
+| ![Figure 3](assets/papers-explained-132-recurrentgemma/fig-3.webp) | Example Gemma-style dialogue with `<start_of_turn>` / `<end_of_turn>` control tokens. |
+| ![Figure 4](assets/papers-explained-132-recurrentgemma/fig-4.webp) | Academic benchmarks comparing Gemma-2B and RecurrentGemma-2B (near-matched averages ~45.0 vs ~44.6). |
+| ![Figure 5](assets/papers-explained-132-recurrentgemma/fig-5.webp) | Human-eval safety and instruction-following scores for RecurrentGemma vs Gemma 1.1 with confidence intervals. |
+| ![Figure 6](assets/papers-explained-132-recurrentgemma/fig-6.webp) | Safety and bias benchmark scores for RecurrentGemma-2B vs its instruction-tuned RecurrentGemma-2B-IT variant. |
+| ![Figure 7](assets/papers-explained-132-recurrentgemma/fig-7.webp) | RecurrentGemma-9B scores across MMLU, commonsense, QA, coding, math, and BIG-Bench-style evaluations. |
+| ![Figure 8](assets/papers-explained-132-recurrentgemma/fig-8.webp) | Decoding throughput vs output length for Gemma-7B vs RecurrentGemma-9B after ~2K-token prefill. |
+| ![Figure 9](assets/papers-explained-132-recurrentgemma/fig-9.webp) | Long-sequence sampling latency and memory: Gemma-7B OOMs while RecurrentGemma-9B completes up to 16K tokens. |
 ## Related
 
 - [[Papers Explained Corpus]]

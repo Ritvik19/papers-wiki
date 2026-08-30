@@ -1,6 +1,6 @@
 # Voxtral transcribes at the speed of sound.
 
-**Source**: `raw/voxtral-transcribe-2/full-article.html` (223 KB), `raw/voxtral-transcribe-2/full-article.md` (markdown view)  
+**Source**: `raw/voxtral-transcribe-2/full-article.md` (223 KB), `raw/voxtral-transcribe-2/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/voxtral-transcribe-2/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

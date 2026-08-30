@@ -1,6 +1,6 @@
 # pplx-embed: State-of-the-Art Embedding Models for Web-Scale Retrieval
 
-**Source**: `raw/pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval/full-article.html` (355 KB), `raw/pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval/full-article.md` (markdown view)  
+**Source**: `raw/pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval/full-article.md` (355 KB), `raw/pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval/full-article.md` (markdown view)  
 **URL**: https://research.perplexity.ai/articles/pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -26,13 +26,13 @@ On MTEB(Multilingual, v2) retrieval, pplx-embed-v1-4B (INT8) reaches **69.66% nD
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval/fig-1.png) | Multi-stage curriculum training pipeline (diffusion pretrain → contrastive branches → merge) | — |
-| ![fig-2](../assets/pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval/fig-2.png) | MTEB(Multilingual, v2) retrieval — INT8 and binary precision variants | — |
-| ![fig-3](../assets/pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval/fig-3.png) | ConTEB contextual retrieval — contextualized vs non-contextualized models | — |
-| ![fig-4](../assets/pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval/fig-4.png) | PPLXQuery2Query multilingual retrieval benchmark | — |
-| ![fig-5](../assets/pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval/fig-5.png) | PPLXQuery2Doc retrieval at 30M corpus scale | — |
+| ![fig-1](../assets/pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval/fig-1.webp) | Multi-stage curriculum training pipeline (diffusion pretrain → contrastive branches → merge) | — |
+| ![fig-2](../assets/pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval/fig-2.webp) | MTEB(Multilingual, v2) retrieval — INT8 and binary precision variants | — |
+| ![fig-3](../assets/pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval/fig-3.webp) | ConTEB contextual retrieval — contextualized vs non-contextualized models | — |
+| ![fig-4](../assets/pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval/fig-4.webp) | PPLXQuery2Query multilingual retrieval benchmark | — |
+| ![fig-5](../assets/pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval/fig-5.webp) | PPLXQuery2Doc retrieval at 30M corpus scale | — |
 
-![Training pipeline](../assets/pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval/fig-1.png)
+![Training pipeline](../assets/pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval/fig-1.webp)
 
 ## Entities
 

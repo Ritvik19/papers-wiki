@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-09_Papers-Explained-30--DocFormer-228ce27182a0.html`
+- Source file: `raw/2023-02-09_Papers-Explained-30--DocFormer-228ce27182a0.md`
 - Source title: Papers Explained 30: DocFormer
 - Published: 2023-02-09
 - Canonical: [https://medium.com/@ritvik19/papers-explained-30-docformer-228ce27182a0](https://medium.com/@ritvik19/papers-explained-30-docformer-228ce27182a0)
@@ -95,20 +95,20 @@ DocFormer: End-to-End Transformer for Document Understanding [2106.11539](https:
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-09_Papers-Explained-30--DocFormer-228ce27182a0.html`); local copies under `wiki/assets/papers-explained-30-docformer/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-09_Papers-Explained-30--DocFormer-228ce27182a0.md`); local copies under `wiki/assets/papers-explained-30-docformer/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-30-docformer/fig-1.png) | Title card: DocFormer. |
-| ![Figure 2](assets/papers-explained-30-docformer/fig-2.png) | Joint Multi-Modal: VL-BERT, LayoutLMv2, VisualBERT, MMBT]: In this type of architecture, vision and text are concatenated into one long... |
-| ![Figure 3](assets/papers-explained-30-docformer/fig-3.png) | We create separate spatial embeddings for visual Vs and language Ts features since spatial dependency could be modality specific. |
-| ![Figure 4](assets/papers-explained-30-docformer/fig-4.png) | Multi-Modal Self-Attention Layer. |
-| ![Figure 5](assets/papers-explained-30-docformer/fig-5.png) | Multi-Modal Self-Attention Layer. |
-| ![Figure 6](assets/papers-explained-30-docformer/fig-6.png) | Eq. 1. |
-| ![Figure 7](assets/papers-explained-30-docformer/fig-7.png) | Eq. 2. |
-| ![Figure 8](assets/papers-explained-30-docformer/fig-8.png) | Eq. 3. |
-| ![Figure 9](assets/papers-explained-30-docformer/fig-9.png) | Eq. 4. |
-| ![Figure 10](assets/papers-explained-30-docformer/fig-10.png) | Eq. 5. |
+| ![Figure 1](assets/papers-explained-30-docformer/fig-1.webp) | Title card: DocFormer. |
+| ![Figure 2](assets/papers-explained-30-docformer/fig-2.webp) | Joint Multi-Modal: VL-BERT, LayoutLMv2, VisualBERT, MMBT]: In this type of architecture, vision and text are concatenated into one long... |
+| ![Figure 3](assets/papers-explained-30-docformer/fig-3.webp) | We create separate spatial embeddings for visual Vs and language Ts features since spatial dependency could be modality specific. |
+| ![Figure 4](assets/papers-explained-30-docformer/fig-4.webp) | Multi-Modal Self-Attention Layer. |
+| ![Figure 5](assets/papers-explained-30-docformer/fig-5.webp) | Multi-Modal Self-Attention Layer. |
+| ![Figure 6](assets/papers-explained-30-docformer/fig-6.webp) | Eq. 1. |
+| ![Figure 7](assets/papers-explained-30-docformer/fig-7.webp) | Eq. 2. |
+| ![Figure 8](assets/papers-explained-30-docformer/fig-8.webp) | Eq. 3. |
+| ![Figure 9](assets/papers-explained-30-docformer/fig-9.webp) | Eq. 4. |
+| ![Figure 10](assets/papers-explained-30-docformer/fig-10.webp) | Eq. 5. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-05-21_Papers-Explained-370--Test-Time-Reinforcement-Learning--TTRL--48416da31110.html`
+- Source file: `raw/2025-05-21_Papers-Explained-370--Test-Time-Reinforcement-Learning--TTRL--48416da31110.md`
 - Source title: Papers Explained 370: Test Time Reinforcement Learning (TTRL)
 - Published: 2025-05-21
 - Canonical: [https://medium.com/@ritvik19/papers-explained-370-test-time-reinforcement-learning-ttrl-48416da31110](https://medium.com/@ritvik19/papers-explained-370-test-time-reinforcement-learning-ttrl-48416da31110)
@@ -97,18 +97,18 @@ TTRL: Test-Time Reinforcement Learning [2504.16084](https://arxiv.org/abs/2504.1
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-05-21_Papers-Explained-370--Test-Time-Reinforcement-Learning--TTRL--48416da31110.html`); local copies under `wiki/assets/papers-explained-370-test-time-reinforcement-learning-ttrl/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-05-21_Papers-Explained-370--Test-Time-Reinforcement-Learning--TTRL--48416da31110.md`); local copies under `wiki/assets/papers-explained-370-test-time-reinforcement-learning-ttrl/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-370-test-time-reinforcement-learning-ttrl/fig-1.png) | Title card: Test Time Reinforcement Learning (TTRL). |
-| ![Figure 2](assets/papers-explained-370-test-time-reinforcement-learning-ttrl/fig-2.png) | The project is available at GitHub. |
-| ![Figure 3](assets/papers-explained-370-test-time-reinforcement-learning-ttrl/fig-3.png) | Main results of TTRL. ∗ indicates results from Dr. GRPO. |
-| ![Figure 4](assets/papers-explained-370-test-time-reinforcement-learning-ttrl/fig-4.png) | Out-of-distribution performance before and after TTRL. |
-| ![Figure 5](assets/papers-explained-370-test-time-reinforcement-learning-ttrl/fig-5.png) | Comparison over steps of different RL algorithms, GRPO vs PPO on MATH-500. |
-| ![Figure 6](assets/papers-explained-370-test-time-reinforcement-learning-ttrl/fig-6.png) | Comparison of RL (Leakage) vs TTRL. |
-| ![Figure 7](assets/papers-explained-370-test-time-reinforcement-learning-ttrl/fig-7.png) | Performance of TTRL across the five difficulty levels of MATH-500. |
-| ![Figure 8](assets/papers-explained-370-test-time-reinforcement-learning-ttrl/fig-8.png) | Failed attempts. |
+| ![Figure 1](assets/papers-explained-370-test-time-reinforcement-learning-ttrl/fig-1.webp) | Title card: Test Time Reinforcement Learning (TTRL). |
+| ![Figure 2](assets/papers-explained-370-test-time-reinforcement-learning-ttrl/fig-2.webp) | The project is available at GitHub. |
+| ![Figure 3](assets/papers-explained-370-test-time-reinforcement-learning-ttrl/fig-3.webp) | Main results of TTRL. ∗ indicates results from Dr. GRPO. |
+| ![Figure 4](assets/papers-explained-370-test-time-reinforcement-learning-ttrl/fig-4.webp) | Out-of-distribution performance before and after TTRL. |
+| ![Figure 5](assets/papers-explained-370-test-time-reinforcement-learning-ttrl/fig-5.webp) | Comparison over steps of different RL algorithms, GRPO vs PPO on MATH-500. |
+| ![Figure 6](assets/papers-explained-370-test-time-reinforcement-learning-ttrl/fig-6.webp) | Comparison of RL (Leakage) vs TTRL. |
+| ![Figure 7](assets/papers-explained-370-test-time-reinforcement-learning-ttrl/fig-7.webp) | Performance of TTRL across the five difficulty levels of MATH-500. |
+| ![Figure 8](assets/papers-explained-370-test-time-reinforcement-learning-ttrl/fig-8.webp) | Failed attempts. |
 ## Related
 
 - [[Papers Explained Corpus]]

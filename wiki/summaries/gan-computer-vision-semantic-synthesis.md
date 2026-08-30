@@ -1,6 +1,6 @@
 # GANs in Computer Vision: Semantic Image Synthesis and Learning a Generative Model from a Single Image
 
-**Source**: `raw/gan-computer-vision-semantic-synthesis/full-article.html` (379 KB), `raw/gan-computer-vision-semantic-synthesis/full-article.md` (markdown view)  
+**Source**: `raw/gan-computer-vision-semantic-synthesis/full-article.md` (379 KB), `raw/gan-computer-vision-semantic-synthesis/full-article.md` (markdown view)  
 **URL**: https://theaisummer.com/gan-computer-vision-semantic-synthesis/  
 **Author**: Nikolas Adaloglou (AI Summer), 2020-05-26  
 **Ingested**: 2026-06-06  
@@ -12,11 +12,11 @@ Part 6 (series finale) of Nikolas Adaloglou's AI Summer GAN survey covers two 20
 
 **GauGAN** (Park et al., 2019) generates photorealistic images from segmentation maps, optionally conditioned on a reference image for multi-modal synthesis. It reuses [[Pix2PixHD]]'s multi-scale image-pyramid PatchGAN discriminators but replaces the generator: [[Adaptive Instance Normalization]] discards semantic layout because it applies uniform per-channel scaling across spatial locations. **SPADE** (Spatially-Adaptive Normalization) normalizes activations then applies \(\gamma_{c,y,x}, \beta_{c,y,x}\) predicted by convolutions on the segmentation mask—preserving label layout in 3D modulation tensors. SPADE ResNet blocks replace batch norm; the generator has no encoder (mask injected only via SPADE), reducing parameters vs Pix2PixHD. Downsampling mask matches each resolution. Optional image encoder + noise vector enables VAE-style multi-modal synthesis (style in latent, semantics in SPADE). Baseline **pix2pixHD++** ablates all improvements except SPADE; SPADE-G still wins with fewer parameters. DeepLab v2 infers segmentation at test time.
 
-![SPADE layer: segmentation-conditioned spatially varying γ and β](../assets/gan-computer-vision-semantic-synthesis/fig-2.png)
+![SPADE layer: segmentation-conditioned spatially varying γ and β](../assets/gan-computer-vision-semantic-synthesis/fig-2.webp)
 
 **SinGAN** (Shaham et al., 2019, ICCV 2019 best paper) trains a **pyramid of patch-GANs** on one image's multi-scale downsampled versions. Fully convolutional G/D per scale; coarse scales train first then freeze; WGAN-GP stabilizes training. Generator block: 5 conv layers + BN + ReLU, noise injection, additive skip from upsampled input. Limited receptive field per scale prevents memorizing the single training image. Reconstruction loss with zero noise (and fixed \(z_{\text{fixed}}\) at finest scale) anchors the distribution. Applications: random diverse samples preserving patch statistics, super-resolution, paint-to-image, **image harmonization** (paste foreign object, SinGAN adjusts texture), editing, single-image animation via latent walks.
 
-![SinGAN multi-scale pyramid: coarse to fine detail](../assets/gan-computer-vision-semantic-synthesis/fig-7.png)
+![SinGAN multi-scale pyramid: coarse to fine detail](../assets/gan-computer-vision-semantic-synthesis/fig-7.webp)
 
 ## Key Claims
 
@@ -33,15 +33,15 @@ Part 6 (series finale) of Nikolas Adaloglou's AI Summer GAN survey covers two 20
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/gan-computer-vision-semantic-synthesis/fig-1.png) | GauGAN multi-scale Pix2PixHD-style discriminator image pyramid | — |
-| ![fig-2](../assets/gan-computer-vision-semantic-synthesis/fig-2.png) | SPADE normalization block architecture | — |
-| ![fig-3](../assets/gan-computer-vision-semantic-synthesis/fig-3.png) | SPADE ResNet block (two SPADE layers before activations) | — |
-| ![fig-4](../assets/gan-computer-vision-semantic-synthesis/fig-4.png) | SPADE-based generator with downsampled mask per resolution | — |
-| ![fig-5](../assets/gan-computer-vision-semantic-synthesis/fig-5.png) | GauGAN vs top methods comparison | — |
-| ![fig-6](../assets/gan-computer-vision-semantic-synthesis/fig-6.png) | GauGAN synthesis vs original natural images | — |
-| ![fig-7](../assets/gan-computer-vision-semantic-synthesis/fig-7.png) | SinGAN output at different scales (coarse to fine) | — |
-| ![fig-8](../assets/gan-computer-vision-semantic-synthesis/fig-8.png) | SinGAN single-scale generator building block | — |
-| ![fig-9](../assets/gan-computer-vision-semantic-synthesis/fig-9.png) | SinGAN image harmonization: pasted object texture adaptation | — |
+| ![fig-1](../assets/gan-computer-vision-semantic-synthesis/fig-1.webp) | GauGAN multi-scale Pix2PixHD-style discriminator image pyramid | — |
+| ![fig-2](../assets/gan-computer-vision-semantic-synthesis/fig-2.webp) | SPADE normalization block architecture | — |
+| ![fig-3](../assets/gan-computer-vision-semantic-synthesis/fig-3.webp) | SPADE ResNet block (two SPADE layers before activations) | — |
+| ![fig-4](../assets/gan-computer-vision-semantic-synthesis/fig-4.webp) | SPADE-based generator with downsampled mask per resolution | — |
+| ![fig-5](../assets/gan-computer-vision-semantic-synthesis/fig-5.webp) | GauGAN vs top methods comparison | — |
+| ![fig-6](../assets/gan-computer-vision-semantic-synthesis/fig-6.webp) | GauGAN synthesis vs original natural images | — |
+| ![fig-7](../assets/gan-computer-vision-semantic-synthesis/fig-7.webp) | SinGAN output at different scales (coarse to fine) | — |
+| ![fig-8](../assets/gan-computer-vision-semantic-synthesis/fig-8.webp) | SinGAN single-scale generator building block | — |
+| ![fig-9](../assets/gan-computer-vision-semantic-synthesis/fig-9.webp) | SinGAN image harmonization: pasted object texture adaptation | — |
 
 ## Entities
 

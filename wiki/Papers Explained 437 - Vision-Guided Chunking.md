@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-08-22_Papers-Explained-437--Vision-Guided-Chunking-882220193e09.html`
+- Source file: `raw/2025-08-22_Papers-Explained-437--Vision-Guided-Chunking-882220193e09.md`
 - Source title: Papers Explained 437: Vision-Guided Chunking
 - Published: 2025-08-22
 - Canonical: [https://medium.com/@ritvik19/papers-explained-437-vision-guided-chunking-882220193e09](https://medium.com/@ritvik19/papers-explained-437-vision-guided-chunking-882220193e09)
@@ -247,13 +247,13 @@ Vision-Guided Chunking Is All You Need: Enhancing RAG with Multimodal Document U
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-08-22_Papers-Explained-437--Vision-Guided-Chunking-882220193e09.html`); local copies under `wiki/assets/papers-explained-437-vision-guided-chunking/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-08-22_Papers-Explained-437--Vision-Guided-Chunking-882220193e09.md`); local copies under `wiki/assets/papers-explained-437-vision-guided-chunking/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-437-vision-guided-chunking/fig-1.png) | Title card: Vision-Guided Chunking. |
-| ![Figure 2](assets/papers-explained-437-vision-guided-chunking/fig-2.png) | Multimodal Document Chunking Architecture. |
-| ![Figure 3](assets/papers-explained-437-vision-guided-chunking/fig-3.png) | RAG System Performance Comparison. |
+| ![Figure 1](assets/papers-explained-437-vision-guided-chunking/fig-1.webp) | Title card: Vision-Guided Chunking. |
+| ![Figure 2](assets/papers-explained-437-vision-guided-chunking/fig-2.webp) | Multimodal Document Chunking Architecture. |
+| ![Figure 3](assets/papers-explained-437-vision-guided-chunking/fig-3.webp) | RAG System Performance Comparison. |
 ## Related
 
 - [[Papers Explained Corpus]]

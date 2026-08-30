@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-07-11_Papers-Explained-407--Should-We-Still-Pretrain-Encoders-with-Masked-Language-Modeling--27c25b39e3f0.html`
+- Source file: `raw/2025-07-11_Papers-Explained-407--Should-We-Still-Pretrain-Encoders-with-Masked-Language-Modeling--27c25b39e3f0.md`
 - Source title: Papers Explained 407: Should We Still Pretrain Encoders with Masked Language Modeling?
 - Published: 2025-07-11
 - Canonical: [https://medium.com/@ritvik19/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling-27c25b39e3f0](https://medium.com/@ritvik19/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling-27c25b39e3f0)
@@ -188,25 +188,25 @@ Should We Still Pretrain Encoders with Masked Language Modeling? [2507.00994](ht
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-07-11_Papers-Explained-407--Should-We-Still-Pretrain-Encoders-with-Masked-Language-Modeling--27c25b39e3f0.html`); local copies under `wiki/assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-07-11_Papers-Explained-407--Should-We-Still-Pretrain-Encoders-with-Masked-Language-Modeling--27c25b39e3f0.md`); local copies under `wiki/assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-1.png) | Title card: Should We Still Pretrain Encoders with Masked Language Modeling. |
-| ![Figure 2](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-2.png) | Experimental setup overview and key results on sequence classification. |
-| ![Figure 3](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-3.png) | Pretraining data. |
-| ![Figure 4](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-4.png) | Models are trained using one of 3 approaches. |
-| ![Figure 5](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-5.png) | Models are trained using one of 3 approaches. |
-| ![Figure 6](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-6.png) | Pretraining is performed with a per-device batch size of 12 samples across 192 GPUs, yielding an effective batch size of 2,373,120 tokens. |
-| ![Figure 7](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-7.png) | MLM vs. CLM downstream performance, averaged across tasks and reported for all model sizes. |
-| ![Figure 8](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-8.png) | Task-wise downstream performance across different masking ratios for all model sizes. |
-| ![Figure 9](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-9.png) | Downstream performance as a function of pretraining steps for CLM and MLM objectives. |
-| ![Figure 10](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-10.png) | Impact of the fine-tuning learning rate on MLM- vs. CLM-pretrained models. |
-| ![Figure 11](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-11.png) | Impact of two-stage CLM+MLM pretraining on downstream performance under different training budgets. |
-| ![Figure 12](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-12.png) | Comparison of downstream performance variability across different masking ratios for CLM and CLM+MLM pretraining configurations. |
-| ![Figure 13](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-13.png) | Impact of performing MLM CPT on either CLM- or MLM-pretrained models. |
-| ![Figure 14](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-14.png) | MLM loss curves for CLM- and MLM-pretrained models across the 3 CPT compute budgets. |
-| ![Figure 15](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-15.png) | Downstream performance as a function of CPT length for CLM- and MLM-pretrained models. |
+| ![Figure 1](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-1.webp) | Title card: Should We Still Pretrain Encoders with Masked Language Modeling. |
+| ![Figure 2](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-2.webp) | Experimental setup overview and key results on sequence classification. |
+| ![Figure 3](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-3.webp) | Pretraining data. |
+| ![Figure 4](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-4.webp) | Models are trained using one of 3 approaches. |
+| ![Figure 5](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-5.webp) | Models are trained using one of 3 approaches. |
+| ![Figure 6](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-6.webp) | Pretraining is performed with a per-device batch size of 12 samples across 192 GPUs, yielding an effective batch size of 2,373,120 tokens. |
+| ![Figure 7](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-7.webp) | MLM vs. CLM downstream performance, averaged across tasks and reported for all model sizes. |
+| ![Figure 8](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-8.webp) | Task-wise downstream performance across different masking ratios for all model sizes. |
+| ![Figure 9](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-9.webp) | Downstream performance as a function of pretraining steps for CLM and MLM objectives. |
+| ![Figure 10](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-10.webp) | Impact of the fine-tuning learning rate on MLM- vs. CLM-pretrained models. |
+| ![Figure 11](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-11.webp) | Impact of two-stage CLM+MLM pretraining on downstream performance under different training budgets. |
+| ![Figure 12](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-12.webp) | Comparison of downstream performance variability across different masking ratios for CLM and CLM+MLM pretraining configurations. |
+| ![Figure 13](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-13.webp) | Impact of performing MLM CPT on either CLM- or MLM-pretrained models. |
+| ![Figure 14](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-14.webp) | MLM loss curves for CLM- and MLM-pretrained models across the 3 CPT compute budgets. |
+| ![Figure 15](assets/papers-explained-407-should-we-still-pretrain-encoders-with-masked-language-modeling/fig-15.webp) | Downstream performance as a function of CPT length for CLM- and MLM-pretrained models. |
 ## Related
 
 - [[Papers Explained Corpus]]

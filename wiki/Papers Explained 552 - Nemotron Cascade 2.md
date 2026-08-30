@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-03-31_Papers-Explained-552--Nemotron-Cascade-2-1ac869c28c8c.html`
+- Source file: `raw/2026-03-31_Papers-Explained-552--Nemotron-Cascade-2-1ac869c28c8c.md`
 - Source title: Papers Explained 552: Nemotron Cascade 2
 - Published: 2026-03-31
 - Canonical: [https://medium.com/@ritvik19/papers-explained-552-nemotron-cascade-2-1ac869c28c8c](https://medium.com/@ritvik19/papers-explained-552-nemotron-cascade-2-1ac869c28c8c)
@@ -313,21 +313,21 @@ Nemotron-Cascade 2: Post-Training LLMs with Cascade RL and Multi-Domain On-Polic
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-03-31_Papers-Explained-552--Nemotron-Cascade-2-1ac869c28c8c.html`); local copies under `wiki/assets/papers-explained-552-nemotron-cascade-2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-03-31_Papers-Explained-552--Nemotron-Cascade-2-1ac869c28c8c.md`); local copies under `wiki/assets/papers-explained-552-nemotron-cascade-2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-552-nemotron-cascade-2/fig-1.png) | Title card: Nemotron Cascade 2. |
-| ![Figure 2](assets/papers-explained-552-nemotron-cascade-2/fig-2.png) | There are two changes to the chat template compared with Nemotron-Cascade. |
-| ![Figure 3](assets/papers-explained-552-nemotron-cascade-2/fig-3.png) | 4K safety SFT samples from Nemotron-3-Nano, original prompt sources. |
-| ![Figure 4](assets/papers-explained-552-nemotron-cascade-2/fig-4.png) | Throughout the entire Cascade RL process, the GRPO algorithm with strict on-policy training is used. |
-| ![Figure 5](assets/papers-explained-552-nemotron-cascade-2/fig-5.png) | MOPD Objective. |
-| ![Figure 6](assets/papers-explained-552-nemotron-cascade-2/fig-6.png) | Because responses are sampled under 𝜋inf but optimized under 𝜋train, truncated importance weighting is applied to account for train–infer mismatch. |
-| ![Figure 7](assets/papers-explained-552-nemotron-cascade-2/fig-7.png) | where sg[·] denotes stop-gradient. The surrogate objective is then optimized. |
-| ![Figure 8](assets/papers-explained-552-nemotron-cascade-2/fig-8.png) | Training hyperparameters for Nemotron-Cascade-2–30B-A3B in SFT. |
-| ![Figure 9](assets/papers-explained-552-nemotron-cascade-2/fig-9.png) | Training hyperparameters of Nemotron-Cascade-2–30B-A3B in Cascade RL. |
-| ![Figure 10](assets/papers-explained-552-nemotron-cascade-2/fig-10.png) | Execution-based RL for Agentic SWE Scaffold. |
-| ![Figure 11](assets/papers-explained-552-nemotron-cascade-2/fig-11.png) | Effectiveness of Cascade RL + MOPD training pipeline. |
+| ![Figure 1](assets/papers-explained-552-nemotron-cascade-2/fig-1.webp) | Title card: Nemotron Cascade 2. |
+| ![Figure 2](assets/papers-explained-552-nemotron-cascade-2/fig-2.webp) | There are two changes to the chat template compared with Nemotron-Cascade. |
+| ![Figure 3](assets/papers-explained-552-nemotron-cascade-2/fig-3.webp) | 4K safety SFT samples from Nemotron-3-Nano, original prompt sources. |
+| ![Figure 4](assets/papers-explained-552-nemotron-cascade-2/fig-4.webp) | Throughout the entire Cascade RL process, the GRPO algorithm with strict on-policy training is used. |
+| ![Figure 5](assets/papers-explained-552-nemotron-cascade-2/fig-5.webp) | MOPD Objective. |
+| ![Figure 6](assets/papers-explained-552-nemotron-cascade-2/fig-6.webp) | Because responses are sampled under 𝜋inf but optimized under 𝜋train, truncated importance weighting is applied to account for train–infer mismatch. |
+| ![Figure 7](assets/papers-explained-552-nemotron-cascade-2/fig-7.webp) | where sg[·] denotes stop-gradient. The surrogate objective is then optimized. |
+| ![Figure 8](assets/papers-explained-552-nemotron-cascade-2/fig-8.webp) | Training hyperparameters for Nemotron-Cascade-2–30B-A3B in SFT. |
+| ![Figure 9](assets/papers-explained-552-nemotron-cascade-2/fig-9.webp) | Training hyperparameters of Nemotron-Cascade-2–30B-A3B in Cascade RL. |
+| ![Figure 10](assets/papers-explained-552-nemotron-cascade-2/fig-10.webp) | Execution-based RL for Agentic SWE Scaffold. |
+| ![Figure 11](assets/papers-explained-552-nemotron-cascade-2/fig-11.webp) | Effectiveness of Cascade RL + MOPD training pipeline. |
 ## Related
 
 - [[Papers Explained Corpus]]

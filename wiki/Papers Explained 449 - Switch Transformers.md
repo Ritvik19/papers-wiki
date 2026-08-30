@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-09-09_Papers-Explained-449--Switch-Transformers-5c3d3d877fb7.html`
+- Source file: `raw/2025-09-09_Papers-Explained-449--Switch-Transformers-5c3d3d877fb7.md`
 - Source title: Papers Explained 449: Switch Transformers
 - Published: 2025-09-09
 - Canonical: [https://medium.com/@ritvik19/papers-explained-449-switch-transformers-5c3d3d877fb7](https://medium.com/@ritvik19/papers-explained-449-switch-transformers-5c3d3d877fb7)
@@ -131,23 +131,23 @@ Switch Transformers: Scaling to Trillion Parameter Models with Simple and Effici
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-09-09_Papers-Explained-449--Switch-Transformers-5c3d3d877fb7.html`); local copies under `wiki/assets/papers-explained-449-switch-transformers/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-09-09_Papers-Explained-449--Switch-Transformers-5c3d3d877fb7.md`); local copies under `wiki/assets/papers-explained-449-switch-transformers/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-449-switch-transformers/fig-1.png) | Title card: Switch Transformers. |
-| ![Figure 2](assets/papers-explained-449-switch-transformers/fig-2.png) | Illustration of a Switch Transformer encoder block. |
-| ![Figure 3](assets/papers-explained-449-switch-transformers/fig-3.png) | Illustration of token routing dynamics. |
-| ![Figure 4](assets/papers-explained-449-switch-transformers/fig-4.png) | A critical technical consideration is setting the expert capacity, which is the number of tokens each expert computes. |
-| ![Figure 5](assets/papers-explained-449-switch-transformers/fig-5.png) | Expert Capacity. |
-| ![Figure 6](assets/papers-explained-449-switch-transformers/fig-6.png) | Expert Capacity. |
-| ![Figure 7](assets/papers-explained-449-switch-transformers/fig-7.png) | Expert Capacity: This loss is minimized when both f and P vectors have values of 1/N, indicating uniform routing. |
-| ![Figure 8](assets/papers-explained-449-switch-transformers/fig-8.png) | Benchmarking Switch versus MoE. |
-| ![Figure 9](assets/papers-explained-449-switch-transformers/fig-9.png) | Selective precision. |
-| ![Figure 10](assets/papers-explained-449-switch-transformers/fig-10.png) | Fine-tuning regularization results. |
-| ![Figure 11](assets/papers-explained-449-switch-transformers/fig-11.png) | Scaling properties of the Switch Transformer. |
-| ![Figure 12](assets/papers-explained-449-switch-transformers/fig-12.png) | Speed advantage of Switch Transformer. |
-| ![Figure 13](assets/papers-explained-449-switch-transformers/fig-13.png) | Scaling Transformer models with Switch layers or with standard dense model scaling. |
+| ![Figure 1](assets/papers-explained-449-switch-transformers/fig-1.webp) | Title card: Switch Transformers. |
+| ![Figure 2](assets/papers-explained-449-switch-transformers/fig-2.webp) | Illustration of a Switch Transformer encoder block. |
+| ![Figure 3](assets/papers-explained-449-switch-transformers/fig-3.webp) | Illustration of token routing dynamics. |
+| ![Figure 4](assets/papers-explained-449-switch-transformers/fig-4.webp) | A critical technical consideration is setting the expert capacity, which is the number of tokens each expert computes. |
+| ![Figure 5](assets/papers-explained-449-switch-transformers/fig-5.webp) | Expert Capacity. |
+| ![Figure 6](assets/papers-explained-449-switch-transformers/fig-6.webp) | Expert Capacity. |
+| ![Figure 7](assets/papers-explained-449-switch-transformers/fig-7.webp) | Expert Capacity: This loss is minimized when both f and P vectors have values of 1/N, indicating uniform routing. |
+| ![Figure 8](assets/papers-explained-449-switch-transformers/fig-8.webp) | Benchmarking Switch versus MoE. |
+| ![Figure 9](assets/papers-explained-449-switch-transformers/fig-9.webp) | Selective precision. |
+| ![Figure 10](assets/papers-explained-449-switch-transformers/fig-10.webp) | Fine-tuning regularization results. |
+| ![Figure 11](assets/papers-explained-449-switch-transformers/fig-11.webp) | Scaling properties of the Switch Transformer. |
+| ![Figure 12](assets/papers-explained-449-switch-transformers/fig-12.webp) | Speed advantage of Switch Transformer. |
+| ![Figure 13](assets/papers-explained-449-switch-transformers/fig-13.webp) | Scaling Transformer models with Switch layers or with standard dense model scaling. |
 ## Related
 
 - [[Papers Explained Corpus]]

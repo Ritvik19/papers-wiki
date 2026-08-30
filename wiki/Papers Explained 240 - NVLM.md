@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-10-28_Papers-Explained-240--NVLM-7ad201bfbfc2.html`
+- Source file: `raw/2024-10-28_Papers-Explained-240--NVLM-7ad201bfbfc2.md`
 - Source title: Papers Explained 240: NVLM
 - Published: 2024-10-28
 - Canonical: [https://medium.com/@ritvik19/papers-explained-240-nvlm-7ad201bfbfc2](https://medium.com/@ritvik19/papers-explained-240-nvlm-7ad201bfbfc2)
@@ -176,21 +176,21 @@ Recommended Reading [Multi Modal Transformers](https://ritvik19.medium.com/list/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-10-28_Papers-Explained-240--NVLM-7ad201bfbfc2.html`); local copies under `wiki/assets/papers-explained-240-nvlm/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-10-28_Papers-Explained-240--NVLM-7ad201bfbfc2.md`); local copies under `wiki/assets/papers-explained-240-nvlm/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-240-nvlm/fig-1.png) | Title card: NVLM. |
-| ![Figure 2](assets/papers-explained-240-nvlm/fig-2.png) | NVLM-1.0 offers three architectural options: the cross-attention-based NVLM-X (top), the hybrid NVLM-H (middle), and the decoder-only NVLM-D (bottom). |
-| ![Figure 3](assets/papers-explained-240-nvlm/fig-3.png) | Dynamic tiling of high-resolution input images. |
-| ![Figure 4](assets/papers-explained-240-nvlm/fig-4.png) | Ablation study of tile tag formats for dynamic high-resolution (DHR) using the decoder-only NVLMD with Yi-34B as the backbone LLM. |
-| ![Figure 5](assets/papers-explained-240-nvlm/fig-5.png) | Ablation study of using tile tag for dynamic high-resolution (DHR) using the cross-attention-based NVLM-X with Yi-34B as the backbone LLM. |
-| ![Figure 6](assets/papers-explained-240-nvlm/fig-6.png) | Training hyper-parameters of NVLM models in the pretraining stage. |
-| ![Figure 7](assets/papers-explained-240-nvlm/fig-7.png) | Training hyper-parameters of NVLM models in the SFT stage. |
-| ![Figure 8](assets/papers-explained-240-nvlm/fig-8.png) | Multimodal Pre Training Data. |
-| ![Figure 9](assets/papers-explained-240-nvlm/fig-9.png) | Multimodal SFT Data. |
-| ![Figure 10](assets/papers-explained-240-nvlm/fig-10.png) | Evaluation on vision-language and text-only benchmarks. |
-| ![Figure 11](assets/papers-explained-240-nvlm/fig-11.png) | Evaluation on text benchmarks. |
+| ![Figure 1](assets/papers-explained-240-nvlm/fig-1.webp) | Title card: NVLM. |
+| ![Figure 2](assets/papers-explained-240-nvlm/fig-2.webp) | NVLM-1.0 offers three architectural options: the cross-attention-based NVLM-X (top), the hybrid NVLM-H (middle), and the decoder-only NVLM-D (bottom). |
+| ![Figure 3](assets/papers-explained-240-nvlm/fig-3.webp) | Dynamic tiling of high-resolution input images. |
+| ![Figure 4](assets/papers-explained-240-nvlm/fig-4.webp) | Ablation study of tile tag formats for dynamic high-resolution (DHR) using the decoder-only NVLMD with Yi-34B as the backbone LLM. |
+| ![Figure 5](assets/papers-explained-240-nvlm/fig-5.webp) | Ablation study of using tile tag for dynamic high-resolution (DHR) using the cross-attention-based NVLM-X with Yi-34B as the backbone LLM. |
+| ![Figure 6](assets/papers-explained-240-nvlm/fig-6.webp) | Training hyper-parameters of NVLM models in the pretraining stage. |
+| ![Figure 7](assets/papers-explained-240-nvlm/fig-7.webp) | Training hyper-parameters of NVLM models in the SFT stage. |
+| ![Figure 8](assets/papers-explained-240-nvlm/fig-8.webp) | Multimodal Pre Training Data. |
+| ![Figure 9](assets/papers-explained-240-nvlm/fig-9.webp) | Multimodal SFT Data. |
+| ![Figure 10](assets/papers-explained-240-nvlm/fig-10.webp) | Evaluation on vision-language and text-only benchmarks. |
+| ![Figure 11](assets/papers-explained-240-nvlm/fig-11.webp) | Evaluation on text benchmarks. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-09-05_Papers-Explained-447--ULMFiT-acc076afe367.html`
+- Source file: `raw/2025-09-05_Papers-Explained-447--ULMFiT-acc076afe367.md`
 - Source title: Papers Explained 447: ULMFiT
 - Published: 2025-09-05
 - Canonical: [https://medium.com/@ritvik19/papers-explained-447-ulmfit-acc076afe367](https://medium.com/@ritvik19/papers-explained-447-ulmfit-acc076afe367)
@@ -129,18 +129,18 @@ Universal Language Model Fine-tuning for Text Classification [1801.06146](https:
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-09-05_Papers-Explained-447--ULMFiT-acc076afe367.html`); local copies under `wiki/assets/papers-explained-447-ulmfit/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-09-05_Papers-Explained-447--ULMFiT-acc076afe367.md`); local copies under `wiki/assets/papers-explained-447-ulmfit/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-447-ulmfit/fig-1.png) | Title card: ULMFiT. |
-| ![Figure 2](assets/papers-explained-447-ulmfit/fig-2.png) | ULMFiT consists of the following steps. |
-| ![Figure 3](assets/papers-explained-447-ulmfit/fig-3.png) | As different layers capture different types of information, they should be fine-tuned to different extents. |
-| ![Figure 4](assets/papers-explained-447-ulmfit/fig-4.png) | Slanted triangular learning rates. |
-| ![Figure 5](assets/papers-explained-447-ulmfit/fig-5.png) | The slanted triangular learning rate. |
-| ![Figure 6](assets/papers-explained-447-ulmfit/fig-6.png) | Text classification datasets. |
-| ![Figure 7](assets/papers-explained-447-ulmfit/fig-7.png) | Bidirectional Language Model. |
-| ![Figure 8](assets/papers-explained-447-ulmfit/fig-8.png) | Bidirectional Language Model. |
+| ![Figure 1](assets/papers-explained-447-ulmfit/fig-1.webp) | Title card: ULMFiT. |
+| ![Figure 2](assets/papers-explained-447-ulmfit/fig-2.webp) | ULMFiT consists of the following steps. |
+| ![Figure 3](assets/papers-explained-447-ulmfit/fig-3.webp) | As different layers capture different types of information, they should be fine-tuned to different extents. |
+| ![Figure 4](assets/papers-explained-447-ulmfit/fig-4.webp) | Slanted triangular learning rates. |
+| ![Figure 5](assets/papers-explained-447-ulmfit/fig-5.webp) | The slanted triangular learning rate. |
+| ![Figure 6](assets/papers-explained-447-ulmfit/fig-6.webp) | Text classification datasets. |
+| ![Figure 7](assets/papers-explained-447-ulmfit/fig-7.webp) | Bidirectional Language Model. |
+| ![Figure 8](assets/papers-explained-447-ulmfit/fig-8.webp) | Bidirectional Language Model. |
 ## Related
 
 - [[Papers Explained Corpus]]

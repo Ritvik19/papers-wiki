@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-03-26_Papers-Explained-338--Large-Scale-Data-Selection-for-Instruction-Tuning-72ef9f8221aa.html`
+- Source file: `raw/2025-03-26_Papers-Explained-338--Large-Scale-Data-Selection-for-Instruction-Tuning-72ef9f8221aa.md`
 - Source title: Papers Explained 338: Large-Scale Data Selection for Instruction Tuning
 - Published: 2025-03-26
 - Canonical: [https://medium.com/@ritvik19/papers-explained-338-large-scale-data-selection-for-instruction-tuning-72ef9f8221aa](https://medium.com/@ritvik19/papers-explained-338-large-scale-data-selection-for-instruction-tuning-72ef9f8221aa)
@@ -109,16 +109,16 @@ Large-Scale Data Selection for Instruction Tuning [2503.01807](https://arxiv.org
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-03-26_Papers-Explained-338--Large-Scale-Data-Selection-for-Instruction-Tuning-72ef9f8221aa.html`); local copies under `wiki/assets/papers-explained-338-large-scale-data-selection-for-instruction-tuning/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-03-26_Papers-Explained-338--Large-Scale-Data-Selection-for-Instruction-Tuning-72ef9f8221aa.md`); local copies under `wiki/assets/papers-explained-338-large-scale-data-selection-for-instruction-tuning/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-338-large-scale-data-selection-for-instruction-tuning/fig-1.png) | Title card: Large-Scale Data Selection for Instruction Tuning. |
-| ![Figure 2](assets/papers-explained-338-large-scale-data-selection-for-instruction-tuning/fig-2.png) | Single-task performance of different data selection techniques over the TÜLU 2 unfiltered set. |
-| ![Figure 3](assets/papers-explained-338-large-scale-data-selection-for-instruction-tuning/fig-3.png) | Performance against estimated compute cost of varied data selection methods when selecting 10k points from data pools consisting of 200k (left points) and 5.8M (right points) data points. |
-| ![Figure 4](assets/papers-explained-338-large-scale-data-selection-for-instruction-tuning/fig-4.png) | Multi-task performance of dataset selection methods when selecting 326k samples from the full TÜLU 2 unfiltered pool. |
-| ![Figure 5](assets/papers-explained-338-large-scale-data-selection-for-instruction-tuning/fig-5.png) | Multi-task performance of RDS against baselines when finetuning from Llama 3.1 8B base and selecting 939k samples from the TÜLU 3 unfiltered mixture. |
-| ![Figure 6](assets/papers-explained-338-large-scale-data-selection-for-instruction-tuning/fig-6.png) | Models are trained on 10k samples selected by each method and evaluated separately for each task. |
+| ![Figure 1](assets/papers-explained-338-large-scale-data-selection-for-instruction-tuning/fig-1.webp) | Title card: Large-Scale Data Selection for Instruction Tuning. |
+| ![Figure 2](assets/papers-explained-338-large-scale-data-selection-for-instruction-tuning/fig-2.webp) | Single-task performance of different data selection techniques over the TÜLU 2 unfiltered set. |
+| ![Figure 3](assets/papers-explained-338-large-scale-data-selection-for-instruction-tuning/fig-3.webp) | Performance against estimated compute cost of varied data selection methods when selecting 10k points from data pools consisting of 200k (left points) and 5.8M (right points) data points. |
+| ![Figure 4](assets/papers-explained-338-large-scale-data-selection-for-instruction-tuning/fig-4.webp) | Multi-task performance of dataset selection methods when selecting 326k samples from the full TÜLU 2 unfiltered pool. |
+| ![Figure 5](assets/papers-explained-338-large-scale-data-selection-for-instruction-tuning/fig-5.webp) | Multi-task performance of RDS against baselines when finetuning from Llama 3.1 8B base and selecting 939k samples from the TÜLU 3 unfiltered mixture. |
+| ![Figure 6](assets/papers-explained-338-large-scale-data-selection-for-instruction-tuning/fig-6.webp) | Models are trained on 10k samples selected by each method and evaluated separately for each task. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-05-05_Papers-Explained-358--Phi-4-Reasoning-98c1d3b5e52d.html`
+- Source file: `raw/2025-05-05_Papers-Explained-358--Phi-4-Reasoning-98c1d3b5e52d.md`
 - Source title: Papers Explained 358: Phi-4-Reasoning
 - Published: 2025-05-05
 - Canonical: [https://medium.com/@ritvik19/papers-explained-358-phi-4-reasoning-98c1d3b5e52d](https://medium.com/@ritvik19/papers-explained-358-phi-4-reasoning-98c1d3b5e52d)
@@ -185,23 +185,23 @@ Phi-4-reasoning Technical Report [2504.21318](https://arxiv.org/abs/2504.21318)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-05-05_Papers-Explained-358--Phi-4-Reasoning-98c1d3b5e52d.html`); local copies under `wiki/assets/papers-explained-358-phi-4-reasoning/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-05-05_Papers-Explained-358--Phi-4-Reasoning-98c1d3b5e52d.md`); local copies under `wiki/assets/papers-explained-358-phi-4-reasoning/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-358-phi-4-reasoning/fig-1.png) | Title card: Phi-4-Reasoning. |
-| ![Figure 2](assets/papers-explained-358-phi-4-reasoning/fig-2.png) | Rewriting seed data from the web into verifiable synthetic questions for SFT and RL. |
-| ![Figure 3](assets/papers-explained-358-phi-4-reasoning/fig-3.png) | For outputs with format violations, the length-aware accuracy reward is manually overridden. |
-| ![Figure 4](assets/papers-explained-358-phi-4-reasoning/fig-4.png) | Besides the accuracy-based reward, Repetition Penalty (Rrep) is considered, defined as a negative reward based on repeated 5-grams frequency, computed as. |
-| ![Figure 5](assets/papers-explained-358-phi-4-reasoning/fig-5.png) | The final RL reward is therefore computed as. |
-| ![Figure 6](assets/papers-explained-358-phi-4-reasoning/fig-6.png) | Behaviour of Phi-4-reasoning-plus during the first 125 GRPO updates. |
-| ![Figure 7](assets/papers-explained-358-phi-4-reasoning/fig-7.png) | Average Pass@1 accuracy (%) of models on selected reasoning benchmarks. |
-| ![Figure 8](assets/papers-explained-358-phi-4-reasoning/fig-8.png) | Average Pass@1 model performance across eight reasoning tasks across five independent runs. |
-| ![Figure 9](assets/papers-explained-358-phi-4-reasoning/fig-9.png) | Distribution of pass@1 accuracy on AIME 2025. |
-| ![Figure 10](assets/papers-explained-358-phi-4-reasoning/fig-10.png) | Tradeoff between accuracy and token usage for all benchmarks. |
-| ![Figure 11](assets/papers-explained-358-phi-4-reasoning/fig-11.png) | Performance breakdown by years (from 1983 to 2025) for AIME on 5 independent runs. |
-| ![Figure 12](assets/papers-explained-358-phi-4-reasoning/fig-12.png) | GPQA accuracy and token usage by high-level domain. |
-| ![Figure 13](assets/papers-explained-358-phi-4-reasoning/fig-13.png) | Average pass@1 accuracy of models across general-purpose benchmarks evaluated averaged over five generations. |
+| ![Figure 1](assets/papers-explained-358-phi-4-reasoning/fig-1.webp) | Title card: Phi-4-Reasoning. |
+| ![Figure 2](assets/papers-explained-358-phi-4-reasoning/fig-2.webp) | Rewriting seed data from the web into verifiable synthetic questions for SFT and RL. |
+| ![Figure 3](assets/papers-explained-358-phi-4-reasoning/fig-3.webp) | For outputs with format violations, the length-aware accuracy reward is manually overridden. |
+| ![Figure 4](assets/papers-explained-358-phi-4-reasoning/fig-4.webp) | Besides the accuracy-based reward, Repetition Penalty (Rrep) is considered, defined as a negative reward based on repeated 5-grams frequency, computed as. |
+| ![Figure 5](assets/papers-explained-358-phi-4-reasoning/fig-5.webp) | The final RL reward is therefore computed as. |
+| ![Figure 6](assets/papers-explained-358-phi-4-reasoning/fig-6.webp) | Behaviour of Phi-4-reasoning-plus during the first 125 GRPO updates. |
+| ![Figure 7](assets/papers-explained-358-phi-4-reasoning/fig-7.webp) | Average Pass@1 accuracy (%) of models on selected reasoning benchmarks. |
+| ![Figure 8](assets/papers-explained-358-phi-4-reasoning/fig-8.webp) | Average Pass@1 model performance across eight reasoning tasks across five independent runs. |
+| ![Figure 9](assets/papers-explained-358-phi-4-reasoning/fig-9.webp) | Distribution of pass@1 accuracy on AIME 2025. |
+| ![Figure 10](assets/papers-explained-358-phi-4-reasoning/fig-10.webp) | Tradeoff between accuracy and token usage for all benchmarks. |
+| ![Figure 11](assets/papers-explained-358-phi-4-reasoning/fig-11.webp) | Performance breakdown by years (from 1983 to 2025) for AIME on 5 independent runs. |
+| ![Figure 12](assets/papers-explained-358-phi-4-reasoning/fig-12.webp) | GPQA accuracy and token usage by high-level domain. |
+| ![Figure 13](assets/papers-explained-358-phi-4-reasoning/fig-13.webp) | Average pass@1 accuracy of models across general-purpose benchmarks evaluated averaged over five generations. |
 ## Related
 
 - [[Papers Explained Corpus]]

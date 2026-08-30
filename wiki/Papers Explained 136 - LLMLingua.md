@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-05-13_Papers-Explained-136--LLMLingua-f9b2f53f5f9b.html`
+- Source file: `raw/2024-05-13_Papers-Explained-136--LLMLingua-f9b2f53f5f9b.md`
 - Source title: Papers Explained 136: LLMLingua
 - Published: 2024-05-13
 - Canonical: [https://medium.com/@ritvik19/papers-explained-136-llmlingua-f9b2f53f5f9b](https://medium.com/@ritvik19/papers-explained-136-llmlingua-f9b2f53f5f9b)
@@ -107,23 +107,23 @@ Recommended Reading [LLM Lingua Series](https://ritvik19.medium.com/list/llm-lin
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-05-13_Papers-Explained-136--LLMLingua-f9b2f53f5f9b.html`); local copies under `wiki/assets/papers-explained-136-llmlingua/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-05-13_Papers-Explained-136--LLMLingua-f9b2f53f5f9b.md`); local copies under `wiki/assets/papers-explained-136-llmlingua/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-136-llmlingua/fig-1.png) | Title page of *LLMLingua: Compressing Prompts for Accelerated Inference of Large Language Models*. |
-| ![Figure 2](assets/papers-explained-136-llmlingua/fig-2.png) | KL-alignment objective: minimize divergence between outputs under compressed prompt $\tilde{x}$ versus full prompt $x$. |
-| ![Figure 3](assets/papers-explained-136-llmlingua/fig-3.png) | End-to-end diagram: budget controller, iterative token-level compression, and distribution-aligned small model shrink a long prompt before calling black-box LLMs. |
-| ![Figure 4](assets/papers-explained-136-llmlingua/fig-4.png) | Pseudocode for the budget controller: rank demonstrations by perplexity, pack until demo budget, then release slack to instruction and question. |
-| ![Figure 5](assets/papers-explained-136-llmlingua/fig-5.png) | Closed form for demonstration compression rate $\tau_{\text{dems}}$ given overall $\tau$ and fixed rates on instruction and question segments. |
-| ![Figure 6](assets/papers-explained-136-llmlingua/fig-6.png) | Budget slack $\Delta\tau$ reassigned to instruction and question after coarse demo selection. |
-| ![Figure 7](assets/papers-explained-136-llmlingua/fig-7.png) | Pseudocode for iterative token-level prompt compression (ITPC): segment-wise thresholds from conditional perplexities, then concatenate retained tokens. |
-| ![Figure 8](assets/papers-explained-136-llmlingua/fig-8.png) | Exact vs approximated segment probabilities used inside ITPC's perplexity-driven scoring. |
-| ![Figure 9](assets/papers-explained-136-llmlingua/fig-9.png) | Per-segment target compression rate $\tau_{s_j}$ varies by whether tokens come from instruction, retained demos, or question. |
-| ![Figure 10](assets/papers-explained-136-llmlingua/fig-10.png) | Tokens kept in segment $j$ are those whose marginal scores exceed threshold $\gamma_j$. |
-| ![Figure 11](assets/papers-explained-136-llmlingua/fig-11.png) | Instruction-tuning loss aligning the small compressor's outputs with labels produced by the target LLM. |
-| ![Figure 12](assets/papers-explained-136-llmlingua/fig-12.png) | Conversation (ShareGPT) and summarization (Arxiv-March23) quality vs baselines under two compression constraints. |
-| ![Figure 13](assets/papers-explained-136-llmlingua/fig-13.png) | GSM8K and BBH exact-match scores across full-shot, constrained-shot, and zero-shot settings with token counts and effective speedups. |
+| ![Figure 1](assets/papers-explained-136-llmlingua/fig-1.webp) | Title page of *LLMLingua: Compressing Prompts for Accelerated Inference of Large Language Models*. |
+| ![Figure 2](assets/papers-explained-136-llmlingua/fig-2.webp) | KL-alignment objective: minimize divergence between outputs under compressed prompt $\tilde{x}$ versus full prompt $x$. |
+| ![Figure 3](assets/papers-explained-136-llmlingua/fig-3.webp) | End-to-end diagram: budget controller, iterative token-level compression, and distribution-aligned small model shrink a long prompt before calling black-box LLMs. |
+| ![Figure 4](assets/papers-explained-136-llmlingua/fig-4.webp) | Pseudocode for the budget controller: rank demonstrations by perplexity, pack until demo budget, then release slack to instruction and question. |
+| ![Figure 5](assets/papers-explained-136-llmlingua/fig-5.webp) | Closed form for demonstration compression rate $\tau_{\text{dems}}$ given overall $\tau$ and fixed rates on instruction and question segments. |
+| ![Figure 6](assets/papers-explained-136-llmlingua/fig-6.webp) | Budget slack $\Delta\tau$ reassigned to instruction and question after coarse demo selection. |
+| ![Figure 7](assets/papers-explained-136-llmlingua/fig-7.webp) | Pseudocode for iterative token-level prompt compression (ITPC): segment-wise thresholds from conditional perplexities, then concatenate retained tokens. |
+| ![Figure 8](assets/papers-explained-136-llmlingua/fig-8.webp) | Exact vs approximated segment probabilities used inside ITPC's perplexity-driven scoring. |
+| ![Figure 9](assets/papers-explained-136-llmlingua/fig-9.webp) | Per-segment target compression rate $\tau_{s_j}$ varies by whether tokens come from instruction, retained demos, or question. |
+| ![Figure 10](assets/papers-explained-136-llmlingua/fig-10.webp) | Tokens kept in segment $j$ are those whose marginal scores exceed threshold $\gamma_j$. |
+| ![Figure 11](assets/papers-explained-136-llmlingua/fig-11.webp) | Instruction-tuning loss aligning the small compressor's outputs with labels produced by the target LLM. |
+| ![Figure 12](assets/papers-explained-136-llmlingua/fig-12.webp) | Conversation (ShareGPT) and summarization (Arxiv-March23) quality vs baselines under two compression constraints. |
+| ![Figure 13](assets/papers-explained-136-llmlingua/fig-13.webp) | GSM8K and BBH exact-match scores across full-shot, constrained-shot, and zero-shot settings with token counts and effective speedups. |
 ## Related
 
 - [[Papers Explained Corpus]]

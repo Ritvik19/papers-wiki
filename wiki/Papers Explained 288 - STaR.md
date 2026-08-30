@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-01-15_Papers-Explained-288--STaR-cf485a5b117e.html`
+- Source file: `raw/2025-01-15_Papers-Explained-288--STaR-cf485a5b117e.md`
 - Source title: Papers Explained 288: STaR
 - Published: 2025-01-15
 - Canonical: [https://medium.com/@ritvik19/papers-explained-288-star-cf485a5b117e](https://medium.com/@ritvik19/papers-explained-288-star-cf485a5b117e)
@@ -77,16 +77,16 @@ STaR: Bootstrapping Reasoning With Reasoning [2203.14465](https://arxiv.org/abs/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-01-15_Papers-Explained-288--STaR-cf485a5b117e.html`); local copies under `wiki/assets/papers-explained-288-star/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-01-15_Papers-Explained-288--STaR-cf485a5b117e.md`); local copies under `wiki/assets/papers-explained-288-star/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-288-star/fig-1.png) | Title card: STaR. |
-| ![Figure 2](assets/papers-explained-288-star/fig-2.png) | An overview of STaR and a STaR-generated rationale. |
-| ![Figure 3](assets/papers-explained-288-star/fig-3.png) | Given a pretrained LLM M and an initial dataset of problems x with answers y: D = {(xi, yi)}. |
-| ![Figure 4](assets/papers-explained-288-star/fig-4.png) | A visualization of the accuracy of n-digit summation with each iteration of STaR with and without rationalization for arithmetic. |
-| ![Figure 5](assets/papers-explained-288-star/fig-5.png) | Experiments focus on arithmetic, commonsense reasoning, and grade school math to demonstrate STaR’s breadth. |
-| ![Figure 6](assets/papers-explained-288-star/fig-6.png) | Experiments focus on arithmetic, commonsense reasoning, and grade school math to demonstrate STaR’s breadth. |
+| ![Figure 1](assets/papers-explained-288-star/fig-1.webp) | Title card: STaR. |
+| ![Figure 2](assets/papers-explained-288-star/fig-2.webp) | An overview of STaR and a STaR-generated rationale. |
+| ![Figure 3](assets/papers-explained-288-star/fig-3.webp) | Given a pretrained LLM M and an initial dataset of problems x with answers y: D = {(xi, yi)}. |
+| ![Figure 4](assets/papers-explained-288-star/fig-4.webp) | A visualization of the accuracy of n-digit summation with each iteration of STaR with and without rationalization for arithmetic. |
+| ![Figure 5](assets/papers-explained-288-star/fig-5.webp) | Experiments focus on arithmetic, commonsense reasoning, and grade school math to demonstrate STaR’s breadth. |
+| ![Figure 6](assets/papers-explained-288-star/fig-6.webp) | Experiments focus on arithmetic, commonsense reasoning, and grade school math to demonstrate STaR’s breadth. |
 ## Related
 
 - [[Papers Explained Corpus]]

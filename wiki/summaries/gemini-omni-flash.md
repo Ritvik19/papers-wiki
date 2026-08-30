@@ -1,6 +1,6 @@
 # Gemini Omni Flash
 
-**Source**: `raw/gemini-omni/full-article.html` (424 KB)  
+**Source**: `raw/gemini-omni/full-article.md` (424 KB)  
 **URL**: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

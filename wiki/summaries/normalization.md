@@ -1,6 +1,6 @@
 # In-layer Normalization Techniques for Training Very Deep Neural Networks
 
-**Source**: `raw/normalization/full-article.html` (markdown view: `raw/normalization/full-article.md`)  
+**Source**: `raw/normalization/full-article.md` (markdown view: `raw/normalization/full-article.md`)  
 **URL**: https://theaisummer.com/normalization/  
 **Author**: Nikolas Adaloglou (AI Summer), 2020-10-15  
 **Ingested**: 2026-06-06  
@@ -10,11 +10,11 @@
 
 Nikolas Adaloglou's AI Summer survey explains why **in-layer normalization** matters for training deep models across CNNs, RNNs, transformers, and GANs. Just as input features on wildly different scales cause gradient descent to ignore low-magnitude dimensions, intermediate activations inside deep networks suffer the same pathology — independent of architecture. Normalization methods differ primarily in **which tensor axes they aggregate statistics over** (batch N, channels C, height H, width W), and the article maps each choice to typical use cases.
 
-![Trends in normalization methods over time](../assets/normalization/fig-1.png)
+![Trends in normalization methods over time](../assets/normalization/fig-1.webp)
 
 The core activation-normalization family spans **[[Batch Normalization]]** (per-channel stats over N×H×W — strong for image classification, fragile at small or varying batch sizes), **[[Layer Normalization]]** (per-sample stats over C×H×W — batch-independent; dominant in transformers), **[[Instance Normalization]]** (per-sample per-channel over H×W — style transfer), and **[[Group Normalization]]** (stats within channel groups over H×W — batch-independent CNN alternative). **[[Synchronized Batch Normalization]]** aggregates BN statistics across GPUs for large-scale distributed training.
 
-![Comparative overview of normalization axes](../assets/normalization/fig-13.png)
+![Comparative overview of normalization axes](../assets/normalization/fig-13.webp)
 
 Beyond vanilla activation norm, the article covers **weight reparameterization** (**[[Weight Normalization]]**, **[[Weight Standardization]]**) that normalizes filter weights rather than activations — WS smooths the loss landscape and pairs with GN in [[Big Transfer]] (replacing BN for TPU-scale pretraining).
 
@@ -39,26 +39,26 @@ Style- and layout-conditioned variants inject external signals into the affine s
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/normalization/fig-1.png) | Trends in normalization methods used in papers over time (Papers with Code) | — |
-| ![fig-2](../assets/normalization/fig-2.png) | 3D visualization of 4D activation tensor (N, C, H×W merged) | — |
-| ![fig-3](../assets/normalization/fig-3.png) | How batch norm brings feature values into a compact range (MC.AI) | — |
-| ![fig-4](../assets/normalization/fig-4.png) | Batch normalization: statistics aggregated over batch and spatial dims | — |
-| ![fig-5](../assets/normalization/fig-5.png) | Layer normalization: statistics per sample over channels and spatial dims | — |
-| ![fig-6](../assets/normalization/fig-6.png) | Instance normalization: statistics per sample and channel over spatial dims | — |
-| ![fig-7](../assets/normalization/fig-7.png) | AdaIN encoder–decoder architecture and style-transfer results | — |
-| ![fig-8](../assets/normalization/fig-8.png) | Group normalization with channels split into groups | — |
-| ![fig-9](../assets/normalization/fig-9.png) | ResNet-50 ImageNet validation error: GN vs BN at batch 32/GPU | — |
-| ![fig-10](../assets/normalization/fig-10.png) | Weight standardization: per output-channel weight statistics | — |
-| ![fig-11](../assets/normalization/fig-11.png) | GN+WS vs BN and GN on ImageNet and COCO | — |
-| ![fig-12](../assets/normalization/fig-12.png) | SPADE layer: spatially adaptive γ, β from segmentation mask | — |
-| ![fig-13](../assets/normalization/fig-13.png) | Comparative overview of all presented normalization methods | — |
+| ![fig-1](../assets/normalization/fig-1.webp) | Trends in normalization methods used in papers over time (Papers with Code) | — |
+| ![fig-2](../assets/normalization/fig-2.webp) | 3D visualization of 4D activation tensor (N, C, H×W merged) | — |
+| ![fig-3](../assets/normalization/fig-3.webp) | How batch norm brings feature values into a compact range (MC.AI) | — |
+| ![fig-4](../assets/normalization/fig-4.webp) | Batch normalization: statistics aggregated over batch and spatial dims | — |
+| ![fig-5](../assets/normalization/fig-5.webp) | Layer normalization: statistics per sample over channels and spatial dims | — |
+| ![fig-6](../assets/normalization/fig-6.webp) | Instance normalization: statistics per sample and channel over spatial dims | — |
+| ![fig-7](../assets/normalization/fig-7.webp) | AdaIN encoder–decoder architecture and style-transfer results | — |
+| ![fig-8](../assets/normalization/fig-8.webp) | Group normalization with channels split into groups | — |
+| ![fig-9](../assets/normalization/fig-9.webp) | ResNet-50 ImageNet validation error: GN vs BN at batch 32/GPU | — |
+| ![fig-10](../assets/normalization/fig-10.webp) | Weight standardization: per output-channel weight statistics | — |
+| ![fig-11](../assets/normalization/fig-11.webp) | GN+WS vs BN and GN on ImageNet and COCO | — |
+| ![fig-12](../assets/normalization/fig-12.webp) | SPADE layer: spatially adaptive γ, β from segmentation mask | — |
+| ![fig-13](../assets/normalization/fig-13.webp) | Comparative overview of all presented normalization methods | — |
 | ![fig-14](../assets/normalization/fig-14.gif) | BiT ResNet depth/width scaling: batch-norm layers (red) swapped for GN+WS (Google AI blog / Giphy) | — |
 
-![Batch normalization axes](../assets/normalization/fig-4.png)
+![Batch normalization axes](../assets/normalization/fig-4.webp)
 
 BN averages over the batch dimension and spatial positions for each channel — blending global image characteristics useful for classification.
 
-![Group normalization](../assets/normalization/fig-8.png)
+![Group normalization](../assets/normalization/fig-8.webp)
 
 GN partitions channels into groups and normalizes within each group, making statistics independent of batch size.
 

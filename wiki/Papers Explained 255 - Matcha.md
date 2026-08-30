@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-11-19_Papers-Explained-255--Matcha-d5d5fe66b039.html`
+- Source file: `raw/2024-11-19_Papers-Explained-255--Matcha-d5d5fe66b039.md`
 - Source title: Papers Explained 255: Matcha
 - Published: 2024-11-19
 - Canonical: [https://medium.com/@ritvik19/papers-explained-255-matcha-d5d5fe66b039](https://medium.com/@ritvik19/papers-explained-255-matcha-d5d5fe66b039)
@@ -87,16 +87,16 @@ Recommended Reading: [Document Information Processing](https://ritvik19.medium.c
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-11-19_Papers-Explained-255--Matcha-d5d5fe66b039.html`); local copies under `wiki/assets/papers-explained-255-matcha/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-11-19_Papers-Explained-255--Matcha-d5d5fe66b039.md`); local copies under `wiki/assets/papers-explained-255-matcha/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-255-matcha/fig-1.png) | Title card: Matcha. |
-| ![Figure 2](assets/papers-explained-255-matcha/fig-2.png) | MATCHA defines two types of pretraining tasks: (1) chart derendering (light blue boxes) and (2) mathematical reasoning (light red boxes). |
-| ![Figure 3](assets/papers-explained-255-matcha/fig-3.png) | Mixture rates for all tasks in pretraining and the absolute size of each dataset. |
-| ![Figure 4](assets/papers-explained-255-matcha/fig-4.png) | Statistics of the finetuning datasets. |
-| ![Figure 5](assets/papers-explained-255-matcha/fig-5.png) | Main experimental results on two chart QA benchmarks ChartQA & PlotQA and a chart summarization benchmark Chart-to-Text. |
-| ![Figure 6](assets/papers-explained-255-matcha/fig-6.png) | MATCHA vs. Pix2Sturct on Pix2Sturct tasks. |
+| ![Figure 1](assets/papers-explained-255-matcha/fig-1.webp) | Title card: Matcha. |
+| ![Figure 2](assets/papers-explained-255-matcha/fig-2.webp) | MATCHA defines two types of pretraining tasks: (1) chart derendering (light blue boxes) and (2) mathematical reasoning (light red boxes). |
+| ![Figure 3](assets/papers-explained-255-matcha/fig-3.webp) | Mixture rates for all tasks in pretraining and the absolute size of each dataset. |
+| ![Figure 4](assets/papers-explained-255-matcha/fig-4.webp) | Statistics of the finetuning datasets. |
+| ![Figure 5](assets/papers-explained-255-matcha/fig-5.webp) | Main experimental results on two chart QA benchmarks ChartQA & PlotQA and a chart summarization benchmark Chart-to-Text. |
+| ![Figure 6](assets/papers-explained-255-matcha/fig-6.webp) | MATCHA vs. Pix2Sturct on Pix2Sturct tasks. |
 ## Related
 
 - [[Papers Explained Corpus]]

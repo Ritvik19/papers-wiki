@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-01-24_Papers-Explained-295--ReaderLM-v2-7103e9b25a10.html`
+- Source file: `raw/2025-01-24_Papers-Explained-295--ReaderLM-v2-7103e9b25a10.md`
 - Source title: Papers Explained 295: ReaderLM v2
 - Published: 2025-01-24
 - Canonical: [https://medium.com/@ritvik19/papers-explained-295-readerlm-v2-7103e9b25a10](https://medium.com/@ritvik19/papers-explained-295-readerlm-v2-7103e9b25a10)
@@ -83,18 +83,18 @@ Overall, ReaderLM-v2 demonstrates significant advancements across all evaluated 
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-01-24_Papers-Explained-295--ReaderLM-v2-7103e9b25a10.html`); local copies under `wiki/assets/papers-explained-295-readerlm-v2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-01-24_Papers-Explained-295--ReaderLM-v2-7103e9b25a10.md`); local copies under `wiki/assets/papers-explained-295-readerlm-v2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-295-readerlm-v2/fig-1.png) | Title card: ReaderLM v2. |
-| ![Figure 2](assets/papers-explained-295-readerlm-v2/fig-2.png) | The model is available on HuggingFace. |
-| ![Figure 3](assets/papers-explained-295-readerlm-v2/fig-3.png) | ReaderLM-v2 is built on Qwen2.5–1.5B-Instruction, a compact base model known for its efficiency in instruction-following and long-context... |
-| ![Figure 4](assets/papers-explained-295-readerlm-v2/fig-4.png) | The training process involved multiple stages tailored to the challenges of processing long-context documents. |
-| ![Figure 5](assets/papers-explained-295-readerlm-v2/fig-5.png) | Finally, self-play reinforcement tuning is implemented, an iterative process where the model generated, refined, and evaluated its own... |
-| ![Figure 6](assets/papers-explained-295-readerlm-v2/fig-6.png) | Performance is measured using a combination of metrics assessing content accuracy and structural fidelity. |
-| ![Figure 7](assets/papers-explained-295-readerlm-v2/fig-7.png) | Performance is measured using a combination of metrics assessing content accuracy and structural fidelity. |
-| ![Figure 8](assets/papers-explained-295-readerlm-v2/fig-8.png) | Performance is measured using a combination of metrics assessing content accuracy and structural fidelity. |
+| ![Figure 1](assets/papers-explained-295-readerlm-v2/fig-1.webp) | Title card: ReaderLM v2. |
+| ![Figure 2](assets/papers-explained-295-readerlm-v2/fig-2.webp) | The model is available on HuggingFace. |
+| ![Figure 3](assets/papers-explained-295-readerlm-v2/fig-3.webp) | ReaderLM-v2 is built on Qwen2.5–1.5B-Instruction, a compact base model known for its efficiency in instruction-following and long-context... |
+| ![Figure 4](assets/papers-explained-295-readerlm-v2/fig-4.webp) | The training process involved multiple stages tailored to the challenges of processing long-context documents. |
+| ![Figure 5](assets/papers-explained-295-readerlm-v2/fig-5.webp) | Finally, self-play reinforcement tuning is implemented, an iterative process where the model generated, refined, and evaluated its own... |
+| ![Figure 6](assets/papers-explained-295-readerlm-v2/fig-6.webp) | Performance is measured using a combination of metrics assessing content accuracy and structural fidelity. |
+| ![Figure 7](assets/papers-explained-295-readerlm-v2/fig-7.webp) | Performance is measured using a combination of metrics assessing content accuracy and structural fidelity. |
+| ![Figure 8](assets/papers-explained-295-readerlm-v2/fig-8.webp) | Performance is measured using a combination of metrics assessing content accuracy and structural fidelity. |
 ## Related
 
 - [[Papers Explained Corpus]]

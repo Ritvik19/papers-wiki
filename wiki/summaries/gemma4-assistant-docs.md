@@ -1,6 +1,6 @@
 # Gemma4 Assistant Docs
 
-**Source**: `raw/gemma4-assistant-docs/full-article.html` (333 KB)  
+**Source**: `raw/gemma4-assistant-docs/full-article.md` (333 KB)  
 **URL**: https://huggingface.co/docs/transformers/main/en/model_doc/gemma4_assistant  
 **Ingested**: 2026-07-12  
 **Tags**: #summary

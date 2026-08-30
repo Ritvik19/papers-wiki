@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-02-13_Papers-Explained-540--Bespoke-MiniChart-7B-0621b15714b2.html`
+- Source file: `raw/2026-02-13_Papers-Explained-540--Bespoke-MiniChart-7B-0621b15714b2.md`
 - Source title: Papers Explained 540: Bespoke MiniChart 7B
 - Published: 2026-02-13
 - Canonical: [https://medium.com/@ritvik19/papers-explained-540-bespoke-minichart-7b-0621b15714b2](https://medium.com/@ritvik19/papers-explained-540-bespoke-minichart-7b-0621b15714b2)
@@ -75,13 +75,13 @@ DPO training was used to further improve model performance. For model M2, 16 CoT
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-02-13_Papers-Explained-540--Bespoke-MiniChart-7B-0621b15714b2.html`); local copies under `wiki/assets/papers-explained-540-bespoke-minichart-7b/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-02-13_Papers-Explained-540--Bespoke-MiniChart-7B-0621b15714b2.md`); local copies under `wiki/assets/papers-explained-540-bespoke-minichart-7b/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-540-bespoke-minichart-7b/fig-1.png) | Title card: Bespoke MiniChart 7B. |
-| ![Figure 2](assets/papers-explained-540-bespoke-minichart-7b/fig-2.png) | DPO training was used to further improve model performance. |
-| ![Figure 3](assets/papers-explained-540-bespoke-minichart-7b/fig-3.png) | DPO training was used to further improve model performance. |
+| ![Figure 1](assets/papers-explained-540-bespoke-minichart-7b/fig-1.webp) | Title card: Bespoke MiniChart 7B. |
+| ![Figure 2](assets/papers-explained-540-bespoke-minichart-7b/fig-2.webp) | DPO training was used to further improve model performance. |
+| ![Figure 3](assets/papers-explained-540-bespoke-minichart-7b/fig-3.webp) | DPO training was used to further improve model performance. |
 ## Related
 
 - [[Papers Explained Corpus]]

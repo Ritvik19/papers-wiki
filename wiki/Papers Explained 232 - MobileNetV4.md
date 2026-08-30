@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-10-16_Papers-Explained-232--MobileNetV4-83a526887c30.html`
+- Source file: `raw/2024-10-16_Papers-Explained-232--MobileNetV4-83a526887c30.md`
 - Source title: Papers Explained 232: MobileNetV4
 - Published: 2024-10-16
 - Canonical: [https://medium.com/@ritvik19/papers-explained-232-mobilenetv4-83a526887c30](https://medium.com/@ritvik19/papers-explained-232-mobilenetv4-83a526887c30)
@@ -181,22 +181,22 @@ Recommended Reading [Convolutional Neural Networks](https://medium.com/@ritvik19
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-10-16_Papers-Explained-232--MobileNetV4-83a526887c30.html`); local copies under `wiki/assets/papers-explained-232-mobilenetv4/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-10-16_Papers-Explained-232--MobileNetV4-83a526887c30.md`); local copies under `wiki/assets/papers-explained-232-mobilenetv4/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-232-mobilenetv4/fig-1.png) | Title card: MobileNetV4. |
-| ![Figure 2](assets/papers-explained-232-mobilenetv4/fig-2.png) | MAC -> Multiply-Accumulate operations. |
-| ![Figure 3](assets/papers-explained-232-mobilenetv4/fig-3.png) | Ridge Points and Latency/Accuracy Trade-Offs. |
-| ![Figure 4](assets/papers-explained-232-mobilenetv4/fig-4.png) | Op Cost vs Ridge Point. |
-| ![Figure 5](assets/papers-explained-232-mobilenetv4/fig-5.png) | Universal Inverted Bottleneck (UIB) blocks. |
-| ![Figure 6](assets/papers-explained-232-mobilenetv4/fig-6.png) | Mobile MQA incorporates Spatial Reduction Attention (SRA) to downscale the resolution of keys and values, yet retain high-resolution... |
-| ![Figure 7](assets/papers-explained-232-mobilenetv4/fig-7.png) | It is found that adding attention to the last stages of convolution models is most effective. |
-| ![Figure 8](assets/papers-explained-232-mobilenetv4/fig-8.png) | It is found that adding attention to the last stages of convolution models is most effective. |
-| ![Figure 9](assets/papers-explained-232-mobilenetv4/fig-9.png) | Classification results on ImageNet-1K, along with on-device benchmarks. |
-| ![Figure 10](assets/papers-explained-232-mobilenetv4/fig-10.png) | Object detection results on the COCO-17 Val set. |
-| ![Figure 11](assets/papers-explained-232-mobilenetv4/fig-11.png) | Distillation results using MNv4-Conv-L as student. |
-| ![Figure 12](assets/papers-explained-232-mobilenetv4/fig-12.png) | Top-1 Accuracy Comparison Across Training Approaches. |
+| ![Figure 1](assets/papers-explained-232-mobilenetv4/fig-1.webp) | Title card: MobileNetV4. |
+| ![Figure 2](assets/papers-explained-232-mobilenetv4/fig-2.webp) | MAC -> Multiply-Accumulate operations. |
+| ![Figure 3](assets/papers-explained-232-mobilenetv4/fig-3.webp) | Ridge Points and Latency/Accuracy Trade-Offs. |
+| ![Figure 4](assets/papers-explained-232-mobilenetv4/fig-4.webp) | Op Cost vs Ridge Point. |
+| ![Figure 5](assets/papers-explained-232-mobilenetv4/fig-5.webp) | Universal Inverted Bottleneck (UIB) blocks. |
+| ![Figure 6](assets/papers-explained-232-mobilenetv4/fig-6.webp) | Mobile MQA incorporates Spatial Reduction Attention (SRA) to downscale the resolution of keys and values, yet retain high-resolution... |
+| ![Figure 7](assets/papers-explained-232-mobilenetv4/fig-7.webp) | It is found that adding attention to the last stages of convolution models is most effective. |
+| ![Figure 8](assets/papers-explained-232-mobilenetv4/fig-8.webp) | It is found that adding attention to the last stages of convolution models is most effective. |
+| ![Figure 9](assets/papers-explained-232-mobilenetv4/fig-9.webp) | Classification results on ImageNet-1K, along with on-device benchmarks. |
+| ![Figure 10](assets/papers-explained-232-mobilenetv4/fig-10.webp) | Object detection results on the COCO-17 Val set. |
+| ![Figure 11](assets/papers-explained-232-mobilenetv4/fig-11.webp) | Distillation results using MNv4-Conv-L as student. |
+| ![Figure 12](assets/papers-explained-232-mobilenetv4/fig-12.webp) | Top-1 Accuracy Comparison Across Training Approaches. |
 ## Related
 
 - [[Papers Explained Corpus]]

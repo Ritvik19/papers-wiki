@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-06_Papers-Explained-08--DeBERTa-a808d9b2c52d.html`
+- Source file: `raw/2023-02-06_Papers-Explained-08--DeBERTa-a808d9b2c52d.md`
 - Source title: Papers Explained 08: DeBERTa
 - Published: 2023-02-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-08-deberta-a808d9b2c52d](https://medium.com/@ritvik19/papers-explained-08-deberta-a808d9b2c52d)
@@ -75,20 +75,20 @@ DeBERTa: Decoding-enhanced BERT with Disentangled Attention [2006.03654](https:/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-06_Papers-Explained-08--DeBERTa-a808d9b2c52d.html`); local copies under `wiki/assets/papers-explained-08-deberta/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-06_Papers-Explained-08--DeBERTa-a808d9b2c52d.md`); local copies under `wiki/assets/papers-explained-08-deberta/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-08-deberta/fig-1.png) | Title block of *DeBERTa: Decoding-enhanced BERT with Disentangled Attention*. |
-| ![Figure 2](assets/papers-explained-08-deberta/fig-2.png) | Disentangled attention definition: sum of content-to-content, content-to-position, and position-aware interaction terms. |
-| ![Figure 3](assets/papers-explained-08-deberta/fig-3.png) | Relative position indexing term \( \delta(i,j) \) used by DeBERTa’s disentangled attention. |
-| ![Figure 4](assets/papers-explained-08-deberta/fig-4.png) | Standard single-head self-attention formulation used as the baseline reference. |
-| ![Figure 5](assets/papers-explained-08-deberta/fig-5.png) | Disentangled self-attention equation with explicit relative-position bias term. |
-| ![Figure 6](assets/papers-explained-08-deberta/fig-6.png) | Scale-invariant fine-tuning step: normalize word embeddings before perturbation. |
-| ![Figure 7](assets/papers-explained-08-deberta/fig-7.png) | Normalized embedding representation used in SiFT adversarial training. |
-| ![Figure 8](assets/papers-explained-08-deberta/fig-8.png) | Adversarial perturbation objective on normalized embeddings for stable fine-tuning. |
-| ![Figure 9](assets/papers-explained-08-deberta/fig-9.png) | Combined fine-tuning loss integrating task objective with scale-invariant perturbation regularization. |
-| ![Figure 10](assets/papers-explained-08-deberta/fig-10.png) | Decoding-layer comparison: BERT mask decoder vs DeBERTa Enhanced Mask Decoder (EMD). |
+| ![Figure 1](assets/papers-explained-08-deberta/fig-1.webp) | Title block of *DeBERTa: Decoding-enhanced BERT with Disentangled Attention*. |
+| ![Figure 2](assets/papers-explained-08-deberta/fig-2.webp) | Disentangled attention definition: sum of content-to-content, content-to-position, and position-aware interaction terms. |
+| ![Figure 3](assets/papers-explained-08-deberta/fig-3.webp) | Relative position indexing term \( \delta(i,j) \) used by DeBERTa’s disentangled attention. |
+| ![Figure 4](assets/papers-explained-08-deberta/fig-4.webp) | Standard single-head self-attention formulation used as the baseline reference. |
+| ![Figure 5](assets/papers-explained-08-deberta/fig-5.webp) | Disentangled self-attention equation with explicit relative-position bias term. |
+| ![Figure 6](assets/papers-explained-08-deberta/fig-6.webp) | Scale-invariant fine-tuning step: normalize word embeddings before perturbation. |
+| ![Figure 7](assets/papers-explained-08-deberta/fig-7.webp) | Normalized embedding representation used in SiFT adversarial training. |
+| ![Figure 8](assets/papers-explained-08-deberta/fig-8.webp) | Adversarial perturbation objective on normalized embeddings for stable fine-tuning. |
+| ![Figure 9](assets/papers-explained-08-deberta/fig-9.webp) | Combined fine-tuning loss integrating task objective with scale-invariant perturbation regularization. |
+| ![Figure 10](assets/papers-explained-08-deberta/fig-10.webp) | Decoding-layer comparison: BERT mask decoder vs DeBERTa Enhanced Mask Decoder (EMD). |
 ## Related
 
 - [[Papers Explained Corpus]]

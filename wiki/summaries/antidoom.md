@@ -1,6 +1,6 @@
 # Antidoom
 
-**Source**: `raw/antidoom/full-article.html`, `raw/antidoom/full-article.md`  
+**Source**: `raw/antidoom/full-article.md`, `raw/antidoom/full-article.md`  
 **Ingested**: 2026-07-12  
 **Tags**: #summary
 
@@ -26,11 +26,11 @@ Results on greedy sampling: LFM2.5-2.6B early checkpoint doom-loop rate drops fr
 | Figure | Caption |
 |--------|---------|
 | ![fig-1](../assets/antidoom/fig-1.webp) | Example doom-loop token table from a reasoning trace |
-| ![fig-2](../assets/antidoom/fig-2.png) | Candidate loop-start token visualization |
-| ![fig-3](../assets/antidoom/fig-3.png) | Repetition probability vs. context under greedy decoding |
-| ![fig-4](../assets/antidoom/fig-4.png) | Doom-loop rate before and after FTPO |
-| ![fig-5](../assets/antidoom/fig-5.png) | LFM2.5-2.6B results with FTPO |
-| ![fig-6](../assets/antidoom/fig-6.png) | Qwen3.5-4B results with FTPO |
+| ![fig-2](../assets/antidoom/fig-2.webp) | Candidate loop-start token visualization |
+| ![fig-3](../assets/antidoom/fig-3.webp) | Repetition probability vs. context under greedy decoding |
+| ![fig-4](../assets/antidoom/fig-4.webp) | Doom-loop rate before and after FTPO |
+| ![fig-5](../assets/antidoom/fig-5.webp) | LFM2.5-2.6B results with FTPO |
+| ![fig-6](../assets/antidoom/fig-6.webp) | Qwen3.5-4B results with FTPO |
 
 ## Entities
 

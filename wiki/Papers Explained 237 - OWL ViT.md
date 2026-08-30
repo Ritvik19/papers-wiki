@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-10-23_Papers-Explained-237--OWL-ViT-ea58a142de68.html`
+- Source file: `raw/2024-10-23_Papers-Explained-237--OWL-ViT-ea58a142de68.md`
 - Source title: Papers Explained 237: OWL ViT
 - Published: 2024-10-23
 - Canonical: [https://medium.com/@ritvik19/papers-explained-237-owl-vit-ea58a142de68](https://medium.com/@ritvik19/papers-explained-237-owl-vit-ea58a142de68)
@@ -119,16 +119,16 @@ Recommended Reading: [Object Detection](https://ritvik19.medium.com/list/object-
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-10-23_Papers-Explained-237--OWL-ViT-ea58a142de68.html`); local copies under `wiki/assets/papers-explained-237-owl-vit/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-10-23_Papers-Explained-237--OWL-ViT-ea58a142de68.md`); local copies under `wiki/assets/papers-explained-237-owl-vit/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-237-owl-vit/fig-1.png) | Title card: OWL ViT. |
-| ![Figure 2](assets/papers-explained-237-owl-vit/fig-2.png) | Overview of the method. |
-| ![Figure 3](assets/papers-explained-237-owl-vit/fig-3.png) | Open-vocabulary and zero-shot performance on LVIS v1.0 val. |
-| ![Figure 4](assets/papers-explained-237-owl-vit/fig-4.png) | One- and few-shot image-conditioned detection performance on COCO AP50. |
-| ![Figure 5](assets/papers-explained-237-owl-vit/fig-5.png) | Image-level pre-training transfers to detection. |
-| ![Figure 6](assets/papers-explained-237-owl-vit/fig-6.png) | Effect of model architecture on detection performance. |
+| ![Figure 1](assets/papers-explained-237-owl-vit/fig-1.webp) | Title card: OWL ViT. |
+| ![Figure 2](assets/papers-explained-237-owl-vit/fig-2.webp) | Overview of the method. |
+| ![Figure 3](assets/papers-explained-237-owl-vit/fig-3.webp) | Open-vocabulary and zero-shot performance on LVIS v1.0 val. |
+| ![Figure 4](assets/papers-explained-237-owl-vit/fig-4.webp) | One- and few-shot image-conditioned detection performance on COCO AP50. |
+| ![Figure 5](assets/papers-explained-237-owl-vit/fig-5.webp) | Image-level pre-training transfers to detection. |
+| ![Figure 6](assets/papers-explained-237-owl-vit/fig-6.webp) | Effect of model architecture on detection performance. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -56,6 +56,6 @@ Early 2026 Unsloth coverage tracks frontier open models: **Qwen3.5**, **Qwen3.6*
 - `raw/qwen3.6/full-article.md`
 - `raw/gemma-4/full-article.md`
 - `raw/gemma-4-train/full-article.md`
-- `raw/diffusiongemma/full-article.html`
+- `raw/diffusiongemma/full-article.md`
 - `raw/deepseek-v4/full-article.md`
 - `raw/glm-5.2/full-article.md`

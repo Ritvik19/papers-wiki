@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-12-19_Papers-Explained-275--Self-Consistency-Preference-Optimization-ccd08f5acafb.html`
+- Source file: `raw/2024-12-19_Papers-Explained-275--Self-Consistency-Preference-Optimization-ccd08f5acafb.md`
 - Source title: Papers Explained 275: Self-Consistency Preference Optimization
 - Published: 2024-12-19
 - Canonical: [https://medium.com/@ritvik19/papers-explained-275-self-consistency-preference-optimization-ccd08f5acafb](https://medium.com/@ritvik19/papers-explained-275-self-consistency-preference-optimization-ccd08f5acafb)
@@ -151,23 +151,23 @@ Self-Consistency Preference Optimization [2411.04109](https://arxiv.org/abs/2411
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-12-19_Papers-Explained-275--Self-Consistency-Preference-Optimization-ccd08f5acafb.html`); local copies under `wiki/assets/papers-explained-275-self-consistency-preference-optimization/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-12-19_Papers-Explained-275--Self-Consistency-Preference-Optimization-ccd08f5acafb.md`); local copies under `wiki/assets/papers-explained-275-self-consistency-preference-optimization/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-275-self-consistency-preference-optimization/fig-1.png) | Title card: Self-Consistency Preference Optimization. |
-| ![Figure 2](assets/papers-explained-275-self-consistency-preference-optimization/fig-2.png) | Self-consistency Preference Optimization. |
-| ![Figure 3](assets/papers-explained-275-self-consistency-preference-optimization/fig-3.png) | Using the vote function, preference pairs Dpairs are created by selecting the most consistent response as the chosen response and selecting... |
-| ![Figure 4](assets/papers-explained-275-self-consistency-preference-optimization/fig-4.png) | Building Self-Consistency Preference Pairs. |
-| ![Figure 5](assets/papers-explained-275-self-consistency-preference-optimization/fig-5.png) | where k is the total number of responses generated for each question (total number of votes cast). The following loss function is used. |
-| ![Figure 6](assets/papers-explained-275-self-consistency-preference-optimization/fig-6.png) | where k is the total number of responses generated for each question (total number of votes cast). The following loss function is used. |
-| ![Figure 7](assets/papers-explained-275-self-consistency-preference-optimization/fig-7.png) | GSM8K zero-shot accuracy. |
-| ![Figure 8](assets/papers-explained-275-self-consistency-preference-optimization/fig-8.png) | MATH zero-shot accuracy. |
-| ![Figure 9](assets/papers-explained-275-self-consistency-preference-optimization/fig-9.png) | ZebraLogic test performance. |
-| ![Figure 10](assets/papers-explained-275-self-consistency-preference-optimization/fig-10.png) | Ablation comparing unweighted loss to weighted loss used in SCPO. |
-| ![Figure 11](assets/papers-explained-275-self-consistency-preference-optimization/fig-11.png) | Vote share (%) of the most consistent response. |
-| ![Figure 12](assets/papers-explained-275-self-consistency-preference-optimization/fig-12.png) | Impact of using different thresholds on majority vote to filter training data on MATH. |
-| ![Figure 13](assets/papers-explained-275-self-consistency-preference-optimization/fig-13.png) | Comparing the quality of metrics. |
+| ![Figure 1](assets/papers-explained-275-self-consistency-preference-optimization/fig-1.webp) | Title card: Self-Consistency Preference Optimization. |
+| ![Figure 2](assets/papers-explained-275-self-consistency-preference-optimization/fig-2.webp) | Self-consistency Preference Optimization. |
+| ![Figure 3](assets/papers-explained-275-self-consistency-preference-optimization/fig-3.webp) | Using the vote function, preference pairs Dpairs are created by selecting the most consistent response as the chosen response and selecting... |
+| ![Figure 4](assets/papers-explained-275-self-consistency-preference-optimization/fig-4.webp) | Building Self-Consistency Preference Pairs. |
+| ![Figure 5](assets/papers-explained-275-self-consistency-preference-optimization/fig-5.webp) | where k is the total number of responses generated for each question (total number of votes cast). The following loss function is used. |
+| ![Figure 6](assets/papers-explained-275-self-consistency-preference-optimization/fig-6.webp) | where k is the total number of responses generated for each question (total number of votes cast). The following loss function is used. |
+| ![Figure 7](assets/papers-explained-275-self-consistency-preference-optimization/fig-7.webp) | GSM8K zero-shot accuracy. |
+| ![Figure 8](assets/papers-explained-275-self-consistency-preference-optimization/fig-8.webp) | MATH zero-shot accuracy. |
+| ![Figure 9](assets/papers-explained-275-self-consistency-preference-optimization/fig-9.webp) | ZebraLogic test performance. |
+| ![Figure 10](assets/papers-explained-275-self-consistency-preference-optimization/fig-10.webp) | Ablation comparing unweighted loss to weighted loss used in SCPO. |
+| ![Figure 11](assets/papers-explained-275-self-consistency-preference-optimization/fig-11.webp) | Vote share (%) of the most consistent response. |
+| ![Figure 12](assets/papers-explained-275-self-consistency-preference-optimization/fig-12.webp) | Impact of using different thresholds on majority vote to filter training data on MATH. |
+| ![Figure 13](assets/papers-explained-275-self-consistency-preference-optimization/fig-13.webp) | Comparing the quality of metrics. |
 ## Related
 
 - [[Papers Explained Corpus]]

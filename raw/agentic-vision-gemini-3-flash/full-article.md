@@ -1,3 +1,3 @@
 # agentic-vision-gemini-3-flash
 
-Canonical HTML: `raw/agentic-vision-gemini-3-flash/full-article.html`
+Canonical HTML: `raw/agentic-vision-gemini-3-flash/full-article.md`

@@ -1,6 +1,6 @@
 # Gemma 4 MTP Transformers Guide
 
-**Source**: `raw/gemma-4-mtp-transformers-guide/full-article.html` (157 KB)  
+**Source**: `raw/gemma-4-mtp-transformers-guide/full-article.md` (157 KB)  
 **URL**: https://ai.google.dev/gemma/docs/mtp/mtp  
 **Ingested**: 2026-07-12  
 **Tags**: #summary

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-02-21_Papers-Explained-315--mmE5-3839eed789fe.html`
+- Source file: `raw/2025-02-21_Papers-Explained-315--mmE5-3839eed789fe.md`
 - Source title: Papers Explained 315: mmE5
 - Published: 2025-02-21
 - Canonical: [https://medium.com/@ritvik19/papers-explained-315-mme5-3839eed789fe](https://medium.com/@ritvik19/papers-explained-315-mme5-3839eed789fe)
@@ -133,15 +133,15 @@ mmE5: Improving Multimodal Multilingual Embeddings via High-quality Synthetic Da
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-02-21_Papers-Explained-315--mmE5-3839eed789fe.html`); local copies under `wiki/assets/papers-explained-315-mme5/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-02-21_Papers-Explained-315--mmE5-3839eed789fe.md`); local copies under `wiki/assets/papers-explained-315-mme5/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-315-mme5/fig-1.png) | Title card: mmE5. |
-| ![Figure 2](assets/papers-explained-315-mme5/fig-2.png) | The project is available at GitHub. |
-| ![Figure 3](assets/papers-explained-315-mme5/fig-3.png) | Results on MMEB benchmark. |
-| ![Figure 4](assets/papers-explained-315-mme5/fig-4.png) | Results on XTD benchmark. |
-| ![Figure 5](assets/papers-explained-315-mme5/fig-5.png) | Performances of mmE5 with different MLLMs. |
+| ![Figure 1](assets/papers-explained-315-mme5/fig-1.webp) | Title card: mmE5. |
+| ![Figure 2](assets/papers-explained-315-mme5/fig-2.webp) | The project is available at GitHub. |
+| ![Figure 3](assets/papers-explained-315-mme5/fig-3.webp) | Results on MMEB benchmark. |
+| ![Figure 4](assets/papers-explained-315-mme5/fig-4.webp) | Results on XTD benchmark. |
+| ![Figure 5](assets/papers-explained-315-mme5/fig-5.webp) | Performances of mmE5 with different MLLMs. |
 ## Related
 
 - [[Papers Explained Corpus]]

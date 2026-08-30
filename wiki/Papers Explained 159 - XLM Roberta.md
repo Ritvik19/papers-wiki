@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-07-05_Papers-Explained-159--XLM-Roberta-2da91fc24059.html`
+- Source file: `raw/2024-07-05_Papers-Explained-159--XLM-Roberta-2da91fc24059.md`
 - Source title: Papers Explained 159: XLM Roberta
 - Published: 2024-07-05
 - Canonical: [https://medium.com/@ritvik19/papers-explained-159-xlm-roberta-2da91fc24059](https://medium.com/@ritvik19/papers-explained-159-xlm-roberta-2da91fc24059)
@@ -38,12 +38,12 @@ Unsupervised Cross-lingual Representation Learning at Scale [1911.02116](https:/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-07-05_Papers-Explained-159--XLM-Roberta-2da91fc24059.html`); local copies under `wiki/assets/papers-explained-159-xlm-roberta/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-07-05_Papers-Explained-159--XLM-Roberta-2da91fc24059.md`); local copies under `wiki/assets/papers-explained-159-xlm-roberta/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-159-xlm-roberta/fig-1.png) | Title page of *Unsupervised Cross-lingual Representation Learning at Scale* (Conneau et al., Facebook AI)—the XLM-R paper. |
-| ![Figure 2](assets/papers-explained-159-xlm-roberta/fig-2.png) | CC-100 corpus statistics: ISO codes, language names, token counts (millions), and per-language compressed sizes (GiB) across ~100 languages. |
+| ![Figure 1](assets/papers-explained-159-xlm-roberta/fig-1.webp) | Title page of *Unsupervised Cross-lingual Representation Learning at Scale* (Conneau et al., Facebook AI)—the XLM-R paper. |
+| ![Figure 2](assets/papers-explained-159-xlm-roberta/fig-2.webp) | CC-100 corpus statistics: ISO codes, language names, token counts (millions), and per-language compressed sizes (GiB) across ~100 languages. |
 ## Related
 
 - [[Papers Explained Corpus]]

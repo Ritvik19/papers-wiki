@@ -1,6 +1,6 @@
 # Gemini 3.1 Flash Live
 
-**Source**: `raw/gemini-3-1-flash-live/full-article.html` (403 KB)  
+**Source**: `raw/gemini-3-1-flash-live/full-article.md` (403 KB)  
 **URL**: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

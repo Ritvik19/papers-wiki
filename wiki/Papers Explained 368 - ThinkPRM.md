@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-05-19_Papers-Explained-368--ThinkPRM-0f530cc98ca4.html`
+- Source file: `raw/2025-05-19_Papers-Explained-368--ThinkPRM-0f530cc98ca4.md`
 - Source title: Papers Explained 368: ThinkPRM
 - Published: 2025-05-19
 - Canonical: [https://medium.com/@ritvik19/papers-explained-368-thinkprm-0f530cc98ca4](https://medium.com/@ritvik19/papers-explained-368-thinkprm-0f530cc98ca4)
@@ -108,17 +108,17 @@ Process Reward Models That Think [2504.16828](https://arxiv.org/abs/2504.16828)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-05-19_Papers-Explained-368--ThinkPRM-0f530cc98ca4.html`); local copies under `wiki/assets/papers-explained-368-thinkprm/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-05-19_Papers-Explained-368--ThinkPRM-0f530cc98ca4.md`); local copies under `wiki/assets/papers-explained-368-thinkprm/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-368-thinkprm/fig-1.png) | Title card: ThinkPRM. |
-| ![Figure 2](assets/papers-explained-368-thinkprm/fig-2.png) | Average F1-score on OlympiadBench and OmniMath subsets of ProcessBench. |
-| ![Figure 3](assets/papers-explained-368-thinkprm/fig-3.png) | Collecting verification chains for finetuning. |
-| ![Figure 4](assets/papers-explained-368-thinkprm/fig-4.png) | Best-of-N on AIME ’24 and MATH-500. |
-| ![Figure 5](assets/papers-explained-368-thinkprm/fig-5.png) | Comparison to Off-the-shelf PRMs. |
-| ![Figure 6](assets/papers-explained-368-thinkprm/fig-6.png) | Best-of-N on two out-of-domain tasks: science QA (GPQA-Physics) and code generation (LiveCodeBench). |
-| ![Figure 7](assets/papers-explained-368-thinkprm/fig-7.png) | Parallel vs. sequential scaling of ThinkPRM compute under the same generation budget with Qwen-2.5–14B generator. |
+| ![Figure 1](assets/papers-explained-368-thinkprm/fig-1.webp) | Title card: ThinkPRM. |
+| ![Figure 2](assets/papers-explained-368-thinkprm/fig-2.webp) | Average F1-score on OlympiadBench and OmniMath subsets of ProcessBench. |
+| ![Figure 3](assets/papers-explained-368-thinkprm/fig-3.webp) | Collecting verification chains for finetuning. |
+| ![Figure 4](assets/papers-explained-368-thinkprm/fig-4.webp) | Best-of-N on AIME ’24 and MATH-500. |
+| ![Figure 5](assets/papers-explained-368-thinkprm/fig-5.webp) | Comparison to Off-the-shelf PRMs. |
+| ![Figure 6](assets/papers-explained-368-thinkprm/fig-6.webp) | Best-of-N on two out-of-domain tasks: science QA (GPQA-Physics) and code generation (LiveCodeBench). |
+| ![Figure 7](assets/papers-explained-368-thinkprm/fig-7.webp) | Parallel vs. sequential scaling of ThinkPRM compute under the same generation budget with Qwen-2.5–14B generator. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -1,6 +1,6 @@
 # Papers Explained: Low-Rank Training in Transformer LMs
 
-**Source**: `raw/draft_Papers-Explained--Low-Rank-Training-in-Transformer-LMs-cc3f8c294de5.html`  
+**Source**: `raw/draft_Papers-Explained--Low-Rank-Training-in-Transformer-LMs-cc3f8c294de5.md`  
 **Paper**: https://arxiv.org/abs/2407.09835  
 **Ingested**: 2026-08-23  
 **Tags**: #summary
@@ -9,7 +9,7 @@
 
 **Low-Rank Training in Transformer Language Models** investigates whether large language models can be trained from scratch using low-rank parameterizations (e.g. factoring weight matrices $W \in \mathbb{R}^{d_1 \times d_2}$ as $A B$ where $r \ll \min(d_1, d_2)$) rather than only using low-rank adaptations (LoRA) during post-training. The authors conduct extensive empirical and theoretical analyses comparing from-scratch low-rank pretraining, factorized gradient descent, and dynamic rank allocation across autoregressive transformers.
 
-![Papers Explained Low-Rank Training banner](../assets/papers-explained-low-rank-training-in-transformer-lms/fig-1.png)
+![Papers Explained Low-Rank Training banner](../assets/papers-explained-low-rank-training-in-transformer-lms/fig-1.webp)
 
 ### Key Findings
 
@@ -17,7 +17,7 @@
 - **Gradient Rank vs. Weight Rank**: The rank of optimizer updates (gradient matrix rank) is substantially more critical than static weight rank during early iterations.
 - **Rank Annealing / Staged Factorization**: Training in full-rank for the initial 15–20% of pretraining followed by low-rank factorized continuation preserves 98%+ of model perplexity while reducing parameter storage and activation memory.
 
-![Low-Rank Training Dynamics and Rank Annealing](../assets/papers-explained-low-rank-training-in-transformer-lms/fig-2.png)
+![Low-Rank Training Dynamics and Rank Annealing](../assets/papers-explained-low-rank-training-in-transformer-lms/fig-2.webp)
 
 ## Key Claims
 
@@ -29,11 +29,11 @@
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/papers-explained-low-rank-training-in-transformer-lms/fig-1.png) | Overview banner. | Overview |
-| ![fig-2](../assets/papers-explained-low-rank-training-in-transformer-lms/fig-2.png) | Full-rank vs Low-rank pretraining loss curves. | Dynamics |
-| ![fig-3](../assets/papers-explained-low-rank-training-in-transformer-lms/fig-3.png) | Singular value spectrum evolution across training steps. | Analysis |
-| ![fig-4](../assets/papers-explained-low-rank-training-in-transformer-lms/fig-4.png) | Rank annealing transition and perplexity recovery. | Method |
-| ![fig-5](../assets/papers-explained-low-rank-training-in-transformer-lms/fig-5.png) | Parameter efficiency vs. downstream benchmark accuracy. | Evaluation |
+| ![fig-1](../assets/papers-explained-low-rank-training-in-transformer-lms/fig-1.webp) | Overview banner. | Overview |
+| ![fig-2](../assets/papers-explained-low-rank-training-in-transformer-lms/fig-2.webp) | Full-rank vs Low-rank pretraining loss curves. | Dynamics |
+| ![fig-3](../assets/papers-explained-low-rank-training-in-transformer-lms/fig-3.webp) | Singular value spectrum evolution across training steps. | Analysis |
+| ![fig-4](../assets/papers-explained-low-rank-training-in-transformer-lms/fig-4.webp) | Rank annealing transition and perplexity recovery. | Method |
+| ![fig-5](../assets/papers-explained-low-rank-training-in-transformer-lms/fig-5.webp) | Parameter efficiency vs. downstream benchmark accuracy. | Evaluation |
 
 ## Entities
 

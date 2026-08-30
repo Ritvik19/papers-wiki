@@ -14,7 +14,7 @@
 
 ## Architecture changes vs R-CNN
 
-![Fast R-CNN](../assets/2017-12-31-object-recognition-part-3/fig-4.png)
+![Fast R-CNN](../assets/2017-12-31-object-recognition-part-3/fig-4.webp)
 
 | Replace | With |
 |---------|------|

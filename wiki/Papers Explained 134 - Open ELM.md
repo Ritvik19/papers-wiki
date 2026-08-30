@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-05-08_Papers-Explained-134--Open-ELM-864f6b28a6ab.html`
+- Source file: `raw/2024-05-08_Papers-Explained-134--Open-ELM-864f6b28a6ab.md`
 - Source title: Papers Explained 134: Open ELM
 - Published: 2024-05-08
 - Canonical: [https://medium.com/@ritvik19/papers-explained-133-open-elm-864f6b28a6ab](https://medium.com/@ritvik19/papers-explained-133-open-elm-864f6b28a6ab)
@@ -111,24 +111,24 @@ Recommended Reading: [Small LLMs](https://ritvik19.medium.com/list/small-llms-41
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-05-08_Papers-Explained-134--Open-ELM-864f6b28a6ab.html`); local copies under `wiki/assets/papers-explained-134-open-elm/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-05-08_Papers-Explained-134--Open-ELM-864f6b28a6ab.md`); local copies under `wiki/assets/papers-explained-134-open-elm/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-134-open-elm/fig-1.png) | Title page of *OpenELM: An Efficient Language Model Family with Open-source Training and Inference Framework*. |
-| ![Figure 2](assets/papers-explained-134-open-elm/fig-2.png) | Layer-wise scaling: linear interpolation of per-layer head counts ($n_h^i$) and FFN width multiplier ($m^i$) via $\alpha^i$, $\beta^i$. |
-| ![Figure 3](assets/papers-explained-134-open-elm/fig-3.png) | Pretraining mixture token counts across RefinedWeb, RedPajama slices, PILE, and Dolma subsets (~1.8T tokens total). |
-| ![Figure 4](assets/papers-explained-134-open-elm/fig-4.png) | OpenELM 270M–3B pretraining recipe: architecture dims, AdamW schedule, FSDP/checkpointing, GPUs, and wall-clock. |
-| ![Figure 5](assets/papers-explained-134-open-elm/fig-5.png) | Instruction-tuning stages: batch sizes, epochs, LR, loss variants, DeepSpeed ZeRO-3 usage, and train hours per scale. |
-| ![Figure 6](assets/papers-explained-134-open-elm/fig-6.png) | Evaluation suites: standard zero-shot tasks, Hugging Face Open LLM Leaderboard tasks, and LLM360 tasks with few-shot counts. |
-| ![Figure 7](assets/papers-explained-134-open-elm/fig-7.png) | Zero-shot accuracy vs training iterations (50k–350k) for OpenELM 270M–3B on ARC, BoolQ, HellaSwag, PIQA, SciQ, WinoGrande. |
-| ![Figure 8](assets/papers-explained-134-open-elm/fig-8.png) | Zero-shot benchmark table vs TinyLlama, OLMo, OpenLM, and MobiLlama at matched approximate parameter scales. |
-| ![Figure 9](assets/papers-explained-134-open-elm/fig-9.png) | Open LLM Leaderboard-style comparison across ARC-c, HellaSwag, MMLU, TruthfulQA, and WinoGrande. |
-| ![Figure 10](assets/papers-explained-134-open-elm/fig-10.png) | LLM360-style comparison including bias (CrowS-Pairs) and reading comprehension (RACE) alongside core LM benchmarks. |
-| ![Figure 11](assets/papers-explained-134-open-elm/fig-11.png) | Effect of instruction tuning on the standard zero-shot task bundle for each OpenELM model size. |
-| ![Figure 12](assets/papers-explained-134-open-elm/fig-12.png) | Instruction tuning deltas on the Open LLM Leaderboard task mix by model scale. |
-| ![Figure 13](assets/papers-explained-134-open-elm/fig-13.png) | Instruction tuning deltas on the LLM360 evaluation mix by model scale. |
-| ![Figure 14](assets/papers-explained-134-open-elm/fig-14.png) | Commonsense PEFT study comparing LoRA vs DoRA across OpenELM sizes on ARC, BoolQ, HellaSwag, PIQA, SIQA, OBQA, WinoGrande. |
+| ![Figure 1](assets/papers-explained-134-open-elm/fig-1.webp) | Title page of *OpenELM: An Efficient Language Model Family with Open-source Training and Inference Framework*. |
+| ![Figure 2](assets/papers-explained-134-open-elm/fig-2.webp) | Layer-wise scaling: linear interpolation of per-layer head counts ($n_h^i$) and FFN width multiplier ($m^i$) via $\alpha^i$, $\beta^i$. |
+| ![Figure 3](assets/papers-explained-134-open-elm/fig-3.webp) | Pretraining mixture token counts across RefinedWeb, RedPajama slices, PILE, and Dolma subsets (~1.8T tokens total). |
+| ![Figure 4](assets/papers-explained-134-open-elm/fig-4.webp) | OpenELM 270M–3B pretraining recipe: architecture dims, AdamW schedule, FSDP/checkpointing, GPUs, and wall-clock. |
+| ![Figure 5](assets/papers-explained-134-open-elm/fig-5.webp) | Instruction-tuning stages: batch sizes, epochs, LR, loss variants, DeepSpeed ZeRO-3 usage, and train hours per scale. |
+| ![Figure 6](assets/papers-explained-134-open-elm/fig-6.webp) | Evaluation suites: standard zero-shot tasks, Hugging Face Open LLM Leaderboard tasks, and LLM360 tasks with few-shot counts. |
+| ![Figure 7](assets/papers-explained-134-open-elm/fig-7.webp) | Zero-shot accuracy vs training iterations (50k–350k) for OpenELM 270M–3B on ARC, BoolQ, HellaSwag, PIQA, SciQ, WinoGrande. |
+| ![Figure 8](assets/papers-explained-134-open-elm/fig-8.webp) | Zero-shot benchmark table vs TinyLlama, OLMo, OpenLM, and MobiLlama at matched approximate parameter scales. |
+| ![Figure 9](assets/papers-explained-134-open-elm/fig-9.webp) | Open LLM Leaderboard-style comparison across ARC-c, HellaSwag, MMLU, TruthfulQA, and WinoGrande. |
+| ![Figure 10](assets/papers-explained-134-open-elm/fig-10.webp) | LLM360-style comparison including bias (CrowS-Pairs) and reading comprehension (RACE) alongside core LM benchmarks. |
+| ![Figure 11](assets/papers-explained-134-open-elm/fig-11.webp) | Effect of instruction tuning on the standard zero-shot task bundle for each OpenELM model size. |
+| ![Figure 12](assets/papers-explained-134-open-elm/fig-12.webp) | Instruction tuning deltas on the Open LLM Leaderboard task mix by model scale. |
+| ![Figure 13](assets/papers-explained-134-open-elm/fig-13.webp) | Instruction tuning deltas on the LLM360 evaluation mix by model scale. |
+| ![Figure 14](assets/papers-explained-134-open-elm/fig-14.webp) | Commonsense PEFT study comparing LoRA vs DoRA across OpenELM sizes on ARC, BoolQ, HellaSwag, PIQA, SIQA, OBQA, WinoGrande. |
 ## Related
 
 - [[Papers Explained Corpus]]

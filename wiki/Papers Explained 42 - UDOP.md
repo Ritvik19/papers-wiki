@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-04-18_Papers-Explained-42--UDOP-719732358ab4.html`
+- Source file: `raw/2023-04-18_Papers-Explained-42--UDOP-719732358ab4.md`
 - Source title: Papers Explained 42: UDOP
 - Published: 2023-04-18
 - Canonical: [https://medium.com/@ritvik19/papers-explained-42-udop-719732358ab4](https://medium.com/@ritvik19/papers-explained-42-udop-719732358ab4)
@@ -107,20 +107,20 @@ Recommended Reading [Document Information Processing](https://ritvik19.medium.co
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-04-18_Papers-Explained-42--UDOP-719732358ab4.html`); local copies under `wiki/assets/papers-explained-42-udop/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-04-18_Papers-Explained-42--UDOP-719732358ab4.md`); local copies under `wiki/assets/papers-explained-42-udop/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-42-udop/fig-1.png) | Title card: UDOP. |
-| ![Figure 2](assets/papers-explained-42-udop/fig-2.png) | UDOP unifies vision, text, and layout through a vision-text-layout Transformer and unified generative pretraining tasks including vision tasks, text tasks, layout tasks, and mixed tasks. We show the task prompts (left) and task targets (right) for all self-supervised objectives (joint text-layout reconstruction, visual text recognition, layout modeling, and masked autoencoding) and two example supervised objectives (question answering and layout analysis). |
-| ![Figure 3](assets/papers-explained-42-udop/fig-3.png) | Layout-induced vision-text embedding. |
-| ![Figure 4](assets/papers-explained-42-udop/fig-4.png) | We build a unified representation for vision, text, and layout. We define the layout indicator function φ of image patch and token embeddings as follows. |
-| ![Figure 5](assets/papers-explained-42-udop/fig-5.png) | Then for each text token embedding si, the joint representation is the sum of its image patch feature and the text feature. |
-| ![Figure 6](assets/papers-explained-42-udop/fig-6.png) | For image patches vj without any text tokens, the joint representation, v`j is itself. |
-| ![Figure 7](assets/papers-explained-42-udop/fig-7.png) | A summary of all generative pretraining objectives with task names, task prompts, and task targets. |
-| ![Figure 8](assets/papers-explained-42-udop/fig-8.png) | Masked autoencoding with text and layout. |
-| ![Figure 9](assets/papers-explained-42-udop/fig-9.png) | Comparison with existing published models on the DUE-Benchmark. Modality T, L, V denote text, layout, or vision. |
-| ![Figure 10](assets/papers-explained-42-udop/fig-10.png) | Performance on FUNSD, CORD, and RVL-CDIP datasets. Modality V, T, L denote vision, text, and layout. |
+| ![Figure 1](assets/papers-explained-42-udop/fig-1.webp) | Title card: UDOP. |
+| ![Figure 2](assets/papers-explained-42-udop/fig-2.webp) | UDOP unifies vision, text, and layout through a vision-text-layout Transformer and unified generative pretraining tasks including vision tasks, text tasks, layout tasks, and mixed tasks. We show the task prompts (left) and task targets (right) for all self-supervised objectives (joint text-layout reconstruction, visual text recognition, layout modeling, and masked autoencoding) and two example supervised objectives (question answering and layout analysis). |
+| ![Figure 3](assets/papers-explained-42-udop/fig-3.webp) | Layout-induced vision-text embedding. |
+| ![Figure 4](assets/papers-explained-42-udop/fig-4.webp) | We build a unified representation for vision, text, and layout. We define the layout indicator function φ of image patch and token embeddings as follows. |
+| ![Figure 5](assets/papers-explained-42-udop/fig-5.webp) | Then for each text token embedding si, the joint representation is the sum of its image patch feature and the text feature. |
+| ![Figure 6](assets/papers-explained-42-udop/fig-6.webp) | For image patches vj without any text tokens, the joint representation, v`j is itself. |
+| ![Figure 7](assets/papers-explained-42-udop/fig-7.webp) | A summary of all generative pretraining objectives with task names, task prompts, and task targets. |
+| ![Figure 8](assets/papers-explained-42-udop/fig-8.webp) | Masked autoencoding with text and layout. |
+| ![Figure 9](assets/papers-explained-42-udop/fig-9.webp) | Comparison with existing published models on the DUE-Benchmark. Modality T, L, V denote text, layout, or vision. |
+| ![Figure 10](assets/papers-explained-42-udop/fig-10.webp) | Performance on FUNSD, CORD, and RVL-CDIP datasets. Modality V, T, L denote vision, text, and layout. |
 ## Related
 
 - [[Papers Explained Corpus]]

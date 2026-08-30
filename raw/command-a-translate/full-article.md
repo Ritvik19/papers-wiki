@@ -47,4 +47,4 @@ At Cohere, we use Command A Translate internally to ensure we have the highest q
 Command A Translate is available today on the Cohere platform and for research use on Hugging Face . If you are interested in private or on-prem deployments, please contact our sales team for bespoke pricing.
 
 
-See canonical HTML at `raw/command-a-translate/full-article.html` for full figures and references.
+See canonical HTML at `raw/command-a-translate/full-article.md` for full figures and references.

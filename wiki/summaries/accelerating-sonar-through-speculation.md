@@ -1,6 +1,6 @@
 # Accelerating Sonar Through Speculation
 
-**Source**: `raw/accelerating-sonar-through-speculation/full-article.html` (354 KB), `raw/accelerating-sonar-through-speculation/full-article.md` (markdown view)  
+**Source**: `raw/accelerating-sonar-through-speculation/full-article.md` (354 KB), `raw/accelerating-sonar-through-speculation/full-article.md` (markdown view)  
 **URL**: https://research.perplexity.ai/articles/accelerating-sonar-through-speculation  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -26,16 +26,16 @@ The inference runtime is built on **FlashInfer** with **tightly coupled** draft-
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/accelerating-sonar-through-speculation/fig-1.jpg) | Speculative decoding stages: prefill, draft, acceptance, target generation | — |
-| ![fig-2](../assets/accelerating-sonar-through-speculation/fig-2.png) | Draft-target decoding flow | — |
-| ![fig-3](../assets/accelerating-sonar-through-speculation/fig-3.png) | EAGLE tree-structured draft exploration | — |
-| ![fig-4](../assets/accelerating-sonar-through-speculation/fig-4.png) | MTP token/hidden-state correspondence and inference shift | — |
-| ![fig-5](../assets/accelerating-sonar-through-speculation/fig-5.png) | MTP training target: match draft to next-token target logits/hidden states | — |
-| ![fig-6](../assets/accelerating-sonar-through-speculation/fig-6.png) | Draft-target inference schedule overlapping CPU and GPU work | — |
-| ![fig-7](../assets/accelerating-sonar-through-speculation/fig-7.png) | MTP single-token schedule avoiding post-acceptance CPU sync | — |
-| ![fig-8](../assets/accelerating-sonar-through-speculation/fig-8.png) | MoE micro-batch split (`2×D` tokens) during MTP verification | — |
+| ![fig-1](../assets/accelerating-sonar-through-speculation/fig-1.webp) | Speculative decoding stages: prefill, draft, acceptance, target generation | — |
+| ![fig-2](../assets/accelerating-sonar-through-speculation/fig-2.webp) | Draft-target decoding flow | — |
+| ![fig-3](../assets/accelerating-sonar-through-speculation/fig-3.webp) | EAGLE tree-structured draft exploration | — |
+| ![fig-4](../assets/accelerating-sonar-through-speculation/fig-4.webp) | MTP token/hidden-state correspondence and inference shift | — |
+| ![fig-5](../assets/accelerating-sonar-through-speculation/fig-5.webp) | MTP training target: match draft to next-token target logits/hidden states | — |
+| ![fig-6](../assets/accelerating-sonar-through-speculation/fig-6.webp) | Draft-target inference schedule overlapping CPU and GPU work | — |
+| ![fig-7](../assets/accelerating-sonar-through-speculation/fig-7.webp) | MTP single-token schedule avoiding post-acceptance CPU sync | — |
+| ![fig-8](../assets/accelerating-sonar-through-speculation/fig-8.webp) | MoE micro-batch split (`2×D` tokens) during MTP verification | — |
 
-![Speculative decoding overview](../assets/accelerating-sonar-through-speculation/fig-1.jpg)
+![Speculative decoding overview](../assets/accelerating-sonar-through-speculation/fig-1.webp)
 
 ## Entities
 

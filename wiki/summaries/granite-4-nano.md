@@ -1,6 +1,6 @@
 # Granite 4.0 Nano: Just How Small Can You Go?
 
-**Source**: `raw/granite-4-nano/full-article.html` (205 KB)
+**Source**: `raw/granite-4-nano/full-article.md` (205 KB)
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

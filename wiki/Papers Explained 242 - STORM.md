@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-10-30_Papers-Explained-242--STORM-2c55270d3150.html`
+- Source file: `raw/2024-10-30_Papers-Explained-242--STORM-2c55270d3150.md`
 - Source title: Papers Explained 242: STORM
 - Published: 2024-10-30
 - Canonical: [https://medium.com/@ritvik19/papers-explained-242-storm-2c55270d3150](https://medium.com/@ritvik19/papers-explained-242-storm-2c55270d3150)
@@ -101,16 +101,16 @@ Assisting in Writing Wikipedia-like Articles From Scratch with Large Language Mo
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-10-30_Papers-Explained-242--STORM-2c55270d3150.html`); local copies under `wiki/assets/papers-explained-242-storm/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-10-30_Papers-Explained-242--STORM-2c55270d3150.md`); local copies under `wiki/assets/papers-explained-242-storm/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-242-storm/fig-1.png) | Title card: STORM. |
-| ![Figure 2](assets/papers-explained-242-storm/fig-2.png) | The overview of STORM. |
-| ![Figure 3](assets/papers-explained-242-storm/fig-3.png) | STORM automates the prewriting stage by researching a given topic via effective question asking and creating an outline. |
-| ![Figure 4](assets/papers-explained-242-storm/fig-4.png) | Results of outline quality evaluation (%). |
-| ![Figure 5](assets/papers-explained-242-storm/fig-5.png) | Results of automatic article quality evaluation. |
-| ![Figure 6](assets/papers-explained-242-storm/fig-6.png) | Citation quality judged by Mistral 7B-Instruct. |
+| ![Figure 1](assets/papers-explained-242-storm/fig-1.webp) | Title card: STORM. |
+| ![Figure 2](assets/papers-explained-242-storm/fig-2.webp) | The overview of STORM. |
+| ![Figure 3](assets/papers-explained-242-storm/fig-3.webp) | STORM automates the prewriting stage by researching a given topic via effective question asking and creating an outline. |
+| ![Figure 4](assets/papers-explained-242-storm/fig-4.webp) | Results of outline quality evaluation (%). |
+| ![Figure 5](assets/papers-explained-242-storm/fig-5.webp) | Results of automatic article quality evaluation. |
+| ![Figure 6](assets/papers-explained-242-storm/fig-6.webp) | Citation quality judged by Mistral 7B-Instruct. |
 ## Related
 
 - [[Papers Explained Corpus]]

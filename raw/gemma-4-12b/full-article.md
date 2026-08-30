@@ -1,3 +1,3 @@
 # gemma-4-12b
 
-Canonical HTML: `raw/gemma-4-12b/full-article.html`
+Canonical HTML: `raw/gemma-4-12b/full-article.md`

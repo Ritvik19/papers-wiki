@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-07-17_Papers-Explained-411--Constitutional-AI-db2e526c6f13.html`
+- Source file: `raw/2025-07-17_Papers-Explained-411--Constitutional-AI-db2e526c6f13.md`
 - Source title: Papers Explained 411: Constitutional AI
 - Published: 2025-07-17
 - Canonical: [https://medium.com/@ritvik19/papers-explained-411-constitutional-ai-db2e526c6f13](https://medium.com/@ritvik19/papers-explained-411-constitutional-ai-db2e526c6f13)
@@ -156,17 +156,17 @@ Constitutional AI: Harmlessness from AI Feedback [2212.08073](https://arxiv.org/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-07-17_Papers-Explained-411--Constitutional-AI-db2e526c6f13.html`); local copies under `wiki/assets/papers-explained-411-constitutional-ai/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-07-17_Papers-Explained-411--Constitutional-AI-db2e526c6f13.md`); local copies under `wiki/assets/papers-explained-411-constitutional-ai/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-411-constitutional-ai/fig-1.png) | Title card: Constitutional AI. |
-| ![Figure 2](assets/papers-explained-411-constitutional-ai/fig-2.png) | The basic steps of our Constitutional AI (CAI) process. |
-| ![Figure 3](assets/papers-explained-411-constitutional-ai/fig-3.png) | Helpfulness and Harmlessness Elo scores. |
-| ![Figure 4](assets/papers-explained-411-constitutional-ai/fig-4.png) | Preference Model scores of responses and revisions from helpful RLHF models, evaluated on a set of red team prompts. |
-| ![Figure 5](assets/papers-explained-411-constitutional-ai/fig-5.png) | Harmlessness PM scores of revised responses for varying number of constitutional principles used. |
-| ![Figure 6](assets/papers-explained-411-constitutional-ai/fig-6.png) | Comparison of preference model scores (all on the same 52B PM trained on harmlessness) for critiqued and direct revisions. |
-| ![Figure 7](assets/papers-explained-411-constitutional-ai/fig-7.png) | Helpfulness (left) and harmlessness (right) Elo scores as a function of the total number of RL training sequences, as judged by crowdworkers via comparison tests. |
+| ![Figure 1](assets/papers-explained-411-constitutional-ai/fig-1.webp) | Title card: Constitutional AI. |
+| ![Figure 2](assets/papers-explained-411-constitutional-ai/fig-2.webp) | The basic steps of our Constitutional AI (CAI) process. |
+| ![Figure 3](assets/papers-explained-411-constitutional-ai/fig-3.webp) | Helpfulness and Harmlessness Elo scores. |
+| ![Figure 4](assets/papers-explained-411-constitutional-ai/fig-4.webp) | Preference Model scores of responses and revisions from helpful RLHF models, evaluated on a set of red team prompts. |
+| ![Figure 5](assets/papers-explained-411-constitutional-ai/fig-5.webp) | Harmlessness PM scores of revised responses for varying number of constitutional principles used. |
+| ![Figure 6](assets/papers-explained-411-constitutional-ai/fig-6.webp) | Comparison of preference model scores (all on the same 52B PM trained on harmlessness) for critiqued and direct revisions. |
+| ![Figure 7](assets/papers-explained-411-constitutional-ai/fig-7.webp) | Helpfulness (left) and harmlessness (right) Elo scores as a function of the total number of RL training sequences, as judged by crowdworkers via comparison tests. |
 ## Related
 
 - [[Papers Explained Corpus]]

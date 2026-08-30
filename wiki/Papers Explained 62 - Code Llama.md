@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-10-16_Papers-Explained-62--Code-Llama-ee266bfa495f.html`
+- Source file: `raw/2023-10-16_Papers-Explained-62--Code-Llama-ee266bfa495f.md`
 - Source title: Papers Explained 62: Code Llama
 - Published: 2023-10-16
 - Canonical: [https://medium.com/@ritvik19/papers-explained-62-code-llama-ee266bfa495f](https://medium.com/@ritvik19/papers-explained-62-code-llama-ee266bfa495f)
@@ -117,22 +117,22 @@ Code Llama: Open Foundation Models for Code [2308.12950](https://arxiv.org/abs/2
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-10-16_Papers-Explained-62--Code-Llama-ee266bfa495f.html`); local copies under `wiki/assets/papers-explained-62-code-llama/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-10-16_Papers-Explained-62--Code-Llama-ee266bfa495f.md`); local copies under `wiki/assets/papers-explained-62-code-llama/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-62-code-llama/fig-1.png) | Title card: Code Llama. |
-| ![Figure 2](assets/papers-explained-62-code-llama/fig-2.png) | The Code Llama specialization pipeline. The different stages of fine-tuning annotated with the number of tokens seen during training. Infilling-capable models are marked with the ⇄ symbol. |
-| ![Figure 3](assets/papers-explained-62-code-llama/fig-3.png) | Training dataset of Code Llama and Code Llama — Python. Code Llama is trained on 500B additional tokens and Code Llama — Python is further trained on 100B tokens. |
-| ![Figure 4](assets/papers-explained-62-code-llama/fig-4.png) | and d denotes the embedding dimension. |
-| ![Figure 5](assets/papers-explained-62-code-llama/fig-5.png) | Code Llama pass@ scores on HumanEval and MBPP. |
-| ![Figure 6](assets/papers-explained-62-code-llama/fig-6.png) | Code Llama pass@ scores on APPS. |
-| ![Figure 7](assets/papers-explained-62-code-llama/fig-7.png) | Multi-Lingual HE Pass@1 scores. |
-| ![Figure 8](assets/papers-explained-62-code-llama/fig-8.png) | Correlations between Languages. |
-| ![Figure 9](assets/papers-explained-62-code-llama/fig-9.png) | Comparison of models with and without FIM (fill-in-the-middle) training. |
-| ![Figure 10](assets/papers-explained-62-code-llama/fig-10.png) | Multilingual HumanEval single line infilling with MultiPL-E. |
-| ![Figure 11](assets/papers-explained-62-code-llama/fig-11.png) | Code Llama behavior on long sequences. (a) Perplexity on large source files (≥50 kB) from the validation data from the code dataset. The dashed line marks the fine-tuning context length. Perplexity decreases for up to 100K tokens for all Code Llama sizes. (b) Accuracy on a synthetic key retrieval task, with a context of 16K tokens and comparison to gpt-3.5-turbo. |
-| ![Figure 12](assets/papers-explained-62-code-llama/fig-12.png) | Average single-line completion performance on LCC-balanced. |
+| ![Figure 1](assets/papers-explained-62-code-llama/fig-1.webp) | Title card: Code Llama. |
+| ![Figure 2](assets/papers-explained-62-code-llama/fig-2.webp) | The Code Llama specialization pipeline. The different stages of fine-tuning annotated with the number of tokens seen during training. Infilling-capable models are marked with the ⇄ symbol. |
+| ![Figure 3](assets/papers-explained-62-code-llama/fig-3.webp) | Training dataset of Code Llama and Code Llama — Python. Code Llama is trained on 500B additional tokens and Code Llama — Python is further trained on 100B tokens. |
+| ![Figure 4](assets/papers-explained-62-code-llama/fig-4.webp) | and d denotes the embedding dimension. |
+| ![Figure 5](assets/papers-explained-62-code-llama/fig-5.webp) | Code Llama pass@ scores on HumanEval and MBPP. |
+| ![Figure 6](assets/papers-explained-62-code-llama/fig-6.webp) | Code Llama pass@ scores on APPS. |
+| ![Figure 7](assets/papers-explained-62-code-llama/fig-7.webp) | Multi-Lingual HE Pass@1 scores. |
+| ![Figure 8](assets/papers-explained-62-code-llama/fig-8.webp) | Correlations between Languages. |
+| ![Figure 9](assets/papers-explained-62-code-llama/fig-9.webp) | Comparison of models with and without FIM (fill-in-the-middle) training. |
+| ![Figure 10](assets/papers-explained-62-code-llama/fig-10.webp) | Multilingual HumanEval single line infilling with MultiPL-E. |
+| ![Figure 11](assets/papers-explained-62-code-llama/fig-11.webp) | Code Llama behavior on long sequences. (a) Perplexity on large source files (≥50 kB) from the validation data from the code dataset. The dashed line marks the fine-tuning context length. Perplexity decreases for up to 100K tokens for all Code Llama sizes. (b) Accuracy on a synthetic key retrieval task, with a context of 16K tokens and comparison to gpt-3.5-turbo. |
+| ![Figure 12](assets/papers-explained-62-code-llama/fig-12.webp) | Average single-line completion performance on LCC-balanced. |
 ## Related
 
 - [[Papers Explained Corpus]]

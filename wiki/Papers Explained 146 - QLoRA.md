@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-06-05_Papers-Explained-146--QLoRA-a6e7273bc630.html`
+- Source file: `raw/2024-06-05_Papers-Explained-146--QLoRA-a6e7273bc630.md`
 - Source title: Papers Explained 146: QLoRA
 - Published: 2024-06-05
 - Canonical: [https://medium.com/@ritvik19/papers-explained-146-qlora-a6e7273bc630](https://medium.com/@ritvik19/papers-explained-146-qlora-a6e7273bc630)
@@ -123,20 +123,20 @@ Recommended Reading [Parameter Efficient Fine Tuning](https://ritvik19.medium.co
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-06-05_Papers-Explained-146--QLoRA-a6e7273bc630.html`); local copies under `wiki/assets/papers-explained-146-qlora/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-06-05_Papers-Explained-146--QLoRA-a6e7273bc630.md`); local copies under `wiki/assets/papers-explained-146-qlora/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-146-qlora/fig-1.png) | Title page of *QLoRA: Efficient Finetuning of Quantized LLMs*. |
-| ![Figure 2](assets/papers-explained-146-qlora/fig-2.png) | Memory schematic contrasting full fine-tuning, 16-bit LoRA, and 4-bit QLoRA with paged optimizer states. |
-| ![Figure 3](assets/papers-explained-146-qlora/fig-3.png) | Construction of NormalFloat bin centers $q_i$ from standard-normal quantiles for $k$-bit storage. |
-| ![Figure 4](assets/papers-explained-146-qlora/fig-4.png) | QLoRA linear layer: NF4 base weights dequantized through nested scales plus BF16 LoRA pathway. |
-| ![Figure 5](assets/papers-explained-146-qlora/fig-5.png) | Nested `doubleDequant` expands secondary quantization constants then restores BF16 weights for matmuls. |
-| ![Figure 6](assets/papers-explained-146-qlora/fig-6.png) | Alpaca RougeL scatter comparing QLoRA attention-only vs FFN vs full adapters against 16-bit Alpaca replicas. |
-| ![Figure 7](assets/papers-explained-146-qlora/fig-7.png) | Mean zero-shot accuracy vs model bits for Float4 vs NF4 vs NF4+double quantization across LLaMA sizes. |
-| ![Figure 8](assets/papers-explained-146-qlora/fig-8.png) | RoBERTa-large GLUE and T5-scale Super-NaturalInstructions Rouge under BF16, Int8, FP4, and NF4+DQ QLoRA. |
-| ![Figure 9](assets/papers-explained-146-qlora/fig-9.png) | Mean 5-shot MMLU after Alpaca/FLAN fine-tunes for BF16 vs Float4 vs NF4+DQ across LLaMA 7B–65B. |
-| ![Figure 10](assets/papers-explained-146-qlora/fig-10.png) | Duplicate practical LoRA/QLoRA guidance infographic (layer coverage, $\alpha$, epochs, optimizers, runtime trade-offs). |
+| ![Figure 1](assets/papers-explained-146-qlora/fig-1.webp) | Title page of *QLoRA: Efficient Finetuning of Quantized LLMs*. |
+| ![Figure 2](assets/papers-explained-146-qlora/fig-2.webp) | Memory schematic contrasting full fine-tuning, 16-bit LoRA, and 4-bit QLoRA with paged optimizer states. |
+| ![Figure 3](assets/papers-explained-146-qlora/fig-3.webp) | Construction of NormalFloat bin centers $q_i$ from standard-normal quantiles for $k$-bit storage. |
+| ![Figure 4](assets/papers-explained-146-qlora/fig-4.webp) | QLoRA linear layer: NF4 base weights dequantized through nested scales plus BF16 LoRA pathway. |
+| ![Figure 5](assets/papers-explained-146-qlora/fig-5.webp) | Nested `doubleDequant` expands secondary quantization constants then restores BF16 weights for matmuls. |
+| ![Figure 6](assets/papers-explained-146-qlora/fig-6.webp) | Alpaca RougeL scatter comparing QLoRA attention-only vs FFN vs full adapters against 16-bit Alpaca replicas. |
+| ![Figure 7](assets/papers-explained-146-qlora/fig-7.webp) | Mean zero-shot accuracy vs model bits for Float4 vs NF4 vs NF4+double quantization across LLaMA sizes. |
+| ![Figure 8](assets/papers-explained-146-qlora/fig-8.webp) | RoBERTa-large GLUE and T5-scale Super-NaturalInstructions Rouge under BF16, Int8, FP4, and NF4+DQ QLoRA. |
+| ![Figure 9](assets/papers-explained-146-qlora/fig-9.webp) | Mean 5-shot MMLU after Alpaca/FLAN fine-tunes for BF16 vs Float4 vs NF4+DQ across LLaMA 7B–65B. |
+| ![Figure 10](assets/papers-explained-146-qlora/fig-10.webp) | Duplicate practical LoRA/QLoRA guidance infographic (layer coverage, $\alpha$, epochs, optimizers, runtime trade-offs). |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-07_Papers-Explained-17--Mask-RCNN-82c64bea5261.html`
+- Source file: `raw/2023-02-07_Papers-Explained-17--Mask-RCNN-82c64bea5261.md`
 - Source title: Papers Explained 17: Mask RCNN
 - Published: 2023-02-07
 - Canonical: [https://medium.com/@ritvik19/papers-explained-17-mask-rcnn-82c64bea5261](https://medium.com/@ritvik19/papers-explained-17-mask-rcnn-82c64bea5261)
@@ -35,12 +35,12 @@ Mask R-CNN [1703.06870](https://arxiv.org/abs/1703.06870)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-07_Papers-Explained-17--Mask-RCNN-82c64bea5261.html`); local copies under `wiki/assets/papers-explained-17-mask-rcnn/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-07_Papers-Explained-17--Mask-RCNN-82c64bea5261.md`); local copies under `wiki/assets/papers-explained-17-mask-rcnn/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-17-mask-rcnn/fig-1.png) | Title card: Mask RCNN. |
-| ![Figure 2](assets/papers-explained-17-mask-rcnn/fig-2.png) | Faster R-CNN consists of two stages. |
+| ![Figure 1](assets/papers-explained-17-mask-rcnn/fig-1.webp) | Title card: Mask RCNN. |
+| ![Figure 2](assets/papers-explained-17-mask-rcnn/fig-2.webp) | Faster R-CNN consists of two stages. |
 ## Related
 
 - [[Papers Explained Corpus]]

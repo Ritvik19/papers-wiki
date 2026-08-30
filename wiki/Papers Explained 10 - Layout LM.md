@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-06_Papers-Explained-10--Layout-LM-32ec4bad6406.html`
+- Source file: `raw/2023-02-06_Papers-Explained-10--Layout-LM-32ec4bad6406.md`
 - Source title: Papers Explained 10: Layout LM
 - Published: 2023-02-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-10-layout-lm-32ec4bad6406](https://medium.com/@ritvik19/papers-explained-10-layout-lm-32ec4bad6406)
@@ -74,12 +74,12 @@ Here are the implementations of Layout LM on custom datasets
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-06_Papers-Explained-10--Layout-LM-32ec4bad6406.html`); local copies under `wiki/assets/papers-explained-10-layout-lm/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-06_Papers-Explained-10--Layout-LM-32ec4bad6406.md`); local copies under `wiki/assets/papers-explained-10-layout-lm/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-10-layout-lm/fig-1.png) | Title block of *LayoutLM: Pre-training of Text and Layout for Document Image Understanding*. |
-| ![Figure 2](assets/papers-explained-10-layout-lm/fig-2.png) | LayoutLM architecture example combining text embeddings, 2-D position embeddings, and image embeddings from Faster R-CNN/OCR signals. |
+| ![Figure 1](assets/papers-explained-10-layout-lm/fig-1.webp) | Title block of *LayoutLM: Pre-training of Text and Layout for Document Image Understanding*. |
+| ![Figure 2](assets/papers-explained-10-layout-lm/fig-2.webp) | LayoutLM architecture example combining text embeddings, 2-D position embeddings, and image embeddings from Faster R-CNN/OCR signals. |
 ## Related
 
 - [[Papers Explained Corpus]]

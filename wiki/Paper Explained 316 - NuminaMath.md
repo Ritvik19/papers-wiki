@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-02-24_Paper-Explained-316--NuminaMath-40501ae9baac.html`
+- Source file: `raw/2025-02-24_Paper-Explained-316--NuminaMath-40501ae9baac.md`
 - Source title: Paper Explained 316: NuminaMath
 - Published: 2025-02-24
 - Canonical: [https://medium.com/@ritvik19/paper-explained-316-numinamath-40501ae9baac](https://medium.com/@ritvik19/paper-explained-316-numinamath-40501ae9baac)
@@ -147,19 +147,19 @@ New Data:
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-02-24_Paper-Explained-316--NuminaMath-40501ae9baac.html`); local copies under `wiki/assets/paper-explained-316-numinamath/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-02-24_Paper-Explained-316--NuminaMath-40501ae9baac.md`); local copies under `wiki/assets/paper-explained-316-numinamath/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/paper-explained-316-numinamath/fig-1.png) | NuminaMath overview (~860k competition-style problems with chain-of-thought solutions). |
-| ![Figure 2](assets/paper-explained-316-numinamath/fig-2.png) | Datasets and approximate sample sizes feeding NuminaMath. |
-| ![Figure 3](assets/paper-explained-316-numinamath/fig-3.png) | Sample counts per major data source after dedup and filtering steps. |
-| ![Figure 4](assets/paper-explained-316-numinamath/fig-4.png) | World Olympiad / contest sourcing footprint (national and regional contests plus forums and PDF-derived pairs). |
-| ![Figure 5](assets/paper-explained-316-numinamath/fig-5.png) | Tool-integrated reasoning loop (expand context with CoT + Python runs until a boxed answer or failure). |
-| ![Figure 6](assets/paper-explained-316-numinamath/fig-6.png) | SC-TIR: multiple TIR samples, filter ill-formed outputs, majority vote. |
-| ![Figure 7](assets/paper-explained-316-numinamath/fig-7.png) | Fine-tuning hyper-parameters for the two-stage CoT then TIR experiments (7B / 72B settings). |
-| ![Figure 8](assets/paper-explained-316-numinamath/fig-8.png) | Open 7B–8B models on GSM8K, MATH, AMC 2023, and AIME 2024 with NuminaMath (+TIR). |
-| ![Figure 9](assets/paper-explained-316-numinamath/fig-9.png) | NuminaMath-trained models vs larger open and proprietary baselines on the same benchmark suite. |
+| ![Figure 1](assets/paper-explained-316-numinamath/fig-1.webp) | NuminaMath overview (~860k competition-style problems with chain-of-thought solutions). |
+| ![Figure 2](assets/paper-explained-316-numinamath/fig-2.webp) | Datasets and approximate sample sizes feeding NuminaMath. |
+| ![Figure 3](assets/paper-explained-316-numinamath/fig-3.webp) | Sample counts per major data source after dedup and filtering steps. |
+| ![Figure 4](assets/paper-explained-316-numinamath/fig-4.webp) | World Olympiad / contest sourcing footprint (national and regional contests plus forums and PDF-derived pairs). |
+| ![Figure 5](assets/paper-explained-316-numinamath/fig-5.webp) | Tool-integrated reasoning loop (expand context with CoT + Python runs until a boxed answer or failure). |
+| ![Figure 6](assets/paper-explained-316-numinamath/fig-6.webp) | SC-TIR: multiple TIR samples, filter ill-formed outputs, majority vote. |
+| ![Figure 7](assets/paper-explained-316-numinamath/fig-7.webp) | Fine-tuning hyper-parameters for the two-stage CoT then TIR experiments (7B / 72B settings). |
+| ![Figure 8](assets/paper-explained-316-numinamath/fig-8.webp) | Open 7B–8B models on GSM8K, MATH, AMC 2023, and AIME 2024 with NuminaMath (+TIR). |
+| ![Figure 9](assets/paper-explained-316-numinamath/fig-9.webp) | NuminaMath-trained models vs larger open and proprietary baselines on the same benchmark suite. |
 ## HF Blog Cross-References
 
 - [How NuminaMath Won the 1st AIMO Progress Prize](https://huggingface.co/blog/winning-aimo-progress-prize) (2024-07-11) — Numina's own writeup of the winning AI Mathematical Olympiad Progress Prize solution: the two-stage CoT-then-TIR fine-tuning recipe, self-consistency tool-integrated reasoning (SC-TIR), and lessons on avoiding overfit to the public leaderboard. Same training recipe as the NuminaMath-CoT/TIR datasets described above, told from the competition side.

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-07-31_Papers-Explained-171--Prometheus-2-324e9c162e18.html`
+- Source file: `raw/2024-07-31_Papers-Explained-171--Prometheus-2-324e9c162e18.md`
 - Source title: Papers Explained 171: Prometheus 2
 - Published: 2024-07-31
 - Canonical: [https://medium.com/@ritvik19/papers-explained-171-prometheus-2-324e9c162e18](https://medium.com/@ritvik19/papers-explained-171-prometheus-2-324e9c162e18)
@@ -155,25 +155,25 @@ Recommended Reading [LLM Evaluation](https://ritvik19.medium.com/list/llm-evalua
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-07-31_Papers-Explained-171--Prometheus-2-324e9c162e18.html`); local copies under `wiki/assets/papers-explained-171-prometheus-2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-07-31_Papers-Explained-171--Prometheus-2-324e9c162e18.md`); local copies under `wiki/assets/papers-explained-171-prometheus-2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-171-prometheus-2/fig-1.png) | Paper title: **PROMETHEUS 2** — open LM specialized in evaluating other LMs (authors / affiliations). |
-| ![Figure 2](assets/papers-explained-171-prometheus-2/fig-2.png) | **Pairwise ranking** vs **direct assessment** on the same instruction/responses (criteria, verbal feedback, winner or 1–5 score). |
-| ![Figure 3](assets/papers-explained-171-prometheus-2/fig-3.png) | **Direct assessment** formalization: \(f_{\text{direct}} : (i,r,a,e) \mapsto (v_r,s)\) with \(s \in \{1,\ldots,5\}\). |
-| ![Figure 4](assets/papers-explained-171-prometheus-2/fig-4.png) | **Pairwise ranking** formalization: \(f_{\text{pair}} : (i,r_m,r_n,a,e) \mapsto (v_{r_m,r_n},s)\) with \(s \in \{m,n\}\). |
-| ![Figure 5](assets/papers-explained-171-prometheus-2/fig-5.png) | **Preference Collection** vs **Feedback Collection**: scheme, counts of criteria, instructions, references, instances, verbal feedback. |
-| ![Figure 6](assets/papers-explained-171-prometheus-2/fig-6.png) | GPT-4 **prompt template** for generating pairwise verbal feedback (compare A/B vs reference, end with `[END]`). |
-| ![Figure 7](assets/papers-explained-171-prometheus-2/fig-7.png) | **Linear weight merge**: \(\theta_{\text{final}} = \alpha \theta_d + (1-\alpha)\theta_p\) (direct-trained vs pairwise-trained checkpoints; \(\alpha=0.5\)). |
-| ![Figure 8](assets/papers-explained-171-prometheus-2/fig-8.png) | **Evaluation benchmarks** table: direct-assessment vs pairwise sets (judges, metrics, rubrics, instruction/judgment counts). |
-| ![Figure 9](assets/papers-explained-171-prometheus-2/fig-9.png) | **Direct assessment** evaluator **system prompt** (“fair judge assistant” / rubric-grounded feedback). |
-| ![Figure 10](assets/papers-explained-171-prometheus-2/fig-10.png) | **Direct assessment** user prompt template: `Feedback: … [RESULT] (score)`. |
-| ![Figure 11](assets/papers-explained-171-prometheus-2/fig-11.png) | **Pairwise ranking** evaluator **system prompt** (comparative, cohort-relative feedback). |
-| ![Figure 12](assets/papers-explained-171-prometheus-2/fig-12.png) | **Pairwise ranking** user prompt template: `Feedback: … [RESULT] (A or B)`. |
-| ![Figure 13](assets/papers-explained-171-prometheus-2/fig-13.png) | **Direct assessment** results: **Pearson** correlation vs GPT-4 / Claude / humans (Vicuna, MT, FLASK, Feedback Bench). |
-| ![Figure 14](assets/papers-explained-171-prometheus-2/fig-14.png) | **Pairwise ranking** results: **accuracy** on HHH, MT-Bench human, Auto-J, Preference Bench. |
-| ![Figure 15](assets/papers-explained-171-prometheus-2/fig-15.png) | **Cross-format consistency**: Direct2Pair vs Pair2Pair vs gap \(\Delta\) on HHH, MT-Bench, Auto-J (Prometheus-2 vs GPT-4 / Claude). |
+| ![Figure 1](assets/papers-explained-171-prometheus-2/fig-1.webp) | Paper title: **PROMETHEUS 2** — open LM specialized in evaluating other LMs (authors / affiliations). |
+| ![Figure 2](assets/papers-explained-171-prometheus-2/fig-2.webp) | **Pairwise ranking** vs **direct assessment** on the same instruction/responses (criteria, verbal feedback, winner or 1–5 score). |
+| ![Figure 3](assets/papers-explained-171-prometheus-2/fig-3.webp) | **Direct assessment** formalization: \(f_{\text{direct}} : (i,r,a,e) \mapsto (v_r,s)\) with \(s \in \{1,\ldots,5\}\). |
+| ![Figure 4](assets/papers-explained-171-prometheus-2/fig-4.webp) | **Pairwise ranking** formalization: \(f_{\text{pair}} : (i,r_m,r_n,a,e) \mapsto (v_{r_m,r_n},s)\) with \(s \in \{m,n\}\). |
+| ![Figure 5](assets/papers-explained-171-prometheus-2/fig-5.webp) | **Preference Collection** vs **Feedback Collection**: scheme, counts of criteria, instructions, references, instances, verbal feedback. |
+| ![Figure 6](assets/papers-explained-171-prometheus-2/fig-6.webp) | GPT-4 **prompt template** for generating pairwise verbal feedback (compare A/B vs reference, end with `[END]`). |
+| ![Figure 7](assets/papers-explained-171-prometheus-2/fig-7.webp) | **Linear weight merge**: \(\theta_{\text{final}} = \alpha \theta_d + (1-\alpha)\theta_p\) (direct-trained vs pairwise-trained checkpoints; \(\alpha=0.5\)). |
+| ![Figure 8](assets/papers-explained-171-prometheus-2/fig-8.webp) | **Evaluation benchmarks** table: direct-assessment vs pairwise sets (judges, metrics, rubrics, instruction/judgment counts). |
+| ![Figure 9](assets/papers-explained-171-prometheus-2/fig-9.webp) | **Direct assessment** evaluator **system prompt** (“fair judge assistant” / rubric-grounded feedback). |
+| ![Figure 10](assets/papers-explained-171-prometheus-2/fig-10.webp) | **Direct assessment** user prompt template: `Feedback: … [RESULT] (score)`. |
+| ![Figure 11](assets/papers-explained-171-prometheus-2/fig-11.webp) | **Pairwise ranking** evaluator **system prompt** (comparative, cohort-relative feedback). |
+| ![Figure 12](assets/papers-explained-171-prometheus-2/fig-12.webp) | **Pairwise ranking** user prompt template: `Feedback: … [RESULT] (A or B)`. |
+| ![Figure 13](assets/papers-explained-171-prometheus-2/fig-13.webp) | **Direct assessment** results: **Pearson** correlation vs GPT-4 / Claude / humans (Vicuna, MT, FLASK, Feedback Bench). |
+| ![Figure 14](assets/papers-explained-171-prometheus-2/fig-14.webp) | **Pairwise ranking** results: **accuracy** on HHH, MT-Bench human, Auto-J, Preference Bench. |
+| ![Figure 15](assets/papers-explained-171-prometheus-2/fig-15.webp) | **Cross-format consistency**: Direct2Pair vs Pair2Pair vs gap \(\Delta\) on HHH, MT-Bench, Auto-J (Prometheus-2 vs GPT-4 / Claude). |
 ## Related
 
 - [[Papers Explained Corpus]]

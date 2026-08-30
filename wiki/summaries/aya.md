@@ -1,6 +1,6 @@
 # C4AI Launches Aya, an LLM Covering More Than 100 Languages
 
-**Source**: `raw/aya/full-article.html` (330 KB), `raw/aya/full-article.md` (markdown view)  
+**Source**: `raw/aya/full-article.md` (330 KB), `raw/aya/full-article.md` (markdown view)  
 **URL**: https://cohere.com/blog/aya  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -26,13 +26,13 @@ The post frames Aya as an open-science paradigm shift: over **3,000 researchers 
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/aya/fig-1.jpg) | C4AI Aya launch blog banner | — |
-| ![fig-2](../assets/aya/fig-2.png) | Geographical distribution of Aya collaborators | — |
-| ![fig-3](../assets/aya/fig-3.png) | Head-to-head comparison of preferred model responses | — |
+| ![fig-1](../assets/aya/fig-1.webp) | C4AI Aya launch blog banner | — |
+| ![fig-2](../assets/aya/fig-2.webp) | Geographical distribution of Aya collaborators | — |
+| ![fig-3](../assets/aya/fig-3.webp) | Head-to-head comparison of preferred model responses | — |
 
-![Aya collaborator geography](../assets/aya/fig-2.png)
+![Aya collaborator geography](../assets/aya/fig-2.webp)
 
-![Model response preference comparison](../assets/aya/fig-3.png)
+![Model response preference comparison](../assets/aya/fig-3.webp)
 
 ## Entities
 

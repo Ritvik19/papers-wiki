@@ -1,6 +1,6 @@
 # Gemma 3n fully available in the open-source ecosystem!
 
-**Source**: `raw/gemma3n/full-article.html` (272 KB), `raw/gemma3n/full-article.md`
+**Source**: `raw/gemma3n/full-article.md` (272 KB), `raw/gemma3n/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

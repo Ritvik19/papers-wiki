@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-05-13_Papers-Explained-364--OmniMath-bd2687c23e81.html`
+- Source file: `raw/2025-05-13_Papers-Explained-364--OmniMath-bd2687c23e81.md`
 - Source title: Papers Explained 364: OmniMath
 - Published: 2025-05-13
 - Canonical: [https://medium.com/@ritvik19/papers-explained-364-omnimath-bd2687c23e81](https://medium.com/@ritvik19/papers-explained-364-omnimath-bd2687c23e81)
@@ -97,20 +97,20 @@ Omni-MATH: A Universal Olympiad Level Mathematic Benchmark For Large Language Mo
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-05-13_Papers-Explained-364--OmniMath-bd2687c23e81.html`); local copies under `wiki/assets/papers-explained-364-omnimath/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-05-13_Papers-Explained-364--OmniMath-bd2687c23e81.md`); local copies under `wiki/assets/papers-explained-364-omnimath/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-364-omnimath/fig-1.png) | Title card: OmniMath. |
-| ![Figure 2](assets/papers-explained-364-omnimath/fig-2.png) | An overall illustration of Omni-MATH. |
-| ![Figure 3](assets/papers-explained-364-omnimath/fig-3.png) | The overall data collection and annotation process of Omni-MATH. |
-| ![Figure 4](assets/papers-explained-364-omnimath/fig-4.png) | The number of data in the construction process. |
-| ![Figure 5](assets/papers-explained-364-omnimath/fig-5.png) | The hierarchical data source of the Omni-MATH. |
-| ![Figure 6](assets/papers-explained-364-omnimath/fig-6.png) | Difficulty distribution across contests. |
-| ![Figure 7](assets/papers-explained-364-omnimath/fig-7.png) | The difficulty distribution of Omni-MATH. |
-| ![Figure 8](assets/papers-explained-364-omnimath/fig-8.png) | The total domain tree of Omni-MATH. |
-| ![Figure 9](assets/papers-explained-364-omnimath/fig-9.png) | Main Result. |
-| ![Figure 10](assets/papers-explained-364-omnimath/fig-10.png) | The performance of the policy model under Pass@K and the proportion of correct COT. |
+| ![Figure 1](assets/papers-explained-364-omnimath/fig-1.webp) | Title card: OmniMath. |
+| ![Figure 2](assets/papers-explained-364-omnimath/fig-2.webp) | An overall illustration of Omni-MATH. |
+| ![Figure 3](assets/papers-explained-364-omnimath/fig-3.webp) | The overall data collection and annotation process of Omni-MATH. |
+| ![Figure 4](assets/papers-explained-364-omnimath/fig-4.webp) | The number of data in the construction process. |
+| ![Figure 5](assets/papers-explained-364-omnimath/fig-5.webp) | The hierarchical data source of the Omni-MATH. |
+| ![Figure 6](assets/papers-explained-364-omnimath/fig-6.webp) | Difficulty distribution across contests. |
+| ![Figure 7](assets/papers-explained-364-omnimath/fig-7.webp) | The difficulty distribution of Omni-MATH. |
+| ![Figure 8](assets/papers-explained-364-omnimath/fig-8.webp) | The total domain tree of Omni-MATH. |
+| ![Figure 9](assets/papers-explained-364-omnimath/fig-9.webp) | Main Result. |
+| ![Figure 10](assets/papers-explained-364-omnimath/fig-10.webp) | The performance of the policy model under Pass@K and the proportion of correct COT. |
 ## Related
 
 - [[Papers Explained Corpus]]

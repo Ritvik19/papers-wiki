@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-10-07_Papers-Explained-469--MobileLLM-R1-00d456b46e5e.html`
+- Source file: `raw/2025-10-07_Papers-Explained-469--MobileLLM-R1-00d456b46e5e.md`
 - Source title: Papers Explained 469: MobileLLM-R1
 - Published: 2025-10-07
 - Canonical: [https://medium.com/@ritvik19/papers-explained-469-mobilellm-r1-00d456b46e5e](https://medium.com/@ritvik19/papers-explained-469-mobilellm-r1-00d456b46e5e)
@@ -225,24 +225,24 @@ MobileLLM-R1: Exploring the Limits of Sub-Billion Language Model Reasoners with 
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-10-07_Papers-Explained-469--MobileLLM-R1-00d456b46e5e.html`); local copies under `wiki/assets/papers-explained-469-mobilellm-r1/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-10-07_Papers-Explained-469--MobileLLM-R1-00d456b46e5e.md`); local copies under `wiki/assets/papers-explained-469-mobilellm-r1/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-469-mobilellm-r1/fig-1.png) | Title card: MobileLLM-R1. |
-| ![Figure 2](assets/papers-explained-469-mobilellm-r1/fig-2.png) | Architecture specifications of MobileLLM-R1. |
-| ![Figure 3](assets/papers-explained-469-mobilellm-r1/fig-3.png) | Training setup across different stages. |
-| ![Figure 4](assets/papers-explained-469-mobilellm-r1/fig-4.png) | Pre-training datasets and mixture ratios for the two-stage curriculum. |
-| ![Figure 5](assets/papers-explained-469-mobilellm-r1/fig-5.png) | Mid-training datasets and mixture ratios. |
-| ![Figure 6](assets/papers-explained-469-mobilellm-r1/fig-6.png) | Post-training data. |
-| ![Figure 7](assets/papers-explained-469-mobilellm-r1/fig-7.png) | Performance comparison of reasoning base models across multiple benchmarks. |
-| ![Figure 8](assets/papers-explained-469-mobilellm-r1/fig-8.png) | Evaluation results of different reasoning models. |
-| ![Figure 9](assets/papers-explained-469-mobilellm-r1/fig-9.png) | Hierarchical rejection sampling. |
-| ![Figure 10](assets/papers-explained-469-mobilellm-r1/fig-10.png) | Leave-one-out analysis of pretraining data. |
-| ![Figure 11](assets/papers-explained-469-mobilellm-r1/fig-11.png) | Post-training. |
-| ![Figure 12](assets/papers-explained-469-mobilellm-r1/fig-12.png) | Post-training. |
-| ![Figure 13](assets/papers-explained-469-mobilellm-r1/fig-13.png) | Ablation studies on post-training stages. |
-| ![Figure 14](assets/papers-explained-469-mobilellm-r1/fig-14.png) | Accuracy and sequence length during RL fine-tuning on MobileLLM-R1 base model and final model after SFT. |
+| ![Figure 1](assets/papers-explained-469-mobilellm-r1/fig-1.webp) | Title card: MobileLLM-R1. |
+| ![Figure 2](assets/papers-explained-469-mobilellm-r1/fig-2.webp) | Architecture specifications of MobileLLM-R1. |
+| ![Figure 3](assets/papers-explained-469-mobilellm-r1/fig-3.webp) | Training setup across different stages. |
+| ![Figure 4](assets/papers-explained-469-mobilellm-r1/fig-4.webp) | Pre-training datasets and mixture ratios for the two-stage curriculum. |
+| ![Figure 5](assets/papers-explained-469-mobilellm-r1/fig-5.webp) | Mid-training datasets and mixture ratios. |
+| ![Figure 6](assets/papers-explained-469-mobilellm-r1/fig-6.webp) | Post-training data. |
+| ![Figure 7](assets/papers-explained-469-mobilellm-r1/fig-7.webp) | Performance comparison of reasoning base models across multiple benchmarks. |
+| ![Figure 8](assets/papers-explained-469-mobilellm-r1/fig-8.webp) | Evaluation results of different reasoning models. |
+| ![Figure 9](assets/papers-explained-469-mobilellm-r1/fig-9.webp) | Hierarchical rejection sampling. |
+| ![Figure 10](assets/papers-explained-469-mobilellm-r1/fig-10.webp) | Leave-one-out analysis of pretraining data. |
+| ![Figure 11](assets/papers-explained-469-mobilellm-r1/fig-11.webp) | Post-training. |
+| ![Figure 12](assets/papers-explained-469-mobilellm-r1/fig-12.webp) | Post-training. |
+| ![Figure 13](assets/papers-explained-469-mobilellm-r1/fig-13.webp) | Ablation studies on post-training stages. |
+| ![Figure 14](assets/papers-explained-469-mobilellm-r1/fig-14.webp) | Accuracy and sequence length during RL fine-tuning on MobileLLM-R1 base model and final model after SFT. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-12-18_Papers-Explained-80--Gemini-1-0-97308ef96fcd.html`
+- Source file: `raw/2023-12-18_Papers-Explained-80--Gemini-1-0-97308ef96fcd.md`
 - Source title: Papers Explained 80: Gemini 1.0
 - Published: 2023-12-18
 - Canonical: [https://medium.com/@ritvik19/papers-explained-80-gemini-1-0-97308ef96fcd](https://medium.com/@ritvik19/papers-explained-80-gemini-1-0-97308ef96fcd)
@@ -173,23 +173,23 @@ Recommended Reading: [Papers Explained 81: An In-depth Look at Gemini’s Langua
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-12-18_Papers-Explained-80--Gemini-1-0-97308ef96fcd.html`); local copies under `wiki/assets/papers-explained-80-gemini-1-0/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-12-18_Papers-Explained-80--Gemini-1-0-97308ef96fcd.md`); local copies under `wiki/assets/papers-explained-80-gemini-1-0/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-80-gemini-1-0/fig-1.png) | Title card: Gemini 1.0. |
-| ![Figure 2](assets/papers-explained-80-gemini-1-0/fig-2.png) | An overview of the Gemini 1.0 model family. |
-| ![Figure 3](assets/papers-explained-80-gemini-1-0/fig-3.png) | Recommended Reading: [ Flamingo ]. |
-| ![Figure 4](assets/papers-explained-80-gemini-1-0/fig-4.png) | Gemini performance on text benchmarks. |
-| ![Figure 5](assets/papers-explained-80-gemini-1-0/fig-5.png) | Language understanding and generation performance of Gemini model family across different capabilities (normalized by the Gemini Pro model). |
-| ![Figure 6](assets/papers-explained-80-gemini-1-0/fig-6.png) | Performance of Gemini models on WMT 23 translation benchmark. All numbers with 1-shot. |
-| ![Figure 7](assets/papers-explained-80-gemini-1-0/fig-7.png) | Performance of Gemini models on multilingual math and summarization. |
-| ![Figure 8](assets/papers-explained-80-gemini-1-0/fig-8.png) | Negative log likelihood as a function of token index across 32K context length on a held-out set of long documents. |
-| ![Figure 9](assets/papers-explained-80-gemini-1-0/fig-9.png) | Win rate of Gemini Pro over PaLM 2 (text-bison@001) with 95% confidence intervals. |
-| ![Figure 10](assets/papers-explained-80-gemini-1-0/fig-10.png) | Image understanding. |
-| ![Figure 11](assets/papers-explained-80-gemini-1-0/fig-11.png) | Multilingual image understanding. |
-| ![Figure 12](assets/papers-explained-80-gemini-1-0/fig-12.png) | Few-shot video understanding across tasks and languages. |
-| ![Figure 13](assets/papers-explained-80-gemini-1-0/fig-13.png) | Speech evaluation results on selected benchmarks for ASR and AST. |
+| ![Figure 1](assets/papers-explained-80-gemini-1-0/fig-1.webp) | Title card: Gemini 1.0. |
+| ![Figure 2](assets/papers-explained-80-gemini-1-0/fig-2.webp) | An overview of the Gemini 1.0 model family. |
+| ![Figure 3](assets/papers-explained-80-gemini-1-0/fig-3.webp) | Recommended Reading: [ Flamingo ]. |
+| ![Figure 4](assets/papers-explained-80-gemini-1-0/fig-4.webp) | Gemini performance on text benchmarks. |
+| ![Figure 5](assets/papers-explained-80-gemini-1-0/fig-5.webp) | Language understanding and generation performance of Gemini model family across different capabilities (normalized by the Gemini Pro model). |
+| ![Figure 6](assets/papers-explained-80-gemini-1-0/fig-6.webp) | Performance of Gemini models on WMT 23 translation benchmark. All numbers with 1-shot. |
+| ![Figure 7](assets/papers-explained-80-gemini-1-0/fig-7.webp) | Performance of Gemini models on multilingual math and summarization. |
+| ![Figure 8](assets/papers-explained-80-gemini-1-0/fig-8.webp) | Negative log likelihood as a function of token index across 32K context length on a held-out set of long documents. |
+| ![Figure 9](assets/papers-explained-80-gemini-1-0/fig-9.webp) | Win rate of Gemini Pro over PaLM 2 (text-bison@001) with 95% confidence intervals. |
+| ![Figure 10](assets/papers-explained-80-gemini-1-0/fig-10.webp) | Image understanding. |
+| ![Figure 11](assets/papers-explained-80-gemini-1-0/fig-11.webp) | Multilingual image understanding. |
+| ![Figure 12](assets/papers-explained-80-gemini-1-0/fig-12.webp) | Few-shot video understanding across tasks and languages. |
+| ![Figure 13](assets/papers-explained-80-gemini-1-0/fig-13.webp) | Speech evaluation results on selected benchmarks for ASR and AST. |
 ## Related
 
 - [[Papers Explained Corpus]]

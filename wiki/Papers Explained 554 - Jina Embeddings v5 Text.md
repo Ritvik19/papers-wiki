@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-04-02_Papers-Explained-554--Jina-Embeddings-v5-Text-09ac59ff93b7.html`
+- Source file: `raw/2026-04-02_Papers-Explained-554--Jina-Embeddings-v5-Text-09ac59ff93b7.md`
 - Source title: Papers Explained 554: Jina Embeddings v5 Text
 - Published: 2026-04-02
 - Canonical: [https://medium.com/@ritvik19/papers-explained-554-jina-embeddings-v5-text-09ac59ff93b7](https://medium.com/@ritvik19/papers-explained-554-jina-embeddings-v5-text-09ac59ff93b7)
@@ -177,26 +177,26 @@ jina-embeddings-v5-text: Task-Targeted Embedding Distillation [2602.15547](https
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-04-02_Papers-Explained-554--Jina-Embeddings-v5-Text-09ac59ff93b7.html`); local copies under `wiki/assets/papers-explained-554-jina-embeddings-v5-text/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-04-02_Papers-Explained-554--Jina-Embeddings-v5-Text-09ac59ff93b7.md`); local copies under `wiki/assets/papers-explained-554-jina-embeddings-v5-text/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-554-jina-embeddings-v5-text/fig-1.png) | Title card: Jina Embeddings v5 Text. |
-| ![Figure 2](assets/papers-explained-554-jina-embeddings-v5-text/fig-2.png) | Model Architecture. |
-| ![Figure 3](assets/papers-explained-554-jina-embeddings-v5-text/fig-3.png) | Attributes of the Base Models and the Resulting Embedding Models. |
-| ![Figure 4](assets/papers-explained-554-jina-embeddings-v5-text/fig-4.png) | At each training step, the student/teacher model is applied to a batch of pairs (q,d), resulting in two batches of embeddings. |
-| ![Figure 5](assets/papers-explained-554-jina-embeddings-v5-text/fig-5.png) | The dimensionality of the teacher embeddings m is higher than the dimensionality of the student embeddings n. |
-| ![Figure 6](assets/papers-explained-554-jina-embeddings-v5-text/fig-6.png) | Contrastive Loss: InfoNCE loss with hard negatives is used. |
-| ![Figure 7](assets/papers-explained-554-jina-embeddings-v5-text/fig-7.png) | Asymmetric Retrieval Adapter. |
-| ![Figure 8](assets/papers-explained-554-jina-embeddings-v5-text/fig-8.png) | The final training objective for the retrieval adapter is a linear combination of the three loss functions. |
-| ![Figure 9](assets/papers-explained-554-jina-embeddings-v5-text/fig-9.png) | Text Matching (STS) Adapter: The temperature parameter τ′>0 controls the smoothness of the objective. |
-| ![Figure 10](assets/papers-explained-554-jina-embeddings-v5-text/fig-10.png) | Combined Objective and Distillation: To optimize the adapter, a hybrid strategy is employed. |
-| ![Figure 11](assets/papers-explained-554-jina-embeddings-v5-text/fig-11.png) | To adapt contrastive loss for supervised learning, pairs (q,p) of an anchor text and a randomly selected target with the same label are... |
-| ![Figure 12](assets/papers-explained-554-jina-embeddings-v5-text/fig-12.png) | For Lq→d NCE, the set Nxi includes all other positives and negatives in the batch. |
-| ![Figure 13](assets/papers-explained-554-jina-embeddings-v5-text/fig-13.png) | MTEB (Multilingual, v2) Evaluation Results. |
-| ![Figure 14](assets/papers-explained-554-jina-embeddings-v5-text/fig-14.png) | MTEB(eng, v2) Evaluation Results. |
-| ![Figure 15](assets/papers-explained-554-jina-embeddings-v5-text/fig-15.png) | Performance of j-v5-text-small on different languages on MMTEB compared to other models. |
-| ![Figure 16](assets/papers-explained-554-jina-embeddings-v5-text/fig-16.png) | Retrieval Benchmark Results. |
+| ![Figure 1](assets/papers-explained-554-jina-embeddings-v5-text/fig-1.webp) | Title card: Jina Embeddings v5 Text. |
+| ![Figure 2](assets/papers-explained-554-jina-embeddings-v5-text/fig-2.webp) | Model Architecture. |
+| ![Figure 3](assets/papers-explained-554-jina-embeddings-v5-text/fig-3.webp) | Attributes of the Base Models and the Resulting Embedding Models. |
+| ![Figure 4](assets/papers-explained-554-jina-embeddings-v5-text/fig-4.webp) | At each training step, the student/teacher model is applied to a batch of pairs (q,d), resulting in two batches of embeddings. |
+| ![Figure 5](assets/papers-explained-554-jina-embeddings-v5-text/fig-5.webp) | The dimensionality of the teacher embeddings m is higher than the dimensionality of the student embeddings n. |
+| ![Figure 6](assets/papers-explained-554-jina-embeddings-v5-text/fig-6.webp) | Contrastive Loss: InfoNCE loss with hard negatives is used. |
+| ![Figure 7](assets/papers-explained-554-jina-embeddings-v5-text/fig-7.webp) | Asymmetric Retrieval Adapter. |
+| ![Figure 8](assets/papers-explained-554-jina-embeddings-v5-text/fig-8.webp) | The final training objective for the retrieval adapter is a linear combination of the three loss functions. |
+| ![Figure 9](assets/papers-explained-554-jina-embeddings-v5-text/fig-9.webp) | Text Matching (STS) Adapter: The temperature parameter τ′>0 controls the smoothness of the objective. |
+| ![Figure 10](assets/papers-explained-554-jina-embeddings-v5-text/fig-10.webp) | Combined Objective and Distillation: To optimize the adapter, a hybrid strategy is employed. |
+| ![Figure 11](assets/papers-explained-554-jina-embeddings-v5-text/fig-11.webp) | To adapt contrastive loss for supervised learning, pairs (q,p) of an anchor text and a randomly selected target with the same label are... |
+| ![Figure 12](assets/papers-explained-554-jina-embeddings-v5-text/fig-12.webp) | For Lq→d NCE, the set Nxi includes all other positives and negatives in the batch. |
+| ![Figure 13](assets/papers-explained-554-jina-embeddings-v5-text/fig-13.webp) | MTEB (Multilingual, v2) Evaluation Results. |
+| ![Figure 14](assets/papers-explained-554-jina-embeddings-v5-text/fig-14.webp) | MTEB(eng, v2) Evaluation Results. |
+| ![Figure 15](assets/papers-explained-554-jina-embeddings-v5-text/fig-15.webp) | Performance of j-v5-text-small on different languages on MMTEB compared to other models. |
+| ![Figure 16](assets/papers-explained-554-jina-embeddings-v5-text/fig-16.webp) | Retrieval Benchmark Results. |
 ## Related
 
 - [[Papers Explained Corpus]]

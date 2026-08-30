@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-01-03_Papers-Explained-280--LearnLM-df8cdc2fed45.html`
+- Source file: `raw/2025-01-03_Papers-Explained-280--LearnLM-df8cdc2fed45.md`
 - Source title: Papers Explained 280: LearnLM
 - Published: 2025-01-03
 - Canonical: [https://medium.com/@ritvik19/papers-explained-280-learnlm-df8cdc2fed45](https://medium.com/@ritvik19/papers-explained-280-learnlm-df8cdc2fed45)
@@ -57,16 +57,16 @@ LearnLM: Improving Gemini for Learning [2412.16429](https://arxiv.org/abs/2412.1
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-01-03_Papers-Explained-280--LearnLM-df8cdc2fed45.html`); local copies under `wiki/assets/papers-explained-280-learnlm/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-01-03_Papers-Explained-280--LearnLM-df8cdc2fed45.md`); local copies under `wiki/assets/papers-explained-280-learnlm/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-280-learnlm/fig-1.png) | Title card: LearnLM. |
-| ![Figure 2](assets/papers-explained-280-learnlm/fig-2.png) | LearnLM is designed to enhance Gemini’s learning capabilities and is trained using pedagogical instruction following. |
-| ![Figure 3](assets/papers-explained-280-learnlm/fig-3.png) | 2360 conversations (58,459 messages) between the LLMs and learners are collected. |
-| ![Figure 4](assets/papers-explained-280-learnlm/fig-4.png) | Pedagogy experts’ preferences over LearnLM and other contemporaneous systems. |
-| ![Figure 5](assets/papers-explained-280-learnlm/fig-5.png) | Evaluation of systems on each category of our pedagogy rubric from a 7-point Likert scale. |
-| ![Figure 6](assets/papers-explained-280-learnlm/fig-6.png) | Impressions shared by the pedagogy experts role-playing as learners in our pedagogical scenarios. |
+| ![Figure 1](assets/papers-explained-280-learnlm/fig-1.webp) | Title card: LearnLM. |
+| ![Figure 2](assets/papers-explained-280-learnlm/fig-2.webp) | LearnLM is designed to enhance Gemini’s learning capabilities and is trained using pedagogical instruction following. |
+| ![Figure 3](assets/papers-explained-280-learnlm/fig-3.webp) | 2360 conversations (58,459 messages) between the LLMs and learners are collected. |
+| ![Figure 4](assets/papers-explained-280-learnlm/fig-4.webp) | Pedagogy experts’ preferences over LearnLM and other contemporaneous systems. |
+| ![Figure 5](assets/papers-explained-280-learnlm/fig-5.webp) | Evaluation of systems on each category of our pedagogy rubric from a 7-point Likert scale. |
+| ![Figure 6](assets/papers-explained-280-learnlm/fig-6.webp) | Impressions shared by the pedagogy experts role-playing as learners in our pedagogical scenarios. |
 ## Related
 
 - [[Papers Explained Corpus]]

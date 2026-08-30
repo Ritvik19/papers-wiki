@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-03-20_Papers-Explained-545--MiniCheck-08d4d5cb9c57.html`
+- Source file: `raw/2026-03-20_Papers-Explained-545--MiniCheck-08d4d5cb9c57.md`
 - Source title: Papers Explained 545: MiniCheck
 - Published: 2026-03-20
 - Canonical: [https://medium.com/@ritvik19/papers-explained-545-minicheck-08d4d5cb9c57](https://medium.com/@ritvik19/papers-explained-545-minicheck-08d4d5cb9c57)
@@ -157,16 +157,16 @@ MiniCheck: Efficient Fact-Checking of LLMs on Grounding Documents [2404.10774](h
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-03-20_Papers-Explained-545--MiniCheck-08d4d5cb9c57.html`); local copies under `wiki/assets/papers-explained-545-minicheck/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-03-20_Papers-Explained-545--MiniCheck-08d4d5cb9c57.md`); local copies under `wiki/assets/papers-explained-545-minicheck/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-545-minicheck/fig-1.png) | Title card: MiniCheck. |
-| ![Figure 2](assets/papers-explained-545-minicheck/fig-2.png) | Existing datasets like MNLI and ANLI do not feature instances that reflect the complexity of LLM fact-checking. |
-| ![Figure 3](assets/papers-explained-545-minicheck/fig-3.png) | Step 5: Pairing Subclaims and Generated Documents. |
-| ![Figure 4](assets/papers-explained-545-minicheck/fig-4.png) | Statistics of synthetic training data. |
-| ![Figure 5](assets/papers-explained-545-minicheck/fig-5.png) | 10 datasets in LLM-AggreFact. |
-| ![Figure 6](assets/papers-explained-545-minicheck/fig-6.png) | Performance of models on the test set of LLM-AGGREFACT without per-dataset threshold tuning. |
+| ![Figure 1](assets/papers-explained-545-minicheck/fig-1.webp) | Title card: MiniCheck. |
+| ![Figure 2](assets/papers-explained-545-minicheck/fig-2.webp) | Existing datasets like MNLI and ANLI do not feature instances that reflect the complexity of LLM fact-checking. |
+| ![Figure 3](assets/papers-explained-545-minicheck/fig-3.webp) | Step 5: Pairing Subclaims and Generated Documents. |
+| ![Figure 4](assets/papers-explained-545-minicheck/fig-4.webp) | Statistics of synthetic training data. |
+| ![Figure 5](assets/papers-explained-545-minicheck/fig-5.webp) | 10 datasets in LLM-AggreFact. |
+| ![Figure 6](assets/papers-explained-545-minicheck/fig-6.webp) | Performance of models on the test set of LLM-AGGREFACT without per-dataset threshold tuning. |
 ## Related
 
 - [[Papers Explained Corpus]]

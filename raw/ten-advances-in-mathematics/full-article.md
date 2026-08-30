@@ -2,7 +2,7 @@
 
 **Source URL**: https://openai.com/index/ten-advances-in-mathematics/  
 **Published**: 2026-08-01  
-**Note**: The downloaded HTML (`full-article.html`, 387 KB) is a Next.js client-rendered shell without the article body (`BAILOUT_TO_CLIENT_SIDE_RENDERING`). This markdown is a readability reconstruction from the page metadata, companion PDFs, and public reporting on the announcement.
+**Note**: The downloaded HTML (`full-article.md`, 387 KB) is a Next.js client-rendered shell without the article body (`BAILOUT_TO_CLIENT_SIDE_RENDERING`). This markdown is a readability reconstruction from the page metadata, companion PDFs, and public reporting on the announcement.
 
 ## Summary
 

@@ -37,25 +37,25 @@ Training infrastructure is a recurring theme: JAX + Rust + Kubernetes from day o
 
 ### Announcing Grok (Nov 2023)
 
-**Source**: `raw/grok/full-article.html`
+**Source**: `raw/grok/full-article.md`
 
 xAI launches **Grok** as a witty, rebellious assistant with real-time 𝕏 knowledge. **Grok-0** (33B) approaches LLaMA 2 70B efficiency; **Grok-1** reaches 73% MMLU and 63.2% HumanEval — leading its compute class vs GPT-3.5. Hungarian national math exam (May 2023, hand-graded): Grok-1 **59%** (C). Engineering stack: Kubernetes, Rust, JAX; focus on MFU and fault-tolerant distributed training. Research directions: scalable oversight, formal verification, long-context retrieval, adversarial robustness, multimodal.
 
 ### Open Release of Grok-1 (Mar 2024)
 
-**Source**: `raw/grok-os/full-article.html` · URL slug `grok-os`
+**Source**: `raw/grok-os/full-article.md` · URL slug `grok-os`
 
 xAI releases **Grok-1 base checkpoint** (pre-training concluded Oct 2023): **314B parameter MoE**, **25% active weights per token**, Apache 2.0, not fine-tuned for dialogue. Weights on GitHub (`xai-org/grok`). This is where the 314B MoE figure originates — the Nov 2023 announcement focused on Grok-1 benchmark results without publishing the full MoE scale.
 
 ### Grok-1.5 (Mar 2024)
 
-**Source**: `raw/grok-1.5/full-article.html`
+**Source**: `raw/grok-1.5/full-article.md`
 
 **Grok-1.5** adds **128K context** (16× prior length) with perfect NIAH retrieval to 128K. Reasoning jumps: **81.3% MMLU**, **50.6% MATH**, **90% GSM8K**, **74.1% HumanEval**. Same JAX/Rust/Kubernetes training orchestrator with automatic bad-node ejection.
 
 ### Grok-1.5V (Apr 2024)
 
-**Source**: `raw/grok-1.5v/full-article.html`
+**Source**: `raw/grok-1.5v/full-article.md`
 
 First multimodal **Grok-1.5V**: documents, diagrams, charts, screenshots, photos. Introduces **RealWorldQA** (700+ images, CC BY-ND 4.0) for spatial understanding — Grok-1.5V **68.7%** vs GPT-4V 61.4%. Competitive on MMMU, MathVista, DocVQA, ChartQA.
 
@@ -63,13 +63,13 @@ First multimodal **Grok-1.5V**: documents, diagrams, charts, screenshots, photos
 
 ### Grok-2 Beta (Aug 2024)
 
-**Source**: `raw/grok-2/full-article.html`
+**Source**: `raw/grok-2/full-article.md`
 
 **Grok-2** and **Grok-2 mini** ship on 𝕏 (tested as LMSYS `sus-column-r`), beating Claude 3.5 Sonnet and GPT-4-Turbo on Chatbot Arena. Grok-2: **87.5% MMLU**, **76.1% MATH**, **88.4% HumanEval**, strong DocVQA/MathVista. Redesigned 𝕏 Grok UI; FLUX.1 image experiments with Black Forest Labs. Enterprise API with multi-region inference, MFA, management API.
 
 ### Aurora Image Generation (Dec 2024)
 
-**Source**: `raw/grok-image-generation-release/full-article.html`
+**Source**: `raw/grok-image-generation-release/full-article.md`
 
 **Aurora**: autoregressive MoE trained on interleaved text+image tokens; photorealistic rendering and text-in-image. Image editing (style transfer, inpainting) coming to 𝕏. Compared favorably vs Imagen 3, Flux.1 Pro, Ideogram 2.0, DALL-E 3 on entity/text/meme/portrait tasks.
 
@@ -77,7 +77,7 @@ First multimodal **Grok-1.5V**: documents, diagrams, charts, screenshots, photos
 
 ### Grok 3 Beta (Feb 2025)
 
-**Source**: `raw/grok-3/full-article.html`
+**Source**: `raw/grok-3/full-article.md`
 
 **Grok 3** trained on **Colossus** at **10×** prior compute. **Grok 3 (Think)** / **Grok 3 mini (Think)**: RL-refined chain-of-thought; **93.3% AIME'25** (cons@64), **84.6% GPQA**, **79.4% LiveCodeBench**. Non-reasoning Grok 3: **79.9% MMLU-Pro**, **83.3% LOFT (128k)**. **1M token context** (8× prior). Early `chocolate` build: **1402** Chatbot Arena Elo.
 
@@ -87,7 +87,7 @@ First multimodal **Grok-1.5V**: documents, diagrams, charts, screenshots, photos
 
 ### Grok 4 (Jul 2025)
 
-**Source**: `raw/grok-4/full-article.html`
+**Source**: `raw/grok-4/full-article.md`
 
 **Grok 4** scales RL on **Colossus 200K GPUs** — **6×** training efficiency vs Grok 3 Reasoning; verifiable data expanded beyond math/code. **Grok 4 Heavy**: parallel test-time compute; first **50%** on Humanity's Last Exam (full set with tools); **50.7%** HLE text subset. Benchmarks: **15.9% ARC-AGI-2**, **61.9% USAMO'25** (Heavy), Vending-Bench agentic dominance.
 
@@ -95,25 +95,25 @@ First multimodal **Grok-1.5V**: documents, diagrams, charts, screenshots, photos
 
 ### Grok Code Fast 1 (Aug 2025)
 
-**Source**: `raw/grok-code-fast-1/full-article.html`
+**Source**: `raw/grok-code-fast-1/full-article.md`
 
 **grok-code-fast-1** (`sonic` codename): purpose-built for agentic coding in Cursor, GitHub Copilot, Windsurf, etc. **70.8% SWE-Bench-Verified** (internal harness). Pricing: **$0.20** input / **$1.50** output / **$0.02** cached per M tokens. >90% prompt cache hit rates with partners. Multimodal + parallel tool-calling variant in training.
 
 ### Grok 4 Fast (Sep 2025)
 
-**Source**: `raw/grok-4-fast/full-article.html`
+**Source**: `raw/grok-4-fast/full-article.md`
 
 **Grok 4 Fast**: **2M context**; unified **reasoning + non-reasoning** in one weight set (system-prompt steered). **40% fewer thinking tokens** vs Grok 4 → **98%** cost reduction for same benchmark performance. **85.7% GPQA**, **92% AIME'25** (no tools). SOTA agentic search (BrowseComp 44.9%, X Browse 58%). API: `grok-4-fast-reasoning` / `grok-4-fast-non-reasoning`; tiered pricing above 128K tokens. Free users get Grok 4 Fast in Auto mode.
 
 ### Grok 4.1 (Nov 2025)
 
-**Source**: `raw/grok-4-1/full-article.html`
+**Source**: `raw/grok-4-1/full-article.md`
 
 **Grok 4.1** optimizes personality, empathy, and alignment via RL with frontier models as reward judges. Silent rollout Nov 1–14: **64.78%** blind preference vs prior production Grok. **Grok 4.1 Thinking** (`quasarflux`): **#1** LMArena at **1483 Elo** (+31 over highest non-xAI). **Grok 4.1** non-reasoning (`tensor`): **#2** at **1465 Elo** — beats all rivals' full-reasoning configs. Lower hallucination rate on info-seeking + FActScore vs Grok 4 Fast.
 
 ### Grok 4.1 Fast and Agent Tools API (Nov 2025)
 
-**Source**: `raw/grok-4-1-fast/full-article.html`
+**Source**: `raw/grok-4-1-fast/full-article.md`
 
 **grok-4-1-fast-reasoning** / **-non-reasoning**: 2M context; SOTA on Berkeley Function Calling v4 and τ²-bench Telecom. **Agent Tools API**: server-side web_search, x_search, code_execution, collections_search, MCP — no separate API keys for tools. Research-Eval Reka: **63.9** score at **$0.046** avg cost. Tool calls from **$5 / 1000** successful invocations.
 
@@ -121,37 +121,37 @@ First multimodal **Grok-1.5V**: documents, diagrams, charts, screenshots, photos
 
 ### Grok Voice Agent API (Dec 2025)
 
-**Source**: `raw/grok-voice-agent-api/full-article.html`
+**Source**: `raw/grok-voice-agent-api/full-article.md`
 
 In-house VAD, tokenizer, audio models. **#1 Big Bench Audio**; **<1s** time-to-first-audio (~5× faster than competitors). **$0.05/min** flat pricing. Voices: Ara, Eve, Leo, Rex, Sal. Dozens of languages; OpenAI Realtime API–compatible. Powers Tesla in-vehicle Grok with nav/vehicle tools.
 
 ### Grok Imagine API (Jan 2026)
 
-**Source**: `raw/grok-imagine-api/full-article.html`
+**Source**: `raw/grok-imagine-api/full-article.md`
 
 Unified **video generation + editing** API. AA Text-to-Video **#1** on price/latency tradeoff (Jan 2026). Video editing beats Kling o1 / Runway Aleph on IVEBench human evals. Partners: fal.ai, ComfyUI, HeyGen.
 
 ### Grok STT and TTS APIs (Apr 2026)
 
-**Source**: `raw/grok-stt-and-tts-apis/full-article.html`
+**Source**: `raw/grok-stt-and-tts-apis/full-article.md`
 
 Standalone **Grok Speech to Text** and **Grok Text to Speech** (same stack as Grok Voice / Tesla / Starlink). STT: **$0.10/hr** batch, **$0.20/hr** streaming; word timestamps, diarization, multichannel, inverse text normalization. **6.9%** overall WER vs competitors. TTS: **$15/M characters**; speech tags `[whisper]`, `[laugh]`, `[sigh]`.
 
 ### Grok Voice Think Fast 1.0 (Apr 2026)
 
-**Source**: `raw/grok-voice-think-fast-1/full-article.html`
+**Source**: `raw/grok-voice-think-fast-1/full-article.md`
 
 **grok-voice-think-fast-1.0**: flagship voice agent for complex multi-tool workflows. **#1 τ-voice Bench** (retail, airline, telecom). Background reasoning with zero added latency. Starlink: **70%** support resolution, **20%** phone sales conversion, **28** tools; powers **+1 (888) GO STARLINK**.
 
 ### Grok Imagine 1.5 Preview (Jun 2026)
 
-**Source**: `raw/grok-imagine-1-5/full-article.html`
+**Source**: `raw/grok-imagine-1-5/full-article.md`
 
 **grok-imagine-video-1.5-preview**: image-to-video API; natural-language camera/motion/sound prompts; up to **720p**, **10s** duration; chainable sequences for longer scenes.
 
 ### Grok 4.5 (Jul 2026)
 
-**Sources**: `raw/grok-4-5/full-article.html`, `raw/grok-4-5/full-article.md` ([SpaceXAI](https://x.ai/news/grok-4-5)); `raw/grok-4-5-cursor/full-article.html`, `raw/grok-4-5-cursor/full-article.md` ([Cursor](https://cursor.com/blog/grok-4-5))
+**Sources**: `raw/grok-4-5/full-article.md`, `raw/grok-4-5/full-article.md` ([SpaceXAI](https://x.ai/news/grok-4-5)); `raw/grok-4-5-cursor/full-article.md`, `raw/grok-4-5-cursor/full-article.md` ([Cursor](https://cursor.com/blog/grok-4-5))
 
 On Jul 8, 2026, SpaceXAI (branding used on the x.ai post; see [[xAI]]) and [[Cursor]] jointly released **Grok 4.5**, a **mixture-of-experts** model co-trained for long-horizon agentic work across software engineering, data science, finance, legal tasks, and other knowledge work — Cursor's first model built for more than software engineering alone. Training drew on trillions of tokens of Cursor developer and agent-interaction data (codebases, tool use, harness behavior) plus a deliberately broader mix than [[Introducing Composer 2.5|Composer 2.5]]: high-quality STEM tasks, research papers, and knowledge work. SpaceXAI trained across **tens of thousands of NVIDIA GB300 GPUs** with heavy data curation (deduplication, quality scoring, domain-focused selection) and **hundreds of thousands of RL tasks** in highly asynchronous runs where agentic rollouts can last many hours. Cursor contributed RL environments built by a **distributed agent system**: engineers specify a problem and verifier, and agent groups construct, test, and refine each environment at scale.
 
@@ -170,7 +170,7 @@ SpaceXAI separately reports **66.1%** pass@1 on **DeepSWE 1.1** (vs Fable max 64
 
 **Product & pricing**: Default model in **Grok Build** (Excel/PowerPoint/Word plugins for complex models, diagrams, and prose). Available in Cursor (desktop, web, iOS, CLI, SDK) with double usage the first week and new cybersecurity safeguards. API id `grok-4.5` at **$2/M input, $6/M output**; Cursor also offers a fast variant at **$4/M in, $18/M out**. Limited-time free usage in Grok Build and Cursor. Not available in the EU until mid-July 2026. **Grok 4.5** and **Composer 2.5** coexist as different weight classes.
 
-![Grok 4.5 benchmark results](../assets/grok-4-5-cursor/fig-1.png)
+![Grok 4.5 benchmark results](../assets/grok-4-5-cursor/fig-1.webp)
 
 ## Key Claims
 

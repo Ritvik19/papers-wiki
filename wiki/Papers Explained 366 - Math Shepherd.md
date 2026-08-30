@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-05-15_Papers-Explained-366--Math-Shepherd-234b1bdfbcae.html`
+- Source file: `raw/2025-05-15_Papers-Explained-366--Math-Shepherd-234b1bdfbcae.md`
 - Source title: Papers Explained 366: Math Shepherd
 - Published: 2025-05-15
 - Canonical: [https://medium.com/@ritvik19/papers-explained-366-math-shepherd-234b1bdfbcae](https://medium.com/@ritvik19/papers-explained-366-math-shepherd-234b1bdfbcae)
@@ -125,20 +125,20 @@ Math-Shepherd: Verify and Reinforce LLMs Step-by-step without Human Annotations 
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-05-15_Papers-Explained-366--Math-Shepherd-234b1bdfbcae.html`); local copies under `wiki/assets/papers-explained-366-math-shepherd/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-05-15_Papers-Explained-366--Math-Shepherd-234b1bdfbcae.md`); local copies under `wiki/assets/papers-explained-366-math-shepherd/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-366-math-shepherd/fig-1.png) | Title card: Math Shepherd. |
-| ![Figure 2](assets/papers-explained-366-math-shepherd/fig-2.png) | Given a mathematical problem p and its solution s, ORM (P × S → R) assigns a single real-value to s to indicate whether s is correct. |
-| ![Figure 3](assets/papers-explained-366-math-shepherd/fig-3.png) | Take a step further, PRM (P × S → R+) assigns a score to each reasoning step of s, which is usually trained with. |
-| ![Figure 4](assets/papers-explained-366-math-shepherd/fig-4.png) | Process Reward Model. |
-| ![Figure 5](assets/papers-explained-366-math-shepherd/fig-5.png) | Hard Estimation: HE supposes that a reasoning step is good as long as it can reach the correct answer a∗. |
-| ![Figure 6](assets/papers-explained-366-math-shepherd/fig-6.png) | Soft Estimation: SE assumes the quality of a step as the frequency with which it reaches the correct answer. |
-| ![Figure 7](assets/papers-explained-366-math-shepherd/fig-7.png) | The lowest score assigned by the PRM across all steps of a solution is used as the overall score for that solution. |
-| ![Figure 8](assets/papers-explained-366-math-shepherd/fig-8.png) | Performances of different LLMs on GSM8K and MATH with different verification strategies. |
-| ![Figure 9](assets/papers-explained-366-math-shepherd/fig-9.png) | Performances of different 7B models on GSM8K and MATH with greedy decoding. |
-| ![Figure 10](assets/papers-explained-366-math-shepherd/fig-10.png) | Results of reinforcement learning and verification combination. |
+| ![Figure 1](assets/papers-explained-366-math-shepherd/fig-1.webp) | Title card: Math Shepherd. |
+| ![Figure 2](assets/papers-explained-366-math-shepherd/fig-2.webp) | Given a mathematical problem p and its solution s, ORM (P × S → R) assigns a single real-value to s to indicate whether s is correct. |
+| ![Figure 3](assets/papers-explained-366-math-shepherd/fig-3.webp) | Take a step further, PRM (P × S → R+) assigns a score to each reasoning step of s, which is usually trained with. |
+| ![Figure 4](assets/papers-explained-366-math-shepherd/fig-4.webp) | Process Reward Model. |
+| ![Figure 5](assets/papers-explained-366-math-shepherd/fig-5.webp) | Hard Estimation: HE supposes that a reasoning step is good as long as it can reach the correct answer a∗. |
+| ![Figure 6](assets/papers-explained-366-math-shepherd/fig-6.webp) | Soft Estimation: SE assumes the quality of a step as the frequency with which it reaches the correct answer. |
+| ![Figure 7](assets/papers-explained-366-math-shepherd/fig-7.webp) | The lowest score assigned by the PRM across all steps of a solution is used as the overall score for that solution. |
+| ![Figure 8](assets/papers-explained-366-math-shepherd/fig-8.webp) | Performances of different LLMs on GSM8K and MATH with different verification strategies. |
+| ![Figure 9](assets/papers-explained-366-math-shepherd/fig-9.webp) | Performances of different 7B models on GSM8K and MATH with greedy decoding. |
+| ![Figure 10](assets/papers-explained-366-math-shepherd/fig-10.webp) | Results of reinforcement learning and verification combination. |
 ## Related
 
 - [[Papers Explained Corpus]]

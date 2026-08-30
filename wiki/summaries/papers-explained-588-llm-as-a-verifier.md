@@ -1,6 +1,6 @@
 # Papers Explained 588: LLM-as-a-Verifier
 
-**Source**: `raw/2026-08-05_Papers-Explained-588--LLM-as-a-Verifier-58c8ab45fb3f.html`  
+**Source**: `raw/2026-08-05_Papers-Explained-588--LLM-as-a-Verifier-58c8ab45fb3f.md`  
 **Paper**: https://arxiv.org/abs/2607.05391  
 **GitHub**: https://github.com/llm-as-a-verifier/llm-as-a-verifier  
 **Ingested**: 2026-08-23  
@@ -10,7 +10,7 @@
 
 **LLM-as-a-Verifier** is a general-purpose verification framework that provides fine-grained, continuous feedback for agentic tasks without requiring additional training or dedicated reward models. Unlike standard LLM judges that produce discrete, coarse scores for candidate solutions, LLM-as-a-Verifier extracts the conditional next-token distribution over an ordered set of scoring tokens $V_{score} = \{v_1, \dots, v_G\}$ and calculates the expectation over the score token logits. This yields a continuous, high-resolution reward $R(x, \tau) \in [0, 1]$ for any trajectory $\tau$ conditioned on task prompt $x$ and domain criterion $c$.
 
-![Papers Explained 588: LLM-as-a-Verifier overview](../assets/papers-explained-588-llm-as-a-verifier/fig-1.png)
+![Papers Explained 588: LLM-as-a-Verifier overview](../assets/papers-explained-588-llm-as-a-verifier/fig-1.webp)
 
 ### Continuous Reward & Bradley–Terry Preferences
 
@@ -22,7 +22,7 @@ These continuous rewards are converted into pairwise preferences using the Bradl
 
 $$P(\tau_i \succ \tau_j \mid x) = \frac{1}{1 + e^{-(R(x, \tau_i) - R(x, \tau_j))}}$$
 
-![Methodology and Scoring Prompt](../assets/papers-explained-588-llm-as-a-verifier/fig-2.png)
+![Methodology and Scoring Prompt](../assets/papers-explained-588-llm-as-a-verifier/fig-2.webp)
 
 ### Probabilistic Pivot Tournament (PPT)
 
@@ -32,7 +32,7 @@ Standard round-robin pairwise verification across $N$ candidate trajectories req
 2. **Pivot Selection**: Rank all candidates by their ring-pass win-rates $w_i / c_i$ and select the top-$k$ candidates as the pivot set $\mathcal{P}$.
 3. **Pivot Rounds**: Evaluate all non-pivot vs. pivot pairs and pivot vs. pivot pairs. Aggregate all comparison scores into normalized preference tallies $w_i / c_i$.
 
-![Probabilistic Pivot Tournament](../assets/papers-explained-588-llm-as-a-verifier/fig-6.png)
+![Probabilistic Pivot Tournament](../assets/papers-explained-588-llm-as-a-verifier/fig-6.webp)
 
 ### Verification Scaling Levers
 
@@ -41,7 +41,7 @@ Verification accuracy scales along three independent, complementary axes:
 - **Repetition ($K$)**: Repeated evaluations shrink the variance by $\mathcal{O}(1/K)$, increasing accuracy from 74.7% ($K=1$) to 77.4% ($K=16$).
 - **Criteria Decomposition ($C$)**: Decomposing monolithic instructions into $C$ distinct sub-criteria prevents conflation and improves accuracy from 75.2% to 78.3%.
 
-![Verification Scaling](../assets/papers-explained-588-llm-as-a-verifier/fig-8.png)
+![Verification Scaling](../assets/papers-explained-588-llm-as-a-verifier/fig-8.webp)
 
 ### VOC & Dense RL Rewards
 
@@ -59,15 +59,15 @@ The continuous verifier output acts as an effective proxy for intermediate task 
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/papers-explained-588-llm-as-a-verifier/fig-1.png) | Papers Explained 588: LLM-as-a-Verifier overview banner. | Overview |
-| ![fig-2](../assets/papers-explained-588-llm-as-a-verifier/fig-2.png) | Scoring prompt and logprob extraction setup. | Methodology |
-| ![fig-3](../assets/papers-explained-588-llm-as-a-verifier/fig-3.png) | Continuous reward formulation. | Methodology |
-| ![fig-4](../assets/papers-explained-588-llm-as-a-verifier/fig-4.png) | Bradley-Terry preference probability conversion. | Methodology |
-| ![fig-5](../assets/papers-explained-588-llm-as-a-verifier/fig-5.png) | Round-robin tournament formulation. | Methodology |
-| ![fig-6](../assets/papers-explained-588-llm-as-a-verifier/fig-6.png) | Probabilistic Pivot Tournament (PPT) workflow. | PPT |
-| ![fig-7](../assets/papers-explained-588-llm-as-a-verifier/fig-7.png) | PPT with Ring-based Pivot Selection algorithm diagram. | PPT |
-| ![fig-8](../assets/papers-explained-588-llm-as-a-verifier/fig-8.png) | Verification scaling across Granularity G, Repetition K, and Criteria C. | Scaling |
-| ![fig-9](../assets/papers-explained-588-llm-as-a-verifier/fig-9.png) | Value-Order Correlation (VOC) formulation for step-level progress. | VOC |
+| ![fig-1](../assets/papers-explained-588-llm-as-a-verifier/fig-1.webp) | Papers Explained 588: LLM-as-a-Verifier overview banner. | Overview |
+| ![fig-2](../assets/papers-explained-588-llm-as-a-verifier/fig-2.webp) | Scoring prompt and logprob extraction setup. | Methodology |
+| ![fig-3](../assets/papers-explained-588-llm-as-a-verifier/fig-3.webp) | Continuous reward formulation. | Methodology |
+| ![fig-4](../assets/papers-explained-588-llm-as-a-verifier/fig-4.webp) | Bradley-Terry preference probability conversion. | Methodology |
+| ![fig-5](../assets/papers-explained-588-llm-as-a-verifier/fig-5.webp) | Round-robin tournament formulation. | Methodology |
+| ![fig-6](../assets/papers-explained-588-llm-as-a-verifier/fig-6.webp) | Probabilistic Pivot Tournament (PPT) workflow. | PPT |
+| ![fig-7](../assets/papers-explained-588-llm-as-a-verifier/fig-7.webp) | PPT with Ring-based Pivot Selection algorithm diagram. | PPT |
+| ![fig-8](../assets/papers-explained-588-llm-as-a-verifier/fig-8.webp) | Verification scaling across Granularity G, Repetition K, and Criteria C. | Scaling |
+| ![fig-9](../assets/papers-explained-588-llm-as-a-verifier/fig-9.webp) | Value-Order Correlation (VOC) formulation for step-level progress. | VOC |
 
 ## Entities
 

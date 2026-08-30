@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-05-08_Papers-Explained-45--Codex-caca940feb31.html`
+- Source file: `raw/2023-05-08_Papers-Explained-45--Codex-caca940feb31.md`
 - Source title: Papers Explained 45: Codex
 - Published: 2023-05-08
 - Canonical: [https://medium.com/@ritvik19/papers-explained-45-codex-caca940feb31](https://medium.com/@ritvik19/papers-explained-45-codex-caca940feb31)
@@ -99,16 +99,16 @@ Evaluating Large Language Models Trained on Code [2107.03374](https://arxiv.org/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-05-08_Papers-Explained-45--Codex-caca940feb31.html`); local copies under `wiki/assets/papers-explained-45-codex/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-05-08_Papers-Explained-45--Codex-caca940feb31.md`); local copies under `wiki/assets/papers-explained-45-codex/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-45-codex/fig-1.png) | Title card: Codex. |
-| ![Figure 2](assets/papers-explained-45-codex/fig-2.png) | Functional Correctness. |
-| ![Figure 3](assets/papers-explained-45-codex/fig-3.png) | Using the optimal temperatures 0.2 and 0.8 for pass@1 and pass@100, we plot these two metrics as a function of model size. Performance appears to scale smoothly as a sigmoid in logparameters. |
-| ![Figure 4](assets/papers-explained-45-codex/fig-4.png) | Codex, GPT-Neo, & TabNine evaluations for HumanEval. We find that GPT-J pass@1 is between Codex-85M and Codex300M performance. |
-| ![Figure 5](assets/papers-explained-45-codex/fig-5.png) | Finetuned GPT-Neo numbers from the APPS paper. For Codex-12B, the number of passing programs that timeout on some test is in the bracket. We used temperature 0.6 for sampling to cover all k in pass@k, so raw pass@1 results could be improved with lower temperature. |
-| ![Figure 6](assets/papers-explained-45-codex/fig-6.png) | Pass rates for our docstring generating model Codex-D, which is evaluated by hand-grading 10 samples per task due to the lack of a ground-truth automatic evaluation. We find similar but lower pass-rates compared to Codex-S. |
+| ![Figure 1](assets/papers-explained-45-codex/fig-1.webp) | Title card: Codex. |
+| ![Figure 2](assets/papers-explained-45-codex/fig-2.webp) | Functional Correctness. |
+| ![Figure 3](assets/papers-explained-45-codex/fig-3.webp) | Using the optimal temperatures 0.2 and 0.8 for pass@1 and pass@100, we plot these two metrics as a function of model size. Performance appears to scale smoothly as a sigmoid in logparameters. |
+| ![Figure 4](assets/papers-explained-45-codex/fig-4.webp) | Codex, GPT-Neo, & TabNine evaluations for HumanEval. We find that GPT-J pass@1 is between Codex-85M and Codex300M performance. |
+| ![Figure 5](assets/papers-explained-45-codex/fig-5.webp) | Finetuned GPT-Neo numbers from the APPS paper. For Codex-12B, the number of passing programs that timeout on some test is in the bracket. We used temperature 0.6 for sampling to cover all k in pass@k, so raw pass@1 results could be improved with lower temperature. |
+| ![Figure 6](assets/papers-explained-45-codex/fig-6.webp) | Pass rates for our docstring generating model Codex-D, which is evaluated by hand-grading 10 samples per task due to the lack of a ground-truth automatic evaluation. We find similar but lower pass-rates compared to Codex-S. |
 ## Related
 
 - [[Papers Explained Corpus]]

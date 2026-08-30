@@ -1,6 +1,6 @@
 # T5Gemma 2
 
-**Source**: `raw/t5gemma-2/full-article.html` (382 KB)  
+**Source**: `raw/t5gemma-2/full-article.md` (382 KB)  
 **URL**: https://blog.google/innovation-and-ai/technology/developers-tools/t5gemma-2/  
 **Published**: Dec 18, 2025  
 **Ingested**: 2026-06-06  
@@ -25,13 +25,13 @@ T5Gemma 2 is positioned as the first multimodal and long-context encoder-decoder
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/t5gemma-2/fig-1.png) | STEM and code benchmark comparison (carousel 1) | — |
-| ![fig-2](../assets/t5gemma-2/fig-2.png) | Reasoning and factuality benchmark comparison (carousel 1) | — |
-| ![fig-3](../assets/t5gemma-2/fig-3.png) | Multilingual benchmark comparison (carousel 1) | — |
-| ![fig-4](../assets/t5gemma-2/fig-4.png) | Multimodal benchmark comparison (carousel 1) | — |
-| ![fig-5](../assets/t5gemma-2/fig-5.png) | Long-context benchmark comparison (carousel 1) | — |
+| ![fig-1](../assets/t5gemma-2/fig-1.webp) | STEM and code benchmark comparison (carousel 1) | — |
+| ![fig-2](../assets/t5gemma-2/fig-2.webp) | Reasoning and factuality benchmark comparison (carousel 1) | — |
+| ![fig-3](../assets/t5gemma-2/fig-3.webp) | Multilingual benchmark comparison (carousel 1) | — |
+| ![fig-4](../assets/t5gemma-2/fig-4.webp) | Multimodal benchmark comparison (carousel 1) | — |
+| ![fig-5](../assets/t5gemma-2/fig-5.webp) | Long-context benchmark comparison (carousel 1) | — |
 
-![Multilingual benchmarks](../assets/t5gemma-2/fig-3.png)
+![Multilingual benchmarks](../assets/t5gemma-2/fig-3.webp)
 
 ## Entities
 

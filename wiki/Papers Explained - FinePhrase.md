@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/draft_Papers-Explained--FinePhrase-bf43cd53d6b9.html`
+- Source file: `raw/draft_Papers-Explained--FinePhrase-bf43cd53d6b9.md`
 - Source title: Papers Explained: FinePhrase
 - Canonical: [https://medium.com/p/bf43cd53d6b9](https://medium.com/p/bf43cd53d6b9)
 
@@ -444,26 +444,26 @@ Original Draft: [TEXT]
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/draft_Papers-Explained--FinePhrase-bf43cd53d6b9.html`); local copies under `wiki/assets/papers-explained-finephrase/` when download succeeded.
+Figures from the Medium HTML export (`raw/draft_Papers-Explained--FinePhrase-bf43cd53d6b9.md`); local copies under `wiki/assets/papers-explained-finephrase/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-finephrase/fig-1.png) | FinePhrase headline results: 486B-token synthetic corpus after 90 controlled experiments and >1T generated tokens. |
-| ![Figure 2](assets/papers-explained-finephrase/fig-2.png) | Three study axes—rephrasing strategy, generator choice, seed quality—and how they interact. |
-| ![Figure 3](assets/papers-explained-finephrase/fig-3.png) | Experimental pipeline from curated seed corpora through prompts to evaluator suites. |
-| ![Figure 4](assets/papers-explained-finephrase/fig-4.png) | Baseline synthetic datasets vs DCLM under identical 1.7B / 20B-token training. |
-| ![Figure 5](assets/papers-explained-finephrase/fig-5.png) | Isolated prompts inside Nemotron-HQ-Synth, REWIRE, and BeyondWeb mixes vs DCLM per benchmark. |
-| ![Figure 6](assets/papers-explained-finephrase/fig-6.png) | Nine new instructional prompts (FAQ, math, table, tutorial, …) compared with DCLM. |
-| ![Figure 7](assets/papers-explained-finephrase/fig-7.png) | Generator scale curves for Gemma-3 and SmolLM2 on representative prompts. |
-| ![Figure 8](assets/papers-explained-finephrase/fig-8.png) | 1B vs 12B Gemma-3 rewriters on high- vs low-quality FineWeb seeds. |
-| ![Figure 9](assets/papers-explained-finephrase/fig-9.png) | Model-family comparison near 1B parameters (SmolLM2 vs Gemma, Llama, Qwen, Granite, Falcon). |
-| ![Figure 10](assets/papers-explained-finephrase/fig-10.png) | Qwen 1.5–3 generations evaluated on the tutorial prompt. |
-| ![Figure 11](assets/papers-explained-finephrase/fig-11.png) | Synthetic-only training vs mixing synthetic rewrites with original web text. |
-| ![Figure 12](assets/papers-explained-finephrase/fig-12.png) | Effect of mix-in dataset when combining tutorial rewrites with DCLM/Cosmopedia/FineWeb variants. |
-| ![Figure 13](assets/papers-explained-finephrase/fig-13.png) | Source corpora compared when mix-in volume mirrors each source (faq & tutorial prompts). |
-| ![Figure 14](assets/papers-explained-finephrase/fig-14.png) | Same sources with a fixed FineWeb-Edu-HQ mix-in (isolating rewriter vs seed quality). |
-| ![Figure 15](assets/papers-explained-finephrase/fig-15.png) | Diversity/enrichment strategies vs the best single recipe (performance averages, no compounding). |
-| ![Figure 16](assets/papers-explained-finephrase/fig-16.png) | REWIRE prompt with intentional typos vs cleaned spelling at 1B and 12B scales. |
+| ![Figure 1](assets/papers-explained-finephrase/fig-1.webp) | FinePhrase headline results: 486B-token synthetic corpus after 90 controlled experiments and >1T generated tokens. |
+| ![Figure 2](assets/papers-explained-finephrase/fig-2.webp) | Three study axes—rephrasing strategy, generator choice, seed quality—and how they interact. |
+| ![Figure 3](assets/papers-explained-finephrase/fig-3.webp) | Experimental pipeline from curated seed corpora through prompts to evaluator suites. |
+| ![Figure 4](assets/papers-explained-finephrase/fig-4.webp) | Baseline synthetic datasets vs DCLM under identical 1.7B / 20B-token training. |
+| ![Figure 5](assets/papers-explained-finephrase/fig-5.webp) | Isolated prompts inside Nemotron-HQ-Synth, REWIRE, and BeyondWeb mixes vs DCLM per benchmark. |
+| ![Figure 6](assets/papers-explained-finephrase/fig-6.webp) | Nine new instructional prompts (FAQ, math, table, tutorial, …) compared with DCLM. |
+| ![Figure 7](assets/papers-explained-finephrase/fig-7.webp) | Generator scale curves for Gemma-3 and SmolLM2 on representative prompts. |
+| ![Figure 8](assets/papers-explained-finephrase/fig-8.webp) | 1B vs 12B Gemma-3 rewriters on high- vs low-quality FineWeb seeds. |
+| ![Figure 9](assets/papers-explained-finephrase/fig-9.webp) | Model-family comparison near 1B parameters (SmolLM2 vs Gemma, Llama, Qwen, Granite, Falcon). |
+| ![Figure 10](assets/papers-explained-finephrase/fig-10.webp) | Qwen 1.5–3 generations evaluated on the tutorial prompt. |
+| ![Figure 11](assets/papers-explained-finephrase/fig-11.webp) | Synthetic-only training vs mixing synthetic rewrites with original web text. |
+| ![Figure 12](assets/papers-explained-finephrase/fig-12.webp) | Effect of mix-in dataset when combining tutorial rewrites with DCLM/Cosmopedia/FineWeb variants. |
+| ![Figure 13](assets/papers-explained-finephrase/fig-13.webp) | Source corpora compared when mix-in volume mirrors each source (faq & tutorial prompts). |
+| ![Figure 14](assets/papers-explained-finephrase/fig-14.webp) | Same sources with a fixed FineWeb-Edu-HQ mix-in (isolating rewriter vs seed quality). |
+| ![Figure 15](assets/papers-explained-finephrase/fig-15.webp) | Diversity/enrichment strategies vs the best single recipe (performance averages, no compounding). |
+| ![Figure 16](assets/papers-explained-finephrase/fig-16.webp) | REWIRE prompt with intentional typos vs cleaned spelling at 1B and 12B scales. |
 ## Related
 
 - [[Papers Explained Corpus]]

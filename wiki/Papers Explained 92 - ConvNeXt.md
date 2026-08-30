@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-01-19_Papers-Explained-92--ConvNeXt-d13385d9177d.html`
+- Source file: `raw/2024-01-19_Papers-Explained-92--ConvNeXt-d13385d9177d.md`
 - Source title: Papers Explained 92: ConvNeXt
 - Published: 2024-01-19
 - Canonical: [https://medium.com/@ritvik19/papers-explained-92-convnext-d13385d9177d](https://medium.com/@ritvik19/papers-explained-92-convnext-d13385d9177d)
@@ -109,17 +109,17 @@ Recommended Reading [Convolutional Neural Networks](https://medium.com/@ritvik19
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-01-19_Papers-Explained-92--ConvNeXt-d13385d9177d.html`); local copies under `wiki/assets/papers-explained-92-convnext/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-01-19_Papers-Explained-92--ConvNeXt-d13385d9177d.md`); local copies under `wiki/assets/papers-explained-92-convnext/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-92-convnext/fig-1.png) | Title card: ConvNeXt. |
-| ![Figure 2](assets/papers-explained-92-convnext/fig-2.png) | Block Designs for Swin Transformer, ResNet and ConvNeXt. |
-| ![Figure 3](assets/papers-explained-92-convnext/fig-3.png) | Block modifications and resulted specifications. (a) ResNeXt block (b) an inverted bottleneck block (c) the position of the spatial depthwise conv layer is moved up. |
-| ![Figure 4](assets/papers-explained-92-convnext/fig-4.png) | Detailed architecture specifications for ResNet-50, ConvNeXt-T and Swin-T. |
-| ![Figure 5](assets/papers-explained-92-convnext/fig-5.png) | Classification accuracy on ImageNet-1K. |
-| ![Figure 6](assets/papers-explained-92-convnext/fig-6.png) | COCO object detection and segmentation results using Mask-RCNN and Cascade Mask-RCNN. |
-| ![Figure 7](assets/papers-explained-92-convnext/fig-7.png) | ADE20K validation results using UperNet. |
+| ![Figure 1](assets/papers-explained-92-convnext/fig-1.webp) | Title card: ConvNeXt. |
+| ![Figure 2](assets/papers-explained-92-convnext/fig-2.webp) | Block Designs for Swin Transformer, ResNet and ConvNeXt. |
+| ![Figure 3](assets/papers-explained-92-convnext/fig-3.webp) | Block modifications and resulted specifications. (a) ResNeXt block (b) an inverted bottleneck block (c) the position of the spatial depthwise conv layer is moved up. |
+| ![Figure 4](assets/papers-explained-92-convnext/fig-4.webp) | Detailed architecture specifications for ResNet-50, ConvNeXt-T and Swin-T. |
+| ![Figure 5](assets/papers-explained-92-convnext/fig-5.webp) | Classification accuracy on ImageNet-1K. |
+| ![Figure 6](assets/papers-explained-92-convnext/fig-6.webp) | COCO object detection and segmentation results using Mask-RCNN and Cascade Mask-RCNN. |
+| ![Figure 7](assets/papers-explained-92-convnext/fig-7.webp) | ADE20K validation results using UperNet. |
 ## Related
 
 - [[Papers Explained Corpus]]

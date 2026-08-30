@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-07-31_Papers-Explained-421--AdaptiVocab-5861615452bc.html`
+- Source file: `raw/2025-07-31_Papers-Explained-421--AdaptiVocab-5861615452bc.md`
 - Source title: Papers Explained 421: AdaptiVocab
 - Published: 2025-07-31
 - Canonical: [https://medium.com/@ritvik19/papers-explained-421-adaptivocab-5861615452bc](https://medium.com/@ritvik19/papers-explained-421-adaptivocab-5861615452bc)
@@ -181,19 +181,19 @@ AdaptiVocab: Enhancing LLM Efficiency in Focused Domains through Lightweight Voc
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-07-31_Papers-Explained-421--AdaptiVocab-5861615452bc.html`); local copies under `wiki/assets/papers-explained-421-adaptivocab/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-07-31_Papers-Explained-421--AdaptiVocab-5861615452bc.md`); local copies under `wiki/assets/papers-explained-421-adaptivocab/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-421-adaptivocab/fig-1.png) | Title card: AdaptiVocab. |
-| ![Figure 2](assets/papers-explained-421-adaptivocab/fig-2.png) | The AdaptiVocab pipeline. |
-| ![Figure 3](assets/papers-explained-421-adaptivocab/fig-3.png) | Tokenization before and after vocabulary adaptation to the History of Physics domain. |
-| ![Figure 4](assets/papers-explained-421-adaptivocab/fig-4.png) | Initialization. |
-| ![Figure 5](assets/papers-explained-421-adaptivocab/fig-5.png) | Tokenization with the Original Tokenizer. |
-| ![Figure 6](assets/papers-explained-421-adaptivocab/fig-6.png) | The exponential initialization adjusts the influence of constituent token embeddings based on their position within the n-token. |
-| ![Figure 7](assets/papers-explained-421-adaptivocab/fig-7.png) | Main results. |
-| ![Figure 8](assets/papers-explained-421-adaptivocab/fig-8.png) | A maximum n-token length of 3 is used and 10,000 tokens are modified. |
-| ![Figure 9](assets/papers-explained-421-adaptivocab/fig-9.png) | Multiple-choice QA performance. |
+| ![Figure 1](assets/papers-explained-421-adaptivocab/fig-1.webp) | Title card: AdaptiVocab. |
+| ![Figure 2](assets/papers-explained-421-adaptivocab/fig-2.webp) | The AdaptiVocab pipeline. |
+| ![Figure 3](assets/papers-explained-421-adaptivocab/fig-3.webp) | Tokenization before and after vocabulary adaptation to the History of Physics domain. |
+| ![Figure 4](assets/papers-explained-421-adaptivocab/fig-4.webp) | Initialization. |
+| ![Figure 5](assets/papers-explained-421-adaptivocab/fig-5.webp) | Tokenization with the Original Tokenizer. |
+| ![Figure 6](assets/papers-explained-421-adaptivocab/fig-6.webp) | The exponential initialization adjusts the influence of constituent token embeddings based on their position within the n-token. |
+| ![Figure 7](assets/papers-explained-421-adaptivocab/fig-7.webp) | Main results. |
+| ![Figure 8](assets/papers-explained-421-adaptivocab/fig-8.webp) | A maximum n-token length of 3 is used and 10,000 tokens are modified. |
+| ![Figure 9](assets/papers-explained-421-adaptivocab/fig-9.webp) | Multiple-choice QA performance. |
 ## Related
 
 - [[Papers Explained Corpus]]

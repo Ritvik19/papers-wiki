@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-11-24_Papers-Explained-73--UniLMv2-5a044ca7c525.html`
+- Source file: `raw/2023-11-24_Papers-Explained-73--UniLMv2-5a044ca7c525.md`
 - Source title: Papers Explained 73: UniLMv2
 - Published: 2023-11-24
 - Canonical: [https://medium.com/@ritvik19/papers-explained-unilmv2-5a044ca7c525](https://medium.com/@ritvik19/papers-explained-unilmv2-5a044ca7c525)
@@ -99,19 +99,19 @@ UniLMv2: Pseudo-Masked Language Models for Unified Language Model Pre-Training [
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-11-24_Papers-Explained-73--UniLMv2-5a044ca7c525.html`); local copies under `wiki/assets/papers-explained-73-unilmv2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-11-24_Papers-Explained-73--UniLMv2-5a044ca7c525.md`); local copies under `wiki/assets/papers-explained-73-unilmv2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-73-unilmv2/fig-1.png) | Title card: UniLMv2. |
-| ![Figure 2](assets/papers-explained-73-unilmv2/fig-2.png) | Overview of PMLM pre-training. The model parameters are shared across the LM objectives. |
-| ![Figure 3](assets/papers-explained-73-unilmv2/fig-3.png) | Both bidirectional and sequence-to-sequence LMs are jointly pre trained with the same input text and masked positions. |
-| ![Figure 4](assets/papers-explained-73-unilmv2/fig-4.png) | where D is the training corpus. |
-| ![Figure 5](assets/papers-explained-73-unilmv2/fig-5.png) | where EM is the expectation over the factorization distribution. |
-| ![Figure 6](assets/papers-explained-73-unilmv2/fig-6.png) | Results of BASE-size pre-trained models on the SQuAD v1.1/v2.0 development sets. |
-| ![Figure 7](assets/papers-explained-73-unilmv2/fig-7.png) | Results of BASE-size models on the development set of the GLUE benchmark. |
-| ![Figure 8](assets/papers-explained-73-unilmv2/fig-8.png) | Abstractive summarization results on CNN/DailyMail and XSum. |
-| ![Figure 9](assets/papers-explained-73-unilmv2/fig-9.png) | Results on question generation. |
+| ![Figure 1](assets/papers-explained-73-unilmv2/fig-1.webp) | Title card: UniLMv2. |
+| ![Figure 2](assets/papers-explained-73-unilmv2/fig-2.webp) | Overview of PMLM pre-training. The model parameters are shared across the LM objectives. |
+| ![Figure 3](assets/papers-explained-73-unilmv2/fig-3.webp) | Both bidirectional and sequence-to-sequence LMs are jointly pre trained with the same input text and masked positions. |
+| ![Figure 4](assets/papers-explained-73-unilmv2/fig-4.webp) | where D is the training corpus. |
+| ![Figure 5](assets/papers-explained-73-unilmv2/fig-5.webp) | where EM is the expectation over the factorization distribution. |
+| ![Figure 6](assets/papers-explained-73-unilmv2/fig-6.webp) | Results of BASE-size pre-trained models on the SQuAD v1.1/v2.0 development sets. |
+| ![Figure 7](assets/papers-explained-73-unilmv2/fig-7.webp) | Results of BASE-size models on the development set of the GLUE benchmark. |
+| ![Figure 8](assets/papers-explained-73-unilmv2/fig-8.webp) | Abstractive summarization results on CNN/DailyMail and XSum. |
+| ![Figure 9](assets/papers-explained-73-unilmv2/fig-9.webp) | Results on question generation. |
 ## Related
 
 - [[Papers Explained Corpus]]

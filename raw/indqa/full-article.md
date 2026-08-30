@@ -1,3 +1,3 @@
 # indqa
 
-Canonical HTML: `raw/indqa/full-article.html`
+Canonical HTML: `raw/indqa/full-article.md`

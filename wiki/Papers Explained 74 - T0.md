@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-11-27_Papers-Explained-74--T0-643a53079fe.html`
+- Source file: `raw/2023-11-27_Papers-Explained-74--T0-643a53079fe.md`
 - Source title: Papers Explained 74: T0
 - Published: 2023-11-27
 - Canonical: [https://medium.com/@ritvik19/papers-explained-74-t0-643a53079fe](https://medium.com/@ritvik19/papers-explained-74-t0-643a53079fe)
@@ -117,18 +117,18 @@ Multitask Prompted Training Enables Zero-Shot Task Generalization [2110.08207](h
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-11-27_Papers-Explained-74--T0-643a53079fe.html`); local copies under `wiki/assets/papers-explained-74-t0/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-11-27_Papers-Explained-74--T0-643a53079fe.md`); local copies under `wiki/assets/papers-explained-74-t0/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-74-t0/fig-1.png) | Title card: T0. |
-| ![Figure 2](assets/papers-explained-74-t0/fig-2.png) | T0 model and prompt format. |
-| ![Figure 3](assets/papers-explained-74-t0/fig-3.png) | T0 datasets and task taxonomy. |
-| ![Figure 4](assets/papers-explained-74-t0/fig-4.png) | Prompt templates from the P3 prompt collection. |
-| ![Figure 5](assets/papers-explained-74-t0/fig-5.png) | Results for T0 task generalization experiments compared to GPT-3. |
-| ![Figure 6](assets/papers-explained-74-t0/fig-6.png) | Results for a subset of BIG-bench which has available baselines. |
-| ![Figure 7](assets/papers-explained-74-t0/fig-7.png) | Effect of more prompts per dataset. |
-| ![Figure 8](assets/papers-explained-74-t0/fig-8.png) | Effect of prompts from more datasets. |
+| ![Figure 1](assets/papers-explained-74-t0/fig-1.webp) | Title card: T0. |
+| ![Figure 2](assets/papers-explained-74-t0/fig-2.webp) | T0 model and prompt format. |
+| ![Figure 3](assets/papers-explained-74-t0/fig-3.webp) | T0 datasets and task taxonomy. |
+| ![Figure 4](assets/papers-explained-74-t0/fig-4.webp) | Prompt templates from the P3 prompt collection. |
+| ![Figure 5](assets/papers-explained-74-t0/fig-5.webp) | Results for T0 task generalization experiments compared to GPT-3. |
+| ![Figure 6](assets/papers-explained-74-t0/fig-6.webp) | Results for a subset of BIG-bench which has available baselines. |
+| ![Figure 7](assets/papers-explained-74-t0/fig-7.webp) | Effect of more prompts per dataset. |
+| ![Figure 8](assets/papers-explained-74-t0/fig-8.webp) | Effect of prompts from more datasets. |
 ## Related
 
 - [[Papers Explained Corpus]]

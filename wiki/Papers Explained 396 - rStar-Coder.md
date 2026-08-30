@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-06-26_Papers-Explained-396--rStar-Coder-eeff4bb0b518.html`
+- Source file: `raw/2025-06-26_Papers-Explained-396--rStar-Coder-eeff4bb0b518.md`
 - Source title: Papers Explained 396: rStar-Coder
 - Published: 2025-06-26
 - Canonical: [https://medium.com/@ritvik19/papers-explained-396-rstar-coder-eeff4bb0b518](https://medium.com/@ritvik19/papers-explained-396-rstar-coder-eeff4bb0b518)
@@ -173,15 +173,15 @@ rStar-Coder: Scaling Competitive Code Reasoning with a Large-Scale Verified Data
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-06-26_Papers-Explained-396--rStar-Coder-eeff4bb0b518.html`); local copies under `wiki/assets/papers-explained-396-rstar-coder/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-06-26_Papers-Explained-396--rStar-Coder-eeff4bb0b518.md`); local copies under `wiki/assets/papers-explained-396-rstar-coder/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-396-rstar-coder/fig-1.png) | Title card: rStar-Coder. |
-| ![Figure 2](assets/papers-explained-396-rstar-coder/fig-2.png) | Summary of competitive-level programming problems. |
-| ![Figure 3](assets/papers-explained-396-rstar-coder/fig-3.png) | A 3 step approach is proposed. |
-| ![Figure 4](assets/papers-explained-396-rstar-coder/fig-4.png) | Results of rStar-Coder and frontier reasoning LLMs on diverse benchmarks. |
-| ![Figure 5](assets/papers-explained-396-rstar-coder/fig-5.png) | rStar-Coder performance on USACO 2025. |
+| ![Figure 1](assets/papers-explained-396-rstar-coder/fig-1.webp) | Title card: rStar-Coder. |
+| ![Figure 2](assets/papers-explained-396-rstar-coder/fig-2.webp) | Summary of competitive-level programming problems. |
+| ![Figure 3](assets/papers-explained-396-rstar-coder/fig-3.webp) | A 3 step approach is proposed. |
+| ![Figure 4](assets/papers-explained-396-rstar-coder/fig-4.webp) | Results of rStar-Coder and frontier reasoning LLMs on diverse benchmarks. |
+| ![Figure 5](assets/papers-explained-396-rstar-coder/fig-5.webp) | rStar-Coder performance on USACO 2025. |
 ## Related
 
 - [[Papers Explained Corpus]]

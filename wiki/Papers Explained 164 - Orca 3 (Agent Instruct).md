@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-07-17_Papers-Explained-164--Orca-3--Agent-Instruct--41340505af36.html`
+- Source file: `raw/2024-07-17_Papers-Explained-164--Orca-3--Agent-Instruct--41340505af36.md`
 - Source title: Papers Explained 164: Orca 3 (Agent Instruct)
 - Published: 2024-07-17
 - Canonical: [https://medium.com/@ritvik19/papers-explained-164-orca-3-agent-instruct-41340505af36](https://medium.com/@ritvik19/papers-explained-164-orca-3-agent-instruct-41340505af36)
@@ -175,19 +175,19 @@ Recommended Reading [Orca Series](https://ritvik19.medium.com/list/orca-series-1
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-07-17_Papers-Explained-164--Orca-3--Agent-Instruct--41340505af36.html`); local copies under `wiki/assets/papers-explained-164-orca-3-agent-instruct/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-07-17_Papers-Explained-164--Orca-3--Agent-Instruct--41340505af36.md`); local copies under `wiki/assets/papers-explained-164-orca-3-agent-instruct/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-164-orca-3-agent-instruct/fig-1.png) | Paper title: *AgentInstruct: Toward Generative Teaching with Agentic Flows*. |
-| ![Figure 2](assets/papers-explained-164-orca-3-agent-instruct/fig-2.png) | Concise **AgentInstruct** loop: seeds → content transformation → seed instructions → refinement agents. |
-| ![Figure 3](assets/papers-explained-164-orca-3-agent-instruct/fig-3.png) | Thematic overview: **Content Transformation** → **Seed Instruction Generation** → **Instruction Refinement** flows. |
-| ![Figure 4](assets/papers-explained-164-orca-3-agent-instruct/fig-4.png) | Short definitions of the **17** AgentInstruct skills (RC, ODQA, coding, RAG, tool use, etc.). |
-| ![Figure 5](assets/papers-explained-164-orca-3-agent-instruct/fig-5.png) | Reading-comprehension walkthrough: raw seed → argument passage → seed MCQ → **Suggester**/**Editor** refinement. |
-| ![Figure 6](assets/papers-explained-164-orca-3-agent-instruct/fig-6.png) | Text-modification walkthrough: simple rewrite task → refinement suggestions → multiple stylized instructions. |
-| ![Figure 7](assets/papers-explained-164-orca-3-agent-instruct/fig-7.png) | **Orca-Bench** radar: Orca-3 vs Mistral-7B-Instruct, Orca-2.5, ChatGPT-3.5 across skill axes. |
-| ![Figure 8](assets/papers-explained-164-orca-3-agent-instruct/fig-8.png) | Average **Orca-Bench** score vs baselines, including Orca-3 checkpoints by training epoch. |
-| ![Figure 9](assets/papers-explained-164-orca-3-agent-instruct/fig-9.png) | Broad zero-shot table: reasoning, instruction-following, chat, and EQBench vs Orca-2.5, Mistral, Llama-3-8B, GPT-3.5, GPT-4. |
+| ![Figure 1](assets/papers-explained-164-orca-3-agent-instruct/fig-1.webp) | Paper title: *AgentInstruct: Toward Generative Teaching with Agentic Flows*. |
+| ![Figure 2](assets/papers-explained-164-orca-3-agent-instruct/fig-2.webp) | Concise **AgentInstruct** loop: seeds → content transformation → seed instructions → refinement agents. |
+| ![Figure 3](assets/papers-explained-164-orca-3-agent-instruct/fig-3.webp) | Thematic overview: **Content Transformation** → **Seed Instruction Generation** → **Instruction Refinement** flows. |
+| ![Figure 4](assets/papers-explained-164-orca-3-agent-instruct/fig-4.webp) | Short definitions of the **17** AgentInstruct skills (RC, ODQA, coding, RAG, tool use, etc.). |
+| ![Figure 5](assets/papers-explained-164-orca-3-agent-instruct/fig-5.webp) | Reading-comprehension walkthrough: raw seed → argument passage → seed MCQ → **Suggester**/**Editor** refinement. |
+| ![Figure 6](assets/papers-explained-164-orca-3-agent-instruct/fig-6.webp) | Text-modification walkthrough: simple rewrite task → refinement suggestions → multiple stylized instructions. |
+| ![Figure 7](assets/papers-explained-164-orca-3-agent-instruct/fig-7.webp) | **Orca-Bench** radar: Orca-3 vs Mistral-7B-Instruct, Orca-2.5, ChatGPT-3.5 across skill axes. |
+| ![Figure 8](assets/papers-explained-164-orca-3-agent-instruct/fig-8.webp) | Average **Orca-Bench** score vs baselines, including Orca-3 checkpoints by training epoch. |
+| ![Figure 9](assets/papers-explained-164-orca-3-agent-instruct/fig-9.webp) | Broad zero-shot table: reasoning, instruction-following, chat, and EQBench vs Orca-2.5, Mistral, Llama-3-8B, GPT-3.5, GPT-4. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -1,6 +1,6 @@
 # Composer: Building a fast frontier model with RL
 
-**Source**: `raw/composer/full-article.html` (175 KB), `raw/composer/full-article.md` (markdown view)  
+**Source**: `raw/composer/full-article.md` (175 KB), `raw/composer/full-article.md` (markdown view)  
 **URL**: https://cursor.com/blog/composer  
 **Ingested**: 2026-05-19  
 **Tags**: #summary
@@ -31,17 +31,17 @@ Footnote benchmark classes (Oct 2025): Composer sits below "Best Frontier" (GPT-
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/composer/fig-1.png) | Composer benchmark — coding quality vs. generation speed (internal harness) | — |
-| ![fig-2](../assets/composer/fig-2.png) | Cursor Bench evaluation framing | — |
-| ![fig-3](../assets/composer/fig-3.png) | RL specialization — tool-use efficiency and emergent agent behaviors | — |
+| ![fig-1](../assets/composer/fig-1.webp) | Composer benchmark — coding quality vs. generation speed (internal harness) | — |
+| ![fig-2](../assets/composer/fig-2.webp) | Cursor Bench evaluation framing | — |
+| ![fig-3](../assets/composer/fig-3.webp) | RL specialization — tool-use efficiency and emergent agent behaviors | — |
 
 Light and dark variants (`fig-N-dark.png`) are in `wiki/assets/composer/`.
 
-![Composer benchmark results](../assets/composer/fig-1.png)
+![Composer benchmark results](../assets/composer/fig-1.webp)
 
-![Cursor Bench evaluation](../assets/composer/fig-2.png)
+![Cursor Bench evaluation](../assets/composer/fig-2.webp)
 
-![RL training specialization](../assets/composer/fig-3.png)
+![RL training specialization](../assets/composer/fig-3.webp)
 
 ## Entities
 

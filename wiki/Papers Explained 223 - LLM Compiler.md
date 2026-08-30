@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-10-02_Papers-Explained-223--LLM-Compiler-15b1ddb9a1b0.html`
+- Source file: `raw/2024-10-02_Papers-Explained-223--LLM-Compiler-15b1ddb9a1b0.md`
 - Source title: Papers Explained 223: LLM Compiler
 - Published: 2024-10-02
 - Canonical: [https://medium.com/@ritvik19/papers-explained-223-llm-compiler-15b1ddb9a1b0](https://medium.com/@ritvik19/papers-explained-223-llm-compiler-15b1ddb9a1b0)
@@ -159,24 +159,24 @@ Meta Large Language Model Compiler: Foundation Models of Compiler Optimization [
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-10-02_Papers-Explained-223--LLM-Compiler-15b1ddb9a1b0.html`); local copies under `wiki/assets/papers-explained-223-llm-compiler/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-10-02_Papers-Explained-223--LLM-Compiler-15b1ddb9a1b0.md`); local copies under `wiki/assets/papers-explained-223-llm-compiler/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-223-llm-compiler/fig-1.png) | Title card: LLM Compiler. |
-| ![Figure 2](assets/papers-explained-223-llm-compiler/fig-2.png) | Papers Explained 223: LLM Compiler. |
-| ![Figure 3](assets/papers-explained-223-llm-compiler/fig-3.png) | Training datasets used. |
-| ![Figure 4](assets/papers-explained-223-llm-compiler/fig-4.png) | Composition of data used for initial IR and assembly pretraining. |
-| ![Figure 5](assets/papers-explained-223-llm-compiler/fig-5.png) | The idea is to generate from a finite set of unoptimized seed programs a large number of examples by applying randomly generated sequences... |
-| ![Figure 6](assets/papers-explained-223-llm-compiler/fig-6.png) | To generate the compiler emulation dataset, random lists of between 1 and 50 optimization passes were applied to unoptimized programs. |
-| ![Figure 7](assets/papers-explained-223-llm-compiler/fig-7.png) | To evaluate the model’s performance, a zero-shot version of the task is used, where the model predicts flags to minimize code size of... |
-| ![Figure 8](assets/papers-explained-223-llm-compiler/fig-8.png) | The ability to lift code from assembly back into higher-level structures enables optimizations and porting of legacy code to new... |
-| ![Figure 9](assets/papers-explained-223-llm-compiler/fig-9.png) | Comparison of model performance when flag tuning 2,398 object files from MiBench. |
-| ![Figure 10](assets/papers-explained-223-llm-compiler/fig-10.png) | Improvement over -Oz for each of the benchmarks in MiBench. |
-| ![Figure 11](assets/papers-explained-223-llm-compiler/fig-11.png) | Accuracy of models at predicting code size before and after optimization. |
-| ![Figure 12](assets/papers-explained-223-llm-compiler/fig-12.png) | Model performance at disassembling 2,015 assembly codes taken from MiBench. |
-| ![Figure 13](assets/papers-explained-223-llm-compiler/fig-13.png) | Performance at next-token prediction and compiler emulation tasks. |
-| ![Figure 14](assets/papers-explained-223-llm-compiler/fig-14.png) | Performance on Python programming tasks. pass@1 are computed with greedy decoding. |
+| ![Figure 1](assets/papers-explained-223-llm-compiler/fig-1.webp) | Title card: LLM Compiler. |
+| ![Figure 2](assets/papers-explained-223-llm-compiler/fig-2.webp) | Papers Explained 223: LLM Compiler. |
+| ![Figure 3](assets/papers-explained-223-llm-compiler/fig-3.webp) | Training datasets used. |
+| ![Figure 4](assets/papers-explained-223-llm-compiler/fig-4.webp) | Composition of data used for initial IR and assembly pretraining. |
+| ![Figure 5](assets/papers-explained-223-llm-compiler/fig-5.webp) | The idea is to generate from a finite set of unoptimized seed programs a large number of examples by applying randomly generated sequences... |
+| ![Figure 6](assets/papers-explained-223-llm-compiler/fig-6.webp) | To generate the compiler emulation dataset, random lists of between 1 and 50 optimization passes were applied to unoptimized programs. |
+| ![Figure 7](assets/papers-explained-223-llm-compiler/fig-7.webp) | To evaluate the model’s performance, a zero-shot version of the task is used, where the model predicts flags to minimize code size of... |
+| ![Figure 8](assets/papers-explained-223-llm-compiler/fig-8.webp) | The ability to lift code from assembly back into higher-level structures enables optimizations and porting of legacy code to new... |
+| ![Figure 9](assets/papers-explained-223-llm-compiler/fig-9.webp) | Comparison of model performance when flag tuning 2,398 object files from MiBench. |
+| ![Figure 10](assets/papers-explained-223-llm-compiler/fig-10.webp) | Improvement over -Oz for each of the benchmarks in MiBench. |
+| ![Figure 11](assets/papers-explained-223-llm-compiler/fig-11.webp) | Accuracy of models at predicting code size before and after optimization. |
+| ![Figure 12](assets/papers-explained-223-llm-compiler/fig-12.webp) | Model performance at disassembling 2,015 assembly codes taken from MiBench. |
+| ![Figure 13](assets/papers-explained-223-llm-compiler/fig-13.webp) | Performance at next-token prediction and compiler emulation tasks. |
+| ![Figure 14](assets/papers-explained-223-llm-compiler/fig-14.webp) | Performance on Python programming tasks. pass@1 are computed with greedy decoding. |
 ## Related
 
 - [[Papers Explained Corpus]]

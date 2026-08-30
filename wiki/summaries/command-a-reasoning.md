@@ -1,6 +1,6 @@
 # Command A Reasoning: Enterprise-grade Control for AI Agents
 
-**Source**: `raw/command-a-reasoning/full-article.html` (343 KB), `raw/command-a-reasoning/full-article.md` (markdown view)  
+**Source**: `raw/command-a-reasoning/full-article.md` (343 KB), `raw/command-a-reasoning/full-article.md` (markdown view)  
 **URL**: https://cohere.com/blog/command-a-reasoning  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -29,14 +29,14 @@ Benchmarks highlighted include **BFCL-v3** (function calling), **Tau-bench** and
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/command-a-reasoning/fig-1.png) | Command A Reasoning announcement hero — enterprise agent control and reasoning | — |
-| ![fig-2](../assets/command-a-reasoning/fig-2.png) | Agentic benchmark results: BFCL-v3, Tau-bench, and related tool-use scores | — |
-| ![fig-3](../assets/command-a-reasoning/fig-3.png) | DeepResearchBench RACE scores vs other deep-research systems | — |
-| ![fig-4](../assets/command-a-reasoning/fig-4.png) | Human evaluation satisfaction scores across daily work task categories | — |
-| ![fig-5](../assets/command-a-reasoning/fig-5.png) | North performance vs reasoning budget — smooth scaling from zero to higher reasoning | — |
-| ![fig-6](../assets/command-a-reasoning/fig-6.png) | Multilingual agentic benchmark results (M-tau-bench across business languages) | — |
+| ![fig-1](../assets/command-a-reasoning/fig-1.webp) | Command A Reasoning announcement hero — enterprise agent control and reasoning | — |
+| ![fig-2](../assets/command-a-reasoning/fig-2.webp) | Agentic benchmark results: BFCL-v3, Tau-bench, and related tool-use scores | — |
+| ![fig-3](../assets/command-a-reasoning/fig-3.webp) | DeepResearchBench RACE scores vs other deep-research systems | — |
+| ![fig-4](../assets/command-a-reasoning/fig-4.webp) | Human evaluation satisfaction scores across daily work task categories | — |
+| ![fig-5](../assets/command-a-reasoning/fig-5.webp) | North performance vs reasoning budget — smooth scaling from zero to higher reasoning | — |
+| ![fig-6](../assets/command-a-reasoning/fig-6.webp) | Multilingual agentic benchmark results (M-tau-bench across business languages) | — |
 
-![Agentic benchmark results](../assets/command-a-reasoning/fig-2.png)
+![Agentic benchmark results](../assets/command-a-reasoning/fig-2.webp)
 
 ## Entities
 

@@ -1,6 +1,6 @@
 # Mistral 7B
 
-**Source**: `raw/mistral-7b/full-article.html` (223 KB), `raw/mistral-7b/full-article.md` (markdown view)  
+**Source**: `raw/mistral-7b/full-article.md` (223 KB), `raw/mistral-7b/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/announcing-mistral-7b/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -26,13 +26,13 @@ On re-run benchmarks, Mistral 7B outperforms Llama 2 13B across metrics and appr
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/mistral-7b/fig-1.png) | Benchmark histograms: Mistral 7B vs. Llama 2 family across reasoning, knowledge, math, and code | — |
-| ![fig-2](../assets/mistral-7b/fig-2.png) | Detailed benchmark comparison table (MMLU, Hellaswag, GSM8K, HumanEval, etc.) | — |
-| ![fig-3](../assets/mistral-7b/fig-3.png) | Effective model sizes: Mistral 7B vs. Llama 2 on MMLU, commonsense, world knowledge, reading | — |
-| ![fig-4](../assets/mistral-7b/fig-4.png) | Sliding window (local) attention: stacked layers extend effective context beyond window size | — |
-| ![fig-5](../assets/mistral-7b/fig-5.png) | Mistral 7B Instruct MT-Bench performance vs. 7B and 13B chat models | — |
+| ![fig-1](../assets/mistral-7b/fig-1.webp) | Benchmark histograms: Mistral 7B vs. Llama 2 family across reasoning, knowledge, math, and code | — |
+| ![fig-2](../assets/mistral-7b/fig-2.webp) | Detailed benchmark comparison table (MMLU, Hellaswag, GSM8K, HumanEval, etc.) | — |
+| ![fig-3](../assets/mistral-7b/fig-3.webp) | Effective model sizes: Mistral 7B vs. Llama 2 on MMLU, commonsense, world knowledge, reading | — |
+| ![fig-4](../assets/mistral-7b/fig-4.webp) | Sliding window (local) attention: stacked layers extend effective context beyond window size | — |
+| ![fig-5](../assets/mistral-7b/fig-5.webp) | Mistral 7B Instruct MT-Bench performance vs. 7B and 13B chat models | — |
 
-![Benchmark performance overview](../assets/mistral-7b/fig-1.png)
+![Benchmark performance overview](../assets/mistral-7b/fig-1.webp)
 
 ## Entities
 

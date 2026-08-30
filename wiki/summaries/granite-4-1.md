@@ -1,6 +1,6 @@
 # Granite 4.1 LLMs: How They're Built
 
-**Source**: `raw/granite-4-1/full-article.html` (194 KB), `raw/granite-4-1/full-article.md`
+**Source**: `raw/granite-4-1/full-article.md` (194 KB), `raw/granite-4-1/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

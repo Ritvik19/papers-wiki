@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-10-17_Papers-Explained---EfficientNetV2-a7a1e4113b89.html`
+- Source file: `raw/2024-10-17_Papers-Explained---EfficientNetV2-a7a1e4113b89.md`
 - Source title: Papers Explained : EfficientNetV2
 - Published: 2024-10-17
 - Canonical: [https://medium.com/@ritvik19/papers-explained-efficientnetv2-a7a1e4113b89](https://medium.com/@ritvik19/papers-explained-efficientnetv2-a7a1e4113b89)
@@ -137,22 +137,22 @@ Recommended Reading [Convolutional Neural Networks](https://medium.com/@ritvik19
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-10-17_Papers-Explained---EfficientNetV2-a7a1e4113b89.html`); local copies under `wiki/assets/papers-explained-efficientnetv2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-10-17_Papers-Explained---EfficientNetV2-a7a1e4113b89.md`); local copies under `wiki/assets/papers-explained-efficientnetv2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-efficientnetv2/fig-1.png) | Training-aware NAS motivation: jointly optimize accuracy, parameters, and accelerator-friendly training time. |
-| ![Figure 2](assets/papers-explained-efficientnetv2/fig-2.png) | MBConv vs Fused-MBConv blocks used in the searched EfficientNetV2 stages. |
-| ![Figure 3](assets/papers-explained-efficientnetv2/fig-3.png) | EfficientNetV2-S stage topology discovered by NAS (MBConv / fused mixes, kernel choices). |
-| ![Figure 4](assets/papers-explained-efficientnetv2/fig-4.png) | NAS reward trade-off surface combining accuracy with normalized step time and parameter count. |
-| ![Figure 5](assets/papers-explained-efficientnetv2/fig-5.png) | Progressive training schedule: staged image sizes with paired RandAugment / Mixup / dropout strengths. |
-| ![Figure 6](assets/papers-explained-efficientnetv2/fig-6.png) | ImageNet top-1 accuracy for EfficientNetV2-S/M/L vs prior CNN and ViT baselines. |
-| ![Figure 7](assets/papers-explained-efficientnetv2/fig-7.png) | Parameter count, FLOPs, and measured inference latency across model tiers. |
-| ![Figure 8](assets/papers-explained-efficientnetv2/fig-8.png) | Top-1 accuracy vs training wall-clock and parameter count on ImageNet ILSVRC2012. |
-| ![Figure 9](assets/papers-explained-efficientnetv2/fig-9.png) | ImageNet-21K pretraining scaling: accuracy vs ViT-L while reducing params/FLOPs and train time. |
-| ![Figure 10](assets/papers-explained-efficientnetv2/fig-10.png) | Additional ImageNet train/inference speed comparisons vs EfficientNet-B7 and competing CNN/ViT families. |
-| ![Figure 11](assets/papers-explained-efficientnetv2/fig-11.png) | Transfer-learning datasets used after ImageNet pretraining (CIFAR, Flowers, Oxford Pets, etc.). |
-| ![Figure 12](assets/papers-explained-efficientnetv2/fig-12.png) | Transfer accuracy gains vs ViT/DeiT and earlier EfficientNet checkpoints on downstream vision tasks. |
+| ![Figure 1](assets/papers-explained-efficientnetv2/fig-1.webp) | Training-aware NAS motivation: jointly optimize accuracy, parameters, and accelerator-friendly training time. |
+| ![Figure 2](assets/papers-explained-efficientnetv2/fig-2.webp) | MBConv vs Fused-MBConv blocks used in the searched EfficientNetV2 stages. |
+| ![Figure 3](assets/papers-explained-efficientnetv2/fig-3.webp) | EfficientNetV2-S stage topology discovered by NAS (MBConv / fused mixes, kernel choices). |
+| ![Figure 4](assets/papers-explained-efficientnetv2/fig-4.webp) | NAS reward trade-off surface combining accuracy with normalized step time and parameter count. |
+| ![Figure 5](assets/papers-explained-efficientnetv2/fig-5.webp) | Progressive training schedule: staged image sizes with paired RandAugment / Mixup / dropout strengths. |
+| ![Figure 6](assets/papers-explained-efficientnetv2/fig-6.webp) | ImageNet top-1 accuracy for EfficientNetV2-S/M/L vs prior CNN and ViT baselines. |
+| ![Figure 7](assets/papers-explained-efficientnetv2/fig-7.webp) | Parameter count, FLOPs, and measured inference latency across model tiers. |
+| ![Figure 8](assets/papers-explained-efficientnetv2/fig-8.webp) | Top-1 accuracy vs training wall-clock and parameter count on ImageNet ILSVRC2012. |
+| ![Figure 9](assets/papers-explained-efficientnetv2/fig-9.webp) | ImageNet-21K pretraining scaling: accuracy vs ViT-L while reducing params/FLOPs and train time. |
+| ![Figure 10](assets/papers-explained-efficientnetv2/fig-10.webp) | Additional ImageNet train/inference speed comparisons vs EfficientNet-B7 and competing CNN/ViT families. |
+| ![Figure 11](assets/papers-explained-efficientnetv2/fig-11.webp) | Transfer-learning datasets used after ImageNet pretraining (CIFAR, Flowers, Oxford Pets, etc.). |
+| ![Figure 12](assets/papers-explained-efficientnetv2/fig-12.webp) | Transfer accuracy gains vs ViT/DeiT and earlier EfficientNet checkpoints on downstream vision tasks. |
 ## Related
 
 - [[Papers Explained Corpus]]

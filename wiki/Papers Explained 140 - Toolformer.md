@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-05-22_Papers-Explained-140--Toolformer-d21d496b6812.html`
+- Source file: `raw/2024-05-22_Papers-Explained-140--Toolformer-d21d496b6812.md`
 - Source title: Papers Explained 140: Toolformer
 - Published: 2024-05-22
 - Canonical: [https://medium.com/@ritvik19/papers-explained-140-toolformer-d21d496b6812](https://medium.com/@ritvik19/papers-explained-140-toolformer-d21d496b6812)
@@ -189,20 +189,20 @@ Toolformer: Language Models Can Teach Themselves to Use Tools [2302.04761](https
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-05-22_Papers-Explained-140--Toolformer-d21d496b6812.html`); local copies under `wiki/assets/papers-explained-140-toolformer/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-05-22_Papers-Explained-140--Toolformer-d21d496b6812.md`); local copies under `wiki/assets/papers-explained-140-toolformer/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-140-toolformer/fig-1.png) | Title page of *Toolformer: Language Models Can Teach Themselves to Use Tools*. |
-| ![Figure 2](assets/papers-explained-140-toolformer/fig-2.png) | Self-supervised augmentation: sample candidate API calls from context, execute them, and keep only calls whose results lower LM loss on the continuation. |
-| ![Figure 3](assets/papers-explained-140-toolformer/fig-3.png) | Linearized QA, Wikipedia search, calculator, calendar, and MT tools with representative inputs and returned strings. |
-| ![Figure 4](assets/papers-explained-140-toolformer/fig-4.png) | Counts of retained training spans per API after filtering at thresholds $\tau_f \in \{0.5, 1.0, 2.0\}$. |
-| ![Figure 5](assets/papers-explained-140-toolformer/fig-5.png) | LAMA SQuAD / Google-RE / T-REx scores for GPT-J variants vs OPT-66B and GPT-3–175B. |
-| ![Figure 6](assets/papers-explained-140-toolformer/fig-6.png) | ASDiv, SVAMP, and MAWPS math reasoning with calculator-augmented Toolformer vs larger baselines. |
-| ![Figure 7](assets/papers-explained-140-toolformer/fig-7.png) | WebQuestions, Natural Questions, and TriviaQA accuracy showing strong QA-tool usage gains. |
-| ![Figure 8](assets/papers-explained-140-toolformer/fig-8.png) | MLQA-style multilingual QA (Es/De/Hi/Vi/Zh/Ar) comparing Toolformer with English-reference rows. |
-| ![Figure 9](assets/papers-explained-140-toolformer/fig-9.png) | Temporal benchmarks TempLAMA and DATESET highlighting calendar tool effects vs disabling tools. |
-| ![Figure 10](assets/papers-explained-140-toolformer/fig-10.png) | Scaling curves on LAMA, aggregate math, and QA suites with Toolformer vs disabled tools vs fixed GPT-3 baseline. |
+| ![Figure 1](assets/papers-explained-140-toolformer/fig-1.webp) | Title page of *Toolformer: Language Models Can Teach Themselves to Use Tools*. |
+| ![Figure 2](assets/papers-explained-140-toolformer/fig-2.webp) | Self-supervised augmentation: sample candidate API calls from context, execute them, and keep only calls whose results lower LM loss on the continuation. |
+| ![Figure 3](assets/papers-explained-140-toolformer/fig-3.webp) | Linearized QA, Wikipedia search, calculator, calendar, and MT tools with representative inputs and returned strings. |
+| ![Figure 4](assets/papers-explained-140-toolformer/fig-4.webp) | Counts of retained training spans per API after filtering at thresholds $\tau_f \in \{0.5, 1.0, 2.0\}$. |
+| ![Figure 5](assets/papers-explained-140-toolformer/fig-5.webp) | LAMA SQuAD / Google-RE / T-REx scores for GPT-J variants vs OPT-66B and GPT-3–175B. |
+| ![Figure 6](assets/papers-explained-140-toolformer/fig-6.webp) | ASDiv, SVAMP, and MAWPS math reasoning with calculator-augmented Toolformer vs larger baselines. |
+| ![Figure 7](assets/papers-explained-140-toolformer/fig-7.webp) | WebQuestions, Natural Questions, and TriviaQA accuracy showing strong QA-tool usage gains. |
+| ![Figure 8](assets/papers-explained-140-toolformer/fig-8.webp) | MLQA-style multilingual QA (Es/De/Hi/Vi/Zh/Ar) comparing Toolformer with English-reference rows. |
+| ![Figure 9](assets/papers-explained-140-toolformer/fig-9.webp) | Temporal benchmarks TempLAMA and DATESET highlighting calendar tool effects vs disabling tools. |
+| ![Figure 10](assets/papers-explained-140-toolformer/fig-10.webp) | Scaling curves on LAMA, aggregate math, and QA suites with Toolformer vs disabled tools vs fixed GPT-3 baseline. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-08-15_Papers-Explained--GloVe-2024-8c935a8ac58a.html`
+- Source file: `raw/2025-08-15_Papers-Explained--GloVe-2024-8c935a8ac58a.md`
 - Source title: Papers Explained: GloVe 2024
 - Published: 2025-08-15
 - Canonical: [https://medium.com/@ritvik19/papers-explained-glove-2024-8c935a8ac58a](https://medium.com/@ritvik19/papers-explained-glove-2024-8c935a8ac58a)
@@ -179,18 +179,18 @@ A New Pair of GloVes [2507.18103](https://arxiv.org/abs/2507.18103)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-08-15_Papers-Explained--GloVe-2024-8c935a8ac58a.html`); local copies under `wiki/assets/papers-explained-glove-2024/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-08-15_Papers-Explained--GloVe-2024-8c935a8ac58a.md`); local copies under `wiki/assets/papers-explained-glove-2024/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-glove-2024/fig-1.png) | Title slide for the companion paper *A New Pair of GloVes* (Stanford NLP). |
-| ![Figure 2](assets/papers-explained-glove-2024/fig-2.png) | Side-by-side comparison of 2014 vs 2024 training corpora and approximate token counts (Wikipedia/Gigaword, Common Crawl, Twitter vs Dolma-era mixes). |
-| ![Figure 3](assets/papers-explained-glove-2024/fig-3.png) | Dolma v1.6 subset composition: percent sampled per shard and resulting billions of tokens used for the Dolma GloVe run. |
-| ![Figure 4](assets/papers-explained-glove-2024/fig-4.png) | GloVe training hyperparameters (learning rate, alpha, xmax, shuffle seed, AdaGrad epochs by embedding size). |
-| ![Figure 5](assets/papers-explained-glove-2024/fig-5.png) | Sample of new vocabulary entries in 2024 embeddings vs 2014 baselines for Wikipedia (left) and Dolma (right), illustrating the updated lexicon analysis. |
-| ![Figure 6](assets/papers-explained-glove-2024/fig-6.png) | Direct evaluation table: Google/MSR analogy accuracy and WordSim353 / SimLex999 / MEN similarity correlations for 2014 vs 2024 Wiki/Giga and Dolma vectors. |
-| ![Figure 7](assets/papers-explained-glove-2024/fig-7.png) | Stanza NER on CoNLL: per-entity and per-token F1 on the 2003 test set and the modernized CoNLL-PP split across embedding variants. |
-| ![Figure 8](assets/papers-explained-glove-2024/fig-8.png) | NER F1 on Worldwide Newswire (left) and WNUT-17 (right), comparing 2014 vs 2024 Wiki/Giga sizes and 300d Dolma embeddings. |
+| ![Figure 1](assets/papers-explained-glove-2024/fig-1.webp) | Title slide for the companion paper *A New Pair of GloVes* (Stanford NLP). |
+| ![Figure 2](assets/papers-explained-glove-2024/fig-2.webp) | Side-by-side comparison of 2014 vs 2024 training corpora and approximate token counts (Wikipedia/Gigaword, Common Crawl, Twitter vs Dolma-era mixes). |
+| ![Figure 3](assets/papers-explained-glove-2024/fig-3.webp) | Dolma v1.6 subset composition: percent sampled per shard and resulting billions of tokens used for the Dolma GloVe run. |
+| ![Figure 4](assets/papers-explained-glove-2024/fig-4.webp) | GloVe training hyperparameters (learning rate, alpha, xmax, shuffle seed, AdaGrad epochs by embedding size). |
+| ![Figure 5](assets/papers-explained-glove-2024/fig-5.webp) | Sample of new vocabulary entries in 2024 embeddings vs 2014 baselines for Wikipedia (left) and Dolma (right), illustrating the updated lexicon analysis. |
+| ![Figure 6](assets/papers-explained-glove-2024/fig-6.webp) | Direct evaluation table: Google/MSR analogy accuracy and WordSim353 / SimLex999 / MEN similarity correlations for 2014 vs 2024 Wiki/Giga and Dolma vectors. |
+| ![Figure 7](assets/papers-explained-glove-2024/fig-7.webp) | Stanza NER on CoNLL: per-entity and per-token F1 on the 2003 test set and the modernized CoNLL-PP split across embedding variants. |
+| ![Figure 8](assets/papers-explained-glove-2024/fig-8.webp) | NER F1 on Worldwide Newswire (left) and WNUT-17 (right), comparing 2014 vs 2024 Wiki/Giga sizes and 300d Dolma embeddings. |
 ## Related
 
 - [[Papers Explained Corpus]]

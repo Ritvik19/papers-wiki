@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-01-23_Papers-Explained-530--BroRL-da46c4caec8f.html`
+- Source file: `raw/2026-01-23_Papers-Explained-530--BroRL-da46c4caec8f.md`
 - Source title: Papers Explained 530: BroRL
 - Published: 2026-01-23
 - Canonical: [https://medium.com/@ritvik19/papers-explained-530-brorl-da46c4caec8f](https://medium.com/@ritvik19/papers-explained-530-brorl-da46c4caec8f)
@@ -107,19 +107,19 @@ BroRL: Scaling Reinforcement Learning via Broadened Exploration [2510.01180](htt
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-01-23_Papers-Explained-530--BroRL-da46c4caec8f.html`); local copies under `wiki/assets/papers-explained-530-brorl/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-01-23_Papers-Explained-530--BroRL-da46c4caec8f.md`); local copies under `wiki/assets/papers-explained-530-brorl/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-530-brorl/fig-1.png) | Title card: BroRL. |
-| ![Figure 2](assets/papers-explained-530-brorl/fig-2.png) | A mass balance equation analysis reveals that sampled rollout tokens always contribute to the probability mass of correct tokens. |
-| ![Figure 3](assets/papers-explained-530-brorl/fig-3.png) | This research adopts the prolonged reinforcement learning (RL) framework from ProRLv2. |
-| ![Figure 4](assets/papers-explained-530-brorl/fig-4.png) | where rθ(τ) is the probability ratio and A(τ) is the advantage. |
-| ![Figure 5](assets/papers-explained-530-brorl/fig-5.png) | To further improve performance and exploration, the framework integrates several key techniques. |
-| ![Figure 6](assets/papers-explained-530-brorl/fig-6.png) | Pass@1 comparison of BroRL vs. ProRL, normalized by training compute. |
-| ![Figure 7](assets/papers-explained-530-brorl/fig-7.png) | Efficiency and Performance Comparison. |
-| ![Figure 8](assets/papers-explained-530-brorl/fig-8.png) | ProRL. |
-| ![Figure 9](assets/papers-explained-530-brorl/fig-9.png) | Algorithmic and Hardware Efficiency Metrics. |
+| ![Figure 1](assets/papers-explained-530-brorl/fig-1.webp) | Title card: BroRL. |
+| ![Figure 2](assets/papers-explained-530-brorl/fig-2.webp) | A mass balance equation analysis reveals that sampled rollout tokens always contribute to the probability mass of correct tokens. |
+| ![Figure 3](assets/papers-explained-530-brorl/fig-3.webp) | This research adopts the prolonged reinforcement learning (RL) framework from ProRLv2. |
+| ![Figure 4](assets/papers-explained-530-brorl/fig-4.webp) | where rθ(τ) is the probability ratio and A(τ) is the advantage. |
+| ![Figure 5](assets/papers-explained-530-brorl/fig-5.webp) | To further improve performance and exploration, the framework integrates several key techniques. |
+| ![Figure 6](assets/papers-explained-530-brorl/fig-6.webp) | Pass@1 comparison of BroRL vs. ProRL, normalized by training compute. |
+| ![Figure 7](assets/papers-explained-530-brorl/fig-7.webp) | Efficiency and Performance Comparison. |
+| ![Figure 8](assets/papers-explained-530-brorl/fig-8.webp) | ProRL. |
+| ![Figure 9](assets/papers-explained-530-brorl/fig-9.webp) | Algorithmic and Hardware Efficiency Metrics. |
 ## Related
 
 - [[Papers Explained Corpus]]

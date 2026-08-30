@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-09-05_Papers-Explained-203--Gecko-8889158b17e6.html`
+- Source file: `raw/2024-09-05_Papers-Explained-203--Gecko-8889158b17e6.md`
 - Source title: Papers Explained 203: Gecko
 - Published: 2024-09-05
 - Canonical: [https://medium.com/@ritvik19/papers-explained-203-gecko-8889158b17e6](https://medium.com/@ritvik19/papers-explained-203-gecko-8889158b17e6)
@@ -103,19 +103,19 @@ Recommended Reading [Retrieval and Representation Learning](https://ritvik19.med
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-09-05_Papers-Explained-203--Gecko-8889158b17e6.html`); local copies under `wiki/assets/papers-explained-203-gecko/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-09-05_Papers-Explained-203--Gecko-8889158b17e6.md`); local copies under `wiki/assets/papers-explained-203-gecko/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-203-gecko/fig-1.png) | Gecko paper title block. |
-| ![Figure 2](assets/papers-explained-203-gecko/fig-2.png) | Overview of Gecko retrieval training pipeline. |
-| ![Figure 3](assets/papers-explained-203-gecko/fig-3.png) | FRet overview for synthetic query generation and filtering. |
-| ![Figure 4](assets/papers-explained-203-gecko/fig-4.png) | MTEB benchmark summary table for Gecko variants and strong baselines. |
-| ![Figure 5](assets/papers-explained-203-gecko/fig-5.png) | Synthetic query generation flow using web passages, retriever, and LLM judgments. |
-| ![Figure 6](assets/papers-explained-203-gecko/fig-6.png) | LLM-based prompt transformation equation for query generation. |
-| ![Figure 7](assets/papers-explained-203-gecko/fig-7.png) | Main contrastive ranking loss used in Gecko training. |
-| ![Figure 8](assets/papers-explained-203-gecko/fig-8.png) | MTEB results table with gecko-1b and gecko-1b-768 highlighted. |
-| ![Figure 9](assets/papers-explained-203-gecko/fig-9.png) | MIRACL average retrieval results with gecko-multilingual-1b highlighted. |
+| ![Figure 1](assets/papers-explained-203-gecko/fig-1.webp) | Gecko paper title block. |
+| ![Figure 2](assets/papers-explained-203-gecko/fig-2.webp) | Overview of Gecko retrieval training pipeline. |
+| ![Figure 3](assets/papers-explained-203-gecko/fig-3.webp) | FRet overview for synthetic query generation and filtering. |
+| ![Figure 4](assets/papers-explained-203-gecko/fig-4.webp) | MTEB benchmark summary table for Gecko variants and strong baselines. |
+| ![Figure 5](assets/papers-explained-203-gecko/fig-5.webp) | Synthetic query generation flow using web passages, retriever, and LLM judgments. |
+| ![Figure 6](assets/papers-explained-203-gecko/fig-6.webp) | LLM-based prompt transformation equation for query generation. |
+| ![Figure 7](assets/papers-explained-203-gecko/fig-7.webp) | Main contrastive ranking loss used in Gecko training. |
+| ![Figure 8](assets/papers-explained-203-gecko/fig-8.webp) | MTEB results table with gecko-1b and gecko-1b-768 highlighted. |
+| ![Figure 9](assets/papers-explained-203-gecko/fig-9.webp) | MIRACL average retrieval results with gecko-multilingual-1b highlighted. |
 ## Related
 
 - [[Papers Explained Corpus]]

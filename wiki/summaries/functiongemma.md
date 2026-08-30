@@ -1,6 +1,6 @@
 # FunctionGemma
 
-**Source**: `raw/functiongemma/full-article.html` (373 KB)  
+**Source**: `raw/functiongemma/full-article.md` (373 KB)  
 **URL**: https://blog.google/innovation-and-ai/technology/developers-tools/functiongemma/  
 **Published**: Dec 18, 2025  
 **Ingested**: 2026-06-06  

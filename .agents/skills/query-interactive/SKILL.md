@@ -246,7 +246,7 @@ Pages live under `artifacts/<slug>/`. Wiki assets live under `wiki/assets/`. Fro
 ../../wiki/assets/<rest-of-path>
 ```
 
-Example: wiki markdown `assets/paper-explained-144-granite-code-models/fig-2.png` -> `../../wiki/assets/paper-explained-144-granite-code-models/fig-2.png`.
+Example: wiki markdown `assets/paper-explained-144-granite-code-models/fig-2.webp` -> `../../wiki/assets/paper-explained-144-granite-code-models/fig-2.webp`.
 
 ### 4c. When figures are full-page captures or mislabeled
 

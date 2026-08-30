@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-01-14_Papers-Explained-287--NuExtract-f722082999b5.html`
+- Source file: `raw/2025-01-14_Papers-Explained-287--NuExtract-f722082999b5.md`
 - Source title: Papers Explained 287: NuExtract
 - Published: 2025-01-14
 - Canonical: [https://medium.com/@ritvik19/papers-explained-287-nuextract-f722082999b5](https://medium.com/@ritvik19/papers-explained-287-nuextract-f722082999b5)
@@ -211,11 +211,11 @@ Extraction Window Size Impact: NuExtract 1.5’s performance degrades gracefully
 
 NuExtract 2.0 adds **vision** (direct image extraction without OCR), **abstraction** (classification, reformatting, deduced answers, translation), and **in-context learning** via examples in the prompt. Three open-weight sizes ship on Qwen VL bases (2B MIT, 4B research license, 8B MIT), all with **32k** context. See [[NuExtract 2.0: Outclassing Frontier LLMs in Information Extraction]].
 
-![Creation procedure of NuExtract 2.0](assets/papers-explained-287-nuextract/fig-14.png)
+![Creation procedure of NuExtract 2.0](assets/papers-explained-287-nuextract/fig-14.webp)
 
 Prior versions only copy-pasted verbatim strings; 2.0 templates specify typed fields: `verbatim-string`, `string`, `choice`, `date`, `number`, `null`. VLMs preserve tables and diagrams that OCR would flatten.
 
-![Template field types](assets/papers-explained-287-nuextract/fig-15.png)
+![Template field types](assets/papers-explained-287-nuextract/fig-15.webp)
 
 **In-context learning**: trained with minimalist prompt examples for text and images; three shots can materially boost F-Score. **NuExtract 2.0 8B** reaches **73 F-Score**, edging non-reasoning frontier models; **NuExtract 2.0 PRO** leads GPT-4.1 by **+9** F-Score and reasoning Claude 4 Opus / Gemini 2.5 PRO by **+5 / +2**.
 
@@ -223,9 +223,9 @@ Prior versions only copy-pasted verbatim strings; 2.0 templates specify typed fi
 
 **NuExtract3** unifies **structured extraction** (documents → JSON) and **content extraction** (OCR → Markdown) in one model, trained **SFT then RL** for toggleable extraction-specific reasoning. Built on Fine-PDF real documents plus synthetic complexity; introduces **14 new field types**. See [[NuExtract3: The Reasoning Open-Source OCR & Structured Extraction LLM]].
 
-![Structured extraction task](assets/papers-explained-287-nuextract/fig-19.png)
+![Structured extraction task](assets/papers-explained-287-nuextract/fig-19.webp)
 
-![Content extraction (OCR) task](assets/papers-explained-287-nuextract/fig-20.png)
+![Content extraction (OCR) task](assets/papers-explained-287-nuextract/fig-20.webp)
 
 On an in-house ~600-example / 15-problem benchmark, NuExtract3 beats generalist models on structured extraction, content extraction (150 weird-table documents), and OCR repurposed from that benchmark—outperforming both generalist and specialist baselines at similar scale.
 
@@ -241,31 +241,31 @@ On an in-house ~600-example / 15-problem benchmark, NuExtract3 beats generalist 
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-01-14_Papers-Explained-287--NuExtract-f722082999b5.html`); local copies under `wiki/assets/papers-explained-287-nuextract/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-01-14_Papers-Explained-287--NuExtract-f722082999b5.md`); local copies under `wiki/assets/papers-explained-287-nuextract/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-287-nuextract/fig-1.png) | Title card: NuExtract. |
-| ![Figure 2](assets/papers-explained-287-nuextract/fig-2.png) | Structured Extraction Example. |
-| ![Figure 3](assets/papers-explained-287-nuextract/fig-3.png) | NuExtract creation procedure. |
-| ![Figure 4](assets/papers-explained-287-nuextract/fig-4.png) | The schema is represented by an empty JSON. |
-| ![Figure 5](assets/papers-explained-287-nuextract/fig-5.png) | Comparison of NuExtract models with popular generic LLMs in the zero-shot setting. |
-| ![Figure 6](assets/papers-explained-287-nuextract/fig-6.png) | Comparison of NuExtract models with popular generic LLMs of the chemical extraction problem. |
-| ![Figure 7](assets/papers-explained-287-nuextract/fig-7.png) | Example of continuation extraction. |
-| ![Figure 8](assets/papers-explained-287-nuextract/fig-8.png) | Zero-shot results on the structured extraction benchmark. |
-| ![Figure 9](assets/papers-explained-287-nuextract/fig-9.png) | Many-shot results on the structured extraction benchmark. |
-| ![Figure 10](assets/papers-explained-287-nuextract/fig-10.png) | Multilingual zero-shot results on the structured extraction benchmark. |
-| ![Figure 11](assets/papers-explained-287-nuextract/fig-11.png) | Performance on long documents (between 8k and 10k tokens). |
-| ![Figure 12](assets/papers-explained-287-nuextract/fig-12.png) | Performance on even longer documents (between 10k and 20k tokens). |
-| ![Figure 13](assets/papers-explained-287-nuextract/fig-13.png) | Extraction window size impact on long-document performance. |
-| ![Figure 14](assets/papers-explained-287-nuextract/fig-14.png) | Creation procedure of NuExtract 2.0. |
-| ![Figure 15](assets/papers-explained-287-nuextract/fig-15.png) | Template field types (NuExtract 2.0). |
-| ![Figure 16](assets/papers-explained-287-nuextract/fig-16.png) | Template constructors. |
-| ![Figure 17](assets/papers-explained-287-nuextract/fig-17.png) | Example NuExtract 2.0 template and extraction output. |
-| ![Figure 18](assets/papers-explained-287-nuextract/fig-18.png) | Minimalist ICL training example. |
-| ![Figure 19](assets/papers-explained-287-nuextract/fig-19.png) | NuExtract3 structured extraction task. |
-| ![Figure 20](assets/papers-explained-287-nuextract/fig-20.png) | NuExtract3 content extraction (OCR) task. |
-| ![Figure 21](assets/papers-explained-287-nuextract/fig-21.png) | NuExtract3 training procedure (SFT + RL). |
+| ![Figure 1](assets/papers-explained-287-nuextract/fig-1.webp) | Title card: NuExtract. |
+| ![Figure 2](assets/papers-explained-287-nuextract/fig-2.webp) | Structured Extraction Example. |
+| ![Figure 3](assets/papers-explained-287-nuextract/fig-3.webp) | NuExtract creation procedure. |
+| ![Figure 4](assets/papers-explained-287-nuextract/fig-4.webp) | The schema is represented by an empty JSON. |
+| ![Figure 5](assets/papers-explained-287-nuextract/fig-5.webp) | Comparison of NuExtract models with popular generic LLMs in the zero-shot setting. |
+| ![Figure 6](assets/papers-explained-287-nuextract/fig-6.webp) | Comparison of NuExtract models with popular generic LLMs of the chemical extraction problem. |
+| ![Figure 7](assets/papers-explained-287-nuextract/fig-7.webp) | Example of continuation extraction. |
+| ![Figure 8](assets/papers-explained-287-nuextract/fig-8.webp) | Zero-shot results on the structured extraction benchmark. |
+| ![Figure 9](assets/papers-explained-287-nuextract/fig-9.webp) | Many-shot results on the structured extraction benchmark. |
+| ![Figure 10](assets/papers-explained-287-nuextract/fig-10.webp) | Multilingual zero-shot results on the structured extraction benchmark. |
+| ![Figure 11](assets/papers-explained-287-nuextract/fig-11.webp) | Performance on long documents (between 8k and 10k tokens). |
+| ![Figure 12](assets/papers-explained-287-nuextract/fig-12.webp) | Performance on even longer documents (between 10k and 20k tokens). |
+| ![Figure 13](assets/papers-explained-287-nuextract/fig-13.webp) | Extraction window size impact on long-document performance. |
+| ![Figure 14](assets/papers-explained-287-nuextract/fig-14.webp) | Creation procedure of NuExtract 2.0. |
+| ![Figure 15](assets/papers-explained-287-nuextract/fig-15.webp) | Template field types (NuExtract 2.0). |
+| ![Figure 16](assets/papers-explained-287-nuextract/fig-16.webp) | Template constructors. |
+| ![Figure 17](assets/papers-explained-287-nuextract/fig-17.webp) | Example NuExtract 2.0 template and extraction output. |
+| ![Figure 18](assets/papers-explained-287-nuextract/fig-18.webp) | Minimalist ICL training example. |
+| ![Figure 19](assets/papers-explained-287-nuextract/fig-19.webp) | NuExtract3 structured extraction task. |
+| ![Figure 20](assets/papers-explained-287-nuextract/fig-20.webp) | NuExtract3 content extraction (OCR) task. |
+| ![Figure 21](assets/papers-explained-287-nuextract/fig-21.webp) | NuExtract3 training procedure (SFT + RL). |
 ## Related
 
 - [[Papers Explained Corpus]]

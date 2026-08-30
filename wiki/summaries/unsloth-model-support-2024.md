@@ -55,14 +55,14 @@
 
 ## Sources
 
-- `raw/mistral-benchmark/full-article.html`
-- `raw/unsloth-trl/full-article.html`
-- `raw/tinyllama-gguf/full-article.html`
-- `raw/gemma/full-article.html`
-- `raw/llama3/full-article.html`
-- `raw/phi3/full-article.html`
-- `raw/gemma2/full-article.html`
-- `raw/mistral-nemo/full-article.html`
-- `raw/llama3-1/full-article.html`
-- `raw/vision/full-article.html`
-- `raw/llama3-3/full-article.html`
+- `raw/mistral-benchmark/full-article.md`
+- `raw/unsloth-trl/full-article.md`
+- `raw/tinyllama-gguf/full-article.md`
+- `raw/gemma/full-article.md`
+- `raw/llama3/full-article.md`
+- `raw/phi3/full-article.md`
+- `raw/gemma2/full-article.md`
+- `raw/mistral-nemo/full-article.md`
+- `raw/llama3-1/full-article.md`
+- `raw/vision/full-article.md`
+- `raw/llama3-3/full-article.md`

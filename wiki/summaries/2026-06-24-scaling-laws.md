@@ -1,6 +1,6 @@
 # Scaling Laws, Carefully
 
-**Source**: `raw/2026-06-24-scaling-laws/full-article.html`, `raw/2026-06-24-scaling-laws/full-article.md`  
+**Source**: `raw/2026-06-24-scaling-laws/full-article.md`, `raw/2026-06-24-scaling-laws/full-article.md`  
 **Ingested**: 2026-07-12  
 **Tags**: #summary
 
@@ -30,21 +30,21 @@ Weng closes on fitting hygiene. Besiroglu et al. (2024) show Chinchilla Method 3
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/2026-06-24-scaling-laws/fig-1.png) | Hestness et al.: learning curves for speech models of various sizes | Early days |
-| ![fig-2](../assets/2026-06-24-scaling-laws/fig-2.png) | Hestness et al.: three-phase power-law learning curve illustration | Early days |
-| ![fig-3](../assets/2026-06-24-scaling-laws/fig-3.png) | Rosenfeld et al.: 3D contour of error vs. data and model size | Early days |
-| ![fig-4](../assets/2026-06-24-scaling-laws/fig-4.png) | Rosenfeld et al.: parametric fit extrapolation on ImageNet, WikiText-103, CIFAR-100 | Early days |
-| ![fig-5](../assets/2026-06-24-scaling-laws/fig-5.png) | Kaplan et al.: test loss power laws in compute, data, and parameters | Data-infinite |
-| ![fig-6](../assets/2026-06-24-scaling-laws/fig-6.png) | Kaplan et al.: Transformer parameter and FLOP estimation table | Data-infinite |
-| ![fig-7](../assets/2026-06-24-scaling-laws/fig-7.png) | Chinchilla Method 1: loss vs. FLOPs across model sizes | Chinchilla |
-| ![fig-8](../assets/2026-06-24-scaling-laws/fig-8.png) | Chinchilla Method 2: IsoFLOP parabolas in log-space | Chinchilla |
-| ![fig-9](../assets/2026-06-24-scaling-laws/fig-9.png) | Chinchilla: three methods agree on $N_\text{opt} \propto C^{0.5}$ | Chinchilla |
-| ![fig-10](../assets/2026-06-24-scaling-laws/fig-10.png) | Chinchilla vs. Kaplan predictions; mainstream LLMs were undertrained | Chinchilla |
-| ![fig-11](../assets/2026-06-24-scaling-laws/fig-11.png) | Pearce & Song: local exponent $g$ vs. compute | Reconciliation |
-| ![fig-12](../assets/2026-06-24-scaling-laws/fig-12.png) | Hernandez et al.: double descent with repeated data fraction | Data-limited |
-| ![fig-13](../assets/2026-06-24-scaling-laws/fig-13.png) | Muennighoff et al.: data-constrained fit with exponential token decay | Data-limited |
-| ![fig-14](../assets/2026-06-24-scaling-laws/fig-14.png) | Lovelace et al.: fit residuals grow with epochs and model size | Data-limited |
-| ![fig-15](../assets/2026-06-24-scaling-laws/fig-15.png) | Lovelace et al.: strong weight decay reduces repetition penalty | Data-limited |
+| ![fig-1](../assets/2026-06-24-scaling-laws/fig-1.webp) | Hestness et al.: learning curves for speech models of various sizes | Early days |
+| ![fig-2](../assets/2026-06-24-scaling-laws/fig-2.webp) | Hestness et al.: three-phase power-law learning curve illustration | Early days |
+| ![fig-3](../assets/2026-06-24-scaling-laws/fig-3.webp) | Rosenfeld et al.: 3D contour of error vs. data and model size | Early days |
+| ![fig-4](../assets/2026-06-24-scaling-laws/fig-4.webp) | Rosenfeld et al.: parametric fit extrapolation on ImageNet, WikiText-103, CIFAR-100 | Early days |
+| ![fig-5](../assets/2026-06-24-scaling-laws/fig-5.webp) | Kaplan et al.: test loss power laws in compute, data, and parameters | Data-infinite |
+| ![fig-6](../assets/2026-06-24-scaling-laws/fig-6.webp) | Kaplan et al.: Transformer parameter and FLOP estimation table | Data-infinite |
+| ![fig-7](../assets/2026-06-24-scaling-laws/fig-7.webp) | Chinchilla Method 1: loss vs. FLOPs across model sizes | Chinchilla |
+| ![fig-8](../assets/2026-06-24-scaling-laws/fig-8.webp) | Chinchilla Method 2: IsoFLOP parabolas in log-space | Chinchilla |
+| ![fig-9](../assets/2026-06-24-scaling-laws/fig-9.webp) | Chinchilla: three methods agree on $N_\text{opt} \propto C^{0.5}$ | Chinchilla |
+| ![fig-10](../assets/2026-06-24-scaling-laws/fig-10.webp) | Chinchilla vs. Kaplan predictions; mainstream LLMs were undertrained | Chinchilla |
+| ![fig-11](../assets/2026-06-24-scaling-laws/fig-11.webp) | Pearce & Song: local exponent $g$ vs. compute | Reconciliation |
+| ![fig-12](../assets/2026-06-24-scaling-laws/fig-12.webp) | Hernandez et al.: double descent with repeated data fraction | Data-limited |
+| ![fig-13](../assets/2026-06-24-scaling-laws/fig-13.webp) | Muennighoff et al.: data-constrained fit with exponential token decay | Data-limited |
+| ![fig-14](../assets/2026-06-24-scaling-laws/fig-14.webp) | Lovelace et al.: fit residuals grow with epochs and model size | Data-limited |
+| ![fig-15](../assets/2026-06-24-scaling-laws/fig-15.webp) | Lovelace et al.: strong weight decay reduces repetition penalty | Data-limited |
 
 ## Entities
 

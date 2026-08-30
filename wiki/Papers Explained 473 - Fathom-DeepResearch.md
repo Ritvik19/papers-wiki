@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-10-13_Papers-Explained-473--Fathom-DeepResearch-c022d3fa6863.html`
+- Source file: `raw/2025-10-13_Papers-Explained-473--Fathom-DeepResearch-c022d3fa6863.md`
 - Source title: Papers Explained 473: Fathom-DeepResearch
 - Published: 2025-10-13
 - Canonical: [https://medium.com/@ritvik19/papers-explained-473-fathom-deepresearch-c022d3fa6863](https://medium.com/@ritvik19/papers-explained-473-fathom-deepresearch-c022d3fa6863)
@@ -221,21 +221,21 @@ Fathom-DeepResearch: Unlocking Long Horizon Information Retrieval and Synthesis 
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-10-13_Papers-Explained-473--Fathom-DeepResearch-c022d3fa6863.html`); local copies under `wiki/assets/papers-explained-473-fathom-deepresearch/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-10-13_Papers-Explained-473--Fathom-DeepResearch-c022d3fa6863.md`); local copies under `wiki/assets/papers-explained-473-fathom-deepresearch/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-473-fathom-deepresearch/fig-1.png) | Title card: Fathom-DeepResearch. |
-| ![Figure 2](assets/papers-explained-473-fathom-deepresearch/fig-2.png) | End-to-end inference framework of Fathom-DeepResearch. |
-| ![Figure 3](assets/papers-explained-473-fathom-deepresearch/fig-3.png) | Multi-agent self-play framework used to generate a sample multi-hop DeepSearch question. |
-| ![Figure 4](assets/papers-explained-473-fathom-deepresearch/fig-4.png) | Let x∈X be an input from distribution D and T the set of available tools. |
-| ![Figure 5](assets/papers-explained-473-fathom-deepresearch/fig-5.png) | For a group of G sampled rollouts with scalar rewards {ri}, group-relative advantages defined as. |
-| ![Figure 6](assets/papers-explained-473-fathom-deepresearch/fig-6.png) | For a group of G sampled rollouts with scalar rewards {ri}, group-relative advantages defined as. |
-| ![Figure 7](assets/papers-explained-473-fathom-deepresearch/fig-7.png) | The trajectory-level scalar reward combines a format score and an answer score. |
-| ![Figure 8](assets/papers-explained-473-fathom-deepresearch/fig-8.png) | The final steerable step-level reward ri is defined as. |
-| ![Figure 9](assets/papers-explained-473-fathom-deepresearch/fig-9.png) | Qwen3–4B is fine-tuned on DeepResearch-SFT for 5 epochs. |
-| ![Figure 10](assets/papers-explained-473-fathom-deepresearch/fig-10.png) | Qwen3–4B is fine-tuned on DeepResearch-SFT for 5 epochs. |
-| ![Figure 11](assets/papers-explained-473-fathom-deepresearch/fig-11.png) | Qwen3–4B is fine-tuned on DeepResearch-SFT for 5 epochs. |
+| ![Figure 1](assets/papers-explained-473-fathom-deepresearch/fig-1.webp) | Title card: Fathom-DeepResearch. |
+| ![Figure 2](assets/papers-explained-473-fathom-deepresearch/fig-2.webp) | End-to-end inference framework of Fathom-DeepResearch. |
+| ![Figure 3](assets/papers-explained-473-fathom-deepresearch/fig-3.webp) | Multi-agent self-play framework used to generate a sample multi-hop DeepSearch question. |
+| ![Figure 4](assets/papers-explained-473-fathom-deepresearch/fig-4.webp) | Let x∈X be an input from distribution D and T the set of available tools. |
+| ![Figure 5](assets/papers-explained-473-fathom-deepresearch/fig-5.webp) | For a group of G sampled rollouts with scalar rewards {ri}, group-relative advantages defined as. |
+| ![Figure 6](assets/papers-explained-473-fathom-deepresearch/fig-6.webp) | For a group of G sampled rollouts with scalar rewards {ri}, group-relative advantages defined as. |
+| ![Figure 7](assets/papers-explained-473-fathom-deepresearch/fig-7.webp) | The trajectory-level scalar reward combines a format score and an answer score. |
+| ![Figure 8](assets/papers-explained-473-fathom-deepresearch/fig-8.webp) | The final steerable step-level reward ri is defined as. |
+| ![Figure 9](assets/papers-explained-473-fathom-deepresearch/fig-9.webp) | Qwen3–4B is fine-tuned on DeepResearch-SFT for 5 epochs. |
+| ![Figure 10](assets/papers-explained-473-fathom-deepresearch/fig-10.webp) | Qwen3–4B is fine-tuned on DeepResearch-SFT for 5 epochs. |
+| ![Figure 11](assets/papers-explained-473-fathom-deepresearch/fig-11.webp) | Qwen3–4B is fine-tuned on DeepResearch-SFT for 5 epochs. |
 ## Related
 
 - [[Papers Explained Corpus]]

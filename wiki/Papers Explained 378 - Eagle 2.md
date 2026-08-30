@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-06-02_Papers-Explained-378--Eagle-2-cda1e612c0b4.html`
+- Source file: `raw/2025-06-02_Papers-Explained-378--Eagle-2-cda1e612c0b4.md`
 - Source title: Papers Explained 378: Eagle 2
 - Published: 2025-06-02
 - Canonical: [https://medium.com/@ritvik19/papers-explained-378-eagle-2-cda1e612c0b4](https://medium.com/@ritvik19/papers-explained-378-eagle-2-cda1e612c0b4)
@@ -177,19 +177,19 @@ Eagle 2: Building Post-Training Data Strategies from Scratch for Frontier Vision
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-06-02_Papers-Explained-378--Eagle-2-cda1e612c0b4.html`); local copies under `wiki/assets/papers-explained-378-eagle-2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-06-02_Papers-Explained-378--Eagle-2-cda1e612c0b4.md`); local copies under `wiki/assets/papers-explained-378-eagle-2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-378-eagle-2/fig-1.png) | Title card: Eagle 2. |
-| ![Figure 2](assets/papers-explained-378-eagle-2/fig-2.png) | Baseline Settings. |
-| ![Figure 3](assets/papers-explained-378-eagle-2/fig-3.png) | A metric is defined to quantify the diversity and measure the relevance between a new data source and the current data pool. |
-| ![Figure 4](assets/papers-explained-378-eagle-2/fig-4.png) | A metric is defined to quantify the diversity and measure the relevance between a new data source and the current data pool. |
-| ![Figure 5](assets/papers-explained-378-eagle-2/fig-5.png) | Where. |
-| ![Figure 6](assets/papers-explained-378-eagle-2/fig-6.png) | Where:: Following Eagle, SigLIP and ConvNeXt-XXLarge are used as vision encoders. |
-| ![Figure 7](assets/papers-explained-378-eagle-2/fig-7.png) | Data ablation under 2-Stage training. |
-| ![Figure 8](assets/papers-explained-378-eagle-2/fig-8.png) | Where. |
-| ![Figure 9](assets/papers-explained-378-eagle-2/fig-9.png) | Comparison with SoTA models on Various Benchmarks. |
+| ![Figure 1](assets/papers-explained-378-eagle-2/fig-1.webp) | Title card: Eagle 2. |
+| ![Figure 2](assets/papers-explained-378-eagle-2/fig-2.webp) | Baseline Settings. |
+| ![Figure 3](assets/papers-explained-378-eagle-2/fig-3.webp) | A metric is defined to quantify the diversity and measure the relevance between a new data source and the current data pool. |
+| ![Figure 4](assets/papers-explained-378-eagle-2/fig-4.webp) | A metric is defined to quantify the diversity and measure the relevance between a new data source and the current data pool. |
+| ![Figure 5](assets/papers-explained-378-eagle-2/fig-5.webp) | Where. |
+| ![Figure 6](assets/papers-explained-378-eagle-2/fig-6.webp) | Where:: Following Eagle, SigLIP and ConvNeXt-XXLarge are used as vision encoders. |
+| ![Figure 7](assets/papers-explained-378-eagle-2/fig-7.webp) | Data ablation under 2-Stage training. |
+| ![Figure 8](assets/papers-explained-378-eagle-2/fig-8.webp) | Where. |
+| ![Figure 9](assets/papers-explained-378-eagle-2/fig-9.webp) | Comparison with SoTA models on Various Benchmarks. |
 ## Related
 
 - [[Papers Explained Corpus]]

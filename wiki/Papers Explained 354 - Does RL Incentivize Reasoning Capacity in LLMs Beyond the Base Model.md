@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-04-24_Papers-Explained-354--Does-RL-Incentivize-Reasoning-Capacity-in-LLMs-Beyond-the-Base-Model--77ae394a5054.html`
+- Source file: `raw/2025-04-24_Papers-Explained-354--Does-RL-Incentivize-Reasoning-Capacity-in-LLMs-Beyond-the-Base-Model--77ae394a5054.md`
 - Source title: Papers Explained 354: Does RL Incentivize Reasoning Capacity in LLMs Beyond the Base Model?
 - Published: 2025-04-24
 - Canonical: [https://medium.com/@ritvik19/papers-explained-354-does-rl-incentivize-reasoning-capacity-in-llms-beyond-the-base-model-77ae394a5054](https://medium.com/@ritvik19/papers-explained-354-does-rl-incentivize-reasoning-capacity-in-llms-beyond-the-base-model-77ae394a5054)
@@ -151,20 +151,20 @@ Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-04-24_Papers-Explained-354--Does-RL-Incentivize-Reasoning-Capacity-in-LLMs-Beyond-the-Base-Model--77ae394a5054.html`); local copies under `wiki/assets/papers-explained-354-does-rl-incentivize-reasoning-capacity-in-llms-beyond-the-base-model/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-04-24_Papers-Explained-354--Does-RL-Incentivize-Reasoning-Capacity-in-LLMs-Beyond-the-Base-Model--77ae394a5054.md`); local copies under `wiki/assets/papers-explained-354-does-rl-incentivize-reasoning-capacity-in-llms-beyond-the-base-model/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-354-does-rl-incentivize-reasoning-capacity-in-llms-beyond-the-base-model/fig-1.png) | Title card: Does RL Incentivize Reasoning Capacity in LLMs Beyond the Base Model. |
-| ![Figure 2](assets/papers-explained-354-does-rl-incentivize-reasoning-capacity-in-llms-beyond-the-base-model/fig-2.png) | The project is available at GitHub. |
-| ![Figure 3](assets/papers-explained-354-does-rl-incentivize-reasoning-capacity-in-llms-beyond-the-base-model/fig-3.png) | Experimental setup for assessing RLVR’s effect on the reasoning boundaries of LLMs across different tasks. |
-| ![Figure 4](assets/papers-explained-354-does-rl-incentivize-reasoning-capacity-in-llms-beyond-the-base-model/fig-4.png) | The analysis is organized by task category, covering three representative domains: mathematics, code generation, and visual reasoning. |
-| ![Figure 5](assets/papers-explained-354-does-rl-incentivize-reasoning-capacity-in-llms-beyond-the-base-model/fig-5.png) | The analysis is organized by task category, covering three representative domains: mathematics, code generation, and visual reasoning. |
-| ![Figure 6](assets/papers-explained-354-does-rl-incentivize-reasoning-capacity-in-llms-beyond-the-base-model/fig-6.png) | The analysis is organized by task category, covering three representative domains: mathematics, code generation, and visual reasoning. |
-| ![Figure 7](assets/papers-explained-354-does-rl-incentivize-reasoning-capacity-in-llms-beyond-the-base-model/fig-7.png) | Perplexity distribution of responses from different sources, evaluated by the base and RL models. |
-| ![Figure 8](assets/papers-explained-354-does-rl-incentivize-reasoning-capacity-in-llms-beyond-the-base-model/fig-8.png) | Coverage comparison of base, Instruct, RL, and distilled models. |
-| ![Figure 9](assets/papers-explained-354-does-rl-incentivize-reasoning-capacity-in-llms-beyond-the-base-model/fig-9.png) | Different RL algorithms. |
-| ![Figure 10](assets/papers-explained-354-does-rl-incentivize-reasoning-capacity-in-llms-beyond-the-base-model/fig-10.png) | Different RL training steps. |
+| ![Figure 1](assets/papers-explained-354-does-rl-incentivize-reasoning-capacity-in-llms-beyond-the-base-model/fig-1.webp) | Title card: Does RL Incentivize Reasoning Capacity in LLMs Beyond the Base Model. |
+| ![Figure 2](assets/papers-explained-354-does-rl-incentivize-reasoning-capacity-in-llms-beyond-the-base-model/fig-2.webp) | The project is available at GitHub. |
+| ![Figure 3](assets/papers-explained-354-does-rl-incentivize-reasoning-capacity-in-llms-beyond-the-base-model/fig-3.webp) | Experimental setup for assessing RLVR’s effect on the reasoning boundaries of LLMs across different tasks. |
+| ![Figure 4](assets/papers-explained-354-does-rl-incentivize-reasoning-capacity-in-llms-beyond-the-base-model/fig-4.webp) | The analysis is organized by task category, covering three representative domains: mathematics, code generation, and visual reasoning. |
+| ![Figure 5](assets/papers-explained-354-does-rl-incentivize-reasoning-capacity-in-llms-beyond-the-base-model/fig-5.webp) | The analysis is organized by task category, covering three representative domains: mathematics, code generation, and visual reasoning. |
+| ![Figure 6](assets/papers-explained-354-does-rl-incentivize-reasoning-capacity-in-llms-beyond-the-base-model/fig-6.webp) | The analysis is organized by task category, covering three representative domains: mathematics, code generation, and visual reasoning. |
+| ![Figure 7](assets/papers-explained-354-does-rl-incentivize-reasoning-capacity-in-llms-beyond-the-base-model/fig-7.webp) | Perplexity distribution of responses from different sources, evaluated by the base and RL models. |
+| ![Figure 8](assets/papers-explained-354-does-rl-incentivize-reasoning-capacity-in-llms-beyond-the-base-model/fig-8.webp) | Coverage comparison of base, Instruct, RL, and distilled models. |
+| ![Figure 9](assets/papers-explained-354-does-rl-incentivize-reasoning-capacity-in-llms-beyond-the-base-model/fig-9.webp) | Different RL algorithms. |
+| ![Figure 10](assets/papers-explained-354-does-rl-incentivize-reasoning-capacity-in-llms-beyond-the-base-model/fig-10.webp) | Different RL training steps. |
 ## Related
 
 - [[Papers Explained Corpus]]

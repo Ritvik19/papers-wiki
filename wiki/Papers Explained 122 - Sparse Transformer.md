@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-04-09_Papers-Explained-122--Sparse-Transformer-906a0be1e4e7.html`
+- Source file: `raw/2024-04-09_Papers-Explained-122--Sparse-Transformer-906a0be1e4e7.md`
 - Source title: Papers Explained 122: Sparse Transformer
 - Published: 2024-04-09
 - Canonical: [https://medium.com/@ritvik19/papers-explained-122-sparse-transformer-906a0be1e4e7](https://medium.com/@ritvik19/papers-explained-122-sparse-transformer-906a0be1e4e7)
@@ -149,22 +149,22 @@ Generating Long Sequences with Sparse Transformers [1904.10509](https://arxiv.or
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-04-09_Papers-Explained-122--Sparse-Transformer-906a0be1e4e7.html`); local copies under `wiki/assets/papers-explained-122-sparse-transformer/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-04-09_Papers-Explained-122--Sparse-Transformer-906a0be1e4e7.md`); local copies under `wiki/assets/papers-explained-122-sparse-transformer/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-122-sparse-transformer/fig-1.png) | Title page of *Generating Long Sequences with Sparse Transformers*. |
-| ![Figure 2](assets/papers-explained-122-sparse-transformer/fig-2.png) | CIFAR-10 attention visualizations from a deep full-attention transformer. |
-| ![Figure 3](assets/papers-explained-122-sparse-transformer/fig-3.png) | Formal definition of attention over a connectivity pattern set `S`. |
-| ![Figure 4](assets/papers-explained-122-sparse-transformer/fig-4.png) | Attention-mask layouts for standard dense, strided sparse, and fixed sparse schemes. |
-| ![Figure 5](assets/papers-explained-122-sparse-transformer/fig-5.png) | Dense attention head formulation for standard transformer blocks. |
-| ![Figure 6](assets/papers-explained-122-sparse-transformer/fig-6.png) | Interleaved factorized-head formulation across residual blocks. |
-| ![Figure 7](assets/papers-explained-122-sparse-transformer/fig-7.png) | Merged-head formulation using union of factorized attention patterns. |
-| ![Figure 8](assets/papers-explained-122-sparse-transformer/fig-8.png) | Multi-head sparse attention formulation over `n_h` heads. |
-| ![Figure 9](assets/papers-explained-122-sparse-transformer/fig-9.png) | Pre-activation residual network equations for deep sparse transformers. |
-| ![Figure 10](assets/papers-explained-122-sparse-transformer/fig-10.png) | Residual block definition with normalized attention and feed-forward paths. |
-| ![Figure 11](assets/papers-explained-122-sparse-transformer/fig-11.png) | Bits-per-byte benchmark results across image, text, and audio datasets. |
-| ![Figure 12](assets/papers-explained-122-sparse-transformer/fig-12.png) | Accuracy-efficiency trade-off table for dense vs sparse attention variants. |
+| ![Figure 1](assets/papers-explained-122-sparse-transformer/fig-1.webp) | Title page of *Generating Long Sequences with Sparse Transformers*. |
+| ![Figure 2](assets/papers-explained-122-sparse-transformer/fig-2.webp) | CIFAR-10 attention visualizations from a deep full-attention transformer. |
+| ![Figure 3](assets/papers-explained-122-sparse-transformer/fig-3.webp) | Formal definition of attention over a connectivity pattern set `S`. |
+| ![Figure 4](assets/papers-explained-122-sparse-transformer/fig-4.webp) | Attention-mask layouts for standard dense, strided sparse, and fixed sparse schemes. |
+| ![Figure 5](assets/papers-explained-122-sparse-transformer/fig-5.webp) | Dense attention head formulation for standard transformer blocks. |
+| ![Figure 6](assets/papers-explained-122-sparse-transformer/fig-6.webp) | Interleaved factorized-head formulation across residual blocks. |
+| ![Figure 7](assets/papers-explained-122-sparse-transformer/fig-7.webp) | Merged-head formulation using union of factorized attention patterns. |
+| ![Figure 8](assets/papers-explained-122-sparse-transformer/fig-8.webp) | Multi-head sparse attention formulation over `n_h` heads. |
+| ![Figure 9](assets/papers-explained-122-sparse-transformer/fig-9.webp) | Pre-activation residual network equations for deep sparse transformers. |
+| ![Figure 10](assets/papers-explained-122-sparse-transformer/fig-10.webp) | Residual block definition with normalized attention and feed-forward paths. |
+| ![Figure 11](assets/papers-explained-122-sparse-transformer/fig-11.webp) | Bits-per-byte benchmark results across image, text, and audio datasets. |
+| ![Figure 12](assets/papers-explained-122-sparse-transformer/fig-12.webp) | Accuracy-efficiency trade-off table for dense vs sparse attention variants. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -42,5 +42,5 @@ Unsloth documents **Quantization-Aware Training (QAT)** workflows: simulate quan
 
 ## Sources
 
-- `raw/quantization-aware-training-qat/full-article.html`
-- `raw/gemma-4-qat/full-article.html`
+- `raw/quantization-aware-training-qat/full-article.md`
+- `raw/gemma-4-qat/full-article.md`

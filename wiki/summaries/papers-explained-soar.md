@@ -1,6 +1,6 @@
 # Papers Explained: Self-Optimization via Asymmetric RL (SOAR)
 
-**Source**: `raw/draft_Papers-Explained--Self-Optimization-via-Asymmetric-RL--SOAR--7b56235c07c2.html`  
+**Source**: `raw/draft_Papers-Explained--Self-Optimization-via-Asymmetric-RL--SOAR--7b56235c07c2.md`  
 **Paper**: https://arxiv.org/abs/2601.18778  
 **Ingested**: 2026-08-23  
 **Tags**: #summary
@@ -9,7 +9,7 @@
 
 **Self-Optimization via Asymmetric RL (SOAR)** is an asymmetric self-play and self-improvement reinforcement learning algorithm designed to bootstrap mathematical reasoning and formal problem-solving capabilities without external human demonstrations. SOAR decouples learning into an **asymmetric bi-level game**: an **Outer Loop (Teacher Policy)** that generates synthetic reasoning challenges calibrated to the student's learning frontier, and an **Inner Loop (Student Policy)** that optimizes solution rollouts using verifiable compiler and reward feedback.
 
-![Papers Explained SOAR banner](../assets/papers-explained-soar/fig-1.png)
+![Papers Explained SOAR banner](../assets/papers-explained-soar/fig-1.webp)
 
 ### Asymmetric Bi-Level Game
 
@@ -17,7 +17,7 @@
 - **Student Objective (Inner Loop)**: The student policy optimizes solution trajectory generation $\tau \sim \pi_S(\cdot \mid x)$ using verifiable rewards (GRPO / PPO).
 - **Curriculum Emergence**: Automatic difficulty progression emerges naturally without manually engineered curriculum schedules.
 
-![SOAR Outer Loop and Inner Loop Optimization](../assets/papers-explained-soar/fig-2.png)
+![SOAR Outer Loop and Inner Loop Optimization](../assets/papers-explained-soar/fig-2.webp)
 
 ## Key Claims
 
@@ -29,12 +29,12 @@
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/papers-explained-soar/fig-1.png) | SOAR overview banner. | Overview |
-| ![fig-2](../assets/papers-explained-soar/fig-2.png) | SOAR asymmetric bi-level optimization architecture. | Method |
-| ![fig-3](../assets/papers-explained-soar/fig-3.png) | Outer-loop teacher curriculum objective and reward formulation. | Teacher |
-| ![fig-4](../assets/papers-explained-soar/fig-4.png) | Inner-loop student policy update dynamics. | Student |
-| ![fig-5](../assets/papers-explained-soar/fig-5.png) | Benchmark accuracy progression on MATH and AIME. | Results |
-| ![fig-6](../assets/papers-explained-soar/fig-6.png) | Automatic problem difficulty scaling across training epochs. | Curriculum |
+| ![fig-1](../assets/papers-explained-soar/fig-1.webp) | SOAR overview banner. | Overview |
+| ![fig-2](../assets/papers-explained-soar/fig-2.webp) | SOAR asymmetric bi-level optimization architecture. | Method |
+| ![fig-3](../assets/papers-explained-soar/fig-3.webp) | Outer-loop teacher curriculum objective and reward formulation. | Teacher |
+| ![fig-4](../assets/papers-explained-soar/fig-4.webp) | Inner-loop student policy update dynamics. | Student |
+| ![fig-5](../assets/papers-explained-soar/fig-5.webp) | Benchmark accuracy progression on MATH and AIME. | Results |
+| ![fig-6](../assets/papers-explained-soar/fig-6.webp) | Automatic problem difficulty scaling across training epochs. | Curriculum |
 
 ## Entities
 

@@ -2,7 +2,7 @@
 
 **Author**: Adam Mainz (@MainzOnX)  
 **Date**: July 14, 2026  
-**Canonical HTML**: `raw/what-even-is-a-kernel/full-article.html`  
+**Canonical HTML**: `raw/what-even-is-a-kernel/full-article.md`  
 
 ## Overview
 A beginner-friendly architectural walkthrough of what happens under the hood when PyTorch executes tensor operations on a GPU. The post demystifies GPU execution by defining kernels, tracing CPU launch mechanics and thread grids, demonstrating how eager mode causes intermediate tensors to round-trip through GPU global memory (HBM/GDDR), explaining kernel fusion and `torch.compile`, and walking through a practical profiling exercise using `torch.profiler`.

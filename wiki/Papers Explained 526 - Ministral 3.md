@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-01-19_Papers-Explained-526--Ministral-3-81f394784f92.html`
+- Source file: `raw/2026-01-19_Papers-Explained-526--Ministral-3-81f394784f92.md`
 - Source title: Papers Explained 526: Ministral 3
 - Published: 2026-01-19
 - Canonical: [https://medium.com/@ritvik19/papers-explained-526-ministral-3-81f394784f92](https://medium.com/@ritvik19/papers-explained-526-ministral-3-81f394784f92)
@@ -149,19 +149,19 @@ Ministral 3 [2601.08584](https://arxiv.org/abs/2601.08584)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-01-19_Papers-Explained-526--Ministral-3-81f394784f92.html`); local copies under `wiki/assets/papers-explained-526-ministral-3/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-01-19_Papers-Explained-526--Ministral-3-81f394784f92.md`); local copies under `wiki/assets/papers-explained-526-ministral-3/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-526-ministral-3/fig-1.png) | Title card: Ministral 3. |
-| ![Figure 2](assets/papers-explained-526-ministral-3/fig-2.png) | Architectural specifications and hyperparameters for the Ministral 3 family. |
-| ![Figure 3](assets/papers-explained-526-ministral-3/fig-3.png) | Overview of Ministral 3 training recipe. |
-| ![Figure 4](assets/papers-explained-526-ministral-3/fig-4.png) | Pretraining of the Ministral 3 models starts from the Mistral Small 3.1 Base model. |
-| ![Figure 5](assets/papers-explained-526-ministral-3/fig-5.png) | Pruning strategies are designed to preserve the most critical components of the original model (over a validation dataset) while reducing... |
-| ![Figure 6](assets/papers-explained-526-ministral-3/fig-6.png) | Comparing Ministral 3 Base models against the Gemma 3 base models and the Qwen 3 base models on pretraining benchmarks. |
-| ![Figure 7](assets/papers-explained-526-ministral-3/fig-7.png) | Evaluation results of the Ministral 3 Base family compared to the teacher model Mistral Small 3.1 24B. |
-| ![Figure 8](assets/papers-explained-526-ministral-3/fig-8.png) | Performance comparison of Ministral 3 instruct models against instruction-tuned baselines from the Qwen 3 and Gemma 3 families. |
-| ![Figure 9](assets/papers-explained-526-ministral-3/fig-9.png) | Comparison of Ministral 3 reasoning models with size-matched Qwen 3 reasoning counterparts. |
+| ![Figure 1](assets/papers-explained-526-ministral-3/fig-1.webp) | Title card: Ministral 3. |
+| ![Figure 2](assets/papers-explained-526-ministral-3/fig-2.webp) | Architectural specifications and hyperparameters for the Ministral 3 family. |
+| ![Figure 3](assets/papers-explained-526-ministral-3/fig-3.webp) | Overview of Ministral 3 training recipe. |
+| ![Figure 4](assets/papers-explained-526-ministral-3/fig-4.webp) | Pretraining of the Ministral 3 models starts from the Mistral Small 3.1 Base model. |
+| ![Figure 5](assets/papers-explained-526-ministral-3/fig-5.webp) | Pruning strategies are designed to preserve the most critical components of the original model (over a validation dataset) while reducing... |
+| ![Figure 6](assets/papers-explained-526-ministral-3/fig-6.webp) | Comparing Ministral 3 Base models against the Gemma 3 base models and the Qwen 3 base models on pretraining benchmarks. |
+| ![Figure 7](assets/papers-explained-526-ministral-3/fig-7.webp) | Evaluation results of the Ministral 3 Base family compared to the teacher model Mistral Small 3.1 24B. |
+| ![Figure 8](assets/papers-explained-526-ministral-3/fig-8.webp) | Performance comparison of Ministral 3 instruct models against instruction-tuned baselines from the Qwen 3 and Gemma 3 families. |
+| ![Figure 9](assets/papers-explained-526-ministral-3/fig-9.webp) | Comparison of Ministral 3 reasoning models with size-matched Qwen 3 reasoning counterparts. |
 ## Related
 
 - [[Introducing Mistral 3]] — official Mistral AI Ministral 3 / Large 3 family launch blog (Dec 2025).

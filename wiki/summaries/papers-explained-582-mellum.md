@@ -1,6 +1,6 @@
 # Papers Explained 582: Mellum
 
-**Source**: `raw/draft_Papers-Explained-582--Mellum-765aef2f7e6c.html`  
+**Source**: `raw/draft_Papers-Explained-582--Mellum-765aef2f7e6c.md`  
 **Paper**: https://arxiv.org/abs/2510.05788  
 **Models**: https://huggingface.co/collections/JetBrains/mellum  
 **Ingested**: 2026-06-21  
@@ -10,11 +10,11 @@
 
 **Mellum** is a family of open-weight **4B-parameter** code completion models from [[JetBrains]], built for interactive in-editor use: multi-line fill-in-the-middle (FIM) completion with low latency and compact deployment. Trained from scratch on **4T tokens** of permissively licensed multi-language code plus Wikipedia for comment/string quality, Mellum follows a scaled-down Llama 2 architecture (30 layers, 3,072 hidden, 8,192 context, 49,152-token custom tokenizer).
 
-![Overall code completion performance](../assets/papers-explained-582-mellum/fig-1.png)
+![Overall code completion performance](../assets/papers-explained-582-mellum/fig-1.webp)
 
 Production constraints shaped the design: **90% of requests under 500 ms**, model plus batch fits cost-efficient GPUs (~80 GB VRAM), and a widely supported architecture for optimized inference. Pre-training applies random FIM on half of each chunk (S-P-M order). SFT upgrades FIM to semantically complete segments (function bodies, loop bodies) via JetBrains **Code Engine**, and adds **project-level context** through IoU-line similarity, path-distance file collection, and RAG chunk scoring. **Direct Preference Optimization** further improves stopping behavior and JetComplete metrics.
 
-![JetComplete benchmark results](../assets/papers-explained-582-mellum/fig-2.png)
+![JetComplete benchmark results](../assets/papers-explained-582-mellum/fig-2.webp)
 
 Project-context SFT outperforms the base model and larger baselines (Qwen-2.5-Coder-7B, Seed-Coder-8B, DeepSeek-Coder-5.7B) on JetComplete. Multilingual SFT + DPO extends gains beyond Python while keeping strong Python HumanEval-Infilling scores.
 
@@ -30,9 +30,9 @@ Project-context SFT outperforms the base model and larger baselines (Qwen-2.5-Co
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/papers-explained-582-mellum/fig-1.png) | Overall performance of code completion models. | Evaluation |
-| ![fig-2](../assets/papers-explained-582-mellum/fig-2.png) | Performance on JetComplete. | Evaluation |
-| ![fig-3](../assets/papers-explained-582-mellum/fig-3.png) | SAFIM and RepoBench-C results. | Evaluation |
+| ![fig-1](../assets/papers-explained-582-mellum/fig-1.webp) | Overall performance of code completion models. | Evaluation |
+| ![fig-2](../assets/papers-explained-582-mellum/fig-2.webp) | Performance on JetComplete. | Evaluation |
+| ![fig-3](../assets/papers-explained-582-mellum/fig-3.webp) | SAFIM and RepoBench-C results. | Evaluation |
 
 ## Entities
 

@@ -1,6 +1,6 @@
 # Papers Explained: Text Classification with Gzip
 
-**Source**: `raw/text-classification-gzip/full-article.html`  
+**Source**: `raw/text-classification-gzip/full-article.md`  
 **Ingested**: 2026-05-12  
 **Tags**: #summary
 
@@ -29,13 +29,13 @@ The main weakness is on large-vocabulary datasets like YahooAnswers, where perfo
 
 | Figure | Caption |
 |--------|---------|
-| ![Header image](../assets/text-classification-gzip/fig-1.png) | Article header / visual banner for the gzip+kNN text classification method. |
-| ![Datasets](../assets/text-classification-gzip/fig-2.png) | Datasets used for evaluation: in-distribution and OOD benchmarks spanning multiple languages and domains. |
-| ![Comparison models](../assets/text-classification-gzip/fig-3.png) | Baseline models used for comparison (BERT, mBERT, character-based, word-based, TFIDF-LR, etc.). |
-| ![In-distribution results](../assets/text-classification-gzip/fig-4.png) | Accuracy on in-distribution datasets. Gzip+kNN is competitive with non-pretrained deep models, especially on medium/small datasets. |
-| ![OOD results](../assets/text-classification-gzip/fig-5.png) | Out-of-distribution results. Gzip+kNN outperforms BERT and mBERT by a large margin across all five OOD datasets. |
+| ![Header image](../assets/text-classification-gzip/fig-1.webp) | Article header / visual banner for the gzip+kNN text classification method. |
+| ![Datasets](../assets/text-classification-gzip/fig-2.webp) | Datasets used for evaluation: in-distribution and OOD benchmarks spanning multiple languages and domains. |
+| ![Comparison models](../assets/text-classification-gzip/fig-3.webp) | Baseline models used for comparison (BERT, mBERT, character-based, word-based, TFIDF-LR, etc.). |
+| ![In-distribution results](../assets/text-classification-gzip/fig-4.webp) | Accuracy on in-distribution datasets. Gzip+kNN is competitive with non-pretrained deep models, especially on medium/small datasets. |
+| ![OOD results](../assets/text-classification-gzip/fig-5.webp) | Out-of-distribution results. Gzip+kNN outperforms BERT and mBERT by a large margin across all five OOD datasets. |
 
-The in-distribution results ![in-distribution results](../assets/text-classification-gzip/fig-4.png) show gzip+kNN particularly shining on R8 and R52 (smaller datasets) while lagging on YahooAnswers. The OOD results ![OOD results](../assets/text-classification-gzip/fig-5.png) are where the method's bias-free design pays off most clearly.
+The in-distribution results ![in-distribution results](../assets/text-classification-gzip/fig-4.webp) show gzip+kNN particularly shining on R8 and R52 (smaller datasets) while lagging on YahooAnswers. The OOD results ![OOD results](../assets/text-classification-gzip/fig-5.webp) are where the method's bias-free design pays off most clearly.
 
 ## Entities
 

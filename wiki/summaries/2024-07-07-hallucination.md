@@ -1,6 +1,6 @@
 # Extrinsic Hallucinations in LLMs
 
-**Source**: `raw/2024-07-07-hallucination/full-article.html` (canonical HTML, 111 KB); `raw/2024-07-07-hallucination/full-article.md` (markdown view)  
+**Source**: `raw/2024-07-07-hallucination/full-article.md` (canonical HTML, 111 KB); `raw/2024-07-07-hallucination/full-article.md` (markdown view)  
 **Ingested**: 2026-05-21  
 **Tags**: #summary
 
@@ -37,32 +37,32 @@ Anti-hallucination approaches form four clusters. *RAG+Editing* (RARR, FAVA) ret
 
 | Figure | Caption |
 |--------|---------|
-| ![fig-25](../assets/2024-07-07-hallucination/fig-25.png) | Knowledge categorization of closed-book QA examples based on how likely the model outputs correct answers (Known/Unknown taxonomy) — Gekhman et al. 2024 |
-| ![fig-24](../assets/2024-07-07-hallucination/fig-24.png) | Train and dev performance over time when fine-tuning on half Known, half Unknown examples — Unknown examples learned much slower |
-| ![fig-23](../assets/2024-07-07-hallucination/fig-23.png) | Evaluation framework for FactualityPrompt benchmark (Lee et al. 2022) |
-| ![fig-22](../assets/2024-07-07-hallucination/fig-22.png) | Factuality estimation: retrieval-augmented vs non-context LLM across FActScore variants |
-| ![fig-13](../assets/2024-07-07-hallucination/fig-13.png) | SAFE overview: agentic multi-step search loop for verifying atomic facts |
-| ![fig-12](../assets/2024-07-07-hallucination/fig-12.png) | F1@K long-form factuality results for mainstream models (Wei et al. 2024) |
-| ![fig-15](../assets/2024-07-07-hallucination/fig-15.png) | SelfCheckGPT overview: consistency checking against multiple stochastic samples |
-| ![fig-14](../assets/2024-07-07-hallucination/fig-14.png) | SelfAware accuracy by instruct-GPT model size on answerable vs unanswerable questions |
-| ![fig-17](../assets/2024-07-07-hallucination/fig-17.png) | Calibration curves for models of various sizes: larger models better calibrated |
-| ![fig-19](../assets/2024-07-07-hallucination/fig-19.png) | Direct vs indirect query for checking hallucinated reference generation |
-| ![fig-09](../assets/2024-07-07-hallucination/fig-09.png) | RARR (Retrofit Attribution using Research and Revision) illustration |
-| ![fig-02](../assets/2024-07-07-hallucination/fig-02.png) | FAVA: retriever + editor model for factuality verification with augmented knowledge |
-| ![fig-11](../assets/2024-07-07-hallucination/fig-11.png) | RR (Rethinking with Retrieval) performance on commonsense, temporal, and tabular reasoning |
-| ![fig-26](../assets/2024-07-07-hallucination/fig-26.png) | Self-RAG overview: model retrieves documents in parallel and critiques its own generation |
-| ![fig-10](../assets/2024-07-07-hallucination/fig-10.png) | RECITE: Recitation-Augmented Generation using parametric memory |
-| ![fig-01](../assets/2024-07-07-hallucination/fig-01.png) | CoVe: Chain-of-Verification — plan questions, answer independently, revise |
-| ![fig-21](../assets/2024-07-07-hallucination/fig-21.png) | Factual nucleus sampling: restricts sampling nucleus to factually-consistent tokens |
-| ![fig-08](../assets/2024-07-07-hallucination/fig-08.png) | ITI (Inference-Time Intervention): probing and shifting attention head activations |
-| ![fig-06](../assets/2024-07-07-hallucination/fig-06.png) | GopherCite demo-generation examples |
-| ![fig-07](../assets/2024-07-07-hallucination/fig-07.png) | GopherCite results: factuality and supporting evidence scores |
-| ![fig-16](../assets/2024-07-07-hallucination/fig-16.png) | WebGPT-RL: training GPT-3 to browse the web and produce attributed answers |
-| ![fig-03](../assets/2024-07-07-hallucination/fig-03.png) | FLAME results: factuality fine-tuning with NLI-based reward |
-| ![fig-04](../assets/2024-07-07-hallucination/fig-04.png) | FLAME framework architecture |
-| ![fig-05](../assets/2024-07-07-hallucination/fig-05.png) | FacTool framework for evaluating factuality across task types |
-| ![fig-18](../assets/2024-07-07-hallucination/fig-18.png) | Calibration results under task distribution shifts (Lin et al. 2022) |
-| ![fig-20](../assets/2024-07-07-hallucination/fig-20.png) | Fine-tuning new knowledge results (Gekhman et al. 2024) |
+| ![fig-25](../assets/2024-07-07-hallucination/fig-25.webp) | Knowledge categorization of closed-book QA examples based on how likely the model outputs correct answers (Known/Unknown taxonomy) — Gekhman et al. 2024 |
+| ![fig-24](../assets/2024-07-07-hallucination/fig-24.webp) | Train and dev performance over time when fine-tuning on half Known, half Unknown examples — Unknown examples learned much slower |
+| ![fig-23](../assets/2024-07-07-hallucination/fig-23.webp) | Evaluation framework for FactualityPrompt benchmark (Lee et al. 2022) |
+| ![fig-22](../assets/2024-07-07-hallucination/fig-22.webp) | Factuality estimation: retrieval-augmented vs non-context LLM across FActScore variants |
+| ![fig-13](../assets/2024-07-07-hallucination/fig-13.webp) | SAFE overview: agentic multi-step search loop for verifying atomic facts |
+| ![fig-12](../assets/2024-07-07-hallucination/fig-12.webp) | F1@K long-form factuality results for mainstream models (Wei et al. 2024) |
+| ![fig-15](../assets/2024-07-07-hallucination/fig-15.webp) | SelfCheckGPT overview: consistency checking against multiple stochastic samples |
+| ![fig-14](../assets/2024-07-07-hallucination/fig-14.webp) | SelfAware accuracy by instruct-GPT model size on answerable vs unanswerable questions |
+| ![fig-17](../assets/2024-07-07-hallucination/fig-17.webp) | Calibration curves for models of various sizes: larger models better calibrated |
+| ![fig-19](../assets/2024-07-07-hallucination/fig-19.webp) | Direct vs indirect query for checking hallucinated reference generation |
+| ![fig-09](../assets/2024-07-07-hallucination/fig-09.webp) | RARR (Retrofit Attribution using Research and Revision) illustration |
+| ![fig-02](../assets/2024-07-07-hallucination/fig-02.webp) | FAVA: retriever + editor model for factuality verification with augmented knowledge |
+| ![fig-11](../assets/2024-07-07-hallucination/fig-11.webp) | RR (Rethinking with Retrieval) performance on commonsense, temporal, and tabular reasoning |
+| ![fig-26](../assets/2024-07-07-hallucination/fig-26.webp) | Self-RAG overview: model retrieves documents in parallel and critiques its own generation |
+| ![fig-10](../assets/2024-07-07-hallucination/fig-10.webp) | RECITE: Recitation-Augmented Generation using parametric memory |
+| ![fig-01](../assets/2024-07-07-hallucination/fig-01.webp) | CoVe: Chain-of-Verification — plan questions, answer independently, revise |
+| ![fig-21](../assets/2024-07-07-hallucination/fig-21.webp) | Factual nucleus sampling: restricts sampling nucleus to factually-consistent tokens |
+| ![fig-08](../assets/2024-07-07-hallucination/fig-08.webp) | ITI (Inference-Time Intervention): probing and shifting attention head activations |
+| ![fig-06](../assets/2024-07-07-hallucination/fig-06.webp) | GopherCite demo-generation examples |
+| ![fig-07](../assets/2024-07-07-hallucination/fig-07.webp) | GopherCite results: factuality and supporting evidence scores |
+| ![fig-16](../assets/2024-07-07-hallucination/fig-16.webp) | WebGPT-RL: training GPT-3 to browse the web and produce attributed answers |
+| ![fig-03](../assets/2024-07-07-hallucination/fig-03.webp) | FLAME results: factuality fine-tuning with NLI-based reward |
+| ![fig-04](../assets/2024-07-07-hallucination/fig-04.webp) | FLAME framework architecture |
+| ![fig-05](../assets/2024-07-07-hallucination/fig-05.webp) | FacTool framework for evaluating factuality across task types |
+| ![fig-18](../assets/2024-07-07-hallucination/fig-18.webp) | Calibration results under task distribution shifts (Lin et al. 2022) |
+| ![fig-20](../assets/2024-07-07-hallucination/fig-20.webp) | Fine-tuning new knowledge results (Gekhman et al. 2024) |
 
 ## Entities
 

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-09-09_Papers-Explained-206--Nemotron-4-15B-7d895fb56134.html`
+- Source file: `raw/2024-09-09_Papers-Explained-206--Nemotron-4-15B-7d895fb56134.md`
 - Source title: Papers Explained 206: Nemotron-4 15B
 - Published: 2024-09-09
 - Canonical: [https://medium.com/@ritvik19/papers-explained-206-nemotron-4-15b-7d895fb56134](https://medium.com/@ritvik19/papers-explained-206-nemotron-4-15b-7d895fb56134)
@@ -117,22 +117,22 @@ Nemotron-4 15B Technical Report [2402.16819](https://arxiv.org/abs/2402.16819)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-09-09_Papers-Explained-206--Nemotron-4-15B-7d895fb56134.html`); local copies under `wiki/assets/papers-explained-206-nemotron-4-15b/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-09-09_Papers-Explained-206--Nemotron-4-15B-7d895fb56134.md`); local copies under `wiki/assets/papers-explained-206-nemotron-4-15b/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-206-nemotron-4-15b/fig-1.png) | Nemotron-4 15B technical report title and author block. |
-| ![Figure 2](assets/papers-explained-206-nemotron-4-15b/fig-2.png) | Key architecture hyperparameters for Nemotron-4 15B. |
-| ![Figure 3](assets/papers-explained-206-nemotron-4-15b/fig-3.png) | English pretraining-token composition pie chart. |
-| ![Figure 4](assets/papers-explained-206-nemotron-4-15b/fig-4.png) | Programming-language token distribution used during pretraining. |
-| ![Figure 5](assets/papers-explained-206-nemotron-4-15b/fig-5.png) | Natural-language token distribution excluding English. |
-| ![Figure 6](assets/papers-explained-206-nemotron-4-15b/fig-6.png) | Reasoning benchmark table: SIQA, ARC, PIQA, Winogrande, HellaSwag. |
-| ![Figure 7](assets/papers-explained-206-nemotron-4-15b/fig-7.png) | BBH and MMLU comparison against LLaMA-2, QWEN, Mistral, and Gemma. |
-| ![Figure 8](assets/papers-explained-206-nemotron-4-15b/fig-8.png) | GSM8K and coding benchmarks: HumanEval and MBPP. |
-| ![Figure 9](assets/papers-explained-206-nemotron-4-15b/fig-9.png) | Multilingual zero-shot and 4-shot results across ten languages. |
-| ![Figure 10](assets/papers-explained-206-nemotron-4-15b/fig-10.png) | Multilingual benchmark table across AR, BN, FI, ID, KO, RU, SW, TE. |
-| ![Figure 11](assets/papers-explained-206-nemotron-4-15b/fig-11.png) | Chain-of-thought multilingual reasoning results: native COT vs English COT. |
-| ![Figure 12](assets/papers-explained-206-nemotron-4-15b/fig-12.png) | Chinese-to-multilingual translation benchmark results. |
+| ![Figure 1](assets/papers-explained-206-nemotron-4-15b/fig-1.webp) | Nemotron-4 15B technical report title and author block. |
+| ![Figure 2](assets/papers-explained-206-nemotron-4-15b/fig-2.webp) | Key architecture hyperparameters for Nemotron-4 15B. |
+| ![Figure 3](assets/papers-explained-206-nemotron-4-15b/fig-3.webp) | English pretraining-token composition pie chart. |
+| ![Figure 4](assets/papers-explained-206-nemotron-4-15b/fig-4.webp) | Programming-language token distribution used during pretraining. |
+| ![Figure 5](assets/papers-explained-206-nemotron-4-15b/fig-5.webp) | Natural-language token distribution excluding English. |
+| ![Figure 6](assets/papers-explained-206-nemotron-4-15b/fig-6.webp) | Reasoning benchmark table: SIQA, ARC, PIQA, Winogrande, HellaSwag. |
+| ![Figure 7](assets/papers-explained-206-nemotron-4-15b/fig-7.webp) | BBH and MMLU comparison against LLaMA-2, QWEN, Mistral, and Gemma. |
+| ![Figure 8](assets/papers-explained-206-nemotron-4-15b/fig-8.webp) | GSM8K and coding benchmarks: HumanEval and MBPP. |
+| ![Figure 9](assets/papers-explained-206-nemotron-4-15b/fig-9.webp) | Multilingual zero-shot and 4-shot results across ten languages. |
+| ![Figure 10](assets/papers-explained-206-nemotron-4-15b/fig-10.webp) | Multilingual benchmark table across AR, BN, FI, ID, KO, RU, SW, TE. |
+| ![Figure 11](assets/papers-explained-206-nemotron-4-15b/fig-11.webp) | Chain-of-thought multilingual reasoning results: native COT vs English COT. |
+| ![Figure 12](assets/papers-explained-206-nemotron-4-15b/fig-12.webp) | Chinese-to-multilingual translation benchmark results. |
 ## Related
 
 - [[Papers Explained Corpus]]

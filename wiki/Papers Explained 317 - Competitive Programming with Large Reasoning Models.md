@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-02-25_Papers-Explained-317--Competitive-Programming-with-Large-Reasoning-Models-51836dbf584e.html`
+- Source file: `raw/2025-02-25_Papers-Explained-317--Competitive-Programming-with-Large-Reasoning-Models-51836dbf584e.md`
 - Source title: Papers Explained 317: Competitive Programming with Large Reasoning Models
 - Published: 2025-02-25
 - Canonical: [https://medium.com/@ritvik19/papers-explained-317-competitive-programming-with-large-reasoning-models-51836dbf584e](https://medium.com/@ritvik19/papers-explained-317-competitive-programming-with-large-reasoning-models-51836dbf584e)
@@ -151,19 +151,19 @@ Competitive Programming with Large Reasoning Models [2502.06807](https://arxiv.o
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-02-25_Papers-Explained-317--Competitive-Programming-with-Large-Reasoning-Models-51836dbf584e.html`); local copies under `wiki/assets/papers-explained-317-competitive-programming-with-large-reasoning-models/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-02-25_Papers-Explained-317--Competitive-Programming-with-Large-Reasoning-Models-51836dbf584e.md`); local copies under `wiki/assets/papers-explained-317-competitive-programming-with-large-reasoning-models/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-317-competitive-programming-with-large-reasoning-models/fig-1.png) | Title card: Competitive Programming with Large Reasoning Models. |
-| ![Figure 2](assets/papers-explained-317-competitive-programming-with-large-reasoning-models/fig-2.png) | Comparing reasoning LLMs OpenAI o1-preview and o1 to gpt-4o on CodeForces. |
-| ![Figure 3](assets/papers-explained-317-competitive-programming-with-large-reasoning-models/fig-3.png) | Additional RL training and additional test-time compute improves competitive mathematics performance. |
-| ![Figure 4](assets/papers-explained-317-competitive-programming-with-large-reasoning-models/fig-4.png) | Further training OpenAI o1 on coding tasks and incorporating test-time strategies improves performance. |
-| ![Figure 5](assets/papers-explained-317-competitive-programming-with-large-reasoning-models/fig-5.png) | Performance of o1-ioi competing at IOI 2024. |
-| ![Figure 6](assets/papers-explained-317-competitive-programming-with-large-reasoning-models/fig-6.png) | Performance of OpenAI o3 on the CodeForces benchmark. |
-| ![Figure 7](assets/papers-explained-317-competitive-programming-with-large-reasoning-models/fig-7.png) | IOI 2024 scores under different submission strategies. |
-| ![Figure 8](assets/papers-explained-317-competitive-programming-with-large-reasoning-models/fig-8.png) | HackerRank Astra evaluation. |
-| ![Figure 9](assets/papers-explained-317-competitive-programming-with-large-reasoning-models/fig-9.png) | SWE-bench evaluation. |
+| ![Figure 1](assets/papers-explained-317-competitive-programming-with-large-reasoning-models/fig-1.webp) | Title card: Competitive Programming with Large Reasoning Models. |
+| ![Figure 2](assets/papers-explained-317-competitive-programming-with-large-reasoning-models/fig-2.webp) | Comparing reasoning LLMs OpenAI o1-preview and o1 to gpt-4o on CodeForces. |
+| ![Figure 3](assets/papers-explained-317-competitive-programming-with-large-reasoning-models/fig-3.webp) | Additional RL training and additional test-time compute improves competitive mathematics performance. |
+| ![Figure 4](assets/papers-explained-317-competitive-programming-with-large-reasoning-models/fig-4.webp) | Further training OpenAI o1 on coding tasks and incorporating test-time strategies improves performance. |
+| ![Figure 5](assets/papers-explained-317-competitive-programming-with-large-reasoning-models/fig-5.webp) | Performance of o1-ioi competing at IOI 2024. |
+| ![Figure 6](assets/papers-explained-317-competitive-programming-with-large-reasoning-models/fig-6.webp) | Performance of OpenAI o3 on the CodeForces benchmark. |
+| ![Figure 7](assets/papers-explained-317-competitive-programming-with-large-reasoning-models/fig-7.webp) | IOI 2024 scores under different submission strategies. |
+| ![Figure 8](assets/papers-explained-317-competitive-programming-with-large-reasoning-models/fig-8.webp) | HackerRank Astra evaluation. |
+| ![Figure 9](assets/papers-explained-317-competitive-programming-with-large-reasoning-models/fig-9.webp) | SWE-bench evaluation. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -4,7 +4,7 @@
 
 This X article by `nrehiew_` visually compares [[Supervised Fine-Tuning]], [[Reinforcement Learning]], and [[On-Policy Distillation]] as different ways of moving a model through policy space. Its main contribution to the wiki is a geometric intuition: SFT applies dense forward-KL-like pressure across a target dataset, RL applies sparse but compounding pressure on current-policy samples, and OPD/MOPD tries to get on-policy state coverage with a dense same-family teacher signal.
 
-Source: [https://x.com/nrehiew_/article/2053482349300797526](https://x.com/nrehiew_/article/2053482349300797526); readable raw source preserved at `raw/x-nrehiew-on-policy-distillation/full-article.html`.
+Source: [https://x.com/nrehiew_/article/2053482349300797526](https://x.com/nrehiew_/article/2053482349300797526); readable raw source preserved at `raw/x-nrehiew-on-policy-distillation/full-article.md`.
 
 ## Summary
 
@@ -29,15 +29,15 @@ The cautionary thread is that dense teacher signals can still be biased and conc
 
 | Figure | Caption | Source Location |
 | --- | --- | --- |
-| ![fig-1.jpg](assets/x-nrehiew-on-policy-distillation/fig-1.jpg) | SFT applies dense update pressure across a dataset target distribution, including useful task behavior and incidental style or dataset artifacts. | Article export |
-| ![fig-2.jpg](assets/x-nrehiew-on-policy-distillation/fig-2.jpg) | RL updates only through behavior sampled from the current policy, concentrating probability mass around rewarded on-policy trajectories. | Article export |
-| ![fig-3.jpg](assets/x-nrehiew-on-policy-distillation/fig-3.jpg) | On-policy training tends to move the model toward a nearby task-solving policy rather than an arbitrary external target. | Article export |
-| ![fig-4.jpg](assets/x-nrehiew-on-policy-distillation/fig-4.jpg) | A toy multimodal example showing reverse KL preserving an old mode better than forward-KL SFT while learning a new task mode. | Article export |
-| ![fig-5.jpg](assets/x-nrehiew-on-policy-distillation/fig-5.jpg) | Minimal-editing and LiveCodeBench results comparing teachers with OPD students trained from SFT and RL teachers. | Article export |
-| ![fig-6.jpg](assets/x-nrehiew-on-policy-distillation/fig-6.jpg) | Reward and entropy curves showing OPD reward rising sharply while entropy collapses compared with a gradual RL teacher run. | Article export |
-| ![fig-7.jpg](assets/x-nrehiew-on-policy-distillation/fig-7.jpg) | MiMo-V2-Flash MOPD benchmark table, with the student after MOPD sometimes matching or exceeding the tagged best teacher. | Article export |
-| ![fig-8.jpg](assets/x-nrehiew-on-policy-distillation/fig-8.jpg) | Per-token KL by token category under student and teacher thinking-mode configurations, with style tokens carrying the highest KL signal. | Article export |
-| ![fig-9.jpg](assets/x-nrehiew-on-policy-distillation/fig-9.jpg) | Abstract policy landscape illustration used as a visual separator in the article. | Article export |
+| ![fig-1.jpg](assets/x-nrehiew-on-policy-distillation/fig-1.webp) | SFT applies dense update pressure across a dataset target distribution, including useful task behavior and incidental style or dataset artifacts. | Article export |
+| ![fig-2.jpg](assets/x-nrehiew-on-policy-distillation/fig-2.webp) | RL updates only through behavior sampled from the current policy, concentrating probability mass around rewarded on-policy trajectories. | Article export |
+| ![fig-3.jpg](assets/x-nrehiew-on-policy-distillation/fig-3.webp) | On-policy training tends to move the model toward a nearby task-solving policy rather than an arbitrary external target. | Article export |
+| ![fig-4.jpg](assets/x-nrehiew-on-policy-distillation/fig-4.webp) | A toy multimodal example showing reverse KL preserving an old mode better than forward-KL SFT while learning a new task mode. | Article export |
+| ![fig-5.jpg](assets/x-nrehiew-on-policy-distillation/fig-5.webp) | Minimal-editing and LiveCodeBench results comparing teachers with OPD students trained from SFT and RL teachers. | Article export |
+| ![fig-6.jpg](assets/x-nrehiew-on-policy-distillation/fig-6.webp) | Reward and entropy curves showing OPD reward rising sharply while entropy collapses compared with a gradual RL teacher run. | Article export |
+| ![fig-7.jpg](assets/x-nrehiew-on-policy-distillation/fig-7.webp) | MiMo-V2-Flash MOPD benchmark table, with the student after MOPD sometimes matching or exceeding the tagged best teacher. | Article export |
+| ![fig-8.jpg](assets/x-nrehiew-on-policy-distillation/fig-8.webp) | Per-token KL by token category under student and teacher thinking-mode configurations, with style tokens carrying the highest KL signal. | Article export |
+| ![fig-9.jpg](assets/x-nrehiew-on-policy-distillation/fig-9.webp) | Abstract policy landscape illustration used as a visual separator in the article. | Article export |
 
 ## Entities
 

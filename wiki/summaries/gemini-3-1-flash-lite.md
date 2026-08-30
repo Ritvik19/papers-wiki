@@ -1,6 +1,6 @@
 # Gemini 3.1 Flash Lite
 
-**Source**: `raw/gemini-3-1-flash-lite/full-article.html` (397 KB)  
+**Source**: `raw/gemini-3-1-flash-lite/full-article.md` (397 KB)  
 **URL**: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-lite/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

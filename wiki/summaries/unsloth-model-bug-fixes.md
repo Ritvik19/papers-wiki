@@ -49,4 +49,4 @@ Unsloth repeatedly ships **day-zero model support** by patching upstream Hugging
 
 ## Sources
 
-- `raw/gemma-bugs/full-article.html`
+- `raw/gemma-bugs/full-article.md`

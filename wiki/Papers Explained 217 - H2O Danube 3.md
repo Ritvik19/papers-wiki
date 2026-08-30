@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-09-24_Papers-Explained-217--H2O-Danube-3-917a7b40a79f.html`
+- Source file: `raw/2024-09-24_Papers-Explained-217--H2O-Danube-3-917a7b40a79f.md`
 - Source title: Papers Explained 217: H2O Danube 3
 - Published: 2024-09-24
 - Canonical: [https://medium.com/@ritvik19/papers-explained-217-h2o-danube-3-917a7b40a79f](https://medium.com/@ritvik19/papers-explained-217-h2o-danube-3-917a7b40a79f)
@@ -97,19 +97,19 @@ Recommended Reading [Small LLMs](https://ritvik19.medium.com/list/small-llms-411
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-09-24_Papers-Explained-217--H2O-Danube-3-917a7b40a79f.html`); local copies under `wiki/assets/papers-explained-217-h2o-danube-3/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-09-24_Papers-Explained-217--H2O-Danube-3-917a7b40a79f.md`); local copies under `wiki/assets/papers-explained-217-h2o-danube-3/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-217-h2o-danube-3/fig-1.png) | H2O Danube 3 Overview: Efficient language models for edge devices. |
-| ![Figure 2](assets/papers-explained-217-h2o-danube-3/fig-2.png) | Key model parameters for H2O-Danube3-4B and H2O-Danube3-500M variants. |
-| ![Figure 3](assets/papers-explained-217-h2o-danube-3/fig-3.png) | Data stages for H2O-Danube3-4B: Progressive refinement of data mix. |
-| ![Figure 4](assets/papers-explained-217-h2o-danube-3/fig-4.png) | Academic benchmarks: Performance comparison on standard reasoning tasks. |
-| ![Figure 5](assets/papers-explained-217-h2o-danube-3/fig-5.png) | Academic benchmarks for smaller models: H2O-Danube3-500M comparison. |
-| ![Figure 6](assets/papers-explained-217-h2o-danube-3/fig-6.png) | Chat benchmarks: Performance evaluation of fine-tuned chat models. |
-| ![Figure 7](assets/papers-explained-217-h2o-danube-3/fig-7.png) | Chat benchmarks for smaller models: H2O-Danube3-500M-Chat evaluation. |
-| ![Figure 8](assets/papers-explained-217-h2o-danube-3/fig-8.png) | Fine-tuning benchmarks: Leading performance with default hyperparameter settings. |
-| ![Figure 9](assets/papers-explained-217-h2o-danube-3/fig-9.png) | Quantization: Trade-off between model size and quality for edge deployment. |
+| ![Figure 1](assets/papers-explained-217-h2o-danube-3/fig-1.webp) | H2O Danube 3 Overview: Efficient language models for edge devices. |
+| ![Figure 2](assets/papers-explained-217-h2o-danube-3/fig-2.webp) | Key model parameters for H2O-Danube3-4B and H2O-Danube3-500M variants. |
+| ![Figure 3](assets/papers-explained-217-h2o-danube-3/fig-3.webp) | Data stages for H2O-Danube3-4B: Progressive refinement of data mix. |
+| ![Figure 4](assets/papers-explained-217-h2o-danube-3/fig-4.webp) | Academic benchmarks: Performance comparison on standard reasoning tasks. |
+| ![Figure 5](assets/papers-explained-217-h2o-danube-3/fig-5.webp) | Academic benchmarks for smaller models: H2O-Danube3-500M comparison. |
+| ![Figure 6](assets/papers-explained-217-h2o-danube-3/fig-6.webp) | Chat benchmarks: Performance evaluation of fine-tuned chat models. |
+| ![Figure 7](assets/papers-explained-217-h2o-danube-3/fig-7.webp) | Chat benchmarks for smaller models: H2O-Danube3-500M-Chat evaluation. |
+| ![Figure 8](assets/papers-explained-217-h2o-danube-3/fig-8.webp) | Fine-tuning benchmarks: Leading performance with default hyperparameter settings. |
+| ![Figure 9](assets/papers-explained-217-h2o-danube-3/fig-9.webp) | Quantization: Trade-off between model size and quality for edge deployment. |
 ## Related
 
 - [[Papers Explained Corpus]]

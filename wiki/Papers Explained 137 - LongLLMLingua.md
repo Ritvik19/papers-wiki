@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-05-15_Papers-Explained-137--LongLLMLingua-45961fa703dd.html`
+- Source file: `raw/2024-05-15_Papers-Explained-137--LongLLMLingua-45961fa703dd.md`
 - Source title: Papers Explained 137: LongLLMLingua
 - Published: 2024-05-15
 - Canonical: [https://medium.com/@ritvik19/papers-explained-137-longllmlingua-45961fa703dd](https://medium.com/@ritvik19/papers-explained-137-longllmlingua-45961fa703dd)
@@ -141,24 +141,24 @@ Recommended Reading [LLM Lingua Series](https://ritvik19.medium.com/list/llm-lin
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-05-15_Papers-Explained-137--LongLLMLingua-45961fa703dd.html`); local copies under `wiki/assets/papers-explained-137-longllmlingua/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-05-15_Papers-Explained-137--LongLLMLingua-45961fa703dd.md`); local copies under `wiki/assets/papers-explained-137-longllmlingua/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-137-longllmlingua/fig-1.png) | Title page of *LongLLMLingua: Accelerating and Enhancing LLMs in Long Context Scenarios via Prompt Compression*. |
-| ![Figure 2](assets/papers-explained-137-longllmlingua/fig-2.png) | Long-context compression objective balancing output discrepancy $D(\mathbf{y},\tilde{\mathbf{y}})$ against sparsity of the compressed prompt via $\lambda\|\tilde{\mathbf{x}}\|_0$. |
-| ![Figure 3](assets/papers-explained-137-longllmlingua/fig-3.png) | Pipeline overview: question-aware coarse compression with reordering, fine-grained dynamic ratios, black-box execution, then subsequence recovery. |
-| ![Figure 4](assets/papers-explained-137-longllmlingua/fig-4.png) | Document importance score $r_k$ from averaged log-probabilities of restricted query tokens conditioned on each document. |
-| ![Figure 5](assets/papers-explained-137-longllmlingua/fig-5.png) | Contrastive perplexity score per token as standard perplexity minus query-conditioned perplexity. |
-| ![Figure 6](assets/papers-explained-137-longllmlingua/fig-6.png) | Normalized perplexity vs contrastive perplexity along token positions; dashed line marks document boundary in the multi-document QA example. |
-| ![Figure 7](assets/papers-explained-137-longllmlingua/fig-7.png) | Formal reordering of retained documents by ranking scores while fixing instruction and question order. |
-| ![Figure 8](assets/papers-explained-137-longllmlingua/fig-8.png) | Per-token budgets inherit document-level $\tau_k^{\text{doc}}$ with a clamped linear scheduler tied to rank index $I(r_k)$. |
-| ![Figure 9](assets/papers-explained-137-longllmlingua/fig-9.png) | Toy example of entity-preserving compression (original vs compressed snippet) and matching LLM outputs after compression. |
-| ![Figure 10](assets/papers-explained-137-longllmlingua/fig-10.png) | Pseudocode mapping generations over compressed spans back to maximal matching subsequences in the original prompt. |
-| ![Figure 11](assets/papers-explained-137-longllmlingua/fig-11.png) | NaturalQuestions accuracy vs gold-document rank under 2× and 4× budgets for retrieval vs compression baselines (GPT-3.5-Turbo and LongChat-13B). |
-| ![Figure 12](assets/papers-explained-137-longllmlingua/fig-12.png) | LongBench task averages plus ZeroSCROLLS under 3k and 2k token caps versus uncompressed and zero-shot baselines. |
-| ![Figure 13](assets/papers-explained-137-longllmlingua/fig-13.png) | End-to-end latency trade-offs at 2×, 5×, and 10× compression for LLMLingua vs LongLLMLingua including compressor overhead. |
-| ![Figure 14](assets/papers-explained-137-longllmlingua/fig-14.png) | Ablations on NaturalQuestions with a 2× constraint showing impact of question-aware stages, dynamic ratios, recovery, and SBERT coarse ranking. |
+| ![Figure 1](assets/papers-explained-137-longllmlingua/fig-1.webp) | Title page of *LongLLMLingua: Accelerating and Enhancing LLMs in Long Context Scenarios via Prompt Compression*. |
+| ![Figure 2](assets/papers-explained-137-longllmlingua/fig-2.webp) | Long-context compression objective balancing output discrepancy $D(\mathbf{y},\tilde{\mathbf{y}})$ against sparsity of the compressed prompt via $\lambda\|\tilde{\mathbf{x}}\|_0$. |
+| ![Figure 3](assets/papers-explained-137-longllmlingua/fig-3.webp) | Pipeline overview: question-aware coarse compression with reordering, fine-grained dynamic ratios, black-box execution, then subsequence recovery. |
+| ![Figure 4](assets/papers-explained-137-longllmlingua/fig-4.webp) | Document importance score $r_k$ from averaged log-probabilities of restricted query tokens conditioned on each document. |
+| ![Figure 5](assets/papers-explained-137-longllmlingua/fig-5.webp) | Contrastive perplexity score per token as standard perplexity minus query-conditioned perplexity. |
+| ![Figure 6](assets/papers-explained-137-longllmlingua/fig-6.webp) | Normalized perplexity vs contrastive perplexity along token positions; dashed line marks document boundary in the multi-document QA example. |
+| ![Figure 7](assets/papers-explained-137-longllmlingua/fig-7.webp) | Formal reordering of retained documents by ranking scores while fixing instruction and question order. |
+| ![Figure 8](assets/papers-explained-137-longllmlingua/fig-8.webp) | Per-token budgets inherit document-level $\tau_k^{\text{doc}}$ with a clamped linear scheduler tied to rank index $I(r_k)$. |
+| ![Figure 9](assets/papers-explained-137-longllmlingua/fig-9.webp) | Toy example of entity-preserving compression (original vs compressed snippet) and matching LLM outputs after compression. |
+| ![Figure 10](assets/papers-explained-137-longllmlingua/fig-10.webp) | Pseudocode mapping generations over compressed spans back to maximal matching subsequences in the original prompt. |
+| ![Figure 11](assets/papers-explained-137-longllmlingua/fig-11.webp) | NaturalQuestions accuracy vs gold-document rank under 2× and 4× budgets for retrieval vs compression baselines (GPT-3.5-Turbo and LongChat-13B). |
+| ![Figure 12](assets/papers-explained-137-longllmlingua/fig-12.webp) | LongBench task averages plus ZeroSCROLLS under 3k and 2k token caps versus uncompressed and zero-shot baselines. |
+| ![Figure 13](assets/papers-explained-137-longllmlingua/fig-13.webp) | End-to-end latency trade-offs at 2×, 5×, and 10× compression for LLMLingua vs LongLLMLingua including compressor overhead. |
+| ![Figure 14](assets/papers-explained-137-longllmlingua/fig-14.webp) | Ablations on NaturalQuestions with a 2× constraint showing impact of question-aware stages, dynamic ratios, recovery, and SBERT coarse ranking. |
 ## Related
 
 - [[Papers Explained Corpus]]

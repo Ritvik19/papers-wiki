@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-12-15_Papers-Explained-79--DETR-bcdd53355d9f.html`
+- Source file: `raw/2023-12-15_Papers-Explained-79--DETR-bcdd53355d9f.md`
 - Source title: Papers Explained 79: DETR
 - Published: 2023-12-15
 - Canonical: [https://medium.com/@ritvik19/papers-explained-79-detr-bcdd53355d9f](https://medium.com/@ritvik19/papers-explained-79-detr-bcdd53355d9f)
@@ -121,16 +121,16 @@ End-to-End Object Detection with Transformers [2005.12872](https://arxiv.org/abs
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-12-15_Papers-Explained-79--DETR-bcdd53355d9f.html`); local copies under `wiki/assets/papers-explained-79-detr/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-12-15_Papers-Explained-79--DETR-bcdd53355d9f.md`); local copies under `wiki/assets/papers-explained-79-detr/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-79-detr/fig-1.png) | Title card: DETR. |
-| ![Figure 2](assets/papers-explained-79-detr/fig-2.png) | DETR directly predicts (in parallel) the final set of detections by combining a common CNN with a transformer architecture. |
-| ![Figure 3](assets/papers-explained-79-detr/fig-3.png) | DETR infers a fixed-size set of N predictions, in a single pass. |
-| ![Figure 4](assets/papers-explained-79-detr/fig-4.png) | DETR infers a fixed-size set of N predictions, in a single pass. |
-| ![Figure 5](assets/papers-explained-79-detr/fig-5.png) | DETR infers a fixed-size set of N predictions, in a single pass. |
-| ![Figure 6](assets/papers-explained-79-detr/fig-6.png) | The final prediction is computed by a 3-layer perceptron with ReLU activation function and hidden dimension d, and a linear projection... |
+| ![Figure 1](assets/papers-explained-79-detr/fig-1.webp) | Title card: DETR. |
+| ![Figure 2](assets/papers-explained-79-detr/fig-2.webp) | DETR directly predicts (in parallel) the final set of detections by combining a common CNN with a transformer architecture. |
+| ![Figure 3](assets/papers-explained-79-detr/fig-3.webp) | DETR infers a fixed-size set of N predictions, in a single pass. |
+| ![Figure 4](assets/papers-explained-79-detr/fig-4.webp) | DETR infers a fixed-size set of N predictions, in a single pass. |
+| ![Figure 5](assets/papers-explained-79-detr/fig-5.webp) | DETR infers a fixed-size set of N predictions, in a single pass. |
+| ![Figure 6](assets/papers-explained-79-detr/fig-6.webp) | The final prediction is computed by a 3-layer perceptron with ReLU activation function and hidden dimension d, and a linear projection... |
 ## Related
 
 - [[Papers Explained Corpus]]

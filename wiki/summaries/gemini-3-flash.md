@@ -1,6 +1,6 @@
 # Gemini 3 Flash
 
-**Source**: `raw/gemini-3-flash/full-article.html`; Also: `raw/build-with-gemini-3-flash/`, `raw/gemini-3-flash-gemini-app/`, `raw/google-ai-mode-update-gemini-3-flash/`  
+**Source**: `raw/gemini-3-flash/full-article.md`; Also: `raw/build-with-gemini-3-flash/`, `raw/gemini-3-flash-gemini-app/`, `raw/google-ai-mode-update-gemini-3-flash/`  
 **URL**: https://blog.google/products-and-platforms/products/gemini/gemini-3-flash/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -27,10 +27,10 @@ Gemini 3 Flash became the **default model** in the Gemini app (Fast/Thinking mod
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/gemini-3-flash/fig-1.png) | Gemini 3 Flash benchmark comparison table vs. 2.5 Pro and frontier models | — |
-| ![fig-2](../assets/gemini-3-flash/fig-2.png) | Pareto frontier scatter: LMArena Elo vs. price per million tokens (3 Pro, 3 Flash, Flash Lite) | — |
+| ![fig-1](../assets/gemini-3-flash/fig-1.webp) | Gemini 3 Flash benchmark comparison table vs. 2.5 Pro and frontier models | — |
+| ![fig-2](../assets/gemini-3-flash/fig-2.webp) | Pareto frontier scatter: LMArena Elo vs. price per million tokens (3 Pro, 3 Flash, Flash Lite) | — |
 
-![Gemini 3 Flash benchmark table](../assets/gemini-3-flash/fig-1.png)
+![Gemini 3 Flash benchmark table](../assets/gemini-3-flash/fig-1.webp)
 
 ## Entities
 

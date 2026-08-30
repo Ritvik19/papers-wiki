@@ -1,6 +1,6 @@
 # RL Training For Math Reasoning
 
-**Source**: `raw/rl-training-for-math-reasoning/full-article.html` (551 KB), `raw/rl-training-for-math-reasoning/full-article.md` (markdown view)  
+**Source**: `raw/rl-training-for-math-reasoning/full-article.md` (551 KB), `raw/rl-training-for-math-reasoning/full-article.md` (markdown view)  
 **URL**: https://research.perplexity.ai/articles/rl-training-for-math-reasoning  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -28,18 +28,18 @@ Hyperparameter lessons: **LR 3e-7** balances speed and stability; **KL coefficie
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/rl-training-for-math-reasoning/fig-1.png) | PPO vs GRPO comparison (group-relative advantages, no value model) | — |
-| ![fig-2](../assets/rl-training-for-math-reasoning/fig-2.png) | Framework comparison table (Feb 2025 snapshot) | — |
-| ![fig-3](../assets/rl-training-for-math-reasoning/fig-3.png) | LR vs KL coefficient grid on GSM8K | — |
-| ![fig-6](../assets/rl-training-for-math-reasoning/fig-6.png) | Temperature sweep: train vs validation accuracy | — |
-| ![fig-7](../assets/rl-training-for-math-reasoning/fig-7.png) | Main result: validation on three RL initialization setups | — |
-| ![fig-8](../assets/rl-training-for-math-reasoning/fig-8.png) | Learning-rate ablation: reward collapse at 8e-7 | — |
-| ![fig-12](../assets/rl-training-for-math-reasoning/fig-12.png) | SFT difficulty ablation before ORZ RL | — |
-| ![fig-13](../assets/rl-training-for-math-reasoning/fig-13.png) | Rollout length scaling: base vs SFT-warmed model | — |
+| ![fig-1](../assets/rl-training-for-math-reasoning/fig-1.webp) | PPO vs GRPO comparison (group-relative advantages, no value model) | — |
+| ![fig-2](../assets/rl-training-for-math-reasoning/fig-2.webp) | Framework comparison table (Feb 2025 snapshot) | — |
+| ![fig-3](../assets/rl-training-for-math-reasoning/fig-3.webp) | LR vs KL coefficient grid on GSM8K | — |
+| ![fig-6](../assets/rl-training-for-math-reasoning/fig-6.webp) | Temperature sweep: train vs validation accuracy | — |
+| ![fig-7](../assets/rl-training-for-math-reasoning/fig-7.webp) | Main result: validation on three RL initialization setups | — |
+| ![fig-8](../assets/rl-training-for-math-reasoning/fig-8.webp) | Learning-rate ablation: reward collapse at 8e-7 | — |
+| ![fig-12](../assets/rl-training-for-math-reasoning/fig-12.webp) | SFT difficulty ablation before ORZ RL | — |
+| ![fig-13](../assets/rl-training-for-math-reasoning/fig-13.webp) | Rollout length scaling: base vs SFT-warmed model | — |
 
 19 figures total in `wiki/assets/rl-training-for-math-reasoning/` (training curves, collapse diagnostics, ablations).
 
-![PPO vs GRPO](../assets/rl-training-for-math-reasoning/fig-1.png)
+![PPO vs GRPO](../assets/rl-training-for-math-reasoning/fig-1.webp)
 
 ## Entities
 

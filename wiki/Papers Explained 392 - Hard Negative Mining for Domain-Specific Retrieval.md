@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-06-20_Papers-Explained-392--Hard-Negative-Mining-for-Domain-Specific-Retrieval-a334df3c97fa.html`
+- Source file: `raw/2025-06-20_Papers-Explained-392--Hard-Negative-Mining-for-Domain-Specific-Retrieval-a334df3c97fa.md`
 - Source title: Papers Explained 392: Hard Negative Mining for Domain-Specific Retrieval
 - Published: 2025-06-20
 - Canonical: [https://medium.com/@ritvik19/papers-explained-392-hard-negative-mining-for-domain-specific-retrieval-a334df3c97fa](https://medium.com/@ritvik19/papers-explained-392-hard-negative-mining-for-domain-specific-retrieval-a334df3c97fa)
@@ -79,18 +79,18 @@ Hard Negative Mining for Domain-Specific Retrieval in Enterprise Systems [2505.1
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-06-20_Papers-Explained-392--Hard-Negative-Mining-for-Domain-Specific-Retrieval-a334df3c97fa.html`); local copies under `wiki/assets/papers-explained-392-hard-negative-mining-for-domain-specific-retrieval/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-06-20_Papers-Explained-392--Hard-Negative-Mining-for-Domain-Specific-Retrieval-a334df3c97fa.md`); local copies under `wiki/assets/papers-explained-392-hard-negative-mining-for-domain-specific-retrieval/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-392-hard-negative-mining-for-domain-specific-retrieval/fig-1.png) | Title card: Hard Negative Mining for Domain-Specific Retrieval. |
-| ![Figure 2](assets/papers-explained-392-hard-negative-mining-for-domain-specific-retrieval/fig-2.png) | Overview of the methodology pipeline. |
-| ![Figure 3](assets/papers-explained-392-hard-negative-mining-for-domain-specific-retrieval/fig-3.png) | Embedding models used. |
-| ![Figure 4](assets/papers-explained-392-hard-negative-mining-for-domain-specific-retrieval/fig-4.png) | The experiments leverage a proprietary corpus containing 36,871 unannotated documents sourced from over 30 enterprise cloud services. |
-| ![Figure 5](assets/papers-explained-392-hard-negative-mining-for-domain-specific-retrieval/fig-5.png) | Comparative performance benchmarking of the reranker across multiple domain-specific datasets. |
-| ![Figure 6](assets/papers-explained-392-hard-negative-mining-for-domain-specific-retrieval/fig-6.png) | Comparison of negative sampling methods for fine-tuning(FT) in-house cross-encoder reranker model. |
-| ![Figure 7](assets/papers-explained-392-hard-negative-mining-for-domain-specific-retrieval/fig-7.png) | Performance benchmarking (MRR@3) of reranker and embedding models using the proposed hard negative selection framework, compared with ADORE+STAR and baseline methods. |
-| ![Figure 8](assets/papers-explained-392-hard-negative-mining-for-domain-specific-retrieval/fig-8.png) | d(Q, D) < d(PD, D). |
+| ![Figure 1](assets/papers-explained-392-hard-negative-mining-for-domain-specific-retrieval/fig-1.webp) | Title card: Hard Negative Mining for Domain-Specific Retrieval. |
+| ![Figure 2](assets/papers-explained-392-hard-negative-mining-for-domain-specific-retrieval/fig-2.webp) | Overview of the methodology pipeline. |
+| ![Figure 3](assets/papers-explained-392-hard-negative-mining-for-domain-specific-retrieval/fig-3.webp) | Embedding models used. |
+| ![Figure 4](assets/papers-explained-392-hard-negative-mining-for-domain-specific-retrieval/fig-4.webp) | The experiments leverage a proprietary corpus containing 36,871 unannotated documents sourced from over 30 enterprise cloud services. |
+| ![Figure 5](assets/papers-explained-392-hard-negative-mining-for-domain-specific-retrieval/fig-5.webp) | Comparative performance benchmarking of the reranker across multiple domain-specific datasets. |
+| ![Figure 6](assets/papers-explained-392-hard-negative-mining-for-domain-specific-retrieval/fig-6.webp) | Comparison of negative sampling methods for fine-tuning(FT) in-house cross-encoder reranker model. |
+| ![Figure 7](assets/papers-explained-392-hard-negative-mining-for-domain-specific-retrieval/fig-7.webp) | Performance benchmarking (MRR@3) of reranker and embedding models using the proposed hard negative selection framework, compared with ADORE+STAR and baseline methods. |
+| ![Figure 8](assets/papers-explained-392-hard-negative-mining-for-domain-specific-retrieval/fig-8.webp) | d(Q, D) < d(PD, D). |
 ## Related
 
 - [[Papers Explained Corpus]]

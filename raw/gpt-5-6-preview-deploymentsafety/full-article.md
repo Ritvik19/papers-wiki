@@ -1,6 +1,6 @@
 ---
 Source URL: https://deploymentsafety.openai.com/gpt-5-6-preview
-Fetched via: WebFetch (canonical raw is full-article.html via curl; this is a condensed markdown sibling covering key findings from a ~960-line system card)
+Fetched via: WebFetch (canonical raw is full-article.md via curl; this is a condensed markdown sibling covering key findings from a ~960-line system card)
 ---
 
 # GPT-5.6 Preview System Card - OpenAI Deployment Safety Hub

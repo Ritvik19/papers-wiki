@@ -18,7 +18,7 @@
 | **1. Propose** | ~300–2000 candidate boxes | Selective Search, [[Region Proposal Network]] |
 | **2. Detect** | Classify + refine ( + mask) per RoI | Fast R-CNN head, Mask branch |
 
-![R-CNN family](../assets/2017-12-31-object-recognition-part-3/fig-11.png)
+![R-CNN family](../assets/2017-12-31-object-recognition-part-3/fig-11.webp)
 
 ## Evolution of shared computation
 

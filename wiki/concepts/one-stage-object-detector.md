@@ -28,7 +28,7 @@
 | [[SSD Object Detection]] | Multi-scale anchors | VGG pyramid + default boxes |
 | [[RetinaNet]] | FPN + focal loss | Handle class imbalance |
 
-![Speed mAP tradeoff](../assets/2018-12-27-object-recognition-part-4/fig-13.png)
+![Speed mAP tradeoff](../assets/2018-12-27-object-recognition-part-4/fig-13.webp)
 
 ## Class imbalance problem
 

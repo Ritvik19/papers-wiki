@@ -1,6 +1,6 @@
 # Gemini 3.1 Flash TTS
 
-**Source**: `raw/gemini-3-1-flash-tts/full-article.html` (410 KB)  
+**Source**: `raw/gemini-3-1-flash-tts/full-article.md` (410 KB)  
 **URL**: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-tts/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

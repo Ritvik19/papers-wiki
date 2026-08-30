@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-03-18_Papers-Explained-114--Phi-1-14a8dcc77ce5.html`
+- Source file: `raw/2024-03-18_Papers-Explained-114--Phi-1-14a8dcc77ce5.md`
 - Source title: Papers Explained 114: Phi-1
 - Published: 2024-03-18
 - Canonical: [https://medium.com/@ritvik19/papers-explained-114-phi-1-14a8dcc77ce5](https://medium.com/@ritvik19/papers-explained-114-phi-1-14a8dcc77ce5)
@@ -113,19 +113,19 @@ Textbooks Are All You Need [2306.11644](https://arxiv.org/abs/2306.11644)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-03-18_Papers-Explained-114--Phi-1-14a8dcc77ce5.html`); local copies under `wiki/assets/papers-explained-114-phi-1/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-03-18_Papers-Explained-114--Phi-1-14a8dcc77ce5.md`); local copies under `wiki/assets/papers-explained-114-phi-1/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-114-phi-1/fig-1.png) | Title page of *Textbooks Are All You Need*. |
-| ![Figure 2](assets/papers-explained-114-phi-1/fig-2.png) | Examples of high- vs low-educational-value code identified by the filtering pipeline. |
-| ![Figure 3](assets/papers-explained-114-phi-1/fig-3.png) | Synthetic textbook-style explanation plus code example for matrix singularity. |
-| ![Figure 4](assets/papers-explained-114-phi-1/fig-4.png) | Synthetic coding exercise example with function docstring and reference implementation. |
-| ![Figure 5](assets/papers-explained-114-phi-1/fig-5.png) | HumanEval Pass@1 gains from CodeTextbook pretraining and CodeExercises finetuning. |
-| ![Figure 6](assets/papers-explained-114-phi-1/fig-6.png) | Unconventional coding prompt comparison across phi-1, phi-1-base, and phi-1-small. |
-| ![Figure 7](assets/papers-explained-114-phi-1/fig-7.png) | Pygame simulation prompt outputs comparing phi model variants. |
-| ![Figure 8](assets/papers-explained-114-phi-1/fig-8.png) | Plot-manipulation instruction-following example across phi model variants. |
-| ![Figure 9](assets/papers-explained-114-phi-1/fig-9.png) | LLM-graded understanding benchmark on unconventional coding problems. |
+| ![Figure 1](assets/papers-explained-114-phi-1/fig-1.webp) | Title page of *Textbooks Are All You Need*. |
+| ![Figure 2](assets/papers-explained-114-phi-1/fig-2.webp) | Examples of high- vs low-educational-value code identified by the filtering pipeline. |
+| ![Figure 3](assets/papers-explained-114-phi-1/fig-3.webp) | Synthetic textbook-style explanation plus code example for matrix singularity. |
+| ![Figure 4](assets/papers-explained-114-phi-1/fig-4.webp) | Synthetic coding exercise example with function docstring and reference implementation. |
+| ![Figure 5](assets/papers-explained-114-phi-1/fig-5.webp) | HumanEval Pass@1 gains from CodeTextbook pretraining and CodeExercises finetuning. |
+| ![Figure 6](assets/papers-explained-114-phi-1/fig-6.webp) | Unconventional coding prompt comparison across phi-1, phi-1-base, and phi-1-small. |
+| ![Figure 7](assets/papers-explained-114-phi-1/fig-7.webp) | Pygame simulation prompt outputs comparing phi model variants. |
+| ![Figure 8](assets/papers-explained-114-phi-1/fig-8.webp) | Plot-manipulation instruction-following example across phi model variants. |
+| ![Figure 9](assets/papers-explained-114-phi-1/fig-9.webp) | LLM-graded understanding benchmark on unconventional coding problems. |
 ## Related
 
 - [[Papers Explained Corpus]]

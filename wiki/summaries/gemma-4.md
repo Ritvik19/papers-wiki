@@ -1,6 +1,6 @@
 # Gemma 4
 
-**Source**: `raw/gemma-4/full-article.html` (392 KB)  
+**Source**: `raw/gemma-4/full-article.md` (392 KB)  
 **URL**: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -25,10 +25,10 @@ Larger models rank highly on Arena.ai: **31B is #3** and **26B MoE is #6** among
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/gemma-4/fig-1.png) | Open-model performance vs. size on Arena.ai chat arena (Elo score) | — |
-| ![fig-2](../assets/gemma-4/fig-2.jpg) | Benchmark comparison table across text-generation evals and Arena rankings | — |
+| ![fig-1](../assets/gemma-4/fig-1.webp) | Open-model performance vs. size on Arena.ai chat arena (Elo score) | — |
+| ![fig-2](../assets/gemma-4/fig-2.webp) | Benchmark comparison table across text-generation evals and Arena rankings | — |
 
-![Arena.ai Elo score vs. model size](../assets/gemma-4/fig-1.png)
+![Arena.ai Elo score vs. model size](../assets/gemma-4/fig-1.webp)
 
 ## Entities
 

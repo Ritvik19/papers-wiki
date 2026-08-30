@@ -60,15 +60,15 @@
 
 ## Sources
 
-- `raw/deepseek-r1/full-article.html`
-- `raw/phi4/full-article.html`
-- `raw/qwq-32b/full-article.html`
-- `raw/gemma3/full-article.html`
-- `raw/deepseek-v3-0324/full-article.html`
-- `raw/llama4/full-article.html`
-- `raw/qwen3/full-article.html`
-- `raw/deepseek-r1-0528/full-article.html`
-- `raw/gemma-3n/full-article.html`
-- `raw/deepseek-v3.1/full-article.html`
-- `raw/gpt-oss/full-article.html`
-- `raw/qwen3-coder/full-article.html`
+- `raw/deepseek-r1/full-article.md`
+- `raw/phi4/full-article.md`
+- `raw/qwq-32b/full-article.md`
+- `raw/gemma3/full-article.md`
+- `raw/deepseek-v3-0324/full-article.md`
+- `raw/llama4/full-article.md`
+- `raw/qwen3/full-article.md`
+- `raw/deepseek-r1-0528/full-article.md`
+- `raw/gemma-3n/full-article.md`
+- `raw/deepseek-v3.1/full-article.md`
+- `raw/gpt-oss/full-article.md`
+- `raw/qwen3-coder/full-article.md`

@@ -1,6 +1,6 @@
 # Gemma 4 QAT
 
-**Source**: `raw/gemma-4-qat/full-article.html` (385 KB)  
+**Source**: `raw/gemma-4-qat/full-article.md` (385 KB)  
 **URL**: https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -26,7 +26,7 @@ QAT outperforms standard **post-training quantization (PTQ)** baselines on overa
 | Figure | Caption | Page |
 |--------|---------|------|
 | ![fig-1](../assets/gemma-4-qat/fig-1.webp) | Approximate VRAM/memory requirements for Gemma 4 models (QAT vs. baseline) | — |
-| ![fig-2](../assets/gemma-4-qat/fig-2.png) | QAT compression overview: mobile format and Q4_0 checkpoints | — |
+| ![fig-2](../assets/gemma-4-qat/fig-2.webp) | QAT compression overview: mobile format and Q4_0 checkpoints | — |
 
 ![VRAM memory requirements chart](../assets/gemma-4-qat/fig-1.webp)
 

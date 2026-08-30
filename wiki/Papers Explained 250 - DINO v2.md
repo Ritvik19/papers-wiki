@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-11-12_Papers-Explained-250--DINO-v2-e1e6d12a5c85.html`
+- Source file: `raw/2024-11-12_Papers-Explained-250--DINO-v2-e1e6d12a5c85.md`
 - Source title: Papers Explained 250: DINO v2
 - Published: 2024-11-12
 - Canonical: [https://medium.com/@ritvik19/papers-explained-250-dino-v2-e1e6d12a5c85](https://medium.com/@ritvik19/papers-explained-250-dino-v2-e1e6d12a5c85)
@@ -155,25 +155,25 @@ Recommended Reading [Vision Transformers](https://ritvik19.medium.com/list/visio
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-11-12_Papers-Explained-250--DINO-v2-e1e6d12a5c85.html`); local copies under `wiki/assets/papers-explained-250-dino-v2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-11-12_Papers-Explained-250--DINO-v2-e1e6d12a5c85.md`); local copies under `wiki/assets/papers-explained-250-dino-v2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-250-dino-v2/fig-1.png) | Title card: DINO v2. |
-| ![Figure 2](assets/papers-explained-250-dino-v2/fig-2.png) | Overview of our data processing pipeline. |
-| ![Figure 3](assets/papers-explained-250-dino-v2/fig-3.png) | Composition of our LVD-142M dataset. |
-| ![Figure 4](assets/papers-explained-250-dino-v2/fig-4.png) | Recommended Reading [ Papers Explained 249: DINO ]. |
-| ![Figure 5](assets/papers-explained-250-dino-v2/fig-5.png) | Recommended Reading [ Papers Explained 249: DINO ]. |
-| ![Figure 6](assets/papers-explained-250-dino-v2/fig-6.png) | KoLeo regularizer: A regularizer that encourages a uniform span of features within a batch, defined as. |
-| ![Figure 7](assets/papers-explained-250-dino-v2/fig-7.png) | Architecture details of the ViT-S/B/L/g networks used in this work. |
-| ![Figure 8](assets/papers-explained-250-dino-v2/fig-8.png) | Linear evaluation on ImageNet-1k of frozen pretrained features. |
-| ![Figure 9](assets/papers-explained-250-dino-v2/fig-9.png) | Supervised finetuning on ImageNet-1k. |
-| ![Figure 10](assets/papers-explained-250-dino-v2/fig-10.png) | Domain Generalization with a linear probe on top of frozen features at a resolution of 224. |
-| ![Figure 11](assets/papers-explained-250-dino-v2/fig-11.png) | Linear evaluation on other image and video classification. |
-| ![Figure 12](assets/papers-explained-250-dino-v2/fig-12.png) | Linear evaluation of frozen features on fine-grained benchmarks. |
-| ![Figure 13](assets/papers-explained-250-dino-v2/fig-13.png) | Evaluation of frozen features on instance-level recognition. |
-| ![Figure 14](assets/papers-explained-250-dino-v2/fig-14.png) | Semantic segmentation on ADE20K, CityScapes and Pascal VOC with frozen features and a linear classifier (lin.) and with multiscale (+ms). |
-| ![Figure 15](assets/papers-explained-250-dino-v2/fig-15.png) | Depth estimation with frozen features. |
+| ![Figure 1](assets/papers-explained-250-dino-v2/fig-1.webp) | Title card: DINO v2. |
+| ![Figure 2](assets/papers-explained-250-dino-v2/fig-2.webp) | Overview of our data processing pipeline. |
+| ![Figure 3](assets/papers-explained-250-dino-v2/fig-3.webp) | Composition of our LVD-142M dataset. |
+| ![Figure 4](assets/papers-explained-250-dino-v2/fig-4.webp) | Recommended Reading [ Papers Explained 249: DINO ]. |
+| ![Figure 5](assets/papers-explained-250-dino-v2/fig-5.webp) | Recommended Reading [ Papers Explained 249: DINO ]. |
+| ![Figure 6](assets/papers-explained-250-dino-v2/fig-6.webp) | KoLeo regularizer: A regularizer that encourages a uniform span of features within a batch, defined as. |
+| ![Figure 7](assets/papers-explained-250-dino-v2/fig-7.webp) | Architecture details of the ViT-S/B/L/g networks used in this work. |
+| ![Figure 8](assets/papers-explained-250-dino-v2/fig-8.webp) | Linear evaluation on ImageNet-1k of frozen pretrained features. |
+| ![Figure 9](assets/papers-explained-250-dino-v2/fig-9.webp) | Supervised finetuning on ImageNet-1k. |
+| ![Figure 10](assets/papers-explained-250-dino-v2/fig-10.webp) | Domain Generalization with a linear probe on top of frozen features at a resolution of 224. |
+| ![Figure 11](assets/papers-explained-250-dino-v2/fig-11.webp) | Linear evaluation on other image and video classification. |
+| ![Figure 12](assets/papers-explained-250-dino-v2/fig-12.webp) | Linear evaluation of frozen features on fine-grained benchmarks. |
+| ![Figure 13](assets/papers-explained-250-dino-v2/fig-13.webp) | Evaluation of frozen features on instance-level recognition. |
+| ![Figure 14](assets/papers-explained-250-dino-v2/fig-14.webp) | Semantic segmentation on ADE20K, CityScapes and Pascal VOC with frozen features and a linear classifier (lin.) and with multiscale (+ms). |
+| ![Figure 15](assets/papers-explained-250-dino-v2/fig-15.webp) | Depth estimation with frozen features. |
 ## Related
 
 - [[Papers Explained Corpus]]

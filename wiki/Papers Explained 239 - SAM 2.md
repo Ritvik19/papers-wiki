@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-10-25_Papers-Explained-239--SAM-2-6ffb7f187281.html`
+- Source file: `raw/2024-10-25_Papers-Explained-239--SAM-2-6ffb7f187281.md`
 - Source title: Papers Explained 239: SAM 2
 - Published: 2024-10-25
 - Canonical: [https://medium.com/@ritvik19/papers-explained-239-sam-2-6ffb7f187281](https://medium.com/@ritvik19/papers-explained-239-sam-2-6ffb7f187281)
@@ -201,22 +201,22 @@ Recommended Reading: [Object Detection](https://ritvik19.medium.com/list/object-
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-10-25_Papers-Explained-239--SAM-2-6ffb7f187281.html`); local copies under `wiki/assets/papers-explained-239-sam-2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-10-25_Papers-Explained-239--SAM-2-6ffb7f187281.md`); local copies under `wiki/assets/papers-explained-239-sam-2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-239-sam-2/fig-1.png) | Title card: SAM 2. |
-| ![Figure 2](assets/papers-explained-239-sam-2/fig-2.png) | Recommended Reading [ Papers Explained 238: Segment Anything Model ]. |
-| ![Figure 3](assets/papers-explained-239-sam-2/fig-3.png) | An illustration of the Promptable Visual Segmentation task (PVS). |
-| ![Figure 4](assets/papers-explained-239-sam-2/fig-4.png) | The SAM 2 architecture. |
-| ![Figure 5](assets/papers-explained-239-sam-2/fig-5.png) | Mask decoder architecture. |
-| ![Figure 6](assets/papers-explained-239-sam-2/fig-6.png) | Comparison of our datasets with open source VOS datasets in terms of number of videos, duration, number of masklets, masks, frames, and disappearance rate. |
-| ![Figure 7](assets/papers-explained-239-sam-2/fig-7.png) | Hyperparameters and details of SAM 2 pre-training and full training. |
-| ![Figure 8](assets/papers-explained-239-sam-2/fig-8.png) | Zero-shot accuracy over 9 datasets in interactive offline and online evaluation settings. |
-| ![Figure 9](assets/papers-explained-239-sam-2/fig-9.png) | Zero-shot accuracy across 17 video datasets under semi-supervised VOS evaluation using different prompts. |
-| ![Figure 10](assets/papers-explained-239-sam-2/fig-10.png) | Zero-shot accuracy on the Segment Anything (SA) task across 37 datasets. |
-| ![Figure 11](assets/papers-explained-239-sam-2/fig-11.png) | Zero-shot performance on the Segment Anything (SA) task across a suite of 37 datasets. |
-| ![Figure 12](assets/papers-explained-239-sam-2/fig-12.png) | VOS comparison to prior work. |
+| ![Figure 1](assets/papers-explained-239-sam-2/fig-1.webp) | Title card: SAM 2. |
+| ![Figure 2](assets/papers-explained-239-sam-2/fig-2.webp) | Recommended Reading [ Papers Explained 238: Segment Anything Model ]. |
+| ![Figure 3](assets/papers-explained-239-sam-2/fig-3.webp) | An illustration of the Promptable Visual Segmentation task (PVS). |
+| ![Figure 4](assets/papers-explained-239-sam-2/fig-4.webp) | The SAM 2 architecture. |
+| ![Figure 5](assets/papers-explained-239-sam-2/fig-5.webp) | Mask decoder architecture. |
+| ![Figure 6](assets/papers-explained-239-sam-2/fig-6.webp) | Comparison of our datasets with open source VOS datasets in terms of number of videos, duration, number of masklets, masks, frames, and disappearance rate. |
+| ![Figure 7](assets/papers-explained-239-sam-2/fig-7.webp) | Hyperparameters and details of SAM 2 pre-training and full training. |
+| ![Figure 8](assets/papers-explained-239-sam-2/fig-8.webp) | Zero-shot accuracy over 9 datasets in interactive offline and online evaluation settings. |
+| ![Figure 9](assets/papers-explained-239-sam-2/fig-9.webp) | Zero-shot accuracy across 17 video datasets under semi-supervised VOS evaluation using different prompts. |
+| ![Figure 10](assets/papers-explained-239-sam-2/fig-10.webp) | Zero-shot accuracy on the Segment Anything (SA) task across 37 datasets. |
+| ![Figure 11](assets/papers-explained-239-sam-2/fig-11.webp) | Zero-shot performance on the Segment Anything (SA) task across a suite of 37 datasets. |
+| ![Figure 12](assets/papers-explained-239-sam-2/fig-12.webp) | VOS comparison to prior work. |
 ## Related
 
 - [[Papers Explained Corpus]]

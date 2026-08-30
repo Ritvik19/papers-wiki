@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-09-18_Papers-Explained-213--Florence-f93a3a7d9ef0.html`
+- Source file: `raw/2024-09-18_Papers-Explained-213--Florence-f93a3a7d9ef0.md`
 - Source title: Papers Explained 213: Florence
 - Published: 2024-09-18
 - Canonical: [https://medium.com/@ritvik19/papers-explained-213-florence-f93a3a7d9ef0](https://medium.com/@ritvik19/papers-explained-213-florence-f93a3a7d9ef0)
@@ -205,24 +205,24 @@ Recommended Reading [Multi Modal Transformers](https://ritvik19.medium.com/list/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-09-18_Papers-Explained-213--Florence-f93a3a7d9ef0.html`); local copies under `wiki/assets/papers-explained-213-florence/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-09-18_Papers-Explained-213--Florence-f93a3a7d9ef0.md`); local copies under `wiki/assets/papers-explained-213-florence/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-213-florence/fig-1.png) | Florence: A New Foundation Model for Computer Vision Overview. |
-| ![Figure 2](assets/papers-explained-213-florence/fig-2.png) | Overview of building Florence: Data curation, pre-training, and task adaptation. |
-| ![Figure 3](assets/papers-explained-213-florence/fig-3.png) | Dynamic Head adapter for dense prediction tasks (object detection). |
-| ![Figure 4](assets/papers-explained-213-florence/fig-4.png) | METER as Florence V+L adaptation model for fine-grained V+L tasks. |
-| ![Figure 5](assets/papers-explained-213-florence/fig-5.png) | Zero-shot transfer of image classification comparisons on 12 datasets. |
-| ![Figure 6](assets/papers-explained-213-florence/fig-6.png) | Comparisons of image classification linear probing on 11 datasets. |
-| ![Figure 7](assets/papers-explained-213-florence/fig-7.png) | Classification fine-tuning results on ImageNet-1K. |
-| ![Figure 8](assets/papers-explained-213-florence/fig-8.png) | Comparison with CW (CD-FSL Challenge 2020 Winner) on CD-FSL benchmark. |
-| ![Figure 9](assets/papers-explained-213-florence/fig-9.png) | Image-text retrieval comparisons on Flickr30K and MSCOCO datasets. |
-| ![Figure 10](assets/papers-explained-213-florence/fig-10.png) | Object detection fine-tuning comparisons with state-of-the-art methods. |
-| ![Figure 11](assets/papers-explained-213-florence/fig-11.png) | Zero-shot transfer results in object detection across 11 diverse tasks. |
-| ![Figure 12](assets/papers-explained-213-florence/fig-12.png) | Comparison on Visual Question Answering (VQA) task. |
-| ![Figure 13](assets/papers-explained-213-florence/fig-13.png) | Zero-shot text-to-video retrieval results on MSR-VTT 1K-A test set. |
-| ![Figure 14](assets/papers-explained-213-florence/fig-14.png) | Comparison to state-of-the-art methods on Kinetics-400 and Kinetics-600. |
+| ![Figure 1](assets/papers-explained-213-florence/fig-1.webp) | Florence: A New Foundation Model for Computer Vision Overview. |
+| ![Figure 2](assets/papers-explained-213-florence/fig-2.webp) | Overview of building Florence: Data curation, pre-training, and task adaptation. |
+| ![Figure 3](assets/papers-explained-213-florence/fig-3.webp) | Dynamic Head adapter for dense prediction tasks (object detection). |
+| ![Figure 4](assets/papers-explained-213-florence/fig-4.webp) | METER as Florence V+L adaptation model for fine-grained V+L tasks. |
+| ![Figure 5](assets/papers-explained-213-florence/fig-5.webp) | Zero-shot transfer of image classification comparisons on 12 datasets. |
+| ![Figure 6](assets/papers-explained-213-florence/fig-6.webp) | Comparisons of image classification linear probing on 11 datasets. |
+| ![Figure 7](assets/papers-explained-213-florence/fig-7.webp) | Classification fine-tuning results on ImageNet-1K. |
+| ![Figure 8](assets/papers-explained-213-florence/fig-8.webp) | Comparison with CW (CD-FSL Challenge 2020 Winner) on CD-FSL benchmark. |
+| ![Figure 9](assets/papers-explained-213-florence/fig-9.webp) | Image-text retrieval comparisons on Flickr30K and MSCOCO datasets. |
+| ![Figure 10](assets/papers-explained-213-florence/fig-10.webp) | Object detection fine-tuning comparisons with state-of-the-art methods. |
+| ![Figure 11](assets/papers-explained-213-florence/fig-11.webp) | Zero-shot transfer results in object detection across 11 diverse tasks. |
+| ![Figure 12](assets/papers-explained-213-florence/fig-12.webp) | Comparison on Visual Question Answering (VQA) task. |
+| ![Figure 13](assets/papers-explained-213-florence/fig-13.webp) | Zero-shot text-to-video retrieval results on MSR-VTT 1K-A test set. |
+| ![Figure 14](assets/papers-explained-213-florence/fig-14.webp) | Comparison to state-of-the-art methods on Kinetics-400 and Kinetics-600. |
 ## Related
 
 - [[Papers Explained Corpus]]

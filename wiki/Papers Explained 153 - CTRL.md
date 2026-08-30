@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-06-21_Papers-Explained-153--CTRL-146fcd18a566.html`
+- Source file: `raw/2024-06-21_Papers-Explained-153--CTRL-146fcd18a566.md`
 - Source title: Papers Explained 153: CTRL
 - Published: 2024-06-21
 - Canonical: [https://medium.com/@ritvik19/papers-explained-153-ctrl-146fcd18a566](https://medium.com/@ritvik19/papers-explained-153-ctrl-146fcd18a566)
@@ -79,12 +79,12 @@ CTRL: A Conditional Transformer Language Model for Controllable Generation [1909
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-06-21_Papers-Explained-153--CTRL-146fcd18a566.html`); local copies under `wiki/assets/papers-explained-153-ctrl/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-06-21_Papers-Explained-153--CTRL-146fcd18a566.md`); local copies under `wiki/assets/papers-explained-153-ctrl/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-153-ctrl/fig-1.png) | Title block of *CTRL: A Conditional Transformer Language Model for Controllable Generation* (Salesforce Research). |
-| ![Figure 2](assets/papers-explained-153-ctrl/fig-2.png) | Control-code cheat sheet: domain codes (Wikipedia, Books, Reviews, News, Translation, …) plus long tail of Subreddit-derived codes with short descriptions. |
+| ![Figure 1](assets/papers-explained-153-ctrl/fig-1.webp) | Title block of *CTRL: A Conditional Transformer Language Model for Controllable Generation* (Salesforce Research). |
+| ![Figure 2](assets/papers-explained-153-ctrl/fig-2.webp) | Control-code cheat sheet: domain codes (Wikipedia, Books, Reviews, News, Translation, …) plus long tail of Subreddit-derived codes with short descriptions. |
 ## Related
 
 - [[Papers Explained Corpus]]

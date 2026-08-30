@@ -1,6 +1,6 @@
 # GPT-5.6
 
-**Source**: `raw/previewing-gpt-5-6-sol/full-article.md`, `raw/gpt-5-6-preview-deploymentsafety/full-article.md`, `raw/gpt-5-6/full-article.md`, `raw/gpt-5-6-deploymentsafety/full-article.html`, `raw/gpt-5-6-deploymentsafety/full-article.md`  
+**Source**: `raw/previewing-gpt-5-6-sol/full-article.md`, `raw/gpt-5-6-preview-deploymentsafety/full-article.md`, `raw/gpt-5-6/full-article.md`, `raw/gpt-5-6-deploymentsafety/full-article.md`, `raw/gpt-5-6-deploymentsafety/full-article.md`  
 **Ingested**: 2026-07-31 (updated from 2026-07-10 preview ingest)  
 **Tags**: #summary
 
@@ -113,16 +113,16 @@ GA-specific safety stack additions vs preview:
 - **Deployment simulations** forecast disallowed-content rates; GPT-5.6 Sol similar to GPT-5.5 overall with isolated significant shifts (sexual content +40% relative, mental health −40% relative; absolute rates remain low).
 - **Trusted Access** programs for biology research and cyber defenders.
 
-![Deployment simulation forecast for disallowed content](../assets/gpt-5-6-deploymentsafety/fig-1.png)
+![Deployment simulation forecast for disallowed content](../assets/gpt-5-6-deploymentsafety/fig-1.webp)
 
 ## Figures
 
 | Figure | Caption | Source |
 | --- | --- | --- |
-| ![fig-1](../assets/gpt-5-6-deploymentsafety/fig-1.png) | Deployment simulation: predicted disallowed-content change GPT-5.6 Sol vs GPT-5.5 | GA system card |
-| ![fig-2](../assets/gpt-5-6-deploymentsafety/fig-2.png) | Simulation quality funnel for deployment forecasting | GA system card |
-| ![fig-3](../assets/gpt-5-6-deploymentsafety/fig-3.png) | Jailbreak robustness evaluation | GA system card |
-| ![fig-4](../assets/gpt-5-6-deploymentsafety/fig-4.png) | Hallucination rates in user-flagged cases | GA system card |
+| ![fig-1](../assets/gpt-5-6-deploymentsafety/fig-1.webp) | Deployment simulation: predicted disallowed-content change GPT-5.6 Sol vs GPT-5.5 | GA system card |
+| ![fig-2](../assets/gpt-5-6-deploymentsafety/fig-2.webp) | Simulation quality funnel for deployment forecasting | GA system card |
+| ![fig-3](../assets/gpt-5-6-deploymentsafety/fig-3.webp) | Jailbreak robustness evaluation | GA system card |
+| ![fig-4](../assets/gpt-5-6-deploymentsafety/fig-4.webp) | Hallucination rates in user-flagged cases | GA system card |
 
 GA announcement charts (benchmark curves, deck comparisons, ultra multi-agent) not extractable: openai.com blocks curl; WebFetch unavailable. Numbers preserved in tables above.
 

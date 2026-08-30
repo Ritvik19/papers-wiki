@@ -1,6 +1,6 @@
 # Medium is the new large.
 
-**Source**: `raw/mistral-medium-3/full-article.html` (218 KB), `raw/mistral-medium-3/full-article.md` (markdown view)  
+**Source**: `raw/mistral-medium-3/full-article.md` (218 KB), `raw/mistral-medium-3/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/mistral-medium-3/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

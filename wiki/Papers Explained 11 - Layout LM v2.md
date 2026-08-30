@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-06_Papers-Explained-11--Layout-LM-v2-9531a983e659.html`
+- Source file: `raw/2023-02-06_Papers-Explained-11--Layout-LM-v2-9531a983e659.md`
 - Source title: Papers Explained 11: Layout LM v2
 - Published: 2023-02-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-11-layout-lm-v2-9531a983e659](https://medium.com/@ritvik19/papers-explained-11-layout-lm-v2-9531a983e659)
@@ -125,12 +125,12 @@ Here are the implementations of Layout LM v2 on custom datasets
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-06_Papers-Explained-11--Layout-LM-v2-9531a983e659.html`); local copies under `wiki/assets/papers-explained-11-layout-lm-v2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-06_Papers-Explained-11--Layout-LM-v2-9531a983e659.md`); local copies under `wiki/assets/papers-explained-11-layout-lm-v2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-11-layout-lm-v2/fig-1.png) | Title block of *LayoutLMv2: Multi-modal Pre-training for Visually-rich Document Understanding*. |
-| ![Figure 2](assets/papers-explained-11-layout-lm-v2/fig-2.png) | LayoutLMv2 architecture and pretraining objectives: MVLM, text-image alignment, and text-image matching with spatial-aware self-attention. |
+| ![Figure 1](assets/papers-explained-11-layout-lm-v2/fig-1.webp) | Title block of *LayoutLMv2: Multi-modal Pre-training for Visually-rich Document Understanding*. |
+| ![Figure 2](assets/papers-explained-11-layout-lm-v2/fig-2.webp) | LayoutLMv2 architecture and pretraining objectives: MVLM, text-image alignment, and text-image matching with spatial-aware self-attention. |
 ## Related
 
 - [[Papers Explained Corpus]]

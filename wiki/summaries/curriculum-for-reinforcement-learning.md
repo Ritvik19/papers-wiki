@@ -1,6 +1,6 @@
 # Curriculum for Reinforcement Learning
 
-**Source**: `raw/curriculum-for-reinforcement-learning/full-article.html` · `raw/curriculum-for-reinforcement-learning/full-article.md`  
+**Source**: `raw/curriculum-for-reinforcement-learning/full-article.md` · `raw/curriculum-for-reinforcement-learning/full-article.md`  
 **URL**: https://lilianweng.github.io/posts/2020-01-29-curriculum-rl/  
 **Author**: [[Lilian Weng]]  
 **Ingested**: 2026-05-22  

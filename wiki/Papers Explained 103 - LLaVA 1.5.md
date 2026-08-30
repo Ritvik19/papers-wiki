@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-02-21_Papers-Explained-103--LLaVA-1-5-ddcb2e7f95b4.html`
+- Source file: `raw/2024-02-21_Papers-Explained-103--LLaVA-1-5-ddcb2e7f95b4.md`
 - Source title: Papers Explained 103: LLaVA 1.5
 - Published: 2024-02-21
 - Canonical: [https://medium.com/@ritvik19/papers-explained-103-llava-1-5-ddcb2e7f95b4](https://medium.com/@ritvik19/papers-explained-103-llava-1-5-ddcb2e7f95b4)
@@ -125,18 +125,18 @@ Recommended Reading [Multi Modal Transformers](https://ritvik19.medium.com/list/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-02-21_Papers-Explained-103--LLaVA-1-5-ddcb2e7f95b4.html`); local copies under `wiki/assets/papers-explained-103-llava-1-5/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-02-21_Papers-Explained-103--LLaVA-1-5-ddcb2e7f95b4.md`); local copies under `wiki/assets/papers-explained-103-llava-1-5/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-103-llava-1-5/fig-1.png) | Title block of *Improved Baselines with Visual Instruction Tuning*. |
-| ![Figure 2](assets/papers-explained-103-llava-1-5/fig-2.png) | LLaVA-1.5 scaling ablation across data additions, connector changes, resolution, and model size (GQA/MME/MM-Vet). |
-| ![Figure 3](assets/papers-explained-103-llava-1-5/fig-3.png) | LLaVA-1.5 pretrain/finetune hyperparameter table. |
-| ![Figure 4](assets/papers-explained-103-llava-1-5/fig-4.png) | Instruction-following data mixture with response-format prompts per dataset family. |
-| ![Figure 5](assets/papers-explained-103-llava-1-5/fig-5.png) | 12-benchmark comparison showing LLaVA-1.5 against prior LMM baselines. |
-| ![Figure 6](assets/papers-explained-103-llava-1-5/fig-6.png) | Response-format generalization example for unanswerable/tricky visual questions. |
-| ![Figure 7](assets/papers-explained-103-llava-1-5/fig-7.png) | Constrained JSON-output example showing improved structured extraction behavior in LLaVA-1.5. |
-| ![Figure 8](assets/papers-explained-103-llava-1-5/fig-8.png) | Evaluation-time response-format prompt templates used across benchmark types. |
+| ![Figure 1](assets/papers-explained-103-llava-1-5/fig-1.webp) | Title block of *Improved Baselines with Visual Instruction Tuning*. |
+| ![Figure 2](assets/papers-explained-103-llava-1-5/fig-2.webp) | LLaVA-1.5 scaling ablation across data additions, connector changes, resolution, and model size (GQA/MME/MM-Vet). |
+| ![Figure 3](assets/papers-explained-103-llava-1-5/fig-3.webp) | LLaVA-1.5 pretrain/finetune hyperparameter table. |
+| ![Figure 4](assets/papers-explained-103-llava-1-5/fig-4.webp) | Instruction-following data mixture with response-format prompts per dataset family. |
+| ![Figure 5](assets/papers-explained-103-llava-1-5/fig-5.webp) | 12-benchmark comparison showing LLaVA-1.5 against prior LMM baselines. |
+| ![Figure 6](assets/papers-explained-103-llava-1-5/fig-6.webp) | Response-format generalization example for unanswerable/tricky visual questions. |
+| ![Figure 7](assets/papers-explained-103-llava-1-5/fig-7.webp) | Constrained JSON-output example showing improved structured extraction behavior in LLaVA-1.5. |
+| ![Figure 8](assets/papers-explained-103-llava-1-5/fig-8.webp) | Evaluation-time response-format prompt templates used across benchmark types. |
 ## Related
 
 - [[Papers Explained Corpus]]

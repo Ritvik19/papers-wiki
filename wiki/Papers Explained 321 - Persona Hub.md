@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-03-03_Papers-Explained-321--Persona-Hub-a1b496192a4c.html`
+- Source file: `raw/2025-03-03_Papers-Explained-321--Persona-Hub-a1b496192a4c.md`
 - Source title: Papers Explained 321: Persona Hub
 - Published: 2025-03-03
 - Canonical: [https://medium.com/@ritvik19/papers-explained-321-persona-hub-a1b496192a4c](https://medium.com/@ritvik19/papers-explained-321-persona-hub-a1b496192a4c)
@@ -117,24 +117,24 @@ Scaling Synthetic Data Creation with 1,000,000,000 Personas [2406.20094](https:/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-03-03_Papers-Explained-321--Persona-Hub-a1b496192a4c.html`); local copies under `wiki/assets/papers-explained-321-persona-hub/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-03-03_Papers-Explained-321--Persona-Hub-a1b496192a4c.md`); local copies under `wiki/assets/papers-explained-321-persona-hub/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-321-persona-hub/fig-1.png) | Title card: Persona Hub. |
-| ![Figure 2](assets/papers-explained-321-persona-hub/fig-2.png) | The dataset is available at HuggingFace. |
-| ![Figure 3](assets/papers-explained-321-persona-hub/fig-3.png) | A person with specific professional experiences and cultural backgrounds will have unique interests in reading and writing. |
-| ![Figure 4](assets/papers-explained-321-persona-hub/fig-4.png) | In practice, LLMs are asked to output persona descriptions as specifically as possible. |
-| ![Figure 5](assets/papers-explained-321-persona-hub/fig-5.png) | To supplement the personas that Text-to-Persona might hardly reach, Persona-to-Persona is proposed. |
-| ![Figure 6](assets/papers-explained-321-persona-hub/fig-6.png) | 0-shot, few-shot and persona-enhanced few-shot prompting methods. |
-| ![Figure 7](assets/papers-explained-321-persona-hub/fig-7.png) | The persona-driven approach is versatile and adaptable to different data synthesis scenarios by adjusting the data synthesis prompt. |
-| ![Figure 8](assets/papers-explained-321-persona-hub/fig-8.png) | The persona-driven approach is versatile and adaptable to different data synthesis scenarios by adjusting the data synthesis prompt. |
-| ![Figure 9](assets/papers-explained-321-persona-hub/fig-9.png) | The persona-driven approach is versatile and adaptable to different data synthesis scenarios by adjusting the data synthesis prompt. |
-| ![Figure 10](assets/papers-explained-321-persona-hub/fig-10.png) | The persona-driven approach is versatile and adaptable to different data synthesis scenarios by adjusting the data synthesis prompt. |
-| ![Figure 11](assets/papers-explained-321-persona-hub/fig-11.png) | The persona-driven approach is versatile and adaptable to different data synthesis scenarios by adjusting the data synthesis prompt. |
-| ![Figure 12](assets/papers-explained-321-persona-hub/fig-12.png) | The persona-driven approach is versatile and adaptable to different data synthesis scenarios by adjusting the data synthesis prompt. |
-| ![Figure 13](assets/papers-explained-321-persona-hub/fig-13.png) | The persona-driven approach is versatile and adaptable to different data synthesis scenarios by adjusting the data synthesis prompt. |
-| ![Figure 14](assets/papers-explained-321-persona-hub/fig-14.png) | The persona-driven approach is versatile and adaptable to different data synthesis scenarios by adjusting the data synthesis prompt. |
+| ![Figure 1](assets/papers-explained-321-persona-hub/fig-1.webp) | Title card: Persona Hub. |
+| ![Figure 2](assets/papers-explained-321-persona-hub/fig-2.webp) | The dataset is available at HuggingFace. |
+| ![Figure 3](assets/papers-explained-321-persona-hub/fig-3.webp) | A person with specific professional experiences and cultural backgrounds will have unique interests in reading and writing. |
+| ![Figure 4](assets/papers-explained-321-persona-hub/fig-4.webp) | In practice, LLMs are asked to output persona descriptions as specifically as possible. |
+| ![Figure 5](assets/papers-explained-321-persona-hub/fig-5.webp) | To supplement the personas that Text-to-Persona might hardly reach, Persona-to-Persona is proposed. |
+| ![Figure 6](assets/papers-explained-321-persona-hub/fig-6.webp) | 0-shot, few-shot and persona-enhanced few-shot prompting methods. |
+| ![Figure 7](assets/papers-explained-321-persona-hub/fig-7.webp) | The persona-driven approach is versatile and adaptable to different data synthesis scenarios by adjusting the data synthesis prompt. |
+| ![Figure 8](assets/papers-explained-321-persona-hub/fig-8.webp) | The persona-driven approach is versatile and adaptable to different data synthesis scenarios by adjusting the data synthesis prompt. |
+| ![Figure 9](assets/papers-explained-321-persona-hub/fig-9.webp) | The persona-driven approach is versatile and adaptable to different data synthesis scenarios by adjusting the data synthesis prompt. |
+| ![Figure 10](assets/papers-explained-321-persona-hub/fig-10.webp) | The persona-driven approach is versatile and adaptable to different data synthesis scenarios by adjusting the data synthesis prompt. |
+| ![Figure 11](assets/papers-explained-321-persona-hub/fig-11.webp) | The persona-driven approach is versatile and adaptable to different data synthesis scenarios by adjusting the data synthesis prompt. |
+| ![Figure 12](assets/papers-explained-321-persona-hub/fig-12.webp) | The persona-driven approach is versatile and adaptable to different data synthesis scenarios by adjusting the data synthesis prompt. |
+| ![Figure 13](assets/papers-explained-321-persona-hub/fig-13.webp) | The persona-driven approach is versatile and adaptable to different data synthesis scenarios by adjusting the data synthesis prompt. |
+| ![Figure 14](assets/papers-explained-321-persona-hub/fig-14.webp) | The persona-driven approach is versatile and adaptable to different data synthesis scenarios by adjusting the data synthesis prompt. |
 ## Related
 
 - [[Papers Explained Corpus]]

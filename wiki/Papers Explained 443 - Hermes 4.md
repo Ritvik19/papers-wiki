@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-09-01_Papers-Explained-443--Hermes-4-2fba381f0c0a.html`
+- Source file: `raw/2025-09-01_Papers-Explained-443--Hermes-4-2fba381f0c0a.md`
 - Source title: Papers Explained 443: Hermes 4
 - Published: 2025-09-01
 - Canonical: [https://medium.com/@ritvik19/papers-explained-443-hermes-4-2fba381f0c0a](https://medium.com/@ritvik19/papers-explained-443-hermes-4-2fba381f0c0a)
@@ -187,15 +187,15 @@ Hermes 4 Technical Report [2508.18255](https://arxiv.org/abs/2508.18255)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-09-01_Papers-Explained-443--Hermes-4-2fba381f0c0a.html`); local copies under `wiki/assets/papers-explained-443-hermes-4/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-09-01_Papers-Explained-443--Hermes-4-2fba381f0c0a.md`); local copies under `wiki/assets/papers-explained-443-hermes-4/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-443-hermes-4/fig-1.png) | Title card: Hermes 4. |
-| ![Figure 2](assets/papers-explained-443-hermes-4/fig-2.png) | Seed data is drawn from a biased sample of DCLM and FineWeb, with a preference for more recent samples. |
-| ![Figure 3](assets/papers-explained-443-hermes-4/fig-3.png) | Length distribution of samples in the Hermes 4 dataset. |
-| ![Figure 4](assets/papers-explained-443-hermes-4/fig-4.png) | Synthetic Reasoning Traces are generated from the current policy. |
-| ![Figure 5](assets/papers-explained-443-hermes-4/fig-5.png) | Hackable configurations. |
+| ![Figure 1](assets/papers-explained-443-hermes-4/fig-1.webp) | Title card: Hermes 4. |
+| ![Figure 2](assets/papers-explained-443-hermes-4/fig-2.webp) | Seed data is drawn from a biased sample of DCLM and FineWeb, with a preference for more recent samples. |
+| ![Figure 3](assets/papers-explained-443-hermes-4/fig-3.webp) | Length distribution of samples in the Hermes 4 dataset. |
+| ![Figure 4](assets/papers-explained-443-hermes-4/fig-4.webp) | Synthetic Reasoning Traces are generated from the current policy. |
+| ![Figure 5](assets/papers-explained-443-hermes-4/fig-5.webp) | Hackable configurations. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-07-09_Papers-Explained-405--Universal-Tokenizer-1dfd6e76cbd1.html`
+- Source file: `raw/2025-07-09_Papers-Explained-405--Universal-Tokenizer-1dfd6e76cbd1.md`
 - Source title: Papers Explained 405: Universal Tokenizer
 - Published: 2025-07-09
 - Canonical: [https://medium.com/@ritvik19/papers-explained-405-universal-tokenizer-1dfd6e76cbd1](https://medium.com/@ritvik19/papers-explained-405-universal-tokenizer-1dfd6e76cbd1)
@@ -177,21 +177,21 @@ One Tokenizer To Rule Them All: Emergent Language Plasticity via Multilingual To
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-07-09_Papers-Explained-405--Universal-Tokenizer-1dfd6e76cbd1.html`); local copies under `wiki/assets/papers-explained-405-universal-tokenizer/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-07-09_Papers-Explained-405--Universal-Tokenizer-1dfd6e76cbd1.md`); local copies under `wiki/assets/papers-explained-405-universal-tokenizer/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-405-universal-tokenizer/fig-1.png) | Title card: Universal Tokenizer. |
-| ![Figure 2](assets/papers-explained-405-universal-tokenizer/fig-2.png) | The goal is to introduce highly plastic and adaptable model properties. The interventions are evaluated under various adaptation strategies. |
-| ![Figure 3](assets/papers-explained-405-universal-tokenizer/fig-3.png) | Comparison of Cluster vs. Universal tokenizers during the pretraining on the primary languages across three regional clusters. |
-| ![Figure 4](assets/papers-explained-405-universal-tokenizer/fig-4.png) | Comparison of Universal vs. Uniform tokenizer performance on Belebele, when used for pretraining of Euro cluster model. |
-| ![Figure 5](assets/papers-explained-405-universal-tokenizer/fig-5.png) | Win rates after continued pretraining on primary and expanded language subsets. |
-| ![Figure 6](assets/papers-explained-405-universal-tokenizer/fig-6.png) | Win rates for models trained with the Universal and Cluster tokenizers against Dolly generations.. |
-| ![Figure 7](assets/papers-explained-405-universal-tokenizer/fig-7.png) | Win rates on expanded languages after targeted adaptation. |
-| ![Figure 8](assets/papers-explained-405-universal-tokenizer/fig-8.png) | Language-specific results after targeted adaptation through SFT for the Euro cluster model. |
-| ![Figure 9](assets/papers-explained-405-universal-tokenizer/fig-9.png) | Average win rates on the expanded (new) language subset during continued pretraining that involves both primary and expanded language subsets. |
-| ![Figure 10](assets/papers-explained-405-universal-tokenizer/fig-10.png) | Pretrained models using both Universal and Cluster tokenizers are compared across different geo-clusters (Euro, ME-Indic, Asian). |
-| ![Figure 11](assets/papers-explained-405-universal-tokenizer/fig-11.png) | Pretrained models using both Universal and Cluster tokenizers are compared across different geo-clusters (Euro, ME-Indic, Asian). |
+| ![Figure 1](assets/papers-explained-405-universal-tokenizer/fig-1.webp) | Title card: Universal Tokenizer. |
+| ![Figure 2](assets/papers-explained-405-universal-tokenizer/fig-2.webp) | The goal is to introduce highly plastic and adaptable model properties. The interventions are evaluated under various adaptation strategies. |
+| ![Figure 3](assets/papers-explained-405-universal-tokenizer/fig-3.webp) | Comparison of Cluster vs. Universal tokenizers during the pretraining on the primary languages across three regional clusters. |
+| ![Figure 4](assets/papers-explained-405-universal-tokenizer/fig-4.webp) | Comparison of Universal vs. Uniform tokenizer performance on Belebele, when used for pretraining of Euro cluster model. |
+| ![Figure 5](assets/papers-explained-405-universal-tokenizer/fig-5.webp) | Win rates after continued pretraining on primary and expanded language subsets. |
+| ![Figure 6](assets/papers-explained-405-universal-tokenizer/fig-6.webp) | Win rates for models trained with the Universal and Cluster tokenizers against Dolly generations.. |
+| ![Figure 7](assets/papers-explained-405-universal-tokenizer/fig-7.webp) | Win rates on expanded languages after targeted adaptation. |
+| ![Figure 8](assets/papers-explained-405-universal-tokenizer/fig-8.webp) | Language-specific results after targeted adaptation through SFT for the Euro cluster model. |
+| ![Figure 9](assets/papers-explained-405-universal-tokenizer/fig-9.webp) | Average win rates on the expanded (new) language subset during continued pretraining that involves both primary and expanded language subsets. |
+| ![Figure 10](assets/papers-explained-405-universal-tokenizer/fig-10.webp) | Pretrained models using both Universal and Cluster tokenizers are compared across different geo-clusters (Euro, ME-Indic, Asian). |
+| ![Figure 11](assets/papers-explained-405-universal-tokenizer/fig-11.webp) | Pretrained models using both Universal and Cluster tokenizers are compared across different geo-clusters (Euro, ME-Indic, Asian). |
 ## Related
 
 - [[Papers Explained Corpus]]

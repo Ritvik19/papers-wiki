@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-08-07_Papers-Explained-426--Arcee-Foundation-Models-5751b562dc7b.html`
+- Source file: `raw/2025-08-07_Papers-Explained-426--Arcee-Foundation-Models-5751b562dc7b.md`
 - Source title: Papers Explained 426: Arcee Foundation Models
 - Published: 2025-08-07
 - Canonical: [https://medium.com/@ritvik19/papers-explained-426-arcee-foundation-models-5751b562dc7b](https://medium.com/@ritvik19/papers-explained-426-arcee-foundation-models-5751b562dc7b)
@@ -59,14 +59,14 @@ Finally, reinforcement learning was applied using verifiable reward signals, hel
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-08-07_Papers-Explained-426--Arcee-Foundation-Models-5751b562dc7b.html`); local copies under `wiki/assets/papers-explained-426-arcee-foundation-models/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-08-07_Papers-Explained-426--Arcee-Foundation-Models-5751b562dc7b.md`); local copies under `wiki/assets/papers-explained-426-arcee-foundation-models/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-426-arcee-foundation-models/fig-1.png) | Title card: Arcee Foundation Models. |
-| ![Figure 2](assets/papers-explained-426-arcee-foundation-models/fig-2.png) | Finally, reinforcement learning was applied using verifiable reward signals, helping the model prefer factual, high-utility responses. |
-| ![Figure 3](assets/papers-explained-426-arcee-foundation-models/fig-3.png) | Finally, reinforcement learning was applied using verifiable reward signals, helping the model prefer factual, high-utility responses. |
-| ![Figure 4](assets/papers-explained-426-arcee-foundation-models/fig-4.png) | Finally, reinforcement learning was applied using verifiable reward signals, helping the model prefer factual, high-utility responses. |
+| ![Figure 1](assets/papers-explained-426-arcee-foundation-models/fig-1.webp) | Title card: Arcee Foundation Models. |
+| ![Figure 2](assets/papers-explained-426-arcee-foundation-models/fig-2.webp) | Finally, reinforcement learning was applied using verifiable reward signals, helping the model prefer factual, high-utility responses. |
+| ![Figure 3](assets/papers-explained-426-arcee-foundation-models/fig-3.webp) | Finally, reinforcement learning was applied using verifiable reward signals, helping the model prefer factual, high-utility responses. |
+| ![Figure 4](assets/papers-explained-426-arcee-foundation-models/fig-4.webp) | Finally, reinforcement learning was applied using verifiable reward signals, helping the model prefer factual, high-utility responses. |
 ## Related
 
 - [[Papers Explained Corpus]]

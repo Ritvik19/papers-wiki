@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-09-02_Papers-Explained-200--SimCLR-191ecf19d2fc.html`
+- Source file: `raw/2024-09-02_Papers-Explained-200--SimCLR-191ecf19d2fc.md`
 - Source title: Papers Explained 200: SimCLR
 - Published: 2024-09-02
 - Canonical: [https://medium.com/@ritvik19/papers-explained-200-simclr-191ecf19d2fc](https://medium.com/@ritvik19/papers-explained-200-simclr-191ecf19d2fc)
@@ -139,25 +139,25 @@ Recommended Reading [Retrieval and Representation Learning](https://ritvik19.med
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-09-02_Papers-Explained-200--SimCLR-191ecf19d2fc.html`); local copies under `wiki/assets/papers-explained-200-simclr/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-09-02_Papers-Explained-200--SimCLR-191ecf19d2fc.md`); local copies under `wiki/assets/papers-explained-200-simclr/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-200-simclr/fig-1.png) | Paper title — **A Simple Framework for Contrastive Learning of Visual Representations** (**SimCLR** authors). |
-| ![Figure 2](assets/papers-explained-200-simclr/fig-2.png) | **SimCLR diagram** — two augmented views → encoder **f** → reps **h** → projector **g** → maximize agreement of **z_i , z_j**. |
-| ![Figure 3](assets/papers-explained-200-simclr/fig-3.png) | **NT-Xent** pair loss — softmax over batch negatives with cosine similarity / temperature **τ**. |
-| ![Figure 4](assets/papers-explained-200-simclr/fig-4.png) | **Training pseudocode** — duplicate augmented minibatch, **ℓ2**-normalize **z**, NT-Xent symmetrized loss; keep **f**, drop **g** after pretrain. |
-| ![Figure 5](assets/papers-explained-200-simclr/fig-5.png) | **Augmentation gallery** — crop/resize, flip, grayscale / jitter, rotate, cutout, noise, blur, Sobel on a reference image. |
-| ![Figure 6](assets/papers-explained-200-simclr/fig-6.png) | **Composition heatmap** — linear-eval Top-1 for augmentation pairs; **crop + color** strongest; same-twice diagonal weaker. |
-| ![Figure 7](assets/papers-explained-200-simclr/fig-7.png) | **Color distortion strength** — SimCLR improves with stronger jitter (+blur); supervised ResNet degrades (inverse trend). |
-| ![Figure 8](assets/papers-explained-200-simclr/fig-8.png) | **Width / depth scaling** — linear-eval Top-1 vs params for ResNet families; **SimCLR*** stars vs supervised Sup-R50 crosses. |
-| ![Figure 9](assets/papers-explained-200-simclr/fig-9.png) | **Projection head** — nonlinear **MLP** projector beats linear and **no head** across output dims for linear probe Top-1. |
-| ![Figure 10](assets/papers-explained-200-simclr/fig-10.png) | **Contrastive losses** — Margin / logistic variants vs **NT-Xent** (highest Top-1 in bar summary). |
-| ![Figure 11](assets/papers-explained-200-simclr/fig-11.png) | **Normalization + temperature** — **ℓ2** norm yes/no × τ grid; entropy / contrastive-acc / downstream Top-1 (best at τ≈0.1 with norm). |
-| ![Figure 12](assets/papers-explained-200-simclr/fig-12.png) | **Batch size × epochs** — grouped bars: larger batches + longer training raise linear-eval Top-1 (**256 → 8192**). |
-| ![Figure 13](assets/papers-explained-200-simclr/fig-13.png) | **vs other SSL** — MoCo, PIRL, CPC v2, … on ImageNet; **SimCLR** bold on ResNet-50 and wide **2× / 4×** variants. |
-| ![Figure 14](assets/papers-explained-200-simclr/fig-14.png) | **Label-efficient FT** — Top-5 with **1% / 10%** ImageNet labels vs pseudo-label / FixMatch / CPC-style baselines. |
-| ![Figure 15](assets/papers-explained-200-simclr/fig-15.png) | **Transfer dozen** — linear vs fine-tuned accuracy on 12 datasets; SimCLR vs supervised vs random init. |
+| ![Figure 1](assets/papers-explained-200-simclr/fig-1.webp) | Paper title — **A Simple Framework for Contrastive Learning of Visual Representations** (**SimCLR** authors). |
+| ![Figure 2](assets/papers-explained-200-simclr/fig-2.webp) | **SimCLR diagram** — two augmented views → encoder **f** → reps **h** → projector **g** → maximize agreement of **z_i , z_j**. |
+| ![Figure 3](assets/papers-explained-200-simclr/fig-3.webp) | **NT-Xent** pair loss — softmax over batch negatives with cosine similarity / temperature **τ**. |
+| ![Figure 4](assets/papers-explained-200-simclr/fig-4.webp) | **Training pseudocode** — duplicate augmented minibatch, **ℓ2**-normalize **z**, NT-Xent symmetrized loss; keep **f**, drop **g** after pretrain. |
+| ![Figure 5](assets/papers-explained-200-simclr/fig-5.webp) | **Augmentation gallery** — crop/resize, flip, grayscale / jitter, rotate, cutout, noise, blur, Sobel on a reference image. |
+| ![Figure 6](assets/papers-explained-200-simclr/fig-6.webp) | **Composition heatmap** — linear-eval Top-1 for augmentation pairs; **crop + color** strongest; same-twice diagonal weaker. |
+| ![Figure 7](assets/papers-explained-200-simclr/fig-7.webp) | **Color distortion strength** — SimCLR improves with stronger jitter (+blur); supervised ResNet degrades (inverse trend). |
+| ![Figure 8](assets/papers-explained-200-simclr/fig-8.webp) | **Width / depth scaling** — linear-eval Top-1 vs params for ResNet families; **SimCLR*** stars vs supervised Sup-R50 crosses. |
+| ![Figure 9](assets/papers-explained-200-simclr/fig-9.webp) | **Projection head** — nonlinear **MLP** projector beats linear and **no head** across output dims for linear probe Top-1. |
+| ![Figure 10](assets/papers-explained-200-simclr/fig-10.webp) | **Contrastive losses** — Margin / logistic variants vs **NT-Xent** (highest Top-1 in bar summary). |
+| ![Figure 11](assets/papers-explained-200-simclr/fig-11.webp) | **Normalization + temperature** — **ℓ2** norm yes/no × τ grid; entropy / contrastive-acc / downstream Top-1 (best at τ≈0.1 with norm). |
+| ![Figure 12](assets/papers-explained-200-simclr/fig-12.webp) | **Batch size × epochs** — grouped bars: larger batches + longer training raise linear-eval Top-1 (**256 → 8192**). |
+| ![Figure 13](assets/papers-explained-200-simclr/fig-13.webp) | **vs other SSL** — MoCo, PIRL, CPC v2, … on ImageNet; **SimCLR** bold on ResNet-50 and wide **2× / 4×** variants. |
+| ![Figure 14](assets/papers-explained-200-simclr/fig-14.webp) | **Label-efficient FT** — Top-5 with **1% / 10%** ImageNet labels vs pseudo-label / FixMatch / CPC-style baselines. |
+| ![Figure 15](assets/papers-explained-200-simclr/fig-15.webp) | **Transfer dozen** — linear vs fine-tuned accuracy on 12 datasets; SimCLR vs supervised vs random init. |
 ## Related
 
 - [[Papers Explained Corpus]]

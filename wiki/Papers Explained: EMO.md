@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/emo/full-article.html`
+- Source file: `raw/emo/full-article.md`
 - Source title: Papers Explained: EMO
 - Exported: 2026-05-18
 - Canonical: [https://medium.com/p/9ab88479e1f2](https://medium.com/p/9ab88479e1f2)
@@ -42,7 +42,7 @@ The article starts from a decoder-only Transformer MoE where the feedforward sub
 
 For EMO, every token first receives a routing distribution over all experts. Within each document, these distributions are averaged, and the top-d experts become the document expert pool. Token routing is then masked and renormalized so each token chooses only from the document's pool. In effect, EMO keeps token-level routing but bounds it by a higher-level document routing decision.
 
-![Comparison of standard MoE and EMO training](assets/emo/fig-6.png)
+![Comparison of standard MoE and EMO training](assets/emo/fig-6.webp)
 
 The pool size d controls modularity granularity. Smaller pools encourage stronger specialization but limit expressive capacity. Larger pools are more flexible but weaken the modular structure. Sampling d during pretraining is the source's answer to this tension.
 
@@ -50,11 +50,11 @@ The pool size d controls modularity granularity. Smaller pools encourage stronge
 
 Full-model evaluation covers MC9, Gen5, MMLU, MMLU-Pro, and GSM8K. The main result is that EMO keeps the full model competitive with a standard MoE trained under the same broad recipe.
 
-![Full-model evaluation](assets/emo/fig-11.png)
+![Full-model evaluation](assets/emo/fig-11.webp)
 
 The more important evaluation is selective expert use. The source compares task- or domain-specific subsets selected by simple aggregation of routing probabilities or by Easy-EP. Standard MoEs degrade sharply when retaining only a fraction of experts, while EMO remains much closer to full-model quality.
 
-![Selective expert use](assets/emo/fig-12.png)
+![Selective expert use](assets/emo/fig-12.webp)
 
 ## Questions & Gaps
 
@@ -64,22 +64,22 @@ The more important evaluation is selective expert use. The source compares task-
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/emo/full-article.html`); local copies are under `wiki/assets/emo/`.
+Figures from the Medium HTML export (`raw/emo/full-article.md`); local copies are under `wiki/assets/emo/`.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/emo/fig-1.png) | Title card for EMO. |
-| ![Figure 2](assets/emo/fig-2.png) | Router logits over routed experts. |
-| ![Figure 3](assets/emo/fig-3.png) | Standard MoE feedforward output equation. |
-| ![Figure 4](assets/emo/fig-4.png) | Load-balancing loss for expert utilization. |
-| ![Figure 5](assets/emo/fig-5.png) | Full MoE training objective with auxiliary losses. |
-| ![Figure 6](assets/emo/fig-6.png) | Comparison of training a standard MoE and EMO. |
-| ![Figure 7](assets/emo/fig-7.png) | Document-level selection of a top-d expert pool. |
-| ![Figure 8](assets/emo/fig-8.png) | Masked and renormalized routing distribution within the document pool. |
-| ![Figure 9](assets/emo/fig-9.png) | Routed expert selection after EMO pool masking. |
-| ![Figure 10](assets/emo/fig-10.png) | EMO feedforward output equation. |
-| ![Figure 11](assets/emo/fig-11.png) | Full-model evaluation. |
-| ![Figure 12](assets/emo/fig-12.png) | Selective expert use of MoEs. |
+| ![Figure 1](assets/emo/fig-1.webp) | Title card for EMO. |
+| ![Figure 2](assets/emo/fig-2.webp) | Router logits over routed experts. |
+| ![Figure 3](assets/emo/fig-3.webp) | Standard MoE feedforward output equation. |
+| ![Figure 4](assets/emo/fig-4.webp) | Load-balancing loss for expert utilization. |
+| ![Figure 5](assets/emo/fig-5.webp) | Full MoE training objective with auxiliary losses. |
+| ![Figure 6](assets/emo/fig-6.webp) | Comparison of training a standard MoE and EMO. |
+| ![Figure 7](assets/emo/fig-7.webp) | Document-level selection of a top-d expert pool. |
+| ![Figure 8](assets/emo/fig-8.webp) | Masked and renormalized routing distribution within the document pool. |
+| ![Figure 9](assets/emo/fig-9.webp) | Routed expert selection after EMO pool masking. |
+| ![Figure 10](assets/emo/fig-10.webp) | EMO feedforward output equation. |
+| ![Figure 11](assets/emo/fig-11.webp) | Full-model evaluation. |
+| ![Figure 12](assets/emo/fig-12.webp) | Selective expert use of MoEs. |
 
 ## Entities
 

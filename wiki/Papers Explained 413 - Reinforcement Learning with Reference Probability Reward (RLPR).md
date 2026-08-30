@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-07-21_Papers-Explained-413--Reinforcement-Learning-with-Reference-Probability-Reward--RLPR--ac742c006a22.html`
+- Source file: `raw/2025-07-21_Papers-Explained-413--Reinforcement-Learning-with-Reference-Probability-Reward--RLPR--ac742c006a22.md`
 - Source title: Papers Explained 413: Reinforcement Learning with Reference Probability Reward (RLPR)
 - Published: 2025-07-21
 - Canonical: [https://medium.com/@ritvik19/papers-explained-413-reinforcement-learning-with-reference-probability-reward-rlpr-ac742c006a22](https://medium.com/@ritvik19/papers-explained-413-reinforcement-learning-with-reference-probability-reward-rlpr-ac742c006a22)
@@ -103,20 +103,20 @@ RLPR: Extrapolating RLVR to General Domains without Verifiers [2506.18254](https
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-07-21_Papers-Explained-413--Reinforcement-Learning-with-Reference-Probability-Reward--RLPR--ac742c006a22.html`); local copies under `wiki/assets/papers-explained-413-reinforcement-learning-with-reference-probability-reward-rlpr/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-07-21_Papers-Explained-413--Reinforcement-Learning-with-Reference-Probability-Reward--RLPR--ac742c006a22.md`); local copies under `wiki/assets/papers-explained-413-reinforcement-learning-with-reference-probability-reward-rlpr/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-413-reinforcement-learning-with-reference-probability-reward-rlpr/fig-1.png) | Title card: Reinforcement Learning with Reference Probability Reward (RLPR). |
-| ![Figure 2](assets/papers-explained-413-reinforcement-learning-with-reference-probability-reward-rlpr/fig-2.png) | where f_verifier is a task-specific, rule-based verifier checking whether the generated answer y_passes the test defined by ground truth y∗. |
-| ![Figure 3](assets/papers-explained-413-reinforcement-learning-with-reference-probability-reward-rlpr/fig-3.png) | where f_verifier is a task-specific, rule-based verifier checking whether the generated answer y_passes the test defined by ground truth y∗. |
-| ![Figure 4](assets/papers-explained-413-reinforcement-learning-with-reference-probability-reward-rlpr/fig-4.png) | Each response to question Q is denoted as o = (o0,···,oN), where oi is an individual token in the response. |
-| ![Figure 5](assets/papers-explained-413-reinforcement-learning-with-reference-probability-reward-rlpr/fig-5.png) | The probability-based rewards, while correlating with response quality, are influenced by latent factors unrelated to the reasoning process... |
-| ![Figure 6](assets/papers-explained-413-reinforcement-learning-with-reference-probability-reward-rlpr/fig-6.png) | The debiased probability reward, denoted as ˆr, is then calculated as. |
-| ![Figure 7](assets/papers-explained-413-reinforcement-learning-with-reference-probability-reward-rlpr/fig-7.png) | Overall performance on seven reasoning benchmarks. |
-| ![Figure 8](assets/papers-explained-413-reinforcement-learning-with-reference-probability-reward-rlpr/fig-8.png) | Token-level probability visualization. |
-| ![Figure 9](assets/papers-explained-413-reinforcement-learning-with-reference-probability-reward-rlpr/fig-9.png) | Reward quality comparison. |
-| ![Figure 10](assets/papers-explained-413-reinforcement-learning-with-reference-probability-reward-rlpr/fig-10.png) | Effect of different RLVR training data and reward mechanisms. |
+| ![Figure 1](assets/papers-explained-413-reinforcement-learning-with-reference-probability-reward-rlpr/fig-1.webp) | Title card: Reinforcement Learning with Reference Probability Reward (RLPR). |
+| ![Figure 2](assets/papers-explained-413-reinforcement-learning-with-reference-probability-reward-rlpr/fig-2.webp) | where f_verifier is a task-specific, rule-based verifier checking whether the generated answer y_passes the test defined by ground truth y∗. |
+| ![Figure 3](assets/papers-explained-413-reinforcement-learning-with-reference-probability-reward-rlpr/fig-3.webp) | where f_verifier is a task-specific, rule-based verifier checking whether the generated answer y_passes the test defined by ground truth y∗. |
+| ![Figure 4](assets/papers-explained-413-reinforcement-learning-with-reference-probability-reward-rlpr/fig-4.webp) | Each response to question Q is denoted as o = (o0,···,oN), where oi is an individual token in the response. |
+| ![Figure 5](assets/papers-explained-413-reinforcement-learning-with-reference-probability-reward-rlpr/fig-5.webp) | The probability-based rewards, while correlating with response quality, are influenced by latent factors unrelated to the reasoning process... |
+| ![Figure 6](assets/papers-explained-413-reinforcement-learning-with-reference-probability-reward-rlpr/fig-6.webp) | The debiased probability reward, denoted as ˆr, is then calculated as. |
+| ![Figure 7](assets/papers-explained-413-reinforcement-learning-with-reference-probability-reward-rlpr/fig-7.webp) | Overall performance on seven reasoning benchmarks. |
+| ![Figure 8](assets/papers-explained-413-reinforcement-learning-with-reference-probability-reward-rlpr/fig-8.webp) | Token-level probability visualization. |
+| ![Figure 9](assets/papers-explained-413-reinforcement-learning-with-reference-probability-reward-rlpr/fig-9.webp) | Reward quality comparison. |
+| ![Figure 10](assets/papers-explained-413-reinforcement-learning-with-reference-probability-reward-rlpr/fig-10.webp) | Effect of different RLVR training data and reward mechanisms. |
 ## Related
 
 - [[Papers Explained Corpus]]

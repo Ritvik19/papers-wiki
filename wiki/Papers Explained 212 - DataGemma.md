@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-09-17_Papers-Explained-212--DataGemma-cf0d2f40d867.html`
+- Source file: `raw/2024-09-17_Papers-Explained-212--DataGemma-cf0d2f40d867.md`
 - Source title: Papers Explained 212: DataGemma
 - Published: 2024-09-17
 - Canonical: [https://medium.com/@ritvik19/papers-explained-212-datagemma-cf0d2f40d867](https://medium.com/@ritvik19/papers-explained-212-datagemma-cf0d2f40d867)
@@ -241,20 +241,20 @@ Recommended Reading [Gemini / Gemma Models](https://ritvik19.medium.com/list/gem
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-09-17_Papers-Explained-212--DataGemma-cf0d2f40d867.html`); local copies under `wiki/assets/papers-explained-212-datagemma/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-09-17_Papers-Explained-212--DataGemma-cf0d2f40d867.md`); local copies under `wiki/assets/papers-explained-212-datagemma/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-212-datagemma/fig-1.png) | DataGemma Overview: Bridging LLMs and Data Commons. |
-| ![Figure 2](assets/papers-explained-212-datagemma/fig-2.png) | Comparison of Baseline, RIG, and RAG approaches for interfacing with Data Commons. |
-| ![Figure 3](assets/papers-explained-212-datagemma/fig-3.png) | Retrieval Interleaved Generation (RIG) pipeline overview. |
-| ![Figure 4](assets/papers-explained-212-datagemma/fig-4.png) | Comparison of Baseline and RIG approaches for statistical queries. |
-| ![Figure 5](assets/papers-explained-212-datagemma/fig-5.png) | Retrieval Augmented Generation (RAG) pipeline overview. |
-| ![Figure 6](assets/papers-explained-212-datagemma/fig-6.png) | Comparison of Baseline and RAG approaches for statistical queries. |
-| ![Figure 7](assets/papers-explained-212-datagemma/fig-7.png) | RIG Results: Factual accuracy improvement and error analysis. |
-| ![Figure 8](assets/papers-explained-212-datagemma/fig-8.png) | RIG Results: Data coverage and missing data reasons in Data Commons. |
-| ![Figure 9](assets/papers-explained-212-datagemma/fig-9.png) | RAG Results: Accuracy of numeric values and inferred claims. |
-| ![Figure 10](assets/papers-explained-212-datagemma/fig-10.png) | RAG Results: Coverage comparison with base Gemini 1.5 Pro model. |
+| ![Figure 1](assets/papers-explained-212-datagemma/fig-1.webp) | DataGemma Overview: Bridging LLMs and Data Commons. |
+| ![Figure 2](assets/papers-explained-212-datagemma/fig-2.webp) | Comparison of Baseline, RIG, and RAG approaches for interfacing with Data Commons. |
+| ![Figure 3](assets/papers-explained-212-datagemma/fig-3.webp) | Retrieval Interleaved Generation (RIG) pipeline overview. |
+| ![Figure 4](assets/papers-explained-212-datagemma/fig-4.webp) | Comparison of Baseline and RIG approaches for statistical queries. |
+| ![Figure 5](assets/papers-explained-212-datagemma/fig-5.webp) | Retrieval Augmented Generation (RAG) pipeline overview. |
+| ![Figure 6](assets/papers-explained-212-datagemma/fig-6.webp) | Comparison of Baseline and RAG approaches for statistical queries. |
+| ![Figure 7](assets/papers-explained-212-datagemma/fig-7.webp) | RIG Results: Factual accuracy improvement and error analysis. |
+| ![Figure 8](assets/papers-explained-212-datagemma/fig-8.webp) | RIG Results: Data coverage and missing data reasons in Data Commons. |
+| ![Figure 9](assets/papers-explained-212-datagemma/fig-9.webp) | RAG Results: Accuracy of numeric values and inferred claims. |
+| ![Figure 10](assets/papers-explained-212-datagemma/fig-10.webp) | RAG Results: Coverage comparison with base Gemini 1.5 Pro model. |
 ## Related
 
 - [[Papers Explained Corpus]]

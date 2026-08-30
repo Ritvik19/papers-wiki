@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-11-13_Papers-Explained-70--CodeFusion-fee6aba0149a.html`
+- Source file: `raw/2023-11-13_Papers-Explained-70--CodeFusion-fee6aba0149a.md`
 - Source title: Papers Explained 70: CodeFusion
 - Published: 2023-11-13
 - Canonical: [https://medium.com/@ritvik19/papers-explained-70-codefusion-fee6aba0149a](https://medium.com/@ritvik19/papers-explained-70-codefusion-fee6aba0149a)
@@ -119,17 +119,17 @@ The diffusion and decoder models are pre-trained on code snippets only.
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-11-13_Papers-Explained-70--CodeFusion-fee6aba0149a.html`); local copies under `wiki/assets/papers-explained-70-codefusion/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-11-13_Papers-Explained-70--CodeFusion-fee6aba0149a.md`); local copies under `wiki/assets/papers-explained-70-codefusion/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-70-codefusion/fig-1.png) | Title card: CodeFusion. |
-| ![Figure 2](assets/papers-explained-70-codefusion/fig-2.png) | Architecture diagram for CodeFusion showing the Encoder (E), Denoiser (N) and the Decoder (D) units. |
-| ![Figure 3](assets/papers-explained-70-codefusion/fig-3.png) | Comparison of CodeFusion with baselines on the task of NL to code generation for Python, Bash and CF rules. |
-| ![Figure 4](assets/papers-explained-70-codefusion/fig-4.png) | Comparison of diversity in top-5 code generations for CodeFusion and baselines for Python, Bash and CF rules. |
-| ![Figure 5](assets/papers-explained-70-codefusion/fig-5.png) | % of top-1 generations that are syntactically valid for CodeFusion and text diffusion-based baselines. |
-| ![Figure 6](assets/papers-explained-70-codefusion/fig-6.png) | Ablations for CodeFusion (M). “–” means the component is removed. |
-| ![Figure 7](assets/papers-explained-70-codefusion/fig-7.png) | Average normalized edit distance for CodeFusion generations against increasing diffusion timesteps. |
+| ![Figure 1](assets/papers-explained-70-codefusion/fig-1.webp) | Title card: CodeFusion. |
+| ![Figure 2](assets/papers-explained-70-codefusion/fig-2.webp) | Architecture diagram for CodeFusion showing the Encoder (E), Denoiser (N) and the Decoder (D) units. |
+| ![Figure 3](assets/papers-explained-70-codefusion/fig-3.webp) | Comparison of CodeFusion with baselines on the task of NL to code generation for Python, Bash and CF rules. |
+| ![Figure 4](assets/papers-explained-70-codefusion/fig-4.webp) | Comparison of diversity in top-5 code generations for CodeFusion and baselines for Python, Bash and CF rules. |
+| ![Figure 5](assets/papers-explained-70-codefusion/fig-5.webp) | % of top-1 generations that are syntactically valid for CodeFusion and text diffusion-based baselines. |
+| ![Figure 6](assets/papers-explained-70-codefusion/fig-6.webp) | Ablations for CodeFusion (M). “–” means the component is removed. |
+| ![Figure 7](assets/papers-explained-70-codefusion/fig-7.webp) | Average normalized edit distance for CodeFusion generations against increasing diffusion timesteps. |
 ## Related
 
 - [[Papers Explained Corpus]]

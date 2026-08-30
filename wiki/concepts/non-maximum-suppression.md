@@ -13,7 +13,7 @@
 
 ## Algorithm (per class)
 
-![NMS example](../assets/2017-12-31-object-recognition-part-3/fig-3.png)
+![NMS example](../assets/2017-12-31-object-recognition-part-3/fig-3.webp)
 
 1. Collect all detections for class \(c\) with confidence above minimum.
 2. Sort by **descending** confidence.

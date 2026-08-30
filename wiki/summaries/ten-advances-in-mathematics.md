@@ -1,6 +1,6 @@
 # Ten Advances in Mathematics and Theoretical Computer Science
 
-**Source**: `raw/ten-advances-in-mathematics/full-article.html`, `raw/ten-advances-in-mathematics/full-article.md`, `raw/ten-advances-in-mathematics/ten-proofs-oai.pdf`  
+**Source**: `raw/ten-advances-in-mathematics/full-article.md`, `raw/ten-advances-in-mathematics/full-article.md`, `raw/ten-advances-in-mathematics/ten-proofs-oai.pdf`  
 **URLs**: https://openai.com/index/ten-advances-in-mathematics/ · https://cdn.openai.com/pdf/ten-proofs-oai.pdf  
 **Ingested**: 2026-08-01  
 **Tags**: #summary
@@ -50,7 +50,7 @@ The downloaded blog HTML is a Next.js client-rendered shell without the article 
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/ten-advances-in-mathematics/fig-1.png) | OpenAI announcement preview image (OG/Twitter card) | — |
+| ![fig-1](../assets/ten-advances-in-mathematics/fig-1.webp) | OpenAI announcement preview image (OG/Twitter card) | — |
 
 No raster figures were embedded in the PDF manuscripts (typeset math only); one blog preview image saved from the page metadata.
 

@@ -1,6 +1,6 @@
 # Codestral 25.01
 
-**Source**: `raw/codestral-2501/full-article.html` (242 KB), `raw/codestral-2501/full-article.md` (markdown view)  
+**Source**: `raw/codestral-2501/full-article.md` (242 KB), `raw/codestral-2501/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/codestral-2501/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

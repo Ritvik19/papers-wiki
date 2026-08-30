@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-05-17_Papers-Explained-138--LLMLingua-2-510c752368a8.html`
+- Source file: `raw/2024-05-17_Papers-Explained-138--LLMLingua-2-510c752368a8.md`
 - Source title: Papers Explained 138: LLMLingua-2
 - Published: 2024-05-17
 - Canonical: [https://medium.com/@ritvik19/papers-explained-138-llmlingua-2-510c752368a8](https://medium.com/@ritvik19/papers-explained-138-llmlingua-2-510c752368a8)
@@ -141,25 +141,25 @@ Recommended Reading [LLM Lingua Series](https://ritvik19.medium.com/list/llm-lin
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-05-17_Papers-Explained-138--LLMLingua-2-510c752368a8.html`); local copies under `wiki/assets/papers-explained-138-llmlingua-2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-05-17_Papers-Explained-138--LLMLingua-2-510c752368a8.md`); local copies under `wiki/assets/papers-explained-138-llmlingua-2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-138-llmlingua-2/fig-1.png) | Title page of *LLMLingua-2: Data Distillation for Efficient and Faithful Task-Agnostic Prompt Compression*. |
-| ![Figure 2](assets/papers-explained-138-llmlingua-2/fig-2.png) | Five-stage overview: GPT-4 distillation → token labeling → QC → train bidirectional token classifier → compress prompts by top-$P_{\text{preserve}}$ tokens at inference. |
-| ![Figure 3](assets/papers-explained-138-llmlingua-2/fig-3.png) | Exact system and user instructions fed to GPT-4 for extractive, order-preserving compression without new tokens. |
-| ![Figure 4](assets/papers-explained-138-llmlingua-2/fig-4.png) | MeetingBank scatter + marginals relating raw context length to realized GPT-4 compression ratio (longer contexts tend toward higher ratios). |
-| ![Figure 5](assets/papers-explained-138-llmlingua-2/fig-5.png) | Side-by-side MeetingBank excerpt showing which phrases survive GPT-4 compression (color-aligned spans). |
-| ![Figure 6](assets/papers-explained-138-llmlingua-2/fig-6.png) | Algorithm 1: fuzzy window search aligning compressed words back to original tokens to mint preserve/discard labels. |
-| ![Figure 7](assets/papers-explained-138-llmlingua-2/fig-7.png) | Variation Rate (VR): fraction of compressed words absent from the original vocabulary bag. |
-| ![Figure 8](assets/papers-explained-138-llmlingua-2/fig-8.png) | Matching Rate (MR): share of original words labeled preserved after alignment. |
-| ![Figure 9](assets/papers-explained-138-llmlingua-2/fig-9.png) | Hitting Rate (HR): recall-style mass of compressed words that appear in the original. |
-| ![Figure 10](assets/papers-explained-138-llmlingua-2/fig-10.png) | MeetingBank in-domain QA F1 and summarization metrics vs Selective-Context, LLMLingua, and uncompressed prompts. |
-| ![Figure 11](assets/papers-explained-138-llmlingua-2/fig-11.png) | LongBench and ZeroSCROLLS averages under 2k and 3k token budgets comparing task-aware vs task-agnostic compressors. |
-| ![Figure 12](assets/papers-explained-138-llmlingua-2/fig-12.png) | GSM8K and BBH exact match under 1-shot and half-shot token budgets with acceleration factors. |
-| ![Figure 13](assets/papers-explained-138-llmlingua-2/fig-13.png) | Mistral-7B-targeted MeetingBank scores plus LongBench single-document QA under 2k/3k caps vs full prompt. |
-| ![Figure 14](assets/papers-explained-138-llmlingua-2/fig-14.png) | MeetingBank end-to-end latency and per-method compression time vs ratio ($1/\tau$) showing LLMLingua-2's cheap encoder forward pass. |
-| ![Figure 15](assets/papers-explained-138-llmlingua-2/fig-15.png) | Expanded-training variants at $\approx$5× compression on LongBench and ZeroSCROLLS near original-length accuracy with $\sim$1.9k tokens. |
+| ![Figure 1](assets/papers-explained-138-llmlingua-2/fig-1.webp) | Title page of *LLMLingua-2: Data Distillation for Efficient and Faithful Task-Agnostic Prompt Compression*. |
+| ![Figure 2](assets/papers-explained-138-llmlingua-2/fig-2.webp) | Five-stage overview: GPT-4 distillation → token labeling → QC → train bidirectional token classifier → compress prompts by top-$P_{\text{preserve}}$ tokens at inference. |
+| ![Figure 3](assets/papers-explained-138-llmlingua-2/fig-3.webp) | Exact system and user instructions fed to GPT-4 for extractive, order-preserving compression without new tokens. |
+| ![Figure 4](assets/papers-explained-138-llmlingua-2/fig-4.webp) | MeetingBank scatter + marginals relating raw context length to realized GPT-4 compression ratio (longer contexts tend toward higher ratios). |
+| ![Figure 5](assets/papers-explained-138-llmlingua-2/fig-5.webp) | Side-by-side MeetingBank excerpt showing which phrases survive GPT-4 compression (color-aligned spans). |
+| ![Figure 6](assets/papers-explained-138-llmlingua-2/fig-6.webp) | Algorithm 1: fuzzy window search aligning compressed words back to original tokens to mint preserve/discard labels. |
+| ![Figure 7](assets/papers-explained-138-llmlingua-2/fig-7.webp) | Variation Rate (VR): fraction of compressed words absent from the original vocabulary bag. |
+| ![Figure 8](assets/papers-explained-138-llmlingua-2/fig-8.webp) | Matching Rate (MR): share of original words labeled preserved after alignment. |
+| ![Figure 9](assets/papers-explained-138-llmlingua-2/fig-9.webp) | Hitting Rate (HR): recall-style mass of compressed words that appear in the original. |
+| ![Figure 10](assets/papers-explained-138-llmlingua-2/fig-10.webp) | MeetingBank in-domain QA F1 and summarization metrics vs Selective-Context, LLMLingua, and uncompressed prompts. |
+| ![Figure 11](assets/papers-explained-138-llmlingua-2/fig-11.webp) | LongBench and ZeroSCROLLS averages under 2k and 3k token budgets comparing task-aware vs task-agnostic compressors. |
+| ![Figure 12](assets/papers-explained-138-llmlingua-2/fig-12.webp) | GSM8K and BBH exact match under 1-shot and half-shot token budgets with acceleration factors. |
+| ![Figure 13](assets/papers-explained-138-llmlingua-2/fig-13.webp) | Mistral-7B-targeted MeetingBank scores plus LongBench single-document QA under 2k/3k caps vs full prompt. |
+| ![Figure 14](assets/papers-explained-138-llmlingua-2/fig-14.webp) | MeetingBank end-to-end latency and per-method compression time vs ratio ($1/\tau$) showing LLMLingua-2's cheap encoder forward pass. |
+| ![Figure 15](assets/papers-explained-138-llmlingua-2/fig-15.webp) | Expanded-training variants at $\approx$5× compression on LongBench and ZeroSCROLLS near original-length accuracy with $\sim$1.9k tokens. |
 ## Related
 
 - [[Papers Explained Corpus]]

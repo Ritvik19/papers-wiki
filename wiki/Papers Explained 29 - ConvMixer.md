@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-09_Papers-Explained-29--ConvMixer-f073f0356526.html`
+- Source file: `raw/2023-02-09_Papers-Explained-29--ConvMixer-f073f0356526.md`
 - Source title: Papers Explained 29: ConvMixer
 - Published: 2023-02-09
 - Canonical: [https://medium.com/@ritvik19/papers-explained-29-convmixer-f073f0356526](https://medium.com/@ritvik19/papers-explained-29-convmixer-f073f0356526)
@@ -43,15 +43,15 @@ Patches Are All You Need? [2201.09792](https://arxiv.org/abs/2201.09792)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-09_Papers-Explained-29--ConvMixer-f073f0356526.html`); local copies under `wiki/assets/papers-explained-29-convmixer/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-09_Papers-Explained-29--ConvMixer-f073f0356526.md`); local copies under `wiki/assets/papers-explained-29-convmixer/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-29-convmixer/fig-1.png) | Title card: ConvMixer. |
-| ![Figure 2](assets/papers-explained-29-convmixer/fig-2.png) | ConvMixer consists of a patch embedding layer followed by repeated applications of a simple fully-convolutional block. |
-| ![Figure 3](assets/papers-explained-29-convmixer/fig-3.png) | ConvMixer consists of a patch embedding layer followed by repeated applications of a simple fully-convolutional block. |
-| ![Figure 4](assets/papers-explained-29-convmixer/fig-4.png) | Papers Explained 29: ConvMixer. |
-| ![Figure 5](assets/papers-explained-29-convmixer/fig-5.png) | After many applications of this block, we perform global pooling to get a feature vector of size h, which we pass to a softmax classifier. |
+| ![Figure 1](assets/papers-explained-29-convmixer/fig-1.webp) | Title card: ConvMixer. |
+| ![Figure 2](assets/papers-explained-29-convmixer/fig-2.webp) | ConvMixer consists of a patch embedding layer followed by repeated applications of a simple fully-convolutional block. |
+| ![Figure 3](assets/papers-explained-29-convmixer/fig-3.webp) | ConvMixer consists of a patch embedding layer followed by repeated applications of a simple fully-convolutional block. |
+| ![Figure 4](assets/papers-explained-29-convmixer/fig-4.webp) | Papers Explained 29: ConvMixer. |
+| ![Figure 5](assets/papers-explained-29-convmixer/fig-5.webp) | After many applications of this block, we perform global pooling to get a feature vector of size h, which we pass to a softmax classifier. |
 ## Related
 
 - [[Papers Explained Corpus]]

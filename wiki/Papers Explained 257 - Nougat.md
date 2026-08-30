@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-11-21_Papers-Explained-257--Nougat-bb304f7af0a3.html`
+- Source file: `raw/2024-11-21_Papers-Explained-257--Nougat-bb304f7af0a3.md`
 - Source title: Papers Explained 257: Nougat
 - Published: 2024-11-21
 - Canonical: [https://medium.com/@ritvik19/papers-explained-257-nougat-bb304f7af0a3](https://medium.com/@ritvik19/papers-explained-257-nougat-bb304f7af0a3)
@@ -119,16 +119,16 @@ Recommended Reading: [Document Information Processing](https://ritvik19.medium.c
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-11-21_Papers-Explained-257--Nougat-bb304f7af0a3.html`); local copies under `wiki/assets/papers-explained-257-nougat/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-11-21_Papers-Explained-257--Nougat-bb304f7af0a3.md`); local copies under `wiki/assets/papers-explained-257-nougat/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-257-nougat/fig-1.png) | Title card: Nougat. |
-| ![Figure 2](assets/papers-explained-257-nougat/fig-2.png) | End-to-end architecture. |
-| ![Figure 3](assets/papers-explained-257-nougat/fig-3.png) | List of the different image augmentation methods used during training on an example snippet form a sample document. |
-| ![Figure 4](assets/papers-explained-257-nougat/fig-4.png) | Dataset composition. |
-| ![Figure 5](assets/papers-explained-257-nougat/fig-5.png) | Data processing. |
-| ![Figure 6](assets/papers-explained-257-nougat/fig-6.png) | Results on arXiv test set. |
+| ![Figure 1](assets/papers-explained-257-nougat/fig-1.webp) | Title card: Nougat. |
+| ![Figure 2](assets/papers-explained-257-nougat/fig-2.webp) | End-to-end architecture. |
+| ![Figure 3](assets/papers-explained-257-nougat/fig-3.webp) | List of the different image augmentation methods used during training on an example snippet form a sample document. |
+| ![Figure 4](assets/papers-explained-257-nougat/fig-4.webp) | Dataset composition. |
+| ![Figure 5](assets/papers-explained-257-nougat/fig-5.webp) | Data processing. |
+| ![Figure 6](assets/papers-explained-257-nougat/fig-6.webp) | Results on arXiv test set. |
 ## Related
 
 - [[Papers Explained Corpus]]

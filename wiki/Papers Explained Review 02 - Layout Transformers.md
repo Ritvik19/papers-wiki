@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-07_Papers-Explained-Review-02--Layout-Transformers-b2d165c94ad5.html`
+- Source file: `raw/2023-02-07_Papers-Explained-Review-02--Layout-Transformers-b2d165c94ad5.md`
 - Source title: Papers Explained Review 02: Layout Transformers
 - Published: 2023-02-07
 - Canonical: [https://medium.com/@ritvik19/papers-explained-review-02-layout-transformers-b2d165c94ad5](https://medium.com/@ritvik19/papers-explained-review-02-layout-transformers-b2d165c94ad5)
@@ -259,20 +259,20 @@ For further details refer to my article about [ERNIE Layout](https://ritvik19.me
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-07_Papers-Explained-Review-02--Layout-Transformers-b2d165c94ad5.html`); local copies under `wiki/assets/papers-explained-review-02-layout-transformers/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-07_Papers-Explained-Review-02--Layout-Transformers-b2d165c94ad5.md`); local copies under `wiki/assets/papers-explained-review-02-layout-transformers/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-review-02-layout-transformers/fig-1.png) | Title card: Layout Transformers. |
-| ![Figure 2](assets/papers-explained-review-02-layout-transformers/fig-2.png) | LayoutLM: Pre-training of Text and Layout for Document Image Understanding. |
-| ![Figure 3](assets/papers-explained-review-02-layout-transformers/fig-3.png) | Back to Top. |
-| ![Figure 4](assets/papers-explained-review-02-layout-transformers/fig-4.png) | Back to Top. |
-| ![Figure 5](assets/papers-explained-review-02-layout-transformers/fig-5.png) | Back to Top. |
-| ![Figure 6](assets/papers-explained-review-02-layout-transformers/fig-6.png) | Back to Top. |
-| ![Figure 7](assets/papers-explained-review-02-layout-transformers/fig-7.png) | Back to Top. |
-| ![Figure 8](assets/papers-explained-review-02-layout-transformers/fig-8.png) | Back to Top. |
-| ![Figure 9](assets/papers-explained-review-02-layout-transformers/fig-9.png) | Back to Top. |
-| ![Figure 10](assets/papers-explained-review-02-layout-transformers/fig-10.png) | Back to Top. |
+| ![Figure 1](assets/papers-explained-review-02-layout-transformers/fig-1.webp) | Title card: Layout Transformers. |
+| ![Figure 2](assets/papers-explained-review-02-layout-transformers/fig-2.webp) | LayoutLM: Pre-training of Text and Layout for Document Image Understanding. |
+| ![Figure 3](assets/papers-explained-review-02-layout-transformers/fig-3.webp) | Back to Top. |
+| ![Figure 4](assets/papers-explained-review-02-layout-transformers/fig-4.webp) | Back to Top. |
+| ![Figure 5](assets/papers-explained-review-02-layout-transformers/fig-5.webp) | Back to Top. |
+| ![Figure 6](assets/papers-explained-review-02-layout-transformers/fig-6.webp) | Back to Top. |
+| ![Figure 7](assets/papers-explained-review-02-layout-transformers/fig-7.webp) | Back to Top. |
+| ![Figure 8](assets/papers-explained-review-02-layout-transformers/fig-8.webp) | Back to Top. |
+| ![Figure 9](assets/papers-explained-review-02-layout-transformers/fig-9.webp) | Back to Top. |
+| ![Figure 10](assets/papers-explained-review-02-layout-transformers/fig-10.webp) | Back to Top. |
 ## Related
 
 - [[Papers Explained Corpus]]

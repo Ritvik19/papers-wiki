@@ -15,7 +15,7 @@
 
 ## Prediction form (R-CNN family)
 
-![BBox regression](../assets/2017-12-31-object-recognition-part-3/fig-2.png)
+![BBox regression](../assets/2017-12-31-object-recognition-part-3/fig-2.webp)
 
 \[
 \hat{g}_x = p_w \, d_x(\mathbf{p}) + p_x, \quad

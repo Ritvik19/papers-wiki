@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-07_Papers-Explained-23--Structural-LM-36e9df91e7c1.html`
+- Source file: `raw/2023-02-07_Papers-Explained-23--Structural-LM-36e9df91e7c1.md`
 - Source title: Papers Explained 23: Structural LM
 - Published: 2023-02-07
 - Canonical: [https://medium.com/@ritvik19/papers-explained-23-structural-lm-36e9df91e7c1](https://medium.com/@ritvik19/papers-explained-23-structural-lm-36e9df91e7c1)
@@ -55,13 +55,13 @@ StructuralLM: Structural Pre-training for Form Understanding [2105.11210](https:
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-07_Papers-Explained-23--Structural-LM-36e9df91e7c1.html`); local copies under `wiki/assets/papers-explained-23-structural-lm/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-07_Papers-Explained-23--Structural-LM-36e9df91e7c1.md`); local copies under `wiki/assets/papers-explained-23-structural-lm/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-23-structural-lm/fig-1.png) | Title card: Structural LM. |
-| ![Figure 2](assets/papers-explained-23-structural-lm/fig-2.jpeg) | Based on the architecture, we propose to utilize the cell-level layout information from document images and incorporate them into the... |
-| ![Figure 3](assets/papers-explained-23-structural-lm/fig-3.jpeg) | Meanwhile, some cells are randomly selected, and the 2D-positions of tokens in the selected cells are replaced with (0; 0; 0; 0). |
+| ![Figure 1](assets/papers-explained-23-structural-lm/fig-1.webp) | Title card: Structural LM. |
+| ![Figure 2](assets/papers-explained-23-structural-lm/fig-2.webp) | Based on the architecture, we propose to utilize the cell-level layout information from document images and incorporate them into the... |
+| ![Figure 3](assets/papers-explained-23-structural-lm/fig-3.webp) | Meanwhile, some cells are randomly selected, and the 2D-positions of tokens in the selected cells are replaced with (0; 0; 0; 0). |
 ## Related
 
 - [[Papers Explained Corpus]]

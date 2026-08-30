@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-03-01_Papers-Explained-107--LLaVA-1-6-a312efd496c5.html`
+- Source file: `raw/2024-03-01_Papers-Explained-107--LLaVA-1-6-a312efd496c5.md`
 - Source title: Papers Explained 107: LLaVA 1.6
 - Published: 2024-03-01
 - Canonical: [https://medium.com/@ritvik19/papers-explained-107-llava-1-6-a312efd496c5](https://medium.com/@ritvik19/papers-explained-107-llava-1-6-a312efd496c5)
@@ -63,13 +63,13 @@ Recommended Reading [Multi Modal Transformers](https://ritvik19.medium.com/list/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-03-01_Papers-Explained-107--LLaVA-1-6-a312efd496c5.html`); local copies under `wiki/assets/papers-explained-107-llava-1-6/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-03-01_Papers-Explained-107--LLaVA-1-6-a312efd496c5.md`); local copies under `wiki/assets/papers-explained-107-llava-1-6/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-107-llava-1-6/fig-1.png) | Title block of *LLaVA-1.6: Improved reasoning, OCR, and world knowledge*. |
-| ![Figure 2](assets/papers-explained-107-llava-1-6/fig-2.png) | Dynamic high-resolution (AnyRes) pipeline splitting images into tiles plus a resized global view before LLM input. |
-| ![Figure 3](assets/papers-explained-107-llava-1-6/fig-3.png) | Benchmark comparison across LLaVA-1.6 variants and competing multimodal models. |
+| ![Figure 1](assets/papers-explained-107-llava-1-6/fig-1.webp) | Title block of *LLaVA-1.6: Improved reasoning, OCR, and world knowledge*. |
+| ![Figure 2](assets/papers-explained-107-llava-1-6/fig-2.webp) | Dynamic high-resolution (AnyRes) pipeline splitting images into tiles plus a resized global view before LLM input. |
+| ![Figure 3](assets/papers-explained-107-llava-1-6/fig-3.webp) | Benchmark comparison across LLaVA-1.6 variants and competing multimodal models. |
 ## Related
 
 - [[Papers Explained Corpus]]

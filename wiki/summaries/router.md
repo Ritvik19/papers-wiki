@@ -1,6 +1,6 @@
 # Introducing Cursor Router
 
-**Source**: `raw/router/full-article.html` (192 KB), `raw/router/full-article.md` (markdown view)  
+**Source**: `raw/router/full-article.md` (192 KB), `raw/router/full-article.md` (markdown view)  
 **URL**: https://cursor.com/blog/router  
 **Ingested**: 2026-07-23  
 **Tags**: #summary
@@ -38,17 +38,17 @@ Admins control rollout per team or group, set default modes, and allow or block 
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/router/fig-1.png) | Auto Intelligence quality and cost vs Fable, Opus 4.8, and GPT-5.6 Sol | — |
-| ![fig-2](../assets/router/fig-2.png) | Early-access customer cost savings vs Opus 4.8 | — |
-| ![fig-3](../assets/router/fig-3.png) | Cost per commit: Balance, Auto Intelligence, Opus 4.8, and Fable | — |
+| ![fig-1](../assets/router/fig-1.webp) | Auto Intelligence quality and cost vs Fable, Opus 4.8, and GPT-5.6 Sol | — |
+| ![fig-2](../assets/router/fig-2.webp) | Early-access customer cost savings vs Opus 4.8 | — |
+| ![fig-3](../assets/router/fig-3.webp) | Cost per commit: Balance, Auto Intelligence, Opus 4.8, and Fable | — |
 
 Light and dark variants (`fig-N-dark.png`) are in `wiki/assets/router/`.
 
-![Auto Intelligence quality and cost results](../assets/router/fig-1.png)
+![Auto Intelligence quality and cost results](../assets/router/fig-1.webp)
 
-![Early access customer cost savings](../assets/router/fig-2.png)
+![Early access customer cost savings](../assets/router/fig-2.webp)
 
-![Cost per commit comparison](../assets/router/fig-3.png)
+![Cost per commit comparison](../assets/router/fig-3.webp)
 
 ## Entities
 

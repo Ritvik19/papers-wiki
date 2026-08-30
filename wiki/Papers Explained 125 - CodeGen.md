@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-04-17_Papers-Explained-125--CodeGen-a6bae5c1f7b5.html`
+- Source file: `raw/2024-04-17_Papers-Explained-125--CodeGen-a6bae5c1f7b5.md`
 - Source title: Papers Explained 125: CodeGen
 - Published: 2024-04-17
 - Canonical: [https://medium.com/@ritvik19/papers-explained-125-codegen-a6bae5c1f7b5](https://medium.com/@ritvik19/papers-explained-125-codegen-a6bae5c1f7b5)
@@ -81,15 +81,15 @@ Recommended Reading [LLMs for Code](https://ritvik19.medium.com/list/llms-for-co
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-04-17_Papers-Explained-125--CodeGen-a6bae5c1f7b5.html`); local copies under `wiki/assets/papers-explained-125-codegen/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-04-17_Papers-Explained-125--CodeGen-a6bae5c1f7b5.md`); local copies under `wiki/assets/papers-explained-125-codegen/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-125-codegen/fig-1.png) | Title page of *CodeGen: An Open Large Language Model for Code with Multi-Turn Program Synthesis*. |
-| ![Figure 2](assets/papers-explained-125-codegen/fig-2.png) | Training-corpus statistics across The Pile, BigQuery language subsets, and BigPython. |
-| ![Figure 3](assets/papers-explained-125-codegen/fig-3.png) | CodeGen architecture and optimization hyperparameters across model sizes and training stages. |
-| ![Figure 4](assets/papers-explained-125-codegen/fig-4.png) | HumanEval pass@k comparison across GPT, Codex, and CodeGen-NL/Multi/Mono families. |
-| ![Figure 5](assets/papers-explained-125-codegen/fig-5.png) | Multi-Turn Programming Benchmark pass-rate comparison by model size and data stage. |
+| ![Figure 1](assets/papers-explained-125-codegen/fig-1.webp) | Title page of *CodeGen: An Open Large Language Model for Code with Multi-Turn Program Synthesis*. |
+| ![Figure 2](assets/papers-explained-125-codegen/fig-2.webp) | Training-corpus statistics across The Pile, BigQuery language subsets, and BigPython. |
+| ![Figure 3](assets/papers-explained-125-codegen/fig-3.webp) | CodeGen architecture and optimization hyperparameters across model sizes and training stages. |
+| ![Figure 4](assets/papers-explained-125-codegen/fig-4.webp) | HumanEval pass@k comparison across GPT, Codex, and CodeGen-NL/Multi/Mono families. |
+| ![Figure 5](assets/papers-explained-125-codegen/fig-5.webp) | Multi-Turn Programming Benchmark pass-rate comparison by model size and data stage. |
 ## Related
 
 - [[Papers Explained Corpus]]

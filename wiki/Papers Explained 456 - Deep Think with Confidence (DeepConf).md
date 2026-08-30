@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-09-18_Papers-Explained-456--Deep-Think-with-Confidence--DeepConf--5aa9d7018ab0.html`
+- Source file: `raw/2025-09-18_Papers-Explained-456--Deep-Think-with-Confidence--DeepConf--5aa9d7018ab0.md`
 - Source title: Papers Explained 456: Deep Think with Confidence (DeepConf)
 - Published: 2025-09-18
 - Canonical: [https://medium.com/@ritvik19/papers-explained-456-deep-think-with-confidence-deepconf-5aa9d7018ab0](https://medium.com/@ritvik19/papers-explained-456-deep-think-with-confidence-deepconf-5aa9d7018ab0)
@@ -169,30 +169,30 @@ Deep Think with Confidence [2508.15260](https://arxiv.org/abs/2508.15260)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-09-18_Papers-Explained-456--Deep-Think-with-Confidence--DeepConf--5aa9d7018ab0.html`); local copies under `wiki/assets/papers-explained-456-deep-think-with-confidence-deepconf/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-09-18_Papers-Explained-456--Deep-Think-with-Confidence--DeepConf--5aa9d7018ab0.md`); local copies under `wiki/assets/papers-explained-456-deep-think-with-confidence-deepconf/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-1.png) | Title card: Deep Think with Confidence (DeepConf). |
-| ![Figure 2](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-2.png) | Given a language model’s predicted token distribution Pi at position i, the token entropy is defined as. |
-| ![Figure 3](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-3.png) | Defined as the negative average log-probability of the top-k tokens at position i. |
-| ![Figure 4](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-4.png) | Token-level metrics require aggregation to assess entire reasoning traces. |
-| ![Figure 5](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-5.png) | Confidence distributions for correct vs. incorrect reasoning traces across different metrics. Data from HMMT25: 30 problems, 4096 traces each. |
-| ![Figure 6](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-6.png) | Group confidence provides a more localized and smoother signal by averaging token confidence over overlapping spans of the reasoning trace. |
-| ![Figure 7](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-7.png) | Bottom 10% Group Confidence: where Gb is the set of groups with the lowest 10% confidence scores. |
-| ![Figure 8](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-8.png) | Lowest Group Confidence: where Gis the set of all token groups in the reasoning trace. |
-| ![Figure 9](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-9.png) | Tail confidence evaluates reasoning trace reliability by focusing on the final portion. |
-| ![Figure 10](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-10.png) | Confidence measurements and offline thinking with confidence. |
-| ![Figure 11](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-11.png) | where I{·}is the indicator function. The final answer is selected as the one with the highest vote count. |
-| ![Figure 12](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-12.png) | where I{·}is the indicator function. The final answer is selected as the one with the highest vote count. |
-| ![Figure 13](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-13.png) | Instead of treating each trace vote equally, each final answer is weighted by the confidence of the associated trace. |
-| ![Figure 14](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-14.png) | Confidence Filtering. |
-| ![Figure 15](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-15.png) | DeepConf during online generation. |
-| ![Figure 16](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-16.png) | For each new prompt, Ninit reasoning traces are generted (e.g., Ninit = 16). The stopping threshold s is defined as. |
-| ![Figure 17](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-17.png) | Adaptive sampling is employed across all methods to dynamically adjust the number of traces generated based on problem difficulty. |
-| ![Figure 18](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-18.png) | τ is a preset consensus threshold. |
-| ![Figure 19](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-19.png) | Benchmarking confidence measurements in offline setting. |
-| ![Figure 20](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-20.png) | Benchmark DeepConf in online setting. |
+| ![Figure 1](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-1.webp) | Title card: Deep Think with Confidence (DeepConf). |
+| ![Figure 2](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-2.webp) | Given a language model’s predicted token distribution Pi at position i, the token entropy is defined as. |
+| ![Figure 3](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-3.webp) | Defined as the negative average log-probability of the top-k tokens at position i. |
+| ![Figure 4](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-4.webp) | Token-level metrics require aggregation to assess entire reasoning traces. |
+| ![Figure 5](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-5.webp) | Confidence distributions for correct vs. incorrect reasoning traces across different metrics. Data from HMMT25: 30 problems, 4096 traces each. |
+| ![Figure 6](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-6.webp) | Group confidence provides a more localized and smoother signal by averaging token confidence over overlapping spans of the reasoning trace. |
+| ![Figure 7](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-7.webp) | Bottom 10% Group Confidence: where Gb is the set of groups with the lowest 10% confidence scores. |
+| ![Figure 8](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-8.webp) | Lowest Group Confidence: where Gis the set of all token groups in the reasoning trace. |
+| ![Figure 9](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-9.webp) | Tail confidence evaluates reasoning trace reliability by focusing on the final portion. |
+| ![Figure 10](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-10.webp) | Confidence measurements and offline thinking with confidence. |
+| ![Figure 11](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-11.webp) | where I{·}is the indicator function. The final answer is selected as the one with the highest vote count. |
+| ![Figure 12](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-12.webp) | where I{·}is the indicator function. The final answer is selected as the one with the highest vote count. |
+| ![Figure 13](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-13.webp) | Instead of treating each trace vote equally, each final answer is weighted by the confidence of the associated trace. |
+| ![Figure 14](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-14.webp) | Confidence Filtering. |
+| ![Figure 15](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-15.webp) | DeepConf during online generation. |
+| ![Figure 16](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-16.webp) | For each new prompt, Ninit reasoning traces are generted (e.g., Ninit = 16). The stopping threshold s is defined as. |
+| ![Figure 17](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-17.webp) | Adaptive sampling is employed across all methods to dynamically adjust the number of traces generated based on problem difficulty. |
+| ![Figure 18](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-18.webp) | τ is a preset consensus threshold. |
+| ![Figure 19](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-19.webp) | Benchmarking confidence measurements in offline setting. |
+| ![Figure 20](assets/papers-explained-456-deep-think-with-confidence-deepconf/fig-20.webp) | Benchmark DeepConf in online setting. |
 ## Related
 
 - [[Papers Explained Corpus]]

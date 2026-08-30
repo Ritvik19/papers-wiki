@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/draft_Papers-Explained--Nemotron-3-Super-a85eaac06bc3.html`
+- Source file: `raw/draft_Papers-Explained--Nemotron-3-Super-a85eaac06bc3.md`
 - Source title: Papers Explained: Nemotron 3 Super
 - Canonical: [https://medium.com/p/a85eaac06bc3](https://medium.com/p/a85eaac06bc3)
 
@@ -378,24 +378,24 @@ Nemotron 3 Super: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Mo
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/draft_Papers-Explained--Nemotron-3-Super-a85eaac06bc3.html`); local copies under `wiki/assets/papers-explained-nemotron-3-super/` when download succeeded.
+Figures from the Medium HTML export (`raw/draft_Papers-Explained--Nemotron-3-Super-a85eaac06bc3.md`); local copies under `wiki/assets/papers-explained-nemotron-3-super/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-nemotron-3-super/fig-1.png) | Title page of *Nemotron 3 Super: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Model for Agentic Reasoning*. |
-| ![Figure 2](assets/papers-explained-nemotron-3-super/fig-2.png) | Standard MoE vs LatentMoE block diagrams, highlighting latent down/up projections and expanded expert pool under routed computation. |
-| ![Figure 3](assets/papers-explained-nemotron-3-super/fig-3.png) | Nemotron-3-Super 120B-A12B layer interleaving pattern of Mamba-2, latent MoE, and periodic attention anchor blocks. |
-| ![Figure 4](assets/papers-explained-nemotron-3-super/fig-4.png) | Architectural-dimension table (layer count, hidden size, attention heads, Mamba settings, expert counts, latent size, MTP layers). |
-| ![Figure 5](assets/papers-explained-nemotron-3-super/fig-5.png) | Precision-by-layer-type table showing NVFP4/BF16/MXFP8 assignment rationale across linear, latent, attention, MTP, and embedding layers. |
-| ![Figure 6](assets/papers-explained-nemotron-3-super/fig-6.png) | Pretraining curriculum data mixtures for Phase 1 vs Phase 2. |
-| ![Figure 7](assets/papers-explained-nemotron-3-super/fig-7.png) | Post-training overview: SFT to RLVR rounds, then SWE RL, RLHF, MTP healing, and final Nemotron 3 Super checkpoint. |
-| ![Figure 8](assets/papers-explained-nemotron-3-super/fig-8.png) | Stage-1 token-level SFT objective \( \mathcal{L}_{tok} \) (global output-token average). |
-| ![Figure 9](assets/papers-explained-nemotron-3-super/fig-9.png) | Stage-2 sample-level SFT objective \( \mathcal{L}_{samp} \) (per-conversation normalization). |
-| ![Figure 10](assets/papers-explained-nemotron-3-super/fig-10.png) | Agentic CLI dataset construction and training pipeline from seed task generation through interaction recording and OpenAI-format normalization. |
-| ![Figure 11](assets/papers-explained-nemotron-3-super/fig-11.png) | Conversational tool-use synthesis pipeline: domain generation, policy/tools, scenario generation, trajectory collection, verification, and SFT selection. |
-| ![Figure 12](assets/papers-explained-nemotron-3-super/fig-12.png) | General-purpose tool-calling data pipeline with seed sampling, query gating, multi-agent simulation, tool/schema verification, and trajectory judging. |
-| ![Figure 13](assets/papers-explained-nemotron-3-super/fig-13.png) | Base-model benchmark table across knowledge, math, code, commonsense, reading, multilingual, and long-context tasks vs Ling-flash and GLM-4.5-Air. |
-| ![Figure 14](assets/papers-explained-nemotron-3-super/fig-14.png) | Post-trained benchmark comparison across reasoning, agentic, chat/instruction, long-context, and multilingual tasks vs Qwen3.5-122B-A10B and GPT-OSS-120B. |
+| ![Figure 1](assets/papers-explained-nemotron-3-super/fig-1.webp) | Title page of *Nemotron 3 Super: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Model for Agentic Reasoning*. |
+| ![Figure 2](assets/papers-explained-nemotron-3-super/fig-2.webp) | Standard MoE vs LatentMoE block diagrams, highlighting latent down/up projections and expanded expert pool under routed computation. |
+| ![Figure 3](assets/papers-explained-nemotron-3-super/fig-3.webp) | Nemotron-3-Super 120B-A12B layer interleaving pattern of Mamba-2, latent MoE, and periodic attention anchor blocks. |
+| ![Figure 4](assets/papers-explained-nemotron-3-super/fig-4.webp) | Architectural-dimension table (layer count, hidden size, attention heads, Mamba settings, expert counts, latent size, MTP layers). |
+| ![Figure 5](assets/papers-explained-nemotron-3-super/fig-5.webp) | Precision-by-layer-type table showing NVFP4/BF16/MXFP8 assignment rationale across linear, latent, attention, MTP, and embedding layers. |
+| ![Figure 6](assets/papers-explained-nemotron-3-super/fig-6.webp) | Pretraining curriculum data mixtures for Phase 1 vs Phase 2. |
+| ![Figure 7](assets/papers-explained-nemotron-3-super/fig-7.webp) | Post-training overview: SFT to RLVR rounds, then SWE RL, RLHF, MTP healing, and final Nemotron 3 Super checkpoint. |
+| ![Figure 8](assets/papers-explained-nemotron-3-super/fig-8.webp) | Stage-1 token-level SFT objective \( \mathcal{L}_{tok} \) (global output-token average). |
+| ![Figure 9](assets/papers-explained-nemotron-3-super/fig-9.webp) | Stage-2 sample-level SFT objective \( \mathcal{L}_{samp} \) (per-conversation normalization). |
+| ![Figure 10](assets/papers-explained-nemotron-3-super/fig-10.webp) | Agentic CLI dataset construction and training pipeline from seed task generation through interaction recording and OpenAI-format normalization. |
+| ![Figure 11](assets/papers-explained-nemotron-3-super/fig-11.webp) | Conversational tool-use synthesis pipeline: domain generation, policy/tools, scenario generation, trajectory collection, verification, and SFT selection. |
+| ![Figure 12](assets/papers-explained-nemotron-3-super/fig-12.webp) | General-purpose tool-calling data pipeline with seed sampling, query gating, multi-agent simulation, tool/schema verification, and trajectory judging. |
+| ![Figure 13](assets/papers-explained-nemotron-3-super/fig-13.webp) | Base-model benchmark table across knowledge, math, code, commonsense, reading, multilingual, and long-context tasks vs Ling-flash and GLM-4.5-Air. |
+| ![Figure 14](assets/papers-explained-nemotron-3-super/fig-14.webp) | Post-trained benchmark comparison across reasoning, agentic, chat/instruction, long-context, and multilingual tasks vs Qwen3.5-122B-A10B and GPT-OSS-120B. |
 ## Related
 
 - [[Papers Explained Corpus]]

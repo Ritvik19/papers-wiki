@@ -2,4 +2,4 @@
 
 **URL**: https://unsloth.ai/blog/pytorch
 
-(Canonical HTML: raw/pytorch/full-article.html)
+(Canonical HTML: raw/pytorch/full-article.md)

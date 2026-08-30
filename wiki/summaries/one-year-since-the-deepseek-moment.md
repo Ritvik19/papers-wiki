@@ -1,6 +1,6 @@
 # One Year Since the "DeepSeek Moment"
 
-**Source**: `raw/one-year-since-the-deepseek-moment/full-article.html`, `raw/one-year-since-the-deepseek-moment/full-article.md`
+**Source**: `raw/one-year-since-the-deepseek-moment/full-article.md`, `raw/one-year-since-the-deepseek-moment/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

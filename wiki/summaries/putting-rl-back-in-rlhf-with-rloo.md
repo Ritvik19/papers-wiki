@@ -1,6 +1,6 @@
 # Putting RL Back in RLHF
 
-**Source**: `raw/putting-rl-back-in-rlhf-with-rloo/full-article.html` (172 KB), `raw/putting-rl-back-in-rlhf-with-rloo/full-article.md`
+**Source**: `raw/putting-rl-back-in-rlhf-with-rloo/full-article.md` (172 KB), `raw/putting-rl-back-in-rlhf-with-rloo/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

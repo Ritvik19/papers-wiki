@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-03-01_Papers-Explained-Review-04--Tabular-Deep-Learning-776db04f965b.html`
+- Source file: `raw/2023-03-01_Papers-Explained-Review-04--Tabular-Deep-Learning-776db04f965b.md`
 - Source title: Papers Explained Review 04: Tabular Deep Learning
 - Published: 2023-03-01
 - Canonical: [https://medium.com/@ritvik19/papers-explained-review-04-tabular-deep-learning-776db04f965b](https://medium.com/@ritvik19/papers-explained-review-04-tabular-deep-learning-776db04f965b)
@@ -299,24 +299,24 @@ Regression Output Clipping: For regression tasks, at test time, the MLP outputs 
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-03-01_Papers-Explained-Review-04--Tabular-Deep-Learning-776db04f965b.html`); local copies under `wiki/assets/papers-explained-review-04-tabular-deep-learning/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-03-01_Papers-Explained-Review-04--Tabular-Deep-Learning-776db04f965b.md`); local copies under `wiki/assets/papers-explained-review-04-tabular-deep-learning/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-review-04-tabular-deep-learning/fig-1.png) | Title card: Tabular Deep Learning. |
-| ![Figure 2](assets/papers-explained-review-04-tabular-deep-learning/fig-2.png) | Entity Embeddings of Categorical Variables: Entity Embeddings of Categorical Variables. |
-| ![Figure 3](assets/papers-explained-review-04-tabular-deep-learning/fig-3.png) | Given ResNet’s success story in computer vision, the idea is to construct a simple variation of ResNet for Tabular Data. |
-| ![Figure 4](assets/papers-explained-review-04-tabular-deep-learning/fig-4.png) | Given ResNet’s success story in computer vision, the idea is to construct a simple variation of ResNet for Tabular Data. |
-| ![Figure 5](assets/papers-explained-review-04-tabular-deep-learning/fig-5.png) | Given ResNet’s success story in computer vision, the idea is to construct a simple variation of ResNet for Tabular Data. |
-| ![Figure 6](assets/papers-explained-review-04-tabular-deep-learning/fig-6.png) | Back to Top. |
-| ![Figure 7](assets/papers-explained-review-04-tabular-deep-learning/fig-7.png) | Back to Top. |
-| ![Figure 8](assets/papers-explained-review-04-tabular-deep-learning/fig-8.png) | The cross network is composed of cross layers, with each layer having the following formula. |
-| ![Figure 9](assets/papers-explained-review-04-tabular-deep-learning/fig-9.png) | This special structure of the cross network causes the degree of cross features to grow with layer depth. |
-| ![Figure 10](assets/papers-explained-review-04-tabular-deep-learning/fig-10.png) | Back to Top. |
-| ![Figure 11](assets/papers-explained-review-04-tabular-deep-learning/fig-11.png) | Back to Top. |
-| ![Figure 12](assets/papers-explained-review-04-tabular-deep-learning/fig-12.png) | Revisiting Deep Learning Models for Tabular Data: Back to Top. |
-| ![Figure 13](assets/papers-explained-review-04-tabular-deep-learning/fig-13.png) | Back to Top. |
-| ![Figure 14](assets/papers-explained-review-04-tabular-deep-learning/fig-14.png) | Back to Top. |
+| ![Figure 1](assets/papers-explained-review-04-tabular-deep-learning/fig-1.webp) | Title card: Tabular Deep Learning. |
+| ![Figure 2](assets/papers-explained-review-04-tabular-deep-learning/fig-2.webp) | Entity Embeddings of Categorical Variables: Entity Embeddings of Categorical Variables. |
+| ![Figure 3](assets/papers-explained-review-04-tabular-deep-learning/fig-3.webp) | Given ResNet’s success story in computer vision, the idea is to construct a simple variation of ResNet for Tabular Data. |
+| ![Figure 4](assets/papers-explained-review-04-tabular-deep-learning/fig-4.webp) | Given ResNet’s success story in computer vision, the idea is to construct a simple variation of ResNet for Tabular Data. |
+| ![Figure 5](assets/papers-explained-review-04-tabular-deep-learning/fig-5.webp) | Given ResNet’s success story in computer vision, the idea is to construct a simple variation of ResNet for Tabular Data. |
+| ![Figure 6](assets/papers-explained-review-04-tabular-deep-learning/fig-6.webp) | Back to Top. |
+| ![Figure 7](assets/papers-explained-review-04-tabular-deep-learning/fig-7.webp) | Back to Top. |
+| ![Figure 8](assets/papers-explained-review-04-tabular-deep-learning/fig-8.webp) | The cross network is composed of cross layers, with each layer having the following formula. |
+| ![Figure 9](assets/papers-explained-review-04-tabular-deep-learning/fig-9.webp) | This special structure of the cross network causes the degree of cross features to grow with layer depth. |
+| ![Figure 10](assets/papers-explained-review-04-tabular-deep-learning/fig-10.webp) | Back to Top. |
+| ![Figure 11](assets/papers-explained-review-04-tabular-deep-learning/fig-11.webp) | Back to Top. |
+| ![Figure 12](assets/papers-explained-review-04-tabular-deep-learning/fig-12.webp) | Revisiting Deep Learning Models for Tabular Data: Back to Top. |
+| ![Figure 13](assets/papers-explained-review-04-tabular-deep-learning/fig-13.webp) | Back to Top. |
+| ![Figure 14](assets/papers-explained-review-04-tabular-deep-learning/fig-14.webp) | Back to Top. |
 ## Related
 
 - [[Papers Explained Corpus]]

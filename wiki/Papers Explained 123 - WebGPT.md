@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-04-11_Papers-Explained-123--WebGPT-5bb0dd646b32.html`
+- Source file: `raw/2024-04-11_Papers-Explained-123--WebGPT-5bb0dd646b32.md`
 - Source title: Papers Explained 123: WebGPT
 - Published: 2024-04-11
 - Canonical: [https://medium.com/@ritvik19/papers-explained-123-webgpt-5bb0dd646b32](https://medium.com/@ritvik19/papers-explained-123-webgpt-5bb0dd646b32)
@@ -85,16 +85,16 @@ WebGPT: Browser-assisted question-answering with human feedback [2112.09332](htt
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-04-11_Papers-Explained-123--WebGPT-5bb0dd646b32.html`); local copies under `wiki/assets/papers-explained-123-webgpt/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-04-11_Papers-Explained-123--WebGPT-5bb0dd646b32.md`); local copies under `wiki/assets/papers-explained-123-webgpt/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-123-webgpt/fig-1.png) | Title page of *WebGPT: Browser-assisted question-answering with human feedback*. |
-| ![Figure 2](assets/papers-explained-123-webgpt/fig-2.png) | Demonstration UI and corresponding serialized browser-state text fed to the model. |
-| ![Figure 3](assets/papers-explained-123-webgpt/fig-3.png) | Allowed browser action commands and their effects in the WebGPT environment. |
-| ![Figure 4](assets/papers-explained-123-webgpt/fig-4.png) | Dataset breakdown of demonstrations and pairwise comparisons by question source. |
-| ![Figure 5](assets/papers-explained-123-webgpt/fig-5.png) | Human preference results on ELI5 vs demonstrations and reference answers. |
-| ![Figure 6](assets/papers-explained-123-webgpt/fig-6.png) | TruthfulQA truthful and informative rates for GPT-3 prompts vs WebGPT models. |
+| ![Figure 1](assets/papers-explained-123-webgpt/fig-1.webp) | Title page of *WebGPT: Browser-assisted question-answering with human feedback*. |
+| ![Figure 2](assets/papers-explained-123-webgpt/fig-2.webp) | Demonstration UI and corresponding serialized browser-state text fed to the model. |
+| ![Figure 3](assets/papers-explained-123-webgpt/fig-3.webp) | Allowed browser action commands and their effects in the WebGPT environment. |
+| ![Figure 4](assets/papers-explained-123-webgpt/fig-4.webp) | Dataset breakdown of demonstrations and pairwise comparisons by question source. |
+| ![Figure 5](assets/papers-explained-123-webgpt/fig-5.webp) | Human preference results on ELI5 vs demonstrations and reference answers. |
+| ![Figure 6](assets/papers-explained-123-webgpt/fig-6.webp) | TruthfulQA truthful and informative rates for GPT-3 prompts vs WebGPT models. |
 ## Related
 
 - [[Papers Explained Corpus]]

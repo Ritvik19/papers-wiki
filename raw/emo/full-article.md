@@ -1,3 +1,3 @@
 # emo
 
-Canonical HTML: `raw/emo/full-article.html`
+Canonical HTML: `raw/emo/full-article.md`

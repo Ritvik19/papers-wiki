@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-16_Papers-Explained-187b--Llama-3-1-f0fb06898c59.html`
+- Source file: `raw/2024-08-16_Papers-Explained-187b--Llama-3-1-f0fb06898c59.md`
 - Source title: Papers Explained 187b: Llama 3.1
 - Published: 2024-08-16
 - Canonical: [https://medium.com/@ritvik19/papers-explained-187b-llama-3-1-f0fb06898c59](https://medium.com/@ritvik19/papers-explained-187b-llama-3-1-f0fb06898c59)
@@ -277,20 +277,20 @@ Recommended Reading [LLaMA Models](https://ritvik19.medium.com/list/llama-models
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-16_Papers-Explained-187b--Llama-3-1-f0fb06898c59.html`); local copies under `wiki/assets/papers-explained-187b-llama-3-1/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-16_Papers-Explained-187b--Llama-3-1-f0fb06898c59.md`); local copies under `wiki/assets/papers-explained-187b-llama-3-1/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-187b-llama-3-1/fig-1.png) | Meta report banner — **The Llama 3 Herd of Models**. |
-| ![Figure 2](assets/papers-explained-187b-llama-3-1/fig-2.png) | **Llama 3** vs **Llama 3.1** feature matrix — multilingual, long context, tool use (**405B** row). |
-| ![Figure 3](assets/papers-explained-187b-llama-3-1/fig-3.png) | Decoder-only **LLM** schematic — token embeddings → stacked Transformer blocks → next-token prediction (**autoregressive** loop). |
-| ![Figure 4](assets/papers-explained-187b-llama-3-1/fig-4.png) | **Architecture hyper-parameters** — **8B / 70B / 405B**: layers, dims, **GQA** KV heads, peak LR, SwiGLU, **128K** vocab, **RoPE** base frequency **500k**. |
-| ![Figure 5](assets/papers-explained-187b-llama-3-1/fig-5.png) | **Iterative post-training** — reward model on preferences → **rejection sampling** → **SFT** → **DPO**; roll best checkpoint into next annotation round. |
-| ![Figure 6](assets/papers-explained-187b-llama-3-1/fig-6.png) | **Human-preference annotation** mix — General English / Coding / Multilingual / Reasoning+tools: % of comparisons and avg turns / tokens. |
-| ![Figure 7](assets/papers-explained-187b-llama-3-1/fig-7.png) | **SFT data mix** — % examples and token lengths by bucket (General, Code, Multilingual, Exam-like, Reasoning+tools, **long context** tail). |
-| ![Figure 8](assets/papers-explained-187b-llama-3-1/fig-8.png) | **Llama 3.1 405B** vs Nemotron 340B, GPT-4 (0125), GPT-4o, Claude 3.5 Sonnet — general, code, math, reasoning, tools, long context, multilingual. |
-| ![Figure 9](assets/papers-explained-187b-llama-3-1/fig-9.png) | **Llama 3.1 8B & 70B** vs Gemma 2 9B IT, Mistral 7B IT, Mixtral 8×22B IT, GPT-3.5 Turbo — same broad benchmark grid. |
-| ![Figure 10](assets/papers-explained-187b-llama-3-1/fig-10.png) | **Human eval**: **Llama 3.1 405B** vs GPT-4-0125, GPT-4o, Claude 3.5 Sonnet — win / tie / loss rates. |
+| ![Figure 1](assets/papers-explained-187b-llama-3-1/fig-1.webp) | Meta report banner — **The Llama 3 Herd of Models**. |
+| ![Figure 2](assets/papers-explained-187b-llama-3-1/fig-2.webp) | **Llama 3** vs **Llama 3.1** feature matrix — multilingual, long context, tool use (**405B** row). |
+| ![Figure 3](assets/papers-explained-187b-llama-3-1/fig-3.webp) | Decoder-only **LLM** schematic — token embeddings → stacked Transformer blocks → next-token prediction (**autoregressive** loop). |
+| ![Figure 4](assets/papers-explained-187b-llama-3-1/fig-4.webp) | **Architecture hyper-parameters** — **8B / 70B / 405B**: layers, dims, **GQA** KV heads, peak LR, SwiGLU, **128K** vocab, **RoPE** base frequency **500k**. |
+| ![Figure 5](assets/papers-explained-187b-llama-3-1/fig-5.webp) | **Iterative post-training** — reward model on preferences → **rejection sampling** → **SFT** → **DPO**; roll best checkpoint into next annotation round. |
+| ![Figure 6](assets/papers-explained-187b-llama-3-1/fig-6.webp) | **Human-preference annotation** mix — General English / Coding / Multilingual / Reasoning+tools: % of comparisons and avg turns / tokens. |
+| ![Figure 7](assets/papers-explained-187b-llama-3-1/fig-7.webp) | **SFT data mix** — % examples and token lengths by bucket (General, Code, Multilingual, Exam-like, Reasoning+tools, **long context** tail). |
+| ![Figure 8](assets/papers-explained-187b-llama-3-1/fig-8.webp) | **Llama 3.1 405B** vs Nemotron 340B, GPT-4 (0125), GPT-4o, Claude 3.5 Sonnet — general, code, math, reasoning, tools, long context, multilingual. |
+| ![Figure 9](assets/papers-explained-187b-llama-3-1/fig-9.webp) | **Llama 3.1 8B & 70B** vs Gemma 2 9B IT, Mistral 7B IT, Mixtral 8×22B IT, GPT-3.5 Turbo — same broad benchmark grid. |
+| ![Figure 10](assets/papers-explained-187b-llama-3-1/fig-10.webp) | **Human eval**: **Llama 3.1 405B** vs GPT-4-0125, GPT-4o, Claude 3.5 Sonnet — win / tie / loss rates. |
 ## HF Blog Cross-References
 
 - [Llama 3.1 - 405B, 70B & 8B with multilinguality and long context](https://huggingface.co/blog/llama31) (2024-07-23) — Hugging Face's integration post for the July 2024 release, covering the same 8B/70B/405B lineup plus Llama Guard 3 and Prompt Guard. Adds practical detail not in the technical report: memory requirements for inference/training, FP8/AWQ/GPTQ quantization recipes for the 405B, and a TRL fine-tuning + Distilabel synthetic-data walkthrough.

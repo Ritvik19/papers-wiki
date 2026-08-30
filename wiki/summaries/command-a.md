@@ -1,6 +1,6 @@
 # Introducing Command A: Max performance, minimal compute
 
-**Source**: `raw/command-a/full-article.html` (341 KB), `raw/command-a/full-article.md` (markdown view)  
+**Source**: `raw/command-a/full-article.md` (341 KB), `raw/command-a/full-article.md` (markdown view)  
 **URL**: https://cohere.com/blog/command-a  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -29,14 +29,14 @@ Architectural and post-training details (SwiGLU, interleaved sliding-window/full
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/command-a/fig-1.png) | Head-to-head human evaluation win rates on enterprise tasks (accuracy, instruction following, style) | — |
-| ![fig-2](../assets/command-a/fig-2.png) | Academic, agent (BFCL, Taubench), and coding benchmark performance vs. competitors | — |
-| ![fig-3](../assets/command-a/fig-3.png) | Tokens/sec and time-to-first-token vs. GPT-4o and DeepSeek-V3 (long/short context) | — |
-| ![fig-4](../assets/command-a/fig-4.png) | Enterprise RAG human-eval win rates: Command A vs. GPT-4o (fluency, faithfulness, utility) | — |
-| ![fig-5](../assets/command-a/fig-5.png) | Multilingual enterprise task win rates across 8 languages | — |
-| ![fig-6](../assets/command-a/fig-6.png) | Arabic cross-lingual LPR and ADI2 dialect scores vs. GPT-4o and DeepSeek-V3 | — |
+| ![fig-1](../assets/command-a/fig-1.webp) | Head-to-head human evaluation win rates on enterprise tasks (accuracy, instruction following, style) | — |
+| ![fig-2](../assets/command-a/fig-2.webp) | Academic, agent (BFCL, Taubench), and coding benchmark performance vs. competitors | — |
+| ![fig-3](../assets/command-a/fig-3.webp) | Tokens/sec and time-to-first-token vs. GPT-4o and DeepSeek-V3 (long/short context) | — |
+| ![fig-4](../assets/command-a/fig-4.webp) | Enterprise RAG human-eval win rates: Command A vs. GPT-4o (fluency, faithfulness, utility) | — |
+| ![fig-5](../assets/command-a/fig-5.webp) | Multilingual enterprise task win rates across 8 languages | — |
+| ![fig-6](../assets/command-a/fig-6.webp) | Arabic cross-lingual LPR and ADI2 dialect scores vs. GPT-4o and DeepSeek-V3 | — |
 
-![Enterprise human evaluation win rates](../assets/command-a/fig-1.png)
+![Enterprise human evaluation win rates](../assets/command-a/fig-1.webp)
 
 ## Entities
 

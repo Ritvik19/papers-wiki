@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-07-10_Papers-Explained-406--Answer-Matching-0940b4c50570.html`
+- Source file: `raw/2025-07-10_Papers-Explained-406--Answer-Matching-0940b4c50570.md`
 - Source title: Papers Explained 406: Answer Matching
 - Published: 2025-07-10
 - Canonical: [https://medium.com/@ritvik19/papers-explained-406-answer-matching-0940b4c50570](https://medium.com/@ritvik19/papers-explained-406-answer-matching-0940b4c50570)
@@ -256,16 +256,16 @@ Answer Matching Outperforms Multiple Choice for Language Model Evaluation [2507.
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-07-10_Papers-Explained-406--Answer-Matching-0940b4c50570.html`); local copies under `wiki/assets/papers-explained-406-answer-matching/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-07-10_Papers-Explained-406--Answer-Matching-0940b4c50570.md`); local copies under `wiki/assets/papers-explained-406-answer-matching/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-406-answer-matching/fig-1.png) | Title card: Answer Matching. |
-| ![Figure 2](assets/papers-explained-406-answer-matching/fig-2.png) | Shortcut accuracy achieved by finetuning a discriminative classifier that sees only the answer choices, without any access to the question. |
-| ![Figure 3](assets/papers-explained-406-answer-matching/fig-3.png) | Accuracy estimated by different graders and their alignment with ground truth evaluation on MATH. |
-| ![Figure 4](assets/papers-explained-406-answer-matching/fig-4.png) | Human-agreement comparison. |
-| ![Figure 5](assets/papers-explained-406-answer-matching/fig-5.png) | Leaderboard rankings change when moving from MCQ to answer-matching. |
-| ![Figure 6](assets/papers-explained-406-answer-matching/fig-6.png) | Breakdown of evaluation cost averaged across 17 models. |
+| ![Figure 1](assets/papers-explained-406-answer-matching/fig-1.webp) | Title card: Answer Matching. |
+| ![Figure 2](assets/papers-explained-406-answer-matching/fig-2.webp) | Shortcut accuracy achieved by finetuning a discriminative classifier that sees only the answer choices, without any access to the question. |
+| ![Figure 3](assets/papers-explained-406-answer-matching/fig-3.webp) | Accuracy estimated by different graders and their alignment with ground truth evaluation on MATH. |
+| ![Figure 4](assets/papers-explained-406-answer-matching/fig-4.webp) | Human-agreement comparison. |
+| ![Figure 5](assets/papers-explained-406-answer-matching/fig-5.webp) | Leaderboard rankings change when moving from MCQ to answer-matching. |
+| ![Figure 6](assets/papers-explained-406-answer-matching/fig-6.webp) | Breakdown of evaluation cost averaged across 17 models. |
 ## Related
 
 - [[Papers Explained Corpus]]

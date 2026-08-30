@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-10-10_Papers-Explained-228--Direct-Judgement-Preference-Optimization-6915425402bf.html`
+- Source file: `raw/2024-10-10_Papers-Explained-228--Direct-Judgement-Preference-Optimization-6915425402bf.md`
 - Source title: Papers Explained 228: Direct Judgement Preference Optimization
 - Published: 2024-10-10
 - Canonical: [https://medium.com/@ritvik19/papers-explained-228-direct-judgement-preference-optimization-6915425402bf](https://medium.com/@ritvik19/papers-explained-228-direct-judgement-preference-optimization-6915425402bf)
@@ -117,22 +117,22 @@ Direct Judgement Preference Optimization [2409.14664](https://arxiv.org/abs/2409
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-10-10_Papers-Explained-228--Direct-Judgement-Preference-Optimization-6915425402bf.html`); local copies under `wiki/assets/papers-explained-228-direct-judgement-preference-optimization/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-10-10_Papers-Explained-228--Direct-Judgement-Preference-Optimization-6915425402bf.md`); local copies under `wiki/assets/papers-explained-228-direct-judgement-preference-optimization/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-228-direct-judgement-preference-optimization/fig-1.png) | Title card: Direct Judgement Preference Optimization. |
-| ![Figure 2](assets/papers-explained-228-direct-judgement-preference-optimization/fig-2.png) | Overview of the method. |
-| ![Figure 3](assets/papers-explained-228-direct-judgement-preference-optimization/fig-3.png) | The preference data curation and training pipeline. |
-| ![Figure 4](assets/papers-explained-228-direct-judgement-preference-optimization/fig-4.png) | Experimental Setup. |
-| ![Figure 5](assets/papers-explained-228-direct-judgement-preference-optimization/fig-5.png) | Pairwise comparison tasks. |
-| ![Figure 6](assets/papers-explained-228-direct-judgement-preference-optimization/fig-6.png) | Single rating performance. |
-| ![Figure 7](assets/papers-explained-228-direct-judgement-preference-optimization/fig-7.png) | Classification performance. |
-| ![Figure 8](assets/papers-explained-228-direct-judgement-preference-optimization/fig-8.png) | Detailed generative RewardBench results. |
-| ![Figure 9](assets/papers-explained-228-direct-judgement-preference-optimization/fig-9.png) | Bias analysis of generative judge models, with a detailed breakdown of EvalBiasBench (EBB) bias categories and the model pariwise comparison consistency macro-average across the 6 non-RewardBench benchmarks. |
-| ![Figure 10](assets/papers-explained-228-direct-judgement-preference-optimization/fig-10.png) | Influence of various training configurations. |
-| ![Figure 11](assets/papers-explained-228-direct-judgement-preference-optimization/fig-11.png) | Average pairwise performance for 3 different prompting approaches: Using a fixed RewardBench prompt (RB), task-specific prompts (TS), and a fixed PRePair-style prompt. |
-| ![Figure 12](assets/papers-explained-228-direct-judgement-preference-optimization/fig-12.png) | AlpacaEval results. |
+| ![Figure 1](assets/papers-explained-228-direct-judgement-preference-optimization/fig-1.webp) | Title card: Direct Judgement Preference Optimization. |
+| ![Figure 2](assets/papers-explained-228-direct-judgement-preference-optimization/fig-2.webp) | Overview of the method. |
+| ![Figure 3](assets/papers-explained-228-direct-judgement-preference-optimization/fig-3.webp) | The preference data curation and training pipeline. |
+| ![Figure 4](assets/papers-explained-228-direct-judgement-preference-optimization/fig-4.webp) | Experimental Setup. |
+| ![Figure 5](assets/papers-explained-228-direct-judgement-preference-optimization/fig-5.webp) | Pairwise comparison tasks. |
+| ![Figure 6](assets/papers-explained-228-direct-judgement-preference-optimization/fig-6.webp) | Single rating performance. |
+| ![Figure 7](assets/papers-explained-228-direct-judgement-preference-optimization/fig-7.webp) | Classification performance. |
+| ![Figure 8](assets/papers-explained-228-direct-judgement-preference-optimization/fig-8.webp) | Detailed generative RewardBench results. |
+| ![Figure 9](assets/papers-explained-228-direct-judgement-preference-optimization/fig-9.webp) | Bias analysis of generative judge models, with a detailed breakdown of EvalBiasBench (EBB) bias categories and the model pariwise comparison consistency macro-average across the 6 non-RewardBench benchmarks. |
+| ![Figure 10](assets/papers-explained-228-direct-judgement-preference-optimization/fig-10.webp) | Influence of various training configurations. |
+| ![Figure 11](assets/papers-explained-228-direct-judgement-preference-optimization/fig-11.webp) | Average pairwise performance for 3 different prompting approaches: Using a fixed RewardBench prompt (RB), task-specific prompts (TS), and a fixed PRePair-style prompt. |
+| ![Figure 12](assets/papers-explained-228-direct-judgement-preference-optimization/fig-12.webp) | AlpacaEval results. |
 ## Related
 
 - [[Papers Explained Corpus]]

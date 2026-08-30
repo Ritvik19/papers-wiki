@@ -2,18 +2,20 @@
 
 ## Layers
 - `inbox/` — drop zone for documents waiting to be ingested.
-- `raw/` — canonical home for ingested source documents. Once a document is moved here by ingest, do not modify it. Text/HTML/markdown only; do not store extracted figures here.
+- `raw/` — canonical home for ingested source documents (markdown only). Once a document is moved here by ingest, do not modify it. Do not store HTML copies or extracted figures here.
 - `index.md` — master catalog, one-line summary per page.
 - `log.md` — append-only ingest log.
 - `wiki/` — content pages only; you own and maintain this entirely.
-- `wiki/assets/` — single canonical store for all extracted figures (`wiki/assets/<source-slug>/fig-N.<ext>`). Wiki pages and `raw/<slug>/full-article.html` reference this path; figures are not duplicated under `raw/`.
+- `wiki/assets/` — single canonical store for all extracted figures (`wiki/assets/<source-slug>/fig-N.<ext>`). Wiki pages and `raw/<slug>/full-article.md` reference this path; figures are not duplicated under `raw/`.
 - `artifacts/` — generated interactive explainers (HTML/CSS/JS); not canonical wiki content; safe to delete or regenerate; do not use as ingest sources.
 - `.agents/skills/` — repo-local workflow skills for ingest, query, query-interactive, and lint; keep these aligned with this schema.
 
 ## Storage policy
-- Figures live only in `wiki/assets/`. Ingest saves images there once; `raw/` HTML may link to `../../wiki/assets/<slug>/...` but must not keep a parallel `raw/<slug>/images/` copy.
+- Figures live only in `wiki/assets/` as WebP (or GIF/SVG when animation/vector is required). Ingest saves images there once; `raw/` markdown may link to `../../wiki/assets/<slug>/...` but must not keep a parallel `raw/<slug>/images/` copy.
+- `raw/` stores markdown only (`full-article.md` or `raw/<stem>.md`). Fetch HTML in memory or a temp file during ingest; do not commit HTML to `raw/`.
 - Large binaries (PDFs, MP4) are gitignored after ingest metadata is captured; keep them locally outside version control if needed.
 - Run `python3 scripts/reduce_storage.py` to prune duplicate raw images, orphan assets, and compress figures.
+- Run `python3 scripts/compact_further.py` for WebP conversion and markdown-only raw migration.
 
 ## Skill Routing
 When a task matches ingest, query, query-interactive, or lint, read the corresponding repo-local

@@ -22,8 +22,7 @@ Core Unsloth engineering: **gradient accumulation loss fix**, **3× faster packi
 
 | Figure | Caption |
 |--------|---------|
-| ![fig-1](../assets/unsloth-training-efficiency-and-kernels/fig-1.png) | Sample packing attention pattern (no pad waste) |
-| ![fig-2](../assets/unsloth-training-efficiency-and-kernels/fig-2.png) | Gradient accumulation correct vs incorrect loss scaling |
+| ![fig-2](../assets/unsloth-training-efficiency-and-kernels/fig-2.webp) | Sample packing / gradient accumulation (fig-1 not archived) |
 
 ## Entities
 
@@ -49,8 +48,8 @@ Core Unsloth engineering: **gradient accumulation loss fix**, **3× faster packi
 
 ## Sources
 
-- `raw/gradient/full-article.html`
-- `raw/3x-faster-training-packing/full-article.html`
+- `raw/gradient/full-article.md`
+- `raw/3x-faster-training-packing/full-article.md`
 - `raw/faster-moe/full-article.md`
-- `raw/nvidia-collab/full-article.html`
-- `raw/contpretraining/full-article.html`
+- `raw/nvidia-collab/full-article.md`
+- `raw/contpretraining/full-article.md`

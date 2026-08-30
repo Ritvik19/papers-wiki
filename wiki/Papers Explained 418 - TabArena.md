@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-07-28_Papers-Explained-418--TabArena-ff7e5159e982.html`
+- Source file: `raw/2025-07-28_Papers-Explained-418--TabArena-ff7e5159e982.md`
 - Source title: Papers Explained 418: TabArena
 - Published: 2025-07-28
 - Canonical: [https://medium.com/@ritvik19/papers-explained-418-tabarena-ff7e5159e982](https://medium.com/@ritvik19/papers-explained-418-tabarena-ff7e5159e982)
@@ -197,17 +197,17 @@ TabArena: A Living Benchmark for Machine Learning on Tabular Data [2506.16791](h
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-07-28_Papers-Explained-418--TabArena-ff7e5159e982.html`); local copies under `wiki/assets/papers-explained-418-tabarena/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-07-28_Papers-Explained-418--TabArena-ff7e5159e982.md`); local copies under `wiki/assets/papers-explained-418-tabarena/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-418-tabarena/fig-1.png) | Title card: TabArena. |
-| ![Figure 2](assets/papers-explained-418-tabarena/fig-2.png) | TabArena-v0.1 Models. |
-| ![Figure 3](assets/papers-explained-418-tabarena/fig-3.png) | For each model, a strong hyperparameter search space is curated. |
-| ![Figure 4](assets/papers-explained-418-tabarena/fig-4.png) | Data Curation Results. |
-| ![Figure 5](assets/papers-explained-418-tabarena/fig-5.png) | Datasets included in TabArena-v0.1. |
-| ![Figure 6](assets/papers-explained-418-tabarena/fig-6.png) | TabArena-v0.1 Leaderboard. |
-| ![Figure 7](assets/papers-explained-418-tabarena/fig-7.png) | Leaderboard for TabPFNv2-compatible (left) and TabICL-compatible (right) datasets. |
+| ![Figure 1](assets/papers-explained-418-tabarena/fig-1.webp) | Title card: TabArena. |
+| ![Figure 2](assets/papers-explained-418-tabarena/fig-2.webp) | TabArena-v0.1 Models. |
+| ![Figure 3](assets/papers-explained-418-tabarena/fig-3.webp) | For each model, a strong hyperparameter search space is curated. |
+| ![Figure 4](assets/papers-explained-418-tabarena/fig-4.webp) | Data Curation Results. |
+| ![Figure 5](assets/papers-explained-418-tabarena/fig-5.webp) | Datasets included in TabArena-v0.1. |
+| ![Figure 6](assets/papers-explained-418-tabarena/fig-6.webp) | TabArena-v0.1 Leaderboard. |
+| ![Figure 7](assets/papers-explained-418-tabarena/fig-7.webp) | Leaderboard for TabPFNv2-compatible (left) and TabICL-compatible (right) datasets. |
 ## Related
 
 - [[Papers Explained Corpus]]

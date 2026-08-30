@@ -1,6 +1,6 @@
 # Gemma 4 Multi-Token Prediction
 
-**Source**: `raw/gemma-4-mtp/full-article.html` (385 KB)  
+**Source**: `raw/gemma-4-mtp/full-article.md` (385 KB)  
 **URL**: https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

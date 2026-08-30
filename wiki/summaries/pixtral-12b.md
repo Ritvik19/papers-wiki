@@ -1,6 +1,6 @@
 # Announcing Pixtral 12B
 
-**Source**: `raw/pixtral-12b/full-article.html` (270 KB), `raw/pixtral-12b/full-article.md` (markdown view)  
+**Source**: `raw/pixtral-12b/full-article.md` (270 KB), `raw/pixtral-12b/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/pixtral-12b/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

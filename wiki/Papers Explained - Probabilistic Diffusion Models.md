@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/draft_Papers-Explained--Probabilistic-Diffusion-Models-2b3a9f14cb04.html`
+- Source file: `raw/draft_Papers-Explained--Probabilistic-Diffusion-Models-2b3a9f14cb04.md`
 - Source title: Papers Explained: Probabilistic Diffusion Models
 - Canonical: [https://medium.com/p/2b3a9f14cb04](https://medium.com/p/2b3a9f14cb04)
 
@@ -54,15 +54,15 @@ Denoising Diffusion Probabilistic Models [2006.11239](https://arxiv.org/abs/2006
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/draft_Papers-Explained--Probabilistic-Diffusion-Models-2b3a9f14cb04.html`); local copies under `wiki/assets/papers-explained-probabilistic-diffusion-models/` when download succeeded.
+Figures from the Medium HTML export (`raw/draft_Papers-Explained--Probabilistic-Diffusion-Models-2b3a9f14cb04.md`); local copies under `wiki/assets/papers-explained-probabilistic-diffusion-models/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-probabilistic-diffusion-models/fig-1.png) | Title block of *Denoising Diffusion Probabilistic Models* (Ho, Jain, Abbeel). |
-| ![Figure 2](assets/papers-explained-probabilistic-diffusion-models/fig-2.png) | Forward and reverse diffusion chain from noisy \(x_T\) to denoised sample \(x_0\), with learned reverse transitions \(p_\theta(x_{t-1}\mid x_t)\). |
-| ![Figure 3](assets/papers-explained-probabilistic-diffusion-models/fig-3.jpg) | One-step diffusion recurrence showing noise injection controlled by \(\beta_t\). |
-| ![Figure 4](assets/papers-explained-probabilistic-diffusion-models/fig-4.png) | CIFAR-10 comparison table (IS, FID, NLL): diffusion variants vs GAN, score-based, autoregressive, and EBM baselines. |
-| ![Figure 5](assets/papers-explained-probabilistic-diffusion-models/fig-5.png) | Reverse-process parameterization ablation: \(\mu\)-prediction vs \(\epsilon\)-prediction objectives and learned/fixed-variance choices. |
+| ![Figure 1](assets/papers-explained-probabilistic-diffusion-models/fig-1.webp) | Title block of *Denoising Diffusion Probabilistic Models* (Ho, Jain, Abbeel). |
+| ![Figure 2](assets/papers-explained-probabilistic-diffusion-models/fig-2.webp) | Forward and reverse diffusion chain from noisy \(x_T\) to denoised sample \(x_0\), with learned reverse transitions \(p_\theta(x_{t-1}\mid x_t)\). |
+| ![Figure 3](assets/papers-explained-probabilistic-diffusion-models/fig-3.webp) | One-step diffusion recurrence showing noise injection controlled by \(\beta_t\). |
+| ![Figure 4](assets/papers-explained-probabilistic-diffusion-models/fig-4.webp) | CIFAR-10 comparison table (IS, FID, NLL): diffusion variants vs GAN, score-based, autoregressive, and EBM baselines. |
+| ![Figure 5](assets/papers-explained-probabilistic-diffusion-models/fig-5.webp) | Reverse-process parameterization ablation: \(\mu\)-prediction vs \(\epsilon\)-prediction objectives and learned/fixed-variance choices. |
 ## Related
 
 - [[Papers Explained Corpus]]

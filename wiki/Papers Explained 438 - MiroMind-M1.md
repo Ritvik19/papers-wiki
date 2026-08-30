@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-08-25_Papers-Explained-438--MiroMind-M1-d2206c0b1b1e.html`
+- Source file: `raw/2025-08-25_Papers-Explained-438--MiroMind-M1-d2206c0b1b1e.md`
 - Source title: Papers Explained 438: MiroMind-M1
 - Published: 2025-08-25
 - Canonical: [https://medium.com/@ritvik19/papers-explained-438-miromind-m1-d2206c0b1b1e](https://medium.com/@ritvik19/papers-explained-438-miromind-m1-d2206c0b1b1e)
@@ -175,27 +175,27 @@ MiroMind-M1: An Open-Source Advancement in Mathematical Reasoning via Context-Aw
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-08-25_Papers-Explained-438--MiroMind-M1-d2206c0b1b1e.html`); local copies under `wiki/assets/papers-explained-438-miromind-m1/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-08-25_Papers-Explained-438--MiroMind-M1-d2206c0b1b1e.md`); local copies under `wiki/assets/papers-explained-438-miromind-m1/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-438-miromind-m1/fig-1.png) | Title card: MiroMind-M1. |
-| ![Figure 2](assets/papers-explained-438-miromind-m1/fig-2.png) | Statistics of math-focused datasets used for SFT. |
-| ![Figure 3](assets/papers-explained-438-miromind-m1/fig-3.png) | The Qwen-2.5-Math-7B model is trained for 3 epochs with a maximum context length of 32,768 extended using Linear RoPE scaling. |
-| ![Figure 4](assets/papers-explained-438-miromind-m1/fig-4.png) | The Qwen-2.5-Math-7B model is trained for 3 epochs with a maximum context length of 32,768 extended using Linear RoPE scaling. |
-| ![Figure 5](assets/papers-explained-438-miromind-m1/fig-5.png) | The Qwen-2.5-Math-7B model is trained for 3 epochs with a maximum context length of 32,768 extended using Linear RoPE scaling. |
-| ![Figure 6](assets/papers-explained-438-miromind-m1/fig-6.png) | Overview of the filtering strategy. |
-| ![Figure 7](assets/papers-explained-438-miromind-m1/fig-7.png) | Proximal policy optimization (PPO) is one of the most popular actor-critic RL algorithms for LLM policy optimization. |
-| ![Figure 8](assets/papers-explained-438-miromind-m1/fig-8.png) | Proximal policy optimization (PPO) is one of the most popular actor-critic RL algorithms for LLM policy optimization. |
-| ![Figure 9](assets/papers-explained-438-miromind-m1/fig-9.png) | Group relative policy optimization (GRPO) is an efficient PPO variant that eliminates the critic and GAE, reducing memory and computation... |
-| ![Figure 10](assets/papers-explained-438-miromind-m1/fig-10.png) | Preliminaries of Reinforcement Learning. |
-| ![Figure 11](assets/papers-explained-438-miromind-m1/fig-11.png) | CAMPO enhances training by incorporating awareness of both context length and content. |
-| ![Figure 12](assets/papers-explained-438-miromind-m1/fig-12.png) | Efficiency-Aware Perspective on Multi-Stage Training. |
-| ![Figure 13](assets/papers-explained-438-miromind-m1/fig-13.png) | Comparison of our 7B and 32B model performance across benchmark datasets. |
-| ![Figure 14](assets/papers-explained-438-miromind-m1/fig-14.png) | Comparison of MiroMind-M1-RL-32B and Skywork-OR1–32B-Preview on AIME24 and AIME25 across different maximum response lengths. |
-| ![Figure 15](assets/papers-explained-438-miromind-m1/fig-15.png) | The model’s performance steadily improves throughout the training process. |
-| ![Figure 16](assets/papers-explained-438-miromind-m1/fig-16.png) | Response length trend during two-stage training. |
-| ![Figure 17](assets/papers-explained-438-miromind-m1/fig-17.png) | Performance trend of the model trained using a single-stage 32K max context length schema. |
+| ![Figure 1](assets/papers-explained-438-miromind-m1/fig-1.webp) | Title card: MiroMind-M1. |
+| ![Figure 2](assets/papers-explained-438-miromind-m1/fig-2.webp) | Statistics of math-focused datasets used for SFT. |
+| ![Figure 3](assets/papers-explained-438-miromind-m1/fig-3.webp) | The Qwen-2.5-Math-7B model is trained for 3 epochs with a maximum context length of 32,768 extended using Linear RoPE scaling. |
+| ![Figure 4](assets/papers-explained-438-miromind-m1/fig-4.webp) | The Qwen-2.5-Math-7B model is trained for 3 epochs with a maximum context length of 32,768 extended using Linear RoPE scaling. |
+| ![Figure 5](assets/papers-explained-438-miromind-m1/fig-5.webp) | The Qwen-2.5-Math-7B model is trained for 3 epochs with a maximum context length of 32,768 extended using Linear RoPE scaling. |
+| ![Figure 6](assets/papers-explained-438-miromind-m1/fig-6.webp) | Overview of the filtering strategy. |
+| ![Figure 7](assets/papers-explained-438-miromind-m1/fig-7.webp) | Proximal policy optimization (PPO) is one of the most popular actor-critic RL algorithms for LLM policy optimization. |
+| ![Figure 8](assets/papers-explained-438-miromind-m1/fig-8.webp) | Proximal policy optimization (PPO) is one of the most popular actor-critic RL algorithms for LLM policy optimization. |
+| ![Figure 9](assets/papers-explained-438-miromind-m1/fig-9.webp) | Group relative policy optimization (GRPO) is an efficient PPO variant that eliminates the critic and GAE, reducing memory and computation... |
+| ![Figure 10](assets/papers-explained-438-miromind-m1/fig-10.webp) | Preliminaries of Reinforcement Learning. |
+| ![Figure 11](assets/papers-explained-438-miromind-m1/fig-11.webp) | CAMPO enhances training by incorporating awareness of both context length and content. |
+| ![Figure 12](assets/papers-explained-438-miromind-m1/fig-12.webp) | Efficiency-Aware Perspective on Multi-Stage Training. |
+| ![Figure 13](assets/papers-explained-438-miromind-m1/fig-13.webp) | Comparison of our 7B and 32B model performance across benchmark datasets. |
+| ![Figure 14](assets/papers-explained-438-miromind-m1/fig-14.webp) | Comparison of MiroMind-M1-RL-32B and Skywork-OR1–32B-Preview on AIME24 and AIME25 across different maximum response lengths. |
+| ![Figure 15](assets/papers-explained-438-miromind-m1/fig-15.webp) | The model’s performance steadily improves throughout the training process. |
+| ![Figure 16](assets/papers-explained-438-miromind-m1/fig-16.webp) | Response length trend during two-stage training. |
+| ![Figure 17](assets/papers-explained-438-miromind-m1/fig-17.webp) | Performance trend of the model trained using a single-stage 32K max context length schema. |
 ## Related
 
 - [[Papers Explained Corpus]]

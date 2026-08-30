@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-11-04_Papers-Explained-Review-06--Parameter-Efficient-FineTuning-6934fafa74e5.html`
+- Source file: `raw/2024-11-04_Papers-Explained-Review-06--Parameter-Efficient-FineTuning-6934fafa74e5.md`
 - Source title: Papers Explained Review 06: Parameter Efficient FineTuning
 - Published: 2024-11-04
 - Canonical: [https://medium.com/@ritvik19/papers-explained-review-06-parameter-efficient-finetuning-6934fafa74e5](https://medium.com/@ritvik19/papers-explained-review-06-parameter-efficient-finetuning-6934fafa74e5)
@@ -233,11 +233,11 @@ Read More: [DoRA: Enhancing Parameter-Efficient Fine-Tuning with Dynamic Rank Di
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-11-04_Papers-Explained-Review-06--Parameter-Efficient-FineTuning-6934fafa74e5.html`); local copies under `wiki/assets/papers-explained-review-06-parameter-efficient-finetuning/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-11-04_Papers-Explained-Review-06--Parameter-Efficient-FineTuning-6934fafa74e5.md`); local copies under `wiki/assets/papers-explained-review-06-parameter-efficient-finetuning/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-review-06-parameter-efficient-finetuning/fig-1.png) | Title card: Parameter Efficient FineTuning. |
+| ![Figure 1](assets/papers-explained-review-06-parameter-efficient-finetuning/fig-1.webp) | Title card: Parameter Efficient FineTuning. |
 ## Related
 
 - [[Papers Explained Corpus]]

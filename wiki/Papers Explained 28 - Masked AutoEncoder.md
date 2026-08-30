@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-09_Papers-Explained-28--Masked-AutoEncoder-38cb0dbed4af.html`
+- Source file: `raw/2023-02-09_Papers-Explained-28--Masked-AutoEncoder-38cb0dbed4af.md`
 - Source title: Papers Explained 28: Masked AutoEncoder
 - Published: 2023-02-09
 - Canonical: [https://medium.com/@ritvik19/papers-explained-28-masked-autoencoder-38cb0dbed4af](https://medium.com/@ritvik19/papers-explained-28-masked-autoencoder-38cb0dbed4af)
@@ -56,12 +56,12 @@ Recommended Reading [Vision Transformers](https://ritvik19.medium.com/list/visio
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-09_Papers-Explained-28--Masked-AutoEncoder-38cb0dbed4af.html`); local copies under `wiki/assets/papers-explained-28-masked-autoencoder/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-09_Papers-Explained-28--Masked-AutoEncoder-38cb0dbed4af.md`); local copies under `wiki/assets/papers-explained-28-masked-autoencoder/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-28-masked-autoencoder/fig-1.png) | Title card: Masked AutoEncoder. |
-| ![Figure 2](assets/papers-explained-28-masked-autoencoder/fig-2.png) | Driven by this analysis, MAE masks random patches from the input image and reconstructs the missing patches in the pixel space. |
+| ![Figure 1](assets/papers-explained-28-masked-autoencoder/fig-1.webp) | Title card: Masked AutoEncoder. |
+| ![Figure 2](assets/papers-explained-28-masked-autoencoder/fig-2.webp) | Driven by this analysis, MAE masks random patches from the input image and reconstructs the missing patches in the pixel space. |
 ## Related
 
 - [[Papers Explained Corpus]]

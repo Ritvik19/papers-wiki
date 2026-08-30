@@ -1,6 +1,6 @@
 # Papers Explained 592: Self-Distilled Reasoner
 
-**Source**: `raw/2026-08-11_Papers-Explained-592--Self-Distilled-Reasoner-72bb42dd93ed.html`  
+**Source**: `raw/2026-08-11_Papers-Explained-592--Self-Distilled-Reasoner-72bb42dd93ed.md`  
 **Paper**: https://arxiv.org/abs/2601.18734  
 **Ingested**: 2026-08-23  
 **Tags**: #summary
@@ -9,7 +9,7 @@
 
 **On-Policy Self-Distillation (OPSD)** / **Self-Distilled Reasoner** is an on-policy post-training method that enables a language model to improve its own reasoning capabilities without relying on external teacher models, reward models, or search algorithms. OPSD leverages an asymmetric conditioning scheme: the *same* model parameters $\theta$ instantiate both a privileged **Teacher Policy** $p_T$ (which conditions on reference solutions or thinking mode enabled, `TM-on`) and an unprivileged **Student Policy** $p_S$ (which observes only the problem prompt, `TM-off`, matching standard inference conditions).
 
-![Papers Explained 592: Self-Distilled Reasoner banner](../assets/papers-explained-592-self-distilled-reasoner/fig-1.png)
+![Papers Explained 592: Self-Distilled Reasoner banner](../assets/papers-explained-592-self-distilled-reasoner/fig-1.webp)
 
 ### Method Formulation
 
@@ -19,7 +19,7 @@ Given a dataset of problem-solution pairs $\mathcal{S} = \{(x_i, y_i^*)\}$, the 
 
 The token-wise distribution divergence $D(p_T \parallel p_S)$ is minimized over student rollouts, with gradients back-propagated exclusively through the student policy $p_S$.
 
-![OPSD Architecture and Dual-Conditioning Mechanism](../assets/papers-explained-592-self-distilled-reasoner/fig-2.png)
+![OPSD Architecture and Dual-Conditioning Mechanism](../assets/papers-explained-592-self-distilled-reasoner/fig-2.webp)
 
 ### Per-Token Divergence Clipping
 
@@ -31,7 +31,7 @@ $$\tilde{D}_{KL}(p_T \parallel p_S) = \sum_{v \in V} \text{clip}(\delta_n(v), -\
 
 This clipping prevents gradient explosion on formatting tokens and focuses optimization on pivotal mathematical reasoning steps.
 
-![Evaluation on Qwen3 Models (1.7B, 4B, 8B)](../assets/papers-explained-592-self-distilled-reasoner/fig-4.png)
+![Evaluation on Qwen3 Models (1.7B, 4B, 8B)](../assets/papers-explained-592-self-distilled-reasoner/fig-4.webp)
 
 ## Key Claims
 
@@ -45,27 +45,27 @@ This clipping prevents gradient explosion on formatting tokens and focuses optim
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/papers-explained-592-self-distilled-reasoner/fig-1.png) | Papers Explained 592 banner. | Overview |
-| ![fig-2](../assets/papers-explained-592-self-distilled-reasoner/fig-2.png) | OPSD self-teacher and student dual-conditioning architecture. | Method |
-| ![fig-3](../assets/papers-explained-592-self-distilled-reasoner/fig-3.png) | Per-token KL divergence distribution and clipping threshold. | Method |
-| ![fig-4](../assets/papers-explained-592-self-distilled-reasoner/fig-4.png) | Benchmark accuracy on GSM8K, MATH, and OlympiadBench. | Results |
-| ![fig-5](../assets/papers-explained-592-self-distilled-reasoner/fig-5.png) | Token efficiency: OPSD vs. GRPO vs. SFT sample efficiency curves. | Results |
-| ![fig-6](../assets/papers-explained-592-self-distilled-reasoner/fig-6.png) | Divergence metric comparison: Forward KL vs. Reverse KL vs. JSD. | Ablations |
-| ![fig-7](../assets/papers-explained-592-self-distilled-reasoner/fig-7.png) | Thinking mode ablation: Student TM-off vs. Teacher TM-on dynamics. | Ablations |
-| ![fig-8](../assets/papers-explained-592-self-distilled-reasoner/fig-8.png) | Impact of per-token KL clipping hyperparameter gamma. | Ablations |
-| ![fig-9](../assets/papers-explained-592-self-distilled-reasoner/fig-9.png) | Trajectory length ablation showing early token importance. | Ablations |
-| ![fig-10](../assets/papers-explained-592-self-distilled-reasoner/fig-10.png) | Full-vocabulary logit distillation vs. sampled-token policy gradient. | Ablations |
-| ![fig-11](../assets/papers-explained-592-self-distilled-reasoner/fig-11.png) | Out-of-distribution mathematical generalization results. | Evaluation |
-| ![fig-12](../assets/papers-explained-592-self-distilled-reasoner/fig-12.png) | Qwen3-1.7B, 4B, and 8B scaling curves. | Scaling |
-| ![fig-13](../assets/papers-explained-592-self-distilled-reasoner/fig-13.png) | Training loss and gradient norm stability with KL clipping. | Training |
-| ![fig-14](../assets/papers-explained-592-self-distilled-reasoner/fig-14.png) | Error analysis on complex multi-step geometry problems. | Analysis |
-| ![fig-15](../assets/papers-explained-592-self-distilled-reasoner/fig-15.png) | Comparison of OPSD against PRM-guided PPO. | Comparison |
-| ![fig-16](../assets/papers-explained-592-self-distilled-reasoner/fig-16.png) | Computational cost and training throughput comparison. | Efficiency |
-| ![fig-17](../assets/papers-explained-592-self-distilled-reasoner/fig-17.png) | Case study of student self-correction during distillation. | Qualitative |
-| ![fig-18](../assets/papers-explained-592-self-distilled-reasoner/fig-18.png) | Distribution of KL spikes before and after clipping. | Analysis |
-| ![fig-19](../assets/papers-explained-592-self-distilled-reasoner/fig-19.png) | Performance on code generation (HumanEval, MBPP). | Extension |
-| ![fig-20](../assets/papers-explained-592-self-distilled-reasoner/fig-20.png) | Single rollout vs multi-rollout scaling comparison. | Ablations |
-| ![fig-21](../assets/papers-explained-592-self-distilled-reasoner/fig-21.png) | Qualitative reasoning trace before and after OPSD. | Qualitative |
+| ![fig-1](../assets/papers-explained-592-self-distilled-reasoner/fig-1.webp) | Papers Explained 592 banner. | Overview |
+| ![fig-2](../assets/papers-explained-592-self-distilled-reasoner/fig-2.webp) | OPSD self-teacher and student dual-conditioning architecture. | Method |
+| ![fig-3](../assets/papers-explained-592-self-distilled-reasoner/fig-3.webp) | Per-token KL divergence distribution and clipping threshold. | Method |
+| ![fig-4](../assets/papers-explained-592-self-distilled-reasoner/fig-4.webp) | Benchmark accuracy on GSM8K, MATH, and OlympiadBench. | Results |
+| ![fig-5](../assets/papers-explained-592-self-distilled-reasoner/fig-5.webp) | Token efficiency: OPSD vs. GRPO vs. SFT sample efficiency curves. | Results |
+| ![fig-6](../assets/papers-explained-592-self-distilled-reasoner/fig-6.webp) | Divergence metric comparison: Forward KL vs. Reverse KL vs. JSD. | Ablations |
+| ![fig-7](../assets/papers-explained-592-self-distilled-reasoner/fig-7.webp) | Thinking mode ablation: Student TM-off vs. Teacher TM-on dynamics. | Ablations |
+| ![fig-8](../assets/papers-explained-592-self-distilled-reasoner/fig-8.webp) | Impact of per-token KL clipping hyperparameter gamma. | Ablations |
+| ![fig-9](../assets/papers-explained-592-self-distilled-reasoner/fig-9.webp) | Trajectory length ablation showing early token importance. | Ablations |
+| ![fig-10](../assets/papers-explained-592-self-distilled-reasoner/fig-10.webp) | Full-vocabulary logit distillation vs. sampled-token policy gradient. | Ablations |
+| ![fig-11](../assets/papers-explained-592-self-distilled-reasoner/fig-11.webp) | Out-of-distribution mathematical generalization results. | Evaluation |
+| ![fig-12](../assets/papers-explained-592-self-distilled-reasoner/fig-12.webp) | Qwen3-1.7B, 4B, and 8B scaling curves. | Scaling |
+| ![fig-13](../assets/papers-explained-592-self-distilled-reasoner/fig-13.webp) | Training loss and gradient norm stability with KL clipping. | Training |
+| ![fig-14](../assets/papers-explained-592-self-distilled-reasoner/fig-14.webp) | Error analysis on complex multi-step geometry problems. | Analysis |
+| ![fig-15](../assets/papers-explained-592-self-distilled-reasoner/fig-15.webp) | Comparison of OPSD against PRM-guided PPO. | Comparison |
+| ![fig-16](../assets/papers-explained-592-self-distilled-reasoner/fig-16.webp) | Computational cost and training throughput comparison. | Efficiency |
+| ![fig-17](../assets/papers-explained-592-self-distilled-reasoner/fig-17.webp) | Case study of student self-correction during distillation. | Qualitative |
+| ![fig-18](../assets/papers-explained-592-self-distilled-reasoner/fig-18.webp) | Distribution of KL spikes before and after clipping. | Analysis |
+| ![fig-19](../assets/papers-explained-592-self-distilled-reasoner/fig-19.webp) | Performance on code generation (HumanEval, MBPP). | Extension |
+| ![fig-20](../assets/papers-explained-592-self-distilled-reasoner/fig-20.webp) | Single rollout vs multi-rollout scaling comparison. | Ablations |
+| ![fig-21](../assets/papers-explained-592-self-distilled-reasoner/fig-21.webp) | Qualitative reasoning trace before and after OPSD. | Qualitative |
 
 ## Entities
 

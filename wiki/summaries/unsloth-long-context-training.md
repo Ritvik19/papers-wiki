@@ -21,8 +21,8 @@ Unsloth attacks long-context **training** memory and speed via async gradient ch
 
 | Figure | Caption |
 |--------|---------|
-| ![fig-1](../assets/unsloth-long-context-training/fig-1.png) | Attention sinks + Flex Attention mask pattern |
-| ![fig-2](../assets/unsloth-long-context-training/fig-2.png) | Tiled MLP memory timeline vs standard MLP |
+| ![fig-1](../assets/unsloth-long-context-training/fig-1.webp) | Attention sinks + Flex Attention mask pattern |
+| ![fig-2](../assets/unsloth-long-context-training/fig-2.webp) | Tiled MLP memory timeline vs standard MLP |
 
 ## Entities
 
@@ -48,6 +48,6 @@ Unsloth attacks long-context **training** memory and speed via async gradient ch
 
 ## Sources
 
-- `raw/long-context/full-article.html`
-- `raw/gpt-oss-context/full-article.html`
-- `raw/500k-context-length-fine-tuning/full-article.html`
+- `raw/long-context/full-article.md`
+- `raw/gpt-oss-context/full-article.md`
+- `raw/500k-context-length-fine-tuning/full-article.md`

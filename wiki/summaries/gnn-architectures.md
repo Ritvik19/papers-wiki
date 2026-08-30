@@ -1,6 +1,6 @@
 # Best Graph Neural Network Architectures: GCN, GAT, MPNN and More
 
-**Source**: `raw/gnn-architectures/full-article.html` (markdown view: `raw/gnn-architectures/full-article.md`)  
+**Source**: `raw/gnn-architectures/full-article.md` (markdown view: `raw/gnn-architectures/full-article.md`)  
 **URL**: https://theaisummer.com/gnn-architectures/  
 **Author**: Sergios Karagiannakos (AI Summer), 2021-09-23  
 **Ingested**: 2026-06-06  
@@ -10,17 +10,17 @@
 
 Sergios Karagiannakos's AI Summer survey maps the major **[[Graph Neural Networks]]** architecture families from spectral graph convolution through spatial message passing, attention, sampling, and dynamic graphs. The article opens with notation (\(h_i\) node features, \(e_{ij}\) edge features) and three prediction heads: node classification \(Z_i = f(h_i)\), edge classification \(Z_{ij} = f(h_i, h_j, e_{ij})\), and graph classification via permutation-invariant aggregation \(Z_G = f(\sum_i h_i)\).
 
-![GNN architecture timeline from Zhou et al. review](../assets/gnn-architectures/fig-2.png)
+![GNN architecture timeline from Zhou et al. review](../assets/gnn-architectures/fig-2.webp)
 
 It clarifies **inductive vs transductive** learning in GNN context (note: the article's worked example labels semi-supervised training on the full graph as "inductive" and self-supervised pseudo-labeling as "transductive" — differs from the prior AI Summer GCN tutorial's framing; see [[How Graph Neural Networks (GNN) Work: Introduction to Graph Convolutions from Scratch]]).
 
 **Spectral lineage**: graph Fourier transform on the **[[Graph Laplacian]]** → Spectral Networks (global filters, expensive) → ChebNets (K-hop Chebyshev polynomials) → **[[Graph Convolutional Networks]]** (Kipf & Welling: K=1, self-loops, renormalized \(\tilde{D}^{-1/2}\tilde{A}\tilde{D}^{-1/2}\); most cited and widely deployed; no edge features or explicit messages).
 
-![GCN layer diagram](../assets/gnn-architectures/fig-8.png)
+![GCN layer diagram](../assets/gnn-architectures/fig-8.webp)
 
 **Spatial lineage**: **[[Message Passing Neural Networks]]** (Gilmer et al.: \(m_{ij} = f_e(h_i,h_j,e_{ij})\), aggregate, \(h_i = f_v(h_i, \sum m_{ji})\); generic but edge-message storage limits scale) → **[[Graph Attention Networks]]** (Veličković et al.: replace fixed GCN coefficients with learned softmax attention over neighbors; multi-head; structure-agnostic attention scores).
 
-![GAT attention mechanism and multi-head](../assets/gnn-architectures/fig-11.png)
+![GAT attention mechanism and multi-head](../assets/gnn-architectures/fig-11.webp)
 
 **Sampling**: **[[GraphSAGE]]** (uniform neighborhood sampling + learnable aggregators; inductive large-graph training) → PinSAGE (Pinterest 3B-node recommender: random-walk neighborhoods, importance sampling). **Dynamic graphs**: Temporal Graph Networks (Twitter: GAT encoder + RNN node memory for edge prediction on evolving tweet graphs).
 
@@ -39,27 +39,27 @@ It clarifies **inductive vs transductive** learning in GNN context (note: the ar
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/gnn-architectures/fig-1.png) | Article preview / social card | — |
-| ![fig-2](../assets/gnn-architectures/fig-2.png) | GNN paper timeline (Zhou et al. review) | — |
-| ![fig-3](../assets/gnn-architectures/fig-3.png) | Graph convolution: neighbors aggregate into latent \(h_i\) | — |
-| ![fig-4](../assets/gnn-architectures/fig-4.png) | Node classification readout \(Z_i = f(h_i)\) | — |
-| ![fig-5](../assets/gnn-architectures/fig-5.png) | Edge classification readout \(Z_{ij} = f(h_i, h_j, e_{ij})\) | — |
-| ![fig-6](../assets/gnn-architectures/fig-6.png) | Graph classification via permutation-invariant aggregation | — |
-| ![fig-7](../assets/gnn-architectures/fig-7.png) | GCN layer update rule schematic | — |
-| ![fig-8](../assets/gnn-architectures/fig-8.png) | Graph Convolutional Network architecture (Kipf & Welling) | — |
-| ![fig-9](../assets/gnn-architectures/fig-9.png) | Message Passing Neural Network message/aggregate/update | — |
-| ![fig-10](../assets/gnn-architectures/fig-10.png) | GAT attention mechanism detail | — |
-| ![fig-11](../assets/gnn-architectures/fig-11.png) | GAT: single-head attention (left) and multi-head (right) | — |
-| ![fig-12](../assets/gnn-architectures/fig-12.png) | GraphSAGE sampling and aggregation pipeline | — |
-| ![fig-13](../assets/gnn-architectures/fig-13.png) | PinSAGE web-scale recommender overview | — |
-| ![fig-14](../assets/gnn-architectures/fig-14.png) | Temporal Graph Network dynamic graph example | — |
-| ![fig-15](../assets/gnn-architectures/fig-15.png) | TGN encoder: GAT + node memory module | — |
+| ![fig-1](../assets/gnn-architectures/fig-1.webp) | Article preview / social card | — |
+| ![fig-2](../assets/gnn-architectures/fig-2.webp) | GNN paper timeline (Zhou et al. review) | — |
+| ![fig-3](../assets/gnn-architectures/fig-3.webp) | Graph convolution: neighbors aggregate into latent \(h_i\) | — |
+| ![fig-4](../assets/gnn-architectures/fig-4.webp) | Node classification readout \(Z_i = f(h_i)\) | — |
+| ![fig-5](../assets/gnn-architectures/fig-5.webp) | Edge classification readout \(Z_{ij} = f(h_i, h_j, e_{ij})\) | — |
+| ![fig-6](../assets/gnn-architectures/fig-6.webp) | Graph classification via permutation-invariant aggregation | — |
+| ![fig-7](../assets/gnn-architectures/fig-7.webp) | GCN layer update rule schematic | — |
+| ![fig-8](../assets/gnn-architectures/fig-8.webp) | Graph Convolutional Network architecture (Kipf & Welling) | — |
+| ![fig-9](../assets/gnn-architectures/fig-9.webp) | Message Passing Neural Network message/aggregate/update | — |
+| ![fig-10](../assets/gnn-architectures/fig-10.webp) | GAT attention mechanism detail | — |
+| ![fig-11](../assets/gnn-architectures/fig-11.webp) | GAT: single-head attention (left) and multi-head (right) | — |
+| ![fig-12](../assets/gnn-architectures/fig-12.webp) | GraphSAGE sampling and aggregation pipeline | — |
+| ![fig-13](../assets/gnn-architectures/fig-13.webp) | PinSAGE web-scale recommender overview | — |
+| ![fig-14](../assets/gnn-architectures/fig-14.webp) | Temporal Graph Network dynamic graph example | — |
+| ![fig-15](../assets/gnn-architectures/fig-15.webp) | TGN encoder: GAT + node memory module | — |
 
-![MPNN framework](../assets/gnn-architectures/fig-9.png)
+![MPNN framework](../assets/gnn-architectures/fig-9.webp)
 
 MPNNs explicitly model messages \(m_{ij}\) on edges, aggregate at each node, and update features via \(f_v\) — the general spatial GNN template.
 
-![GraphSAGE](../assets/gnn-architectures/fig-12.png)
+![GraphSAGE](../assets/gnn-architectures/fig-12.webp)
 
 Neighbor sampling makes GNN training tractable on large graphs; learnable aggregators are trained jointly with projection weights.
 

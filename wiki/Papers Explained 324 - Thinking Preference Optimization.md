@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-03-06_Papers-Explained-324--Thinking-Preference-Optimization-d3ab029c77b5.html`
+- Source file: `raw/2025-03-06_Papers-Explained-324--Thinking-Preference-Optimization-d3ab029c77b5.md`
 - Source title: Papers Explained 324: Thinking Preference Optimization
 - Published: 2025-03-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-324-thinking-preference-optimization-d3ab029c77b5](https://medium.com/@ritvik19/papers-explained-324-thinking-preference-optimization-d3ab029c77b5)
@@ -71,15 +71,15 @@ Thinking Preference Optimization [2502.13173](https://arxiv.org/abs/2502.13173)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-03-06_Papers-Explained-324--Thinking-Preference-Optimization-d3ab029c77b5.html`); local copies under `wiki/assets/papers-explained-324-thinking-preference-optimization/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-03-06_Papers-Explained-324--Thinking-Preference-Optimization-d3ab029c77b5.md`); local copies under `wiki/assets/papers-explained-324-thinking-preference-optimization/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-324-thinking-preference-optimization/fig-1.png) | Title card: Thinking Preference Optimization. |
-| ![Figure 2](assets/papers-explained-324-thinking-preference-optimization/fig-2.png) | The training process in Thinking Preference Optimization consists of two stages: Reasoning SFT (Supervised Fine-Tuning) stage and Reasoning... |
-| ![Figure 3](assets/papers-explained-324-thinking-preference-optimization/fig-3.png) | Effectiveness of ThinkPO. |
-| ![Figure 4](assets/papers-explained-324-thinking-preference-optimization/fig-4.png) | ThinkPO can Continually Improve Reasoning Ability of Public Distilled Models. |
-| ![Figure 5](assets/papers-explained-324-thinking-preference-optimization/fig-5.png) | ThinkPO Works for Different-Size Models. |
+| ![Figure 1](assets/papers-explained-324-thinking-preference-optimization/fig-1.webp) | Title card: Thinking Preference Optimization. |
+| ![Figure 2](assets/papers-explained-324-thinking-preference-optimization/fig-2.webp) | The training process in Thinking Preference Optimization consists of two stages: Reasoning SFT (Supervised Fine-Tuning) stage and Reasoning... |
+| ![Figure 3](assets/papers-explained-324-thinking-preference-optimization/fig-3.webp) | Effectiveness of ThinkPO. |
+| ![Figure 4](assets/papers-explained-324-thinking-preference-optimization/fig-4.webp) | ThinkPO can Continually Improve Reasoning Ability of Public Distilled Models. |
+| ![Figure 5](assets/papers-explained-324-thinking-preference-optimization/fig-5.webp) | ThinkPO Works for Different-Size Models. |
 ## Related
 
 - [[Papers Explained Corpus]]

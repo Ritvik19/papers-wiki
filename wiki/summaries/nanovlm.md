@@ -1,6 +1,6 @@
 # nanoVLM: The simplest repository to train your VLM in pure PyTorch
 
-**Source**: `raw/nanovlm/full-article.html` (253 KB), `raw/nanovlm/full-article.md`
+**Source**: `raw/nanovlm/full-article.md` (253 KB), `raw/nanovlm/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

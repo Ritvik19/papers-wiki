@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-02-09_Papers-Explained-536--DeepSeek-OCR-2-3478359cd7bc.html`
+- Source file: `raw/2026-02-09_Papers-Explained-536--DeepSeek-OCR-2-3478359cd7bc.md`
 - Source title: Papers Explained 536: DeepSeek-OCR 2
 - Published: 2026-02-09
 - Canonical: [https://medium.com/@ritvik19/papers-explained-536-deepseek-ocr-2-3478359cd7bc](https://medium.com/@ritvik19/papers-explained-536-deepseek-ocr-2-3478359cd7bc)
@@ -147,21 +147,21 @@ DeepSeek-OCR 2: Visual Causal Flow [2601.20552](https://arxiv.org/abs/2601.20552
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-02-09_Papers-Explained-536--DeepSeek-OCR-2-3478359cd7bc.html`); local copies under `wiki/assets/papers-explained-536-deepseek-ocr-2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-02-09_Papers-Explained-536--DeepSeek-OCR-2-3478359cd7bc.md`); local copies under `wiki/assets/papers-explained-536-deepseek-ocr-2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-536-deepseek-ocr-2/fig-1.png) | Title card: DeepSeek-OCR 2. |
-| ![Figure 2](assets/papers-explained-536-deepseek-ocr-2/fig-2.png) | DeepSeek-OCR 2. |
-| ![Figure 3](assets/papers-explained-536-deepseek-ocr-2/fig-3.png) | DeepEncoder V2. |
-| ![Figure 4](assets/papers-explained-536-deepseek-ocr-2/fig-4.png) | Token count calculation in DeepEncoder V2. |
-| ![Figure 5](assets/papers-explained-536-deepseek-ocr-2/fig-5.png) | Attention mask architecture of DeepEncoder V2. |
-| ![Figure 6](assets/papers-explained-536-deepseek-ocr-2/fig-6.png) | The attention mask is composed of two distinct regions. |
-| ![Figure 7](assets/papers-explained-536-deepseek-ocr-2/fig-7.png) | DeepSeek-OCR 2 primarily focuses on encoder improvements. |
-| ![Figure 8](assets/papers-explained-536-deepseek-ocr-2/fig-8.png) | Comprehensive evaluation of document reading on OmniDocBench v1.5. |
-| ![Figure 9](assets/papers-explained-536-deepseek-ocr-2/fig-9.png) | Edit Distances for different categories of document-elements in OmniDocBench v1.5. |
-| ![Figure 10](assets/papers-explained-536-deepseek-ocr-2/fig-10.png) | Detailed comparison between DeepSeek-OCR 2 and DeepSeek-OCR across 9 document types. |
-| ![Figure 11](assets/papers-explained-536-deepseek-ocr-2/fig-11.png) | Production performance comparison between DeepSeek-OCR and DeepSeek-OCR 2. |
+| ![Figure 1](assets/papers-explained-536-deepseek-ocr-2/fig-1.webp) | Title card: DeepSeek-OCR 2. |
+| ![Figure 2](assets/papers-explained-536-deepseek-ocr-2/fig-2.webp) | DeepSeek-OCR 2. |
+| ![Figure 3](assets/papers-explained-536-deepseek-ocr-2/fig-3.webp) | DeepEncoder V2. |
+| ![Figure 4](assets/papers-explained-536-deepseek-ocr-2/fig-4.webp) | Token count calculation in DeepEncoder V2. |
+| ![Figure 5](assets/papers-explained-536-deepseek-ocr-2/fig-5.webp) | Attention mask architecture of DeepEncoder V2. |
+| ![Figure 6](assets/papers-explained-536-deepseek-ocr-2/fig-6.webp) | The attention mask is composed of two distinct regions. |
+| ![Figure 7](assets/papers-explained-536-deepseek-ocr-2/fig-7.webp) | DeepSeek-OCR 2 primarily focuses on encoder improvements. |
+| ![Figure 8](assets/papers-explained-536-deepseek-ocr-2/fig-8.webp) | Comprehensive evaluation of document reading on OmniDocBench v1.5. |
+| ![Figure 9](assets/papers-explained-536-deepseek-ocr-2/fig-9.webp) | Edit Distances for different categories of document-elements in OmniDocBench v1.5. |
+| ![Figure 10](assets/papers-explained-536-deepseek-ocr-2/fig-10.webp) | Detailed comparison between DeepSeek-OCR 2 and DeepSeek-OCR across 9 document types. |
+| ![Figure 11](assets/papers-explained-536-deepseek-ocr-2/fig-11.webp) | Production performance comparison between DeepSeek-OCR and DeepSeek-OCR 2. |
 ## Related
 
 - [[Papers Explained Corpus]]

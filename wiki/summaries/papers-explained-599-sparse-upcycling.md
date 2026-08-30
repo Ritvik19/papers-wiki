@@ -1,6 +1,6 @@
 # Papers Explained 599: Sparse Upcycling
 
-**Source**: `raw/2026-08-20_Papers-Explained-599--Sparse-Upcycling-804de5de9c18.html`  
+**Source**: `raw/2026-08-20_Papers-Explained-599--Sparse-Upcycling-804de5de9c18.md`  
 **Paper**: https://arxiv.org/abs/2212.05055  
 **Ingested**: 2026-08-23  
 **Tags**: #summary
@@ -9,7 +9,7 @@
 
 **Sparse Upcycling** is a compute-efficient model recycling technique introduced by Komatsuzaki et al. (Google Research) that reuses sunk training costs by initializing a sparsely activated **Mixture-of-Experts (MoE)** model directly from a pretrained dense checkpoint. Instead of training sparse MoE models from scratch (which requires massive datasets and unstable early routing phases), Sparse Upcycling duplicates the dense MLP layers $E$ times to form $E$ parallel experts per MoE layer, initializes a lightweight routing gate, and continues pretraining for a fraction of the original compute budget.
 
-![Papers Explained 599: Sparse Upcycling banner](../assets/papers-explained-599-sparse-upcycling/fig-1.png)
+![Papers Explained 599: Sparse Upcycling banner](../assets/papers-explained-599-sparse-upcycling/fig-1.webp)
 
 ### The Upcycling Algorithm & Router Designs
 
@@ -19,7 +19,7 @@
   - **Top-K Routing**: Each token is assigned to its top-$K$ experts (standard in decoder language models).
 - **Optimizer & State Resumption**: Warm-starting optimizer momentum states and normalizing weights post-routing smooths initial loss spikes.
 
-![Sparse Upcycling Surgery and Continued Pretraining](../assets/papers-explained-599-sparse-upcycling/fig-2.png)
+![Sparse Upcycling Surgery and Continued Pretraining](../assets/papers-explained-599-sparse-upcycling/fig-2.webp)
 
 ### Key Empirical Findings
 
@@ -37,12 +37,12 @@
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/papers-explained-599-sparse-upcycling/fig-1.png) | Papers Explained 599 overview banner. | Overview |
-| ![fig-2](../assets/papers-explained-599-sparse-upcycling/fig-2.png) | Sparse Upcycling model surgery and expert initialization. | Algorithm |
-| ![fig-3](../assets/papers-explained-599-sparse-upcycling/fig-3.png) | Expert Choice vs Top-K router mechanisms. | Routers |
-| ![fig-4](../assets/papers-explained-599-sparse-upcycling/fig-4.png) | Vision Transformer (V-MoE) scaling curves on JFT-300M. | Vision Eval |
-| ![fig-5](../assets/papers-explained-599-sparse-upcycling/fig-5.png) | Language model pretraining loss: Upcycled vs. Dense continuation. | Language Eval |
-| ![fig-6](../assets/papers-explained-599-sparse-upcycling/fig-6.png) | Downstream fine-tuning transfer performance across benchmarks. | Results |
+| ![fig-1](../assets/papers-explained-599-sparse-upcycling/fig-1.webp) | Papers Explained 599 overview banner. | Overview |
+| ![fig-2](../assets/papers-explained-599-sparse-upcycling/fig-2.webp) | Sparse Upcycling model surgery and expert initialization. | Algorithm |
+| ![fig-3](../assets/papers-explained-599-sparse-upcycling/fig-3.webp) | Expert Choice vs Top-K router mechanisms. | Routers |
+| ![fig-4](../assets/papers-explained-599-sparse-upcycling/fig-4.webp) | Vision Transformer (V-MoE) scaling curves on JFT-300M. | Vision Eval |
+| ![fig-5](../assets/papers-explained-599-sparse-upcycling/fig-5.webp) | Language model pretraining loss: Upcycled vs. Dense continuation. | Language Eval |
+| ![fig-6](../assets/papers-explained-599-sparse-upcycling/fig-6.webp) | Downstream fine-tuning transfer performance across benchmarks. | Results |
 
 ## Entities
 

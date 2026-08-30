@@ -1,6 +1,6 @@
 # Learning with not Enough Data Part 1: Semi-Supervised Learning
 
-**Source**: `raw/2021-12-05-semi-supervised/full-article.html` (119 KB HTML), `raw/2021-12-05-semi-supervised/full-article.md` (Markdown sibling)  
+**Source**: `raw/2021-12-05-semi-supervised/full-article.md` (119 KB HTML), `raw/2021-12-05-semi-supervised/full-article.md` (Markdown sibling)  
 **Canonical URL**: https://lilianweng.github.io/posts/2021-12-05-semi-supervised/  
 **Author**: Lilian Weng  
 **Published**: 2021-12-05  
@@ -15,7 +15,7 @@ Nearly every method shares $\mathcal{L} = \mathcal{L}_s + \mu(t)\mathcal{L}_u$, 
 
 The post is equation-heavy and explicitly excludes architecture-modification SSL (generative models, graph methods — see van Engelen & Hoos 2020). A closing checklist summarizes modern themes: diverse augmentation, MixUp, confidence thresholds, minimum labeled samples per batch, and distribution sharpening.
 
-![Π-model: two augmented passes should agree](../assets/2021-12-05-semi-supervised/fig-01.png)
+![Π-model: two augmented passes should agree](../assets/2021-12-05-semi-supervised/fig-01.webp)
 
 ## Notation
 
@@ -123,26 +123,26 @@ Weak-augment softmax on unlabeled $\mathbf{u}$: $p = [0.02, 0.96, 0.02]$ for thr
 
 | Figure | Caption | Section |
 |--------|---------|---------|
-| ![fig-01](../assets/2021-12-05-semi-supervised/fig-01.png) | Π-model: two stochastic passes on the same input should produce consistent outputs (Laine & Aila 2017). | Π-model |
-| ![fig-02](../assets/2021-12-05-semi-supervised/fig-02.png) | Temporal ensembling: per-sample EMA of predictions as learning targets (Laine & Aila 2017). | Temporal ensembling |
-| ![fig-03](../assets/2021-12-05-semi-supervised/fig-03.png) | Mean Teacher: student vs EMA teacher weight-averaged model (Tarvainen & Valpola 2017). | Mean teachers |
-| ![fig-04](../assets/2021-12-05-semi-supervised/fig-04.png) | Mean Teacher outperforms Π-model on SVHN classification error (Tarvainen & Valpola 2017). | Mean teachers |
-| ![fig-05](../assets/2021-12-05-semi-supervised/fig-05.png) | Consistency training with noisy augmented unlabeled samples. | Noisy samples |
-| ![fig-06](../assets/2021-12-05-semi-supervised/fig-06.png) | Interpolation Consistency Training (ICT) with MixUp on unlabeled pairs (Verma et al. 2019). | ICT |
-| ![fig-07](../assets/2021-12-05-semi-supervised/fig-07.png) | UDA CIFAR-10 results vs other SSL methods (Xie et al. 2020). | UDA |
-| ![fig-08](../assets/2021-12-05-semi-supervised/fig-08.png) | UDA text classification with different BERT initialization configs (Xie et al. 2020). | UDA |
-| ![fig-09](../assets/2021-12-05-semi-supervised/fig-09.png) | t-SNE: pseudo labeling improves class segregation on MNIST (Lee 2013). | Pseudo labeling |
-| ![fig-10](../assets/2021-12-05-semi-supervised/fig-10.png) | Label propagation via similarity graph diffusion (Iscen et al. 2019). | Label propagation |
-| ![fig-11](../assets/2021-12-05-semi-supervised/fig-11.png) | Meta Pseudo Labels vs other SSL methods on image classification (Pham et al. 2021). | Meta Pseudo Labels |
-| ![fig-12](../assets/2021-12-05-semi-supervised/fig-12.png) | MixMatch label guessing: average $K$ augmentations, sharpen, align marginals (Berthelot et al. 2019). | MixMatch |
-| ![fig-13](../assets/2021-12-05-semi-supervised/fig-13.png) | ReMixMatch: distribution alignment + augmentation anchoring over MixMatch (Berthelot et al. 2020). | ReMixMatch |
-| ![fig-14](../assets/2021-12-05-semi-supervised/fig-14.png) | DivideMix: GMM splits clean vs noisy unlabeled samples (Li et al. 2020). | DivideMix |
-| ![fig-15](../assets/2021-12-05-semi-supervised/fig-15.png) | DivideMix training algorithm overview (Li et al. 2020). | DivideMix |
-| ![fig-16](../assets/2021-12-05-semi-supervised/fig-16.png) | FixMatch: weak-augment pseudo label + strong-augment consistency (Sohn et al. 2020). | FixMatch |
-| ![fig-17](../assets/2021-12-05-semi-supervised/fig-17.png) | FixMatch CIFAR-10/100 and SVHN results vs prior SSL (Sohn et al. 2020). | FixMatch |
-| ![fig-18](../assets/2021-12-05-semi-supervised/fig-18.png) | Self-training + pre-training pipeline for large-scale vision (Xie et al. 2020). | Combined pre-training |
-| ![fig-19](../assets/2021-12-05-semi-supervised/fig-19.png) | Big self-supervised model (SimCLRv2) + fine-tuning architecture (Chen et al. 2020). | Combined pre-training |
-| ![fig-20](../assets/2021-12-05-semi-supervised/fig-20.png) | SimCLRv2 semi-supervised fine-tuning matches dedicated SSL on CIFAR (Chen et al. 2020). | Combined pre-training |
+| ![fig-01](../assets/2021-12-05-semi-supervised/fig-01.webp) | Π-model: two stochastic passes on the same input should produce consistent outputs (Laine & Aila 2017). | Π-model |
+| ![fig-02](../assets/2021-12-05-semi-supervised/fig-02.webp) | Temporal ensembling: per-sample EMA of predictions as learning targets (Laine & Aila 2017). | Temporal ensembling |
+| ![fig-03](../assets/2021-12-05-semi-supervised/fig-03.webp) | Mean Teacher: student vs EMA teacher weight-averaged model (Tarvainen & Valpola 2017). | Mean teachers |
+| ![fig-04](../assets/2021-12-05-semi-supervised/fig-04.webp) | Mean Teacher outperforms Π-model on SVHN classification error (Tarvainen & Valpola 2017). | Mean teachers |
+| ![fig-05](../assets/2021-12-05-semi-supervised/fig-05.webp) | Consistency training with noisy augmented unlabeled samples. | Noisy samples |
+| ![fig-06](../assets/2021-12-05-semi-supervised/fig-06.webp) | Interpolation Consistency Training (ICT) with MixUp on unlabeled pairs (Verma et al. 2019). | ICT |
+| ![fig-07](../assets/2021-12-05-semi-supervised/fig-07.webp) | UDA CIFAR-10 results vs other SSL methods (Xie et al. 2020). | UDA |
+| ![fig-08](../assets/2021-12-05-semi-supervised/fig-08.webp) | UDA text classification with different BERT initialization configs (Xie et al. 2020). | UDA |
+| ![fig-09](../assets/2021-12-05-semi-supervised/fig-09.webp) | t-SNE: pseudo labeling improves class segregation on MNIST (Lee 2013). | Pseudo labeling |
+| ![fig-10](../assets/2021-12-05-semi-supervised/fig-10.webp) | Label propagation via similarity graph diffusion (Iscen et al. 2019). | Label propagation |
+| ![fig-11](../assets/2021-12-05-semi-supervised/fig-11.webp) | Meta Pseudo Labels vs other SSL methods on image classification (Pham et al. 2021). | Meta Pseudo Labels |
+| ![fig-12](../assets/2021-12-05-semi-supervised/fig-12.webp) | MixMatch label guessing: average $K$ augmentations, sharpen, align marginals (Berthelot et al. 2019). | MixMatch |
+| ![fig-13](../assets/2021-12-05-semi-supervised/fig-13.webp) | ReMixMatch: distribution alignment + augmentation anchoring over MixMatch (Berthelot et al. 2020). | ReMixMatch |
+| ![fig-14](../assets/2021-12-05-semi-supervised/fig-14.webp) | DivideMix: GMM splits clean vs noisy unlabeled samples (Li et al. 2020). | DivideMix |
+| ![fig-15](../assets/2021-12-05-semi-supervised/fig-15.webp) | DivideMix training algorithm overview (Li et al. 2020). | DivideMix |
+| ![fig-16](../assets/2021-12-05-semi-supervised/fig-16.webp) | FixMatch: weak-augment pseudo label + strong-augment consistency (Sohn et al. 2020). | FixMatch |
+| ![fig-17](../assets/2021-12-05-semi-supervised/fig-17.webp) | FixMatch CIFAR-10/100 and SVHN results vs prior SSL (Sohn et al. 2020). | FixMatch |
+| ![fig-18](../assets/2021-12-05-semi-supervised/fig-18.webp) | Self-training + pre-training pipeline for large-scale vision (Xie et al. 2020). | Combined pre-training |
+| ![fig-19](../assets/2021-12-05-semi-supervised/fig-19.webp) | Big self-supervised model (SimCLRv2) + fine-tuning architecture (Chen et al. 2020). | Combined pre-training |
+| ![fig-20](../assets/2021-12-05-semi-supervised/fig-20.webp) | SimCLRv2 semi-supervised fine-tuning matches dedicated SSL on CIFAR (Chen et al. 2020). | Combined pre-training |
 
 ## Entities
 

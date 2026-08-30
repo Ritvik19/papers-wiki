@@ -1,6 +1,6 @@
 # Ettin Suite: SoTA Paired Encoders and Decoders
 
-**Source**: `raw/ettin/full-article.html` (365 KB), `raw/ettin/full-article.md`
+**Source**: `raw/ettin/full-article.md` (365 KB), `raw/ettin/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

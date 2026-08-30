@@ -1,6 +1,6 @@
 # PipelineRL
 
-**Source**: `raw/pipelinerl/full-article.html` (144 KB), `raw/pipelinerl/full-article.md`
+**Source**: `raw/pipelinerl/full-article.md` (144 KB), `raw/pipelinerl/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

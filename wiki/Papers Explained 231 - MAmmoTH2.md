@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-10-15_Papers-Explained-231--MAmmoTH2-e9c0e6fb9795.html`
+- Source file: `raw/2024-10-15_Papers-Explained-231--MAmmoTH2-e9c0e6fb9795.md`
 - Source title: Papers Explained 231: MAmmoTH2
 - Published: 2024-10-15
 - Canonical: [https://medium.com/@ritvik19/papers-explained-231-mammoth2-e9c0e6fb9795](https://medium.com/@ritvik19/papers-explained-231-mammoth2-e9c0e6fb9795)
@@ -91,14 +91,14 @@ MAmmoTH2: Scaling Instructions from the Web [2405.03548](https://arxiv.org/abs/2
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-10-15_Papers-Explained-231--MAmmoTH2-e9c0e6fb9795.html`); local copies under `wiki/assets/papers-explained-231-mammoth2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-10-15_Papers-Explained-231--MAmmoTH2-e9c0e6fb9795.md`); local copies under `wiki/assets/papers-explained-231-mammoth2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-231-mammoth2/fig-1.png) | Title card: MAmmoTH2. |
-| ![Figure 2](assets/papers-explained-231-mammoth2/fig-2.png) | Web Instruct. |
-| ![Figure 3](assets/papers-explained-231-mammoth2/fig-3.png) | The process results in 10M Q-A pairs. |
-| ![Figure 4](assets/papers-explained-231-mammoth2/fig-4.png) | Main results on reasoning datasets. |
+| ![Figure 1](assets/papers-explained-231-mammoth2/fig-1.webp) | Title card: MAmmoTH2. |
+| ![Figure 2](assets/papers-explained-231-mammoth2/fig-2.webp) | Web Instruct. |
+| ![Figure 3](assets/papers-explained-231-mammoth2/fig-3.webp) | The process results in 10M Q-A pairs. |
+| ![Figure 4](assets/papers-explained-231-mammoth2/fig-4.webp) | Main results on reasoning datasets. |
 ## Related
 
 - [[Papers Explained Corpus]]

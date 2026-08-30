@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-16_Papers-Explained-187c--Llama-3-1---Multimodal-Experiments-a1940dd45575.html`
+- Source file: `raw/2024-08-16_Papers-Explained-187c--Llama-3-1---Multimodal-Experiments-a1940dd45575.md`
 - Source title: Papers Explained 187c: Llama 3.1 — Multimodal Experiments
 - Published: 2024-08-16
 - Canonical: [https://medium.com/@ritvik19/papers-explained-187c-llama-3-1-multimodal-experiments-a1940dd45575](https://medium.com/@ritvik19/papers-explained-187c-llama-3-1-multimodal-experiments-a1940dd45575)
@@ -307,19 +307,19 @@ Recommended Reading [LLaMA Models](https://ritvik19.medium.com/list/llama-models
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-16_Papers-Explained-187c--Llama-3-1---Multimodal-Experiments-a1940dd45575.html`); local copies under `wiki/assets/papers-explained-187c-llama-3-1-multimodal-experiments/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-16_Papers-Explained-187c--Llama-3-1---Multimodal-Experiments-a1940dd45575.md`); local copies under `wiki/assets/papers-explained-187c-llama-3-1-multimodal-experiments/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-187c-llama-3-1-multimodal-experiments/fig-1.png) | Meta report banner — **The Llama 3 Herd of Models**. |
-| ![Figure 2](assets/papers-explained-187c-llama-3-1-multimodal-experiments/fig-2.png) | **Multimodal Llama 3** stack — image encoder (+ optional **video aggregator**), speech **Conformer** + adapter into token embeddings, **cross-attn** hooks in the text **decoder** (color legend for train/freeze stages). |
-| ![Figure 3](assets/papers-explained-187c-llama-3-1-multimodal-experiments/fig-3.png) | **Vision-language** grid — **Llama 3-V** 8B / 70B / **405B** vs GPT-4V, GPT-4o, Gemini 1.5 Pro, Claude 3.5 (MMMU, VQAv2, diagrams, charts, TextVQA, DocVQA). |
-| ![Figure 4](assets/papers-explained-187c-llama-3-1-multimodal-experiments/fig-4.png) | **Video QA** — **Llama 3-V** 8B / 70B vs Gemini 1.0 / GPT-4V / GPT-4o on PerceptionTest, TVQA, NExT-QA, ActivityNet-QA. |
-| ![Figure 5](assets/papers-explained-187c-llama-3-1-multimodal-experiments/fig-5.png) | **Speech pipeline** — audio → speech encoder / adapter (+ system prompt) → **Llama 3** → normalization / prosody / **synthesizer** → output audio. |
-| ![Figure 6](assets/papers-explained-187c-llama-3-1-multimodal-experiments/fig-6.png) | **ASR word-error rates** — Llama 3 **8B / 70B** vs Whisper / SeamlessM4T / Gemini on MLS, LibriSpeech, VoxPopuli, **FLEURS** (lower is better). |
-| ![Figure 7](assets/papers-explained-187c-llama-3-1-multimodal-experiments/fig-7.png) | **Speech-to-English translation** — **FLEURS** and **CoVoST 2**: Llama 3 8B/70B vs Whisper v2 / SeamlessM4T v2. |
-| ![Figure 8](assets/papers-explained-187c-llama-3-1-multimodal-experiments/fig-8.png) | **Streaming speech ablation** — accuracy with finite vs **full right context**, with vs **without Llama 3 8B** text LM embeddings. |
-| ![Figure 9](assets/papers-explained-187c-llama-3-1-multimodal-experiments/fig-9.png) | **Human preference** — **Llama 3 8B PM** vs streaming vs non-streaming **phone baselines** (% preferred). |
+| ![Figure 1](assets/papers-explained-187c-llama-3-1-multimodal-experiments/fig-1.webp) | Meta report banner — **The Llama 3 Herd of Models**. |
+| ![Figure 2](assets/papers-explained-187c-llama-3-1-multimodal-experiments/fig-2.webp) | **Multimodal Llama 3** stack — image encoder (+ optional **video aggregator**), speech **Conformer** + adapter into token embeddings, **cross-attn** hooks in the text **decoder** (color legend for train/freeze stages). |
+| ![Figure 3](assets/papers-explained-187c-llama-3-1-multimodal-experiments/fig-3.webp) | **Vision-language** grid — **Llama 3-V** 8B / 70B / **405B** vs GPT-4V, GPT-4o, Gemini 1.5 Pro, Claude 3.5 (MMMU, VQAv2, diagrams, charts, TextVQA, DocVQA). |
+| ![Figure 4](assets/papers-explained-187c-llama-3-1-multimodal-experiments/fig-4.webp) | **Video QA** — **Llama 3-V** 8B / 70B vs Gemini 1.0 / GPT-4V / GPT-4o on PerceptionTest, TVQA, NExT-QA, ActivityNet-QA. |
+| ![Figure 5](assets/papers-explained-187c-llama-3-1-multimodal-experiments/fig-5.webp) | **Speech pipeline** — audio → speech encoder / adapter (+ system prompt) → **Llama 3** → normalization / prosody / **synthesizer** → output audio. |
+| ![Figure 6](assets/papers-explained-187c-llama-3-1-multimodal-experiments/fig-6.webp) | **ASR word-error rates** — Llama 3 **8B / 70B** vs Whisper / SeamlessM4T / Gemini on MLS, LibriSpeech, VoxPopuli, **FLEURS** (lower is better). |
+| ![Figure 7](assets/papers-explained-187c-llama-3-1-multimodal-experiments/fig-7.webp) | **Speech-to-English translation** — **FLEURS** and **CoVoST 2**: Llama 3 8B/70B vs Whisper v2 / SeamlessM4T v2. |
+| ![Figure 8](assets/papers-explained-187c-llama-3-1-multimodal-experiments/fig-8.webp) | **Streaming speech ablation** — accuracy with finite vs **full right context**, with vs **without Llama 3 8B** text LM embeddings. |
+| ![Figure 9](assets/papers-explained-187c-llama-3-1-multimodal-experiments/fig-9.webp) | **Human preference** — **Llama 3 8B PM** vs streaming vs non-streaming **phone baselines** (% preferred). |
 ## Related
 
 - [[Papers Explained Corpus]]

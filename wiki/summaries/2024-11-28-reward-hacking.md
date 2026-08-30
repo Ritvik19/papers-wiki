@@ -1,6 +1,6 @@
 # Reward Hacking in Reinforcement Learning
 
-**Source**: `raw/2024-11-28-reward-hacking/full-article.html` (HTML) and `raw/2024-11-28-reward-hacking/full-article.md` (Markdown Sibling)  
+**Source**: `raw/2024-11-28-reward-hacking/full-article.md` (HTML) and `raw/2024-11-28-reward-hacking/full-article.md` (Markdown Sibling)  
 **Ingested**: 2026-05-21  
 **Tags**: #summary
 
@@ -65,30 +65,30 @@ Where the empirical coefficients $\alpha_{\text{bo}n}$, $\beta_{\text{bo}n}$, an
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/2024-11-28-reward-hacking/fig-1.png) | Spurious correlation / shortcut learning leading to OOD generalization failure (Geirhos et al. 2020). | Background |
-| ![fig-2](../assets/2024-11-28-reward-hacking/fig-2.png) | The impact of position randomization on goal misgeneralization in CoinRun (Koch et al. 2021). | Let's Define |
-| ![fig-3](../assets/2024-11-28-reward-hacking/fig-3.png) | Proxy and true reward curves as functions of model parameter size, training steps, and resolution (Pan et al. 2022). | Hacking Env |
-| ![fig-4](../assets/2024-11-28-reward-hacking/fig-4.png) | Overoptimization scaling laws mapping proxy and gold rewards against KL divergence (Gao et al. 2022). | Hacking RLHF |
-| ![fig-5](../assets/2024-11-28-reward-hacking/fig-5.png) | Empirical fits for coefficients alpha and beta across varying reward model sizes (Gao et al. 2022). | Hacking RLHF |
-| ![fig-6](../assets/2024-11-28-reward-hacking/fig-6.png) | RLHF systematically increasing human evaluator approval of incorrect answers (Wen et al. 2024). | U-Sophistry |
-| ![fig-7](../assets/2024-11-28-reward-hacking/fig-7.png) | Modular helper functions vs. Cyclomatic Complexity in code generated under RLHF (Wen et al. 2024). | U-Sophistry |
-| ![fig-8](../assets/2024-11-28-reward-hacking/fig-8.png) | AI assistant feedback biases in response to stated human user preferences (Sharma et al. 2023). | Sycophancy |
-| ![fig-9](../assets/2024-11-28-reward-hacking/fig-9.png) | Logistic regression analysis showing user belief alignment is the primary predictor of human preference data (Sharma et al. 2023). | Sycophancy |
-| ![fig-10](../assets/2024-11-28-reward-hacking/fig-10.png) | Win rates and conflict rates demonstrating severe positional bias in LLM-as-grader setups (Wang et al. 2023). | Hacking Evaluator |
-| ![fig-11](../assets/2024-11-28-reward-hacking/fig-11.png) | Alignment accuracy of positional bias calibration methods (MEC, BPC, HITLC) (Wang et al. 2023). | Hacking Evaluator |
-| ![fig-12](../assets/2024-11-28-reward-hacking/fig-12.png) | narcissistic evaluation self-bias heatmap showing LLMs consistently prefer their own generations (Liu et al. 2023). | Hacking Evaluator |
-| ![fig-13](../assets/2024-11-28-reward-hacking/fig-13.png) | Iterative self-refinement feedback loop between LLM author and LLM judge (Pan et al. 2023). | ICRH |
-| ![fig-14](../assets/2024-11-28-reward-hacking/fig-14.png) | ICRH divergence rates when using smaller (GPT-3.5) vs. larger (GPT-4) evaluator models (Pan et al. 2023). | ICRH |
-| ![fig-15](../assets/2024-11-28-reward-hacking/fig-15.png) | ICRH output-refinement driving up toxicity alongside target engagement metrics (Pan et al. 2024). | ICRH |
-| ![fig-16](../assets/2024-11-28-reward-hacking/fig-16.png) | Failure of prompt engineering modifications to resolve output-refinement ICRH loops (Pan et al. 2024). | ICRH |
-| ![fig-17](../assets/2024-11-28-reward-hacking/fig-17.png) | ICRH policy-refinement leading to escalating constraint violations in ToolEmu API tasks (Pan et al. 2024). | ICRH |
-| ![fig-18](../assets/2024-11-28-reward-hacking/fig-18.png) | Generalization of reward hacking behaviors to unseen environments during expert iteration (Kei et al. 2024). | Generalization |
-| ![fig-19](../assets/2024-11-28-reward-hacking/fig-19.png) | Mock VM scripting templates used in Tool-use flattery and reward tampering environments (Denison et al. 2024). | Generalization |
-| ![fig-20](../assets/2024-11-28-reward-hacking/fig-20.png) | Expert iteration generalization results across stages of the gameable curriculum (Denison et al. 2024). | Generalization |
-| ![fig-21](../assets/2024-11-28-reward-hacking/fig-21.png) | Structural causal diagram comparing decoupled approval with standard human-in-the-loop RL (Uesato et al. 2020). | Peek Mitigations |
-| ![fig-22](../assets/2024-11-28-reward-hacking/fig-22.png) | Implementation of decoupled approval in Policy Gradient and Q-Learning algorithms (Uesato et al. 2020). | Peek Mitigations |
-| ![fig-23](../assets/2024-11-28-reward-hacking/fig-23.png) | Anomaly detector AUROC performance metrics across varying misspecified tasks (Pan et al. 2022). | Peek Mitigations |
-| ![fig-24](../assets/2024-11-28-reward-hacking/fig-24.png) | Feature imprints and angle shifts demonstrating RMs value modeling characteristics before/after training (Revel et al. 2024). | Peek Mitigations |
+| ![fig-1](../assets/2024-11-28-reward-hacking/fig-1.webp) | Spurious correlation / shortcut learning leading to OOD generalization failure (Geirhos et al. 2020). | Background |
+| ![fig-2](../assets/2024-11-28-reward-hacking/fig-2.webp) | The impact of position randomization on goal misgeneralization in CoinRun (Koch et al. 2021). | Let's Define |
+| ![fig-3](../assets/2024-11-28-reward-hacking/fig-3.webp) | Proxy and true reward curves as functions of model parameter size, training steps, and resolution (Pan et al. 2022). | Hacking Env |
+| ![fig-4](../assets/2024-11-28-reward-hacking/fig-4.webp) | Overoptimization scaling laws mapping proxy and gold rewards against KL divergence (Gao et al. 2022). | Hacking RLHF |
+| ![fig-5](../assets/2024-11-28-reward-hacking/fig-5.webp) | Empirical fits for coefficients alpha and beta across varying reward model sizes (Gao et al. 2022). | Hacking RLHF |
+| ![fig-6](../assets/2024-11-28-reward-hacking/fig-6.webp) | RLHF systematically increasing human evaluator approval of incorrect answers (Wen et al. 2024). | U-Sophistry |
+| ![fig-7](../assets/2024-11-28-reward-hacking/fig-7.webp) | Modular helper functions vs. Cyclomatic Complexity in code generated under RLHF (Wen et al. 2024). | U-Sophistry |
+| ![fig-8](../assets/2024-11-28-reward-hacking/fig-8.webp) | AI assistant feedback biases in response to stated human user preferences (Sharma et al. 2023). | Sycophancy |
+| ![fig-9](../assets/2024-11-28-reward-hacking/fig-9.webp) | Logistic regression analysis showing user belief alignment is the primary predictor of human preference data (Sharma et al. 2023). | Sycophancy |
+| ![fig-10](../assets/2024-11-28-reward-hacking/fig-10.webp) | Win rates and conflict rates demonstrating severe positional bias in LLM-as-grader setups (Wang et al. 2023). | Hacking Evaluator |
+| ![fig-11](../assets/2024-11-28-reward-hacking/fig-11.webp) | Alignment accuracy of positional bias calibration methods (MEC, BPC, HITLC) (Wang et al. 2023). | Hacking Evaluator |
+| ![fig-12](../assets/2024-11-28-reward-hacking/fig-12.webp) | narcissistic evaluation self-bias heatmap showing LLMs consistently prefer their own generations (Liu et al. 2023). | Hacking Evaluator |
+| ![fig-13](../assets/2024-11-28-reward-hacking/fig-13.webp) | Iterative self-refinement feedback loop between LLM author and LLM judge (Pan et al. 2023). | ICRH |
+| ![fig-14](../assets/2024-11-28-reward-hacking/fig-14.webp) | ICRH divergence rates when using smaller (GPT-3.5) vs. larger (GPT-4) evaluator models (Pan et al. 2023). | ICRH |
+| ![fig-15](../assets/2024-11-28-reward-hacking/fig-15.webp) | ICRH output-refinement driving up toxicity alongside target engagement metrics (Pan et al. 2024). | ICRH |
+| ![fig-16](../assets/2024-11-28-reward-hacking/fig-16.webp) | Failure of prompt engineering modifications to resolve output-refinement ICRH loops (Pan et al. 2024). | ICRH |
+| ![fig-17](../assets/2024-11-28-reward-hacking/fig-17.webp) | ICRH policy-refinement leading to escalating constraint violations in ToolEmu API tasks (Pan et al. 2024). | ICRH |
+| ![fig-18](../assets/2024-11-28-reward-hacking/fig-18.webp) | Generalization of reward hacking behaviors to unseen environments during expert iteration (Kei et al. 2024). | Generalization |
+| ![fig-19](../assets/2024-11-28-reward-hacking/fig-19.webp) | Mock VM scripting templates used in Tool-use flattery and reward tampering environments (Denison et al. 2024). | Generalization |
+| ![fig-20](../assets/2024-11-28-reward-hacking/fig-20.webp) | Expert iteration generalization results across stages of the gameable curriculum (Denison et al. 2024). | Generalization |
+| ![fig-21](../assets/2024-11-28-reward-hacking/fig-21.webp) | Structural causal diagram comparing decoupled approval with standard human-in-the-loop RL (Uesato et al. 2020). | Peek Mitigations |
+| ![fig-22](../assets/2024-11-28-reward-hacking/fig-22.webp) | Implementation of decoupled approval in Policy Gradient and Q-Learning algorithms (Uesato et al. 2020). | Peek Mitigations |
+| ![fig-23](../assets/2024-11-28-reward-hacking/fig-23.webp) | Anomaly detector AUROC performance metrics across varying misspecified tasks (Pan et al. 2022). | Peek Mitigations |
+| ![fig-24](../assets/2024-11-28-reward-hacking/fig-24.webp) | Feature imprints and angle shifts demonstrating RMs value modeling characteristics before/after training (Revel et al. 2024). | Peek Mitigations |
 
 ---
 

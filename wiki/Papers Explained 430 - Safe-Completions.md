@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-08-13_Papers-Explained-430--Safe-Completions-a8e8176bcc9b.html`
+- Source file: `raw/2025-08-13_Papers-Explained-430--Safe-Completions-a8e8176bcc9b.md`
 - Source title: Papers Explained 430: Safe-Completions
 - Published: 2025-08-13
 - Canonical: [https://medium.com/@ritvik19/papers-explained-430-safe-completions-a8e8176bcc9b](https://medium.com/@ritvik19/papers-explained-430-safe-completions-a8e8176bcc9b)
@@ -93,15 +93,15 @@ To evaluate and compare both the safety training paradigms: refusal training and
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-08-13_Papers-Explained-430--Safe-Completions-a8e8176bcc9b.html`); local copies under `wiki/assets/papers-explained-430-safe-completions/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-08-13_Papers-Explained-430--Safe-Completions-a8e8176bcc9b.md`); local copies under `wiki/assets/papers-explained-430-safe-completions/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-430-safe-completions/fig-1.png) | Title card: Safe-Completions. |
-| ![Figure 2](assets/papers-explained-430-safe-completions/fig-2.png) | Left: Overall structure of the safe-completion training stack. Right: Details of the safecompletion reward design. |
-| ![Figure 3](assets/papers-explained-430-safe-completions/fig-3.png) | Evaluation rubrics. |
-| ![Figure 4](assets/papers-explained-430-safe-completions/fig-4.png) | Safety and helpfulness given safe outputs broken down by user intent. |
-| ![Figure 5](assets/papers-explained-430-safe-completions/fig-5.png) | Harmfulness distribution among unsafe responses, by user intent. |
+| ![Figure 1](assets/papers-explained-430-safe-completions/fig-1.webp) | Title card: Safe-Completions. |
+| ![Figure 2](assets/papers-explained-430-safe-completions/fig-2.webp) | Left: Overall structure of the safe-completion training stack. Right: Details of the safecompletion reward design. |
+| ![Figure 3](assets/papers-explained-430-safe-completions/fig-3.webp) | Evaluation rubrics. |
+| ![Figure 4](assets/papers-explained-430-safe-completions/fig-4.webp) | Safety and helpfulness given safe outputs broken down by user intent. |
+| ![Figure 5](assets/papers-explained-430-safe-completions/fig-5.webp) | Harmfulness distribution among unsafe responses, by user intent. |
 ## Related
 
 - [[Papers Explained Corpus]]

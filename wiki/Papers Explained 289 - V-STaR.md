@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-01-16_Papers-Explained-289--V-STaR-4d2aeedab861.html`
+- Source file: `raw/2025-01-16_Papers-Explained-289--V-STaR-4d2aeedab861.md`
 - Source title: Papers Explained 289: V-STaR
 - Published: 2025-01-16
 - Canonical: [https://medium.com/@ritvik19/papers-explained-289-v-star-4d2aeedab861](https://medium.com/@ritvik19/papers-explained-289-v-star-4d2aeedab861)
@@ -91,19 +91,19 @@ V-STaR: Training Verifiers for Self-Taught Reasoners [2402.06457](https://arxiv.
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-01-16_Papers-Explained-289--V-STaR-4d2aeedab861.html`); local copies under `wiki/assets/papers-explained-289-v-star/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-01-16_Papers-Explained-289--V-STaR-4d2aeedab861.md`); local copies under `wiki/assets/papers-explained-289-v-star/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-289-v-star/fig-1.png) | Title card: V-STaR. |
-| ![Figure 2](assets/papers-explained-289-v-star/fig-2.png) | Generator and verifier training in V-STaR. |
-| ![Figure 3](assets/papers-explained-289-v-star/fig-3.png) | V-STaR utilizes both the correct and incorrect solutions generated during the self-improvement process to train a better generator and... |
-| ![Figure 4](assets/papers-explained-289-v-star/fig-4.png) | Test accuracy of 7B V-STaR compared to self-improvement and verification baselines. |
-| ![Figure 5](assets/papers-explained-289-v-star/fig-5.png) | Pass@1 and Best-of-64 scores for generator-only and verifier-based methods. |
-| ![Figure 6](assets/papers-explained-289-v-star/fig-6.png) | Out-of-domain transfer evaluation. |
-| ![Figure 7](assets/papers-explained-289-v-star/fig-7.png) | Test accuracy of 13B V-STaR compared to baselines. |
-| ![Figure 8](assets/papers-explained-289-v-star/fig-8.png) | Best-of-k test accuracy of V-STaR, V-STaR [1 Iter], and outcome-supervised reward model (ORM) style verifier 7B models. |
-| ![Figure 9](assets/papers-explained-289-v-star/fig-9.png) | Left: Best-of-k test accuracy of 7B V-STaR compared to V-STaR[1 Iter] and selfconsistency. Right: Comparing DPO-based generator and verifier for V-STaR 7B, measured by Pass@1 and Best-of-64 respectively on GSM8K. |
+| ![Figure 1](assets/papers-explained-289-v-star/fig-1.webp) | Title card: V-STaR. |
+| ![Figure 2](assets/papers-explained-289-v-star/fig-2.webp) | Generator and verifier training in V-STaR. |
+| ![Figure 3](assets/papers-explained-289-v-star/fig-3.webp) | V-STaR utilizes both the correct and incorrect solutions generated during the self-improvement process to train a better generator and... |
+| ![Figure 4](assets/papers-explained-289-v-star/fig-4.webp) | Test accuracy of 7B V-STaR compared to self-improvement and verification baselines. |
+| ![Figure 5](assets/papers-explained-289-v-star/fig-5.webp) | Pass@1 and Best-of-64 scores for generator-only and verifier-based methods. |
+| ![Figure 6](assets/papers-explained-289-v-star/fig-6.webp) | Out-of-domain transfer evaluation. |
+| ![Figure 7](assets/papers-explained-289-v-star/fig-7.webp) | Test accuracy of 13B V-STaR compared to baselines. |
+| ![Figure 8](assets/papers-explained-289-v-star/fig-8.webp) | Best-of-k test accuracy of V-STaR, V-STaR [1 Iter], and outcome-supervised reward model (ORM) style verifier 7B models. |
+| ![Figure 9](assets/papers-explained-289-v-star/fig-9.webp) | Left: Best-of-k test accuracy of 7B V-STaR compared to V-STaR[1 Iter] and selfconsistency. Right: Comparing DPO-based generator and verifier for V-STaR 7B, measured by Pass@1 and Best-of-64 respectively on GSM8K. |
 ## Related
 
 - [[Papers Explained Corpus]]

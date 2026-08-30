@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-11-12_Papers-Explained-490--A-single-character-can-make-or-break-your-LLM-evals-8741757cd6c3.html`
+- Source file: `raw/2025-11-12_Papers-Explained-490--A-single-character-can-make-or-break-your-LLM-evals-8741757cd6c3.md`
 - Source title: Papers Explained 490: A single character can make or break your LLM evals
 - Published: 2025-11-12
 - Canonical: [https://medium.com/@ritvik19/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals-8741757cd6c3](https://medium.com/@ritvik19/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals-8741757cd6c3)
@@ -95,26 +95,26 @@ A Single Character can Make or Break Your LLM Evals [2510.05152](https://arxiv.o
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-11-12_Papers-Explained-490--A-single-character-can-make-or-break-your-LLM-evals-8741757cd6c3.html`); local copies under `wiki/assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-11-12_Papers-Explained-490--A-single-character-can-make-or-break-your-LLM-evals-8741757cd6c3.md`); local copies under `wiki/assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-1.png) | Title card: A single character can make or break your LLM evals. |
-| ![Figure 2](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-2.png) | Experiments. |
-| ![Figure 3](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-3.png) | Experiments. |
-| ![Figure 4](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-4.png) | Experiments. |
-| ![Figure 5](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-5.png) | Experiments. |
-| ![Figure 6](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-6.png) | Experiments. |
-| ![Figure 7](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-7.png) | Experiments. |
-| ![Figure 8](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-8.png) | mmlu summary statistics under different delimiters of GPT-4o. |
-| ![Figure 9](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-9.png) | mmlu, normal SFT. |
-| ![Figure 10](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-10.png) | mmlu, SFT with random delimiter choices. |
-| ![Figure 11](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-11.png) | arc-challenge, normal SFT. |
-| ![Figure 12](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-12.png) | arc-challenge, SFT with random delimiter choices. |
-| ![Figure 13](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-13.png) | commonsense-qa, normal SFT. |
-| ![Figure 14](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-14.png) | commonsense-qa, SFT with random delimiter choices. |
-| ![Figure 15](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-15.png) | Specifying the choice of delimiter: Practical delimiter recommendations. |
-| ![Figure 16](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-16.png) | Practical delimiter recommendations. |
+| ![Figure 1](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-1.webp) | Title card: A single character can make or break your LLM evals. |
+| ![Figure 2](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-2.webp) | Experiments. |
+| ![Figure 3](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-3.webp) | Experiments. |
+| ![Figure 4](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-4.webp) | Experiments. |
+| ![Figure 5](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-5.webp) | Experiments. |
+| ![Figure 6](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-6.webp) | Experiments. |
+| ![Figure 7](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-7.webp) | Experiments. |
+| ![Figure 8](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-8.webp) | mmlu summary statistics under different delimiters of GPT-4o. |
+| ![Figure 9](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-9.webp) | mmlu, normal SFT. |
+| ![Figure 10](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-10.webp) | mmlu, SFT with random delimiter choices. |
+| ![Figure 11](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-11.webp) | arc-challenge, normal SFT. |
+| ![Figure 12](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-12.webp) | arc-challenge, SFT with random delimiter choices. |
+| ![Figure 13](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-13.webp) | commonsense-qa, normal SFT. |
+| ![Figure 14](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-14.webp) | commonsense-qa, SFT with random delimiter choices. |
+| ![Figure 15](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-15.webp) | Specifying the choice of delimiter: Practical delimiter recommendations. |
+| ![Figure 16](assets/papers-explained-490-a-single-character-can-make-or-break-your-llm-evals/fig-16.webp) | Practical delimiter recommendations. |
 ## Related
 
 - [[Papers Explained Corpus]]

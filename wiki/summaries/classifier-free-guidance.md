@@ -1,6 +1,6 @@
 # An Overview of Classifier-Free Guidance for Diffusion Models
 
-**Source**: `raw/classifier-free-guidance/full-article.html` (758 KB), `raw/classifier-free-guidance/full-article.md` (markdown view)  
+**Source**: `raw/classifier-free-guidance/full-article.md` (758 KB), `raw/classifier-free-guidance/full-article.md` (markdown view)  
 **URL**: https://theaisummer.com/classifier-free-guidance/  
 **Authors**: Nikolas Adaloglou, Tim Kaiser (AI Summer), 2024-07-22  
 **Ingested**: 2026-06-06  
@@ -41,22 +41,22 @@ Pairs with [[How Diffusion Models Work: The Math from Scratch]] for DDPM foundat
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/classifier-free-guidance/fig-1.png) | IS/FID vs guidance strength for ImageNet 64×64 CFG models with varying \(p_{\text{uncond}}\) (Ho & Salimans) | — |
-| ![fig-2](../assets/classifier-free-guidance/fig-2.png) | Imagen Pareto curves: thresholding vs guidance weight sweep (Saharia et al.) | — |
-| ![fig-3](../assets/classifier-free-guidance/fig-3.png) | Static vs dynamic thresholding on "astronaut riding a horse" at \(w=5\) (Imagen appendix) | — |
-| ![fig-4](../assets/classifier-free-guidance/fig-4.png) | ImageNet-512 quantitative results: limited-interval CFG vs baseline (Kynkäänniemi et al.) | — |
-| ![fig-5](../assets/classifier-free-guidance/fig-5.png) | FID and \(\text{FD}_{\text{DINOv2}}\) vs guidance weight: full CFG vs interval CFG | — |
-| ![fig-6](../assets/classifier-free-guidance/fig-6.png) | Spatial CFG segmentation refinement: cross-attention → × self-attention → graph propagation (Shen et al.) | — |
-| ![fig-7](../assets/classifier-free-guidance/fig-7.png) | Cross-attention in U-Net: text keys/values fused with visual queries (Hertz et al.) | — |
-| ![fig-8](../assets/classifier-free-guidance/fig-8.png) | Fixed cross-attention maps (K from "lemon cake") with swapped V — identical global structure | — |
-| ![fig-9](../assets/classifier-free-guidance/fig-9.png) | Prompt switching during denoising: late steps have negligible text impact (Balaji et al.) | — |
-| ![fig-10](../assets/classifier-free-guidance/fig-10.png) | Cross- and self-attention layers in Stable Diffusion U-Net (Liu et al.) | — |
+| ![fig-1](../assets/classifier-free-guidance/fig-1.webp) | IS/FID vs guidance strength for ImageNet 64×64 CFG models with varying \(p_{\text{uncond}}\) (Ho & Salimans) | — |
+| ![fig-2](../assets/classifier-free-guidance/fig-2.webp) | Imagen Pareto curves: thresholding vs guidance weight sweep (Saharia et al.) | — |
+| ![fig-3](../assets/classifier-free-guidance/fig-3.webp) | Static vs dynamic thresholding on "astronaut riding a horse" at \(w=5\) (Imagen appendix) | — |
+| ![fig-4](../assets/classifier-free-guidance/fig-4.webp) | ImageNet-512 quantitative results: limited-interval CFG vs baseline (Kynkäänniemi et al.) | — |
+| ![fig-5](../assets/classifier-free-guidance/fig-5.webp) | FID and \(\text{FD}_{\text{DINOv2}}\) vs guidance weight: full CFG vs interval CFG | — |
+| ![fig-6](../assets/classifier-free-guidance/fig-6.webp) | Spatial CFG segmentation refinement: cross-attention → × self-attention → graph propagation (Shen et al.) | — |
+| ![fig-7](../assets/classifier-free-guidance/fig-7.webp) | Cross-attention in U-Net: text keys/values fused with visual queries (Hertz et al.) | — |
+| ![fig-8](../assets/classifier-free-guidance/fig-8.webp) | Fixed cross-attention maps (K from "lemon cake") with swapped V — identical global structure | — |
+| ![fig-9](../assets/classifier-free-guidance/fig-9.webp) | Prompt switching during denoising: late steps have negligible text impact (Balaji et al.) | — |
+| ![fig-10](../assets/classifier-free-guidance/fig-10.webp) | Cross- and self-attention layers in Stable Diffusion U-Net (Liu et al.) | — |
 
-![CFG IS/FID tradeoff](../assets/classifier-free-guidance/fig-1.png)
+![CFG IS/FID tradeoff](../assets/classifier-free-guidance/fig-1.webp)
 
 Higher guidance weight improves inception score but trades off FID — the core diversity–fidelity tension CFG controls.
 
-![Limited-interval CFG gains](../assets/classifier-free-guidance/fig-5.png)
+![Limited-interval CFG gains](../assets/classifier-free-guidance/fig-5.webp)
 
 Applying CFG only in an intermediate noise interval can beat full-interval guidance on both FID and \(\text{FD}_{\text{DINOv2}}\).
 

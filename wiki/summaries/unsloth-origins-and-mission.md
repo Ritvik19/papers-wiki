@@ -46,7 +46,7 @@
 
 ## Sources
 
-- `raw/introducing/full-article.html`
-- `raw/reintroducing/full-article.html`
-- `raw/roadmap-yc/full-article.html`
-- `raw/pytorch/full-article.html`
+- `raw/introducing/full-article.md`
+- `raw/reintroducing/full-article.md`
+- `raw/roadmap-yc/full-article.md`
+- `raw/pytorch/full-article.md`

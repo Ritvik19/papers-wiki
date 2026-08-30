@@ -1,6 +1,6 @@
 # Differential Transformer V2
 
-**Source**: `raw/diff-attn-v2/full-article.html`, `raw/diff-attn-v2/full-article.md`
+**Source**: `raw/diff-attn-v2/full-article.md`, `raw/diff-attn-v2/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-08-27_Papers-Explained-440--OpenCodeReasoning-II-c1e27ef6fb5e.html`
+- Source file: `raw/2025-08-27_Papers-Explained-440--OpenCodeReasoning-II-c1e27ef6fb5e.md`
 - Source title: Papers Explained 440: OpenCodeReasoning-II
 - Published: 2025-08-27
 - Canonical: [https://medium.com/@ritvik19/papers-explained-440-opencodereasoning-ii-c1e27ef6fb5e](https://medium.com/@ritvik19/papers-explained-440-opencodereasoning-ii-c1e27ef6fb5e)
@@ -95,16 +95,16 @@ OpenCodeReasoning-II: A Simple Test Time Scaling Approach via Self-Critique [250
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-08-27_Papers-Explained-440--OpenCodeReasoning-II-c1e27ef6fb5e.html`); local copies under `wiki/assets/papers-explained-440-opencodereasoning-ii/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-08-27_Papers-Explained-440--OpenCodeReasoning-II-c1e27ef6fb5e.md`); local copies under `wiki/assets/papers-explained-440-opencodereasoning-ii/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-440-opencodereasoning-ii/fig-1.png) | Title card: OpenCodeReasoning-II. |
-| ![Figure 2](assets/papers-explained-440-opencodereasoning-ii/fig-2.png) | Overview of the OpenCodeReasoning-II development stages. |
-| ![Figure 3](assets/papers-explained-440-opencodereasoning-ii/fig-3.png) | Number of questions and corresponding samples in OpenCodeReasoning-II. |
-| ![Figure 4](assets/papers-explained-440-opencodereasoning-ii/fig-4.png) | Performance comparison of reasoning models on LiveCodeBench. |
-| ![Figure 5](assets/papers-explained-440-opencodereasoning-ii/fig-5.png) | Performance comparison of reasoning models under test-time scaling setup. |
-| ![Figure 6](assets/papers-explained-440-opencodereasoning-ii/fig-6.png) | Pass@1 scores of OCR-2 models trained individually on Python and C++ vs. jointly using OpenCodeReasoning-II. |
+| ![Figure 1](assets/papers-explained-440-opencodereasoning-ii/fig-1.webp) | Title card: OpenCodeReasoning-II. |
+| ![Figure 2](assets/papers-explained-440-opencodereasoning-ii/fig-2.webp) | Overview of the OpenCodeReasoning-II development stages. |
+| ![Figure 3](assets/papers-explained-440-opencodereasoning-ii/fig-3.webp) | Number of questions and corresponding samples in OpenCodeReasoning-II. |
+| ![Figure 4](assets/papers-explained-440-opencodereasoning-ii/fig-4.webp) | Performance comparison of reasoning models on LiveCodeBench. |
+| ![Figure 5](assets/papers-explained-440-opencodereasoning-ii/fig-5.webp) | Performance comparison of reasoning models under test-time scaling setup. |
+| ![Figure 6](assets/papers-explained-440-opencodereasoning-ii/fig-6.webp) | Pass@1 scores of OCR-2 models trained individually on Python and C++ vs. jointly using OpenCodeReasoning-II. |
 ## Related
 
 - [[Papers Explained Corpus]]

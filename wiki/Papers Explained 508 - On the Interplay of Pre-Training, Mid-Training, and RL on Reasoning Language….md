@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-12-24_Papers-Explained-508--On-the-Interplay-of-Pre-Training--Mid-Training--and-RL-on-Reasoning-Language--28ea687d27ae.html`
+- Source file: `raw/2025-12-24_Papers-Explained-508--On-the-Interplay-of-Pre-Training--Mid-Training--and-RL-on-Reasoning-Language--28ea687d27ae.md`
 - Source title: Papers Explained 508: On the Interplay of Pre-Training, Mid-Training, and RL on Reasoning Language…
 - Published: 2025-12-24
 - Canonical: [https://medium.com/@ritvik19/papers-explained-508-on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language-28ea687d27ae](https://medium.com/@ritvik19/papers-explained-508-on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language-28ea687d27ae)
@@ -197,20 +197,20 @@ On the Interplay of Pre-Training, Mid-Training, and RL on Reasoning Language Mod
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-12-24_Papers-Explained-508--On-the-Interplay-of-Pre-Training--Mid-Training--and-RL-on-Reasoning-Language--28ea687d27ae.html`); local copies under `wiki/assets/papers-explained-508-on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-12-24_Papers-Explained-508--On-the-Interplay-of-Pre-Training--Mid-Training--and-RL-on-Reasoning-Language--28ea687d27ae.md`); local copies under `wiki/assets/papers-explained-508-on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-508-on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language/fig-1.png) | Title card: On the Interplay of Pre-Training, Mid-Training, and RL on Reasoning Language…. |
-| ![Figure 2](assets/papers-explained-508-on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language/fig-2.png) | Overview of the data generation framework, task setup, and process-verified evaluation. |
-| ![Figure 3](assets/papers-explained-508-on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language/fig-3.png) | pass@k performance on three tasks: ID (op=2–10), OOD-edge (op=11–14), OOD-hard (op=(15- 20)). |
-| ![Figure 4](assets/papers-explained-508-on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language/fig-4.png) | pass@128 performance on context B after post-trained with a 50% context A + 50% context B mixture. |
-| ![Figure 5](assets/papers-explained-508-on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language/fig-5.png) | This study examines the synergy between mid-training and post-training, seeking to define how their interaction drives reasoning... |
-| ![Figure 6](assets/papers-explained-508-on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language/fig-6.png) | The RL allocation ratio β ∈[0,1] is systematically to distribute the total budget T between the two phases. |
-| ![Figure 7](assets/papers-explained-508-on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language/fig-7.png) | pass@1 and pass@128 performances on extrapolative tasks under varying mid- and post-training mixture ratios. |
-| ![Figure 8](assets/papers-explained-508-on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language/fig-8.png) | A stricter formulation is also considered. |
-| ![Figure 9](assets/papers-explained-508-on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language/fig-9.png) | A stricter formulation is also considered. |
-| ![Figure 10](assets/papers-explained-508-on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language/fig-10.png) | pass@k performance under different reward compositions. |
+| ![Figure 1](assets/papers-explained-508-on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language/fig-1.webp) | Title card: On the Interplay of Pre-Training, Mid-Training, and RL on Reasoning Language…. |
+| ![Figure 2](assets/papers-explained-508-on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language/fig-2.webp) | Overview of the data generation framework, task setup, and process-verified evaluation. |
+| ![Figure 3](assets/papers-explained-508-on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language/fig-3.webp) | pass@k performance on three tasks: ID (op=2–10), OOD-edge (op=11–14), OOD-hard (op=(15- 20)). |
+| ![Figure 4](assets/papers-explained-508-on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language/fig-4.webp) | pass@128 performance on context B after post-trained with a 50% context A + 50% context B mixture. |
+| ![Figure 5](assets/papers-explained-508-on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language/fig-5.webp) | This study examines the synergy between mid-training and post-training, seeking to define how their interaction drives reasoning... |
+| ![Figure 6](assets/papers-explained-508-on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language/fig-6.webp) | The RL allocation ratio β ∈[0,1] is systematically to distribute the total budget T between the two phases. |
+| ![Figure 7](assets/papers-explained-508-on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language/fig-7.webp) | pass@1 and pass@128 performances on extrapolative tasks under varying mid- and post-training mixture ratios. |
+| ![Figure 8](assets/papers-explained-508-on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language/fig-8.webp) | A stricter formulation is also considered. |
+| ![Figure 9](assets/papers-explained-508-on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language/fig-9.webp) | A stricter formulation is also considered. |
+| ![Figure 10](assets/papers-explained-508-on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language/fig-10.webp) | pass@k performance under different reward compositions. |
 ## Related
 
 - [[Papers Explained Corpus]]

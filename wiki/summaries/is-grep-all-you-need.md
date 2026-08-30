@@ -1,6 +1,6 @@
 # Papers Explained: Is Grep All You Need
 
-**Source**: `raw/is-grep-all-you-need/full-article.html`  
+**Source**: `raw/is-grep-all-you-need/full-article.md`  
 **Original**: https://medium.com/p/5b10a6e92f77  
 **Paper**: https://arxiv.org/abs/2605.15184  
 **Ingested**: 2026-05-18  
@@ -12,7 +12,7 @@ This source summarizes "Is Grep All You Need? How Agent Harnesses Reshape Agenti
 
 The central result is deliberately uncomfortable for simple "semantic search beats keyword search" stories: inline grep generally outperforms inline vector retrieval, but the size and even direction of the effect depend strongly on the harness and the tool-result delivery format. When search results are written to files and the agent must inspect them programmatically, vector search beats grep in half of the reported harness-model pairs. That means retrieval quality is entangled with context management, tool ergonomics, and the model's ability to refine queries and read returned evidence.
 
-![Overall accuracy on LongMemEval-S by retrieval mode and harness.](../assets/is-grep-all-you-need/fig-2.png)
+![Overall accuracy on LongMemEval-S by retrieval mode and harness.](../assets/is-grep-all-you-need/fig-2.webp)
 
 The context-scaling experiment adds another wrinkle. As more distractor sessions are added, grep and vector retrieval do not degrade monotonically or in parallel. Some harness-model combinations prefer grep, some prefer vector retrieval, and some show crossover behavior as the session budget changes. This extends existing wiki themes around [[Dynamic Context]], [[Long Context]], and [[Context Rot]]: adding more searchable history is not enough if the harness cannot shape the retrieval channel into something the model can use reliably.
 
@@ -29,10 +29,10 @@ The context-scaling experiment adds another wrinkle. As more distractor sessions
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/is-grep-all-you-need/fig-1.png) | Title image for the Medium article. | Article header |
-| ![fig-2](../assets/is-grep-all-you-need/fig-2.png) | Overall accuracy on the 116-question LongMemEval-S subset across retrieval modes, harnesses, and models. | Experiment 1 |
-| ![fig-3](../assets/is-grep-all-you-need/fig-3.png) | Overall accuracy for grep-only retrieval as the session limit increases. | Experiment 2 |
-| ![fig-4](../assets/is-grep-all-you-need/fig-4.png) | Overall accuracy for vector-only retrieval as the session limit increases. | Experiment 2 |
+| ![fig-1](../assets/is-grep-all-you-need/fig-1.webp) | Title image for the Medium article. | Article header |
+| ![fig-2](../assets/is-grep-all-you-need/fig-2.webp) | Overall accuracy on the 116-question LongMemEval-S subset across retrieval modes, harnesses, and models. | Experiment 1 |
+| ![fig-3](../assets/is-grep-all-you-need/fig-3.webp) | Overall accuracy for grep-only retrieval as the session limit increases. | Experiment 2 |
+| ![fig-4](../assets/is-grep-all-you-need/fig-4.webp) | Overall accuracy for vector-only retrieval as the session limit increases. | Experiment 2 |
 
 ## Entities
 

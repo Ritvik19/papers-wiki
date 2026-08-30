@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/draft_Papers-Explained--Advancing-Search-Augmented-Language-Models-bceb21866e26.html`
+- Source file: `raw/draft_Papers-Explained--Advancing-Search-Augmented-Language-Models-bceb21866e26.md`
 - Source title: Papers Explained: Advancing Search Augmented Language Models
 - Canonical: [https://medium.com/p/bceb21866e26](https://medium.com/p/bceb21866e26)
 
@@ -144,25 +144,25 @@ To measure tool use efficiency, a budget-forced evaluation protocol is designed.
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/draft_Papers-Explained--Advancing-Search-Augmented-Language-Models-bceb21866e26.html`); local copies under `wiki/assets/papers-explained-advancing-search-augmented-language-models/` when download succeeded.
+Figures from the Medium HTML export (`raw/draft_Papers-Explained--Advancing-Search-Augmented-Language-Models-bceb21866e26.md`); local copies under `wiki/assets/papers-explained-advancing-search-augmented-language-models/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-advancing-search-augmented-language-models/fig-1.png) | Post-training stack for Perplexity search agents (accuracy, trajectory efficiency, preference alignment on Qwen3.5 MoE bases). |
-| ![Figure 2](assets/papers-explained-advancing-search-augmented-language-models/fig-2.png) | RL stage with on-policy GRPO after SFT guardrails (search accuracy + tool efficiency objectives). |
-| ![Figure 3](assets/papers-explained-advancing-search-augmented-language-models/fig-3.png) | Synthetic verifiable QA construction: seeded retrieval, multi-hop chains, name-free questions, solver checks. |
-| ![Figure 4](assets/papers-explained-advancing-search-augmented-language-models/fig-4.png) | Rubric-based chat supervision: atomic objective checks, judge filtering, pass@4 dataset curation. |
-| ![Figure 5](assets/papers-explained-advancing-search-augmented-language-models/fig-5.png) | RL data mixture design (verifiable QA vs rubric chat reweighting). |
-| ![Figure 6](assets/papers-explained-advancing-search-augmented-language-models/fig-6.png) | Gated composite reward: factual/rubric correctness gates preference and efficiency credit. |
-| ![Figure 7](assets/papers-explained-advancing-search-augmented-language-models/fig-7.png) | Bradley–Terry preference optimization over paired assistant responses. |
-| ![Figure 8](assets/papers-explained-advancing-search-augmented-language-models/fig-8.png) | Anchored group-relative penalty on effective tool calls (discourage excess browsing). |
-| ![Figure 9](assets/papers-explained-advancing-search-augmented-language-models/fig-9.png) | Anchored length penalty tied to correct, preferred rollouts within each GRPO group. |
-| ![Figure 10](assets/papers-explained-advancing-search-augmented-language-models/fig-10.png) | Combined efficiency shaping from anchored tool and length terms. |
-| ![Figure 11](assets/papers-explained-advancing-search-augmented-language-models/fig-11.png) | Public eval coverage (SimpleQA, FRAMES, Facts Open) plus headline comparisons to frontier chat models. |
-| ![Figure 12](assets/papers-explained-advancing-search-augmented-language-models/fig-12.png) | Internal Perplexity reliability metrics (preference vs baseline, abstention, language consistency, tool-call validity). |
-| ![Figure 13](assets/papers-explained-advancing-search-augmented-language-models/fig-13.png) | Qwen3.5-Large SFT+RL matching or exceeding GPT-5.4-class models on search-heavy suites at comparable tool budgets. |
-| ![Figure 14](assets/papers-explained-advancing-search-augmented-language-models/fig-14.png) | Budget-forced search protocol: accuracy vs maximum allowed tool calls (sweep 0–10). |
-| ![Figure 15](assets/papers-explained-advancing-search-augmented-language-models/fig-15.png) | Best RL checkpoints vs GPT-5.4 / Sonnet on FRAMES and Facts Open across practical tool budgets. |
+| ![Figure 1](assets/papers-explained-advancing-search-augmented-language-models/fig-1.webp) | Post-training stack for Perplexity search agents (accuracy, trajectory efficiency, preference alignment on Qwen3.5 MoE bases). |
+| ![Figure 2](assets/papers-explained-advancing-search-augmented-language-models/fig-2.webp) | RL stage with on-policy GRPO after SFT guardrails (search accuracy + tool efficiency objectives). |
+| ![Figure 3](assets/papers-explained-advancing-search-augmented-language-models/fig-3.webp) | Synthetic verifiable QA construction: seeded retrieval, multi-hop chains, name-free questions, solver checks. |
+| ![Figure 4](assets/papers-explained-advancing-search-augmented-language-models/fig-4.webp) | Rubric-based chat supervision: atomic objective checks, judge filtering, pass@4 dataset curation. |
+| ![Figure 5](assets/papers-explained-advancing-search-augmented-language-models/fig-5.webp) | RL data mixture design (verifiable QA vs rubric chat reweighting). |
+| ![Figure 6](assets/papers-explained-advancing-search-augmented-language-models/fig-6.webp) | Gated composite reward: factual/rubric correctness gates preference and efficiency credit. |
+| ![Figure 7](assets/papers-explained-advancing-search-augmented-language-models/fig-7.webp) | Bradley–Terry preference optimization over paired assistant responses. |
+| ![Figure 8](assets/papers-explained-advancing-search-augmented-language-models/fig-8.webp) | Anchored group-relative penalty on effective tool calls (discourage excess browsing). |
+| ![Figure 9](assets/papers-explained-advancing-search-augmented-language-models/fig-9.webp) | Anchored length penalty tied to correct, preferred rollouts within each GRPO group. |
+| ![Figure 10](assets/papers-explained-advancing-search-augmented-language-models/fig-10.webp) | Combined efficiency shaping from anchored tool and length terms. |
+| ![Figure 11](assets/papers-explained-advancing-search-augmented-language-models/fig-11.webp) | Public eval coverage (SimpleQA, FRAMES, Facts Open) plus headline comparisons to frontier chat models. |
+| ![Figure 12](assets/papers-explained-advancing-search-augmented-language-models/fig-12.webp) | Internal Perplexity reliability metrics (preference vs baseline, abstention, language consistency, tool-call validity). |
+| ![Figure 13](assets/papers-explained-advancing-search-augmented-language-models/fig-13.webp) | Qwen3.5-Large SFT+RL matching or exceeding GPT-5.4-class models on search-heavy suites at comparable tool budgets. |
+| ![Figure 14](assets/papers-explained-advancing-search-augmented-language-models/fig-14.webp) | Budget-forced search protocol: accuracy vs maximum allowed tool calls (sweep 0–10). |
+| ![Figure 15](assets/papers-explained-advancing-search-augmented-language-models/fig-15.webp) | Best RL checkpoints vs GPT-5.4 / Sonnet on FRAMES and Facts Open across practical tool budgets. |
 ## Related
 
 - [[Advancing Search-Augmented Language Models]] — canonical Perplexity Research source (`raw/advancing-search-augmented-language-models/`).

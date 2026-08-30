@@ -1,6 +1,6 @@
 # Papers Explained 598: Compress & Distil
 
-**Source**: `raw/2026-08-19_Papers-Explained-598--Compress-Distil-c5f78c8c8a18.html`  
+**Source**: `raw/2026-08-19_Papers-Explained-598--Compress-Distil-c5f78c8c8a18.md`  
 **Paper**: https://arxiv.org/abs/2606.05988  
 **Ingested**: 2026-08-23  
 **Tags**: #summary
@@ -9,7 +9,7 @@
 
 **Compress-Distill** investigates reasoning trace compression for efficient knowledge distillation. Large reasoning models (such as Qwen3.5-397B or gpt-oss-120B) generate verbose, multi-thousand-token reasoning chains that contain redundant verification loops and exploratory dead ends. Training compact student models (e.g. 0.8B to 9B) on these massive raw traces is compute-heavy and creates cognitive mismatch: small models lack the capacity to execute ultra-long thinking trajectories without losing coherence. Compress-Distill evaluates whether intermediate compressor models can condense verbose teacher reasoning into concise, high-density rationale traces while preserving downstream student accuracy.
 
-![Papers Explained 598 banner](../assets/papers-explained-598-compress-distil/fig-1.png)
+![Papers Explained 598 banner](../assets/papers-explained-598-compress-distil/fig-1.webp)
 
 ### Compression Dynamics & Findings
 
@@ -18,7 +18,7 @@
 - **Accuracy Trade-off**: Raw traces provide the upper-bound accuracy under unconstrained training budgets; however, high-quality compressed traces retain 90–95% of student accuracy while reducing training FLOPs and inference latency by up to $5\times$.
 - **Rewriting vs. Truncation**: Semantic trace rewriting by intermediate LLMs decisively outperforms naive token truncation.
 
-![Compression Ratios and Downstream Accuracy](../assets/papers-explained-598-compress-distil/fig-2.png)
+![Compression Ratios and Downstream Accuracy](../assets/papers-explained-598-compress-distil/fig-2.webp)
 
 ## Key Claims
 
@@ -30,12 +30,12 @@
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/papers-explained-598-compress-distil/fig-1.png) | Papers Explained 598 overview banner. | Overview |
-| ![fig-2](../assets/papers-explained-598-compress-distil/fig-2.png) | Compress-Distill pipeline: Raw teacher trace to compressed rationale to student KD. | Method |
-| ![fig-3](../assets/papers-explained-598-compress-distil/fig-3.png) | Compression ratio rho across benchmark difficulty domains. | Analysis |
-| ![fig-4](../assets/papers-explained-598-compress-distil/fig-4.png) | Student downstream accuracy: Raw vs. Compressed vs. Truncated traces. | Evaluation |
-| ![fig-5](../assets/papers-explained-598-compress-distil/fig-5.png) | Training FLOPs vs. benchmark accuracy Pareto frontier. | Efficiency |
-| ![fig-6](../assets/papers-explained-598-compress-distil/fig-6.png) | Qualitative comparison of raw and compressed reasoning chains. | Qualitative |
+| ![fig-1](../assets/papers-explained-598-compress-distil/fig-1.webp) | Papers Explained 598 overview banner. | Overview |
+| ![fig-2](../assets/papers-explained-598-compress-distil/fig-2.webp) | Compress-Distill pipeline: Raw teacher trace to compressed rationale to student KD. | Method |
+| ![fig-3](../assets/papers-explained-598-compress-distil/fig-3.webp) | Compression ratio rho across benchmark difficulty domains. | Analysis |
+| ![fig-4](../assets/papers-explained-598-compress-distil/fig-4.webp) | Student downstream accuracy: Raw vs. Compressed vs. Truncated traces. | Evaluation |
+| ![fig-5](../assets/papers-explained-598-compress-distil/fig-5.webp) | Training FLOPs vs. benchmark accuracy Pareto frontier. | Efficiency |
+| ![fig-6](../assets/papers-explained-598-compress-distil/fig-6.webp) | Qualitative comparison of raw and compressed reasoning chains. | Qualitative |
 
 ## Entities
 

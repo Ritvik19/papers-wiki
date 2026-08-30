@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-09-08_Papers-Explained-205--LeViT-89a2defc2d18.html`
+- Source file: `raw/2024-09-08_Papers-Explained-205--LeViT-89a2defc2d18.md`
 - Source title: Papers Explained 205: LeViT
 - Published: 2024-09-08
 - Canonical: [https://medium.com/@ritvik19/papers-explained-205-levit-89a2defc2d18](https://medium.com/@ritvik19/papers-explained-205-levit-89a2defc2d18)
@@ -111,16 +111,16 @@ Recommended Reading [Vision Transformers](https://ritvik19.medium.com/list/visio
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-09-08_Papers-Explained-205--LeViT-89a2defc2d18.html`); local copies under `wiki/assets/papers-explained-205-levit/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-09-08_Papers-Explained-205--LeViT-89a2defc2d18.md`); local copies under `wiki/assets/papers-explained-205-levit/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-205-levit/fig-1.png) | LeViT-256 architecture with per-layer FLOPs and parameter contribution bars. |
-| ![Figure 2](assets/papers-explained-205-levit/fig-2.png) | LeViT attention block variants: regular and reduced-resolution activation map. |
-| ![Figure 3](assets/papers-explained-205-levit/fig-3.png) | LeViT model family table. |
-| ![Figure 4](assets/papers-explained-205-levit/fig-4.png) | LeViT characteristics vs DeiT and EfficientNet families. |
-| ![Figure 5](assets/papers-explained-205-levit/fig-5.png) | High-throughput state-of-the-art comparison at 224x224 on ImageNet. |
-| ![Figure 6](assets/papers-explained-205-levit/fig-6.png) | Throughput-focused baseline table including T2T-ViT, BoTNet, VTR, PiT, and CVT-13-NAS. |
+| ![Figure 1](assets/papers-explained-205-levit/fig-1.webp) | LeViT-256 architecture with per-layer FLOPs and parameter contribution bars. |
+| ![Figure 2](assets/papers-explained-205-levit/fig-2.webp) | LeViT attention block variants: regular and reduced-resolution activation map. |
+| ![Figure 3](assets/papers-explained-205-levit/fig-3.webp) | LeViT model family table. |
+| ![Figure 4](assets/papers-explained-205-levit/fig-4.webp) | LeViT characteristics vs DeiT and EfficientNet families. |
+| ![Figure 5](assets/papers-explained-205-levit/fig-5.webp) | High-throughput state-of-the-art comparison at 224x224 on ImageNet. |
+| ![Figure 6](assets/papers-explained-205-levit/fig-6.webp) | Throughput-focused baseline table including T2T-ViT, BoTNet, VTR, PiT, and CVT-13-NAS. |
 ## Related
 
 - [[Papers Explained Corpus]]

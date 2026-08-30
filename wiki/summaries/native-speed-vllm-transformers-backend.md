@@ -1,6 +1,6 @@
 # Native-Speed vLLM Transformers Modeling Backend
 
-**Source**: `raw/native-speed-vllm-transformers-backend/full-article.html` (140 KB), `raw/native-speed-vllm-transformers-backend/full-article.md`
+**Source**: `raw/native-speed-vllm-transformers-backend/full-article.md` (140 KB), `raw/native-speed-vllm-transformers-backend/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

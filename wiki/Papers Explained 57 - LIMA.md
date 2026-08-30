@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-09-25_Papers-Explained-57--LIMA-f9401a5760c3.html`
+- Source file: `raw/2023-09-25_Papers-Explained-57--LIMA-f9401a5760c3.md`
 - Source title: Papers Explained 57: LIMA
 - Published: 2023-09-25
 - Canonical: [https://medium.com/@ritvik19/papers-explained-57-lima-f9401a5760c3](https://medium.com/@ritvik19/papers-explained-57-lima-f9401a5760c3)
@@ -97,15 +97,15 @@ LIMA: Less Is More for Alignment [2305.11206](https://arxiv.org/abs/2305.11206)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-09-25_Papers-Explained-57--LIMA-f9401a5760c3.html`); local copies under `wiki/assets/papers-explained-57-lima/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-09-25_Papers-Explained-57--LIMA-f9401a5760c3.md`); local copies under `wiki/assets/papers-explained-57-lima/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-57-lima/fig-1.png) | Title card: LIMA. |
-| ![Figure 2](assets/papers-explained-57-lima/fig-2.png) | Sources of Training Data. |
-| ![Figure 3](assets/papers-explained-57-lima/fig-3.png) | Human preference evaluation, comparing LIMA to 5 different baselines across 300 test prompts. |
-| ![Figure 4](assets/papers-explained-57-lima/fig-4.png) | Preference evaluation using GPT-4 as the annotator, given the same instructions provided to humans. |
-| ![Figure 5](assets/papers-explained-57-lima/fig-5.png) | Analysis of dialogue turns averaged over 10 test chats. |
+| ![Figure 1](assets/papers-explained-57-lima/fig-1.webp) | Title card: LIMA. |
+| ![Figure 2](assets/papers-explained-57-lima/fig-2.webp) | Sources of Training Data. |
+| ![Figure 3](assets/papers-explained-57-lima/fig-3.webp) | Human preference evaluation, comparing LIMA to 5 different baselines across 300 test prompts. |
+| ![Figure 4](assets/papers-explained-57-lima/fig-4.webp) | Preference evaluation using GPT-4 as the annotator, given the same instructions provided to humans. |
+| ![Figure 5](assets/papers-explained-57-lima/fig-5.webp) | Analysis of dialogue turns averaged over 10 test chats. |
 ## Related
 
 - [[Papers Explained Corpus]]

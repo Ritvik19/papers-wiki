@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-20_Papers-Explained-189--Proofread-4e1fe4eccf01.html`
+- Source file: `raw/2024-08-20_Papers-Explained-189--Proofread-4e1fe4eccf01.md`
 - Source title: Papers Explained 189: Proofread
 - Published: 2024-08-20
 - Canonical: [https://medium.com/@ritvik19/papers-explained-189-proofread-4e1fe4eccf01](https://medium.com/@ritvik19/papers-explained-189-proofread-4e1fe4eccf01)
@@ -127,14 +127,14 @@ Proofread: Fixes All Errors with One Tap [2406.04523](https://arxiv.org/abs/2406
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-20_Papers-Explained-189--Proofread-4e1fe4eccf01.html`); local copies under `wiki/assets/papers-explained-189-proofread/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-20_Papers-Explained-189--Proofread-4e1fe4eccf01.md`); local copies under `wiki/assets/papers-explained-189-proofread/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-189-proofread/fig-1.png) | Paper title — **Proofread: Fixes All Errors with One Tap** (Google). |
-| ![Figure 2](assets/papers-explained-189-proofread/fig-2.png) | **Training stack** — PTM → instruction → rewrite → proofread → **RLAIF**; data sources (synthetic errors, Gboard fixes, web, pairwise) and filters feed each stage. |
-| ![Figure 3](assets/papers-explained-189-proofread/fig-3.png) | **Ambiguous correction** example — noisy **Source** line vs two valid **Reference** paraphrases (“sir” vs “sister”). |
-| ![Figure 4](assets/papers-explained-189-proofread/fig-4.png) | **PaLM2-XS** ablations **M0–M6** — EM/NEM/Good/Bad/Diff/**ERROR**% as rewrite / proofread / RL reward variants are stacked. |
+| ![Figure 1](assets/papers-explained-189-proofread/fig-1.webp) | Paper title — **Proofread: Fixes All Errors with One Tap** (Google). |
+| ![Figure 2](assets/papers-explained-189-proofread/fig-2.webp) | **Training stack** — PTM → instruction → rewrite → proofread → **RLAIF**; data sources (synthetic errors, Gboard fixes, web, pairwise) and filters feed each stage. |
+| ![Figure 3](assets/papers-explained-189-proofread/fig-3.webp) | **Ambiguous correction** example — noisy **Source** line vs two valid **Reference** paraphrases (“sir” vs “sister”). |
+| ![Figure 4](assets/papers-explained-189-proofread/fig-4.webp) | **PaLM2-XS** ablations **M0–M6** — EM/NEM/Good/Bad/Diff/**ERROR**% as rewrite / proofread / RL reward variants are stacked. |
 ## Related
 
 - [[Papers Explained Corpus]]

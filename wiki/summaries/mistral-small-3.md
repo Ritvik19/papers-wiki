@@ -1,6 +1,6 @@
 # Mistral Small 3
 
-**Source**: `raw/mistral-small-3/full-article.html` (224 KB), `raw/mistral-small-3/full-article.md` (markdown view)  
+**Source**: `raw/mistral-small-3/full-article.md` (224 KB), `raw/mistral-small-3/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/mistral-small-3/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -28,15 +28,15 @@ Third-party blind human evals on 1k+ coding and generalist prompts favor Mistral
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/mistral-small-3/fig-1.png) | Performance vs. cost/latency ("up and to the left" efficiency plot) | — |
-| ![fig-2](../assets/mistral-small-3/fig-2.png) | Human evaluation win rates vs. competitors | — |
-| ![fig-3](../assets/mistral-small-3/fig-3.png) | Instruct model: general knowledge benchmarks | — |
-| ![fig-4](../assets/mistral-small-3/fig-4.png) | Instruct model: code and math benchmarks | — |
-| ![fig-5](../assets/mistral-small-3/fig-5.png) | Instruct model: instruction-following benchmarks | — |
-| ![fig-6](../assets/mistral-small-3/fig-6.png) | Pretrained base model benchmark comparison | — |
-| ![fig-7](../assets/mistral-small-3/fig-7.png) | Pretrained MMLU and intermediate benchmarks | — |
+| ![fig-1](../assets/mistral-small-3/fig-1.webp) | Performance vs. cost/latency ("up and to the left" efficiency plot) | — |
+| ![fig-2](../assets/mistral-small-3/fig-2.webp) | Human evaluation win rates vs. competitors | — |
+| ![fig-3](../assets/mistral-small-3/fig-3.webp) | Instruct model: general knowledge benchmarks | — |
+| ![fig-4](../assets/mistral-small-3/fig-4.webp) | Instruct model: code and math benchmarks | — |
+| ![fig-5](../assets/mistral-small-3/fig-5.webp) | Instruct model: instruction-following benchmarks | — |
+| ![fig-6](../assets/mistral-small-3/fig-6.webp) | Pretrained base model benchmark comparison | — |
+| ![fig-7](../assets/mistral-small-3/fig-7.webp) | Pretrained MMLU and intermediate benchmarks | — |
 
-![Efficiency and human-eval overview](../assets/mistral-small-3/fig-1.png)
+![Efficiency and human-eval overview](../assets/mistral-small-3/fig-1.webp)
 
 ## Entities
 

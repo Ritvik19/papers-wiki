@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-06_Papers-Explained-176--Smol-LM-a166d5f1facc.html`
+- Source file: `raw/2024-08-06_Papers-Explained-176--Smol-LM-a166d5f1facc.md`
 - Source title: Papers Explained 176: Smol LM
 - Published: 2024-08-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-176-smol-lm-a166d5f1facc](https://medium.com/@ritvik19/papers-explained-176-smol-lm-a166d5f1facc)
@@ -298,36 +298,36 @@ Recommended Reading [Small LLMs](https://ritvik19.medium.com/list/small-llms-411
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-06_Papers-Explained-176--Smol-LM-a166d5f1facc.html`); local copies under `wiki/assets/papers-explained-176-smol-lm/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-06_Papers-Explained-176--Smol-LM-a166d5f1facc.md`); local copies under `wiki/assets/papers-explained-176-smol-lm/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-176-smol-lm/fig-1.png) | Blog header: **SmolLM** — blazingly fast and remarkably powerful (July 2024). |
-| ![Figure 2](assets/papers-explained-176-smol-lm/fig-2.png) | **FineWeb-Edu** vs other web corpora: aggregate **8-task** score, **MMLU** data efficiency, **ARC** data efficiency (three curves each). |
-| ![Figure 3](assets/papers-explained-176-smol-lm/fig-3.png) | **Python-Edu** filtering: 1.8B models on **HumanEval** vs training iteration for score ≥4+ vs 3+ vs unfiltered. |
-| ![Figure 4](assets/papers-explained-176-smol-lm/fig-4.png) | **SmolLM-Corpus** mixture pie: FineWeb-Edu (70%), Cosmopedia v2, Python-Edu, OpenWebMath, StackOverflow, Deepmindmath. |
-| ![Figure 5](assets/papers-explained-176-smol-lm/fig-5.png) | **Architecture / training** table: SmolLM-135M / 360M / 1.7B (layers, GQA heads, dims, LR, batch). |
-| ![Figure 6](assets/papers-explained-176-smol-lm/fig-6.png) | **Pretrained** SmolLM vs SLM baselines: MMLU, TriviaQA, ARC, PIQA, HellaSwag, OBQA, Winogrande — by **&lt;200M / &lt;500M / &lt;2B** tiers. |
-| ![Figure 7](assets/papers-explained-176-smol-lm/fig-7.png) | **HumanEval Pass@1** ladder: SmolLM sizes vs Qwen / Phi-1.5 / OLMo. |
-| ![Figure 8](assets/papers-explained-176-smol-lm/fig-8.png) | Same **SLM benchmark grid** as adjacent figure: per-task scores emphasizing SmolLM within each parameter bracket. |
-| ![Figure 9](assets/papers-explained-176-smol-lm/fig-9.png) | **IFEval** (prompt strict accuracy): SmolLM-Instruct sizes vs Qwen2-Instruct. |
-| ![Figure 10](assets/papers-explained-176-smol-lm/fig-10.png) | **SmolLM2 ecosystem**: pretrain mix (Cosmopedia, FineWeb-Edu, Stack-Edu, FineMath, DCLM) → base sizes → **SmolTalk** + UltraFeedback → **SmolVLM** branch. |
-| ![Figure 11](assets/papers-explained-176-smol-lm/fig-11.png) | **SmolLM2 base** vs Llama-1B / Qwen2.5 / prior SmolLM on HellaSwag, ARC, PIQA, MMLU-Pro, CSQA, TriviaQA, Winogrande, OpenBookQA, GSM8K. |
-| ![Figure 12](assets/papers-explained-176-smol-lm/fig-12.png) | **SmolLM2-Instruct** vs v1 and Qwen/Llama on IFEval, MT-Bench, OpenRewrite, HellaSwag, ARC, PIQA, MMLU-Pro, BBH, GSM8K. |
-| ![Figure 13](assets/papers-explained-176-smol-lm/fig-13.jpeg) | **SmolVLM training data** table: captioning, VQA, OCR/doc, charts, tables, reasoning, screenshot-to-code, text-only mix (%). |
-| ![Figure 14](assets/papers-explained-176-smol-lm/fig-14.png) | **SmolVLM** vs Qwen2-VL / InternVL2 / PaliGemma / moondream / MiniCPM / MM1.5: MMMU, MathVista, MMStar, DocVQA, TextVQA + **min GPU RAM**. |
-| ![Figure 15](assets/papers-explained-176-smol-lm/fig-15.png) | **SmolVLM-256M/500M/2.2B** vs legacy **Idefics 80B** on OCRBench, TextVQA, DocVQA, ChartQA, AI2D, MathVista, MMStar, MMMU, ScienceQA. |
-| ![Figure 16](assets/papers-explained-176-smol-lm/fig-16.png) | **SmolLM3 anatomy**: GQA, intra-document mask, **NoPE**, no weight decay on embeddings, Llama 3.2 tokenizer + **3B-scale** train hyperparams. |
-| ![Figure 17](assets/papers-explained-176-smol-lm/fig-17.png) | **11T pretraining recipe**: three phases (web/code/math bars) with dataset names + **LR** warmup / stable / decay sketch. |
-| ![Figure 18](assets/papers-explained-176-smol-lm/fig-18.png) | **Long context** extension: 4k base → 32k / 64k RoPE scaling (+50B tokens each) → **YaRN** for long inference context. |
-| ![Figure 19](assets/papers-explained-176-smol-lm/fig-19.png) | **Post-training flow**: pretrained+long context → mid-training (OpenThoughts/Nemotron) → SFT → **APO** → model soup → **90/10 merge** with base for long context recovery. |
-| ![Figure 20](assets/papers-explained-176-smol-lm/fig-20.png) | **Synthetic SFT** for dual mode: Qwen3-32B adds **reasoning traces**; parallel **strip** reasoning for non-thinking variant. |
-| ![Figure 21](assets/papers-explained-176-smol-lm/fig-21.png) | **Synthetic preferences** for APO: same prompt through Qwen3 **32B** (chosen) vs **0.6B** (rejected). |
-| ![Figure 22](assets/papers-explained-176-smol-lm/fig-22.png) | **DPO implicit reward**: \(r_\theta(x,y)=\beta \log \frac{\pi_\theta(y|x)}{\pi_{\text{ref}}(y|x)}\). |
-| ![Figure 23](assets/papers-explained-176-smol-lm/fig-23.png) | **DPO loss** \(\mathcal{L}_{\text{DPO}} = -\log \sigma(r_\theta(x,y_w)-r_\theta(x,y_l))\). |
-| ![Figure 24](assets/papers-explained-176-smol-lm/fig-24.png) | **APO** (Anchored Preference Optimization) loss \(\mathcal{L}_{\text{APO}}\) in terms of sigmoid rewards on chosen vs rejected. |
-| ![Figure 25](assets/papers-explained-176-smol-lm/fig-25.png) | **Base model** comparison: **SmolLM2 1.7B** vs Llama3.2 3B, Qwen2.5 3B, Granite 3 8B — knowledge/reasoning, math/code, multilingual, **RULER 64k**. |
-| ![Figure 26](assets/papers-explained-176-smol-lm/fig-26.png) | **SmolLM3-3B** vs Qwen3 / Qwen2.5 / Llama3.1 on AIME, GSM-Plus, LiveCodeBench, GPQA, IFEval, MixEval, BFCL, Global MMLU (**thinking** vs **no thinking**). |
+| ![Figure 1](assets/papers-explained-176-smol-lm/fig-1.webp) | Blog header: **SmolLM** — blazingly fast and remarkably powerful (July 2024). |
+| ![Figure 2](assets/papers-explained-176-smol-lm/fig-2.webp) | **FineWeb-Edu** vs other web corpora: aggregate **8-task** score, **MMLU** data efficiency, **ARC** data efficiency (three curves each). |
+| ![Figure 3](assets/papers-explained-176-smol-lm/fig-3.webp) | **Python-Edu** filtering: 1.8B models on **HumanEval** vs training iteration for score ≥4+ vs 3+ vs unfiltered. |
+| ![Figure 4](assets/papers-explained-176-smol-lm/fig-4.webp) | **SmolLM-Corpus** mixture pie: FineWeb-Edu (70%), Cosmopedia v2, Python-Edu, OpenWebMath, StackOverflow, Deepmindmath. |
+| ![Figure 5](assets/papers-explained-176-smol-lm/fig-5.webp) | **Architecture / training** table: SmolLM-135M / 360M / 1.7B (layers, GQA heads, dims, LR, batch). |
+| ![Figure 6](assets/papers-explained-176-smol-lm/fig-6.webp) | **Pretrained** SmolLM vs SLM baselines: MMLU, TriviaQA, ARC, PIQA, HellaSwag, OBQA, Winogrande — by **&lt;200M / &lt;500M / &lt;2B** tiers. |
+| ![Figure 7](assets/papers-explained-176-smol-lm/fig-7.webp) | **HumanEval Pass@1** ladder: SmolLM sizes vs Qwen / Phi-1.5 / OLMo. |
+| ![Figure 8](assets/papers-explained-176-smol-lm/fig-8.webp) | Same **SLM benchmark grid** as adjacent figure: per-task scores emphasizing SmolLM within each parameter bracket. |
+| ![Figure 9](assets/papers-explained-176-smol-lm/fig-9.webp) | **IFEval** (prompt strict accuracy): SmolLM-Instruct sizes vs Qwen2-Instruct. |
+| ![Figure 10](assets/papers-explained-176-smol-lm/fig-10.webp) | **SmolLM2 ecosystem**: pretrain mix (Cosmopedia, FineWeb-Edu, Stack-Edu, FineMath, DCLM) → base sizes → **SmolTalk** + UltraFeedback → **SmolVLM** branch. |
+| ![Figure 11](assets/papers-explained-176-smol-lm/fig-11.webp) | **SmolLM2 base** vs Llama-1B / Qwen2.5 / prior SmolLM on HellaSwag, ARC, PIQA, MMLU-Pro, CSQA, TriviaQA, Winogrande, OpenBookQA, GSM8K. |
+| ![Figure 12](assets/papers-explained-176-smol-lm/fig-12.webp) | **SmolLM2-Instruct** vs v1 and Qwen/Llama on IFEval, MT-Bench, OpenRewrite, HellaSwag, ARC, PIQA, MMLU-Pro, BBH, GSM8K. |
+| ![Figure 13](assets/papers-explained-176-smol-lm/fig-13.webp) | **SmolVLM training data** table: captioning, VQA, OCR/doc, charts, tables, reasoning, screenshot-to-code, text-only mix (%). |
+| ![Figure 14](assets/papers-explained-176-smol-lm/fig-14.webp) | **SmolVLM** vs Qwen2-VL / InternVL2 / PaliGemma / moondream / MiniCPM / MM1.5: MMMU, MathVista, MMStar, DocVQA, TextVQA + **min GPU RAM**. |
+| ![Figure 15](assets/papers-explained-176-smol-lm/fig-15.webp) | **SmolVLM-256M/500M/2.2B** vs legacy **Idefics 80B** on OCRBench, TextVQA, DocVQA, ChartQA, AI2D, MathVista, MMStar, MMMU, ScienceQA. |
+| ![Figure 16](assets/papers-explained-176-smol-lm/fig-16.webp) | **SmolLM3 anatomy**: GQA, intra-document mask, **NoPE**, no weight decay on embeddings, Llama 3.2 tokenizer + **3B-scale** train hyperparams. |
+| ![Figure 17](assets/papers-explained-176-smol-lm/fig-17.webp) | **11T pretraining recipe**: three phases (web/code/math bars) with dataset names + **LR** warmup / stable / decay sketch. |
+| ![Figure 18](assets/papers-explained-176-smol-lm/fig-18.webp) | **Long context** extension: 4k base → 32k / 64k RoPE scaling (+50B tokens each) → **YaRN** for long inference context. |
+| ![Figure 19](assets/papers-explained-176-smol-lm/fig-19.webp) | **Post-training flow**: pretrained+long context → mid-training (OpenThoughts/Nemotron) → SFT → **APO** → model soup → **90/10 merge** with base for long context recovery. |
+| ![Figure 20](assets/papers-explained-176-smol-lm/fig-20.webp) | **Synthetic SFT** for dual mode: Qwen3-32B adds **reasoning traces**; parallel **strip** reasoning for non-thinking variant. |
+| ![Figure 21](assets/papers-explained-176-smol-lm/fig-21.webp) | **Synthetic preferences** for APO: same prompt through Qwen3 **32B** (chosen) vs **0.6B** (rejected). |
+| ![Figure 22](assets/papers-explained-176-smol-lm/fig-22.webp) | **DPO implicit reward**: \(r_\theta(x,y)=\beta \log \frac{\pi_\theta(y|x)}{\pi_{\text{ref}}(y|x)}\). |
+| ![Figure 23](assets/papers-explained-176-smol-lm/fig-23.webp) | **DPO loss** \(\mathcal{L}_{\text{DPO}} = -\log \sigma(r_\theta(x,y_w)-r_\theta(x,y_l))\). |
+| ![Figure 24](assets/papers-explained-176-smol-lm/fig-24.webp) | **APO** (Anchored Preference Optimization) loss \(\mathcal{L}_{\text{APO}}\) in terms of sigmoid rewards on chosen vs rejected. |
+| ![Figure 25](assets/papers-explained-176-smol-lm/fig-25.webp) | **Base model** comparison: **SmolLM2 1.7B** vs Llama3.2 3B, Qwen2.5 3B, Granite 3 8B — knowledge/reasoning, math/code, multilingual, **RULER 64k**. |
+| ![Figure 26](assets/papers-explained-176-smol-lm/fig-26.webp) | **SmolLM3-3B** vs Qwen3 / Qwen2.5 / Llama3.1 on AIME, GSM-Plus, LiveCodeBench, GPQA, IFEval, MixEval, BFCL, Global MMLU (**thinking** vs **no thinking**). |
 ## HF Blog Cross-References
 
 These five Hugging Face blog posts are the primary sources this page already synthesizes above (SmolLM/v2, SmolVLM/Jan-2025 update, SmolVLM2, and SmolLM3 sections). No separate summary pages were created for them:

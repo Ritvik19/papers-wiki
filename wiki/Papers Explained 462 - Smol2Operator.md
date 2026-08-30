@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-09-26_Papers-Explained-462--Smol2Operator-3eb931dc6aa6.html`
+- Source file: `raw/2025-09-26_Papers-Explained-462--Smol2Operator-3eb931dc6aa6.md`
 - Source title: Papers Explained 462: Smol2Operator
 - Published: 2025-09-26
 - Canonical: [https://medium.com/@ritvik19/papers-explained-462-smol2operator-3eb931dc6aa6](https://medium.com/@ritvik19/papers-explained-462-smol2operator-3eb931dc6aa6)
@@ -255,13 +255,13 @@ The two-phase training was reproduced on a much smaller VLM (nanoVLM-460M). Desp
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-09-26_Papers-Explained-462--Smol2Operator-3eb931dc6aa6.html`); local copies under `wiki/assets/papers-explained-462-smol2operator/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-09-26_Papers-Explained-462--Smol2Operator-3eb931dc6aa6.md`); local copies under `wiki/assets/papers-explained-462-smol2operator/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-462-smol2operator/fig-1.png) | Title card: Smol2Operator. |
-| ![Figure 2](assets/papers-explained-462-smol2operator/fig-2.png) | Baseline on HuggingFaceTB/SmolVLM2–2.2B-Instruct (400k samples, aguvis-stage-1). Higher is better. |
-| ![Figure 3](assets/papers-explained-462-smol2operator/fig-3.png) | Starting from the Phase 1 checkpoint, the model was fine-tuned for two epochs on smolagents/aguvis-stage-2. |
+| ![Figure 1](assets/papers-explained-462-smol2operator/fig-1.webp) | Title card: Smol2Operator. |
+| ![Figure 2](assets/papers-explained-462-smol2operator/fig-2.webp) | Baseline on HuggingFaceTB/SmolVLM2–2.2B-Instruct (400k samples, aguvis-stage-1). Higher is better. |
+| ![Figure 3](assets/papers-explained-462-smol2operator/fig-3.webp) | Starting from the Phase 1 checkpoint, the model was fine-tuned for two epochs on smolagents/aguvis-stage-2. |
 ## Related
 
 - [[Papers Explained Corpus]]

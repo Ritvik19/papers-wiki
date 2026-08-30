@@ -1,6 +1,6 @@
 # Papers Explained: SFT Conflicts, RL Coexists
 
-**Source**: `raw/2026-08-30_Papers-Explained--SFT-Conflicts--RL-Coexists-1ecd4a2d9bd8.html`  
+**Source**: `raw/2026-08-30_Papers-Explained--SFT-Conflicts--RL-Coexists-1ecd4a2d9bd8.md`  
 **Paper**: https://arxiv.org/abs/2608.03573  
 **Ingested**: 2026-08-30  
 **Tags**: #summary
@@ -9,7 +9,7 @@
 
 This paper investigates the parametric and theoretical mechanisms governing multi-task reasoning post-training in large language models, comparing **Supervised Fine-Tuning (SFT)** with **Reinforcement Learning (RL)** using GRPO across mathematics, science, coding, and logical reasoning domains. The authors demonstrate that SFT suffers from severe task conflicts and catastrophic performance collapse in multi-stage training (averaging -23.1% below the base model across benchmarks), whereas RL exhibits robust and cumulative multi-task performance growth (+24.9% in multi-stage training and +12.6% in mixed-data training). In single-task training, SFT degrades untrained capabilities by an average of -5.1% while improving the target task (+4.0%), whereas RL improves the target task (+6.8%) while exerting a positive transfer (+2.3%) on untrained tasks, demonstrating **task coexistence**.
 
-![Papers Explained: SFT Conflicts, RL Coexists banner](../assets/papers-explained-sft-conflicts-rl-coexists/fig-1.png)
+![Papers Explained: SFT Conflicts, RL Coexists banner](../assets/papers-explained-sft-conflicts-rl-coexists/fig-1.webp)
 
 ### Parameter Dynamics and Orthogonality
 
@@ -17,7 +17,7 @@ Empirical analysis of parameter update vectors ($\Delta W_i$) reveals two fundam
 1. **Magnitude and Sparsity**: RL parameter updates are minimal and sparse. The average $L_2$ norm of $\Delta W$ for RL is $\approx 3 \times 10^{-2}$, compared to $7.4$ for SFT (over two orders of magnitude smaller). Only ~20% of parameters in RL have update magnitudes $> 10^{-5}$, whereas 93% of parameters change in SFT.
 2. **Subspace Orthogonality**: The pairwise cosine similarity of parameter updates across distinct tasks in RL is negligible ($\approx 10^{-5}$), indicating that task updates occupy mutually orthogonal subspaces. In contrast, SFT updates exhibit high directional overlap (cosine similarity $0.1$ to $1.0$) and occasional opposing directions, leading to acute parameter overwrite and interference.
 
-![Analysis of Parameter Update Dynamics across SFT and RL](../assets/papers-explained-sft-conflicts-rl-coexists/fig-4.png)
+![Analysis of Parameter Update Dynamics across SFT and RL](../assets/papers-explained-sft-conflicts-rl-coexists/fig-4.webp)
 
 ### Theoretical Foundations: Norm-Limited vs. Variance-Limited Interference
 
@@ -26,7 +26,7 @@ The paper formalizes why RL gradients avoid inter-task interference:
 - **Advantage Filtering Mechanism**: The zero-sum property of standardized advantages ($\sum_{k=1}^G \hat{A}_{i,k}(x) = 0$) algebraically subtracts the prompt-level mean gradient direction $\bar{S}_i(x)$, ensuring RL updates depend strictly on intra-group residual variation $\delta S_{i,k}(x)$. SFT retains dense common-mode directions that clash across data distributions.
 - **Interference Upper Bounds (Theorem 4.5)**: Under score function norm bound $M_i^2$ and residual variance bound $V_i^2$, expected gradient interference $\mathbb{E}[\langle g_i, g_j \rangle]$ is **norm-limited** in SFT ($\le M_i M_j$) and **variance-limited** in RL ($\le \frac{V_i V_j}{G}$), which shrinks with group size $G$ and contracts further as the policy converges.
 
-![Theorem 4.5 Upper Bounds on Gradient Interference](../assets/papers-explained-sft-conflicts-rl-coexists/fig-12.png)
+![Theorem 4.5 Upper Bounds on Gradient Interference](../assets/papers-explained-sft-conflicts-rl-coexists/fig-12.webp)
 
 ### Parallel-RL
 
@@ -35,7 +35,7 @@ Because task update vectors occupy approximately orthogonal subspaces ($\langle 
 - **Sparsification**: Merging with TIES or SVD rank-1 retains 98% and 96% of single-task performance, respectively.
 - **Adapted Parallel-RL**: Brief post-merge adaptation using only 5% of training samples achieves the highest accuracy (+9.4% over base model), outperforming single-task models (102.8% retention) with minimal compute overhead.
 
-![Accuracy on different tasks under Parallel-RL strategies](../assets/papers-explained-sft-conflicts-rl-coexists/fig-13.png)
+![Accuracy on different tasks under Parallel-RL strategies](../assets/papers-explained-sft-conflicts-rl-coexists/fig-13.webp)
 
 ## Key Claims
 
@@ -49,19 +49,19 @@ Because task update vectors occupy approximately orthogonal subspaces ($\langle 
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/papers-explained-sft-conflicts-rl-coexists/fig-1.png) | Papers Explained overview banner: SFT Conflicts, RL Coexists. | Overview |
-| ![fig-2](../assets/papers-explained-sft-conflicts-rl-coexists/fig-2.png) | Accuracy (%) of SFT and RL under multi-stage vs. mixed-data training on DeepSeek-R1-Distill-Qwen models. | Experiments |
-| ![fig-3](../assets/papers-explained-sft-conflicts-rl-coexists/fig-3.png) | Single-task training generalization: SFT task degradation vs. RL task coexistence across math, science, code, and logic. | Experiments |
-| ![fig-4](../assets/papers-explained-sft-conflicts-rl-coexists/fig-4.png) | Parameter update dynamics: $L_2$ norm magnitude and pairwise inter-task cosine similarity for SFT vs. RL. | Parameter Dynamics |
-| ![fig-5](../assets/papers-explained-sft-conflicts-rl-coexists/fig-5.png) | Expected gradient formulations for off-policy SFT vs. on-policy RL with advantage weighting. | Theory |
-| ![fig-6](../assets/papers-explained-sft-conflicts-rl-coexists/fig-6.png) | Empirical GRPO gradient formulation with standardized advantage $\hat{A}_{i,k}(x)$ and score function $S_{i,k}(x)$. | Theory |
-| ![fig-7](../assets/papers-explained-sft-conflicts-rl-coexists/fig-7.png) | Multi-task gradient interference formulation in Supervised Fine-Tuning. | Theory |
-| ![fig-8](../assets/papers-explained-sft-conflicts-rl-coexists/fig-8.png) | Multi-task gradient interference formulation in Reinforcement Learning. | Theory |
-| ![fig-9](../assets/papers-explained-sft-conflicts-rl-coexists/fig-9.png) | Decomposition of RL gradient interference into intra-group residual score functions via zero-sum advantage centering. | Theory |
-| ![fig-10](../assets/papers-explained-sft-conflicts-rl-coexists/fig-10.png) | Assumption 4.4: SFT expert score function norm bound ($M_i^2$). | Theory |
-| ![fig-11](../assets/papers-explained-sft-conflicts-rl-coexists/fig-11.png) | Assumption 4.4: RL intra-group residual score function variance bound ($V_i^2$). | Theory |
-| ![fig-12](../assets/papers-explained-sft-conflicts-rl-coexists/fig-12.png) | Theorem 4.5: Upper bounds on expected gradient inner products for SFT vs. GRPO RL. | Theory |
-| ![fig-13](../assets/papers-explained-sft-conflicts-rl-coexists/fig-13.png) | Accuracy (%) across reasoning tasks for Naive, Sparse (TIES, SVD), and Adapted Parallel-RL. | Parallel-RL |
+| ![fig-1](../assets/papers-explained-sft-conflicts-rl-coexists/fig-1.webp) | Papers Explained overview banner: SFT Conflicts, RL Coexists. | Overview |
+| ![fig-2](../assets/papers-explained-sft-conflicts-rl-coexists/fig-2.webp) | Accuracy (%) of SFT and RL under multi-stage vs. mixed-data training on DeepSeek-R1-Distill-Qwen models. | Experiments |
+| ![fig-3](../assets/papers-explained-sft-conflicts-rl-coexists/fig-3.webp) | Single-task training generalization: SFT task degradation vs. RL task coexistence across math, science, code, and logic. | Experiments |
+| ![fig-4](../assets/papers-explained-sft-conflicts-rl-coexists/fig-4.webp) | Parameter update dynamics: $L_2$ norm magnitude and pairwise inter-task cosine similarity for SFT vs. RL. | Parameter Dynamics |
+| ![fig-5](../assets/papers-explained-sft-conflicts-rl-coexists/fig-5.webp) | Expected gradient formulations for off-policy SFT vs. on-policy RL with advantage weighting. | Theory |
+| ![fig-6](../assets/papers-explained-sft-conflicts-rl-coexists/fig-6.webp) | Empirical GRPO gradient formulation with standardized advantage $\hat{A}_{i,k}(x)$ and score function $S_{i,k}(x)$. | Theory |
+| ![fig-7](../assets/papers-explained-sft-conflicts-rl-coexists/fig-7.webp) | Multi-task gradient interference formulation in Supervised Fine-Tuning. | Theory |
+| ![fig-8](../assets/papers-explained-sft-conflicts-rl-coexists/fig-8.webp) | Multi-task gradient interference formulation in Reinforcement Learning. | Theory |
+| ![fig-9](../assets/papers-explained-sft-conflicts-rl-coexists/fig-9.webp) | Decomposition of RL gradient interference into intra-group residual score functions via zero-sum advantage centering. | Theory |
+| ![fig-10](../assets/papers-explained-sft-conflicts-rl-coexists/fig-10.webp) | Assumption 4.4: SFT expert score function norm bound ($M_i^2$). | Theory |
+| ![fig-11](../assets/papers-explained-sft-conflicts-rl-coexists/fig-11.webp) | Assumption 4.4: RL intra-group residual score function variance bound ($V_i^2$). | Theory |
+| ![fig-12](../assets/papers-explained-sft-conflicts-rl-coexists/fig-12.webp) | Theorem 4.5: Upper bounds on expected gradient inner products for SFT vs. GRPO RL. | Theory |
+| ![fig-13](../assets/papers-explained-sft-conflicts-rl-coexists/fig-13.webp) | Accuracy (%) across reasoning tasks for Naive, Sparse (TIES, SVD), and Adapted Parallel-RL. | Parallel-RL |
 
 ## Entities
 

@@ -1,6 +1,6 @@
 # NVIDIA Cosmos Reason 2 Brings Advanced Reasoning to Physical AI
 
-**Source**: `raw/cosmos-reason-2/full-article.html`, `raw/cosmos-reason-2/full-article.md`
+**Source**: `raw/cosmos-reason-2/full-article.md`, `raw/cosmos-reason-2/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

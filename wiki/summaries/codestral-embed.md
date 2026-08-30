@@ -1,6 +1,6 @@
 # Codestral Embed
 
-**Source**: `raw/codestral-embed/full-article.html` (224 KB), `raw/codestral-embed/full-article.md` (markdown view)  
+**Source**: `raw/codestral-embed/full-article.md` (224 KB), `raw/codestral-embed/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/codestral-embed/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

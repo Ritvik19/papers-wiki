@@ -1,6 +1,6 @@
 # Cohere Labs Launches Tiny Aya
 
-**Source**: `raw/cohere-labs-tiny-aya/full-article.html` (338 KB), `raw/cohere-labs-tiny-aya/full-article.md` (markdown view)  
+**Source**: `raw/cohere-labs-tiny-aya/full-article.md` (338 KB), `raw/cohere-labs-tiny-aya/full-article.md` (markdown view)  
 **URL**: https://cohere.com/blog/cohere-labs-tiny-aya  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -28,14 +28,14 @@ Training builds on the Aya initiative: tokenizer design for script efficiency, s
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/cohere-labs-tiny-aya/fig-1.png) | Instruction-tuned Tiny Aya benchmark aggregate vs. multilingual peers at this scale | — |
-| ![fig-2](../assets/cohere-labs-tiny-aya/fig-2.png) | Stable performance on CommonCrawl-underrepresented languages | — |
-| ![fig-3](../assets/cohere-labs-tiny-aya/fig-3.png) | Open-ended generation scores vs. model size (Aya lineage and Gemma baselines) | — |
-| ![fig-4](../assets/cohere-labs-tiny-aya/fig-4.png) | Tokenization efficiency (tokens per sequence on Flores; lower is better) | — |
-| ![fig-5](../assets/cohere-labs-tiny-aya/fig-5.png) | 67 post-training languages across five global regions | — |
-| ![fig-6](../assets/cohere-labs-tiny-aya/fig-6.png) | Regional specialization strength profiles (Earth, Fire, Water, Global) | — |
+| ![fig-1](../assets/cohere-labs-tiny-aya/fig-1.webp) | Instruction-tuned Tiny Aya benchmark aggregate vs. multilingual peers at this scale | — |
+| ![fig-2](../assets/cohere-labs-tiny-aya/fig-2.webp) | Stable performance on CommonCrawl-underrepresented languages | — |
+| ![fig-3](../assets/cohere-labs-tiny-aya/fig-3.webp) | Open-ended generation scores vs. model size (Aya lineage and Gemma baselines) | — |
+| ![fig-4](../assets/cohere-labs-tiny-aya/fig-4.webp) | Tokenization efficiency (tokens per sequence on Flores; lower is better) | — |
+| ![fig-5](../assets/cohere-labs-tiny-aya/fig-5.webp) | 67 post-training languages across five global regions | — |
+| ![fig-6](../assets/cohere-labs-tiny-aya/fig-6.webp) | Regional specialization strength profiles (Earth, Fire, Water, Global) | — |
 
-![Benchmark aggregate](../assets/cohere-labs-tiny-aya/fig-1.png)
+![Benchmark aggregate](../assets/cohere-labs-tiny-aya/fig-1.webp)
 
 ## Entities
 

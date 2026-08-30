@@ -1,6 +1,6 @@
 # A Framework for Frontier AI and the Dawning of a New Age
 
-**Source**: `raw/demis-hassabis-a-framework-for-frontier-ai/full-article.html`, `raw/demis-hassabis-a-framework-for-frontier-ai/full-article.md`  
+**Source**: `raw/demis-hassabis-a-framework-for-frontier-ai/full-article.md`, `raw/demis-hassabis-a-framework-for-frontier-ai/full-article.md`  
 **URL**: https://x.com/demishassabis/article/2076957440109625718  
 **Ingested**: 2026-08-23  
 **Tags**: #summary
@@ -29,9 +29,9 @@ Under the framework, models meeting dynamic benchmark criteria would be designat
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/demis-hassabis-a-framework-for-frontier-ai/fig-1.jpg) | Abstract banner artwork illustrating the transition into the AGI era | Article export |
+| ![fig-1](../assets/demis-hassabis-a-framework-for-frontier-ai/fig-1.webp) | Abstract banner artwork illustrating the transition into the AGI era | Article export |
 
-![Banner artwork](../assets/demis-hassabis-a-framework-for-frontier-ai/fig-1.jpg)
+![Banner artwork](../assets/demis-hassabis-a-framework-for-frontier-ai/fig-1.webp)
 
 ## Entities
 

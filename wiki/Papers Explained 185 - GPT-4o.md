@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-14_Papers-Explained-185--GPT-4o-a234bccfd662.html`
+- Source file: `raw/2024-08-14_Papers-Explained-185--GPT-4o-a234bccfd662.md`
 - Source title: Papers Explained 185: GPT-4o
 - Published: 2024-08-14
 - Canonical: [https://medium.com/@ritvik19/papers-explained-185-gpt-4o-a234bccfd662](https://medium.com/@ritvik19/papers-explained-185-gpt-4o-a234bccfd662)
@@ -131,22 +131,22 @@ Recommended Reading [GPT Models](https://ritvik19.medium.com/list/gpt-models-fa2
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-14_Papers-Explained-185--GPT-4o-a234bccfd662.html`); local copies under `wiki/assets/papers-explained-185-gpt-4o/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-14_Papers-Explained-185--GPT-4o-a234bccfd662.md`); local copies under `wiki/assets/papers-explained-185-gpt-4o/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-185-gpt-4o/fig-1.png) | Title card: GPT-4o. |
-| ![Figure 2](assets/papers-explained-185-gpt-4o/fig-2.png) | The key dataset components that contribute to GPT-4o’s capabilities are. |
-| ![Figure 3](assets/papers-explained-185-gpt-4o/fig-3.png) | Improved Reasoning — GPT-4o sets a new high-score of 88.7% on 0-shot COT MMLU (general knowledge questions). |
-| ![Figure 4](assets/papers-explained-185-gpt-4o/fig-4.png) | GPT-4o dramatically improves speech recognition performance over Whisper-v3 across all languages, particularly for lower-resourced... |
-| ![Figure 5](assets/papers-explained-185-gpt-4o/fig-5.png) | GPT-4o sets a new state-of-the-art on speech translation and outperforms Whisper-v3 on the MLS benchmark. |
-| ![Figure 6](assets/papers-explained-185-gpt-4o/fig-6.png) | GPT-4o achieves state-of-the-art performance on visual perception benchmarks. |
-| ![Figure 7](assets/papers-explained-185-gpt-4o/fig-7.png) | GPT-4o achieves state-of-the-art performance on visual perception benchmarks. |
-| ![Figure 8](assets/papers-explained-185-gpt-4o/fig-8.png) | Structured Outputs. |
-| ![Figure 9](assets/papers-explained-185-gpt-4o/fig-9.png) | To evaluate the model’s speech-to-speech capabilities, OpenAI used a text-to-speech (TTS) system called Voice Engine to convert text inputs... |
-| ![Figure 10](assets/papers-explained-185-gpt-4o/fig-10.png) | However, there are some limitations to this evaluation methodology, including. |
-| ![Figure 11](assets/papers-explained-185-gpt-4o/fig-11.png) | Risk identification, assessment and mitigation. |
-| ![Figure 12](assets/papers-explained-185-gpt-4o/fig-12.png) | The model supports text and vision in the API, with support for text, image, video, and audio inputs and outputs coming in the future. |
+| ![Figure 1](assets/papers-explained-185-gpt-4o/fig-1.webp) | Title card: GPT-4o. |
+| ![Figure 2](assets/papers-explained-185-gpt-4o/fig-2.webp) | The key dataset components that contribute to GPT-4o’s capabilities are. |
+| ![Figure 3](assets/papers-explained-185-gpt-4o/fig-3.webp) | Improved Reasoning — GPT-4o sets a new high-score of 88.7% on 0-shot COT MMLU (general knowledge questions). |
+| ![Figure 4](assets/papers-explained-185-gpt-4o/fig-4.webp) | GPT-4o dramatically improves speech recognition performance over Whisper-v3 across all languages, particularly for lower-resourced... |
+| ![Figure 5](assets/papers-explained-185-gpt-4o/fig-5.webp) | GPT-4o sets a new state-of-the-art on speech translation and outperforms Whisper-v3 on the MLS benchmark. |
+| ![Figure 6](assets/papers-explained-185-gpt-4o/fig-6.webp) | GPT-4o achieves state-of-the-art performance on visual perception benchmarks. |
+| ![Figure 7](assets/papers-explained-185-gpt-4o/fig-7.webp) | GPT-4o achieves state-of-the-art performance on visual perception benchmarks. |
+| ![Figure 8](assets/papers-explained-185-gpt-4o/fig-8.webp) | Structured Outputs. |
+| ![Figure 9](assets/papers-explained-185-gpt-4o/fig-9.webp) | To evaluate the model’s speech-to-speech capabilities, OpenAI used a text-to-speech (TTS) system called Voice Engine to convert text inputs... |
+| ![Figure 10](assets/papers-explained-185-gpt-4o/fig-10.webp) | However, there are some limitations to this evaluation methodology, including. |
+| ![Figure 11](assets/papers-explained-185-gpt-4o/fig-11.webp) | Risk identification, assessment and mitigation. |
+| ![Figure 12](assets/papers-explained-185-gpt-4o/fig-12.webp) | The model supports text and vision in the API, with support for text, image, video, and audio inputs and outputs coming in the future. |
 ## Related
 
 - [[Papers Explained Corpus]]

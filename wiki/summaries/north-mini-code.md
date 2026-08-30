@@ -1,6 +1,6 @@
 # Introducing North Mini Code
 
-**Source**: `raw/north-mini-code/full-article.html` (367 KB), `raw/north-mini-code/full-article.md`; `raw/introducing-north-mini-code/full-article.html` (178 KB), `raw/introducing-north-mini-code/full-article.md`  
+**Source**: `raw/north-mini-code/full-article.md` (367 KB), `raw/north-mini-code/full-article.md`; `raw/introducing-north-mini-code/full-article.md` (178 KB), `raw/introducing-north-mini-code/full-article.md`  
 **URLs**: https://cohere.com/blog/north-mini-code · https://huggingface.co/blog/CohereLabs/introducing-north-mini-code  
 **Ingested**: 2026-06-09  
 **Tags**: #summary
@@ -32,20 +32,20 @@ Architecturally, North Mini Code is a decoder-only sparse MoE Transformer: **128
 
 | Figure | Caption | Source |
 |--------|---------|--------|
-| ![fig-1](../assets/north-mini-code/fig-1.png) | Agentic coding benchmark comparison (Cohere blog) | Cohere blog |
-| ![fig-2](../assets/north-mini-code/fig-2.png) | Throughput and latency vs Devstral Small 2 | Cohere blog |
-| ![fig-1](../assets/introducing-north-mini-code/fig-1.png) | Benchmark results vs similar-size open models | HF technical post |
-| ![fig-2](../assets/introducing-north-mini-code/fig-2.png) | MoE decoder architecture (hybrid attention) | HF technical post |
-| ![fig-3](../assets/introducing-north-mini-code/fig-3.png) | Post-training pipeline (SFT + RLVR) | HF technical post |
-| ![fig-4](../assets/introducing-north-mini-code/fig-4.png) | Multi-harness exposure during stage-2 SFT | HF technical post |
-| ![fig-5](../assets/introducing-north-mini-code/fig-5.png) | Multi-environment RL learning curves | HF technical post |
-| ![fig-6](../assets/introducing-north-mini-code/fig-6.png) | Human pairwise preference vs SFT checkpoint | HF technical post |
+| ![fig-1](../assets/north-mini-code/fig-1.webp) | Agentic coding benchmark comparison (Cohere blog) | Cohere blog |
+| ![fig-2](../assets/north-mini-code/fig-2.webp) | Throughput and latency vs Devstral Small 2 | Cohere blog |
+| ![fig-1](../assets/introducing-north-mini-code/fig-1.webp) | Benchmark results vs similar-size open models | HF technical post |
+| ![fig-2](../assets/introducing-north-mini-code/fig-2.webp) | MoE decoder architecture (hybrid attention) | HF technical post |
+| ![fig-3](../assets/introducing-north-mini-code/fig-3.webp) | Post-training pipeline (SFT + RLVR) | HF technical post |
+| ![fig-4](../assets/introducing-north-mini-code/fig-4.webp) | Multi-harness exposure during stage-2 SFT | HF technical post |
+| ![fig-5](../assets/introducing-north-mini-code/fig-5.webp) | Multi-environment RL learning curves | HF technical post |
+| ![fig-6](../assets/introducing-north-mini-code/fig-6.webp) | Human pairwise preference vs SFT checkpoint | HF technical post |
 
-![Benchmark comparison](../assets/north-mini-code/fig-1.png)
+![Benchmark comparison](../assets/north-mini-code/fig-1.webp)
 
-![MoE architecture](../assets/introducing-north-mini-code/fig-2.png)
+![MoE architecture](../assets/introducing-north-mini-code/fig-2.webp)
 
-![RL learning curves](../assets/introducing-north-mini-code/fig-5.png)
+![RL learning curves](../assets/introducing-north-mini-code/fig-5.webp)
 
 ## Entities
 

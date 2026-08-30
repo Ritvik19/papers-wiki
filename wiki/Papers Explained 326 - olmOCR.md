@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-03-10_Papers-Explained-326--olmOCR-bc9158752901.html`
+- Source file: `raw/2025-03-10_Papers-Explained-326--olmOCR-bc9158752901.md`
 - Source title: Papers Explained 326: olmOCR
 - Published: 2025-03-10
 - Canonical: [https://medium.com/@ritvik19/papers-explained-326-olmocr-bc9158752901](https://medium.com/@ritvik19/papers-explained-326-olmocr-bc9158752901)
@@ -113,20 +113,20 @@ olmOCR: Unlocking Trillions of Tokens in PDFs with Vision Language Models [2502.
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-03-10_Papers-Explained-326--olmOCR-bc9158752901.html`); local copies under `wiki/assets/papers-explained-326-olmocr/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-03-10_Papers-Explained-326--olmOCR-bc9158752901.md`); local copies under `wiki/assets/papers-explained-326-olmocr/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-326-olmocr/fig-1.png) | Title card: olmOCR. |
-| ![Figure 2](assets/papers-explained-326-olmocr/fig-2.png) | Example of how document-anchoring works for a typical page. |
-| ![Figure 3](assets/papers-explained-326-olmocr/fig-3.png) | A PDF page image is presented to GPT-4o. |
-| ![Figure 4](assets/papers-explained-326-olmocr/fig-4.png) | Finally, GPT-4o is instructed to respond with structured output to requests. |
-| ![Figure 5](assets/papers-explained-326-olmocr/fig-5.png) | To generate the primary training dataset, 100,000 PDFs are sampled from an internal dataset of 240 million PDFs crawled from public... |
-| ![Figure 6](assets/papers-explained-326-olmocr/fig-6.png) | During fine-tuning, the prompt used for dataset labeling is slightly altered. |
-| ![Figure 7](assets/papers-explained-326-olmocr/fig-7.png) | Page-weighted alignment. |
-| ![Figure 8](assets/papers-explained-326-olmocr/fig-8.png) | Match-up between olmOCR and different models compared to the olmOCR-mix-0225 dataset. |
-| ![Figure 9](assets/papers-explained-326-olmocr/fig-9.png) | ELO ranking of olmOCR vs other popular PDF content extraction tools. |
-| ![Figure 10](assets/papers-explained-326-olmocr/fig-10.png) | Downstream Evaluation. |
+| ![Figure 1](assets/papers-explained-326-olmocr/fig-1.webp) | Title card: olmOCR. |
+| ![Figure 2](assets/papers-explained-326-olmocr/fig-2.webp) | Example of how document-anchoring works for a typical page. |
+| ![Figure 3](assets/papers-explained-326-olmocr/fig-3.webp) | A PDF page image is presented to GPT-4o. |
+| ![Figure 4](assets/papers-explained-326-olmocr/fig-4.webp) | Finally, GPT-4o is instructed to respond with structured output to requests. |
+| ![Figure 5](assets/papers-explained-326-olmocr/fig-5.webp) | To generate the primary training dataset, 100,000 PDFs are sampled from an internal dataset of 240 million PDFs crawled from public... |
+| ![Figure 6](assets/papers-explained-326-olmocr/fig-6.webp) | During fine-tuning, the prompt used for dataset labeling is slightly altered. |
+| ![Figure 7](assets/papers-explained-326-olmocr/fig-7.webp) | Page-weighted alignment. |
+| ![Figure 8](assets/papers-explained-326-olmocr/fig-8.webp) | Match-up between olmOCR and different models compared to the olmOCR-mix-0225 dataset. |
+| ![Figure 9](assets/papers-explained-326-olmocr/fig-9.webp) | ELO ranking of olmOCR vs other popular PDF content extraction tools. |
+| ![Figure 10](assets/papers-explained-326-olmocr/fig-10.webp) | Downstream Evaluation. |
 ## Related
 
 - [[Papers Explained Corpus]]

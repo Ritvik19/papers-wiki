@@ -1,6 +1,6 @@
 # Gemini 3
 
-**Source**: `raw/gemini-3/full-article.html`, `raw/gemini-3/full-article.md`; Also: `raw/gemini-3-collection/`, `raw/gemini-3-developers/`, `raw/gemini-3-gemini-app/`, `raw/gemini-3-search-ai-mode/`, `raw/gemini-3-pro-vision/`, `raw/gemini-3-deep-think-app/`, `raw/gemini-3-ai-mode-more-countries/`  
+**Source**: `raw/gemini-3/full-article.md`, `raw/gemini-3/full-article.md`; Also: `raw/gemini-3-collection/`, `raw/gemini-3-developers/`, `raw/gemini-3-gemini-app/`, `raw/gemini-3-search-ai-mode/`, `raw/gemini-3-pro-vision/`, `raw/gemini-3-deep-think-app/`, `raw/gemini-3-ai-mode-more-countries/`  
 **URL**: https://blog.google/products-and-platforms/products/gemini/gemini-3/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

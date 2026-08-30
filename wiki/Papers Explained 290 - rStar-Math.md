@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-01-17_Papers-Explained-290--rStar-Math-4b3317a2c2c6.html`
+- Source file: `raw/2025-01-17_Papers-Explained-290--rStar-Math-4b3317a2c2c6.md`
 - Source title: Papers Explained 290: rStar-Math
 - Published: 2025-01-17
 - Canonical: [https://medium.com/@ritvik19/papers-explained-290-rstar-math-4b3317a2c2c6](https://medium.com/@ritvik19/papers-explained-290-rstar-math-4b3317a2c2c6)
@@ -123,16 +123,16 @@ rStar-Math: Small LLMs Can Master Math Reasoning with Self-Evolved Deep Thinking
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-01-17_Papers-Explained-290--rStar-Math-4b3317a2c2c6.html`); local copies under `wiki/assets/papers-explained-290-rstar-math/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-01-17_Papers-Explained-290--rStar-Math-4b3317a2c2c6.md`); local copies under `wiki/assets/papers-explained-290-rstar-math/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-290-rstar-math/fig-1.png) | Title card: rStar-Math. |
-| ![Figure 2](assets/papers-explained-290-rstar-math/fig-2.png) | The method generates step-by-step verified reasoning trajectories with per-step Q-value annotations. |
-| ![Figure 3](assets/papers-explained-290-rstar-math/fig-3.png) | An example of Code-augmented CoT. |
-| ![Figure 4](assets/papers-explained-290-rstar-math/fig-4.png) | Valid steps are scored using a Process Preference Model (PPM) which assigns a Q-value q(s). |
-| ![Figure 5](assets/papers-explained-290-rstar-math/fig-5.png) | The results of rStar-Math and other frontier LLMs on the most challenging math benchmarks. |
-| ![Figure 6](assets/papers-explained-290-rstar-math/fig-6.png) | Reasoning performance under scaling up the test-time compute. |
+| ![Figure 1](assets/papers-explained-290-rstar-math/fig-1.webp) | Title card: rStar-Math. |
+| ![Figure 2](assets/papers-explained-290-rstar-math/fig-2.webp) | The method generates step-by-step verified reasoning trajectories with per-step Q-value annotations. |
+| ![Figure 3](assets/papers-explained-290-rstar-math/fig-3.webp) | An example of Code-augmented CoT. |
+| ![Figure 4](assets/papers-explained-290-rstar-math/fig-4.webp) | Valid steps are scored using a Process Preference Model (PPM) which assigns a Q-value q(s). |
+| ![Figure 5](assets/papers-explained-290-rstar-math/fig-5.webp) | The results of rStar-Math and other frontier LLMs on the most challenging math benchmarks. |
+| ![Figure 6](assets/papers-explained-290-rstar-math/fig-6.webp) | Reasoning performance under scaling up the test-time compute. |
 ## Related
 
 - [[Papers Explained Corpus]]

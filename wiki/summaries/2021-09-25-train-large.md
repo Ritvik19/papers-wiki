@@ -1,6 +1,6 @@
 # How to Train Really Large Models on Many GPUs?
 
-**Source**: `raw/2021-09-25-train-large/full-article.html` (HTML) and `raw/2021-09-25-train-large/full-article.md` (Markdown Sibling)  
+**Source**: `raw/2021-09-25-train-large/full-article.md` (HTML) and `raw/2021-09-25-train-large/full-article.md` (Markdown Sibling)  
 **Ingested**: 2026-05-21  
 **Tags**: #summary
 
@@ -61,23 +61,23 @@ Below is the mapping of all 17 figures extracted and mirrored from the canonical
 
 | Figure | Caption | Section |
 |--------|---------|---------|
-| ![fig-1](../assets/2021-09-25-train-large/fig-1.png) | PyTorch DDP execution flow and gradient bucketing pseudo code. | Data Parallelism |
-| ![fig-2](../assets/2021-09-25-train-large/fig-2.png) | Naive model parallelism vertical splitting causing severe idle "bubbles". | Model Parallelism |
-| ![fig-3](../assets/2021-09-25-train-large/fig-3.png) | GPipe pipeline parallelism microbatch scheduling with synchronous update. | Pipeline Parallelism |
-| ![fig-4](../assets/2021-09-25-train-large/fig-4.png) | PipeDream 1F1B (One Forward, One Backward) microbatch scheduling. | Pipeline Parallelism |
-| ![fig-5](../assets/2021-09-25-train-large/fig-5.png) | VGG16 speedup results across BSP, ASP, and PipeDream pipeline variations. | Pipeline Parallelism |
-| ![fig-6](../assets/2021-09-25-train-large/fig-6.png) | PipeDream-Flush scheduling with periodic pipeline flushes to save memory. | Pipeline Parallelism |
-| ![fig-7](../assets/2021-09-25-train-large/fig-7.png) | PipeDream-2BW double-buffered weight scheduling limiting weight versions to two. | Pipeline Parallelism |
-| ![fig-8](../assets/2021-09-25-train-large/fig-8.png) | Megatron-LM horizontal tensor parallelism sharding for MLP and Attention blocks. | Tensor Parallelism |
-| ![fig-9](../assets/2021-09-25-train-large/fig-9.png) | PTD-P interleaved 1F1B schedule reducing bubble sizes across multiple model chunks. | Tensor Parallelism |
-| ![fig-10](../assets/2021-09-25-train-large/fig-10.png) | Sparsely-Gated Mixture-of-Experts layer routing tokens to active experts. | Mixture-of-Experts (MoE) |
-| ![fig-11](../assets/2021-09-25-train-large/fig-11.png) | Test perplexity and throughput scaling with varying numbers of experts. | Mixture-of-Experts (MoE) |
-| ![fig-12](../assets/2021-09-25-train-large/fig-12.png) | GShard group-level top-2 gating with auxiliary load-balance loss pseudo code. | Mixture-of-Experts (MoE) |
-| ![fig-13](../assets/2021-09-25-train-large/fig-13.png) | Switch Transformer sparse switch FFN layer routing to exactly one expert. | Mixture-of-Experts (MoE) |
-| ![fig-14](../assets/2021-09-25-train-large/fig-14.png) | Switch Transformer sharding strategies (data, model, expert, and hybrid). | Mixture-of-Experts (MoE) |
-| ![fig-15](../assets/2021-09-25-train-large/fig-15.png) | Memory cost comparisons of activation sharing, in-place, and recomputation. | Activation Recomputation |
-| ![fig-16](../assets/2021-09-25-train-large/fig-16.png) | Mixed Precision Training workflow highlighting master weights and loss scaling. | Mixed Precision Training |
-| ![fig-17](../assets/2021-09-25-train-large/fig-17.png) | FP32 gradient exponent histogram showing underflow values lost in FP16. | Mixed Precision Training |
+| ![fig-1](../assets/2021-09-25-train-large/fig-1.webp) | PyTorch DDP execution flow and gradient bucketing pseudo code. | Data Parallelism |
+| ![fig-2](../assets/2021-09-25-train-large/fig-2.webp) | Naive model parallelism vertical splitting causing severe idle "bubbles". | Model Parallelism |
+| ![fig-3](../assets/2021-09-25-train-large/fig-3.webp) | GPipe pipeline parallelism microbatch scheduling with synchronous update. | Pipeline Parallelism |
+| ![fig-4](../assets/2021-09-25-train-large/fig-4.webp) | PipeDream 1F1B (One Forward, One Backward) microbatch scheduling. | Pipeline Parallelism |
+| ![fig-5](../assets/2021-09-25-train-large/fig-5.webp) | VGG16 speedup results across BSP, ASP, and PipeDream pipeline variations. | Pipeline Parallelism |
+| ![fig-6](../assets/2021-09-25-train-large/fig-6.webp) | PipeDream-Flush scheduling with periodic pipeline flushes to save memory. | Pipeline Parallelism |
+| ![fig-7](../assets/2021-09-25-train-large/fig-7.webp) | PipeDream-2BW double-buffered weight scheduling limiting weight versions to two. | Pipeline Parallelism |
+| ![fig-8](../assets/2021-09-25-train-large/fig-8.webp) | Megatron-LM horizontal tensor parallelism sharding for MLP and Attention blocks. | Tensor Parallelism |
+| ![fig-9](../assets/2021-09-25-train-large/fig-9.webp) | PTD-P interleaved 1F1B schedule reducing bubble sizes across multiple model chunks. | Tensor Parallelism |
+| ![fig-10](../assets/2021-09-25-train-large/fig-10.webp) | Sparsely-Gated Mixture-of-Experts layer routing tokens to active experts. | Mixture-of-Experts (MoE) |
+| ![fig-11](../assets/2021-09-25-train-large/fig-11.webp) | Test perplexity and throughput scaling with varying numbers of experts. | Mixture-of-Experts (MoE) |
+| ![fig-12](../assets/2021-09-25-train-large/fig-12.webp) | GShard group-level top-2 gating with auxiliary load-balance loss pseudo code. | Mixture-of-Experts (MoE) |
+| ![fig-13](../assets/2021-09-25-train-large/fig-13.webp) | Switch Transformer sparse switch FFN layer routing to exactly one expert. | Mixture-of-Experts (MoE) |
+| ![fig-14](../assets/2021-09-25-train-large/fig-14.webp) | Switch Transformer sharding strategies (data, model, expert, and hybrid). | Mixture-of-Experts (MoE) |
+| ![fig-15](../assets/2021-09-25-train-large/fig-15.webp) | Memory cost comparisons of activation sharing, in-place, and recomputation. | Activation Recomputation |
+| ![fig-16](../assets/2021-09-25-train-large/fig-16.webp) | Mixed Precision Training workflow highlighting master weights and loss scaling. | Mixed Precision Training |
+| ![fig-17](../assets/2021-09-25-train-large/fig-17.webp) | FP32 gradient exponent histogram showing underflow values lost in FP16. | Mixed Precision Training |
 
 ---
 

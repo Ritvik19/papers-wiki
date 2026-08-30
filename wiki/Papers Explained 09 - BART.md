@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-06_Papers-Explained-09--BART-7f56138175bd.html`
+- Source file: `raw/2023-02-06_Papers-Explained-09--BART-7f56138175bd.md`
 - Source title: Papers Explained 09: BART
 - Published: 2023-02-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-09-bart-7f56138175bd](https://medium.com/@ritvik19/papers-explained-09-bart-7f56138175bd)
@@ -78,14 +78,14 @@ BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generatio
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-06_Papers-Explained-09--BART-7f56138175bd.html`); local copies under `wiki/assets/papers-explained-09-bart/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-06_Papers-Explained-09--BART-7f56138175bd.md`); local copies under `wiki/assets/papers-explained-09-bart/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-09-bart/fig-1.png) | Title block of *BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension*. |
-| ![Figure 2](assets/papers-explained-09-bart/fig-2.png) | BART schematic vs BERT and GPT, showing bidirectional encoder + autoregressive decoder with corrupted-input reconstruction. |
-| ![Figure 3](assets/papers-explained-09-bart/fig-3.png) | Input noising transformations used in BART pretraining: token masking/deletion, text infilling, sentence permutation, and document rotation. |
-| ![Figure 4](assets/papers-explained-09-bart/fig-4.png) | Fine-tuning setups for BART on classification and machine translation with an added source encoder. |
+| ![Figure 1](assets/papers-explained-09-bart/fig-1.webp) | Title block of *BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension*. |
+| ![Figure 2](assets/papers-explained-09-bart/fig-2.webp) | BART schematic vs BERT and GPT, showing bidirectional encoder + autoregressive decoder with corrupted-input reconstruction. |
+| ![Figure 3](assets/papers-explained-09-bart/fig-3.webp) | Input noising transformations used in BART pretraining: token masking/deletion, text infilling, sentence permutation, and document rotation. |
+| ![Figure 4](assets/papers-explained-09-bart/fig-4.webp) | Fine-tuning setups for BART on classification and machine translation with an added source encoder. |
 ## Related
 
 - [[Papers Explained Corpus]]

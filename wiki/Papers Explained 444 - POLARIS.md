@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-09-02_Papers-Explained-444--POLARIS-d0384cf030c5.html`
+- Source file: `raw/2025-09-02_Papers-Explained-444--POLARIS-d0384cf030c5.md`
 - Source title: Papers Explained 444: POLARIS
 - Published: 2025-09-02
 - Canonical: [https://medium.com/@ritvik19/papers-explained-444-polaris-d0384cf030c5](https://medium.com/@ritvik19/papers-explained-444-polaris-d0384cf030c5)
@@ -185,24 +185,24 @@ The reward function used in this work is the same as DeepscaleR. The selection o
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-09-02_Papers-Explained-444--POLARIS-d0384cf030c5.html`); local copies under `wiki/assets/papers-explained-444-polaris/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-09-02_Papers-Explained-444--POLARIS-d0384cf030c5.md`); local copies under `wiki/assets/papers-explained-444-polaris/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-444-polaris/fig-1.png) | Title card: POLARIS. |
-| ![Figure 2](assets/papers-explained-444-polaris/fig-2.png) | Using the Deepseek-R1-Distill-Qwen-7B model,distinct training sets are created by altering difficulty. |
-| ![Figure 3](assets/papers-explained-444-polaris/fig-3.png) | Model performance across the three above mentioned conditions. |
-| ![Figure 4](assets/papers-explained-444-polaris/fig-4.png) | Data Difficulty Distribution Shifts (Left: Before Training, Right: After-Training; Top: Qwen3–4B, Bottom: Deepseek-R1-distill-Qwen-7B). |
-| ![Figure 5](assets/papers-explained-444-polaris/fig-5.png) | Rollout diversity with sampling temperature on R1-Distill-Qwen and Qwen3 across different model sizes. |
-| ![Figure 6](assets/papers-explained-444-polaris/fig-6.png) | Model performance with sampling temperature on R1-Distill-Qwen and Qwen3 across different model sizes. |
-| ![Figure 7](assets/papers-explained-444-polaris/fig-7.png) | To guide temperature selection, POLARIS categorizes temperature settings into three zones. |
-| ![Figure 8](assets/papers-explained-444-polaris/fig-8.png) | The RGZ and CEZ shift towards the high-temperature region following 800 steps of RL training. |
-| ![Figure 9](assets/papers-explained-444-polaris/fig-9.png) | A significant challenge in developing advanced reasoning models is the cost of long-context training. |
-| ![Figure 10](assets/papers-explained-444-polaris/fig-10.png) | Polaris incorporates a “train shorter, test longer” approach. |
-| ![Figure 11](assets/papers-explained-444-polaris/fig-11.png) | Training long CoT models with Reinforcement Learning (RL) is slow due to excessively long outputs. |
-| ![Figure 12](assets/papers-explained-444-polaris/fig-12.png) | An illustration of Rollout Rescue Mechanism. |
-| ![Figure 13](assets/papers-explained-444-polaris/fig-13.png) | The reward function used in this work is the same as DeepscaleR. |
-| ![Figure 14](assets/papers-explained-444-polaris/fig-14.png) | The reward function used in this work is the same as DeepscaleR. |
+| ![Figure 1](assets/papers-explained-444-polaris/fig-1.webp) | Title card: POLARIS. |
+| ![Figure 2](assets/papers-explained-444-polaris/fig-2.webp) | Using the Deepseek-R1-Distill-Qwen-7B model,distinct training sets are created by altering difficulty. |
+| ![Figure 3](assets/papers-explained-444-polaris/fig-3.webp) | Model performance across the three above mentioned conditions. |
+| ![Figure 4](assets/papers-explained-444-polaris/fig-4.webp) | Data Difficulty Distribution Shifts (Left: Before Training, Right: After-Training; Top: Qwen3–4B, Bottom: Deepseek-R1-distill-Qwen-7B). |
+| ![Figure 5](assets/papers-explained-444-polaris/fig-5.webp) | Rollout diversity with sampling temperature on R1-Distill-Qwen and Qwen3 across different model sizes. |
+| ![Figure 6](assets/papers-explained-444-polaris/fig-6.webp) | Model performance with sampling temperature on R1-Distill-Qwen and Qwen3 across different model sizes. |
+| ![Figure 7](assets/papers-explained-444-polaris/fig-7.webp) | To guide temperature selection, POLARIS categorizes temperature settings into three zones. |
+| ![Figure 8](assets/papers-explained-444-polaris/fig-8.webp) | The RGZ and CEZ shift towards the high-temperature region following 800 steps of RL training. |
+| ![Figure 9](assets/papers-explained-444-polaris/fig-9.webp) | A significant challenge in developing advanced reasoning models is the cost of long-context training. |
+| ![Figure 10](assets/papers-explained-444-polaris/fig-10.webp) | Polaris incorporates a “train shorter, test longer” approach. |
+| ![Figure 11](assets/papers-explained-444-polaris/fig-11.webp) | Training long CoT models with Reinforcement Learning (RL) is slow due to excessively long outputs. |
+| ![Figure 12](assets/papers-explained-444-polaris/fig-12.webp) | An illustration of Rollout Rescue Mechanism. |
+| ![Figure 13](assets/papers-explained-444-polaris/fig-13.webp) | The reward function used in this work is the same as DeepscaleR. |
+| ![Figure 14](assets/papers-explained-444-polaris/fig-14.webp) | The reward function used in this work is the same as DeepscaleR. |
 ## Related
 
 - [[Papers Explained Corpus]]

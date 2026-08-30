@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-03-26_Papers-Explained-117--MM1-c579142bcdc0.html`
+- Source file: `raw/2024-03-26_Papers-Explained-117--MM1-c579142bcdc0.md`
 - Source title: Papers Explained 117: MM1
 - Published: 2024-03-26
 - Canonical: [https://medium.com/@ritvik19/papers-explained-117-mm1-c579142bcdc0](https://medium.com/@ritvik19/papers-explained-117-mm1-c579142bcdc0)
@@ -181,20 +181,20 @@ MM1: Methods, Analysis & Insights from Multimodal LLM Pre-training [2403.09611](
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-03-26_Papers-Explained-117--MM1-c579142bcdc0.html`); local copies under `wiki/assets/papers-explained-117-mm1/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-03-26_Papers-Explained-117--MM1-c579142bcdc0.md`); local copies under `wiki/assets/papers-explained-117-mm1/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-117-mm1/fig-1.png) | Title page of *MM1: Methods, Analysis & Insights from Multimodal LLM Pre-training*. |
-| ![Figure 2](assets/papers-explained-117-mm1/fig-2.png) | MM1 ablation framework covering model choices, data mixture, and training losses. |
-| ![Figure 3](assets/papers-explained-117-mm1/fig-3.png) | Image-encoder pretraining ablation table comparing reconstructive and contrastive setups. |
-| ![Figure 4](assets/papers-explained-117-mm1/fig-4.png) | Connector, resolution, and visual-token ablations for zero-, 4-shot, and 8-shot performance. |
-| ![Figure 5](assets/papers-explained-117-mm1/fig-5.png) | Pretraining dataset inventory for captioned, interleaved, synthetic, and text-only data sources. |
-| ![Figure 6](assets/papers-explained-117-mm1/fig-6.png) | Data-mixture ablations showing effects of caption/interleaved/text mixing and VeCap inclusion. |
-| ![Figure 7](assets/papers-explained-117-mm1/fig-7.png) | Multimodal pretraining evaluation on captioning and VQA benchmarks across model scales. |
-| ![Figure 8](assets/papers-explained-117-mm1/fig-8.png) | Post-SFT benchmark comparison with contemporary MLLM baselines. |
-| ![Figure 9](assets/papers-explained-117-mm1/fig-9.png) | SFT analysis: high-resolution input processing and effects of image resolution and pretraining steps. |
-| ![Figure 10](assets/papers-explained-117-mm1/fig-10.png) | Mind-map summary of MM1 experimental setup, ablations, and key findings. |
+| ![Figure 1](assets/papers-explained-117-mm1/fig-1.webp) | Title page of *MM1: Methods, Analysis & Insights from Multimodal LLM Pre-training*. |
+| ![Figure 2](assets/papers-explained-117-mm1/fig-2.webp) | MM1 ablation framework covering model choices, data mixture, and training losses. |
+| ![Figure 3](assets/papers-explained-117-mm1/fig-3.webp) | Image-encoder pretraining ablation table comparing reconstructive and contrastive setups. |
+| ![Figure 4](assets/papers-explained-117-mm1/fig-4.webp) | Connector, resolution, and visual-token ablations for zero-, 4-shot, and 8-shot performance. |
+| ![Figure 5](assets/papers-explained-117-mm1/fig-5.webp) | Pretraining dataset inventory for captioned, interleaved, synthetic, and text-only data sources. |
+| ![Figure 6](assets/papers-explained-117-mm1/fig-6.webp) | Data-mixture ablations showing effects of caption/interleaved/text mixing and VeCap inclusion. |
+| ![Figure 7](assets/papers-explained-117-mm1/fig-7.webp) | Multimodal pretraining evaluation on captioning and VQA benchmarks across model scales. |
+| ![Figure 8](assets/papers-explained-117-mm1/fig-8.webp) | Post-SFT benchmark comparison with contemporary MLLM baselines. |
+| ![Figure 9](assets/papers-explained-117-mm1/fig-9.webp) | SFT analysis: high-resolution input processing and effects of image resolution and pretraining steps. |
+| ![Figure 10](assets/papers-explained-117-mm1/fig-10.webp) | Mind-map summary of MM1 experimental setup, ablations, and key findings. |
 ## Related
 
 - [[Papers Explained Corpus]]

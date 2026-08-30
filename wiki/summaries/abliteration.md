@@ -1,6 +1,6 @@
 # Uncensor any LLM with abliteration
 
-**Source**: `raw/abliteration/full-article.html`, `raw/abliteration/full-article.md`  
+**Source**: `raw/abliteration/full-article.md`, `raw/abliteration/full-article.md`  
 **Ingested**: 2026-07-21  
 **Tags**: #summary
 
@@ -30,10 +30,10 @@ The article raises safety implications: alignment fine-tuning can be fragile aga
 
 | Figure | Caption | Section |
 |--------|---------|---------|
-| ![fig-1](../assets/abliteration/fig-1.png) | Residual-stream locations (pre, mid, post) in a decoder block | What is abliteration |
-| ![fig-2](../assets/abliteration/fig-2.png) | Benchmark comparison: Daredevil-8B vs. abliterated vs. Llama 3 8B Instruct | DPO |
-| ![fig-3](../assets/abliteration/fig-3.png) | DPO training curves (W&B) | DPO |
-| ![fig-4](../assets/abliteration/fig-4.png) | Post-DPO benchmarks: NeuralDaredevil-8B-abliterated recovery | DPO |
+| ![fig-1](../assets/abliteration/fig-1.webp) | Residual-stream locations (pre, mid, post) in a decoder block | What is abliteration |
+| ![fig-2](../assets/abliteration/fig-2.webp) | Benchmark comparison: Daredevil-8B vs. abliterated vs. Llama 3 8B Instruct | DPO |
+| ![fig-3](../assets/abliteration/fig-3.webp) | DPO training curves (W&B) | DPO |
+| ![fig-4](../assets/abliteration/fig-4.webp) | Post-DPO benchmarks: NeuralDaredevil-8B-abliterated recovery | DPO |
 
 ## Entities
 

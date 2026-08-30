@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-03-16_Papers-Explained-541--Phi-4-Reasoning-Vision-15B-fbbce5596e8a.html`
+- Source file: `raw/2026-03-16_Papers-Explained-541--Phi-4-Reasoning-Vision-15B-fbbce5596e8a.md`
 - Source title: Papers Explained 541: Phi 4 Reasoning Vision 15B
 - Published: 2026-03-16
 - Canonical: [https://medium.com/@ritvik19/papers-explained-541-phi-4-reasoning-vision-15b-fbbce5596e8a](https://medium.com/@ritvik19/papers-explained-541-phi-4-reasoning-vision-15b-fbbce5596e8a)
@@ -175,20 +175,20 @@ Phi-4-reasoning-vision-15B Technical Report [2603.03975](https://arxiv.org/abs/2
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-03-16_Papers-Explained-541--Phi-4-Reasoning-Vision-15B-fbbce5596e8a.html`); local copies under `wiki/assets/papers-explained-541-phi-4-reasoning-vision-15b/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-03-16_Papers-Explained-541--Phi-4-Reasoning-Vision-15B-fbbce5596e8a.md`); local copies under `wiki/assets/papers-explained-541-phi-4-reasoning-vision-15b/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-541-phi-4-reasoning-vision-15b/fig-1.png) | Title card: Phi 4 Reasoning Vision 15B. |
-| ![Figure 2](assets/papers-explained-541-phi-4-reasoning-vision-15b/fig-2.png) | Overview of the Phi-4-reasoning-vision-15B mid-fusion architecture. |
-| ![Figure 3](assets/papers-explained-541-phi-4-reasoning-vision-15b/fig-3.png) | Results with different resolution handling approaches. |
-| ![Figure 4](assets/papers-explained-541-phi-4-reasoning-vision-15b/fig-4.png) | Training recipe for Phi-4-reasoning-vision-15B. |
-| ![Figure 5](assets/papers-explained-541-phi-4-reasoning-vision-15b/fig-5.png) | Training hyperparameters by stage. |
-| ![Figure 6](assets/papers-explained-541-phi-4-reasoning-vision-15b/fig-6.png) | Open-Source Training Data Sources for Stages 1–3. |
-| ![Figure 7](assets/papers-explained-541-phi-4-reasoning-vision-15b/fig-7.png) | Varying the ratios of math and CUA data. |
-| ![Figure 8](assets/papers-explained-541-phi-4-reasoning-vision-15b/fig-8.png) | Accuracy comparisons relative to popular open-weight, non-thinking models. |
-| ![Figure 9](assets/papers-explained-541-phi-4-reasoning-vision-15b/fig-9.png) | Accuracy comparisons relative to popular open-weight, thinking models. |
-| ![Figure 10](assets/papers-explained-541-phi-4-reasoning-vision-15b/fig-10.png) | It is trained with SFT, using … sections for reasoning samples and tokens for non-reasoning samples. |
+| ![Figure 1](assets/papers-explained-541-phi-4-reasoning-vision-15b/fig-1.webp) | Title card: Phi 4 Reasoning Vision 15B. |
+| ![Figure 2](assets/papers-explained-541-phi-4-reasoning-vision-15b/fig-2.webp) | Overview of the Phi-4-reasoning-vision-15B mid-fusion architecture. |
+| ![Figure 3](assets/papers-explained-541-phi-4-reasoning-vision-15b/fig-3.webp) | Results with different resolution handling approaches. |
+| ![Figure 4](assets/papers-explained-541-phi-4-reasoning-vision-15b/fig-4.webp) | Training recipe for Phi-4-reasoning-vision-15B. |
+| ![Figure 5](assets/papers-explained-541-phi-4-reasoning-vision-15b/fig-5.webp) | Training hyperparameters by stage. |
+| ![Figure 6](assets/papers-explained-541-phi-4-reasoning-vision-15b/fig-6.webp) | Open-Source Training Data Sources for Stages 1–3. |
+| ![Figure 7](assets/papers-explained-541-phi-4-reasoning-vision-15b/fig-7.webp) | Varying the ratios of math and CUA data. |
+| ![Figure 8](assets/papers-explained-541-phi-4-reasoning-vision-15b/fig-8.webp) | Accuracy comparisons relative to popular open-weight, non-thinking models. |
+| ![Figure 9](assets/papers-explained-541-phi-4-reasoning-vision-15b/fig-9.webp) | Accuracy comparisons relative to popular open-weight, thinking models. |
+| ![Figure 10](assets/papers-explained-541-phi-4-reasoning-vision-15b/fig-10.webp) | It is trained with SFT, using … sections for reasoning samples and tokens for non-reasoning samples. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -1,6 +1,6 @@
 # SmolVLA: Efficient Vision-Language-Action Model trained on Lerobot Community Data
 
-**Source**: `raw/smolvla/full-article.html` (420 KB), `raw/smolvla/full-article.md`
+**Source**: `raw/smolvla/full-article.md` (420 KB), `raw/smolvla/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

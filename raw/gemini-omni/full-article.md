@@ -1,3 +1,3 @@
 # gemini-omni
 
-Canonical HTML: `raw/gemini-omni/full-article.html`
+Canonical HTML: `raw/gemini-omni/full-article.md`

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-21_Papers-Explained-190--BLIP-3--xGen-MM--6a9c04a3892d.html`
+- Source file: `raw/2024-08-21_Papers-Explained-190--BLIP-3--xGen-MM--6a9c04a3892d.md`
 - Source title: Papers Explained 190: BLIP-3 (xGen-MM)
 - Published: 2024-08-21
 - Canonical: [https://medium.com/@ritvik19/papers-explained-190-blip-3-xgen-mm-6a9c04a3892d](https://medium.com/@ritvik19/papers-explained-190-blip-3-xgen-mm-6a9c04a3892d)
@@ -143,18 +143,18 @@ Recommended Reading [BLIP Series](https://ritvik19.medium.com/list/blip-series-4
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-21_Papers-Explained-190--BLIP-3--xGen-MM--6a9c04a3892d.html`); local copies under `wiki/assets/papers-explained-190-blip-3-xgen-mm/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-21_Papers-Explained-190--BLIP-3--xGen-MM--6a9c04a3892d.md`); local copies under `wiki/assets/papers-explained-190-blip-3-xgen-mm/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-190-blip-3-xgen-mm/fig-1.png) | Paper header — **xGen-MM (BLIP-3): A Family of Open Large Multimodal Models** (Salesforce AI Research, UW). |
-| ![Figure 2](assets/papers-explained-190-blip-3-xgen-mm/fig-2.png) | **BLIP-2** vs **xGen-MM (BLIP-3)** — small COCO-style caption data + complex **Q-Former** / multi-loss vs **large interleaved** mixture + **scalable vision token sampler** + unified **next-token** LM loss. |
-| ![Figure 3](assets/papers-explained-190-blip-3-xgen-mm/fig-3.png) | **Training forward pass** — frozen **ViT** → trainable **token sampler** → vision tokens interleaved with text tokens in a **fine-tuned LLM**; LM loss on text targets. |
-| ![Figure 4](assets/papers-explained-190-blip-3-xgen-mm/fig-4.png) | **Pretraining mixture** pie (**MINT-1T**, BLIP3-KALE, OBELICS, Datacomp-1B, OCR/grounding, CC/SBU/VG…) plus qualitative panels (OCR, grounding, captions, docs, STEM figures). |
-| ![Figure 5](assets/papers-explained-190-blip-3-xgen-mm/fig-5.png) | **In-context VQA & captioning** — **&lt;5B** models (Flamingo-3B, MM1-3B, **xGen-MM-base ~4B**) vs larger reference rows (8–9B class). |
-| ![Figure 6](assets/papers-explained-190-blip-3-xgen-mm/fig-6.png) | **Instruction-tuned ~4B** leaderboard — **xGen-MM-inst.** vs **xGen-MM-inst.-interleave** and phi-3-vision / VILA / HPT vs MM1-3B-Chat / GPT-4V refs (SEED, MMB, MMMU, CV-Bench, POPE, averages). |
-| ![Figure 7](assets/papers-explained-190-blip-3-xgen-mm/fig-7.png) | **Multi-image reasoning** — BLINK, **QBench-2**, **Mantis-eval**: **interleaved** xGen-MM vs baseline inst. and VILA; GPT-4V reference. |
-| ![Figure 8](assets/papers-explained-190-blip-3-xgen-mm/fig-8.png) | **Alignment ablations** — **+ DPO** on hallucination probes; **+ Safety FT** slashes **VLGuard** risk score while holding POPE / SEED / MMB / MME / MMStar roughly flat. |
+| ![Figure 1](assets/papers-explained-190-blip-3-xgen-mm/fig-1.webp) | Paper header — **xGen-MM (BLIP-3): A Family of Open Large Multimodal Models** (Salesforce AI Research, UW). |
+| ![Figure 2](assets/papers-explained-190-blip-3-xgen-mm/fig-2.webp) | **BLIP-2** vs **xGen-MM (BLIP-3)** — small COCO-style caption data + complex **Q-Former** / multi-loss vs **large interleaved** mixture + **scalable vision token sampler** + unified **next-token** LM loss. |
+| ![Figure 3](assets/papers-explained-190-blip-3-xgen-mm/fig-3.webp) | **Training forward pass** — frozen **ViT** → trainable **token sampler** → vision tokens interleaved with text tokens in a **fine-tuned LLM**; LM loss on text targets. |
+| ![Figure 4](assets/papers-explained-190-blip-3-xgen-mm/fig-4.webp) | **Pretraining mixture** pie (**MINT-1T**, BLIP3-KALE, OBELICS, Datacomp-1B, OCR/grounding, CC/SBU/VG…) plus qualitative panels (OCR, grounding, captions, docs, STEM figures). |
+| ![Figure 5](assets/papers-explained-190-blip-3-xgen-mm/fig-5.webp) | **In-context VQA & captioning** — **&lt;5B** models (Flamingo-3B, MM1-3B, **xGen-MM-base ~4B**) vs larger reference rows (8–9B class). |
+| ![Figure 6](assets/papers-explained-190-blip-3-xgen-mm/fig-6.webp) | **Instruction-tuned ~4B** leaderboard — **xGen-MM-inst.** vs **xGen-MM-inst.-interleave** and phi-3-vision / VILA / HPT vs MM1-3B-Chat / GPT-4V refs (SEED, MMB, MMMU, CV-Bench, POPE, averages). |
+| ![Figure 7](assets/papers-explained-190-blip-3-xgen-mm/fig-7.webp) | **Multi-image reasoning** — BLINK, **QBench-2**, **Mantis-eval**: **interleaved** xGen-MM vs baseline inst. and VILA; GPT-4V reference. |
+| ![Figure 8](assets/papers-explained-190-blip-3-xgen-mm/fig-8.webp) | **Alignment ablations** — **+ DPO** on hallucination probes; **+ Safety FT** slashes **VLGuard** risk score while holding POPE / SEED / MMB / MME / MMStar roughly flat. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-03-24_Papers-Explained-336--Rethinking-Compute-Optimal-Test-Time-Scaling-732ee1134883.html`
+- Source file: `raw/2025-03-24_Papers-Explained-336--Rethinking-Compute-Optimal-Test-Time-Scaling-732ee1134883.md`
 - Source title: Papers Explained 336: Rethinking Compute-Optimal Test-Time Scaling
 - Published: 2025-03-24
 - Canonical: [https://medium.com/@ritvik19/papers-explained-336-rethinking-compute-optimal-test-time-scaling-732ee1134883](https://medium.com/@ritvik19/papers-explained-336-rethinking-compute-optimal-test-time-scaling-732ee1134883)
@@ -233,23 +233,23 @@ Can 1B LLM Surpass 405B LLM? Rethinking Compute-Optimal Test-Time Scaling [2502.
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-03-24_Papers-Explained-336--Rethinking-Compute-Optimal-Test-Time-Scaling-732ee1134883.html`); local copies under `wiki/assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-03-24_Papers-Explained-336--Rethinking-Compute-Optimal-Test-Time-Scaling-732ee1134883.md`); local copies under `wiki/assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/fig-1.png) | Title card: Rethinking Compute-Optimal Test-Time Scaling. |
-| ![Figure 2](assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/fig-2.png) | Comparison of different external TTS methods. |
-| ![Figure 3](assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/fig-3.png) | Performance of Llama-3.1–8B-Instruct and Qwen2.5–7B-Instruct on MATH-500 with different PRMs and TTS strategies. |
-| ![Figure 4](assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/fig-4.png) | Performance of Llama-3.1–8B-Instruct and Qwen2.5–7B-Instruct on AIME24 with different PRMs and TTS strategies. |
-| ![Figure 5](assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/fig-5.png) | The relationship between TTS performance and process supervision abilities of different PRMs on MATH. |
-| ![Figure 6](assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/fig-6.png) | TTS performance of policy models with parameters from 0.5B to 72B on MATH-500 with different scaling methods. |
-| ![Figure 7](assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/fig-7.png) | TTS performance of Qwen and Llama policy models on MATH-500 with different difficulty levels. |
-| ![Figure 8](assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/fig-8.png) | Statistics of training data of RLHFlow PRMs. |
-| ![Figure 9](assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/fig-9.png) | Performance of TTS with different voting methods on MATH-500. |
-| ![Figure 10](assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/fig-10.png) | Comparison of small policy models with frontier reasoning LLMs (CoT) on MATH-500 and AIME24. |
-| ![Figure 11](assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/fig-11.png) | FLOPS comparison between smaller policy models (compute-optimal TTS) and larger ones (CoT). |
-| ![Figure 12](assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/fig-12.png) | Comparison of compute-optimal TTS, CoT, and majority voting with different policy models on MATH-500. |
-| ![Figure 13](assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/fig-13.png) | Comparison of compute-optimal TTS with long-CoT methods on MATH-500 and AIME24. |
+| ![Figure 1](assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/fig-1.webp) | Title card: Rethinking Compute-Optimal Test-Time Scaling. |
+| ![Figure 2](assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/fig-2.webp) | Comparison of different external TTS methods. |
+| ![Figure 3](assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/fig-3.webp) | Performance of Llama-3.1–8B-Instruct and Qwen2.5–7B-Instruct on MATH-500 with different PRMs and TTS strategies. |
+| ![Figure 4](assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/fig-4.webp) | Performance of Llama-3.1–8B-Instruct and Qwen2.5–7B-Instruct on AIME24 with different PRMs and TTS strategies. |
+| ![Figure 5](assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/fig-5.webp) | The relationship between TTS performance and process supervision abilities of different PRMs on MATH. |
+| ![Figure 6](assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/fig-6.webp) | TTS performance of policy models with parameters from 0.5B to 72B on MATH-500 with different scaling methods. |
+| ![Figure 7](assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/fig-7.webp) | TTS performance of Qwen and Llama policy models on MATH-500 with different difficulty levels. |
+| ![Figure 8](assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/fig-8.webp) | Statistics of training data of RLHFlow PRMs. |
+| ![Figure 9](assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/fig-9.webp) | Performance of TTS with different voting methods on MATH-500. |
+| ![Figure 10](assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/fig-10.webp) | Comparison of small policy models with frontier reasoning LLMs (CoT) on MATH-500 and AIME24. |
+| ![Figure 11](assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/fig-11.webp) | FLOPS comparison between smaller policy models (compute-optimal TTS) and larger ones (CoT). |
+| ![Figure 12](assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/fig-12.webp) | Comparison of compute-optimal TTS, CoT, and majority voting with different policy models on MATH-500. |
+| ![Figure 13](assets/papers-explained-336-rethinking-compute-optimal-test-time-scaling/fig-13.webp) | Comparison of compute-optimal TTS with long-CoT methods on MATH-500 and AIME24. |
 ## Related
 
 - [[Papers Explained Corpus]]

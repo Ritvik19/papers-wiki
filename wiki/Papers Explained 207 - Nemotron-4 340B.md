@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-09-10_Papers-Explained-207--Nemotron-4-340B-4cfe268439f8.html`
+- Source file: `raw/2024-09-10_Papers-Explained-207--Nemotron-4-340B-4cfe268439f8.md`
 - Source title: Papers Explained 207: Nemotron-4 340B
 - Published: 2024-09-10
 - Canonical: [https://medium.com/@ritvik19/papers-explained-207-nemotron-4-340b-4cfe268439f8](https://medium.com/@ritvik19/papers-explained-207-nemotron-4-340b-4cfe268439f8)
@@ -219,20 +219,20 @@ Nemotron-4 340B Technical Report [2406.11704](https://arxiv.org/abs/2406.11704)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-09-10_Papers-Explained-207--Nemotron-4-340B-4cfe268439f8.html`); local copies under `wiki/assets/papers-explained-207-nemotron-4-340b/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-09-10_Papers-Explained-207--Nemotron-4-340B-4cfe268439f8.md`); local copies under `wiki/assets/papers-explained-207-nemotron-4-340b/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-207-nemotron-4-340b/fig-1.png) | Nemotron-4 340B technical report title block. |
-| ![Figure 2](assets/papers-explained-207-nemotron-4-340b/fig-2.png) | Key architecture hyperparameters for Nemotron-4 340B Base. |
-| ![Figure 3](assets/papers-explained-207-nemotron-4-340b/fig-3.png) | Standard reasoning benchmark comparison vs Llama-3, Qwen-2, and Mixtral. |
-| ![Figure 4](assets/papers-explained-207-nemotron-4-340b/fig-4.png) | RewardBench model-accuracy table with Nemotron-4-340B-Reward. |
-| ![Figure 5](assets/papers-explained-207-nemotron-4-340b/fig-5.png) | Synthetic single-turn prompt generation workflows for major task types. |
-| ![Figure 6](assets/papers-explained-207-nemotron-4-340b/fig-6.png) | Iterative weak-to-strong alignment workflow diagram. |
-| ![Figure 7](assets/papers-explained-207-nemotron-4-340b/fig-7.png) | Automatic benchmark results for instruct models. |
-| ![Figure 8](assets/papers-explained-207-nemotron-4-340b/fig-8.png) | Intermediate alignment-stage results from CodeSFT through RPO. |
-| ![Figure 9](assets/papers-explained-207-nemotron-4-340b/fig-9.png) | Human evaluation win-tie-loss rates vs GPT-4-1106 by task category. |
-| ![Figure 10](assets/papers-explained-207-nemotron-4-340b/fig-10.png) | Human judgment of response length: terse, just right, verbose. |
+| ![Figure 1](assets/papers-explained-207-nemotron-4-340b/fig-1.webp) | Nemotron-4 340B technical report title block. |
+| ![Figure 2](assets/papers-explained-207-nemotron-4-340b/fig-2.webp) | Key architecture hyperparameters for Nemotron-4 340B Base. |
+| ![Figure 3](assets/papers-explained-207-nemotron-4-340b/fig-3.webp) | Standard reasoning benchmark comparison vs Llama-3, Qwen-2, and Mixtral. |
+| ![Figure 4](assets/papers-explained-207-nemotron-4-340b/fig-4.webp) | RewardBench model-accuracy table with Nemotron-4-340B-Reward. |
+| ![Figure 5](assets/papers-explained-207-nemotron-4-340b/fig-5.webp) | Synthetic single-turn prompt generation workflows for major task types. |
+| ![Figure 6](assets/papers-explained-207-nemotron-4-340b/fig-6.webp) | Iterative weak-to-strong alignment workflow diagram. |
+| ![Figure 7](assets/papers-explained-207-nemotron-4-340b/fig-7.webp) | Automatic benchmark results for instruct models. |
+| ![Figure 8](assets/papers-explained-207-nemotron-4-340b/fig-8.webp) | Intermediate alignment-stage results from CodeSFT through RPO. |
+| ![Figure 9](assets/papers-explained-207-nemotron-4-340b/fig-9.webp) | Human evaluation win-tie-loss rates vs GPT-4-1106 by task category. |
+| ![Figure 10](assets/papers-explained-207-nemotron-4-340b/fig-10.webp) | Human judgment of response length: terse, just right, verbose. |
 ## Related
 
 - [[Papers Explained Corpus]]

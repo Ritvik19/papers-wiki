@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-10-04_Papers-Explained-225--FastViT-f1568536ed34.html`
+- Source file: `raw/2024-10-04_Papers-Explained-225--FastViT-f1568536ed34.md`
 - Source title: Papers Explained 225: FastViT
 - Published: 2024-10-04
 - Canonical: [https://medium.com/@ritvik19/papers-explained-225-fastvit-f1568536ed34](https://medium.com/@ritvik19/papers-explained-225-fastvit-f1568536ed34)
@@ -137,23 +137,23 @@ Recommended Reading [Vision Transformers](https://ritvik19.medium.com/list/visio
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-10-04_Papers-Explained-225--FastViT-f1568536ed34.html`); local copies under `wiki/assets/papers-explained-225-fastvit/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-10-04_Papers-Explained-225--FastViT-f1568536ed34.md`); local copies under `wiki/assets/papers-explained-225-fastvit/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-225-fastvit/fig-1.png) | Title card: FastViT. |
-| ![Figure 2](assets/papers-explained-225-fastvit/fig-2.png) | (a) Overview of FastViT architecture which decouples train-time and inference-time architecture. (b) Architecture of the convolutional stem. (c)Architecture of convolutional-FFN (d) Overview of RepMixer block, which reparameterizes a skip connection at inference. |
-| ![Figure 3](assets/papers-explained-225-fastvit/fig-3.png) | Analysis of architectural choices made to obtain FastViT-S12 variant, starting from PoolFormer-S12. “LK.” stands for Large Kernel. |
-| ![Figure 4](assets/papers-explained-225-fastvit/fig-4.png) | RepMixer Convolutional mixing was first introduced in ConvMixer. For an input tensor X, the mixing block in the layer was implemented as. |
-| ![Figure 5](assets/papers-explained-225-fastvit/fig-5.png) | Meanwhile in RepMixer, the operations are simply rearranged and the non-linear activation function is removed as. |
-| ![Figure 6](assets/papers-explained-225-fastvit/fig-6.png) | The main benefit of this design is that it can be reparameterized at inference time to a single depthwise convolutional layer as. |
-| ![Figure 7](assets/papers-explained-225-fastvit/fig-7.png) | Architecture details of FastViT variants. |
-| ![Figure 8](assets/papers-explained-225-fastvit/fig-8.png) | Comparison of different state-of-the-art methods on ImageNet-1k classification. |
-| ![Figure 9](assets/papers-explained-225-fastvit/fig-9.png) | Comparison of different state-of-the-art methods on ImageNet-1k classification when trained using distillation objective. |
-| ![Figure 10](assets/papers-explained-225-fastvit/fig-10.png) | Results on robustness benchmark datasets. |
-| ![Figure 11](assets/papers-explained-225-fastvit/fig-11.png) | Results on the FreiHAND test dataset. |
-| ![Figure 12](assets/papers-explained-225-fastvit/fig-12.png) | Performance of different backbones on ADE20K semantic segmentation task. |
-| ![Figure 13](assets/papers-explained-225-fastvit/fig-13.png) | Results for object detection and instance segmentation on MS-COCO val2017 split. |
+| ![Figure 1](assets/papers-explained-225-fastvit/fig-1.webp) | Title card: FastViT. |
+| ![Figure 2](assets/papers-explained-225-fastvit/fig-2.webp) | (a) Overview of FastViT architecture which decouples train-time and inference-time architecture. (b) Architecture of the convolutional stem. (c)Architecture of convolutional-FFN (d) Overview of RepMixer block, which reparameterizes a skip connection at inference. |
+| ![Figure 3](assets/papers-explained-225-fastvit/fig-3.webp) | Analysis of architectural choices made to obtain FastViT-S12 variant, starting from PoolFormer-S12. “LK.” stands for Large Kernel. |
+| ![Figure 4](assets/papers-explained-225-fastvit/fig-4.webp) | RepMixer Convolutional mixing was first introduced in ConvMixer. For an input tensor X, the mixing block in the layer was implemented as. |
+| ![Figure 5](assets/papers-explained-225-fastvit/fig-5.webp) | Meanwhile in RepMixer, the operations are simply rearranged and the non-linear activation function is removed as. |
+| ![Figure 6](assets/papers-explained-225-fastvit/fig-6.webp) | The main benefit of this design is that it can be reparameterized at inference time to a single depthwise convolutional layer as. |
+| ![Figure 7](assets/papers-explained-225-fastvit/fig-7.webp) | Architecture details of FastViT variants. |
+| ![Figure 8](assets/papers-explained-225-fastvit/fig-8.webp) | Comparison of different state-of-the-art methods on ImageNet-1k classification. |
+| ![Figure 9](assets/papers-explained-225-fastvit/fig-9.webp) | Comparison of different state-of-the-art methods on ImageNet-1k classification when trained using distillation objective. |
+| ![Figure 10](assets/papers-explained-225-fastvit/fig-10.webp) | Results on robustness benchmark datasets. |
+| ![Figure 11](assets/papers-explained-225-fastvit/fig-11.webp) | Results on the FreiHAND test dataset. |
+| ![Figure 12](assets/papers-explained-225-fastvit/fig-12.webp) | Performance of different backbones on ADE20K semantic segmentation task. |
+| ![Figure 13](assets/papers-explained-225-fastvit/fig-13.webp) | Results for object detection and instance segmentation on MS-COCO val2017 split. |
 ## Related
 
 - [[Papers Explained Corpus]]

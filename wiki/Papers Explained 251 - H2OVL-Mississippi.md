@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-11-13_Papers-Explained-251--H2OVL-Mississippi-1508e9c8e862.html`
+- Source file: `raw/2024-11-13_Papers-Explained-251--H2OVL-Mississippi-1508e9c8e862.md`
 - Source title: Papers Explained 251: H2OVL-Mississippi
 - Published: 2024-11-13
 - Canonical: [https://medium.com/@ritvik19/papers-explained-251-h2ovl-mississippi-1508e9c8e862](https://medium.com/@ritvik19/papers-explained-251-h2ovl-mississippi-1508e9c8e862)
@@ -163,20 +163,20 @@ Recommended Reading [Multi Modal Transformers](https://ritvik19.medium.com/list/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-11-13_Papers-Explained-251--H2OVL-Mississippi-1508e9c8e862.html`); local copies under `wiki/assets/papers-explained-251-h2ovl-mississippi/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-11-13_Papers-Explained-251--H2OVL-Mississippi-1508e9c8e862.md`); local copies under `wiki/assets/papers-explained-251-h2ovl-mississippi/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-251-h2ovl-mississippi/fig-1.png) | Title card: H2OVL-Mississippi. |
-| ![Figure 2](assets/papers-explained-251-h2ovl-mississippi/fig-2.png) | H2OVL-Mississippi Model Architecture. |
-| ![Figure 3](assets/papers-explained-251-h2ovl-mississippi/fig-3.png) | Data distribution across tasks during pre-training for (a) H2OVL-Mississippi-0.8B (b) H2OVL-Mississippi-2B. |
-| ![Figure 4](assets/papers-explained-251-h2ovl-mississippi/fig-4.png) | Data distribution across tasks during fine-tuning for (a) H2OVL-Mississippi-0.8B (b) H2OVL-Mississippi-2B. |
-| ![Figure 5](assets/papers-explained-251-h2ovl-mississippi/fig-5.png) | Summary of data for pre-training and fine-tuning of H2OVL-Mississippi models. |
-| ![Figure 6](assets/papers-explained-251-h2ovl-mississippi/fig-6.png) | Hyper-parameters for pre-training and fine-tuning of H2OVL-Mississippi models. |
-| ![Figure 7](assets/papers-explained-251-h2ovl-mississippi/fig-7.png) | Performance Comparison of Models Across Multiple Benchmarks. |
-| ![Figure 8](assets/papers-explained-251-h2ovl-mississippi/fig-8.png) | Performance Comparison of Models on OCRBench. |
-| ![Figure 9](assets/papers-explained-251-h2ovl-mississippi/fig-9.png) | Comparison on Text-Oriented VQA. |
-| ![Figure 10](assets/papers-explained-251-h2ovl-mississippi/fig-10.png) | Comparison on Information Extraction Tasks. |
+| ![Figure 1](assets/papers-explained-251-h2ovl-mississippi/fig-1.webp) | Title card: H2OVL-Mississippi. |
+| ![Figure 2](assets/papers-explained-251-h2ovl-mississippi/fig-2.webp) | H2OVL-Mississippi Model Architecture. |
+| ![Figure 3](assets/papers-explained-251-h2ovl-mississippi/fig-3.webp) | Data distribution across tasks during pre-training for (a) H2OVL-Mississippi-0.8B (b) H2OVL-Mississippi-2B. |
+| ![Figure 4](assets/papers-explained-251-h2ovl-mississippi/fig-4.webp) | Data distribution across tasks during fine-tuning for (a) H2OVL-Mississippi-0.8B (b) H2OVL-Mississippi-2B. |
+| ![Figure 5](assets/papers-explained-251-h2ovl-mississippi/fig-5.webp) | Summary of data for pre-training and fine-tuning of H2OVL-Mississippi models. |
+| ![Figure 6](assets/papers-explained-251-h2ovl-mississippi/fig-6.webp) | Hyper-parameters for pre-training and fine-tuning of H2OVL-Mississippi models. |
+| ![Figure 7](assets/papers-explained-251-h2ovl-mississippi/fig-7.webp) | Performance Comparison of Models Across Multiple Benchmarks. |
+| ![Figure 8](assets/papers-explained-251-h2ovl-mississippi/fig-8.webp) | Performance Comparison of Models on OCRBench. |
+| ![Figure 9](assets/papers-explained-251-h2ovl-mississippi/fig-9.webp) | Comparison on Text-Oriented VQA. |
+| ![Figure 10](assets/papers-explained-251-h2ovl-mississippi/fig-10.webp) | Comparison on Information Extraction Tasks. |
 ## Related
 
 - [[Papers Explained Corpus]]

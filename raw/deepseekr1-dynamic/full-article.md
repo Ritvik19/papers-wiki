@@ -2,4 +2,4 @@
 
 **URL**: https://unsloth.ai/blog/deepseekr1-dynamic
 
-(Canonical HTML: raw/deepseekr1-dynamic/full-article.html)
+(Canonical HTML: raw/deepseekr1-dynamic/full-article.md)

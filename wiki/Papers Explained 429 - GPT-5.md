@@ -8,7 +8,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-08-12_Papers-Explained-429--GPT-5-0342672382e7.html`
+- Source file: `raw/2025-08-12_Papers-Explained-429--GPT-5-0342672382e7.md`
 - Source title: Papers Explained 429: GPT-5
 - Published: 2025-08-12
 - Canonical: [https://medium.com/@ritvik19/papers-explained-429-gpt-5-0342672382e7](https://medium.com/@ritvik19/papers-explained-429-gpt-5-0342672382e7)
@@ -461,50 +461,50 @@ GPT‑5.4 nano is the smallest and cheapest GPT‑5.4‑class model, a major upg
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-08-12_Papers-Explained-429--GPT-5-0342672382e7.html`); local copies under `wiki/assets/papers-explained-429-gpt-5/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-08-12_Papers-Explained-429--GPT-5-0342672382e7.md`); local copies under `wiki/assets/papers-explained-429-gpt-5/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-429-gpt-5/fig-1.png) | Title card: GPT-5. |
-| ![Figure 2](assets/papers-explained-429-gpt-5/fig-2.png) | Model progressions. |
-| ![Figure 3](assets/papers-explained-429-gpt-5/fig-3.png) | Coding. |
-| ![Figure 4](assets/papers-explained-429-gpt-5/fig-4.png) | Health. |
-| ![Figure 5](assets/papers-explained-429-gpt-5/fig-5.png) | Math and Reasoning. |
-| ![Figure 6](assets/papers-explained-429-gpt-5/fig-6.png) | Instruction following and agentic tool use. |
-| ![Figure 7](assets/papers-explained-429-gpt-5/fig-7.png) | Multimodal. |
-| ![Figure 8](assets/papers-explained-429-gpt-5/fig-8.png) | Economically important tasks. |
-| ![Figure 9](assets/papers-explained-429-gpt-5/fig-9.png) | Faster, more efficient thinking. |
-| ![Figure 10](assets/papers-explained-429-gpt-5/fig-10.png) | More accurate answers to real-world queries. |
-| ![Figure 11](assets/papers-explained-429-gpt-5/fig-11.png) | More honest responses. |
-| ![Figure 12](assets/papers-explained-429-gpt-5/fig-12.png) | Long Context. |
-| ![Figure 13](assets/papers-explained-429-gpt-5/fig-13.png) | Standard Disallowed Content Evaluation (higher is better). |
-| ![Figure 14](assets/papers-explained-429-gpt-5/fig-14.png) | Production Benchmarks. |
-| ![Figure 15](assets/papers-explained-429-gpt-5/fig-15.png) | Sycophancy evaluation. |
-| ![Figure 16](assets/papers-explained-429-gpt-5/fig-16.png) | Jailbreak evaluations. |
-| ![Figure 17](assets/papers-explained-429-gpt-5/fig-17.png) | Instruction Hierarchy Evaluations. |
-| ![Figure 18](assets/papers-explained-429-gpt-5/fig-18.png) | Factuality on ChatGPT Production Traffic (Browsing Enabled). |
-| ![Figure 19](assets/papers-explained-429-gpt-5/fig-19.png) | Average Hallucination Rate (Browsing Enabled). |
-| ![Figure 20](assets/papers-explained-429-gpt-5/fig-20.png) | Average Hallucination Rate (Browsing Disabled). |
-| ![Figure 21](assets/papers-explained-429-gpt-5/fig-21.png) | SimpleQA evaluations. |
-| ![Figure 22](assets/papers-explained-429-gpt-5/fig-22.png) | Image input evaluations (higher is better). |
-| ![Figure 23](assets/papers-explained-429-gpt-5/fig-23.png) | BBQ evaluation. |
-| ![Figure 24](assets/papers-explained-429-gpt-5/fig-24.png) | Attack planning red teaming win rate results. |
-| ![Figure 25](assets/papers-explained-429-gpt-5/fig-25.png) | Agent Red Teaming (ART) benchmark for prompt injections. |
-| ![Figure 26](assets/papers-explained-429-gpt-5/fig-26.png) | GPT-5.2 is designed to enhance professional knowledge work. |
-| ![Figure 27](assets/papers-explained-429-gpt-5/fig-27.png) | GPT-5.2 is designed to enhance professional knowledge work. |
-| ![Figure 28](assets/papers-explained-429-gpt-5/fig-28.png) | GPT-5.2 is designed to enhance professional knowledge work. |
-| ![Figure 29](assets/papers-explained-429-gpt-5/fig-29.png) | GPT-5.2 is designed to enhance professional knowledge work. |
-| ![Figure 30](assets/papers-explained-429-gpt-5/fig-30.png) | GPT-5.2 is designed to enhance professional knowledge work. |
-| ![Figure 31](assets/papers-explained-429-gpt-5/fig-31.png) | GPT-5.2 is designed to enhance professional knowledge work. |
-| ![Figure 32](assets/papers-explained-429-gpt-5/fig-32.png) | GPT-5.2 is designed to enhance professional knowledge work. |
-| ![Figure 33](assets/papers-explained-429-gpt-5/fig-33.png) | GPT-5.2 is designed to enhance professional knowledge work. |
-| ![Figure 34](assets/papers-explained-429-gpt-5/fig-34.png) | On GDPval⁠, which tests agents’ abilities to produce well-specified knowledge work across 44 occupations, GPT‑5.4 achieves a new state of... |
-| ![Figure 35](assets/papers-explained-429-gpt-5/fig-35.png) | OSWorld‑Verified (desktop navigation via screenshots + keyboard/mouse). |
-| ![Figure 36](assets/papers-explained-429-gpt-5/fig-36.png) | OmniDocBench (document parsing, normalized edit distance; lower is better). |
-| ![Figure 37](assets/papers-explained-429-gpt-5/fig-37.png) | Terminal‑Bench 2.0. |
-| ![Figure 38](assets/papers-explained-429-gpt-5/fig-38.png) | With reasoning effort xhigh. |
-| ![Figure 39](assets/papers-explained-429-gpt-5/fig-39.png) | With reasoning effort xhigh. |
-| ![Figure 40](assets/papers-explained-429-gpt-5/fig-40.png) | With reasoning effort xhigh. |
+| ![Figure 1](assets/papers-explained-429-gpt-5/fig-1.webp) | Title card: GPT-5. |
+| ![Figure 2](assets/papers-explained-429-gpt-5/fig-2.webp) | Model progressions. |
+| ![Figure 3](assets/papers-explained-429-gpt-5/fig-3.webp) | Coding. |
+| ![Figure 4](assets/papers-explained-429-gpt-5/fig-4.webp) | Health. |
+| ![Figure 5](assets/papers-explained-429-gpt-5/fig-5.webp) | Math and Reasoning. |
+| ![Figure 6](assets/papers-explained-429-gpt-5/fig-6.webp) | Instruction following and agentic tool use. |
+| ![Figure 7](assets/papers-explained-429-gpt-5/fig-7.webp) | Multimodal. |
+| ![Figure 8](assets/papers-explained-429-gpt-5/fig-8.webp) | Economically important tasks. |
+| ![Figure 9](assets/papers-explained-429-gpt-5/fig-9.webp) | Faster, more efficient thinking. |
+| ![Figure 10](assets/papers-explained-429-gpt-5/fig-10.webp) | More accurate answers to real-world queries. |
+| ![Figure 11](assets/papers-explained-429-gpt-5/fig-11.webp) | More honest responses. |
+| ![Figure 12](assets/papers-explained-429-gpt-5/fig-12.webp) | Long Context. |
+| ![Figure 13](assets/papers-explained-429-gpt-5/fig-13.webp) | Standard Disallowed Content Evaluation (higher is better). |
+| ![Figure 14](assets/papers-explained-429-gpt-5/fig-14.webp) | Production Benchmarks. |
+| ![Figure 15](assets/papers-explained-429-gpt-5/fig-15.webp) | Sycophancy evaluation. |
+| ![Figure 16](assets/papers-explained-429-gpt-5/fig-16.webp) | Jailbreak evaluations. |
+| ![Figure 17](assets/papers-explained-429-gpt-5/fig-17.webp) | Instruction Hierarchy Evaluations. |
+| ![Figure 18](assets/papers-explained-429-gpt-5/fig-18.webp) | Factuality on ChatGPT Production Traffic (Browsing Enabled). |
+| ![Figure 19](assets/papers-explained-429-gpt-5/fig-19.webp) | Average Hallucination Rate (Browsing Enabled). |
+| ![Figure 20](assets/papers-explained-429-gpt-5/fig-20.webp) | Average Hallucination Rate (Browsing Disabled). |
+| ![Figure 21](assets/papers-explained-429-gpt-5/fig-21.webp) | SimpleQA evaluations. |
+| ![Figure 22](assets/papers-explained-429-gpt-5/fig-22.webp) | Image input evaluations (higher is better). |
+| ![Figure 23](assets/papers-explained-429-gpt-5/fig-23.webp) | BBQ evaluation. |
+| ![Figure 24](assets/papers-explained-429-gpt-5/fig-24.webp) | Attack planning red teaming win rate results. |
+| ![Figure 25](assets/papers-explained-429-gpt-5/fig-25.webp) | Agent Red Teaming (ART) benchmark for prompt injections. |
+| ![Figure 26](assets/papers-explained-429-gpt-5/fig-26.webp) | GPT-5.2 is designed to enhance professional knowledge work. |
+| ![Figure 27](assets/papers-explained-429-gpt-5/fig-27.webp) | GPT-5.2 is designed to enhance professional knowledge work. |
+| ![Figure 28](assets/papers-explained-429-gpt-5/fig-28.webp) | GPT-5.2 is designed to enhance professional knowledge work. |
+| ![Figure 29](assets/papers-explained-429-gpt-5/fig-29.webp) | GPT-5.2 is designed to enhance professional knowledge work. |
+| ![Figure 30](assets/papers-explained-429-gpt-5/fig-30.webp) | GPT-5.2 is designed to enhance professional knowledge work. |
+| ![Figure 31](assets/papers-explained-429-gpt-5/fig-31.webp) | GPT-5.2 is designed to enhance professional knowledge work. |
+| ![Figure 32](assets/papers-explained-429-gpt-5/fig-32.webp) | GPT-5.2 is designed to enhance professional knowledge work. |
+| ![Figure 33](assets/papers-explained-429-gpt-5/fig-33.webp) | GPT-5.2 is designed to enhance professional knowledge work. |
+| ![Figure 34](assets/papers-explained-429-gpt-5/fig-34.webp) | On GDPval⁠, which tests agents’ abilities to produce well-specified knowledge work across 44 occupations, GPT‑5.4 achieves a new state of... |
+| ![Figure 35](assets/papers-explained-429-gpt-5/fig-35.webp) | OSWorld‑Verified (desktop navigation via screenshots + keyboard/mouse). |
+| ![Figure 36](assets/papers-explained-429-gpt-5/fig-36.webp) | OmniDocBench (document parsing, normalized edit distance; lower is better). |
+| ![Figure 37](assets/papers-explained-429-gpt-5/fig-37.webp) | Terminal‑Bench 2.0. |
+| ![Figure 38](assets/papers-explained-429-gpt-5/fig-38.webp) | With reasoning effort xhigh. |
+| ![Figure 39](assets/papers-explained-429-gpt-5/fig-39.webp) | With reasoning effort xhigh. |
+| ![Figure 40](assets/papers-explained-429-gpt-5/fig-40.webp) | With reasoning effort xhigh. |
 ## Related
 
 - [[Papers Explained Corpus]]

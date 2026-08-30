@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-06_Papers-Explained-Review-01--Convolutional-Neural-Networks-78aeff61dcb3.html`
+- Source file: `raw/2023-02-06_Papers-Explained-Review-01--Convolutional-Neural-Networks-78aeff61dcb3.md`
 - Source title: Papers Explained Review 01: Convolutional Neural Networks
 - Published: 2023-02-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-review-01-convolutional-neural-networks-78aeff61dcb3](https://medium.com/@ritvik19/papers-explained-review-01-convolutional-neural-networks-78aeff61dcb3)
@@ -315,35 +315,35 @@ Another significant aspect of the EfficientNet architecture is its use of automa
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-06_Papers-Explained-Review-01--Convolutional-Neural-Networks-78aeff61dcb3.html`); local copies under `wiki/assets/papers-explained-review-01-convolutional-neural-networks/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-06_Papers-Explained-Review-01--Convolutional-Neural-Networks-78aeff61dcb3.md`); local copies under `wiki/assets/papers-explained-review-01-convolutional-neural-networks/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-review-01-convolutional-neural-networks/fig-1.png) | Title card: Convolutional Neural Networks. |
-| ![Figure 2](assets/papers-explained-review-01-convolutional-neural-networks/fig-2.png) | Gradient-Based Learning Applied to Document Recognition. |
-| ![Figure 3](assets/papers-explained-review-01-convolutional-neural-networks/fig-3.png) | Back to Top. |
-| ![Figure 4](assets/papers-explained-review-01-convolutional-neural-networks/fig-4.png) | Back to Top. |
-| ![Figure 5](assets/papers-explained-review-01-convolutional-neural-networks/fig-5.png) | Back to Top. |
-| ![Figure 6](assets/papers-explained-review-01-convolutional-neural-networks/fig-6.png) | Back to Top. |
-| ![Figure 7](assets/papers-explained-review-01-convolutional-neural-networks/fig-7.png) | Back to Top. |
-| ![Figure 8](assets/papers-explained-review-01-convolutional-neural-networks/fig-8.png) | Back to Top. |
-| ![Figure 9](assets/papers-explained-review-01-convolutional-neural-networks/fig-9.png) | Three simplified inception modules were introduced. |
-| ![Figure 10](assets/papers-explained-review-01-convolutional-neural-networks/fig-10.png) | Inception v4 introduced specialized “Reduction Blocks” which are used to change the width and height of the grid. |
-| ![Figure 11](assets/papers-explained-review-01-convolutional-neural-networks/fig-11.png) | For residual addition to work, the input and output after convolution must have the same dimensions. |
-| ![Figure 12](assets/papers-explained-review-01-convolutional-neural-networks/fig-12.png) | The pooling operation inside the main inception modules were replaced in favor of the residual connections. |
-| ![Figure 13](assets/papers-explained-review-01-convolutional-neural-networks/fig-13.png) | Networks with residual units deeper in the architecture caused the network to “die” if the number of filters exceeded 1000. |
-| ![Figure 14](assets/papers-explained-review-01-convolutional-neural-networks/fig-14.png) | The final network layout for both Inception v4 and Inception-ResNet are as follows. |
-| ![Figure 15](assets/papers-explained-review-01-convolutional-neural-networks/fig-15.png) | Back to Top. |
-| ![Figure 16](assets/papers-explained-review-01-convolutional-neural-networks/fig-16.png) | Back to Top. |
-| ![Figure 17](assets/papers-explained-review-01-convolutional-neural-networks/fig-17.png) | Back to Top. |
-| ![Figure 18](assets/papers-explained-review-01-convolutional-neural-networks/fig-18.png) | Back to Top. |
-| ![Figure 19](assets/papers-explained-review-01-convolutional-neural-networks/fig-19.png) | Back to Top. |
-| ![Figure 20](assets/papers-explained-review-01-convolutional-neural-networks/fig-20.png) | Back to Top. |
-| ![Figure 21](assets/papers-explained-review-01-convolutional-neural-networks/fig-21.png) | The compound scaling method is based on the idea of balancing dimensions of width, depth, and resolution by scaling with a constant ratio. |
-| ![Figure 22](assets/papers-explained-review-01-convolutional-neural-networks/fig-22.png) | The compound scaling method is based on the idea of balancing dimensions of width, depth, and resolution by scaling with a constant ratio. |
-| ![Figure 23](assets/papers-explained-review-01-convolutional-neural-networks/fig-23.png) | such that. |
-| ![Figure 24](assets/papers-explained-review-01-convolutional-neural-networks/fig-24.png) | such that. |
-| ![Figure 25](assets/papers-explained-review-01-convolutional-neural-networks/fig-25.png) | such that. |
+| ![Figure 1](assets/papers-explained-review-01-convolutional-neural-networks/fig-1.webp) | Title card: Convolutional Neural Networks. |
+| ![Figure 2](assets/papers-explained-review-01-convolutional-neural-networks/fig-2.webp) | Gradient-Based Learning Applied to Document Recognition. |
+| ![Figure 3](assets/papers-explained-review-01-convolutional-neural-networks/fig-3.webp) | Back to Top. |
+| ![Figure 4](assets/papers-explained-review-01-convolutional-neural-networks/fig-4.webp) | Back to Top. |
+| ![Figure 5](assets/papers-explained-review-01-convolutional-neural-networks/fig-5.webp) | Back to Top. |
+| ![Figure 6](assets/papers-explained-review-01-convolutional-neural-networks/fig-6.webp) | Back to Top. |
+| ![Figure 7](assets/papers-explained-review-01-convolutional-neural-networks/fig-7.webp) | Back to Top. |
+| ![Figure 8](assets/papers-explained-review-01-convolutional-neural-networks/fig-8.webp) | Back to Top. |
+| ![Figure 9](assets/papers-explained-review-01-convolutional-neural-networks/fig-9.webp) | Three simplified inception modules were introduced. |
+| ![Figure 10](assets/papers-explained-review-01-convolutional-neural-networks/fig-10.webp) | Inception v4 introduced specialized “Reduction Blocks” which are used to change the width and height of the grid. |
+| ![Figure 11](assets/papers-explained-review-01-convolutional-neural-networks/fig-11.webp) | For residual addition to work, the input and output after convolution must have the same dimensions. |
+| ![Figure 12](assets/papers-explained-review-01-convolutional-neural-networks/fig-12.webp) | The pooling operation inside the main inception modules were replaced in favor of the residual connections. |
+| ![Figure 13](assets/papers-explained-review-01-convolutional-neural-networks/fig-13.webp) | Networks with residual units deeper in the architecture caused the network to “die” if the number of filters exceeded 1000. |
+| ![Figure 14](assets/papers-explained-review-01-convolutional-neural-networks/fig-14.webp) | The final network layout for both Inception v4 and Inception-ResNet are as follows. |
+| ![Figure 15](assets/papers-explained-review-01-convolutional-neural-networks/fig-15.webp) | Back to Top. |
+| ![Figure 16](assets/papers-explained-review-01-convolutional-neural-networks/fig-16.webp) | Back to Top. |
+| ![Figure 17](assets/papers-explained-review-01-convolutional-neural-networks/fig-17.webp) | Back to Top. |
+| ![Figure 18](assets/papers-explained-review-01-convolutional-neural-networks/fig-18.webp) | Back to Top. |
+| ![Figure 19](assets/papers-explained-review-01-convolutional-neural-networks/fig-19.webp) | Back to Top. |
+| ![Figure 20](assets/papers-explained-review-01-convolutional-neural-networks/fig-20.webp) | Back to Top. |
+| ![Figure 21](assets/papers-explained-review-01-convolutional-neural-networks/fig-21.webp) | The compound scaling method is based on the idea of balancing dimensions of width, depth, and resolution by scaling with a constant ratio. |
+| ![Figure 22](assets/papers-explained-review-01-convolutional-neural-networks/fig-22.webp) | The compound scaling method is based on the idea of balancing dimensions of width, depth, and resolution by scaling with a constant ratio. |
+| ![Figure 23](assets/papers-explained-review-01-convolutional-neural-networks/fig-23.webp) | such that. |
+| ![Figure 24](assets/papers-explained-review-01-convolutional-neural-networks/fig-24.webp) | such that. |
+| ![Figure 25](assets/papers-explained-review-01-convolutional-neural-networks/fig-25.webp) | such that. |
 ## Related
 
 - [[Papers Explained Corpus]]

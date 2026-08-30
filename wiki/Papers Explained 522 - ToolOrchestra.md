@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-01-13_Papers-Explained-522--ToolOrchestra-fc50eb47177f.html`
+- Source file: `raw/2026-01-13_Papers-Explained-522--ToolOrchestra-fc50eb47177f.md`
 - Source title: Papers Explained 522: ToolOrchestra
 - Published: 2026-01-13
 - Canonical: [https://medium.com/@ritvik19/papers-explained-522-toolorchestra-fc50eb47177f](https://medium.com/@ritvik19/papers-explained-522-toolorchestra-fc50eb47177f)
@@ -213,18 +213,18 @@ ToolOrchestra: Elevating Intelligence via Efficient Model and Tool Orchestration
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-01-13_Papers-Explained-522--ToolOrchestra-fc50eb47177f.html`); local copies under `wiki/assets/papers-explained-522-toolorchestra/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-01-13_Papers-Explained-522--ToolOrchestra-fc50eb47177f.md`); local copies under `wiki/assets/papers-explained-522-toolorchestra/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-522-toolorchestra/fig-1.png) | Title card: ToolOrchestra. |
-| ![Figure 2](assets/papers-explained-522-toolorchestra/fig-2.png) | Overview of Orchestrator. |
-| ![Figure 3](assets/papers-explained-522-toolorchestra/fig-3.png) | The preference reward for a trajectory τ is the dot product of the normalized metrics and the preference vector, gated by task success. |
-| ![Figure 4](assets/papers-explained-522-toolorchestra/fig-4.png) | The policy is then updated to maximize the clipped surrogate objective. |
-| ![Figure 5](assets/papers-explained-522-toolorchestra/fig-5.png) | The policy is then updated to maximize the clipped surrogate objective. |
-| ![Figure 6](assets/papers-explained-522-toolorchestra/fig-6.png) | Overview of ToolScale data synthesis pipeline. |
-| ![Figure 7](assets/papers-explained-522-toolorchestra/fig-7.png) | Statistics of ToolScale. |
-| ![Figure 8](assets/papers-explained-522-toolorchestra/fig-8.png) | Comparison of Orchestrator-8B with baselines. |
+| ![Figure 1](assets/papers-explained-522-toolorchestra/fig-1.webp) | Title card: ToolOrchestra. |
+| ![Figure 2](assets/papers-explained-522-toolorchestra/fig-2.webp) | Overview of Orchestrator. |
+| ![Figure 3](assets/papers-explained-522-toolorchestra/fig-3.webp) | The preference reward for a trajectory τ is the dot product of the normalized metrics and the preference vector, gated by task success. |
+| ![Figure 4](assets/papers-explained-522-toolorchestra/fig-4.webp) | The policy is then updated to maximize the clipped surrogate objective. |
+| ![Figure 5](assets/papers-explained-522-toolorchestra/fig-5.webp) | The policy is then updated to maximize the clipped surrogate objective. |
+| ![Figure 6](assets/papers-explained-522-toolorchestra/fig-6.webp) | Overview of ToolScale data synthesis pipeline. |
+| ![Figure 7](assets/papers-explained-522-toolorchestra/fig-7.webp) | Statistics of ToolScale. |
+| ![Figure 8](assets/papers-explained-522-toolorchestra/fig-8.webp) | Comparison of Orchestrator-8B with baselines. |
 ## Related
 
 - [[Papers Explained Corpus]]

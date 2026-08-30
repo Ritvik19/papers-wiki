@@ -1,6 +1,6 @@
 # How the Vision Transformer (ViT) Works in 10 Minutes: An Image Is Worth 16×16 Words
 
-**Source**: `raw/vision-transformer/full-article.html` (360 KB), `raw/vision-transformer/full-article.md` (markdown view)  
+**Source**: `raw/vision-transformer/full-article.md` (360 KB), `raw/vision-transformer/full-article.md` (markdown view)  
 **URL**: https://theaisummer.com/vision-transformer/  
 **Author**: Nikolas Adaloglou (AI Summer), 2021-01-28  
 **Ingested**: 2026-06-06  
@@ -40,26 +40,26 @@ Data scale is the catch: ViT needs **>14M labeled images** (JFT-scale pretrainin
 | Figure | Caption | Page |
 |--------|---------|------|
 | ![fig-1](../assets/vision-transformer/fig-1.gif) | ViT pipeline animation: image → patches → transformer encoder → classification (Google AI blog) | — |
-| ![fig-2](../assets/vision-transformer/fig-2.png) | Standard transformer encoder block used inside ViT (Dosovitskiy et al. 2020) | — |
-| ![fig-3](../assets/vision-transformer/fig-3.png) | ViT-Base / Large / Huge model configuration table (layers, heads, MLP size, hidden dim) | — |
-| ![fig-4](../assets/vision-transformer/fig-4.png) | Learned 2D positional embeddings after training (Dosovitskiy et al. 2020) | — |
-| ![fig-5](../assets/vision-transformer/fig-5.png) | First-layer filter visualization: AlexNet (CS231n) vs ViT patch projections (PCA) | — |
-| ![fig-6](../assets/vision-transformer/fig-6.png) | Mean attention distance per head vs depth: ViT (left) vs 24-layer 3×3 conv net (right) | — |
-| ![fig-7](../assets/vision-transformer/fig-7.png) | ViT attention maps attending to semantically relevant regions (Dosovitskiy et al. 2020) | — |
+| ![fig-2](../assets/vision-transformer/fig-2.webp) | Standard transformer encoder block used inside ViT (Dosovitskiy et al. 2020) | — |
+| ![fig-3](../assets/vision-transformer/fig-3.webp) | ViT-Base / Large / Huge model configuration table (layers, heads, MLP size, hidden dim) | — |
+| ![fig-4](../assets/vision-transformer/fig-4.webp) | Learned 2D positional embeddings after training (Dosovitskiy et al. 2020) | — |
+| ![fig-5](../assets/vision-transformer/fig-5.webp) | First-layer filter visualization: AlexNet (CS231n) vs ViT patch projections (PCA) | — |
+| ![fig-6](../assets/vision-transformer/fig-6.webp) | Mean attention distance per head vs depth: ViT (left) vs 24-layer 3×3 conv net (right) | — |
+| ![fig-7](../assets/vision-transformer/fig-7.webp) | ViT attention maps attending to semantically relevant regions (Dosovitskiy et al. 2020) | — |
 
 ![ViT patch-token pipeline](../assets/vision-transformer/fig-1.gif)
 
 Images become sequences of patch tokens fed to a standard transformer encoder — the core ViT design move.
 
-![Transformer encoder block in ViT](../assets/vision-transformer/fig-2.png)
+![Transformer encoder block in ViT](../assets/vision-transformer/fig-2.webp)
 
 ViT reuses the NLP transformer encoder block unchanged; patch embedding replaces the word embedding layer.
 
-![ViT scale variants](../assets/vision-transformer/fig-3.png)
+![ViT scale variants](../assets/vision-transformer/fig-3.webp)
 
 Base, Large, and Huge differ in depth, attention heads, and MLP width while sharing the same block structure.
 
-![Mean attention distance vs depth](../assets/vision-transformer/fig-6.png)
+![Mean attention distance vs depth](../assets/vision-transformer/fig-6.webp)
 
 Early ViT layers already achieve global within-patch interactions; attention distance grows with depth like conv receptive fields.
 

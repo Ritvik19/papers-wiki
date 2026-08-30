@@ -1,6 +1,6 @@
 # An Overview of Classifier-Free Diffusion Guidance: Impaired Model Guidance with a Bad Version of Itself (Part 2)
 
-**Source**: `raw/classifier-free-guidance-part-2/full-article.html` (428 KB), `raw/classifier-free-guidance-part-2/full-article.md` (markdown view)  
+**Source**: `raw/classifier-free-guidance-part-2/full-article.md` (428 KB), `raw/classifier-free-guidance-part-2/full-article.md` (markdown view)  
 **URL**: https://theaisummer.com/classifier-free-guidance-part-2/  
 **Authors**: Nikolas Adaloglou, Tim Kaiser (AI Summer), 2024-09-26  
 **Ingested**: 2026-06-06  
@@ -38,25 +38,25 @@ Part 2 of the AI Summer CFG survey addresses a core limitation of vanilla **[[Cl
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/classifier-free-guidance-part-2/fig-1.png) | SAG masking-strategy ablation on ImageNet 128×128 ADM (Hong et al.) | — |
-| ![fig-2](../assets/classifier-free-guidance-part-2/fig-2.png) | CFG vs SAG positive/negative term diagram (Hong et al.) | — |
-| ![fig-3](../assets/classifier-free-guidance-part-2/fig-3.png) | Unguided vs SAG samples: unconditional ADM and Stable Diffusion | — |
-| ![fig-4](../assets/classifier-free-guidance-part-2/fig-4.png) | PAG: identity-matrix self-attention perturbation schematic (Ahn et al.) | — |
-| ![fig-5](../assets/classifier-free-guidance-part-2/fig-5.png) | PAG perturbation ablation on ImageNet 256×256 unconditional ADM | — |
-| ![fig-6](../assets/classifier-free-guidance-part-2/fig-6.png) | Unguided vs PAG qualitative comparisons | — |
-| ![fig-7](../assets/classifier-free-guidance-part-2/fig-7.png) | Autoguidance ImageNet-512/64 results: capacity, training budget, EMA params (Karras et al.) | — |
-| ![fig-8](../assets/classifier-free-guidance-part-2/fig-8.png) | Autoguidance sensitivity sweeps on EDM2-S ImageNet-512 | — |
-| ![fig-9](../assets/classifier-free-guidance-part-2/fig-9.png) | CFG vs ICG qualitative comparison on Stable Diffusion and DiT-XL | — |
-| ![fig-10](../assets/classifier-free-guidance-part-2/fig-10.png) | CFG vs ICG quantitative metrics (Sadat et al.) | — |
-| ![fig-11](../assets/classifier-free-guidance-part-2/fig-11.png) | SIMS algorithm: self-improving diffusion with synthetic retraining (Alemohammad et al.) | — |
-| ![fig-12](../assets/classifier-free-guidance-part-2/fig-12.png) | SIMS FID vs guidance scale and retraining budget | — |
-| ![fig-13](../assets/classifier-free-guidance-part-2/fig-13.png) | SEG / conditional generation control illustration (Hong 2024) | — |
+| ![fig-1](../assets/classifier-free-guidance-part-2/fig-1.webp) | SAG masking-strategy ablation on ImageNet 128×128 ADM (Hong et al.) | — |
+| ![fig-2](../assets/classifier-free-guidance-part-2/fig-2.webp) | CFG vs SAG positive/negative term diagram (Hong et al.) | — |
+| ![fig-3](../assets/classifier-free-guidance-part-2/fig-3.webp) | Unguided vs SAG samples: unconditional ADM and Stable Diffusion | — |
+| ![fig-4](../assets/classifier-free-guidance-part-2/fig-4.webp) | PAG: identity-matrix self-attention perturbation schematic (Ahn et al.) | — |
+| ![fig-5](../assets/classifier-free-guidance-part-2/fig-5.webp) | PAG perturbation ablation on ImageNet 256×256 unconditional ADM | — |
+| ![fig-6](../assets/classifier-free-guidance-part-2/fig-6.webp) | Unguided vs PAG qualitative comparisons | — |
+| ![fig-7](../assets/classifier-free-guidance-part-2/fig-7.webp) | Autoguidance ImageNet-512/64 results: capacity, training budget, EMA params (Karras et al.) | — |
+| ![fig-8](../assets/classifier-free-guidance-part-2/fig-8.webp) | Autoguidance sensitivity sweeps on EDM2-S ImageNet-512 | — |
+| ![fig-9](../assets/classifier-free-guidance-part-2/fig-9.webp) | CFG vs ICG qualitative comparison on Stable Diffusion and DiT-XL | — |
+| ![fig-10](../assets/classifier-free-guidance-part-2/fig-10.webp) | CFG vs ICG quantitative metrics (Sadat et al.) | — |
+| ![fig-11](../assets/classifier-free-guidance-part-2/fig-11.webp) | SIMS algorithm: self-improving diffusion with synthetic retraining (Alemohammad et al.) | — |
+| ![fig-12](../assets/classifier-free-guidance-part-2/fig-12.webp) | SIMS FID vs guidance scale and retraining budget | — |
+| ![fig-13](../assets/classifier-free-guidance-part-2/fig-13.webp) | SEG / conditional generation control illustration (Hong 2024) | — |
 
-![SAG masking ablation](../assets/classifier-free-guidance-part-2/fig-1.png)
+![SAG masking ablation](../assets/classifier-free-guidance-part-2/fig-1.webp)
 
 Attention-targeted Gaussian blur outperforms random pixel resets as a negative-model surrogate.
 
-![Autoguidance ImageNet results](../assets/classifier-free-guidance-part-2/fig-7.png)
+![Autoguidance ImageNet results](../assets/classifier-free-guidance-part-2/fig-7.webp)
 
 Weaker/smaller checkpoint of the same conditional model can serve as the CFG negative term.
 

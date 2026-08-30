@@ -6,7 +6,7 @@ This Hugging Face Space surveys how [[Reinforcement Learning]] environments for 
 
 ## Source
 
-- Source file: `raw/2026-05-06_The-ultimate-guide-to-RL-environments-building-and-scaling-them-in-the-LLM-era.html`
+- Source file: `raw/2026-05-06_The-ultimate-guide-to-RL-environments-building-and-scaling-them-in-the-LLM-era.md`
 - Source URL: [https://huggingface.co/spaces/AdithyaSK/rl-environments-guide](https://huggingface.co/spaces/AdithyaSK/rl-environments-guide)
 - Published: 2026-05-05
 - Authors: Adithya S Kolavi, Lewis Tunstall, Leandro von Werra, Quentin Gallouédec, Amine Dirhoussi, Ben Burtenshaw, Sergio Paniego
@@ -53,38 +53,38 @@ All 32 visuals from the source Space were captured locally under `wiki/assets/rl
 
 | Figure | Caption |
 | --- | --- |
-| ![Figure 1](assets/rl-environments-guide/fig-1.png) | Hero visualization showing environment concurrency scaling upward. |
-| ![Figure 2](assets/rl-environments-guide/fig-2.png) | Qwen3.5 release figure illustrating RL environment scaling. |
-| ![Figure 3](assets/rl-environments-guide/fig-3.png) | Anatomy diagram of an LLM-era RL environment. |
-| ![Figure 4](assets/rl-environments-guide/fig-4.png) | Cards summarizing the six framework implementations compared in the article. |
-| ![Figure 5](assets/rl-environments-guide/fig-5.png) | Tier map showing how surveyed frameworks relate by abstraction level. |
-| ![Figure 6](assets/rl-environments-guide/fig-6.png) | Classical RL loop illustration used as a baseline mental model. |
-| ![Figure 7](assets/rl-environments-guide/fig-7.png) | Multi-turn coding-agent RL loop for LLM environments. |
-| ![Figure 8](assets/rl-environments-guide/fig-8.png) | Five-stage view of how an RL training system fits together. |
-| ![Figure 9](assets/rl-environments-guide/fig-9.png) | Taxonomy of environment components in LLM RL systems. |
-| ![Figure 10](assets/rl-environments-guide/fig-10.png) | Matrix of what each framework ships out of the box. |
-| ![Figure 11](assets/rl-environments-guide/fig-11.png) | Vocabulary rosetta stone mapping equivalent concepts across frameworks. |
-| ![Figure 12](assets/rl-environments-guide/fig-12.png) | Side-by-side code views for building the same environment six ways. |
-| ![Figure 13](assets/rl-environments-guide/fig-13.png) | Communication and deployment architecture comparison. |
-| ![Figure 14](assets/rl-environments-guide/fig-14.png) | Communication and deployment matrix. |
-| ![Figure 15](assets/rl-environments-guide/fig-15.png) | Tool discovery and action-model comparison. |
-| ![Figure 16](assets/rl-environments-guide/fig-16.png) | Tool and action matrix. |
-| ![Figure 17](assets/rl-environments-guide/fig-17.png) | Reward-architecture timing comparison across frameworks. |
-| ![Figure 18](assets/rl-environments-guide/fig-18.png) | Reward-architecture matrix. |
-| ![Figure 19](assets/rl-environments-guide/fig-19.png) | Episode-control loop comparison. |
-| ![Figure 20](assets/rl-environments-guide/fig-20.png) | Episode-control matrix. |
-| ![Figure 21](assets/rl-environments-guide/fig-21.png) | Task and dataset flow comparison. |
-| ![Figure 22](assets/rl-environments-guide/fig-22.png) | Task and dataset matrix. |
-| ![Figure 23](assets/rl-environments-guide/fig-23.png) | Ecosystem and maturity matrix. |
-| ![Figure 24](assets/rl-environments-guide/fig-24.png) | Effort chart for manually authoring new environments. |
-| ![Figure 25](assets/rl-environments-guide/fig-25.png) | Ease-of-authoring matrix. |
-| ![Figure 26](assets/rl-environments-guide/fig-26.png) | Cluster topology diagram for local versus multi-node setup. |
-| ![Figure 27](assets/rl-environments-guide/fig-27.png) | Scaling curves across infrastructure configurations. |
-| ![Figure 28](assets/rl-environments-guide/fig-28.png) | Latency and throughput bar comparison for deployment strategies. |
-| ![Figure 29](assets/rl-environments-guide/fig-29.png) | Max-batch comparison across infrastructures. |
-| ![Figure 30](assets/rl-environments-guide/fig-30.png) | Scaling comparison matrix. |
-| ![Figure 31](assets/rl-environments-guide/fig-31.png) | Global sortable comparison matrix spanning all framework dimensions. |
-| ![Figure 32](assets/rl-environments-guide/fig-32.png) | Decision tree for picking an environment framework. |
+| ![Figure 1](assets/rl-environments-guide/fig-1.webp) | Hero visualization showing environment concurrency scaling upward. |
+| ![Figure 2](assets/rl-environments-guide/fig-2.webp) | Qwen3.5 release figure illustrating RL environment scaling. |
+| ![Figure 3](assets/rl-environments-guide/fig-3.webp) | Anatomy diagram of an LLM-era RL environment. |
+| ![Figure 4](assets/rl-environments-guide/fig-4.webp) | Cards summarizing the six framework implementations compared in the article. |
+| ![Figure 5](assets/rl-environments-guide/fig-5.webp) | Tier map showing how surveyed frameworks relate by abstraction level. |
+| ![Figure 6](assets/rl-environments-guide/fig-6.webp) | Classical RL loop illustration used as a baseline mental model. |
+| ![Figure 7](assets/rl-environments-guide/fig-7.webp) | Multi-turn coding-agent RL loop for LLM environments. |
+| ![Figure 8](assets/rl-environments-guide/fig-8.webp) | Five-stage view of how an RL training system fits together. |
+| ![Figure 9](assets/rl-environments-guide/fig-9.webp) | Taxonomy of environment components in LLM RL systems. |
+| ![Figure 10](assets/rl-environments-guide/fig-10.webp) | Matrix of what each framework ships out of the box. |
+| ![Figure 11](assets/rl-environments-guide/fig-11.webp) | Vocabulary rosetta stone mapping equivalent concepts across frameworks. |
+| ![Figure 12](assets/rl-environments-guide/fig-12.webp) | Side-by-side code views for building the same environment six ways. |
+| ![Figure 13](assets/rl-environments-guide/fig-13.webp) | Communication and deployment architecture comparison. |
+| ![Figure 14](assets/rl-environments-guide/fig-14.webp) | Communication and deployment matrix. |
+| ![Figure 15](assets/rl-environments-guide/fig-15.webp) | Tool discovery and action-model comparison. |
+| ![Figure 16](assets/rl-environments-guide/fig-16.webp) | Tool and action matrix. |
+| ![Figure 17](assets/rl-environments-guide/fig-17.webp) | Reward-architecture timing comparison across frameworks. |
+| ![Figure 18](assets/rl-environments-guide/fig-18.webp) | Reward-architecture matrix. |
+| ![Figure 19](assets/rl-environments-guide/fig-19.webp) | Episode-control loop comparison. |
+| ![Figure 20](assets/rl-environments-guide/fig-20.webp) | Episode-control matrix. |
+| ![Figure 21](assets/rl-environments-guide/fig-21.webp) | Task and dataset flow comparison. |
+| ![Figure 22](assets/rl-environments-guide/fig-22.webp) | Task and dataset matrix. |
+| ![Figure 23](assets/rl-environments-guide/fig-23.webp) | Ecosystem and maturity matrix. |
+| ![Figure 24](assets/rl-environments-guide/fig-24.webp) | Effort chart for manually authoring new environments. |
+| ![Figure 25](assets/rl-environments-guide/fig-25.webp) | Ease-of-authoring matrix. |
+| ![Figure 26](assets/rl-environments-guide/fig-26.webp) | Cluster topology diagram for local versus multi-node setup. |
+| ![Figure 27](assets/rl-environments-guide/fig-27.webp) | Scaling curves across infrastructure configurations. |
+| ![Figure 28](assets/rl-environments-guide/fig-28.webp) | Latency and throughput bar comparison for deployment strategies. |
+| ![Figure 29](assets/rl-environments-guide/fig-29.webp) | Max-batch comparison across infrastructures. |
+| ![Figure 30](assets/rl-environments-guide/fig-30.webp) | Scaling comparison matrix. |
+| ![Figure 31](assets/rl-environments-guide/fig-31.webp) | Global sortable comparison matrix spanning all framework dimensions. |
+| ![Figure 32](assets/rl-environments-guide/fig-32.webp) | Decision tree for picking an environment framework. |
 
 ## Related
 

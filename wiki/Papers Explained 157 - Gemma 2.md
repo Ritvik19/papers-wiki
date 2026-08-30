@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-07-01_Papers-Explained-157--Gemma-2-f1b75b56b9f2.html`
+- Source file: `raw/2024-07-01_Papers-Explained-157--Gemma-2-f1b75b56b9f2.md`
 - Source title: Papers Explained 157: Gemma 2
 - Published: 2024-07-01
 - Canonical: [https://medium.com/@ritvik19/papers-explained-157-gemma-2-f1b75b56b9f2](https://medium.com/@ritvik19/papers-explained-157-gemma-2-f1b75b56b9f2)
@@ -119,18 +119,18 @@ Recommended Reading [Gemini / Gemma Models](https://ritvik19.medium.com/list/gem
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-07-01_Papers-Explained-157--Gemma-2-f1b75b56b9f2.html`); local copies under `wiki/assets/papers-explained-157-gemma-2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-07-01_Papers-Explained-157--Gemma-2-f1b75b56b9f2.md`); local copies under `wiki/assets/papers-explained-157-gemma-2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-157-gemma-2/fig-1.png) | Header of the Gemma 2 technical report (*Gemma 2: Improving Open Language Models at a Practical Size*, Google DeepMind, dated 2024-06-27). |
-| ![Figure 2](assets/papers-explained-157-gemma-2/fig-2.png) | Architecture hyperparameters for **2.6B / 9B / 27B**: widths, depths, GeGLU FFN, GQA heads/KV heads, sliding-window vs global spans (4096 / 8192), 256k vocab. |
-| ![Figure 3](assets/papers-explained-157-gemma-2/fig-3.png) | Parameter accounting: embedding vs non-embedding counts for each Gemma 2 scale. |
-| ![Figure 4](assets/papers-explained-157-gemma-2/fig-4.png) | Chat formatting glossary mapping user/model turns and sequence boundaries to `<start_of_turn>`, `<end_of_turn>`, `<bos>`, `<eos>`. |
-| ![Figure 5](assets/papers-explained-157-gemma-2/fig-5.png) | Two-turn “knock knock” example showing multi-turn token layout and final `<end_of_turn><eos>` termination. |
-| ![Figure 6](assets/papers-explained-157-gemma-2/fig-6.png) | Spot-check base benchmarks: **Gemma-2 27B** vs **LLaMA-3 70B** and **Qwen1.5 32B** on MMLU, GSM8K, ARC-c, HellaSwag, Winogrande. |
-| ![Figure 7](assets/papers-explained-157-gemma-2/fig-7.png) | Wide pre-training suite comparing Gemma 1 vs Gemma 2 sizes against Mistral 7B and LLaMA-3 8B across knowledge, math, logic, coding, and averaged summaries. |
-| ![Figure 8](assets/papers-explained-157-gemma-2/fig-8.png) | Chatbot Arena Elo rankings with **gemma-2-it-9b** and **gemma-2-it-27b** highlighted among proprietary and open chat models. |
+| ![Figure 1](assets/papers-explained-157-gemma-2/fig-1.webp) | Header of the Gemma 2 technical report (*Gemma 2: Improving Open Language Models at a Practical Size*, Google DeepMind, dated 2024-06-27). |
+| ![Figure 2](assets/papers-explained-157-gemma-2/fig-2.webp) | Architecture hyperparameters for **2.6B / 9B / 27B**: widths, depths, GeGLU FFN, GQA heads/KV heads, sliding-window vs global spans (4096 / 8192), 256k vocab. |
+| ![Figure 3](assets/papers-explained-157-gemma-2/fig-3.webp) | Parameter accounting: embedding vs non-embedding counts for each Gemma 2 scale. |
+| ![Figure 4](assets/papers-explained-157-gemma-2/fig-4.webp) | Chat formatting glossary mapping user/model turns and sequence boundaries to `<start_of_turn>`, `<end_of_turn>`, `<bos>`, `<eos>`. |
+| ![Figure 5](assets/papers-explained-157-gemma-2/fig-5.webp) | Two-turn “knock knock” example showing multi-turn token layout and final `<end_of_turn><eos>` termination. |
+| ![Figure 6](assets/papers-explained-157-gemma-2/fig-6.webp) | Spot-check base benchmarks: **Gemma-2 27B** vs **LLaMA-3 70B** and **Qwen1.5 32B** on MMLU, GSM8K, ARC-c, HellaSwag, Winogrande. |
+| ![Figure 7](assets/papers-explained-157-gemma-2/fig-7.webp) | Wide pre-training suite comparing Gemma 1 vs Gemma 2 sizes against Mistral 7B and LLaMA-3 8B across knowledge, math, logic, coding, and averaged summaries. |
+| ![Figure 8](assets/papers-explained-157-gemma-2/fig-8.webp) | Chatbot Arena Elo rankings with **gemma-2-it-9b** and **gemma-2-it-27b** highlighted among proprietary and open chat models. |
 ## HF Blog Cross-References
 
 - [Welcome Gemma 2 - Google's new open LLM](https://huggingface.co/blog/gemma2) (2024-06-27) — Hugging Face integration post covering the 9B/27B base and instruct checkpoints, Transformers/Google Cloud/TRL integration, and a walkthrough of sliding-window attention, soft-capping, distillation, and merging that mirrors the technical report above.

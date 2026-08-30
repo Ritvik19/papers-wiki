@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-09-04_Papers-Explained-446--Unary-Feedback-as-Observation-ef72b6bd3458.html`
+- Source file: `raw/2025-09-04_Papers-Explained-446--Unary-Feedback-as-Observation-ef72b6bd3458.md`
 - Source title: Papers Explained 446: Unary Feedback as Observation
 - Published: 2025-09-04
 - Canonical: [https://medium.com/@ritvik19/papers-explained-446-unary-feedback-as-observation-ef72b6bd3458](https://medium.com/@ritvik19/papers-explained-446-unary-feedback-as-observation-ef72b6bd3458)
@@ -167,31 +167,31 @@ A Simple “Try Again” Can Elicit Multi-Turn LLM Reasoning [2507.14295](https:
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-09-04_Papers-Explained-446--Unary-Feedback-as-Observation-ef72b6bd3458.html`); local copies under `wiki/assets/papers-explained-446-unary-feedback-as-observation/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-09-04_Papers-Explained-446--Unary-Feedback-as-Observation-ef72b6bd3458.md`); local copies under `wiki/assets/papers-explained-446-unary-feedback-as-observation/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-446-unary-feedback-as-observation/fig-1.png) | Title card: Unary Feedback as Observation. |
-| ![Figure 2](assets/papers-explained-446-unary-feedback-as-observation/fig-2.png) | Single-turn RL causes LLMs to repeat the same answer across turns instead of revising based on feedback. |
-| ![Figure 3](assets/papers-explained-446-unary-feedback-as-observation/fig-3.png) | Hugging Face model names used in the unique answer ratio evaluation. |
-| ![Figure 4](assets/papers-explained-446-unary-feedback-as-observation/fig-4.png) | Comparison of effective (unique) answer ratio (%) before and after RL training. |
-| ![Figure 5](assets/papers-explained-446-unary-feedback-as-observation/fig-5.png) | At each turn 𝑡, the agent observes a state 𝑠𝑡 ∈S that encodes the original question 𝑞and the history of past attempts and feedbacks. |
-| ![Figure 6](assets/papers-explained-446-unary-feedback-as-observation/fig-6.png) | where 𝑎𝑘 denotes the 𝑘-th answer, and 𝑓𝑘 is a feedback token returned by the environment. |
-| ![Figure 7](assets/papers-explained-446-unary-feedback-as-observation/fig-7.png) | The UFO framework for multi-turn training. |
-| ![Figure 8](assets/papers-explained-446-unary-feedback-as-observation/fig-8.png) | where 𝑇 ⩽ 𝑇max is the number of turns before success or termination. The objective is to maximize the expected return. |
-| ![Figure 9](assets/papers-explained-446-unary-feedback-as-observation/fig-9.png) | where 𝑇 ⩽ 𝑇max is the number of turns before success or termination. The objective is to maximize the expected return. |
-| ![Figure 10](assets/papers-explained-446-unary-feedback-as-observation/fig-10.png) | PPO with a clipped surrogate objective is applied. |
-| ![Figure 11](assets/papers-explained-446-unary-feedback-as-observation/fig-11.png) | Formally, reward decay promotes early success by assigning exponentially diminishing rewards to correct answers produced at later turns. |
-| ![Figure 12](assets/papers-explained-446-unary-feedback-as-observation/fig-12.png) | The trajectory-level reward for RL training is defined as. |
-| ![Figure 13](assets/papers-explained-446-unary-feedback-as-observation/fig-13.png) | The trajectory-level reward for RL training is defined as. |
-| ![Figure 14](assets/papers-explained-446-unary-feedback-as-observation/fig-14.png) | Qwen-2.5–3B-Instruct is trained with PPO for 200 optimization steps. |
-| ![Figure 15](assets/papers-explained-446-unary-feedback-as-observation/fig-15.png) | Performance comparison when evaluating with 5 turns after training with different maximum turns (1, 5, and 10). |
-| ![Figure 16](assets/papers-explained-446-unary-feedback-as-observation/fig-16.png) | Validation performance (Succ@k) of models trained with different roll-out turns under varying inferencetime turn budgets. |
-| ![Figure 17](assets/papers-explained-446-unary-feedback-as-observation/fig-17.png) | 5-turn success rate (%) across different tasks and training settings. |
-| ![Figure 18](assets/papers-explained-446-unary-feedback-as-observation/fig-18.png) | Comparison of success rate with multi-turn setting. |
-| ![Figure 19](assets/papers-explained-446-unary-feedback-as-observation/fig-19.png) | Validation under different verbal feedback prompts. |
-| ![Figure 20](assets/papers-explained-446-unary-feedback-as-observation/fig-20.png) | Comparison of reward shaping strategies. |
-| ![Figure 21](assets/papers-explained-446-unary-feedback-as-observation/fig-21.png) | Proportion of effective answers over training. |
+| ![Figure 1](assets/papers-explained-446-unary-feedback-as-observation/fig-1.webp) | Title card: Unary Feedback as Observation. |
+| ![Figure 2](assets/papers-explained-446-unary-feedback-as-observation/fig-2.webp) | Single-turn RL causes LLMs to repeat the same answer across turns instead of revising based on feedback. |
+| ![Figure 3](assets/papers-explained-446-unary-feedback-as-observation/fig-3.webp) | Hugging Face model names used in the unique answer ratio evaluation. |
+| ![Figure 4](assets/papers-explained-446-unary-feedback-as-observation/fig-4.webp) | Comparison of effective (unique) answer ratio (%) before and after RL training. |
+| ![Figure 5](assets/papers-explained-446-unary-feedback-as-observation/fig-5.webp) | At each turn 𝑡, the agent observes a state 𝑠𝑡 ∈S that encodes the original question 𝑞and the history of past attempts and feedbacks. |
+| ![Figure 6](assets/papers-explained-446-unary-feedback-as-observation/fig-6.webp) | where 𝑎𝑘 denotes the 𝑘-th answer, and 𝑓𝑘 is a feedback token returned by the environment. |
+| ![Figure 7](assets/papers-explained-446-unary-feedback-as-observation/fig-7.webp) | The UFO framework for multi-turn training. |
+| ![Figure 8](assets/papers-explained-446-unary-feedback-as-observation/fig-8.webp) | where 𝑇 ⩽ 𝑇max is the number of turns before success or termination. The objective is to maximize the expected return. |
+| ![Figure 9](assets/papers-explained-446-unary-feedback-as-observation/fig-9.webp) | where 𝑇 ⩽ 𝑇max is the number of turns before success or termination. The objective is to maximize the expected return. |
+| ![Figure 10](assets/papers-explained-446-unary-feedback-as-observation/fig-10.webp) | PPO with a clipped surrogate objective is applied. |
+| ![Figure 11](assets/papers-explained-446-unary-feedback-as-observation/fig-11.webp) | Formally, reward decay promotes early success by assigning exponentially diminishing rewards to correct answers produced at later turns. |
+| ![Figure 12](assets/papers-explained-446-unary-feedback-as-observation/fig-12.webp) | The trajectory-level reward for RL training is defined as. |
+| ![Figure 13](assets/papers-explained-446-unary-feedback-as-observation/fig-13.webp) | The trajectory-level reward for RL training is defined as. |
+| ![Figure 14](assets/papers-explained-446-unary-feedback-as-observation/fig-14.webp) | Qwen-2.5–3B-Instruct is trained with PPO for 200 optimization steps. |
+| ![Figure 15](assets/papers-explained-446-unary-feedback-as-observation/fig-15.webp) | Performance comparison when evaluating with 5 turns after training with different maximum turns (1, 5, and 10). |
+| ![Figure 16](assets/papers-explained-446-unary-feedback-as-observation/fig-16.webp) | Validation performance (Succ@k) of models trained with different roll-out turns under varying inferencetime turn budgets. |
+| ![Figure 17](assets/papers-explained-446-unary-feedback-as-observation/fig-17.webp) | 5-turn success rate (%) across different tasks and training settings. |
+| ![Figure 18](assets/papers-explained-446-unary-feedback-as-observation/fig-18.webp) | Comparison of success rate with multi-turn setting. |
+| ![Figure 19](assets/papers-explained-446-unary-feedback-as-observation/fig-19.webp) | Validation under different verbal feedback prompts. |
+| ![Figure 20](assets/papers-explained-446-unary-feedback-as-observation/fig-20.webp) | Comparison of reward shaping strategies. |
+| ![Figure 21](assets/papers-explained-446-unary-feedback-as-observation/fig-21.webp) | Proportion of effective answers over training. |
 ## Related
 
 - [[Papers Explained Corpus]]

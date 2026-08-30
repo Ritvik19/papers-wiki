@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-11-24_Papers-Explained-498--Command-A-Translate-bb9d0e0151e7.html`
+- Source file: `raw/2025-11-24_Papers-Explained-498--Command-A-Translate-bb9d0e0151e7.md`
 - Source title: Papers Explained 498: Command A Translate
 - Published: 2025-11-24
 - Canonical: [https://medium.com/@ritvik19/papers-explained-498-command-a-translate-bb9d0e0151e7](https://medium.com/@ritvik19/papers-explained-498-command-a-translate-bb9d0e0151e7)
@@ -141,16 +141,16 @@ Applicable models were run with reasoning enabled (8096 thinking budget or high 
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-11-24_Papers-Explained-498--Command-A-Translate-bb9d0e0151e7.html`); local copies under `wiki/assets/papers-explained-498-command-a-translate/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-11-24_Papers-Explained-498--Command-A-Translate-bb9d0e0151e7.md`); local copies under `wiki/assets/papers-explained-498-command-a-translate/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-498-command-a-translate/fig-1.png) | Title card: Command A Translate. |
-| ![Figure 2](assets/papers-explained-498-command-a-translate/fig-2.png) | Results of all languages over WMT24++ test set evaluated with xComet-XL metric. |
-| ![Figure 3](assets/papers-explained-498-command-a-translate/fig-3.png) | MetricX-XL results for the WMT25 test set. |
-| ![Figure 4](assets/papers-explained-498-command-a-translate/fig-4.png) | Human evaluation sourced from WMT25. |
-| ![Figure 5](assets/papers-explained-498-command-a-translate/fig-5.png) | Results of long context translation, evaluated on a paragraph-level with xComet-XL metric. |
-| ![Figure 6](assets/papers-explained-498-command-a-translate/fig-6.png) | Adversarial prompt injection testing of systems. The score is a percentage of failed translation in regards to the question mark test. |
+| ![Figure 1](assets/papers-explained-498-command-a-translate/fig-1.webp) | Title card: Command A Translate. |
+| ![Figure 2](assets/papers-explained-498-command-a-translate/fig-2.webp) | Results of all languages over WMT24++ test set evaluated with xComet-XL metric. |
+| ![Figure 3](assets/papers-explained-498-command-a-translate/fig-3.webp) | MetricX-XL results for the WMT25 test set. |
+| ![Figure 4](assets/papers-explained-498-command-a-translate/fig-4.webp) | Human evaluation sourced from WMT25. |
+| ![Figure 5](assets/papers-explained-498-command-a-translate/fig-5.webp) | Results of long context translation, evaluated on a paragraph-level with xComet-XL metric. |
+| ![Figure 6](assets/papers-explained-498-command-a-translate/fig-6.webp) | Adversarial prompt injection testing of systems. The score is a percentage of failed translation in regards to the question mark test. |
 ## Related
 
 - [[Papers Explained Corpus]]

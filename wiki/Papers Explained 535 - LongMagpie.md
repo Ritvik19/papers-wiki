@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-01-30_Papers-Explained-535--LongMagpie-88810df48680.html`
+- Source file: `raw/2026-01-30_Papers-Explained-535--LongMagpie-88810df48680.md`
 - Source title: Papers Explained 535: LongMagpie
 - Published: 2026-01-30
 - Canonical: [https://medium.com/@ritvik19/papers-explained-535-longmagpie-88810df48680](https://medium.com/@ritvik19/papers-explained-535-longmagpie-88810df48680)
@@ -87,14 +87,14 @@ LongMagpie: A Self-synthesis Method for Generating Large-scale Long-context Inst
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-01-30_Papers-Explained-535--LongMagpie-88810df48680.html`); local copies under `wiki/assets/papers-explained-535-longmagpie/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-01-30_Papers-Explained-535--LongMagpie-88810df48680.md`); local copies under `wiki/assets/papers-explained-535-longmagpie/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-535-longmagpie/fig-1.png) | Title card: LongMagpie. |
-| ![Figure 2](assets/papers-explained-535-longmagpie/fig-2.png) | LongMagpie pipeline overview. |
-| ![Figure 3](assets/papers-explained-535-longmagpie/fig-3.png) | p-Mix: Balancing Long-Context and Short-Context Capabilities. |
-| ![Figure 4](assets/papers-explained-535-longmagpie/fig-4.png) | Main experimental results comparing LongMagpie with other methods on long-context and short-context benchmarks. |
+| ![Figure 1](assets/papers-explained-535-longmagpie/fig-1.webp) | Title card: LongMagpie. |
+| ![Figure 2](assets/papers-explained-535-longmagpie/fig-2.webp) | LongMagpie pipeline overview. |
+| ![Figure 3](assets/papers-explained-535-longmagpie/fig-3.webp) | p-Mix: Balancing Long-Context and Short-Context Capabilities. |
+| ![Figure 4](assets/papers-explained-535-longmagpie/fig-4.webp) | Main experimental results comparing LongMagpie with other methods on long-context and short-context benchmarks. |
 ## Related
 
 - [[Papers Explained Corpus]]

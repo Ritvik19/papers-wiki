@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-09-23_Papers-Explained-459--FineWeb2-d9126117600e.html`
+- Source file: `raw/2025-09-23_Papers-Explained-459--FineWeb2-d9126117600e.md`
 - Source title: Papers Explained 459: FineWeb2
 - Published: 2025-09-23
 - Canonical: [https://medium.com/@ritvik19/papers-explained-459-fineweb2-d9126117600e](https://medium.com/@ritvik19/papers-explained-459-fineweb2-d9126117600e)
@@ -205,15 +205,15 @@ FineWeb2: One Pipeline to Scale Them All — Adapting Pre-Training Data Processi
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-09-23_Papers-Explained-459--FineWeb2-d9126117600e.html`); local copies under `wiki/assets/papers-explained-459-fineweb2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-09-23_Papers-Explained-459--FineWeb2-d9126117600e.md`); local copies under `wiki/assets/papers-explained-459-fineweb2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-459-fineweb2/fig-1.png) | Title card: FineWeb2. |
-| ![Figure 2](assets/papers-explained-459-fineweb2/fig-2.png) | The 9 canary languages and their families, main script, and resource availability. |
-| ![Figure 3](assets/papers-explained-459-fineweb2/fig-3.png) | Multilingual Tokenizers Comparison on Wikipedia. |
-| ![Figure 4](assets/papers-explained-459-fineweb2/fig-4.png) | Architecture configuration for all models. |
-| ![Figure 5](assets/papers-explained-459-fineweb2/fig-5.png) | High-level performance comparison of FineWeb2 to other multilingual and language-specific datasets. |
+| ![Figure 1](assets/papers-explained-459-fineweb2/fig-1.webp) | Title card: FineWeb2. |
+| ![Figure 2](assets/papers-explained-459-fineweb2/fig-2.webp) | The 9 canary languages and their families, main script, and resource availability. |
+| ![Figure 3](assets/papers-explained-459-fineweb2/fig-3.webp) | Multilingual Tokenizers Comparison on Wikipedia. |
+| ![Figure 4](assets/papers-explained-459-fineweb2/fig-4.webp) | Architecture configuration for all models. |
+| ![Figure 5](assets/papers-explained-459-fineweb2/fig-5.webp) | High-level performance comparison of FineWeb2 to other multilingual and language-specific datasets. |
 ## Related
 
 - [[Papers Explained Corpus]]

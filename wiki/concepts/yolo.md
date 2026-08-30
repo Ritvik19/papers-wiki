@@ -13,7 +13,7 @@
 
 ## YOLO v1
 
-![YOLO workflow](../assets/2018-12-27-object-recognition-part-4/fig-1.png) ![YOLO network](../assets/2018-12-27-object-recognition-part-4/fig-2.png)
+![YOLO workflow](../assets/2018-12-27-object-recognition-part-4/fig-1.webp) ![YOLO network](../assets/2018-12-27-object-recognition-part-4/fig-2.webp)
 
 | Concept | Definition |
 |---------|------------|
@@ -25,7 +25,7 @@
 
 **Responsible predictor** (per cell): among \(B\) boxes, the one with highest IoU to GT gets box loss.
 
-![Responsible predictor](../assets/2018-12-27-object-recognition-part-4/fig-3.png)
+![Responsible predictor](../assets/2018-12-27-object-recognition-part-4/fig-3.webp)
 
 ### Loss (v1)
 
@@ -52,13 +52,13 @@ Poor on **crowded small objects** (one cell, few boxes); fixed grid resolution.
 | Multi-scale | Random input dims every 10 batches (multiple of 32) |
 | Backbone | **Darknet-19** (19 conv + 5 pool) |
 
-![YOLOv2 boxes](../assets/2018-12-27-object-recognition-part-4/fig-7.png)
+![YOLOv2 boxes](../assets/2018-12-27-object-recognition-part-4/fig-7.webp)
 
 ## YOLO9000
 
 Joint COCO detection + ImageNet **9000** classes; **WordTree** hierarchy—conditional probabilities along tree paths; avoids mutually exclusive softmax across unrelated fine labels.
 
-![WordTree](../assets/2018-12-27-object-recognition-part-4/fig-8.png)
+![WordTree](../assets/2018-12-27-object-recognition-part-4/fig-8.webp)
 
 ## YOLOv3
 

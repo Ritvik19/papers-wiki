@@ -1,6 +1,6 @@
 # GLM-5.2: Built for Long-Horizon Tasks
 
-**Source**: `raw/glm-52-blog/full-article.html` (183 KB), `raw/glm-52-blog/full-article.md`
+**Source**: `raw/glm-52-blog/full-article.md` (183 KB), `raw/glm-52-blog/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

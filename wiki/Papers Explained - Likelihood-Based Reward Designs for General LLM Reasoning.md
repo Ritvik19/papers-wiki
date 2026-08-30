@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/draft_Papers-Explained--Likelihood-Based-Reward-Designs-for-General-LLM-Reasoning-e889106eff08.html`
+- Source file: `raw/draft_Papers-Explained--Likelihood-Based-Reward-Designs-for-General-LLM-Reasoning-e889106eff08.md`
 - Source title: Papers Explained: Likelihood-Based Reward Designs for General LLM Reasoning
 - Canonical: [https://medium.com/p/e889106eff08](https://medium.com/p/e889106eff08)
 
@@ -138,22 +138,22 @@ Likelihood-Based Reward Designs for General LLM Reasoning [2602.03979](https://a
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/draft_Papers-Explained--Likelihood-Based-Reward-Designs-for-General-LLM-Reasoning-e889106eff08.html`); local copies under `wiki/assets/papers-explained-likelihood-based-reward-designs-for-general-llm-reasoning/` when download succeeded.
+Figures from the Medium HTML export (`raw/draft_Papers-Explained--Likelihood-Based-Reward-Designs-for-General-LLM-Reasoning-e889106eff08.md`); local copies under `wiki/assets/papers-explained-likelihood-based-reward-designs-for-general-llm-reasoning/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-likelihood-based-reward-designs-for-general-llm-reasoning/fig-1.png) | Title block of *Likelihood-Based Reward Designs for General LLM Reasoning*. |
-| ![Figure 2](assets/papers-explained-likelihood-based-reward-designs-for-general-llm-reasoning/fig-2.png) | Chain-of-thought RL objective: expected reward over prompt, sampled reasoning trace, and sampled answer. |
-| ![Figure 3](assets/papers-explained-likelihood-based-reward-designs-for-general-llm-reasoning/fig-3.png) | Log-prob reward definition using reference-answer likelihood conditioned on prompt and CoT. |
-| ![Figure 4](assets/papers-explained-likelihood-based-reward-designs-for-general-llm-reasoning/fig-4.png) | Base RL correctness reward (RLOO-style indicator) for sampled answers. |
-| ![Figure 5](assets/papers-explained-likelihood-based-reward-designs-for-general-llm-reasoning/fig-5.png) | Probability (VeriFree) reward computed as model probability of the reference answer. |
-| ![Figure 6](assets/papers-explained-likelihood-based-reward-designs-for-general-llm-reasoning/fig-6.png) | Average-probability reward: mean token probability across the reference answer sequence. |
-| ![Figure 7](assets/papers-explained-likelihood-based-reward-designs-for-general-llm-reasoning/fig-7.png) | Log-probability reward variant used as a central likelihood-based baseline. |
-| ![Figure 8](assets/papers-explained-likelihood-based-reward-designs-for-general-llm-reasoning/fig-8.png) | Length-normalized average log-probability reward. |
-| ![Figure 9](assets/papers-explained-likelihood-based-reward-designs-for-general-llm-reasoning/fig-9.png) | JEPO group reward: log-mean reference likelihood across sampled CoTs. |
-| ![Figure 10](assets/papers-explained-likelihood-based-reward-designs-for-general-llm-reasoning/fig-10.png) | Verifiable-domain results with group size \(G=32\) on MATH and DeepScaleR (Llama 3B, Qwen 3B). |
-| ![Figure 11](assets/papers-explained-likelihood-based-reward-designs-for-general-llm-reasoning/fig-11.png) | Verifiable-domain results with \(G=4\), comparing JEPO/log-prob family against Base RL and SFT. |
-| ![Figure 12](assets/papers-explained-likelihood-based-reward-designs-for-general-llm-reasoning/fig-12.png) | Non-verifiable-domain results on NuminaProof and Alpaca across log-prob, perplexity, MC32, and CoT length. |
+| ![Figure 1](assets/papers-explained-likelihood-based-reward-designs-for-general-llm-reasoning/fig-1.webp) | Title block of *Likelihood-Based Reward Designs for General LLM Reasoning*. |
+| ![Figure 2](assets/papers-explained-likelihood-based-reward-designs-for-general-llm-reasoning/fig-2.webp) | Chain-of-thought RL objective: expected reward over prompt, sampled reasoning trace, and sampled answer. |
+| ![Figure 3](assets/papers-explained-likelihood-based-reward-designs-for-general-llm-reasoning/fig-3.webp) | Log-prob reward definition using reference-answer likelihood conditioned on prompt and CoT. |
+| ![Figure 4](assets/papers-explained-likelihood-based-reward-designs-for-general-llm-reasoning/fig-4.webp) | Base RL correctness reward (RLOO-style indicator) for sampled answers. |
+| ![Figure 5](assets/papers-explained-likelihood-based-reward-designs-for-general-llm-reasoning/fig-5.webp) | Probability (VeriFree) reward computed as model probability of the reference answer. |
+| ![Figure 6](assets/papers-explained-likelihood-based-reward-designs-for-general-llm-reasoning/fig-6.webp) | Average-probability reward: mean token probability across the reference answer sequence. |
+| ![Figure 7](assets/papers-explained-likelihood-based-reward-designs-for-general-llm-reasoning/fig-7.webp) | Log-probability reward variant used as a central likelihood-based baseline. |
+| ![Figure 8](assets/papers-explained-likelihood-based-reward-designs-for-general-llm-reasoning/fig-8.webp) | Length-normalized average log-probability reward. |
+| ![Figure 9](assets/papers-explained-likelihood-based-reward-designs-for-general-llm-reasoning/fig-9.webp) | JEPO group reward: log-mean reference likelihood across sampled CoTs. |
+| ![Figure 10](assets/papers-explained-likelihood-based-reward-designs-for-general-llm-reasoning/fig-10.webp) | Verifiable-domain results with group size \(G=32\) on MATH and DeepScaleR (Llama 3B, Qwen 3B). |
+| ![Figure 11](assets/papers-explained-likelihood-based-reward-designs-for-general-llm-reasoning/fig-11.webp) | Verifiable-domain results with \(G=4\), comparing JEPO/log-prob family against Base RL and SFT. |
+| ![Figure 12](assets/papers-explained-likelihood-based-reward-designs-for-general-llm-reasoning/fig-12.webp) | Non-verifiable-domain results on NuminaProof and Alpaca across log-prob, perplexity, MC32, and CoT length. |
 ## Related
 
 - [[Papers Explained Corpus]]

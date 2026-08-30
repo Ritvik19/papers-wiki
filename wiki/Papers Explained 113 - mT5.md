@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-03-15_Papers-Explained-113--mT5-c61e03bc9218.html`
+- Source file: `raw/2024-03-15_Papers-Explained-113--mT5-c61e03bc9218.md`
 - Source title: Papers Explained 113: mT5
 - Published: 2024-03-15
 - Canonical: [https://medium.com/@ritvik19/papers-explained-113-mt5-c61e03bc9218](https://medium.com/@ritvik19/papers-explained-113-mt5-c61e03bc9218)
@@ -105,17 +105,17 @@ Recommended Reading: [Multi Task Language Models](https://ritvik19.medium.com/li
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-03-15_Papers-Explained-113--mT5-c61e03bc9218.html`); local copies under `wiki/assets/papers-explained-113-mt5/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-03-15_Papers-Explained-113--mT5-c61e03bc9218.md`); local copies under `wiki/assets/papers-explained-113-mt5/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-113-mt5/fig-1.png) | Title page of *mT5: A Massively Multilingual Pre-trained Text-to-Text Transformer*. |
-| ![Figure 2](assets/papers-explained-113-mt5/fig-2.png) | mC4 per-language page counts with sampling distributions for different alpha values. |
-| ![Figure 3](assets/papers-explained-113-mt5/fig-3.png) | Comparison of multilingual pre-trained models by architecture, size, language count, and data source. |
-| ![Figure 4](assets/papers-explained-113-mt5/fig-4.png) | XTREME benchmark results across zero-shot, translate-train, and in-language multitask settings. |
-| ![Figure 5](assets/papers-explained-113-mt5/fig-5.png) | TyDi QA GoldP average F1 scaling with model size across training settings. |
-| ![Figure 6](assets/papers-explained-113-mt5/fig-6.png) | SQuAD F1/EM comparison between T5 and mT5 model sizes. |
-| ![Figure 7](assets/papers-explained-113-mt5/fig-7.png) | Examples of illegal predictions: normalization artifacts, grammatical adjustment, and accidental translation. |
+| ![Figure 1](assets/papers-explained-113-mt5/fig-1.webp) | Title page of *mT5: A Massively Multilingual Pre-trained Text-to-Text Transformer*. |
+| ![Figure 2](assets/papers-explained-113-mt5/fig-2.webp) | mC4 per-language page counts with sampling distributions for different alpha values. |
+| ![Figure 3](assets/papers-explained-113-mt5/fig-3.webp) | Comparison of multilingual pre-trained models by architecture, size, language count, and data source. |
+| ![Figure 4](assets/papers-explained-113-mt5/fig-4.webp) | XTREME benchmark results across zero-shot, translate-train, and in-language multitask settings. |
+| ![Figure 5](assets/papers-explained-113-mt5/fig-5.webp) | TyDi QA GoldP average F1 scaling with model size across training settings. |
+| ![Figure 6](assets/papers-explained-113-mt5/fig-6.webp) | SQuAD F1/EM comparison between T5 and mT5 model sizes. |
+| ![Figure 7](assets/papers-explained-113-mt5/fig-7.webp) | Examples of illegal predictions: normalization artifacts, grammatical adjustment, and accidental translation. |
 ## Related
 
 - [[Papers Explained Corpus]]

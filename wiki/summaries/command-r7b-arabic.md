@@ -1,6 +1,6 @@
 # Introducing Command R7B Arabic
 
-**Source**: `raw/command-r7b-arabic/full-article.html` (340 KB), `raw/command-r7b-arabic/full-article.md` (markdown view)  
+**Source**: `raw/command-r7b-arabic/full-article.md` (340 KB), `raw/command-r7b-arabic/full-article.md` (markdown view)  
 **URL**: https://cohere.com/blog/command-r7b-arabic  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -26,12 +26,12 @@ The model ships on the Cohere platform playground, [Hugging Face](https://huggin
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/command-r7b-arabic/fig-1.png) | Blog hero — Command R7B Arabic announcement | — |
-| ![fig-2](../assets/command-r7b-arabic/fig-2.png) | Enterprise task benchmarks: AlGhafa-Native + Arabic MMLU, IFEval Arabic, TyDI QA Arabic + FaithEval Arabic | — |
-| ![fig-3](../assets/command-r7b-arabic/fig-3.png) | Enterprise usability: auto win-rates on Arabic LMSYS Arena "Hard" preference tasks | — |
-| ![fig-4](../assets/command-r7b-arabic/fig-4.png) | Arabic-language version of enterprise capability benchmark chart | — |
+| ![fig-1](../assets/command-r7b-arabic/fig-1.webp) | Blog hero — Command R7B Arabic announcement | — |
+| ![fig-2](../assets/command-r7b-arabic/fig-2.webp) | Enterprise task benchmarks: AlGhafa-Native + Arabic MMLU, IFEval Arabic, TyDI QA Arabic + FaithEval Arabic | — |
+| ![fig-3](../assets/command-r7b-arabic/fig-3.webp) | Enterprise usability: auto win-rates on Arabic LMSYS Arena "Hard" preference tasks | — |
+| ![fig-4](../assets/command-r7b-arabic/fig-4.webp) | Arabic-language version of enterprise capability benchmark chart | — |
 
-![Enterprise Arabic benchmarks](../assets/command-r7b-arabic/fig-2.png)
+![Enterprise Arabic benchmarks](../assets/command-r7b-arabic/fig-2.webp)
 
 ## Entities
 

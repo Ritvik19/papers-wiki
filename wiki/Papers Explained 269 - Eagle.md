@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-12-10_Papers-Explained-269--Eagle-09c21e549395.html`
+- Source file: `raw/2024-12-10_Papers-Explained-269--Eagle-09c21e549395.md`
 - Source title: Papers Explained 269: Eagle
 - Published: 2024-12-10
 - Canonical: [https://medium.com/@ritvik19/papers-explained-269-eagle-09c21e549395](https://medium.com/@ritvik19/papers-explained-269-eagle-09c21e549395)
@@ -185,22 +185,22 @@ Recommended Reading [Multi Modal Transformers](https://ritvik19.medium.com/list/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-12-10_Papers-Explained-269--Eagle-09c21e549395.html`); local copies under `wiki/assets/papers-explained-269-eagle/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-12-10_Papers-Explained-269--Eagle-09c21e549395.md`); local copies under `wiki/assets/papers-explained-269-eagle/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-269-eagle/fig-1.png) | Title card: Eagle. |
-| ![Figure 2](assets/papers-explained-269-eagle/fig-2.png) | Overview of the Eagle exploration pipeline. |
-| ![Figure 3](assets/papers-explained-269-eagle/fig-3.png) | Comparison of different high-resolution adaption methods. |
-| ![Figure 4](assets/papers-explained-269-eagle/fig-4.png) | Detailed setting of the pre-trained vision experts. |
-| ![Figure 5](assets/papers-explained-269-eagle/fig-5.png) | Comparison between different vision experts as the MLLM encoders. |
-| ![Figure 6](assets/papers-explained-269-eagle/fig-6.png) | Comparison of different fusion methods for different vision experts. |
-| ![Figure 7](assets/papers-explained-269-eagle/fig-7.png) | The proposed training strategy of Eagle. |
-| ![Figure 8](assets/papers-explained-269-eagle/fig-8.png) | Experiments to show the effectiveness of Pre-Align. |
-| ![Figure 9](assets/papers-explained-269-eagle/fig-9.png) | Results of vision expert selection process. |
-| ![Figure 10](assets/papers-explained-269-eagle/fig-10.png) | The advanced training data used in the supervised fine-tuning stage. |
-| ![Figure 11](assets/papers-explained-269-eagle/fig-11.png) | Results with the advanced training data recipe. |
-| ![Figure 12](assets/papers-explained-269-eagle/fig-12.png) | Results using Cambrian-1 training data. |
+| ![Figure 1](assets/papers-explained-269-eagle/fig-1.webp) | Title card: Eagle. |
+| ![Figure 2](assets/papers-explained-269-eagle/fig-2.webp) | Overview of the Eagle exploration pipeline. |
+| ![Figure 3](assets/papers-explained-269-eagle/fig-3.webp) | Comparison of different high-resolution adaption methods. |
+| ![Figure 4](assets/papers-explained-269-eagle/fig-4.webp) | Detailed setting of the pre-trained vision experts. |
+| ![Figure 5](assets/papers-explained-269-eagle/fig-5.webp) | Comparison between different vision experts as the MLLM encoders. |
+| ![Figure 6](assets/papers-explained-269-eagle/fig-6.webp) | Comparison of different fusion methods for different vision experts. |
+| ![Figure 7](assets/papers-explained-269-eagle/fig-7.webp) | The proposed training strategy of Eagle. |
+| ![Figure 8](assets/papers-explained-269-eagle/fig-8.webp) | Experiments to show the effectiveness of Pre-Align. |
+| ![Figure 9](assets/papers-explained-269-eagle/fig-9.webp) | Results of vision expert selection process. |
+| ![Figure 10](assets/papers-explained-269-eagle/fig-10.webp) | The advanced training data used in the supervised fine-tuning stage. |
+| ![Figure 11](assets/papers-explained-269-eagle/fig-11.webp) | Results with the advanced training data recipe. |
+| ![Figure 12](assets/papers-explained-269-eagle/fig-12.webp) | Results using Cambrian-1 training data. |
 ## Related
 
 - [[Papers Explained Corpus]]

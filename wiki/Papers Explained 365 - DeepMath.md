@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-05-14_Papers-Explained-365--DeepMath-496109878202.html`
+- Source file: `raw/2025-05-14_Papers-Explained-365--DeepMath-496109878202.md`
 - Source title: Papers Explained 365: DeepMath
 - Published: 2025-05-14
 - Canonical: [https://medium.com/@ritvik19/papers-explained-365-deepmath-496109878202](https://medium.com/@ritvik19/papers-explained-365-deepmath-496109878202)
@@ -147,19 +147,19 @@ DeepMath-103K: A Large-Scale, Challenging, Decontaminated, and Verifiable Mathem
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-05-14_Papers-Explained-365--DeepMath-496109878202.html`); local copies under `wiki/assets/papers-explained-365-deepmath/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-05-14_Papers-Explained-365--DeepMath-496109878202.md`); local copies under `wiki/assets/papers-explained-365-deepmath/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-365-deepmath/fig-1.png) | Title card: DeepMath. |
-| ![Figure 2](assets/papers-explained-365-deepmath/fig-2.png) | An example data sample. |
-| ![Figure 3](assets/papers-explained-365-deepmath/fig-3.png) | Hierarchical breakdown of covered mathematical topics in DeepMath-103K. |
-| ![Figure 4](assets/papers-explained-365-deepmath/fig-4.png) | Contamination rates of common mathematical and STEM benchmarks detected in the raw data sources before decontamination. |
-| ![Figure 5](assets/papers-explained-365-deepmath/fig-5.png) | The data curation pipeline for DeepMath-103K. |
-| ![Figure 6](assets/papers-explained-365-deepmath/fig-6.png) | Examples of contamination detected between the raw data pool and benchmarks using semantic comparison. |
-| ![Figure 7](assets/papers-explained-365-deepmath/fig-7.png) | Results of RL and SFT using different training datasets. |
-| ![Figure 8](assets/papers-explained-365-deepmath/fig-8.png) | Average reasoning length on different benchmarks for models trained with RL-Zero using various datasets, starting from Qwen-2.5–7B-Base. |
-| ![Figure 9](assets/papers-explained-365-deepmath/fig-9.png) | Variance of beneficial cognitive behaviors observed during RL-Zero training on DeepMath-103K. |
+| ![Figure 1](assets/papers-explained-365-deepmath/fig-1.webp) | Title card: DeepMath. |
+| ![Figure 2](assets/papers-explained-365-deepmath/fig-2.webp) | An example data sample. |
+| ![Figure 3](assets/papers-explained-365-deepmath/fig-3.webp) | Hierarchical breakdown of covered mathematical topics in DeepMath-103K. |
+| ![Figure 4](assets/papers-explained-365-deepmath/fig-4.webp) | Contamination rates of common mathematical and STEM benchmarks detected in the raw data sources before decontamination. |
+| ![Figure 5](assets/papers-explained-365-deepmath/fig-5.webp) | The data curation pipeline for DeepMath-103K. |
+| ![Figure 6](assets/papers-explained-365-deepmath/fig-6.webp) | Examples of contamination detected between the raw data pool and benchmarks using semantic comparison. |
+| ![Figure 7](assets/papers-explained-365-deepmath/fig-7.webp) | Results of RL and SFT using different training datasets. |
+| ![Figure 8](assets/papers-explained-365-deepmath/fig-8.webp) | Average reasoning length on different benchmarks for models trained with RL-Zero using various datasets, starting from Qwen-2.5–7B-Base. |
+| ![Figure 9](assets/papers-explained-365-deepmath/fig-9.webp) | Variance of beneficial cognitive behaviors observed during RL-Zero training on DeepMath-103K. |
 ## Related
 
 - [[Papers Explained Corpus]]

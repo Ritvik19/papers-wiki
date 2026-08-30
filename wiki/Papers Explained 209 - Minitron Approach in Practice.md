@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-09-12_Papers-Explained-209--Minitron-Approach-in-Practice-6b473f67328d.html`
+- Source file: `raw/2024-09-12_Papers-Explained-209--Minitron-Approach-in-Practice-6b473f67328d.md`
 - Source title: Papers Explained 209: Minitron Approach in Practice
 - Published: 2024-09-12
 - Canonical: [https://medium.com/@ritvik19/papers-explained-209-minitron-approach-in-practice-6b473f67328d](https://medium.com/@ritvik19/papers-explained-209-minitron-approach-in-practice-6b473f67328d)
@@ -163,21 +163,21 @@ LLM Pruning and Distillation in Practice: The Minitron Approach [2408.11796](htt
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-09-12_Papers-Explained-209--Minitron-Approach-in-Practice-6b473f67328d.html`); local copies under `wiki/assets/papers-explained-209-minitron-approach-in-practice/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-09-12_Papers-Explained-209--Minitron-Approach-in-Practice-6b473f67328d.md`); local copies under `wiki/assets/papers-explained-209-minitron-approach-in-practice/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-209-minitron-approach-in-practice/fig-1.png) | NVIDIA blog header: LLM Pruning and Distillation in Practice - The Minitron Approach. |
-| ![Figure 2](assets/papers-explained-209-minitron-approach-in-practice/fig-2.png) | High-level practical pipeline: teacher correction, pruning, and distillation into Minitron. |
-| ![Figure 3](assets/papers-explained-209-minitron-approach-in-practice/fig-3.png) | Iterative pruning-and-distillation process from the original Minitron paper. |
-| ![Figure 4](assets/papers-explained-209-minitron-approach-in-practice/fig-4.png) | Architecture details for Llama-3.1-Minitron-4B variants and MN-Minitron-8B. |
-| ![Figure 5](assets/papers-explained-209-minitron-approach-in-practice/fig-5.png) | Two-stage distillation diagram: teacher correction then KL-based student training. |
-| ![Figure 6](assets/papers-explained-209-minitron-approach-in-practice/fig-6.png) | Distillation hyperparameters for Llama-3.1-Minitron-4B and MN-Minitron-8B. |
-| ![Figure 7](assets/papers-explained-209-minitron-approach-in-practice/fig-7.png) | Accuracy table for MN-Minitron-8B and Llama-3.1-Minitron-4B variants. |
-| ![Figure 8](assets/papers-explained-209-minitron-approach-in-practice/fig-8.png) | Aligned-model benchmark comparison for Gemma, Phi-2, Qwen2, and Llama-3.1 Minitron variants. |
-| ![Figure 9](assets/papers-explained-209-minitron-approach-in-practice/fig-9.png) | Block-distillation schematic for selecting student blocks from teacher blocks. |
-| ![Figure 10](assets/papers-explained-209-minitron-approach-in-practice/fig-10.png) | Layer-wise runtime profile showing attention and FFN savings from Puzzle block choices. |
-| ![Figure 11](assets/papers-explained-209-minitron-approach-in-practice/fig-11.png) | Accuracy-preservation table: Llama-3.1-70B-Instruct vs Llama-3.1-Nemotron-51B-Instruct. |
+| ![Figure 1](assets/papers-explained-209-minitron-approach-in-practice/fig-1.webp) | NVIDIA blog header: LLM Pruning and Distillation in Practice - The Minitron Approach. |
+| ![Figure 2](assets/papers-explained-209-minitron-approach-in-practice/fig-2.webp) | High-level practical pipeline: teacher correction, pruning, and distillation into Minitron. |
+| ![Figure 3](assets/papers-explained-209-minitron-approach-in-practice/fig-3.webp) | Iterative pruning-and-distillation process from the original Minitron paper. |
+| ![Figure 4](assets/papers-explained-209-minitron-approach-in-practice/fig-4.webp) | Architecture details for Llama-3.1-Minitron-4B variants and MN-Minitron-8B. |
+| ![Figure 5](assets/papers-explained-209-minitron-approach-in-practice/fig-5.webp) | Two-stage distillation diagram: teacher correction then KL-based student training. |
+| ![Figure 6](assets/papers-explained-209-minitron-approach-in-practice/fig-6.webp) | Distillation hyperparameters for Llama-3.1-Minitron-4B and MN-Minitron-8B. |
+| ![Figure 7](assets/papers-explained-209-minitron-approach-in-practice/fig-7.webp) | Accuracy table for MN-Minitron-8B and Llama-3.1-Minitron-4B variants. |
+| ![Figure 8](assets/papers-explained-209-minitron-approach-in-practice/fig-8.webp) | Aligned-model benchmark comparison for Gemma, Phi-2, Qwen2, and Llama-3.1 Minitron variants. |
+| ![Figure 9](assets/papers-explained-209-minitron-approach-in-practice/fig-9.webp) | Block-distillation schematic for selecting student blocks from teacher blocks. |
+| ![Figure 10](assets/papers-explained-209-minitron-approach-in-practice/fig-10.webp) | Layer-wise runtime profile showing attention and FFN savings from Puzzle block choices. |
+| ![Figure 11](assets/papers-explained-209-minitron-approach-in-practice/fig-11.webp) | Accuracy-preservation table: Llama-3.1-70B-Instruct vs Llama-3.1-Nemotron-51B-Instruct. |
 ## Related
 
 - [[Papers Explained Corpus]]

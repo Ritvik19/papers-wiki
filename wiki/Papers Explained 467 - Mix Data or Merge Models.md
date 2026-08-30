@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-10-03_Papers-Explained-467--Mix-Data-or-Merge-Models-75a3373c7f30.html`
+- Source file: `raw/2025-10-03_Papers-Explained-467--Mix-Data-or-Merge-Models-75a3373c7f30.md`
 - Source title: Papers Explained 467: Mix Data or Merge Models
 - Published: 2025-10-03
 - Canonical: [https://medium.com/@ritvik19/papers-explained-467-mix-data-or-merge-models-75a3373c7f30](https://medium.com/@ritvik19/papers-explained-467-mix-data-or-merge-models-75a3373c7f30)
@@ -175,22 +175,22 @@ Mix Data or Merge Models? Optimizing for Diverse Multi-Task Learning [2410.10801
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-10-03_Papers-Explained-467--Mix-Data-or-Merge-Models-75a3373c7f30.html`); local copies under `wiki/assets/papers-explained-467-mix-data-or-merge-models/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-10-03_Papers-Explained-467--Mix-Data-or-Merge-Models-75a3373c7f30.md`); local copies under `wiki/assets/papers-explained-467-mix-data-or-merge-models/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-467-mix-data-or-merge-models/fig-1.png) | Title card: Mix Data or Merge Models. |
-| ![Figure 2](assets/papers-explained-467-mix-data-or-merge-models/fig-2.png) | Overview of the Mix versus Merge framework. |
-| ![Figure 3](assets/papers-explained-467-mix-data-or-merge-models/fig-3.png) | Linear merging involves simple linear weighted averaging of model parameters, weighted by specified coefficients. |
-| ![Figure 4](assets/papers-explained-467-mix-data-or-merge-models/fig-4.png) | This technique smoothly blends two models by interpolating their weights along the shortest path on a high-dimensional sphere. |
-| ![Figure 5](assets/papers-explained-467-mix-data-or-merge-models/fig-5.png) | Finally, it merges the parameters by averaging those that align with the consensus sign. |
-| ![Figure 6](assets/papers-explained-467-mix-data-or-merge-models/fig-6.png) | Finally, it merges the parameters by averaging those that align with the consensus sign. |
-| ![Figure 7](assets/papers-explained-467-mix-data-or-merge-models/fig-7.png) | Comparison of Safety and General performance across various methods. |
-| ![Figure 8](assets/papers-explained-467-mix-data-or-merge-models/fig-8.png) | Mixing versus merging. |
-| ![Figure 9](assets/papers-explained-467-mix-data-or-merge-models/fig-9.png) | Comparison between different merging methods across safety and general performance with DPO checkpoints. |
-| ![Figure 10](assets/papers-explained-467-mix-data-or-merge-models/fig-10.png) | Monolingual model merging. |
-| ![Figure 11](assets/papers-explained-467-mix-data-or-merge-models/fig-11.png) | Comparison between offline preference tuning models before (row 2) and after (row 3) merging. |
-| ![Figure 12](assets/papers-explained-467-mix-data-or-merge-models/fig-12.png) | Effect of “safety weighting” while Linear merging. |
+| ![Figure 1](assets/papers-explained-467-mix-data-or-merge-models/fig-1.webp) | Title card: Mix Data or Merge Models. |
+| ![Figure 2](assets/papers-explained-467-mix-data-or-merge-models/fig-2.webp) | Overview of the Mix versus Merge framework. |
+| ![Figure 3](assets/papers-explained-467-mix-data-or-merge-models/fig-3.webp) | Linear merging involves simple linear weighted averaging of model parameters, weighted by specified coefficients. |
+| ![Figure 4](assets/papers-explained-467-mix-data-or-merge-models/fig-4.webp) | This technique smoothly blends two models by interpolating their weights along the shortest path on a high-dimensional sphere. |
+| ![Figure 5](assets/papers-explained-467-mix-data-or-merge-models/fig-5.webp) | Finally, it merges the parameters by averaging those that align with the consensus sign. |
+| ![Figure 6](assets/papers-explained-467-mix-data-or-merge-models/fig-6.webp) | Finally, it merges the parameters by averaging those that align with the consensus sign. |
+| ![Figure 7](assets/papers-explained-467-mix-data-or-merge-models/fig-7.webp) | Comparison of Safety and General performance across various methods. |
+| ![Figure 8](assets/papers-explained-467-mix-data-or-merge-models/fig-8.webp) | Mixing versus merging. |
+| ![Figure 9](assets/papers-explained-467-mix-data-or-merge-models/fig-9.webp) | Comparison between different merging methods across safety and general performance with DPO checkpoints. |
+| ![Figure 10](assets/papers-explained-467-mix-data-or-merge-models/fig-10.webp) | Monolingual model merging. |
+| ![Figure 11](assets/papers-explained-467-mix-data-or-merge-models/fig-11.webp) | Comparison between offline preference tuning models before (row 2) and after (row 3) merging. |
+| ![Figure 12](assets/papers-explained-467-mix-data-or-merge-models/fig-12.webp) | Effect of “safety weighting” while Linear merging. |
 ## Related
 
 - [[Papers Explained Corpus]]

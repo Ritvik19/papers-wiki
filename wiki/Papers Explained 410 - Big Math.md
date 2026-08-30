@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-07-16_Papers-Explained-410--Big-Math-426eacadc021.html`
+- Source file: `raw/2025-07-16_Papers-Explained-410--Big-Math-426eacadc021.md`
 - Source title: Papers Explained 410: Big Math
 - Published: 2025-07-16
 - Canonical: [https://medium.com/@ritvik19/papers-explained-410-big-math-426eacadc021](https://medium.com/@ritvik19/papers-explained-410-big-math-426eacadc021)
@@ -153,15 +153,15 @@ Big-Math: A Large-Scale, High-Quality Math Dataset for Reinforcement Learning in
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-07-16_Papers-Explained-410--Big-Math-426eacadc021.html`); local copies under `wiki/assets/papers-explained-410-big-math/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-07-16_Papers-Explained-410--Big-Math-426eacadc021.md`); local copies under `wiki/assets/papers-explained-410-big-math/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-410-big-math/fig-1.png) | Title card: Big Math. |
-| ![Figure 2](assets/papers-explained-410-big-math/fig-2.png) | Comparison of problems by data source. |
-| ![Figure 3](assets/papers-explained-410-big-math/fig-3.png) | Reformulation strategy. |
-| ![Figure 4](assets/papers-explained-410-big-math/fig-4.png) | Distribution of solve rates on each subset of Big Math, calculated with Llama-3.1–8B. |
-| ![Figure 5](assets/papers-explained-410-big-math/fig-5.png) | Distribution of solve rates by domain, calculated with Llama-3.1–8B. |
+| ![Figure 1](assets/papers-explained-410-big-math/fig-1.webp) | Title card: Big Math. |
+| ![Figure 2](assets/papers-explained-410-big-math/fig-2.webp) | Comparison of problems by data source. |
+| ![Figure 3](assets/papers-explained-410-big-math/fig-3.webp) | Reformulation strategy. |
+| ![Figure 4](assets/papers-explained-410-big-math/fig-4.webp) | Distribution of solve rates on each subset of Big Math, calculated with Llama-3.1–8B. |
+| ![Figure 5](assets/papers-explained-410-big-math/fig-5.webp) | Distribution of solve rates by domain, calculated with Llama-3.1–8B. |
 ## Related
 
 - [[Papers Explained Corpus]]

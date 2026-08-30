@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-03-14_Papers-Explained-330--Gemini-Embedding-324982aeb756.html`
+- Source file: `raw/2025-03-14_Papers-Explained-330--Gemini-Embedding-324982aeb756.md`
 - Source title: Papers Explained 330: Gemini Embedding
 - Published: 2025-03-14
 - Canonical: [https://medium.com/@ritvik19/papers-explained-330-gemini-embedding-324982aeb756](https://medium.com/@ritvik19/papers-explained-330-gemini-embedding-324982aeb756)
@@ -111,18 +111,18 @@ Gemini Embedding: Generalizable Embeddings from Gemini [2503.07891](https://arxi
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-03-14_Papers-Explained-330--Gemini-Embedding-324982aeb756.html`); local copies under `wiki/assets/papers-explained-330-gemini-embedding/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-03-14_Papers-Explained-330--Gemini-Embedding-324982aeb756.md`); local copies under `wiki/assets/papers-explained-330-gemini-embedding/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-330-gemini-embedding/fig-1.png) | Title card: Gemini Embedding. |
-| ![Figure 2](assets/papers-explained-330-gemini-embedding/fig-2.png) | Given a batch of size 𝐵 the loss applied to these embeddings is as follows. |
-| ![Figure 3](assets/papers-explained-330-gemini-embedding/fig-3.png) | Comparison of embedding models on Massive Multilingual Embedding Benchmark: MTEB(Multilingual), MTEB(Eng, v2), and MTEB(Code). |
-| ![Figure 4](assets/papers-explained-330-gemini-embedding/fig-4.png) | Performance of top leaderboard models on MTEB(Multilingual). |
-| ![Figure 5](assets/papers-explained-330-gemini-embedding/fig-5.png) | Performance of top leaderboard models on MTEB(Eng, v2). |
-| ![Figure 6](assets/papers-explained-330-gemini-embedding/fig-6.png) | Performance of top leaderboard models on MTEB(Code). |
-| ![Figure 7](assets/papers-explained-330-gemini-embedding/fig-7.png) | Performance of top multilingual models on XTREME-UP (MRR@10). |
-| ![Figure 8](assets/papers-explained-330-gemini-embedding/fig-8.png) | Gemini Embedding 2 incorporates Matryoshka Representation Learning (MRL), a technique that “nests” information by dynamically scaling down... |
+| ![Figure 1](assets/papers-explained-330-gemini-embedding/fig-1.webp) | Title card: Gemini Embedding. |
+| ![Figure 2](assets/papers-explained-330-gemini-embedding/fig-2.webp) | Given a batch of size 𝐵 the loss applied to these embeddings is as follows. |
+| ![Figure 3](assets/papers-explained-330-gemini-embedding/fig-3.webp) | Comparison of embedding models on Massive Multilingual Embedding Benchmark: MTEB(Multilingual), MTEB(Eng, v2), and MTEB(Code). |
+| ![Figure 4](assets/papers-explained-330-gemini-embedding/fig-4.webp) | Performance of top leaderboard models on MTEB(Multilingual). |
+| ![Figure 5](assets/papers-explained-330-gemini-embedding/fig-5.webp) | Performance of top leaderboard models on MTEB(Eng, v2). |
+| ![Figure 6](assets/papers-explained-330-gemini-embedding/fig-6.webp) | Performance of top leaderboard models on MTEB(Code). |
+| ![Figure 7](assets/papers-explained-330-gemini-embedding/fig-7.webp) | Performance of top multilingual models on XTREME-UP (MRR@10). |
+| ![Figure 8](assets/papers-explained-330-gemini-embedding/fig-8.webp) | Gemini Embedding 2 incorporates Matryoshka Representation Learning (MRL), a technique that “nests” information by dynamically scaling down... |
 ## Related
 
 - [[Papers Explained Corpus]]

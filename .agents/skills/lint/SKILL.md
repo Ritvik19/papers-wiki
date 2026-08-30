@@ -134,7 +134,7 @@ Fix (with approval): remove the broken reference and add a note
 #### Part B — Orphaned assets
 List every file under `wiki/assets/` recursively.
 For each file, check whether any `.md` file in `wiki/`, any file in
-`artifacts/`, or any `raw/<slug>/full-article.html` references it.
+`artifacts/`, or any `raw/<slug>/full-article.md` (or other raw markdown) references it.
 Flag files that are not referenced anywhere.
 Also flag any `raw/<slug>/images/` directories as storage violations (figures
 belong only in `wiki/assets/`).

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-09-11_Papers-Explained-451--Kimi-K2-05663a5ee4aa.html`
+- Source file: `raw/2025-09-11_Papers-Explained-451--Kimi-K2-05663a5ee4aa.md`
 - Source title: Papers Explained 451: Kimi K2
 - Published: 2025-09-11
 - Canonical: [https://medium.com/@ritvik19/papers-explained-451-kimi-k2-05663a5ee4aa](https://medium.com/@ritvik19/papers-explained-451-kimi-k2-05663a5ee4aa)
@@ -327,22 +327,22 @@ Kimi K2: Open Agentic Intelligence [2507.20534](https://arxiv.org/abs/2507.20534
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-09-11_Papers-Explained-451--Kimi-K2-05663a5ee4aa.html`); local copies under `wiki/assets/papers-explained-451-kimi-k2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-09-11_Papers-Explained-451--Kimi-K2-05663a5ee4aa.md`); local copies under `wiki/assets/papers-explained-451-kimi-k2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-451-kimi-k2/fig-1.png) | Title card: Kimi K2. |
-| ![Figure 2](assets/papers-explained-451-kimi-k2/fig-2.png) | Where S^h_max. |
-| ![Figure 3](assets/papers-explained-451-kimi-k2/fig-3.png) | A naïve implementation clips all heads at the same time. |
-| ![Figure 4](assets/papers-explained-451-kimi-k2/fig-4.png) | Muon is integrated with weight decay, consistent RMS matching, and QK-Clip into a single optimizer. |
-| ![Figure 5](assets/papers-explained-451-kimi-k2/fig-5.png) | Auto-regressive chunk-wise rephrasing pipeline for long input excerpts. |
-| ![Figure 6](assets/papers-explained-451-kimi-k2/fig-6.png) | SimpleQA Accuracy under three rephrasing-epoch configurations. |
-| ![Figure 7](assets/papers-explained-451-kimi-k2/fig-7.png) | Architectural comparison between Kimi K2 and DeepSeek-V3. |
-| ![Figure 8](assets/papers-explained-451-kimi-k2/fig-8.png) | Sparsity Scaling Law. |
-| ![Figure 9](assets/papers-explained-451-kimi-k2/fig-9.png) | Data synthesis pipeline for tool use. |
-| ![Figure 10](assets/papers-explained-451-kimi-k2/fig-10.png) | Closed-Loop Critic Refinement and Alignment. |
-| ![Figure 11](assets/papers-explained-451-kimi-k2/fig-11.png) | Performance comparison of Kimi-K2-Base. |
-| ![Figure 12](assets/papers-explained-451-kimi-k2/fig-12.png) | Performance comparison of Kimi-K2-Instruct. |
+| ![Figure 1](assets/papers-explained-451-kimi-k2/fig-1.webp) | Title card: Kimi K2. |
+| ![Figure 2](assets/papers-explained-451-kimi-k2/fig-2.webp) | Where S^h_max. |
+| ![Figure 3](assets/papers-explained-451-kimi-k2/fig-3.webp) | A naïve implementation clips all heads at the same time. |
+| ![Figure 4](assets/papers-explained-451-kimi-k2/fig-4.webp) | Muon is integrated with weight decay, consistent RMS matching, and QK-Clip into a single optimizer. |
+| ![Figure 5](assets/papers-explained-451-kimi-k2/fig-5.webp) | Auto-regressive chunk-wise rephrasing pipeline for long input excerpts. |
+| ![Figure 6](assets/papers-explained-451-kimi-k2/fig-6.webp) | SimpleQA Accuracy under three rephrasing-epoch configurations. |
+| ![Figure 7](assets/papers-explained-451-kimi-k2/fig-7.webp) | Architectural comparison between Kimi K2 and DeepSeek-V3. |
+| ![Figure 8](assets/papers-explained-451-kimi-k2/fig-8.webp) | Sparsity Scaling Law. |
+| ![Figure 9](assets/papers-explained-451-kimi-k2/fig-9.webp) | Data synthesis pipeline for tool use. |
+| ![Figure 10](assets/papers-explained-451-kimi-k2/fig-10.webp) | Closed-Loop Critic Refinement and Alignment. |
+| ![Figure 11](assets/papers-explained-451-kimi-k2/fig-11.webp) | Performance comparison of Kimi-K2-Base. |
+| ![Figure 12](assets/papers-explained-451-kimi-k2/fig-12.webp) | Performance comparison of Kimi-K2-Instruct. |
 ## Related
 
 - [[Papers Explained Corpus]]

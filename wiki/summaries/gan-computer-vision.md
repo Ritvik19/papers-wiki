@@ -1,6 +1,6 @@
 # GANs in Computer Vision: Introduction to Generative Learning
 
-**Source**: `raw/gan-computer-vision/full-article.html` (376 KB), `raw/gan-computer-vision/full-article.md` (markdown view)  
+**Source**: `raw/gan-computer-vision/full-article.md` (376 KB), `raw/gan-computer-vision/full-article.md` (markdown view)  
 **URL**: https://theaisummer.com/gan-computer-vision/  
 **Author**: Nikolas Adaloglou (AI Summer), 2020-04-10  
 **Ingested**: 2026-06-06  
@@ -12,17 +12,17 @@ Nikolas Adaloglou opens a multi-part AI Summer series on [[Generative Adversaria
 
 The vanilla GAN (Goodfellow et al., 2014) samples latent noise \(z\), maps it through G to an image, and trains D on real vs generated batches. G is updated **indirectly**—to fool D (target label 1 on fakes)—not to match a specific real image. The minimax objective and alternating gradient-ascent (D) / gradient-descent (G) updates are derived with PyTorch training loops. MNIST demos show progressive digit formation across epochs.
 
-![Generator training: G fools D with fake samples labeled as real](../assets/gan-computer-vision/fig-1.png)
+![Generator training: G fools D with fake samples labeled as real](../assets/gan-computer-vision/fig-1.webp)
 
-![Discriminator training: D pushes real→1 and fake→0 while G is frozen](../assets/gan-computer-vision/fig-2.png)
+![Discriminator training: D pushes real→1 and fake→0 while G is frozen](../assets/gan-computer-vision/fig-2.webp)
 
 ![Vanilla GAN MNIST samples improving across training epochs](../assets/gan-computer-vision/fig-3.gif)
 
 A central pathology is **[[Mode Collapse]]**: G collapses to a few modes (or a single point), producing identical outputs; D then easily rejects them and gradients become unstable. Conditional GANs (Mirza & Osindero, 2014) inject auxiliary labels/tags into both G and D via concatenation for guided synthesis. **[[DCGAN]]** (Radford et al., 2015) replaces pooling with strided convolutions in D, uses transpose convolutions in G, batch normalization, no FC hidden layers, ReLU in G and LeakyReLU in D—becoming the convolutional GAN baseline with sharper MNIST/CIFAR-10 results but still vulnerable to collapse on single-class CIFAR.
 
-![Conditional GAN architecture: auxiliary information fed to both G and D](../assets/gan-computer-vision/fig-4.png)
+![Conditional GAN architecture: auxiliary information fed to both G and D](../assets/gan-computer-vision/fig-4.webp)
 
-![DCGAN unconditional generator: noise projected to 4×4 feature maps, upsampled via transpose convolutions](../assets/gan-computer-vision/fig-5.png)
+![DCGAN unconditional generator: noise projected to 4×4 feature maps, upsampled via transpose convolutions](../assets/gan-computer-vision/fig-5.webp)
 
 **[[InfoGAN]]** (Chen et al., 2016) adds unsupervised latent codes \(c\) with mutual-information maximization so G cannot ignore them; an auxiliary head on D estimates \(P(c|x)\), yielding disentangled controls (digit rotation, stroke thickness). Salimans et al. (2016) "Improved GAN" collects stabilization tricks: **[[Feature Matching]]** (match D intermediate feature statistics), minibatch discrimination (pairwise sample similarity in D), historical weight averaging, one-sided label smoothing, virtual batch normalization, the **[[Inception Score]]** metric, and semi-supervised learning with generated samples.
 
@@ -44,17 +44,17 @@ A central pathology is **[[Mode Collapse]]**: G collapses to a few modes (or a s
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/gan-computer-vision/fig-1.png) | Generator training scheme: G produces fakes, D labels them as real (target 1) | — |
-| ![fig-2](../assets/gan-computer-vision/fig-2.png) | Discriminator training: real→1, fake→0; G frozen | — |
+| ![fig-1](../assets/gan-computer-vision/fig-1.webp) | Generator training scheme: G produces fakes, D labels them as real (target 1) | — |
+| ![fig-2](../assets/gan-computer-vision/fig-2.webp) | Discriminator training: real→1, fake→0; G frozen | — |
 | ![fig-3](../assets/gan-computer-vision/fig-3.gif) | Vanilla GAN MNIST samples across epochs | — |
-| ![fig-4](../assets/gan-computer-vision/fig-4.png) | Conditional GAN: auxiliary condition concatenated into G and D (cGAN paper) | — |
-| ![fig-5](../assets/gan-computer-vision/fig-5.png) | DCGAN unconditional generator architecture | — |
+| ![fig-4](../assets/gan-computer-vision/fig-4.webp) | Conditional GAN: auxiliary condition concatenated into G and D (cGAN paper) | — |
+| ![fig-5](../assets/gan-computer-vision/fig-5.webp) | DCGAN unconditional generator architecture | — |
 | ![fig-6](../assets/gan-computer-vision/fig-6.gif) | DCGAN MNIST: crisper digits vs vanilla GAN | — |
 | ![fig-7](../assets/gan-computer-vision/fig-7.gif) | Mode collapse in DCGAN trained on single-class CIFAR-10 | — |
 | ![fig-8](../assets/gan-computer-vision/fig-8.gif) | DCGAN on full CIFAR-10 (all classes) | — |
-| ![fig-9](../assets/gan-computer-vision/fig-9.png) | InfoGAN: varying continuous latent codes controls rotation and stroke thickness | — |
-| ![fig-10](../assets/gan-computer-vision/fig-10.png) | Minibatch discrimination: pairwise similarity features concatenated to D intermediate activations | — |
-| ![fig-11](../assets/gan-computer-vision/fig-11.png) | Improved GAN results: animal parts (eyes, noses) emerge though anatomy not fully coherent | — |
+| ![fig-9](../assets/gan-computer-vision/fig-9.webp) | InfoGAN: varying continuous latent codes controls rotation and stroke thickness | — |
+| ![fig-10](../assets/gan-computer-vision/fig-10.webp) | Minibatch discrimination: pairwise similarity features concatenated to D intermediate activations | — |
+| ![fig-11](../assets/gan-computer-vision/fig-11.webp) | Improved GAN results: animal parts (eyes, noses) emerge though anatomy not fully coherent | — |
 
 ## Entities
 

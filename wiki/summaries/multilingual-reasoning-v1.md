@@ -1,6 +1,6 @@
 # NVIDIA Releases 6 Million Multi-Lingual Reasoning Dataset
 
-**Source**: `raw/multilingual-reasoning-v1/full-article.html`, `raw/multilingual-reasoning-v1/full-article.md`
+**Source**: `raw/multilingual-reasoning-v1/full-article.md`, `raw/multilingual-reasoning-v1/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

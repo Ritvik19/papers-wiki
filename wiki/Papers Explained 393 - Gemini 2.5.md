@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-06-23_Papers-Explained-393--Gemini-2-5-3b8877cf4da9.html`
+- Source file: `raw/2025-06-23_Papers-Explained-393--Gemini-2-5-3b8877cf4da9.md`
 - Source title: Papers Explained 393: Gemini 2.5
 - Published: 2025-06-23
 - Canonical: [https://medium.com/@ritvik19/papers-explained-393-gemini-2-5-3b8877cf4da9](https://medium.com/@ritvik19/papers-explained-393-gemini-2-5-3b8877cf4da9)
@@ -195,17 +195,17 @@ Gemini 3 empowers users to:
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-06-23_Papers-Explained-393--Gemini-2-5-3b8877cf4da9.html`); local copies under `wiki/assets/papers-explained-393-gemini-2-5/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-06-23_Papers-Explained-393--Gemini-2-5-3b8877cf4da9.md`); local copies under `wiki/assets/papers-explained-393-gemini-2-5/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-393-gemini-2-5/fig-1.png) | Title card: Gemini 2.5. |
-| ![Figure 2](assets/papers-explained-393-gemini-2-5/fig-2.png) | Comparison of Gemini 2.X model family with Gemini 1.5 Pro and Flash. |
-| ![Figure 3](assets/papers-explained-393-gemini-2-5/fig-3.png) | Papers Explained 393: Gemini 2.5. |
-| ![Figure 4](assets/papers-explained-393-gemini-2-5/fig-4.png) | Evaluation. |
-| ![Figure 5](assets/papers-explained-393-gemini-2-5/fig-5.png) | Evaluation. |
-| ![Figure 6](assets/papers-explained-393-gemini-2-5/fig-6.png) | Evaluation. |
-| ![Figure 7](assets/papers-explained-393-gemini-2-5/fig-7.png) | Evaluation. |
+| ![Figure 1](assets/papers-explained-393-gemini-2-5/fig-1.webp) | Title card: Gemini 2.5. |
+| ![Figure 2](assets/papers-explained-393-gemini-2-5/fig-2.webp) | Comparison of Gemini 2.X model family with Gemini 1.5 Pro and Flash. |
+| ![Figure 3](assets/papers-explained-393-gemini-2-5/fig-3.webp) | Papers Explained 393: Gemini 2.5. |
+| ![Figure 4](assets/papers-explained-393-gemini-2-5/fig-4.webp) | Evaluation. |
+| ![Figure 5](assets/papers-explained-393-gemini-2-5/fig-5.webp) | Evaluation. |
+| ![Figure 6](assets/papers-explained-393-gemini-2-5/fig-6.webp) | Evaluation. |
+| ![Figure 7](assets/papers-explained-393-gemini-2-5/fig-7.webp) | Evaluation. |
 | ![Figure 8](assets/papers-explained-393-gemini-2-5/fig-8.gif) | Gemini 3 Pro significantly outperforms previous models, including 2.5 Pro, on major AI benchmarks. |
 | ![Figure 9](assets/papers-explained-393-gemini-2-5/fig-9.gif) | Gemini 3 Pro significantly outperforms previous models, including 2.5 Pro, on major AI benchmarks. |
 ## Related

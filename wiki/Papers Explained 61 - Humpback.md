@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-10-13_Papers-Explained-61--Humpback-46992374fc34.html`
+- Source file: `raw/2023-10-13_Papers-Explained-61--Humpback-46992374fc34.md`
 - Source title: Papers Explained 61: Humpback
 - Published: 2023-10-13
 - Canonical: [https://medium.com/@ritvik19/papers-explained-61-humpback-46992374fc34](https://medium.com/@ritvik19/papers-explained-61-humpback-46992374fc34)
@@ -85,15 +85,15 @@ Self-Alignment with Instruction Backtranslation [2308.06259](https://arxiv.org/a
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-10-13_Papers-Explained-61--Humpback-46992374fc34.html`); local copies under `wiki/assets/papers-explained-61-humpback/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-10-13_Papers-Explained-61--Humpback-46992374fc34.md`); local copies under `wiki/assets/papers-explained-61-humpback/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-61-humpback/fig-1.png) | Title card: Humpback. |
-| ![Figure 2](assets/papers-explained-61-humpback/fig-2.png) | Instruction Back Translation. |
-| ![Figure 3](assets/papers-explained-61-humpback/fig-3.png) | Statistics of seed, self-augmentation, and self-curation finetuning data. Instruction and output lengths are given as the number of characters. |
-| ![Figure 4](assets/papers-explained-61-humpback/fig-4.png) | Results on the Alpaca leaderboard (win rate over text-davinci-003 evaluated by GPT-4). |
-| ![Figure 5](assets/papers-explained-61-humpback/fig-5.png) | Evaluation Sources. |
+| ![Figure 1](assets/papers-explained-61-humpback/fig-1.webp) | Title card: Humpback. |
+| ![Figure 2](assets/papers-explained-61-humpback/fig-2.webp) | Instruction Back Translation. |
+| ![Figure 3](assets/papers-explained-61-humpback/fig-3.webp) | Statistics of seed, self-augmentation, and self-curation finetuning data. Instruction and output lengths are given as the number of characters. |
+| ![Figure 4](assets/papers-explained-61-humpback/fig-4.webp) | Results on the Alpaca leaderboard (win rate over text-davinci-003 evaluated by GPT-4). |
+| ![Figure 5](assets/papers-explained-61-humpback/fig-5.webp) | Evaluation Sources. |
 ## Related
 
 - [[Papers Explained Corpus]]

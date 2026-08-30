@@ -1,6 +1,6 @@
 # Aya Expanse: Connecting our world
 
-**Source**: `raw/aya-expanse/full-article.html` (342 KB), `raw/aya-expanse/full-article.md` (markdown view)  
+**Source**: `raw/aya-expanse/full-article.md` (342 KB), `raw/aya-expanse/full-article.md` (markdown view)  
 **URL**: https://cohere.com/blog/aya-expanse-connecting-our-world  
 **Ingested**: 2026-06-06  
 **Tags**: #summary
@@ -27,12 +27,12 @@ Three research ingredients are highlighted as the training recipe: **data arbitr
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/aya-expanse/fig-1.png) | Aya Expanse 8B pairwise win rates on m-ArenaHard vs. leading open models in its class | — |
-| ![fig-2](../assets/aya-expanse/fig-2.png) | Language-specific win rates: Aya Expanse 8B vs. Gemma 2 9B on m-ArenaHard | — |
-| ![fig-3](../assets/aya-expanse/fig-3.png) | Step-by-step win-rate improvement against Gemma 2 9B as data arbitrage, preference training, and merging are added | — |
-| ![fig-4](../assets/aya-expanse/fig-4.png) | Aya Expanse 32B pairwise win rates on m-ArenaHard vs. larger open models | — |
+| ![fig-1](../assets/aya-expanse/fig-1.webp) | Aya Expanse 8B pairwise win rates on m-ArenaHard vs. leading open models in its class | — |
+| ![fig-2](../assets/aya-expanse/fig-2.webp) | Language-specific win rates: Aya Expanse 8B vs. Gemma 2 9B on m-ArenaHard | — |
+| ![fig-3](../assets/aya-expanse/fig-3.webp) | Step-by-step win-rate improvement against Gemma 2 9B as data arbitrage, preference training, and merging are added | — |
+| ![fig-4](../assets/aya-expanse/fig-4.webp) | Aya Expanse 32B pairwise win rates on m-ArenaHard vs. larger open models | — |
 
-![Step-by-step training recipe gains](../assets/aya-expanse/fig-3.png)
+![Step-by-step training recipe gains](../assets/aya-expanse/fig-3.webp)
 
 ## Entities
 

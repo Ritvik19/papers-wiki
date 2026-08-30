@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-06-03_Papers-Explained-379--Eagle-2-5-73ffe73dc009.html`
+- Source file: `raw/2025-06-03_Papers-Explained-379--Eagle-2-5-73ffe73dc009.md`
 - Source title: Papers Explained 379: Eagle 2.5
 - Published: 2025-06-03
 - Canonical: [https://medium.com/@ritvik19/papers-explained-379-eagle-2-5-73ffe73dc009](https://medium.com/@ritvik19/papers-explained-379-eagle-2-5-73ffe73dc009)
@@ -201,22 +201,22 @@ Eagle 2.5: Boosting Long-Context Post-Training for Frontier Vision-Language Mode
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-06-03_Papers-Explained-379--Eagle-2-5-73ffe73dc009.html`); local copies under `wiki/assets/papers-explained-379-eagle-2-5/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-06-03_Papers-Explained-379--Eagle-2-5-73ffe73dc009.md`); local copies under `wiki/assets/papers-explained-379-eagle-2-5/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-379-eagle-2-5/fig-1.png) | Title card: Eagle 2.5. |
-| ![Figure 2](assets/papers-explained-379-eagle-2-5/fig-2.png) | Eagle 2.5 is a family of frontier vision-language models (VLMs) for long-context multimodal learning. |
-| ![Figure 3](assets/papers-explained-379-eagle-2-5/fig-3.png) | The optimal tiling configuration is selected by maximizing the following expression. |
-| ![Figure 4](assets/papers-explained-379-eagle-2-5/fig-4.png) | The constrained optimization problem is formulated as. |
-| ![Figure 5](assets/papers-explained-379-eagle-2-5/fig-5.png) | Video, multi-page document, and long text dataset used in Eagle-2.5. |
-| ![Figure 6](assets/papers-explained-379-eagle-2-5/fig-6.png) | Overview of the video annotation framework. |
-| ![Figure 7](assets/papers-explained-379-eagle-2-5/fig-7.png) | Comparison with SoTA models on Various Video Benchmarks. |
-| ![Figure 8](assets/papers-explained-379-eagle-2-5/fig-8.png) | Comparison with SoTA models on Various Image Benchmarks. |
-| ![Figure 9](assets/papers-explained-379-eagle-2-5/fig-9.png) | Impact of long-context data on performance of image benchmarks. |
-| ![Figure 10](assets/papers-explained-379-eagle-2-5/fig-10.png) | The impact of image data and pretraining on the performance of video benchmarks. |
-| ![Figure 11](assets/papers-explained-379-eagle-2-5/fig-11.png) | The impact of information-first sampling on performance of image and video benchmarks. |
-| ![Figure 12](assets/papers-explained-379-eagle-2-5/fig-12.png) | The impact of Eagle-Video-110K dataset and different post-training schedules on the performance of video benchmarks. |
+| ![Figure 1](assets/papers-explained-379-eagle-2-5/fig-1.webp) | Title card: Eagle 2.5. |
+| ![Figure 2](assets/papers-explained-379-eagle-2-5/fig-2.webp) | Eagle 2.5 is a family of frontier vision-language models (VLMs) for long-context multimodal learning. |
+| ![Figure 3](assets/papers-explained-379-eagle-2-5/fig-3.webp) | The optimal tiling configuration is selected by maximizing the following expression. |
+| ![Figure 4](assets/papers-explained-379-eagle-2-5/fig-4.webp) | The constrained optimization problem is formulated as. |
+| ![Figure 5](assets/papers-explained-379-eagle-2-5/fig-5.webp) | Video, multi-page document, and long text dataset used in Eagle-2.5. |
+| ![Figure 6](assets/papers-explained-379-eagle-2-5/fig-6.webp) | Overview of the video annotation framework. |
+| ![Figure 7](assets/papers-explained-379-eagle-2-5/fig-7.webp) | Comparison with SoTA models on Various Video Benchmarks. |
+| ![Figure 8](assets/papers-explained-379-eagle-2-5/fig-8.webp) | Comparison with SoTA models on Various Image Benchmarks. |
+| ![Figure 9](assets/papers-explained-379-eagle-2-5/fig-9.webp) | Impact of long-context data on performance of image benchmarks. |
+| ![Figure 10](assets/papers-explained-379-eagle-2-5/fig-10.webp) | The impact of image data and pretraining on the performance of video benchmarks. |
+| ![Figure 11](assets/papers-explained-379-eagle-2-5/fig-11.webp) | The impact of information-first sampling on performance of image and video benchmarks. |
+| ![Figure 12](assets/papers-explained-379-eagle-2-5/fig-12.webp) | The impact of Eagle-Video-110K dataset and different post-training schedules on the performance of video benchmarks. |
 ## Related
 
 - [[Papers Explained Corpus]]

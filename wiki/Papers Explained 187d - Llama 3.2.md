@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-10-07_Papers-Explained-187d--Llama-3-2-e517fa1f2528.html`
+- Source file: `raw/2024-10-07_Papers-Explained-187d--Llama-3-2-e517fa1f2528.md`
 - Source title: Papers Explained 187d: Llama 3.2
 - Published: 2024-10-07
 - Canonical: [https://medium.com/@ritvik19/papers-explained-187d-llama-3-2-e517fa1f2528](https://medium.com/@ritvik19/papers-explained-187d-llama-3-2-e517fa1f2528)
@@ -69,14 +69,14 @@ Recommended Reading [LLaMA Models](https://ritvik19.medium.com/list/llama-models
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-10-07_Papers-Explained-187d--Llama-3-2-e517fa1f2528.html`); local copies under `wiki/assets/papers-explained-187d-llama-3-2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-10-07_Papers-Explained-187d--Llama-3-2-e517fa1f2528.md`); local copies under `wiki/assets/papers-explained-187d-llama-3-2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-187d-llama-3-2/fig-1.png) | Launch graphic — **Llama 3.2** **on-device 1B / 3B** and **multimodal 11B / 90B**. |
-| ![Figure 2](assets/papers-explained-187d-llama-3-2/fig-2.png) | **1B & 3B** recipe — **pruned init** from Llama 3.1 8B, **logit distillation** from 8B/70B teachers, **synthetic SFT** from **Llama 3.1 405B Instruct**. |
-| ![Figure 3](assets/papers-explained-187d-llama-3-2/fig-3.png) | **Vision instruction-tuned** scores — **Llama 3.2 11B / 90B** vs Claude 3 Haiku / GPT-4o-mini (MMMU, charts, DocVQA, VQAv2 + text-side MMLU/MATH/GPQA/MGSM). |
-| ![Figure 4](assets/papers-explained-187d-llama-3-2/fig-4.png) | **Small-model** suite — **Llama 3.2 1B / 3B** vs Gemma 2 2B IT / Phi-3.5-mini IT (general, tools, math, reasoning, **128k** long-context, multilingual). |
+| ![Figure 1](assets/papers-explained-187d-llama-3-2/fig-1.webp) | Launch graphic — **Llama 3.2** **on-device 1B / 3B** and **multimodal 11B / 90B**. |
+| ![Figure 2](assets/papers-explained-187d-llama-3-2/fig-2.webp) | **1B & 3B** recipe — **pruned init** from Llama 3.1 8B, **logit distillation** from 8B/70B teachers, **synthetic SFT** from **Llama 3.1 405B Instruct**. |
+| ![Figure 3](assets/papers-explained-187d-llama-3-2/fig-3.webp) | **Vision instruction-tuned** scores — **Llama 3.2 11B / 90B** vs Claude 3 Haiku / GPT-4o-mini (MMMU, charts, DocVQA, VQAv2 + text-side MMLU/MATH/GPQA/MGSM). |
+| ![Figure 4](assets/papers-explained-187d-llama-3-2/fig-4.webp) | **Small-model** suite — **Llama 3.2 1B / 3B** vs Gemma 2 2B IT / Phi-3.5-mini IT (general, tools, math, reasoning, **128k** long-context, multilingual). |
 ## Related
 
 - [[Papers Explained Corpus]]

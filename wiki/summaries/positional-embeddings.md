@@ -1,6 +1,6 @@
 # How Positional Embeddings Work in Self-Attention (Code in PyTorch)
 
-**Source**: `raw/positional-embeddings/full-article.html` (439 KB), `raw/positional-embeddings/full-article.md` (markdown view)  
+**Source**: `raw/positional-embeddings/full-article.md` (439 KB), `raw/positional-embeddings/full-article.md` (markdown view)  
 **URL**: https://theaisummer.com/positional-embeddings/  
 **Author**: Nikolas Adaloglou (AI Summer), 2021-02-25  
 **Ingested**: 2026-06-06  
@@ -32,21 +32,21 @@ Two families are covered with PyTorch/einsum implementations: **absolute PE** �
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/positional-embeddings/fig-1.png) | Position-wise similarity of learned PE across NLP models (Wang & Chen 2020) | — |
-| ![fig-2](../assets/positional-embeddings/fig-2.png) | Self-attention as fully connected directed graph over tokens | — |
-| ![fig-3](../assets/positional-embeddings/fig-3.png) | Query index \(i\) attends to all key/value positions \(j\) (Ramachandran et al.) | — |
-| ![fig-4](../assets/positional-embeddings/fig-4.png) | Relative-to-absolute PE indexing for \(w=4\) tokens | — |
-| ![fig-5](../assets/positional-embeddings/fig-5.png) | 2D relative PE: row (red) and column (blue) offsets from reference pixel | — |
+| ![fig-1](../assets/positional-embeddings/fig-1.webp) | Position-wise similarity of learned PE across NLP models (Wang & Chen 2020) | — |
+| ![fig-2](../assets/positional-embeddings/fig-2.webp) | Self-attention as fully connected directed graph over tokens | — |
+| ![fig-3](../assets/positional-embeddings/fig-3.webp) | Query index \(i\) attends to all key/value positions \(j\) (Ramachandran et al.) | — |
+| ![fig-4](../assets/positional-embeddings/fig-4.webp) | Relative-to-absolute PE indexing for \(w=4\) tokens | — |
+| ![fig-5](../assets/positional-embeddings/fig-5.webp) | 2D relative PE: row (red) and column (blue) offsets from reference pixel | — |
 
-![Learned PE similarity patterns](../assets/positional-embeddings/fig-1.png)
+![Learned PE similarity patterns](../assets/positional-embeddings/fig-1.webp)
 
 Brighter cells indicate higher position-wise similarity in pretrained models (GPT-2, BERT, etc.).
 
-![Relative-to-absolute indexing](../assets/positional-embeddings/fig-4.png)
+![Relative-to-absolute indexing](../assets/positional-embeddings/fig-4.webp)
 
 Converts \(2n{-}1\) relative distance buckets into an \(n \times n\) attention bias matrix.
 
-![2D relative positional embedding](../assets/positional-embeddings/fig-5.png)
+![2D relative positional embedding](../assets/positional-embeddings/fig-5.webp)
 
 Vision PE decomposes offsets into independent row and column distances on a 2D grid.
 

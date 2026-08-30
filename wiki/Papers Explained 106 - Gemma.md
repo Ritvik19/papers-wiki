@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-02-28_Papers-Explained-106--Gemma-ca2b449321ac.html`
+- Source file: `raw/2024-02-28_Papers-Explained-106--Gemma-ca2b449321ac.md`
 - Source title: Papers Explained 106: Gemma
 - Published: 2024-02-28
 - Canonical: [https://medium.com/@ritvik19/papers-explained-106-gemma-ca2b449321ac](https://medium.com/@ritvik19/papers-explained-106-gemma-ca2b449321ac)
@@ -129,18 +129,18 @@ Gemma 1.1 consistently perform better than Gemma 1 models
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-02-28_Papers-Explained-106--Gemma-ca2b449321ac.html`); local copies under `wiki/assets/papers-explained-106-gemma/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-02-28_Papers-Explained-106--Gemma-ca2b449321ac.md`); local copies under `wiki/assets/papers-explained-106-gemma/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-106-gemma/fig-1.png) | Title page of *Gemma: Open Models Based on Gemini Research and Technology*. |
-| ![Figure 2](assets/papers-explained-106-gemma/fig-2.png) | Parameter-count split for Gemma 2B and 7B across embedding and non-embedding weights. |
-| ![Figure 3](assets/papers-explained-106-gemma/fig-3.png) | Key architecture hyperparameters for Gemma 2B and 7B (layers, heads, hidden sizes, vocab). |
-| ![Figure 4](assets/papers-explained-106-gemma/fig-4.png) | Conversation-format control tokens used during Gemma instruction tuning. |
-| ![Figure 5](assets/papers-explained-106-gemma/fig-5.png) | Human preference win rates vs Mistral 7B v0.2 Instruct on safety and instruction-following. |
-| ![Figure 6](assets/papers-explained-106-gemma/fig-6.png) | Academic benchmark comparison against LLaMA-2 and Mistral across reasoning, QA, coding, and math. |
-| ![Figure 7](assets/papers-explained-106-gemma/fig-7.png) | Consolidated benchmark results for Gemma 2B vs 7B. |
-| ![Figure 8](assets/papers-explained-106-gemma/fig-8.png) | Safety-evaluation table comparing Gemma 1.0 IT and Gemma 1.1 IT variants. |
+| ![Figure 1](assets/papers-explained-106-gemma/fig-1.webp) | Title page of *Gemma: Open Models Based on Gemini Research and Technology*. |
+| ![Figure 2](assets/papers-explained-106-gemma/fig-2.webp) | Parameter-count split for Gemma 2B and 7B across embedding and non-embedding weights. |
+| ![Figure 3](assets/papers-explained-106-gemma/fig-3.webp) | Key architecture hyperparameters for Gemma 2B and 7B (layers, heads, hidden sizes, vocab). |
+| ![Figure 4](assets/papers-explained-106-gemma/fig-4.webp) | Conversation-format control tokens used during Gemma instruction tuning. |
+| ![Figure 5](assets/papers-explained-106-gemma/fig-5.webp) | Human preference win rates vs Mistral 7B v0.2 Instruct on safety and instruction-following. |
+| ![Figure 6](assets/papers-explained-106-gemma/fig-6.webp) | Academic benchmark comparison against LLaMA-2 and Mistral across reasoning, QA, coding, and math. |
+| ![Figure 7](assets/papers-explained-106-gemma/fig-7.webp) | Consolidated benchmark results for Gemma 2B vs 7B. |
+| ![Figure 8](assets/papers-explained-106-gemma/fig-8.webp) | Safety-evaluation table comparing Gemma 1.0 IT and Gemma 1.1 IT variants. |
 ## HF Blog Cross-References
 
 - [Welcome Gemma - Google's new open LLM](https://huggingface.co/blog/gemma) (2024-02-21) — the Hugging Face launch/integration post for this release: Transformers, TGI, PEFT, and Text Generation Inference support, plus terms of use and the responsible generative AI toolkit. No new technical claims beyond the report covered above.

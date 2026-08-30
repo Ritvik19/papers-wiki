@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-09-06_Papers-Explained-204--Matryoshka-Adaptor-c22f76488959.html`
+- Source file: `raw/2024-09-06_Papers-Explained-204--Matryoshka-Adaptor-c22f76488959.md`
 - Source title: Papers Explained 204: Matryoshka Adaptor
 - Published: 2024-09-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-204-matryoshka-adaptor-c22f76488959](https://medium.com/@ritvik19/papers-explained-204-matryoshka-adaptor-c22f76488959)
@@ -113,20 +113,20 @@ Recommended Reading [Retrieval and Representation Learning](https://ritvik19.med
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-09-06_Papers-Explained-204--Matryoshka-Adaptor-c22f76488959.html`); local copies under `wiki/assets/papers-explained-204-matryoshka-adaptor/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-09-06_Papers-Explained-204--Matryoshka-Adaptor-c22f76488959.md`); local copies under `wiki/assets/papers-explained-204-matryoshka-adaptor/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-204-matryoshka-adaptor/fig-1.png) | Unsupervised and supervised Matryoshka-Adaptor framework diagrams. |
-| ![Figure 2](assets/papers-explained-204-matryoshka-adaptor/fig-2.png) | Similarity-based objective definition used by the adaptor. |
-| ![Figure 3](assets/papers-explained-204-matryoshka-adaptor/fig-3.png) | Top-k nearest-neighbor term used in the unsupervised objective. |
-| ![Figure 4](assets/papers-explained-204-matryoshka-adaptor/fig-4.png) | Hyperparameter-weighted loss formulation with alpha and beta. |
-| ![Figure 5](assets/papers-explained-204-matryoshka-adaptor/fig-5.png) | Truncated-dimension cosine-similarity term used for retrieval optimization. |
-| ![Figure 6](assets/papers-explained-204-matryoshka-adaptor/fig-6.png) | Supervised objective with alpha, beta, and gamma weighting. |
-| ![Figure 7](assets/papers-explained-204-matryoshka-adaptor/fig-7.png) | Unsupervised Matryoshka-Adaptor results across embedding models. |
-| ![Figure 8](assets/papers-explained-204-matryoshka-adaptor/fig-8.png) | Supervised Matryoshka-Adaptor retrieval results across embedding models. |
-| ![Figure 9](assets/papers-explained-204-matryoshka-adaptor/fig-9.png) | NDCG@10 vs embedding dimension for unsupervised adaptor variants. |
-| ![Figure 10](assets/papers-explained-204-matryoshka-adaptor/fig-10.png) | NDCG@10 vs embedding dimension for supervised adaptor variants. |
+| ![Figure 1](assets/papers-explained-204-matryoshka-adaptor/fig-1.webp) | Unsupervised and supervised Matryoshka-Adaptor framework diagrams. |
+| ![Figure 2](assets/papers-explained-204-matryoshka-adaptor/fig-2.webp) | Similarity-based objective definition used by the adaptor. |
+| ![Figure 3](assets/papers-explained-204-matryoshka-adaptor/fig-3.webp) | Top-k nearest-neighbor term used in the unsupervised objective. |
+| ![Figure 4](assets/papers-explained-204-matryoshka-adaptor/fig-4.webp) | Hyperparameter-weighted loss formulation with alpha and beta. |
+| ![Figure 5](assets/papers-explained-204-matryoshka-adaptor/fig-5.webp) | Truncated-dimension cosine-similarity term used for retrieval optimization. |
+| ![Figure 6](assets/papers-explained-204-matryoshka-adaptor/fig-6.webp) | Supervised objective with alpha, beta, and gamma weighting. |
+| ![Figure 7](assets/papers-explained-204-matryoshka-adaptor/fig-7.webp) | Unsupervised Matryoshka-Adaptor results across embedding models. |
+| ![Figure 8](assets/papers-explained-204-matryoshka-adaptor/fig-8.webp) | Supervised Matryoshka-Adaptor retrieval results across embedding models. |
+| ![Figure 9](assets/papers-explained-204-matryoshka-adaptor/fig-9.webp) | NDCG@10 vs embedding dimension for unsupervised adaptor variants. |
+| ![Figure 10](assets/papers-explained-204-matryoshka-adaptor/fig-10.webp) | NDCG@10 vs embedding dimension for supervised adaptor variants. |
 ## Related
 
 - [[Papers Explained Corpus]]

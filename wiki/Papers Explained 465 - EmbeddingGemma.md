@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-10-01_Papers-Explained-465--EmbeddingGemma-076b2bc8b460.html`
+- Source file: `raw/2025-10-01_Papers-Explained-465--EmbeddingGemma-076b2bc8b460.md`
 - Source title: Papers Explained 465: EmbeddingGemma
 - Published: 2025-10-01
 - Canonical: [https://medium.com/@ritvik19/papers-explained-465-embeddinggemma-076b2bc8b460](https://medium.com/@ritvik19/papers-explained-465-embeddinggemma-076b2bc8b460)
@@ -131,25 +131,25 @@ EmbeddingGemma: Powerful and Lightweight Text Representations [2509.20354](https
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-10-01_Papers-Explained-465--EmbeddingGemma-076b2bc8b460.html`); local copies under `wiki/assets/papers-explained-465-embeddinggemma/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-10-01_Papers-Explained-465--EmbeddingGemma-076b2bc8b460.md`); local copies under `wiki/assets/papers-explained-465-embeddinggemma/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-465-embeddinggemma/fig-1.png) | Title card: EmbeddingGemma. |
-| ![Figure 2](assets/papers-explained-465-embeddinggemma/fig-2.png) | The query and passages are embedded as vectors. |
-| ![Figure 3](assets/papers-explained-465-embeddinggemma/fig-3.png) | where sim(x,y) is cosine similarity, and 𝟙TN masks out false negatives from duplicates. |
-| ![Figure 4](assets/papers-explained-465-embeddinggemma/fig-4.png) | where sim(x,y) is cosine similarity, and 𝟙TN masks out false negatives from duplicates. |
-| ![Figure 5](assets/papers-explained-465-embeddinggemma/fig-5.png) | The second loss is based on the global orthogonal regularizer (GOR). |
-| ![Figure 6](assets/papers-explained-465-embeddinggemma/fig-6.png) | The third loss is an embedding matching loss based on geometric knowledge distillation for information retrieval. |
-| ![Figure 7](assets/papers-explained-465-embeddinggemma/fig-7.png) | Performance of raw and quantized EmbeddingGemma checkpoints on MTEB benchmarks. |
-| ![Figure 8](assets/papers-explained-465-embeddinggemma/fig-8.png) | Results using different initialization strategies. |
-| ![Figure 9](assets/papers-explained-465-embeddinggemma/fig-9.png) | Results using different types of poolers. |
-| ![Figure 10](assets/papers-explained-465-embeddinggemma/fig-10.png) | Results using different training mixtures. |
-| ![Figure 11](assets/papers-explained-465-embeddinggemma/fig-11.png) | Comparison of popular embedding models on MTEB(Multilingual, v2), MTEB(English, v2), and MTEB(Code). |
-| ![Figure 12](assets/papers-explained-465-embeddinggemma/fig-12.png) | Performance of top leaderboard models under 500M parameters on MTEB(Multilingual, v2). |
-| ![Figure 13](assets/papers-explained-465-embeddinggemma/fig-13.png) | Performance of top leaderboard models under 500M parameters on MTEB(Eng, v2). |
-| ![Figure 14](assets/papers-explained-465-embeddinggemma/fig-14.png) | Performance of top leaderboard models under 500M parameters on MTEB(Code, v1). |
-| ![Figure 15](assets/papers-explained-465-embeddinggemma/fig-15.png) | Performance of top multilingual models on XTREME-UP (MRR@10). |
+| ![Figure 1](assets/papers-explained-465-embeddinggemma/fig-1.webp) | Title card: EmbeddingGemma. |
+| ![Figure 2](assets/papers-explained-465-embeddinggemma/fig-2.webp) | The query and passages are embedded as vectors. |
+| ![Figure 3](assets/papers-explained-465-embeddinggemma/fig-3.webp) | where sim(x,y) is cosine similarity, and 𝟙TN masks out false negatives from duplicates. |
+| ![Figure 4](assets/papers-explained-465-embeddinggemma/fig-4.webp) | where sim(x,y) is cosine similarity, and 𝟙TN masks out false negatives from duplicates. |
+| ![Figure 5](assets/papers-explained-465-embeddinggemma/fig-5.webp) | The second loss is based on the global orthogonal regularizer (GOR). |
+| ![Figure 6](assets/papers-explained-465-embeddinggemma/fig-6.webp) | The third loss is an embedding matching loss based on geometric knowledge distillation for information retrieval. |
+| ![Figure 7](assets/papers-explained-465-embeddinggemma/fig-7.webp) | Performance of raw and quantized EmbeddingGemma checkpoints on MTEB benchmarks. |
+| ![Figure 8](assets/papers-explained-465-embeddinggemma/fig-8.webp) | Results using different initialization strategies. |
+| ![Figure 9](assets/papers-explained-465-embeddinggemma/fig-9.webp) | Results using different types of poolers. |
+| ![Figure 10](assets/papers-explained-465-embeddinggemma/fig-10.webp) | Results using different training mixtures. |
+| ![Figure 11](assets/papers-explained-465-embeddinggemma/fig-11.webp) | Comparison of popular embedding models on MTEB(Multilingual, v2), MTEB(English, v2), and MTEB(Code). |
+| ![Figure 12](assets/papers-explained-465-embeddinggemma/fig-12.webp) | Performance of top leaderboard models under 500M parameters on MTEB(Multilingual, v2). |
+| ![Figure 13](assets/papers-explained-465-embeddinggemma/fig-13.webp) | Performance of top leaderboard models under 500M parameters on MTEB(Eng, v2). |
+| ![Figure 14](assets/papers-explained-465-embeddinggemma/fig-14.webp) | Performance of top leaderboard models under 500M parameters on MTEB(Code, v1). |
+| ![Figure 15](assets/papers-explained-465-embeddinggemma/fig-15.webp) | Performance of top multilingual models on XTREME-UP (MRR@10). |
 ## HF Blog Cross-References
 
 - "Welcome EmbeddingGemma, Google's new efficient embedding model" (`huggingface.co/blog/embeddinggemma`, 2025-09-04) is the launch-day integration post from Hugging Face and Google. It repeats the architecture and MRL truncation details above but adds practical material this page doesn't cover: the required task-prefix strings for each MTEB task type, framework usage snippets for Sentence Transformers, LangChain, LlamaIndex, Haystack, txtai, Transformers.js, and Text Embeddings Inference/ONNX Runtime, and a worked domain fine-tuning case study. Fine-tuning `google/embeddinggemma-300m` on the MIRIAD medical QA dataset (100K pairs, `CachedMultipleNegativesRankingLoss`, ~5.5h on one RTX 3090) produced `sentence-transformers/embeddinggemma-300m-medical`, raising NDCG@10 on a held-out medical-retrieval test set from 0.8340 to 0.8862 and beating every general-purpose embedding model tested at the same size.

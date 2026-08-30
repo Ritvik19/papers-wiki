@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-12_Papers-Explained-183--Magpie-0603cbdc69c3.html`
+- Source file: `raw/2024-08-12_Papers-Explained-183--Magpie-0603cbdc69c3.md`
 - Source title: Papers Explained 183: Magpie
 - Published: 2024-08-12
 - Canonical: [https://medium.com/@ritvik19/papers-explained-183-magpie-0603cbdc69c3](https://medium.com/@ritvik19/papers-explained-183-magpie-0603cbdc69c3)
@@ -147,24 +147,24 @@ Magpie: Alignment Data Synthesis from Scratch by Prompting Aligned LLMs with Not
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-12_Papers-Explained-183--Magpie-0603cbdc69c3.html`); local copies under `wiki/assets/papers-explained-183-magpie/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-12_Papers-Explained-183--Magpie-0603cbdc69c3.md`); local copies under `wiki/assets/papers-explained-183-magpie/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-183-magpie/fig-1.png) | Paper title: **MAGPIE** — alignment data synthesis by prompting aligned LLMs **with no user content** (only chat templates). |
-| ![Figure 2](assets/papers-explained-183-magpie/fig-2.png) | **Pipeline**: template-only prefill → synthetic **instruction** → paired **response** → filter → SFT → **Magpie-Air / Magpie-Pro**; plus **AlpacaEval 2 (LC)** bar vs baselines. |
-| ![Figure 3](assets/papers-explained-183-magpie/fig-3.png) | **MAGPIE-Air** vs **MAGPIE-Pro**: decoding grids (**temperature**, **top-p**) and **conversation counts** (3M vs 1M totals). |
-| ![Figure 4](assets/papers-explained-183-magpie/fig-4.png) | **Filtering configurations** for Air vs Pro subsets (quality, difficulty, neighbor distance, reward \(\tau_1\) / gap \(\tau_2\), longest-response preference). |
-| ![Figure 5](assets/papers-explained-183-magpie/fig-5.png) | **Dataset comparison table**: synthetic / human / mixture sources vs **MAGPIE** — scale (**#convs**, tokens), turns, human effort, response generator. |
-| ![Figure 6](assets/papers-explained-183-magpie/fig-6.png) | **Token-length histograms** for MAGPIE-Air vs MAGPIE-Pro — short **inputs**, long **outputs** (2×2 panel). |
-| ![Figure 7](assets/papers-explained-183-magpie/fig-7.png) | **t-SNE** overlap: **Magpie-Pro** vs Alpaca, Evol Instruct, UltraChat (embedding-space coverage). |
-| ![Figure 8](assets/papers-explained-183-magpie/fig-8.png) | **Llama-3–8B-Instruct** prompts for automatic **task tags**, **input quality**, and **difficulty** labeling (JSON output schemas). |
-| ![Figure 9](assets/papers-explained-183-magpie/fig-9.png) | **Task-category donuts**: MAGPIE-Pro vs MAGPIE-Air (information seeking, creative writing, coding, math, …). |
-| ![Figure 10](assets/papers-explained-183-magpie/fig-10.png) | **Quality** and **difficulty** distributions — Air vs Pro from automated ratings (bar charts). |
-| ![Figure 11](assets/papers-explained-183-magpie/fig-11.png) | **Diversity** (**min neighbor distance**) and **reward histograms** — base vs instruct model scores on MAGPIE-Air. |
-| ![Figure 12](assets/papers-explained-183-magpie/fig-12.png) | **Llama-Guard-2** safety breakdown — MAGPIE-Air vs MAGPIE-Pro (**Safe** dominates; rare category tails). |
-| ![Figure 13](assets/papers-explained-183-magpie/fig-13.png) | **Llama-3–8B** instruction tuning: Magpie vs ShareGPT / UltraChat / PO variants — **AlpacaEval 2** (LC/WR) and **Arena-Hard** vs official **Llama-3-Instruct**. |
-| ![Figure 14](assets/papers-explained-183-magpie/fig-14.png) | **Qwen1.5 (4B / 7B)**: official Chat vs **base + MAGPIE** on **AlpacaEval 2** (GPT-4-Turbo ref vs official aligned ref). |
+| ![Figure 1](assets/papers-explained-183-magpie/fig-1.webp) | Paper title: **MAGPIE** — alignment data synthesis by prompting aligned LLMs **with no user content** (only chat templates). |
+| ![Figure 2](assets/papers-explained-183-magpie/fig-2.webp) | **Pipeline**: template-only prefill → synthetic **instruction** → paired **response** → filter → SFT → **Magpie-Air / Magpie-Pro**; plus **AlpacaEval 2 (LC)** bar vs baselines. |
+| ![Figure 3](assets/papers-explained-183-magpie/fig-3.webp) | **MAGPIE-Air** vs **MAGPIE-Pro**: decoding grids (**temperature**, **top-p**) and **conversation counts** (3M vs 1M totals). |
+| ![Figure 4](assets/papers-explained-183-magpie/fig-4.webp) | **Filtering configurations** for Air vs Pro subsets (quality, difficulty, neighbor distance, reward \(\tau_1\) / gap \(\tau_2\), longest-response preference). |
+| ![Figure 5](assets/papers-explained-183-magpie/fig-5.webp) | **Dataset comparison table**: synthetic / human / mixture sources vs **MAGPIE** — scale (**#convs**, tokens), turns, human effort, response generator. |
+| ![Figure 6](assets/papers-explained-183-magpie/fig-6.webp) | **Token-length histograms** for MAGPIE-Air vs MAGPIE-Pro — short **inputs**, long **outputs** (2×2 panel). |
+| ![Figure 7](assets/papers-explained-183-magpie/fig-7.webp) | **t-SNE** overlap: **Magpie-Pro** vs Alpaca, Evol Instruct, UltraChat (embedding-space coverage). |
+| ![Figure 8](assets/papers-explained-183-magpie/fig-8.webp) | **Llama-3–8B-Instruct** prompts for automatic **task tags**, **input quality**, and **difficulty** labeling (JSON output schemas). |
+| ![Figure 9](assets/papers-explained-183-magpie/fig-9.webp) | **Task-category donuts**: MAGPIE-Pro vs MAGPIE-Air (information seeking, creative writing, coding, math, …). |
+| ![Figure 10](assets/papers-explained-183-magpie/fig-10.webp) | **Quality** and **difficulty** distributions — Air vs Pro from automated ratings (bar charts). |
+| ![Figure 11](assets/papers-explained-183-magpie/fig-11.webp) | **Diversity** (**min neighbor distance**) and **reward histograms** — base vs instruct model scores on MAGPIE-Air. |
+| ![Figure 12](assets/papers-explained-183-magpie/fig-12.webp) | **Llama-Guard-2** safety breakdown — MAGPIE-Air vs MAGPIE-Pro (**Safe** dominates; rare category tails). |
+| ![Figure 13](assets/papers-explained-183-magpie/fig-13.webp) | **Llama-3–8B** instruction tuning: Magpie vs ShareGPT / UltraChat / PO variants — **AlpacaEval 2** (LC/WR) and **Arena-Hard** vs official **Llama-3-Instruct**. |
+| ![Figure 14](assets/papers-explained-183-magpie/fig-14.webp) | **Qwen1.5 (4B / 7B)**: official Chat vs **base + MAGPIE** on **AlpacaEval 2** (GPT-4-Turbo ref vs official aligned ref). |
 ## Related
 
 - [[Papers Explained Corpus]]

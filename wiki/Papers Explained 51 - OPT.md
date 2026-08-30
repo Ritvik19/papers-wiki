@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-08-14_Papers-Explained-51--OPT-dacd9406e2bd.html`
+- Source file: `raw/2023-08-14_Papers-Explained-51--OPT-dacd9406e2bd.md`
 - Source title: Papers Explained 51: OPT
 - Published: 2023-08-14
 - Canonical: [https://medium.com/@ritvik19/papers-explained-51-opt-dacd9406e2bd](https://medium.com/@ritvik19/papers-explained-51-opt-dacd9406e2bd)
@@ -133,22 +133,22 @@ OPT: Open Pre-trained Transformer Language Models [2205.01068](https://arxiv.org
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-08-14_Papers-Explained-51--OPT-dacd9406e2bd.html`); local copies under `wiki/assets/papers-explained-51-opt/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-08-14_Papers-Explained-51--OPT-dacd9406e2bd.md`); local copies under `wiki/assets/papers-explained-51-opt/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-51-opt/fig-1.png) | Title card: OPT. |
-| ![Figure 2](assets/papers-explained-51-opt/fig-2.png) | Model architecture details. |
-| ![Figure 3](assets/papers-explained-51-opt/fig-3.png) | Zero-shot NLP Evaluation Averages. Across a variety of tasks and model sizes. |
-| ![Figure 4](assets/papers-explained-51-opt/fig-4.png) | Multi-shot performance. |
-| ![Figure 5](assets/papers-explained-51-opt/fig-5.png) | Zero-shot NLP Evaluations. Full evaluations on all 16 NLP tasks, with comparisons where available. |
-| ![Figure 6](assets/papers-explained-51-opt/fig-6.png) | Multishot-shot NLP Evaluations. Full evaluations on all 16 NLP tasks, with comparisons to the GPT-3 reported performance. |
-| ![Figure 7](assets/papers-explained-51-opt/fig-7.png) | Dialogue Evaluations. |
-| ![Figure 8](assets/papers-explained-51-opt/fig-8.png) | Hate speech detection. F1 scores of detecting hate speech between Davinci and OPT-175B. |
-| ![Figure 9](assets/papers-explained-51-opt/fig-9.png) | CrowS-Pairs evaluation. Lower is better for all categories, indicating more fairness. |
-| ![Figure 10](assets/papers-explained-51-opt/fig-10.png) | StereoSet Evaluations. |
-| ![Figure 11](assets/papers-explained-51-opt/fig-11.png) | RealToxicityPompts. |
-| ![Figure 12](assets/papers-explained-51-opt/fig-12.png) | Dialogue Responsible AI evaluations. |
+| ![Figure 1](assets/papers-explained-51-opt/fig-1.webp) | Title card: OPT. |
+| ![Figure 2](assets/papers-explained-51-opt/fig-2.webp) | Model architecture details. |
+| ![Figure 3](assets/papers-explained-51-opt/fig-3.webp) | Zero-shot NLP Evaluation Averages. Across a variety of tasks and model sizes. |
+| ![Figure 4](assets/papers-explained-51-opt/fig-4.webp) | Multi-shot performance. |
+| ![Figure 5](assets/papers-explained-51-opt/fig-5.webp) | Zero-shot NLP Evaluations. Full evaluations on all 16 NLP tasks, with comparisons where available. |
+| ![Figure 6](assets/papers-explained-51-opt/fig-6.webp) | Multishot-shot NLP Evaluations. Full evaluations on all 16 NLP tasks, with comparisons to the GPT-3 reported performance. |
+| ![Figure 7](assets/papers-explained-51-opt/fig-7.webp) | Dialogue Evaluations. |
+| ![Figure 8](assets/papers-explained-51-opt/fig-8.webp) | Hate speech detection. F1 scores of detecting hate speech between Davinci and OPT-175B. |
+| ![Figure 9](assets/papers-explained-51-opt/fig-9.webp) | CrowS-Pairs evaluation. Lower is better for all categories, indicating more fairness. |
+| ![Figure 10](assets/papers-explained-51-opt/fig-10.webp) | StereoSet Evaluations. |
+| ![Figure 11](assets/papers-explained-51-opt/fig-11.webp) | RealToxicityPompts. |
+| ![Figure 12](assets/papers-explained-51-opt/fig-12.webp) | Dialogue Responsible AI evaluations. |
 ## Related
 
 - [[Papers Explained Corpus]]

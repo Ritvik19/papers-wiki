@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-02-04_Papers-Explained-302--ReST-EM-9abe7c76936e.html`
+- Source file: `raw/2025-02-04_Papers-Explained-302--ReST-EM-9abe7c76936e.md`
 - Source title: Papers Explained 302: ReST^EM
 - Published: 2025-02-04
 - Canonical: [https://medium.com/@ritvik19/papers-explained-302-rest-em-9abe7c76936e](https://medium.com/@ritvik19/papers-explained-302-rest-em-9abe7c76936e)
@@ -77,19 +77,19 @@ Beyond Human Data: Scaling Self-Training for Problem-Solving with Language Model
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-02-04_Papers-Explained-302--ReST-EM-9abe7c76936e.html`); local copies under `wiki/assets/papers-explained-302-rest-em/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-02-04_Papers-Explained-302--ReST-EM-9abe7c76936e.md`); local copies under `wiki/assets/papers-explained-302-rest-em/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-302-rest-em/fig-1.png) | Title card: ReST^EM. |
-| ![Figure 2](assets/papers-explained-302-rest-em/fig-2.png) | Unlike ReST, augmenting D𝑖 in the Generate step with human-generated outputs is refrained from as such data may not always be optimal for... |
-| ![Figure 3](assets/papers-explained-302-rest-em/fig-3.png) | ReST-EM for math problem-solving. |
-| ![Figure 4](assets/papers-explained-302-rest-em/fig-4.png) | ReST-EM for code-generation. |
-| ![Figure 5](assets/papers-explained-302-rest-em/fig-5.png) | Pass@K results for PaLM-2-L. |
-| ![Figure 6](assets/papers-explained-302-rest-em/fig-6.png) | Left: Comparing ReST-EM with SFT on MATH. Right: Impact of Model-Generated Data for Distillation. |
-| ![Figure 7](assets/papers-explained-302-rest-em/fig-7.png) | ReST-EM vs ReST using PaLM 2-S*. |
-| ![Figure 8](assets/papers-explained-302-rest-em/fig-8.png) | Left: Performance for a single iteration of ReST-EM as a function of dataset size. Right: Improvement from ReST-EM based on the difficulty level of the question. |
-| ![Figure 9](assets/papers-explained-302-rest-em/fig-9.png) | Evaluations on Big-Bench Hard suite of tasks. |
+| ![Figure 1](assets/papers-explained-302-rest-em/fig-1.webp) | Title card: ReST^EM. |
+| ![Figure 2](assets/papers-explained-302-rest-em/fig-2.webp) | Unlike ReST, augmenting D𝑖 in the Generate step with human-generated outputs is refrained from as such data may not always be optimal for... |
+| ![Figure 3](assets/papers-explained-302-rest-em/fig-3.webp) | ReST-EM for math problem-solving. |
+| ![Figure 4](assets/papers-explained-302-rest-em/fig-4.webp) | ReST-EM for code-generation. |
+| ![Figure 5](assets/papers-explained-302-rest-em/fig-5.webp) | Pass@K results for PaLM-2-L. |
+| ![Figure 6](assets/papers-explained-302-rest-em/fig-6.webp) | Left: Comparing ReST-EM with SFT on MATH. Right: Impact of Model-Generated Data for Distillation. |
+| ![Figure 7](assets/papers-explained-302-rest-em/fig-7.webp) | ReST-EM vs ReST using PaLM 2-S*. |
+| ![Figure 8](assets/papers-explained-302-rest-em/fig-8.webp) | Left: Performance for a single iteration of ReST-EM as a function of dataset size. Right: Improvement from ReST-EM based on the difficulty level of the question. |
+| ![Figure 9](assets/papers-explained-302-rest-em/fig-9.webp) | Evaluations on Big-Bench Hard suite of tasks. |
 ## Related
 
 - [[Papers Explained Corpus]]

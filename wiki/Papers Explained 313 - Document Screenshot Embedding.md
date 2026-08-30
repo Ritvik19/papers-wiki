@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-02-19_Papers-Explained-313--Document-Screenshot-Embedding-792cb286643c.html`
+- Source file: `raw/2025-02-19_Papers-Explained-313--Document-Screenshot-Embedding-792cb286643c.md`
 - Source title: Papers Explained 313: Document Screenshot Embedding
 - Published: 2025-02-19
 - Canonical: [https://medium.com/@ritvik19/papers-explained-313-document-screenshot-embedding-792cb286643c](https://medium.com/@ritvik19/papers-explained-313-document-screenshot-embedding-792cb286643c)
@@ -107,18 +107,18 @@ Unifying Multimodal Retrieval via Document Screenshot Embedding [2406.11251](htt
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-02-19_Papers-Explained-313--Document-Screenshot-Embedding-792cb286643c.html`); local copies under `wiki/assets/papers-explained-313-document-screenshot-embedding/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-02-19_Papers-Explained-313--Document-Screenshot-Embedding-792cb286643c.md`); local copies under `wiki/assets/papers-explained-313-document-screenshot-embedding/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-313-document-screenshot-embedding/fig-1.png) | Title card: Document Screenshot Embedding. |
-| ![Figure 2](assets/papers-explained-313-document-screenshot-embedding/fig-2.png) | Overview of DSE encoder architecture. |
-| ![Figure 3](assets/papers-explained-313-document-screenshot-embedding/fig-3.png) | Contrastive Learning: The similarity between the query and the document is computed as the cosine similarity between their embeddings. |
-| ![Figure 4](assets/papers-explained-313-document-screenshot-embedding/fig-4.png) | Contrastive Learning: The similarity between the query and the document is computed as the cosine similarity between their embeddings. |
-| ![Figure 5](assets/papers-explained-313-document-screenshot-embedding/fig-5.png) | during training, the embedding model is optimized using the InfoNCE loss. |
-| ![Figure 6](assets/papers-explained-313-document-screenshot-embedding/fig-6.png) | Supervised retrieval effectiveness comparison. |
-| ![Figure 7](assets/papers-explained-313-document-screenshot-embedding/fig-7.png) | Zero-shot retrieval effectiveness comparison. |
-| ![Figure 8](assets/papers-explained-313-document-screenshot-embedding/fig-8.png) | Trade-off between effectiveness and efficiency of DSE with varying numbers of crops for input images. |
+| ![Figure 1](assets/papers-explained-313-document-screenshot-embedding/fig-1.webp) | Title card: Document Screenshot Embedding. |
+| ![Figure 2](assets/papers-explained-313-document-screenshot-embedding/fig-2.webp) | Overview of DSE encoder architecture. |
+| ![Figure 3](assets/papers-explained-313-document-screenshot-embedding/fig-3.webp) | Contrastive Learning: The similarity between the query and the document is computed as the cosine similarity between their embeddings. |
+| ![Figure 4](assets/papers-explained-313-document-screenshot-embedding/fig-4.webp) | Contrastive Learning: The similarity between the query and the document is computed as the cosine similarity between their embeddings. |
+| ![Figure 5](assets/papers-explained-313-document-screenshot-embedding/fig-5.webp) | during training, the embedding model is optimized using the InfoNCE loss. |
+| ![Figure 6](assets/papers-explained-313-document-screenshot-embedding/fig-6.webp) | Supervised retrieval effectiveness comparison. |
+| ![Figure 7](assets/papers-explained-313-document-screenshot-embedding/fig-7.webp) | Zero-shot retrieval effectiveness comparison. |
+| ![Figure 8](assets/papers-explained-313-document-screenshot-embedding/fig-8.webp) | Trade-off between effectiveness and efficiency of DSE with varying numbers of crops for input images. |
 ## Related
 
 - [[Papers Explained Corpus]]

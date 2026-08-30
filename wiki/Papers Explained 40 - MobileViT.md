@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-04-03_Papers-Explained-40--MobileViT-4793f149c434.html`
+- Source file: `raw/2023-04-03_Papers-Explained-40--MobileViT-4793f149c434.md`
 - Source title: Papers Explained 40: MobileViT
 - Published: 2023-04-03
 - Canonical: [https://medium.com/@ritvik19/papers-explained-40-mobilevit-4793f149c434](https://medium.com/@ritvik19/papers-explained-40-mobilevit-4793f149c434)
@@ -79,17 +79,17 @@ Recommended Reading [Vision Transformers](https://ritvik19.medium.com/list/visio
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-04-03_Papers-Explained-40--MobileViT-4793f149c434.html`); local copies under `wiki/assets/papers-explained-40-mobilevit/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-04-03_Papers-Explained-40--MobileViT-4793f149c434.md`); local copies under `wiki/assets/papers-explained-40-mobilevit/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-40-mobilevit/fig-1.png) | Title card: MobileViT. |
-| ![Figure 2](assets/papers-explained-40-mobilevit/fig-2.png) | The core idea of MobileViT is to learn global representations with transformers as convolutions. |
-| ![Figure 3](assets/papers-explained-40-mobilevit/fig-3.png) | To enable MobileViT to learn global representations with spatial inductive bias, we unfold XL into N non-overlapping flattened patches XU. |
-| ![Figure 4](assets/papers-explained-40-mobilevit/fig-4.png) | We train MobileViT models from scratch on the ImageNet-1k classification dataset. |
-| ![Figure 5](assets/papers-explained-40-mobilevit/fig-5.png) | We integrate MobileViT with a single-shot object detection backbone. |
-| ![Figure 6](assets/papers-explained-40-mobilevit/fig-6.png) | We integrate MobileViT with DeepLabv3. |
-| ![Figure 7](assets/papers-explained-40-mobilevit/fig-7.png) | We integrate MobileViT with DeepLabv3. |
+| ![Figure 1](assets/papers-explained-40-mobilevit/fig-1.webp) | Title card: MobileViT. |
+| ![Figure 2](assets/papers-explained-40-mobilevit/fig-2.webp) | The core idea of MobileViT is to learn global representations with transformers as convolutions. |
+| ![Figure 3](assets/papers-explained-40-mobilevit/fig-3.webp) | To enable MobileViT to learn global representations with spatial inductive bias, we unfold XL into N non-overlapping flattened patches XU. |
+| ![Figure 4](assets/papers-explained-40-mobilevit/fig-4.webp) | We train MobileViT models from scratch on the ImageNet-1k classification dataset. |
+| ![Figure 5](assets/papers-explained-40-mobilevit/fig-5.webp) | We integrate MobileViT with a single-shot object detection backbone. |
+| ![Figure 6](assets/papers-explained-40-mobilevit/fig-6.webp) | We integrate MobileViT with DeepLabv3. |
+| ![Figure 7](assets/papers-explained-40-mobilevit/fig-7.webp) | We integrate MobileViT with DeepLabv3. |
 ## Related
 
 - [[Papers Explained Corpus]]

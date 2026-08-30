@@ -14,13 +14,13 @@
 
 ## Architecture
 
-![RetinaNet](../assets/2018-12-27-object-recognition-part-4/fig-12.png)
+![RetinaNet](../assets/2018-12-27-object-recognition-part-4/fig-12.webp)
 
 - **Backbone**: ResNet (e.g. ResNet-50/101).
 - **Neck**: [[Papers Explained 21 - Feature Pyramid Network|Feature Pyramid Network]] — top-down pathway + lateral connections merge semantically strong coarse maps with high-resolution fine maps.
 - **Heads**: Separate subnet stacks for **classification** and **box regression** at each pyramid level (shared weights across levels within each subnet).
 
-![FPN pyramid](../assets/2018-12-27-object-recognition-part-4/fig-11.png)
+![FPN pyramid](../assets/2018-12-27-object-recognition-part-4/fig-11.webp)
 
 ## Focal loss
 
@@ -32,7 +32,7 @@ Binary objectness CE: \(\text{CE}(p_t) = -\log p_t\) where \(p_t = p\) if \(y=1\
 \text{FL}(p_t) = -(1-p_t)^\gamma \log p_t
 \]
 
-![Focal loss](../assets/2018-12-27-object-recognition-part-4/fig-9.png)
+![Focal loss](../assets/2018-12-27-object-recognition-part-4/fig-9.webp)
 
 **\(\alpha\)-balanced** variant (RetinaNet default \(\alpha=0.25, \gamma=2\)):
 
@@ -40,7 +40,7 @@ Binary objectness CE: \(\text{CE}(p_t) = -\log p_t\) where \(p_t = p\) if \(y=1\
 \text{FL}(p_t) = -\alpha (1-p_t)^\gamma \log p_t
 \]
 
-![Focal weights](../assets/2018-12-27-object-recognition-part-4/fig-10.png)
+![Focal weights](../assets/2018-12-27-object-recognition-part-4/fig-10.webp)
 
 When \(p_t \to 1\) for easy negatives, \((1-p_t)^\gamma \to 0\)—gradient focuses on hard examples.
 

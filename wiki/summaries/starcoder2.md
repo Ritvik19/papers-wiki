@@ -1,6 +1,6 @@
 # StarCoder2 and The Stack v2
 
-**Source**: `raw/starcoder2/full-article.html` (209 KB), `raw/starcoder2/full-article.md`
+**Source**: `raw/starcoder2/full-article.md` (209 KB), `raw/starcoder2/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-12-30_Papers-Explained-512--HelpSteer2-041ceb1b6749.html`
+- Source file: `raw/2025-12-30_Papers-Explained-512--HelpSteer2-041ceb1b6749.md`
 - Source title: Papers Explained 512: HelpSteer2
 - Published: 2025-12-30
 - Canonical: [https://medium.com/@ritvik19/papers-explained-512-helpsteer2-041ceb1b6749](https://medium.com/@ritvik19/papers-explained-512-helpsteer2-041ceb1b6749)
@@ -113,14 +113,14 @@ HelpSteer2: Open-source dataset for training top-performing reward models [2406.
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-12-30_Papers-Explained-512--HelpSteer2-041ceb1b6749.html`); local copies under `wiki/assets/papers-explained-512-helpsteer2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-12-30_Papers-Explained-512--HelpSteer2-041ceb1b6749.md`); local copies under `wiki/assets/papers-explained-512-helpsteer2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-512-helpsteer2/fig-1.png) | Title card: HelpSteer2. |
-| ![Figure 2](assets/papers-explained-512-helpsteer2/fig-2.png) | Inter-annotator Agreement (quadratic weighted Cohen’s κ) for HelpSteer2 attributes. |
-| ![Figure 3](assets/papers-explained-512-helpsteer2/fig-3.png) | Performance of Models on Reward Bench. |
-| ![Figure 4](assets/papers-explained-512-helpsteer2/fig-4.png) | Evaluation of Aligned Models. |
+| ![Figure 1](assets/papers-explained-512-helpsteer2/fig-1.webp) | Title card: HelpSteer2. |
+| ![Figure 2](assets/papers-explained-512-helpsteer2/fig-2.webp) | Inter-annotator Agreement (quadratic weighted Cohen’s κ) for HelpSteer2 attributes. |
+| ![Figure 3](assets/papers-explained-512-helpsteer2/fig-3.webp) | Performance of Models on Reward Bench. |
+| ![Figure 4](assets/papers-explained-512-helpsteer2/fig-4.webp) | Evaluation of Aligned Models. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-23_Papers-Explained-192--Phi-3-5-a95429ea26c9.html`
+- Source file: `raw/2024-08-23_Papers-Explained-192--Phi-3-5-a95429ea26c9.md`
 - Source title: Papers Explained 192: Phi-3.5
 - Published: 2024-08-23
 - Canonical: [https://medium.com/@ritvik19/papers-explained-192-phi-3-5-a95429ea26c9](https://medium.com/@ritvik19/papers-explained-192-phi-3-5-a95429ea26c9)
@@ -131,19 +131,19 @@ Recommended Reading [Small LLMs](https://ritvik19.medium.com/list/small-llms-411
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-23_Papers-Explained-192--Phi-3-5-a95429ea26c9.html`); local copies under `wiki/assets/papers-explained-192-phi-3-5/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-23_Papers-Explained-192--Phi-3-5-a95429ea26c9.md`); local copies under `wiki/assets/papers-explained-192-phi-3-5/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-192-phi-3-5/fig-1.jpg) | Microsoft header graphic — **Phi-3** branding (series covers **Phi-3.5**). |
-| ![Figure 2](assets/papers-explained-192-phi-3-5/fig-2.jpeg) | Text benchmarks — **Phi-3.5 Mini / MoE Instruct** vs Mistral, Llama 3.1, Gemma 2, Gemini 1.5 Flash, GPT-4o-mini (reasoning, multilingual, math, long-context, code + average). |
-| ![Figure 3](assets/papers-explained-192-phi-3-5/fig-3.png) | Multilingual suite — **Phi-3.5** vs baselines on Multilingual MMLU(-Pro), MGSM, MEGA MLQA / TyDi QA / UDPOS / XCOPA / XStoryCloze. |
-| ![Figure 4](assets/papers-explained-192-phi-3-5/fig-4.png) | Long-document benchmarks — GovReport, QMSum, Qasper, SQuALITY, SummScreenFD — **Phi-3.5** vs Llama 3.1, Mistral-Nemo, Gemini Flash, GPT-4o-mini. |
-| ![Figure 5](assets/papers-explained-192-phi-3-5/fig-5.png) | **RULER** — retrieval accuracy vs context length (**4K–128K**) for Phi-3.5 Mini / MoE vs Llama 3.1-8B vs Mistral-Nemo-12B. |
-| ![Figure 6](assets/papers-explained-192-phi-3-5/fig-6.png) | **RepoQA** — multi-language long-code understanding (Python, C++, Rust, Java, TypeScript + average). |
-| ![Figure 7](assets/papers-explained-192-phi-3-5/fig-7.png) | **Vision** — Phi-3.5-vision-instruct vs InternVL, Gemini, GPT-4o, Claude on MMMU, ScienceQA, MathVista, charts, TextVQA, POPE. |
-| ![Figure 8](assets/papers-explained-192-phi-3-5/fig-8.png) | **BLINK** — fine-grained perception tasks (14 subtasks + overall). |
-| ![Figure 9](assets/papers-explained-192-phi-3-5/fig-9.png) | **Video-MME** — scores by clip length (short / medium / long + overall). |
+| ![Figure 1](assets/papers-explained-192-phi-3-5/fig-1.webp) | Microsoft header graphic — **Phi-3** branding (series covers **Phi-3.5**). |
+| ![Figure 2](assets/papers-explained-192-phi-3-5/fig-2.webp) | Text benchmarks — **Phi-3.5 Mini / MoE Instruct** vs Mistral, Llama 3.1, Gemma 2, Gemini 1.5 Flash, GPT-4o-mini (reasoning, multilingual, math, long-context, code + average). |
+| ![Figure 3](assets/papers-explained-192-phi-3-5/fig-3.webp) | Multilingual suite — **Phi-3.5** vs baselines on Multilingual MMLU(-Pro), MGSM, MEGA MLQA / TyDi QA / UDPOS / XCOPA / XStoryCloze. |
+| ![Figure 4](assets/papers-explained-192-phi-3-5/fig-4.webp) | Long-document benchmarks — GovReport, QMSum, Qasper, SQuALITY, SummScreenFD — **Phi-3.5** vs Llama 3.1, Mistral-Nemo, Gemini Flash, GPT-4o-mini. |
+| ![Figure 5](assets/papers-explained-192-phi-3-5/fig-5.webp) | **RULER** — retrieval accuracy vs context length (**4K–128K**) for Phi-3.5 Mini / MoE vs Llama 3.1-8B vs Mistral-Nemo-12B. |
+| ![Figure 6](assets/papers-explained-192-phi-3-5/fig-6.webp) | **RepoQA** — multi-language long-code understanding (Python, C++, Rust, Java, TypeScript + average). |
+| ![Figure 7](assets/papers-explained-192-phi-3-5/fig-7.webp) | **Vision** — Phi-3.5-vision-instruct vs InternVL, Gemini, GPT-4o, Claude on MMMU, ScienceQA, MathVista, charts, TextVQA, POPE. |
+| ![Figure 8](assets/papers-explained-192-phi-3-5/fig-8.webp) | **BLINK** — fine-grained perception tasks (14 subtasks + overall). |
+| ![Figure 9](assets/papers-explained-192-phi-3-5/fig-9.webp) | **Video-MME** — scores by clip length (short / medium / long + overall). |
 ## Related
 
 - [[Papers Explained Corpus]]

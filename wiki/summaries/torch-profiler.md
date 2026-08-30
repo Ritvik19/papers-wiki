@@ -1,6 +1,6 @@
 # Profiling in PyTorch (Part 1): A Beginner's Guide to torch.profiler
 
-**Source**: `raw/torch-profiler/full-article.html` (252 KB), `raw/torch-profiler/full-article.md`
+**Source**: `raw/torch-profiler/full-article.md` (252 KB), `raw/torch-profiler/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

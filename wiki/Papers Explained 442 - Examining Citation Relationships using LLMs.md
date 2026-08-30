@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-08-29_Papers-Explained-442--Examining-Citation-Relationships-using-LLMs-cfc3e9bda93f.html`
+- Source file: `raw/2025-08-29_Papers-Explained-442--Examining-Citation-Relationships-using-LLMs-cfc3e9bda93f.md`
 - Source title: Papers Explained 442: Examining Citation Relationships using LLMs
 - Published: 2025-08-29
 - Canonical: [https://medium.com/@ritvik19/papers-explained-442-examining-citation-relationships-using-llms-cfc3e9bda93f](https://medium.com/@ritvik19/papers-explained-442-examining-citation-relationships-using-llms-cfc3e9bda93f)
@@ -61,16 +61,16 @@ Document Attribution: Examining Citation Relationships using Large Language Mode
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-08-29_Papers-Explained-442--Examining-Citation-Relationships-using-LLMs-cfc3e9bda93f.html`); local copies under `wiki/assets/papers-explained-442-examining-citation-relationships-using-llms/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-08-29_Papers-Explained-442--Examining-Citation-Relationships-using-LLMs-cfc3e9bda93f.md`); local copies under `wiki/assets/papers-explained-442-examining-citation-relationships-using-llms/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-442-examining-citation-relationships-using-llms/fig-1.png) | Title card: Examining Citation Relationships using LLMs. |
-| ![Figure 2](assets/papers-explained-442-examining-citation-relationships-using-llms/fig-2.png) | This attribution task is framed as a textual entailment problem to ensure simplicity and efficiency. |
-| ![Figure 3](assets/papers-explained-442-examining-citation-relationships-using-llms/fig-3.png) | Here, S1 entails S2 if the meaning of S1 logically supports or guarantees the truth of S2. |
-| ![Figure 4](assets/papers-explained-442-examining-citation-relationships-using-llms/fig-4.png) | In distribution zero shot approach on AttributionBench. |
-| ![Figure 5](assets/papers-explained-442-examining-citation-relationships-using-llms/fig-5.png) | Out ofdistribution zero shot approach on AttributionBench. |
-| ![Figure 6](assets/papers-explained-442-examining-citation-relationships-using-llms/fig-6.png) | Using Attention Layers. |
+| ![Figure 1](assets/papers-explained-442-examining-citation-relationships-using-llms/fig-1.webp) | Title card: Examining Citation Relationships using LLMs. |
+| ![Figure 2](assets/papers-explained-442-examining-citation-relationships-using-llms/fig-2.webp) | This attribution task is framed as a textual entailment problem to ensure simplicity and efficiency. |
+| ![Figure 3](assets/papers-explained-442-examining-citation-relationships-using-llms/fig-3.webp) | Here, S1 entails S2 if the meaning of S1 logically supports or guarantees the truth of S2. |
+| ![Figure 4](assets/papers-explained-442-examining-citation-relationships-using-llms/fig-4.webp) | In distribution zero shot approach on AttributionBench. |
+| ![Figure 5](assets/papers-explained-442-examining-citation-relationships-using-llms/fig-5.webp) | Out ofdistribution zero shot approach on AttributionBench. |
+| ![Figure 6](assets/papers-explained-442-examining-citation-relationships-using-llms/fig-6.webp) | Using Attention Layers. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-11-08_Papers-Explained-248--LMDX-854c0bc771f0.html`
+- Source file: `raw/2024-11-08_Papers-Explained-248--LMDX-854c0bc771f0.md`
 - Source title: Papers Explained 248: LMDX
 - Published: 2024-11-08
 - Canonical: [https://medium.com/@ritvik19/papers-explained-248-lmdx-854c0bc771f0](https://medium.com/@ritvik19/papers-explained-248-lmdx-854c0bc771f0)
@@ -143,19 +143,19 @@ Recommended Reading [Document Information Processing](https://ritvik19.medium.co
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-11-08_Papers-Explained-248--LMDX-854c0bc771f0.html`); local copies under `wiki/assets/papers-explained-248-lmdx/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-11-08_Papers-Explained-248--LMDX-854c0bc771f0.md`); local copies under `wiki/assets/papers-explained-248-lmdx/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-248-lmdx/fig-1.png) | Title card: LMDX. |
-| ![Figure 2](assets/papers-explained-248-lmdx/fig-2.png) | Overview of the LMDX methodology. |
-| ![Figure 3](assets/papers-explained-248-lmdx/fig-3.png) | Algorithm: Document Chunking. |
-| ![Figure 4](assets/papers-explained-248-lmdx/fig-4.png) | Structure of the LLM prompts. |
-| ![Figure 5](assets/papers-explained-248-lmdx/fig-5.png) | Algorithm: Responses Decoding. |
-| ![Figure 6](assets/papers-explained-248-lmdx/fig-6.png) | Algorithm: Entity Value Parsing. |
-| ![Figure 7](assets/papers-explained-248-lmdx/fig-7.png) | LMDX training phases. |
-| ![Figure 8](assets/papers-explained-248-lmdx/fig-8.png) | Results on different tasks and train data size setups. |
-| ![Figure 9](assets/papers-explained-248-lmdx/fig-9.png) | Results on CORD. Normalized Tree Edit Distance Accuracy is reported. |
+| ![Figure 1](assets/papers-explained-248-lmdx/fig-1.webp) | Title card: LMDX. |
+| ![Figure 2](assets/papers-explained-248-lmdx/fig-2.webp) | Overview of the LMDX methodology. |
+| ![Figure 3](assets/papers-explained-248-lmdx/fig-3.webp) | Algorithm: Document Chunking. |
+| ![Figure 4](assets/papers-explained-248-lmdx/fig-4.webp) | Structure of the LLM prompts. |
+| ![Figure 5](assets/papers-explained-248-lmdx/fig-5.webp) | Algorithm: Responses Decoding. |
+| ![Figure 6](assets/papers-explained-248-lmdx/fig-6.webp) | Algorithm: Entity Value Parsing. |
+| ![Figure 7](assets/papers-explained-248-lmdx/fig-7.webp) | LMDX training phases. |
+| ![Figure 8](assets/papers-explained-248-lmdx/fig-8.webp) | Results on different tasks and train data size setups. |
+| ![Figure 9](assets/papers-explained-248-lmdx/fig-9.webp) | Results on CORD. Normalized Tree Edit Distance Accuracy is reported. |
 ## Related
 
 - [[Papers Explained Corpus]]

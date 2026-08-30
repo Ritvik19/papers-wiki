@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-11-06_Papers-Explained-68--GPT-4V-6e27c8a1d6ea.html`
+- Source file: `raw/2023-11-06_Papers-Explained-68--GPT-4V-6e27c8a1d6ea.md`
 - Source title: Papers Explained 68: GPT-4V
 - Published: 2023-11-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-68-gpt-4v-6e27c8a1d6ea](https://medium.com/@ritvik19/papers-explained-68-gpt-4v-6e27c8a1d6ea)
@@ -183,12 +183,12 @@ The GPT-4V(ision) system card outlines the safety properties of GPT-4V.
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-11-06_Papers-Explained-68--GPT-4V-6e27c8a1d6ea.html`); local copies under `wiki/assets/papers-explained-68-gpt-4v/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-11-06_Papers-Explained-68--GPT-4V-6e27c8a1d6ea.md`); local copies under `wiki/assets/papers-explained-68-gpt-4v/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-68-gpt-4v/fig-1.png) | Title card: GPT-4V. |
-| ![Figure 2](assets/papers-explained-68-gpt-4v/fig-2.png) | Evaluating GPT-4V + Refusal System. |
+| ![Figure 1](assets/papers-explained-68-gpt-4v/fig-1.webp) | Title card: GPT-4V. |
+| ![Figure 2](assets/papers-explained-68-gpt-4v/fig-2.webp) | Evaluating GPT-4V + Refusal System. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-10-09_Papers-Explained-227--RAGAS-4594fc4d96b9.html`
+- Source file: `raw/2024-10-09_Papers-Explained-227--RAGAS-4594fc4d96b9.md`
 - Source title: Papers Explained 227: RAGAS
 - Published: 2024-10-09
 - Canonical: [https://medium.com/@ritvik19/papers-explained-227-ragas-4594fc4d96b9](https://medium.com/@ritvik19/papers-explained-227-ragas-4594fc4d96b9)
@@ -129,14 +129,14 @@ RAGAS: Automated Evaluation of Retrieval Augmented Generation [2309.15217](https
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-10-09_Papers-Explained-227--RAGAS-4594fc4d96b9.html`); local copies under `wiki/assets/papers-explained-227-ragas/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-10-09_Papers-Explained-227--RAGAS-4594fc4d96b9.md`); local copies under `wiki/assets/papers-explained-227-ragas/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-227-ragas/fig-1.png) | Title card: RAGAS. |
-| ![Figure 2](assets/papers-explained-227-ragas/fig-2.png) | For each q_i, the similarity sim(q, q_i) with the original question q is calculated, as the cosine between the corresponding embeddings. |
-| ![Figure 3](assets/papers-explained-227-ragas/fig-3.png) | The context relevance score is then computed as. |
-| ![Figure 4](assets/papers-explained-227-ragas/fig-4.png) | Agreement with human annotators in pairwise comparisons of faithfulness, answer relevance and context relevance, using the WikEval dataset (accuracy). |
+| ![Figure 1](assets/papers-explained-227-ragas/fig-1.webp) | Title card: RAGAS. |
+| ![Figure 2](assets/papers-explained-227-ragas/fig-2.webp) | For each q_i, the similarity sim(q, q_i) with the original question q is calculated, as the cosine between the corresponding embeddings. |
+| ![Figure 3](assets/papers-explained-227-ragas/fig-3.webp) | The context relevance score is then computed as. |
+| ![Figure 4](assets/papers-explained-227-ragas/fig-4.webp) | Agreement with human annotators in pairwise comparisons of faithfulness, answer relevance and context relevance, using the WikEval dataset (accuracy). |
 ## Related
 
 - [[Papers Explained Corpus]]

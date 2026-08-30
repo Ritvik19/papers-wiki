@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-01-22_Papers-Explained-293--TLDR-a31d787cd365.html`
+- Source file: `raw/2025-01-22_Papers-Explained-293--TLDR-a31d787cd365.md`
 - Source title: Papers Explained 293: TLDR
 - Published: 2025-01-22
 - Canonical: [https://medium.com/@ritvik19/papers-explained-293-tldr-a31d787cd365](https://medium.com/@ritvik19/papers-explained-293-tldr-a31d787cd365)
@@ -177,18 +177,18 @@ TLDR: Extreme Summarization of Scientific Documents [2004.15011](https://arxiv.o
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-01-22_Papers-Explained-293--TLDR-a31d787cd365.html`); local copies under `wiki/assets/papers-explained-293-tldr/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-01-22_Papers-Explained-293--TLDR-a31d787cd365.md`); local copies under `wiki/assets/papers-explained-293-tldr/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-293-tldr/fig-1.png) | Title card: TLDR. |
-| ![Figure 2](assets/papers-explained-293-tldr/fig-2.png) | Comparison of SCITLDR to existing summarization datasets. |
-| ![Figure 3](assets/papers-explained-293-tldr/fig-3.png) | Example categories (or nuggets) of information a TLDR might contain. |
-| ![Figure 4](assets/papers-explained-293-tldr/fig-4.png) | Two example TLDR-Auth and TLDR-PR pairs. |
-| ![Figure 5](assets/papers-explained-293-tldr/fig-5.png) | Training regimen for CATTS. |
-| ![Figure 6](assets/papers-explained-293-tldr/fig-6.png) | Test set max Rouge scores of extractive and abstractive baselines and CATTS. † indicates CATTS variants that significantly (p<0.05) outperform their corresponding BART baseline. |
-| ![Figure 7](assets/papers-explained-293-tldr/fig-7.png) | Human evaluation on informativeness of gold and system-generated TLDRs. |
-| ![Figure 8](assets/papers-explained-293-tldr/fig-8.png) | Lexical features of system-generated TLDRs. |
+| ![Figure 1](assets/papers-explained-293-tldr/fig-1.webp) | Title card: TLDR. |
+| ![Figure 2](assets/papers-explained-293-tldr/fig-2.webp) | Comparison of SCITLDR to existing summarization datasets. |
+| ![Figure 3](assets/papers-explained-293-tldr/fig-3.webp) | Example categories (or nuggets) of information a TLDR might contain. |
+| ![Figure 4](assets/papers-explained-293-tldr/fig-4.webp) | Two example TLDR-Auth and TLDR-PR pairs. |
+| ![Figure 5](assets/papers-explained-293-tldr/fig-5.webp) | Training regimen for CATTS. |
+| ![Figure 6](assets/papers-explained-293-tldr/fig-6.webp) | Test set max Rouge scores of extractive and abstractive baselines and CATTS. † indicates CATTS variants that significantly (p<0.05) outperform their corresponding BART baseline. |
+| ![Figure 7](assets/papers-explained-293-tldr/fig-7.webp) | Human evaluation on informativeness of gold and system-generated TLDRs. |
+| ![Figure 8](assets/papers-explained-293-tldr/fig-8.webp) | Lexical features of system-generated TLDRs. |
 ## Related
 
 - [[Papers Explained Corpus]]

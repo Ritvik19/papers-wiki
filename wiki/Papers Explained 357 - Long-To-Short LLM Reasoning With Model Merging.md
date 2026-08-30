@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-05-02_Papers-Explained-357--Long-To-Short-LLM-Reasoning-With-Model-Merging-03a212b0ccad.html`
+- Source file: `raw/2025-05-02_Papers-Explained-357--Long-To-Short-LLM-Reasoning-With-Model-Merging-03a212b0ccad.md`
 - Source title: Papers Explained 357: Long-To-Short LLM Reasoning With Model Merging
 - Published: 2025-05-02
 - Canonical: [https://medium.com/@ritvik19/papers-explained-357-long-to-short-llm-reasoning-with-model-merging-03a212b0ccad](https://medium.com/@ritvik19/papers-explained-357-long-to-short-llm-reasoning-with-model-merging-03a212b0ccad)
@@ -139,18 +139,18 @@ Unlocking Efficient Long-to-Short LLM Reasoning with Model Merging [2503.20641](
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-05-02_Papers-Explained-357--Long-To-Short-LLM-Reasoning-With-Model-Merging-03a212b0ccad.html`); local copies under `wiki/assets/papers-explained-357-long-to-short-llm-reasoning-with-model-merging/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-05-02_Papers-Explained-357--Long-To-Short-LLM-Reasoning-With-Model-Merging-03a212b0ccad.md`); local copies under `wiki/assets/papers-explained-357-long-to-short-llm-reasoning-with-model-merging/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-357-long-to-short-llm-reasoning-with-model-merging/fig-1.png) | Title card: Long-To-Short LLM Reasoning With Model Merging. |
-| ![Figure 2](assets/papers-explained-357-long-to-short-llm-reasoning-with-model-merging/fig-2.png) | Evaluations of different model merging methods on Qwen-7B models. The number in () indicates the average response length on the dataset. |
-| ![Figure 3](assets/papers-explained-357-long-to-short-llm-reasoning-with-model-merging/fig-3.png) | Evaluations of various model merging methods on Qwen-1.5B models. The number in [] indicates the number of reflective responses on the dataset. |
-| ![Figure 4](assets/papers-explained-357-long-to-short-llm-reasoning-with-model-merging/fig-4.png) | Evaluations of various model merging methods on Qwen-14B models. The number A in [A;B] indicates the number of reflective responses on the dataset and number B indicates the average frequency of reflection keywords appearing in each response. |
-| ![Figure 5](assets/papers-explained-357-long-to-short-llm-reasoning-with-model-merging/fig-5.png) | Evaluations of various model merging methods on Qwen-32B models. |
-| ![Figure 6](assets/papers-explained-357-long-to-short-llm-reasoning-with-model-merging/fig-6.png) | Evaluations of average merging on Qwen-32B models. |
-| ![Figure 7](assets/papers-explained-357-long-to-short-llm-reasoning-with-model-merging/fig-7.png) | Changes in response length and the ratios of reflective responses corresponding to different difficulty levels on the Math500 dataset. |
-| ![Figure 8](assets/papers-explained-357-long-to-short-llm-reasoning-with-model-merging/fig-8.png) | Ratios (%) of responses containing reflective content across various datasets. Scores for Qwen2.5-Math-7B are not reported, as it produces almost no reflective responses. |
+| ![Figure 1](assets/papers-explained-357-long-to-short-llm-reasoning-with-model-merging/fig-1.webp) | Title card: Long-To-Short LLM Reasoning With Model Merging. |
+| ![Figure 2](assets/papers-explained-357-long-to-short-llm-reasoning-with-model-merging/fig-2.webp) | Evaluations of different model merging methods on Qwen-7B models. The number in () indicates the average response length on the dataset. |
+| ![Figure 3](assets/papers-explained-357-long-to-short-llm-reasoning-with-model-merging/fig-3.webp) | Evaluations of various model merging methods on Qwen-1.5B models. The number in [] indicates the number of reflective responses on the dataset. |
+| ![Figure 4](assets/papers-explained-357-long-to-short-llm-reasoning-with-model-merging/fig-4.webp) | Evaluations of various model merging methods on Qwen-14B models. The number A in [A;B] indicates the number of reflective responses on the dataset and number B indicates the average frequency of reflection keywords appearing in each response. |
+| ![Figure 5](assets/papers-explained-357-long-to-short-llm-reasoning-with-model-merging/fig-5.webp) | Evaluations of various model merging methods on Qwen-32B models. |
+| ![Figure 6](assets/papers-explained-357-long-to-short-llm-reasoning-with-model-merging/fig-6.webp) | Evaluations of average merging on Qwen-32B models. |
+| ![Figure 7](assets/papers-explained-357-long-to-short-llm-reasoning-with-model-merging/fig-7.webp) | Changes in response length and the ratios of reflective responses corresponding to different difficulty levels on the Math500 dataset. |
+| ![Figure 8](assets/papers-explained-357-long-to-short-llm-reasoning-with-model-merging/fig-8.webp) | Ratios (%) of responses containing reflective content across various datasets. Scores for Qwen2.5-Math-7B are not reported, as it produces almost no reflective responses. |
 ## Related
 
 - [[Papers Explained Corpus]]

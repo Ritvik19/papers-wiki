@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-15_Papers-Explained-187a--Llama-3-51e2b90f63bb.html`
+- Source file: `raw/2024-08-15_Papers-Explained-187a--Llama-3-51e2b90f63bb.md`
 - Source title: Papers Explained 187a: Llama 3
 - Published: 2024-08-15
 - Canonical: [https://medium.com/@ritvik19/papers-explained-187a-llama-3-51e2b90f63bb](https://medium.com/@ritvik19/papers-explained-187a-llama-3-51e2b90f63bb)
@@ -85,15 +85,15 @@ Recommended Reading [LLaMA Models](https://ritvik19.medium.com/list/llama-models
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-15_Papers-Explained-187a--Llama-3-51e2b90f63bb.html`); local copies under `wiki/assets/papers-explained-187a-llama-3/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-15_Papers-Explained-187a--Llama-3-51e2b90f63bb.md`); local copies under `wiki/assets/papers-explained-187a-llama-3/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-187a-llama-3/fig-1.png) | Meta report banner — **The Llama 3 Herd of Models** (Llama Team, Meta AI). |
-| ![Figure 2](assets/papers-explained-187a-llama-3/fig-2.png) | **Llama 3** vs **Llama 3.1** lineup — finetuned / multilingual / long context / tool use flags and release dates (includes **405B**). |
-| ![Figure 3](assets/papers-explained-187a-llama-3/fig-3.png) | **Pretrained** benchmarks — **Llama 3 8B** vs Mistral 7B / Gemma 7B; **Llama 3 70B** vs Gemini Pro 1.0 / Mixtral 8×22B (MMLU, AGIEval, BBH, ARC, DROP). |
-| ![Figure 4](assets/papers-explained-187a-llama-3/fig-4.png) | **Instruct** benchmarks — **Llama 3 8B** vs Gemma / Mistral; **70B** vs Gemini Pro 1.5 / Claude 3 Sonnet (MMLU, GPQA, HumanEval, GSM8K, MATH). |
-| ![Figure 5](assets/papers-explained-187a-llama-3/fig-5.png) | **Human preference** (aggregated): **Llama 3 70B Instruct** vs Claude Sonnet, Mistral Medium, GPT-3.5, Llama 2 — win / tie / loss stacked bars. |
+| ![Figure 1](assets/papers-explained-187a-llama-3/fig-1.webp) | Meta report banner — **The Llama 3 Herd of Models** (Llama Team, Meta AI). |
+| ![Figure 2](assets/papers-explained-187a-llama-3/fig-2.webp) | **Llama 3** vs **Llama 3.1** lineup — finetuned / multilingual / long context / tool use flags and release dates (includes **405B**). |
+| ![Figure 3](assets/papers-explained-187a-llama-3/fig-3.webp) | **Pretrained** benchmarks — **Llama 3 8B** vs Mistral 7B / Gemma 7B; **Llama 3 70B** vs Gemini Pro 1.0 / Mixtral 8×22B (MMLU, AGIEval, BBH, ARC, DROP). |
+| ![Figure 4](assets/papers-explained-187a-llama-3/fig-4.webp) | **Instruct** benchmarks — **Llama 3 8B** vs Gemma / Mistral; **70B** vs Gemini Pro 1.5 / Claude 3 Sonnet (MMLU, GPQA, HumanEval, GSM8K, MATH). |
+| ![Figure 5](assets/papers-explained-187a-llama-3/fig-5.webp) | **Human preference** (aggregated): **Llama 3 70B Instruct** vs Claude Sonnet, Mistral Medium, GPT-3.5, Llama 2 — win / tie / loss stacked bars. |
 ## HF Blog Cross-References
 
 - [Welcome Llama 3 - Meta's new open LLM](https://huggingface.co/blog/llama3) (2024-04-18) — Hugging Face's launch-day integration post for the April 2024 8B/70B release: model cards and licenses on the Hub, Transformers support, HuggingChat for the 70B, and inference integrations with Inference Endpoints, Google Cloud, and Amazon SageMaker. Same models as covered above.

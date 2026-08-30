@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/draft_Papers-Explained--The-Art-of-Asking-604ba808ff26.html`
+- Source file: `raw/draft_Papers-Explained--The-Art-of-Asking-604ba808ff26.md`
 - Source title: Papers Explained: The Art of Asking
 - Canonical: [https://medium.com/p/604ba808ff26](https://medium.com/p/604ba808ff26)
 
@@ -156,18 +156,18 @@ The Art of Asking: Multilingual Prompt Optimization for Synthetic Data [2510.198
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/draft_Papers-Explained--The-Art-of-Asking-604ba808ff26.html`); local copies under `wiki/assets/papers-explained-the-art-of-asking/` when download succeeded.
+Figures from the Medium HTML export (`raw/draft_Papers-Explained--The-Art-of-Asking-604ba808ff26.md`); local copies under `wiki/assets/papers-explained-the-art-of-asking/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-the-art-of-asking/fig-1.png) | Title page of *The Art of Asking: Multilingual Prompt Optimization for Synthetic Data* (Cohere Labs). |
-| ![Figure 2](assets/papers-explained-the-art-of-asking/fig-2.png) | Prompt-optimization pipeline: translate, naturalize, then apply cultural adaptation or difficulty enhancement in target language. |
-| ![Figure 3](assets/papers-explained-the-art-of-asking/fig-3.png) | Naturalness transformation prompt template and rewriting constraints. |
-| ![Figure 4](assets/papers-explained-the-art-of-asking/fig-4.png) | Cultural-adaptation template specifying locale-sensitive substitutions while preserving intent and structure. |
-| ![Figure 5](assets/papers-explained-the-art-of-asking/fig-5.png) | Difficulty-enhancement template for raising task complexity without changing original intent/domain. |
-| ![Figure 6](assets/papers-explained-the-art-of-asking/fig-6.png) | Per-language sample counts after filtering for translated, naturalized, cultural, difficulty, and mixed datasets. |
-| ![Figure 7](assets/papers-explained-the-art-of-asking/fig-7.png) | Prompt/completion text metrics (length, edit distance, perplexity, diversity, judged difficulty and quality) by transformation type. |
-| ![Figure 8](assets/papers-explained-the-art-of-asking/fig-8.png) | Downstream benchmark results: Flores, G-MMLU, Include44, MGSM, mArenaHard, and PolyWrite for each prompt-transformation strategy. |
+| ![Figure 1](assets/papers-explained-the-art-of-asking/fig-1.webp) | Title page of *The Art of Asking: Multilingual Prompt Optimization for Synthetic Data* (Cohere Labs). |
+| ![Figure 2](assets/papers-explained-the-art-of-asking/fig-2.webp) | Prompt-optimization pipeline: translate, naturalize, then apply cultural adaptation or difficulty enhancement in target language. |
+| ![Figure 3](assets/papers-explained-the-art-of-asking/fig-3.webp) | Naturalness transformation prompt template and rewriting constraints. |
+| ![Figure 4](assets/papers-explained-the-art-of-asking/fig-4.webp) | Cultural-adaptation template specifying locale-sensitive substitutions while preserving intent and structure. |
+| ![Figure 5](assets/papers-explained-the-art-of-asking/fig-5.webp) | Difficulty-enhancement template for raising task complexity without changing original intent/domain. |
+| ![Figure 6](assets/papers-explained-the-art-of-asking/fig-6.webp) | Per-language sample counts after filtering for translated, naturalized, cultural, difficulty, and mixed datasets. |
+| ![Figure 7](assets/papers-explained-the-art-of-asking/fig-7.webp) | Prompt/completion text metrics (length, edit distance, perplexity, diversity, judged difficulty and quality) by transformation type. |
+| ![Figure 8](assets/papers-explained-the-art-of-asking/fig-8.webp) | Downstream benchmark results: Flores, G-MMLU, Include44, MGSM, mArenaHard, and PolyWrite for each prompt-transformation strategy. |
 ## Related
 
 - [[Papers Explained Corpus]]

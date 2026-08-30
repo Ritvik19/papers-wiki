@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-10-09_Papers-Explained-60--Llama-2-3e415c5b9b17.html`
+- Source file: `raw/2023-10-09_Papers-Explained-60--Llama-2-3e415c5b9b17.md`
 - Source title: Papers Explained 60: Llama 2
 - Published: 2023-10-09
 - Canonical: [https://medium.com/@ritvik19/papers-explained-60-llama-v2-3e415c5b9b17](https://medium.com/@ritvik19/papers-explained-60-llama-v2-3e415c5b9b17)
@@ -143,20 +143,20 @@ GAtt is applied after RLHF V3 and a quantitative analysis indicating that GAtt i
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-10-09_Papers-Explained-60--Llama-2-3e415c5b9b17.html`); local copies under `wiki/assets/papers-explained-60-llama-2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-10-09_Papers-Explained-60--Llama-2-3e415c5b9b17.md`); local copies under `wiki/assets/papers-explained-60-llama-2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-60-llama-2/fig-1.png) | Title card: Llama 2. |
-| ![Figure 2](assets/papers-explained-60-llama-2/fig-2.png) | Llama 2 family of models. |
-| ![Figure 3](assets/papers-explained-60-llama-2/fig-3.png) | Training of Llama 2-Chat. |
-| ![Figure 4](assets/papers-explained-60-llama-2/fig-4.png) | Overall performance on grouped academic benchmarks compared to open-source base models. |
-| ![Figure 5](assets/papers-explained-60-llama-2/fig-5.png) | Comparison to closed-source models on academic benchmarks. |
-| ![Figure 6](assets/papers-explained-60-llama-2/fig-6.png) | Statistics of human preference data for reward modeling. |
-| ![Figure 7](assets/papers-explained-60-llama-2/fig-7.png) | Scaling trends for the reward model. |
-| ![Figure 8](assets/papers-explained-60-llama-2/fig-8.png) | Attention visualization for a dialogue with and without GAtt. We considered the maximum activations across the network and we bin neighboring tokens together. |
-| ![Figure 9](assets/papers-explained-60-llama-2/fig-9.png) | Evolution of Llama 2-Chat. |
-| ![Figure 10](assets/papers-explained-60-llama-2/fig-10.png) | Human evaluation results for Llama 2-Chat models compared to open- and closed-source models across ~4,000 helpfulness prompts with three raters per prompt. |
+| ![Figure 1](assets/papers-explained-60-llama-2/fig-1.webp) | Title card: Llama 2. |
+| ![Figure 2](assets/papers-explained-60-llama-2/fig-2.webp) | Llama 2 family of models. |
+| ![Figure 3](assets/papers-explained-60-llama-2/fig-3.webp) | Training of Llama 2-Chat. |
+| ![Figure 4](assets/papers-explained-60-llama-2/fig-4.webp) | Overall performance on grouped academic benchmarks compared to open-source base models. |
+| ![Figure 5](assets/papers-explained-60-llama-2/fig-5.webp) | Comparison to closed-source models on academic benchmarks. |
+| ![Figure 6](assets/papers-explained-60-llama-2/fig-6.webp) | Statistics of human preference data for reward modeling. |
+| ![Figure 7](assets/papers-explained-60-llama-2/fig-7.webp) | Scaling trends for the reward model. |
+| ![Figure 8](assets/papers-explained-60-llama-2/fig-8.webp) | Attention visualization for a dialogue with and without GAtt. We considered the maximum activations across the network and we bin neighboring tokens together. |
+| ![Figure 9](assets/papers-explained-60-llama-2/fig-9.webp) | Evolution of Llama 2-Chat. |
+| ![Figure 10](assets/papers-explained-60-llama-2/fig-10.webp) | Human evaluation results for Llama 2-Chat models compared to open- and closed-source models across ~4,000 helpfulness prompts with three raters per prompt. |
 ## Related
 
 - [[Papers Explained Corpus]]

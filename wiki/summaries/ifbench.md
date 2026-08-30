@@ -1,6 +1,6 @@
 # Papers Explained: IFBench
 
-**Source**: `raw/ifbench/full-article.html`  
+**Source**: `raw/ifbench/full-article.md`  
 **Original**: https://medium.com/p/959c7204cf10  
 **Paper**: https://arxiv.org/abs/2507.02833  
 **Code**: https://github.com/allenai/IFBench  
@@ -13,7 +13,7 @@ This source summarizes "Generalizing Verifiable Instruction Following," which in
 
 The benchmark expands the space of checkable constraints: 58 held-out test constraints across count, ratio, word, sentence, format, custom, and copy categories, plus 29 training constraints in IFTrain. Each constraint must have a Python verifier, which makes the setup a concrete instance of [[Verifiable Instruction Following]] rather than only a preference-judged alignment task. Test prompts combine held-out WildChat tasks with unseen constraints, and the evaluation covers both single-turn prompting and multi-turn rewrite settings.
 
-![OOD test constraints in IFBench.](../assets/ifbench/fig-2.png)
+![OOD test constraints in IFBench.](../assets/ifbench/fig-2.webp)
 
 The training recipe, IF-RLVR, combines public SFT prompts with IFEval or IFTrain constraints, then trains with [[GRPO]] using outcome supervision from the verifier. The reported result is that IF-RLVR improves instruction-following accuracy across OLMo, Qwen 2.5, and Llama 3.1 families, especially when training mixes simple and complex constraints. The caution is alignment-shaped: optimizing hard constraints can make models over-prioritize satisfying the verifier over preserving the broader user intent.
 
@@ -31,11 +31,11 @@ The training recipe, IF-RLVR, combines public SFT prompts with IFEval or IFTrain
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/ifbench/fig-1.png) | Title image for the Medium article. | Article header |
-| ![fig-2](../assets/ifbench/fig-2.png) | OOD test constraints used by IFBench, grouped by constraint family. | IFBench |
-| ![fig-3](../assets/ifbench/fig-3.png) | OOD training constraints used by IFTrain. | IFTrain |
-| ![fig-4](../assets/ifbench/fig-4.png) | Reward aggregation formula for multi-constraint IF-RLVR. | IF RLVR |
-| ![fig-5](../assets/ifbench/fig-5.png) | Single-turn IFEval and IFBench performance comparison for IF-RLVR trained models and baselines. | Results |
+| ![fig-1](../assets/ifbench/fig-1.webp) | Title image for the Medium article. | Article header |
+| ![fig-2](../assets/ifbench/fig-2.webp) | OOD test constraints used by IFBench, grouped by constraint family. | IFBench |
+| ![fig-3](../assets/ifbench/fig-3.webp) | OOD training constraints used by IFTrain. | IFTrain |
+| ![fig-4](../assets/ifbench/fig-4.webp) | Reward aggregation formula for multi-constraint IF-RLVR. | IF RLVR |
+| ![fig-5](../assets/ifbench/fig-5.webp) | Single-turn IFEval and IFBench performance comparison for IF-RLVR trained models and baselines. | Results |
 
 ## Entities
 

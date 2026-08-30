@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-12-25_Papers-Explained-509--FACTS-Leaderboard-2ad8cda79681.html`
+- Source file: `raw/2025-12-25_Papers-Explained-509--FACTS-Leaderboard-2ad8cda79681.md`
 - Source title: Papers Explained 509: FACTS Leaderboard
 - Published: 2025-12-25
 - Canonical: [https://medium.com/@ritvik19/papers-explained-509-facts-leaderboard-2ad8cda79681](https://medium.com/@ritvik19/papers-explained-509-facts-leaderboard-2ad8cda79681)
@@ -127,18 +127,18 @@ The FACTS Leaderboard: A Comprehensive Benchmark for Large Language Model Factua
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-12-25_Papers-Explained-509--FACTS-Leaderboard-2ad8cda79681.html`); local copies under `wiki/assets/papers-explained-509-facts-leaderboard/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-12-25_Papers-Explained-509--FACTS-Leaderboard-2ad8cda79681.md`); local copies under `wiki/assets/papers-explained-509-facts-leaderboard/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-509-facts-leaderboard/fig-1.png) | Title card: FACTS Leaderboard. |
-| ![Figure 2](assets/papers-explained-509-facts-leaderboard/fig-2.png) | Main results on the FACTS benchmark suite. |
-| ![Figure 3](assets/papers-explained-509-facts-leaderboard/fig-3.png) | Distributions of image and question categories in the FACTS Multimodal benchmark. |
-| ![Figure 4](assets/papers-explained-509-facts-leaderboard/fig-4.png) | Detailed results on the FACTS Multimodal benchmark. |
-| ![Figure 5](assets/papers-explained-509-facts-leaderboard/fig-5.png) | Distributions of context domain and of answer type as a percent of the total set of questions in the FACTS Parametric benchmark. |
-| ![Figure 6](assets/papers-explained-509-facts-leaderboard/fig-6.png) | Detailed results on the FACTS Parametric benchmark. |
-| ![Figure 7](assets/papers-explained-509-facts-leaderboard/fig-7.png) | Detailed results on the FACTS Search benchmark. |
-| ![Figure 8](assets/papers-explained-509-facts-leaderboard/fig-8.png) | Distributions of context domain and of task requested by the user as a percent of the total set of prompts in the benchmark. |
+| ![Figure 1](assets/papers-explained-509-facts-leaderboard/fig-1.webp) | Title card: FACTS Leaderboard. |
+| ![Figure 2](assets/papers-explained-509-facts-leaderboard/fig-2.webp) | Main results on the FACTS benchmark suite. |
+| ![Figure 3](assets/papers-explained-509-facts-leaderboard/fig-3.webp) | Distributions of image and question categories in the FACTS Multimodal benchmark. |
+| ![Figure 4](assets/papers-explained-509-facts-leaderboard/fig-4.webp) | Detailed results on the FACTS Multimodal benchmark. |
+| ![Figure 5](assets/papers-explained-509-facts-leaderboard/fig-5.webp) | Distributions of context domain and of answer type as a percent of the total set of questions in the FACTS Parametric benchmark. |
+| ![Figure 6](assets/papers-explained-509-facts-leaderboard/fig-6.webp) | Detailed results on the FACTS Parametric benchmark. |
+| ![Figure 7](assets/papers-explained-509-facts-leaderboard/fig-7.webp) | Detailed results on the FACTS Search benchmark. |
+| ![Figure 8](assets/papers-explained-509-facts-leaderboard/fig-8.webp) | Distributions of context domain and of task requested by the user as a percent of the total set of prompts in the benchmark. |
 ## Related
 
 - [[Papers Explained Corpus]]

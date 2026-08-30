@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-02-10_Papers-Explained-306--Critique-Fine-Tuning-738b25d1b51c.html`
+- Source file: `raw/2025-02-10_Papers-Explained-306--Critique-Fine-Tuning-738b25d1b51c.md`
 - Source title: Papers Explained 306: Critique Fine-Tuning
 - Published: 2025-02-10
 - Canonical: [https://medium.com/@ritvik19/papers-explained-306-critique-fine-tuning-738b25d1b51c](https://medium.com/@ritvik19/papers-explained-306-critique-fine-tuning-738b25d1b51c)
@@ -103,19 +103,19 @@ Critique Fine-Tuning: Learning to Critique is More Effective than Learning to Im
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-02-10_Papers-Explained-306--Critique-Fine-Tuning-738b25d1b51c.html`); local copies under `wiki/assets/papers-explained-306-critique-fine-tuning/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-02-10_Papers-Explained-306--Critique-Fine-Tuning-738b25d1b51c.md`); local copies under `wiki/assets/papers-explained-306-critique-fine-tuning/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-306-critique-fine-tuning/fig-1.png) | Title card: Critique Fine-Tuning. |
-| ![Figure 2](assets/papers-explained-306-critique-fine-tuning/fig-2.png) | Comparison between CFT and SFT. |
-| ![Figure 3](assets/papers-explained-306-critique-fine-tuning/fig-3.png) | Comparison of CFT datasets with existing SFT datasets. |
-| ![Figure 4](assets/papers-explained-306-critique-fine-tuning/fig-4.png) | The training objective of the approach is straightforward. |
-| ![Figure 5](assets/papers-explained-306-critique-fine-tuning/fig-5.png) | Performance comparison of SFT and CFT on different base models. |
-| ![Figure 6](assets/papers-explained-306-critique-fine-tuning/fig-6.png) | Training dynamics comparison of different methods on Qwen2.5-Math-7B across MATH and Minerva-Math. |
-| ![Figure 7](assets/papers-explained-306-critique-fine-tuning/fig-7.png) | Performance comparison of CFT models vs. other reasoning-specialized models. |
-| ![Figure 8](assets/papers-explained-306-critique-fine-tuning/fig-8.png) | Performance Comparison of 32B Models across Mathematical Reasoning Benchmarks. |
-| ![Figure 9](assets/papers-explained-306-critique-fine-tuning/fig-9.png) | Performance comparison of CFT using different teacher critique models on Qwen2.5-Math-7B. |
+| ![Figure 1](assets/papers-explained-306-critique-fine-tuning/fig-1.webp) | Title card: Critique Fine-Tuning. |
+| ![Figure 2](assets/papers-explained-306-critique-fine-tuning/fig-2.webp) | Comparison between CFT and SFT. |
+| ![Figure 3](assets/papers-explained-306-critique-fine-tuning/fig-3.webp) | Comparison of CFT datasets with existing SFT datasets. |
+| ![Figure 4](assets/papers-explained-306-critique-fine-tuning/fig-4.webp) | The training objective of the approach is straightforward. |
+| ![Figure 5](assets/papers-explained-306-critique-fine-tuning/fig-5.webp) | Performance comparison of SFT and CFT on different base models. |
+| ![Figure 6](assets/papers-explained-306-critique-fine-tuning/fig-6.webp) | Training dynamics comparison of different methods on Qwen2.5-Math-7B across MATH and Minerva-Math. |
+| ![Figure 7](assets/papers-explained-306-critique-fine-tuning/fig-7.webp) | Performance comparison of CFT models vs. other reasoning-specialized models. |
+| ![Figure 8](assets/papers-explained-306-critique-fine-tuning/fig-8.webp) | Performance Comparison of 32B Models across Mathematical Reasoning Benchmarks. |
+| ![Figure 9](assets/papers-explained-306-critique-fine-tuning/fig-9.webp) | Performance comparison of CFT using different teacher critique models on Qwen2.5-Math-7B. |
 ## Related
 
 - [[Papers Explained Corpus]]

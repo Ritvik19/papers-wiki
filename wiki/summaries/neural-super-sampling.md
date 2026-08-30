@@ -1,6 +1,6 @@
 # Neural Super Sampling Is Here!
 
-**Source**: `raw/neural-super-sampling/full-article.html`, `raw/neural-super-sampling/full-article.md`
+**Source**: `raw/neural-super-sampling/full-article.md`, `raw/neural-super-sampling/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

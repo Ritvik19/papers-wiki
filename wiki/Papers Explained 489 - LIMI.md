@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-11-11_Papers-Explained-489--LIMI-f696e12fdb3f.html`
+- Source file: `raw/2025-11-11_Papers-Explained-489--LIMI-f696e12fdb3f.md`
 - Source title: Papers Explained 489: LIMI
 - Published: 2025-11-11
 - Canonical: [https://medium.com/@ritvik19/papers-explained-489-limi-f696e12fdb3f](https://medium.com/@ritvik19/papers-explained-489-limi-f696e12fdb3f)
@@ -205,17 +205,17 @@ LIMI: Less is More for Agency [2509.17567](https://arxiv.org/abs/2509.17567)
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-11-11_Papers-Explained-489--LIMI-f696e12fdb3f.html`); local copies under `wiki/assets/papers-explained-489-limi/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-11-11_Papers-Explained-489--LIMI-f696e12fdb3f.md`); local copies under `wiki/assets/papers-explained-489-limi/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-489-limi/fig-1.png) | Title card: LIMI. |
-| ![Figure 2](assets/papers-explained-489-limi/fig-2.png) | An example of the user query. |
-| ![Figure 3](assets/papers-explained-489-limi/fig-3.png) | LIMI Data Construction Pipeline. |
-| ![Figure 4](assets/papers-explained-489-limi/fig-4.png) | Agency Bench Task Overview. |
-| ![Figure 5](assets/papers-explained-489-limi/fig-5.png) | Comparison of models on AgencyBench. |
-| ![Figure 6](assets/papers-explained-489-limi/fig-6.png) | Performance comparison across generalization benchmarks. |
-| ![Figure 7](assets/papers-explained-489-limi/fig-7.png) | Performance comparison on generalization benchmarks without CLI environment access. |
+| ![Figure 1](assets/papers-explained-489-limi/fig-1.webp) | Title card: LIMI. |
+| ![Figure 2](assets/papers-explained-489-limi/fig-2.webp) | An example of the user query. |
+| ![Figure 3](assets/papers-explained-489-limi/fig-3.webp) | LIMI Data Construction Pipeline. |
+| ![Figure 4](assets/papers-explained-489-limi/fig-4.webp) | Agency Bench Task Overview. |
+| ![Figure 5](assets/papers-explained-489-limi/fig-5.webp) | Comparison of models on AgencyBench. |
+| ![Figure 6](assets/papers-explained-489-limi/fig-6.webp) | Performance comparison across generalization benchmarks. |
+| ![Figure 7](assets/papers-explained-489-limi/fig-7.webp) | Performance comparison on generalization benchmarks without CLI environment access. |
 ## Related
 
 - [[Papers Explained Corpus]]

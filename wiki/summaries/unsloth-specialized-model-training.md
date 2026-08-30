@@ -43,6 +43,6 @@ Beyond chat LLMs, Unsloth documents fine-tuning for **text-to-speech** (Orpheus,
 
 ## Sources
 
-- `raw/tts/full-article.html`
-- `raw/embedding-finetuning/full-article.html`
-- `raw/deepseek-ocr/full-article.html`
+- `raw/tts/full-article.md`
+- `raw/embedding-finetuning/full-article.md`
+- `raw/deepseek-ocr/full-article.md`

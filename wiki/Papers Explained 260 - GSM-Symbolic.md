@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-11-27_Papers-Explained-260--GSM-Symbolic-759d379052c7.html`
+- Source file: `raw/2024-11-27_Papers-Explained-260--GSM-Symbolic-759d379052c7.md`
 - Source title: Papers Explained 260: GSM-Symbolic
 - Published: 2024-11-27
 - Canonical: [https://medium.com/@ritvik19/papers-explained-260-gsm-symbolic-759d379052c7](https://medium.com/@ritvik19/papers-explained-260-gsm-symbolic-759d379052c7)
@@ -109,19 +109,19 @@ GSM-Symbolic: Understanding the Limitations of Mathematical Reasoning in Large L
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-11-27_Papers-Explained-260--GSM-Symbolic-759d379052c7.html`); local copies under `wiki/assets/papers-explained-260-gsm-symbolic/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-11-27_Papers-Explained-260--GSM-Symbolic-759d379052c7.md`); local copies under `wiki/assets/papers-explained-260-gsm-symbolic/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-260-gsm-symbolic/fig-1.png) | Title card: GSM-Symbolic. |
-| ![Figure 2](assets/papers-explained-260-gsm-symbolic/fig-2.png) | Illustration of the GSM-Symbolic template creation process. |
-| ![Figure 3](assets/papers-explained-260-gsm-symbolic/fig-3.png) | The distribution of 8-shot Chain-of-Thought (CoT) performance across 50 sets generated from GSM-Symbolic templates. |
-| ![Figure 4](assets/papers-explained-260-gsm-symbolic/fig-4.png) | The performance of all state-of-the-art models on GSM-Symbolic. |
-| ![Figure 5](assets/papers-explained-260-gsm-symbolic/fig-5.png) | How sensitive are LLMs when only names, only proper numbers, or both names and numbers are changed? |
-| ![Figure 6](assets/papers-explained-260-gsm-symbolic/fig-6.png) | Modifying the difficulty level of GSM-Symbolic by modifying the number of clauses. |
-| ![Figure 7](assets/papers-explained-260-gsm-symbolic/fig-7.png) | The impact of increasing the number of clauses on performance. |
-| ![Figure 8](assets/papers-explained-260-gsm-symbolic/fig-8.png) | An example from the GSM-NoOp dataset. |
-| ![Figure 9](assets/papers-explained-260-gsm-symbolic/fig-9.png) | The performance of models drops significantly on GSM-NoOp. |
+| ![Figure 1](assets/papers-explained-260-gsm-symbolic/fig-1.webp) | Title card: GSM-Symbolic. |
+| ![Figure 2](assets/papers-explained-260-gsm-symbolic/fig-2.webp) | Illustration of the GSM-Symbolic template creation process. |
+| ![Figure 3](assets/papers-explained-260-gsm-symbolic/fig-3.webp) | The distribution of 8-shot Chain-of-Thought (CoT) performance across 50 sets generated from GSM-Symbolic templates. |
+| ![Figure 4](assets/papers-explained-260-gsm-symbolic/fig-4.webp) | The performance of all state-of-the-art models on GSM-Symbolic. |
+| ![Figure 5](assets/papers-explained-260-gsm-symbolic/fig-5.webp) | How sensitive are LLMs when only names, only proper numbers, or both names and numbers are changed? |
+| ![Figure 6](assets/papers-explained-260-gsm-symbolic/fig-6.webp) | Modifying the difficulty level of GSM-Symbolic by modifying the number of clauses. |
+| ![Figure 7](assets/papers-explained-260-gsm-symbolic/fig-7.webp) | The impact of increasing the number of clauses on performance. |
+| ![Figure 8](assets/papers-explained-260-gsm-symbolic/fig-8.webp) | An example from the GSM-NoOp dataset. |
+| ![Figure 9](assets/papers-explained-260-gsm-symbolic/fig-9.webp) | The performance of models drops significantly on GSM-NoOp. |
 ## Related
 
 - [[Papers Explained Corpus]]

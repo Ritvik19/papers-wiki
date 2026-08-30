@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-03-17_Papers-Explained-37--FastBERT-5bd246c1b432.html`
+- Source file: `raw/2023-03-17_Papers-Explained-37--FastBERT-5bd246c1b432.md`
 - Source title: Papers Explained 37: FastBERT
 - Published: 2023-03-17
 - Canonical: [https://medium.com/@ritvik19/papers-explained-37-fastbert-5bd246c1b432](https://medium.com/@ritvik19/papers-explained-37-fastbert-5bd246c1b432)
@@ -65,14 +65,14 @@ FastBERT: a Self-distilling BERT with Adaptive Inference Time [2004.02178](https
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-03-17_Papers-Explained-37--FastBERT-5bd246c1b432.html`); local copies under `wiki/assets/papers-explained-37-fastbert/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-03-17_Papers-Explained-37--FastBERT-5bd246c1b432.md`); local copies under `wiki/assets/papers-explained-37-fastbert/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-37-fastbert/fig-1.png) | Title card: FastBERT. |
-| ![Figure 2](assets/papers-explained-37-fastbert/fig-2.png) | FastBERT consists of backbone and branches. |
-| ![Figure 3](assets/papers-explained-37-fastbert/fig-3.png) | Adaptive inference. |
-| ![Figure 4](assets/papers-explained-37-fastbert/fig-4.png) | Adaptive inference. |
+| ![Figure 1](assets/papers-explained-37-fastbert/fig-1.webp) | Title card: FastBERT. |
+| ![Figure 2](assets/papers-explained-37-fastbert/fig-2.webp) | FastBERT consists of backbone and branches. |
+| ![Figure 3](assets/papers-explained-37-fastbert/fig-3.webp) | Adaptive inference. |
+| ![Figure 4](assets/papers-explained-37-fastbert/fig-4.webp) | Adaptive inference. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/draft_Papers-Explained--GGUF-bd7ec5b06f54.html`
+- Source file: `raw/draft_Papers-Explained--GGUF-bd7ec5b06f54.md`
 - Source title: Papers Explained: GGUF
 - Canonical: [https://medium.com/p/bd7ec5b06f54](https://medium.com/p/bd7ec5b06f54)
 
@@ -270,12 +270,12 @@ Imatrix Quantization is a technique used to improve the quality of quantized lan
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/draft_Papers-Explained--GGUF-bd7ec5b06f54.html`); local copies under `wiki/assets/papers-explained-gguf/` when download succeeded.
+Figures from the Medium HTML export (`raw/draft_Papers-Explained--GGUF-bd7ec5b06f54.md`); local copies under `wiki/assets/papers-explained-gguf/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-gguf/fig-1.png) | GGUF file anatomy: header metadata, tensor metadata index, and aligned tensor blobs for GGML/llama.cpp loaders. |
-| ![Figure 2](assets/papers-explained-gguf/fig-2.png) | Supported GGUF quantization families (bit-width tradeoffs across Q2_K … Q8_0 and k-quants). |
+| ![Figure 1](assets/papers-explained-gguf/fig-1.webp) | GGUF file anatomy: header metadata, tensor metadata index, and aligned tensor blobs for GGML/llama.cpp loaders. |
+| ![Figure 2](assets/papers-explained-gguf/fig-2.webp) | Supported GGUF quantization families (bit-width tradeoffs across Q2_K … Q8_0 and k-quants). |
 ## Related
 
 - [[Papers Explained Corpus]]

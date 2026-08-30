@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-10-31_Papers-Explained-243--ShieldGemma-d779fd66ee3e.html`
+- Source file: `raw/2024-10-31_Papers-Explained-243--ShieldGemma-d779fd66ee3e.md`
 - Source title: Papers Explained 243: ShieldGemma
 - Published: 2024-10-31
 - Canonical: [https://medium.com/@ritvik19/papers-explained-243-shieldgemma-d779fd66ee3e](https://medium.com/@ritvik19/papers-explained-243-shieldgemma-d779fd66ee3e)
@@ -135,16 +135,16 @@ Recommended Reading [Gemini / Gemma Models](https://ritvik19.medium.com/list/gem
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-10-31_Papers-Explained-243--ShieldGemma-d779fd66ee3e.html`); local copies under `wiki/assets/papers-explained-243-shieldgemma/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-10-31_Papers-Explained-243--ShieldGemma-d779fd66ee3e.md`); local copies under `wiki/assets/papers-explained-243-shieldgemma/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-243-shieldgemma/fig-1.png) | Title card: ShieldGemma. |
-| ![Figure 2](assets/papers-explained-243-shieldgemma/fig-2.png) | Synthetic Data Generation Pipeline. |
-| ![Figure 3](assets/papers-explained-243-shieldgemma/fig-3.png) | Instructions for Supervised Fine-Tuning. Left: User Input use case; Right: Model Output use case. |
-| ![Figure 4](assets/papers-explained-243-shieldgemma/fig-4.png) | The predicted probability is calculated as. |
-| ![Figure 5](assets/papers-explained-243-shieldgemma/fig-5.png) | Evaluation results based on Optimal F1(left)/AU-PRC(right). |
-| ![Figure 6](assets/papers-explained-243-shieldgemma/fig-6.png) | Harm Type level performance (AU-PRC) for our test dataset SG Prompt (left) and SG Response (right). |
+| ![Figure 1](assets/papers-explained-243-shieldgemma/fig-1.webp) | Title card: ShieldGemma. |
+| ![Figure 2](assets/papers-explained-243-shieldgemma/fig-2.webp) | Synthetic Data Generation Pipeline. |
+| ![Figure 3](assets/papers-explained-243-shieldgemma/fig-3.webp) | Instructions for Supervised Fine-Tuning. Left: User Input use case; Right: Model Output use case. |
+| ![Figure 4](assets/papers-explained-243-shieldgemma/fig-4.webp) | The predicted probability is calculated as. |
+| ![Figure 5](assets/papers-explained-243-shieldgemma/fig-5.webp) | Evaluation results based on Optimal F1(left)/AU-PRC(right). |
+| ![Figure 6](assets/papers-explained-243-shieldgemma/fig-6.webp) | Harm Type level performance (AU-PRC) for our test dataset SG Prompt (left) and SG Response (right). |
 ## Related
 
 - [[Papers Explained Corpus]]

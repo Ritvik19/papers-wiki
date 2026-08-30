@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-01-07_Papers-Explained-282--Tulu-V2-ff38ab1f37f2.html`
+- Source file: `raw/2025-01-07_Papers-Explained-282--Tulu-V2-ff38ab1f37f2.md`
 - Source title: Papers Explained 282: Tulu V2
 - Published: 2025-01-07
 - Canonical: [https://medium.com/@ritvik19/papers-explained-182-tulu-v2-ff38ab1f37f2](https://medium.com/@ritvik19/papers-explained-182-tulu-v2-ff38ab1f37f2)
@@ -131,17 +131,17 @@ Camels in a Changing Climate: Enhancing LM Adaptation with Tulu 2 [2311.10702](h
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-01-07_Papers-Explained-282--Tulu-V2-ff38ab1f37f2.html`); local copies under `wiki/assets/papers-explained-282-tulu-v2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-01-07_Papers-Explained-282--Tulu-V2-ff38ab1f37f2.md`); local copies under `wiki/assets/papers-explained-282-tulu-v2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-282-tulu-v2/fig-1.png) | Title card: Tulu V2. |
-| ![Figure 2](assets/papers-explained-282-tulu-v2/fig-2.png) | The evaluation metrics of the core TÜLU-2 suite and its peers. |
-| ![Figure 3](assets/papers-explained-282-tulu-v2/fig-3.png) | Results of LLAMA-2 models finetuned on the V1 and V2 data mixtures, and ShareGPT. |
-| ![Figure 4](assets/papers-explained-282-tulu-v2/fig-4.png) | Evaluation results for TÜLU V2 models with and without DPO finetuning. |
-| ![Figure 5](assets/papers-explained-282-tulu-v2/fig-5.png) | MT-Bench and AlpacaEval results, along with average output length of AlpacaEval responses. |
-| ![Figure 6](assets/papers-explained-282-tulu-v2/fig-6.png) | Results from LLAMA-2 models finetuned with and without QLoRA on the V2 mix. |
-| ![Figure 7](assets/papers-explained-282-tulu-v2/fig-7.png) | Evaluation results comparing models based on Code LLAMA with the TÜLU models. |
+| ![Figure 1](assets/papers-explained-282-tulu-v2/fig-1.webp) | Title card: Tulu V2. |
+| ![Figure 2](assets/papers-explained-282-tulu-v2/fig-2.webp) | The evaluation metrics of the core TÜLU-2 suite and its peers. |
+| ![Figure 3](assets/papers-explained-282-tulu-v2/fig-3.webp) | Results of LLAMA-2 models finetuned on the V1 and V2 data mixtures, and ShareGPT. |
+| ![Figure 4](assets/papers-explained-282-tulu-v2/fig-4.webp) | Evaluation results for TÜLU V2 models with and without DPO finetuning. |
+| ![Figure 5](assets/papers-explained-282-tulu-v2/fig-5.webp) | MT-Bench and AlpacaEval results, along with average output length of AlpacaEval responses. |
+| ![Figure 6](assets/papers-explained-282-tulu-v2/fig-6.webp) | Results from LLAMA-2 models finetuned with and without QLoRA on the V2 mix. |
+| ![Figure 7](assets/papers-explained-282-tulu-v2/fig-7.webp) | Evaluation results comparing models based on Code LLAMA with the TÜLU models. |
 ## Related
 
 - [[Papers Explained Corpus]]

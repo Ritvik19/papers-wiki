@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-01-05_Papers-Explained-516--SteerLM-785a493499dc.html`
+- Source file: `raw/2026-01-05_Papers-Explained-516--SteerLM-785a493499dc.md`
 - Source title: Papers Explained 516: SteerLM
 - Published: 2026-01-05
 - Canonical: [https://medium.com/@ritvik19/papers-explained-516-steerlm-785a493499dc](https://medium.com/@ritvik19/papers-explained-516-steerlm-785a493499dc)
@@ -99,20 +99,20 @@ SteerLM: Attribute Conditioned SFT as an (User-Steerable) Alternative to RLHF [2
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-01-05_Papers-Explained-516--SteerLM-785a493499dc.html`); local copies under `wiki/assets/papers-explained-516-steerlm/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-01-05_Papers-Explained-516--SteerLM-785a493499dc.md`); local copies under `wiki/assets/papers-explained-516-steerlm/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-516-steerlm/fig-1.png) | Title card: SteerLM. |
-| ![Figure 2](assets/papers-explained-516-steerlm/fig-2.png) | SteerLM Overview. |
-| ![Figure 3](assets/papers-explained-516-steerlm/fig-3.png) | The attributes selected look like quality:6,toxicity:0,humor:9,creativity:0,violence:0,helpfulness:5,not_appropriate:0. |
-| ![Figure 4](assets/papers-explained-516-steerlm/fig-4.png) | Step 2. Annotating Datasets using Attribute Prediction Model. |
-| ![Figure 5](assets/papers-explained-516-steerlm/fig-5.png) | Attribute-conditioned SFT is an extension of regular SFT that enables incorporating reward signal information through attribute labels. |
-| ![Figure 6](assets/papers-explained-516-steerlm/fig-6.png) | Step 4a: Generating Diverse High-Quality Responses. |
-| ![Figure 7](assets/papers-explained-516-steerlm/fig-7.png) | Step 4a: Generating Diverse High-Quality Responses. |
-| ![Figure 8](assets/papers-explained-516-steerlm/fig-8.png) | Step 4b: Attribute Prediction and Second Round of AC-SFT. |
-| ![Figure 9](assets/papers-explained-516-steerlm/fig-9.png) | Automatic evaluation. |
-| ![Figure 10](assets/papers-explained-516-steerlm/fig-10.png) | Elo Ratings for Models based on Automatic and Human Evaluation. |
+| ![Figure 1](assets/papers-explained-516-steerlm/fig-1.webp) | Title card: SteerLM. |
+| ![Figure 2](assets/papers-explained-516-steerlm/fig-2.webp) | SteerLM Overview. |
+| ![Figure 3](assets/papers-explained-516-steerlm/fig-3.webp) | The attributes selected look like quality:6,toxicity:0,humor:9,creativity:0,violence:0,helpfulness:5,not_appropriate:0. |
+| ![Figure 4](assets/papers-explained-516-steerlm/fig-4.webp) | Step 2. Annotating Datasets using Attribute Prediction Model. |
+| ![Figure 5](assets/papers-explained-516-steerlm/fig-5.webp) | Attribute-conditioned SFT is an extension of regular SFT that enables incorporating reward signal information through attribute labels. |
+| ![Figure 6](assets/papers-explained-516-steerlm/fig-6.webp) | Step 4a: Generating Diverse High-Quality Responses. |
+| ![Figure 7](assets/papers-explained-516-steerlm/fig-7.webp) | Step 4a: Generating Diverse High-Quality Responses. |
+| ![Figure 8](assets/papers-explained-516-steerlm/fig-8.webp) | Step 4b: Attribute Prediction and Second Round of AC-SFT. |
+| ![Figure 9](assets/papers-explained-516-steerlm/fig-9.webp) | Automatic evaluation. |
+| ![Figure 10](assets/papers-explained-516-steerlm/fig-10.webp) | Elo Ratings for Models based on Automatic and Human Evaluation. |
 ## Related
 
 - [[Papers Explained Corpus]]

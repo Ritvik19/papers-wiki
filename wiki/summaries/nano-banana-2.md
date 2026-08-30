@@ -1,6 +1,6 @@
 # Nano Banana 2
 
-**Source**: `raw/nano-banana-2/full-article.html`, `raw/nano-banana-2/full-article.md`; `raw/build-with-nano-banana-2/full-article.html`  
+**Source**: `raw/nano-banana-2/full-article.md`, `raw/nano-banana-2/full-article.md`; `raw/build-with-nano-banana-2/full-article.md`  
 **Canonical URLs**: https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/ (product launch); https://developers.googleblog.com/en/build-with-nano-banana-2/ (developer guide)  
 **Author**: Naina Raisinghani (Product Manager, [[Google DeepMind]])  
 **Published**: 2026-02-26  

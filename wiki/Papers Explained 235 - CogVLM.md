@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-10-21_Papers-Explained-235--CogVLM-9f3aa657f9b1.html`
+- Source file: `raw/2024-10-21_Papers-Explained-235--CogVLM-9f3aa657f9b1.md`
 - Source title: Papers Explained 235: CogVLM
 - Published: 2024-10-21
 - Canonical: [https://medium.com/@ritvik19/papers-explained-235-cogvlm-9f3aa657f9b1](https://medium.com/@ritvik19/papers-explained-235-cogvlm-9f3aa657f9b1)
@@ -145,15 +145,15 @@ Recommended Reading [Multi Modal Transformers](https://ritvik19.medium.com/list/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-10-21_Papers-Explained-235--CogVLM-9f3aa657f9b1.html`); local copies under `wiki/assets/papers-explained-235-cogvlm/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-10-21_Papers-Explained-235--CogVLM-9f3aa657f9b1.md`); local copies under `wiki/assets/papers-explained-235-cogvlm/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-235-cogvlm/fig-1.png) | Title card: CogVLM. |
-| ![Figure 2](assets/papers-explained-235-cogvlm/fig-2.png) | The architecture of CogVLM. (a) The illustration about the input, where an image is processed by a pretrained ViT and mapped into the same space as the text features. (b) The Transformer block in the language model. The image features have a different QKV matrix and FFN. Only the purple parts are trainable. |
-| ![Figure 3](assets/papers-explained-235-cogvlm/fig-3.png) | Performance on Image Captioning benchmarks. |
-| ![Figure 4](assets/papers-explained-235-cogvlm/fig-4.png) | Generalist performance on VQA and LVLM benchmarks. |
-| ![Figure 5](assets/papers-explained-235-cogvlm/fig-5.png) | Results on Referring Expression Comprehension and Grounded Visual Question Answering. |
+| ![Figure 1](assets/papers-explained-235-cogvlm/fig-1.webp) | Title card: CogVLM. |
+| ![Figure 2](assets/papers-explained-235-cogvlm/fig-2.webp) | The architecture of CogVLM. (a) The illustration about the input, where an image is processed by a pretrained ViT and mapped into the same space as the text features. (b) The Transformer block in the language model. The image features have a different QKV matrix and FFN. Only the purple parts are trainable. |
+| ![Figure 3](assets/papers-explained-235-cogvlm/fig-3.webp) | Performance on Image Captioning benchmarks. |
+| ![Figure 4](assets/papers-explained-235-cogvlm/fig-4.webp) | Generalist performance on VQA and LVLM benchmarks. |
+| ![Figure 5](assets/papers-explained-235-cogvlm/fig-5.webp) | Results on Referring Expression Comprehension and Grounded Visual Question Answering. |
 ## Related
 
 - [[Papers Explained Corpus]]

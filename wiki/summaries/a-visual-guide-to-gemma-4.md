@@ -1,6 +1,6 @@
 # A Visual Guide to Gemma 4
 
-**Source**: `raw/a-visual-guide-to-gemma-4/full-article.html` (783 KB)  
+**Source**: `raw/a-visual-guide-to-gemma-4/full-article.md` (783 KB)  
 **URL**: https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4  
 **Ingested**: 2026-07-12  
 **Tags**: #summary

@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-02-17_Papers-Explained--SelfCite-841a9e60006a.html`
+- Source file: `raw/2025-02-17_Papers-Explained--SelfCite-841a9e60006a.md`
 - Source title: Papers Explained: SelfCite
 - Published: 2025-02-17
 - Canonical: [https://medium.com/@ritvik19/papers-explained-selfcite-841a9e60006a](https://medium.com/@ritvik19/papers-explained-selfcite-841a9e60006a)
@@ -95,19 +95,19 @@ SelfCite: Self-Supervised Alignment for Context Attribution in Large Language Mo
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-02-17_Papers-Explained--SelfCite-841a9e60006a.html`); local copies under `wiki/assets/papers-explained-selfcite/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-02-17_Papers-Explained--SelfCite-841a9e60006a.md`); local copies under `wiki/assets/papers-explained-selfcite/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-selfcite/fig-1.png) | Title block of *SelfCite: Self-Supervised Alignment for Context Attribution in Large Language Models*. |
-| ![Figure 2](assets/papers-explained-selfcite/fig-2.png) | Autoregressive formulation for generating statement \(r_i\) followed by citation sequence \(e_i\). |
-| ![Figure 3](assets/papers-explained-selfcite/fig-3.png) | Context-ablation reward intuition: compare full context, context without cited evidence, and cited-only context to measure necessity and sufficiency. |
-| ![Figure 4](assets/papers-explained-selfcite/fig-4.png) | Necessity metric (Prob-Drop): likelihood decrease when cited evidence is removed from context. |
-| ![Figure 5](assets/papers-explained-selfcite/fig-5.png) | Sufficiency metric (Prob-Hold): likelihood retained when only cited evidence is kept. |
-| ![Figure 6](assets/papers-explained-selfcite/fig-6.png) | Combined SelfCite reward: cited-only likelihood minus no-citation-context likelihood. |
-| ![Figure 7](assets/papers-explained-selfcite/fig-7.png) | Best-of-\(N\) citation sampling algorithm: generate candidates, score by reward, keep the highest-scoring citation sequence per statement. |
-| ![Figure 8](assets/papers-explained-selfcite/fig-8.png) | LongBench-Cite results: recall/precision/F1 across datasets and models, showing gains from SelfCite + SimPO and further gains with BoN. |
-| ![Figure 9](assets/papers-explained-selfcite/fig-9.png) | Answer-correctness comparison with and without citations, indicating citation improvements without major correctness loss. |
+| ![Figure 1](assets/papers-explained-selfcite/fig-1.webp) | Title block of *SelfCite: Self-Supervised Alignment for Context Attribution in Large Language Models*. |
+| ![Figure 2](assets/papers-explained-selfcite/fig-2.webp) | Autoregressive formulation for generating statement \(r_i\) followed by citation sequence \(e_i\). |
+| ![Figure 3](assets/papers-explained-selfcite/fig-3.webp) | Context-ablation reward intuition: compare full context, context without cited evidence, and cited-only context to measure necessity and sufficiency. |
+| ![Figure 4](assets/papers-explained-selfcite/fig-4.webp) | Necessity metric (Prob-Drop): likelihood decrease when cited evidence is removed from context. |
+| ![Figure 5](assets/papers-explained-selfcite/fig-5.webp) | Sufficiency metric (Prob-Hold): likelihood retained when only cited evidence is kept. |
+| ![Figure 6](assets/papers-explained-selfcite/fig-6.webp) | Combined SelfCite reward: cited-only likelihood minus no-citation-context likelihood. |
+| ![Figure 7](assets/papers-explained-selfcite/fig-7.webp) | Best-of-\(N\) citation sampling algorithm: generate candidates, score by reward, keep the highest-scoring citation sequence per statement. |
+| ![Figure 8](assets/papers-explained-selfcite/fig-8.webp) | LongBench-Cite results: recall/precision/F1 across datasets and models, showing gains from SelfCite + SimPO and further gains with BoN. |
+| ![Figure 9](assets/papers-explained-selfcite/fig-9.webp) | Answer-correctness comparison with and without citations, indicating citation improvements without major correctness loss. |
 ## Related
 
 - [[Papers Explained Corpus]]

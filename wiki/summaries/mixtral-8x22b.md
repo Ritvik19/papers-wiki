@@ -1,6 +1,6 @@
 # Cheaper, Better, Faster, Stronger
 
-**Source**: `raw/mixtral-8x22b/full-article.html` (216 KB), `raw/mixtral-8x22b/full-article.md` (markdown view)  
+**Source**: `raw/mixtral-8x22b/full-article.md` (216 KB), `raw/mixtral-8x22b/full-article.md` (markdown view)  
 **URL**: https://mistral.ai/news/mixtral-8x22b/  
 **Ingested**: 2026-06-06  
 **Tags**: #summary

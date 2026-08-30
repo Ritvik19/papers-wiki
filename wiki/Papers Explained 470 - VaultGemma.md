@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-10-08_Papers-Explained-470--VaultGemma-f738ba8705dd.html`
+- Source file: `raw/2025-10-08_Papers-Explained-470--VaultGemma-f738ba8705dd.md`
 - Source title: Papers Explained 470: VaultGemma
 - Published: 2025-10-08
 - Canonical: [https://medium.com/@ritvik19/papers-explained-470-vaultgemma-f738ba8705dd](https://medium.com/@ritvik19/papers-explained-470-vaultgemma-f738ba8705dd)
@@ -89,13 +89,13 @@ Training Loop (for t∈[T] steps):
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-10-08_Papers-Explained-470--VaultGemma-f738ba8705dd.html`); local copies under `wiki/assets/papers-explained-470-vaultgemma/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-10-08_Papers-Explained-470--VaultGemma-f738ba8705dd.md`); local copies under `wiki/assets/papers-explained-470-vaultgemma/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-470-vaultgemma/fig-1.png) | Title card: VaultGemma. |
-| ![Figure 2](assets/papers-explained-470-vaultgemma/fig-2.png) | Overview of the main parameters and design choices for the 1B model. |
-| ![Figure 3](assets/papers-explained-470-vaultgemma/fig-3.png) | A comparison of DP and standard model performance and training configurations. |
+| ![Figure 1](assets/papers-explained-470-vaultgemma/fig-1.webp) | Title card: VaultGemma. |
+| ![Figure 2](assets/papers-explained-470-vaultgemma/fig-2.webp) | Overview of the main parameters and design choices for the 1B model. |
+| ![Figure 3](assets/papers-explained-470-vaultgemma/fig-3.webp) | A comparison of DP and standard model performance and training configurations. |
 ## Related
 
 - [[Papers Explained Corpus]]

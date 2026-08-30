@@ -1,6 +1,6 @@
 # A Framework for Frontier AI and the Dawning of a New Age
 
-Canonical HTML: `raw/demis-hassabis-a-framework-for-frontier-ai/full-article.html`  
+Canonical HTML: `raw/demis-hassabis-a-framework-for-frontier-ai/full-article.md`  
 Author: Demis Hassabis (@demishassabis)  
 Published: July 14, 2026  
 Source URL: https://x.com/demishassabis/article/2076957440109625718  

@@ -1,6 +1,6 @@
 # Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP
 
-**Source**: `raw/torch-mlp-fusion/full-article.html` (256 KB), `raw/torch-mlp-fusion/full-article.md`
+**Source**: `raw/torch-mlp-fusion/full-article.md` (256 KB), `raw/torch-mlp-fusion/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

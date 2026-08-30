@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-12-11_Papers-Explained-270--OLMoE-38832ff4f9bd.html`
+- Source file: `raw/2024-12-11_Papers-Explained-270--OLMoE-38832ff4f9bd.md`
 - Source title: Papers Explained 270: OLMoE
 - Published: 2024-12-11
 - Canonical: [https://medium.com/@ritvik19/papers-explained-270-olmoe-38832ff4f9bd](https://medium.com/@ritvik19/papers-explained-270-olmoe-38832ff4f9bd)
@@ -165,24 +165,24 @@ OLMoE: Open Mixture-of-Experts Language Models [2409.02060](https://arxiv.org/ab
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-12-11_Papers-Explained-270--OLMoE-38832ff4f9bd.html`); local copies under `wiki/assets/papers-explained-270-olmoe/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-12-11_Papers-Explained-270--OLMoE-38832ff4f9bd.md`); local copies under `wiki/assets/papers-explained-270-olmoe/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-270-olmoe/fig-1.png) | Title card: OLMoE. |
-| ![Figure 2](assets/papers-explained-270-olmoe/fig-2.png) | Comparison of the architecture of dense LMs and MoE models. |
-| ![Figure 3](assets/papers-explained-270-olmoe/fig-3.png) | OLMoE is a decoder-only LM consisting of NL transformer layers. |
-| ![Figure 4](assets/papers-explained-270-olmoe/fig-4.png) | Key MoE design choices and the setup for OLMoE-1B-7B. |
-| ![Figure 5](assets/papers-explained-270-olmoe/fig-5.png) | Composition of the pretraining data for OLMoE-1B-7B. |
-| ![Figure 6](assets/papers-explained-270-olmoe/fig-6.png) | Adaptation training data for OLMoE-1B-7B. |
-| ![Figure 7](assets/papers-explained-270-olmoe/fig-7.png) | Evaluation of OLMoE-1B-7B and the current best OLMo models during pretraining. |
-| ![Figure 8](assets/papers-explained-270-olmoe/fig-8.png) | OLMoE-1B-7B after pretraining versus larger MoEs and dense LMs. |
-| ![Figure 9](assets/papers-explained-270-olmoe/fig-9.png) | OLMoE-1B-7B after adaptation versus other models. |
-| ![Figure 10](assets/papers-explained-270-olmoe/fig-10.png) | A controlled setup is used to compare MoEs and dense models. |
-| ![Figure 11](assets/papers-explained-270-olmoe/fig-11.png) | Recommended Reading [ Papers Explained 98: OLMo ]. |
-| ![Figure 12](assets/papers-explained-270-olmoe/fig-12.png) | A single shared and a single routed expert is benchmarked against two routed experts. |
-| ![Figure 13](assets/papers-explained-270-olmoe/fig-13.png) | The MoE router determines which experts process each input token. There are two common types. |
-| ![Figure 14](assets/papers-explained-270-olmoe/fig-14.png) | Upcycled MoE models are compared with MoE models trained from scratch. |
+| ![Figure 1](assets/papers-explained-270-olmoe/fig-1.webp) | Title card: OLMoE. |
+| ![Figure 2](assets/papers-explained-270-olmoe/fig-2.webp) | Comparison of the architecture of dense LMs and MoE models. |
+| ![Figure 3](assets/papers-explained-270-olmoe/fig-3.webp) | OLMoE is a decoder-only LM consisting of NL transformer layers. |
+| ![Figure 4](assets/papers-explained-270-olmoe/fig-4.webp) | Key MoE design choices and the setup for OLMoE-1B-7B. |
+| ![Figure 5](assets/papers-explained-270-olmoe/fig-5.webp) | Composition of the pretraining data for OLMoE-1B-7B. |
+| ![Figure 6](assets/papers-explained-270-olmoe/fig-6.webp) | Adaptation training data for OLMoE-1B-7B. |
+| ![Figure 7](assets/papers-explained-270-olmoe/fig-7.webp) | Evaluation of OLMoE-1B-7B and the current best OLMo models during pretraining. |
+| ![Figure 8](assets/papers-explained-270-olmoe/fig-8.webp) | OLMoE-1B-7B after pretraining versus larger MoEs and dense LMs. |
+| ![Figure 9](assets/papers-explained-270-olmoe/fig-9.webp) | OLMoE-1B-7B after adaptation versus other models. |
+| ![Figure 10](assets/papers-explained-270-olmoe/fig-10.webp) | A controlled setup is used to compare MoEs and dense models. |
+| ![Figure 11](assets/papers-explained-270-olmoe/fig-11.webp) | Recommended Reading [ Papers Explained 98: OLMo ]. |
+| ![Figure 12](assets/papers-explained-270-olmoe/fig-12.webp) | A single shared and a single routed expert is benchmarked against two routed experts. |
+| ![Figure 13](assets/papers-explained-270-olmoe/fig-13.webp) | The MoE router determines which experts process each input token. There are two common types. |
+| ![Figure 14](assets/papers-explained-270-olmoe/fig-14.webp) | Upcycled MoE models are compared with MoE models trained from scratch. |
 ## Related
 
 - [[Papers Explained Corpus]]

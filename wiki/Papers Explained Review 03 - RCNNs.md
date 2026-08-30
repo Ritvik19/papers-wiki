@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-02-07_Papers-Explained-Review-03--RCNNs-42c0a3974493.html`
+- Source file: `raw/2023-02-07_Papers-Explained-Review-03--RCNNs-42c0a3974493.md`
 - Source title: Papers Explained Review 03: RCNNs
 - Published: 2023-02-07
 - Canonical: [https://medium.com/@ritvik19/papers-explained-review-03-rcnns-42c0a3974493](https://medium.com/@ritvik19/papers-explained-review-03-rcnns-42c0a3974493)
@@ -170,17 +170,17 @@ Cascade Mask R-CNN, on the other hand, is an extension of Cascade R-CNN that add
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-02-07_Papers-Explained-Review-03--RCNNs-42c0a3974493.html`); local copies under `wiki/assets/papers-explained-review-03-rcnns/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-02-07_Papers-Explained-Review-03--RCNNs-42c0a3974493.md`); local copies under `wiki/assets/papers-explained-review-03-rcnns/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-review-03-rcnns/fig-1.png) | Title card: RCNNs. |
-| ![Figure 2](assets/papers-explained-review-03-rcnns/fig-2.png) | Rich feature hierarchies for accurate object detection and semantic segmentation. |
-| ![Figure 3](assets/papers-explained-review-03-rcnns/fig-3.png) | Back to Top. |
-| ![Figure 4](assets/papers-explained-review-03-rcnns/fig-4.png) | Back to Top. |
-| ![Figure 5](assets/papers-explained-review-03-rcnns/fig-5.png) | Anchors. |
-| ![Figure 6](assets/papers-explained-review-03-rcnns/fig-6.png) | Back to Top. |
-| ![Figure 7](assets/papers-explained-review-03-rcnns/fig-7.png) | Back to Top. |
+| ![Figure 1](assets/papers-explained-review-03-rcnns/fig-1.webp) | Title card: RCNNs. |
+| ![Figure 2](assets/papers-explained-review-03-rcnns/fig-2.webp) | Rich feature hierarchies for accurate object detection and semantic segmentation. |
+| ![Figure 3](assets/papers-explained-review-03-rcnns/fig-3.webp) | Back to Top. |
+| ![Figure 4](assets/papers-explained-review-03-rcnns/fig-4.webp) | Back to Top. |
+| ![Figure 5](assets/papers-explained-review-03-rcnns/fig-5.webp) | Anchors. |
+| ![Figure 6](assets/papers-explained-review-03-rcnns/fig-6.webp) | Back to Top. |
+| ![Figure 7](assets/papers-explained-review-03-rcnns/fig-7.webp) | Back to Top. |
 ## Related
 
 - [[Papers Explained Corpus]]

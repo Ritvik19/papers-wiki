@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-02-12_Papers-Explained-539--Golden-Goose-af78d02a0741.html`
+- Source file: `raw/2026-02-12_Papers-Explained-539--Golden-Goose-af78d02a0741.md`
 - Source title: Papers Explained 539: Golden Goose
 - Published: 2026-02-12
 - Canonical: [https://medium.com/@ritvik19/papers-explained-539-golden-goose-af78d02a0741](https://medium.com/@ritvik19/papers-explained-539-golden-goose-af78d02a0741)
@@ -117,14 +117,14 @@ Golden Goose: A Simple Trick to Synthesize Unlimited RLVR Tasks from Unverifiabl
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-02-12_Papers-Explained-539--Golden-Goose-af78d02a0741.html`); local copies under `wiki/assets/papers-explained-539-golden-goose/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-02-12_Papers-Explained-539--Golden-Goose-af78d02a0741.md`); local copies under `wiki/assets/papers-explained-539-golden-goose/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-539-golden-goose/fig-1.png) | Title card: Golden Goose. |
-| ![Figure 2](assets/papers-explained-539-golden-goose/fig-2.png) | The Golden Goose pipeline. |
-| ![Figure 3](assets/papers-explained-539-golden-goose/fig-3.png) | Comparison of continued RL training on ProRL-1.5B-v2 using the original ProRL data, adding GooseReason-0.7M, or using RLVE. |
-| ![Figure 4](assets/papers-explained-539-golden-goose/fig-4.png) | Comparison of RL training from scratch on Qwen-4B-Instruct under a fixed compute budget with ProRL data only versus joint training with GooseReason-0.7M. |
+| ![Figure 1](assets/papers-explained-539-golden-goose/fig-1.webp) | Title card: Golden Goose. |
+| ![Figure 2](assets/papers-explained-539-golden-goose/fig-2.webp) | The Golden Goose pipeline. |
+| ![Figure 3](assets/papers-explained-539-golden-goose/fig-3.webp) | Comparison of continued RL training on ProRL-1.5B-v2 using the original ProRL data, adding GooseReason-0.7M, or using RLVE. |
+| ![Figure 4](assets/papers-explained-539-golden-goose/fig-4.webp) | Comparison of RL training from scratch on Qwen-4B-Instruct under a fixed compute budget with ProRL data only versus joint training with GooseReason-0.7M. |
 ## Related
 
 - [[Papers Explained Corpus]]

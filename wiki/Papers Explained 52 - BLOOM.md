@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2023-08-20_Papers-Explained-52--BLOOM-9654c56cd2.html`
+- Source file: `raw/2023-08-20_Papers-Explained-52--BLOOM-9654c56cd2.md`
 - Source title: Papers Explained 52: BLOOM
 - Published: 2023-08-20
 - Canonical: [https://medium.com/@ritvik19/papers-explained-52-bloom-9654c56cd2](https://medium.com/@ritvik19/papers-explained-52-bloom-9654c56cd2)
@@ -159,19 +159,19 @@ BLOOM: A 176B-Parameter Open-Access Multilingual Language Model [2211.05100](htt
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2023-08-20_Papers-Explained-52--BLOOM-9654c56cd2.html`); local copies under `wiki/assets/papers-explained-52-bloom/` when download succeeded.
+Figures from the Medium HTML export (`raw/2023-08-20_Papers-Explained-52--BLOOM-9654c56cd2.md`); local copies under `wiki/assets/papers-explained-52-bloom/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-52-bloom/fig-1.png) | Title card: BLOOM. |
-| ![Figure 2](assets/papers-explained-52-bloom/fig-2.png) | Linguistic makeup of ROOTs corpus. |
-| ![Figure 3](assets/papers-explained-52-bloom/fig-3.png) | Creation Pipeline of the ROOTS Corpus. |
-| ![Figure 4](assets/papers-explained-52-bloom/fig-4.png) | Language distribution of the prompted dataset xP3 closely follows ROOTS. |
-| ![Figure 5](assets/papers-explained-52-bloom/fig-5.png) | The BLOOM architecture. The khead slope parameters for ALIBI are taken as 2 ^(−8i/n) with n the number of heads and i ∈ 1, 2, …, n. |
-| ![Figure 6](assets/papers-explained-52-bloom/fig-6.png) | which splits words apart while preserving all the characters and in particular the sequences of spaces and line breaks that are crucial for... |
-| ![Figure 7](assets/papers-explained-52-bloom/fig-7.png) | BLOOM & BLOOMZ Training Hyperparameters. |
-| ![Figure 8](assets/papers-explained-52-bloom/fig-8.png) | Performance of various LLMs on a subset of tasks from SuperGLUE benchmark in zero- and one-shot prompt-based setting. |
-| ![Figure 9](assets/papers-explained-52-bloom/fig-9.png) | Comparison of the scaling of BLOOM versus OPT on each SuperGLUE one-shot task. Each point represents the average accuracy of a model within the BLOOM or OPT family of models on one of the five task prompts. The number of parameters on the x-axis is presented in log-scale. |
+| ![Figure 1](assets/papers-explained-52-bloom/fig-1.webp) | Title card: BLOOM. |
+| ![Figure 2](assets/papers-explained-52-bloom/fig-2.webp) | Linguistic makeup of ROOTs corpus. |
+| ![Figure 3](assets/papers-explained-52-bloom/fig-3.webp) | Creation Pipeline of the ROOTS Corpus. |
+| ![Figure 4](assets/papers-explained-52-bloom/fig-4.webp) | Language distribution of the prompted dataset xP3 closely follows ROOTS. |
+| ![Figure 5](assets/papers-explained-52-bloom/fig-5.webp) | The BLOOM architecture. The khead slope parameters for ALIBI are taken as 2 ^(−8i/n) with n the number of heads and i ∈ 1, 2, …, n. |
+| ![Figure 6](assets/papers-explained-52-bloom/fig-6.webp) | which splits words apart while preserving all the characters and in particular the sequences of spaces and line breaks that are crucial for... |
+| ![Figure 7](assets/papers-explained-52-bloom/fig-7.webp) | BLOOM & BLOOMZ Training Hyperparameters. |
+| ![Figure 8](assets/papers-explained-52-bloom/fig-8.webp) | Performance of various LLMs on a subset of tasks from SuperGLUE benchmark in zero- and one-shot prompt-based setting. |
+| ![Figure 9](assets/papers-explained-52-bloom/fig-9.webp) | Comparison of the scaling of BLOOM versus OPT on each SuperGLUE one-shot task. Each point represents the average accuracy of a model within the BLOOM or OPT family of models on one of the five task prompts. The number of parameters on the x-axis is presented in log-scale. |
 ## Related
 
 - [[Papers Explained Corpus]]

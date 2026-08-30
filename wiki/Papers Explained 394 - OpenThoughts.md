@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-06-24_Papers-Explained-394--OpenThoughts-51fcf3dda8d2.html`
+- Source file: `raw/2025-06-24_Papers-Explained-394--OpenThoughts-51fcf3dda8d2.md`
 - Source title: Papers Explained 394: OpenThoughts
 - Published: 2025-06-24
 - Canonical: [https://medium.com/@ritvik19/papers-explained-394-openthoughts-51fcf3dda8d2](https://medium.com/@ritvik19/papers-explained-394-openthoughts-51fcf3dda8d2)
@@ -235,14 +235,14 @@ OpenThoughts: Data Recipes for Reasoning Models [2506.04178](https://arxiv.org/a
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-06-24_Papers-Explained-394--OpenThoughts-51fcf3dda8d2.html`); local copies under `wiki/assets/papers-explained-394-openthoughts/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-06-24_Papers-Explained-394--OpenThoughts-51fcf3dda8d2.md`); local copies under `wiki/assets/papers-explained-394-openthoughts/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-394-openthoughts/fig-1.png) | Title card: OpenThoughts. |
-| ![Figure 2](assets/papers-explained-394-openthoughts/fig-2.png) | The OpenThoughts3–1.2M Full Data Pipeline. |
-| ![Figure 3](assets/papers-explained-394-openthoughts/fig-3.png) | OpenThoughts-114K data recipe. |
-| ![Figure 4](assets/papers-explained-394-openthoughts/fig-4.png) | OpenThoughts2–1M data recipe. |
+| ![Figure 1](assets/papers-explained-394-openthoughts/fig-1.webp) | Title card: OpenThoughts. |
+| ![Figure 2](assets/papers-explained-394-openthoughts/fig-2.webp) | The OpenThoughts3–1.2M Full Data Pipeline. |
+| ![Figure 3](assets/papers-explained-394-openthoughts/fig-3.webp) | OpenThoughts-114K data recipe. |
+| ![Figure 4](assets/papers-explained-394-openthoughts/fig-4.webp) | OpenThoughts2–1M data recipe. |
 ## Related
 
 - [[Papers Explained Corpus]]

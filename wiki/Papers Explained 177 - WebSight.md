@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-08-06_Papers-Explained-177--WebSight-2905d0e14233.html`
+- Source file: `raw/2024-08-06_Papers-Explained-177--WebSight-2905d0e14233.md`
 - Source title: Papers Explained 177: WebSight
 - Published: 2024-08-06
 - Canonical: [https://medium.com/@ritvik19/papers-explained-177-websight-2905d0e14233](https://medium.com/@ritvik19/papers-explained-177-websight-2905d0e14233)
@@ -55,13 +55,13 @@ Recommended Reading [Datasets](https://ritvik19.medium.com/list/datasets-b465a5d
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-08-06_Papers-Explained-177--WebSight-2905d0e14233.html`); local copies under `wiki/assets/papers-explained-177-websight/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-08-06_Papers-Explained-177--WebSight-2905d0e14233.md`); local copies under `wiki/assets/papers-explained-177-websight/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-177-websight/fig-1.png) | Paper title: **WebSight** — converting web screenshots into HTML (Hugging Face authors). |
-| ![Figure 2](assets/papers-explained-177-websight/fig-2.png) | **Mistral-generated** numbered **website layout concepts** (fashion, restaurant, consulting, real estate, education, …). |
-| ![Figure 3](assets/papers-explained-177-websight/fig-3.png) | **Synthetic pages** in the dataset: e-commerce, restaurants, tech landing, food hero, architecture firm (screenshot collage). |
+| ![Figure 1](assets/papers-explained-177-websight/fig-1.webp) | Paper title: **WebSight** — converting web screenshots into HTML (Hugging Face authors). |
+| ![Figure 2](assets/papers-explained-177-websight/fig-2.webp) | **Mistral-generated** numbered **website layout concepts** (fashion, restaurant, consulting, real estate, education, …). |
+| ![Figure 3](assets/papers-explained-177-websight/fig-3.webp) | **Synthetic pages** in the dataset: e-commerce, restaurants, tech landing, food hero, architecture firm (screenshot collage). |
 ## Related
 
 - [[Papers Explained Corpus]]

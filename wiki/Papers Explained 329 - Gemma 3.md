@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-03-13_Papers-Explained-329--Gemma-3-153803a2c591.html`
+- Source file: `raw/2025-03-13_Papers-Explained-329--Gemma-3-153803a2c591.md`
 - Source title: Papers Explained 329: Gemma 3
 - Published: 2025-03-13
 - Canonical: [https://medium.com/@ritvik19/papers-explained-329-gemma-3-153803a2c591](https://medium.com/@ritvik19/papers-explained-329-gemma-3-153803a2c591)
@@ -131,18 +131,18 @@ In Gemma 3n, you can skip loading some parameters into memory, such as audio or 
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-03-13_Papers-Explained-329--Gemma-3-153803a2c591.html`); local copies under `wiki/assets/papers-explained-329-gemma-3/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-03-13_Papers-Explained-329--Gemma-3-153803a2c591.md`); local copies under `wiki/assets/papers-explained-329-gemma-3/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-329-gemma-3/fig-1.png) | Title card: Gemma 3. |
-| ![Figure 2](assets/papers-explained-329-gemma-3/fig-2.png) | Parameter counts for the Gemma 3 models. |
-| ![Figure 3](assets/papers-explained-329-gemma-3/fig-3.jpg) | Gemma 3 models support a context length of 128K tokens, with the exception of the 1B model that has 32K. |
-| ![Figure 4](assets/papers-explained-329-gemma-3/fig-4.png) | Formatting for Gemma IT models. |
-| ![Figure 5](assets/papers-explained-329-gemma-3/fig-5.png) | Evaluation of Gemma 3 27B IT model in the Chatbot Arena. |
-| ![Figure 6](assets/papers-explained-329-gemma-3/fig-6.png) | Performance of instruction fine-tuned (IT) models compared to Gemini 1.5, Gemini 2.0, and Gemma 2 on zero-shot benchmarks across different abilities. |
-| ![Figure 7](assets/papers-explained-329-gemma-3/fig-7.png) | Gemma 3n models are listed with parameter counts (e.g., E2B, E4B) that are lower than the total number of parameters. |
-| ![Figure 8](assets/papers-explained-329-gemma-3/fig-8.png) | In Gemma 3n, you can skip loading some parameters into memory, such as audio or visual parameters, to reduce memory load. |
+| ![Figure 1](assets/papers-explained-329-gemma-3/fig-1.webp) | Title card: Gemma 3. |
+| ![Figure 2](assets/papers-explained-329-gemma-3/fig-2.webp) | Parameter counts for the Gemma 3 models. |
+| ![Figure 3](assets/papers-explained-329-gemma-3/fig-3.webp) | Gemma 3 models support a context length of 128K tokens, with the exception of the 1B model that has 32K. |
+| ![Figure 4](assets/papers-explained-329-gemma-3/fig-4.webp) | Formatting for Gemma IT models. |
+| ![Figure 5](assets/papers-explained-329-gemma-3/fig-5.webp) | Evaluation of Gemma 3 27B IT model in the Chatbot Arena. |
+| ![Figure 6](assets/papers-explained-329-gemma-3/fig-6.webp) | Performance of instruction fine-tuned (IT) models compared to Gemini 1.5, Gemini 2.0, and Gemma 2 on zero-shot benchmarks across different abilities. |
+| ![Figure 7](assets/papers-explained-329-gemma-3/fig-7.webp) | Gemma 3n models are listed with parameter counts (e.g., E2B, E4B) that are lower than the total number of parameters. |
+| ![Figure 8](assets/papers-explained-329-gemma-3/fig-8.webp) | In Gemma 3n, you can skip loading some parameters into memory, such as audio or visual parameters, to reduce memory load. |
 ## HF Blog Cross-References
 
 - [Welcome Gemma 3: Google's all new multimodal, multilingual, long context open LLM](https://huggingface.co/blog/gemma3) (2025-03-12) — Hugging Face's integration walkthrough (Transformers, MLX, llama.cpp, Hugging Face Endpoints) with the same three headline advances covered above (128K context via RoPE base 10k→1M, SigLIP-based multimodality with pan-and-scan cropping, and doubled multilingual pretraining data with a 262K-entry tokenizer).

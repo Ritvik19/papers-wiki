@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-08-01_Papers-Explained-422--MDocAgent-db1c83ddc4ee.html`
+- Source file: `raw/2025-08-01_Papers-Explained-422--MDocAgent-db1c83ddc4ee.md`
 - Source title: Papers Explained 422: MDocAgent
 - Published: 2025-08-01
 - Canonical: [https://medium.com/@ritvik19/papers-explained-422-mdocagent-db1c83ddc4ee](https://medium.com/@ritvik19/papers-explained-422-mdocagent-db1c83ddc4ee)
@@ -153,13 +153,13 @@ MDocAgent: A Multi-Modal Multi-Agent Framework for Document Understanding [2503.
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-08-01_Papers-Explained-422--MDocAgent-db1c83ddc4ee.html`); local copies under `wiki/assets/papers-explained-422-mdocagent/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-08-01_Papers-Explained-422--MDocAgent-db1c83ddc4ee.md`); local copies under `wiki/assets/papers-explained-422-mdocagent/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-422-mdocagent/fig-1.png) | Title card: MDocAgent. |
-| ![Figure 2](assets/papers-explained-422-mdocagent/fig-2.png) | Overview of MDocAgent. |
-| ![Figure 3](assets/papers-explained-422-mdocagent/fig-3.png) | Performance comparison across MDocAgent and existing state-of-the-art LVLMs and RAG-based methods. |
+| ![Figure 1](assets/papers-explained-422-mdocagent/fig-1.webp) | Title card: MDocAgent. |
+| ![Figure 2](assets/papers-explained-422-mdocagent/fig-2.webp) | Overview of MDocAgent. |
+| ![Figure 3](assets/papers-explained-422-mdocagent/fig-3.webp) | Performance comparison across MDocAgent and existing state-of-the-art LVLMs and RAG-based methods. |
 ## Related
 
 - [[Papers Explained Corpus]]

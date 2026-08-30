@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-10-11_Papers-Explained-229--Efficient-ViT-cc87fbefbe49.html`
+- Source file: `raw/2024-10-11_Papers-Explained-229--Efficient-ViT-cc87fbefbe49.md`
 - Source title: Papers Explained 229: Efficient ViT
 - Published: 2024-10-11
 - Canonical: [https://medium.com/@ritvik19/papers-explained-229-efficient-vit-cc87fbefbe49](https://medium.com/@ritvik19/papers-explained-229-efficient-vit-cc87fbefbe49)
@@ -83,17 +83,17 @@ Recommended Reading [Vision Transformers](https://ritvik19.medium.com/list/visio
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-10-11_Papers-Explained-229--Efficient-ViT-cc87fbefbe49.html`); local copies under `wiki/assets/papers-explained-229-efficient-vit/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-10-11_Papers-Explained-229--Efficient-ViT-cc87fbefbe49.md`); local copies under `wiki/assets/papers-explained-229-efficient-vit/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-229-efficient-vit/fig-1.png) | Title card: Efficient ViT. |
-| ![Figure 2](assets/papers-explained-229-efficient-vit/fig-2.png) | Overview of EfficientViT. (a) Architecture of EfficientViT; (b) Sandwich Layout block; © Cascaded Group Attention. |
-| ![Figure 3](assets/papers-explained-229-efficient-vit/fig-3.jpg) | It applies a single self-attention layer Φ^A_i for spatial mixing, which is sandwiched between FFN layers Φ^F_i. The computation can be formulated as. |
-| ![Figure 4](assets/papers-explained-229-efficient-vit/fig-4.png) | where the j-th head computes the self-attention over Xij, which is the j-th split of the input feature Xi, i.e., Xi = [Xi1, Xi2,. |
-| ![Figure 5](assets/papers-explained-229-efficient-vit/fig-5.png) | Architecture details of EfficientViT model variants. |
-| ![Figure 6](assets/papers-explained-229-efficient-vit/fig-6.png) | EfficientViT image classification performance on ImageNet-1K with comparisons to state-of-the-art efficient CNN and ViT models trained without extra data. |
-| ![Figure 7](assets/papers-explained-229-efficient-vit/fig-7.png) | EfficientViT object detection performance on COCO val2017. |
+| ![Figure 1](assets/papers-explained-229-efficient-vit/fig-1.webp) | Title card: Efficient ViT. |
+| ![Figure 2](assets/papers-explained-229-efficient-vit/fig-2.webp) | Overview of EfficientViT. (a) Architecture of EfficientViT; (b) Sandwich Layout block; © Cascaded Group Attention. |
+| ![Figure 3](assets/papers-explained-229-efficient-vit/fig-3.webp) | It applies a single self-attention layer Φ^A_i for spatial mixing, which is sandwiched between FFN layers Φ^F_i. The computation can be formulated as. |
+| ![Figure 4](assets/papers-explained-229-efficient-vit/fig-4.webp) | where the j-th head computes the self-attention over Xij, which is the j-th split of the input feature Xi, i.e., Xi = [Xi1, Xi2,. |
+| ![Figure 5](assets/papers-explained-229-efficient-vit/fig-5.webp) | Architecture details of EfficientViT model variants. |
+| ![Figure 6](assets/papers-explained-229-efficient-vit/fig-6.webp) | EfficientViT image classification performance on ImageNet-1K with comparisons to state-of-the-art efficient CNN and ViT models trained without extra data. |
+| ![Figure 7](assets/papers-explained-229-efficient-vit/fig-7.webp) | EfficientViT object detection performance on COCO val2017. |
 ## Related
 
 - [[Papers Explained Corpus]]

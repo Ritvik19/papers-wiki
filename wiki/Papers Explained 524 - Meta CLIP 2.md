@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2026-01-15_Papers-Explained-524--Meta-CLIP-2-804c9e9c100f.html`
+- Source file: `raw/2026-01-15_Papers-Explained-524--Meta-CLIP-2-804c9e9c100f.md`
 - Source title: Papers Explained 524: Meta CLIP 2
 - Published: 2026-01-15
 - Canonical: [https://medium.com/@ritvik19/papers-explained-524-meta-clip-2-804c9e9c100f](https://medium.com/@ritvik19/papers-explained-524-meta-clip-2-804c9e9c100f)
@@ -201,18 +201,18 @@ Meta CLIP 2: A Worldwide Scaling Recipe [2507.22062](https://arxiv.org/abs/2507.
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2026-01-15_Papers-Explained-524--Meta-CLIP-2-804c9e9c100f.html`); local copies under `wiki/assets/papers-explained-524-meta-clip-2/` when download succeeded.
+Figures from the Medium HTML export (`raw/2026-01-15_Papers-Explained-524--Meta-CLIP-2-804c9e9c100f.md`); local copies under `wiki/assets/papers-explained-524-meta-clip-2/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-524-meta-clip-2/fig-1.png) | Title card: Meta CLIP 2. |
-| ![Figure 2](assets/papers-explained-524-meta-clip-2/fig-2.png) | Overview of Meta CLIP 2 recipe. |
-| ![Figure 3](assets/papers-explained-524-meta-clip-2/fig-3.png) | Metadata is from the same four sources as OpenAI CLIP and Meta CLIP, but beyond English. Key changes are as follows. |
-| ![Figure 4](assets/papers-explained-524-meta-clip-2/fig-4.png) | 5. Sampling and Curated Dataset. |
-| ![Figure 5](assets/papers-explained-524-meta-clip-2/fig-5.png) | Hyperparameters of OpenAI CLIP / Meta CLIP vs Meta CLIP 2. |
-| ![Figure 6](assets/papers-explained-524-meta-clip-2/fig-6.png) | Main ablation. |
-| ![Figure 7](assets/papers-explained-524-meta-clip-2/fig-7.png) | Ablation study of metadata and alt-texts combination on ViT-B/32. |
-| ![Figure 8](assets/papers-explained-524-meta-clip-2/fig-8.png) | Ablation study of various multilingual tokenizers with ViT-B/32 and Worldwide 1.0×. |
+| ![Figure 1](assets/papers-explained-524-meta-clip-2/fig-1.webp) | Title card: Meta CLIP 2. |
+| ![Figure 2](assets/papers-explained-524-meta-clip-2/fig-2.webp) | Overview of Meta CLIP 2 recipe. |
+| ![Figure 3](assets/papers-explained-524-meta-clip-2/fig-3.webp) | Metadata is from the same four sources as OpenAI CLIP and Meta CLIP, but beyond English. Key changes are as follows. |
+| ![Figure 4](assets/papers-explained-524-meta-clip-2/fig-4.webp) | 5. Sampling and Curated Dataset. |
+| ![Figure 5](assets/papers-explained-524-meta-clip-2/fig-5.webp) | Hyperparameters of OpenAI CLIP / Meta CLIP vs Meta CLIP 2. |
+| ![Figure 6](assets/papers-explained-524-meta-clip-2/fig-6.webp) | Main ablation. |
+| ![Figure 7](assets/papers-explained-524-meta-clip-2/fig-7.webp) | Ablation study of metadata and alt-texts combination on ViT-B/32. |
+| ![Figure 8](assets/papers-explained-524-meta-clip-2/fig-8.webp) | Ablation study of various multilingual tokenizers with ViT-B/32 and Worldwide 1.0×. |
 ## Related
 
 - [[Papers Explained Corpus]]

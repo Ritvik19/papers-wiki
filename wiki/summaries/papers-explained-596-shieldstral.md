@@ -1,6 +1,6 @@
 # Papers Explained 596: Shieldstral
 
-**Source**: `raw/2026-08-17_Papers-Explained-596--Shieldstral-535b8ff3209b.html`  
+**Source**: `raw/2026-08-17_Papers-Explained-596--Shieldstral-535b8ff3209b.md`  
 **Paper**: https://arxiv.org/abs/2607.25857  
 **Ingested**: 2026-08-23  
 **Tags**: #summary
@@ -9,7 +9,7 @@
 
 **Shieldstral** is Mistral AI's dedicated open-weights multimodal safety and moderation model family. Designed as an enterprise-grade guardrail, Shieldstral detects and classifies harmful content across text, code, and multimodal inputs (images, document scans, and charts). Shieldstral is built upon a compact, highly efficient vision-language backbone and fine-tuned using a template-based data unification framework paired with contrastive sample curation.
 
-![Papers Explained 596: Shieldstral overview banner](../assets/papers-explained-596-shieldstral/fig-1.png)
+![Papers Explained 596: Shieldstral overview banner](../assets/papers-explained-596-shieldstral/fig-1.webp)
 
 ### Architecture & Training Methodology
 
@@ -18,7 +18,7 @@
 3. **Contrastive Sample Curation & Generation**: Synthesizes borderline adversarial prompts (e.g. benign dual-use security research vs. active malware development) to sharply reduce false-positive refusal rates on benign enterprise queries.
 4. **Image & Multimodal Processing**: Integrates image embeddings for visual safety moderation (e.g. NSFW images, dangerous goods, infographic safety).
 
-![Training Pipeline and Contrastive Data Construction](../assets/papers-explained-596-shieldstral/fig-2.png)
+![Training Pipeline and Contrastive Data Construction](../assets/papers-explained-596-shieldstral/fig-2.webp)
 
 ## Key Claims
 
@@ -31,16 +31,16 @@
 
 | Figure | Caption | Page |
 |--------|---------|------|
-| ![fig-1](../assets/papers-explained-596-shieldstral/fig-1.png) | Papers Explained 596 banner. | Overview |
-| ![fig-2](../assets/papers-explained-596-shieldstral/fig-2.png) | Shieldstral architecture and moderation taxonomy. | Method |
-| ![fig-3](../assets/papers-explained-596-shieldstral/fig-3.png) | Template-based data unification framework. | Data |
-| ![fig-4](../assets/papers-explained-596-shieldstral/fig-4.png) | Contrastive sample generation and boundary refinement. | Data |
-| ![fig-5](../assets/papers-explained-596-shieldstral/fig-5.png) | Multimodal image safety processing pipeline. | Multimodal |
-| ![fig-6](../assets/papers-explained-596-shieldstral/fig-6.png) | Safety benchmark evaluation (WildGuard, BeaverTails, Aegis). | Evaluation |
-| ![fig-7](../assets/papers-explained-596-shieldstral/fig-7.png) | False-positive refusal rate comparison on benign queries. | Evaluation |
-| ![fig-8](../assets/papers-explained-596-shieldstral/fig-8.png) | Enterprise policy adaptability and custom category fine-tuning. | Adaptability |
-| ![fig-9](../assets/papers-explained-596-shieldstral/fig-9.png) | Latency and memory footprint across deployment hardware. | Deployment |
-| ![fig-10](../assets/papers-explained-596-shieldstral/fig-10.png) | Qualitative examples of nuanced border-case classifications. | Qualitative |
+| ![fig-1](../assets/papers-explained-596-shieldstral/fig-1.webp) | Papers Explained 596 banner. | Overview |
+| ![fig-2](../assets/papers-explained-596-shieldstral/fig-2.webp) | Shieldstral architecture and moderation taxonomy. | Method |
+| ![fig-3](../assets/papers-explained-596-shieldstral/fig-3.webp) | Template-based data unification framework. | Data |
+| ![fig-4](../assets/papers-explained-596-shieldstral/fig-4.webp) | Contrastive sample generation and boundary refinement. | Data |
+| ![fig-5](../assets/papers-explained-596-shieldstral/fig-5.webp) | Multimodal image safety processing pipeline. | Multimodal |
+| ![fig-6](../assets/papers-explained-596-shieldstral/fig-6.webp) | Safety benchmark evaluation (WildGuard, BeaverTails, Aegis). | Evaluation |
+| ![fig-7](../assets/papers-explained-596-shieldstral/fig-7.webp) | False-positive refusal rate comparison on benign queries. | Evaluation |
+| ![fig-8](../assets/papers-explained-596-shieldstral/fig-8.webp) | Enterprise policy adaptability and custom category fine-tuning. | Adaptability |
+| ![fig-9](../assets/papers-explained-596-shieldstral/fig-9.webp) | Latency and memory footprint across deployment hardware. | Deployment |
+| ![fig-10](../assets/papers-explained-596-shieldstral/fig-10.webp) | Qualitative examples of nuanced border-case classifications. | Qualitative |
 
 ## Entities
 

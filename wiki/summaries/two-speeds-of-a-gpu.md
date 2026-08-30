@@ -1,6 +1,6 @@
 # Two Speeds of a GPU
 
-**Source**: `raw/two-speeds-of-a-gpu/full-article.html`, `raw/two-speeds-of-a-gpu/full-article.md`  
+**Source**: `raw/two-speeds-of-a-gpu/full-article.md`, `raw/two-speeds-of-a-gpu/full-article.md`  
 **Ingested**: 2026-08-23  
 **Tags**: #summary
 
@@ -8,15 +8,15 @@
 
 A tutorial article by Adam Mainz (@MainzOnX) establishing a mental model for GPU performance limits through arithmetic intensity and the Roofline Model. Mainz explains that modern GPUs operate under two independent throughput ceilings that are severely imbalanced: peak arithmetic compute throughput (measured in TFLOPS) and peak memory bandwidth (measured in GB/s or TB/s). Over the last decade, compute hardware grew much faster than memory bus bandwidth. On modern accelerators like the NVIDIA H100 SXM5, peak BF16 compute reaches 989 TFLOPS while HBM3 memory bandwidth reaches 3.35 TB/s, yielding a hardware balance ratio of ~295 (roughly 300) FLOPs per byte moved.
 
-![Figure 2: The memory-bound kitchen](../assets/two-speeds-of-a-gpu/fig-2.jpg)
+![Figure 2: The memory-bound kitchen](../assets/two-speeds-of-a-gpu/fig-2.webp)
 
 The article illustrates this imbalance using a kitchen analogy: a chef who can chop 100 vegetables per minute is paired with a runner who takes a full minute to retrieve an ingredient from the storeroom. Because each vegetable requires only a split-second chop, the kitchen's output is capped at 1 vegetable per minute by the runner, leaving the chef idle for 59 seconds (a memory-bound workload). However, if the recipe changes such that each vegetable requires a full minute of intricate dicing, the chef works continuously while the runner travels, flipping the bottleneck entirely to the chef (a compute-bound workload).
 
-![Figure 4: Matrix multiplication scaling](../assets/two-speeds-of-a-gpu/fig-4.jpg)
+![Figure 4: Matrix multiplication scaling](../assets/two-speeds-of-a-gpu/fig-4.webp)
 
 This distinction directly mirrors tensor operations. For a 1M-element BF16 vector add (`c = a + b`), the operation performs 1 million FLOPs but moves 6 MB of data, yielding an arithmetic intensity of ~0.17 FLOPs/byte; on an H100, the math takes ~1 ns while memory movement takes ~1.8 &mu;s, leaving the chip compute cores ~1,800&times; underutilized (memory-bound). In contrast, an $N \times N$ matrix multiplication performs $\sim 2N^3$ FLOPs while moving $\sim 6N^2$ bytes, giving an arithmetic intensity of $N/3$ FLOPs/byte that scales with $N$. For a $4096 \times 4096$ BF16 matmul, arithmetic intensity reaches ~1,365 FLOPs/byte; on an H100, compute takes 138 &mu;s while memory movement takes 29 &mu;s, making the operation compute-bound.
 
-![Figure 5: The Roofline Model](../assets/two-speeds-of-a-gpu/fig-5.jpg)
+![Figure 5: The Roofline Model](../assets/two-speeds-of-a-gpu/fig-5.webp)
 
 Plotting these constraints creates the Roofline Model: a slanted ceiling governed by memory bandwidth ($y = \text{Bandwidth} \times I$) and a flat ceiling governed by peak arithmetic capacity ($y = \text{Peak Compute}$). The intersection represents the machine's ridge point (e.g., ~300 FLOPs/byte on H100, ~165 FLOPs/byte on RTX 4090). Workloads with arithmetic intensity below the ridge point are memory-bound (benefiting from kernel fusion, reduced precision/quantization, and caching), while workloads above the ridge point are compute-bound (benefiting from higher clock speeds, tensor cores, and algorithmic FLOP reduction).
 
@@ -33,11 +33,11 @@ Plotting these constraints creates the Roofline Model: a slanted ceiling governe
 
 | Figure | Caption | File |
 |--------|---------|------|
-| ![fig-1](../assets/two-speeds-of-a-gpu/fig-1.jpg) | Two speeds of a GPU header banner | `wiki/assets/two-speeds-of-a-gpu/fig-1.jpg` |
-| ![fig-2](../assets/two-speeds-of-a-gpu/fig-2.jpg) | The memory-bound kitchen: fast chef waiting for slow runner | `wiki/assets/two-speeds-of-a-gpu/fig-2.jpg` |
-| ![fig-3](../assets/two-speeds-of-a-gpu/fig-3.jpg) | The compute-bound kitchen: chef working continuously while runner fetches | `wiki/assets/two-speeds-of-a-gpu/fig-3.jpg` |
-| ![fig-4](../assets/two-speeds-of-a-gpu/fig-4.jpg) | Matrix multiplication arithmetic scaling ($2N^3$ FLOPs) vs memory scaling ($6N^2$ bytes) | `wiki/assets/two-speeds-of-a-gpu/fig-4.jpg` |
-| ![fig-5](../assets/two-speeds-of-a-gpu/fig-5.jpg) | The Roofline Model: Slanted memory roof, flat compute roof, and hardware ridge point | `wiki/assets/two-speeds-of-a-gpu/fig-5.jpg` |
+| ![fig-1](../assets/two-speeds-of-a-gpu/fig-1.webp) | Two speeds of a GPU header banner | `wiki/assets/two-speeds-of-a-gpu/fig-1.webp` |
+| ![fig-2](../assets/two-speeds-of-a-gpu/fig-2.webp) | The memory-bound kitchen: fast chef waiting for slow runner | `wiki/assets/two-speeds-of-a-gpu/fig-2.webp` |
+| ![fig-3](../assets/two-speeds-of-a-gpu/fig-3.webp) | The compute-bound kitchen: chef working continuously while runner fetches | `wiki/assets/two-speeds-of-a-gpu/fig-3.webp` |
+| ![fig-4](../assets/two-speeds-of-a-gpu/fig-4.webp) | Matrix multiplication arithmetic scaling ($2N^3$ FLOPs) vs memory scaling ($6N^2$ bytes) | `wiki/assets/two-speeds-of-a-gpu/fig-4.webp` |
+| ![fig-5](../assets/two-speeds-of-a-gpu/fig-5.webp) | The Roofline Model: Slanted memory roof, flat compute roof, and hardware ridge point | `wiki/assets/two-speeds-of-a-gpu/fig-5.webp` |
 
 ## Entities
 

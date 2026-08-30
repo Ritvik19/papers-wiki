@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-06-13_Papers-Explained-387--Sarvam-Translate-fb96bd865054.html`
+- Source file: `raw/2025-06-13_Papers-Explained-387--Sarvam-Translate-fb96bd865054.md`
 - Source title: Papers Explained 387: Sarvam-Translate
 - Published: 2025-06-13
 - Canonical: [https://medium.com/@ritvik19/papers-explained-387-sarvam-translate-fb96bd865054](https://medium.com/@ritvik19/papers-explained-387-sarvam-translate-fb96bd865054)
@@ -67,16 +67,16 @@ Across all Indian languages, Sarvam-Translate consistently outperformed other mo
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-06-13_Papers-Explained-387--Sarvam-Translate-fb96bd865054.html`); local copies under `wiki/assets/papers-explained-387-sarvam-translate/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-06-13_Papers-Explained-387--Sarvam-Translate-fb96bd865054.md`); local copies under `wiki/assets/papers-explained-387-sarvam-translate/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-387-sarvam-translate/fig-1.png) | Title card: Sarvam-Translate. |
-| ![Figure 2](assets/papers-explained-387-sarvam-translate/fig-2.png) | The model is available on HuggingFace. |
-| ![Figure 3](assets/papers-explained-387-sarvam-translate/fig-3.png) | Human evaluations are also conducted on 100 English documents translated by Sarvam-Translate and other open-source LLMs (Gemma3–27B-IT,... |
-| ![Figure 4](assets/papers-explained-387-sarvam-translate/fig-4.png) | Evaluation. |
-| ![Figure 5](assets/papers-explained-387-sarvam-translate/fig-5.png) | Evaluation. |
-| ![Figure 6](assets/papers-explained-387-sarvam-translate/fig-6.png) | Across all Indian languages, Sarvam-Translate consistently outperformed other models, particularly in its ability to handle structured... |
+| ![Figure 1](assets/papers-explained-387-sarvam-translate/fig-1.webp) | Title card: Sarvam-Translate. |
+| ![Figure 2](assets/papers-explained-387-sarvam-translate/fig-2.webp) | The model is available on HuggingFace. |
+| ![Figure 3](assets/papers-explained-387-sarvam-translate/fig-3.webp) | Human evaluations are also conducted on 100 English documents translated by Sarvam-Translate and other open-source LLMs (Gemma3–27B-IT,... |
+| ![Figure 4](assets/papers-explained-387-sarvam-translate/fig-4.webp) | Evaluation. |
+| ![Figure 5](assets/papers-explained-387-sarvam-translate/fig-5.webp) | Evaluation. |
+| ![Figure 6](assets/papers-explained-387-sarvam-translate/fig-6.webp) | Across all Indian languages, Sarvam-Translate consistently outperformed other models, particularly in its ability to handle structured... |
 ## Related
 
 - [[Papers Explained Corpus]]

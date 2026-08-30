@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-06-10_Papers-Explained-148--Direct-Preference-Optimization-d3e031a41be1.html`
+- Source file: `raw/2024-06-10_Papers-Explained-148--Direct-Preference-Optimization-d3e031a41be1.md`
 - Source title: Papers Explained 148: Direct Preference Optimization
 - Published: 2024-06-10
 - Canonical: [https://medium.com/@ritvik19/papers-explained-148-direct-preference-optimization-d3e031a41be1](https://medium.com/@ritvik19/papers-explained-148-direct-preference-optimization-d3e031a41be1)
@@ -67,19 +67,19 @@ Direct Preference Optimization: Your Language Model is Secretly a Reward Model [
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-06-10_Papers-Explained-148--Direct-Preference-Optimization-d3e031a41be1.html`); local copies under `wiki/assets/papers-explained-148-direct-preference-optimization/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-06-10_Papers-Explained-148--Direct-Preference-Optimization-d3e031a41be1.md`); local copies under `wiki/assets/papers-explained-148-direct-preference-optimization/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-148-direct-preference-optimization/fig-1.png) | Title page of *Direct Preference Optimization: Your Language Model is Secretly a Reward Model*. |
-| ![Figure 2](assets/papers-explained-148-direct-preference-optimization/fig-2.png) | RLHF pipeline with reward-model fit plus PPO loop versus single-stage DPO likelihood training on preference tuples. |
-| ![Figure 3](assets/papers-explained-148-direct-preference-optimization/fig-3.png) | Bradley–Terry preference likelihood expressed via latent rewards $r^\*(x,y)$. |
-| ![Figure 4](assets/papers-explained-148-direct-preference-optimization/fig-4.png) | Negative log-sigmoid loss for training parametric reward models on $(x,y_w,y_l)$ pairs. |
-| ![Figure 5](assets/papers-explained-148-direct-preference-optimization/fig-5.png) | KL-regularized RL objective maximizing learned rewards while staying near the reference policy. |
-| ![Figure 6](assets/papers-explained-148-direct-preference-optimization/fig-6.png) | Closed-form optimal policy $\pi_r$ as a Gibbs tilt of $\pi_{\text{ref}}$ controlled by reward and inverse temperature $\beta$. |
-| ![Figure 7](assets/papers-explained-148-direct-preference-optimization/fig-7.png) | Partition function $Z(x)$ normalizing the tilted distribution over completions. |
-| ![Figure 8](assets/papers-explained-148-direct-preference-optimization/fig-8.png) | Reward reparameterization via log policy ratios to $\pi_{\text{ref}}$ plus the $Z(x)$ offset. |
-| ![Figure 9](assets/papers-explained-148-direct-preference-optimization/fig-9.png) | Annotated DPO classification loss contrasting implicit reward shifts for preferred vs dispreferred completions. |
+| ![Figure 1](assets/papers-explained-148-direct-preference-optimization/fig-1.webp) | Title page of *Direct Preference Optimization: Your Language Model is Secretly a Reward Model*. |
+| ![Figure 2](assets/papers-explained-148-direct-preference-optimization/fig-2.webp) | RLHF pipeline with reward-model fit plus PPO loop versus single-stage DPO likelihood training on preference tuples. |
+| ![Figure 3](assets/papers-explained-148-direct-preference-optimization/fig-3.webp) | Bradley–Terry preference likelihood expressed via latent rewards $r^\*(x,y)$. |
+| ![Figure 4](assets/papers-explained-148-direct-preference-optimization/fig-4.webp) | Negative log-sigmoid loss for training parametric reward models on $(x,y_w,y_l)$ pairs. |
+| ![Figure 5](assets/papers-explained-148-direct-preference-optimization/fig-5.webp) | KL-regularized RL objective maximizing learned rewards while staying near the reference policy. |
+| ![Figure 6](assets/papers-explained-148-direct-preference-optimization/fig-6.webp) | Closed-form optimal policy $\pi_r$ as a Gibbs tilt of $\pi_{\text{ref}}$ controlled by reward and inverse temperature $\beta$. |
+| ![Figure 7](assets/papers-explained-148-direct-preference-optimization/fig-7.webp) | Partition function $Z(x)$ normalizing the tilted distribution over completions. |
+| ![Figure 8](assets/papers-explained-148-direct-preference-optimization/fig-8.webp) | Reward reparameterization via log policy ratios to $\pi_{\text{ref}}$ plus the $Z(x)$ offset. |
+| ![Figure 9](assets/papers-explained-148-direct-preference-optimization/fig-9.webp) | Annotated DPO classification loss contrasting implicit reward shifts for preferred vs dispreferred completions. |
 ## Related
 
 - [[Papers Explained Corpus]]

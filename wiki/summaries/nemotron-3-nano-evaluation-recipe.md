@@ -1,6 +1,6 @@
 # The Open Evaluation Standard: Benchmarking NVIDIA Nemotron 3 Nano with NeMo Evaluator
 
-**Source**: `raw/nemotron-3-nano-evaluation-recipe/full-article.html`, `raw/nemotron-3-nano-evaluation-recipe/full-article.md`
+**Source**: `raw/nemotron-3-nano-evaluation-recipe/full-article.md`, `raw/nemotron-3-nano-evaluation-recipe/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

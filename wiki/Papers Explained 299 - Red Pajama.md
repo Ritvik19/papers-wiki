@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-01-30_Papers-Explained-299--Red-Pajama-4aced4a3ff72.html`
+- Source file: `raw/2025-01-30_Papers-Explained-299--Red-Pajama-4aced4a3ff72.md`
 - Source title: Papers Explained 299: Red Pajama
 - Published: 2025-01-30
 - Canonical: [https://medium.com/@ritvik19/papers-explained-299-red-pajama-4aced4a3ff72](https://medium.com/@ritvik19/papers-explained-299-red-pajama-4aced4a3ff72)
@@ -163,18 +163,18 @@ RedPajama: an Open Dataset for Training Large Language Models [2411.12372](https
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-01-30_Papers-Explained-299--Red-Pajama-4aced4a3ff72.html`); local copies under `wiki/assets/papers-explained-299-red-pajama/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-01-30_Papers-Explained-299--Red-Pajama-4aced4a3ff72.md`); local copies under `wiki/assets/papers-explained-299-red-pajama/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-299-red-pajama/fig-1.png) | Title card: Red Pajama. |
-| ![Figure 2](assets/papers-explained-299-red-pajama/fig-2.png) | Token counts for the RedPajama-V1 dataset. |
-| ![Figure 3](assets/papers-explained-299-red-pajama/fig-3.png) | Overview over the different uncertainties and decisions made during the construction of the RedPajama-V1 dataset. |
-| ![Figure 4](assets/papers-explained-299-red-pajama/fig-4.png) | Results for RedPajama-INCITE-Base-3B-v1 on a subset of lm-evaluation-harness (ZeroShot) and HELM. |
-| ![Figure 5](assets/papers-explained-299-red-pajama/fig-5.png) | HELM Benchmark results for RedPajama-INCITE-Base-7B-v1 and instruction tuned. |
-| ![Figure 6](assets/papers-explained-299-red-pajama/fig-6.png) | Document and token counts for each partition and language of the RPv2 dataset. |
-| ![Figure 7](assets/papers-explained-299-red-pajama/fig-7.png) | Evaluations for the 468M parameter LM for different dataset filters and other SOTA web datasets. |
-| ![Figure 8](assets/papers-explained-299-red-pajama/fig-8.png) | Aggregated evaluations for the 1.6B parameter LM for different datasets. |
+| ![Figure 1](assets/papers-explained-299-red-pajama/fig-1.webp) | Title card: Red Pajama. |
+| ![Figure 2](assets/papers-explained-299-red-pajama/fig-2.webp) | Token counts for the RedPajama-V1 dataset. |
+| ![Figure 3](assets/papers-explained-299-red-pajama/fig-3.webp) | Overview over the different uncertainties and decisions made during the construction of the RedPajama-V1 dataset. |
+| ![Figure 4](assets/papers-explained-299-red-pajama/fig-4.webp) | Results for RedPajama-INCITE-Base-3B-v1 on a subset of lm-evaluation-harness (ZeroShot) and HELM. |
+| ![Figure 5](assets/papers-explained-299-red-pajama/fig-5.webp) | HELM Benchmark results for RedPajama-INCITE-Base-7B-v1 and instruction tuned. |
+| ![Figure 6](assets/papers-explained-299-red-pajama/fig-6.webp) | Document and token counts for each partition and language of the RPv2 dataset. |
+| ![Figure 7](assets/papers-explained-299-red-pajama/fig-7.webp) | Evaluations for the 468M parameter LM for different dataset filters and other SOTA web datasets. |
+| ![Figure 8](assets/papers-explained-299-red-pajama/fig-8.webp) | Aggregated evaluations for the 1.6B parameter LM for different datasets. |
 ## Related
 
 - [[Papers Explained Corpus]]

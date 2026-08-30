@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-09-24_Papers-Explained-460--rStar2-Agent-a3e7f451ddb7.html`
+- Source file: `raw/2025-09-24_Papers-Explained-460--rStar2-Agent-a3e7f451ddb7.md`
 - Source title: Papers Explained 460: rStar2-Agent
 - Published: 2025-09-24
 - Canonical: [https://medium.com/@ritvik19/papers-explained-460-rstar2-agent-a3e7f451ddb7](https://medium.com/@ritvik19/papers-explained-460-rstar2-agent-a3e7f451ddb7)
@@ -157,20 +157,20 @@ rStar2-Agent: Agentic Reasoning Technical Report [2508.20722](https://arxiv.org/
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-09-24_Papers-Explained-460--rStar2-Agent-a3e7f451ddb7.html`); local copies under `wiki/assets/papers-explained-460-rstar2-agent/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-09-24_Papers-Explained-460--rStar2-Agent-a3e7f451ddb7.md`); local copies under `wiki/assets/papers-explained-460-rstar2-agent/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-460-rstar2-agent/fig-1.png) | Title card: rStar2-Agent. |
-| ![Figure 2](assets/papers-explained-460-rstar2-agent/fig-2.png) | rStar2-Agent is a 14B math reasoning model trained with agentic reinforcement learning to achieve frontier-level performance. |
-| ![Figure 3](assets/papers-explained-460-rstar2-agent/fig-3.png) | A general function call interface is used for invoking coding tools. |
-| ![Figure 4](assets/papers-explained-460-rstar2-agent/fig-4.png) | A general function call interface is used for invoking coding tools. |
-| ![Figure 5](assets/papers-explained-460-rstar2-agent/fig-5.png) | GRPO-RoC: Group Relative Policy Optimization with Resampling on Correct. |
-| ![Figure 6](assets/papers-explained-460-rstar2-agent/fig-6.png) | Performance of Qwen3–14B-base after non-reasoning SFT. |
-| ![Figure 7](assets/papers-explained-460-rstar2-agent/fig-7.png) | Comparison of training recipes among leading reasoning models. |
-| ![Figure 8](assets/papers-explained-460-rstar2-agent/fig-8.png) | LLM RL is inherently self-exploratory, with highly diverse and unpredictable intermediate behaviors. |
-| ![Figure 9](assets/papers-explained-460-rstar2-agent/fig-9.png) | LLM RL is inherently self-exploratory, with highly diverse and unpredictable intermediate behaviors. |
-| ![Figure 10](assets/papers-explained-460-rstar2-agent/fig-10.png) | LLM RL is inherently self-exploratory, with highly diverse and unpredictable intermediate behaviors. |
+| ![Figure 1](assets/papers-explained-460-rstar2-agent/fig-1.webp) | Title card: rStar2-Agent. |
+| ![Figure 2](assets/papers-explained-460-rstar2-agent/fig-2.webp) | rStar2-Agent is a 14B math reasoning model trained with agentic reinforcement learning to achieve frontier-level performance. |
+| ![Figure 3](assets/papers-explained-460-rstar2-agent/fig-3.webp) | A general function call interface is used for invoking coding tools. |
+| ![Figure 4](assets/papers-explained-460-rstar2-agent/fig-4.webp) | A general function call interface is used for invoking coding tools. |
+| ![Figure 5](assets/papers-explained-460-rstar2-agent/fig-5.webp) | GRPO-RoC: Group Relative Policy Optimization with Resampling on Correct. |
+| ![Figure 6](assets/papers-explained-460-rstar2-agent/fig-6.webp) | Performance of Qwen3–14B-base after non-reasoning SFT. |
+| ![Figure 7](assets/papers-explained-460-rstar2-agent/fig-7.webp) | Comparison of training recipes among leading reasoning models. |
+| ![Figure 8](assets/papers-explained-460-rstar2-agent/fig-8.webp) | LLM RL is inherently self-exploratory, with highly diverse and unpredictable intermediate behaviors. |
+| ![Figure 9](assets/papers-explained-460-rstar2-agent/fig-9.webp) | LLM RL is inherently self-exploratory, with highly diverse and unpredictable intermediate behaviors. |
+| ![Figure 10](assets/papers-explained-460-rstar2-agent/fig-10.webp) | LLM RL is inherently self-exploratory, with highly diverse and unpredictable intermediate behaviors. |
 ## Related
 
 - [[Papers Explained Corpus]]

@@ -1,6 +1,6 @@
 # Introducing RTEB: A New Standard for Retrieval Evaluation
 
-**Source**: `raw/rteb/full-article.html` (298 KB), `raw/rteb/full-article.md`
+**Source**: `raw/rteb/full-article.md` (298 KB), `raw/rteb/full-article.md`
 **Ingested**: 2026-07-10
 **Tags**: #summary
 

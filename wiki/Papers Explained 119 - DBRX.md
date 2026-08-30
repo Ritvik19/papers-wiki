@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-04-01_Papers-Explained-119--DBRX-17c61739983c.html`
+- Source file: `raw/2024-04-01_Papers-Explained-119--DBRX-17c61739983c.md`
 - Source title: Papers Explained 119: DBRX
 - Published: 2024-04-01
 - Canonical: [https://medium.com/@ritvik19/papers-explained-119-dbrx-17c61739983c](https://medium.com/@ritvik19/papers-explained-119-dbrx-17c61739983c)
@@ -77,15 +77,15 @@ To evaluate the effectiveness of DBRX in RAG tasks when provided with content re
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-04-01_Papers-Explained-119--DBRX-17c61739983c.html`); local copies under `wiki/assets/papers-explained-119-dbrx/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-04-01_Papers-Explained-119--DBRX-17c61739983c.md`); local copies under `wiki/assets/papers-explained-119-dbrx/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-119-dbrx/fig-1.png) | Header image from the Databricks DBRX launch post. |
-| ![Figure 2](assets/papers-explained-119-dbrx/fig-2.png) | DBRX Instruct quality comparison against leading open models. |
-| ![Figure 3](assets/papers-explained-119-dbrx/fig-3.png) | DBRX Instruct benchmark comparison with closed-model APIs. |
-| ![Figure 4](assets/papers-explained-119-dbrx/fig-4.png) | Long-context performance on KV-Pairs and HotpotQAXL across context positions and lengths. |
-| ![Figure 5](assets/papers-explained-119-dbrx/fig-5.png) | RAG benchmark results on Natural Questions and HotPotQA with top-10 retrieved passages. |
+| ![Figure 1](assets/papers-explained-119-dbrx/fig-1.webp) | Header image from the Databricks DBRX launch post. |
+| ![Figure 2](assets/papers-explained-119-dbrx/fig-2.webp) | DBRX Instruct quality comparison against leading open models. |
+| ![Figure 3](assets/papers-explained-119-dbrx/fig-3.webp) | DBRX Instruct benchmark comparison with closed-model APIs. |
+| ![Figure 4](assets/papers-explained-119-dbrx/fig-4.webp) | Long-context performance on KV-Pairs and HotpotQAXL across context positions and lengths. |
+| ![Figure 5](assets/papers-explained-119-dbrx/fig-5.webp) | RAG benchmark results on Natural Questions and HotPotQA with top-10 retrieved passages. |
 ## Related
 
 - [[Papers Explained Corpus]]

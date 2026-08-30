@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2025-04-21_Papers-Explained-351--MathFusion-f612d91667c4.html`
+- Source file: `raw/2025-04-21_Papers-Explained-351--MathFusion-f612d91667c4.md`
 - Source title: Papers Explained 351: MathFusion
 - Published: 2025-04-21
 - Canonical: [https://medium.com/@ritvik19/papers-explained-351-mathfusion-f612d91667c4](https://medium.com/@ritvik19/papers-explained-351-mathfusion-f612d91667c4)
@@ -232,18 +232,18 @@ MathFusion: Enhancing Mathematic Problem-solving of LLM through Instruction Fusi
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2025-04-21_Papers-Explained-351--MathFusion-f612d91667c4.html`); local copies under `wiki/assets/papers-explained-351-mathfusion/` when download succeeded.
+Figures from the Medium HTML export (`raw/2025-04-21_Papers-Explained-351--MathFusion-f612d91667c4.md`); local copies under `wiki/assets/papers-explained-351-mathfusion/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-351-mathfusion/fig-1.png) | Title card: MathFusion. |
-| ![Figure 2](assets/papers-explained-351-mathfusion/fig-2.png) | The overview of MathFusion. |
-| ![Figure 3](assets/papers-explained-351-mathfusion/fig-3.png) | To construct problem pairs for fusion, for each problem PA, a suitable problem PB needs to be identified. |
-| ![Figure 4](assets/papers-explained-351-mathfusion/fig-4.png) | Sequential Fusion. |
-| ![Figure 5](assets/papers-explained-351-mathfusion/fig-5.png) | integration of two conceptually analogous problems PA and PB, thereby creating a new problem that encapsulates their shared mathematical... |
-| ![Figure 6](assets/papers-explained-351-mathfusion/fig-6.png) | Γ is a comparison function that contrasts PA and PB based on predefined logical or contextual rules. |
-| ![Figure 7](assets/papers-explained-351-mathfusion/fig-7.png) | Comparison between MathFusionQA and previous mathematical datasets. |
-| ![Figure 8](assets/papers-explained-351-mathfusion/fig-8.png) | Performance comparison on mathematical benchmarks. |
+| ![Figure 1](assets/papers-explained-351-mathfusion/fig-1.webp) | Title card: MathFusion. |
+| ![Figure 2](assets/papers-explained-351-mathfusion/fig-2.webp) | The overview of MathFusion. |
+| ![Figure 3](assets/papers-explained-351-mathfusion/fig-3.webp) | To construct problem pairs for fusion, for each problem PA, a suitable problem PB needs to be identified. |
+| ![Figure 4](assets/papers-explained-351-mathfusion/fig-4.webp) | Sequential Fusion. |
+| ![Figure 5](assets/papers-explained-351-mathfusion/fig-5.webp) | integration of two conceptually analogous problems PA and PB, thereby creating a new problem that encapsulates their shared mathematical... |
+| ![Figure 6](assets/papers-explained-351-mathfusion/fig-6.webp) | Γ is a comparison function that contrasts PA and PB based on predefined logical or contextual rules. |
+| ![Figure 7](assets/papers-explained-351-mathfusion/fig-7.webp) | Comparison between MathFusionQA and previous mathematical datasets. |
+| ![Figure 8](assets/papers-explained-351-mathfusion/fig-8.webp) | Performance comparison on mathematical benchmarks. |
 ## Related
 
 - [[Papers Explained Corpus]]

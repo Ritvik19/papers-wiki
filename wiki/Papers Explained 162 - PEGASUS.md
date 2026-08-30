@@ -6,7 +6,7 @@ This page ingests the source article into the wiki and connects it to [[Papers E
 
 ## Source Metadata
 
-- Source file: `raw/2024-07-12_Papers-Explained-162--PEGASUS-1cb16f572553.html`
+- Source file: `raw/2024-07-12_Papers-Explained-162--PEGASUS-1cb16f572553.md`
 - Source title: Papers Explained 162: PEGASUS
 - Published: 2024-07-12
 - Canonical: [https://medium.com/@ritvik19/papers-explained-162-pegasus-1cb16f572553](https://medium.com/@ritvik19/papers-explained-162-pegasus-1cb16f572553)
@@ -93,12 +93,12 @@ PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization
 
 ## Figures
 
-Figures from the Medium HTML export (`raw/2024-07-12_Papers-Explained-162--PEGASUS-1cb16f572553.html`); local copies under `wiki/assets/papers-explained-162-pegasus/` when download succeeded.
+Figures from the Medium HTML export (`raw/2024-07-12_Papers-Explained-162--PEGASUS-1cb16f572553.md`); local copies under `wiki/assets/papers-explained-162-pegasus/` when download succeeded.
 
 | Figure | Caption |
 |--------|---------|
-| ![Figure 1](assets/papers-explained-162-pegasus/fig-1.png) | Paper title: *PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization*. |
-| ![Figure 2](assets/papers-explained-162-pegasus/fig-2.png) | Encoder–decoder pre-training: **GSG** reconstructs a gap sentence masked with `[MASK1]`; **MLM** fills token masks `[MASK2]` in the remaining context. |
+| ![Figure 1](assets/papers-explained-162-pegasus/fig-1.webp) | Paper title: *PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization*. |
+| ![Figure 2](assets/papers-explained-162-pegasus/fig-2.webp) | Encoder–decoder pre-training: **GSG** reconstructs a gap sentence masked with `[MASK1]`; **MLM** fills token masks `[MASK2]` in the remaining context. |
 ## Related
 
 - [[Papers Explained Corpus]]
