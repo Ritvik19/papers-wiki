@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 257: Nougat</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 257: Nougat</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Nougat (Neural Optical Understanding for Academic Documents) is a Visual Transformer model that performs an Optical Character Recognition…
+</section>
+<section data-field="body" class="e-content">
+<section name="d4ae" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="1da1" id="1da1" class="graf graf--h3 graf--leading graf--title">Papers Explained 257: Nougat</h3><figure name="fbe0" id="fbe0" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*Vsgviz58jvP4QCjJ0a0hdA.png" data-width="1598" data-height="466" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*Vsgviz58jvP4QCjJ0a0hdA.png"></figure><p name="b229" id="b229" class="graf graf--p graf-after--figure">Nougat (Neural Optical Understanding for Academic Documents) is a Visual Transformer model that performs an Optical Character Recognition (OCR) task for processing scientific documents into a markup language. It offers a promising solution to enhance the accessibility of scientific knowledge in the digital age, by bridging the gap between human readable documents and machine-readable text.</p><h3 name="bfe5" id="bfe5" class="graf graf--h3 graf-after--p">Model</h3><figure name="7cd4" id="7cd4" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*z9W0a6m-StXMLD-q6qyX1w.png" data-width="1252" data-height="302" src="https://cdn-images-1.medium.com/max/800/1*z9W0a6m-StXMLD-q6qyX1w.png"><figcaption class="imageCaption">End-to-end architecture</figcaption></figure><p name="026c" id="026c" class="graf graf--p graf-after--figure">The model is built on the Donut architecture, hence is a encoder-decoder transformer architecture, that allows for an end-to-end training procedure.</p><h4 name="991b" id="991b" class="graf graf--h4 graf-after--p">Encoder</h4><p name="977c" id="977c" class="graf graf--p graf-after--h4">The visual encoder receives a document image x, crops the margins and resizes the image to fit in a fixed rectangle of size (H, W). If the image is smaller than the rectangle, additional padding is added to ensure each image has the same dimensionality. A Swin Transformer is used which is a hierarchical vision transformer that splits the image into non-overlapping windows of fixed size and applies a series of self-attention layers to aggregate information across these windows. The model outputs a sequence of the embedded patches z.</p><h4 name="3070" id="3070" class="graf graf--h4 graf-after--p">Decoder</h4><p name="ed16" id="ed16" class="graf graf--p graf-after--h4">The encoded image z is decoded into a sequence of tokens using a transformer decoder architecture with cross-attention. The tokens are generated in an auto-regressive manner, using self-attention and cross-attention to attend to different parts of the input sequence and encoder output respectively. Finally, the output is projected to the size of the vocabulary v, yielding the logits ℓ.</p><p name="0bb0" id="0bb0" class="graf graf--p graf-after--p">Following DONUT, mBART is used as a decoder. Galactica’s tokenizer is utilized as it is specialized in the scientific text domain.</p><h4 name="810c" id="810c" class="graf graf--h4 graf-after--p">Setup</h4><p name="08f1" id="08f1" class="graf graf--p graf-after--h4">The document images are resized and then padded to achieve the desired input size of (H, W) = (896, 672). The Transformer decoder has a maximal sequence length of S = 4096. This relatively large sizing is due to the fact that the text of academic research papers can be dense and the syntax for tables in particular is token intensive.</p><h4 name="6c1b" id="6c1b" class="graf graf--h4 graf-after--p">Data Augmentation</h4><p name="6ef3" id="6ef3" class="graf graf--p graf-after--h4">Certain Image augmentation techniques are used to improve generalization.</p><figure name="6f85" id="6f85" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*dKmDHfRCY0CNClxozU1-Ww.png" data-width="1295" data-height="702" src="https://cdn-images-1.medium.com/max/800/1*dKmDHfRCY0CNClxozU1-Ww.png"><figcaption class="imageCaption">List of the different image augmentation methods used during training on an example snippet form a sample document.</figcaption></figure><p name="f73c" id="f73c" class="graf graf--p graf-after--figure">During training time, perturbations are also added to the ground truth text by randomly replacing tokens. It is found to reduce the collapse into a repeating loop significantly.</p><h3 name="9769" id="9769" class="graf graf--h3 graf-after--p">Data</h3><figure name="ba68" id="ba68" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*gTUpd0sYcdeMkdSg57Isqg.png" data-width="401" data-height="241" src="https://cdn-images-1.medium.com/max/800/1*gTUpd0sYcdeMkdSg57Isqg.png"><figcaption class="imageCaption">Dataset composition</figcaption></figure><p name="d5f9" id="d5f9" class="graf graf--p graf-after--figure">The dataset was compiled from various sources, including arXiv, PubMed Central (PMC), and the Industry Documents Library (IDL).</p><figure name="f2da" id="f2da" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*99Mni9CxDWvUVcvtBrKiZQ.png" data-width="1573" data-height="467" src="https://cdn-images-1.medium.com/max/800/1*99Mni9CxDWvUVcvtBrKiZQ.png"><figcaption class="imageCaption">Data processing</figcaption></figure><p name="4758" id="4758" class="graf graf--p graf-after--figure">The source file is converted into HTML which is then converted to Markdown.</p><h4 name="60ed" id="60ed" class="graf graf--h4 graf-after--p">Splitting the pages</h4><p name="0fe0" id="0fe0" class="graf graf--p graf-after--h4">The PDF pages were split based on page breaks, and each page was converted into an image. Page breaks were determined heuristically using text matching, and figures/tables were handled separately.</p><p name="317d" id="317d" class="graf graf--p graf-after--p">A Bag of Words model was used to match text lines from PDFs to source code paragraphs, predicting page numbers. The goal was to find the best boundaries.</p><p name="fe5b" id="fe5b" class="graf graf--p graf-after--p">After initial splitting, a fuzzy matching technique was used to find the exact position within a paragraph for page breaks. This involved comparing text near the predicted splitting position with adjacent text.</p><h4 name="cab0" id="cab0" class="graf graf--h4 graf-after--p">Ground truth artifacts</h4><p name="5b7e" id="5b7e" class="graf graf--p graf-after--h4">Due to preprocessing and splitting, the source code markup may contain artifacts and unsupported package commands. In PMC papers, inline math and display math equations in image format posed challenges.</p><p name="d697" id="d697" class="graf graf--p graf-after--p">Despite these issues, the large number of training samples compensates for small errors, ensuring that the dataset is valuable for training models.</p><h3 name="b5ad" id="b5ad" class="graf graf--h3 graf-after--p">Evaluation</h3><p name="9348" id="9348" class="graf graf--p graf-after--h3">The following metrics are reported:</p><ul class="postList"><li name="9a3d" id="9a3d" class="graf graf--li graf-after--p"><strong class="markup--strong markup--li-strong">Edit distance:</strong> measures the number of character manipulations (insertions, deletions, substitutions) it takes to get from one string to another. In this work the normalized edit distance is considered , where we divide by the total number of characters.</li><li name="e703" id="e703" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">BLEU: </strong>computes a score based on the number of matching n-grams between the candidate and reference sentence.</li><li name="dd5e" id="dd5e" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">METEOR:</strong> a machine-translating metric with a focus on recall instead of precision.</li><li name="5aaa" id="5aaa" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">F-measure: </strong>the regulare F1-score precision and recall.</li></ul><figure name="7cb3" id="7cb3" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*HSPR8lyA_N63G2AIhTsaQw.png" data-width="1248" data-height="561" src="https://cdn-images-1.medium.com/max/800/1*HSPR8lyA_N63G2AIhTsaQw.png"><figcaption class="imageCaption">Results on arXiv test set</figcaption></figure><ul class="postList"><li name="b559" id="b559" class="graf graf--li graf-after--figure">As expected, the mathematical expressions have the worst agreement with the ground truth.</li><li name="f057" id="f057" class="graf graf--li graf-after--li">GROBID’s output format is XML, which is converted into a compatible markup language.</li><li name="0e81" id="0e81" class="graf graf--li graf-after--li">GROBID mislabels small inline expressions as text, affecting equation prediction accuracy.</li><li name="4637" id="4637" class="graf graf--li graf-after--li">Performance of embedded PDF text is better than GROBID.</li></ul><h4 name="54c4" id="54c4" class="graf graf--h4 graf-after--li">Repetitions during Inference</h4><ul class="postList"><li name="5634" id="5634" class="graf graf--li graf-after--h4">Model sometimes repeats the same sentence, especially in out-of-domain documents.</li><li name="bab7" id="bab7" class="graf graf--li graf-after--li">Known problem with Transformer-based models when sampled with greedy decoding.</li><li name="7ec4" id="7ec4" class="graf graf--li graf-after--li">Model may alternate between two sentences with minor changes.</li><li name="1a92" id="1a92" class="graf graf--li graf-after--li">Anti-repetition augmentation introduced during training to handle wrongly predicted tokens.</li><li name="2b0b" id="2b0b" class="graf graf--li graf-after--li">Significant reduction in repetitions observed, especially in out-of-domain documents.</li><li name="4137" id="4137" class="graf graf--li graf-after--li">Repetition detection involves analyzing logit values and using heuristics based on variances.</li></ul><h3 name="b017" id="b017" class="graf graf--h3 graf-after--li">Paper</h3><p name="b0a2" id="b0a2" class="graf graf--p graf-after--h3">Nougat: Neural Optical Understanding for Academic Documents <a href="https://arxiv.org/abs/2308.13418" data-href="https://arxiv.org/abs/2308.13418" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">2308.13418</a></p><p name="ce15" id="ce15" class="graf graf--p graf-after--p graf--trailing">Recommended Reading: [<a href="https://ritvik19.medium.com/list/document-information-processing-3cd900a34972" data-href="https://ritvik19.medium.com/list/document-information-processing-3cd900a34972" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Document Information Processing</a>]</p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="d7fb" id="d7fb" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/bb304f7af0a3"><time class="dt-published" datetime="2024-11-21T04:10:30.547Z">November 21, 2024</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-257-nougat-bb304f7af0a3" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

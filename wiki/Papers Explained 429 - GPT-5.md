@@ -1,0 +1,519 @@
+# Papers Explained 429 - GPT-5
+
+GPT‑5 shows particular improvements in complex front‑end generation and debugging larger repositories.
+
+This page ingests the source article into the wiki and connects it to [[Papers Explained Corpus]], [[Large Language Models]], [[Reasoning Models]], [[Multilingual Models]], [[Evaluation and Benchmarks]], [[Code Models]].
+
+- Official OpenAI sources for each version now have dedicated pages: [[GPT-5]], [[GPT-5.1]], [[GPT-5.2]], [[GPT-5.3]], [[GPT-5.4]], [[GPT-5.5]], [[GPT-5.6]].
+
+## Source Metadata
+
+- Source file: `raw/2025-08-12_Papers-Explained-429--GPT-5-0342672382e7.html`
+- Source title: Papers Explained 429: GPT-5
+- Published: 2025-08-12
+- Canonical: [https://medium.com/@ritvik19/papers-explained-429-gpt-5-0342672382e7](https://medium.com/@ritvik19/papers-explained-429-gpt-5-0342672382e7)
+
+## Key Ideas
+
+- It can often create beautiful and responsive websites, apps, and games with an eye for aesthetic sensibility in just one prompt, intuitively and tastefully turning ideas into reality.
+- GPT‑5 is able to help one steer and translate rough ideas into compelling, resonant writing with literary depth and rhythm.
+- It more reliably handles writing that involves structural ambiguity, such as sustaining unrhymed iambic pentameter or free verse that flows naturally, combining respect for form with expressive clarity.
+- GPT‑5 scores significantly higher than any previous model on HealthBench⁠, an evaluation published earlier this year based on realistic scenarios and physician-defined criteria.
+- Compared to previous models, it acts more like an active thought partner, proactively flagging potential concerns and asking questions to give more helpful answers.
+
+## Notes
+
+GPT-5 is a unified system with a smart and fast model (gpt-5-main) that answers most questions, a deeper reasoning model (gpt-5-thinking) for harder problems, and a real-time router that quickly decides which model to use based on conversation type, complexity, tool needs, and explicit intent. The router is continuously trained on real signals, including when users switch models, preference rates for responses, and measured correctness, improving over time. Once usage limits are reached, a mini version of each model (gpt-5-main-mini, gpt-5-thinking-mini) handles remaining queries. In the near future, plans are to integrate these capabilities into a single model. In the API, direct access is provided to the thinking model, its mini version, and an even smaller and faster nano version of the thinking model, made for developers (gpt-5-thinking-nano). In ChatGPT, access to gpt-5-thinking is also provided using a setting that makes use of parallel test time compute; this is referred to as gpt-5-thinking-pro.
+
+*Figure: Model progressions.*
+
+## Model Data and Training
+
+GPT-5 models are trained on diverse datasets, including information that is publicly available on the internet, information that is partnered with third parties to access, and information that users or human trainers and researchers provide or generate. The data processing pipeline includes rigorous filtering to maintain data quality and mitigate potential risks. Advanced data filtering processes are used to reduce personal information from training data. A combination of the Moderation API and safety classifiers is employed to help prevent the use of harmful or sensitive content, including explicit materials such as sexual content involving a minor. OpenAI reasoning models are trained to reason through reinforcement learning. These models are trained to think before they answer: they can produce a long internal chain of thought before responding to the user. Through training, these models learn to refine their thinking process, try different strategies, and recognize their mistakes. Reasoning allows these models to follow specific guidelines and model policies, helping them act in line with safety expectations. This means they provide more helpful answers and better resist attempts to bypass safety rules.
+
+## Evaluation
+
+### Coding
+
+- GPT‑5 shows particular improvements in complex front‑end generation and debugging larger repositories.
+
+- It can often create beautiful and responsive websites, apps, and games with an eye for aesthetic sensibility in just one prompt, intuitively and tastefully turning ideas into reality.
+
+### Creative expression and writing
+
+- GPT‑5 is able to help one steer and translate rough ideas into compelling, resonant writing with literary depth and rhythm.
+
+- It more reliably handles writing that involves structural ambiguity, such as sustaining unrhymed iambic pentameter or free verse that flows naturally, combining respect for form with expressive clarity.
+
+### Health
+
+- GPT‑5 scores significantly higher than any previous model on HealthBench⁠, an evaluation published earlier this year based on realistic scenarios and physician-defined criteria.
+
+- Compared to previous models, it acts more like an active thought partner, proactively flagging potential concerns and asking questions to give more helpful answers.
+
+- The model also now provides more precise and reliable responses, adapting to the user’s context, knowledge level, and geography, enabling it to provide safer and more helpful responses in a wide range of scenarios.
+
+### Math and Reasoning
+
+- GPT‑5 is much smarter across the board, as reflected by its performance on academic and human-evaluated benchmarks, particularly in math, coding, visual perception.
+
+- It sets a new state of the art across math (94.6% on AIME 2025 without tools).
+
+- With GPT‑5 pro’s extended reasoning, the model also sets a new SOTA on GPQA, scoring 88.4% without tools.
+
+### Instruction following and agentic tool use
+
+- GPT‑5 shows significant gains in benchmarks that test instruction following and agentic tool use, the kinds of capabilities that let it reliably carry out multi-step requests, coordinate across different tools, and adapt to changes in context.
+
+### Multimodal
+
+- The model excels across a range of multimodal benchmarks, spanning visual, video-based, spatial, and scientific reasoning.
+
+### Economically important tasks
+
+- GPT‑5 is also the best performing model on an internal benchmark measuring model performance on complex, economically valuable knowledge work.
+
+- When using reasoning, GPT‑5 is comparable to or better than experts in roughly half the cases, while outperforming o3 and ChatGPT Agent across tasks spanning over 40 occupations including law, logistics, sales, and engineering.
+
+### Faster, more efficient thinking
+
+- GPT‑5 gets more value out of less thinking time.
+
+- In the evaluations, GPT‑5 (with thinking) performs better than OpenAI o3 with 50–80% less output tokens across capabilities, including visual reasoning, agentic coding, and graduate-level scientific problem solving.
+
+### More accurate answers to real-world queries
+
+- GPT‑5 is significantly less likely to hallucinate than our previous models.
+
+- With web search enabled on anonymized prompts representative of ChatGPT production traffic, GPT‑5’s responses are ~45% less likely to contain a factual error than GPT‑4o, and when thinking, GPT‑5’s responses are ~80% less likely to contain a factual error than OpenAI o3.
+
+### More honest responses
+
+- Alongside improved factuality, GPT‑5 (with thinking) more honestly communicates its actions and capabilities to the user — especially for tasks which are impossible, underspecified, or missing key tools.
+
+- When reasoning, GPT‑5 more accurately recognizes when tasks can’t be completed and communicates its limits clearly.
+
+### Long Context
+
+- GPT‑5 shows strong improvements to long-context performance as well. On OpenAI-MRCR, a measure of long-context information retrieval, GPT‑5 outperforms o3 and GPT‑4.1, by a margin that grows substantially at longer input lengths.
+
+### Disallowed Content
+
+To evaluate and compare different models (gpt-5-thinking, OpenAI o3, gpt-5-main, and GPT-4o) on their ability to avoid generating disallowed content according to OpenAI’s policies, two evaluation sets were used:
+
+- Standard Disallowed Content Evaluation: A saturated, less challenging set.
+
+- Production Benchmarks: A new, more challenging, multi-turn evaluation set representative of production data, using LLM-based grading models to evaluate the “not_unsafe” metric.
+
+*Figure: Standard Disallowed Content Evaluation (higher is better).*
+
+- Performance on the standard evaluation is generally high across models, with minor variations likely due to natural noise.
+
+*Figure: Production Benchmarks.*
+
+- gpt-5-thinking generally performs on par or higher than OpenAI o3.
+
+- gpt-5-main underperforms GPT-4o in several areas while overperforming in others.
+
+- gpt-5-main shows statistically significant improvements in illicit/nonviolent and illicit/violent content compared to GPT-4o.
+
+- gpt-5-main shows statistically significant regression in hate/threatening and sexual/exploitative.
+
+### Sycophancy
+
+The primary objective was to reduce sycophantic behaviors in the GPT-5 models through post-training.
+
+Initially, sycophancy in GPT-4o was addressed by rolling back a version and adjusting the system prompt. For GPT-5, post-training was used, incorporating a sycophancy score as a reward signal. Evaluations were conducted both offline (fixed, pre-defined messages) and online (real traffic from A/B tests).
+
+*Figure: Sycophancy evaluation.*
+
+- GPT-5 models (gpt-5-main and gpt-5-thinking) significantly outperformed GPT-4o in offline evaluations, with lower sycophancy scores.
+
+- Preliminary online measurements showed a 69% reduction in sycophancy for free users and a 75% reduction for paid users in gpt-5-main compared to GPT-4o.
+
+- GPT-5 models show meaningful improvement in avoiding sycophantic behavior.
+
+An ongoing objective is to research and address related areas of concern, such as situations involving emotional dependency or other forms of mental/emotional distress, by maturing evaluation methods and setting reliable benchmarks.
+
+### Jailbreaks
+
+To evaluate the robustness of different models against jailbreak prompts designed to bypass safety refusals, StrongReject is used, which inserts known jailbreaks into examples from a safety refusal evaluation dataset.
+
+*Figure: Jailbreak evaluations.*
+
+- gpt-5-thinking performs similarly to OpenAI o3 in resisting jailbreak attempts.
+
+- gpt-5-main performs close to parity with GPT-4o in resisting jailbreak attempts.
+
+### Instruction Hierarchy
+
+To ensure models adhere to an “Instruction Hierarchy” where system messages override developer messages, and developer messages override user messages, preventing circumvention of guardrails, the instruction hierarchy is evaluated using two sets of evaluations:
+
+- System prompt extraction: Tests if a malicious user message can extract a secret in the system prompt.
+
+- Phrase protection: Tests if the model follows a system message instruction correctly when a malicious user message tries to make the model say “access granted”.
+
+*Figure: Instruction Hierarchy Evaluations.*
+
+- The results show regressions in performance for gpt-5-main, which will be addressed with a fix.
+
+### Hallucinations
+
+Evaluation on ChatGPT Production Traffic: Models were evaluated on prompts representative of real ChatGPT production conversations. An LLM-based grading model with web access was used to identify major and minor factual errors. The grader’s validity was confirmed by 75% agreement with human assessors, with the grader tending to identify more factual errors.
+
+*Figure: Factuality on ChatGPT Production Traffic (Browsing Enabled).*
+
+- gpt-5-main demonstrated a 26% smaller hallucination rate than GPT-4o.
+
+- gpt-5-thinking showed a 65% smaller hallucination rate than OpenAI o3.
+
+- At the response level, gpt-5-main had 44% fewer responses with at least one major factual error, while gpt-5-thinking had 78% fewer than OpenAI o3.
+
+Evaluation on Open-Ended Factuality Benchmarks: New evaluations were added using open-source prompts from two public factuality benchmarks: LongFact (LLM-generated questions for detailed responses) and FActScore (questions seeking biographies). OpenAI o3 was employed as a two-step grader: first listing relevant factual claims, then fact-checking them in batches using its browsing tool. Claim-level error rates were reported.
+
+*Figure: Average Hallucination Rate (Browsing Enabled).*
+
+*Figure: Average Hallucination Rate (Browsing Disabled).*
+
+- GPT-5 models achieved significantly lower hallucination rates in both “browse-on” and “browse-off” settings across the LongFact and FActScore benchmarks.
+
+- Specifically, gpt-5-thinking made over 5 times fewer factual errors than OpenAI o3 in both browsing settings across the three benchmarks (including production traffic).
+
+Evaluation on SimpleQA: The gpt-5-thinking model was also evaluated on SimpleQA, a dataset of fact-seeking questions with short answers, measuring model accuracy for attempted answers and hallucination rate.
+
+*Figure: SimpleQA evaluations.*
+
+- gpt-5-thinking showed a slight improvement in hallucination rate over OpenAI o3.
+
+- gpt-5-thinking-mini reasoning demonstrated significant improvement in abstention behavior over OpenAI o4-mini.
+
+### Image Input
+
+Image input evaluations introduced with ChatGPT agent evaluate for not_unsafe model output, given disallowed combined text and image input.
+
+*Figure: Image input evaluations (higher is better)*
+
+- gpt-5-thinking generally performs slightly higher than OpenAI o3. gpt-5-main generally performs on par with or slightly higher than GPT-4o.
+
+### Fairness
+
+The fairness and bias of different models are evaluated using the BBQ evaluation benchmark.
+
+*Figure: BBQ evaluation.*
+
+- gpt-5-thinking performs similarly to OpenAI o3 on ambiguous questions (no correct answer).
+
+- gpt-5-thinking performs slightly lower than OpenAI o3 on disambiguated questions (answer provided in context).
+
+- gpt-5-main performs slightly higher than GPT-4o on ambiguous questions.
+
+- gpt-5-main performs on par with GPT-4o on disambiguated questions.
+
+## Red Teaming & External Assessments
+
+To assess key risks associated with gpt-5-thinking’s capabilities, measure the sufficiency of its safeguards in adversarial scenarios, and provide strong quantitative comparisons to previous models. Prioritized topics included violent attack planning, jailbreaks, prompt injections, and bioweaponization.
+
+### Violent Attack Planning
+
+A red team of 25 experts (from defense, intelligence, law enforcement) explored risks by generating conversations with gpt-5-thinking and OpenAI o3 in parallel (anonymized). They tested topics like physical security, weapon creation, and information gathering, providing comparison ratings on model generations for safety and utility.
+
+*Figure: Attack planning red teaming win rate results*
+
+- gpt-5-thinking was perceived as the “safer” model 65.1% of the time in blind comparisons to OpenAI o3, indicating a large effect size favoring gpt-5-thinking. This was attributed to gpt-5-thinking’s relative detail in responses and its safe completions training.
+
+- Attack planning red teaming win rate results quantifies this finding, showing gpt-5-thinking’s 65.1% win rate against OpenAI o3’s 34.9%.
+
+- Data from this campaign will be used to refine system safeguards and policies against harmful uses.
+
+### Prompt Injections
+
+Two external red-teaming groups conducted a two-week system-level assessment. Separately, automated red-teaming efforts, including a benchmark by Gray Swan using their Shade platform, focused on model-only prompt-injection behavior.
+
+*Figure: Agent Red Teaming (ART) benchmark for prompt injections.*
+
+- 10 notable issues were identified from an initial 47 reported findings in the system-level assessment, leading to mitigation updates to safeguard logic and connector handling deployed pre-release.
+
+- gpt-5-thinking demonstrated State-of-the-Art (SOTA) performance against adversarial prompt injection attacks from Gray Swan’s Shade platform.
+
+### Microsoft AI Red Team Assessment
+
+The Microsoft AI Red Team, comprising over 70 internal security and safety experts, conducted manual and automated red-teaming (using PyRIT) with almost a million adversarial conversations across 18 harm areas (Frontier harms, Content safety, Psychosocial harms).
+
+- gpt-5-thinking exhibits one of the strongest AI safety profiles among OpenAI’s models, on par with or better than OpenAI o3, across most critical harm categories.
+
+- The model is qualitatively safer than OpenAI o3 in frontier and content safety domains, demonstrating refusal to provide weaponizable offensive-cyber code and high resistance to single-turn, generic jailbreaks.
+
+- While multi-turn, tailored attacks may occasionally succeed, they require high effort and result in generally limited, moderate-severity harms.
+
+- Marked improvements were noted across multiple languages, with attempts to generate explicit hate speech, graphic violence, or child sexual content being overwhelmingly unsuccessful.
+
+- In the psychosocial domain, gpt-5-thinking can be improved in detecting and responding to situations of mental or emotional distress, a finding consistent with OpenAI’s own testing.
+
+## GPT 5.1
+
+GPT-5.1 represents a significant upgrade to the GPT-5 series, focusing on enhanced intelligence, improved conversational style, and greater customization.
+
+The GPT-5.1 update introduces two primary models, each with specific enhancements:
+
+GPT-5.1 Instant: ChatGPT’s most frequently used model, now characterized by:
+
+- Warmer and More Conversational Default Tone: It aims to be more enjoyable to interact with, often surprising users with its playfulness while remaining clear and useful.
+
+- Improved Instruction Following: The model is more reliable in accurately answering the question asked, even with specific constraints (e.g., “Always respond with six words”).
+
+- Adaptive Reasoning: For the first time, GPT-5.1 Instant can decide when to “think before responding” to challenging questions. This leads to more thorough and accurate answers, particularly reflected in significant improvements on evaluations like AIME 2025 and Codeforces, while still maintaining quick response times.
+
+GPT-5.1 Thinking: the advanced reasoning model, now made more efficient and user-friendly:
+
+- Dynamic Thinking Time: It adapts its processing time more precisely to the complexity of the question. It spends more time on complex problems for thorough answers and responds more quickly to simpler ones, making it roughly twice as fast on the fastest tasks and twice as slow on the slowest tasks compared to GPT-5 Thinking.
+
+- Clearer Responses: Its outputs are less jargon-filled and use fewer undefined terms, making complex tasks and technical concepts more approachable and understandable.
+
+- Warmer and More Empathetic Default Tone: Similar to Instant, it adopts a more empathetic and supportive communication style, especially when users express distress.
+
+GPT-5.1 Auto: continues to route each query to the most suitable underlying model (Instant or Thinking) automatically. The overall user experience across GPT-5.1 models is designed to feel both smarter and more natural in tone.
+
+A major focus of this update is making ChatGPT uniquely customizable to individual user preferences:
+
+- Refined Preset Tone and Style Options:
+
+- The existing “Default,” “Friendly” (formerly Listener), and “Efficient” (formerly Robot) options have been updated.
+
+- New options introduced include “Professional,” “Candid,” and “Quirky.”
+
+- “Cynical” (formerly Cynic) and “Nerdy” (formerly Nerd) remain available unchanged.
+
+- These personality settings apply across all models.
+
+## GPT 5.2
+
+GPT-5.2 is designed to enhance professional knowledge work. It offers significant improvements in creating spreadsheets, building presentations, writing code, perceiving images, understanding long contexts, using tools, and handling complex, multi-step projects. It sets new state-of-the-art scores across various benchmarks, outperforming industry professionals in well-specified knowledge work tasks spanning 44 occupations.
+
+### Economically valuable tasks
+
+- GDPval: GPT-5.2 Thinking beats or ties top industry professionals on 70.9% of comparisons on GDPval knowledge work tasks.
+
+- Speed and Cost: Produces outputs at >11x the speed and <1% the cost of expert professionals.
+
+- Investment Banking: Improved performance in junior investment banking analyst spreadsheet modeling tasks, scoring 9.3% higher than GPT-5.1.
+
+### Coding Capabilities
+
+- SWE-Bench Pro: Achieves 55.6% on SWE-Bench Pro, testing real-world software engineering across multiple languages.
+
+- SWE-bench Verified: Scores 80.0%, showing reliability in debugging production code, implementing feature requests, refactoring large codebases, and shipping fixes end-to-end.
+
+### Long Context Understanding
+
+- OpenAI MRCRv2: Sets a new state of the art in long-context reasoning, achieving near 100% accuracy on the 4-needle MRCR variant (out to 256k tokens).
+
+### Factuality
+
+- GPT‑5.2 Thinking hallucinates less than GPT‑5.1 Thinking. On a set of de-identified queries from ChatGPT, responses with errors were 30%rel less common.
+
+### Vision Capabilities
+
+- Chart Reasoning and Software Interface Understanding: Cuts error rates roughly in half, improving interpretation of dashboards, product screenshots, technical diagrams, and visual reports.
+
+### Tool Usage
+
+- Tau2-bench Telecom: Achieves 98.7%, demonstrating reliable tool usage across long, multi-turn tasks.
+
+- Latency-sensitive Use Cases: Performs better at reasoning.effort=’none’, supporting stronger end-to-end workflows.
+
+### Scientific and Mathematical Work
+
+- GPQA Diamond: Achieves 92.4% on graduate-level Google-proof Q&A benchmark.
+
+- FrontierMath: Sets a new state of the art, solving 40.3% of expert-level mathematics problems.
+
+### Abstract Reasoning
+
+- ARC-AGI-1: Scores 86.2%, measuring general reasoning ability.
+
+- ARC-AGI-2: Achieves 52.9%, showing improved chain-of-thought reasoning.
+
+## GPT 5.4
+
+GPT 5.4 combines GPT‑5.3‑Codex’s top‑tier coding with improved knowledge work, tool use, and native computer‑use, supports up to a 1M‑token context in Codex, and is the most token‑efficient and factual model yet.
+
+On GDPval⁠, which tests agents’ abilities to produce well-specified knowledge work across 44 occupations, GPT‑5.4 achieves a new state of the art, matching or exceeding industry professionals in 83.0% of comparisons, compared to 70.9% for GPT‑5.2.
+
+OSWorld‑Verified (desktop navigation via screenshots + keyboard/mouse):
+
+- GPT‑5.4: 75.0% success
+
+- GPT‑5.3‑Codex: 74.0%
+
+- GPT‑5.2: 47.3%
+
+- Human performance: 72.4% (from OSWorld paper)
+
+WebArena‑Verified (browser use, DOM + screenshots):
+
+- GPT‑5.4: 67.3%
+
+- GPT‑5.2: 65.4%
+
+Online‑Mind2Web (browser use, screenshot‑only):
+
+- GPT‑5.4: 92.8%
+
+- ChatGPT Atlas Agent Mode: 70.9%
+
+MMMU‑Pro (visual understanding and reasoning, no tools):
+
+- GPT‑5.4: 81.2%
+
+- GPT‑5.2: 79.5%
+
+With tools:
+
+- GPT‑5.4: 82.1%
+
+- GPT‑5.2: 80.4%
+
+OmniDocBench (document parsing, normalized edit distance; lower is better):
+
+- GPT‑5.4 (no reasoning): 0.109
+
+- GPT‑5.2 (no reasoning): 0.140
+
+SWE‑Bench Pro (Public):
+
+- GPT‑5.4: 57.7%
+
+- GPT‑5.3‑Codex: 56.8%
+
+- GPT‑5.2: 55.6%
+
+Terminal‑Bench 2.0:
+
+- GPT‑5.4: 75.1%
+
+- GPT‑5.3‑Codex: 77.3%
+
+- GPT‑5.2: 62.2%
+
+BrowseComp (persistent web browsing for hard‑to‑find information):
+
+- GPT‑5.4: 82.7%
+
+- GPT‑5.4 Pro: 89.3%
+
+- GPT‑5.3‑Codex: 77.3%
+
+- GPT‑5.2: 65.8%
+
+- GPT‑5.2 Pro: 77.9%
+
+GPT‑5.4 improves:
+
+- When to call tools
+
+- How to sequence and parallelize tool calls
+
+- Multi‑step workflow completion with lower cost and latency
+
+Toolathlon (multi‑step tool use benchmark):
+
+- GPT‑5.4: 54.6%
+
+- GPT‑5.3‑Codex: 51.9%
+
+- GPT‑5.2: 45.7%
+
+τ2‑bench (Tau2‑bench) Telecom
+
+With reasoning effort None:
+
+- GPT‑5.4: 64.3%
+
+- GPT‑5.2: 57.2%
+
+- GPT‑4.1: 43.6%
+
+With reasoning effort xhigh:
+
+- GPT‑5.4: 98.9%
+
+- GPT‑5.2: 98.7%
+
+## GPT‑5.4 mini and nano
+
+GPT‑5.4 mini is a fast, efficient small model that significantly improves on GPT‑5 mini in coding, reasoning, multimodal understanding, and tool use, while running more than 2× faster and approaching GPT‑5.4 performance on benchmarks like SWE‑Bench Pro and OSWorld‑Verified. It is optimized for low‑latency, high‑volume workloads such as responsive coding assistants, subagents in systems like Codex, and computer‑use tasks, supports text and image input plus tools (web/file search, computer use, skills), has a 400k context window.
+
+GPT‑5.4 nano is the smallest and cheapest GPT‑5.4‑class model, a major upgrade over GPT‑5 nano, designed for scenarios where speed and cost matter most, such as classification, data extraction, ranking, and simpler coding subagents that handle supporting tasks.
+
+## Paper
+
+[Introducing GPT-5](https://openai.com/index/introducing-gpt-5/)
+
+[GPT-5 System Card](https://openai.com/index/gpt-5-system-card/)
+
+[GPT-5.1: A smarter, more conversational ChatGPT](https://openai.com/index/gpt-5-1/)
+
+[Introducing GPT-5.2](https://openai.com/index/introducing-gpt-5-2/)
+
+[Introducing GPT‑5.4](https://openai.com/index/introducing-gpt-5-4/)
+
+[Introducing GPT‑5.4 mini and nano](https://openai.com/index/introducing-gpt-5-4-mini-and-nano/)
+
+## Figures
+
+Figures from the Medium HTML export (`raw/2025-08-12_Papers-Explained-429--GPT-5-0342672382e7.html`); local copies under `wiki/assets/papers-explained-429-gpt-5/` when download succeeded.
+
+| Figure | Caption |
+|--------|---------|
+| ![Figure 1](assets/papers-explained-429-gpt-5/fig-1.png) | Title card: GPT-5. |
+| ![Figure 2](assets/papers-explained-429-gpt-5/fig-2.png) | Model progressions. |
+| ![Figure 3](assets/papers-explained-429-gpt-5/fig-3.png) | Coding. |
+| ![Figure 4](assets/papers-explained-429-gpt-5/fig-4.png) | Health. |
+| ![Figure 5](assets/papers-explained-429-gpt-5/fig-5.png) | Math and Reasoning. |
+| ![Figure 6](assets/papers-explained-429-gpt-5/fig-6.png) | Instruction following and agentic tool use. |
+| ![Figure 7](assets/papers-explained-429-gpt-5/fig-7.png) | Multimodal. |
+| ![Figure 8](assets/papers-explained-429-gpt-5/fig-8.png) | Economically important tasks. |
+| ![Figure 9](assets/papers-explained-429-gpt-5/fig-9.png) | Faster, more efficient thinking. |
+| ![Figure 10](assets/papers-explained-429-gpt-5/fig-10.png) | More accurate answers to real-world queries. |
+| ![Figure 11](assets/papers-explained-429-gpt-5/fig-11.png) | More honest responses. |
+| ![Figure 12](assets/papers-explained-429-gpt-5/fig-12.png) | Long Context. |
+| ![Figure 13](assets/papers-explained-429-gpt-5/fig-13.png) | Standard Disallowed Content Evaluation (higher is better). |
+| ![Figure 14](assets/papers-explained-429-gpt-5/fig-14.png) | Production Benchmarks. |
+| ![Figure 15](assets/papers-explained-429-gpt-5/fig-15.png) | Sycophancy evaluation. |
+| ![Figure 16](assets/papers-explained-429-gpt-5/fig-16.png) | Jailbreak evaluations. |
+| ![Figure 17](assets/papers-explained-429-gpt-5/fig-17.png) | Instruction Hierarchy Evaluations. |
+| ![Figure 18](assets/papers-explained-429-gpt-5/fig-18.png) | Factuality on ChatGPT Production Traffic (Browsing Enabled). |
+| ![Figure 19](assets/papers-explained-429-gpt-5/fig-19.png) | Average Hallucination Rate (Browsing Enabled). |
+| ![Figure 20](assets/papers-explained-429-gpt-5/fig-20.png) | Average Hallucination Rate (Browsing Disabled). |
+| ![Figure 21](assets/papers-explained-429-gpt-5/fig-21.png) | SimpleQA evaluations. |
+| ![Figure 22](assets/papers-explained-429-gpt-5/fig-22.png) | Image input evaluations (higher is better). |
+| ![Figure 23](assets/papers-explained-429-gpt-5/fig-23.png) | BBQ evaluation. |
+| ![Figure 24](assets/papers-explained-429-gpt-5/fig-24.png) | Attack planning red teaming win rate results. |
+| ![Figure 25](assets/papers-explained-429-gpt-5/fig-25.png) | Agent Red Teaming (ART) benchmark for prompt injections. |
+| ![Figure 26](assets/papers-explained-429-gpt-5/fig-26.png) | GPT-5.2 is designed to enhance professional knowledge work. |
+| ![Figure 27](assets/papers-explained-429-gpt-5/fig-27.png) | GPT-5.2 is designed to enhance professional knowledge work. |
+| ![Figure 28](assets/papers-explained-429-gpt-5/fig-28.png) | GPT-5.2 is designed to enhance professional knowledge work. |
+| ![Figure 29](assets/papers-explained-429-gpt-5/fig-29.png) | GPT-5.2 is designed to enhance professional knowledge work. |
+| ![Figure 30](assets/papers-explained-429-gpt-5/fig-30.png) | GPT-5.2 is designed to enhance professional knowledge work. |
+| ![Figure 31](assets/papers-explained-429-gpt-5/fig-31.png) | GPT-5.2 is designed to enhance professional knowledge work. |
+| ![Figure 32](assets/papers-explained-429-gpt-5/fig-32.png) | GPT-5.2 is designed to enhance professional knowledge work. |
+| ![Figure 33](assets/papers-explained-429-gpt-5/fig-33.png) | GPT-5.2 is designed to enhance professional knowledge work. |
+| ![Figure 34](assets/papers-explained-429-gpt-5/fig-34.png) | On GDPval⁠, which tests agents’ abilities to produce well-specified knowledge work across 44 occupations, GPT‑5.4 achieves a new state of... |
+| ![Figure 35](assets/papers-explained-429-gpt-5/fig-35.png) | OSWorld‑Verified (desktop navigation via screenshots + keyboard/mouse). |
+| ![Figure 36](assets/papers-explained-429-gpt-5/fig-36.png) | OmniDocBench (document parsing, normalized edit distance; lower is better). |
+| ![Figure 37](assets/papers-explained-429-gpt-5/fig-37.png) | Terminal‑Bench 2.0. |
+| ![Figure 38](assets/papers-explained-429-gpt-5/fig-38.png) | With reasoning effort xhigh. |
+| ![Figure 39](assets/papers-explained-429-gpt-5/fig-39.png) | With reasoning effort xhigh. |
+| ![Figure 40](assets/papers-explained-429-gpt-5/fig-40.png) | With reasoning effort xhigh. |
+## Related
+
+- [[Papers Explained Corpus]]
+- [[Large Language Models]]
+- [[Reasoning Models]]
+- [[Multilingual Models]]
+- [[Evaluation and Benchmarks]]
+- [[Code Models]]
+- [[Papers Explained 428 - gpt-oss]]
+- [[Papers Explained 430 - Safe-Completions]]
+
+#summary #topic

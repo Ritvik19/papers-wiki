@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 440: OpenCodeReasoning-II</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 440: OpenCodeReasoning-II</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+This work introduces OpenCodeReasoning-II, a dataset consisting of 2.5M question-solution-critique triples (≈35K unique programming…
+</section>
+<section data-field="body" class="e-content">
+<section name="d5a8" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="fd86" id="fd86" class="graf graf--h3 graf--leading graf--title">Papers Explained 440: OpenCodeReasoning-II</h3><figure name="dece" id="dece" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*K32ejb_FlysmZVck8cPzkg.png" data-width="1800" data-height="680" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*K32ejb_FlysmZVck8cPzkg.png"></figure><p name="1a6b" id="1a6b" class="graf graf--p graf-after--figure">This work introduces OpenCodeReasoning-II, a dataset consisting of 2.5M question-solution-critique triples (≈35K unique programming questions). A two-stage supervised fine-tuning strategy is employed. The first stage focuses on fine-tuning for code generation, while the second stage involves the joint training of models for both code generation and critique. The resulting fine-tuned Qwen2.5-Instruct models achieve performance in code generation that either exceeds or equals the best prior open-weight distilled models.</p><p name="c6e3" id="c6e3" class="graf graf--p graf-after--p">The dataset is available on <a href="https://huggingface.co/datasets/nvidia/OpenCodeReasoning-2/" data-href="https://huggingface.co/datasets/nvidia/OpenCodeReasoning-2/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">HuggingFace</a>.</p><h3 name="354e" id="354e" class="graf graf--h3 graf-after--p">Development of OpenCodeReasoning-II</h3><figure name="2146" id="2146" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*pKTysvlz2a3FLuZQs0nTrw.png" data-width="1800" data-height="560" src="https://cdn-images-1.medium.com/max/800/1*pKTysvlz2a3FLuZQs0nTrw.png"><figcaption class="imageCaption">Overview of the OpenCodeReasoning-II development stages.</figcaption></figure><p name="d05d" id="d05d" class="graf graf--p graf-after--figure">The construction of the OpenCodeReasoning-II dataset involved a four-stage approach:</p><h4 name="5421" id="5421" class="graf graf--h4 graf-after--p">Programming Questions Collection</h4><p name="cc8e" id="cc8e" class="graf graf--p graf-after--h4">To create the dataset, problems were drawn from the TACO corpus, the APPS benchmark, the CodeContests collection, and CodeForces problems through the OpenR1 initiative. A fuzzy matching-based de-duplication method was applied, leading to a final set of 34,799 unique questions of diverse difficulty.</p><figure name="2d2b" id="2d2b" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*9Q60_VAc1sWrl-OVypp0SQ.png" data-width="1800" data-height="720" src="https://cdn-images-1.medium.com/max/800/1*9Q60_VAc1sWrl-OVypp0SQ.png"><figcaption class="imageCaption">Number of questions and corresponding samples in OpenCodeReasoning-II.</figcaption></figure><p name="8d36" id="8d36" class="graf graf--p graf-after--figure">To ensure the integrity of OpenCodeReasoning-II, potential data leakage between the collected programming questions and major code generation evaluation suites was rigorously investigated. The methodology involved computing the cosine similarity (with a cutoff of 0.7) to identify the closest counterpart within the benchmark datasets for every distinct question in OpenCodeReasoning-II. Llama-3.3–70B-Instruct was used as a judge to assess semantic similarity, and it identified 674 questions that potentially overlap with evaluation benchmarks. Following this decontamination, solutions were generated for the remaining 34,125 programming questions.</p><h4 name="622a" id="622a" class="graf graf--h4 graf-after--p">Solution Generation using DeepSeek-R1</h4><p name="7b38" id="7b38" class="graf graf--p graf-after--h4">Multiple solutions for each question were generated leveraging DeepSeek-R1 in Python and C++. Nucleus Sampling was used, with a temperature of 0.6 and top-p of 0.95, for a maximum output sequence length of 32k tokens.</p><p name="fdcd" id="fdcd" class="graf graf--p graf-after--p">[ FIG 6 PROMPT ]</p><p name="1a59" id="1a59" class="graf graf--p graf-after--p">Each response was checked for reasoning traces enclosed by the &lt;think&gt; and &lt;/think&gt; tags. The solution segments were then extracted, separating the reasoning traces from the rest of the response. The presence of code blocks delimited by ```python . . .``` or ```cpp . . .``` was confirmed. Finally, Tree Sitter was used to validate the syntactic correctness of these code blocks. These filtering procedures led to the removal of a very few responses.</p><h4 name="b513" id="b513" class="graf graf--h4 graf-after--p">Critique Generation using QwQ-32B</h4><p name="0172" id="0172" class="graf graf--p graf-after--h4">QwQ-32B was prompted to generate critiques for programming questions and their corresponding code solutions. Temperature-based nucleus sampling with a maximum output length of 24k tokens was used for generation. A post-processing and filtering approach similar to solution generation was employed. Responses were retained only if their final judgment was binary: either right or wrong. Otherwise, they were discarded.</p><p name="8920" id="8920" class="graf graf--p graf-after--p">[ FIG 7 PROMPT ]</p><h4 name="fa44" id="fa44" class="graf graf--h4 graf-after--p">Verifying Solutions with Unit Tests</h4><p name="f254" id="f254" class="graf graf--p graf-after--h4">Generated code solutions were executed against their corresponding unit tests, which were collected alongside the questions from public benchmarks. A subsample of OpenCodeReasoning-II was selected where each question had at least 5 unit tests, with a maximum of 50 randomly selected if more were available. This subsample comprised 60% of OpenCodeReasoning-II.</p><h3 name="658f" id="658f" class="graf graf--h3 graf-after--p">Extending LiveCodeBench for C++</h3><p name="6386" id="6386" class="graf graf--p graf-after--h3">LiveCodeBench aims to provide a contamination-free evaluation of LLMs for code. Its limitation to Python hindered the ability to assess LLMs on C++, a widely used language in competitive coding. To address this, LiveCodeBench was extended to include C++. Problems were selected from release_v5 within the date range of 2408 to 2502, resulting in 279 problems (175 from AtCoder and 104 from LeetCode). AtCoder problems utilize standard input/output for testing, whereas LeetCode problems provide starter code, requiring function invocation for evaluation. The C++ starter code for LeetCode problems was collected and their test cases were adapted to enable evaluation in the extended benchmark.</p><p name="d013" id="d013" class="graf graf--p graf-after--p">The dataset is publicly available at <a href="https://huggingface.co/datasets/nvidia/LiveCodeBench-CPP" data-href="https://huggingface.co/datasets/nvidia/LiveCodeBench-CPP" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">HuggingFace</a>.</p><h3 name="f54f" id="f54f" class="graf graf--h3 graf-after--p">A Simple Test-time Scaling Approach via Self-Critique</h3><p name="9e18" id="9e18" class="graf graf--p graf-after--h3">The Qwen2.5-Instruct models spanning parameter counts of 7B, 14B, and 32B were fine-tuned in two stages. Stage I involved fine-tuning for code generation, followed by Stage II where the models were jointly fine-tuned for both code generation and self-critique. The same prompts used for data generation were employed for fine-tuning. The models underwent three epochs of fine-tuning in Stage I and one epoch in Stage II.</p><p name="0500" id="0500" class="graf graf--p graf-after--p">At inference time, the fine-tuned models are prompted to first produce a solution to a programming question and then to critique their own output (self-critique). This process facilitates parallel scaling, where multiple solutions are generated concurrently, and the best is chosen as the final result.</p><h3 name="422b" id="422b" class="graf graf--h3 graf-after--p">Evaluation</h3><figure name="44b6" id="44b6" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*JHELoaXtriWoSDgmjyFvhQ.png" data-width="1800" data-height="1140" src="https://cdn-images-1.medium.com/max/800/1*JHELoaXtriWoSDgmjyFvhQ.png"><figcaption class="imageCaption">Performance comparison of reasoning models on LiveCodeBench.</figcaption></figure><ul class="postList"><li name="7efb" id="7efb" class="graf graf--li graf-after--figure">Scaling the quantity of synthetic solutions significantly benefits smaller models.</li></ul><figure name="e384" id="e384" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*mYi-k9_931rG0rjANrGUjg.png" data-width="1800" data-height="560" src="https://cdn-images-1.medium.com/max/800/1*mYi-k9_931rG0rjANrGUjg.png"><figcaption class="imageCaption">Performance comparison of reasoning models under test-time scaling setup.</figcaption></figure><ul class="postList"><li name="9692" id="9692" class="graf graf--li graf-after--figure">Applying self-critique at test-time yields significant improvements in Pass@1 scores.</li></ul><figure name="be7d" id="be7d" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*vWLHAefnf7j9k32xZNLtYQ.png" data-width="1400" data-height="560" src="https://cdn-images-1.medium.com/max/800/1*vWLHAefnf7j9k32xZNLtYQ.png"><figcaption class="imageCaption">Pass@1 scores of OCR-2 models trained individually on Python and C++ vs. jointly using OpenCodeReasoning-II.</figcaption></figure><ul class="postList"><li name="7bc0" id="7bc0" class="graf graf--li graf-after--figure">Cross-language transfer does occur.</li><li name="f5d3" id="f5d3" class="graf graf--li graf-after--li">Combining Python and C++ data during training improves overall performance on both languages.</li><li name="0316" id="0316" class="graf graf--li graf-after--li">There’s an asymmetry in transfer: C++-trained models perform noticeably on Python, but Python-trained models experience a significant accuracy drop on C++.</li><li name="c0e7" id="c0e7" class="graf graf--li graf-after--li">The asymmetry isn’t solely due to dataset size, and further research is needed to understand the cause.</li></ul><h3 name="f3e1" id="f3e1" class="graf graf--h3 graf-after--li">Paper</h3><p name="00b3" id="00b3" class="graf graf--p graf-after--h3 graf--trailing">OpenCodeReasoning-II: A Simple Test Time Scaling Approach via Self-Critique <a href="https://arxiv.org/abs/2507.09075" data-href="https://arxiv.org/abs/2507.09075" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">2507.09075</a></p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="d7fb" id="d7fb" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/c1e27ef6fb5e"><time class="dt-published" datetime="2025-08-27T03:11:39.581Z">August 27, 2025</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-440-opencodereasoning-ii-c1e27ef6fb5e" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

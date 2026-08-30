@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 26: Swin Transformer</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 26: Swin Transformer</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Swin Transformer constructs a hierarchical representation by starting from small-sized patches and gradually merging neighboring patches in…
+</section>
+<section data-field="body" class="e-content">
+<section name="11d3" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="c12f" id="c12f" class="graf graf--h3 graf--leading graf--title">Papers Explained 26: Swin Transformer</h3><figure name="7f92" id="7f92" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*8Jsw_2WOL5zfBYZbhVHEJw.png" data-width="1310" data-height="297" src="https://cdn-images-1.medium.com/max/800/1*8Jsw_2WOL5zfBYZbhVHEJw.png"></figure><p name="5008" id="5008" class="graf graf--p graf-after--figure">Swin Transformer constructs a hierarchical representation by starting from small-sized patches and gradually merging neighboring patches in deeper Transformer layers. With these hierarchical feature maps, the Swin Transformer model can conveniently leverage advanced techniques for dense prediction such as feature pyramid networks (FPN) or U-Net.</p><figure name="b51a" id="b51a" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*oRHl46UzVGVTxjDM" data-width="338" data-height="354" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/0*oRHl46UzVGVTxjDM"></figure><p name="fb66" id="fb66" class="graf graf--p graf-after--figure">A key design element of Swin Transformer is its shift of the window partition between consecutive self-attention<br>layers. The shifted windows bridge the windows of the preceding layer, providing connections among them that significantly enhance modeling power</p><figure name="d76b" id="d76b" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*kudJ18nxwJdmeYIj" data-width="338" data-height="246" src="https://cdn-images-1.medium.com/max/800/0*kudJ18nxwJdmeYIj"></figure><h3 name="86ce" id="86ce" class="graf graf--h3 graf-after--figure">Architecture</h3><figure name="8c33" id="8c33" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="0*f0B4bnK8fmpu1PDn" data-width="713" data-height="258" src="https://cdn-images-1.medium.com/max/800/0*f0B4bnK8fmpu1PDn"></figure><p name="8231" id="8231" class="graf graf--p graf-after--figure">It first splits an input RGB image into non-overlapping patches by a patch splitting module, like ViT. Each patch is<br>treated as a “token” and its feature is set as a concatenation of the raw pixel RGB values. In the original implementation, we use a patch size of 4 × 4 and thus the feature dimension of each patch is 4 × 4 × 3 = 48. A linear embedding layer is applied on this raw-valued feature to project it to an arbitrary dimension (denoted as C).</p><p name="0168" id="0168" class="graf graf--p graf-after--p">Several Transformer blocks with modified self-attention computation (Swin Transformer blocks) are applied on these patch tokens. The Transformer blocks maintain the number of tokens ( H / 4 × W / 4), and together with the linear embedding are referred to as “Stage 1”.</p><p name="2c5f" id="2c5f" class="graf graf--p graf-after--p">To produce a hierarchical representation, the number of tokens is reduced by patch merging layers as the network gets deeper. The first patch merging layer concatenates the features of each group of 2 × 2 neighboring patches, and applies a linear layer on the 4C-dimensional concatenated features.</p><p name="bcd0" id="bcd0" class="graf graf--p graf-after--p">This reduces the number of tokens by a multiple of 2×2 = 4 (2× downsampling of resolution), and the output dimension is set to 2C. Swin Transformer blocks are applied afterwards for feature transformation, with the resolution kept at H / 8 × W / 8. This first block of patch merging and feature transformation is denoted as “Stage 2”.</p><p name="aac8" id="aac8" class="graf graf--p graf-after--p">The procedure is repeated twice, as “Stage 3” and “Stage 4”, with output resolutions of H / 16 × W / 16 and H / 32 × W / 32 , respectively. These stages jointly produce a hierarchical representation, with the same feature map resolutions as those of typical convolutional networks</p><p name="a295" id="a295" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Swin Transformer block</strong></p><p name="3e6d" id="3e6d" class="graf graf--p graf-after--p">Swin Transformer is built by replacing the standard multi-head self attention (MSA) module in a Transformer block by a module based on shifted windows, with other layers kept the same. A Swin Transformer block consists of a shifted window based MSA module, followed by a 2-layer MLP with GELU nonlinearity in between. A LayerNorm (LN) layer is applied before each MSA module and each MLP, and a residual connection is applied after each module.</p><h3 name="61d1" id="61d1" class="graf graf--h3 graf-after--p">Experiments</h3><ul class="postList"><li name="43b8" id="43b8" class="graf graf--li graf-after--h3">Image Classification on ImageNet-1K</li><li name="aafc" id="aafc" class="graf graf--li graf-after--li">Regular ImageNet-1K training</li><li name="b221" id="b221" class="graf graf--li graf-after--li">Pre-training on ImageNet-22K and fine-tuning on ImageNet-1K</li><li name="5523" id="5523" class="graf graf--li graf-after--li">Object Detection on COCO 2017</li><li name="d0d6" id="d0d6" class="graf graf--li graf-after--li">Semantic Segmentation on ADE20K</li></ul><h3 name="e1d3" id="e1d3" class="graf graf--h3 graf-after--li">Paper</h3><p name="45d8" id="45d8" class="graf graf--p graf-after--h3">Swin Transformer: Hierarchical Vision Transformer using Shifted Windows <a href="https://arxiv.org/abs/2103.14030" data-href="https://arxiv.org/abs/2103.14030" class="markup--anchor markup--p-anchor" rel="noreferrer nofollow noopener" target="_blank">2103.14030</a></p><p name="2a72" id="2a72" class="graf graf--p graf-after--p graf--trailing">Recommended Reading [<a href="https://ritvik19.medium.com/list/vision-transformers-61e6836230f1" data-href="https://ritvik19.medium.com/list/vision-transformers-61e6836230f1" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Vision Transformers</a>]</p></div></div></section><section name="9060" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="2b34" id="2b34" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="a7fd" id="a7fd" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/39cf88b00e3e"><time class="dt-published" datetime="2023-02-09T04:40:33.064Z">February 9, 2023</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-26-swin-transformer-39cf88b00e3e" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 180: Idefics 2</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 180: Idefics 2</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Idefics2 is a family of general multimodal model that takes in arbitrary sequences of text and images and generates text responses. It can…
+</section>
+<section data-field="body" class="e-content">
+<section name="1c62" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="348c" id="348c" class="graf graf--h3 graf--leading graf--title">Papers Explained 180: Idefics 2</h3><figure name="d33f" id="d33f" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*c3Njn5PRqHIYHCQlEJEi-Q.png" data-width="1520" data-height="672" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*c3Njn5PRqHIYHCQlEJEi-Q.png"></figure><p name="1f0c" id="1f0c" class="graf graf--p graf-after--figure">Idefics2 is a family of general multimodal model that takes in arbitrary sequences of text and images and generates text responses. It can perform various tasks such as answering questions about images, describing visual content, creating stories grounded in multiple images, extracting information from documents, and performing basic arithmetic operations.</p><p name="47ef" id="47ef" class="graf graf--p graf-after--p">Recommended Reading [Papers Explained 179: Obelics, Idefics]</p><p name="b6cd" id="b6cd" class="graf graf--p graf-after--p">The are three models in the Idefics model family:</p><ol class="postList"><li name="cbb6" id="cbb6" class="graf graf--li graf-after--p">idefics2–8b-base: the base model</li><li name="cf67" id="cf67" class="graf graf--li graf-after--li">idefics2–8b: the base model fine-tuned on a mixture of supervised and instruction datasets (text-only and multimodal datasets)</li><li name="ee7c" id="ee7c" class="graf graf--li graf-after--li">idefics2–8b-chatty: idefics2–8b further fine-tuned on long conversations</li></ol><p name="2b4d" id="2b4d" class="graf graf--p graf-after--li">The models can be used for inference on multimodal tasks, such as image captioning and visual question answering, with the input being a text query along with one or multiple images. However, they do not support image generation.</p><p name="ff5c" id="ff5c" class="graf graf--p graf-after--p">The models and dataset are available at <a href="https://huggingface.co/collections/HuggingFaceM4/idefics2-661d1971b7c50831dd3ce0fe" data-href="https://huggingface.co/collections/HuggingFaceM4/idefics2-661d1971b7c50831dd3ce0fe" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">HuggingFace</a>.</p><p name="60c2" id="60c2" class="graf graf--p graf-after--p">For optimal results, it is recommended to fine-tune Idefics2–8b on specific use-cases and data.</p><p name="05cd" id="05cd" class="graf graf--p graf-after--p">The instruction-fine-tuned model (idefics2–8b) is better at following user instructions and should be preferred for out-of-the-box use or as a starting point for fine-tuning.</p><p name="fbc0" id="fbc0" class="graf graf--p graf-after--p">idefics2–8b usually generates very short answers, while idefics2–8b-chatty is better suited for long generations.</p><p name="8abc" id="8abc" class="graf graf--p graf-after--p">Idefics2 is trained in two stages for maximum efficiency:</p><ul class="postList"><li name="4e3e" id="4e3e" class="graf graf--li graf-after--p">Images are processed at SigLIP’s native resolution (384x384 squares).</li><li name="926f" id="926f" class="graf graf--li graf-after--li">Images are processed at their native resolution (up to 980x980) and aspect ratio, with high-resolution images necessary for OCR data.</li></ul><h3 name="e1e7" id="e1e7" class="graf graf--h3 graf-after--li">Training Data</h3><p name="e4b4" id="e4b4" class="graf graf--p graf-after--h3">Idefics2 is trained on a mixture of openly available datasets for the pretraining:</p><ul class="postList"><li name="d446" id="d446" class="graf graf--li graf-after--p">Interleaved web documents (Wikipedia, OBELICS)</li><li name="68a5" id="68a5" class="graf graf--li graf-after--li">Image-caption pairs (Public Multimodal Dataset, LAION-COCO)</li><li name="2ae3" id="2ae3" class="graf graf--li graf-after--li">OCR data (PDFA (en), IDL and Rendered-text)</li><li name="35a9" id="35a9" class="graf graf--li graf-after--li">Image-to-code data (WebSight)</li></ul><p name="cbfb" id="cbfb" class="graf graf--p graf-after--li">Following common practices in the foundation model community, we further train the base model on task-oriented data. For this a multimodal instruction fine-tuning dataset is curated: <strong class="markup--strong markup--p-strong">The Cauldron,</strong> an open compilation of 50 manually-curated datasets formatted for multi-turn conversations.</p><figure name="bf06" id="bf06" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*lt19xTMQuf23WhYNX2tpYg.png" data-width="1600" data-height="5720" src="https://cdn-images-1.medium.com/max/800/1*lt19xTMQuf23WhYNX2tpYg.png"></figure><p name="52d8" id="52d8" class="graf graf--p graf-after--figure">Idefics2 is instruction fine tuned on the concatenation of The Cauldron and 9 text-only instruction fine-tuning datasets:</p><ul class="postList"><li name="355a" id="355a" class="graf graf--li graf-after--p">OpenHermes-2.5</li><li name="b37b" id="b37b" class="graf graf--li graf-after--li">lima</li><li name="65fb" id="65fb" class="graf graf--li graf-after--li">databricks-dolly-15k</li><li name="6fbd" id="6fbd" class="graf graf--li graf-after--li">MetaMathQA</li><li name="a8a4" id="a8a4" class="graf graf--li graf-after--li">MathInstruct</li><li name="7cda" id="7cda" class="graf graf--li graf-after--li">orca-math-word-problems-200k</li><li name="043f" id="043f" class="graf graf--li graf-after--li">math</li><li name="d903" id="d903" class="graf graf--li graf-after--li">atlas-math-sets</li><li name="7847" id="7847" class="graf graf--li graf-after--li">goat</li></ul><p name="196b" id="196b" class="graf graf--p graf-after--li">Lora is used to train the parameters initialized from pre-trained backbones and full fine-tuning for newly initialized parameters (modality connector), as this strategy is found to be more stable as well as more computationally efficient.</p><h3 name="1ff9" id="1ff9" class="graf graf--h3 graf-after--p">Improvements over Idefics 1</h3><figure name="af7f" id="af7f" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*XT5h67ukhzNAjeegO7a-eg.png" data-width="1800" data-height="960" src="https://cdn-images-1.medium.com/max/800/1*XT5h67ukhzNAjeegO7a-eg.png"></figure><ul class="postList"><li name="ef72" id="ef72" class="graf graf--li graf-after--figure">NaViT strategy is used to manipulate images in their native resolutions (up to 980 x 980) and native aspect ratios, avoiding the need to resize images to fixed-size squares which has been historically done in the computer vision community.</li><li name="6adc" id="6adc" class="graf graf--li graf-after--li">Idefics2 has improved OCR abilities by utilizing the training data that requires transcribing text in an image or document. The model can also answer questions on charts, figures.</li><li name="792d" id="792d" class="graf graf--li graf-after--li">Idefics2 departs from the gated cross-attentions architecture of Idefics1 and simplifies the integration of visual features into the language backbone.</li><li name="6c3b" id="6c3b" class="graf graf--li graf-after--li">Images are fed to a vision encoder followed by learned Perceiver pooling and MLP modality projection. The pooled sequence is then concatenated with text embeddings.</li></ul><h3 name="a5d6" id="a5d6" class="graf graf--h3 graf-after--li">Benchmark Results</h3><figure name="516d" id="516d" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="0*Ls_BbqSgd5RtY2FI" data-width="2362" data-height="1071" src="https://cdn-images-1.medium.com/max/800/0*Ls_BbqSgd5RtY2FI"></figure><h3 name="69be" id="69be" class="graf graf--h3 graf-after--figure">Paper</h3><p name="b0a2" id="b0a2" class="graf graf--p graf-after--h3"><a href="https://huggingface.co/blog/idefics2" data-href="https://huggingface.co/blog/idefics2" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Introducing Idefics2: A Powerful 8B Vision-Language Model for the community</a></p><p name="25e9" id="25e9" class="graf graf--p graf-after--p graf--trailing">Recommended Reading [<a href="https://ritvik19.medium.com/list/multi-modal-transformers-67453f215ecf" data-href="https://ritvik19.medium.com/list/multi-modal-transformers-67453f215ecf" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Multi Modal Transformers</a>]</p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="d7fb" id="d7fb" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/0adf35cef4ee"><time class="dt-published" datetime="2024-08-08T03:10:34.686Z">August 8, 2024</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-180-idefics-2-0adf35cef4ee" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

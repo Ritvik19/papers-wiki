@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 288: STaR</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 288: STaR</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Self-Taught Reasoner (STaR) is a technique to iteratively leverage a small number of rationale examples and a large dataset without…
+</section>
+<section data-field="body" class="e-content">
+<section name="2b09" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="5e7b" id="5e7b" class="graf graf--h3 graf--leading graf--title">Papers Explained 288: STaR</h3><figure name="014d" id="014d" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*TML4OdnMptqpvIw3-skEpw.png" data-width="2010" data-height="640" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*TML4OdnMptqpvIw3-skEpw.png"></figure><p name="c5a7" id="c5a7" class="graf graf--p graf-after--figure">Self-Taught Reasoner (STaR) is a technique to iteratively leverage a small number of rationale examples and a large dataset without rationales, to boot- strap the ability to perform successively more complex reasoning.</p><h3 name="92f8" id="92f8" class="graf graf--h3 graf-after--p">Method</h3><figure name="9dfe" id="9dfe" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*TQWKTnjXa-IeKobTduRP0A.png" data-width="2010" data-height="680" src="https://cdn-images-1.medium.com/max/800/1*TQWKTnjXa-IeKobTduRP0A.png"><figcaption class="imageCaption">An overview of STaR and a STaR-generated rationale.</figcaption></figure><p name="d820" id="d820" class="graf graf--p graf-after--figure">Given a pretrained LLM M and an initial dataset of problems x with answers y: D = {(xi, yi)}. The technique starts with a small prompt set P of examples with intermediate rationales r: P = {(xpi , rip, yip)}, where P ≪ D (e.g. P = 10). Like standard few-shot prompting, this prompt set is concatenated to each example in D, i.e. xi = (xp1, r1p, y1p, . . . , xpP , rPp , yPp , xi), which encourages the model to produce a rationale rˆi for xi followed by an answer yˆi. Rationales that lead to correct answers are assumed to be of better quality than those that lead to incorrect answers. Therefore, the generated rationales are filtered to include only the ones which result in the correct answer (yˆi = yi). The base model M is fine-tuned on this filtered dataset, and this process is restarted by generating the new rationales with the newly fine-tuned model. This process is repeated until the performance plateaus. During this process, once a new dataset is collected, training starts from the original pre-trained model M instead of continually training one model to avoid overfitting.</p><figure name="d77e" id="d77e" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*00zpjFgQu3Z6k5Se6y79oQ.png" data-width="2010" data-height="482" src="https://cdn-images-1.medium.com/max/800/1*00zpjFgQu3Z6k5Se6y79oQ.png"></figure><h4 name="d015" id="d015" class="graf graf--h4 graf-after--figure">Rationalization</h4><p name="9bd6" id="9bd6" class="graf graf--p graf-after--h4">The rationale generation bootstrapping algorithm carries a limitation. Since the model is only trained on the examples which it answers correctly, improvement ends when the model fails to solve new problems in the training set. This is fundamentally due to the fact that the algorithm cannot obtain any training signal from failed examples. A technique called “rationalization” is proposed. Specifically, the answer is provided as a hint to the model and it is asked to generate rationales in the same style as in the previous rationale generation step. Given the answer, the model is able to reason backwards, and hence more easily generate a rationale that leads to the correct answer.</p><h3 name="09cb" id="09cb" class="graf graf--h3 graf-after--p">Experiment Setup</h3><p name="e439" id="e439" class="graf graf--p graf-after--h3">Experiments focus on arithmetic, commonsense reasoning, and grade school math to demonstrate STaR’s breadth. GPT-J, a 6B-parameter model, is chosen because the checkpoint and fine-tuning code are publicly available, and the model is large enough to generate rationales of non-trivial quality to be bootstrapped from.</p><h3 name="bb70" id="bb70" class="graf graf--h3 graf-after--p">Evaluations</h3><h4 name="92c9" id="92c9" class="graf graf--h4 graf-after--h3">Arithmetic</h4><figure name="2091" id="2091" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*D2F1wR5Nmoh3EcoMdWeR8Q.png" data-width="2010" data-height="560" src="https://cdn-images-1.medium.com/max/800/1*D2F1wR5Nmoh3EcoMdWeR8Q.png"><figcaption class="imageCaption">A visualization of the accuracy of n-digit summation with each iteration of STaR with and without rationalization for arithmetic.</figcaption></figure><ul class="postList"><li name="750c" id="750c" class="graf graf--li graf-after--figure">STaR achieved 89.5% accuracy on n-digit arithmetic addition after 16 iterations.</li><li name="475b" id="475b" class="graf graf--li graf-after--li">Rationalization significantly accelerated learning, enabling the model to learn multiple digit lengths concurrently.</li><li name="cf52" id="cf52" class="graf graf--li graf-after--li">Introducing additional digits during training improved performance on both seen and unseen (out-of-distribution) examples, although it introduced instability.</li><li name="3ca9" id="3ca9" class="graf graf--li graf-after--li">STaR outperformed a baseline model trained without rationales (76.3% accuracy).</li><li name="03e3" id="03e3" class="graf graf--li graf-after--li">Few-shot accuracy on arithmetic was very low, even with rationales.</li></ul><h4 name="12b8" id="12b8" class="graf graf--h4 graf-after--li">CommonsenseQA</h4><figure name="bc10" id="bc10" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*tH0Z5IuJ5RMV0TOxI6mulA.png" data-width="2010" data-height="320" src="https://cdn-images-1.medium.com/max/800/1*tH0Z5IuJ5RMV0TOxI6mulA.png"></figure><ul class="postList"><li name="8318" id="8318" class="graf graf--li graf-after--figure">STaR with rationalization achieved 72.5% accuracy on the CQA dev set, outperforming a fine-tuned GPT-J baseline (68.8%), a fine-tuned GPT-3 baseline (73.0%), and a few-shot 137B LaMDA model (55.6%).</li><li name="4899" id="4899" class="graf graf--li graf-after--li">STaR without rationalization also outperformed the GPT-J fine-tuned baseline, despite training on less data.</li><li name="475a" id="475a" class="graf graf--li graf-after--li">Qualitative analysis and a human evaluation suggest that STaR improves the quality of generated rationales compared to few-shot prompting.</li><li name="3e02" id="3e02" class="graf graf--li graf-after--li">Failure cases often involve logical fallacies, such as making topic-related statements without providing actual arguments.</li></ul><h4 name="ee3c" id="ee3c" class="graf graf--h4 graf-after--li">GSM8K</h4><figure name="6cfe" id="6cfe" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*5OoN-MwFACXsSLHAWdLJ-w.png" data-width="2010" data-height="260" src="https://cdn-images-1.medium.com/max/800/1*5OoN-MwFACXsSLHAWdLJ-w.png"></figure><ul class="postList"><li name="33bb" id="33bb" class="graf graf--li graf-after--figure">STaR achieved 10.7% accuracy on the GSM8K test set, outperforming few-shot baselines and a fine-tuned GPT-J baseline (5.8%).</li><li name="c8fc" id="c8fc" class="graf graf--li graf-after--li">Rationalization did not significantly improve performance on this dataset.</li><li name="64b3" id="64b3" class="graf graf--li graf-after--li">The model often generated solutions with fewer steps than the ground truth, sometimes skipping steps or finding alternative solutions.</li></ul><h3 name="1316" id="1316" class="graf graf--h3 graf-after--li">Paper</h3><p name="00b3" id="00b3" class="graf graf--p graf-after--h3 graf--trailing">STaR: Bootstrapping Reasoning With Reasoning <a href="https://arxiv.org/abs/2203.14465" data-href="https://arxiv.org/abs/2203.14465" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">2203.14465</a></p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="d7fb" id="d7fb" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/cf485a5b117e"><time class="dt-published" datetime="2025-01-15T03:15:25.951Z">January 15, 2025</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-288-star-cf485a5b117e" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

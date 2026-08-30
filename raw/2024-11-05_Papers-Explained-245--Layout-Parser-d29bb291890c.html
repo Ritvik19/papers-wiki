@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 245: Layout Parser</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 245: Layout Parser</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+LayoutParser is an open-source library designed to streamline the application of deep learning (DL) in document image analysis (DIA)…
+</section>
+<section data-field="body" class="e-content">
+<section name="a34e" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="8764" id="8764" class="graf graf--h3 graf--leading graf--title">Papers Explained 245: Layout Parser</h3><figure name="d99b" id="d99b" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*T5UcKEu3l-BvOoccxrzvgg.png" data-width="1093" data-height="622" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*T5UcKEu3l-BvOoccxrzvgg.png"></figure><p name="eed5" id="eed5" class="graf graf--p graf-after--figure">LayoutParser is an open-source library designed to streamline the application of deep learning (DL) in document image analysis (DIA) research and applications.</p><p name="a2ac" id="a2ac" class="graf graf--p graf-after--p">It provides a unified toolkit that includes a set of simple and intuitive interfaces for applying and customizing DL models for tasks such as layout detection, character recognition, and other document processing tasks.</p><p name="2aeb" id="2aeb" class="graf graf--p graf-after--p">LayoutParser also incorporates a community platform for sharing both pre-trained models and full document digitization pipelines, making it useful for both lightweight and large-scale digitization pipelines in real-world use cases.</p><p name="4d34" id="4d34" class="graf graf--p graf-after--p">The library is publicly available at <a href="https://layout-parser.github.io" data-href="https://layout-parser.github.io" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">https://layout-parser.github.io</a>.</p><h3 name="54d8" id="54d8" class="graf graf--h3 graf-after--p">The Core LayoutParser Library</h3><figure name="2d32" id="2d32" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*votkjtrlqpW4XbEcYhl8pw.png" data-width="745" data-height="359" src="https://cdn-images-1.medium.com/max/800/1*votkjtrlqpW4XbEcYhl8pw.png"><figcaption class="imageCaption">The overall architecture of LayoutParser.</figcaption></figure><p name="9cbb" id="9cbb" class="graf graf--p graf-after--figure">At the core of LayoutParser is an off-the-shelf toolkit that streamlines DL based document image analysis.</p><h4 name="00d3" id="00d3" class="graf graf--h4 graf-after--p">Layout Detection Models</h4><p name="7e52" id="7e52" class="graf graf--p graf-after--h4">The layout detection models enable using pre-trained or self-trained DL models for layout detection with just four lines of code.</p><figure name="9d6d" id="9d6d" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*aMM-NBdJONAc4ykQ1dNZng.png" data-width="987" data-height="168" src="https://cdn-images-1.medium.com/max/800/1*aMM-NBdJONAc4ykQ1dNZng.png"></figure><p name="8205" id="8205" class="graf graf--p graf-after--figure">LayoutParser currently hosts 9 pre-trained models trained on 5 different datasets.</p><figure name="c744" id="c744" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*tHcDyrc9_2V41hKNOFKLRQ.png" data-width="931" data-height="186" src="https://cdn-images-1.medium.com/max/800/1*tHcDyrc9_2V41hKNOFKLRQ.png"><figcaption class="imageCaption">Current layout detection models in the LayoutParser model zoo</figcaption></figure><p name="c410" id="c410" class="graf graf--p graf-after--figure">A semantic syntax is used for initializing the model weights in LayoutParser, using both the dataset name and model name lp://&lt;dataset-name&gt;/&lt;model-architecture-name&gt;.</p><h4 name="724d" id="724d" class="graf graf--h4 graf-after--p">Layout Data Structures</h4><p name="e858" id="e858" class="graf graf--p graf-after--h4">In document image analysis pipelines, various post-processing on the layout analysis model outputs is usually required to obtain the final outputs.</p><p name="be05" id="be05" class="graf graf--p graf-after--p">All model outputs from LayoutParser are stored in carefully engineered data types optimized for further processing, which makes it possible to build an end-to-end document digitization pipeline within LayoutParser. There are three key components in the data structure, namely the Coordinate system, the TextBlock, and the Layout. They provide different levels of abstraction for the layout data, and a set of APIs are supported for transformations or operations on these classes.</p><figure name="0a32" id="0a32" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*2g7cgIRA4pFAQ4jdO-qdlw.png" data-width="586" data-height="493" src="https://cdn-images-1.medium.com/max/800/1*2g7cgIRA4pFAQ4jdO-qdlw.png"><figcaption class="imageCaption">The relationship between the three types of layout data structures.</figcaption></figure><p name="4d1a" id="4d1a" class="graf graf--p graf-after--figure">Coordinate supports three kinds of variation; TextBlock consists of the coordinate information and extra features like block text, types, and reading orders; a Layout object is a list of all possible layout elements, including other Layout objects. They all support the same set of transformation and operation APIs for maximum flexibility.</p><h4 name="1f67" id="1f67" class="graf graf--h4 graf-after--p">OCR</h4><p name="14c8" id="14c8" class="graf graf--p graf-after--h4">LayoutParser builds a series of wrappers among existing OCR engines, and provides nearly the same syntax for using them.</p><figure name="be40" id="be40" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*bOEf4uUty_CjEb87Ug1ytg.png" data-width="974" data-height="111" src="https://cdn-images-1.medium.com/max/800/1*bOEf4uUty_CjEb87Ug1ytg.png"></figure><p name="3022" id="3022" class="graf graf--p graf-after--figure">The OCR outputs will also be stored in the aforementioned layout data structures and can be seamlessly incorporated into the digitization pipeline.</p><p name="2ce6" id="2ce6" class="graf graf--p graf-after--p">LayoutParser also comes with a DL-based CNN-RNN OCR model trained with the Connectionist Temporal Classification (CTC) loss.</p><h4 name="9932" id="9932" class="graf graf--h4 graf-after--p">Storage and visualization</h4><p name="a511" id="a511" class="graf graf--p graf-after--h4">LayoutParser supports exporting layout data into different formats like JSON, csv. It can also load datasets from layout analysis-specific formats like COCO and the Page Format for training layout models. LayoutParser is built with an integrated API for displaying the layout information along with the original document image. More detailed information can be found in the online LayoutParser documentation page.</p><h4 name="4416" id="4416" class="graf graf--h4 graf-after--p">Customized Model Training</h4><p name="86ad" id="86ad" class="graf graf--p graf-after--h4">There can be cases when a model is not readily available, LayoutParser also supports training customized layout models and community sharing of the models.</p><p name="025c" id="025c" class="graf graf--p graf-after--p">It incorporates a toolkit optimized for annotating document layouts using object-level active learning. This allows a layout dataset to be created more efficiently with only around 60% of the labeling budget.</p><p name="527d" id="527d" class="graf graf--p graf-after--p">After the training dataset is curated, LayoutParser supports different modes for training the layout models. Through the integrated API provided by LayoutParser, users can easily compare model performances on the benchmark datasets.</p><h3 name="ebb1" id="ebb1" class="graf graf--h3 graf-after--p">LayoutParser Community Platform</h3><p name="5af1" id="5af1" class="graf graf--p graf-after--h3">LayoutParser comes with a community model hub for distributing layout models. End-users can upload their self-trained models to the model hub, and these models can be loaded into a similar interface as the currently available LayoutParser pre-trained models.</p><h3 name="e96a" id="e96a" class="graf graf--h3 graf-after--p">Paper</h3><p name="b0a2" id="b0a2" class="graf graf--p graf-after--h3">LayoutParser: A Unified Toolkit for Deep Learning Based Document Image Analysis <a href="https://arxiv.org/abs/2103.15348" data-href="https://arxiv.org/abs/2103.15348" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">2103.15348</a></p><p name="01d1" id="01d1" class="graf graf--p graf-after--p graf--trailing">Recommended Reading [<a href="https://ritvik19.medium.com/list/document-information-processing-3cd900a34972" data-href="https://ritvik19.medium.com/list/document-information-processing-3cd900a34972" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Document Information Processing</a>]</p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="d7fb" id="d7fb" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/d29bb291890c"><time class="dt-published" datetime="2024-11-05T04:17:16.073Z">November 5, 2024</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-245-layout-parser-d29bb291890c" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

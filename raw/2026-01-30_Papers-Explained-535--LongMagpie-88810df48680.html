@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 535: LongMagpie</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 535: LongMagpie</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+LongMagpie is a self-synthesis framework that automatically generates large-scale long-context instruction data. The key insight is that…
+</section>
+<section data-field="body" class="e-content">
+<section name="a681" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="9e34" id="9e34" class="graf graf--h3 graf--leading graf--title">Papers Explained 535: LongMagpie</h3><figure name="4b10" id="4b10" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*9lUHQqihOxlAj7QE8ziqBA.png" data-width="1720" data-height="740" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*9lUHQqihOxlAj7QE8ziqBA.png"></figure><p name="2ef0" id="2ef0" class="graf graf--p graf-after--figure">LongMagpie is a self-synthesis framework that automatically generates large-scale long-context instruction data. The key insight is that aligned long-context LLMs, when presented with a document followed by special tokens preceding a user turn, auto-regressively generate contextually relevant queries.</p><h3 name="7905" id="7905" class="graf graf--h3 graf-after--p">Method</h3><figure name="7469" id="7469" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*OQnfhmJ_6YkgPcUNqsD2yA.png" data-width="1720" data-height="920" src="https://cdn-images-1.medium.com/max/800/1*OQnfhmJ_6YkgPcUNqsD2yA.png"><figcaption class="imageCaption">LongMagpie pipeline overview.</figcaption></figure><p name="a636" id="a636" class="graf graf--p graf-after--figure">The foundation of LongMagpie is a key observation about aligned long-context LLMs: when provided with a document followed by tokens that typically precede a user query (without the query itself), these models generate contextually relevant queries about that document.</p><p name="e423" id="e423" class="graf graf--p graf-after--p">This behavior stems from the fact that long-context understanding often involves document-based question answering tasks such as RAG and long document QA. During instruction tuning, models like Qwen and Llama internalize document-query relationship patterns, enabling them to auto-regressively predict meaningful questions when presented with document-only contexts.</p><p name="02db" id="02db" class="graf graf--p graf-after--p">This capability allows for the synthesis of diverse, high-quality instruction data without human annotation, predefined templates, or seed questions.</p><h4 name="cefb" id="cefb" class="graf graf--h4 graf-after--p">Query and Answer Generation</h4><p name="7a83" id="7a83" class="graf graf--p graf-after--h4">Diverse documents, with an average length of approximately 1.6k tokens from various domains and lengths, are collected primarily using curated resources like Fineweb.</p><p name="ecae" id="ecae" class="graf graf--p graf-after--p">For each document D, an input sequence X= D⊕Tpre is constructed, where Tpre contains tokens preceding a user query in the model’s instruction template. X is passed to the aligned LLM and a completion Q is sampled until an end-of-template token is generated or a maximum length is reached. This completion represents a contextually relevant query. By generating multiple queries per document with different sampling parameters, diverse document-query pairs that naturally vary in complexity are created.</p><p name="caaa" id="caaa" class="graf graf--p graf-after--p">For each document-query pair (D,Q), a standard instruction prompt is constructed by combining the document, query, and tokens that precede an assistant response. A response R is then generated, forming a complete instruction triplet (D,Q,R) for long-context training.</p><p name="6e6c" id="6e6c" class="graf graf--p graf-after--p">In query generation, LLMs occasionally continue the input document rather than generate queries, particularly when the model size is small. To ensure the quality of the generated queries, two filtering strategies are applied:</p><ol class="postList"><li name="4253" id="4253" class="graf graf--li graf-after--p">queries that end with a question mark are retained as a simple heuristic to identify interrogative sentences;</li><li name="37c8" id="37c8" class="graf graf--li graf-after--li">generated texts longer than 1.5k characters are discarded, as they are typically descriptive passages rather than valid queries.</li></ol><h4 name="6ebf" id="6ebf" class="graf graf--h4 graf-after--li">Multi-Document Extension</h4><p name="6fce" id="6fce" class="graf graf--p graf-after--h4">To enhance task diversity and real-world applicability, LongMagpie is extended to multi-document settings.</p><ul class="postList"><li name="a187" id="a187" class="graf graf--li graf-after--p">Negative documents are obtained via random sampling, where x documents {D1,…,Dx} are drawn, with x drawn uniformly from 0 to n (with n= 0 reducing to the standard single-document QA setting).</li><li name="6690" id="6690" class="graf graf--li graf-after--li">Documents are concatenated using a special separator token (e.g., &lt;|doc_sep|&gt; ) to form Dmulti = D1 ⊕&lt;|doc_sep|&gt; ⊕···⊕Dx.</li><li name="2359" id="2359" class="graf graf--li graf-after--li">Queries and responses are generated as in the single-document pipeline, producing triples (Dmulti,Q,R) requiring cross-document reasoning.</li></ul><h4 name="83b1" id="83b1" class="graf graf--h4 graf-after--li">p-Mix: Balancing Long-Context and Short-Context Capabilities</h4><p name="13ad" id="13ad" class="graf graf--p graf-after--h4">The core idea of p-Mix is twofold.</p><ul class="postList"><li name="0119" id="0119" class="graf graf--li graf-after--p">First, to emulate the typical non-contextual start of general tasks, a short-context instruction is sampled at the beginning of each training sequence.</li><li name="3836" id="3836" class="graf graf--li graf-after--li">Second, subsequent data segments are appended probabilistically to construct a mixed-context sequence up to length Lmax.</li></ul><p name="eeb4" id="eeb4" class="graf graf--p graf-after--li">With probability PL, a long-context instruction (generated by LongMagpie) is chosen; otherwise, with probability 1−PL, another short-context sample is chosen. This process repeats until approaching the target sequence length, ensuring each instance starts with a short, context-free instruction followed by a dynamically mixed sequence of long and short segments. This prepares the model for diverse real-world scenarios.</p><figure name="1f28" id="1f28" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*GNRezVhij2_cgKjNdp7QuQ.png" data-width="1720" data-height="1048" src="https://cdn-images-1.medium.com/max/800/1*GNRezVhij2_cgKjNdp7QuQ.png"></figure><h3 name="3555" id="3555" class="graf graf--h3 graf-after--figure">Evaluation</h3><p name="d6d8" id="d6d8" class="graf graf--p graf-after--h3">Using the LongMagpie pipeline, a long-context instruction dataset is generated using Qwen2.5–70B-Instruct, with documents sampled from FineWeb-Edu, comprising 1.3 trillion tokens extracted from educational web content. Llama-3–8B-NExtLong-512K-Base is selected as the base model, which has undergone extensive long-context continued pre-training.</p><figure name="721d" id="721d" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*U_cU6dBArwZaoE87QrfURw.png" data-width="1720" data-height="720" src="https://cdn-images-1.medium.com/max/800/1*U_cU6dBArwZaoE87QrfURw.png"><figcaption class="imageCaption">Main experimental results comparing LongMagpie with other methods on long-context and short-context benchmarks.</figcaption></figure><ul class="postList"><li name="572d" id="572d" class="graf graf--li graf-after--figure">Models trained solely on LongMagpie achieve the best long-context performance within the Long Instruction Data group:</li><li name="39e8" id="39e8" class="graf graf--li graf-after--li">Long mixed datasets (p-Mix: Long + Short Instruction Data), LongMagpie + UltraChat achieves:</li><li name="db69" id="db69" class="graf graf--li graf-after--li">Best or tied-best long-context scores: HELMET 62.11, RULER 89.70, LongAVG 61.60.</li><li name="f1dc" id="f1dc" class="graf graf--li graf-after--li">Competitive short-context performance: ShortAVG 64.10 (only 0.33 below the best overall ShortAVG).</li></ul><h3 name="f3e1" id="f3e1" class="graf graf--h3 graf-after--li">Paper</h3><p name="00b3" id="00b3" class="graf graf--p graf-after--h3 graf--trailing">LongMagpie: A Self-synthesis Method for Generating Large-scale Long-context Instructions <a href="https://arxiv.org/abs/2505.17134" data-href="https://arxiv.org/abs/2505.17134" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">2505.17134</a></p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="d7fb" id="d7fb" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/88810df48680"><time class="dt-published" datetime="2026-01-30T03:08:06.247Z">January 30, 2026</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-535-longmagpie-88810df48680" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

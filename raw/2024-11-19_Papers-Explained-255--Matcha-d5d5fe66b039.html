@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 255: Matcha</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 255: Matcha</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Matcha (Math reasoning and Chart derendering pretraining) propose several pre-training tasks that cover plot deconstruction and numerical…
+</section>
+<section data-field="body" class="e-content">
+<section name="0345" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="fff5" id="fff5" class="graf graf--h3 graf--leading graf--title">Papers Explained 255: Matcha</h3><figure name="8de3" id="8de3" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*T8Nsq2yNwwlkT8qGu2Z5WQ.png" data-width="1416" data-height="390" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*T8Nsq2yNwwlkT8qGu2Z5WQ.png"></figure><p name="8cb1" id="8cb1" class="graf graf--p graf-after--figure">Matcha (Math reasoning and Chart derendering pretraining) propose several pre-training tasks that cover plot deconstruction and numerical reasoning, starting from Pix2Struct to enhance visual language models’ capabilities in jointly modeling charts/plots and language data.</p><figure name="65bc" id="65bc" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*u6iwDZMUmTn4clI8k6rYRA.png" data-width="1256" data-height="744" src="https://cdn-images-1.medium.com/max/800/1*u6iwDZMUmTn4clI8k6rYRA.png"><figcaption class="imageCaption">MATCHA defines two types of pretraining tasks: (1) chart derendering (light blue boxes) and (2) mathematical reasoning (light red boxes).</figcaption></figure><h3 name="877f" id="877f" class="graf graf--h3 graf-after--figure">Chart Derendering</h3><p name="9122" id="9122" class="graf graf--p graf-after--h3">In chart derendering, given a chart, the model needs to decode its underlying rendering code or data table. Chart derendering teaches the models layout understanding (including number extraction and their organizations).</p><p name="4c7b" id="4c7b" class="graf graf--p graf-after--p">To collect sufficient pre-training data, (chart, code) and (chart, table) pairs are independently accumulated . For (chart, code), all GitHub IPython notebooks with appropriate licenses are crawled and blocks with figures are extracted. A figure and the code block right before it are saved as a (chart, code) pair.</p><p name="56e1" id="56e1" class="graf graf--p graf-after--p">For (chart, table) pairs, two sources are explored. First is to manually write code for converting web-crawled Wikipedia tables to charts and randomly combining several plotting options. Besides this synthetic data, chart-table pairs generated (from PlotQA) are also added.</p><p name="716e" id="716e" class="graf graf--p graf-after--p">The second source is web-crawled chart-table pairs. Websites such as Statista provide both. Chart-table pairs crawled (from ChartQA), containing around 20k pairs in total from four websites: Statista, Pew, Our World in Data, and OECD are also added.</p><h3 name="dbc8" id="dbc8" class="graf graf--h3 graf-after--p">Math Reasoning</h3><p name="384c" id="384c" class="graf graf--p graf-after--h3">In math reasoning, given a math question rendered as an image, the model needs to decode its answer. Math reasoning teaches the models numerical reasoning capabilities.</p><p name="e3f6" id="e3f6" class="graf graf--p graf-after--p">Two existing textual math reasoning datasets, MATH and DROP are used for pretraining. MATH is synthetically created, containing two million training examples per module (type) of questions. DROP is a reading-comprehension-style QA dataset where the input is a paragraph context and a question. DROP has 96k question and answer pairs over 6.7K paragraphs.</p><h3 name="76c4" id="76c4" class="graf graf--h3 graf-after--p">Experimental Setup</h3><p name="50ca" id="50ca" class="graf graf--p graf-after--h3">Besides the two newly proposed pre-training strategies, to prevent catastrophic forgetting, the screenshot parsing pretraining from Pix2Struct is also applied. The final pretraining task is a mixture of all aforementioned tasks.</p><figure name="663e" id="663e" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*3Mb-FlgydBFKwDPf1bAX-g.png" data-width="594" data-height="267" src="https://cdn-images-1.medium.com/max/800/1*3Mb-FlgydBFKwDPf1bAX-g.png"><figcaption class="imageCaption">Mixture rates for all tasks in pretraining and the absolute size of each dataset.</figcaption></figure><p name="1b33" id="1b33" class="graf graf--p graf-after--figure">The mixture rate is used to sample each example within the batch.</p><h3 name="e6e2" id="e6e2" class="graf graf--h3 graf-after--p">Evaluation</h3><p name="d3b3" id="d3b3" class="graf graf--p graf-after--h3">Evaluation datasets included ChartQA, PlotQA, and Chart-to-Text summarization, with different subsets requiring varying levels of reasoning and complexity.</p><figure name="c2f0" id="c2f0" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*DNcUdlOfgnYW1wTzyquyXA.png" data-width="596" data-height="239" src="https://cdn-images-1.medium.com/max/800/1*DNcUdlOfgnYW1wTzyquyXA.png"><figcaption class="imageCaption">Statistics of the finetuning datasets.</figcaption></figure><p name="ae60" id="ae60" class="graf graf--p graf-after--figure">Metrics used were relaxed correctness for ChartQA and PlotQA, and BLEU4 for Chart-to-Text. Pix2Struct experiments followed identical metrics.</p><h4 name="0a91" id="0a91" class="graf graf--h4 graf-after--p">Main Results</h4><figure name="c0d0" id="c0d0" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*zPWiJq904wcMOtpddlPO5g.png" data-width="1238" data-height="495" src="https://cdn-images-1.medium.com/max/800/1*zPWiJq904wcMOtpddlPO5g.png"><figcaption class="imageCaption">Main experimental results on two chart QA benchmarks ChartQA &amp; PlotQA and a chart summarization benchmark Chart-to-Text.</figcaption></figure><ul class="postList"><li name="f84d" id="f84d" class="graf graf--li graf-after--figure">MATCHA outperformed previous SOTA models across ChartQA, PlotQA, and Chart-to-Text summarization benchmarks, establishing new SOTA performances in several cases.</li><li name="3baf" id="3baf" class="graf graf--li graf-after--li">In ChartQA, MATCHA exceeded the previous SOTA by 8.2% and performed competitively even against models with access to underlying gold data tables.</li><li name="4674" id="4674" class="graf graf--li graf-after--li">On PlotQA, MATCHA was the best overall, particularly excelling in the v2 set focused on numerical reasoning.</li><li name="3350" id="3350" class="graf graf--li graf-after--li">For Chart-to-Text summarization, MATCHA set new SOTA on Pew but was slightly behind PaLI-17B on Statista.</li><li name="ea3b" id="ea3b" class="graf graf--li graf-after--li">MATCHA demonstrated superior performance across all tasks compared to baselines without access to gold tables, outperforming the strongest baseline, Pix2Struct, by approximately 10% on average.</li><li name="70b9" id="70b9" class="graf graf--li graf-after--li">PaLI, despite being a larger model, underperformed in chart/plot domain tasks due to differences in visual language challenges compared to natural images but performed reasonably well in Chart-to-Text.</li></ul><h4 name="cb75" id="cb75" class="graf graf--h4 graf-after--li">Results on Pix2Struct Tasks</h4><figure name="ad5a" id="ad5a" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*KYggQ-rj86rkQUdCXsKt3Q.png" data-width="1223" data-height="202" src="https://cdn-images-1.medium.com/max/800/1*KYggQ-rj86rkQUdCXsKt3Q.png"><figcaption class="imageCaption">MATCHA vs. Pix2Sturct on Pix2Sturct tasks.</figcaption></figure><ul class="postList"><li name="8100" id="8100" class="graf graf--li graf-after--figure">MATCHA showed an average improvement of 2.3% over Pix2Struct, indicating the transferability of knowledge learned through MATCHA pretraining to other visual language domains.</li></ul><h3 name="cb47" id="cb47" class="graf graf--h3 graf-after--li">Paper</h3><p name="b0a2" id="b0a2" class="graf graf--p graf-after--h3">MatCha: Enhancing Visual Language Pretraining with Math Reasoning and Chart Derendering <a href="https://arxiv.org/abs/2212.09662" data-href="https://arxiv.org/abs/2212.09662" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">2212.09662</a></p><p name="dda6" id="dda6" class="graf graf--p graf-after--p graf--trailing">Recommended Reading: [<a href="https://ritvik19.medium.com/list/document-information-processing-3cd900a34972" data-href="https://ritvik19.medium.com/list/document-information-processing-3cd900a34972" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Document Information Processing</a>]</p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="d7fb" id="d7fb" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/d5d5fe66b039"><time class="dt-published" datetime="2024-11-19T04:17:19.364Z">November 19, 2024</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-255-matcha-d5d5fe66b039" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

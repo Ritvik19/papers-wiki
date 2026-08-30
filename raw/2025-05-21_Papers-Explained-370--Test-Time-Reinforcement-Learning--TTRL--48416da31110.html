@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 370: Test Time Reinforcement Learning (TTRL)</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 370: Test Time Reinforcement Learning (TTRL)</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Test-Time Reinforcement Learning (TTRL) is a method for training LLMs using RL on unlabeled data. TTRL enables self-evolution of LLMs by…
+</section>
+<section data-field="body" class="e-content">
+<section name="4127" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="6fe1" id="6fe1" class="graf graf--h3 graf--leading graf--title">Papers Explained 370: Test Time Reinforcement Learning (TTRL)</h3><figure name="30f1" id="30f1" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*s74qDSL1gAyIVGMJ8i5qlQ.png" data-width="1840" data-height="640" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*s74qDSL1gAyIVGMJ8i5qlQ.png"></figure><p name="57d0" id="57d0" class="graf graf--p graf-after--figure">Test-Time Reinforcement Learning (TTRL) is a method for training LLMs using RL on unlabeled data. TTRL enables self-evolution of LLMs by utilizing the priors in the pre-trained models, only supervised by the Maj@N metric.</p><p name="8f62" id="8f62" class="graf graf--p graf-after--p">The project is available at <a href="https://github.com/PRIME-RL/TTRL" data-href="https://github.com/PRIME-RL/TTRL" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">GitHub</a>.</p><h3 name="9953" id="9953" class="graf graf--h3 graf-after--p">Methodology</h3><figure name="67a9" id="67a9" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*sWyI8Dm4auS2nnVtyfjjJw.png" data-width="1610" data-height="654" src="https://cdn-images-1.medium.com/max/800/1*sWyI8Dm4auS2nnVtyfjjJw.png"></figure><p name="ab9d" id="ab9d" class="graf graf--p graf-after--figure">TTRL operates on unlabeled test data. Given a state represented by the prompt x, the model acts by producing an output y sampled from a policy πθ(y | x) parameterized by θ. To construct a reward signal without ground-truth labels, multiple candidate outputs {y1, y2, . . . , yN } are generated from the model through repeated sampling. A consensus output y∗ is derived by majority voting. This estimated label is then used to calculate rule-based rewards, which serve as the final rewards. The environment then provides a reward r(y, y∗ ) based on the alignment between the sampled action y and the consensus action y∗. The RL objective is thus to maximize the expected reward.</p><p name="d1df" id="d1df" class="graf graf--p graf-after--p">TTRL is applied to different base and instruct LLMs and evaluated on three mathematical reasoning benchmarks (AIME 2024, AMC, and MATH-500). Different RL algorithms like GRPO, PPO are tested with TTRL.</p><h3 name="f57b" id="f57b" class="graf graf--h3 graf-after--p">Evaluation</h3><figure name="c377" id="c377" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*ddcM6eUJUKDXTeO8n_Uhig.png" data-width="1580" data-height="1000" src="https://cdn-images-1.medium.com/max/800/1*ddcM6eUJUKDXTeO8n_Uhig.png"><figcaption class="imageCaption">Main results of TTRL. ∗ indicates results from Dr. GRPO.</figcaption></figure><ul class="postList"><li name="5399" id="5399" class="graf graf--li graf-after--figure">TTRL significantly improves the mathematical reasoning performance of LLMs, achieving comparable or superior results to existing RL-based models trained on large labeled datasets.</li><li name="45f2" id="45f2" class="graf graf--li graf-after--li">TTRL demonstrates natural scaling: larger models benefit more from self-improvement due to their capacity for more accurate majority voting rewards. LLaMA-3.1–8B-Instruct and Qwen2.5-Math-1.5B showed limited gains likely due to limited capacity.</li></ul><figure name="2ff4" id="2ff4" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*FnfFNbQkTovc-hNK7BevsQ.png" data-width="1580" data-height="460" src="https://cdn-images-1.medium.com/max/800/1*FnfFNbQkTovc-hNK7BevsQ.png"><figcaption class="imageCaption">Out-of-distribution performance before and after TTRL.</figcaption></figure><ul class="postList"><li name="e438" id="e438" class="graf graf--li graf-after--figure">TTRL generalizes well beyond the target task, showing improvements across different benchmarks even when trained on a single one.</li></ul><figure name="e61c" id="e61c" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*o7Xgtjc6a6JYPCg76-jFBA.png" data-width="1580" data-height="470" src="https://cdn-images-1.medium.com/max/800/1*o7Xgtjc6a6JYPCg76-jFBA.png"><figcaption class="imageCaption">Comparison over steps of different RL algorithms, GRPO vs PPO on MATH-500.</figcaption></figure><ul class="postList"><li name="cd22" id="cd22" class="graf graf--li graf-after--figure">TTRL is compatible with different reinforcement learning algorithms, as demonstrated by similar performance achieved using both GRPO and Proximal Policy Optimization (PPO).</li></ul><h3 name="4e1b" id="4e1b" class="graf graf--h3 graf-after--li">Analysis</h3><h4 name="c230" id="c230" class="graf graf--h4 graf-after--h3">Q1: How Well Can TTRL Perform?</h4><p name="a16e" id="a16e" class="graf graf--p graf-after--h4">The performance of TTRL is analyzed using two upper bounds:</p><ol class="postList"><li name="75bc" id="75bc" class="graf graf--li graf-after--p">Maj@N, which is used to compute rewards during TTRL training.</li><li name="bb9d" id="bb9d" class="graf graf--li graf-after--li">Direct training on benchmark datasets, which assumes access to ground-truth labels and thus leaks label information to the policy model.</li></ol><figure name="cced" id="cced" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*uC-hBKtVNaa9dHElXLYo8g.png" data-width="1400" data-height="470" src="https://cdn-images-1.medium.com/max/800/1*uC-hBKtVNaa9dHElXLYo8g.png"><figcaption class="imageCaption">Comparison of RL (Leakage) vs TTRL.</figcaption></figure><ul class="postList"><li name="8610" id="8610" class="graf graf--li graf-after--figure">Exceeding Expectations: TTRL surpasses both its training signal (Maj@N) and the performance of direct RL trained with labeled test data. This improvement is attributed to TTRL’s ability to enhance supervision quality by converting pseudo-labels into rewards, decoupling learning from the limitations of Maj@N.</li><li name="8fcd" id="8fcd" class="graf graf--li graf-after--li">Empirical Upper Bound: Training on the test data (RL with Leakage) serves as the empirical upper bound for TTRL, highlighting its potential for exceeding standard training-evaluation protocols in efficacy.</li><li name="aa0e" id="aa0e" class="graf graf--li graf-after--li">Efficiency in Smaller Models: Even smaller LLMs (e.g., 1.5B parameter model) can effectively self-improve and reach the empirical upper bound using TTRL, demonstrating the potential for unbounded lifelong learning on large-scale datasets. This suggests that TTRL enables efficient self-evolution in LLMs.</li></ul><h4 name="fa43" id="fa43" class="graf graf--h4 graf-after--li">Q2: Why Does TTRL Work?</h4><p name="3a80" id="3a80" class="graf graf--p graf-after--h4">TTRL’s success in achieving stable and effective reinforcement learning in unsupervised settings stems from two key aspects: label estimation and reward calculation. While TTRL introduces reward inaccuracies due to label estimation, it remains effective for several reasons.</p><ul class="postList"><li name="5bed" id="5bed" class="graf graf--li graf-after--p">RL’s Tolerance to Inaccuracy and Generalization Ability: Reinforcement learning is inherently more tolerant to reward inaccuracies than supervised fine-tuning (SFT). This robustness stems from the fact that rewards in RL primarily act as directional signals for exploration rather than precise targets. Unlike SFT, which often relies on memorizing training data.</li><li name="a56b" id="a56b" class="graf graf--li graf-after--li">Reward Model Accuracy vs. Teaching Effectiveness: Research indicates that more accurate reward models don’t necessarily translate to better teaching. The reward signals estimated by the policy model itself, even with inaccuracies, can provide suitable learning guidance.</li></ul><h4 name="6706" id="6706" class="graf graf--h4 graf-after--li">Q3: When Might TTRL Fail?</h4><p name="d1e3" id="d1e3" class="graf graf--p graf-after--h4">TTRL (Test-Time RL) can fail due to issues at both the algorithmic and implementation levels. It inherits characteristics from existing RL algorithms, making it sensitive to data difficulty, reliant on priors, and susceptible to collapse. Its constraints, like majority voting for label estimation and reliance on sparse, unseen test data, amplify these issues.</p><ul class="postList"><li name="5357" id="5357" class="graf graf--li graf-after--p">Lack of Prior Knowledge on Target Task: Prior knowledge is crucial for TTRL’s success, especially since test data is usually more difficult and introduces new features. If the model’s prior knowledge is insufficient for the data’s complexity, TTRL fails.</li></ul><figure name="72a5" id="72a5" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*9TuF94zjS3VUzcjYfTN9Xw.png" data-width="1350" data-height="360" src="https://cdn-images-1.medium.com/max/800/1*9TuF94zjS3VUzcjYfTN9Xw.png"><figcaption class="imageCaption">Performance of TTRL across the five difficulty levels of MATH-500.</figcaption></figure><ul class="postList"><li name="ead9" id="ead9" class="graf graf--li graf-after--figure">As difficulty increases, performance improvement and length reduction from TTRL decrease, indicating insufficient prior knowledge for harder questions.</li><li name="712a" id="712a" class="graf graf--li graf-after--li">Inappropriate RL Hyperparameters: Two key hyperparameters significantly affect TTRL’s stability and success:</li></ul><ol class="postList"><li name="5065" id="5065" class="graf graf--li graf-after--li">Temperature: A temperature of 1.0 (vs. 0.6) increases output entropy, promoting exploration and leveraging prior knowledge, especially for challenging benchmarks.</li><li name="229d" id="229d" class="graf graf--li graf-after--li">Episodes: Smaller, more difficult datasets require more training episodes for sufficient exploration due to their size and complexity variations.</li></ol><figure name="c371" id="c371" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*Dj2N2dmpoGfVqxgGK-Fd9Q.png" data-width="1400" data-height="370" src="https://cdn-images-1.medium.com/max/800/1*Dj2N2dmpoGfVqxgGK-Fd9Q.png"><figcaption class="imageCaption">Failed attempts.</figcaption></figure><h3 name="6986" id="6986" class="graf graf--h3 graf-after--figure">Paper</h3><p name="00b3" id="00b3" class="graf graf--p graf-after--h3 graf--trailing">TTRL: Test-Time Reinforcement Learning <a href="https://arxiv.org/abs/2504.16084" data-href="https://arxiv.org/abs/2504.16084" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">2504.16084</a></p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="d7fb" id="d7fb" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/48416da31110"><time class="dt-published" datetime="2025-05-21T03:22:55.281Z">May 21, 2025</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-370-test-time-reinforcement-learning-ttrl-48416da31110" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

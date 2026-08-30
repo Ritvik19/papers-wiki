@@ -1,0 +1,143 @@
+# Papers Explained 504 - Who Reasons in LLMs
+
+This work introduces Stethoscope for Networks (SfN), a suite of diagnostic tools designed to probe and analyze the internal behaviors of LLMs. Using SfN, both circumstantial and empirical evidence is provided suggesting that o_proj plays a central role in enabling reasoning, whereas other modules contribute more to fluent dialogue.
+
+This page ingests the source article into the wiki and connects it to [[Papers Explained Corpus]], [[Reasoning Models]], [[Large Language Models]], [[Embedding and Retrieval]].
+
+## Source Metadata
+
+- Source file: `raw/2025-12-18_Papers-Explained-504--Who-Reasons-in-LLMs--301725c9fce2.html`
+- Source title: Papers Explained 504: Who Reasons in LLMs?
+- Published: 2025-12-18
+- Canonical: [https://medium.com/@ritvik19/papers-explained-504-who-reasons-in-llms-301725c9fce2](https://medium.com/@ritvik19/papers-explained-504-who-reasons-in-llms-301725c9fce2)
+
+## Key Ideas
+
+- This work introduces Stethoscope for Networks (SfN), a suite of diagnostic tools designed to probe and analyze the internal behaviors of LLMs.
+- For simplicity, we omit residual connections and present the computation at the token level, without using matrix or vectorized notation.
+- Assumption 1 (The Delta Stethoscope) Suppose A and B are two LLMs with weak and strong reasoning ability, respectively, and B is obtained by fine tuning from A.
+- For each component X, the ℓ2 norm of the weight difference, ∥wX (B)−wX (A)∥ℓ2 , is computed and visualized across all the blocks.
+- For the 1.5B models, the signal is less clear, but o_proj still exhibits a distinct pattern compared to q,k,v_proj, showing the largest change within the attention module and the second-largest across the entire model.
+
+## Notes
+
+This work introduces Stethoscope for Networks (SfN), a suite of diagnostic tools designed to probe and analyze the internal behaviors of LLMs. Using SfN, both circumstantial and empirical evidence is provided suggesting that o_proj plays a central role in enabling reasoning, whereas other modules contribute more to fluent dialogue.
+
+Modern LLMs mostly consist of many Transformer blocks. A Transformer block is composed of a multi-head self-attention (MHSA) module and a multi-layer perceptron (MLP) module. Components in MHSA include various projections, such as those for computing Q, K and V, denoted as q_proj, k_proj, and v_proj, respectively. The output projection (o_proj) produces MHSA’s output. Components in the MLP are mainly linear projections: up, down, and gate projections, denoted as up_proj, down_proj, and gate_proj, respectively. The computation process is defined as:
+
+For simplicity, we omit residual connections and present the computation at the token level, without using matrix or vectorized notation. Other essential components not explicitly included are rotary positional embeddings (RoPE), input embeddings (embed_tokens), layer normalization (layernorm), and the language modeling head (lm_head).
+
+## Key Hypothesis: Output Projection is the Key for Reasoning
+
+### The Delta Stethoscope
+
+> Assumption 1 (The Delta Stethoscope) Suppose A and B are two LLMs with weak and strong reasoning ability, respectively, and B is obtained by fine tuning from A. Then w(B)−w(A) contains essential information if one wants to pinpoint the source of the reasoning ability in B.
+
+For each component X, the ℓ2 norm of the weight difference, ∥wX (B)−wX (A)∥ℓ2 , is computed and visualized across all the blocks. Three representative comparisons are presented: Ais Qwen2.5-Math-1.5B or Qwen2.5–14B, 32B and Bis DeepSeek-R1-Distill-Qwen-1.5B, 14B, 32B.
+
+*Figure: Per-module L2 distance of linear weights between models A and B.*
+
+- For the 1.5B models, the signal is less clear, but o_proj still exhibits a distinct pattern compared to q,k,v_proj, showing the largest change within the attention module and the second-largest across the entire model.
+
+- As model size increases to 14B and 32B, this trend becomes more pronounced.
+
+- In both cases, the most notable observation is that when X= o_proj, the ℓ2 norm is at least two times larger than any other component, indicating the substantial changes in this module during reasoning enhancement.
+
+*Figure: Layer-wise distribution of relative weight changes between models A and B.*
+
+- A consistent finding is that all linear modules, except o_proj, exhibit a unimodal distribution centered around zero, whereas o_proj uniquely displays a clear bimodal pattern, highlighting its distinct role.
+
+### The Merge Stethoscope
+
+> Assumption 2 (The Merge Stethoscope) Suppose M is created by merging the output projection (o_proj) weights of B, which has strong reasoning ability, and all other components of A, which is weak in reasoning. Further suppose that M has stronger reasoning ability compared to A. Then, o_proj is crucial in achieving reasoning in LLMs.
+
+*Figure: Four levels of responses generated by the LLM.*
+
+Four levels of different output can be imagined:
+
+- Level I A sequence of random or nonsense tokens.
+
+- Level II A sequence that looks like normal sentences, but does not fit into the context of the task.
+
+- Level III A sequence that is meaningful sentences that match the task’s context well but will fail to reason in difficult problems.
+
+- Level IV A sequence that reasons — and reasons correctly in most cases.
+
+An attempt is made at a minimal or atomic merge by replacing only the o_proj modules in model A=Qwen2.5-Math-1.5B with that of model B= DeepSeek-R1-Distill-Qwen-1.5B, keeping all other components unchanged. Although initially, the resulting model was expected to produce level I or level II outputs, the results turned out to be surprising.
+
+*Figure: AIME 2024 accuracy of the base model, the reasoning model, and their merged variants.*
+
+- On the AIME 2024 benchmark, the merged model M1 achieves level IV performance on several questions that model A cannot solve.
+
+- The merged model not only yields correct reasoning and answers, but also tends to generate longer and more detailed responses compared to A.
+
+- In contrast, replacing other modules such as {q,k,v}_proj and mlp leads to performance degradation.
+
+### The Freeze Stethoscope
+
+> Assumption 3 (The Freeze Stethoscope) Suppose an LLM F is obtained by supervised fine-tuning using the dataset D. F is initialized from A, and both o_proj and normalization components are tuned while other components are frozen. If F exhibits strong reasoning ability, then o_proj is crucial in achieving reasoning in LLMs even in large-scale models.
+
+It is worth noting that embed_tokens and lm_head are also tuned. Normalization module parameters are unfrozen by default. The base model A= Qwen2.5–32B-Instruct and the dataset D= s1K containing 1,000 high-quality reasoning traces are used.
+
+*Figure: Reasoning performance of different fine-tuning strategies on Qwen2.5-{14B, 32B}- Instruct.*
+
+- Simply tuning o_proj and layernorm (model F2)) leads to strong reasoning ability, while at the same time only tuning layernorm (model F1) harms the reasoning of the LLM.
+
+- Further unfreezing the parameters of {q,k,v}_proj (model F3) yields little additional gain or even negative impact.
+
+> Hypothesis 1 (Outstanding Output Projection) In an LLM that reasons well, the output projection (o_proj) component is hypothesized to be the single or at least the most important module that dominates its reasoning ability.
+
+## Conjecture: Conversation Hinges on Other Modules but Not Output
+
+### The Destruction Stethoscope
+
+> Assumption 4 (The Destruction Stethoscope) Suppose a module X is destructed (i.e., its normal functionality is disabled by some destruction method) in an LLM A. The resulting LLM is denoted as D. The fact that D continues (or ceases to) produce level III output (meaningful sentences in the conversation’s context) indicates whether X is important for conversational abilities or not.
+
+3 destructors are proposed:
+
+- Zero: Set all parameters within X to 0.
+
+- ReInit: Re-initialize all parameters inside X using Gaussian random numbers (mean=0, std=0.02).
+
+- Remove: Remove the entire layer.
+
+*Figure: Output levels of different modules under the three destruction methods: Zero, ReInit, and Remove.*
+
+- o_proj, crucial for reasoning, appears unimportant for conversation.
+
+- In contrast, all MLP components (up_proj, down_proj, gate_proj) are essential.
+
+- Within MHSA, q_proj and k_proj are important, while v_proj plays a minor role.
+
+> Conjecture 1 (Division of Labor) Based on current observations, an LLM can be roughly divided as two sets of modules: output projection (o_proj) and all others, where o_proj is mainly responsible for reasoning and other modules for conversation.
+
+> Conjecture 2 (Output Projection Plugin) Conversational capabilities provided by other (frozen) modules, output projections may act as a plugin. For example, one set of o_proj for reasoning, and another set of o_proj for migrating an LLM to a vertical domain.
+
+## Paper
+
+Who Reasons in the Large Language Models? [2505.20993](https://arxiv.org/abs/2505.20993)
+
+## Figures
+
+Figures from the Medium HTML export (`raw/2025-12-18_Papers-Explained-504--Who-Reasons-in-LLMs--301725c9fce2.html`); local copies under `wiki/assets/papers-explained-504-who-reasons-in-llms/` when download succeeded.
+
+| Figure | Caption |
+|--------|---------|
+| ![Figure 1](assets/papers-explained-504-who-reasons-in-llms/fig-1.png) | Title card: Who Reasons in LLMs. |
+| ![Figure 2](assets/papers-explained-504-who-reasons-in-llms/fig-2.png) | Modern LLMs mostly consist of many Transformer blocks. |
+| ![Figure 3](assets/papers-explained-504-who-reasons-in-llms/fig-3.png) | Per-module L2 distance of linear weights between models A and B. |
+| ![Figure 4](assets/papers-explained-504-who-reasons-in-llms/fig-4.png) | Layer-wise distribution of relative weight changes between models A and B. |
+| ![Figure 5](assets/papers-explained-504-who-reasons-in-llms/fig-5.png) | Four levels of responses generated by the LLM. |
+| ![Figure 6](assets/papers-explained-504-who-reasons-in-llms/fig-6.png) | AIME 2024 accuracy of the base model, the reasoning model, and their merged variants. |
+| ![Figure 7](assets/papers-explained-504-who-reasons-in-llms/fig-7.png) | Reasoning performance of different fine-tuning strategies on Qwen2.5-{14B, 32B}- Instruct. |
+| ![Figure 8](assets/papers-explained-504-who-reasons-in-llms/fig-8.png) | Output levels of different modules under the three destruction methods: Zero, ReInit, and Remove. |
+## Related
+
+- [[Papers Explained Corpus]]
+- [[Reasoning Models]]
+- [[Large Language Models]]
+- [[Embedding and Retrieval]]
+- [[Papers Explained - GRAPE]]
+- [[Papers Explained 505 - Rnj-1]]
+
+#summary #topic

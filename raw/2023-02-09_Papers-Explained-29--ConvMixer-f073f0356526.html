@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 29: ConvMixer</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 29: ConvMixer</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+ConvMixer is similar to the Vision Transformer (and MLP-Mixer) in many respects: it directly operates on patches, it maintains an…
+</section>
+<section data-field="body" class="e-content">
+<section name="3bac" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="cea3" id="cea3" class="graf graf--h3 graf--leading graf--title">Papers Explained 29: ConvMixer</h3><figure name="fe5a" id="fe5a" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*q8FKyqb8jLVpY6M3JW_WAA.png" data-width="973" data-height="320" src="https://cdn-images-1.medium.com/max/800/1*q8FKyqb8jLVpY6M3JW_WAA.png"></figure><p name="afd0" id="afd0" class="graf graf--p graf-after--figure">ConvMixer is similar to the Vision Transformer (and MLP-Mixer) in many respects: it directly operates on patches, it maintains an equal-resolution-and-size representation throughout all layers, it does no downsampling of the representation at successive layers, and it separates “channel-wise mixing” from the “spatial mixing” of information. But unlike the Vision Transformer and MLP-Mixer, ConvMixer does all these operations via only standard convolutions.</p><figure name="09e8" id="09e8" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*g7ue9shuY0THAwGOOTJe4A.png" data-width="1371" data-height="523" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*g7ue9shuY0THAwGOOTJe4A.png"></figure><p name="45c2" id="45c2" class="graf graf--p graf-after--figure">ConvMixer consists of a patch embedding layer followed by repeated applications of a simple fully-convolutional block. We maintain the spatial structure of the patch embeddings. Patch embeddings with patch size p and embedding dimension h can be implemented as convolution with cin input channels, h output channels, kernel size p, and stride p:</p><figure name="fc97" id="fc97" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*ceUruT1ok5n3u1rL.png" data-width="657" data-height="30" src="https://cdn-images-1.medium.com/max/800/0*ceUruT1ok5n3u1rL.png"></figure><p name="ab77" id="ab77" class="graf graf--p graf-after--figure">The ConvMixer block itself consists of depthwise convolution (i.e., grouped convolution with groups equal to the number of channels, h) followed by pointwise (i.e., kernel size 1 × 1) convolution. ConvMixers work best with unusually large kernel sizes for the depthwise convolution. Each of the convolutions is followed by an activation and post-activation BatchNorm:</p><figure name="4c42" id="4c42" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*bMTDOoL4sx9wGMxG.png" data-width="515" data-height="29" src="https://cdn-images-1.medium.com/max/800/0*bMTDOoL4sx9wGMxG.png"></figure><figure name="d5c2" id="d5c2" class="graf graf--figure graf-after--figure"><img class="graf-image" data-image-id="0*rVylMDZw7UW10Dd5.png" data-width="427" data-height="29" src="https://cdn-images-1.medium.com/max/800/0*rVylMDZw7UW10Dd5.png"></figure><p name="07c3" id="07c3" class="graf graf--p graf-after--figure">After many applications of this block, we perform global pooling to get a feature vector of size h, which we pass to a softmax classifier.</p><p name="2360" id="2360" class="graf graf--p graf-after--p">ConvMixers are evaluated on ImageNet-1k classification data</p><p name="98b5" id="98b5" class="graf graf--p graf-after--p">Recommended Reading: [<a href="https://ritvik19.medium.com/papers-explained-review-01-convolutional-neural-networks-78aeff61dcb3" data-href="https://ritvik19.medium.com/papers-explained-review-01-convolutional-neural-networks-78aeff61dcb3" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Papers Explained Review 01: Convolutional Neural Networks</a>]</p><h3 name="8792" id="8792" class="graf graf--h3 graf-after--p">Paper</h3><p name="03a0" id="03a0" class="graf graf--p graf-after--h3">Patches Are All You Need? <a href="https://arxiv.org/abs/2201.09792" data-href="https://arxiv.org/abs/2201.09792" class="markup--anchor markup--p-anchor" rel="noreferrer nofollow noopener" target="_blank">2201.09792</a></p><h3 name="5139" id="5139" class="graf graf--h3 graf-after--p">Implementation</h3><p name="1521" id="1521" class="graf graf--p graf-after--h3 graf--trailing"><a href="https://www.kaggle.com/code/ritvik1909/convmixer" data-href="https://www.kaggle.com/code/ritvik1909/convmixer" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">ConvMixer</a></p></div></div></section><section name="237e" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="e45d" id="e45d" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="78f8" id="78f8" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/f073f0356526"><time class="dt-published" datetime="2023-02-09T05:04:33.170Z">February 9, 2023</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-29-convmixer-f073f0356526" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

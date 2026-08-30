@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 69: Llemma</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 69: Llemma</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Llemma is an LLM for mathematics. Formed by continued pretraining of Code Llama on Proof-Pile-2, a mixture of scientific papers, web data…
+</section>
+<section data-field="body" class="e-content">
+<section name="7e7d" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="8a37" id="8a37" class="graf graf--h3 graf--leading graf--title">Papers Explained 69: Llemma</h3><figure name="c4ef" id="c4ef" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*guXPXudb1mSByR19XZb4Pw.png" data-width="1044" data-height="452" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*guXPXudb1mSByR19XZb4Pw.png"></figure><p name="b801" id="b801" class="graf graf--p graf-after--figure">Llemma is an LLM for mathematics. Formed by continued pretraining of Code Llama on Proof-Pile-2, a mixture of scientific papers, web data containing mathematics, and mathematical code. Llemma is capable of tool use and formal theorem proving without any further finetuning.</p><h3 name="9e68" id="9e68" class="graf graf--h3 graf-after--p">Data</h3><p name="cee5" id="cee5" class="graf graf--p graf-after--h3">Proof-Pile-2, a 55B-token mixture of scientific papers, web data containing mathematics, and mathematical code. With the exception of the Lean proofsteps subset and a knowledge cutoff of April 2023.</p><ul class="postList"><li name="6b0b" id="6b0b" class="graf graf--li graf-after--p"><strong class="markup--strong markup--li-strong">Code: </strong>An 11B-token dataset (AlgebraicStack) of source code from 17 languages, spanning numerical, symbolic, and formal math; consisting of filtered code from the Stack, public GitHub repositories, and formal proof step data is created.</li><li name="f8e1" id="f8e1" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Web Data:</strong> OpenWebMath, a 15B-token dataset of high-quality web pages filtered for mathematical content is used.</li><li name="9917" id="9917" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Scientific papers:</strong> The ArXiv subset of RedPajama, containing 29B tokens is used.</li><li name="02cb" id="02cb" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">General natural language and code data:</strong> The Pile is used as a surrogate training dataset. 95% of the training mixture is set to be the Proof-Pile-2, 2% to be from the Pile, and 3% to be the GitHub subset of RedPajama.</li></ul><p name="0017" id="0017" class="graf graf--p graf-after--li">Proof-Pile-2 is publicly released at hf.co/datasets/EleutherAI/proof-pile-2.</p><h3 name="0ec7" id="0ec7" class="graf graf--h3 graf-after--p">Model</h3><p name="48dd" id="48dd" class="graf graf--p graf-after--h3">The Code Llama models are continued pre-trained on Proof-Pile-2 using a standard autoregressive language modeling objective. The 7B model is trained for 200B tokens, and the 34B model for 50B tokens. All models are trained in bfloat16 mixed precision.</p><p name="a854" id="a854" class="graf graf--p graf-after--p">Before training LLEMMA 7B, the RoPE base period of the Code Llama 7B initialization is contracted from θ = 1, 000, 000 to θ = 10, 000, so that the long context fine tuning procedure can be repeated on the trained LLEMMA 7B.</p><h3 name="542d" id="542d" class="graf graf--h3 graf-after--p">Evaluation</h3><h4 name="d841" id="d841" class="graf graf--h4 graf-after--h3">Chain-of-Thought Mathematical Problem Solving</h4><p name="fd0d" id="fd0d" class="graf graf--p graf-after--h4">Generating self-contained text solutions to problems using LATEX or natural language. Utilizing various datasets for evaluation:</p><ul class="postList"><li name="1dde" id="1dde" class="graf graf--li graf-after--p">MATH dataset: 12.5k problems from high-school math competitions.</li><li name="5713" id="5713" class="graf graf--li graf-after--li">GSM8k dataset: Middle-school level math word problems.</li><li name="298d" id="298d" class="graf graf--li graf-after--li">OCWCourses: Undergraduate-level STEM problems from MIT’s OpenCourseWare.</li><li name="4f72" id="4f72" class="graf graf--li graf-after--li">MMLU-STEM: Subset of MMLU benchmark subjects.</li><li name="9539" id="9539" class="graf graf--li graf-after--li">SAT: Subset of 32 math questions from the May 2023 College Board SAT examination.</li></ul><p name="4ba1" id="4ba1" class="graf graf--p graf-after--li">Utilization of example prompts (four or eight-shot) for different datasets, with a focus on exact string match or SymPy equivalence for answer validation.</p><figure name="96cc" id="96cc" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*kwPEJwRdO9g0CwLSzU7iFQ.png" data-width="931" data-height="350" src="https://cdn-images-1.medium.com/max/800/1*kwPEJwRdO9g0CwLSzU7iFQ.png"><figcaption class="imageCaption">Results on our five chain-of-thought reasoning tasks with samples generated via greedy decoding.</figcaption></figure><ul class="postList"><li name="b54e" id="b54e" class="graf graf--li graf-after--figure">LLEMMA’s continued pre-training on Proof-Pile-2 significantly improves few-shot performance on various mathematical benchmarks.</li></ul><figure name="bc3e" id="bc3e" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*o4pca6FTZa1B8p8-brtecw.png" data-width="921" data-height="291" src="https://cdn-images-1.medium.com/max/800/1*o4pca6FTZa1B8p8-brtecw.png"><figcaption class="imageCaption">Majority voting results for LLEMMA and Minerva.</figcaption></figure><ul class="postList"><li name="699d" id="699d" class="graf graf--li graf-after--figure">LLEMMA models (e.g., 34B, 7B) showcase improved performance over Code Llama and even outperform the proprietary Minerva model.</li></ul><h4 name="d875" id="d875" class="graf graf--h4 graf-after--li">Mathematical Problem Solving with Tool Use</h4><ul class="postList"><li name="91f9" id="91f9" class="graf graf--li graf-after--h4">MATH+Python, the model is prompted to alternately describe a solution step in natural language, then execute that step with code. The final answer is a program that executes to a numeric type or a SymPy object.</li><li name="ea72" id="ea72" class="graf graf--li graf-after--li">GSM8k+Python, solving a GSM8k word problem by writing a Python program that executes to an integer answer.</li></ul><figure name="7a87" id="7a87" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*PqSWcWEff_3aVswpHPI4-g.png" data-width="702" data-height="249" src="https://cdn-images-1.medium.com/max/800/1*PqSWcWEff_3aVswpHPI4-g.png"><figcaption class="imageCaption">Mathematical problem solving with tool use.</figcaption></figure><ul class="postList"><li name="9f84" id="9f84" class="graf graf--li graf-after--figure">LLEMMA improves over Code Llama on both tasks.</li></ul><h4 name="8dcf" id="8dcf" class="graf graf--h4 graf-after--li">Formal Mathematics</h4><p name="09e8" id="09e8" class="graf graf--p graf-after--h4">LLEMMA is evaluated in few shot settings on two tasks:</p><p name="025a" id="025a" class="graf graf--p graf-after--p">Informal-to-Formal Proving:</p><ul class="postList"><li name="1206" id="1206" class="graf graf--li graf-after--p">Task involves generating a formal proof given a formal statement, an informal LATEX statement, and an informal LATEX proof.</li><li name="47ac" id="47ac" class="graf graf--li graf-after--li">Checked by the Isabelle proof assistant, evaluated on miniF2F benchmark.</li><li name="6b22" id="6b22" class="graf graf--li graf-after--li">Utilizes 11 examples (formal statement, informal statement, informal proof, formal proof) with a focus on number theory and other problems.</li><li name="17ee" id="17ee" class="graf graf--li graf-after--li">Single proof generation using greedy decoding.</li></ul><p name="9157" id="9157" class="graf graf--p graf-after--li">Formal-to-Formal Proving:</p><ul class="postList"><li name="74d2" id="74d2" class="graf graf--li graf-after--p">Task involves proving a formal statement by generating a sequence of proof steps (tactics).</li><li name="595e" id="595e" class="graf graf--li graf-after--li">Utilizes three examples (input state, proof step) and is evaluated using Lean 4 proof assistant on miniF2F benchmark.</li><li name="1e98" id="1e98" class="graf graf--li graf-after--li">Employs a standard best-first search approach.</li></ul><figure name="964b" id="964b" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*-XPlVb4ChmUzB3vkKrkQgQ.png" data-width="1079" data-height="290" src="https://cdn-images-1.medium.com/max/800/1*-XPlVb4ChmUzB3vkKrkQgQ.png"><figcaption class="imageCaption">Formal theorem proving tasks. Left: Informal-to-formal proving in Isabelle, showing the percentage of proven theorems with greedy decoding. Right: Formal-to-formal proving in Lean, showing the percentage of proven theorems with the given number of attempts × generations-periteration of best first search, and a 10-minute timeout.</figcaption></figure><p name="52cf" id="52cf" class="graf graf--p graf-after--figure">Informal-to-Formal Proving:</p><ul class="postList"><li name="5841" id="5841" class="graf graf--li graf-after--p">LLEMMA-7b closes 22.1% of the theorems, surpassing its Code Llama initialization and Sledgehammer prover.</li><li name="e78e" id="e78e" class="graf graf--li graf-after--li">Demonstrates complementary proofs in comparison to Sledgehammer, adding 26 new validation proofs and 17 new test proofs.</li><li name="e679" id="e679" class="graf graf--li graf-after--li">First few-shot proof auto formalization demonstration with an open model, distinct from the proprietary Codex model.</li></ul><p name="f4d6" id="f4d6" class="graf graf--p graf-after--li">Formal-to-Formal Proving (Lean 4):</p><ul class="postList"><li name="fc02" id="fc02" class="graf graf--li graf-after--p">LLEMMA-7b improves on its Code Llama initialization and performs similarly to ReProver, a model fine tuned for tactic prediction.</li><li name="a796" id="a796" class="graf graf--li graf-after--li">Notable for being the first demonstration of few-shot tactic prediction for theorem proving by an open model.</li></ul><h3 name="34df" id="34df" class="graf graf--h3 graf-after--li">Paper</h3><p name="b0a2" id="b0a2" class="graf graf--p graf-after--h3 graf--trailing">Llemma: An Open Language Model For Mathematics <a href="https://arxiv.org/abs/2310.10631" data-href="https://arxiv.org/abs/2310.10631" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">2310.10631</a></p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="d7fb" id="d7fb" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/0a17287e890a"><time class="dt-published" datetime="2023-11-10T03:47:44.815Z">November 10, 2023</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-69-llemma-0a17287e890a" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

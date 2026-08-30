@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 04: Sentence BERT</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 04: Sentence BERT</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+BERT and RoBERTa require that both sentences are fed into the network, which causes a massive computational overhead: Finding the most…
+</section>
+<section data-field="body" class="e-content">
+<section name="3c09" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="6354" id="6354" class="graf graf--h3 graf--leading graf--title">Papers Explained 04: Sentence BERT</h3><figure name="cc64" id="cc64" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*1WAWzqrMw4RwZuBGS7Y3Dw.png" data-width="1511" data-height="389" src="https://cdn-images-1.medium.com/max/800/1*1WAWzqrMw4RwZuBGS7Y3Dw.png"></figure><p name="b50f" id="b50f" class="graf graf--p graf-after--figure">BERT and RoBERTa require that both sentences are fed into the network, which causes a massive computational overhead: Finding the most similar pair in a collection of 10,000 sentences requires about 50 million inference computations (~65 hours) with BERT. The construction of BERT makes it unsuitable for semantic similarity search as well as for unsupervised tasks like clustering.</p><p name="87e3" id="87e3" class="graf graf--p graf-after--p">Sentence-BERT (SBERT), presents a modification of the pretrained BERT network that use siamese and triplet network structures to derive semantically meaningful sentence embeddings that can be compared using cosine-similarity. This reduces the effort for finding the most similar pair from 65 hours with BERT / RoBERTa to about 5 seconds with SBERT, while maintaining the accuracy from BERT.</p><h3 name="2f28" id="2f28" class="graf graf--h3 graf-after--p">Architecture</h3><figure name="8447" id="8447" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="0*Ps6GXIaC9FF-AbQA" data-width="1259" data-height="625" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/0*Ps6GXIaC9FF-AbQA"></figure><p name="3f83" id="3f83" class="graf graf--p graf-after--figure">SBERT adds a pooling operation to the output of BERT / RoBERTa to derive a fixed sized sentence embedding. Three pooling strategies are experimented:</p><ul class="postList"><li name="8e94" id="8e94" class="graf graf--li graf-after--p">Using the output of the CLS-token</li><li name="76c1" id="76c1" class="graf graf--li graf-after--li">Computing the mean of all output vectors (MEAN-strategy)</li><li name="c2c2" id="c2c2" class="graf graf--li graf-after--li">Computing a max-over-time of the output vectors (MAX-strategy).</li></ul><p name="d90f" id="d90f" class="graf graf--p graf-after--li">The default configuration is MEAN</p><p name="8177" id="8177" class="graf graf--p graf-after--p">In order to fine-tune BERT / RoBERTa, siamese and triplet networksare created to update the weights such that the produced sentence embeddings are semantically meaningful and can be compared with cosine-similarity.</p><p name="0b2d" id="0b2d" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Classification Objective Function</strong></p><p name="909b" id="909b" class="graf graf--p graf-after--p">The sentence embeddings u and v are concatenated with the element-wise difference |u−v| and multiplied with the trainable weight Wt and Cross-entropy loss is optimized:</p><figure name="0225" id="0225" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*1xpQGr7SkjvSONaT.png" data-width="372" data-height="28" src="https://cdn-images-1.medium.com/max/800/0*1xpQGr7SkjvSONaT.png"></figure><p name="51ae" id="51ae" class="graf graf--p graf-after--figure"><strong class="markup--strong markup--p-strong">Regression Objective Function</strong></p><p name="887d" id="887d" class="graf graf--p graf-after--p">The cosine similarity between the two sentence embeddings u and v is computed and mean squared-error loss is used as the objective function.</p><p name="f5cb" id="f5cb" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Triplet Objective Function</strong></p><p name="adc3" id="adc3" class="graf graf--p graf-after--p">Given an anchor sentence a, a positive sentence p, and a negative sentence n, triplet loss tunes the network such that the distance between a and p is smaller than the distance between a and n.</p><p name="cf29" id="cf29" class="graf graf--p graf-after--p">Mathematically, we minimize the following loss function:</p><figure name="4489" id="4489" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*aB-ngh0kmTyIa3VG.png" data-width="420" data-height="28" src="https://cdn-images-1.medium.com/max/800/0*aB-ngh0kmTyIa3VG.png"></figure><h3 name="593d" id="593d" class="graf graf--h3 graf-after--figure">Training and Evaluation</h3><p name="3e7a" id="3e7a" class="graf graf--p graf-after--h3">SBERT is trained on the combination of the SNLI and the Multi-Genre NLI dataset. The SNLI is a collection of 570,000 sentence pairs annotated with the labels contradiction, eintailment, and neutral. MultiNLI contains 430,000 sentence pairs and covers a range of genres of spoken and written text.</p><p name="177f" id="177f" class="graf graf--p graf-after--p">The performance of SBERT is evaluated for common Semantic Textual Similarity (STS) tasks.</p><p name="c18b" id="c18b" class="graf graf--p graf-after--p">Cosine-similarity is used to compare the similarity between two sentence embeddings.</p><figure name="b3fb" id="b3fb" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*MTgX5EU0U1xQmdkE" data-width="480" data-height="484" src="https://cdn-images-1.medium.com/max/800/0*MTgX5EU0U1xQmdkE"></figure><h3 name="4a23" id="4a23" class="graf graf--h3 graf-after--figure">Paper</h3><p name="ff4c" id="ff4c" class="graf graf--p graf-after--h3 graf--trailing">Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks <a href="https://arxiv.org/abs/1908.10084" data-href="https://arxiv.org/abs/1908.10084" class="markup--anchor markup--p-anchor" rel="noreferrer nofollow noopener" target="_blank">1908.10084</a></p></div></div></section><section name="4c09" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="0a91" id="0a91" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="3dd0" id="3dd0" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/5159b8e07f21"><time class="dt-published" datetime="2023-02-06T05:45:43.199Z">February 6, 2023</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-04-sentence-bert-5159b8e07f21" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

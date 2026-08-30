@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 169: mBART</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 169: mBART</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+mBART is a sequence-to-sequence denoising auto-encoder pre-trained on large-scale monolingual corpora in many languages using the BART…
+</section>
+<section data-field="body" class="e-content">
+<section name="403f" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="c53d" id="c53d" class="graf graf--h3 graf--leading graf--title">Papers Explained 169: mBART</h3><figure name="0308" id="0308" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*lpCh7rmLJeHHnGeOk6wYJg.png" data-width="1184" data-height="324" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*lpCh7rmLJeHHnGeOk6wYJg.png"></figure><p name="20a9" id="20a9" class="graf graf--p graf-after--figure">mBART is a sequence-to-sequence denoising auto-encoder pre-trained on large-scale monolingual corpora in many languages using the BART objective.</p><h3 name="3047" id="3047" class="graf graf--h3 graf-after--p">Architecture</h3><figure name="1b61" id="1b61" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*8dgZq4DHopxPiDj_PjYoow.png" data-width="961" data-height="306" src="https://cdn-images-1.medium.com/max/800/1*8dgZq4DHopxPiDj_PjYoow.png"><figcaption class="imageCaption">Framework for our Multilingual Denoising Pre-training (left) and fine-tuning on downstream MT tasks (right), where we use (1) sentence permutation (2) word-span masking as the injected noise. A special language id token is added at both the encoder and decoder. One multilingual pre-trained model is used for all tasks.</figcaption></figure><p name="09c2" id="09c2" class="graf graf--p graf-after--figure">A standard sequence-to-sequence Transformer architecture is used, with 12 layers of encoder and 12 layers of decoder. The model dimension is set at 1024, and it has 16 heads, corresponding to approximately 680 million parameters. An additional layer-normalization layer is included on top of both the encoder and decoder, which is stabilized at FP16 precision through training.</p><h3 name="252a" id="252a" class="graf graf--h3 graf-after--p">Multilingual Denoising Pre-training</h3><p name="6ed3" id="6ed3" class="graf graf--p graf-after--h3">A subset of 25 languages, extracted from the Common Crawl (CC), known as CC25, is pre-trained.</p><figure name="3dac" id="3dac" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*7NjGzdnHIP0xVQPTR4OiMQ.png" data-width="438" data-height="687" src="https://cdn-images-1.medium.com/max/800/1*7NjGzdnHIP0xVQPTR4OiMQ.png"><figcaption class="imageCaption">Languages and Statistics of the CC25 Corpus.</figcaption></figure><p name="0a81" id="0a81" class="graf graf--p graf-after--figure">A sentencepiece model is used for tokenization, with a vocabulary of 250,000 subword tokens.</p><h4 name="712d" id="712d" class="graf graf--h4 graf-after--p">Noise function</h4><p name="bfab" id="bfab" class="graf graf--p graf-after--h4">Two types of noise are used. Spans of text are first removed and replaced with a mask token. The words in each instance are then masked, with 35% randomly sampled according to a Poisson distribution (λ = 3.5). The order of sentences within each instance is also permuted.</p><p name="0dac" id="0dac" class="graf graf--p graf-after--p">The decoder input is the original text with one position offset. A language id symbol is used as the initial token to predict the sentence.</p><h4 name="c088" id="c088" class="graf graf--h4 graf-after--p">Pre-trained Models</h4><ul class="postList"><li name="7b62" id="7b62" class="graf graf--li graf-after--h4"><strong class="markup--strong markup--li-strong">mBART25</strong> a model pretrained on all 25 languages.</li><li name="716c" id="716c" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">mBART06 </strong>a model pretrained on a subset of six European languages: Ro, It, Cs, Fr, Es and En.</li><li name="ed38" id="ed38" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">mBART02</strong> pre-trained bilingual models, using English and one other language for four language pairs: En-De, En-Ro, En-It.</li><li name="2922" id="2922" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">BART-En/Ro </strong>pre-trained monolingual BART models on the same En and Ro corpus only.</li></ul><h3 name="cd7f" id="cd7f" class="graf graf--h3 graf-after--li">Sentence-level Machine Translation</h3><h4 name="e979" id="e979" class="graf graf--h4 graf-after--h3">Datasets</h4><p name="fe1d" id="fe1d" class="graf graf--p graf-after--h4">24 pairs of publicly available parallel corpora that cover all the languages in CC25 are gathered.</p><ul class="postList"><li name="08da" id="08da" class="graf graf--li graf-after--p">Most pairs are from previous WMT (Gu, Kk, Tr, Ro, Et, Lt, Fi, Lv, Cs, Es, Zh, De, Ru, Fr ↔ En) and IWSLT (Vi, Ja, Ko, Nl, Ar, It ↔ En) competitions.</li><li name="9d40" id="9d40" class="graf graf--li graf-after--li">FLoRes pairs (En-Ne and EnSi) are also used</li><li name="5a02" id="5a02" class="graf graf--li graf-after--li">En-Hi from IITB</li><li name="a597" id="a597" class="graf graf--li graf-after--li">En-My from WAT19</li></ul><p name="99da" id="99da" class="graf graf--p graf-after--li">The datasets is divided into into three categories —low resource (less than 1M sentence pairs), medium resource (between 1M and 10M), and high resource (more than 10M).</p><h4 name="8da3" id="8da3" class="graf graf--h4 graf-after--p">Fine-tuning &amp; Decoding</h4><p name="7254" id="7254" class="graf graf--p graf-after--h4">The multilingual pre-trained language models are fine-tuned on a single pair of parallel bitext data, with the source language text being fed into the encoder and the target language text being decoded.</p><figure name="a624" id="a624" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*fsCLNvLN_ubc1mV4eH4X1g.png" data-width="890" data-height="550" src="https://cdn-images-1.medium.com/max/800/1*fsCLNvLN_ubc1mV4eH4X1g.png"><figcaption class="imageCaption">Low/Medium Resource Machine Translation</figcaption></figure><p name="e698" id="e698" class="graf graf--p graf-after--figure">Pre-training consistently improves over a randomly initialized baseline, with particularly large gains on low resource language pairs.</p><figure name="5790" id="5790" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*g2ViQJcNjrgPQvNIqE1DNw.png" data-width="517" data-height="140" src="https://cdn-images-1.medium.com/max/800/1*g2ViQJcNjrgPQvNIqE1DNw.png"><figcaption class="imageCaption">High Resource Machine Translation</figcaption></figure><figure name="844a" id="844a" class="graf graf--figure graf-after--figure"><img class="graf-image" data-image-id="1*pQQV4hKGXARX0IIcvmV_HQ.png" data-width="1058" data-height="189" src="https://cdn-images-1.medium.com/max/800/1*pQQV4hKGXARX0IIcvmV_HQ.png"><figcaption class="imageCaption">Generalization to Unseen Languages</figcaption></figure><h3 name="8574" id="8574" class="graf graf--h3 graf-after--figure">Document-level Machine Translation</h3><p name="79bd" id="79bd" class="graf graf--p graf-after--h3">mBART is evaluated on document-level machine translation tasks, where the goal is to translate segments of text that contain more than one sentence. Document fragments of up to 512 tokens are used during pre-training, enabling models to learn dependencies between sentences, this pre-training significantly improves document-level translation.</p><h4 name="47c0" id="47c0" class="graf graf--h4 graf-after--p">Datasets</h4><p name="96a1" id="96a1" class="graf graf--p graf-after--h4">Performance is evaluated on two common document-level MT datasets: WMT19 En-De and TED15 Zh-En.</p><figure name="154c" id="154c" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*ir_MhOxLAlz93RgdNGgD7w.png" data-width="490" data-height="131" src="https://cdn-images-1.medium.com/max/800/1*ir_MhOxLAlz93RgdNGgD7w.png"><figcaption class="imageCaption">Statistics for the Document-level Corpus of WMT19 En-De and TED15 Zh-En. # of instances is the # of training examples in document model.</figcaption></figure><figure name="77da" id="77da" class="graf graf--figure graf-after--figure"><img class="graf-image" data-image-id="1*Cu8anAInhKlMe38PIuZMOA.png" data-width="1049" data-height="199" src="https://cdn-images-1.medium.com/max/800/1*Cu8anAInhKlMe38PIuZMOA.png"><figcaption class="imageCaption">Document-Level Machine Translation on En-De and Zh-En. (×) The randomly initialized Doc-MT model cannot produce translations aligned to the original sentences, so only document evaluation is possible.</figcaption></figure><h3 name="840b" id="840b" class="graf graf--h3 graf-after--figure">Unsupervised Machine Translation</h3><figure name="537b" id="537b" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*0rNPF0PP14crMOJIqsJKiw.png" data-width="1057" data-height="295" src="https://cdn-images-1.medium.com/max/800/1*0rNPF0PP14crMOJIqsJKiw.png"><figcaption class="imageCaption">Illustrated frameworks for unsupervised machine translation via (a) back-translation (b) language transfer where Ne-En is used as an example.</figcaption></figure><h3 name="693d" id="693d" class="graf graf--h3 graf-after--figure">Paper</h3><p name="d149" id="d149" class="graf graf--p graf-after--h3 graf--trailing">Multilingual Denoising Pre-training for Neural Machine Translation <a href="https://arxiv.org/abs/2001.08210" data-href="https://arxiv.org/abs/2001.08210" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">2001.08210</a></p></div></div></section><section name="f4e3" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="af06" id="af06" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="db37" id="db37" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/98432ef6fec"><time class="dt-published" datetime="2024-07-26T03:25:41.317Z">July 26, 2024</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-169-mbart-98432ef6fec" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

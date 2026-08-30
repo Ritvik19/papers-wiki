@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+    <title>Inkling Architecture and Benchmark Notes | Sebastian Raschka, PhD</title>
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.2.1">
+<meta property="og:title" content="Inkling: A New Open-Weight 975B MoE with a Few Surprises">
+<meta name="author" content="Sebastian Raschka">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Short note on Thinking Machines Lab’s 975B Inkling model, including benchmarks, sparse MoE design, short convolutions, RMSNorm, and position bias.">
+<meta property="og:description" content="Short note on Thinking Machines Lab’s 975B Inkling model, including benchmarks, sparse MoE design, short convolutions, RMSNorm, and position bias.">
+<link rel="canonical" href="https://sebastianraschka.com/blog/2026/inkling-architecture-benchmark-notes.html">
+<meta property="og:url" content="https://sebastianraschka.com/blog/2026/inkling-architecture-benchmark-notes.html">
+<meta property="og:site_name" content="Sebastian Raschka, PhD">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-07-16T08:50:22+00:00">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Inkling: A New Open-Weight 975B MoE with a Few Surprises">
+<meta name="twitter:site" content="@rasbt">
+<meta name="twitter:creator" content="@rasbt">
+<!-- End Jekyll SEO tag -->
+
+  
+  
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  
+  
+  
+  
+  
+    <script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://sebastianraschka.com/#website","url":"https://sebastianraschka.com","name":"Sebastian Raschka, PhD","description":"I'm an LLM Research Engineer with over a decade of experience in artificial intelligence. My work bridges academia and industry, with roles including senior staff at an AI company and a statistics ..."},{"@type":"Person","name":"Sebastian Raschka","url":"https://sebastianraschka.com","image":"https://sebastianraschka.com/images/logos/photo-2021-08-25_compressed.jpg","jobTitle":"LLM Research Engineer","description":"I'm an LLM Research Engineer with over a decade of experience in artificial intelligence. My work bridges academia and industry, with roles including senior staff at an AI company and a statistics ...","knowsAbout":["Large Language Models","Deep Learning","Machine Learning","Reasoning Models","PyTorch","Artificial Intelligence","Natural Language Processing","Neural Networks","Data Science"],"sameAs":["https://sebastianraschka.com","https://twitter.com/rasbt","https://www.linkedin.com/in/sebastianraschka/","https://github.com/rasbt","https://scholar.google.com/citations?user=X4RCC0IAAAAJ","https://www.youtube.com/c/SebastianRaschka"]},{"@type":"Article","headline":"Inkling: A New Open-Weight 975B MoE with a Few Surprises","description":"Short note on Thinking Machines Lab's 975B Inkling model, including benchmarks, sparse MoE design, short convolutions, RMSNorm, and position bias.","image":["https://sebastianraschka.com/images/blog/2026/inkling/hero.webp"],"author":{"@type":"Person","name":"Sebastian Raschka","url":"https://sebastianraschka.com"},"publisher":{"@type":"Organization","name":"Sebastian Raschka, PhD","logo":{"@type":"ImageObject","url":"https://sebastianraschka.com/images/logos/photo-2021-08-25_compressed.jpg"}},"datePublished":"2026-07-16T08:50:22+00:00","dateModified":"2026-07-16T13:55:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastianraschka.com/blog/2026/inkling-architecture-benchmark-notes.html"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastianraschka.com"},{"@type":"ListItem","position":2,"name":"Inkling: A New Open-Weight 975B MoE with a Few Surprises","item":"https://sebastianraschka.com/blog/2026/inkling-architecture-benchmark-notes.html"}]}]}
+</script>
+  
+  
+
+
+
+
+
+
+
+
+
+<meta property="og:image" content="https://sebastianraschka.com/images/blog/2026/inkling/hero.webp">
+<meta name="twitter:image" content="https://sebastianraschka.com/images/blog/2026/inkling/hero.webp">
+
+
+<meta property="og:image:alt" content="Inkling architecture diagram and release benchmark comparisons with GLM-5.2, Nemotron 3 Ultra, Kimi K2.5, GPT 5.6 Sol, and Claude Fable 5">
+<meta name="twitter:image:alt" content="Inkling architecture diagram and release benchmark comparisons with GLM-5.2, Nemotron 3 Ultra, Kimi K2.5, GPT 5.6 Sol, and Claude Fable 5">
+
+
+<meta name="twitter:description" content="Short note on Thinking Machines Lab's 975B Inkling model, including benchmarks, sparse MoE design, short convolutions, RMSNorm, and position bias.">
+
+
+  
+<meta property="article:tag" content="Deep Learning">
+  
+<meta property="article:tag" content="Machine Learning">
+  
+<meta property="article:tag" content="AI">
+  
+<meta property="article:tag" content="LLM">
+  
+
+
+
+  <link rel="stylesheet" href="/css/combined_direct_no_sass.css">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/fork-awesome.min.css">
+  
+    <link rel="alternate" type="application/rss+xml" title="Sebastian Raschka, PhD RSS feed" href="https://sebastianraschka.com/rss_feed.xml">
+  
+  
+  <link rel="alternate" type="text/plain" title="LLMs Index" href="https://sebastianraschka.com/llms.txt">
+  <link rel="alternate" type="text/plain" title="LLMs Full Index" href="https://sebastianraschka.com/llms-full.txt">
+  
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="theme-color" content="#ffffff">
+  <script>
+    (function () {
+      var storageKey = 'preferred-theme';
+      var attribute = 'data-theme';
+      var darkColor = '#0d1117';
+      var lightColor = '#ffffff';
+
+      var root = document.documentElement;
+      var metaTheme;
+
+      function getStoredPreference() {
+        try {
+          return localStorage.getItem(storageKey);
+        } catch (err) {
+          return null;
+        }
+      }
+
+      function setStoredPreference(value) {
+        try {
+          localStorage.setItem(storageKey, value);
+        } catch (err) {
+          /* noop */
+        }
+      }
+
+      function dispatchThemeChange(value) {
+        var eventName = 'themechange';
+        var eventDetail = { theme: value };
+        var eventObject;
+        try {
+          eventObject = new CustomEvent(eventName, { detail: eventDetail });
+        } catch (err) {
+          eventObject = document.createEvent('CustomEvent');
+          eventObject.initCustomEvent(eventName, false, false, eventDetail);
+        }
+        window.dispatchEvent(eventObject);
+      }
+
+      function applyTheme(value, persist) {
+        root.setAttribute(attribute, value);
+
+        if (!metaTheme) {
+          metaTheme = document.querySelector('meta[name="theme-color"]');
+        }
+        if (metaTheme) {
+          metaTheme.setAttribute('content', value === 'dark' ? darkColor : lightColor);
+        }
+
+        state.current = value;
+        if (persist) {
+          setStoredPreference(value);
+        }
+        dispatchThemeChange(value);
+      }
+
+      var state = {
+        storageKey: storageKey,
+        current: 'light',
+        set: function (value) {
+          applyTheme(value, false);
+        },
+        persist: function (value) {
+          applyTheme(value, true);
+        },
+        toggle: function () {
+          var current = root.getAttribute(attribute) === 'dark' ? 'dark' : 'light';
+          var next = current === 'dark' ? 'light' : 'dark';
+          applyTheme(next, true);
+          return next;
+        },
+        clear: function () {
+          try {
+            localStorage.removeItem(storageKey);
+          } catch (err) {
+            /* noop */
+          }
+        },
+        getStored: getStoredPreference,
+        mediaQuery: null
+      };
+
+      var storedPreference = getStoredPreference();
+      var mediaQuery =
+        typeof window !== 'undefined' && window.matchMedia
+          ? window.matchMedia('(prefers-color-scheme: dark)')
+          : null;
+      var prefersDark = mediaQuery ? mediaQuery.matches : false;
+      var initialTheme = storedPreference === 'dark' || storedPreference === 'light'
+        ? storedPreference
+        : prefersDark
+          ? 'dark'
+          : 'light';
+
+      state.mediaQuery = mediaQuery;
+      window.__themeState = state;
+      applyTheme(initialTheme, false);
+
+      if (mediaQuery) {
+        var handleMediaChange = function (event) {
+          if (state.getStored()) {
+            return;
+          }
+          var nextTheme = event.matches ? 'dark' : 'light';
+          applyTheme(nextTheme, false);
+        };
+        if (typeof mediaQuery.addEventListener === 'function') {
+          mediaQuery.addEventListener('change', handleMediaChange);
+        } else if (typeof mediaQuery.addListener === 'function') {
+          mediaQuery.addListener(handleMediaChange);
+        }
+      }
+    })();
+  </script>
+</head>
+
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <img src="/images/logos/ahead-of-ai-icon.png" alt="Ahead of AI logo" width="1" height="1" loading="lazy" decoding="async" style="display: none;">
+
+<header class="site-header">
+
+  <div class="wrapper">
+    <div class="header-top">
+      <div class="site-title site-title--home">
+        <a class="site-title__link" href="/" aria-label="Sebastian Raschka home page">
+          <span class="site-title__first">Sebastian</span>
+          <span class="site-title__last">Raschka</span>
+        </a>
+        <nav class="site-title__social-group" aria-label="Social profiles">
+          <a class="site-title__social" href="https://x.com/rasbt" aria-label="Sebastian Raschka on X" title="X">
+            <img class="theme-image" src="/images/logos/twitter-bw-light.png" data-theme-light="/images/logos/twitter-bw-light.png" data-theme-dark="/images/logos/twitter-bw-dark.png" height="20" alt="Twitter/X icon" width="21">
+          </a>
+          <!--<a href="https://threads.net/@sebastianraschka"><img src="/images/logos/threads-logo-alt-small.png" height="20" style="padding-left:5px;" alt="Threads icon"></a>-->
+          <a class="site-title__social" href="https://www.linkedin.com/in/sebastianraschka/" aria-label="Sebastian Raschka on LinkedIn" title="LinkedIn">
+            <img class="theme-image" src="/images/logos/linkedin-light.png" data-theme-light="/images/logos/linkedin-light.png" data-theme-dark="/images/logos/linkedin-dark.png" height="20" alt="LinkedIn Icon" width="20">
+          </a>
+          <a class="site-title__social" href="https://github.com/rasbt" aria-label="Sebastian Raschka on GitHub" title="GitHub">
+            <img class="theme-image" src="/images/logos/github-light.png" data-theme-light="/images/logos/github-light.png" data-theme-dark="/images/logos/github-dark.png" height="20" alt="GitHub icon" width="20">
+          </a>
+        </nav>
+        <div class="site-title__controls">
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" aria-label="Toggle color theme">
+            <span class="theme-toggle__track" aria-hidden="true">
+              <span class="theme-toggle__thumb"></span>
+            </span>
+            <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+          </button>
+          <div class="header-search" data-header-search>
+            <button type="button" class="header-search__toggle" data-search-toggle aria-label="Open search" aria-expanded="false" aria-controls="site-search-panel">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+            <form id="site-search-panel" class="header-search__panel" role="search" aria-label="Site search" hidden>
+              <label class="sr-only" for="site-search-input">Search this website</label>
+              <input id="site-search-input" class="header-search__input" type="search" placeholder="Search site" autocomplete="off" spellcheck="false">
+              <button type="submit" class="sr-only">Submit search</button>
+              <p id="site-search-status" class="sr-only" role="status" aria-live="polite"></p>
+              <ul id="site-search-results" class="header-search__results" aria-live="polite" aria-relevant="additions text"></ul>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="site-nav" aria-label="Primary">
+      <button type="button" class="menu-icon" data-nav-toggle aria-controls="site-nav-menu" aria-expanded="false" aria-label="Toggle navigation menu">
+        <svg viewbox="0 0 18 15" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"></path>
+          <path fill="currentColor" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"></path>
+          <path fill="currentColor" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"></path>
+        </svg>
+      </button>
+
+
+
+
+      <div class="trigger" id="site-nav-menu">
+
+
+
+        <span style="padding-left:0px;margin-left:0px;"></span>
+        <a class="page-link page-link--home" href="/">Home</a>
+        <a class="page-link" href="https://magazine.sebastianraschka.com"><span style="color:#c5050c;"><img src="/images/logos/ahead-of-ai-icon.png" alt="Ahead of AI Logo" width="20" height="20" decoding="async"> Blog</span></a>
+        <!--<a class="page-link" href="/blog/index.html">Blog</a>-->
+        <a class="page-link" href="/books">Books</a>
+        <!--<a class="page-link" href="/newsletter">AI Newsletter</a>-->
+        <a class="page-link" href="/teaching">Courses</a>
+        <a class="page-link" href="/llm-architecture-gallery/">LLM Gallery</a>
+        <a class="page-link" href="/llms-from-scratch/">LLMs From Scratch</a>
+        <a class="page-link" href="/reasoning-from-scratch/">Reasoning Models</a>
+        <a class="page-link" href="/elsewhere">Talks</a>
+        <div class="nav-more">
+          <button type="button" class="page-link nav-more__button" data-more-toggle aria-haspopup="true" aria-controls="nav-more-menu" aria-expanded="false">More</button>
+          <div class="nav-more__menu" id="nav-more-menu">
+            <a class="nav-more__link" href="/blog/">Blog Archive</a>
+            <a class="nav-more__link" href="/notes/">Quick Paper and Model Notes</a>
+            <a class="nav-more__link" href="/publications/">Research</a>
+            <a class="nav-more__link" href="/about/">About</a>
+          </div>
+        </div>
+        <!--<a class="page-link" href="/contact">Contact</a>-->
+        <!--<a class="page-link" href="/resources">More</a>-->
+
+
+      </div>
+
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <main id="main-content" class="page-content" tabindex="-1">
+      <div class="wrapper">
+        
+          <div class="post">
+  
+
+
+
+<header class="post-header">
+  <h1 class="post-title">Inkling: A New Open-Weight 975B MoE with a Few Surprises</h1>
+
+  
+
+  <div class="subscribe-section post-header__subscribe">
+    <div class="rss" style="display: flex; align-items: center;">
+
+     
+     <a href="/rss_feed.xml" style="display: inline-flex; align-items: center; margin-right: 20px;">
+         <i class="fa fa-rss fa-1x" style="padding-right: 5px;"></i>
+         <span>RSS Feed</span>
+     </a>
+     
+
+     <a class="page-link" href="https://magazine.sebastianraschka.com/subscribe" style="display: inline-flex; align-items: center;">
+         <img src="/images/logos/ahead-of-ai-icon.png" alt="Ahead of AI Logo" width="20" height="20" loading="lazy" decoding="async" style="padding-right: 5px;">
+         <span>Subscribe via Email</span>
+     </a>
+
+ </div>
+
+  </div>
+
+  <div class="spacing" style="margin-top: 40px;"></div>
+
+  <p class="post-meta">
+      Jul 16, 2026
+      
+      <br>by <a href="/about/" rel="author">Sebastian Raschka</a>
+      
+      
+  </p>
+</header>
+
+
+  <article class="post-content">
+    <p>Interesting surprise open-weight LLM drop from Thinking Machines Lab yesterday. Their nearly 1T-parameter <a href="https://thinkingmachines.ai/news/introducing-inkling/">Inkling model</a> looks pretty solid on the reported benchmarks.</p>
+
+<p>Compared with GLM-5.2, Inkling performs better on evaluations such as IFBench (79.8% versus 73.3%) and SimpleQA Verified (43.9% versus 38.1%). It performs worse on several reasoning and coding-agent benchmarks, including HLE without tools (29.7% versus 40.1%), SWE-Bench Pro Public (54.3% versus 62.1%), and Terminal-Bench 2.1 (63.8% versus 82.7%).</p>
+
+<p>These are release-time numbers, and some rows combine externally reported values with internal harness results. I would therefore not over-interpret small differences. Overall, Inkling looks like a good all-rounder that is intended for further fine-tuning and specialization. That direction makes sense given that Thinking Machines Lab also develops Tinker, its model customization and fine-tuning platform.</p>
+
+<p>Architecture-wise, Inkling is a 975B-parameter sparse Mixture-of-Experts model with 41B active parameters and a <a href="/glossary/#context-length" title="Context Length" class="glossary-link">context window</a> of up to 1M tokens.</p>
+
+<figure><p><img src="/images/blog/2026/inkling/hero.webp" alt="Inkling architecture diagram and release benchmark comparisons with GLM-5.2, Nemotron 3 Ultra, Kimi K2.5, GPT 5.6 Sol, and Claude Fable 5" class="center-image image-100" width="3000" height="2016" fetchpriority="high" decoding="async"></p>
+<figcaption class="figure-caption">Figure 1. Inkling architecture and release-time <a href="/glossary/#benchmark" title="Benchmark" class="glossary-link">benchmark</a> comparisons. The benchmark panels use results from Thinking Machines Lab's <a href="https://thinkingmachines.ai/news/introducing-inkling/">July 15, 2026 announcement</a>. The higher-resolution architecture figure is also available in the <a href="/llm-architecture-gallery/#card-inkling">LLM Architecture Gallery</a>.</figcaption></figure>
+
+
+<p>Some side-by-side observations:</p>
+
+<ol>
+  <li>Inkling has about 231B more total parameters than GLM-5.2 (975B versus 744B), although their active footprints are almost identical at 41B and 40B parameters.</li>
+  <li>Inkling is less sparse than Kimi K2.5. It activates 4.2% of its parameters per token, compared with 3.2% for Kimi K2.5 (41B of 975B versus 32B of 1T).</li>
+  <li>Inkling uses a regular Transformer decoder rather than the hybrid Mamba-Transformer approach used by Nemotron 3 Ultra.</li>
+</ol>
+
+<p>I am curious about token throughput. The larger active footprint than Kimi K2.5 and the use of conventional GQA rather than <a href="/glossary/#mla" title="Multi-Head Latent Attention (MLA)" class="glossary-link">MLA</a> or a recurrent hybrid stack suggest that raw decoding speed may not be Inkling’s main advantage. However, throughput also depends heavily on quantization, expert parallelism, attention kernels, batching, and hardware. I have not seen directly comparable provider measurements yet.</p>
+
+<p>The overall design follows the recent large-<a href="/glossary/#moe" title="Mixture of Experts (MoE)" class="glossary-link">MoE</a> trend, but the architecture has a few interesting surprises:</p>
+
+<ol>
+  <li>
+    <p><strong>Small convolution layers in several places.</strong> Each decoder layer applies short kernel-4 convolutions after the key and value projections and on the attention and MLP branch outputs. My intuition is that these provide cheap local token mixing and an explicit short-range inductive bias alongside attention.</p>
+  </li>
+  <li>
+    <p><strong>An additional RMSNorm directly after the token <a href="/glossary/#token-embeddings" title="Token Embeddings" class="glossary-link">embedding layer</a>.</strong> This is separate from the pre-attention <a href="/glossary/#rmsnorm" title="Root Mean Square Layer Normalization (RMSNorm)" class="glossary-link">RMSNorm</a> inside every transformer block. At first glance, it looks almost redundant, but it is explicitly enabled in the <a href="https://huggingface.co/thinkingmachines/Inkling/blob/main/config.json">configuration</a> and present in the <a href="https://github.com/huggingface/transformers/blob/main/src/transformers/models/inkling/modeling_inkling.py">Transformers implementation</a>. Whether it materially helps would require an ablation.</p>
+  </li>
+  <li>
+    <p><strong>A learned, input-dependent relative-position bias instead of <a href="/glossary/#rope" title="Rotary Positional Embeddings (RoPE)" class="glossary-link">RoPE</a>.</strong> <a href="https://thinkingmachines.ai/news/introducing-inkling/#architecture">Thinking Machines says</a> that the relative-position approach “performs better and extrapolates better to longer sequences” than RoPE.</p>
+  </li>
+</ol>
+
+<p>Regarding the last point, my intuition is that the sliding-window-heavy architecture helps. Of the 66 decoder layers, 55 use local attention with a small 512-token window. A learned relative-position bias may provide enough <a href="/glossary/#positional-encoding" title="Positional Encoding" class="glossary-link">positional information</a> within these windows.</p>
+
+<p>In the 11 global layers, the released implementation applies the learned bias only over the preceding 1,024 tokens. Attention beyond that range is effectively content-based with respect to this positional bias. This is somewhat similar to the intuition behind <a href="/glossary/#nope" title="No Positional Embeddings (NoPE)" class="glossary-link">NoPE</a>, which other architectures use in selected global-attention layers.</p>
+
+<p>Overall, Inkling is an interesting variation on the DeepSeek-V3-style MoE recipe and a solid release. Some may find it underwhelming because it does not lead every benchmark. I find the broad and mixed benchmark profile refreshingly honest. It may also indicate that the model is less benchmark-specialized than several recent releases.</p>
+
+<p>And, as always, it is good to see another strong open-weight <a href="/glossary/#base-model" title="Base Model" class="glossary-link">base model</a> available for fine-tuning and independent study.</p>
+
+  </article>
+
+  
+
+
+  
+<section class="read-next" aria-labelledby="read-next-heading">
+  <h2 id="read-next-heading" class="read-next__heading">Read Next</h2>
+  <div class="read-next__grid">
+    
+      <a class="read-next__card" href="/llm-architecture-gallery/">
+        
+          <span class="read-next__image">
+            <img src="/llm-architecture-gallery/images/hero/architecture-gallery-hero.webp" alt="" loading="lazy" decoding="async" width="3276" height="2808">
+          </span>
+        
+        <span class="read-next__body">
+          <span class="read-next__title">LLM Architecture Gallery</span>
+          
+            <span class="read-next__description">Browse the companion architecture card and related MoE comparisons.</span>
+          
+        </span>
+      </a>
+    
+      <a class="read-next__card" href="/blog/2026/glm-5-2-indexshare.html">
+        
+          <span class="read-next__image">
+            <img src="/images/blog/2026/glm-5-2/hero.webp" alt="" loading="lazy" decoding="async" width="1622" height="1604">
+          </span>
+        
+        <span class="read-next__body">
+          <span class="read-next__title">GLM-5.2 and IndexShare for Long-Context Sparse Attention</span>
+          
+            <span class="read-next__description">Compare Inkling with another recent long-context open-weight MoE.</span>
+          
+        </span>
+      </a>
+    
+      <a class="read-next__card" href="https://magazine.sebastianraschka.com/p/visual-attention-variants">
+        
+          <span class="read-next__image">
+            <img src="https://substack-post-media.s3.amazonaws.com/public/images/51d52b9a-e820-45d6-8135-f94496ec1745_1600x900.png" alt="" loading="lazy" decoding="async">
+          </span>
+        
+        <span class="read-next__body">
+          <span class="read-next__title">A Visual Guide to Attention Variants in Modern LLMs</span>
+          
+            <span class="read-next__description">Review the attention mechanisms that show up across recent model releases.</span>
+          
+        </span>
+      </a>
+    
+  </div>
+</section>
+
+
+
+  <!-- BEGIN SUBSCRIBE HEADER -->
+
+  <div style="height:50px;"></div>
+
+  <div class="rss" style="display: flex; align-items: center;">
+
+    <a href="/rss_feed.xml" style="display: inline-flex; align-items: center; margin-right: 20px;">
+        <i class="fa fa-rss fa-1x" style="padding-right: 5px;"></i>
+        <span>RSS</span>
+    </a>
+
+    <a class="page-link" href="https://magazine.sebastianraschka.com/subscribe" style="display: inline-flex; align-items: center;">
+        <img src="/images/logos/ahead-of-ai-icon.png" alt="Ahead of AI Logo" width="20" height="20" loading="lazy" decoding="async" style="padding-right: 5px;">
+        <span>Subscribe via Email</span>
+    </a>
+
+  </div>
+
+  <!-- END SUBSCRIBE HEADER -->
+
+  <br>
+  <br>
+
+  <hr>
+
+
+  <br>
+
+
+  <!--<strong>Have feedback on this post? I would love to hear it. Let me know and send me a <a href="https://twitter.com/intent/tweet?text=. @rasbt https://sebastianraschka.com/blog/2026/inkling-architecture-benchmark-notes.html">tweet</a> or <a href="https://sebastianraschka.com/email.html">email</a>.</strong>-->
+
+</div>
+
+        
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+
+
+    <div class="footer-col-wrapper">
+
+
+    <nav class="footer-col social-col" aria-label="Footer social links">
+
+
+      
+      <a href="https://magazine.sebastianraschka.com" aria-label="Ahead of AI newsletter" title="Ahead of AI newsletter"><span><i class="fa fa-rss fa-2x" aria-hidden="true"></i></span> </a>
+      
+
+      
+          <a href="/contact" aria-label="Contact page" title="Contact"><span><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></span> </a>
+      
+
+      
+      
+        <a href="https://twitter.com/rasbt" aria-label="X profile" title="X"> <span><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></span> </a>
+      
+
+      
+            <a href="https://youtube.com/c/SebastianRaschka" aria-label="YouTube channel" title="YouTube"><span><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></span> </a>
+      
+
+      
+            <a href="https://github.com/rasbt" aria-label="GitHub profile" title="GitHub"><span><i class="fa fa-github fa-2x" aria-hidden="true"></i> </span></a>
+      
+
+      
+          <a href="https://scholar.google.com/citations?user=X4RCC0IAAAAJ&amp;hl=en" aria-label="Google Scholar profile" title="Google Scholar"><span><i class="fa fa-google fa-2x" aria-hidden="true"></i> </span></a>
+      
+
+      
+          <a href="https://linkedin.com/in/sebastianraschka" aria-label="LinkedIn profile" title="LinkedIn"><span><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i> </span></a>
+      
+
+
+  </nav>
+
+    <div class="footer-col  copyright-col">
+      <p>© 2013-2026 Sebastian Raschka</p>
+    </div>
+
+
+
+  </div>
+</div>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BYQXBRPK81"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BYQXBRPK81');
+</script>
+</footer>
+
+
+  
+
+  
+
+
+
+  <script src="/js/theme-toggle.js" type="text/javascript"></script>
+  <script src="/js/site-search.js" type="text/javascript"></script>
+  <script src="/js/nav-toggle.js" type="text/javascript"></script>
+  <script src="/js/auto-hide-header.js" type="text/javascript"></script>
+  <script src="/js/article-toc.js" type="text/javascript"></script>
+  <script>
+    (function () {
+      function initPageScripts() {
+        if (window.ArticleToc && typeof window.ArticleToc.init === 'function') {
+          window.ArticleToc.init();
+        }
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initPageScripts);
+      } else {
+        initPageScripts();
+      }
+    })();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 23: Structural LM</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 23: Structural LM</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Taking advantage of existing pretrained language models and to adapt to document image understanding tasks, Structural LM uses the BERT…
+</section>
+<section data-field="body" class="e-content">
+<section name="87e0" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="6c31" id="6c31" class="graf graf--h3 graf--leading graf--title">Papers Explained 23: Structural LM</h3><figure name="0a02" id="0a02" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*K1xi3b_AyFRVaZiOyMkpwQ.png" data-width="1096" data-height="324" src="https://cdn-images-1.medium.com/max/800/1*K1xi3b_AyFRVaZiOyMkpwQ.png"></figure><p name="5e80" id="5e80" class="graf graf--p graf-after--figure">Taking advantage of existing pretrained language models and to adapt to document image understanding tasks, Structural LM uses the BERT architecture as the backbone.</p><figure name="24e8" id="24e8" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*8ih_FKca7ia4SMFbiOT29Q.jpeg" data-width="2560" data-height="1107" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*8ih_FKca7ia4SMFbiOT29Q.jpeg"></figure><p name="3731" id="3731" class="graf graf--p graf-after--figure">Based on the architecture, we propose to utilize the cell-level layout information from document images and incorporate them into the transformer encoder.</p><p name="5cb1" id="5cb1" class="graf graf--p graf-after--p">First, given a set of tokens from different cells and the layout information of cells, the cell level input embeddings are computed by summing the corresponding word embeddings, cell-level 2Dposition embeddings, and original 1D-position embeddings. Then, these input embeddings are passed through a bidirectional Transformer encoder that can generate contextualized representations with an attention mechanism.</p><h3 name="746d" id="746d" class="graf graf--h3 graf-after--p">Pre Training</h3><p name="0855" id="0855" class="graf graf--p graf-after--h3"><strong class="markup--strong markup--p-strong">Masked Visual-Language Modeling: </strong>Some of the input tokens are randomly masked but the corresponding cell-level position embeddings are kept , and then the model is pre-trained to predict the masked tokens.</p><p name="a044" id="a044" class="graf graf--p graf-after--p">Compared with the MVLM in LayoutLM, StructuralLM makes use of the cell-level layout information and predicts the mask tokens more accurately.</p><p name="f53b" id="f53b" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Cell Position Classification:</strong> First, the image is split into N areas of the same size. Then the area to which the cell belongs to is calculated through the center 2D-position of the cell.</p><p name="a2d3" id="a2d3" class="graf graf--p graf-after--p">Meanwhile, some cells are randomly selected, and the 2D-positions of tokens in the selected cells are replaced with (0; 0; 0; 0). A classification layer is built above the encoder outputs. This layer predicts a label [1,N] of the area where the selected cell is located, and computes the cross-entropy loss.</p><figure name="db58" id="db58" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*NRk0FhWbf-RKf4KcLLJMcg.jpeg" data-width="1396" data-height="1120" src="https://cdn-images-1.medium.com/max/800/1*NRk0FhWbf-RKf4KcLLJMcg.jpeg"></figure><p name="2da7" id="2da7" class="graf graf--p graf-after--figure">Following LayoutLM, StructuralLM is pre-trained on the IIT-CDIP Test Collection 1.0.</p><p name="ff97" id="ff97" class="graf graf--p graf-after--p">To take advantage of existing pre-trained models and adapt to document image understanding tasks, the weights of StructuralLM model are initialized with the pre-trained RoBERTa large model except for the 2D-position embedding layers.</p><h3 name="f6fe" id="f6fe" class="graf graf--h3 graf-after--p">Fine Tuning</h3><ul class="postList"><li name="77df" id="77df" class="graf graf--li graf-after--h3">Form and Receipt Understanding: FUNSD dataset</li><li name="849a" id="849a" class="graf graf--li graf-after--li">Document Image Classification: RVL-CDIP dataset</li><li name="7cf7" id="7cf7" class="graf graf--li graf-after--li">Document Visual Question Answering: DocVQA dataset</li></ul><h3 name="218c" id="218c" class="graf graf--h3 graf-after--li"><strong class="markup--strong markup--h3-strong">Paper</strong></h3><p name="721b" id="721b" class="graf graf--p graf-after--h3 graf--trailing">StructuralLM: Structural Pre-training for Form Understanding <a href="https://arxiv.org/abs/2105.11210" data-href="https://arxiv.org/abs/2105.11210" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">2105.11210</a></p></div></div></section><section name="1df1" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="3d92" id="3d92" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="fb09" id="fb09" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/36e9df91e7c1"><time class="dt-published" datetime="2023-02-07T15:46:34.521Z">February 7, 2023</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-23-structural-lm-36e9df91e7c1" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

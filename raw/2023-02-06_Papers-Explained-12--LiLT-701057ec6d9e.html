@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 12: LiLT</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 12: LiLT</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+The whole framework can be regarded as a parallel dual-stream Transformer. Given an input document image, first an off-the-shelf OCR engine…
+</section>
+<section data-field="body" class="e-content">
+<section name="6b2a" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="b17b" id="b17b" class="graf graf--h3 graf--leading graf--title">Papers Explained 12: LiLT</h3><figure name="ab3b" id="ab3b" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*idABkC5OI6DylsQZYI7omg.png" data-width="1543" data-height="484" src="https://cdn-images-1.medium.com/max/800/1*idABkC5OI6DylsQZYI7omg.png"></figure><p name="3f58" id="3f58" class="graf graf--p graf-after--figure">The whole framework can be regarded as a parallel dual-stream Transformer. Given an input document image, first an off-the-shelf OCR engine is used to get text bounding boxes and contents. Then, the text and layout information are separately embedded and fed into the corresponding Transformer-based architecture to obtain enhanced features. <strong class="markup--strong markup--p-strong">Bi-directional attention complementation mechanism (BiACM)</strong> is introduced to accomplish the cross-modality interaction of text and layout clues. Finally, the encoded text and layout features are concatenated and additional heads are added upon them, for the self-supervised pre-training or the downstream fine-tuning.</p><figure name="a92c" id="a92c" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*sy8Yp5Lf1x83-SF3" data-width="1263" data-height="719" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/0*sy8Yp5Lf1x83-SF3"></figure><p name="a87b" id="a87b" class="graf graf--p graf-after--figure"><strong class="markup--strong markup--p-strong">Text Embeddings</strong></p><figure name="f88c" id="f88c" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*-2pb0q2wJ8gRrEFa.png" data-width="297" data-height="28" src="https://cdn-images-1.medium.com/max/800/0*-2pb0q2wJ8gRrEFa.png"></figure><p name="8915" id="8915" class="graf graf--p graf-after--figure">where LN is the Layer Normalization</p><p name="1f20" id="1f20" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Layout Embeddings</strong></p><p name="d126" id="d126" class="graf graf--p graf-after--p">All the bounding box coordinates are normalised and discretized to integers in the range [0, 1000], and four embedding layers are used to generate x-axis, y-axis, height and width features separately.</p><figure name="25da" id="25da" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*OM6RAJpT5D83aYKs.png" data-width="807" data-height="29" src="https://cdn-images-1.medium.com/max/800/0*OM6RAJpT5D83aYKs.png"></figure><p name="35a1" id="35a1" class="graf graf--p graf-after--figure">where CAT is the channel wise concatenation operation. The special tokens [CLS], [SEP] and [PAD] are also attached with (0, 0, 0, 0, 0, 0), (1000, 1000, 1000, 1000, 0, 0) and (0, 0, 0, 0, 0, 0) respectively.</p><figure name="53a5" id="53a5" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*mYt2_eKVA9rkfwXf.png" data-width="267" data-height="28" src="https://cdn-images-1.medium.com/max/800/0*mYt2_eKVA9rkfwXf.png"></figure><p name="86e4" id="86e4" class="graf graf--p graf-after--figure"><strong class="markup--strong markup--p-strong">BiACM</strong></p><p name="bc78" id="bc78" class="graf graf--p graf-after--p">Given attention scores of the text and layout flows located in the same head of the same layer:</p><figure name="4336" id="4336" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*q-aM5-RS-yjwsijr.png" data-width="134" data-height="36" src="https://cdn-images-1.medium.com/max/800/0*q-aM5-RS-yjwsijr.png"></figure><p name="f7b5" id="f7b5" class="graf graf--p graf-after--figure">BiACM shares them as common knowledge, which is formulated as:</p><figure name="7983" id="7983" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*7T9BHr3jLKPIiRva.png" data-width="179" data-height="36" src="https://cdn-images-1.medium.com/max/800/0*7T9BHr3jLKPIiRva.png"></figure><figure name="4326" id="4326" class="graf graf--figure graf-after--figure"><img class="graf-image" data-image-id="0*emcl_JAJK4eQsPVz.png" data-width="507" data-height="70" src="https://cdn-images-1.medium.com/max/800/0*emcl_JAJK4eQsPVz.png"></figure><p name="d700" id="d700" class="graf graf--p graf-after--figure">In order to maintain the ability of LiLT to cooperate with different off-the-shelf text models in finetuning as much as possible, we heuristically adopt the detached attention scores, so that the textual stream will not be affected by the gradient of non-textual one during pre-training, and its overall consistency can be preserved. Finally, the modified attention scores are used to weight the projected value vectors for subsequent modules in both flows.</p><h3 name="97a8" id="97a8" class="graf graf--h3 graf-after--p">Pretraining</h3><ul class="postList"><li name="26bc" id="26bc" class="graf graf--li graf-after--h3"><strong class="markup--strong markup--li-strong">Masked Visual-Language Modeling</strong> MVLM randomly masks some of the input tokens and the model is asked to recover them over the whole vocabulary using the output encoded features, driven by a cross-entropy loss. Meanwhile, the non-textual information remains unchanged.</li><li name="b60b" id="b60b" class="graf graf--li graf-after--li">MVLM improves model learning on the language side with cross-modality information. The given layout embedding can also help the model better capture both inter- and intra-sentence relationships.</li><li name="e437" id="e437" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Key Point Location</strong> KPL equally divides the entire layout into several regions (7×7=49 regions by default) and randomly masks some of the input bounding boxes. The model is required to predict which regions the key points (top-left corner, bottom-right corner, and center point) of each box belong to using separate heads.</li><li name="426a" id="426a" class="graf graf--li graf-after--li">KPL makes the model to fully understand the text content and know where to put a specific word/sentence when the surrounding ones are given.</li><li name="9957" id="9957" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Cross-modal Alignment Identification</strong> CMAI collects those encoded features of token-box pairs that are masked by MVLM and KPL, and build an additional head upon them to identify whether each pair is aligned.</li><li name="deec" id="deec" class="graf graf--li graf-after--li">CMAI makes the model to learn the cross-modal perception capacity.</li></ul><h3 name="6843" id="6843" class="graf graf--h3 graf-after--li">Paper</h3><p name="c07d" id="c07d" class="graf graf--p graf-after--h3 graf--trailing">LiLT: A Simple yet Effective Language-Independent Layout Transformer for Structured Document Understanding <a href="https://arxiv.org/abs/2202.13669" data-href="https://arxiv.org/abs/2202.13669" class="markup--anchor markup--p-anchor" rel="noreferrer nofollow noopener" target="_blank">2202.13669</a></p></div></div></section><section name="0a18" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="72a2" id="72a2" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="cb4c" id="cb4c" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/701057ec6d9e"><time class="dt-published" datetime="2023-02-06T13:35:50.724Z">February 6, 2023</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-12-lilt-701057ec6d9e" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

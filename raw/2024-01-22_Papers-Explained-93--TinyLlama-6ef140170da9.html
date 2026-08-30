@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 93: TinyLlama</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 93: TinyLlama</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+TinyLlama is a compact 1.1B language model built upon the architecture and tokenizer of Llama 2, pre-trained on around 1 trillion tokens…
+</section>
+<section data-field="body" class="e-content">
+<section name="0884" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="3bd0" id="3bd0" class="graf graf--h3 graf--leading graf--title">Papers Explained 93: TinyLlama</h3><figure name="1e72" id="1e72" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*UyhrTJZFqTMeenrOm8Yn6Q.png" data-width="1163" data-height="442" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*UyhrTJZFqTMeenrOm8Yn6Q.png"></figure><p name="d4bd" id="d4bd" class="graf graf--p graf-after--figure">TinyLlama is a compact 1.1B language model built upon the architecture and tokenizer of Llama 2, pre-trained on around 1 trillion tokens for approximately 3 epochs, leveraging various advances (e.g., FlashAttention), to achieve better computational efficiency.</p><p name="0d72" id="0d72" class="graf graf--p graf-after--p">The model checkpoints and code are publicly available on <a href="https://github.com/jzhang38/TinyLlama" data-href="https://github.com/jzhang38/TinyLlama" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">GitHub</a></p><p name="d2ab" id="d2ab" class="graf graf--p graf-after--p">Recommended Reading [<a href="https://medium.com/dair-ai/papers-explained-55-llama-c4f302809d6b" data-href="https://medium.com/dair-ai/papers-explained-55-llama-c4f302809d6b" class="markup--anchor markup--p-anchor" target="_blank">Papers Explained 55: LLaMA</a>] [<a href="https://medium.com/dair-ai/papers-explained-60-llama-v2-3e415c5b9b17" data-href="https://medium.com/dair-ai/papers-explained-60-llama-v2-3e415c5b9b17" class="markup--anchor markup--p-anchor" target="_blank">Papers Explained 60: Llama 2</a>]</p><h3 name="5804" id="5804" class="graf graf--h3 graf-after--p">Approach</h3><h4 name="f26b" id="f26b" class="graf graf--h4 graf-after--h3">Pre-training data</h4><p name="b4be" id="b4be" class="graf graf--p graf-after--h4">A mixture of natural language data and code data is used to pre-train TinyLlama, sourcing natural language data from SlimPajama and code data from Starcoderdata.</p><p name="d9df" id="d9df" class="graf graf--p graf-after--p">SlimPajama is a large open-source corpus derived by cleaning and deduplicating the original RedPajama,. which is an open-source research effort aimed at reproducing Llama’s pre-training data.</p><p name="4455" id="4455" class="graf graf--p graf-after--p">Starcoderdata was collected to train StarCoder, comprising approximately 250 billion tokens across 86 programming languages.</p><p name="d5be" id="d5be" class="graf graf--p graf-after--p">Combining these two corpora yields approximately 950 billion tokens for pre-training in total. TinyLlama is trained on these tokens for approximately three epochs. During training, the natural language data is sampled to achieve a ratio of around 7:3 between natural language data and code data.</p><h4 name="47c7" id="47c7" class="graf graf--h4 graf-after--p">Architecture</h4><figure name="489b" id="489b" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*G2rm-UmnF3k4prMTLuDkwA.png" data-width="1163" data-height="99" src="https://cdn-images-1.medium.com/max/800/1*G2rm-UmnF3k4prMTLuDkwA.png"><figcaption class="imageCaption">Details of model architecture.</figcaption></figure><p name="2061" id="2061" class="graf graf--p graf-after--figure">A similar model architecture to Llama 2 is adopted with the following details:</p><ul class="postList"><li name="acd2" id="acd2" class="graf graf--li graf-after--p">RoPE (Rotary Positional Embedding) to inject positional information into the model.</li><li name="6657" id="6657" class="graf graf--li graf-after--li">In pre-normalization, to attain a more stable training, the input is normalized before each transformer sub-layer using RMSNorm, which can improve training efficiency.</li><li name="b676" id="b676" class="graf graf--li graf-after--li">Following Llama 2 SwiGLU is used as the activation function.</li><li name="9de3" id="9de3" class="graf graf--li graf-after--li">To reduce memory bandwidth overhead and speed up inference, grouped-query attention is used. There are 32 heads for query attention and 4 groups of key-value heads. With this technique, the model can share key and value representations across multiple heads without sacrificing much performance.</li><li name="7c43" id="7c43" class="graf graf--li graf-after--li">Another critical improvement is the integration of Flash Attention 2, an optimized attention mechanism. The repository also provides fused layernorm, fused cross entropy loss, and fused rotary positional embedding, which together play a pivotal role in boosting computational throughput</li></ul><h3 name="d3b5" id="d3b5" class="graf graf--h3 graf-after--li">Evaluation</h3><h4 name="5675" id="5675" class="graf graf--h4 graf-after--h3">Commonsense reasoning tasks</h4><figure name="9d09" id="9d09" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*ZOe8Mlx1n1a-5R1PJxcHdg.png" data-width="1085" data-height="169" src="https://cdn-images-1.medium.com/max/800/1*ZOe8Mlx1n1a-5R1PJxcHdg.png"><figcaption class="imageCaption">Zero-shot performance on commonsense reasoning tasks.</figcaption></figure><ul class="postList"><li name="c6db" id="c6db" class="graf graf--li graf-after--figure">TinyLlama achieved the highest average scores among the evaluated models.</li></ul><h4 name="efc8" id="efc8" class="graf graf--h4 graf-after--li">Evolution of performance during training</h4><figure name="3245" id="3245" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*pbboIloNE6mMONU2kgeUhA.png" data-width="1085" data-height="530" src="https://cdn-images-1.medium.com/max/800/1*pbboIloNE6mMONU2kgeUhA.png"><figcaption class="imageCaption">Evolution of performance in commonsense reasoning benchmarks during pre-training.</figcaption></figure><ul class="postList"><li name="fde2" id="fde2" class="graf graf--li graf-after--figure">Improvement in TinyLlama’s performance with increased computational resources</li><li name="8e06" id="8e06" class="graf graf--li graf-after--li">Surpassed Pythia-1.4B accuracy in most benchmarks</li></ul><h4 name="9d8e" id="9d8e" class="graf graf--h4 graf-after--li">Problem-solving evaluation</h4><figure name="d452" id="d452" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*8jawSPuBU33Zf1dvVw1ylQ.png" data-width="767" data-height="171" src="https://cdn-images-1.medium.com/max/800/1*8jawSPuBU33Zf1dvVw1ylQ.png"><figcaption class="imageCaption">Performance of problem-solving tasks on the InstructEval Benchmark.</figcaption></figure><ul class="postList"><li name="9b09" id="9b09" class="graf graf--li graf-after--figure">TinyLlama demonstrates better problem-solving skills compared to existing models.</li></ul><h3 name="a126" id="a126" class="graf graf--h3 graf-after--li">Paper</h3><p name="b0a2" id="b0a2" class="graf graf--p graf-after--h3">TinyLlama: An Open-Source Small Language Model <a href="https://arxiv.org/abs/2401.02385" data-href="https://arxiv.org/abs/2401.02385" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">2401.02385</a></p><p name="551a" id="551a" class="graf graf--p graf-after--p graf--trailing">Recommended Reading [<a href="https://ritvik19.medium.com/list/decoderonly-language-transformers-5448110c6046" data-href="https://ritvik19.medium.com/list/decoderonly-language-transformers-5448110c6046" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Decoder-Only Language Transformers</a>]</p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="d7fb" id="d7fb" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/6ef140170da9"><time class="dt-published" datetime="2024-01-22T03:56:14.340Z">January 22, 2024</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-93-tinyllama-6ef140170da9" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

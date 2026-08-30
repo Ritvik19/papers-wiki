@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 72: UniLM</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 72: UniLM</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+UNIfied pre-trained Language Model (UNILM)is pre-trained using three types of language modeling tasks: unidirectional, bidirectional, and…
+</section>
+<section data-field="body" class="e-content">
+<section name="86c4" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="9295" id="9295" class="graf graf--h3 graf--leading graf--title">Papers Explained 72: UniLM</h3><figure name="8a10" id="8a10" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*lfir6V-nnwSEF0gtNP_9iA.png" data-width="1161" data-height="472" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*lfir6V-nnwSEF0gtNP_9iA.png"></figure><p name="656e" id="656e" class="graf graf--p graf-after--figure">UNIfied pre-trained Language Model (UNILM)is pre-trained using three types of language modeling tasks: unidirectional, bidirectional, and sequence-to-sequence prediction, by employing a shared Transformer network and utilizing specific self-attention masks to control what context the prediction conditions on, thus can be fine-tuned for both natural language understanding and generation tasks.</p><h3 name="8712" id="8712" class="graf graf--h3 graf-after--p">Methodology</h3><figure name="6f55" id="6f55" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*uyFnq3j488-xu_Ra5HCZAQ.png" data-width="1161" data-height="769" src="https://cdn-images-1.medium.com/max/800/1*uyFnq3j488-xu_Ra5HCZAQ.png"><figcaption class="imageCaption">Overview of unified LM pre-training.</figcaption></figure><p name="fe66" id="fe66" class="graf graf--p graf-after--figure">Given an input sequence x = x1 · · · x|x|, UNILM obtains a contextualized vector representation for each token, using masking to control how much context the token should attend to when computing its contextualized representation.</p><h4 name="669e" id="669e" class="graf graf--h4 graf-after--p">Input Representation</h4><p name="f354" id="f354" class="graf graf--p graf-after--h4">The input x is always added with a special start-of-sequence ([SOS]) token at the beginning, and a special end-of-sequence ([EOS]) token at the end of each segment. Texts are tokenized to subword units by WordPiece. For each input token, its vector representation is computed by summing the corresponding token embedding, position embedding, and segment embedding.</p><h4 name="a28f" id="a28f" class="graf graf--h4 graf-after--p">Backbone Network</h4><p name="3868" id="3868" class="graf graf--p graf-after--h4">The input vector x is first packed into H0 and then encoded into contextual representations at different levels of abstract Hl using an L-layer transformer. In each Transformer block, multiple self-attention heads are used to aggregate the output vectors of the previous layer. For the l-th Transformer layer, the output of a self-attention head Al is computed via:</p><figure name="0a1d" id="0a1d" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*JRg7BR8HxMawT-GmJRoykw.png" data-width="644" data-height="205" src="https://cdn-images-1.medium.com/max/800/1*JRg7BR8HxMawT-GmJRoykw.png"></figure><p name="8ec9" id="8ec9" class="graf graf--p graf-after--figure">where the previous layer’s output Hl−1 is linearly projected to a triple of queries, keys and values using respective parameter matrices, and the mask matrix M determines whether a pair of tokens can be attended to each other.</p><h4 name="e9b3" id="e9b3" class="graf graf--h4 graf-after--p">Pre training Objectives</h4><p name="9a09" id="9a09" class="graf graf--p graf-after--h4">UNILM is pre trained using four cloze tasks designed for different language modeling objectives. In a cloze task, some WordPiece tokens are randomly chosen in the input, and replaced with a special token [MASK]. Then, their corresponding output vectors computed by the Transformer network are fed into a softmax classifier to predict the masked token.</p><figure name="46a3" id="46a3" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*GZ3zMbY7PMnavPEGXOn1Jg.png" data-width="1107" data-height="295" src="https://cdn-images-1.medium.com/max/800/1*GZ3zMbY7PMnavPEGXOn1Jg.png"><figcaption class="imageCaption">The unified LM is jointly pre-trained by multiple language modeling objectives, sharing the same parameters.</figcaption></figure><h4 name="8c7c" id="8c7c" class="graf graf--h4 graf-after--figure">Pre training Setup</h4><p name="d488" id="d488" class="graf graf--p graf-after--h4">The model architecture of UNILM follows that of BERT LARGE for a fair comparison. GELU activation is used as GPT.</p><p name="0d67" id="0d67" class="graf graf--p graf-after--p">Specifically, It is a 24-layer Transformer with 1, 024 hidden size, and 16 attention heads, which contains about 340M parameters.</p><p name="3457" id="3457" class="graf graf--p graf-after--p">The weight matrix of the softmax classifier is tied with token embeddings. UNILM is initialized by BERT LARGE, and then pre-trained using English Wikipedia and BookCorpus, which have been processed in the same way as BERT. The vocabulary size is 28, 996.</p><p name="b468" id="b468" class="graf graf--p graf-after--p">The maximum length of input sequence is 512. The token masking probability is 15%. Among masked positions, 80% of the time we replace the token with [MASK], 10% of the time with a random token, and keeping the original token for the rest.</p><h3 name="c01e" id="c01e" class="graf graf--h3 graf-after--p">Evaluation</h3><h4 name="2e78" id="2e78" class="graf graf--h4 graf-after--h3">Abstractive Summarization</h4><figure name="5e70" id="5e70" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*WS3mk_Og3QfvGyBmOocXpw.png" data-width="539" data-height="289" src="https://cdn-images-1.medium.com/max/800/1*WS3mk_Og3QfvGyBmOocXpw.png"><figcaption class="imageCaption">Evaluation results on CNN/DailyMail summarization.</figcaption></figure><ul class="postList"><li name="a695" id="a695" class="graf graf--li graf-after--figure">UniLM outperforms previous abstractive systems and even the best extractive model by 0.88 points in ROUGE-L.</li></ul><figure name="f69f" id="f69f" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*ntt2UDkLNThFfgYindc8tA.png" data-width="510" data-height="317" src="https://cdn-images-1.medium.com/max/800/1*ntt2UDkLNThFfgYindc8tA.png"><figcaption class="imageCaption">: Results on Gigaword abstractive summarization.</figcaption></figure><ul class="postList"><li name="a417" id="a417" class="graf graf--li graf-after--figure">UNILM achieves better performance compared to previous models. Particularly excels in a low-resource setting, outperforming MASS by 7.08 points in ROUGE-L when using only 10,000 examples as training data.</li></ul><h4 name="ad5d" id="ad5d" class="graf graf--h4 graf-after--li">Question Answering (QA)</h4><figure name="fa21" id="fa21" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*V2rouEpm80Ir4avvSEiJ4w.png" data-width="366" data-height="143" src="https://cdn-images-1.medium.com/max/800/1*V2rouEpm80Ir4avvSEiJ4w.png"><figcaption class="imageCaption">Extractive QA results on the SQuAD development set.</figcaption></figure><figure name="6bd7" id="6bd7" class="graf graf--figure graf-after--figure"><img class="graf-image" data-image-id="1*LnKfhT9I1blZK9IovGC1tg.png" data-width="300" data-height="144" src="https://cdn-images-1.medium.com/max/800/1*LnKfhT9I1blZK9IovGC1tg.png"><figcaption class="imageCaption">Extractive QA results on the CoQA development set.</figcaption></figure><figure name="cb0a" id="cb0a" class="graf graf--figure graf-after--figure"><img class="graf-image" data-image-id="1*3MQmU2MkmN5LwjvKKJjIcQ.png" data-width="255" data-height="145" src="https://cdn-images-1.medium.com/max/800/1*3MQmU2MkmN5LwjvKKJjIcQ.png"><figcaption class="imageCaption">Generative QA results on the CoQA development set.</figcaption></figure><ul class="postList"><li name="1ce3" id="1ce3" class="graf graf--li graf-after--figure">UNILM consistently outperforms other models across datasets, both in extractive and generative QA tasks.</li><li name="f1e4" id="f1e4" class="graf graf--li graf-after--li">Achieves better F1 scores in both SQuAD and CoQA datasets, displaying its adaptability and effectiveness in handling different QA formats.</li></ul><h4 name="f2e6" id="f2e6" class="graf graf--h4 graf-after--li">GLUE Benchmark</h4><figure name="3301" id="3301" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*-MasQ8lpSpDLHif8hVelow.png" data-width="1074" data-height="180" src="https://cdn-images-1.medium.com/max/800/1*-MasQ8lpSpDLHif8hVelow.png"><figcaption class="imageCaption">GLUE test set results scored using the GLUE evaluation server.</figcaption></figure><ul class="postList"><li name="8249" id="8249" class="graf graf--li graf-after--figure">UNILM performs comparably with BERTLARGE on the GLUE tasks.</li></ul><h3 name="9188" id="9188" class="graf graf--h3 graf-after--li">Paper</h3><p name="b0a2" id="b0a2" class="graf graf--p graf-after--h3 graf--trailing">Unified Language Model Pre-training for Natural Language Understanding and Generation <a href="https://arxiv.org/abs/1905.03197" data-href="https://arxiv.org/abs/1905.03197" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">1905.03197</a></p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="d7fb" id="d7fb" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/672f0ecc6a4a"><time class="dt-published" datetime="2023-11-20T03:49:47.162Z">November 20, 2023</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-72-unilm-672f0ecc6a4a" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

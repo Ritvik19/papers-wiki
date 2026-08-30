@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained: Probabilistic Diffusion Models</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained: Probabilistic Diffusion Models</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Diffusion models are a class of powerful generative models used to generate high-quality samples and perform tasks like image denoising…
+</section>
+<section data-field="body" class="e-content">
+<section name="fff6" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="a3ae" id="a3ae" class="graf graf--h3 graf--leading graf--title">Papers Explained: Probabilistic Diffusion Models</h3><figure name="bf0b" id="bf0b" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*OXEshhTRF9Ggpj6-8PHVMg.png" data-width="1383" data-height="408" src="https://cdn-images-1.medium.com/max/800/1*OXEshhTRF9Ggpj6-8PHVMg.png"></figure><p name="3337" id="3337" class="graf graf--p graf-after--figure">Diffusion models are a class of powerful generative models used to generate high-quality samples and perform tasks like image denoising, inpainting, super-resolution, and image synthesis.</p><figure name="a5a3" id="a5a3" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*yrPuAdFlSm-jSTF3g6L-nA.png" data-width="1017" data-height="170" src="https://cdn-images-1.medium.com/max/800/1*yrPuAdFlSm-jSTF3g6L-nA.png"></figure><p name="45d5" id="45d5" class="graf graf--p graf-after--figure">Diffusion models are based on the concept of <em class="markup--em markup--p-em">diffusion processes</em> that progressively transform a data distribution to a target distribution. The key idea is to model a sequence of noisy data points that evolve through a series of diffusion steps. Each step is defined as a stochastic transformation that gradually decreases the noise level in the data. The final step of the process corresponds to the target distribution.</p><p name="6d52" id="6d52" class="graf graf--p graf-after--p">The core component of the diffusion model is the <em class="markup--em markup--p-em">diffusion process</em>, which is defined by the following recurrence relation:</p><figure name="9b4d" id="9b4d" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*TSu5OSxkuuu-IDdw.jpg" data-width="550" data-height="38" src="https://cdn-images-1.medium.com/max/800/0*TSu5OSxkuuu-IDdw.jpg"></figure><p name="6d2c" id="6d2c" class="graf graf--p graf-after--figure">where <code class="markup--code markup--p-code">x_t</code> is the data point at time <code class="markup--code markup--p-code">t</code>, <code class="markup--code markup--p-code">z_t</code> is the associated Gaussian noise, and <code class="markup--code markup--p-code">β_t</code> is the diffusion coefficient that decreases at each step. The noise <code class="markup--code markup--p-code">z_t</code> is sampled from a standard Gaussian distribution, and <code class="markup--code markup--p-code">x_0</code> is initialized with the data. The goal of training the diffusion model is to learn the time-varying parameters <code class="markup--code markup--p-code">β_t</code> and the initial data distribution <code class="markup--code markup--p-code">x_0</code>.</p><p name="e23d" id="e23d" class="graf graf--p graf-after--p">To learn the parameters effectively, the authors propose a <em class="markup--em markup--p-em">denoising autoencoder</em> as the diffusion model. It consists of an encoder that maps the data <code class="markup--code markup--p-code">x</code> and the corresponding noise <code class="markup--code markup--p-code">z</code> to a latent representation <code class="markup--code markup--p-code">h</code>, and a decoder that reconstructs the original data <code class="markup--code markup--p-code">x</code>. The training process involves updating the parameters of both the encoder and decoder networks through a denoising objective.</p><h3 name="5f7b" id="5f7b" class="graf graf--h3 graf-after--p">Training Methodology</h3><p name="be42" id="be42" class="graf graf--p graf-after--h3">The training dataset would consist of pairs of clean images and their corresponding noisy versions.</p><p name="3a22" id="3a22" class="graf graf--p graf-after--p">Diffusion Process Sampling: During training, the diffusion process is sampled to generate a sequence of noisy data points. Starting from the initial noisy data <code class="markup--code markup--p-code">x_0</code>, the process iteratively updates the data points using the recurrence relation mentioned in the Model Architecture section. By sampling the diffusion process, we obtain pairs of <code class="markup--code markup--p-code">(x_t, β_t)</code>.</p><p name="2821" id="2821" class="graf graf--p graf-after--p">Noise Scheduling: The coefficients <code class="markup--code markup--p-code">β_t</code> control the amount of noise reduction at each step of the diffusion process. The scheduling of <code class="markup--code markup--p-code">β_t</code> is essential for effective training. Commonly used scheduling strategies include linear scheduling (where <code class="markup--code markup--p-code">β_t = t / T</code>, with <code class="markup--code markup--p-code">T</code> as the total number of diffusion steps) and cosine annealing.</p><p name="f4f0" id="f4f0" class="graf graf--p graf-after--p">Denoising Autoencoder Objective: Given the pairs of <code class="markup--code markup--p-code">(x_t, β_t)</code> generated in step 1, the objective of the denoising autoencoder is to reconstruct <code class="markup--code markup--p-code">x_t</code> from the noisy input <code class="markup--code markup--p-code">x_t</code> and noise <code class="markup--code markup--p-code">z_t</code>. The reconstruction loss is usually measured using the mean squared error (MSE) or other appropriate loss functions.</p><h3 name="2ce2" id="2ce2" class="graf graf--h3 graf-after--p">Experiments</h3><p name="e9dd" id="e9dd" class="graf graf--p graf-after--h3">To represent the reverse process, we use a U-Net backbone similar to an unmasked PixelCNN++ with group normalization throughout. Parameters are shared across time, which is specified to the network using the Transformer sinusoidal position embedding. We use self-attention at the 16 × 16 feature map resolution.</p><figure name="5510" id="5510" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*ghfw04fegWdEiwVh3898Yg.png" data-width="556" data-height="429" src="https://cdn-images-1.medium.com/max/800/1*ghfw04fegWdEiwVh3898Yg.png"><figcaption class="imageCaption">CIFAR10 results. NLL measured in bits/dim</figcaption></figure><figure name="6da9" id="6da9" class="graf graf--figure graf-after--figure"><img class="graf-image" data-image-id="1*cOshuuvF8_LzwzgWAcH1rA.png" data-width="389" data-height="242" src="https://cdn-images-1.medium.com/max/800/1*cOshuuvF8_LzwzgWAcH1rA.png"><figcaption class="imageCaption">Unconditional CIFAR10 reverse process parameterization and training objective ablation. Blank entries were unstable to train and generated poor samples with out-ofrange scores.</figcaption></figure><h3 name="410d" id="410d" class="graf graf--h3 graf-after--figure">Paper</h3><p name="b0a2" id="b0a2" class="graf graf--p graf-after--h3 graf--trailing">Denoising Diffusion Probabilistic Models <a href="https://arxiv.org/abs/2006.11239" data-href="https://arxiv.org/abs/2006.11239" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">2006.11239</a></p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p></div></div></section>
+</section>
+<footer><p><a href="https://medium.com/p/2b3a9f14cb04">View original.</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

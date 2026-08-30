@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 325: Selective Self-to-Supervised Fine-Tuning (S3FT)</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 325: Selective Self-to-Supervised Fine-Tuning (S3FT)</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Selective Self-to-Supervised Fine-Tuning (S3FT) is a fine- tuning approach that first identifies the correct model responses from the…
+</section>
+<section data-field="body" class="e-content">
+<section name="5b0a" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="4185" id="4185" class="graf graf--h3 graf--leading graf--title">Papers Explained 325: Selective Self-to-Supervised Fine-Tuning (S3FT)</h3><figure name="8d6c" id="8d6c" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*MptefVGeIYTxLs_lVY6NwQ.png" data-width="1900" data-height="660" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*MptefVGeIYTxLs_lVY6NwQ.png"></figure><p name="b5f5" id="b5f5" class="graf graf--p graf-after--figure">Selective Self-to-Supervised Fine-Tuning (S3FT) is a fine- tuning approach that first identifies the correct model responses from the training set by deploying an appropriate judge. Then, it fine-tunes the model using the correct model responses and the gold response (or its paraphrase) for the remaining samples. S3FT achieves better performance than the standard supervised fine-tuning (SFT) while improving generalization. By utilizing the model’s correct responses, S3FT reduces model specialization during the fine-tuning stage.</p><h3 name="a46a" id="a46a" class="graf graf--h3 graf-after--p">Selective Self-to-Supervised Fine-Tuning (S3FT)</h3><figure name="59f3" id="59f3" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*4Nikyw8qGNnSk0CceDaNHw.png" data-width="1900" data-height="750" src="https://cdn-images-1.medium.com/max/800/1*4Nikyw8qGNnSk0CceDaNHw.png"><figcaption class="imageCaption">An overview of the proposed approach.</figcaption></figure><p name="832c" id="832c" class="graf graf--p graf-after--figure">S3FT (Self-Supervised Self-Training Fine-Tuning) aims to fine-tune large language models (LLMs) for specific tasks while minimizing the degradation of their general capabilities, a common issue with standard Supervised Fine-Tuning (SFT). It leverages two key observations:</p><ul class="postList"><li name="7116" id="7116" class="graf graf--li graf-after--p">Multiple Valid Responses: Many NLP tasks can have multiple correct answers for the same input.</li><li name="0aa4" id="0aa4" class="graf graf--li graf-after--li">Self-Learning Preservation: Teaching the model using its own generated language helps preserve its original distribution and mitigate catastrophic forgetting (losing previously learned knowledge).</li></ul><p name="195c" id="195c" class="graf graf--p graf-after--li"><strong class="markup--strong markup--p-strong">Initial Prediction:</strong></p><p name="cdc2" id="cdc2" class="graf graf--p graf-after--p">Given a training example (input xi, gold answer yi), the base model Mθ0 (pre-trained and instruction-tuned) generates a prediction ˆyi = Mθ0(xi).</p><p name="31a4" id="31a4" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Equivalence Check:</strong></p><p name="ff0e" id="ff0e" class="graf graf--p graf-after--p">The method checks if ˆyi is equivalent to the gold answer yi. This can be done using:</p><ul class="postList"><li name="5a19" id="5a19" class="graf graf--li graf-after--p">Heuristics: Simple checks like comparing key information or overall agreement.</li><li name="69b7" id="69b7" class="graf graf--li graf-after--li">LLM Judge: A more powerful LLM assesses the semantic equivalence between ˆyi and yi.</li></ul><p name="1aca" id="1aca" class="graf graf--p graf-after--li"><strong class="markup--strong markup--p-strong">Training Data Selection:</strong></p><ul class="postList"><li name="6689" id="6689" class="graf graf--li graf-after--p">If ˆyi is equivalent to yi: The pair (xi, ˆyi) is used for training. This reinforces the model’s existing knowledge and helps preserve its original distribution.</li><li name="a61f" id="a61f" class="graf graf--li graf-after--li">If ˆyi is NOT equivalent to yi: The base model Mθ0 rephrases the gold answer yi in its own language, generating ˜yi = Mθ0([xi; yi]). This attempts to bridge the gap between the gold answer and the model’s own language style.</li></ul><p name="24ef" id="24ef" class="graf graf--p graf-after--li"><strong class="markup--strong markup--p-strong">Second Equivalence Check:</strong></p><p name="d274" id="d274" class="graf graf--p graf-after--p">If rephrasing was necessary, the method checks if ˜yi is equivalent to yi.</p><p name="9d29" id="9d29" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Final Training Data Selection:</strong></p><ul class="postList"><li name="a674" id="a674" class="graf graf--li graf-after--p">If ˜yi is equivalent to yi: The pair (xi, ˜yi) is used for training. This teaches the model the desired output while still using its own “language” and minimizing drift from its original distribution.</li><li name="74de" id="74de" class="graf graf--li graf-after--li">If ˜yi is NOT equivalent to yi: The original pair (xi, yi) is used for training. This is a fallback to standard SFT when the model cannot generate a suitable paraphrase.</li></ul><figure name="af73" id="af73" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*aQ7mOHd2NLIUXVrmFbhamg.png" data-width="1320" data-height="1130" src="https://cdn-images-1.medium.com/max/800/1*aQ7mOHd2NLIUXVrmFbhamg.png"></figure><p name="c862" id="c862" class="graf graf--p graf-after--figure">Mistral-instruct-v2 (7B) is used as the base model and the judge model. For all fine-tuning, Low-Rank Adaptation (LoRA) with a rank of 8, a scaling factor of 16 and a dropout of 0.1 is used.</p><figure name="9119" id="9119" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*CvTHi3Z66zzBnma_mpmRtw.png" data-width="1880" data-height="420" src="https://cdn-images-1.medium.com/max/800/1*CvTHi3Z66zzBnma_mpmRtw.png"></figure><h3 name="61f1" id="61f1" class="graf graf--h3 graf-after--figure">Evaluation</h3><figure name="b296" id="b296" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*WDdTLEBPYV8rYVfZS49NrQ.png" data-width="1400" data-height="380" src="https://cdn-images-1.medium.com/max/800/1*WDdTLEBPYV8rYVfZS49NrQ.png"><figcaption class="imageCaption">Performance comparison of various fine tuning techniques using Accuracy(%) as the metric.</figcaption></figure><ul class="postList"><li name="93e1" id="93e1" class="graf graf--li graf-after--figure">Improved In-Domain Performance: S3FT significantly outperforms the base model and SFT on in-domain datasets (GSM8K, MBPP, NQ). It achieves comparable performance to SDFT on NQ (reading comprehension).</li></ul><figure name="2827" id="2827" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*sqVUJA0P69k4cq-t4jsvuw.png" data-width="1650" data-height="790" src="https://cdn-images-1.medium.com/max/800/1*sqVUJA0P69k4cq-t4jsvuw.png"><figcaption class="imageCaption">Generalization over other benchmarks.</figcaption></figure><ul class="postList"><li name="44e3" id="44e3" class="graf graf--li graf-after--figure">Mitigated Catastrophic Forgetting: S3FT demonstrates better generalization capabilities compared to SFT, showing significantly less performance degradation on out-of-domain benchmarks after fine-tuning. SFT suffers from substantial performance drops on these benchmarks, indicating catastrophic forgetting.</li></ul><figure name="5c2d" id="5c2d" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*Ul9OeRFdKhoajwz40YpF5A.png" data-width="1400" data-height="680" src="https://cdn-images-1.medium.com/max/800/1*Ul9OeRFdKhoajwz40YpF5A.png"><figcaption class="imageCaption">: Histogram of the log probability assigned by Mistral-7B-Instruct-v0.2 to the gold responses, paraphrase of gold responses and model’s own predictions.</figcaption></figure><ul class="postList"><li name="6e5a" id="6e5a" class="graf graf--li graf-after--figure">Impact of Gold Response Paraphrasing: Using the model’s own correct responses as training targets (as in S3FT) leads to better performance and generalization. This is attributed to the fact that model-generated responses are often closer to the model’s own distribution than gold responses or even paraphrased gold responses. Training on gold responses can shift the model’s distribution, negatively impacting generalization.</li></ul><h3 name="e1ca" id="e1ca" class="graf graf--h3 graf-after--li">Paper</h3><p name="00b3" id="00b3" class="graf graf--p graf-after--h3 graf--trailing">Selective Self-to-Supervised Fine-Tuning for Generalization in Large Language Models <a href="https://arxiv.org/abs/2502.08130" data-href="https://arxiv.org/abs/2502.08130" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">2502.08130</a></p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="d7fb" id="d7fb" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/b2602400d938"><time class="dt-published" datetime="2025-03-07T03:38:46.470Z">March 7, 2025</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-325-selective-self-to-supervised-fine-tuning-s3ft-b2602400d938" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

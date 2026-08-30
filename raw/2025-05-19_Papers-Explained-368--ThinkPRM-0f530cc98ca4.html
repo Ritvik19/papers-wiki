@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 368: ThinkPRM</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 368: ThinkPRM</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+ThinkPRM, a long CoT verifier fine-tuned on orders of magnitude fewer process labels than those required by discriminative PRMs. This…
+</section>
+<section data-field="body" class="e-content">
+<section name="a44b" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="09c9" id="09c9" class="graf graf--h3 graf--leading graf--title">Papers Explained 368: ThinkPRM</h3><figure name="e136" id="e136" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*f9QvdS40Gj0rNqDDSxDjTA.png" data-width="1960" data-height="600" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*f9QvdS40Gj0rNqDDSxDjTA.png"></figure><p name="757a" id="757a" class="graf graf--p graf-after--figure">ThinkPRM, a long CoT verifier fine-tuned on orders of magnitude fewer process labels than those required by discriminative PRMs. This approach capitalizes on the inherent reasoning abilities of long CoT models, and outperforms LLM-as-a-Judge and discriminative verifiers, using only 1% of the process labels in PRM800K, across several challenging benchmarks.</p><p name="cf8b" id="cf8b" class="graf graf--p graf-after--p">The project is available on <a href="https://github.com/mukhal/thinkprm/" data-href="https://github.com/mukhal/thinkprm/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">GitHub</a>.</p><h3 name="ab4c" id="ab4c" class="graf graf--h3 graf-after--p">ThinkPRM</h3><p name="af2c" id="af2c" class="graf graf--p graf-after--h3">The goal is to obtain a data-efficient, yet powerful, verbalized PRM. Given a problem-solution pair, the generative PRM should verify every step in the solution via an extended chain-of-thought (CoT). Generating such CoT has several advantages.</p><ol class="postList"><li name="6405" id="6405" class="graf graf--li graf-after--p">It opens a window to the reasoning process of the verifier, enabling better interpretability of its decisions.</li><li name="ee9b" id="ee9b" class="graf graf--li graf-after--li">It capitalizes on the capabilities of reasoning models and enables strong verifiers with minimal training.</li><li name="dc17" id="dc17" class="graf graf--li graf-after--li">This thinking process enables scaling up the verifier compute either by parallely sampling multiple CoTs and aggregating their decisions, or by allowing the model to revise itself in-context by forcing it to reconsider or double-check its verification.</li></ol><h4 name="79f0" id="79f0" class="graf graf--h4 graf-after--li">LLM-as-a-judge PRMs are suboptimal</h4><p name="ce15" id="ce15" class="graf graf--p graf-after--h4">The F1-score is reported over the two most challenging subsets of ProcessBench: OlympiadBench and OmniMath, each comprising 1K problem-prefix pairs.</p><figure name="ebdc" id="ebdc" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*k5XIo1wQu5k8uP4pUUw-YQ.png" data-width="1700" data-height="400" src="https://cdn-images-1.medium.com/max/800/1*k5XIo1wQu5k8uP4pUUw-YQ.png"><figcaption class="imageCaption">Average F1-score on OlympiadBench and OmniMath subsets of ProcessBench.</figcaption></figure><ul class="postList"><li name="16e5" id="16e5" class="graf graf--li graf-after--figure">The verification quality is highly sensitive to the instruction wording, e.g., changing a few words in the instruction could affect the F1-score by up to 3–4 points in some cases.</li><li name="bdb5" id="bdb5" class="graf graf--li graf-after--li">A substantial number of the generated chains include invalid judgments, i.e., chains without an extractable overall label.</li><li name="ab10" id="ab10" class="graf graf--li graf-after--li">In some cases, the final decision was in the wrong format than instructed e.g., the model tries to solve the problem from scratch rather than verify the given solution, a behavior likely stemming from the model training process.</li><li name="37e6" id="37e6" class="graf graf--li graf-after--li">Multiple instances of overthinking are noted, which prevents the model from terminating within the maximum token budget, and infinite looping/repetitions,</li></ul><h4 name="a803" id="a803" class="graf graf--h4 graf-after--li">Fine Tuning on synthetic verification chains boosts LLM-as-a-judge verification</h4><figure name="c39d" id="c39d" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*9iuCvH4IWkdbro_tZDVAbg.png" data-width="1700" data-height="580" src="https://cdn-images-1.medium.com/max/800/1*9iuCvH4IWkdbro_tZDVAbg.png"><figcaption class="imageCaption">Collecting verification chains for finetuning.</figcaption></figure><p name="a187" id="a187" class="graf graf--p graf-after--figure">Collecting real data would be expensive, so filtered synthetic data is used, also known as rejection sampling finetuning. Specifically, synthetic verification CoTs are sampled from QwQ-32B-Preview, prompting it to verify each step in a solution prefix.</p><pre data-code-block-mode="2" spellcheck="false" data-code-block-lang="plaintext" name="b0c6" id="b0c6" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content">You are given a math problem and a proposed multiple-step solution (with a step on each line):<br />[Math Problem]<br />{problem}<br />[Solution]<br />{solution}<br />Review and critique the proposed solution steps and determine whether each step is correct. <br />If the solution is incomplete, only critique the steps that are provided. <br />Your output must be in the following format:<br />Let’s verify step by step:<br />Step 1: &lt;critique&gt;...The step is \boxed{correct/incorrect}<br />Step 2: &lt;critique&gt;...The step is \boxed{correct/incorrect}<br />. . .<br />Step n: &lt;critique&gt;...The step is \boxed{correct/incorrect}<br />Once you find an incorrect step, you should stop since you don’t need to analyze the remaining steps.</span></pre><p name="90d0" id="90d0" class="graf graf--p graf-after--pre">The problems and corresponding step-by-step solutions come from the PRM800K dataset, which provides both model-generated solutions and human-verified step-level labels.</p><p name="d971" id="d971" class="graf graf--p graf-after--p">Sampling continues until 1K verification CoTs are obtained that satisfy the following criteria:</p><ol class="postList"><li name="84d0" id="84d0" class="graf graf--li graf-after--p">they must follow the expected format</li><li name="727d" id="727d" class="graf graf--li graf-after--li">these step decisions match the gold step labels from PRM800K</li><li name="ca99" id="ca99" class="graf graf--li graf-after--li">are under a certain token length, to avoid the excessive overthinking behaviour.</li></ol><p name="2298" id="2298" class="graf graf--p graf-after--li">ThinkPRM trains R1-Distill-Qwen- 1.5B and R1-Distill-Qwen-14B on the 1K chains and are referred as ThinkPRM-1.5B and ThinkPRM-14B, respectively</p><h3 name="8618" id="8618" class="graf graf--h3 graf-after--p">Evaluation</h3><figure name="195b" id="195b" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*wDMYPOQn-h0-j8Kf3jiNTw.png" data-width="1700" data-height="620" src="https://cdn-images-1.medium.com/max/800/1*wDMYPOQn-h0-j8Kf3jiNTw.png"><figcaption class="imageCaption">Best-of-N on AIME ’24 and MATH-500.</figcaption></figure><ul class="postList"><li name="d163" id="d163" class="graf graf--li graf-after--figure">ThinkPRM consistently outperforms DiscPRM and LLM-as-a-Judge methods across various benchmarks and sampling budgets.</li></ul><figure name="1fc6" id="1fc6" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*sgPvVXag8BSMQqZIe5MDMw.png" data-width="1400" data-height="620" src="https://cdn-images-1.medium.com/max/800/1*sgPvVXag8BSMQqZIe5MDMw.png"><figcaption class="imageCaption">Comparison to Off-the-shelf PRMs.</figcaption></figure><ul class="postList"><li name="e1d8" id="e1d8" class="graf graf--li graf-after--figure">ThinkPRM surpasses strong off-the-shelf PRMs (RLHFFlow-Deepseek-PRM and MATH-Shepherd-PRM) despite having fewer parameters and being trained on less data.</li></ul><figure name="0146" id="0146" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*1fY4TiwjksY0yj2ti4d-LA.png" data-width="1500" data-height="620" src="https://cdn-images-1.medium.com/max/800/1*1fY4TiwjksY0yj2ti4d-LA.png"><figcaption class="imageCaption">Best-of-N on two out-of-domain tasks: science QA (GPQA-Physics) and code generation (LiveCodeBench).</figcaption></figure><ul class="postList"><li name="df70" id="df70" class="graf graf--li graf-after--figure">ThinkPRM demonstrates strong out-of-domain (OOD) generalization capabilities, outperforming DiscPRM on GPQA-physics and LiveCodeBench. This highlights the fragility of discriminative PRMs under domain shifts compared to generative PRMs.</li></ul><figure name="dd57" id="dd57" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*_3E5Jz-NsVOwvgmVxEpFYQ.png" data-width="1500" data-height="660" src="https://cdn-images-1.medium.com/max/800/1*_3E5Jz-NsVOwvgmVxEpFYQ.png"><figcaption class="imageCaption">Parallel vs. sequential scaling of ThinkPRM compute under the same generation budget with Qwen-2.5–14B generator.</figcaption></figure><ul class="postList"><li name="9e6f" id="9e6f" class="graf graf--li graf-after--figure">Both parallel and sequential scaling of verifier compute yield comparable performance improvements, with a slight advantage observed for parallel scaling in some cases.</li></ul><h3 name="2042" id="2042" class="graf graf--h3 graf-after--li">Paper</h3><p name="00b3" id="00b3" class="graf graf--p graf-after--h3 graf--trailing">Process Reward Models That Think <a href="https://arxiv.org/abs/2504.16828" data-href="https://arxiv.org/abs/2504.16828" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">2504.16828</a></p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="d7fb" id="d7fb" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/0f530cc98ca4"><time class="dt-published" datetime="2025-05-19T03:24:54.383Z">May 19, 2025</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-368-thinkprm-0f530cc98ca4" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

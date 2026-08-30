@@ -1,0 +1,674 @@
+Source URL: https://huggingface.co/blog/open-r1/update-3
+Title: Open R1: Update #3
+
+Hugging Face's logo Hugging Face 
+
+* Models
+* Datasets
+* Spaces
+* Buckets new
+* Docs
+* Enterprise
+* Pricing
+* * Website  
+         * Tasks  
+         * HuggingChat  
+         * Collections  
+         * Languages  
+         * Organizations  
+   * Community  
+         * Blog  
+         * Posts  
+         * Daily Papers  
+         * Hardware  
+         * Learn  
+         * Discord  
+         * Forum  
+         * GitHub  
+   * Solutions  
+         * Team & Enterprise  
+         * Hugging Face PRO  
+         * Enterprise Support  
+         * Inference Providers  
+         * Inference Endpoints  
+         * Storage Buckets
+* ---
+* Log In
+* Sign Up
+
+ Back to Articles
+
+#  Open R1: Update #3 
+
+Team Article 
+
+Published March 11, 2025 
+
+ Upvote 298 
+* +292
+
+Guilherme Penedo's avatar 
+
+Guilherme Penedo guipenedo Follow 
+
+Open R1's avatar open-r1
+
+Lewis Tunstall's avatar 
+
+Lewis Tunstall lewtun Follow 
+
+Open R1's avatar open-r1
+
+Anton Lozhkov's avatar 
+
+Anton Lozhkov anton-l Follow 
+
+Open R1's avatar open-r1
+
+Hynek Kydlicek's avatar 
+
+Hynek Kydlicek hynky Follow 
+
+Open R1's avatar open-r1
+
+Edward Beeching's avatar 
+
+Edward Beeching edbeeching Follow 
+
+Open R1's avatar open-r1
+
+Loubna Ben Allal's avatar 
+
+Loubna Ben Allal loubnabnl Follow 
+
+Open R1's avatar open-r1
+
+Quentin Gallouédec's avatar 
+
+Quentin Gallouédec qgallouedec Follow 
+
+Open R1's avatar open-r1
+
+Leandro von Werra's avatar 
+
+Leandro von Werra lvwerra Follow 
+
+Open R1's avatar open-r1
+
+Agustín Piqueres Lajarín's avatar 
+
+Agustín Piqueres Lajarín plaguss Follow 
+
+Open R1's avatar open-r1
+
+Nathan Habib's avatar 
+
+Nathan Habib SaylorTwift Follow 
+
+Open R1's avatar open-r1
+
+* **Key links**
+* CodeForces-CoTs Dataset
+* Code verifiability crisis
+* International Olympiad in Informatics (IOI)  
+   * Submission strategy
+* Lessons learned from training code models on R1 traces  
+   * Lesson 1: Sample packing hurts performance for reasoning  
+   * Lesson 2: Use large learning rates for best performance  
+   * Lesson 3: Including the editorials doesn’t boost performance  
+   * Lesson 4: Prefill with <think> to consistently enable long CoT  
+   * Lesson 5: Use 8-bit optimisers to scale large models with long context
+* Updates  
+   * GRPO Updates  
+   * Open R1 Math-Dataset update  
+   * The Reasoning Course
+* Community highlights
+* What’s next?
+
+image/png 
+
+Over the last few weeks, we have focused our efforts on reproducing the competitive programming (code reasoning) aspects of the DeepSeek-R1 recipe.
+
+In this post, we are excited to share:
+
+* The construction of CodeForces-CoTs: a dataset of nearly 100k high-quality samples distilled from R1 to produce solutions in C++ and Python.
+* The IOI benchmark: a new benchmark of challenging problems from the 2024 International Olympiad in Informatics (IOI).
+* OlympicCoder: two fine-tuned 7B and 32B code models that outperform closed-source frontier models like Claude 3.7 Sonnet on IOI problems.
+
+Here’s an overview of how the OlympicCoder models stack up against various instruction fine-tuned and reasoning models. We find that training models on CodeForces-CoTs produces top-tier performance, with OlympicCoder-32B outperforming all open-weight models we tested, including some that are over 100x larger 🤯.
+
+image/png
+
+Read on to learn how we built the dataset, benchmark and models!
+
+## **Key links** 
+
+**CodeForces**
+
+* Problems dataset: `open-r1/codeforces`
+* DeepSeek-R1 cots dataset: `open-r1/codeforces-cots`
+
+**International Olympiad in Informatics (IOI)**
+
+* Problem statements dataset (IOI’2020 - IOI’2024): `open-r1/ioi`
+* Test cases: `open-r1/ioi-test-cases`
+* Official (ground truth) solutions: `open-r1/ioi-sample-solutions`
+* DeepSeek-R1 cots dataset (IOI’2020-IOI’2023): `open-r1/ioi-cots`
+* Evaluation data for 40+ leading models on IOI’2024: `open-r1/ioi-2024-model-solutions`
+* Code to run generations and evaluations
+
+**OlympicCoder**
+
+* 7B Model: `open-r1/OlympicCoder-7B`
+* 32B Model: `open-r1/OlympicCoder-32B`
+
+##  CodeForces-CoTs Dataset 
+
+CodeForces is one of the most popular websites among competitive programmers, hosting regular contests where participants must solve challenging algorithmic optimization problems. The challenging nature of these problems makes them an interesting dataset to improve and test models’ code reasoning capabilities.
+
+While previous efforts such as DeepMind’s CodeContests dataset have compiled a large number of CodeForces problems, today we are releasing our own `open-r1/codeforces` dataset, with more than **10k problems** covering the very first contests all the way to 2025, **\~3k** of which were not included in DeepMind’s dataset. Additionally, for around 60% of the problems, we have **included the _editorial_,** which is an explanation, written by the contest organizers, explaining the correct solution. You will also find 3 correct solutions per problem extracted from the official website.
+
+Furthermore, we are releasing `open-r1/codeforces-cots`, which contains chain of thought generations produced by DeepSeek-R1 on these problems, where we asked the model to produce solutions in C++ (the main language used in competitive programming) and Python, totaling close to **100k** samples. 
+
+We fine-tuned Qwen2.5 Coder Instruct 7B and 32B on this dataset, resulting in our OlympicCoder-7B and OlympicCoder-32B models. You will find more details on these models further along in the blogpost.
+
+##  Code verifiability crisis 
+
+While datasets like DeepMind’s contests and others containing competitive programming problems include test cases and claim to be verifiable, these test cases are often a small subset of the full suite used on contest websites. CodeForces, in particular, caps displayed test cases at \~500 characters, which means that **these datasets only contain the shorter, easier test cases that fit into this limit.** 
+
+As an example, we took 7 problems for which the R1 generated solution passed all the public test cases and tried submitting them to the CodeForces platform:
+
+image/png
+
+Although they passed the shorter tests, every single one of these solutions failed on the full test set. This underscores the need for new fully verifiable competitive programming dataset. While we plan to try model-based solutions to generate and validate additional challenging tests that may be added to our CodeForces dataset in the future, for now we went looking for fully available problem data elsewhere.
+
+##  International Olympiad in Informatics (IOI) 
+
+The International Olympiad in Informatics (IOI) is one of five international science olympiads (if you are familiar with AIME, IOI is the programming equivalent of IMO, for which the very best students who take part in AIME are invited) and tests a very select group of high school students (4 per country) in complex algorithmic problems.
+
+The problems are extremely challenging, and the full test sets are available and released under a permissive (CC-BY) license. This means that IOI is the perfect dataset to test a model's code reasoning capabilities.
+
+In IOI, each problem has several subtasks, each with different input constraints. To solve a subtask, a submission needs to pass all of its test cases within the (strict) time limits. While the final subtask is usually the “full problem”, some subtasks effectively describe a much easier (more constrained) problem, and contestants very often target specific subtasks to get partial scores instead of just trying to solve the full problem (perfect scores are relatively rare). 
+
+Following a recent OpenAI paper where o1 live competed at IOI’2024 (the last iteration), we similarly processed all problems from IOI’2024 (as well as previous IOIs up until 2020), and split them into their subtasks, such that each prompt would ask models to solve one specific subtask. We release the processed problem statements, as well as all grading/checker files required to run them and test cases in `open-r1/ioi` and `open-r1/ioi-test-cases`.
+
+We created custom code to run solutions (many problems have complicated setups, requiring a “manager” process communicating with several processes running the user submission and special checkers to validate solutions) and to grade according to IOI rules, which is available at <https://github.com/huggingface/ioi>, and **evaluated over 40 leading reasoning models on IOI’2024**.
+
+At IOI, contestants have a 50 submission limit per problem. We generated 50 submissions for each subtask and then applied a selection strategy similar to the one used by OpenAI to get scores under contest conditions for each problem. Results can be found below, where the horizontal lines represent the threshold for bronze, silver and gold models from real contest data. While o1 comes very close to bronze, ultimately no model would reach the medal threshold (50th percentile of contestants).
+
+image/png
+
+Our OlympicCoder models (in red), do fairly well compared to other frontier models, even surpassing some closed source models (in gold) such as claude-3.7-sonnet-thinking, and OlympicCoder-32B even outperforms o1-mini and DeepSeek-R1, the model we distilled from, on the 50 submission limit setting.
+
+###  Submission strategy 
+
+An important note is that our submission strategy may penalize non reasoning models, such as Qwen-2.5-Coder-32B-Instruct, OlympicCoder-32B’s base model. To simulate real contest conditions, in which a submission’s score is only known _after_ it is actually submitted, we employed a round robin submission strategy similar to the one employed by OpenAI for o1-ioi: we start by submitting a solution that targets the last subtask of the problem, then one targeting the second to last, and so on, only evaluating a solution when it is picked for submission. We skip over submissions targeting subtasks that have already been solved by previously selected submissions, and within each targeted subtask we prefer submissions from _longer generations_ — which is a criteria that makes sense for reasoning models, but less so for other models.
+
+If we remove the 50 submission limit (which would place us outside the contest conditions), and evaluate all submissions we generated (50 per subtask), we obtain the following results:
+
+image/png
+
+##  Lessons learned from training code models on R1 traces 
+
+While creating the OlympicCoder models, we ran a large number of SFT experiments to understand the role of various filters applied to the CodeForces dataset. We found the following subsets of `open-r1/codeforces-cots` gave the best overall performance:
+
+* `solutions` : R1 generated solutions given the problem statement.
+* `solutions_w_editorials` : R1 generated solutions given the problem statement and an explanation which explains the correct solution.
+
+Note that we only focused on the C++ solutions, but blending in the Python solutions would likely boost performance even further.
+
+We used LiveCodeBench as a test bed for our models and then ran the best performing checkpoints through the much harder IOI benchmark. We tested various hyperparameter configurations to train our models and settled on the following:
+
+* Models: Qwen2.5 Coder Instruct 7B and 32B
+* Epochs: 10
+* Effective batch size: 128
+* Learning rate: 4e-5
+* Scheduler: Cosine with a decay to 10% of the peak learning rate
+* Context size: 32,768 tokens for 7B and 22,528 tokens 32B
+
+Below we share some lessons we learned from tuning the Qwen2.5 Coder models on R1 reasoning traces.
+
+###  Lesson 1: Sample packing hurts performance for reasoning 
+
+Sample packing is a widely used method to efficiently process variable-length sequences and accelerate training. As shown in the figure below, the way this works concatenating training samples (coloured) into equal sized chunks that removes the need to use padding tokens (gray) across batches:
+
+image/png
+
+With packing, samples can overlap across the boundaries of each chunk, but in practice this doesn’t matter too much if most of the samples are much smaller than the chunk size.
+
+However, for the reasoning traces we distilled from R1, we wondered whether packing could hurt performance because many traces are long and the fraction of clipped answers could be high. This means it may be difficult to train the model to attend to long context information, particularly when the question and answer have been packed into different chunks.
+
+As shown in the striking figure below, we found that packing substantially hurts the model’s performance: with packing, the model is barely able to solve problems from LiveCodebench, but without packing, the performance improves over several epochs before plateauing out:
+
+image/png
+
+We suspect this stark difference is accentuated by the fact that our training sets only consist of C++ solutions, while LiveCodeBench only evaluates performance on Python. Nevertheless, we found that across all datasets we ablated, packing was consistently worse.
+
+###  Lesson 2: Use large learning rates for best performance 
+
+For most SFT experiments that we’ve run with Qwen models, a learning rate of 2e-5 is typically good enough to get strong performance. However, when applying SFT with reasoning data to an existing _instruct_ model, we found that significant performance gains could be had by using a much larger learning rate of 4e-5\. As shown in the figure below, the difference across each doubling of the learning rate amounted to almost 10 points improvement on LiveCodeBench!
+
+image/png
+
+###  Lesson 3: Including the editorials doesn’t boost performance 
+
+When we created the `solutions_w_editorials` subset of `open-r1/codeforces-cots`, our intuition was that by providing R1 with the problem and solution, we would obtain better reasoning traces. Surprisingly, this intuition was not borne out during evaluation, with the naive sampling from problem statements giving a modest, yet consistent boost during training:
+
+image/png
+
+###  Lesson 4: Prefill with `<think>` to consistently enable long CoT 
+
+While vibe testing some of our models, we encountered a peculiar phenomenon: if prompted with in-domain queries (like competitive coding), the model would emit the expected long CoT within `<think>` and `</think>` tokens, followed by the final answer. However, for out-of-domain queries like “What is the capital of Switzerland”, the model would revert back to the behaviour of the original instruct model! 
+
+Here’s an example of a simple query failing to return the long CoT:
+
+> User: What is 1+1?
+> 
+> Assistant: 2\. It is one of the simplest mathematical addition problems. 1 + 1 equals 2\. This problem is often used as a riddle or puzzle, particularly in job interviews or online tests to determine a candidate's ability to solve problems quickly. While it may seem obvious to most people, it can be a useful question for employers to assess critical thinking and problem-solving skills. Additionally, it is an important concept in mathematics and forms the basis for more complex arithmetic operations. So next time someone asks you what 1+1 is, you can confidently state that it is 2!
+> 
+> ```python
+> # Define a function to calculate sum of two numbers
+> def add_numbers(a, b):
+>    return a + b
+> 
+> # Example usage of the function
+> result = add_numbers(1, 1)
+> print("The sum of 1 + 1 is:", result)
+> 
+> ```
+> 
+> In this solution, we define a function `add_numbers` that takes two parameters `a` and `b` and returns their sum. We then call this function with 1 and 1, storing the result in the variable `result`, which is then printed. This demonstrates a straightforward way to compute and display the sum of two integers. The example serves as a simple yet effective illustration of basic arithmetic operations in Python.
+
+However, if we _prefill_ the assistant's response with `<think>` the desired behaviour emerges:
+
+> User: What is 1+1?
+> 
+> Assistant: <think> Okay, I need to answer the question "What is 1+1?" Let's see. Oh right, 1 plus 1 equals 2\. But wait, maybe there's more to it. Like, what if someone asks in a different way? Or perhaps considering other number bases? Like in base 10 it's 2, but in binary it's 10\. Hmm, but the question is straightforward. The user probably expects the simple answer. So the correct answer here is 2\. Should I just state that? </think> Yes, 1 + 1 is equal to 2\. Is there anything else you'd like to know about this calculation?
+
+This suggests that when distilling reasoning traces into an existing post-trained model, one should **enforce prefilling by default in the final model’s chat template**. Incidentally, this is also what DeepSeek does with their distilled models and the behaviour above may be the reason why. (It is also amusing to speculate whether hitting the “think” button on popular chat UIs is simply prefilling the assistant response 🙂).
+
+Combining all these lessons produced OlympicCoder-7B, which matches the performance of DeepSeek’s distilled model and significantly improves on the base Qwen2.5-Coder one:
+
+image/png
+
+###  Lesson 5: Use 8-bit optimisers to scale large models with long context 
+
+Throughout the training of OlympicCoder-7B, we found DeepSpeed ZeRO-3 was sufficient to train each model with 32k context on a single node of 8 x H100s. However, when we tried scaling up our recipe to 32B, we ran into a host of memory issues. In particular, our runs would OOM once the context was scaled beyond 20k tokens, even on 16 nodes 😢. This wasn’t ideal as 20% of the CodeForces-CoTs traces are larger than 20k tokens, which means they would get truncated during training.
+
+The root of the problem is that `transformers` and `trl` do not yet support _context parallelism,_ although see this issue to track progress.
+
+In the meantime, we explored a variety of memory saving techniques and found that combining FSDP with the `paged_adamw_8bit` optimizer allowed us to scale the context to 22,528 tokens: still not ideal, but only 9% of the data was truncated.
+
+##  Updates 
+
+###  GRPO Updates 
+
+Recent progress has been made to improve the implementation of GRPO in TRL, bringing enhancements that further boost **efficiency, scalability, and resource utilization**. Here’s a summary of the most important changes since the last update:
+
+**Generation Reuse**
+
+One of the main bottlenecks of GRPO is the same as for any online method: generation takes time. A key way to make GRPO more sample-efficient is to reuse generated samples multiple times during optimization instead of discarding them after a single use. This technique was actually introduced a long time ago with PPO.
+
+For GRPO, the number of times a sample is reused is denoted as _μ_.
+
+image/png
+
+It is now possible to reuse generated samples multiple times, significantly speeding up the process.
+
+```python
+from trl import GRPOConfig
+
+training_args = GRPOConfig(..., num_iterations=...)
+
+```
+
+image/png
+
+However, be cautious—if _μ_ is too large, it can negatively impact learning. Based on our experience, a good balance is between **2 and 4**.
+
+**Reward Weighting**
+
+When training a model, not all rewards are equally important. For example, we may want the model to prioritize **correctness** over **formatting,** rather than treating both aspects equally.
+
+To address this, it is now possible to **assign different weights to different rewards**, allowing finer control over the optimization process. By adjusting these weights, we can guide the model to focus more on the aspects that matter most for a given task.
+
+```python
+from trl import GRPOConfig, GRPOTrainer
+
+def very_important_reward(completions, **kwargs):
+    ...
+
+def less_important_reward(completions, **kwargs):
+    ...
+
+training_args = GRPOConfig(
+    ...,
+    reward_weights=[0.9, 0.1],
+)
+trainer = GRPOTrainer(
+    ...,
+    reward_funcs=[very_important_reward, less_important_reward],
+    args=training_args,
+)
+
+```
+
+**Other Enhancements**
+
+Several smaller but impactful improvements have been made to GRPO:
+
+* **PEFT + vLLM Integration** – It is now possible to use **PEFT (Parameter-Efficient Fine-Tuning) and vLLM together**, combining efficient fine-tuning with optimized inference for better scalability.
+* **Gradient Checkpointing** – This feature has been added to reduce memory consumption during training by recomputing certain activations instead of storing them, making it possible to train larger models.
+* **Optimized Selective Log Softmax Computation** – A new method for computing log softmax has been introduced, reducing memory peaks during training.
+
+**Next Steps and Work in Progress**
+
+The current focus is on two key areas:
+
+1. **Improving Generation Speed** – Further optimizations (like static caching) are being explored to make the generation process even faster.
+2. **Scaling GRPO to Multi-Node Settings** – Work is underway to enable GRPO to scale across multiple nodes, making it possible to train much larger models.
+
+###  Open R1 Math-Dataset update 
+
+We have further enriched our previously released OpenR1-Math-Raw dataset with new metadata to enable more informed decision-making during filtering and verification. Specifically, we have added the following columns:
+
+* **`reparsed_answers`**: We observed that many entries in the `answer` column were either improperly formatted in LaTeX or contained only partial answers. Additionally, since some questions are multiple-choice, both the correct answer itself and the corresponding letter should be considered valid responses. To address this, we re-extracted all answers from the `solution` column using the Llama-3.3-70B-Instruct model to ensure `reparsed_answers` includes both the correct answer and, in multiple-choice cases, the corresponding letter as well. We believe this addition will be highly valuable to the community, improving both column grading accuracy and verification processes during GRPO.
+* **`correctness`**: Running answer verification can be resource-intensive when relying on model based one. Therefore, we evaluated all solutions using Llama-3.3-70B-Instruct as a judge alongside with `math_verify` run against both the `answer` and `reparsed_answers` columns.
+
+**Experiment Details**
+
+To help the community understand the impact of verification-based filtering on math datasets for SFT distillation, we conducted several ablation experiments. Starting with a randomly selected pool of 200k samples, we created six distinct SFT datasets based on the following filtering rules:
+
+1. **`no_restrictions` (200k)** \- No filtering applied.
+2. **`llama_verification` (124k)** \- Samples that were graded as correct by LLAMA-70B verification.
+3. **`math_verify_answer` (88.7k)** \- Samples verified as correct by `math_verify` on the `answer` column.
+4. **`math_verify_reparsed`** (101k) - Samples verified as correct by `math_verify` on the `reparsed_answers` column.
+5. **`llama_verification_or_math_verify_reparsed` (LorMV) (154k)** \- The union of datasets 2 and 4.
+6. **`llama_verification_and_math_verify_reparsed` (LandMV) (71.2k)** \- The intersection of datasets 2 and 4.
+
+**Training and Evaluation**
+
+For filtering in data-constrained settings, both precision and recall are important considerations. Therefore, we didn't run each experiment with the same token budget but rather trained on single epoch over all data. For the model, we chose Qwen7B-Instruct and fine-tuned it with RoPE extension to a 32k context length and cosine schedule. To track performance progression, we evaluated the models at every 40th step on AIME-24, AIME-25, and MATH-500 using `lighteval`. The results are summarized below:
+
+image/png
+
+**Key Observations**
+
+* **Verification significantly impacts early-stage performance.** Filtering proved especially important during the first 40 steps. On the MATH-500 dataset, stricter verification methods delivered a substantial performance boost in early stages (e.g., `no_restrictions` scored 0.61 vs. `LandMV` at 0.72). However, as training progressed, this performance gap diminished, and having more samples proved beneficial—even if some contained errors.
+* **Training loss differed notably between datasets.** Datasets filtered using `math_verify` exhibited consistently lower training loss. We assume that `math_verify` effectively identifies specific subsets of tasks (primarily numeric ones), whereas Llama-based verification or unfiltered datasets maintain a broader variety of data.
+* **Surprisingly, unfiltered datasets did not suffer severe degradation.** Despite containing incorrect samples, the `no_restrictions` dataset maintained competitive performance over extended training runs.
+
+**Recommendations**
+
+Based on our findings, the optimal filtering method depends heavily on the training token budget. For shorter runs, stricter verification methods offer significant advantages. As a general recommendation, we recommend combining llama verification with `math_verify`—as done in the `LorMV` dataset.
+
+###  The Reasoning Course 
+
+The Hugging Face learn team are working on accessible material on Reinforcement Learning, GRPO, and training reasoning models with TRL. It includes tutorials and demos from Maxime Labonne, Unsloth, and Marimo. Check out the reasoning course if you’re looking for a good place to get started in this fast moving field! 
+
+##  Community highlights 
+
+The last few weeks have seen continued exploration of GRPO across a wide variety of tasks, along with several new reasoning datasets that target domains that are broader than math and code. Here’s some of the releases we found especially exciting:
+
+**GRPO explorations**
+
+* The optimisation wizards at Unsloth have further reduced the amount of VRAM needed to train GRPO models with LoRA, now down to 5GB for a 1.5B model 🧙
+* Kalomaze has written an excellent blog post on choosing good hyperparameters for GRPO. They also observe that models smaller than 7B tend to converge much slower, which implies you should explore new ideas at these scales before concluding they don’t work.
+* Hrishbh Dalal has shown that you can use GRPO to teach LLMs to solve Sudoku puzzles!
+* Yutai Li and co-authors have published a very good paper which shows that for smol models, it is best to distill a **mix** of long and short CoT data from more powerful teachers.
+
+**Reasoning datasets**
+
+* KodKode have released a very large dataset of \~500k samples for programming. This looks like an excellent complement to CodeForces-CoTs and we are excited to train some new models on it!
+* The team at GeneralReasoning have started releasing high-quality and diverse datasets like GeneralReasoning/GeneralThought-323K that cover both more domains and models than what is publicly available. They also have a nice website that lets you explore the data, along with
+
+##  What’s next? 
+
+With this update, we now have the main pieces in place to complete Steps 1 and 2 of our reproduction plan:
+
+image/png
+
+In the coming weeks, we plan to focus heavily on:
+
+* Perfecting the blend of distilled datasets to train general-purpose reasoners.
+* Scaling up GRPO to larger models like `Qwen/Qwen2.5-Coder-32B-Instruct` so we can derive R1-Zero variants.
+* Combining reward signals from multiple domains like math and code, as well as folding in reward models to score non-reasoning data.
+
+##  Models mentioned in this article 2
+
+open-r1/OlympicCoder-32B  Text Generation •  33B • Updated Mar 31 •  43 •  157 
+
+open-r1/OlympicCoder-7B  Text Generation •  8B • Updated Mar 31 •  327 •  185 
+
+##  Datasets mentioned in this article 10
+
+KodCode/KodCode-V1  Viewer • Updated Mar 17, 2025 • 487k •  5.31k •  113 
+
+deepmind/code\_contests  Viewer • Updated Jun 11, 2023 • 4.04k •  43.7k •  227 
+
+open-r1/OpenR1-Math-Raw  Viewer • Updated Feb 24, 2025 • 516k •  599 •  77 
+
+open-r1/codeforces  Viewer • Updated May 19, 2025 • 34.8k •  9.48k •  101 
+
+open-r1/codeforces-cots  Viewer • Updated Mar 28, 2025 • 254k •  6.46k •  221 
+
+open-r1/ioi  Viewer • Updated Mar 12, 2025 • 270 •  259 •  12 
+
+open-r1/ioi-2024-model-solutions  Viewer • Updated Mar 12, 2025 • 105k •  313 •  6 
+
+open-r1/ioi-cots  Viewer • Updated Mar 10, 2025 • 11.5k •  41 •  17 
+
+open-r1/ioi-sample-solutions  Viewer • Updated Mar 9, 2025 • 5.23k •  76 •  3 
+
+open-r1/ioi-test-cases  Viewer • Updated Mar 12, 2025 • 4.24k •  119 •  3 
+
+##  Papers mentioned in this article 1
+
+Proximal Policy Optimization Algorithms  Paper • 1707.06347 • Published Jul 20, 2017 •  11 
+
+More from this author
+
+Open R1: Update #4  49 March 26, 2025 
+
+ Hot Open R1: Update #2  219 February 10, 2025 
+
+### Community
+
+aaurelions
+
+Mar 11, 2025 
+
+Thank you for the article. It would be interesting to see the code that runs for the train model. For example I would like to train a model in a new programming language, how do I do that?
+
+See translation 
+
+* 1 reply
+· 
+
+👍
+
+8
+
+8
+
++
+
+lewtun
+
+Article author Mar 18, 2025 
+
+Hi @aaurelions  we trained the models using the open-r1 codebase. You can find and adapt the recipes here: <https://github.com/huggingface/open-r1/tree/main/recipes#olympiccoder>
+
+See translation 
+
+👀
+
+2
+
+2
+
++
+
+nlpyang
+
+Mar 12, 2025 
+
+KodKode -> KodCode
+
+🤝
+
+2
+
+2
+
++
+
+Reply
+
+mx1024
+
+Mar 13, 2025 
+
+How is packing implemented in your code? Have you tried using a 4D attention mask to avoid the overlap between samples that you mentioned?
+
+See translation 
+
+* 1 reply
+· 
+
+lewtun
+
+Article author Mar 18, 2025 
+
+Since we used FlashAttention2, we don’t need to use 4D packing. Instead we pack sequences in 2D and let FA2 handle the rest. Axolotl has a nice visualisation here: <https://axolotl-ai-cloud.github.io/axolotl/docs/multipack.html>
+
+See translation 
+
+lucas110550
+
+Mar 14, 2025 
+
+•
+
+edited Mar 14, 2025 
+
+strong!
+
+Reply
+
+Leon-Leee
+
+Mar 14, 2025 
+
+SFT-only using open-r1/codeforces produced top-tier performance? Impressive!
+
+Will you do coding RL next?
+
+See translation 
+
+* 1 reply
+· 
+
+lewtun
+
+Article author Mar 18, 2025 
+
+Yep, this is next on the list - stay tuned!
+
+See translation 
+
+lionelchg
+
+Mar 23, 2025 
+
+Hi, thanks a for the article it's super useful !! Small typos if I'm not mistaken :): 
+
+* "While o1 comes very close to bronze, ultimately no model would reach the medal threshold (50th percentile of contestants)." -> "While o3-mini comes very close to bronze, ultimately no model would reach the medal threshold (50th percentile of contestants)."
+* "Our OlympicCoder models (in red), do fairly well compared to other frontier models, even surpassing some closed source models (in gold)" -> "Our OlympicCoder models (in purple), do fairly well compared to other frontier models, even surpassing some closed source models (in gold)"
+
+See translation 
+
+Reply
+
+k1z
+
+Apr 1, 2025 
+
+Which checkpoint did you use in the end to evaluate on IOI? Was it the one after 10 epochs or was it a checkpoint in between?
+
+See translation 
+
+Reply
+
+simone-papicchio
+
+Apr 29, 2025 
+
+•
+
+edited May 1, 2025 
+
+Great blog post! Thanks for this amazing work! We were able to train a text-to-code model for SQL, achieving performance comparable to models with over 400B parameters using a 7 B model!
+
+Check out our Think2SQL paper here: <https://huggingface.co/papers/2504.15077>
+
+Thank you again for the outstanding work!
+
+See translation 
+
+Reply
+
+EditPreview
+
+Upload images, audio, and videos by dragging in the text input, pasting, or clicking here.
+
+Tap or paste here to upload images
+
+ Comment 
+
+· Sign up or log in to comment
+
+ Upvote 298 
+* +286
+
+##  Models mentioned in this article 2
+
+open-r1/OlympicCoder-32B  Text Generation •  33B • Updated Mar 31 •  43 •  157 
+
+open-r1/OlympicCoder-7B  Text Generation •  8B • Updated Mar 31 •  327 •  185 
+
+##  Datasets mentioned in this article 10
+
+KodCode/KodCode-V1  Viewer • Updated Mar 17, 2025 • 487k •  5.31k •  113 
+
+deepmind/code\_contests  Viewer • Updated Jun 11, 2023 • 4.04k •  43.7k •  227 
+
+open-r1/OpenR1-Math-Raw  Viewer • Updated Feb 24, 2025 • 516k •  599 •  77 
+
+open-r1/codeforces  Viewer • Updated May 19, 2025 • 34.8k •  9.48k •  101 
+
+open-r1/codeforces-cots  Viewer • Updated Mar 28, 2025 • 254k •  6.46k •  221 
+
+open-r1/ioi  Viewer • Updated Mar 12, 2025 • 270 •  259 •  12 
+
+open-r1/ioi-2024-model-solutions  Viewer • Updated Mar 12, 2025 • 105k •  313 •  6 
+
+open-r1/ioi-cots  Viewer • Updated Mar 10, 2025 • 11.5k •  41 •  17 
+
+open-r1/ioi-sample-solutions  Viewer • Updated Mar 9, 2025 • 5.23k •  76 •  3 
+
+open-r1/ioi-test-cases  Viewer • Updated Mar 12, 2025 • 4.24k •  119 •  3 
+
+##  Papers mentioned in this article 1
+
+Proximal Policy Optimization Algorithms  Paper • 1707.06347 • Published Jul 20, 2017 •  11 
+
+ System theme 
+
+Company
+
+TOS Privacy About Careers 
+
+Website
+
+Models Datasets Spaces Pricing Docs

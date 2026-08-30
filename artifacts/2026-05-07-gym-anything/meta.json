@@ -1,0 +1,12 @@
+{
+  "query": "Interactive artifact explaining the Gym-Anything paper",
+  "created": "2026-05-07",
+  "note": "Figures rasterized from raw Gym-Anything PDF via PyMuPDF (embedded image rects); regenerate with build_figures.py.",
+  "sources": ["Gym-Anything", "CUA-World", "Computer-use Agents"],
+  "figures": [
+    "figures/overview-pipeline-crop.png",
+    "figures/software-selection-crop.png",
+    "figures/creation-audit-phase2.png",
+    "figures/verification-phase4.png"
+  ]
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 165: Reformer</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 165: Reformer</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Reformer by Google Research is designed with new methods to reduce memory usage and computation time. As a result, this model can handle…
+</section>
+<section data-field="body" class="e-content">
+<section name="936c" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="828d" id="828d" class="graf graf--h3 graf--leading graf--title">Papers Explained 165: Reformer</h3><figure name="814c" id="814c" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*YlXiXZifOA1L1YbZGyKR8Q.png" data-width="1120" data-height="279" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*YlXiXZifOA1L1YbZGyKR8Q.png"></figure><p name="dbd7" id="dbd7" class="graf graf--p graf-after--figure">Reformer by Google Research is designed with new methods to reduce memory usage and computation time. As a result, this model can handle much longer sentences compared to traditional autoregressive transformers.</p><h3 name="7116" id="7116" class="graf graf--h3 graf-after--p">Model Architecture:</h3><p name="3ee0" id="3ee0" class="graf graf--p graf-after--h3">The Reformer architecture builds upon the foundations of the original Transformer model introduced in the “Attention is All You Need” paper. However, the Reformer introduces several key innovations to make it more efficient and scalable.</p><ol class="postList"><li name="d92b" id="d92b" class="graf graf--li graf-after--p">Locality-Sensitive Hashing (LSH): The Reformer replaces the standard self-attention mechanism in Transformers with a locality-sensitive hashing (LSH) mechanism. Traditional Transformers employ a softmax function that computes attention scores for all pairs of tokens in a sequence, resulting in quadratic complexity with respect to the sequence length (O(N²)). LSH, on the other hand, allows the Reformer to perform approximate nearest neighbor search, reducing the complexity to O(N log N). This enables the model to efficiently handle long sequences without sacrificing performance.</li><li name="30ed" id="30ed" class="graf graf--li graf-after--li">Reversible Layers: Reversible layers are introduced in the Reformer architecture to enable reversible computation. In a standard Transformer, intermediate activations need to be stored for backpropagation, leading to increased memory requirements for longer sequences. Reversible layers allow the model to recompute the activations during backpropagation, reducing the memory consumption and enabling the processing of ultra-long sequences.</li><li name="890a" id="890a" class="graf graf--li graf-after--li">Chunking: To further support processing long sequences, the Reformer employs a chunking mechanism. The input sequence is divided into fixed-size chunks, which are processed independently in parallel. Chunking allows the Reformer to efficiently scale to much longer sequences than traditional Transformers.</li><li name="fe11" id="fe11" class="graf graf--li graf-after--li">Causal Masking: The Reformer uses a causal masking technique to ensure that each token can only attend to previous tokens in the sequence. This masking is essential for autoregressive tasks like language modeling, where future tokens should not be accessible during decoding.</li><li name="6aa6" id="6aa6" class="graf graf--li graf-after--li">Shared-QK Attention: Unlike the original Transformer, where separate learnable matrices are used for query (Q) and key (K) in each attention head, the Reformer employs a shared-QK attention mechanism. This approach further reduces memory requirements and computational complexity.</li></ol><h4 name="078e" id="078e" class="graf graf--h4 graf-after--li">Locality-Sensitive Hashing (LSH)</h4><figure name="6264" id="6264" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*KLyewY5Ie4VVPZnFe1vn5g.png" data-width="850" data-height="344" src="https://cdn-images-1.medium.com/max/800/1*KLyewY5Ie4VVPZnFe1vn5g.png"><figcaption class="imageCaption">Simplified depiction of LSH Attention showing the hash-bucketing, sorting, and chunking steps and the resulting causal attentions. (a-d) Attention matrices for these varieties of attention</figcaption></figure><p name="2346" id="2346" class="graf graf--p graf-after--figure">The main idea behind LSH is to divide the input sequence into fixed-size buckets and perform attention only within the same bucket. This reduces the quadratic complexity of the standard transformer’s attention mechanism.</p><p name="6ce6" id="6ce6" class="graf graf--p graf-after--p">Let’s define the number of buckets as B. To hash sequence positions to buckets, we use a family of hash functions. A hash function h_i for each position i takes the position index and maps it to a bucket index:</p><p name="dd5c" id="dd5c" class="graf graf--p graf-after--p">h_i: {1, 2, …, L} → {1, 2, …, B}</p><p name="7865" id="7865" class="graf graf--p graf-after--p">The hash functions should be designed such that nearby positions in the sequence are more likely to be hashed to the same bucket. The authors propose using a locality-sensitive hash function, specifically the “sorted-LSH” family, to achieve this behavior.</p><h4 name="dea8" id="dea8" class="graf graf--h4 graf-after--p">Chunking and Attention Masking</h4><p name="f937" id="f937" class="graf graf--p graf-after--h4">After hashing the sequence positions into buckets, each bucket contains a fixed number of tokens (e.g., tokens per bucket). This allows for efficient parallelization since attention only needs to be computed within each bucket.</p><p name="9ebe" id="9ebe" class="graf graf--p graf-after--p">To attend only to tokens within the same bucket, an attention mask is applied. The attention mask matrix M ∈ {0, -∞}^(L x L) is created such that M_ij = 0 if tokens i and j belong to the same bucket, and M_ij = -∞ otherwise. This ensures that tokens in different buckets do not attend to each other.</p><h4 name="895c" id="895c" class="graf graf--h4 graf-after--p">Reversible Computation</h4><p name="d1c3" id="d1c3" class="graf graf--p graf-after--h4">The Reformer employs reversible layers to enable the efficient computation of gradients during both the forward and backward passes. Reversible layers allow us to reconstruct intermediate activations during the backward pass from the forward pass.</p><p name="793a" id="793a" class="graf graf--p graf-after--p">Let’s denote the input to a reversible layer as x, and the output as y. The reversible layer’s forward pass can be written as:</p><p name="46eb" id="46eb" class="graf graf--p graf-after--p">y = [f(x), x]</p><p name="ec84" id="ec84" class="graf graf--p graf-after--p">where f is a function representing the operations inside the reversible layer.</p><p name="69f5" id="69f5" class="graf graf--p graf-after--p">During the backward pass, we can compute the gradient of the loss with respect to x as follows:</p><p name="22cb" id="22cb" class="graf graf--p graf-after--p">∂L/∂x = ∂L/∂y * ∂y/∂x = ∂L/∂y * (∂f(x)/∂x + I)</p><p name="3f07" id="3f07" class="graf graf--p graf-after--p">where I is the identity matrix.</p><h4 name="56d2" id="56d2" class="graf graf--h4 graf-after--p">Axial Positional Encodings</h4><figure name="86b2" id="86b2" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*VesvJqRsgBkDY-7rHW9N6Q.png" data-width="781" data-height="352" src="https://cdn-images-1.medium.com/max/800/1*VesvJqRsgBkDY-7rHW9N6Q.png"><figcaption class="imageCaption">An angular locality sensitive hash uses random rotations of spherically projected points to establish buckets by an argmax over signed axes projections. In this highly simplified 2D depiction, two points x and y are unlikely to share the same hash buckets (above) for the three different angular hashes unless their spherical projections are close to one another (below).</figcaption></figure><p name="58f0" id="58f0" class="graf graf--p graf-after--figure">Standard transformers use learned positional encodings to provide sequential information to the model. However, in the Reformer, axial positional encodings are used to efficiently scale positional information with sequence length.</p><p name="7fa7" id="7fa7" class="graf graf--p graf-after--p">Let’s assume we have two sets of positional embeddings P_row and P_col, each of size L, with dimensionality d. The embeddings for each position i can be represented as P_row[i] and P_col[i].</p><p name="56b3" id="56b3" class="graf graf--p graf-after--p">To add positional information to the embeddings, we use the following formula:</p><p name="100e" id="100e" class="graf graf--p graf-after--p">E_pos[i] = E[i] + P_row[i mod L] + P_col[i // L]</p><p name="a7d4" id="a7d4" class="graf graf--p graf-after--p">where E_pos[i] is the final embedding for position i.</p><p name="b58c" id="b58c" class="graf graf--p graf-after--p">By factorizing the positional encodings into row-wise and column-wise components, the Reformer efficiently scales with sequence length without incurring a significant increase in memory requirements.</p><h3 name="280f" id="280f" class="graf graf--h3 graf-after--p">Training Data and Methodology</h3><p name="70a4" id="70a4" class="graf graf--p graf-after--h3">The Reformer can be trained on large-scale corpora using unsupervised or supervised learning tasks. Commonly, it employs unsupervised pretraining, followed by supervised fine-tuning on specific downstream tasks. The pretraining data can consist of diverse textual sources, such as books, articles, and web text, to capture a broad understanding of language.</p><h3 name="7f43" id="7f43" class="graf graf--h3 graf-after--p">Paper</h3><p name="9ab1" id="9ab1" class="graf graf--p graf-after--h3 graf--trailing">Reformer: The Efficient Transformer <a href="https://arxiv.org/abs/2001.04451" data-href="https://arxiv.org/abs/2001.04451" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">2001.04451</a></p></div></div></section><section name="20fa" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="38dd" id="38dd" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="b584" id="b584" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/4445ad305191"><time class="dt-published" datetime="2024-07-19T04:01:25.724Z">July 19, 2024</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-165-reformer-4445ad305191" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

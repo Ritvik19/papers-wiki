@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 217: H2O Danube 3</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 217: H2O Danube 3</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+H2O-Danube3 is a series of small language models that can be efficiently run on modern smartphones and other edge devices. The models are…
+</section>
+<section data-field="body" class="e-content">
+<section name="cf24" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="84f4" id="84f4" class="graf graf--h3 graf--leading graf--title">Papers Explained 217: H2O Danube 3</h3><figure name="d4b4" id="d4b4" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*oRRyLX6SynOTcx0WuyK40A.png" data-width="1720" data-height="732" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*oRRyLX6SynOTcx0WuyK40A.png"></figure><p name="7f64" id="7f64" class="graf graf--p graf-after--figure">H2O-Danube3 is a series of small language models that can be efficiently run on modern smartphones and other edge devices. The models are trained on high-quality Web data and consist of two variants: H2O-Danube3–4B, which was trained on 6T tokens, and H2O-Danube3–500M, which was trained on 4T tokens. The models were pre-trained in three stages with different data mixes before being fine-tuned for a chat version.</p><p name="4196" id="4196" class="graf graf--p graf-after--p">The models are available at <a href="https://huggingface.co/collections/h2oai/h2o-danube3-6687a993641452457854c609" data-href="https://huggingface.co/collections/h2oai/h2o-danube3-6687a993641452457854c609" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">HuggingFace</a>.</p><p name="6dc5" id="6dc5" class="graf graf--p graf-after--p">Recommended Reading [<a href="https://ritvik19.medium.com/papers-explained-111-h2o-danube-1-8b-b790c073d257" data-href="https://ritvik19.medium.com/papers-explained-111-h2o-danube-1-8b-b790c073d257" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Papers Explained 111: H2O Danube 1.8B]</a></p><h3 name="c742" id="c742" class="graf graf--h3 graf-after--p">Model Architecture</h3><p name="b09f" id="b09f" class="graf graf--p graf-after--h3">H2O-Danube3 uses the general Llama model architecture adopting core principles from Llama 2 and Mistral with custom parameters determining the shape of each layer and total parameter count. The Mistral tokenizer with a vocabulary size of 32k is used. The model uses Grouped Query Attention and is optimized towards parameter and compute efficiency resulting in a wide architecture. The model is trained up to a context length of 8,192.</p><figure name="9d2e" id="9d2e" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*smogE1qFdfn12reGOCjC7g.png" data-width="1720" data-height="452" src="https://cdn-images-1.medium.com/max/800/1*smogE1qFdfn12reGOCjC7g.png"><figcaption class="imageCaption">Key model parameters.</figcaption></figure><h3 name="55d5" id="55d5" class="graf graf--h3 graf-after--figure">Training</h3><p name="0dcd" id="0dcd" class="graf graf--p graf-after--h3">Models are primarily trained on English text in three stages with different data mixes. At each stage, the percentage of noisy web data is gradually decreased in favor of higher quality data. Simultaneously, the share of instruct data, Wikipedia academic texts, synthetic texts and other higher quality textual data is increasing.</p><figure name="b05b" id="b05b" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*YB06ZqZGSfF9TkhF4fHU3g.png" data-width="1720" data-height="952" src="https://cdn-images-1.medium.com/max/800/1*YB06ZqZGSfF9TkhF4fHU3g.png"><figcaption class="imageCaption">Data stages for H2O-Danube3–4B.</figcaption></figure><h3 name="a6f3" id="a6f3" class="graf graf--h3 graf-after--figure">Evaluation</h3><h4 name="3dc6" id="3dc6" class="graf graf--h4 graf-after--h3">Academic Benchmarks</h4><figure name="53a1" id="53a1" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*yZeoHABq6gmFssszTgDzlw.png" data-width="1720" data-height="732" src="https://cdn-images-1.medium.com/max/800/1*yZeoHABq6gmFssszTgDzlw.png"><figcaption class="imageCaption">Academic benchmarks.</figcaption></figure><ul class="postList"><li name="d24c" id="d24c" class="graf graf--li graf-after--figure">Danube 3 Achieves very competitive and consistent results across all benchmarks.</li><li name="bdad" id="bdad" class="graf graf--li graf-after--li">Best-in-class performance on CommonsenseQA, PhysicsQA benchmarks.</li><li name="1fdf" id="1fdf" class="graf graf--li graf-after--li">Strong accuracy of 50.14% on the math-centered GSM8K benchmark.</li><li name="ea42" id="ea42" class="graf graf--li graf-after--li">Ranks second to Phi-3-mini-4k-instruct in most benchmarks.</li><li name="056f" id="056f" class="graf graf--li graf-after--li">Scores over 80% on the 10-shot hellaswag benchmark, closing the gap to larger models.</li></ul><figure name="9427" id="9427" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*BSsduiFF3JVTKTZ4zKW9jw.png" data-width="1720" data-height="672" src="https://cdn-images-1.medium.com/max/800/1*BSsduiFF3JVTKTZ4zKW9jw.png"><figcaption class="imageCaption">Academic benchmarks for smaller models.</figcaption></figure><ul class="postList"><li name="716b" id="716b" class="graf graf--li graf-after--figure">Danube-3 500M scores highest in eight out of twelve benchmarks compared to similar-sized Qwen2–0.5B-Instruct.</li><li name="6074" id="6074" class="graf graf--li graf-after--li">Considered a new well-rounded model for its parameter count.</li></ul><h4 name="d4bb" id="d4bb" class="graf graf--h4 graf-after--li">Chat Benchmarks</h4><figure name="6e79" id="6e79" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*rj7yjxcWHhhhu9-Tfdwarg.png" data-width="1720" data-height="472" src="https://cdn-images-1.medium.com/max/800/1*rj7yjxcWHhhhu9-Tfdwarg.png"><figcaption class="imageCaption">Chat benchmarks.</figcaption></figure><ul class="postList"><li name="5627" id="5627" class="graf graf--li graf-after--figure">H2O-Danube3–4B-Chat consistently performs very well across all benchmarks, surpassing other similar sized models and outperforming the previous Danube2 release, while Phi-3-mini takes the top spot.</li></ul><figure name="149f" id="149f" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*qjXcUzRzB8QOHDIJ5fonIQ.png" data-width="1720" data-height="402" src="https://cdn-images-1.medium.com/max/800/1*qjXcUzRzB8QOHDIJ5fonIQ.png"><figcaption class="imageCaption">Chat benchmarks for smaller models.</figcaption></figure><ul class="postList"><li name="7aa3" id="7aa3" class="graf graf--li graf-after--figure">The 500M parameter version of the model H2O-Danube3–500M-Chat shows results that are comparable to Qwen2–0.5B-Instruct model.</li><li name="5d48" id="5d48" class="graf graf--li graf-after--li">In particular, they achieve a close MT-Bench average score (H2O-Danube3–500M-Chat being better in the 1st turn), while H2O-Danube3–500M-Chat produces better results on Wild-Bench benchmark.</li></ul><h4 name="3a90" id="3a90" class="graf graf--h4 graf-after--li">Fine-Tuning Benchmarks</h4><figure name="8d27" id="8d27" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*byvJBpBU_1VFHf1NlYHZiA.png" data-width="1720" data-height="392" src="https://cdn-images-1.medium.com/max/800/1*byvJBpBU_1VFHf1NlYHZiA.png"><figcaption class="imageCaption">Fine-tuning benchmarks.</figcaption></figure><ul class="postList"><li name="7dae" id="7dae" class="graf graf--li graf-after--figure">For all models and datasets, the most commonly used settings with LoRA (r = 16, α = 32) and same hyperparameters (bs = 1, epochs = 1, lr = 1e − 4, diff_lr = 1e − 05, max_length = 8192) are used.</li><li name="2418" id="2418" class="graf graf--li graf-after--li">Across all datasets, H2O-Danube3–4B consistently shows leading performance, indicating its strong baseline results with default hyperparameter settings.</li><li name="1f26" id="1f26" class="graf graf--li graf-after--li">H2O-Danube3–500M exhibit excellent performance on text classification tasks after fine-tuning, demonstrating the effectiveness of fine-tuning for specific use cases.</li></ul><h3 name="33a1" id="33a1" class="graf graf--h3 graf-after--li">Quantization</h3><figure name="cfef" id="cfef" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*5x29hNZqG970k7hzN-IMxg.png" data-width="1720" data-height="412" src="https://cdn-images-1.medium.com/max/800/1*5x29hNZqG970k7hzN-IMxg.png"><figcaption class="imageCaption">Trade-off between size and quality of the different quantized versions of H2O-Danube3–4B-Chat model.</figcaption></figure><p name="346d" id="346d" class="graf graf--p graf-after--figure">To facilitate the use of the models on edge devices, quantized versions of H2O-Danube3–4B-Chat and H2O-Danube3–500M-Chat containing GGUF format model files that were quantized using the llama.cpp framework are also introduced.</p><h3 name="3992" id="3992" class="graf graf--h3 graf-after--p">Paper</h3><p name="b0a2" id="b0a2" class="graf graf--p graf-after--h3">H2O-Danube3 Technical Report <a href="https://arxiv.org/abs/2407.09276" data-href="https://arxiv.org/abs/2407.09276" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">2407.09276</a></p><p name="038f" id="038f" class="graf graf--p graf-after--p graf--trailing">Recommended Reading [<a href="https://ritvik19.medium.com/list/small-llms-41124d5c7c80" data-href="https://ritvik19.medium.com/list/small-llms-41124d5c7c80" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Small LLMs</a>]</p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="d7fb" id="d7fb" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/917a7b40a79f"><time class="dt-published" datetime="2024-09-24T03:25:14.522Z">September 24, 2024</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-217-h2o-danube-3-917a7b40a79f" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

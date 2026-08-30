@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 425: ReCode</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 425: ReCode</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+LLMs struggle to adapt to frequent API updates due to reliance on outdated knowledge. ReCode (rule-based Reinforcement learning for Code…
+</section>
+<section data-field="body" class="e-content">
+<section name="a93d" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="c243" id="c243" class="graf graf--h3 graf--leading graf--title">Papers Explained 425: ReCode</h3><figure name="bc31" id="bc31" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*Jsnflw1eOMYmOK29XjMWSQ.png" data-width="2000" data-height="530" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*Jsnflw1eOMYmOK29XjMWSQ.png"></figure><p name="0443" id="0443" class="graf graf--p graf-after--figure">LLMs struggle to adapt to frequent API updates due to reliance on outdated knowledge. ReCode (rule-based Reinforcement learning for Code Update) is a novel framework that mimics human programmer adaptation to API changes.</p><figure name="a6dd" id="a6dd" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*n5nPhK4dmRuHRlCqPPJCug.png" data-width="1200" data-height="690" src="https://cdn-images-1.medium.com/max/800/1*n5nPhK4dmRuHRlCqPPJCug.png"></figure><h3 name="1530" id="1530" class="graf graf--h3 graf-after--figure">Problem Formulation</h3><p name="02e3" id="02e3" class="graf graf--p graf-after--h3">LLMs accumulate code knowledge during pre-training, but their parameters (θ) remain static, preventing the incorporation of subsequent API updates. This leads to the generation of code containing outdated APIs.</p><p name="1cb9" id="1cb9" class="graf graf--p graf-after--p">A basic strategy to address this is embedding updated API information (c_update) directly into the prompt. However, this method can cause conflicts between the model’s internal knowledge (θ) and the external prompt information, potentially leading the model to overlook the provided updates.</p><h4 name="8d37" id="8d37" class="graf graf--h4 graf-after--p">CodeUpdateArena</h4><p name="18f3" id="18f3" class="graf graf--p graf-after--h4">CodeUpdateArena is a synthetic dataset, generated with LLM assistance, designed to evaluate LLMs’ capability to handle API updates. It comprises 670 program synthesis tasks and covers updates to 54 functions across seven different Python packages.</p><p name="a35f" id="a35f" class="graf graf--p graf-after--p">Each entry in the dataset includes at least three directly executable test cases for verification.</p><h3 name="e9f6" id="e9f6" class="graf graf--h3 graf-after--p">ReCode</h3><p name="222f" id="222f" class="graf graf--p graf-after--h3">Models are trained to perform version migration based on updated information.</p><p name="8327" id="8327" class="graf graf--p graf-after--p">Input (xi): [Dependency, Target Version, Update Info, Old Code] (represented as [di, vi, ui, c(old)i]).</p><p name="327f" id="327f" class="graf graf--p graf-after--p">Output (y): Target Code (c(target)i).</p><pre data-code-block-mode="2" spellcheck="false" data-code-block-lang="plaintext" name="1262" id="1262" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content">System:<br />You are a helpful coding assistant. <br />Your task is to transform the old version of the code into the new version specified, based on the update information. <br />You first thinks about the reasoning process in the mind and then provides the solution.<br />User:<br />Dependency di performed an API update in version vi, and the update content includes:<br />&lt;doc&gt;<br />update info ui<br />&lt;/doc&gt;<br />The old version of the code is:<br />```python<br />old code c^old_i<br />“‘<br />Show your work in &lt;think&gt; &lt;/think&gt; tags. <br />And return the final code in &lt;answer&gt; &lt;/answer&gt;, the code within &lt;answer&gt;&lt;/answer&gt; should be enclosed in ```python ``` tags.<br />Assistant:<br />Let me solve this step by step.<br />&lt;think&gt;</span></pre><h4 name="995e" id="995e" class="graf graf--h4 graf-after--pre">Training Dataset Construction</h4><figure name="d811" id="d811" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*Bjg6f2K51g6-tktNJ1mRNA.png" data-width="1930" data-height="690" src="https://cdn-images-1.medium.com/max/800/1*Bjg6f2K51g6-tktNJ1mRNA.png"><figcaption class="imageCaption">The pipeline of data collection and training task with a running example.</figcaption></figure><ul class="postList"><li name="cde1" id="cde1" class="graf graf--li graf-after--figure">API Update Identification: Access release notes of major data science libraries (e.g., Numpy, Pandas, PyTorch, matplotlib) to find paragraphs detailing specific API updates.</li><li name="5118" id="5118" class="graf graf--li graf-after--li">Code Snippet Generation: GPT-4 is used to generate two code snippets with equivalent functionality: one using the old API and one using the updated API.</li><li name="c6cd" id="c6cd" class="graf graf--li graf-after--li">Expert Review: Human experts review these generated code snippets to ensure correct incorporation of the updated API.</li><li name="c154" id="c154" class="graf graf--li graf-after--li">Inclusion: Only code snippets that pass expert review are included in the dataset.</li></ul><p name="8c84" id="8c84" class="graf graf--p graf-after--li">The final dataset contains approximately 2,000 entries. API updates encompass diverse changes, including API renaming, parameter addition, and functionality modification</p><figure name="8488" id="8488" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*KRmQ1B3fhgu7ick0cMICkw.png" data-width="1930" data-height="690" src="https://cdn-images-1.medium.com/max/800/1*KRmQ1B3fhgu7ick0cMICkw.png"><figcaption class="imageCaption">Statistics of our collected dataset.</figcaption></figure><h4 name="be5c" id="be5c" class="graf graf--h4 graf-after--figure">Reward Design</h4><p name="7422" id="7422" class="graf graf--p graf-after--h4">When improving coding skills, code quality can be verified by the pass rate of test cases. However, the pass rate of test cases is not a suitable reward metric for the code migration task. The training objective is to migrate correctly generated code to a new version, with the focus on “migration” rather than the inherent correctness of the code itself.</p><p name="b165" id="b165" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Format Reward:</strong></p><p name="5d06" id="5d06" class="graf graf--p graf-after--p">To ensure the model’s output adheres to the format: &lt;think&gt;…&lt;/think&gt;&lt;answer&gt;…&lt;/answer&gt;, where the thinking process is within the &lt;think&gt; tag and the target code within the &lt;answer&gt; tag.</p><figure name="c96a" id="c96a" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*AsYmWHqfmGOZTGp_1ybrWA.png" data-width="980" data-height="180" src="https://cdn-images-1.medium.com/max/800/1*AsYmWHqfmGOZTGp_1ybrWA.png"></figure><p name="80e5" id="80e5" class="graf graf--p graf-after--figure"><strong class="markup--strong markup--p-strong">Correctness Rewards:</strong></p><p name="19a4" id="19a4" class="graf graf--p graf-after--p">Edit Similarity (ES): ES assesses the similarity between predicted completions and target codes by analyzing the edit operations needed to transform one into the other.</p><figure name="7290" id="7290" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*Zw2MftLgyvAwkAIs9KbOrA.png" data-width="980" data-height="200" src="https://cdn-images-1.medium.com/max/800/1*Zw2MftLgyvAwkAIs9KbOrA.png"></figure><p name="560f" id="560f" class="graf graf--p graf-after--figure">Exact Match (EM): EM calculates the rate at which predicted completions exactly match the target codes after normalizing return values.</p><figure name="3958" id="3958" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*YcHokTgK1S-xQ5iy8V4SzQ.png" data-width="980" data-height="140" src="https://cdn-images-1.medium.com/max/800/1*YcHokTgK1S-xQ5iy8V4SzQ.png"></figure><h4 name="76f7" id="76f7" class="graf graf--h4 graf-after--figure">Experiment Setup</h4><p name="9161" id="9161" class="graf graf--p graf-after--h4">Two code models are utilized to evaluate the method: Qwen-2.5-Coder-7B-Instruct and DeepSeek-v1.5-Coder-7B-Instruct.</p><p name="6219" id="6219" class="graf graf--p graf-after--p">The DoRA algorithm is used to update the model due to computational limits. The hyperparameters are configured as r=64, α=64.</p><p name="0611" id="0611" class="graf graf--p graf-after--p">GRPO and its modified version, DAPO, are selected for training. ReCode is adaptable to any RL algorithm, not limited to GRPO.</p><h3 name="a775" id="a775" class="graf graf--h3 graf-after--p">Evaluation</h3><figure name="2368" id="2368" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*dL9dSVrte5l6Thj0hKO8gQ.png" data-width="1900" data-height="800" src="https://cdn-images-1.medium.com/max/800/1*dL9dSVrte5l6Thj0hKO8gQ.png"><figcaption class="imageCaption">The performance results using the GRPO and DAPO algorithms on CodeUpdateArena and HumanEval+.</figcaption></figure><ul class="postList"><li name="a824" id="a824" class="graf graf--li graf-after--figure">ReCode improves the model’s performance in the CodeUpdateArena, with both GRPO and DAPO contributing to the improvement.</li><li name="0a6f" id="0a6f" class="graf graf--li graf-after--li">For the Qwen2.5-Coder-7B-Instruct model, ReCode resulted in a Pass@1 exceeding that of a 32B parameter code instruction-tuned model and a distilled reasoning model with an identical architecture.</li><li name="c2cd" id="c2cd" class="graf graf--li graf-after--li">ReCode’s benefits are substantially greater for Qwen2.5-Coder than for DeepSeekCoder-v1.5.</li><li name="a8dc" id="a8dc" class="graf graf--li graf-after--li">SFT exhibits limited generalization capabilities when transitioning from code migration to real-world code generation tasks.</li><li name="1c7e" id="1c7e" class="graf graf--li graf-after--li">SFT’s performance boost is inferior to ReCode, and in some cases, it may diminish the pre-trained model’s performance.</li><li name="b73d" id="b73d" class="graf graf--li graf-after--li">ReCode has less impact on the general capabilities of LLMs than SFT, as shown by the HumanEval+ benchmark.</li><li name="bd34" id="bd34" class="graf graf--li graf-after--li">ReCode is a viable and promising solution for dynamic API scenarios.</li></ul><h3 name="f3e1" id="f3e1" class="graf graf--h3 graf-after--li">Paper</h3><p name="00b3" id="00b3" class="graf graf--p graf-after--h3 graf--trailing">ReCode: Updating Code API Knowledge with Reinforcement Learning <a href="https://www.arxiv.org/abs/2506.20495" data-href="https://www.arxiv.org/abs/2506.20495" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">2506.20495</a></p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="d7fb" id="d7fb" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/a0a63c7705fe"><time class="dt-published" datetime="2025-08-06T03:29:40.548Z">August 6, 2025</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-425-recode-a0a63c7705fe" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

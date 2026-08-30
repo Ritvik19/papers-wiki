@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 292: Multiagent Finetuning</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 292: Multiagent Finetuning</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Multiagent Fine Tuning is a complementary approach towards self-improvement where finetuning is applied to a multiagent society of language…
+</section>
+<section data-field="body" class="e-content">
+<section name="3fd2" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="78d9" id="78d9" class="graf graf--h3 graf--leading graf--title">Papers Explained 292: Multiagent Finetuning</h3><figure name="d3b3" id="d3b3" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*J9nKRx1-QRB7ZW4q5O3BcA.png" data-width="2000" data-height="820" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*J9nKRx1-QRB7ZW4q5O3BcA.png"></figure><p name="602b" id="602b" class="graf graf--p graf-after--figure">Multiagent Fine Tuning is a complementary approach towards self-improvement where finetuning is applied to a multiagent society of language models. A group of language models, all starting from the same base model, are independently specialized by updating each one using data generated through multi-agent interactions among the models. By training each model on independent sets of data, this approach enables specialization across models and diversification over the set of models.</p><h3 name="10cd" id="10cd" class="graf graf--h3 graf-after--p">Method</h3><figure name="4233" id="4233" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*T6I35XkTZfVYk7zZxvJwSw.png" data-width="1680" data-height="800" src="https://cdn-images-1.medium.com/max/800/1*T6I35XkTZfVYk7zZxvJwSw.png"><figcaption class="imageCaption">Overview of Multiagent Finetuning.</figcaption></figure><p name="0014" id="0014" class="graf graf--p graf-after--figure">The method involves two components.</p><ol class="postList"><li name="c151" id="c151" class="graf graf--li graf-after--p">A multiagent debate method is used to construct a finetuning dataset for training models.</li><li name="7e56" id="7e56" class="graf graf--li graf-after--li">Multiagent finetuning is introduced, where each LLM model is specialized by finetuning each model on its own generated data.</li></ol><h4 name="f412" id="f412" class="graf graf--h4 graf-after--li">Multiagent Debate</h4><p name="d3ca" id="d3ca" class="graf graf--p graf-after--h4">Multiagent debate involves a series of N language model agents — either specific copies or finetuned versions of the same model — each tasked with generating a response to a given problem. After the initial responses are generated, a debate round is initiated among the agents. Each agent is instructed to construct a new response based on its prior response and the summarized responses from the others. The final result is determined by majority vote based on the outputs from the last round of debate.</p><h4 name="7e4d" id="7e4d" class="graf graf--h4 graf-after--p">FineTuning Models on Generated Data</h4><figure name="29bc" id="29bc" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*DuNe4SQ9d9ckU0CcPHNNdg.png" data-width="1410" data-height="1410" src="https://cdn-images-1.medium.com/max/800/1*DuNe4SQ9d9ckU0CcPHNNdg.png"></figure><p name="e20b" id="e20b" class="graf graf--p graf-after--figure">Given a set of natural language inputs Dtask = {xi}, a multiagent debate method with N agents and M rounds is used to generate responses for each input in Dtask. The final predicted output yˆi for each xi is obtained through majority voting in the last round of debate. This is used to construct a “ground truth” dataset of {(xi, yˆi)}. In the single LLM model setting, the model is then finetuned on the set of generated responses yi which match yˆi given input xi.</p><p name="febe" id="febe" class="graf graf--p graf-after--p">While the final debate results yˆi are accurate, they often similar in style and methodology. As a result, repeatedly capturing a dataset of {(xi, yˆi)} pairs for multiple rounds of finetuning often leads to a plateau of self-improvement performance.</p><p name="651e" id="651e" class="graf graf--p graf-after--p">It is proposed to create different datasets to finetune different models. A set of models are trained as generation agents and others as critic agents. The generation models produce initial responses to input questions. In contrast, the critic models assess the outputs from all generation agents and then select or generate the most effective responses.</p><p name="8263" id="8263" class="graf graf--p graf-after--p">Generation agents AGn are constructed from the N generation models which generate a response to the given input x. For each agent, its outputs yn that match the final debate results yˆ are selected and input-output pairs (x, yn) are constructed. The resulting dataset for agent AGn is DnG = {(x, yn)}. This approach generates a set of fine-tuning datasets {D1G , · · · , DNG } across all N agents. Each dataset contains different outputs, allowing for specialization and diversification of responses. Each generation model is fine-tuned with the corresponding dataset to get N correspondingly fine-tuned agents {AˆG1 ,··· ,AˆGN}.</p><p name="ba59" id="ba59" class="graf graf--p graf-after--p">Criticagents ACn are constructed from critic models and evaluate the outputs from all generation agents and then select or synthesize the best responses. In the multiagent debate setting, each agent’s output in the last round of debates is represented as yM,n, where M denotes the number of debate rounds. Outputs yM,n that align with the final debate results yˆ are identified. These consistent outputs, together with the previous responses, are then used to construct input-output pairs (x, (y1,n, . . . , yM,n)) for finetuning the critic models.</p><p name="019f" id="019f" class="graf graf--p graf-after--p">To enhance the model’s capability to correct incorrect answers generated early in the debate process, a subset of pairs where y1,n differs from yˆ, but yM,n matches yˆ is sampled and a dataset DC− = {(x,(y1,n ,…,y M,n ))|y1,n ̸= yˆ,y M,n = yˆ} is built. This indicates that the answer was successfully corrected by the end of the debates. Another dataset DC+ = {(x,(y1,n ,…,y M,n ))|y1,n = yˆ,y M,n = yˆ} is constructed where both y1,n yM,n matches yˆ demonstrating the agent’s ability to maintain the correct answer throughout the debates. These two datasets are combined to create a comprehensive finetuning dataset for each critic model to construct updated critic agents ACn.</p><p name="c131" id="c131" class="graf graf--p graf-after--p">The finetuned generation agents {AˆG1 , · · · , AˆGN } and critic agents {AˆC1 , · · · , AˆCN } are used to gather datasets for the next iteration through multiagent debate.</p><h4 name="98a8" id="98a8" class="graf graf--h4 graf-after--p">Inference</h4><figure name="495b" id="495b" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*M9tMaSp1-5JlMs56hRS-Fw.png" data-width="1680" data-height="858" src="https://cdn-images-1.medium.com/max/800/1*M9tMaSp1-5JlMs56hRS-Fw.png"></figure><p name="0863" id="0863" class="graf graf--p graf-after--figure">At inference time, a multiagent debate is conducted among the finetuned agents. Each individual generation agent participates in the first round of the debate, followed by each individual critic agent in subsequent rounds. Each agent takes the responses from all other agents and generates a new response in each round of the debate. Summarizing the responses from the other agents helps eliminate redundant information while retaining the most important details, thereby further improving performance. The final result is determined by a majority vote based on the responses from the final round of the debate.</p><h3 name="08c5" id="08c5" class="graf graf--h3 graf-after--p">Experiments</h3><figure name="e0a8" id="e0a8" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*V0JeOkWg35Fg2Q0mPU127g.png" data-width="1680" data-height="1050" src="https://cdn-images-1.medium.com/max/800/1*V0JeOkWg35Fg2Q0mPU127g.png"><figcaption class="imageCaption">Quantitative results of the proposed method and baselines.</figcaption></figure><ul class="postList"><li name="638c" id="638c" class="graf graf--li graf-after--figure">The proposed multi-agent finetuning method outperforms all baselines across all datasets and language models tested.</li><li name="85a4" id="85a4" class="graf graf--li graf-after--li">The method achieves better performance than the iterative self-training baseline (STaR) even though STaR uses ground truth labels and multiple finetuning iterations, while the proposed method uses only a single finetuning iteration in the initial comparison.</li><li name="7e5f" id="7e5f" class="graf graf--li graf-after--li">Majority voting, multi-agent debate, and finetuning all contribute to improved performance compared to a single agent baseline.</li></ul><figure name="ed58" id="ed58" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*KoHyMKFkiHKE4RSoYHzfwA.png" data-width="1680" data-height="580" src="https://cdn-images-1.medium.com/max/800/1*KoHyMKFkiHKE4RSoYHzfwA.png"><figcaption class="imageCaption">Multiagent finetuning improves reasoning performance over multiple rounds of finetuning.</figcaption></figure><ul class="postList"><li name="ea66" id="ea66" class="graf graf--li graf-after--figure">Multiple iterations of the proposed multi-agent finetuning method further improve performance, while single-agent finetuning performance saturates and then declines, suggesting overfitting.</li></ul><figure name="bfd0" id="bfd0" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*cyjaFRKsaFwc4XOTXFx1_Q.png" data-width="1680" data-height="360" src="https://cdn-images-1.medium.com/max/800/1*cyjaFRKsaFwc4XOTXFx1_Q.png"><figcaption class="imageCaption">Diversity is preserved and can improve across iterations of finetuning.</figcaption></figure><ul class="postList"><li name="431b" id="431b" class="graf graf--li graf-after--figure">The multi-agent finetuning method maintains or improves response diversity across iterations, while single-agent finetuning reduces diversity.</li></ul><h3 name="2681" id="2681" class="graf graf--h3 graf-after--li">Paper</h3><p name="00b3" id="00b3" class="graf graf--p graf-after--h3 graf--trailing">Multiagent Finetuning: Self Improvement with Diverse Reasoning Chains <a href="https://arxiv.org/abs/2501.05707" data-href="https://arxiv.org/abs/2501.05707" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">2501.05707</a></p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="d7fb" id="d7fb" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/a199fc4d8446"><time class="dt-published" datetime="2025-01-21T03:49:13.071Z">January 21, 2025</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-292-multiagent-finetuning-a199fc4d8446" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

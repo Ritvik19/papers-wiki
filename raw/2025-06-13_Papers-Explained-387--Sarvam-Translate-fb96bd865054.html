@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 387: Sarvam-Translate</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 387: Sarvam-Translate</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Sarvam-Translate is trained by fine-tuning Gemma3–4B-IT. It supports 22 Indian languages — Hindi, Bengali, Marathi, Telugu, Tamil…
+</section>
+<section data-field="body" class="e-content">
+<section name="189b" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="d168" id="d168" class="graf graf--h3 graf--leading graf--title">Papers Explained 387: Sarvam-Translate</h3><figure name="2e7f" id="2e7f" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="0*oVz1dyh1ab0ydZPD" data-width="1600" data-height="840" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/0*oVz1dyh1ab0ydZPD"></figure><p name="6f57" id="6f57" class="graf graf--p graf-after--figure">Sarvam-Translate is trained by fine-tuning Gemma3–4B-IT. It supports 22 Indian languages — Hindi, Bengali, Marathi, Telugu, Tamil, Gujarati, Urdu, Kannada, Odia, Malayalam, Punjabi, Assamese, Maithili, Santali, Kashmiri, Nepali, Sindhi, Dogri, Konkani, Manipuri (Meitei), Bodo, Sanskrit. It supports paragraph-level translation for 22 languages and supports translating diverse structured content for 15 languages.</p><p name="9c70" id="9c70" class="graf graf--p graf-after--p">The model is available on <a href="https://huggingface.co/sarvamai/sarvam-translate/" data-href="https://huggingface.co/sarvamai/sarvam-translate/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">HuggingFace</a>.</p><figure name="f3ce" id="f3ce" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*zzh-_7tirx-_LyU3" data-width="1600" data-height="1303" src="https://cdn-images-1.medium.com/max/800/0*zzh-_7tirx-_LyU3"></figure><h3 name="926f" id="926f" class="graf graf--h3 graf-after--figure">Method</h3><p name="6a6e" id="6a6e" class="graf graf--p graf-after--h3">Sarvam invested heavily in building robust data-cleaning pipelines and sophisticated annotation workflows to ensure the highest quality datasets. Leveraged the Gemma 3 open-source models which provided the best starting point to build Sarvam-Translate in comparison to any other model.</p><h4 name="bf57" id="bf57" class="graf graf--h4 graf-after--p">Data</h4><p name="d3cb" id="d3cb" class="graf graf--p graf-after--h4">Sarvam-Translate is trained on a rich and diverse dataset of translation pairs between English and 22 Indian languages. This dataset combines multiple sources. Cleaned data from past open-data efforts, including BPCC, which itself contains both mined and manually validated data, is incorporated. This data is carefully cleaned using robust internal pipelines. New translation pairs are generated from carefully curated English source content, spanning a wide range of domains: scientific and historical content, conversational and modern text, and structurally complex formats such as code, LaTeX, HTML, and chemistry equations.</p><h4 name="587d" id="587d" class="graf graf--h4 graf-after--p">Training Process</h4><p name="b513" id="b513" class="graf graf--p graf-after--h4">Gemma3–4B-IT is fine-tuned in a two-stage process.</p><ul class="postList"><li name="54b3" id="54b3" class="graf graf--li graf-after--p">In the first stage, the full model is fine-tuned on a larger dataset with broad coverage, including some noisier but domain-diverse data to establish wide-ranging translation capability. This was also required to provide language ability to the model in languages it was not already fluent in.</li><li name="99cb" id="99cb" class="graf graf--li graf-after--li">In the second stage, LoRA is used to fine-tune the model further on a smaller, highly curated, format-diverse dataset, paying careful attention to format preservation and style consistency.</li></ul><h3 name="93a2" id="93a2" class="graf graf--h3 graf-after--li">Evaluation</h3><p name="4bdc" id="4bdc" class="graf graf--p graf-after--h3">Due to the scale, automatic evaluations are performed using Gemini Flash 2.5, with prompts tailored to each document type to focus on specific aspects of translation quality. The goals for each content type are:</p><ul class="postList"><li name="1d58" id="1d58" class="graf graf--li graf-after--p">Markdown (GitHub): Preserve Markdown structure and ensure translated content fits naturally.</li><li name="8e96" id="8e96" class="graf graf--li graf-after--li">Digitized Markdown (VLM/OCR): Robustness to errors and preservation of structure.</li><li name="3ffe" id="3ffe" class="graf graf--li graf-after--li">Math (LaTeX): Preserve LaTeX equations exactly while translating surrounding text.</li><li name="8d69" id="8d69" class="graf graf--li graf-after--li">Chemistry: Retain chemical equations and symbols correctly.</li><li name="d3b3" id="d3b3" class="graf graf--li graf-after--li">Code: Keep code unchanged and translate only comments and documentation.</li><li name="bc29" id="bc29" class="graf graf--li graf-after--li">HTML: Preserve HTML tags and structure, translating only visible text.</li></ul><figure name="415d" id="415d" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="0*_DO9UBCNP82xsNAb" data-width="1600" data-height="632" src="https://cdn-images-1.medium.com/max/800/0*_DO9UBCNP82xsNAb"></figure><p name="38ca" id="38ca" class="graf graf--p graf-after--figure">Human evaluations are also conducted on 100 English documents translated by Sarvam-Translate and other open-source LLMs (Gemma3–27B-IT, Llama-3.1–405B-FP8 and Llama4 Scout). Professional language experts evaluated the translations on fluency, adequacy, faithfulness to the source structure, and inclusivity, by comparing two random translations and picking the preferred one.</p><figure name="3190" id="3190" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*8gvlCPRtqxQOwyT1" data-width="1360" data-height="1150" src="https://cdn-images-1.medium.com/max/800/0*8gvlCPRtqxQOwyT1"></figure><figure name="0f74" id="0f74" class="graf graf--figure graf-after--figure"><img class="graf-image" data-image-id="0*jvLWhSxFgAxdMZhO" data-width="1360" data-height="1150" src="https://cdn-images-1.medium.com/max/800/0*jvLWhSxFgAxdMZhO"></figure><figure name="a38f" id="a38f" class="graf graf--figure graf-after--figure"><img class="graf-image" data-image-id="0*P6lZhsEe9KWrfzUG" data-width="1360" data-height="1150" src="https://cdn-images-1.medium.com/max/800/0*P6lZhsEe9KWrfzUG"></figure><p name="96c9" id="96c9" class="graf graf--p graf-after--figure">Across all Indian languages, Sarvam-Translate consistently outperformed other models, particularly in its ability to handle structured content, maintain coherence over longer contexts, and deliver inclusive and culturally sensitive translations.</p><h3 name="869c" id="869c" class="graf graf--h3 graf-after--p">Paper</h3><p name="00b3" id="00b3" class="graf graf--p graf-after--h3 graf--trailing"><a href="https://www.sarvam.ai/blogs/sarvam-translate" data-href="https://www.sarvam.ai/blogs/sarvam-translate" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">SARVAM — TRANSLATE</a></p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="d7fb" id="d7fb" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/fb96bd865054"><time class="dt-published" datetime="2025-06-13T02:57:56.454Z">June 13, 2025</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-387-sarvam-translate-fb96bd865054" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

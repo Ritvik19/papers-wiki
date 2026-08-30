@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained: GRAPE</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained: GRAPE</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+GRAPE is a novel SFT framework that accounts for the unique characteristics of the target model. For each instruction, it gathers…
+</section>
+<section data-field="body" class="e-content">
+<section name="8e01" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="71da" id="71da" class="graf graf--h3 graf--leading graf--title">Papers Explained 503: GRAPE</h3><figure name="cde2" id="cde2" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*11ZhXiVso_2fE-7dk_PLSQ.png" data-width="2040" data-height="400" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*11ZhXiVso_2fE-7dk_PLSQ.png"></figure><p name="5315" id="5315" class="graf graf--p graf-after--figure">GRAPE is a novel SFT framework that accounts for the unique characteristics of the target model. For each instruction, it gathers responses from various LLMs, and selects the one with the highest probability measured by the target model, indicating that it aligns most closely to the target model’s pretrained distribution; it then proceeds with standard SFT training.</p><h3 name="3467" id="3467" class="graf graf--h3 graf-after--p">Methodology</h3><figure name="2bc7" id="2bc7" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*wFsw6JVcZbTZby-4Y7Mg5w.png" data-width="1550" data-height="670" src="https://cdn-images-1.medium.com/max/800/1*wFsw6JVcZbTZby-4Y7Mg5w.png"><figcaption class="imageCaption">An overview of GRAPE.</figcaption></figure><p name="67d5" id="67d5" class="graf graf--p graf-after--figure">The key idea is to find responses among a candidate pool for each instruction xi such that they align closely with the base model’s pretrained distribution πθ0.</p><p name="786a" id="786a" class="graf graf--p graf-after--p">GRAPE consists of two main steps, followed by standard SFT:</p><ol class="postList"><li name="54d5" id="54d5" class="graf graf--li graf-after--p">Response Collection: Collect a pool of high-quality candidate responses either from existing datasets or sampling from multiple LLMs.</li><li name="e405" id="e405" class="graf graf--li graf-after--li">Customization: For the target model to be fine-tuned πθ0 , find the response(s), for each instruction, that are closest to the pretrained distribution of πθ0.</li></ol><h4 name="cfc9" id="cfc9" class="graf graf--h4 graf-after--li">Collecting Responses from Existing Resources</h4><p name="cb64" id="cb64" class="graf graf--p graf-after--h4">For instruction-tuning of language models, high-quality instructions are more difficult to collect than responses. Therefore, it is a common practice to reuse existing instruction-tuning prompts while generating diverse responses using various methods tailored to specific requirements. For instance, instructions from Flan, OpenOrca, ShareGPT, and the training splits of GSM-8K, MATH, and CodeContests are frequently reused in datasets like Olmo, Tulu, OpenHermes, OpenOrca, MetaMath, MathInstruct, UltraFeedback, and UltraInteract, whether for SFT or preference learning. The solutions are generated using different models or follow varying styles depending on the specific needs. This naturally leads to a situation where a single instruction with multiple responses becomes a readily available resource.</p><p name="b90a" id="b90a" class="graf graf--p graf-after--p">Responses for the i-th instruction are collected from various datasets to form Ri = {y^j_i : j = 1,…,J(i)}, where J(i) denotes the number of responses collected for the i-th instruction.</p><h4 name="7c0e" id="7c0e" class="graf graf--h4 graf-after--p">Customize Dataset For Models</h4><p name="9815" id="9815" class="graf graf--p graf-after--h4">The conditional probability of each response πθ0 (y^j_i|xi) is computed. Responses are ranked based on the conditional probability and those with the highest probability for each instruction are taken. Notably, GRAPE’s selection process requires only a forward pass through the candidates and does not require gradient computation.</p><h3 name="7fba" id="7fba" class="graf graf--h3 graf-after--p">Preliminary Experiments</h3><p name="d002" id="d002" class="graf graf--p graf-after--h3">UltraInteract-SFT contains approximately 80,800 unique instructions covering coding, math (chain-of-thought and program-aided) and logic reasoning domains. Each instruction is paired with varying numbers of different responses to contain a total &gt; 280,000 training examples.</p><p name="5186" id="5186" class="graf graf--p graf-after--p">Responses are collected from a diverse set of models of various sizes across model families, including MIXTRAL-7X7B-INSTRUCT, CODESTRAL-22B, MISTRAL-SMALL, LLAMA-3.1–70B-INSTRUCT and LLAMA-3.1–405B-INSTRUCT, and QWEN2.5–72B-CHAT, resulting in approximately 10x additional responses per instruction. The responses are then filtered based on the answers to ensure their validity.</p><p name="670e" id="670e" class="graf graf--p graf-after--p">For each instruction, GRAPE is used to select the top-ranking responses, ensuring that the number of responses matches the original UltraInteract-SFT dataset for fair comparisons.</p><ul class="postList"><li name="f774" id="f774" class="graf graf--li graf-after--p">Base Models: LLAMA-3.1–8B, LLAMA-3.2–3B, MISTRAL-7B and QWEN2.5–7B.</li><li name="7f1b" id="7f1b" class="graf graf--li graf-after--li">Evaluation Benchmarks: HumanEval, MBPP, LeetCode, MATH, GSM-Plus, and TheoremQA</li><li name="6b2b" id="6b2b" class="graf graf--li graf-after--li">Baselines: The original dataset, responses from the strongest model (LLAMA3.1–405B-INSTRUCT), and an up-scaled dataset with three times the responses.</li></ul><figure name="7f31" id="7f31" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*ikmU9aypnNJJnAhhR3daxw.png" data-width="1860" data-height="750" src="https://cdn-images-1.medium.com/max/800/1*ikmU9aypnNJJnAhhR3daxw.png"><figcaption class="imageCaption">Result of synthetic experiment on UltraInteract-SFT.</figcaption></figure><ul class="postList"><li name="3d3a" id="3d3a" class="graf graf--li graf-after--figure">Performance Summary: GRAPE consistently outperformed various baselines across benchmarks.</li><li name="25b4" id="25b4" class="graf graf--li graf-after--li">Improvement Over Strongest Model: GRAPE-selected solutions showed up to 13.8% absolute improvement over responses from LLAMA3.1–405B-INSTRUCT.</li><li name="874b" id="874b" class="graf graf--li graf-after--li">Importance of Customization: Customization for base models should be prioritized over identifying the highest-quality responses, verifying the central premise that in-distribution responses boost downstream performance.</li><li name="1f97" id="1f97" class="graf graf--li graf-after--li">Effect of Scaling Data: Adding more responses does not always lead to continuous improvement. GRAPE outperformed models trained with 3x responses by at least 3.6% and up to 17.3% absolute improvement, reinforcing the notion that alignment with the base model’s distribution is crucial.</li></ul><h3 name="ac9a" id="ac9a" class="graf graf--h3 graf-after--li">Experiments</h3><p name="c1bc" id="c1bc" class="graf graf--p graf-after--h3">Overlapping instructions from TULU-3 and OLMO-2 models were collected and corresponding responses were gathered. Only the winning responses from the preference data were retained. A candidate pool was formed with instructions having at least two distinct responses, resulting in a dataset of 350.4k unique instructions and about 1.03 million total instruction-response pairs.</p><ul class="postList"><li name="ac2b" id="ac2b" class="graf graf--li graf-after--p">Evaluated on benchmarks like LeetCode, MATH, BigBench-Hard (BBH), MMLU, and AlpacaEval-V2 using zero-shot, 3-shot, and other methods as appropriate.</li></ul><figure name="2d72" id="2d72" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*DuATF_M9vzC7W4abUrGJpA.png" data-width="1950" data-height="1060" src="https://cdn-images-1.medium.com/max/800/1*DuATF_M9vzC7W4abUrGJpA.png"><figcaption class="imageCaption">GRAPE on the Tulu-Olmo collection.</figcaption></figure><ul class="postList"><li name="5b9e" id="5b9e" class="graf graf--li graf-after--figure">Models fine-tuned on responses selected by GRAPE outperformed strong baselines, including those trained on all available data.</li><li name="89b5" id="89b5" class="graf graf--li graf-after--li">GRAPE achieved better performance with roughly 1/6 of the training computation compared to TULU3–8B-SFT.</li><li name="07a0" id="07a0" class="graf graf--li graf-after--li">GRAPE outperformed state-of-the-art data-selection approaches like S2L, highlighting its effectiveness and efficiency.</li><li name="7a2d" id="7a2d" class="graf graf--li graf-after--li">GRAPE can leverage established datasets to customize a dataset for each base model, improving fine-tuning outcomes without synthesizing new data.</li><li name="7d48" id="7d48" class="graf graf--li graf-after--li">Consistent improvement across models reaffirmed GRAPE’s utility as an adaptive response selection mechanism for enhancing SFT performance.</li><li name="5ac1" id="5ac1" class="graf graf--li graf-after--li">GRAPE can optimize responses from a single generator, further boosting performance when applied to responses from a strong model.</li></ul><h3 name="f3e1" id="f3e1" class="graf graf--h3 graf-after--li">Paper</h3><p name="00b3" id="00b3" class="graf graf--p graf-after--h3 graf--trailing">The Best Instruction-Tuning Data are Those That Fit <a href="https://arxiv.org/abs/2502.04194" data-href="https://arxiv.org/abs/2502.04194" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">2502.04194</a></p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="d7fb" id="d7fb" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/22ce6da195a5"><time class="dt-published" datetime="2025-12-17T03:18:26.167Z">December 17, 2025</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-grape-22ce6da195a5" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

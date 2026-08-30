@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 162: PEGASUS</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 162: PEGASUS</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+PEGASUS (Pre-training with Extracted Gap-sentences for Abstractive SUmmarization Sequence-to-sequence models) utilizes the same…
+</section>
+<section data-field="body" class="e-content">
+<section name="142c" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="fc8b" id="fc8b" class="graf graf--h3 graf--leading graf--title">Papers Explained 162: PEGASUS</h3><figure name="bd2f" id="bd2f" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*inORdDfYp-iYnNuEmAWsZg.png" data-width="1340" data-height="314" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*inORdDfYp-iYnNuEmAWsZg.png"></figure><p name="0cd5" id="0cd5" class="graf graf--p graf-after--figure">PEGASUS (Pre-training with Extracted Gap-sentences for Abstractive SUmmarization Sequence-to-sequence models) utilizes the same encoder-decoder model architecture as BART. For pre-training, it employs two self-supervised objectives: Masked Language Modeling (MLM) and Gap Sentence Generation (GSG) for summarization.</p><figure name="281b" id="281b" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*C--49YdeoDrWWBv0DGVR2w.png" data-width="634" data-height="319" src="https://cdn-images-1.medium.com/max/800/1*C--49YdeoDrWWBv0DGVR2w.png"><figcaption class="imageCaption">The base architecture of PEGASUS is a standard Transformer encoder-decoder. Both GSG and MLM are applied simultaneously to this example as pre-training objectives. Originally there are three sentences. One sentence is masked with [MASK1] and used as target generation text (GSG). The other two sentences remain in the input, but some tokens are randomly masked by [MASK2] (MLM).</figcaption></figure><h4 name="5551" id="5551" class="graf graf--h4 graf-after--figure">Gap Sentences Generation (GSG)</h4><p name="d584" id="d584" class="graf graf--p graf-after--h4">It is hypothesized that the use of a pre-training objective that more closely resembles the downstream task leads to better and faster fine-tuning performance.</p><p name="4434" id="4434" class="graf graf--p graf-after--p">Whole sentences from documents are selected and masked, and gap-sentences are concatenated into a pseudo-summary. The corresponding position of each selected gap sentence is replaced by a mask token [MASK1] to inform the model.</p><p name="ef4a" id="ef4a" class="graf graf--p graf-after--p">To even more closely approximate a summary, sentences that appear to be important/principal to the document are selected.</p><p name="96c2" id="96c2" class="graf graf--p graf-after--p">Three primary strategies are considered for selecting m gap sentences without replacement from a document D, comprised of n sentences:</p><ul class="postList"><li name="0113" id="0113" class="graf graf--li graf-after--p"><strong class="markup--strong markup--li-strong">Random</strong> Uniformly select m sentences at random.</li><li name="c908" id="c908" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Lead</strong> Select the first m sentences.</li><li name="f8dc" id="f8dc" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Principal</strong> Select top-m scored sentences according to importance. As a proxy for importance we compute ROUGE- F1 between the sentence and the rest of the document</li></ul><h4 name="ea84" id="ea84" class="graf graf--h4 graf-after--li">Masked Language Model (MLM)</h4><p name="62c4" id="62c4" class="graf graf--p graf-after--h4">15% of the tokens in the input text are selected following BERT. The selected tokens are replaced in one of three ways: 80% of the time by a mask token [MASK2], 10% of the time by a random token, or 10% of the time without any change.</p><p name="c1a8" id="c1a8" class="graf graf--p graf-after--p">It is observed that using MLM during pre-training does not significantly enhance downstream tasks, even after a large number of pre-training steps. As a result, MLM is not incorporated into the final model, PEGASUS-LARGE.</p><h3 name="ff8c" id="ff8c" class="graf graf--h3 graf-after--p">Pre-training Corpus</h3><ul class="postList"><li name="b40b" id="b40b" class="graf graf--li graf-after--h3">C4, or the Colossal and Cleaned version of Common Crawl, consists of text from 350M Web-pages (750GB).</li><li name="428a" id="428a" class="graf graf--li graf-after--li">HugeNews, a dataset of 1.5B articles (3.8TB) collected from news and news-like websites from 2013- 2019. A whitelist of domains ranging from highquality news publishers to lower-quality sites such as high-school newspapers, and blogs was curated and used to seed a web-crawler. Heuristics were used to identify news-like articles, and only the main article text was extracted as plain text.</li></ul><h3 name="d093" id="d093" class="graf graf--h3 graf-after--li">Downstream Tasks/Datasets</h3><ul class="postList"><li name="4d34" id="4d34" class="graf graf--li graf-after--h3">XSum consists of 227k BBC articles from 2010 to 2017 covering a wide variety of subjects along with professionally written single-sentence summaries.</li><li name="652c" id="652c" class="graf graf--li graf-after--li">CNN/DailyMail dataset contains 93k articles from the CNN, and 220k articles the Daily Mail newspapers. Both publishers supplement their articles with bullet point summaries.</li><li name="5fcd" id="5fcd" class="graf graf--li graf-after--li">NEWSROOM is a large dataset containing 1.3M article-summary pairs written by authors and editors in the newsrooms of 38 major publications between 1998 and 2017.</li><li name="70a2" id="70a2" class="graf graf--li graf-after--li">Multi-News is a multi-document summarization dataset consisting of 56k pairs of news articles and their human-written summaries from the site newser.com.</li><li name="486a" id="486a" class="graf graf--li graf-after--li">Gigaword contains 4M examples extracted from news articles from the Gigaword corpus. The task is to generate the headline from the first sentence.</li><li name="beb2" id="beb2" class="graf graf--li graf-after--li">arXiv, PubMed are two long document datasets of scientific publications from arXiv.org (113k) and PubMed (215k). The task is to generate the abstract from the paper body.</li><li name="71ac" id="71ac" class="graf graf--li graf-after--li">BIGPATENT consists of 1.3 million U.S. patents along with human summaries under nine patent classification categories.</li><li name="364a" id="364a" class="graf graf--li graf-after--li">WikiHow is a large-scale dataset of instructions from the online WikiHow.com website. Each of 200k examples consists of multiple instruction-step paragraphs along with a summarizing sentence. The task is to generate the concatenated summary-sentences from the paragraphs.</li><li name="3499" id="3499" class="graf graf--li graf-after--li">Reddit TIFU contains 120K posts of informal stories from the online discussion forum Reddit, more specifically the TIFU sub-reddit from 2013-Jan to 2018-Mar. The sub-reddit posts strictly follow the rule of writing a descriptive ”TL;DR” summary.</li><li name="be58" id="be58" class="graf graf--li graf-after--li">AESLC consists of 18k email bodies and their subjects from the Enron corpus, a collection of email messages of employees in the Enron Corporation.</li><li name="7707" id="7707" class="graf graf--li graf-after--li">BillSum contains 23k US Congressional bills and human-written reference summaries from the 103rd-115th (1993–2018) sessions of Congress.</li></ul><h3 name="9ac0" id="9ac0" class="graf graf--h3 graf-after--li">Experiments</h3><p name="96d6" id="96d6" class="graf graf--p graf-after--h3">PEGASUSBASE had L = 12, H = 768, F = 3072, A = 12</p><p name="eb52" id="eb52" class="graf graf--p graf-after--p">PEGASUSLARGE had L = 16, H = 1024, F = 4096, A = 16</p><p name="2356" id="2356" class="graf graf--p graf-after--p">where L denotes the number of layers for encoder and decoder (i.e. Transformer blocks), H for the hidden size, F for the feed-forward layer size and A for the number of self-attention heads.</p><p name="1a7f" id="1a7f" class="graf graf--p graf-after--p">Sinusoidal positional encodings are used.</p><h3 name="5e56" id="5e56" class="graf graf--h3 graf-after--p">Paper</h3><p name="d149" id="d149" class="graf graf--p graf-after--h3 graf--trailing">PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization <a href="https://arxiv.org/abs/1912.08777" data-href="https://arxiv.org/abs/1912.08777" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">1912.08777</a></p></div></div></section><section name="f4e3" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="af06" id="af06" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="c9c4" id="c9c4" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/1cb16f572553"><time class="dt-published" datetime="2024-07-12T04:01:41.211Z">July 12, 2024</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-162-pegasus-1cb16f572553" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

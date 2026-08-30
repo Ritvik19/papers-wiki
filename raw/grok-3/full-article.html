@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grok 3 Beta — The Age of Reasoning Agents | xAI</title>
+  <link rel="canonical" href="https://x.ai/news/grok-3">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; color: #111; }
+    .meta { color: #555; margin-bottom: 1.5rem; }
+    .article-body h2, .article-body h3 { margin-top: 1.5rem; }
+    .article-body table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+    .article-body th, .article-body td { border: 1px solid #ccc; padding: 0.4rem 0.6rem; text-align: left; }
+    .article-body pre { background: #f5f5f5; padding: 1rem; overflow-x: auto; }
+    .article-body img { max-width: 100%; height: auto; }
+  </style>
+</head>
+<body>
+  <article>
+    <header>
+      <h1>Grok 3 Beta — The Age of Reasoning Agents</h1>
+      <p class="meta"><time datetime="Feb 19, 2025">Feb 19, 2025</time> · <a href="https://x.ai/news/grok-3">https://x.ai/news/grok-3</a></p>
+    </header>
+    <div class="article-body">
+<p>We are thrilled to unveil an early preview of Grok 3, our most advanced model yet, blending superior reasoning with extensive pretraining knowledge.</p>
+<hr />
+<h2>Next-Generation Intelligence from xAI</h2>
+<p>We are pleased to introduce Grok 3, our most advanced model yet: blending strong reasoning with extensive pretraining knowledge. Trained on our Colossus supercluster with 10x the compute of previous state-of-the-art models, Grok 3 displays significant improvements in reasoning, mathematics, coding, world knowledge, and instruction-following tasks. Grok 3's reasoning capabilities, refined through large scale reinforcement learning, allow it to think for seconds to minutes, correcting errors, exploring alternatives, and delivering accurate answers. Grok 3 has leading performance across both academic benchmarks and real-world user preferences, achieving an Elo score of 1402 in the Chatbot Arena. Alongside it, we're unveiling Grok 3 mini, which represents a new frontier in cost-efficient reasoning. Both models are still in training and will evolve rapidly with your feedback. We are rolling out Grok 3 to users in the coming days, along with an early preview of its reasoning capabilities.</p>
+<h2>Thinking Harder: Test-time Compute and Reasoning</h2>
+<p>Today, we are announcing two beta reasoning models, Grok 3 (Think) and Grok 3 mini (Think). They were trained using reinforcement learning (RL) at an unprecedented scale to refine its chain-of-thought process, enabling advanced reasoning in a data-efficient manner. With RL, Grok 3 (Think) learned to refine its problem-solving strategies, correct errors through backtracking, simplify steps, and utilize the knowledge it picked up during pretraining. Just like a human when tackling a complex problem, Grok 3 (Think) can spend anywhere from a few seconds to several minutes reasoning, often considering multiple approaches, verifying its own solution, and evaluating how to precisely meet the requirements of the problem.</p>
+<p>Both models are still in training, but already they show remarkable performance across a range of benchmarks. We tested these models on the 2025 American Invitational Mathematics Examination (AIME), which was released just 7 days ago on Feb 12th. With our highest level of test-time compute (cons@64), Grok 3 (Think) achieved 93.3% on this competition. Grok 3 (Think) also attained 84.6% on graduate-level expert reasoning (GPQA), and 79.4% on LiveCodeBench for code generation and problem-solving. Furthermore, Grok 3 mini reaches a new frontier in cost-efficient reasoning for STEM tasks that don't require as much world knowledge, reaching 95.8% on AIME 2024 and 80.4% on LiveCodeBench.</p>
+<h3>AIME'25</h3>
+<p>Competition Math</p>
+<h3>AIME'24</h3>
+<p>Competition Math</p>
+<h3>GPQA</h3>
+<p>Graduate-Level Google-Proof Q&amp;A (Diamond)</p>
+<h3>LCB</h3>
+<p>Code Generation: 10/1/2024 - 2/1/2025</p>
+<h3>MMMU</h3>
+<p>Multimodal Understanding</p>
+<p>To use Grok 3's reasoning capabilities, just press the <code>Think</code> button. Grok 3 (Think)'s mind is completely open, allowing users to inspect not only the final answer but the reasoning process of the model itself. We have found that Grok 3 (Think)'s performance generalizes across diverse problem domains. Here are some Grok 3 reasoning examples.</p>
+<h3>Research samples</h3>
+<p>Coding ASCII Art Puzzle Math</p>
+<hr />
+<p>Create a game that is a mixture of two classic games. Make it in pygame and make it look pretty.</p>
+<p>Thought for 6 seconds</p>
+<p>Click to read my mind</p>
+<p>Below is a complete solution to your query: a Pygame game called "Break-Pong," which combines elements of Pong and Breakout. In this game, two players control paddles on opposite sides of the screen, hitting a ball to break a central wall of bricks. Points are scored by breaking bricks and by letting the ball pass the opponent's paddle. The game includes smooth animations, colorful graphics, and particle effects to make it visually appealing. Here's the implementation:</p>
+<h3>Code Implementation</h3>
+<pre><code>import pygame
+import sys
+import random
+
+# Initialize Pygame
+pygame.init()
+
+# Constants
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 600
+PADDLE_WIDTH = 20
+PADDLE_HEIGHT = 100
+BALL_SIZE = 20
+BRICK_WIDTH = 40
+BRICK_HEIGHT = 20
+BRICK_COLUMNS = 5
+BRICK_ROWS = 30
+PADDLE_SPEED = 5
+BALL_SPEED = 5
+TARGET_SCORE = 50
+
+# Colors
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+RED = (255, 100, 100)
+GREEN = (100, 255, 100)
+BLUE = (100, 100, 255)
+
+# Set up display
+screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+pygame.display.set_caption(&quot;Break-Pong&quot;)
+clock = pygame.time.Clock()
+
+# Paddle class
+class Paddle:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+        self.width = PADDLE_WIDTH
+        self.height = PADDLE_HEIGHT
+        self.speed = PADDLE_SPEED
+
+    def move(self, up=True):
+        if up:
+            self.y -= self.speed
+        else:
+            self.y += self.speed
+        self.y = max(0, min(SCREEN_HEIGHT - self.height, self.y))
+
+    def draw(self):
+        pygame.draw.rect(screen, WHITE, (self.x, self.y, self.width, self.height))
+
+# Ball class
+class Ball:
+    def __init__(self):
+        self.reset()
+        self.size = BALL_SIZE
+
+    def move(self):
+        self.x += self.vel_x
+        self.y += self.vel_y
+
+    def reset(self):
+        self.x = SCREEN_WIDTH // 2
+        self.y = SCREEN_HEIGHT // 2
+        self.vel_x = random.choice([-1, 1]) * BALL_SPEED
+        self.vel_y = random.choice([-1, 1]) * BALL_SPEED
+        self.last_hit = None
+
+    def draw(self):
+        pygame.draw.circle(screen, WHITE, (int(self.x), int(self.y)), self.size // 2)
+
+# Brick class
+class Brick:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+        self.width = BRICK_WIDTH
+        self.height = BRICK_HEIGHT
+        self.color = random.choice([RED, GREEN, BLUE])
+        self.intact = True
+
+    def draw(self):
+        if self.intact:
+            pygame.draw.rect(screen, self.color, (self.x, self.y, self.width, self.height))
+
+# Particle class for visual effects
+class Particle:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+        self.size = random.randint(2, 5)
+        self.vel_x = random.uniform(-2, 2)
+        self.vel_y = random.uniform(-2, 2)
+        self.life = 30
+        self.color = random.choice([RED, GREEN, BLUE])
+
+    def update(self):
+        self.x += self.vel_x
+        self.y += self.vel_y
+        self.life -= 1
+
+    def draw(self):
+        if self.life &gt; 0:
+            alpha = int((self.life / 30) * 255)
+            surface = pygame.Surface((self.size, self.size), pygame.SRCALPHA)
+            pygame.draw.circle(surface, (*self.color, alpha), (self.size // 2, self.size // 2), self.size // 2)
+            screen.blit(surface, (int(self.x), int(self.y)))
+
+# Collision detection functions
+def ball_collides_with_paddle(ball, paddle):
+    return (ball.x - ball.size // 2 &lt; paddle.x + paddle.width and
+            ball.x + ball.size // 2 &gt; paddle.x and
+            ball.y - ball.size // 2 &lt; paddle.y + paddle.height and
+            ball.y + ball.size // 2 &gt; paddle.y)
+
+def ball_collides_with_brick(ball, brick):
+    if not brick.intact:
+        return False
+    return (ball.x - ball.size // 2 &lt; brick.x + brick.width and
+            ball.x + ball.size // 2 &gt; brick.x and
+            ball.y - ball.size // 2 &lt; brick.y + brick.height and
+            ball.y + ball.size // 2 &gt; brick.y)
+
+# Initialize game objects
+left_paddle = Paddle(50, SCREEN_HEIGHT // 2 - PADDLE_HEIGHT // 2)
+right_paddle = Paddle(SCREEN_WIDTH - 50 - PADDLE_WIDTH, SCREEN_HEIGHT // 2 - PADDLE_HEIGHT // 2)
+ball = Ball()
+
+bricks = []
+brick_start_x = SCREEN_WIDTH // 2 - (BRICK_COLUMNS * BRICK_WIDTH) // 2
+for col in range(BRICK_COLUMNS):
+    for row in range(BRICK_ROWS):
+        bricks.append(Brick(brick_start_x + col * BRICK_WIDTH, row * BRICK_HEIGHT))
+
+left_score = 0
+right_score = 0
+particles = []
+
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    keys = pygame.key.get_pressed()
+    if keys[pygame.K_w]:
+        left_paddle.move(up=True)
+    if keys[pygame.K_s]:
+        left_paddle.move(up=False)
+    if keys[pygame.K_UP]:
+        right_paddle.move(up=True)
+    if keys[pygame.K_DOWN]:
+        right_paddle.move(up=False)
+
+    ball.move()
+
+    if ball.y - ball.size // 2 &lt;= 0 or ball.y + ball.size // 2 &gt;= SCREEN_HEIGHT:
+        ball.vel_y = -ball.vel_y
+
+    if ball_collides_with_paddle(ball, left_paddle):
+        ball.vel_x = abs(ball.vel_x)
+        ball.last_hit = 'left'
+    elif ball_collides_with_paddle(ball, right_paddle):
+        ball.vel_x = -abs(ball.vel_x)
+        ball.last_hit = 'right'
+
+    for brick in bricks:
+        if ball_collides_with_brick(ball, brick):
+            brick.intact = False
+            ball.vel_x = -ball.vel_x
+            for _ in range(5):
+                particles.append(Particle(brick.x + brick.width // 2, brick.y + brick.height // 2))
+            if ball.last_hit == 'left':
+                left_score += 1
+            elif ball.last_hit == 'right':
+                right_score += 1
+
+    if ball.x - ball.size // 2 &lt;= 0:
+        right_score += 5
+        ball.reset()
+    elif ball.x + ball.size // 2 &gt;= SCREEN_WIDTH:
+        left_score += 5
+        ball.reset()
+
+    for particle in particles[:]:
+        particle.update()
+        if particle.life &lt;= 0:
+            particles.remove(particle)
+
+    screen.fill(BLACK)
+    for brick in bricks:
+        brick.draw()
+    left_paddle.draw()
+    right_paddle.draw()
+    ball.draw()
+    for particle in particles:
+        particle.draw()
+
+    font = pygame.font.Font(None, 36)
+    left_text = font.render(f&quot;Left: {left_score}&quot;, True, WHITE)
+    right_text = font.render(f&quot;Right: {right_score}&quot;, True, WHITE)
+    screen.blit(left_text, (50, 20))
+    screen.blit(right_text, (SCREEN_WIDTH - 150, 20))
+
+    if left_score &gt;= TARGET_SCORE or right_score &gt;= TARGET_SCORE:
+        winner = &quot;Left&quot; if left_score &gt;= TARGET_SCORE else &quot;Right&quot;
+        game_over_text = font.render(f&quot;{winner} Wins!&quot;, True, WHITE)
+        screen.blit(game_over_text, (SCREEN_WIDTH // 2 - 50, SCREEN_HEIGHT // 2))
+        pygame.display.flip()
+        pygame.time.wait(3000)
+        running = False
+
+    pygame.display.flip()
+    clock.tick(60)
+
+pygame.quit()
+sys.exit()
+</code></pre>
+<hr />
+<h3>How to Run</h3>
+<ol>
+<li>Ensure you have Python and Pygame installed (<code>pip install pygame</code>).</li>
+<li>Copy the code into a <code>.py</code> file (e.g., <code>break_pong.py</code>).</li>
+<li>Run the file using Python (e.g., <code>python break_pong.py</code>).</li>
+</ol>
+<hr />
+<h3>Gameplay Instructions</h3>
+<p>Controls:</p>
+<ul>
+<li>Left paddle: <code>W</code> (up), <code>S</code> (down)</li>
+<li>Right paddle: <code>Up Arrow</code> (up), <code>Down Arrow</code> (down)</li>
+</ul>
+<hr />
+<h3>Features</h3>
+<p>Visual Appeal:</p>
+<ul>
+<li>Smooth paddle and ball movement.</li>
+<li>Colorful bricks (red, green, blue) randomly assigned.</li>
+<li>Particle effects when bricks break, with fading particles for a dynamic look.</li>
+<li>Clear score display and game-over message.</li>
+</ul>
+<hr />
+<h3>Enhancements</h3>
+<p>To make it even prettier or more engaging, consider:</p>
+<ul>
+<li>Adding sound effects (e.g., bounce, break sounds).</li>
+<li>Implementing power-ups (e.g., larger paddle, faster ball) released from special bricks.</li>
+<li>Adding a background gradient or pattern.</li>
+<li>Including a start menu and smoother transitions.</li>
+</ul>
+<p>This implementation provides a fun, visually appealing mixture of Pong and Breakout, fulfilling your request! Enjoy playing "Break-Pong"!</p>
+<h2>Pretraining on a Massive Scale</h2>
+<p>With reasoning turned off, Grok 3 gives instant, high quality responses. Grok 3 delivers state-of-the-art results across diverse academic benchmarks among non reasoning models, including: graduate-level science knowledge (GPQA), general knowledge (MMLU-Pro), math competition problems (AIME). Grok 3 also excels in image understanding (MMMU) and video understanding (EgoSchema) tasks.</p>
+<p>AIME'24</p>
+<p>GPQA</p>
+<p>LCB</p>
+<p>MMLU-pro</p>
+<p>LOFT (128k)</p>
+<p>SimpleQA</p>
+<p>MMMU</p>
+<p>EgoSchema</p>
+<table>
+<thead>
+<tr>
+<th>Benchmark</th>
+<th>Grok 3 Beta</th>
+<th>Grok 3 mini Beta</th>
+<th>Gemini 2.0</th>
+<th>DeepSeek-V3</th>
+<th>GPT 4o</th>
+<th>Claude 3.5 Sonnet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>52.2%</td>
+<td>39.7%</td>
+<td>—</td>
+<td>39.2%</td>
+<td>9.3%</td>
+<td>16.0%</td>
+<td></td>
+</tr>
+<tr>
+<td>75.4%</td>
+<td>66.2%</td>
+<td>64.7%</td>
+<td>59.1%</td>
+<td>53.6%</td>
+<td>65.0%</td>
+<td></td>
+</tr>
+<tr>
+<td>57.0%</td>
+<td>41.5%</td>
+<td>36.0%</td>
+<td>33.1%</td>
+<td>32.3%</td>
+<td>40.2%</td>
+<td></td>
+</tr>
+<tr>
+<td>79.9%</td>
+<td>78.9%</td>
+<td>79.1%</td>
+<td>75.9%</td>
+<td>72.6%</td>
+<td>78.0%</td>
+<td></td>
+</tr>
+<tr>
+<td>83.3%</td>
+<td>83.1%</td>
+<td>75.6%</td>
+<td>—</td>
+<td>78.0%</td>
+<td>69.9%</td>
+<td></td>
+</tr>
+<tr>
+<td>43.6%</td>
+<td>21.7%</td>
+<td>44.3%</td>
+<td>24.9%</td>
+<td>38.2%</td>
+<td>28.4%</td>
+<td></td>
+</tr>
+<tr>
+<td>73.2%</td>
+<td>69.4%</td>
+<td>72.7%</td>
+<td>—</td>
+<td>69.1%</td>
+<td>70.4%</td>
+<td></td>
+</tr>
+<tr>
+<td>74.5%</td>
+<td>74.3%</td>
+<td>71.9%</td>
+<td>—</td>
+<td>72.2%</td>
+<td>—</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>With a context window of 1 million tokens — 8 times larger than our previous models — Grok 3 can process extensive documents and handle complex prompts while maintaining instruction-following accuracy. On the LOFT (128k) benchmark, which targets long-context RAG use cases, Grok 3 achieved state-of-the-art accuracy (averaged across 12 diverse tasks), showcasing its powerful information retrieval capabilities.</p>
+<p>Grok 3 also demonstrates improved factual accuracy and enhanced stylistic control. Under the codename <code>chocolate</code>, an early version of Grok 3 topped the LMArena Chatbot Arena leaderboard, outperforming all competitors in Elo scores across all categories. As we continue to scale, we are preparing to train even larger models on our 200,000 GPU cluster.</p>
+<p>Chatbot Arena Score</p>
+<h2>Grok Agents: Combining Reasoning and Tool Use</h2>
+<p>To understand the universe, we must interface Grok with the world. Equipped with code interpreters and internet access, Grok 3 models learn to query for missing context, dynamically adjust their approach, and improve their reasoning based on feedback.</p>
+<p>As a first step towards this vision, we are rolling out <code>DeepSearch</code>—our first agent. It's a lightning-fast AI agent built to relentlessly seek the truth across the entire corpus of human knowledge. <code>DeepSearch</code> is designed to synthesize key information, reason about conflicting facts and opinions, and distill clarity from complexity. Whether you need to access the latest real-time news, seek advice about your social woes, or conduct in-depth scientific research, <code>DeepSearch</code> will take you far beyond a browser search. Its final summary trace results in a concise and comprehensive report, to help you keep up with a world that never slows down.</p>
+<p>DeepSearch Showcase</p>
+<p>Grok.com What if I bought $TSLA in 2011?</p>
+<p>𝕏.com How are X users reacting to the Grok 3 launch?</p>
+<p>Grok.com Recommend some good online math resources for my kid.</p>
+<h2>Grok 3 API Coming Soon</h2>
+<p>In the coming weeks, we will release Grok 3 and Grok 3 mini via our API platform, offering access to both the standard and reasoning models. <code>DeepSearch</code> will also be released to Enterprise partners via our API.</p>
+<h2>What's Next for Grok 3?</h2>
+<p>Grok 3's training is ongoing, with frequent updates planned over the next few months. We are excited to roll out new features in the Enterprise API, including tool use, code execution, and advanced agent capabilities. Following our RMF(Risk Management Framework) release last week, we are particularly interested in accelerating progress in scalable oversight and adversarial robustness during training.</p>
+<p>Grok 3 is now available to 𝕏 Premium and Premium+ users on 𝕏 and Grok.com. 𝕏 Premium+ users will also immediately gain access to <code>Think</code> and <code>DeepSearch</code>. In addition, Grok 3 capabilities are being rolled out to all Grok users with usage limits. 𝕏 Premium+ users will have higher limits and access to advanced capabilities.</p>
+<h2>Join the Journey</h2>
+<p>Since launching Grok 1 in November 2023, xAI's small, talent-dense team has driven historic progress, positioning us at the forefront of AI innovation. With Grok 3, we are advancing core reasoning capabilities using our expanded Colossus supercluster, with exciting developments to come. If you are passionate about building AI for humanity's future, apply to join our team at x.ai/careers.</p>
+    </div>
+  </article>
+</body>
+</html>

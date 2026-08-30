@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 28: Masked AutoEncoder</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 28: Masked AutoEncoder</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+The appetite for data has been successfully addressed in natural language processing (NLP) by self-supervised pretraining. The solutions…
+</section>
+<section data-field="body" class="e-content">
+<section name="0ccd" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="e7db" id="e7db" class="graf graf--h3 graf--leading graf--title">Papers Explained 28: Masked AutoEncoder</h3><figure name="f797" id="f797" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*GfdrPwMrJ8YdcpLGQEI-mw.png" data-width="1518" data-height="340" src="https://cdn-images-1.medium.com/max/800/1*GfdrPwMrJ8YdcpLGQEI-mw.png"></figure><p name="4c82" id="4c82" class="graf graf--p graf-after--figure">The appetite for data has been successfully addressed in natural language processing (NLP) by self-supervised pretraining. The solutions, based on autoregressive language modeling in GPT and masked autoencoding in BERT, are conceptually simple: they remove a portion of the data and learn to predict the removed content.</p><p name="f593" id="f593" class="graf graf--p graf-after--p">The idea of masked autoencoders, a form of more general denoising autoencoders, is natural and applicable in computer vision as well. But what makes masked autoencoding different between vision and language?</p><ul class="postList"><li name="e3e0" id="e3e0" class="graf graf--li graf-after--p">In vision, convolutional networks were dominant over the last decade. Convolutions typically operate on regular grids and it is not straightforward to integrate ‘indicators’ such as mask tokens or positional embeddings into convolutional networks. This architectural gap, however, has been addressed with the introduction of Vision Transformers (ViT).</li><li name="f3d9" id="f3d9" class="graf graf--li graf-after--li">Information density is different between language and vision. Languages are human-generated signals that are highly semantic and information-dense. When training a model to predict only a few missing words per sentence, this task appears to induce sophisticated language understanding. Images, on the contrary, are natural signals with heavy spatial redundancy — e.g., a missing patch can be recovered from neighboring patches with little high-level understanding of parts, objects, and scenes. To overcome this difference and encourage learning useful features, we show that a simple strategy works well in computer vision: masking a very high portion of random patches. This strategy largely reduces redundancy and creates a challenging selfsupervisory task that requires holistic understanding beyond low-level image statistics.</li><li name="874d" id="874d" class="graf graf--li graf-after--li">The autoencoder’s decoder, which maps the latent representation back to the input, plays a different role between reconstructing text and images.</li></ul><p name="2122" id="2122" class="graf graf--p graf-after--li">Driven by this analysis, MAE masks random patches from the input image and reconstructs the missing patches in the pixel space. It has an asymmetric encoder-decoder design. Our encoder operates only on the visible subset of patches (without mask tokens), and our decoder is lightweight and reconstructs the input from the latent representation along with mask tokens.</p><h3 name="ee9c" id="ee9c" class="graf graf--h3 graf-after--p">Architecture</h3><figure name="0095" id="0095" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*ofH7hzcEthlH6DoV7KgmnQ.png" data-width="831" data-height="771" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*ofH7hzcEthlH6DoV7KgmnQ.png"></figure><p name="c42c" id="c42c" class="graf graf--p graf-after--figure"><strong class="markup--strong markup--p-strong">Masking</strong> Following ViT, an image is divided into regular non-overlapping patches. Then a subset of<br>patches is sampled and the remaining ones are masked.</p><p name="3cd9" id="3cd9" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">MAE encoder</strong> The encoder is a ViT but applied only on visible, unmasked patches. Thus the encoder only operates on a small subset (~25%) of the full et. Masked patches are removed, no mask tokens are used. This allows is to train very large encoders with only a fraction of compute and memory. The full set is handled by a lightweight decoder.</p><p name="ce43" id="ce43" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">MAE decoder</strong> The input to the MAE decoder is the full set of tokens consisting of (i) encoded visible patches, and (ii) mask tokens. Each mask token is a shared, learned vector that indicates the presence of a missing patch to be predicted. Positional embeddings are added to all tokens in this full set; without this, mask tokens would have no information about their location in the image. The decoder has another series of Transformer blocks. The MAE decoder is only used during pre-training to perform the image reconstruction task. Therefore, the decoder architecture can be flexibly designed in a manner that is independent of the encoder design.</p><p name="46e1" id="46e1" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Reconstruction Target</strong> MAE reconstructs the input by predicting the pixel values for each masked patch. Each element in the decoder’s output is a vector of pixel values representing a patch. The last layer of the decoder is a linear projection whose number of output channels equals the number of pixel values in a patch. The decoder’s output is reshaped to form a reconstructed image. The loss function computes the mean squared error (MSE) between the reconstructed and original images in the pixel space. Loss is computed only on masked patches, similar to BERT.</p><h3 name="347c" id="347c" class="graf graf--h3 graf-after--p">Paper</h3><p name="24dd" id="24dd" class="graf graf--p graf-after--h3">Masked Autoencoders Are Scalable Vision Learners: <a href="https://arxiv.org/abs/2111.06377" data-href="https://arxiv.org/abs/2111.06377" class="markup--anchor markup--p-anchor" rel="noreferrer nofollow noopener" target="_blank">2111.06377</a></p><h3 name="e2e4" id="e2e4" class="graf graf--h3 graf-after--p">Implementation</h3><p name="03f6" id="03f6" class="graf graf--p graf-after--h3"><a href="https://www.kaggle.com/code/ritvik1909/masked-autoencoder-vision-transformer" data-href="https://www.kaggle.com/code/ritvik1909/masked-autoencoder-vision-transformer" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Masked Autoencoder — Vision Transformer</a></p><p name="a72b" id="a72b" class="graf graf--p graf-after--p graf--trailing">Recommended Reading [<a href="https://ritvik19.medium.com/list/vision-transformers-61e6836230f1" data-href="https://ritvik19.medium.com/list/vision-transformers-61e6836230f1" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Vision Transformers</a>]</p></div></div></section><section name="b831" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="0e7c" id="0e7c" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="fe2e" id="fe2e" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/38cb0dbed4af"><time class="dt-published" datetime="2023-02-09T04:55:35.293Z">February 9, 2023</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-28-masked-autoencoder-38cb0dbed4af" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

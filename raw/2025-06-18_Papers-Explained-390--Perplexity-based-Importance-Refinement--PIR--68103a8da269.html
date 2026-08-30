@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 390: Perplexity-based Importance Refinement (PIR)</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 390: Perplexity-based Importance Refinement (PIR)</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+PIR (Perplexity-based Importance Refinement) is a framework that quantitatively evaluates the importance of each reasoning step based on…
+</section>
+<section data-field="body" class="e-content">
+<section name="3090" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="638c" id="638c" class="graf graf--h3 graf--leading graf--title">Papers Explained 390: Perplexity-based Importance Refinement (PIR)</h3><figure name="2ae7" id="2ae7" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*KSjpYdDBxcPO0hA0FsMhLQ.png" data-width="1640" data-height="640" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*KSjpYdDBxcPO0hA0FsMhLQ.png"></figure><p name="8d50" id="8d50" class="graf graf--p graf-after--figure">PIR (Perplexity-based Importance Refinement) is a framework that quantitatively evaluates the importance of each reasoning step based on its impact on answer prediction confidence. PIR systematically identifies and selectively prunes only low-importance functional steps while preserving progressive reasoning components, creating optimized training data that maintains the integrity of the core solution path while reducing verbosity.</p><p name="c5b6" id="c5b6" class="graf graf--p graf-after--p">The project is available on <a href="https://github.com/GAIR-NLP/LIMOPro/" data-href="https://github.com/GAIR-NLP/LIMOPro/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">GitHub</a>.</p><h3 name="b349" id="b349" class="graf graf--h3 graf-after--p">Problem Formulation</h3><p name="dd4f" id="dd4f" class="graf graf--p graf-after--h3">This paper addresses the challenge of optimizing reasoning chains for complex reasoning tasks. Consider a dataset D, containing question-reasoning-answer triplets (q,r,a), where q∈Q represents a reasoning problem, r∈R is the reasoning chain, and a∈A is the answer. A reasoning chain r is defined as a sequence of intermediate steps {s1,s2,…,sn}, where each step si represents a logical deduction that bridges the gap between the question and the final answer.</p><p name="3256" id="3256" class="graf graf--p graf-after--p">The goal is to refine each reasoning chain r into an optimized version r′ such that:</p><ol class="postList"><li name="560a" id="560a" class="graf graf--li graf-after--p">The answer accuracy is preserved: f(q,r′) = f(q,r) = a</li><li name="45ea" id="45ea" class="graf graf--li graf-after--li">The token length is reduced: |r′|&lt;|r|</li><li name="e58c" id="e58c" class="graf graf--li graf-after--li">The essential reasoning logic is maintained without harming the quality of the dataset.</li></ol><h3 name="2afe" id="2afe" class="graf graf--h3 graf-after--li">PIR (Perplexity-Based Importance Refinement)</h3><p name="0864" id="0864" class="graf graf--p graf-after--h3">Four distinct modes of cognitive reasoning are identified:</p><ul class="postList"><li name="46f1" id="46f1" class="graf graf--li graf-after--p">Progressive Reasoning: Forward-chaining inference, the core deductive logic.</li><li name="da75" id="da75" class="graf graf--li graf-after--li">Verification: Metacognitive monitoring to validate calculations.</li><li name="7a84" id="7a84" class="graf graf--li graf-after--li">Multi-method Validation: Using different methods to confirm conclusions.</li><li name="548e" id="548e" class="graf graf--li graf-after--li">Error Correction: Identifying and fixing mistakes in reasoning.</li></ul><p name="81ea" id="81ea" class="graf graf--p graf-after--li">Progressive reasoning is considered essential, while the other three are functional patterns that can contain redundancies.</p><p name="8248" id="8248" class="graf graf--p graf-after--p">PIR quantifies the importance of each reasoning step. It measures the change in perplexity (a measure of how well a language model predicts a sequence) when a specific step is removed.</p><figure name="e358" id="e358" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*CEWgHFCpT3cRzUseZgLTKQ.png" data-width="1640" data-height="640" src="https://cdn-images-1.medium.com/max/800/1*CEWgHFCpT3cRzUseZgLTKQ.png"></figure><p name="1922" id="1922" class="graf graf--p graf-after--figure">A higher PIR value indicates a more important step. Removing it significantly impacts the model’s ability to predict the correct answer.</p><figure name="bc75" id="bc75" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*V0XMgiMSK_x0_fuki5_Q9w.png" data-width="1640" data-height="760" src="https://cdn-images-1.medium.com/max/800/1*V0XMgiMSK_x0_fuki5_Q9w.png"><figcaption class="imageCaption">PIR framework pipeline for reasoning optimization.</figcaption></figure><p name="2ead" id="2ead" class="graf graf--p graf-after--figure">Reasoning chains are divided into logical steps using Claude 3.7 Sonnet. A two-phase system classifies reasoning steps into the four cognitive patterns.</p><ol class="postList"><li name="1c10" id="1c10" class="graf graf--li graf-after--p">Rule-based pattern matching identifies steps with linguistic markers (e.g., “Let me check” for verification).</li><li name="374e" id="374e" class="graf graf--li graf-after--li">Claude 3.7 Sonnet performs contextual analysis for steps lacking explicit markers.</li></ol><ul class="postList"><li name="c37d" id="c37d" class="graf graf--li graf-after--li">Functional steps (verification, multi-method validation, and error correction) are selectively removed based on their PIR values.</li><li name="4893" id="4893" class="graf graf--li graf-after--li">Progressive reasoning steps are always preserved.</li><li name="b9f2" id="b9f2" class="graf graf--li graf-after--li">Steps with the lowest PIR values are removed according to a predefined ratio threshold.</li></ul><figure name="08e8" id="08e8" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*0vV6ZUZMFqWPtg3ON24_Vg.png" data-width="1640" data-height="1030" src="https://cdn-images-1.medium.com/max/800/1*0vV6ZUZMFqWPtg3ON24_Vg.png"></figure><h3 name="cc14" id="cc14" class="graf graf--h3 graf-after--figure">Experimental Setup</h3><p name="d79d" id="d79d" class="graf graf--p graf-after--h3">The PIR framework is applied to three datasets (LIMO, LIMO-V2, S1K) distilled from different foundation models (DeepSeek R1, QwQ, Gemini Thinking) to create optimized versions (LIMO-P, LIMO-V2-P, S1K-P).</p><p name="1a16" id="1a16" class="graf graf--p graf-after--p">The Qwen2.5–32B-Instruct model is fine-tuned on both the original and PIR-optimized datasets.</p><p name="0c64" id="0c64" class="graf graf--p graf-after--p">The models are evaluated on three reasoning-intensive benchmarks: AIME24, GPQA Diamond, and AMC23.</p><h3 name="21ef" id="21ef" class="graf graf--h3 graf-after--p">Evaluation</h3><figure name="15dd" id="15dd" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*fABrPJMjBVAWo_2Qw6VWsg.png" data-width="1640" data-height="720" src="https://cdn-images-1.medium.com/max/800/1*fABrPJMjBVAWo_2Qw6VWsg.png"><figcaption class="imageCaption">Experimental results comparing baseline models with their PIR-optimized variants (-P) across reasoning benchmarks.</figcaption></figure><ul class="postList"><li name="51e8" id="51e8" class="graf graf--li graf-after--figure">PIR-optimized models (LIMO-P, LIMO-V2-P, S1–32B-P) consistently achieved superior efficiency-accuracy trade-offs compared to baseline models (LIMO, LIMO-V2, S1–32B) across all benchmarks. For example, S1–32B-P showed a 4.2 percentage point accuracy increase and a 29% token reduction on AIME, resulting in a 56% efficiency improvement.</li><li name="2eaf" id="2eaf" class="graf graf--li graf-after--li">The consistent improvements across diverse benchmarks and data sources suggest that the PIR framework effectively identifies and preserves high-value reasoning steps while eliminating low-importance functional components, indicating strong generalizability.</li></ul><figure name="d86b" id="d86b" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*XLvTTRAkPDyGUD0-cfk5SQ.png" data-width="1640" data-height="350" src="https://cdn-images-1.medium.com/max/800/1*XLvTTRAkPDyGUD0-cfk5SQ.png"><figcaption class="imageCaption">Experimental results comparing PIR(S1–32B-P) with different optimization approaches.</figcaption></figure><ul class="postList"><li name="0c00" id="0c00" class="graf graf--li graf-after--figure">PIR (S1–32B-P) outperformed other reasoning optimization approaches (S1-PROMPT, S1-SPIRIT, S1-RULE) across benchmarks, demonstrating the superiority of selectively pruning functional steps while preserving progressive reasoning components.</li></ul><figure name="f0d9" id="f0d9" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*0lTmN4EK4DRtGe-AaFDJug.png" data-width="1640" data-height="1030" src="https://cdn-images-1.medium.com/max/800/1*0lTmN4EK4DRtGe-AaFDJug.png"></figure><ul class="postList"><li name="6724" id="6724" class="graf graf--li graf-after--figure">PIR-optimized models consistently outperformed their non-optimized counterparts across most token budget levels, demonstrating the generalizability of the approach to different resource constraints.</li></ul><figure name="0dfe" id="0dfe" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*uD2ScL8sM5JEsdEvO9eV-w.png" data-width="1640" data-height="450" src="https://cdn-images-1.medium.com/max/800/1*uD2ScL8sM5JEsdEvO9eV-w.png"><figcaption class="imageCaption">Impact of pruning ratio on model performance.</figcaption></figure><ul class="postList"><li name="20ec" id="20ec" class="graf graf--li graf-after--figure">There exists an optimal refinement threshold that balances the removal of redundant functional steps with the preservation of critical reasoning components. Excessive pruning beyond this threshold leads to declining accuracy.</li></ul><figure name="b453" id="b453" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*cFtVNSM6XUCN94u2MwYKxw.png" data-width="1640" data-height="520" src="https://cdn-images-1.medium.com/max/800/1*cFtVNSM6XUCN94u2MwYKxw.png"><figcaption class="imageCaption">Impact of PIR refinement across model sizes and benchmarks.</figcaption></figure><ul class="postList"><li name="6f90" id="6f90" class="graf graf--li graf-after--figure">PIR demonstrates robust scalability with performance improvements across most model sizes, with the benefits becoming increasingly pronounced as model size increases.</li></ul><h3 name="869c" id="869c" class="graf graf--h3 graf-after--li">Paper</h3><p name="00b3" id="00b3" class="graf graf--p graf-after--h3 graf--trailing">LIMOPro: Reasoning Refinement for Efficient and Effective Test-time Scaling <a href="https://arxiv.org/abs/2505.19187" data-href="https://arxiv.org/abs/2505.19187" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">2505.19187</a></p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="d7fb" id="d7fb" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/68103a8da269"><time class="dt-published" datetime="2025-06-18T03:33:06.811Z">June 18, 2025</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-390-perplexity-based-importance-refinement-pir-68103a8da269" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

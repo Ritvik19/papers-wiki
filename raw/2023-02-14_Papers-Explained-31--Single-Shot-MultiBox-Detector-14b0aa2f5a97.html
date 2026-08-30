@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 31: Single Shot MultiBox Detector</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 31: Single Shot MultiBox Detector</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+The SSD approach is based on a feed-forward convolutional network that produces a fixed-size collection of bounding boxes and scores for…
+</section>
+<section data-field="body" class="e-content">
+<section name="51ac" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="7a1d" id="7a1d" class="graf graf--h3 graf--leading graf--title">Papers Explained 31: Single Shot MultiBox Detector</h3><figure name="8eca" id="8eca" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*6e8vW30mrHf_xvVrQh2vlQ.png" data-width="1401" data-height="317" src="https://cdn-images-1.medium.com/max/800/1*6e8vW30mrHf_xvVrQh2vlQ.png"></figure><p name="c7b1" id="c7b1" class="graf graf--p graf-after--figure">The SSD approach is based on a feed-forward convolutional network that produces a fixed-size collection of bounding boxes and scores for the presence of object class instances in those boxes, followed by a non-maximum suppression step to produce the final detections.</p><figure name="10a1" id="10a1" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*RNoIO0aY8nhGey9gPQvYhw.png" data-width="949" data-height="623" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*RNoIO0aY8nhGey9gPQvYhw.png"></figure><p name="005d" id="005d" class="graf graf--p graf-after--figure"><strong class="markup--strong markup--p-strong">Multi-scale feature maps for detection</strong></p><p name="1a4a" id="1a4a" class="graf graf--p graf-after--p">We add convolutional feature layers to the end of the truncated base network. These layers decrease in size progressively and allow predictions of detections at multiple scales.</p><p name="4d7e" id="4d7e" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Convolutional predictors for detection</strong></p><p name="c014" id="c014" class="graf graf--p graf-after--p">Each added feature layer can produce a fixed set of detection predictions using a set of convolutional filters.</p><p name="02cc" id="02cc" class="graf graf--p graf-after--p">For a feature layer of size m × n with p channels, the basic element for predicting parameters of a potential detection is a 3 × 3 × p small kernel that produces either a score for a category, or a shape offset relative to the default box coordinates. At each of the m × n locations where the kernel is applied, it produces an output value. The bounding box offset output values are measured relative to a default box position relative to each feature map location.</p><p name="1588" id="1588" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Default boxes and aspect ratios</strong></p><p name="aaeb" id="aaeb" class="graf graf--p graf-after--p">We associate a set of default bounding boxes with each feature map cell, for multiple feature maps at the top of the network. The default boxes tile the feature map in a convolutional manner, so that the position of each box relative to its corresponding cell is fixed. At each feature map cell, we predict the offsets relative to the default box shapes in the cell, as well as the per-class scores that indicate the presence of a class instance in each of those boxes.</p><p name="3ac8" id="3ac8" class="graf graf--p graf-after--p">Our default boxes are similar to the anchor boxes used in Faster R-CNN, however we apply them to several feature maps of different resolutions. Allowing different default box shapes in several feature maps let us efficiently discretize the space of possible output box shapes.</p><figure name="88f6" id="88f6" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*6wZx4xOMuqvUD4tU81193A.png" data-width="835" data-height="564" src="https://cdn-images-1.medium.com/max/800/1*6wZx4xOMuqvUD4tU81193A.png"></figure><p name="6184" id="6184" class="graf graf--p graf-after--figure"><strong class="markup--strong markup--p-strong">Matching strategy</strong></p><p name="a515" id="a515" class="graf graf--p graf-after--p">During training we need to determine which default boxes correspond to a ground truth detection and train the network accordingly. For each ground truth box we are selecting from default boxes that vary over location, aspect ratio, and scale. We begin by matching each ground truth box to the default box with the best jaccard overlap.</p><p name="bb7d" id="bb7d" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Hard negative mining</strong></p><p name="208d" id="208d" class="graf graf--p graf-after--p">After the matching step, most of the default boxes are negatives, especially when the number of possible default boxes is large. This introduces a significant imbalance between the positive and negative training examples. Instead of using all the negative examples, we sort them using the highest confidence loss for each default box and pick the top ones so that the ratio between the negatives and positives is at most 3:1. We found that this leads to faster optimization and a more stable training.</p><p name="dc75" id="dc75" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Base network</strong></p><p name="353e" id="353e" class="graf graf--p graf-after--p">Our experiments are all based on VGG16, which is pre-trained on the ILSVRC CLS-LOC dataset.</p><h3 name="7feb" id="7feb" class="graf graf--h3 graf-after--p">Paper</h3><p name="6479" id="6479" class="graf graf--p graf-after--h3 graf--trailing">SSD: Single Shot MultiBox Detector <a href="https://arxiv.org/abs/1512.02325" data-href="https://arxiv.org/abs/1512.02325" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">1512.02325</a></p></div></div></section><section name="5695" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="a26a" id="a26a" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="654c" id="654c" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/14b0aa2f5a97"><time class="dt-published" datetime="2023-02-14T04:03:54.388Z">February 14, 2023</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-31-single-shot-multibox-detector-14b0aa2f5a97" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

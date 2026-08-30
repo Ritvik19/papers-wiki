@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 123: WebGPT</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 123: WebGPT</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+WebGPT is GPT-3 fine-tuned to answer long-form questions using a text-based web browsing environment (allowing the model to search and…
+</section>
+<section data-field="body" class="e-content">
+<section name="f543" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="4037" id="4037" class="graf graf--h3 graf--leading graf--title">Papers Explained 123: WebGPT</h3><figure name="4fd3" id="4fd3" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*YV9BHMRDj0BNo8bSpC3vKg.png" data-width="1171" data-height="653" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*YV9BHMRDj0BNo8bSpC3vKg.png"></figure><p name="6fcc" id="6fcc" class="graf graf--p graf-after--figure">WebGPT is GPT-3 fine-tuned to answer long-form questions using a text-based web browsing environment (allowing the model to search and navigate the web) using imitation learning and then the answer quality is optimized with human feedback.</p><h3 name="5f1a" id="5f1a" class="graf graf--h3 graf-after--p">Environment Design</h3><p name="0a7a" id="0a7a" class="graf graf--p graf-after--h3">A text-based web-browsing environment is designed. The model is prompted with a written summary of the current state of the environment, including the question, the text of the current page at the current cursor location, and some other information.</p><figure name="7c45" id="7c45" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*5UBKKxizmr2xP8W4KCGHmQ.png" data-width="1218" data-height="515" src="https://cdn-images-1.medium.com/max/800/1*5UBKKxizmr2xP8W4KCGHmQ.png"></figure><p name="ad72" id="ad72" class="graf graf--p graf-after--figure">In response to this, the model must issue one of the commands given, which performs an action such as running a Bing search, clicking on a link, or scrolling around.</p><figure name="17d6" id="17d6" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*LEMUH2g-frtodM1MLYQbtQ.png" data-width="1074" data-height="370" src="https://cdn-images-1.medium.com/max/800/1*LEMUH2g-frtodM1MLYQbtQ.png"><figcaption class="imageCaption">: Actions the model can take. If a model generates any other text, it is considered to be an invalid action. Invalid actions still count towards the maximum, but are otherwise ignored.</figcaption></figure><p name="de1a" id="de1a" class="graf graf--p graf-after--figure">This process is then repeated with a fresh context. After the browsing has ended as long as there is at least one reference, the model is prompted with the question and the references, and must compose its final answer.</p><h3 name="6be6" id="6be6" class="graf graf--h3 graf-after--p">Data Collection</h3><p name="8d29" id="8d29" class="graf graf--p graf-after--h3">In total around 6K demonstrations (examples of humans using the browser to answer questions) and 21.5K comparisons (pairs of model-generated answers to the same question) are collected. The vast majority of questions were taken from ELI5, mixed with a small number of questions from other sources, such as TriviaQA .</p><figure name="750b" id="750b" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*7_LrFcPRsk0YdZbuQny4tw.png" data-width="606" data-height="319" src="https://cdn-images-1.medium.com/max/800/1*7_LrFcPRsk0YdZbuQny4tw.png"><figcaption class="imageCaption">Breakdown of the demonstrations and comparisons by question dataset.</figcaption></figure><h3 name="fe67" id="fe67" class="graf graf--h3 graf-after--figure">Training</h3><p name="4fc1" id="4fc1" class="graf graf--p graf-after--h3">The 760M, 13B and 175B models of the GPT3 model family are fine tuned. Four main training methods are used.</p><ol class="postList"><li name="2dbe" id="2dbe" class="graf graf--li graf-after--p">Behavior cloning (BC). Fine-tuning is done on the demonstrations using supervised learning, with the commands issued by the human demonstrators as labels.</li><li name="1f1e" id="1f1e" class="graf graf--li graf-after--li">Reward modeling (RM). Starting from the BC model with the final unembedding layer removed, a model is trained to take in a question and an answer with references, and output a scalar reward. The reward represents an Elo score, scaled such that the difference between two scores represents the logit of the probability that one will be preferred to the other by the human labelers. The reward model is trained using a cross-entropy loss, with the comparisons as labels. Ties are treated as soft 50% labels.</li><li name="18bc" id="18bc" class="graf graf--li graf-after--li">Reinforcement learning (RL). The BC model is fine tuned on the environment using PPO. For the environment reward,the reward model score at the end of each episode is taken , and added to a KL penalty from the BC model at each token to mitigate over optimization of the reward model.</li><li name="5927" id="5927" class="graf graf--li graf-after--li">Rejection sampling (best-of-n). A fixed number of answers (4, 16 or 64) are sampled from either the BC model or the RL model, and the one ranked highest by the reward model is related . This is used as an alternative method of optimizing against the reward model, which requires no additional training, but instead uses more inference-time computation.</li></ol><p name="56dd" id="56dd" class="graf graf--p graf-after--li">Mutually disjoint sets of questions are used for each of BC, RM and RL.</p><h3 name="1add" id="1add" class="graf graf--h3 graf-after--p">Evaluation</h3><h4 name="969e" id="969e" class="graf graf--h4 graf-after--h3">ELI5</h4><p name="8b80" id="8b80" class="graf graf--p graf-after--h4">WebGPT-generated answers are compared against both human-demonstrated responses and reference answers from the ELI5 dataset.</p><figure name="9d16" id="9d16" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*gZB33yuFCq1-rx8cw4B8xw.png" data-width="1097" data-height="577" src="https://cdn-images-1.medium.com/max/800/1*gZB33yuFCq1-rx8cw4B8xw.png"><figcaption class="imageCaption">Human evaluations on ELI5.</figcaption></figure><ul class="postList"><li name="91ce" id="91ce" class="graf graf--li graf-after--figure">The best WebGPT model outperformed human-demonstrated answers 56% of the time and surpassed ELI5 reference answers 69% of the time.</li><li name="40dc" id="40dc" class="graf graf--li graf-after--li">Uusing human feedback was crucial for achieving a preference rate higher than 50%.</li><li name="00a1" id="00a1" class="graf graf--li graf-after--li">Substantial improvement over prior work is achieved, whose best model achieved only a 23% preference rate against reference answers despite using less compute power.</li></ul><h4 name="8bef" id="8bef" class="graf graf--h4 graf-after--li">TruthfulQA</h4><p name="c926" id="c926" class="graf graf--p graf-after--h4">TruthfulQA Dataset is designed to reveal false beliefs/misconceptions in answers.</p><figure name="4ab4" id="4ab4" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*9wMmuinNlJrl25SjxhCyWQ.png" data-width="717" data-height="605" src="https://cdn-images-1.medium.com/max/800/1*9wMmuinNlJrl25SjxhCyWQ.png"><figcaption class="imageCaption">TruthfulQA results.</figcaption></figure><ul class="postList"><li name="3158" id="3158" class="graf graf--li graf-after--figure">WebGPT models outperformed all GPT-3 models (using both prompts).</li><li name="4c32" id="4c32" class="graf graf--li graf-after--li">WebGPT excels in providing both truthful and informative answers.</li><li name="49e8" id="49e8" class="graf graf--li graf-after--li">Larger WebGPT models exhibit increased percentages of truthful and informative answers, unlike GPT-3 models with either prompt.</li></ul><h3 name="7f57" id="7f57" class="graf graf--h3 graf-after--li">Paper</h3><p name="b0a2" id="b0a2" class="graf graf--p graf-after--h3 graf--trailing">WebGPT: Browser-assisted question-answering with human feedback <a href="https://arxiv.org/abs/2112.09332" data-href="https://arxiv.org/abs/2112.09332" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">2112.09332</a></p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="d7fb" id="d7fb" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/5bb0dd646b32"><time class="dt-published" datetime="2024-04-11T03:33:58.082Z">April 11, 2024</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-123-webgpt-5bb0dd646b32" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

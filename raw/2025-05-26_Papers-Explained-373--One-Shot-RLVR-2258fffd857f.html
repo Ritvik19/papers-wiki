@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 373: One-Shot RLVR</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 373: One-Shot RLVR</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+This paper shows that Reinforcement Learning with Verifiable Reward (RLVR), using only one training example (1-shot), significantly…
+</section>
+<section data-field="body" class="e-content">
+<section name="994a" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="7ab8" id="7ab8" class="graf graf--h3 graf--leading graf--title">Papers Explained 373: One-Shot RLVR</h3><figure name="74a1" id="74a1" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*H11Glf1zzBKvXr4wPiHCCg.png" data-width="1700" data-height="860" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*H11Glf1zzBKvXr4wPiHCCg.png"></figure><p name="71e5" id="71e5" class="graf graf--p graf-after--figure">This paper shows that Reinforcement Learning with Verifiable Reward (RLVR), using only one training example (1-shot), significantly improves large language models’ (LLMs) mathematical reasoning abilities. This improvement was observed across various models, RL algorithms, and examples. Furthermore, the study revealed “post-saturation generalization,” where test accuracy continued improving even after training accuracy plateaued. Other findings include cross-domain generalization, increased self-reflection, the primary role of policy gradient loss (not “grokking”), and the critical role of entropy loss in exploration, which alone, without reward, significantly improved performance.</p><p name="ac1a" id="ac1a" class="graf graf--p graf-after--p">The project is available on <a href="https://github.com/ypwang61/One-Shot-RLVR" data-href="https://github.com/ypwang61/One-Shot-RLVR" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">GitHub</a>.</p><h3 name="90b0" id="90b0" class="graf graf--h3 graf-after--p">Method</h3><h4 name="3c1e" id="3c1e" class="graf graf--h4 graf-after--h3">Data Selection: Historical Variance Score</h4><p name="bf09" id="bf09" class="graf graf--p graf-after--h4">To explore how extensively the RLVR training dataset can be reduced, a simple data selection approach for ranking training examples is proposed. The model is first trained for E epochs on the full dataset using RLVR. Then for each example i ∈ [N] = {1,…,N}, a list of historical training accuracy Li = [si,1,…,si,E] can be obtained, which records its average training accuracy for every epoch. Data is simply ranked by their historical variance of training accuracy, which is directly related to the reward. Examples are then selected according to this straightforward ranking criterion. Importantly, this criterion is not necessarily optimal for selecting single examples for 1-shot RLVR.</p><h4 name="0d60" id="0d60" class="graf graf--h4 graf-after--p">Experiment Setup</h4><p name="3be0" id="3be0" class="graf graf--p graf-after--h4">Experiments are run on Qwen2.5-Math-1.5B, Qwen2.5-Math-7B, Llama-3.2–3B-Instruct, and DeepSeek-R1-Distill-Qwen-1.5B.</p><p name="bf13" id="bf13" class="graf graf--p graf-after--p">A subset of 1209 examples from DeepScaleR-Preview-Dataset, denoted π1, . . . , π1209, is randomly selected as an instance pool for data selection after ranking the data based on the historical variance score due to resource limitations. The MATH training set, consisting of 7500 instances, provides a comparison.</p><p name="ef28" id="ef28" class="graf graf--p graf-after--p">Qwen2.5-Math-1.5B is trained for 500 steps, and its historical variance score and corresponding ranking are obtained for data selection. To enable RLVR with one or very few examples, the chosen data are duplicated until they reach the training batch size (e.g., 128) and stored as a new dataset.</p><p name="1a2c" id="1a2c" class="graf graf--p graf-after--p">The maximum prompt length is set to 1024, and the maximum response length is 3072, considering that the Qwen2.5-Math-1.5B/7B model has a 4096 context length. For DeepSeek-R1-Distill-Qwen-1.5B, the maximum response length is 8192.</p><p name="2ba6" id="2ba6" class="graf graf--p graf-after--p">Training continues for 2000, 1000, 1000, and 1200 steps for Qwen2.5-Math-1.5B, Qwen2.5-Math-7B, Llama-3.2–3B-Instruct, and DeepSeek-R1-Distill-Qwen-1.5B, respectively, unless a significant drop in performance is observed.</p><h3 name="eee4" id="eee4" class="graf graf--h3 graf-after--p">Results</h3><figure name="fc29" id="fc29" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*yCDQa-al1Es4x4aFkiGXnA.png" data-width="1700" data-height="660" src="https://cdn-images-1.medium.com/max/800/1*yCDQa-al1Es4x4aFkiGXnA.png"><figcaption class="imageCaption">Detailed performance of 1/2-shot RLVR for Qwen2.5-Math-1.5B.</figcaption></figure><ul class="postList"><li name="f38f" id="f38f" class="graf graf--li graf-after--figure">1/Few-shot RLVR is effective: RLVR with 1 or 2 examples can achieve comparable performance to RLVR trained on large datasets.</li></ul><figure name="d60e" id="d60e" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*9JCaOAjWY9_lKKayKvE9gQ.png" data-width="1700" data-height="550" src="https://cdn-images-1.medium.com/max/800/1*9JCaOAjWY9_lKKayKvE9gQ.png"><figcaption class="imageCaption">Example π1 and π13.</figcaption></figure><ul class="postList"><li name="f1ab" id="f1ab" class="graf graf--li graf-after--figure">Simple examples can be powerful: The examples leading to strong performance (π1 and π13) are relatively simple algebra and geometry problems, and the base model can often already solve key steps.</li></ul><figure name="e59d" id="e59d" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*DD4dB-I2tgfAfZmk-VVw_w.png" data-width="1700" data-height="320" src="https://cdn-images-1.medium.com/max/800/1*DD4dB-I2tgfAfZmk-VVw_w.png"><figcaption class="imageCaption">Post-saturation generalization in 1-shot RLVR.</figcaption></figure><ul class="postList"><li name="7755" id="7755" class="graf graf--li graf-after--figure">Post-saturation generalization: Even after training accuracy saturates, test performance continues to improve. This suggests that the model is still learning to generalize beyond the training example.</li></ul><figure name="4c64" id="4c64" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*sOkHj44yn9cCoFDQrapHGw.png" data-width="1420" data-height="1060" src="https://cdn-images-1.medium.com/max/800/1*sOkHj44yn9cCoFDQrapHGw.png"><figcaption class="imageCaption">The model can still generalize on test data after overfitting training example for 1-shot RLVR’s post-saturation generalization.</figcaption></figure><ul class="postList"><li name="02f7" id="02f7" class="graf graf--li graf-after--figure">Overfitting occurs late: Overfitting to the single training example happens after a significant number of training steps (millions of rollouts), and test performance remains strong even after overfitting.</li></ul><figure name="c383" id="c383" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*eEAGpjP5omuN8DXrqyDZnA.png" data-width="1420" data-height="730" src="https://cdn-images-1.medium.com/max/800/1*eEAGpjP5omuN8DXrqyDZnA.png"><figcaption class="imageCaption">1(Few)-Shot RLVR performance (%) for different domains in MATH500.</figcaption></figure><ul class="postList"><li name="4706" id="4706" class="graf graf--li graf-after--figure">Cross-domain improvement: 1-shot RLVR improves performance across different mathematical domains, not just the domain of the training example.</li><li name="779d" id="779d" class="graf graf--li graf-after--li">Most examples are effective: Almost all examples, regardless of their difficulty or domain, lead to performance improvement in 1-shot RLVR.</li><li name="7270" id="7270" class="graf graf--li graf-after--li">Data selection insights: The varying performance of different examples provides insights for future data selection methods. Combining examples arbitrarily may not always lead to the best results.</li></ul><figure name="2249" id="2249" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*U9yVIjJeYCAo4sR8Y8x2Jw.png" data-width="1400" data-height="380" src="https://cdn-images-1.medium.com/max/800/1*U9yVIjJeYCAo4sR8Y8x2Jw.png"><figcaption class="imageCaption">Number of reflection words detected in evaluation tasks.</figcaption></figure><ul class="postList"><li name="7f4e" id="7f4e" class="graf graf--li graf-after--figure">Increased self-reflection: 1-shot RLVR leads to an increase in self-reflection (e.g., “rethink,” “recheck”) in model responses during training, indicating more complex reasoning processes. This is observed even with overfitting on the training data and decreasing response length on other datasets.</li></ul><figure name="4546" id="4546" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*UbpIyrONDKQ1nAoQ6653Yw.png" data-width="1420" data-height="1020" src="https://cdn-images-1.medium.com/max/800/1*UbpIyrONDKQ1nAoQ6653Yw.png"><figcaption class="imageCaption">1(few)-shot RLVR is still viable for different models and RL algorithm.</figcaption></figure><ul class="postList"><li name="9fa5" id="9fa5" class="graf graf--li graf-after--figure">Few-shot RLVR is effective across different models and RL algorithms, achieving comparable or even superior performance to full-set RLVR.</li><li name="ae0a" id="ae0a" class="graf graf--li graf-after--li">For Qwen2.5-Math-7B, 1-shot RLVR improves performance by 17.8% and 4-shot RLVR matches the performance of using a large demonstration subset. Selecting demonstrations based on historical variance outperforms random sampling.</li><li name="7553" id="7553" class="graf graf--li graf-after--li">For Llama-3.2–3B-Instruct3, few-shot RLVR matches or surpasses full-set RLVR, but the absolute performance gain is smaller. The RLVR training process is less stable with this model.</li><li name="186a" id="186a" class="graf graf--li graf-after--li">For Qwen2.5-Math-1.5B with PPO, 1-shot RLVR improves performance by 16.2%.</li><li name="00d5" id="00d5" class="graf graf--li graf-after--li">For DeepSeek-R1-Distill-Qwen-1.5B, few-shot RLVR shows improvements (6.9% for 1-shot and 9.4% for 4-shot), but the performance gap compared to full-set RLVR is larger. The distilled model may require more examples for stable RL training.</li><li name="3100" id="3100" class="graf graf--li graf-after--li">Selecting demonstrations based on historical variance is a more effective strategy than random sampling.</li></ul><h3 name="d234" id="d234" class="graf graf--h3 graf-after--li">Paper</h3><p name="00b3" id="00b3" class="graf graf--p graf-after--h3 graf--trailing">Reinforcement Learning for Reasoning in Large Language Models with One Training Example <a href="https://arxiv.org/abs/2504.20571" data-href="https://arxiv.org/abs/2504.20571" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">2504.20571</a></p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="d7fb" id="d7fb" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/2258fffd857f"><time class="dt-published" datetime="2025-05-26T09:08:29.305Z">May 26, 2025</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-373-one-shot-rlvr-2258fffd857f" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

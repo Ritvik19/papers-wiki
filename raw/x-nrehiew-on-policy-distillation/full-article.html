@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SFT, RL, and On-Policy Distillation Visual Notes</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; margin: 0; background: #f7f3ec; color: #211b16; }
+    main { max-width: 920px; margin: 0 auto; padding: 48px 24px; }
+    header { margin-bottom: 32px; }
+    h1 { font-size: 2.2rem; line-height: 1.15; margin: 0 0 12px; }
+    h2 { margin-top: 36px; }
+    .meta { color: #665f57; }
+    figure { margin: 28px 0; padding: 14px; background: #fffdfa; border: 1px solid #ded7cd; border-radius: 14px; }
+    img { display: block; max-width: 100%; height: auto; margin: 0 auto; border-radius: 8px; }
+    figcaption { margin-top: 10px; color: #5f574f; font-size: 0.95rem; text-align: center; }
+    .note { padding: 14px 16px; background: #fff6d6; border: 1px solid #ead58f; border-radius: 10px; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>SFT, RL, and On-Policy Distillation Visual Notes</h1>
+    <p class="meta">Readable raw reconstruction from the local X export at <a href="https://x.com/nrehiew_/article/2053482349300797526">https://x.com/nrehiew_/article/2053482349300797526</a>.</p>
+    <p class="note">Note: the local X export only yielded article media assets, not a clean static article body. This file preserves the locally available figures and reconstructs the prose around those figures for wiki ingestion.</p>
+  </header>
+  <section>
+    <h2>Core Frame</h2>
+    <p>The article contrasts three ways of moving a model during post-training: supervised fine-tuning on a dataset target, reinforcement learning from current-policy rollouts, and on-policy distillation where a teacher scores the student's own samples.</p>
+    <p>The key axis is not simply whether the method is called distillation or RL. It is where the training samples come from, how dense the learning signal is, and whether the update pressure is aimed at task-critical behavior or also at incidental formatting, style, and dataset artifacts.</p>
+  </section>
+  <section>
+    <h2>SFT As Dense Forward-KL Pressure</h2>
+    <p>SFT applies token-level pressure across the whole target distribution. This can be useful when the dataset reliably encodes the desired behavior, but it also gives cross-entropy no native mechanism for separating capability-bearing tokens from incidental phrasing or style.</p>
+    <p>In the article's geometry, SFT pulls broad regions of the starting model distribution toward the dataset distribution. That broad pressure is one reason SFT can quickly teach a task while also risking capability erosion or overfitting to dataset-specific habits.</p>
+  </section>
+  <section>
+    <h2>RL As Sparse On-Policy Pressure</h2>
+    <p>RL samples from the current policy and scores sampled behavior. This means the update is tied to states the model actually visits, so improvements can compound as the policy changes.</p>
+    <p>The tradeoff is sparsity and cost: reward is often assigned to whole sampled trajectories or outcomes rather than every token. The article frames RL as less likely than SFT to broadly overwrite unrelated regions because the update passes through current-policy samples.</p>
+  </section>
+  <section>
+    <h2>OPD And MOPD</h2>
+    <p>On-policy distillation combines those two properties. The student still generates the rollout, but a same-family teacher supplies a dense token-level signal on the sampled tokens, often with a reverse-KL flavor.</p>
+    <p>The figures cite small empirical anchors for this claim: OPD students on a minimal-editing task can approach or beat their teachers on some columns, while MOPD benchmark results from MiMo-V2-Flash show a post-MOPD student recovering or exceeding teacher performance on several domains.</p>
+  </section>
+  <section>
+    <h2>Token-Level Caveats</h2>
+    <p>The thinking-mode KL table is a warning about what dense teacher signals may actually emphasize. Across the shown Qwen3 sizes, style tokens receive substantially higher per-token KL than math tokens, so a nominally capability-oriented distillation signal can still concentrate on formatting and mode-control tokens.</p>
+    <p>The reward and entropy curves suggest a second caveat: OPD can create a fast reward jump coupled with a sharp entropy collapse. That makes the method efficient, but it also makes KL control, teacher choice, and rollout calibration important.</p>
+  </section>
+  <section>
+    <h2>Figures</h2>
+<figure>
+  <img src="../../wiki/assets/x-nrehiew-on-policy-distillation/fig-1.jpg" alt="SFT applies dense update pressure across a dataset target distribution, including useful task behavior and incidental style or dataset artifacts.">
+  <figcaption>SFT applies dense update pressure across a dataset target distribution, including useful task behavior and incidental style or dataset artifacts.</figcaption>
+</figure>
+<figure>
+  <img src="../../wiki/assets/x-nrehiew-on-policy-distillation/fig-2.jpg" alt="RL updates only through behavior sampled from the current policy, concentrating probability mass around rewarded on-policy trajectories.">
+  <figcaption>RL updates only through behavior sampled from the current policy, concentrating probability mass around rewarded on-policy trajectories.</figcaption>
+</figure>
+<figure>
+  <img src="../../wiki/assets/x-nrehiew-on-policy-distillation/fig-3.jpg" alt="On-policy training tends to move the model toward a nearby task-solving policy rather than an arbitrary external target.">
+  <figcaption>On-policy training tends to move the model toward a nearby task-solving policy rather than an arbitrary external target.</figcaption>
+</figure>
+<figure>
+  <img src="../../wiki/assets/x-nrehiew-on-policy-distillation/fig-4.jpg" alt="A toy multimodal example showing reverse KL preserving an old mode better than forward-KL SFT while learning a new task mode.">
+  <figcaption>A toy multimodal example showing reverse KL preserving an old mode better than forward-KL SFT while learning a new task mode.</figcaption>
+</figure>
+<figure>
+  <img src="../../wiki/assets/x-nrehiew-on-policy-distillation/fig-5.jpg" alt="Minimal-editing and LiveCodeBench results comparing teachers with OPD students trained from SFT and RL teachers.">
+  <figcaption>Minimal-editing and LiveCodeBench results comparing teachers with OPD students trained from SFT and RL teachers.</figcaption>
+</figure>
+<figure>
+  <img src="../../wiki/assets/x-nrehiew-on-policy-distillation/fig-6.jpg" alt="Reward and entropy curves showing OPD reward rising sharply while entropy collapses compared with a gradual RL teacher run.">
+  <figcaption>Reward and entropy curves showing OPD reward rising sharply while entropy collapses compared with a gradual RL teacher run.</figcaption>
+</figure>
+<figure>
+  <img src="../../wiki/assets/x-nrehiew-on-policy-distillation/fig-7.jpg" alt="MiMo-V2-Flash MOPD benchmark table, with the student after MOPD sometimes matching or exceeding the tagged best teacher.">
+  <figcaption>MiMo-V2-Flash MOPD benchmark table, with the student after MOPD sometimes matching or exceeding the tagged best teacher.</figcaption>
+</figure>
+<figure>
+  <img src="../../wiki/assets/x-nrehiew-on-policy-distillation/fig-8.jpg" alt="Per-token KL by token category under student and teacher thinking-mode configurations, with style tokens carrying the highest KL signal.">
+  <figcaption>Per-token KL by token category under student and teacher thinking-mode configurations, with style tokens carrying the highest KL signal.</figcaption>
+</figure>
+<figure>
+  <img src="../../wiki/assets/x-nrehiew-on-policy-distillation/fig-9.jpg" alt="Abstract policy landscape illustration used as a visual separator in the article.">
+  <figcaption>Abstract policy landscape illustration used as a visual separator in the article.</figcaption>
+</figure>
+  </section>
+</main>
+</body>
+</html>

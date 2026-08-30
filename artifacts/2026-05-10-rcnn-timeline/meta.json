@@ -1,0 +1,113 @@
+{
+  "query": "explain though interactive artefacts the tieline of rcnns",
+  "created": "2026-05-10",
+  "mode": "learning-guide",
+  "sources": [
+    {
+      "title": "Papers Explained Review 03 - RCNNs",
+      "path": "wiki/Papers Explained Review 03 - RCNNs.md",
+      "contribution": "Family-level timeline, dates, and summary of R-CNN, Fast R-CNN, Faster R-CNN, Mask R-CNN, and Cascade R-CNN."
+    },
+    {
+      "title": "Papers Explained 14 - RCNN",
+      "path": "wiki/Papers Explained 14 - RCNN.md",
+      "contribution": "Original R-CNN architecture, selective-search proposal flow, CNN feature extraction, SVM classification, and NMS implementation."
+    },
+    {
+      "title": "Papers Explained 15 - Fast RCNN",
+      "path": "wiki/Papers Explained 15 - Fast RCNN.md",
+      "contribution": "R-CNN limitations, shared convolutional feature map, RoI pooling, and classification plus bounding-box regression heads."
+    },
+    {
+      "title": "Papers Explained 16 - Faster RCNN",
+      "path": "wiki/Papers Explained 16 - Faster RCNN.md",
+      "contribution": "Region Proposal Network, anchors, RPN losses, and feature sharing between RPN and Fast R-CNN."
+    },
+    {
+      "title": "Papers Explained 17 - Mask RCNN",
+      "path": "wiki/Papers Explained 17 - Mask RCNN.md",
+      "contribution": "Two-stage inheritance from Faster R-CNN and binary mask prediction for each RoI."
+    },
+    {
+      "title": "Papers Explained 77 - Cascade RCNN",
+      "path": "wiki/Papers Explained 77 - Cascade RCNN.md",
+      "contribution": "Cascaded bounding-box regression, increasing IoU thresholds, and high-quality detection motivation."
+    },
+    {
+      "title": "Computer Vision",
+      "path": "wiki/Computer Vision.md",
+      "contribution": "Topic-page placement of the R-CNN family within the broader vision wiki."
+    }
+  ],
+  "figures": [
+    {
+      "path": "../../wiki/assets/papers-explained-14-rcnn/fig-2.png",
+      "caption": "RCCN consists of three modules.",
+      "verified": true,
+      "note": "Opened image; it shows the R-CNN input, region proposals, warped region, CNN features, and classification flow."
+    },
+    {
+      "path": "../../wiki/assets/papers-explained-15-fast-rcnn/fig-2.png",
+      "caption": "Spatial pyramid pooling networks (SPPnets) were proposed to speed up R-CNN by sharing computation.",
+      "verified": true,
+      "note": "Opened image; it shows the Fast R-CNN architecture with conv feature map, RoI pooling, fully connected layers, softmax, and bounding-box regressor."
+    },
+    {
+      "path": "../../wiki/assets/papers-explained-16-faster-rcnn/fig-2.png",
+      "caption": "Faster R-CNN, is composed of two modules.",
+      "verified": true,
+      "note": "Opened image; it shows a unified Faster R-CNN network with Region Proposal Network, proposals, RoI pooling, and classifier."
+    },
+    {
+      "path": "../../wiki/assets/papers-explained-16-faster-rcnn/fig-3.png",
+      "caption": "Anchors.",
+      "verified": true,
+      "note": "Opened image; it shows the RPN sliding window, class scores, regression coordinates, and anchor boxes."
+    },
+    {
+      "path": "../../wiki/assets/papers-explained-17-mask-rcnn/fig-2.png",
+      "caption": "Faster R-CNN consists of two stages.",
+      "verified": true,
+      "note": "Opened image; it shows the Mask R-CNN framework with RoIAlign, class/box outputs, a convolutional mask branch, and segmented output."
+    },
+    {
+      "path": "../../wiki/assets/papers-explained-77-cascade-rcnn/fig-2.png",
+      "caption": "The architectures of different frameworks.",
+      "verified": true,
+      "note": "Opened image; it compares Faster R-CNN, iterative bounding-box inference, integral loss, and Cascade R-CNN."
+    }
+  ],
+  "concepts": [
+    "region proposals",
+    "selective search",
+    "CNN feature extraction",
+    "RoI pooling",
+    "Region Proposal Network",
+    "anchors",
+    "binary mask per RoI",
+    "cascaded bounding-box regression",
+    "IoU thresholds"
+  ],
+  "flows": [
+    "R-CNN: region proposals -> warped regions -> CNN features -> class-specific SVMs -> non-maximum suppression",
+    "Fast R-CNN: image plus proposals -> shared conv feature map -> RoI pooling -> softmax and bounding-box regression",
+    "Faster R-CNN: shared feature map -> RPN anchors -> proposals -> Fast R-CNN detector",
+    "Mask R-CNN: Faster R-CNN two-stage detector -> class, box, and mask outputs",
+    "Cascade R-CNN: proposals -> repeated detector stages -> progressively refined higher-IoU boxes"
+  ],
+  "quiz": {
+    "included": true,
+    "questionCount": 5,
+    "localStorageKey": "papers-wiki-artifact:rcnn-timeline:quiz"
+  },
+  "gaps": [
+    "The R-CNN pages give architectural summaries but not benchmark tables or detailed quantitative comparisons.",
+    "The artifact intentionally stays within the R-CNN family and does not cover RetinaNet, DETR, or later detector alternatives in depth.",
+    "Some wiki captions are brief or generic, so figure explanations are tied back to the page text and verified image content."
+  ],
+  "largeTopic": {
+    "enabled": false,
+    "pendingPages": [],
+    "pendingSections": []
+  }
+}

@@ -1,0 +1,96 @@
+# Papers Explained 361 - OpenCodeReasoning
+
+OpenCodeReasoning is a publicly available synthetic dataset for code reasoning, comprising 736,712 Python code solutions with accompanying reasoning traces, spanning 28,904 unique competitive programming questions sourced from DeepSeek-R1. It’s designed to enhance the reasoning capabilities of LLMs through SFT.
+
+This page ingests the source article into the wiki and connects it to [[Papers Explained Corpus]], [[Reasoning Models]], [[Code Models]], [[Synthetic Data]], [[Large Language Models]], [[Document AI]], [[Supervised Fine-Tuning]], [[Model Distillation]].
+
+## Source Metadata
+
+- Source file: `raw/2025-05-08_Papers-Explained-361--OpenCodeReasoning-0e0b4439324a.html`
+- Source title: Papers Explained 361: OpenCodeReasoning
+- Published: 2025-05-08
+- Canonical: [https://medium.com/@ritvik19/papers-explained-361-opencodereasoning-0e0b4439324a](https://medium.com/@ritvik19/papers-explained-361-opencodereasoning-0e0b4439324a)
+
+## Key Ideas
+
+- OpenCodeReasoning is a publicly available synthetic dataset for code reasoning, comprising 736,712 Python code solutions with accompanying reasoning traces, spanning 28,904 unique competitive programming questions sourced from DeepSeek-R1.
+- First, a diverse set of competitive coding questions is collected from various sources. Second, a reasoning-enabled LLM is used to generate responses. Third, these responses are post-processed, validating reasoning and extracting solution excerpts.
+- Questions are gathered from TACO, APPS, CodeContests, and CodeForces from the OpenR1 project. Exact-match deduplication is performed, resulting in 28,904 distinct questions across a range of difficulties.
+- Meticulous checking is done for any potential data leakage or overlap between the collected coding questions and evaluation benchmarks.
+- Multiple solutions per question are generated using the DeepSeek-R primarily in Python. Additionally, solutions are generated in the C++ language to perform preliminary experiments on the harder IOI benchmark.
+
+## Notes
+
+OpenCodeReasoning is a publicly available synthetic dataset for code reasoning, comprising 736,712 Python code solutions with accompanying reasoning traces, spanning 28,904 unique competitive programming questions sourced from DeepSeek-R1. It’s designed to enhance the reasoning capabilities of LLMs through SFT.
+
+## Dataset Construction and Refinement
+
+First, a diverse set of competitive coding questions is collected from various sources. Second, a reasoning-enabled LLM is used to generate responses. Third, these responses are post-processed, validating reasoning and extracting solution excerpts.
+
+### Coding Questions Collection
+
+Questions are gathered from TACO, APPS, CodeContests, and CodeForces from the OpenR1 project. Exact-match deduplication is performed, resulting in 28,904 distinct questions across a range of difficulties.
+
+*Figure: OpenCodeReasoning statistics.*
+
+Meticulous checking is done for any potential data leakage or overlap between the collected coding questions and evaluation benchmarks. Cosine similarity (threshold 0.7) is calculated to find the nearest neighbor in the benchmarks for each unique question in the dataset. Llama-3.3–70B-Instruct and Qwen2.5–32B-Instruct are employed as judges to assess the semantic similarity of these pairs. Manual inspection of the 90 potentially problematic samples confirmed that they are not paraphrases or semantically similar.
+
+### Solution Code Generation
+
+Multiple solutions per question are generated using the DeepSeek-R primarily in Python. Additionally, solutions are generated in the C++ language to perform preliminary experiments on the harder IOI benchmark. All solutions are sampled via Nucleus Sampling (Holtzman et al., 2020), using temperature 0.6, top-p 0.95, and explicitly injecting <think> tag to force the model to generate reasoning traces.
+
+### Post-Processing for Refinement
+
+First, the solution is verified to include reasoning traces enclosed within <think> and </think> tags. Subsequently, the solution segments are extracted, isolating the reasoning traces from the responses. The presence of a code block within the solution segments is then verified, specifically delimited by either ```python … ``` or ```cpp … ```. Responses where the generated reasoning traces contain code blocks are filtered out. Finally, the syntactic correctness of the solution code blocks is verified by parsing them. The refinement step yielded a total of 736,712 Python samples and 355,792 C++ samples.
+
+*Figure: The average number of tokens per Python sample across dataset sources.*
+
+### Scaling Up Data in Stages
+
+*Figure: Impact of scaling up data from 25k to 736k samples.*
+
+The dataset is incrementally expanded from 25k to 736k samples in stages. Initially, the 13k questions from CodeContests are utilized and a number of solutions for each question are generated using DeepSeek-R1. The initial scaling from 25k to 100k samples yielded substantial gains on the LiveCodeBench benchmark. An exploratory analysis of the solutions generated by the model found that there is a significant imbalance in the number of successful samples generated for easy and medium difficulty problems versus hard competition problems. As such, just the hard subset of questions from the CodeContests train set, which resulted in roughly 4.5k instructions, are selected and multiple solutions are generated for them. Finally, additional instructions are integrated to compose the final 28k unique question set, and solutions are generated using DeepSeek-R1 for the new questions, resulting in a final collection of 736,712 samples.
+
+## Experiment Setup
+
+The Qwen2.5 base and instruct models are fine-tuned at 7B, 14B, and 32B parameters for 3 epochs with a maximum sequence length of 32,768.
+
+## Evaluation
+
+*Figure: Performance comparison of open-weight reasoning models on LiveCodeBench and CodeContest.*
+
+- Competitive at Small Scales: OCR-Qwen-7B and OCR-Qwen-7B-Instruct outperformed baseline models in the 7B parameter category on both benchmarks. The instruct version showed particularly strong performance, exceeding the best baseline by a significant margin. This suggests the distillation approach effectively transfers reasoning capabilities even to smaller models.
+
+- Scaling Improves Performance: Performance improved significantly as model size increased from 7B to 14B and 32B parameters for all models, especially the OCR-Qwen models. This indicates the effectiveness of the OpenCodeReasoning training approach across different model scales.
+
+- Near State-of-the-Art Performance: At the 32B scale, OCR-Qwen models outperformed strong competitors and achieved near state-of-the-art results, only slightly behind DeepSeek-R1. This demonstrates the competitiveness of the OCR-Qwen models at larger scales.
+
+## Paper
+
+OpenCodeReasoning: Advancing Data Distillation for Competitive Coding [2504.01943](https://arxiv.org/abs/2504.01943)
+
+## Figures
+
+Figures from the Medium HTML export (`raw/2025-05-08_Papers-Explained-361--OpenCodeReasoning-0e0b4439324a.html`); local copies under `wiki/assets/papers-explained-361-opencodereasoning/` when download succeeded.
+
+| Figure | Caption |
+|--------|---------|
+| ![Figure 1](assets/papers-explained-361-opencodereasoning/fig-1.png) | Title card: OpenCodeReasoning. |
+| ![Figure 2](assets/papers-explained-361-opencodereasoning/fig-2.png) | OpenCodeReasoning statistics. |
+| ![Figure 3](assets/papers-explained-361-opencodereasoning/fig-3.png) | The average number of tokens per Python sample across dataset sources. |
+| ![Figure 4](assets/papers-explained-361-opencodereasoning/fig-4.png) | Impact of scaling up data from 25k to 736k samples. |
+| ![Figure 5](assets/papers-explained-361-opencodereasoning/fig-5.png) | Performance comparison of open-weight reasoning models on LiveCodeBench and CodeContest. |
+## Related
+
+- [[Papers Explained Corpus]]
+- [[Reasoning Models]]
+- [[Code Models]]
+- [[Synthetic Data]]
+- [[Large Language Models]]
+- [[Document AI]]
+- [[Supervised Fine-Tuning]]
+- [[Model Distillation]]
+- [[Papers Explained 360 - Nemotron CrossThink]]
+- [[Papers Explained 362 - Llama-Nemotron]]
+
+#summary #topic

@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 289: V-STaR</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 289: V-STaR</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Verification for Self-Taught Reasoners (V-STaR) utilizes both the correct and incorrect solutions generated during the self-improvement…
+</section>
+<section data-field="body" class="e-content">
+<section name="85f2" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="0518" id="0518" class="graf graf--h3 graf--leading graf--title">Papers Explained 289: V-STaR</h3><figure name="8fb5" id="8fb5" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*4wOu2BOHFVPE_YjO2eIhQw.png" data-width="2010" data-height="540" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*4wOu2BOHFVPE_YjO2eIhQw.png"></figure><p name="d817" id="d817" class="graf graf--p graf-after--figure">Verification for Self-Taught Reasoners (V-STaR) utilizes both the correct and incorrect solutions generated during the self-improvement process to train a verifier using DPO that judges correctness of model-generated solutions. This verifier is used at inference time to select one solution among many candidate solutions.</p><h3 name="4fde" id="4fde" class="graf graf--h3 graf-after--p">Method</h3><figure name="f211" id="f211" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*p4pCYkxLkuort9DHpYrRCQ.png" data-width="2010" data-height="450" src="https://cdn-images-1.medium.com/max/800/1*p4pCYkxLkuort9DHpYrRCQ.png"><figcaption class="imageCaption">Generator and verifier training in V-STaR.</figcaption></figure><p name="e2e5" id="e2e5" class="graf graf--p graf-after--figure">V-STaR utilizes both the correct and incorrect solutions generated during the self-improvement process to train a better generator and verifier.</p><ul class="postList"><li name="8073" id="8073" class="graf graf--li graf-after--p">First, a pretrained LLM Gbase is fine-tuned on the original training data DSFT to obtain generator GSFT.</li><li name="8899" id="8899" class="graf graf--li graf-after--li">Next, k completions for each problem in the training data are sampled from the generator {yˆi,j ∼ G(y|xi)}kj=1, where x ∈ Dquery.</li><li name="2dab" id="2dab" class="graf graf--li graf-after--li">Generated solutions are labeled for their correctness z using ground truth answers or test cases. Only correct generated solutions (z = 1) are used to augment the generator training data DGEN as (xi, yˆi,j). Both correct and incorrect generated solutions are added to verifier data DVER with their correctness label as (xi, yˆi,j, zi,j), so the verifier can learn from generator’s mistakes.</li><li name="3cf9" id="3cf9" class="graf graf--li graf-after--li">In the next iteration t, the generator Gt is obtained by fine-tuning the pretrained model Gbase on the augmented DGEN. Solutions can be sampled again from this generator Gt. This process is repeated for up to T iterations to augment DGEN and DVER iteratively.</li><li name="4047" id="4047" class="graf graf--li graf-after--li">The final generator GT is obtained by using DGEN to fine-tune a pretrained model Gbase. The verifier VT is obtained by using DVER to further train a model GSFT which was fine-tuned on the original DSFT.</li></ul><figure name="9f05" id="9f05" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*M5JoAVYodiRXeUSfIvsXBg.png" data-width="2010" data-height="710" src="https://cdn-images-1.medium.com/max/800/1*M5JoAVYodiRXeUSfIvsXBg.png"></figure><p name="1e72" id="1e72" class="graf graf--p graf-after--figure">Current LLM verifiers are trained with a combination of language modeling and binary classification loss. These two objectives can be unified via offline preference learning methods, such as DPO, where the proximity to the reference policy is a proxy for the language modeling objective while the classification loss is a proxy for reward modelling. Empirically, DPO verifiers were found to be better than ORM-style verifiers, when using LoRA adapters.</p><p name="a87c" id="a87c" class="graf graf--p graf-after--p">To use DPO for training verifiers, a preference pair dataset is constructed using collected solutions in DVER. Correct solutions are treated as preferred and incorrect solutions as not preferred completions given the problem. Specifically, DVER = {(xi, y+ , y− ), · · · , (xi, y+ , y− )}N , where m is the number of preference pairs which are from the Cartesian product of correct and incorrect solutions. Verifiers V are trained using this constructed DVER and the SFT policy GSFT using the DPO objective.</p><h3 name="277b" id="277b" class="graf graf--h3 graf-after--p">Experimental Setup</h3><p name="5cfe" id="5cfe" class="graf graf--p graf-after--h3">Experiments are conducted on GSM8K for solving math problems, and MBPP for code-generation problems.</p><p name="f91f" id="f91f" class="graf graf--p graf-after--p">LLaMA2 and CodeLLaMA 7B and 13B models are fine-tuned using LoRA (Hu et al., 2022). Generators are trained with a causal language modeling objective, and the baseline (V-STaR[1 Iter]) and V-STaR verifiers are trained using DPO. The reference policy GSFT for DPO is trained on the original training data for 2 and 3 epochs for GSM8K and MBPP, respectively.</p><p name="e45a" id="e45a" class="graf graf--p graf-after--p">For each iteration, 16 completions are sampled per query from the previous iteration’s generator. For GSM8K, the first iteration samples are from a generator trained solely on the original GSM8K training data for 2 epochs. For MBPP, this data is from a 3-shot pretrained CodeLLaMA. Completions are labeled for correctness by checking the final answer for math problems and running test cases for coding problems.</p><h3 name="7b7c" id="7b7c" class="graf graf--h3 graf-after--p">Evaluation</h3><figure name="d071" id="d071" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*pGcBPfBwanjDNKrmjLpsnw.png" data-width="2010" data-height="640" src="https://cdn-images-1.medium.com/max/800/1*pGcBPfBwanjDNKrmjLpsnw.png"><figcaption class="imageCaption">Test accuracy of 7B V-STaR compared to self-improvement and verification baselines.</figcaption></figure><figure name="ae9c" id="ae9c" class="graf graf--figure graf-after--figure"><img class="graf-image" data-image-id="1*RC88498wq8_zFTrjrRslHA.png" data-width="2010" data-height="640" src="https://cdn-images-1.medium.com/max/800/1*RC88498wq8_zFTrjrRslHA.png"><figcaption class="imageCaption">Pass@1 and Best-of-64 scores for generator-only and verifier-based methods.</figcaption></figure><figure name="f433" id="f433" class="graf graf--figure graf-after--figure"><img class="graf-image" data-image-id="1*Sk7rX4XzN9--5FRTRUF5Mg.png" data-width="2010" data-height="640" src="https://cdn-images-1.medium.com/max/800/1*Sk7rX4XzN9--5FRTRUF5Mg.png"><figcaption class="imageCaption">Out-of-domain transfer evaluation.</figcaption></figure><figure name="e0cd" id="e0cd" class="graf graf--figure graf-after--figure"><img class="graf-image" data-image-id="1*E0eoG2oQsJ9sZ5r0gNgB0w.png" data-width="2010" data-height="640" src="https://cdn-images-1.medium.com/max/800/1*E0eoG2oQsJ9sZ5r0gNgB0w.png"><figcaption class="imageCaption">Test accuracy of 13B V-STaR compared to baselines.</figcaption></figure><ul class="postList"><li name="e97e" id="e97e" class="graf graf--li graf-after--figure">V-STaR consistently improves performance on GSM8K, MBPP, MATH subset, and HumanEval datasets for LLaMA2 7B and 13B models.</li><li name="9261" id="9261" class="graf graf--li graf-after--li">V-STaR achieves 6–17% absolute improvement in test accuracy on math tasks and 4–12% improvement on code generation tasks compared to baseline methods like STaR† and Verification.</li><li name="0937" id="0937" class="graf graf--li graf-after--li">Iterative training of the generator and verifier leads to better performance compared to a single iteration.</li><li name="a794" id="a794" class="graf graf--li graf-after--li">V-STaR demonstrates improved out-of-domain performance on HumanEval (when trained on MBPP) and a subset of MATH (when trained on GSM8K).</li><li name="bee4" id="bee4" class="graf graf--li graf-after--li">Using incorrect solutions to train the verifier provides significant improvements compared to only using correct solutions.</li></ul><figure name="b562" id="b562" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*wu5TEJNEHhnqALCnw9s58Q.png" data-width="2010" data-height="700" src="https://cdn-images-1.medium.com/max/800/1*wu5TEJNEHhnqALCnw9s58Q.png"><figcaption class="imageCaption">Best-of-k test accuracy of V-STaR, V-STaR [1 Iter], and outcome-supervised reward model (ORM) style verifier 7B models</figcaption></figure><ul class="postList"><li name="4432" id="4432" class="graf graf--li graf-after--figure">Best-of-k accuracy saturates for k ≥ 16.</li><li name="3b0b" id="3b0b" class="graf graf--li graf-after--li">DPO-based verifiers outperform ORM-style verifiers, especially when considering more candidate solutions.</li></ul><figure name="da20" id="da20" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*ZA1TSsrrAWFB21B1XnUzMQ.png" data-width="2010" data-height="640" src="https://cdn-images-1.medium.com/max/800/1*ZA1TSsrrAWFB21B1XnUzMQ.png"><figcaption class="imageCaption">Left: Best-of-k test accuracy of 7B V-STaR compared to V-STaR[1 Iter] and selfconsistency. Right: Comparing DPO-based generator and verifier for V-STaR 7B, measured by Pass@1 and Best-of-64 respectively on GSM8K</figcaption></figure><ul class="postList"><li name="dd3a" id="dd3a" class="graf graf--li graf-after--figure">V-STaR outperforms majority voting when searching over a large number of candidate solutions.</li><li name="485a" id="485a" class="graf graf--li graf-after--li">The verifier’s generation ability degrades after a small number of training updates when used as a generator.</li><li name="d6bc" id="d6bc" class="graf graf--li graf-after--li">Including the verifier in the training loop to filter solutions for the next iteration does not provide substantial gains on MBPP.</li></ul><h3 name="87b4" id="87b4" class="graf graf--h3 graf-after--li">Paper</h3><p name="00b3" id="00b3" class="graf graf--p graf-after--h3 graf--trailing">V-STaR: Training Verifiers for Self-Taught Reasoners <a href="https://arxiv.org/abs/2402.06457" data-href="https://arxiv.org/abs/2402.06457" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">2402.06457</a></p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="d7fb" id="d7fb" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/4d2aeedab861"><time class="dt-published" datetime="2025-01-16T03:44:52.934Z">January 16, 2025</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-289-v-star-4d2aeedab861" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

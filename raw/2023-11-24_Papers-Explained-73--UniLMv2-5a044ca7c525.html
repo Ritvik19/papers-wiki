@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 73: UniLMv2</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 73: UniLMv2</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+UniLMv2 introduces a novel training procedure, PMLM, which enables efficient learning of inter-relations between corrupted tokens and…
+</section>
+<section data-field="body" class="e-content">
+<section name="804a" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="c65c" id="c65c" class="graf graf--h3 graf--leading graf--title">Papers Explained 73: UniLMv2</h3><figure name="2a96" id="2a96" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*oZ2y3lzwBK0EV4Jpv6PjlA.png" data-width="1376" data-height="365" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*oZ2y3lzwBK0EV4Jpv6PjlA.png"></figure><p name="3a28" id="3a28" class="graf graf--p graf-after--figure">UniLMv2 introduces a novel training procedure, PMLM, which enables efficient learning of inter-relations between corrupted tokens and context via autoencoding, as well as intra-relations between masked spans via partially autoregressive modeling, significantly advancing the capabilities of language models in diverse NLP tasks.</p><figure name="1327" id="1327" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*8MHxPpz0D5vppZuEDK96kg.png" data-width="1313" data-height="682" src="https://cdn-images-1.medium.com/max/800/1*8MHxPpz0D5vppZuEDK96kg.png"><figcaption class="imageCaption">Overview of PMLM pre-training. The model parameters are shared across the LM objectives.</figcaption></figure><h3 name="01f7" id="01f7" class="graf graf--h3 graf-after--figure">Pre Training Tasks</h3><p name="5521" id="5521" class="graf graf--p graf-after--h3">Both bidirectional and sequence-to-sequence LMs are jointly pre trained with the same input text and masked positions. Both the special tokens [M] and [P] emit predicted tokens. The training objective is to maximize the likelihood of correct tokens, which considers both types of LMs in one example.</p><figure name="a3c1" id="a3c1" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*W-URnXBxVezKOQ-BWb9d5Q.png" data-width="1282" data-height="266" src="https://cdn-images-1.medium.com/max/800/1*W-URnXBxVezKOQ-BWb9d5Q.png"></figure><h4 name="c81c" id="c81c" class="graf graf--h4 graf-after--figure">Autoencoding Modeling</h4><p name="ac64" id="ac64" class="graf graf--p graf-after--h4">Autoencoding, similar to BERT, predicts tokens based on context. Given an input sequence x with certain masked positions M, the model predicts the masked tokens using the context (all input tokens except the masked ones). The loss function for training this model is based on the negative log likelihood of predicting the masked tokens.</p><figure name="9bd1" id="9bd1" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*RuPhVe-UD2_-nlzWKEAr9A.png" data-width="599" data-height="85" src="https://cdn-images-1.medium.com/max/800/1*RuPhVe-UD2_-nlzWKEAr9A.png"><figcaption class="imageCaption">where D is the training corpus.</figcaption></figure><h4 name="a948" id="a948" class="graf graf--h4 graf-after--figure">Partially Autoregressive Modeling</h4><p name="8424" id="8424" class="graf graf--p graf-after--h4">This method proposes pre-training models that predict tokens in a partially autoregressive manner. It introduces a factorization order M that determines which tokens to predict in each step. It can predict single tokens or spans of text in each step, unlike fully autoregressive models like GPT. The pre-training loss is defined based on the expectation over different factorization distributions.</p><figure name="e59d" id="e59d" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*3LLySAd56MWVUNzfBMOPgQ.png" data-width="598" data-height="101" src="https://cdn-images-1.medium.com/max/800/1*3LLySAd56MWVUNzfBMOPgQ.png"><figcaption class="imageCaption">where EM is the expectation over the factorization distribution.</figcaption></figure><p name="21c8" id="21c8" class="graf graf--p graf-after--figure"><strong class="markup--strong markup--p-strong">Blockwise Masking and Factorization</strong></p><p name="23f4" id="23f4" class="graf graf--p graf-after--p">The masking policy randomly selects 15% of tokens for masking during pre-training. Among these, 40% of the time, it masks a continuous text span, while 60% of the time, it masks a single token. This process is repeated until enough tokens are masked. The randomly sampled factorization orders resemble permutation-based language modeling, as seen in XLNet, but with the ability to generate token spans at each step.</p><h3 name="7255" id="7255" class="graf graf--h3 graf-after--p">Pseudo-Masked LM (PMLM)</h3><p name="cbfd" id="cbfd" class="graf graf--p graf-after--h3">PMLM is introduced to handle the issue of conditioning on different contexts in partially autoregressive language modeling. Instead of replacing tokens with masks as in typical masked language models, PMLM keeps original tokens unchanged and adds pseudo masks ([Pseudo] or [P]) to the input sequence. These pseudo tokens have the same position embedding as the corresponding original tokens. The model uses the top-layer hidden states of these pseudo tokens for MLM predictions, controlling accessible context for each token according to the factorization order.</p><p name="9d80" id="9d80" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Self-Attention Masks</strong></p><p name="316c" id="316c" class="graf graf--p graf-after--p">To prevent information leakage during training, self-attention masks are used. These masks control which context a token can attend to when computing its contextualized representation. They prevent both explicit and implicit leakage of information during the prediction steps.</p><h3 name="140d" id="140d" class="graf graf--h3 graf-after--p">Experiment Setup</h3><p name="db01" id="db01" class="graf graf--p graf-after--h3">The same model size as BERT Base is used, i.e., a 12-layer Transformer with 12 attention heads. The hidden size is 768, and the inner hidden size of the feed-forward network is 3072. The weight matrix of the softmax classifier is tied with the token embedding matrix. Relative position bias is also added to attention scores.</p><p name="ce57" id="ce57" class="graf graf--p graf-after--p">The 160GB text corpora from English Wikipedia, BookCorpus, OpenWebText, CC-News, and Stories is used for pre-training. Uncased WordPiece tokenization is used. The vocabulary size is 30, 522. The maximum length of input sequence is 512.</p><h4 name="d603" id="d603" class="graf graf--h4 graf-after--p">Fine Tuning</h4><p name="188b" id="188b" class="graf graf--p graf-after--h4">For NLU tasks, the PMLM is fine-tuned as a bidirectional Transformer encoder. The input is “[SOS] TEXT [EOS]”.</p><p name="55a6" id="55a6" class="graf graf--p graf-after--p">For sequence-to-sequence generation tasks, the example is concatenated as “[SOS] SRC [EOS] TGT [EOS]”.</p><p name="5785" id="5785" class="graf graf--p graf-after--p">For a source sequence, the dependencies between the tokens are bidirectional, i.e., all the source tokens can attend to each other. In contrast, the target sequence is produced in an autoregressive manner. So a pseudo mask [P] is appended for each target token, and self attention masks are used to perform autoregressive generation.</p><h3 name="f649" id="f649" class="graf graf--h3 graf-after--p">Evaluation</h3><h4 name="1321" id="1321" class="graf graf--h4 graf-after--h3">Question Answering</h4><figure name="be0a" id="be0a" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*QI1keuyfihSJv_uH1k2xvw.png" data-width="490" data-height="267" src="https://cdn-images-1.medium.com/max/800/1*QI1keuyfihSJv_uH1k2xvw.png"><figcaption class="imageCaption">Results of BASE-size pre-trained models on the SQuAD v1.1/v2.0 development sets.</figcaption></figure><ul class="postList"><li name="2cdd" id="2cdd" class="graf graf--li graf-after--figure">UniLMv2 BASE outperforms other models on both SQuAD datasets.</li></ul><h4 name="b4d7" id="b4d7" class="graf graf--h4 graf-after--li">GLUE Benchmark</h4><figure name="6f31" id="6f31" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*tnHDcYNeu5amYOlqQUH-Kg.png" data-width="822" data-height="272" src="https://cdn-images-1.medium.com/max/800/1*tnHDcYNeu5amYOlqQUH-Kg.png"><figcaption class="imageCaption">Results of BASE-size models on the development set of the GLUE benchmark.</figcaption></figure><ul class="postList"><li name="0d2d" id="0d2d" class="graf graf--li graf-after--figure">UniLMv2 BASE outperforms RoBERTa BASE in 6 out of 8 tasks in terms of accuracy, with MNLI accuracy being 88.4 compared to RoBERTa BASE’s 87.6.</li></ul><h4 name="8e27" id="8e27" class="graf graf--h4 graf-after--li">Abstractive Summarization</h4><figure name="d06e" id="d06e" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*PASuspcLso2IBb4fx_-bZQ.png" data-width="1202" data-height="561" src="https://cdn-images-1.medium.com/max/800/1*PASuspcLso2IBb4fx_-bZQ.png"><figcaption class="imageCaption">Abstractive summarization results on CNN/DailyMail and XSum.</figcaption></figure><ul class="postList"><li name="33ef" id="33ef" class="graf graf--li graf-after--figure">Despite PMLM having the smallest size among the compared models, UNILMv2BASE outperforms other BASE-size pre-trained models on both datasets.</li></ul><h4 name="4b3a" id="4b3a" class="graf graf--h4 graf-after--li">Question Generation</h4><figure name="a1f0" id="a1f0" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*PQ317qhBfzeZLDb2p0IMXQ.png" data-width="647" data-height="410" src="https://cdn-images-1.medium.com/max/800/1*PQ317qhBfzeZLDb2p0IMXQ.png"><figcaption class="imageCaption">Results on question generation.</figcaption></figure><ul class="postList"><li name="764c" id="764c" class="graf graf--li graf-after--figure">UniLMv2 BASE, based on pre-trained models, outperforms UniLM LARGE and several baselines which incorporate additional features or techniques.</li></ul><h3 name="f250" id="f250" class="graf graf--h3 graf-after--li">Paper</h3><p name="b0a2" id="b0a2" class="graf graf--p graf-after--h3 graf--trailing">UniLMv2: Pseudo-Masked Language Models for Unified Language Model Pre-Training <a href="https://arxiv.org/abs/2002.12804" data-href="https://arxiv.org/abs/2002.12804" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">2002.12804</a></p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="d7fb" id="d7fb" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/5a044ca7c525"><time class="dt-published" datetime="2023-11-24T06:12:56.401Z">November 24, 2023</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-unilmv2-5a044ca7c525" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

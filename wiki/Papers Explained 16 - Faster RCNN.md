@@ -1,0 +1,72 @@
+# Papers Explained 16 - Faster RCNN
+
+Faster R-CNN, is composed of two modules. The first module is a deep fully convolutional network that proposes regions, and the second module is the Fast R-CNN detector that uses the proposed regions. The entire system is a single, unified network for object detection.
+
+This page ingests the source article into the wiki and connects it to [[Papers Explained Corpus]], [[Computer Vision]].
+
+## Source Metadata
+
+- Source file: `raw/2023-02-07_Papers-Explained-16--Faster-RCNN-a7b874ffacd9.html`
+- Source title: Papers Explained 16: Faster RCNN
+- Published: 2023-02-07
+- Canonical: [https://medium.com/@ritvik19/papers-explained-16-faster-rcnn-a7b874ffacd9](https://medium.com/@ritvik19/papers-explained-16-faster-rcnn-a7b874ffacd9)
+
+## Key Ideas
+
+- Faster R-CNN, is composed of two modules.
+The first module is a deep fully convolutional network that proposes regions, and the second module is the Fast R-CNN detector that uses the proposed regions.
+- To generate region proposals, we slide a small network over the convolutional feature map output by the last shared convolutional layer. This small network takes as input an n × n spatial window of the input convolutional feature map.
+- This feature is fed into two sibling fullyconnected layers — a box-regression layer (reg) and a box-classification layer (cls).
+- Loss Function
+For training RPNs, a binary class label (of being an object or not) is assigned to each anchor. A positive label is assigned to two kinds of anchors:
+- The anchor/anchors with the highest Intersection-overUnion (IoU) overlap with a ground-truth box
+
+## Notes
+
+Faster R-CNN, is composed of two modules.
+The first module is a deep fully convolutional network that proposes regions, and the second module is the Fast R-CNN detector that uses the proposed regions. The entire system is a single, unified network for object detection.
+
+Region Proposal Network
+
+To generate region proposals, we slide a small network over the convolutional feature map output by the last shared convolutional layer. This small network takes as input an n × n spatial window of the input convolutional feature map. Each sliding window is mapped to a lower-dimensional feature.
+
+This feature is fed into two sibling fullyconnected layers — a box-regression layer (reg) and a box-classification layer (cls).
+
+Anchors
+
+At each sliding-window location, multiple region proposals are simultaneously predicted, where the number of maximum possible proposals for each location is denoted as k. So the reg layer has 4k outputs encoding the coordinates of k boxes, and the cls layer outputs 2k scores that estimate probability of object or not object for each proposal. The k proposals are parameterized relative to k reference boxes, which we call anchors. An anchor is centered at the sliding window in question, and is associated with a scale and aspect ratio (Figure 3, left). By default we use 3 scales and 3 aspect ratios, yielding k = 9 anchors at each sliding position. For a convolutional feature map of a size W × H (typically ∼2,400), there are W H k anchors in total.
+
+Loss Function
+For training RPNs, a binary class label (of being an object or not) is assigned to each anchor. A positive label is assigned to two kinds of anchors:
+
+- The anchor/anchors with the highest Intersection-overUnion (IoU) overlap with a ground-truth box
+
+- An anchor that has an IoU overlap higher than 0.7 with any ground-truth box.
+
+Note that a single ground-truth box may assign positive labels to multiple anchors.
+
+Sharing Features for RPN and Fast R-CNN
+As per the experiments mentioned in the original paper, first RPN is trained, and the proposals are used to train Fast R-CNN. The network tuned by Fast R-CNN is then used to initialize RPN, and this process is iterated.
+
+## Paper
+
+Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks [1506.01497](https://arxiv.org/abs/1506.01497)
+
+## Figures
+
+Figures from the Medium HTML export (`raw/2023-02-07_Papers-Explained-16--Faster-RCNN-a7b874ffacd9.html`); local copies under `wiki/assets/papers-explained-16-faster-rcnn/` when download succeeded.
+
+| Figure | Caption |
+|--------|---------|
+| ![Figure 1](assets/papers-explained-16-faster-rcnn/fig-1.png) | Title card: Faster RCNN. |
+| ![Figure 2](assets/papers-explained-16-faster-rcnn/fig-2.png) | Faster R-CNN, is composed of two modules. |
+| ![Figure 3](assets/papers-explained-16-faster-rcnn/fig-3.png) | Anchors. |
+## Related
+
+- [[Papers Explained Corpus]]
+- [[Computer Vision]]
+- [[Papers Explained 15 - Fast RCNN]]
+- [[Papers Explained 17 - Mask RCNN]]
+- [[Object Detection for Dummies Part 3]] — RPN, anchors, multi-task loss (Weng tutorial).
+
+#summary #topic

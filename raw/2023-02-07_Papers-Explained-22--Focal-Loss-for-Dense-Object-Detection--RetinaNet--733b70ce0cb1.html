@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 22: Focal Loss for Dense Object Detection (RetinaNet)</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 22: Focal Loss for Dense Object Detection (RetinaNet)</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+The highest accuracy object detectors to date are based on a two-stage approach popularized by R-CNN, where a classifier is applied to a…
+</section>
+<section data-field="body" class="e-content">
+<section name="6a2d" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="91ea" id="91ea" class="graf graf--h3 graf--leading graf--title">Papers Explained 22: Focal Loss for Dense Object Detection (RetinaNet)</h3><figure name="dd33" id="dd33" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*bhlWEbQvlB-VQ5AZJwpUow.png" data-width="1105" data-height="235" src="https://cdn-images-1.medium.com/max/800/1*bhlWEbQvlB-VQ5AZJwpUow.png"></figure><p name="7a58" id="7a58" class="graf graf--p graf-after--figure">The highest accuracy object detectors to date are based on a two-stage approach popularized by R-CNN, where a classifier is applied to a sparse set of candidate object locations. In contrast, one-stage detectors that are applied over a regular, dense sampling of possible object locations have the potential to be faster and simpler, but have trailed the accuracy of two-stage detectors thus far.</p><p name="15b2" id="15b2" class="graf graf--p graf-after--p">The central cause for this is the extreme foreground-background class imbalance encountered during training of dense detectors.</p><p name="be90" id="be90" class="graf graf--p graf-after--p">Focal Loss proposes to address this class imbalance by reshaping the standard cross entropy loss such that it down-weights the loss assigned to well-classified examples.</p><p name="ebcf" id="ebcf" class="graf graf--p graf-after--p">To evaluate the effectiveness of this loss, the authors design and train a simple dense detector called RetinaNet.</p><h3 name="cfcd" id="cfcd" class="graf graf--h3 graf-after--p">Focal Loss Explained</h3><figure name="1768" id="1768" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="0*37KwS4MLtzcYDsBC" data-width="335" data-height="325" src="https://cdn-images-1.medium.com/max/800/0*37KwS4MLtzcYDsBC"></figure><p name="032f" id="032f" class="graf graf--p graf-after--figure">Lets start from Cross Entropy Loss for binary classification</p><p name="d1bf" id="d1bf" class="graf graf--p graf-after--p">CE(p, y) = -log(p) if y = 1 else -log(1-p)</p><p name="522e" id="522e" class="graf graf--p graf-after--p">where y ∈ {1, -1} specifies the ground truth class and p ∈ [0, 1] is the model’s estimated probability for the class with label y = 1</p><p name="b8b1" id="b8b1" class="graf graf--p graf-after--p">For notational convenience, we define pt:</p><p name="dd58" id="dd58" class="graf graf--p graf-after--p">pt = p if y = 1 else 1-p</p><p name="8466" id="8466" class="graf graf--p graf-after--p">thus</p><p name="bfab" id="bfab" class="graf graf--p graf-after--p">CE(p, y) = CE(pt) = -lop(pt)</p><p name="5ebf" id="5ebf" class="graf graf--p graf-after--p">One notable property of this loss is that even examples that are easily classified (pt &lt;&lt; .5) incur a loss with non-trivial magnitude.<br>When summed over a large number of easy examples, these small loss values can overwhelm the rare class.</p><p name="7fdd" id="7fdd" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Balanced Cross Entropy</strong></p><p name="d947" id="d947" class="graf graf--p graf-after--p">A common method for addressing class imbalance is to introduce a weighting factor α ∈ [0, 1] for class 1 and 1−α for class −1. In practice α may be set by inverse class frequency or treated as a hyperparameter to set by cross validation. For notational convenience, we define αt analogously to how we defined pt . We write the α-balanced CE loss as:</p><p name="d016" id="d016" class="graf graf--p graf-after--p">CE(pt) = −αt log(pt)</p><p name="5bc2" id="5bc2" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Focal Loss Definition</strong></p><p name="5711" id="5711" class="graf graf--p graf-after--p">While α balances the importance of positive/negative examples, it does not differentiate between easy/hard examples. The authors propose to add a modulating factor (1 − pt)^γ to the cross entropy loss, with tunable focusing parameter γ ≥ 0.</p><p name="ced4" id="ced4" class="graf graf--p graf-after--p">Thus focal loss can be defined as:</p><p name="defb" id="defb" class="graf graf--p graf-after--p">FL(pt) = −(1 − pt)^γ log(pt)</p><p name="7dd6" id="7dd6" class="graf graf--p graf-after--p">Two properties of the focal loss:</p><ol class="postList"><li name="a42a" id="a42a" class="graf graf--li graf-after--p">When an example is misclassified and pt is small, the modulating factor is near 1 and the loss is unaffected. As pt → 1, the factor goes to 0 and the loss for well-classified examples is down-weighted.</li><li name="17ae" id="17ae" class="graf graf--li graf-after--li">The focusing parameter γ smoothly adjusts the rate at which easy examples are downweighted. When γ = 0, FL is equivalent to CE, and as γ is increased the effect of the modulating factor is likewise increased (γ = 2 to worked best in the experiments and the RetinaNet is relatively robust to γ ∈ [0.5, 5]).</li></ol><p name="62bf" id="62bf" class="graf graf--p graf-after--li">In practice an α-balanced variant of the focal loss is used:<br>FL(pt) = −αt(1 − pt)^γ log(pt).</p><h3 name="dd80" id="dd80" class="graf graf--h3 graf-after--p">RetinaNet Detector</h3><figure name="fbc9" id="fbc9" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="0*pr4ZFJwRG1SvdBk4" data-width="695" data-height="291" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/0*pr4ZFJwRG1SvdBk4"></figure><p name="ca29" id="ca29" class="graf graf--p graf-after--figure">RetinaNet is a single, unified network composed of a backbone network and two task-specific subnetworks. The backbone is responsible for computing a convolutional feature map over an entire input image and is an off-the-self convolutional network. The first subnet performs convolutional object classification on the backbone’s output; the second subnet performs convolutional bounding box regression.</p><p name="9a34" id="9a34" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Feature Pyramid Network Backbone</strong></p><p name="6a3f" id="6a3f" class="graf graf--p graf-after--p">In brief, FPN augments a standard convolutional network with a top-down pathway and lateral connections so the network efficiently constructs a rich, multi-scale feature pyramid from a single resolution input image. Each level of the pyramid can be used for detecting objects at a different scale.</p><p name="160e" id="160e" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Classification Subnet</strong></p><p name="9bba" id="9bba" class="graf graf--p graf-after--p">The classification subnet predicts the probability of object presence at each spatial position for each of the A anchors and K object classes.</p><p name="a285" id="a285" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Box Regression Subnet</strong></p><p name="23cc" id="23cc" class="graf graf--p graf-after--p">In parallel with the object classification subnet, we attach another small FCN to each pyramid level for the purpose of regressing the offset from each anchor box to a nearby ground-truth object, if one exists.</p><h3 name="48a0" id="48a0" class="graf graf--h3 graf-after--p">Paper</h3><p name="8859" id="8859" class="graf graf--p graf-after--h3 graf--trailing">Feature Pyramid Networks for Object Detection <a href="https://arxiv.org/abs/1708.02002" data-href="https://arxiv.org/abs/1708.02002" class="markup--anchor markup--p-anchor" rel="noreferrer nofollow noopener" target="_blank">1708.02002</a></p></div></div></section><section name="4d57" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="1af4" id="1af4" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="2111" id="2111" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/733b70ce0cb1"><time class="dt-published" datetime="2023-02-07T06:47:21.982Z">February 7, 2023</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-22-focal-loss-for-dense-object-detection-retinanet-733b70ce0cb1" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

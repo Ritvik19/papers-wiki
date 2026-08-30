@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Two speeds of a GPU - Adam Mainz</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; margin: 0; background: #fdfdfd; color: #1a1a1a; }
+    main { max-width: 860px; margin: 0 auto; padding: 48px 24px; }
+    header { margin-bottom: 32px; border-bottom: 1px solid #eaeaea; padding-bottom: 24px; }
+    h1 { font-size: 2.2rem; line-height: 1.2; margin: 0 0 12px; }
+    h2 { font-size: 1.5rem; margin-top: 36px; border-bottom: 1px solid #f0f0f0; padding-bottom: 8px; }
+    h3 { font-size: 1.2rem; margin-top: 24px; }
+    .meta { color: #666; font-size: 0.95rem; }
+    figure { margin: 32px 0; text-align: center; }
+    img { display: block; max-width: 100%; height: auto; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    figcaption { margin-top: 10px; color: #666; font-size: 0.9rem; }
+    code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; background: #f3f3f3; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+    pre { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 16px; overflow-x: auto; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; font-size: 0.9rem; line-height: 1.45; }
+    pre code { background: none; padding: 0; }
+    table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.95rem; }
+    th, td { border: 1px solid #e0e0e0; padding: 10px 14px; text-align: left; }
+    th { background: #f8f9fa; font-weight: 600; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Two speeds of a GPU</h1>
+    <p class="meta"><strong>Author:</strong> Adam Mainz (<a href="https://x.com/MainzOnX">@MainzOnX</a>) &middot; <strong>Date:</strong> July 16, 2026 &middot; <strong>Topic:</strong> GPU Systems / Arithmetic Intensity &amp; Roofline Model</p>
+  </header>
+
+  <figure>
+    <img src="../../wiki/assets/two-speeds-of-a-gpu/fig-1.jpg" alt="Two speeds of a GPU header banner">
+    <figcaption>Figure 1: Two speeds of a GPU.</figcaption>
+  </figure>
+
+  <section>
+    <h2>GPUs have two speeds</h2>
+    <p>A GPU has two speeds, not one. It has a speed for <strong>math</strong> (how fast it can add and multiply and generally push numbers around) and a separate speed for <strong>moving bytes</strong> between its memory and the parts that do the math. Those two speeds are wildly out of balance. Compute grew a lot faster than memory bandwidth over the last decade, and on modern GPUs the math side runs circles around the memory side by ratios that will look absurd when you see them.</p>
+    <p>That mismatch shows up everywhere. It's why a plain vector add uses only a tiny fraction of a GPU's mathematical power, even though it may finish quickly. It's why chaining two elementwise operations is slower than doing them together, even though the arithmetic is identical. It's why people care about kernel fusion and quantization and half a dozen other things you've heard about.</p>
+    <p>By the end of this piece you'll be able to look at almost any PyTorch op and make a good guess about which of the two ceilings it's hitting. Not from measuring, from the shape of the code. That's a small superpower, and it turns "why is this slow" from a mystery into a diagnostic.</p>
+  </section>
+
+  <section>
+    <h2>A chef, a runner, and a very long wait</h2>
+    <p>Every GPU spec sheet leads with two headline numbers. One for how fast the chip can do math. One for how fast it can move bytes between its memory and the parts that do the math.</p>
+    <p>Those two numbers are independent ceilings. For large enough kernels, one of them usually becomes the dominant limit. Which one depends entirely on the ratio of math to memory movement in the code you wrote.</p>
+    <p>Imagine a kitchen with a chef and a runner. The chef is extremely fast. They can chop a hundred vegetables per minute at their cutting board, but the chef doesn't fetch their own ingredients. The runner walks to the storeroom at the back, grabs an ingredient, and walks back. Each round trip takes a minute. So the kitchen produces one chopped vegetable per minute, and in between the chef stands at their board and waits.</p>
+    <p>The rate at which the kitchen produces food isn't set by how fast the chef works. It's set by how fast the runner fetches. You paid for a chef who could do a hundred vegetables a minute and you're getting one. The chef sits idle because the ingredients haven't arrived.</p>
+    <p>That's a GPU today, at almost every scale. The compute side (the chef) is astonishingly fast. The memory side (the runner) is much slower. For most of the code you'll write, the chef finishes their share of the work in less time than the runner takes to fetch the data, and then they wait.</p>
+  </section>
+
+  <figure>
+    <img src="../../wiki/assets/two-speeds-of-a-gpu/fig-2.jpg" alt="Kitchen analogy showing fast chef waiting for slow runner">
+    <figcaption>Figure 2: The memory-bound kitchen: fast chef waits idle while runner fetches ingredients.</figcaption>
+  </figure>
+
+  <section>
+    <p>Now sit with a twist. Suppose the recipe changes. Each vegetable now takes the chef a full minute of careful dicing instead of one quick chop. The runner is unchanged: still one trip per minute, still one ingredient at a time. But every ingredient the runner drops off now represents a full minute of actual work. The chef stops standing around. They are working the whole minute the runner is walking, and the kitchen's output shifts from being limited by the runner to being limited by <strong>the chef</strong>.</p>
+  </section>
+
+  <figure>
+    <img src="../../wiki/assets/two-speeds-of-a-gpu/fig-3.jpg" alt="Kitchen analogy showing busy chef working continuously">
+    <figcaption>Figure 3: The compute-bound kitchen: chef works the full minute per ingredient, flipping the bottleneck.</figcaption>
+  </figure>
+
+  <section>
+    <p>Same runner. Same chef. What changed is how much work each ingredient represents. The bottleneck flipped. Hold onto that idea. It comes back later, when we discover that a matrix multiply does way more math per byte fetched than a plain vector add does, and that fact is why they land on opposite sides of the same ceiling.</p>
+  </section>
+
+  <section>
+    <h2>How much math can a GPU actually do?</h2>
+    <p>A <strong>flop</strong> (floating-point operation) is one arithmetic step on numbers that carry fractions (like 3.14 or 1e-9), as opposed to plain integers. One multiply. One add. That's it. The name comes from "floating-point" because floats are the number format GPUs mostly work in.</p>
+    <p>By convention, a multiply-and-add combined counts as 2 flops even when the chip does both at once in a single hardware step (which is what happens all the time inside matmuls). Every spec sheet uses this convention, and it's why the 2N³ matmul count comes out the way it does later on.</p>
+    <p><strong>TFLOPS</strong> is trillions of flops per second. When a spec sheet says "H100 does 989 TFLOPS," it means the H100 can, at peak, execute 989 trillion arithmetic operations every second.</p>
+    <p>989 trillion. Every second. In the three hundred milliseconds it takes your eye to blink, an H100 can do about 300 trillion arithmetic operations. In the time it takes to say the word "flop" out loud, more math than most humans do in a lifetime, done thousands of times over, on one chip.</p>
+    <p>Two cards to have in mind for the rest of this piece:</p>
+    <ul>
+      <li><strong>H100 SXM5</strong> (a datacenter card): about 989 TFLOPS.</li>
+      <li><strong>RTX 4090</strong> (a high-end consumer card): about 165 TFLOPS.</li>
+    </ul>
+    <p>Both numbers assume a compact numeric format called <strong>BF16</strong>, which is what modern training and inference actually use. Don't worry about the details of the format just know that any big TFLOPS number on a spec sheet is quoted at BF16 or something similar.</p>
+    <p>And "peak" means peak. It's the top speed under ideal conditions, with the right kind of op on the right hardware unit. Most real kernels sit well below their peak, and nothing in this article is going to actually hit 989 TFLOPS. But the peak is what defines the ceiling of the math side, so it's the number we work with.</p>
+  </section>
+
+  <section>
+    <h2>How fast can you feed a GPU?</h2>
+    <p><strong>Bandwidth</strong> is how many bytes per second the GPU can move between its memory and the parts of the chip that do the math. Not how much memory it has (that's a separate number). This is throughput, bytes flowing per second.</p>
+    <p>The unit usually is GB/s (gigabytes per second) or, on serious GPUs, TB/s (trillions of bytes per second). "H100 has 3.35 TB/s of memory bandwidth" means the chip can move up to 3.35 trillion bytes between its memory and its compute cores every second.</p>
+    <p>A typical photo on a phone is a few megabytes. At 3.35 TB/s, an H100 could in principle move about 800,000 photos every second, if photos were all it did.</p>
+    <p>Same two cards, bandwidth this time:</p>
+    <ul>
+      <li><strong>H100 SXM5:</strong> about 3.35 TB/s (using HBM3, the memory chips that sit right next to the GPU on datacenter cards).</li>
+      <li><strong>RTX 4090:</strong> about 1 TB/s (using GDDR6X, the consumer-card equivalent).</li>
+    </ul>
+    <p>Both cards, both numbers, side by side:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Card</th>
+          <th>Peak Compute (BF16)</th>
+          <th>Peak Bandwidth</th>
+          <th>Ridge Ratio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>H100 SXM5</strong></td>
+          <td>989 TFLOPS</td>
+          <td>3.35 TB/s</td>
+          <td>~295 FLOPs/byte (~300)</td>
+        </tr>
+        <tr>
+          <td><strong>RTX 4090</strong></td>
+          <td>165 TFLOPS</td>
+          <td>1.00 TB/s</td>
+          <td>~165 FLOPs/byte</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>There's one number hiding in that table that pretty much explains the rest of this article. Take the H100's peak compute and divide it by its peak bandwidth: 989 trillion flops per second, over 3.35 trillion bytes per second, works out to about <strong>295 flops per byte</strong>.</p>
+    <p>Round to 300. In the time it takes an H100 to move ONE byte from memory, it can do about 300 arithmetic operations. On the RTX 4090, the same ratio is about 165 ops per byte. That's how badly the kitchen is tilted toward the chef. Now we can actually count.</p>
+  </section>
+
+  <section>
+    <h2>Why a vector add barely uses the chip</h2>
+    <p>Time to count something real. Take a simple vector add: <code>c = a + b</code>, on length-1M BF16 tensors. When PyTorch runs this on a GPU, the actual work happens inside a kernel, like one function call the whole chip executes together. This particular kernel reads <code>a</code>, reads <code>b</code>, adds pairs of elements, and writes the result to <code>c</code>.</p>
+    <p>Count the memory traffic first. Each tensor is 2 MB (1 million BF16 elements at 2 bytes each). Read <code>a</code>: 2 MB. Read <code>b</code>: 2 MB. Write <code>c</code>: 2 MB. Total: <strong>6 MB</strong> moving between memory and the chip.</p>
+    <p>Now count the math. One million elements, one add per element. <strong>1 million flops</strong> total.</p>
+    <p>Now imagine two extreme worlds. In one, only compute matters and memory is free. In the other, only memory matters and compute is free. How long would this vector add take in each?</p>
+    <ul>
+      <li><strong>Compute-only:</strong> At 989 TFLOPS, 1,000,000 flops &divide; 989,000,000,000,000 flops/sec &approx; <strong>1 nanosecond</strong>. (Elementwise ops run on slower plain ALUs, so real compute time is &approx;10 ns, but still trivial).</li>
+      <li><strong>Memory-only:</strong> At 3.35 TB/s, moving 6 MB takes 6,000,000 bytes &divide; 3,350,000,000,000 bytes/sec &approx; <strong>1.8 microseconds</strong>.</li>
+    </ul>
+    <p>In a real kernel, memory movement and compute overlap; total throughput cannot exceed either ceiling, so the larger of the two idealized times sets the limit. Memory is ~1,800&times; slower. That means the compute side is drastically underutilized, sitting well below its own ceiling because bytes aren't arriving fast enough to keep it busy.</p>
+    <p>Same story on the RTX 4090: compute-only about 6 nanoseconds, memory-only about 6 microseconds, memory wins by about 1,000&times;.</p>
+    <p>There's a name for this pattern. When a kernel's runtime is set by moving bytes rather than doing arithmetic, it is <strong>memory-bound</strong>.</p>
+    <p>Most large elementwise operations in your PyTorch code are memory-bound: adds, multiplies, relus, standalone softmaxes, and normalization layers. Anything that reads a tensor, does a little math per element, and writes a tensor.</p>
+    <p>This is also why it matters when tools like <code>torch.compile</code> fuse chained memory-bound ops into a single kernel. Every time two ops run as separate kernels, PyTorch writes the intermediate result out to GPU memory and then reads it back in for the next op. That round trip is pure cost. Fusing the ops into one kernel skips the intermediate write and read entirely, cutting time on the ceiling you were actually hitting.</p>
+  </section>
+
+  <section>
+    <h2>When the chef finally has enough to do</h2>
+    <p>Not everything is memory-bound. Some kernels do enough math per byte to actually keep the compute side busy. The obvious example is the one that dominates every serious neural network: <strong>matrix multiplication</strong>.</p>
+    <p>If you multiply an N&times;N matrix <code>A</code> by an N&times;N matrix <code>B</code> to produce an N&times;N matrix <code>C</code>, each output cell of <code>C</code> is a dot product of one row of <code>A</code> and one column of <code>B</code>. Walk across the row of <code>A</code> and down the matching column of <code>B</code>, multiplying pairs of elements as you go, then sum all the products. That single number fills one cell of <code>C</code>.</p>
+    <p>Since there are N rows in <code>A</code> and N columns in <code>B</code>, there are <strong>N &times; N = N² output cells</strong> to fill in <code>C</code>. Each cell takes N multiplies and N-1 adds (about 2N flops per cell). Times N² cells, a full matmul is roughly <strong>2N³ flops total</strong>.</p>
+    <p>The memory side is smaller, assuming the kernel is written well: read <code>A</code> (N² elements), read <code>B</code> (N² elements), write <code>C</code> (N² elements). That's 3N² elements crossing GPU memory, times the size of each element in bytes (2 bytes for BF16), giving <strong>6N² bytes</strong>.</p>
+    <p>Notice the shapes:</p>
+    <ul>
+      <li><strong>Math grows as N³</strong></li>
+      <li><strong>Memory grows as N²</strong></li>
+    </ul>
+    <p>Every time you double N, math grows 8&times; but memory only grows 4&times;. The ratio of math to memory grows <em>with N</em>. That's the whole reason a matmul can escape the memory ceiling.</p>
+  </section>
+
+  <figure>
+    <img src="../../wiki/assets/two-speeds-of-a-gpu/fig-4.jpg" alt="Matrix multiplication math vs memory scaling diagram">
+    <figcaption>Figure 4: Matrix multiplication arithmetic scaling (2N³ FLOPs) vs memory scaling (6N² bytes).</figcaption>
+  </figure>
+
+  <section>
+    <p>Let's do a real example. A 4096&times;4096 BF16 matmul:</p>
+    <ul>
+      <li><strong>Memory:</strong> Each matrix is 4096² &times; 2 bytes &approx; 32 MB. Read <code>A</code> (32 MB) + Read <code>B</code> (32 MB) + Write <code>C</code> (32 MB) = <strong>96 MB</strong>.</li>
+      <li><strong>Math:</strong> 2 &times; 4096³ &approx; <strong>137 billion flops</strong> (137 GFLOPs).</li>
+    </ul>
+    <p>Timing on the H100:</p>
+    <ul>
+      <li><strong>Compute-only time:</strong> 137 GFLOPs &divide; 989 TFLOPS &approx; <strong>138 microseconds</strong>.</li>
+      <li><strong>Memory-only time:</strong> 96 MB &divide; 3.35 TB/s &approx; <strong>29 microseconds</strong>.</li>
+    </ul>
+    <p>The math side is now the slower side, by about 5&times;. Doing 137 billion flops takes longer than moving 96 MB, so the kernel spends most of its time doing arithmetic and the memory side is the one that finishes early and waits.</p>
+    <p>This kernel is <strong>compute-bound</strong>. Runtime is set by math throughput, not memory throughput.</p>
+    <p>That flip has a real name too. The ratio of flops to bytes for a given kernel is called its <strong>arithmetic intensity</strong>. Higher intensity means more math per byte moved:</p>
+    <ul>
+      <li>The vector add had intensity of 1 million flops &divide; 6 million bytes &approx; <strong>0.17 flops per byte</strong>.</li>
+      <li>The 4096 matmul has 137 billion flops &divide; 96 million bytes &approx; <strong>1,400 flops per byte</strong>.</li>
+    </ul>
+    <p>Four orders of magnitude apart. Which is why they land on opposite sides of the ceiling.</p>
+  </section>
+
+  <section>
+    <h2>Same op but different shape</h2>
+    <p>A matmul isn't inherently compute-bound. Its arithmetic intensity depends on the shape of the matrices. For an N&times;N BF16 matmul:</p>
+    <ul>
+      <li><strong>Flops:</strong> 2N³</li>
+      <li><strong>Bytes:</strong> 6N²</li>
+      <li><strong>Arithmetic Intensity:</strong> 2N³ &divide; 6N² = <strong>N / 3 flops per byte</strong></li>
+    </ul>
+    <p>Using the H100's ridge of about 300 flops per byte as reference:</p>
+    <ul>
+      <li><strong>N = 64:</strong> Intensity &approx; 64 / 3 &approx; <strong>21 flops per byte</strong>. Way below 300. This matmul is <strong>memory-bound</strong>.</li>
+      <li><strong>N = 4096:</strong> Intensity &approx; 4096 / 3 &approx; <strong>1,365 flops per byte</strong>. Way above 300. Squarely <strong>compute-bound</strong>.</li>
+    </ul>
+    <p>Same operation. Same code, same math. Only the size of the matrices changed, and the kernel moved from one ceiling to the other.</p>
+    <p><em>(Note: The N/3 number assumes each byte gets loaded from GPU memory exactly once. Well-written matmul kernels achieve this by tiling chunks into fast on-chip SRAM/shared memory and reusing them across operations before eviction.)</em></p>
+  </section>
+
+  <section>
+    <h2>Both roofs on one chart: The Roofline Model</h2>
+    <p>We've now counted two shapes: vector add at intensity 0.17 (deeply memory-bound), and 4096 matmul at intensity 1,400 (deeply compute-bound). Put all of this on a chart and it looks like the picture below.</p>
+  </section>
+
+  <figure>
+    <img src="../../wiki/assets/two-speeds-of-a-gpu/fig-5.jpg" alt="The Roofline Model chart">
+    <figcaption>Figure 5: The Roofline Model: Slanted memory roof, flat compute roof, and hardware ridge point.</figcaption>
+  </figure>
+
+  <section>
+    <p>What you're looking at is a diagonal line rising up until it hits a flat ceiling:</p>
+    <ul>
+      <li><strong>The memory roof (diagonal):</strong> As arithmetic intensity increases, throughput rises because you feed the compute side faster.</li>
+      <li><strong>The compute roof (flat):</strong> Above a certain intensity, the hardware compute units are saturated. The ceiling stops rising no matter how much math per byte you do, because the chip cannot do math faster than its peak.</li>
+    </ul>
+    <p>Anything left of the ridge is <strong>memory-bound</strong>. Anything right of the ridge is <strong>compute-bound</strong>.</p>
+    <p>The whole picture is called the <strong>roofline model</strong>. The point where the diagonal meets the flat is the <strong>ridge point</strong> (or balance point). Ridge point is a property of the machine, not of your code:</p>
+    <ul>
+      <li><strong>H100 SXM5:</strong> Ridge sits at &approx; <strong>300 flops per byte</strong>.</li>
+      <li><strong>RTX 4090:</strong> Ridge sits at &approx; <strong>165 flops per byte</strong>.</li>
+    </ul>
+    <p>Where your kernel lives on the x-axis is set by the algorithm and tensor dimensions you wrote. Where the roof caps your throughput is set by the hardware.</p>
+  </section>
+
+  <section>
+    <h2>Two ceilings, one ratio</h2>
+    <p>If you want everything in one paragraph here it is: Your GPU has two independent ceilings: one for how fast it can do math, one for how fast it can move bytes between its memory and the parts that do the math. On modern hardware those two speeds are wildly out of balance, with math being much faster. Which ceiling a given kernel hits is decided by its <strong>arithmetic intensity</strong>, the ratio of math to bytes in the code. Kernels below the ridge point are memory-bound. Kernels above are compute-bound. The ridge point is a property of the machine, not your code.</p>
+    <p>The next time you look at a slow PyTorch op, you can ask <em>"how much math is this doing per byte it moves?"</em> and get a decent diagnostic from the shape of the code alone. Two ceilings. One ratio. The shape of your kernel decides where you sit.</p>
+  </section>
+</main>
+</body>
+</html>

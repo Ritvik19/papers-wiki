@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 187e: Quantized Llama 3.2, Llama 3.3</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 187e: Quantized Llama 3.2, Llama 3.3</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Llama 3 is a new set of foundation models, designed for multilinguality, coding, reasoning, and tool usage.
+</section>
+<section data-field="body" class="e-content">
+<section name="07ce" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="a0eb" id="a0eb" class="graf graf--h3 graf--leading graf--title">Papers Explained 187e: Quantized Llama 3.2, Llama 3.3</h3><figure name="e7e9" id="e7e9" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="0*sswWs8CshRVKAsgj" data-width="1920" data-height="1080" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/0*sswWs8CshRVKAsgj"></figure><p name="02e3" id="02e3" class="graf graf--p graf-after--figure">Llama 3 is a new set of foundation models, designed for multilinguality, coding, reasoning, and tool usage.</p><p name="e770" id="e770" class="graf graf--p graf-after--p">This article covers the Quantized Lightweight Llama models, introduced in October 2024. The models are available on <a href="https://huggingface.co/collections/meta-llama/llama-32-66f448ffc8c32f949b04c8cf" data-href="https://huggingface.co/collections/meta-llama/llama-32-66f448ffc8c32f949b04c8cf" class="markup--anchor markup--p-anchor" rel="noopener ugc nofollow noopener" target="_blank">HuggingFace</a>.</p><p name="7983" id="7983" class="graf graf--p graf-after--p">Further it covers Llama 3.3, introduced in December 2024, available on <a href="https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct" data-href="https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">HuggingFace</a>.</p><ul class="postList"><li name="239d" id="239d" class="graf graf--li graf-after--p">Refer the Part A of this article to read about the models released in April 2024: [<a href="https://ritvik19.medium.com/papers-explained-187a-llama-3-51e2b90f63bb" data-href="https://ritvik19.medium.com/papers-explained-187a-llama-3-51e2b90f63bb" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">Papers Explained 187a: Llama 3</a>]</li><li name="0112" id="0112" class="graf graf--li graf-after--li">Refer the Part B of this article to read about the models released in July 2024: [<a href="https://ritvik19.medium.com/papers-explained-187b-llama-3-1-f0fb06898c59" data-href="https://ritvik19.medium.com/papers-explained-187b-llama-3-1-f0fb06898c59" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">Papers Explained 187b: Llama 3.1</a>]</li><li name="18f6" id="18f6" class="graf graf--li graf-after--li">Refer the Part C of this article to read about the initial experiments of adding multimodal capabilities to Llama3: [<a href="https://medium.com/@ritvik19/papers-explained-187c-llama-3-1-multimodal-experiments-a1940dd45575" data-href="https://medium.com/@ritvik19/papers-explained-187c-llama-3-1-multimodal-experiments-a1940dd45575" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">Papers Explained 187c: Llama 3.1 — Multimodal Experiments</a>]</li><li name="4181" id="4181" class="graf graf--li graf-after--li">Refer the Part D of this article to read about the 3.2 models which consists of 11B and 90B vision language models and 3B and 1B small language models: [<a href="https://ritvik19.medium.com/papers-explained-187d-llama-3-2-e517fa1f2528" data-href="https://ritvik19.medium.com/papers-explained-187d-llama-3-2-e517fa1f2528" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">Papers Explained 187d: Llama 3.2</a>]</li></ul><h3 name="481a" id="481a" class="graf graf--h3 graf-after--li">Quantized Llama 3.2</h3><p name="ca2e" id="ca2e" class="graf graf--p graf-after--h3">Quantized Llama have been optimized for use on resource-constrained devices like mobile phones.</p><p name="8f9e" id="8f9e" class="graf graf--p graf-after--p">These models are developed using Quantization-Aware Training with LoRA adaptors to optimize performance in low-precision environments and SpinQuant, a technique that enables us to determine the best possible combination for compression while retaining the most possible quality.</p><h4 name="f0c1" id="f0c1" class="graf graf--h4 graf-after--p">The Quantization Setup</h4><p name="fd1d" id="fd1d" class="graf graf--p graf-after--h4">The quantization scheme involves three parts.</p><ul class="postList"><li name="84f2" id="84f2" class="graf graf--li graf-after--p">All linear layers in all transformer blocks are quantized to a 4-bit groupwise scheme (with a group size of 32) for weights and 8-bit per-token dynamic quantization for activations.</li><li name="da04" id="da04" class="graf graf--li graf-after--li">The classification layer is quantized to 8-bit per-channel for weight and 8-bit per-token dynamic quantization for activation.</li><li name="da34" id="da34" class="graf graf--li graf-after--li">Additionally, an 8-bit per-channel quantization is employed for embedding.</li></ul><h4 name="33a6" id="33a6" class="graf graf--h4 graf-after--li">Quantization-Aware Training and LoRA</h4><p name="01ac" id="01ac" class="graf graf--p graf-after--h4">Quantization-Aware Training (QAT) is used to simulate the effects of quantization during the training of Llama 3.2 models, enabling optimization of their performance in low-precision environments. To initialize QAT, BF16 Llama 3.2 model checkpoints are used after supervised fine-tuning (SFT), followed by an additional full round of SFT training with QAT. The backbone of the QAT model is then frozen and another round of SFT training is performed with low-rank adaptation (LoRA) adaptors applied to all layers within the transformer block, while maintaining LoRA adaptors’ weights and activations in BF16. Finally, the resulting model (both backbone and LoRA adaptors) is fine-tuned using direct preference optimization (DPO).</p><h4 name="d20f" id="d20f" class="graf graf--h4 graf-after--p">SpinQuant</h4><p name="93f5" id="93f5" class="graf graf--p graf-after--h4">Although QAT gives the best results, some people might want to quantize their fine-tuned 1B and 3B models or quantize the models for different targets with different quantization settings. For this reason, a state-of-the-art technique for post-training quantization called SpinQuant is used.</p><p name="8f89" id="8f89" class="graf graf--p graf-after--p">While the method is less accurate than QAT + LoRA, a key advantage of SpinQuant is its portability and ability to operate without requiring access to training datasets, which are often private. It’s an attractive solution for applications where data availability or computational resources are limited.</p><p name="9e6d" id="9e6d" class="graf graf--p graf-after--p">In experiments, WikiText, a small calibration dataset, is utilized to learn rotation matrices in SpinQuant. These matrices enable the smoothing of outliers and facilitate more effective quantization. After this, best practices in quantization such as range setting and generative post-training quantization are applied. The SpinQuant matrices are optimized for the quantization scheme similar to QAT + LoRA.</p><h4 name="7e8e" id="7e8e" class="graf graf--h4 graf-after--p">Results</h4><figure name="0a80" id="0a80" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="0*Og86o-VoI1Wc_dtd" data-width="1920" data-height="1188" src="https://cdn-images-1.medium.com/max/800/0*Og86o-VoI1Wc_dtd"></figure><figure name="a3c0" id="a3c0" class="graf graf--figure graf-after--figure"><img class="graf-image" data-image-id="0*NfPfZ1uX5tbhP3I7" data-width="1920" data-height="1761" src="https://cdn-images-1.medium.com/max/800/0*NfPfZ1uX5tbhP3I7"></figure><figure name="8160" id="8160" class="graf graf--figure graf-after--figure"><img class="graf-image" data-image-id="0*uLYfxoD8_3vG2ex6" data-width="1920" data-height="1761" src="https://cdn-images-1.medium.com/max/800/0*uLYfxoD8_3vG2ex6"></figure><figure name="e331" id="e331" class="graf graf--figure graf-after--figure"><img class="graf-image" data-image-id="0*YTmlr7vhRBLFD6OZ" data-width="1920" data-height="974" src="https://cdn-images-1.medium.com/max/800/0*YTmlr7vhRBLFD6OZ"></figure><h3 name="bd2c" id="bd2c" class="graf graf--h3 graf-after--figure">Llama 3.3</h3><p name="c8f3" id="c8f3" class="graf graf--p graf-after--h3">The Meta Llama 3.3 multilingual large language model (LLM) is an instruction-tuned generative model in 70B. The LLM is optimized for multilingual dialogue use cases and outperforms many of the available open source and closed chat models on common industry benchmarks.</p><p name="cbc6" id="cbc6" class="graf graf--p graf-after--p">This model uses an auto-regressive language architecture, specifically an optimized transformer architecture. The tuned versions employ supervised fine-tuning (SFT) and reinforcement learning with human feedback (RLHF) to align with human preferences for helpfulness and safety.</p><p name="b36f" id="b36f" class="graf graf--p graf-after--p">The Llama 3.3 model supports eight languages: English, German, French, Italian, Portuguese, Hindi, Spanish, and Thai. Token counts refer to pretraining data only, and all model versions use Grouped-Query Attention (GQA) for improved inference scalability.</p><p name="b301" id="b301" class="graf graf--p graf-after--p">Llama 3.3 was pretrained on approximately 15 trillion tokens of data from publicly available sources. The fine-tuning data includes publicly available instruction datasets, as well as over 25 million synthetically generated examples. The pretraining data has a cutoff of December 2023.</p><p name="fc39" id="fc39" class="graf graf--p graf-after--p">The fine-tuning data is collected through a multi-faceted approach, combining human-generated data with synthetic data to mitigate potential safety risks. Many large language model (LLM)-based classifiers are used to thoughtfully select high-quality prompts and responses, enhancing data quality control.</p><figure name="6012" id="6012" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*NkZaPycjpeNPnfn7zlNP7A.png" data-width="1962" data-height="1448" src="https://cdn-images-1.medium.com/max/800/1*NkZaPycjpeNPnfn7zlNP7A.png"></figure><h3 name="c5be" id="c5be" class="graf graf--h3 graf-after--figure">Paper</h3><p name="2218" id="2218" class="graf graf--p graf-after--h3"><a href="https://ai.meta.com/blog/meta-llama-quantized-lightweight-models/" data-href="https://ai.meta.com/blog/meta-llama-quantized-lightweight-models/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Introducing quantized Llama models with increased speed and a reduced memory footprint</a></p><p name="b3e9" id="b3e9" class="graf graf--p graf-after--p graf--trailing">Recommended Reading [<a href="https://ritvik19.medium.com/list/llama-models-5b8ea07308cb" data-href="https://ritvik19.medium.com/list/llama-models-5b8ea07308cb" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">LLaMA Models</a>]</p></div></div></section><section name="4050" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="5f8c" id="5f8c" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="88f1" id="88f1" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener ugc nofollow noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="b710" id="b710" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/cc6965f61370"><time class="dt-published" datetime="2024-11-02T04:29:08.848Z">November 2, 2024</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-187e-quantized-llama-3-2-cc6965f61370" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

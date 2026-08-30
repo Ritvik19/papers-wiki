@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 39: DeiT</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 39: DeiT</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+DeiT is a competitive convolution-free transformer trained on Imagenet only. It introduces a teacher-student strategy specific to…
+</section>
+<section data-field="body" class="e-content">
+<section name="1680" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="df86" id="df86" class="graf graf--h3 graf--leading graf--title">Papers Explained 39: DeiT</h3><figure name="9f27" id="9f27" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*5aW58FMPjWBZ3xo4dPJaLA.png" data-width="927" data-height="377" src="https://cdn-images-1.medium.com/max/800/1*5aW58FMPjWBZ3xo4dPJaLA.png"></figure><p name="d846" id="d846" class="graf graf--p graf-after--figure">DeiT is a competitive convolution-free transformer trained on Imagenet only. It introduces a teacher-student strategy specific to transformers. It relies on a distillation token ensuring that the student learns from the teacher through attention.</p><figure name="7e7d" id="7e7d" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*3ecYi4ApI6kIZtjZgmlBww.png" data-width="445" data-height="652" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*3ecYi4ApI6kIZtjZgmlBww.png"></figure><p name="b117" id="b117" class="graf graf--p graf-after--figure">The architecture design of DeiT is identical to the one proposed by ViT with no convolutions. Our only differences are the training strategies and the distillation token.</p><figure name="d3d2" id="d3d2" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*ZkDoq3GN0IfYvWI2IX1XYQ.png" data-width="840" data-height="333" src="https://cdn-images-1.medium.com/max/800/1*ZkDoq3GN0IfYvWI2IX1XYQ.png"></figure><h3 name="c682" id="c682" class="graf graf--h3 graf-after--figure">Distillation through attention</h3><h4 name="8caa" id="8caa" class="graf graf--h4 graf-after--h3">Soft Distillation</h4><p name="12ef" id="12ef" class="graf graf--p graf-after--h4">minimizes the Kullback-Leibler divergence between the softmax of the teacher and the softmax of the student model.</p><figure name="2494" id="2494" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*j-3E2XVAvo9PIBaT.png" data-width="853" data-height="32" src="https://cdn-images-1.medium.com/max/800/0*j-3E2XVAvo9PIBaT.png"></figure><h4 name="aca7" id="aca7" class="graf graf--h4 graf-after--figure">Hard-label distillation.</h4><p name="ddba" id="ddba" class="graf graf--p graf-after--h4">we take the hard decision of the teacher as a true label.</p><figure name="0fb1" id="0fb1" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*Q2komiCKSR_k3diD.png" data-width="829" data-height="56" src="https://cdn-images-1.medium.com/max/800/0*Q2komiCKSR_k3diD.png"></figure><h4 name="588d" id="588d" class="graf graf--h4 graf-after--figure">Distillation Token</h4><p name="c35f" id="c35f" class="graf graf--p graf-after--h4">We add a new token, the distillation token, to the initial embeddings (patches and class token). Our distillation token is used similarly to the class token: it interacts with other embeddings through self-attention and is output by the network after the last layer. Its target objective is given by the distillation component of the loss. The distillation embedding allows our model to learn from the output of the teacher, as in a regular distillation, while remaining complementary to the class embedding.</p><p name="8bfb" id="8bfb" class="graf graf--p graf-after--p">Interestingly, we observe that the learned class and distillation tokens converge towards different vectors: the average cosine similarity between these tokens equals 0.06. As the class and distillation embeddings are computed at each layer, they gradually become more similar through the network, all the way through the last layer at which their similarity is high (cos=0.93), but still lower than 1. This is expected since they aim at producing targets that are similar but not identical.</p><h4 name="84dc" id="84dc" class="graf graf--h4 graf-after--p">Fine-tuning with distillation</h4><p name="1d92" id="1d92" class="graf graf--p graf-after--h4">We use both the true label and teacher prediction during the fine-tuning stage at a higher resolution. We use a teacher with the same target resolution, typically obtained from the lower-resolution teacher. We have also tested with true labels only but this reduces the benefit of the teacher and leads to lower performance.</p><h4 name="8518" id="8518" class="graf graf--h4 graf-after--p">Classification with our approach: joint classifiers</h4><p name="a72d" id="a72d" class="graf graf--p graf-after--h4">At test time, both the class or the distillation embeddings produced by the transformer are associated with linear classifiers and are able to infer the image label. Yet our referent method is the late fusion of these two separate heads, for which we add the softmax output by the two classifiers to make the prediction.</p><h4 name="b851" id="b851" class="graf graf--h4 graf-after--p">Convnets teachers</h4><p name="954e" id="954e" class="graf graf--p graf-after--h4">We have observed that using a convnet teacher gives better performance than using a transformer. The fact that the convnet is a better teacher is probably due to the inductive bias inherited by the transformers through distillation</p><figure name="df36" id="df36" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*Q9uGdZmAKI66hTQLT1cA_w.png" data-width="816" data-height="270" src="https://cdn-images-1.medium.com/max/800/1*Q9uGdZmAKI66hTQLT1cA_w.png"></figure><h4 name="0eb0" id="0eb0" class="graf graf--h4 graf-after--figure">Comparison of distillation methods</h4><p name="eac3" id="eac3" class="graf graf--p graf-after--h4">The distillation token gives slightly better results than the class token. It is also more correlated to the convnets prediction. This difference in performance is probably due to the fact that it benefits more from the inductive bias of convnets.</p><figure name="6654" id="6654" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*AVIoSogcY03yLiw2fDviTg.png" data-width="823" data-height="411" src="https://cdn-images-1.medium.com/max/800/1*AVIoSogcY03yLiw2fDviTg.png"></figure><h4 name="3875" id="3875" class="graf graf--h4 graf-after--figure">Agreement with the teacher &amp; inductive bias?</h4><p name="3e85" id="3e85" class="graf graf--p graf-after--h4">Our distilled model is more correlated to the convnet than with a transformer learned from scratch. As to be expected, the classifier associated with the distillation embedding is closer to the convnet than the one associated with the class embedding, and conversely the one associated with the class embedding is more similar to DeiT learned without distillation. Unsurprisingly, the joint class+distil classifier offers a middle ground.</p><h4 name="49ae" id="49ae" class="graf graf--h4 graf-after--p">Transfer learning: Performance on downstream tasks</h4><figure name="ece3" id="ece3" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*sqAMefF0Zhvb9ZUXyIHUvQ.png" data-width="828" data-height="383" src="https://cdn-images-1.medium.com/max/800/1*sqAMefF0Zhvb9ZUXyIHUvQ.png"></figure><h4 name="82a1" id="82a1" class="graf graf--h4 graf-after--figure">Ablation Study</h4><figure name="30f2" id="30f2" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*k9-Xc5DEvXLdVG35IlHHxg.png" data-width="865" data-height="735" src="https://cdn-images-1.medium.com/max/800/1*k9-Xc5DEvXLdVG35IlHHxg.png"></figure><h3 name="8a3d" id="8a3d" class="graf graf--h3 graf-after--figure">Paper</h3><p name="b9a4" id="b9a4" class="graf graf--p graf-after--h3">Training data-efficient image transformers &amp; distillation through attention <a href="https://arxiv.org/abs/2012.12877" data-href="https://arxiv.org/abs/2012.12877" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">2012.12877</a></p><p name="a9a2" id="a9a2" class="graf graf--p graf-after--p graf--trailing">Recommended Reading [<a href="https://ritvik19.medium.com/list/vision-transformers-61e6836230f1" data-href="https://ritvik19.medium.com/list/vision-transformers-61e6836230f1" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Vision Transformers</a>]</p></div></div></section><section name="8ce0" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="7397" id="7397" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="3855" id="3855" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/3d78dd98c8ec"><time class="dt-published" datetime="2023-03-27T04:06:06.702Z">March 27, 2023</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-39-deit-3d78dd98c8ec" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

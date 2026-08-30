@@ -1,0 +1,685 @@
+Source URL: https://huggingface.co/blog/smolvla
+Title: SmolVLA: Efficient Vision-Language-Action Model trained on Lerobot Community Data
+
+Hugging Face's logo Hugging Face 
+
+* Models
+* Datasets
+* Spaces
+* Buckets new
+* Docs
+* Enterprise
+* Pricing
+* * Website  
+         * Tasks  
+         * HuggingChat  
+         * Collections  
+         * Languages  
+         * Organizations  
+   * Community  
+         * Blog  
+         * Posts  
+         * Daily Papers  
+         * Hardware  
+         * Learn  
+         * Discord  
+         * Forum  
+         * GitHub  
+   * Solutions  
+         * Team & Enterprise  
+         * Hugging Face PRO  
+         * Enterprise Support  
+         * Inference Providers  
+         * Inference Endpoints  
+         * Storage Buckets
+* ---
+* Log In
+* Sign Up
+
+ Back to Articles
+
+#  SmolVLA: Efficient Vision-Language-Action Model trained on Lerobot Community Data 
+
+Published June 3, 2025 
+
+Update on GitHub
+
+ Upvote 358 
+* +352
+
+Dana Aubakirova's avatar 
+
+Dana Aubakirova danaaubakirova Follow 
+
+Andres Marafioti's avatar 
+
+Andres Marafioti andito Follow 
+
+merve's avatar 
+
+merve merve Follow 
+
+Aritra Roy Gosthipaty's avatar 
+
+Aritra Roy Gosthipaty ariG23498 Follow 
+
+Francesco Capuano's avatar 
+
+Francesco Capuano fracapuano Follow 
+
+Loubna Ben Allal's avatar 
+
+Loubna Ben Allal loubnabnl Follow 
+
+Pedro Cuenca's avatar 
+
+Pedro Cuenca pcuenq Follow 
+
+Mustafa Shukor's avatar 
+
+Mustafa Shukor mshukor Follow 
+
+Remi Cadene's avatar 
+
+Remi Cadene cadene Follow 
+
+## 
+
+* 🧭TL;DR
+* 📚 Table of Contents
+* Introduction
+* Meet SmolVLA!
+* 🚀 How to Use SmolVLA?  
+   * Install  
+   * Finetune the pretrained model  
+   * Train from scratch
+* Method  
+   * Main Architecture  
+   * Design Choices for Efficiency and Robustness
+* Asynchronous Inference
+* Community Datasets  
+   * Improving Task Annotations  
+   * Standardizing Camera Views
+* Results
+* Conclusion
+* Call to Action:
+
+ 🧭TL;DR 
+
+Today, we introduce SmolVLA, a compact (450M), open-source Vision-Language-Action model for robotics that runs on consumer hardware.
+
+* Pretrained only on compatibly licensed, open-source community-shared datasets under the lerobot tag.
+* SmolVLA-450M outperforms much larger VLAs and strong baselines such as ACT on simulation (LIBERO, Meta-World) and real-world tasks (SO100, SO101).
+* Supports _asynchronous inference_ for **30% faster response** and **2× task throughput**.
+
+**Useful links**:
+
+* Hardware used to train and evaluate SO-100/101: <https://github.com/TheRobotStudio/SO-ARM100>
+* Base model <https://huggingface.co/lerobot/smolvla%5Fbase>
+* Paper: <https://huggingface.co/papers/2506.01844>
+
+##  📚 Table of Contents 
+
+* 🧭 TL;DR
+* 📖 Introduction
+* 🤖 Meet SmolVLA
+* 🚀 How to Use SmolVLA?  
+   * Install  
+   * Finetune the Pretrained Model  
+   * Train from Scratch
+* 🧠 Method  
+   * Main Architecture  
+         * Vision-Language Model (VLM)  
+         * Action Expert: Flow Matching Transformer  
+   * Design Choices for Efficiency and Robustness  
+         * Visual Token Reduction  
+         * Faster Inference via Layer Skipping  
+         * Interleaved Cross and Self-Attention  
+   * Asynchronous Inference
+* 📦 Community Datasets  
+   * Improving Task Annotations  
+   * Standardizing Camera Views
+* 📊 Results
+* ✅ Conclusion
+* 📣 Call to Action
+
+##  Introduction 
+
+Over the past few years, Transformers have driven remarkable progress in AI, from language models capable of human-like reasoning to multimodal systems that understand both images and text. However, in real-world robotics, advancements have been much slower. Robots still struggle to generalize across diverse objects, environments, and tasks. This limited progress stems from a **lack of high-quality, diverse data** and the absence of models that can **reason and act like humans in the physical world**.
+
+In response to these challenges, the field has recently turned to **vision-language-action (VLA) models**, which aim to unify perception, language understanding, and action prediction within a single architecture. VLAs typically take as input raw visual observations and natural language instructions, and output corresponding robot actions. While promising, much of the recent progress in VLAs remains locked behind proprietary models trained on large-scale private datasets, often requiring costly hardware setups and extensive engineering resources. As a result, the broader robotics research community faces significant barriers in reproducing and building upon these models.
+
+SmolVLA addresses this gap by offering an open-source, compact, and efficient VLA model that can be trained on **consumer-grade hardware using only publicly available datasets**. By releasing not only model weights but also using very affordable open-source hardware, SmolVLA aims to democratize access to vision-language-action models and accelerate research toward generalist robotic agents. 
+
+Comparison of SmolVLA across task variations.   
+_Figure 1: Comparison of SmolVLA across task variations. From left to right: (1) asynchronous pick-place cube counting, (2) synchronous pick-place cube counting, (3) pick-place cube counting under perturbations, and (4) generalization on pick-and-place of the lego block with real-world SO101._ 
+
+##  Meet SmolVLA! 
+
+**SmolVLA-450M** is our open-source, compact yet capable VLA model. It is:
+
+* Small enough to run on CPU, train on a single consumer GPU, or even a MacBook!
+* Trained on public, community-shared robotics data
+* Released with full training and inference recipes
+* Can be tested and deployed on very affordable hardware (SO-100, SO-101, LeKiwi, etc.)
+
+Inspired by the training paradigms of Large Language Models (LLMs), SmolVLA goes through a pretraining phase on general manipulation data, followed by task-specific post-training. Architecturally, it combines Transformers with **flow-matching decoders**, and is optimized for speed and low-latency inference with the following design choices:
+
+* Skipping half of the layers of the vision model for faster inference and smaller size
+* Interleaving self-attention and cross-attention blocks
+* Using fewer visual tokens
+* Leveraging smaller pretrained VLMs
+
+Despite using fewer than 30k training episodes—an order of magnitude less than other VLAs—SmolVLA **matches or exceeds the performance** of much larger models, both in simulation and the real world.
+
+To make real-time robotics easier to use, we introduce an asynchronous inference stack. This technology separates how robots perform actions from how they understand what they see and hear. Because of this separation, robots can respond more quickly in fast-changing environments.
+
+SmolVLA architecture.   
+_Figure 2\. SmolVLA takes as input a sequence of RGB images from multiple cameras, the robot’s current sensorimotor state, and a natural language instruction. The VLM encodes these into contextual features, which condition the action expert to generate a continuous sequence of actions._ 
+
+##  🚀 How to Use SmolVLA? 
+
+SmolVLA is designed to be easy to use and integrate—whether you're finetuning on your own data or plugging it into an existing robotics stack.
+
+###  Install 
+
+First, install the required dependencies:
+
+```python
+git clone https://github.com/huggingface/lerobot.git
+cd lerobot
+pip install -e ".[smolvla]"
+
+```
+
+###  Finetune the pretrained model 
+
+Use smolvla\_base, our pretrained 450M model, with the lerobot training framework:
+
+```python
+python lerobot/scripts/train.py \
+  --policy.path=lerobot/smolvla_base \
+  --dataset.repo_id=lerobot/svla_so100_stacking \
+  --batch_size=64 \
+  --steps=20000  # 10% of training budget
+
+```
+
+###  Train from scratch 
+
+​​If you'd like to build from the architecture (pretrained VLM + action expert) rather than a pretrained checkpoint:
+
+```python
+python lerobot/scripts/train.py \
+  --policy.type=smolvla \
+  --dataset.repo_id=lerobot/svla_so100_stacking \
+  --batch_size=64 \
+  --steps=200000
+
+```
+
+You can also load `SmolVLAPolicy` directly:
+
+```python
+from lerobot.common.policies.smolvla.modeling_smolvla import SmolVLAPolicy
+policy = SmolVLAPolicy.from_pretrained("lerobot/smolvla_base")
+
+```
+
+##  Method 
+
+SmolVLA is not only a lightweight yet capable model, but also a method for training and evaluating generalist robotics policies. In this section, we introduce the _model architecture_ behind SmolVLA and the _asynchronous inference_ setup used for evaluation, which has proven to be more adaptable and capable of faster recovery.
+
+SmolVLA consists of two core components: a **Vision-Language Model (VLM)** that processes multimodal inputs and an **action expert** that outputs robot control commands. Below, we share the details of the main components of SmolVLA architecture and the Asynchronous Inference. More details can be found in our technical report. 
+
+###  Main Architecture 
+
+####  Vision-Language Model (VLM) 
+
+We use SmolVLM2 as our VLM backbone. It’s optimized for multi-image inputs and consists of a SigLIP vision encoder and a SmolLM2 language decoder.
+
+* **Image tokens** are extracted via the vision encoder
+* **Language instructions** are tokenized and fed directly into the decoder.
+* **Sensorimotor states** are projected into a single token using a linear layer to align with the token dimension of the language model.
+
+The decoder layers process concatenated image, language, and state tokens. The resulting features are then passed to the action expert.
+
+####  Action Expert: Flow Matching Transformer 
+
+SmolVLA’s **action expert** is a compact transformer (\~100M parameters) that generates action chunks, i.e. sequences of future robot actions, conditioned on the VLM’s outputs. It is trained using a **flow matching objective**, which teaches the model to guide noisy samples back to the ground truth. In contrast, while discrete action representations (e.g., via tokenization) are powerful, they often require autoregressive decoding, which is slow and inefficient at inference time. While flow matching allows **direct, non-autoregressive prediction of continuous actions**, enabling real-time control with high precision.
+
+More intuitively, during training, we add random noise to the robot’s real action sequences and ask the model to predict the “correction vector” that brings them back to the correct trajectory. This forms a smooth vector field over the action space, helping the model learn accurate and stable control policies. 
+
+We implement this using a transformer architecture with **interleaved attention blocks** (see the figure 2), and reduce its hidden size to **75% of the VLM’s**, keeping the model lightweight for deployment.
+
+###  Design Choices for Efficiency and Robustness 
+
+While combining a vision-language model with an action prediction module is a common design pattern in recent VLA systems—such as Pi0, GR00T, Diffusion Policy — we identified several architectural choices that significantly enhance the robustness and performance. In SmolVLA, we apply three key techniques: **reducing the number of visual tokens, skipping upper layers in the VLM**, and **interleaving cross- and self-attention layers** in the action expert.
+
+####  Visual Token Reduction 
+
+High-resolution images improve perception but can significantly slow down inference. To strike a balance, **SmolVLA limits the number of visual tokens to 64 per frame** during both training and inference. For example, a 512×512 image is compressed into just 64 tokens, **instead of 1024**, using **PixelShuffle** as an efficient shuffling technique. While the underlying Vision-Language Model (VLM) was originally pretrained using image tiling for broader coverage, **SmolVLA uses only the global image at runtime** to keep inference lightweight and fast.
+
+####  Faster Inference via Layer Skipping 
+
+Rather than always relying on the final layer of the VLM—which can be expensive and sometimes suboptimal—we use **features from intermediate layers**. Prior work has shown that early layers often provide better representations for downstream tasks. In SmolVLA, the action expert only attends to VLM features up to a configurable layer NN during training, set to **half the total layers**. This **halves the compute cost** of both the VLM and the action expert, significantly speeding up inference with minimal performance loss.
+
+####  Interleaved Cross and Self-Attention 
+
+Inside the action expert, attention layers alternate between:
+
+* **Cross-attention (CA)**, where action tokens attend to the VLM’s features
+* **Self-attention (SA)**, where action tokens attend to each other (causally—only to the past)
+
+We found that this **interleaved design** is both lighter and more effective than using full attention blocks. Models that rely only on CA or only on SA tend to sacrifice either smoothness or grounding.
+
+In SmolVLA, CA ensures that actions are well-conditioned on perception and instructions, while SA improves **temporal smoothness**—especially critical for real-world control, where jittery predictions can result in unsafe or unstable behavior.
+
+##  Asynchronous Inference 
+
+Asynchronous inference 
+
+Figure 3\. Asynchronous inference. Illustration of the asynchronous inference stack. Note that the policy can be run on a remote server, possibly with GPUs.
+
+Modern visuomotor policies output **action chunks**—sequences of actions to execute. There are two ways to manage them:
+
+* **Synchronous (sync):** The robot executes a chunk, then pauses while the next one is computed. Simple, but causes a delay where the robot can't react to new inputs.
+* **Asynchronous (async):** While executing the current chunk, the robot already sends the latest observation to a **Policy Server** (possibly hosted on GPU) for the next chunk. This avoids idle time and improves reactivity.
+
+Our async stack decouples action execution from chunk prediction, resulting in higher adaptability, and the complete lack of execution lags at runtime. It relies on the following key mechanisms:
+
+* **1\. Early trigger:** When the queue length falls below a threshold (e.g., 70%), we send an observation to a **Policy Server**, calling for a new action chunk.
+* **2\. Decoupled threads:** Control loop keeps executing → inference happens in parallel (non-blocking).
+* **3\. Chunk fusion:** Overlapping actions from successive chunks are stitched with a simple merge rule to avoid jitter.
+
+We are really excited about releasing asynchronous inference because it guarantees greater adaptability and improved performance without changing the model. In short, async inference keeps the robot responsive by overlapping execution and remote prediction.
+
+##  Community Datasets 
+
+While vision and language models thrive on web-scale datasets like LAION, ImageNet, and Common Crawl, robotics lacks a comparable resource. There’s no “Internet of robots.” Instead, data is fragmented across robot types, sensors, control schemes, and formats—forming disconnected "data islands". In our previous post, we explored how this fragmentation could be resolved through open, collaborative efforts. Just as ImageNet catalyzed breakthroughs in computer vision by providing a large, diverse benchmark, we believe that **community-driven robotics datasets** can play the same foundational role for generalist robot policies.
+
+**SmolVLA is our first step toward that vision**: It is pretrained on a curated mix of publicly available, community-contributed datasets designed to reflect real-world variation. Rather than optimizing for dataset size alone, we focus on diversity: a range of behaviors, camera viewpoints, and embodiments that promote transfer and generalization.
+
+All training data used in SmolVLA comes from **LeRobot Community Datasets** , robotics datasets shared on the Hugging Face Hub under the `lerobot` tag. Collected in diverse settings, from labs to living rooms, these datasets represent an open, decentralized effort to scale real-world robot data.
+
+A glimpse of the community dataset.   
+_Figure 4\. A glimpse of the community dataset. Special thanks to Ville Kuosmanen for creating the visualization. Unlike academic benchmarks, community datasets naturally capture messy, realistic interactions: varied lighting, suboptimal demonstrations, unconventional objects, and heterogeneous control schemes. This kind of diversity will be very useful for learning robust, general-purpose representations._ 
+
+We used a customfiltering tool created by Alexandre Chapin and Ville Kuosmanen to select datasets based on frame count, visual quality, and task coverage. After a meticulous manual review (special thanks to Marina Barannikov), we curated a collection of **487 high-quality datasets** focused on the **SO100 robotic arm**, standardized at **30 FPS**. This yielded around **10 million frames**—at least **one order of magnitude smaller** than other popular benchmark datasets, yet significantly more diverse.
+
+###  Improving Task Annotations 
+
+A common issue across community datasets was noisy or missing task descriptions. Many episodes lacked annotations or included vague labels like “task desc” or “Move”, “Pick”. To improve quality and standardize the textual input across datasets, we used Qwen2.5-VL-3B-Instruct to generate concise, action-oriented descriptions.
+
+Given sample frames and the original label, the model was prompted to rewrite the instruction in under 30 characters, starting with an action verb (e.g., “Pick,” “Place,” “Open”). 
+
+The prompt used is: 
+
+```
+Here is a current task description: {current_task}. Generate a very short, clear, and complete one-sentence describing the action performed by the robot arm (max 30 characters). Do not include unnecessary words.
+Be concise.
+Here are some examples: Pick up the cube and place it in the box, open the drawer and so on.
+Start directly with an action verb like “Pick”, “Place”, “Open”, etc.
+Similar to the provided examples, what is the main action done by the robot arm?
+
+```
+
+###  Standardizing Camera Views 
+
+Another challenge was inconsistent camera naming. Some datasets used clear names like top or `wrist.right`, while others used ambiguous labels like `images.laptop`, which varied in meaning. To fix this, we manually went through the datasets and mapped each camera view to a standardized scheme:`OBS_IMAGE_1`: Top-down view`OBS_IMAGE_2`: Wrist-mounted view`OBS_IMAGE_3+`: Additional viewpoints
+
+We further isolate the contributions of community dataset pretraining and multitask finetuning. Without pretraining on the LeRobot community datasets, SmolVLA initially achieves **51.7%** success on SO100\. After pretraining on community-collected data, performance jumps to **78.3%**, a **+26.6% absolute improvement**. Multitask finetuning further boosts performance, showing strong task transfer capabilities even in low-data regimes.
+
+ Table 1\. Impact of Pretraining on Community Datasets and Multitask Finetuning.
+
+##  Results 
+
+We evaluate SmolVLA across simulation and real-world benchmarks to test its generalization, efficiency, and robustness. Despite being compact, It consistently outperforms or matches the performance of significantly larger models and policies pretrained on higher-scale robotics data. 
+
+SmolVLA Performance on Simulation Benchmarks. 
+
+ Table 2\. SmolVLA Performance on Simulation Benchmarks.
+
+SmolVLA vs Baselines on Real-World Tasks (SO100). 
+
+ Table 3\. SmolVLA vs Baselines on Real-World Tasks (SO100).
+
+In real-world settings, SmolVLA is evaluated on two diverse suites: SO100 and SO101\. These tasks include pick-place, stacking, and sorting, with both in-distribution and out-of-distribution object configurations. On SO101, SmolVLA also excels in generalization:
+
+Generalization of SmolVLA to New Embodiment (SO101) vs ACT.. 
+
+Table 4\. Generalization of SmolVLA to New Embodiment (SO101) vs ACT..
+
+Finally, we evaluate SmolVLA under synchronous and asynchronous inference modes. Async inference decouples action execution from model inference, allowing the policy to react while the robot is moving.
+
+* Both modes achieve similar task success (≈78%), but async inference:  
+   * Completes tasks **\~30% faster** (9.7s vs. 13.75s)  
+   * Enables **2× more completions** in fixed-time settings (19 vs. 9 cubes)
+
+This results in more responsive and robust real-world performance, especially in dynamic environments with shifting objects or external disturbances.
+
+Asynchronous vs. Synchronous Inference in Real-World Tasks. 
+
+Figure 5\. Asynchronous vs. Synchronous Inference in Real-World Tasks. (a) Task success rates (%), (b) average completion time(s), and (c) number of tasks completed within a fixed time window.
+
+##  Conclusion 
+
+SmolVLA is our contribution to building robotics foundation models that are open, efficient, and reproducible. Despite its small size, it matches or outperforms larger, proprietary models across a range of real-world and simulated tasks. By relying solely on community-contributed datasets and affordable hardware, SmolVLA lowers the barrier to entry for researchers, educators, and hobbyists alike. But this is just the beginning. SmolVLA is more than just a model — it's part of a growing open-source movement toward scalable, collaborative robotics.
+
+##  Call to Action: 
+
+* 🔧 **Try it out!** Finetune SmolVLA on your own data, deploy it on affordable hardware, or benchmark it against your current stack and share it on twitter/linkedin.
+* 🤖 **Upload the dataset!** Got a robot? Collect and share your data using the lerobot format. Help expand the community dataset that powers SmolVLA.
+* 💬 **Join the blog discussion.** Drop your questions, ideas, or feedback in the discussion below. We’re happy to help with integration, training, or deployment.
+* 📊 **Contribute.** Improve datasets, report issues, suggest new ideas. Every contribution helps.
+* 🌍 **Spread the word.** Share SmolVLA with fellow researchers, developers, or educators interested in efficient, real-time robotic policies.
+* 📫 **Stay in touch:** Follow the LeRobot organization and Discord server for updates, tutorials, and new releases.
+
+Together, we can make real-world robotics more capable, more affordable, and more open. ✨
+
+##  Models mentioned in this article 4
+
+HuggingFaceTB/SmolLM2-1.7B-Instruct  Text Generation •  2B • Updated Apr 21, 2025 •  140k •  739 
+
+HuggingFaceTB/SmolVLM2-500M-Video-Instruct  Image-Text-to-Text •  0.5B • Updated Apr 8, 2025 •  664k •  158 
+
+Qwen/Qwen2.5-3B-Instruct  Text Generation •  3B • Updated Sep 25, 2024 •  6.52M •  531 
+
+lerobot/smolvla\_base  Robotics •  0.5B • Updated Jan 22 •  50.5k •  397 
+
+##  Spaces mentioned in this article 1
+
+ Build error 10 Filter LeRobot Datasets 🤖 10 Extract and filter LeRobot datasets from the HuggingFace API 
+
+##  Papers mentioned in this article 2
+
+Mobile ALOHA: Learning Bimanual Mobile Manipulation with Low-Cost Whole-Body Teleoperation  Paper • 2401.02117 • Published Jan 4, 2024 •  33 
+
+SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics  Paper • 2506.01844 • Published Jun 2, 2025 •  162 
+
+More Articles from our Blog
+
+lerobotroboticsmodels Asynchronous Robot Inference: Decoupling Action Prediction and Execution +4  54 July 10, 2025 
+
+roboticscommunityopen-source  Hot Reachy Mini - The Open-Source Robot for Today's and Tomorrow's AI Builders  804 July 9, 2025 
+
+### Community
+
+clem
+
+Jun 3, 2025 
+
+🔥🔥🔥
+
+🔥
+
+6
+
+6
+
+🚀
+
+5
+
+5
+
+❤️
+
+3
+
+3
+
++
+
+Reply
+
+Qu3tzal
+
+Jun 4, 2025 
+
+•
+
+edited Jun 4, 2025 
+
+How does the asynchronous inference mechanism works if the state keeps changing between the observation and the action generation?
+
+See translation 
+
+* 6 replies
+· 
+
+adamroberts
+
+Jun 4, 2025 
+
+I'd imagine, similar to an agentic loop controlling a web browser. Observe to determine what action to take, take the action, and observe any visual changes to decide what to do next. Repeats until the goal is achieved.
+
+See translation 
+
+ Expand 5 replies 
+
+dopaul
+
+Jun 4, 2025 
+
+Super interesting work!
+
+See translation 
+
+❤️
+
+1
+
+1
+
++
+
+Reply
+
+PLB
+
+Jun 4, 2025 
+
+👏
+
+Reply
+
+ZhaoRunyi
+
+Jun 8, 2025 
+
+Is the entire pretraining dataset collected with the SO100 robot arm? I've briefly checked the datasets listed at the end of the paper, seems that all of them are collected by the SO100 robot arm.
+
+If so, after finetuning, your model can works on another robot arm like Franka in LIBERO, that would be pretty interesting
+
+See translation 
+
+* 2 replies
+· 
+
+👀
+
+2
+
+2
+
++
+
+yuliangguo
+
+Jul 7, 2025 
+
+If not misunderstood, SmolVLA claimed that purely SO100 or SO101 trained model can directly apply to a different arm in LIBERO? This seem really hard to believe, hope any confirmation from the authors.
+
+See translation 
+
+👍
+
+3
+
+3
+
++
+
+ Expand 1 reply 
+
+Heimrih
+
+Jun 9, 2025 
+
+Love this work! I was attempting to load the policy and use it on the pushT gym. However, as it is out of the box it does not seem to be understand what i needs to do and shot straight to the side. Is this normal? I am not an expert in robotics or VLA yet but I am interested to try. 
+
+See translation 
+
+Reply
+
+scravenge
+
+Jun 13, 2025 
+
+I had translated my mobile aloha dataset into lerobot' s format for using it in Pi0, can I use it for this project?
+
+See translation 
+
+Reply
+
+Tonic
+
+Jun 15, 2025 
+
+This comment has been hidden (marked as Resolved) 
+
+olivierkoch
+
+Jul 14, 2025 
+
+Great work! If we want to use this model on an SO-101 arm, I assume we need to do some fine-tuning since each arm has its own calibration? (i.e. the model can't be used as-is, right?)
+
+See translation 
+
+Reply
+
+fenduil
+
+Jul 30, 2025 
+
+Hi,  
+Really nice work . I was wondering how do you manage to apply smolvla which requires 6DOF as input (trained on SO100 dataset) on the Libero dataset which has 7 DOF ( trained on panda franka). 
+
+Thank you in advance
+
+See translation 
+
+👀
+
+5
+
+5
+
++
+
+Reply
+
+Tank-123
+
+Sep 8, 2025 
+
+Is there any body has tried to export the smolvla as onnx models?
+
+See translation 
+
+Reply
+
+deleted
+
+Oct 2, 2025 
+
+This comment has been hidden 
+
+Mzou000
+
+Nov 6, 2025 
+
+In Table 9, the average success rate of 0.75 × d seems lower than 0.5 × d and 1.0, but paper state that “reducing the expert’s hidden size to 0.75 × d achieves a good balance between performance and efficiency.”  
+Could you clarify how you concluded that 0.75 × d is the best trade-off? Was it chosen based on other considerations (e.g., stability, memory usage, or consistency across tasks)?
+
+Thanks!
+
+屏幕截图 2025-11-06 132834
+
+See translation 
+
+Reply
+
+imsupernovaa
+
+May 19 
+
+I am trying to use a small light VLA for one of my research project - I am trying to use a light weight VLA for in lab lane keeping on a small car that has jetson nano - I wanted to understand the VLA is trained on a different type of dataset (robot) would it be a good idea to use it for a different system say a small car?
+
+See translation 
+
+* 1 reply
+· 
+
+frfr80
+
+2 days ago 
+
+Have the same - using the smol vla on G1; smol vla can was trained on 6-7 dofs, while G1 have much more; its possible to launch, but model will make chaos on G1;  
+but maybe someone can offer fast approach to use smol vla on G1, or anothers, non robo-arms, machines
+
+See translation 
+
+frfr80
+
+2 days ago 
+
+Can the script for applying the smol vla to unitree g1 be added? To make its easy to apply the smol vla to g1? with dataset of robot wiping table
+
+See translation 
+
+Reply
+
+EditPreview
+
+Upload images, audio, and videos by dragging in the text input, pasting, or clicking here.
+
+Tap or paste here to upload images
+
+ Comment 
+
+· Sign up or log in to comment
+
+ Upvote 358 
+* +346
+
+##  Models mentioned in this article 4
+
+HuggingFaceTB/SmolLM2-1.7B-Instruct  Text Generation •  2B • Updated Apr 21, 2025 •  140k •  739 
+
+HuggingFaceTB/SmolVLM2-500M-Video-Instruct  Image-Text-to-Text •  0.5B • Updated Apr 8, 2025 •  664k •  158 
+
+Qwen/Qwen2.5-3B-Instruct  Text Generation •  3B • Updated Sep 25, 2024 •  6.52M •  531 
+
+lerobot/smolvla\_base  Robotics •  0.5B • Updated Jan 22 •  50.5k •  397 
+
+##  Spaces mentioned in this article 1
+
+ Build error 10 Filter LeRobot Datasets 🤖 10 Extract and filter LeRobot datasets from the HuggingFace API 
+
+##  Papers mentioned in this article 2
+
+Mobile ALOHA: Learning Bimanual Mobile Manipulation with Low-Cost Whole-Body Teleoperation  Paper • 2401.02117 • Published Jan 4, 2024 •  33 
+
+SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics  Paper • 2506.01844 • Published Jun 2, 2025 •  162 
+
+ System theme 
+
+Company
+
+TOS Privacy About Careers 
+
+Website
+
+Models Datasets Spaces Pricing Docs

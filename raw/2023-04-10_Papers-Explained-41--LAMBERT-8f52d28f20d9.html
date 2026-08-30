@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 41: LAMBERT</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 41: LAMBERT</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+LAMBERT introduces a simple new approach to the problem of understanding documents where non-trivial layout influences the local semantics…
+</section>
+<section data-field="body" class="e-content">
+<section name="9169" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="4d70" id="4d70" class="graf graf--h3 graf--leading graf--title">Papers Explained 41: LAMBERT</h3><figure name="32fb" id="32fb" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*eQrtrvk_Nqb3KEZUYpiYFg.png" data-width="977" data-height="473" src="https://cdn-images-1.medium.com/max/800/1*eQrtrvk_Nqb3KEZUYpiYFg.png"></figure><p name="acb7" id="acb7" class="graf graf--p graf-after--figure">LAMBERT introduces a simple new approach to the problem of understanding documents where non-trivial layout influences the local semantics. LAMBERT is a modification of the Transformer encoder architecture in a way that allows it to use layout features obtained from an OCR system, without the need to re-learn language semantics from scratch. We only augment the input of the model with the coordinates of token bounding boxes, avoiding, in this way, the use of raw images. This leads to a layout-aware language model which can then be fine-tuned on downstream tasks.</p><p name="ce2c" id="ce2c" class="graf graf--p graf-after--p">We inject the layout information into the model in two ways. Firstly, we modify the input embeddings of the original RoBERTa model by adding the layout term. We also experiment with completely removing the sequential embedding term. Secondly, we apply relative attention bias in the context of the sequential position.</p><figure name="abe7" id="abe7" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*ua4yLFRBabMSGuMyLzwuPg.png" data-width="958" data-height="724" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*ua4yLFRBabMSGuMyLzwuPg.png"><figcaption class="imageCaption">LAMBERT model architecture. Differences with the plain RoBERTa model are indicated by white text on dark blue background.</figcaption></figure><h4 name="6074" id="6074" class="graf graf--h4 graf-after--figure">Layout embeddings</h4><p name="7b78" id="7b78" class="graf graf--p graf-after--h4">A document is represented by a sequence of tokens ti and their bounding boxes bi . To each element of this sequence, we assign its layout embedding li , carrying the information about the position of the token with respect to the whole document.</p><p name="110c" id="110c" class="graf graf--p graf-after--p">We first normalize the bounding boxes by translating them so that the upper left corner is at (0, 0), and dividing their dimensions by the page height. This causes the page bounding box to become (0, 0, w, 1), where w is the normalized width.</p><p name="c8db" id="c8db" class="graf graf--p graf-after--p">The layout embedding of a token will be defined as the concatenation of four embeddings of the individual coordinates of its bounding box. For an integer d and a vector of scaling factors θ ∈ R d , we define the corresponding embedding of a single coordinate t as</p><figure name="d0a0" id="d0a0" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*edkDd5_fPiamCVlp.png" data-width="1225" data-height="96" src="https://cdn-images-1.medium.com/max/800/0*edkDd5_fPiamCVlp.png"></figure><p name="122e" id="122e" class="graf graf--p graf-after--figure">The resulting concatenation of single bounding box coordinate embeddings is then a vector in R 8d</p><p name="6d05" id="6d05" class="graf graf--p graf-after--p">Unlike the sequential position, which is a potentially large integer, bounding box coordinates are normalized to the interval [0, 1]. Hence, for our layout embeddings, we use larger scaling factors (θr), namely a geometric sequence of length n/8 interpolating between 1 and 500, where n is the dimension of the input embeddings.</p><h4 name="2f37" id="2f37" class="graf graf--h4 graf-after--p">Relative Bias</h4><p name="8d62" id="8d62" class="graf graf--p graf-after--h4">In a typical Transformer encoder, a single attention head transforms its input vectors into three sequences: queries, keys, and values. The raw attention scores are then computed as αij. Afterward, they are normalized using softmax and used as weights in linear combinations of value vectors.</p><p name="69de" id="69de" class="graf graf--p graf-after--p">The point of relative bias is to modify the computation of the raw attention scores by introducing a bias term: α 0 ij = αij + βij .</p><p name="a77f" id="a77f" class="graf graf--p graf-after--p">In the sequential setting, βij = W(i−j) is a trainable weight, depending on the relative sequential position of tokens i and j.</p><p name="ef19" id="ef19" class="graf graf--p graf-after--p">We introduce a simple and natural extension of this mechanism to the two-dimensional context. In our case, the bias βij depends on the relative positions of the tokens. More precisely, let C 1 be an integer resolution factor (the number of cells in a grid used to discretize the normalized coordinates). If bi = (x1, y1, x2, y2) is the normalized bounding box of the i-th token, we first reduce it to a 2-dimensional position (ξi , ηi) = (Cx1, C(y1 + y2)/2), and then define</p><figure name="3cb9" id="3cb9" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*NDV-7C6Yjh1oMs2R.png" data-width="1584" data-height="86" src="https://cdn-images-1.medium.com/max/800/0*NDV-7C6Yjh1oMs2R.png"></figure><p name="d6ed" id="d6ed" class="graf graf--p graf-after--figure">where H(l) and V (l) are trainable weights defined for every integer ` ∈ [−C, C). For a typical document C = 100 is enough, and we fix this in our experiments.</p><h3 name="8864" id="8864" class="graf graf--h3 graf-after--p">Experiments</h3><p name="7b98" id="7b98" class="graf graf--p graf-after--h3">For the pretrained base model, we used the RoBERTa base variant (125M parameters, 12 layers, 12 attention heads, hidden dimension 768)</p><p name="0c67" id="0c67" class="graf graf--p graf-after--p">The models were trained on a masked language modeling objective extended with layout information and subsequently, on downstream information extraction tasks.</p><p name="e23d" id="e23d" class="graf graf--p graf-after--p">The training was performed on a collection of PDFs extracted from Common Crawl made up of a variety of documents, totaling approximately 315k documents (3.12M pages).</p><h3 name="b8d4" id="b8d4" class="graf graf--h3 graf-after--p">Results</h3><figure name="5b25" id="5b25" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*yyvK-U4v5sWHQrIJP4KbSg.png" data-width="1018" data-height="436" src="https://cdn-images-1.medium.com/max/800/1*yyvK-U4v5sWHQrIJP4KbSg.png"><figcaption class="imageCaption">Comparison of F1-scores for the considered models. Best results in each column are indicated in bold. In parentheses, the length of training of our models, expressed in non-unique pages, is presented for comparison. For RoBERTa, the first row corresponds to the original pretrained model without any further training, while in the second row the model was trained on our dataset. a result obtained from relevant publication; b result of a single model, obtained from the SROIE leaderboard</figcaption></figure><h3 name="c010" id="c010" class="graf graf--h3 graf-after--figure">Paper</h3><p name="3354" id="3354" class="graf graf--p graf-after--h3 graf--trailing">LAMBERT: Layout-Aware (Language) Modeling for information extraction <a href="https://arxiv.org/abs/2002.08087v5" data-href="https://arxiv.org/abs/2002.08087v5" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">2002.08087v5</a></p></div></div></section><section name="4e97" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="b743" id="b743" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="6db9" id="6db9" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/8f52d28f20d9"><time class="dt-published" datetime="2023-04-10T04:53:13.816Z">April 10, 2023</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-41-lambert-8f52d28f20d9" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

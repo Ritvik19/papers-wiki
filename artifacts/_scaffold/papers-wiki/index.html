@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{TITLE}} — Papers wiki artifact</title>
+    <style>
+      :root {
+        --bg: #f8f9fa;
+        --surface: #ffffff;
+        --border: #eaecf0;
+        --text: #202122;
+        --muted: #54595d;
+        --accent: #3366cc;
+        --accent-dim: #254f9a;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        line-height: 1.5;
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      .skip {
+        position: absolute;
+        left: -999px;
+        top: 0;
+        padding: 0.75rem 1rem;
+        background: var(--accent);
+        color: #fff;
+        z-index: 100;
+      }
+
+      .skip:focus {
+        left: 1rem;
+        top: 1rem;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        height: 58px;
+        padding: 0 16px;
+        border-bottom: 1px solid var(--border);
+        background: #fff;
+      }
+
+      .menu-btn {
+        border: none;
+        background: transparent;
+        color: #5f6368;
+        font-size: 22px;
+        line-height: 1;
+      }
+
+      .brand {
+        font-size: 28px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        color: #202124;
+        white-space: nowrap;
+      }
+
+      .brand .papers {
+        letter-spacing: -0.01em;
+      }
+
+      .brand .wiki {
+        font-weight: 600;
+        color: #5f6368;
+        margin-left: 6px;
+      }
+
+      .layout {
+        display: grid;
+        grid-template-columns: 220px minmax(0, 1fr) 300px;
+        max-width: 1440px;
+        margin: 0 auto;
+        min-height: calc(100vh - 58px);
+      }
+
+      @media (max-width: 1200px) {
+        .layout {
+          grid-template-columns: 220px minmax(0, 1fr);
+        }
+        .right-rail {
+          display: none;
+        }
+      }
+
+      .sidebar {
+        position: sticky;
+        top: 58px;
+        max-height: calc(100vh - 58px);
+        overflow-y: auto;
+        background: #fff;
+        border-right: 1px solid var(--border);
+        padding: 1.1rem 0.9rem 1.5rem;
+      }
+
+      .sidebar h1 {
+        margin: 0 0 0.6rem;
+        font-size: 1rem;
+        color: var(--muted);
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      nav a {
+        display: block;
+        padding: 0.38rem 0.5rem;
+        border-radius: 6px;
+        text-decoration: none;
+        color: #202122;
+      }
+
+      nav a:hover,
+      nav a:focus-visible {
+        color: var(--accent);
+        background: #f8f9fa;
+      }
+
+      main {
+        padding: 1.25rem 1.75rem 3rem;
+        background: #fff;
+      }
+
+      .article-header h1 {
+        margin: 0;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 46px;
+        font-weight: 500;
+      }
+
+      .article-header p {
+        margin: 0.25rem 0 1rem;
+        color: var(--muted);
+      }
+
+      section {
+        margin-bottom: 2.25rem;
+      }
+
+      section > h2 {
+        margin: 1.25rem 0 0.75rem;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 33px;
+        font-weight: 500;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 0.2rem;
+      }
+
+      .right-rail {
+        border-left: 1px solid var(--border);
+        padding: 1.25rem 1rem;
+        background: #fff;
+      }
+
+      .infobox {
+        border: 1px solid #a2a9b1;
+        border-radius: 6px;
+        overflow: hidden;
+        background: #f8f9fa;
+      }
+
+      .infobox h3 {
+        margin: 0;
+        padding: 0.65rem 0.75rem;
+        text-align: center;
+        font-size: 1.08rem;
+        border-bottom: 1px solid #a2a9b1;
+        background: #eaecf0;
+      }
+
+      .infobox img {
+        width: 100%;
+        display: block;
+      }
+
+      .infobox table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.9rem;
+      }
+
+      .infobox th,
+      .infobox td {
+        padding: 0.5rem 0.65rem;
+        border-top: 1px solid #eaecf0;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      .infobox th {
+        width: 40%;
+        font-weight: 700;
+        color: #202122;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="topbar" aria-label="Papers wiki header">
+      <button class="menu-btn" aria-label="Menu">☰</button>
+      <div class="brand" aria-label="Papers wiki">
+        <span class="papers">Papers</span>
+        <span class="wiki">wiki</span>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" aria-label="Document outline">
+        <h1>Contents</h1>
+        <nav aria-label="Page sections">
+          <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#key-ideas">Key ideas</a></li>
+            <li><a href="#figures">Figures</a></li>
+            <li><a href="#sources">Sources</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main id="main">
+        <header class="article-header">
+          <h1>{{TITLE}}</h1>
+          <p>{{SUBTITLE}}</p>
+        </header>
+
+        <section id="overview">
+          <h2>Overview</h2>
+          <p>{{OVERVIEW_PARAGRAPH}}</p>
+        </section>
+
+        <section id="key-ideas">
+          <h2>Key ideas</h2>
+          <ul>
+            <li>{{BULLET_1}}</li>
+            <li>{{BULLET_2}}</li>
+            <li>{{BULLET_3}}</li>
+          </ul>
+        </section>
+
+        <section id="figures">
+          <h2>Figures</h2>
+          <p>
+            Add cropped images under <code>figures/</code> and reference them here.
+          </p>
+          <figure>
+            <img src="figures/{{FIGURE_1}}" alt="{{FIGURE_1_ALT}}" loading="lazy" />
+            <figcaption>{{FIGURE_1_CAPTION}}</figcaption>
+          </figure>
+        </section>
+
+        <section id="sources">
+          <h2>Sources</h2>
+          <ul>
+            <li>{{SOURCE_1}}</li>
+            <li>{{SOURCE_2}}</li>
+          </ul>
+        </section>
+      </main>
+
+      <aside class="right-rail" aria-label="Infobox">
+        <article class="infobox">
+          <h3>{{TITLE}}</h3>
+          <img src="figures/{{INFOBOX_IMAGE}}" alt="{{INFOBOX_IMAGE_ALT}}" loading="lazy" />
+          <table>
+            <tbody>
+              <tr>
+                <th>Paper</th>
+                <td>{{PAPER_REF}}</td>
+              </tr>
+              <tr>
+                <th>Tags</th>
+                <td>{{TAGS}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </aside>
+    </div>
+  </body>
+</html>
+

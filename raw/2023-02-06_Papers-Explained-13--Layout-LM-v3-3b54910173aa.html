@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 13: Layout LM v3</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 13: Layout LM v3</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+LayoutLMv3 applies a unified text-image multimodal Transformer to learn cross-modal representations. The Transformer has a multilayer…
+</section>
+<section data-field="body" class="e-content">
+<section name="5c72" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="0bbb" id="0bbb" class="graf graf--h3 graf--leading graf--title">Papers Explained 13: Layout LM v3</h3><figure name="d386" id="d386" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*fSILA0TshcamDd0niaMOig.png" data-width="1575" data-height="474" src="https://cdn-images-1.medium.com/max/800/1*fSILA0TshcamDd0niaMOig.png"></figure><p name="281c" id="281c" class="graf graf--p graf-after--figure">LayoutLMv3 applies a unified text-image multimodal Transformer to learn cross-modal representations. The Transformer has a multilayer architecture and each layer mainly consists of multi-head self-attention and position-wise fully connected feed-forward networks. The input of Transformer is a concatenation of text embedding Y = y1:𝐿 and image embedding X = x1:𝑀 sequences, where 𝐿 and 𝑀 are sequence lengths for text and image respectively. Through the Transformer, the last layer outputs text-and-image contextual representations.</p><figure name="6a65" id="6a65" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*_HtfU_4Y3b-kSS6r" data-width="1035" data-height="792" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/0*_HtfU_4Y3b-kSS6r"></figure><p name="bdf3" id="bdf3" class="graf graf--p graf-after--figure"><strong class="markup--strong markup--p-strong">Text Embedding</strong></p><ul class="postList"><li name="de6d" id="de6d" class="graf graf--li graf-after--p">Text embedding is a combination of word embeddings and position embeddings.</li><li name="ad3f" id="ad3f" class="graf graf--li graf-after--li">The word Embeddings are initialized with a word embedding matrix from a pre-trained model RoBERTa.</li><li name="6588" id="6588" class="graf graf--li graf-after--li">The position embeddings include 1D position and 2D layout position embeddings, where the 1D position refers to the index of tokens within the text sequence, and the 2D layout position refers to the bounding box coordinates of the text sequence.</li><li name="af36" id="af36" class="graf graf--li graf-after--li">Following the LayoutLM, we normalize all coordinates by the size of images, and use embedding layers to embed x-axis, y-axis, width and height features separately.</li><li name="2037" id="2037" class="graf graf--li graf-after--li">The LayoutLM and LayoutLMv2 adopt word-level layout positions, where each word has its positions. Instead, we adopt segment-level layout positions that words in a segment share the same 2D position since the words usually express the same semantic meaning.</li></ul><p name="7982" id="7982" class="graf graf--p graf-after--li"><strong class="markup--strong markup--p-strong">Image Embedding</strong></p><p name="fbb0" id="fbb0" class="graf graf--p graf-after--p">Document images ar represented with linear projection features of image patches before feeding them into the multimodal Transformer. A document image is resized into 𝐻 ×𝑊 and denote the image with I ∈ R 𝐶×𝐻×𝑊 , where 𝐶, 𝐻 and𝑊 are the channel size, width and height of the image respectively. Image is split into a sequence of uniform 𝑃 × 𝑃 patches, linearly project the image patches to 𝐷 dimensions and flatten them into a sequence of vectors, which length is 𝑀 = 𝐻𝑊 /𝑃 2. Then learnable 1D position embeddings are added to each patch.</p><h3 name="58d3" id="58d3" class="graf graf--h3 graf-after--p">Pre Training</h3><p name="ef19" id="ef19" class="graf graf--p graf-after--h3"><strong class="markup--strong markup--p-strong">Masked Language Modeling (MLM)</strong>: 30% of text tokens are masked with a span masking strategy with span lengths drawn from a Poisson distribution (𝜆 = 3). The pre-training objective is to maximize the log-likelihood of the correct masked text tokens y𝑙 based on the contextual representations of corrupted sequences of image tokens X𝑀′ and text tokens Y𝐿′, where 𝑀′ and 𝐿′ represent the masked positions. As the layout informationis kept unchanged, this objective facilitates the model to learn the correspondence between layout information and text and image context.</p><p name="5cda" id="5cda" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Masked Image Modelling (MIM)</strong>: The MIM objective is a symmetry to the MLM objective, about 40% image tokens are randomly masked with the blockwise masking strategy. The MIM objective is driven by a cross-entropy loss to reconstruct the masked image tokens x𝑚 under the context of their surrounding text and image tokens. MIM facilitates learning high-level layout structures rather than noisy low-level details.</p><p name="ceb9" id="ceb9" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Word-Patch Alignment (WPA)</strong>: The WPA objective is to predict whether the corresponding image patches of a text word are masked. Specifically, an aligned label is assigned to an unmasked text token when its corresponding image tokens are also unmasked. Otherwise, an unaligned label is assigned. The masked text tokens are excluded when calculating WPA loss to prevent the model from learning a correspondence between masked text words and image patches.</p><p name="2d70" id="2d70" class="graf graf--p graf-after--p">To learn a universal representation for various document tasks, LayoutLMv3 is pretrained on a large IIT-CDIP dataset.</p><h3 name="6053" id="6053" class="graf graf--h3 graf-after--p">Model Configurations</h3><p name="dea7" id="dea7" class="graf graf--p graf-after--h3">LayoutLMv3BASE adopts a 12-layer Transformer encoder with 12-head self-attention, hidden size of<br>𝐷 = 768, and 3,072 intermediate size of feed-forward networks.</p><p name="5a18" id="5a18" class="graf graf--p graf-after--p">LayoutLMv3LARGE adopts a 24-layer Transformer encoder with 16-head self-attention, hidden size of 𝐷 = 1, 024, and 4,096 intermediate size of feed-forward networks.</p><ul class="postList"><li name="14f0" id="14f0" class="graf graf--li graf-after--p">To pre-process the text input, the text sequence are tokenized with Byte-Pair Encoding (BPE), with a maximum sequence length 𝐿 = 512.</li><li name="4234" id="4234" class="graf graf--li graf-after--li">A [CLS] and a [SEP] token is added at the beginning and end of each text sequence.</li><li name="c984" id="c984" class="graf graf--li graf-after--li">When the length of the text sequence is shorter than 𝐿, [PAD] tokens are appended to it. The bounding box coordinates of these special tokens are all zeros.</li><li name="3213" id="3213" class="graf graf--li graf-after--li">The parameters for image embedding are 𝐶 × 𝐻 ×𝑊 = 3 × 224 × 224, 𝑃 = 16, 𝑀 = 196.</li></ul><h3 name="a8c3" id="a8c3" class="graf graf--h3 graf-after--li">Fine Tuning</h3><ul class="postList"><li name="7be9" id="7be9" class="graf graf--li graf-after--h3">Form and Receipt Understanding: FUNSD and CORD dataset</li><li name="ccda" id="ccda" class="graf graf--li graf-after--li">Document Image Classification: RVL-CDIP dataset</li><li name="cf35" id="cf35" class="graf graf--li graf-after--li">Document Visual Question Answering: DocVQA dataset</li><li name="ba1f" id="ba1f" class="graf graf--li graf-after--li">Document Layout Analysis: PubLayNet dataset</li></ul><h3 name="bfed" id="bfed" class="graf graf--h3 graf-after--li">Paper</h3><p name="2c84" id="2c84" class="graf graf--p graf-after--h3 graf--trailing">LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking <a href="https://arxiv.org/abs/2204.08387" data-href="https://arxiv.org/abs/2204.08387" class="markup--anchor markup--p-anchor" rel="noreferrer nofollow noopener" target="_blank">2204.08387</a></p></div></div></section><section name="5c18" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="3862" id="3862" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="bd22" id="bd22" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/3b54910173aa"><time class="dt-published" datetime="2023-02-06T13:37:56.554Z">February 6, 2023</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-13-layout-lm-v3-3b54910173aa" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

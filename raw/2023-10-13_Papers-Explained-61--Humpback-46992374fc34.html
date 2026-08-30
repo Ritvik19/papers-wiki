@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 61: Humpback</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 61: Humpback</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Instruction back translation is a scalable method to build a high-quality instruction following language model by automatically labeling…
+</section>
+<section data-field="body" class="e-content">
+<section name="9097" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="25dc" id="25dc" class="graf graf--h3 graf--leading graf--title">Papers Explained 61: Humpback</h3><figure name="44ae" id="44ae" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*ZU6d7vocoYOMBkZFD61CNQ.png" data-width="1390" data-height="486" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*ZU6d7vocoYOMBkZFD61CNQ.png"></figure><p name="5b76" id="5b76" class="graf graf--p graf-after--figure">Instruction back translation is a scalable method to build a high-quality instruction following language model by automatically labeling human written text with corresponding instructions. Finetuning LLaMa on two iterations of this approach yields a model that outperforms all other LLaMa-based models on the Alpaca leaderboard, demonstrating highly effective self-alignment.</p><h3 name="be81" id="be81" class="graf graf--h3 graf-after--p">Instruction Back Translation</h3><figure name="51a9" id="51a9" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*LZGnMjrr_0s2IP9ohj9ylg.png" data-width="1255" data-height="808" src="https://cdn-images-1.medium.com/max/800/1*LZGnMjrr_0s2IP9ohj9ylg.png"></figure><h4 name="605a" id="605a" class="graf graf--h4 graf-after--figure">Self-Augmentation (generating instructions):</h4><p name="8b69" id="8b69" class="graf graf--p graf-after--h4">Starting from a base language model, a small number of seed examples of (instruction, output) pairs, and a collection of unlabelled documents that are considered candidate outputs for unknown instructions, the base model is finetuned with (output, instruction) pairs from the seed examples as an instruction prediction model Myx, which is used to generate candidate instructions for outputs from the unlabelled data.</p><h4 name="5380" id="5380" class="graf graf--h4 graf-after--p">Self-Curation (selecting high-quality examples):</h4><p name="841c" id="841c" class="graf graf--p graf-after--h4">Starting from an intermediate instruction-following model M0 fine-tuned from seed examples only, it selects high-quality (instruction, output) pairs A(1)k from the candidates from the previous step. This is done using prompting, instructing the trained model to rate the quality of a candidate pair on a 5-point scale. These are then used as fine-tuning data for the next intermediate model M1, which is in turn used to select training data for obtaining M2.</p><figure name="eb74" id="eb74" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*32mk7qeJnEwOeMb30p5PAA.png" data-width="1110" data-height="268" src="https://cdn-images-1.medium.com/max/800/1*32mk7qeJnEwOeMb30p5PAA.png"><figcaption class="imageCaption">Statistics of seed, self-augmentation, and self-curation finetuning data. Instruction and output lengths are given as the number of characters.</figcaption></figure><h3 name="aeac" id="aeac" class="graf graf--h3 graf-after--figure">Experimental Setup</h3><p name="159e" id="159e" class="graf graf--p graf-after--h3"><strong class="markup--strong markup--p-strong">Seed Data: </strong>3200 examples from Open Assistant Dataset.</p><p name="5d75" id="5d75" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Base model:</strong> LLaMA &amp;B, 33B, 65B. The trained LLama-based instruction backtranslation models are called <strong class="markup--strong markup--p-strong">Humpback.</strong></p><p name="51fd" id="51fd" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Unlabelled data: </strong>English portion of the Clueweb corpus.</p><p name="0fd8" id="0fd8" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Baselines:</strong></p><ul class="postList"><li name="ed42" id="ed42" class="graf graf--li graf-after--p">text-davinci-003</li><li name="85dd" id="85dd" class="graf graf--li graf-after--li">LIMA</li><li name="7e3b" id="7e3b" class="graf graf--li graf-after--li">Guanaco</li></ul><p name="7049" id="7049" class="graf graf--p graf-after--li"><strong class="markup--strong markup--p-strong">Evaluation Sources:</strong></p><ul class="postList"><li name="492d" id="492d" class="graf graf--li graf-after--p">Vicuna (80 prompts)</li><li name="d05d" id="d05d" class="graf graf--li graf-after--li">Self-instruct (252 prompts)</li><li name="42df" id="42df" class="graf graf--li graf-after--li">Open Assistant (188 prompts)</li><li name="32e9" id="32e9" class="graf graf--li graf-after--li">Koala (156 prompts)</li><li name="6eca" id="6eca" class="graf graf--li graf-after--li">HH_RLHF (129 prompts)</li><li name="057f" id="057f" class="graf graf--li graf-after--li">LIMA (300 prompts)</li><li name="91dc" id="91dc" class="graf graf--li graf-after--li">crowdsourced from authors (64 prompts).</li></ul><h3 name="7a3f" id="7a3f" class="graf graf--h3 graf-after--li">Evaluation</h3><h4 name="e4ef" id="e4ef" class="graf graf--h4 graf-after--h3">Alpaca Eval</h4><figure name="1867" id="1867" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*XDVcsQvJKJpheIrWlZaP-A.png" data-width="820" data-height="549" src="https://cdn-images-1.medium.com/max/800/1*XDVcsQvJKJpheIrWlZaP-A.png"><figcaption class="imageCaption">Results on the Alpaca leaderboard (win rate over text-davinci-003 evaluated by GPT-4).</figcaption></figure><ul class="postList"><li name="48d1" id="48d1" class="graf graf--li graf-after--figure">Humpback outperforms other methods not relying on distilled data by a wide margin, and closes the gap to proprietary models</li></ul><h4 name="930d" id="930d" class="graf graf--h4 graf-after--li">Human Evaluation</h4><figure name="f78f" id="f78f" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*UkVYqA7zuajuSfEjBsr_Wg.png" data-width="1091" data-height="605" src="https://cdn-images-1.medium.com/max/800/1*UkVYqA7zuajuSfEjBsr_Wg.png"></figure><ul class="postList"><li name="8a10" id="8a10" class="graf graf--li graf-after--figure">Humpback is preferred to both open-source and proprietary instruction-tuned models in pairwise human preference judgments.</li></ul><h3 name="b262" id="b262" class="graf graf--h3 graf-after--li">Paper</h3><p name="b0a2" id="b0a2" class="graf graf--p graf-after--h3 graf--trailing">Self-Alignment with Instruction Backtranslation <a href="https://arxiv.org/abs/2308.06259" data-href="https://arxiv.org/abs/2308.06259" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">2308.06259</a></p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="d7fb" id="d7fb" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/46992374fc34"><time class="dt-published" datetime="2023-10-13T03:46:37.542Z">October 13, 2023</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-61-humpback-46992374fc34" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 392: Hard Negative Mining for Domain-Specific Retrieval</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 392: Hard Negative Mining for Domain-Specific Retrieval</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+This paper addresses the challenge of retrieving accurate, domain-specific information in enterprise search systems, by dynamically…
+</section>
+<section data-field="body" class="e-content">
+<section name="aaf7" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="a276" id="a276" class="graf graf--h3 graf--leading graf--title">Papers Explained 392: Hard Negative Mining for Domain-Specific Retrieval</h3><figure name="75d1" id="75d1" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*s6Ay3T_wyqfMREZpHImH1A.png" data-width="1960" data-height="450" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*s6Ay3T_wyqfMREZpHImH1A.png"></figure><p name="b7dd" id="b7dd" class="graf graf--p graf-after--figure">This paper addresses the challenge of retrieving accurate, domain-specific information in enterprise search systems, by dynamically selecting semantically challenging but contextually irrelevant documents to improve re-ranking models. The method integrates diverse embedding models, performs dimensionality reduction, and employs a unique hard negative selection process to ensure computational efficiency and semantic precision.</p><h3 name="5a74" id="5a74" class="graf graf--h3 graf-after--p">Methodology</h3><figure name="7ced" id="7ced" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*cSYjcA_IqA-Zt4yySm7Keg.png" data-width="1960" data-height="760" src="https://cdn-images-1.medium.com/max/800/1*cSYjcA_IqA-Zt4yySm7Keg.png"><figcaption class="imageCaption">Overview of the methodology pipeline.</figcaption></figure><p name="317f" id="317f" class="graf graf--p graf-after--figure">To effectively train and fine-tune reranker models for domain-specific retrieval, it is essential to systematically handle technical ambiguities stemming from specialized terminologies, overlapping concepts, and abbreviations prevalent within enterprise domains.</p><p name="0bf2" id="0bf2" class="graf graf--p graf-after--p">The approach begins by encoding queries and documents into semantically rich vector representations using an ensemble of state-of-the-art bi-encoder embedding models. These embeddings are strategically selected based on multilingual support, embedding quality, training data diversity, context length handling, and performance.</p><figure name="f8e3" id="f8e3" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*7T5_MStKnOrTtnySsWeEMA.png" data-width="1401" data-height="431" src="https://cdn-images-1.medium.com/max/800/1*7T5_MStKnOrTtnySsWeEMA.png"><figcaption class="imageCaption">Embedding models used.</figcaption></figure><p name="9e07" id="9e07" class="graf graf--p graf-after--figure">To manage embedding dimensionality and improve computational efficiency, Principal Component Analysis (PCA) is utilized to project the concatenated embeddings onto a lower-dimensional space, maintaining 95% of the original variance.</p><p name="1c92" id="1c92" class="graf graf--p graf-after--p">Two semantic conditions are defined to dynamically select high-quality hard negatives, addressing semantic similarity challenges and minimizing false negatives. For each query-positive document pair (Q, PD), candidate documents D from the corpus are evaluated via cosine distances: d(Q, PD), d(Q, D), d(PD, D).</p><p name="0e3e" id="0e3e" class="graf graf--p graf-after--p">A document D is selected as a hard negative only if it satisfies both criteria:</p><p name="14bb" id="14bb" class="graf graf--p graf-after--p">d(Q, D) &lt; d(Q, PD)</p><p name="c8e2" id="c8e2" class="graf graf--p graf-after--p">d(Q, D) &lt; d(PD, D)</p><p name="d7a6" id="d7a6" class="graf graf--p graf-after--p">The first equation ensures that the candidate negative document is semantically closer to the query than the actual positive document, making it a challenging negative example that potentially confuses the reranking model. The second equation ensures that the selected hard negative is not just query-confusing but also sufficiently dissimilar from the actual positive, avoiding near-duplicates or false negatives.</p><h4 name="623f" id="623f" class="graf graf--h4 graf-after--p">Dataset</h4><p name="a80d" id="a80d" class="graf graf--p graf-after--h4">The experiments leverage a proprietary corpus containing 36,871 unannotated documents sourced from over 30 enterprise cloud services. Additionally, 5250 annotated query-positive document pairs (&lt; Q, P D &gt;) were prepared for training and testing.</p><figure name="fde7" id="fde7" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*VswcwhWOzxasGmKG9HRQAg.png" data-width="1401" data-height="211" src="https://cdn-images-1.medium.com/max/800/1*VswcwhWOzxasGmKG9HRQAg.png"></figure><p name="a56e" id="a56e" class="graf graf--p graf-after--figure">To further validate generalizability, evaluations were conducted on publicly available domain-specific benchmarks: FiQA (finance), Climate Fever (climate science), and TechQA (technology).</p><h3 name="58dd" id="58dd" class="graf graf--h3 graf-after--p">Evaluation</h3><figure name="80fb" id="80fb" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*ya855XRhVkAbM_JAjJql8w.png" data-width="1840" data-height="380" src="https://cdn-images-1.medium.com/max/800/1*ya855XRhVkAbM_JAjJql8w.png"><figcaption class="imageCaption">Comparative performance benchmarking of the reranker across multiple domain-specific datasets.</figcaption></figure><ul class="postList"><li name="c547" id="c547" class="graf graf--li graf-after--figure">Fine-tuning with the generated hard negatives consistently improved retrieval across diverse public domain-specific datasets (FiQA, Climate-FEVER, TechQA).</li><li name="9f62" id="9f62" class="graf graf--li graf-after--li">The negative sampling method is effective not only within the internal enterprise corpus but also across diverse, domain-specific public datasets, indicating broad applicability and domain independence.</li></ul><figure name="ed60" id="ed60" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*6i4eDMmBmMWIsIV7nhi59Q.png" data-width="1401" data-height="470" src="https://cdn-images-1.medium.com/max/800/1*6i4eDMmBmMWIsIV7nhi59Q.png"><figcaption class="imageCaption">Comparison of negative sampling methods for fine-tuning(FT) in-house cross-encoder reranker model.</figcaption></figure><ul class="postList"><li name="4a9d" id="4a9d" class="graf graf--li graf-after--figure">The proposed method achieved significant relative improvements (15% in MRR@3 and 19% in MRR@10) over the baseline (internal reranker model without fine-tuning) on the internal dataset.</li><li name="6dbb" id="6dbb" class="graf graf--li graf-after--li">The semantic nature of the hard negatives allows the reranker to better distinguish contextually irrelevant but semantically similar documents.</li></ul><figure name="656a" id="656a" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*yn4NRTbEUVpVH0PYF66QGw.png" data-width="1401" data-height="1050" src="https://cdn-images-1.medium.com/max/800/1*yn4NRTbEUVpVH0PYF66QGw.png"><figcaption class="imageCaption">Performance benchmarking (MRR@3) of reranker and embedding models using the proposed hard negative selection framework, compared with ADORE+STAR and baseline methods.</figcaption></figure><ul class="postList"><li name="64c2" id="64c2" class="graf graf--li graf-after--figure">The framework demonstrates improvements across various open-source embedding and reranker models when fine-tuned with the proposed negative sampling, compared to ADORE+STAR and the baseline.</li><li name="561b" id="561b" class="graf graf--li graf-after--li">Rerankers with multilingual capabilities and larger models showed pronounced improvements, indicating the benefit of the embedding ensemble’s multilingual semantic richness and the models’ capacity to exploit nuanced semantic differences.</li></ul><figure name="dd65" id="dd65" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*PtCPz9ckEqVPtRDPJg1viA.png" data-width="1401" data-height="280" src="https://cdn-images-1.medium.com/max/800/1*PtCPz9ckEqVPtRDPJg1viA.png"></figure><ul class="postList"><li name="43f2" id="43f2" class="graf graf--li graf-after--figure">Short documents experienced substantial performance improvements due to minimal semantic redundancy and tokenization constraints. Long documents showed more moderate improvements due to embedding truncation and increased semantic complexity.</li></ul><h3 name="869c" id="869c" class="graf graf--h3 graf-after--li">Paper</h3><p name="00b3" id="00b3" class="graf graf--p graf-after--h3 graf--trailing">Hard Negative Mining for Domain-Specific Retrieval in Enterprise Systems <a href="https://arxiv.org/abs/2505.18366" data-href="https://arxiv.org/abs/2505.18366" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">2505.18366</a></p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="d7fb" id="d7fb" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/a334df3c97fa"><time class="dt-published" datetime="2025-06-20T03:10:00.697Z">June 20, 2025</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-392-hard-negative-mining-for-domain-specific-retrieval-a334df3c97fa" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

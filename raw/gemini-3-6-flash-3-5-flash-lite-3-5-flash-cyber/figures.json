@@ -1,0 +1,80 @@
+[
+  {
+    "file": "fig-1.webp",
+    "alt": "a hero image saying 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",
+    "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3-5_3-6_3-5-Cyber__key-ar.width-2200.format-webp.webp",
+    "bytes": 42464
+  },
+  {
+    "file": "fig-2.webp",
+    "alt": "chart",
+    "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3-6-flash__evals__figure-.width-2000.format-webp.webp",
+    "bytes": 46446
+  },
+  {
+    "file": "fig-3.webp",
+    "alt": "chart",
+    "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3-6-flash__evals__quality.width-2000.format-webp.webp",
+    "bytes": 31722
+  },
+  {
+    "file": "fig-4.webp",
+    "alt": "Quote from Figma",
+    "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3-6__testimonial-figma__ke.width-100.format-webp_fLGaXIs.webp",
+    "bytes": 1056
+  },
+  {
+    "file": "fig-5.webp",
+    "alt": "Quote from Harvey",
+    "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3-6__testimonial-harvey__k.width-100.format-webp_LYvvm1L.webp",
+    "bytes": 1250
+  },
+  {
+    "file": "fig-6.webp",
+    "alt": "Quote from Hebbia",
+    "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3-6__testimonial-hebbia__k.width-100.format-webp_UIh1200.webp",
+    "bytes": 1588
+  },
+  {
+    "file": "fig-7.webp",
+    "alt": "Quote from JetBrains",
+    "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3-6__testimonial-jetbrains.width-100.format-webp_xEv9X02.webp",
+    "bytes": 1274
+  },
+  {
+    "file": "fig-8.webp",
+    "alt": "chart",
+    "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3-5-flash-lite__evals__co.width-2000.format-webp.webp",
+    "bytes": 29022
+  },
+  {
+    "file": "fig-9.webp",
+    "alt": "chart",
+    "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3-5-flash-lite__evals__co.width-2000.format-webp_6AiRvQV.webp",
+    "bytes": 30652
+  },
+  {
+    "file": "fig-10.webp",
+    "alt": "Quote from Ashler",
+    "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3-5-flash-lite__testimonia.width-100.format-webp.webp",
+    "bytes": 1460
+  },
+  {
+    "file": "fig-11.webp",
+    "alt": "Quote from Palo Alto Networks",
+    "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3-5-flash-lite__testimonia.width-100.format-webp_CdSRKRm.webp",
+    "bytes": 1372
+  },
+  {
+    "file": "fig-12.webp",
+    "alt": "Quote from Ramp",
+    "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3-5-flash-lite__testimonia.width-100.format-webp_dgscSYO.webp",
+    "bytes": 1192
+  },
+  {
+    "file": "fig-13.webp",
+    "alt": "chart",
+    "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3-5-flash-cyber__evals__c.width-2000.format-webp.webp",
+    "bytes": 28202
+  }
+]

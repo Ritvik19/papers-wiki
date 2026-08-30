@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SFT, RL, and On-Policy Distillation - Papers wiki artifact</title>
+    <style>
+      :root {
+        --bg: #f8f9fa;
+        --surface: #ffffff;
+        --surface-soft: #f5f7fb;
+        --border: #eaecf0;
+        --border-strong: #a2a9b1;
+        --text: #202122;
+        --muted: #54595d;
+        --accent: #3366cc;
+        --accent-soft: #eaf1ff;
+        --green: #0f766e;
+        --green-soft: #e6f4f1;
+        --orange: #a15c05;
+        --orange-soft: #fff4df;
+        --red: #9f2727;
+        --red-soft: #fff0f0;
+        --shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        line-height: 1.55;
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      .skip {
+        position: absolute;
+        left: -999px;
+        top: 0;
+        padding: 0.75rem 1rem;
+        background: var(--accent);
+        color: #fff;
+        z-index: 100;
+      }
+
+      .skip:focus {
+        left: 1rem;
+        top: 1rem;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        height: 58px;
+        padding: 0 16px;
+        border-bottom: 1px solid var(--border);
+        background: #fff;
+      }
+
+      .brand {
+        font-size: 28px;
+        font-weight: 700;
+        color: #202124;
+        white-space: nowrap;
+      }
+
+      .brand .wiki {
+        font-weight: 600;
+        color: #5f6368;
+        margin-left: 6px;
+      }
+
+      .search {
+        width: min(520px, 48vw);
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        padding: 0.62rem 1rem;
+        color: var(--muted);
+        background: #f8f9fa;
+      }
+
+      .layout {
+        display: grid;
+        grid-template-columns: 230px minmax(0, 1fr) 310px;
+        max-width: 1480px;
+        margin: 0 auto;
+        min-height: calc(100vh - 58px);
+      }
+
+      .sidebar {
+        position: sticky;
+        top: 58px;
+        max-height: calc(100vh - 58px);
+        overflow-y: auto;
+        background: #fff;
+        border-right: 1px solid var(--border);
+        padding: 1.1rem 0.9rem 1.5rem;
+      }
+
+      .sidebar h2 {
+        margin: 0 0 0.6rem;
+        font-size: 0.95rem;
+        color: var(--muted);
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      nav a {
+        display: block;
+        padding: 0.38rem 0.5rem;
+        border-radius: 6px;
+        text-decoration: none;
+        color: #202122;
+      }
+
+      nav a:hover,
+      nav a:focus-visible {
+        color: var(--accent);
+        background: #f8f9fa;
+      }
+
+      main {
+        padding: 1.35rem 1.9rem 3rem;
+        background: #fff;
+      }
+
+      .article-header {
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .article-header h1 {
+        margin: 0;
+        font-family: "Times New Roman", Times, serif;
+        font-size: clamp(34px, 4vw, 48px);
+        font-weight: 500;
+      }
+
+      .article-header p {
+        margin: 0.35rem 0 0;
+        color: var(--muted);
+        max-width: 78ch;
+      }
+
+      section {
+        margin-bottom: 2.35rem;
+      }
+
+      section > h2 {
+        margin: 1.25rem 0 0.75rem;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 33px;
+        font-weight: 500;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 0.2rem;
+      }
+
+      section > h3 {
+        margin: 1.2rem 0 0.45rem;
+        font-size: 1.15rem;
+      }
+
+      .lead {
+        font-size: 1.08rem;
+        max-width: 82ch;
+      }
+
+      .source-pill,
+      .tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        padding: 0.18rem 0.55rem;
+        background: #fff;
+        color: var(--muted);
+        font-size: 0.83rem;
+      }
+
+      .source-line {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.45rem;
+        margin-top: 0.8rem;
+      }
+
+      .map {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.8rem;
+        margin: 1rem 0;
+      }
+
+      .map-card,
+      .concept-card,
+      .source-card,
+      .quiz-card {
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: var(--shadow);
+        padding: 0.95rem;
+      }
+
+      .map-card h3,
+      .concept-card h3,
+      .source-card h3,
+      .quiz-card h3 {
+        margin: 0 0 0.35rem;
+        font-size: 1.05rem;
+      }
+
+      .map-card[data-regime="sft"] {
+        border-top: 4px solid var(--orange);
+      }
+
+      .map-card[data-regime="rl"] {
+        border-top: 4px solid var(--red);
+      }
+
+      .map-card[data-regime="opd"] {
+        border-top: 4px solid var(--green);
+      }
+
+      .metric-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 0.65rem;
+      }
+
+      .metric {
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 0.75rem;
+        background: var(--surface-soft);
+      }
+
+      .metric strong {
+        display: block;
+        color: var(--muted);
+        font-size: 0.78rem;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+      }
+
+      .flow {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 0.55rem;
+        margin: 1rem 0;
+      }
+
+      .flow-step {
+        position: relative;
+        border: 1px solid var(--border);
+        border-radius: 9px;
+        padding: 0.8rem;
+        background: #fff;
+      }
+
+      .flow-step::after {
+        content: ">";
+        position: absolute;
+        right: -0.42rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--muted);
+        font-weight: 700;
+      }
+
+      .flow-step:last-child::after {
+        content: "";
+      }
+
+      .flow-step span {
+        display: block;
+        color: var(--accent);
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .mental-model,
+      .warning-box,
+      .key-insight {
+        border-radius: 10px;
+        padding: 0.9rem 1rem;
+        margin: 1rem 0;
+      }
+
+      .mental-model {
+        border: 1px solid #b8d7ff;
+        background: var(--accent-soft);
+      }
+
+      .warning-box {
+        border: 1px solid #ffcf8a;
+        background: var(--orange-soft);
+      }
+
+      .key-insight {
+        border: 1px solid #a9ddd6;
+        background: var(--green-soft);
+      }
+
+      .tab-list,
+      .figure-controls {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.45rem;
+        margin: 0.9rem 0;
+      }
+
+      button {
+        border: 1px solid var(--border-strong);
+        border-radius: 999px;
+        padding: 0.45rem 0.8rem;
+        background: #fff;
+        color: var(--text);
+        cursor: pointer;
+        font: inherit;
+      }
+
+      button[aria-selected="true"],
+      button.active {
+        border-color: var(--accent);
+        background: var(--accent-soft);
+        color: var(--accent);
+        font-weight: 700;
+      }
+
+      .tab-panel {
+        display: none;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 1rem;
+        background: #fff;
+      }
+
+      .tab-panel.active {
+        display: block;
+      }
+
+      .comparison-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1rem 0;
+        font-size: 0.94rem;
+      }
+
+      .comparison-table th,
+      .comparison-table td {
+        border: 1px solid var(--border);
+        padding: 0.62rem;
+        vertical-align: top;
+        text-align: left;
+      }
+
+      .comparison-table th {
+        background: #f8f9fa;
+      }
+
+      figure {
+        margin: 1rem 0;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        overflow: hidden;
+        background: #fff;
+      }
+
+      figure img {
+        display: block;
+        width: 100%;
+        height: auto;
+        background: #fff;
+      }
+
+      figcaption {
+        padding: 0.7rem 0.85rem;
+        color: var(--muted);
+        border-top: 1px solid var(--border);
+        background: #f8f9fa;
+      }
+
+      .figure-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.9rem;
+      }
+
+      .figure-grid figure {
+        margin: 0;
+      }
+
+      .code-label {
+        display: inline-block;
+        margin: 0.7rem 0 0;
+        border: 1px solid var(--border);
+        border-bottom: none;
+        border-radius: 7px 7px 0 0;
+        padding: 0.28rem 0.55rem;
+        color: var(--muted);
+        background: #f8f9fa;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 0.82rem;
+      }
+
+      blockquote {
+        margin: 0 0 1rem;
+        border: 1px solid var(--border);
+        border-left: 4px solid var(--accent);
+        border-radius: 0 8px 8px 8px;
+        padding: 0.85rem 1rem;
+        background: #fff;
+      }
+
+      .quiz-options {
+        list-style: none;
+        padding: 0;
+        margin: 0.7rem 0 0;
+      }
+
+      .quiz-options li {
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 0.55rem 0.7rem;
+        margin-bottom: 0.45rem;
+        cursor: pointer;
+      }
+
+      .quiz-options li.correct {
+        border-color: var(--green);
+        background: var(--green-soft);
+      }
+
+      .quiz-options li.wrong {
+        border-color: var(--red);
+        background: var(--red-soft);
+      }
+
+      .quiz-explanation {
+        display: none;
+        margin-top: 0.7rem;
+        color: var(--muted);
+      }
+
+      .quiz-explanation.visible {
+        display: block;
+      }
+
+      .right-rail {
+        border-left: 1px solid var(--border);
+        padding: 1.25rem 1rem;
+        background: #fff;
+      }
+
+      .infobox {
+        position: sticky;
+        top: 74px;
+        border: 1px solid var(--border-strong);
+        border-radius: 6px;
+        overflow: hidden;
+        background: #f8f9fa;
+      }
+
+      .infobox h2 {
+        margin: 0;
+        padding: 0.65rem 0.75rem;
+        text-align: center;
+        font-size: 1.08rem;
+        border-bottom: 1px solid var(--border-strong);
+        background: #eaecf0;
+      }
+
+      .infobox img {
+        width: 100%;
+        display: block;
+      }
+
+      .infobox table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.9rem;
+      }
+
+      .infobox th,
+      .infobox td {
+        padding: 0.5rem 0.65rem;
+        border-top: 1px solid #eaecf0;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      .infobox th {
+        width: 38%;
+      }
+
+      .small {
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 1200px) {
+        .layout {
+          grid-template-columns: 220px minmax(0, 1fr);
+        }
+
+        .right-rail {
+          display: none;
+        }
+      }
+
+      @media (max-width: 850px) {
+        .topbar {
+          position: static;
+        }
+
+        .search {
+          display: none;
+        }
+
+        .layout,
+        .map,
+        .metric-grid,
+        .flow,
+        .figure-grid {
+          display: block;
+        }
+
+        .sidebar {
+          position: static;
+          max-height: none;
+          border-right: none;
+          border-bottom: 1px solid var(--border);
+        }
+
+        main {
+          padding: 1rem;
+        }
+
+        .map-card,
+        .metric,
+        .flow-step,
+        .figure-grid figure {
+          margin-bottom: 0.75rem;
+        }
+
+        .flow-step::after {
+          content: "";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="topbar" aria-label="Papers wiki header">
+      <div class="brand" aria-label="Papers wiki">
+        <span>Papers</span><span class="wiki">wiki</span>
+      </div>
+      <div class="search" role="search">Search this artifact: SFT, RL, OPD, KL, teacher ceiling</div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" aria-label="Document outline">
+        <h2>Contents</h2>
+        <nav aria-label="Page sections">
+          <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#map">Big Picture</a></li>
+            <li><a href="#flow">OPD Flow</a></li>
+            <li><a href="#tradeoffs">Tradeoffs</a></li>
+            <li><a href="#figures">Figure Lab</a></li>
+            <li><a href="#pitfalls">Pitfalls</a></li>
+            <li><a href="#check">Check Yourself</a></li>
+            <li><a href="#sources">Sources</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main id="main">
+        <header class="article-header">
+          <h1>SFT, RL, and On-Policy Distillation</h1>
+          <p>
+            A single interactive explainer for the Will Brown and nrehiew_ X articles, grounded in the wiki pages
+            <strong>On SFT RL and On-Policy Distillation</strong> and
+            <strong>SFT, RL, and On-Policy Distillation Visual Notes</strong>.
+          </p>
+          <div class="source-line" aria-label="Source pages">
+            <span class="source-pill">[[On SFT RL and On-Policy Distillation]]</span>
+            <span class="source-pill">[[SFT, RL, and On-Policy Distillation Visual Notes]]</span>
+            <span class="source-pill">[[On-Policy Distillation]]</span>
+            <span class="source-pill">[[Distillation Regimes Compared]]</span>
+          </div>
+        </header>
+
+        <section id="overview">
+          <h2>Overview</h2>
+          <p class="lead">
+            The two articles make the same core move from different angles: "SFT vs. RL" is too coarse.
+            The better question is where the training signal comes from, whether the samples are from the
+            student's current policy, how dense the credit signal is, and how much the method is capped by
+            a teacher.
+          </p>
+
+          <div class="key-insight">
+            <strong>Key insight:</strong>
+            In the wiki synthesis, SFT is cheap and dense but fixed to a dataset or teacher-completion
+            distribution; RL is on-policy and can compound but uses sparse and expensive reward signal;
+            OPD samples from the student and asks a same-family teacher to score those sampled tokens.
+          </div>
+
+          <div class="code-label">wiki/On SFT RL and On-Policy Distillation.md - gradient taxonomy</div>
+          <blockquote>
+            RL is sparse but relatively unbiased; SFT is dense, biased, and diffuse; OPD is dense and biased
+            but relatively diffuse under same-family calibration; OPSD is dense, biased, and concentrated.
+          </blockquote>
+
+          <figure>
+            <img
+              src="../../wiki/assets/will-brown-on-sft-rl-on-policy-distillation/fig-1.jpg"
+              alt="Conceptual phase diagram showing SFT, SFT-RS, RL, and OPD performance over compute"
+              loading="lazy"
+            />
+            <figcaption>
+              From [[On SFT RL and On-Policy Distillation]]: SFT gives early gains, RL compounds later, and
+              same-family OPD occupies a fast middle regime with a teacher ceiling.
+            </figcaption>
+          </figure>
+        </section>
+
+        <section id="map">
+          <h2>Big Picture</h2>
+          <p>
+            Use the three cards as a mental map. The important axis is not just "uses a teacher" or "uses a
+            reward"; it is the interaction among sampling distribution, supervision density, and ceiling.
+          </p>
+
+          <div class="map" aria-label="Training-regime map">
+            <article class="map-card" data-regime="sft">
+              <h3>SFT / Completion Distillation</h3>
+              <p>
+                Train on fixed demonstrations or teacher-written completions. The signal is dense next-token
+                supervision, but the data distribution does not automatically improve as the student changes.
+              </p>
+              <div class="source-pill">[[Distillation Regimes Compared]]</div>
+            </article>
+
+            <article class="map-card" data-regime="rl">
+              <h3>Reinforcement Learning</h3>
+              <p>
+                Sample current-policy behavior and optimize outcome reward, verifier scores, or preference
+                signals. The signal is on-policy and can compound, but token-level credit is sparse and noisy.
+              </p>
+              <div class="source-pill">[[On SFT RL and On-Policy Distillation]]</div>
+            </article>
+
+            <article class="map-card" data-regime="opd">
+              <h3>On-Policy Distillation</h3>
+              <p>
+                Sample student rollouts, then have a teacher score the sampled tokens. OPD keeps on-policy
+                state coverage while replacing sparse reward with dense teacher-derived guidance.
+              </p>
+              <div class="source-pill">[[On-Policy Distillation]]</div>
+            </article>
+          </div>
+
+          <div class="mental-model">
+            <strong>Mental model:</strong>
+            SFT studies a saved answer key. RL practices on its current mistakes and waits for a grader.
+            OPD practices on its current mistakes while a closely related teacher comments on each move.
+          </div>
+
+          <div class="metric-grid" aria-label="Comparison metrics">
+            <div class="metric"><strong>Sampling</strong>SFT: fixed data. RL and OPD: student rollouts.</div>
+            <div class="metric"><strong>Signal</strong>SFT and OPD: dense. RL: sparse outcome reward.</div>
+            <div class="metric"><strong>Ceiling</strong>OPD is teacher-bounded unless combined with rewards.</div>
+            <div class="metric"><strong>Teacher Match</strong>OPD needs same-family probabilities to be meaningful.</div>
+          </div>
+        </section>
+
+        <section id="flow">
+          <h2>OPD Flow</h2>
+          <p>
+            The OPD loop in the wiki is policy-gradient-like: the student samples a response, a teacher scores
+            the exact sampled tokens, and the update increases tokens the teacher prefers while decreasing tokens
+            the teacher disfavors. It does not require a full-vocabulary KL at every step.
+          </p>
+
+          <div class="flow" aria-label="On-policy distillation flow">
+            <div class="flow-step"><span>1. Prompt</span>Draw from target task distribution.</div>
+            <div class="flow-step"><span>2. Rollout</span>Student samples its current response.</div>
+            <div class="flow-step"><span>3. Teacher</span>Same-family teacher scores sampled tokens.</div>
+            <div class="flow-step"><span>4. Advantage</span>Use teacher-student log-probability differences.</div>
+            <div class="flow-step"><span>5. Update</span>Train student on its own visited states.</div>
+          </div>
+
+          <div class="code-label">wiki/On-Policy Distillation.md - objective shape</div>
+          <blockquote>
+            A typical OPD update has three pieces: sample current student responses, score the sampled tokens
+            under a teacher, and optimize toward tokens the teacher prefers.
+          </blockquote>
+
+          <figure>
+            <img
+              src="../../wiki/assets/will-brown-on-sft-rl-on-policy-distillation/fig-10.jpg"
+              alt="Meta-algorithm with dials for sampling mix, advantage blend, and teacher choice"
+              loading="lazy"
+            />
+            <figcaption>
+              From [[On SFT RL and On-Policy Distillation]]: the shared meta-algorithm has dials for whose
+              mistakes are trained on, who scores each token, and where the teacher policy comes from.
+            </figcaption>
+          </figure>
+        </section>
+
+        <section id="tradeoffs">
+          <h2>Tradeoffs</h2>
+          <p>
+            Click a regime to focus the comparison. The panels are sourced from the wiki's synthesis of the two
+            articles and the linked OPD concept page.
+          </p>
+
+          <div class="tab-list" role="tablist" aria-label="Regime details">
+            <button id="tab-sft" role="tab" aria-controls="panel-sft" aria-selected="true" data-tab="sft">SFT</button>
+            <button id="tab-rl" role="tab" aria-controls="panel-rl" aria-selected="false" data-tab="rl">RL</button>
+            <button id="tab-opd" role="tab" aria-controls="panel-opd" aria-selected="false" data-tab="opd">OPD</button>
+            <button id="tab-opsd" role="tab" aria-controls="panel-opsd" aria-selected="false" data-tab="opsd">OPSD</button>
+          </div>
+
+          <article id="panel-sft" class="tab-panel active" role="tabpanel" aria-labelledby="tab-sft">
+            <h3>SFT: dense, cheap, but fixed-distribution</h3>
+            <p>
+              The nrehiew_ visual notes describe SFT as broad dataset-matching pressure. The Will Brown page
+              adds the compounding limitation: rejection sampling can raise the curve, but it does not change
+              the fact that the sampling distribution is pinned to the data used to produce candidates.
+            </p>
+          </article>
+
+          <article id="panel-rl" class="tab-panel" role="tabpanel" aria-labelledby="tab-rl">
+            <h3>RL: sparse, compounding, verifier-bounded</h3>
+            <p>
+              RL samples from the current student policy, so later training can build on earlier improvements.
+              Its cost is sparse, noisy credit assignment, but its ceiling can be set by a verifier or reward
+              signal rather than by a teacher's policy.
+            </p>
+          </article>
+
+          <article id="panel-opd" class="tab-panel" role="tabpanel" aria-labelledby="tab-opd">
+            <h3>OPD: dense on-policy teacher guidance</h3>
+            <p>
+              OPD is the middle regime: it keeps the student's current state distribution while replacing sparse
+              reward with dense same-family teacher scoring. The teacher-family constraint is central because
+              the teacher must assign meaningful probabilities to student-sampled tokens.
+            </p>
+          </article>
+
+          <article id="panel-opsd" class="tab-panel" role="tabpanel" aria-labelledby="tab-opsd">
+            <h3>OPSD: self plus privileged context</h3>
+            <p>
+              On-policy self-distillation solves tokenizer and recipe mismatch by making the teacher a privileged
+              version of the student. The Will Brown page flags a new risk: privileged hints can create dense,
+              biased, concentrated gradients on rare pivot tokens.
+            </p>
+          </article>
+
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Regime</th>
+                <th>Sampling distribution</th>
+                <th>Credit signal</th>
+                <th>Main limit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>SFT</td>
+                <td>Fixed dataset or teacher completions</td>
+                <td>Dense next-token loss</td>
+                <td>No automatic compounding after the corpus is generated</td>
+              </tr>
+              <tr>
+                <td>RL</td>
+                <td>Current student policy</td>
+                <td>Sparse outcome reward or verifier signal</td>
+                <td>High variance and expensive rollout/reward loop</td>
+              </tr>
+              <tr>
+                <td>OPD</td>
+                <td>Current student policy</td>
+                <td>Dense teacher-derived token advantage</td>
+                <td>Teacher-bounded and sensitive to teacher-family match</td>
+              </tr>
+              <tr>
+                <td>OPSD</td>
+                <td>Current student policy with self-teacher</td>
+                <td>Dense privileged-context signal</td>
+                <td>Concentrated gradients and KL pressure on pivot tokens</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="figures">
+          <h2>Figure Lab</h2>
+          <p>
+            Filter the verified figures by the part of the story they explain. These images are referenced
+            directly from <code>wiki/assets/</code> and were checked against their wiki captions before use.
+          </p>
+
+          <div class="figure-controls" aria-label="Figure filters">
+            <button class="active" data-filter="all">All</button>
+            <button data-filter="geometry">Policy geometry</button>
+            <button data-filter="kl">KL and entropy</button>
+            <button data-filter="taxonomy">Taxonomy</button>
+          </div>
+
+          <div class="figure-grid">
+            <figure data-kind="geometry">
+              <img
+                src="../../wiki/assets/x-nrehiew-on-policy-distillation/fig-1.jpg"
+                alt="SFT dense pressure across model and dataset distributions"
+                loading="lazy"
+              />
+              <figcaption>
+                [[SFT, RL, and On-Policy Distillation Visual Notes]]: SFT pressure can include task behavior,
+                style tokens, and dataset artifacts.
+              </figcaption>
+            </figure>
+
+            <figure data-kind="geometry">
+              <img
+                src="../../wiki/assets/x-nrehiew-on-policy-distillation/fig-2.jpg"
+                alt="RL update on current-policy samples with reward signal"
+                loading="lazy"
+              />
+              <figcaption>
+                [[SFT, RL, and On-Policy Distillation Visual Notes]]: RL updates through sampled current-policy
+                behavior, which explains its compounding property.
+              </figcaption>
+            </figure>
+
+            <figure data-kind="kl">
+              <img
+                src="../../wiki/assets/x-nrehiew-on-policy-distillation/fig-4.jpg"
+                alt="Toy example comparing forward KL and reverse KL in a multimodal policy landscape"
+                loading="lazy"
+              />
+              <figcaption>
+                [[SFT, RL, and On-Policy Distillation Visual Notes]]: the toy example frames reverse-KL-style
+                updates as preserving an old mode better than forward-KL SFT.
+              </figcaption>
+            </figure>
+
+            <figure data-kind="kl">
+              <img
+                src="../../wiki/assets/x-nrehiew-on-policy-distillation/fig-6.jpg"
+                alt="Reward and entropy training curves for OPD versus RL"
+                loading="lazy"
+              />
+              <figcaption>
+                [[SFT, RL, and On-Policy Distillation Visual Notes]]: OPD reward can rise sharply while entropy
+                collapses, making KL control part of the method.
+              </figcaption>
+            </figure>
+
+            <figure data-kind="kl">
+              <img
+                src="../../wiki/assets/x-nrehiew-on-policy-distillation/fig-8.jpg"
+                alt="Per-token KL divergence table by token category and thinking-mode configuration"
+                loading="lazy"
+              />
+              <figcaption>
+                [[SFT, RL, and On-Policy Distillation Visual Notes]]: style tokens can carry the highest
+                per-token KL signal, so dense distillation is not automatically capability-focused.
+              </figcaption>
+            </figure>
+
+            <figure data-kind="taxonomy">
+              <img
+                src="../../wiki/assets/will-brown-on-sft-rl-on-policy-distillation/fig-7.jpg"
+                alt="Taxonomy table comparing density, bias, concentration, and reliable conditions"
+                loading="lazy"
+              />
+              <figcaption>
+                [[On SFT RL and On-Policy Distillation]]: the gradient taxonomy separates density, bias,
+                concentration, and when each method is reliable.
+              </figcaption>
+            </figure>
+
+            <figure data-kind="taxonomy">
+              <img
+                src="../../wiki/assets/will-brown-on-sft-rl-on-policy-distillation/fig-13.jpg"
+                alt="Teacher Pareto curve showing reward gain versus teacher distance from student"
+                loading="lazy"
+              />
+              <figcaption>
+                [[On SFT RL and On-Policy Distillation]]: the open teacher-selection question is a KL-budgeted
+                reward-improvement problem.
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section id="pitfalls">
+          <h2>Pitfalls And Limits</h2>
+          <div class="concept-card">
+            <h3>Teacher ceiling</h3>
+            <p>
+              The OPD concept page says OPD can efficiently transfer what a teacher knows, but by itself it has
+              no independent verifier that says a student token is better than the teacher's preference.
+            </p>
+          </div>
+
+          <div class="concept-card">
+            <h3>Same-family constraint</h3>
+            <p>
+              The wiki repeatedly treats same-family teacher choice as central for OPD because token-level
+              probabilities need a shared tokenizer, vocabulary, chat template, and post-training recipe.
+            </p>
+          </div>
+
+          <div class="concept-card">
+            <h3>Dense signal is still biased</h3>
+            <p>
+              The nrehiew_ visual notes warn that token-level KL can concentrate on style or thinking-mode
+              tokens. The Will Brown page makes the parallel warning for OPSD: privileged context can over-focus
+              gradients on rare pivot tokens.
+            </p>
+          </div>
+
+          <div class="warning-box">
+            <strong>Boundary:</strong>
+            The local wiki notes say the nrehiew_ page is grounded in saved figures plus a local reconstruction,
+            not a clean verbatim text archive. The artifact therefore treats the page as visual evidence and uses
+            the wiki synthesis rather than unsupported details from outside the wiki.
+          </div>
+        </section>
+
+        <section id="check">
+          <h2>Check Yourself</h2>
+          <p class="small">
+            These quick checks are local to the page and cite the wiki page behind the answer.
+          </p>
+
+          <div class="quiz-card" data-quiz="q1">
+            <h3>Question 1</h3>
+            <p>Why is OPD described as a middle ground between SFT and RL?</p>
+            <ul class="quiz-options">
+              <li data-correct="false">It uses a fixed teacher-completion corpus but with a higher learning rate.</li>
+              <li data-correct="true">It samples student rollouts like RL, then applies dense teacher scoring like distillation.</li>
+              <li data-correct="false">It removes the teacher ceiling by relying only on verifier rewards.</li>
+            </ul>
+            <div class="quiz-explanation">
+              Correct: [[On-Policy Distillation]] defines OPD as student-rollout sampling plus dense teacher
+              token guidance.
+            </div>
+          </div>
+
+          <div class="quiz-card" data-quiz="q2">
+            <h3>Question 2</h3>
+            <p>What is the main reason same-family teachers matter more for OPD than for completion-SFT?</p>
+            <ul class="quiz-options">
+              <li data-correct="true">OPD interprets teacher probabilities on the exact student-sampled tokens.</li>
+              <li data-correct="false">Completion-SFT cannot use text from a different model family.</li>
+              <li data-correct="false">Same-family teachers always remove the need for KL control.</li>
+            </ul>
+            <div class="quiz-explanation">
+              Correct: [[On-Policy Distillation]] says tokenizer, vocabulary, chat-template, and recipe match
+              make token-level credit meaningful.
+            </div>
+          </div>
+        </section>
+
+        <section id="sources">
+          <h2>Sources And Gaps</h2>
+          <div class="source-card">
+            <h3>[[On SFT RL and On-Policy Distillation]]</h3>
+            <p>
+              Provides the phase diagram, gradient taxonomy, OPD/OPSD distinctions, same-family teacher argument,
+              and optimal-teacher framing.
+            </p>
+          </div>
+          <div class="source-card">
+            <h3>[[SFT, RL, and On-Policy Distillation Visual Notes]]</h3>
+            <p>
+              Provides policy-space visuals for SFT, RL, OPD/MOPD, reverse KL, entropy collapse, and token-category
+              KL concentration.
+            </p>
+          </div>
+          <div class="source-card">
+            <h3>[[On-Policy Distillation]]</h3>
+            <p>
+              Provides the OPD definition, objective shape, same-family teacher rationale, comparison to nearby
+              regimes, and failure modes.
+            </p>
+          </div>
+          <div class="source-card">
+            <h3>[[Distillation Regimes Compared]]</h3>
+            <p>
+              Provides the overloaded-distillation framing: classical representation KD, completion-distillation
+              via SFT, and on-policy distillation.
+            </p>
+          </div>
+
+          <h3>Gaps surfaced</h3>
+          <p>
+            The wiki notes two limitations: the nrehiew_ article page is based on saved figures plus local
+            reconstruction rather than a verbatim static article body, and the underlying primary sources for
+            some MOPD, thinking-mode KL, and minimal-editing results are not yet separately linked as ingested
+            wiki pages.
+          </p>
+        </section>
+      </main>
+
+      <aside class="right-rail" aria-label="Infobox">
+        <article class="infobox">
+          <h2>Explainer Snapshot</h2>
+          <img
+            src="../../wiki/assets/will-brown-on-sft-rl-on-policy-distillation/fig-7.jpg"
+            alt="Gradient taxonomy table for RL, SFT, OPD, and OPSD"
+            loading="lazy"
+          />
+          <table>
+            <tbody>
+              <tr>
+                <th>Mode</th>
+                <td>Focused explainer</td>
+              </tr>
+              <tr>
+                <th>Core claim</th>
+                <td>OPD combines on-policy state coverage with dense teacher guidance.</td>
+              </tr>
+              <tr>
+                <th>Key risk</th>
+                <td>Teacher-bounded, biased, and sensitive to KL concentration.</td>
+              </tr>
+              <tr>
+                <th>Sources</th>
+                <td>4 wiki pages, 7 verified figures</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </aside>
+    </div>
+
+    <script>
+      const tabButtons = document.querySelectorAll("[data-tab]");
+      const tabPanels = document.querySelectorAll(".tab-panel");
+
+      tabButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const tab = button.dataset.tab;
+          tabButtons.forEach((candidate) => {
+            candidate.setAttribute("aria-selected", String(candidate === button));
+          });
+          tabPanels.forEach((panel) => {
+            panel.classList.toggle("active", panel.id === `panel-${tab}`);
+          });
+        });
+      });
+
+      const filterButtons = document.querySelectorAll("[data-filter]");
+      const figures = document.querySelectorAll("#figures figure[data-kind]");
+
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const filter = button.dataset.filter;
+          filterButtons.forEach((candidate) => candidate.classList.toggle("active", candidate === button));
+          figures.forEach((figure) => {
+            figure.hidden = filter !== "all" && figure.dataset.kind !== filter;
+          });
+        });
+      });
+
+      document.querySelectorAll(".quiz-options li").forEach((option) => {
+        option.addEventListener("click", () => {
+          const card = option.closest(".quiz-card");
+          card.querySelectorAll(".quiz-options li").forEach((candidate) => {
+            candidate.classList.remove("correct", "wrong");
+          });
+          option.classList.add(option.dataset.correct === "true" ? "correct" : "wrong");
+          card.querySelector(".quiz-explanation").classList.add("visible");
+        });
+      });
+    </script>
+  </body>
+</html>

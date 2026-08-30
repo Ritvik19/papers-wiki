@@ -1,0 +1,314 @@
+[
+  {
+    "num": 1,
+    "name": "fig-1.jpeg",
+    "alt": null,
+    "caption": "Slide 2 of 52, time stamp 0:00"
+  },
+  {
+    "num": 2,
+    "name": "fig-2.png",
+    "alt": "Benefits of working \"from scratch\"",
+    "caption": "Slide 2 of 52, time stamp 1:41"
+  },
+  {
+    "num": 3,
+    "name": "fig-3.png",
+    "alt": "Anthropic announcement about Claude text watermarking",
+    "caption": "Slide 3 of 52, time stamp 3:58"
+  },
+  {
+    "num": 4,
+    "name": "fig-4.png",
+    "alt": "Prelude: text generation in LLMs",
+    "caption": "Slide 4 of 52, time stamp 5:35"
+  },
+  {
+    "num": 5,
+    "name": "fig-5.png",
+    "alt": "ChatGPT interface used as a text-generation example",
+    "caption": "Slide 5 of 52, time stamp 6:01"
+  },
+  {
+    "num": 6,
+    "name": "fig-6.png",
+    "alt": "Question about what happens when the next token is generated",
+    "caption": "Slide 6 of 52, time stamp 6:41"
+  },
+  {
+    "num": 7,
+    "name": "fig-7.png",
+    "alt": "Step 1: convert input text into token IDs",
+    "caption": "Slide 7 of 52, time stamp 6:50"
+  },
+  {
+    "num": 8,
+    "name": "fig-8.png",
+    "alt": "Step 2: tokenize the input text",
+    "caption": "Slide 8 of 52, time stamp 7:22"
+  },
+  {
+    "num": 9,
+    "name": "fig-9.png",
+    "alt": "Step 3: obtain the next-token score distribution",
+    "caption": "Slide 9 of 52, time stamp 7:31"
+  },
+  {
+    "num": 10,
+    "name": "fig-10.png",
+    "alt": "The score distribution spans the model vocabulary",
+    "caption": "Slide 10 of 52, time stamp 8:39"
+  },
+  {
+    "num": 11,
+    "name": "fig-11.png",
+    "alt": "Step 4: sample a token from the score distribution",
+    "caption": "Slide 11 of 52, time stamp 10:33"
+  },
+  {
+    "num": 12,
+    "name": "fig-12.png",
+    "alt": "Step 5: detokenize the sampled token",
+    "caption": "Slide 12 of 52, time stamp 10:52"
+  },
+  {
+    "num": 13,
+    "name": "fig-13.png",
+    "alt": "Append the sampled token and repeat the generation loop",
+    "caption": "Slide 13 of 52, time stamp 11:12"
+  },
+  {
+    "num": 14,
+    "name": "fig-14.png",
+    "alt": "Question about how the next token is sampled",
+    "caption": "Slide 14 of 52, time stamp 11:44"
+  },
+  {
+    "num": 15,
+    "name": "fig-15.png",
+    "alt": "Convert token scores into probabilities",
+    "caption": "Slide 15 of 52, time stamp 12:28"
+  },
+  {
+    "num": 16,
+    "name": "fig-16.png",
+    "alt": "Sample from the probability distribution",
+    "caption": "Slide 16 of 52, time stamp 13:20"
+  },
+  {
+    "num": 17,
+    "name": "fig-17.png",
+    "alt": "Repeated sampling selects \"Berlin\" most of the time",
+    "caption": "Slide 17 of 52, time stamp 15:37"
+  },
+  {
+    "num": 18,
+    "name": "fig-18.png",
+    "alt": "Anthropic's explanation of Claude's text watermark",
+    "caption": "Slide 18 of 52, time stamp 16:21"
+  },
+  {
+    "num": 19,
+    "name": "fig-19.png",
+    "alt": "Without watermarking, random sampling can choose overcast or grey",
+    "caption": "Slide 19 of 52, time stamp 16:41"
+  },
+  {
+    "num": 20,
+    "name": "fig-20.png",
+    "alt": "Random seeds add reproducibility",
+    "caption": "Slide 20 of 52, time stamp 18:25"
+  },
+  {
+    "num": 21,
+    "name": "fig-21.png",
+    "alt": "Random seed 42 consistently selects overcast",
+    "caption": "Slide 21 of 52, time stamp 19:26"
+  },
+  {
+    "num": 22,
+    "name": "fig-22.png",
+    "alt": "Random seed 99 consistently selects grey",
+    "caption": "Slide 22 of 52, time stamp 19:49"
+  },
+  {
+    "num": 23,
+    "name": "fig-23.png",
+    "alt": "Watermarking derives a random seed from a secret key and token context",
+    "caption": "Slide 23 of 52, time stamp 20:04"
+  },
+  {
+    "num": 24,
+    "name": "fig-24.png",
+    "alt": "Without watermarking, sampling can produce many plausible texts",
+    "caption": "Slide 24 of 52, time stamp 21:06"
+  },
+  {
+    "num": 25,
+    "name": "fig-25.png",
+    "alt": "A fixed random seed reproduces one of the plausible texts",
+    "caption": "Slide 25 of 52, time stamp 23:31"
+  },
+  {
+    "num": 26,
+    "name": "fig-26.png",
+    "alt": "With watermarking, the key controls which plausible text is generated",
+    "caption": "Slide 26 of 52, time stamp 23:59"
+  },
+  {
+    "num": 27,
+    "name": "fig-27.png",
+    "alt": "Summary of generation with and without watermarking",
+    "caption": "Slide 27 of 52, time stamp 24:47"
+  },
+  {
+    "num": 28,
+    "name": "fig-28.png",
+    "alt": "Watermark detection requires access to the key",
+    "caption": "Slide 28 of 52, time stamp 26:21"
+  },
+  {
+    "num": 29,
+    "name": "fig-29.png",
+    "alt": "The watermark can be removed by editing watermarked positions",
+    "caption": "Slide 29 of 52, time stamp 28:03"
+  },
+  {
+    "num": 30,
+    "name": "fig-30.png",
+    "alt": "In practice, removing the watermark requires editing several positions",
+    "caption": "Slide 30 of 52, time stamp 28:41"
+  },
+  {
+    "num": 31,
+    "name": "fig-31.png",
+    "alt": "Bonus section on how the scoring function works",
+    "caption": "Slide 31 of 52, time stamp 29:59"
+  },
+  {
+    "num": 32,
+    "name": "fig-32.png",
+    "alt": "The modified sampling stage used for inexpensive scoring",
+    "caption": "Slide 32 of 52, time stamp 31:39"
+  },
+  {
+    "num": 33,
+    "name": "fig-33.png",
+    "alt": "Plausible next tokens and their probabilities",
+    "caption": "Slide 33 of 52, time stamp 32:16"
+  },
+  {
+    "num": 34,
+    "name": "fig-34.png",
+    "alt": "Weighted random sampling could select the next token",
+    "caption": "Slide 34 of 52, time stamp 33:13"
+  },
+  {
+    "num": 35,
+    "name": "fig-35.png",
+    "alt": "Tournament sampling replaces ordinary weighted random sampling",
+    "caption": "Slide 35 of 52, time stamp 33:35"
+  },
+  {
+    "num": 36,
+    "name": "fig-36.png",
+    "alt": "Random watermark functions assign a bit signature to grey",
+    "caption": "Slide 36 of 52, time stamp 34:35"
+  },
+  {
+    "num": 37,
+    "name": "fig-37.png",
+    "alt": "Random watermark functions assign bit signatures to every candidate",
+    "caption": "Slide 37 of 52, time stamp 36:00"
+  },
+  {
+    "num": 38,
+    "name": "fig-38.png",
+    "alt": "Candidate-token pairings for tournament sampling",
+    "caption": "Slide 38 of 52, time stamp 36:39"
+  },
+  {
+    "num": 39,
+    "name": "fig-39.png",
+    "alt": "First tournament-sampling comparisons and winners",
+    "caption": "Slide 39 of 52, time stamp 38:24"
+  },
+  {
+    "num": 40,
+    "name": "fig-40.png",
+    "alt": "Complete tournament-sampling comparisons across watermark functions",
+    "caption": "Slide 40 of 52, time stamp 39:11"
+  },
+  {
+    "num": 41,
+    "name": "fig-41.png",
+    "alt": "Tournament sampling mainly makes detection cheaper",
+    "caption": "Slide 41 of 52, time stamp 39:43"
+  },
+  {
+    "num": 42,
+    "name": "fig-42.png",
+    "alt": "After generation, watermark functions score the sampled text",
+    "caption": "Slide 42 of 52, time stamp 39:48"
+  },
+  {
+    "num": 43,
+    "name": "fig-43.png",
+    "alt": "Average watermark bits for one generated text",
+    "caption": "Slide 43 of 52, time stamp 41:33"
+  },
+  {
+    "num": 44,
+    "name": "fig-44.png",
+    "alt": "Comparison of average watermark scores for two generated texts",
+    "caption": "Slide 44 of 52, time stamp 41:55"
+  },
+  {
+    "num": 45,
+    "name": "fig-45.png",
+    "alt": "A threshold classifies text as watermarked or not watermarked",
+    "caption": "Slide 45 of 52, time stamp 42:27"
+  },
+  {
+    "num": 46,
+    "name": "fig-46.png",
+    "alt": "Reminder that tournament sampling makes detection cheaper",
+    "caption": "Slide 46 of 52, time stamp 43:13"
+  },
+  {
+    "num": 47,
+    "name": "fig-47.png",
+    "alt": "Summary of generation with and without watermarking",
+    "caption": "Slide 47 of 52, time stamp 43:30"
+  },
+  {
+    "num": 48,
+    "name": "fig-48.png",
+    "alt": "Detection requires the secret key and watermarking functions",
+    "caption": "Slide 48 of 52, time stamp 43:54"
+  },
+  {
+    "num": 49,
+    "name": "fig-49.png",
+    "alt": "Ideally, watermark removal edits every watermarked position",
+    "caption": "Slide 49 of 52, time stamp 44:29"
+  },
+  {
+    "num": 50,
+    "name": "fig-50.png",
+    "alt": "In practice, watermark removal edits several guessed positions",
+    "caption": "Slide 50 of 52, time stamp 44:36"
+  },
+  {
+    "num": 51,
+    "name": "fig-51.png",
+    "alt": "Question about whether watermarking leads to worse AI-generated text",
+    "caption": "Slide 51 of 52, time stamp 45:08"
+  },
+  {
+    "num": 52,
+    "name": "fig-52.png",
+    "alt": "A local model can edit Claude output to remove the watermark",
+    "caption": "Slide 52 of 52, time stamp 47:20"
+  }
+]

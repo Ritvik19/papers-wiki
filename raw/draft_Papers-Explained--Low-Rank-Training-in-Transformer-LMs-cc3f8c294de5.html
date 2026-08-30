@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained: Low-Rank Training in Transformer LMs</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained: Low-Rank Training in Transformer LMs</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+This paper investigates applying low-rank parametrization to the feedforward networks (FFNs) in Transformer-based language models, which…
+</section>
+<section data-field="body" class="e-content">
+<section name="9ffc" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="accf" id="accf" class="graf graf--h3 graf--leading graf--title">Papers Explained: Low-Rank Training in Transformer LMs</h3><figure name="2a13" id="2a13" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*XXtXmpeh-xyoA6JNiu23Fw.png" data-width="964" data-height="365" src="https://cdn-images-1.medium.com/max/800/1*XXtXmpeh-xyoA6JNiu23Fw.png"></figure><p name="927a" id="927a" class="graf graf--p graf-after--figure">This paper investigates applying low-rank parametrization to the feedforward networks (FFNs) in Transformer-based language models, which account for over 60% of parameters and computational costs, from scratch at large scales (up to 1.3B parameters).</p><h3 name="b491" id="b491" class="graf graf--h3 graf-after--p">Experiment Setup</h3><p name="b01f" id="b01f" class="graf graf--p graf-after--h3">A basic Transformer architecture with Rotary Embedding and a basic FFN module composed of two linear layers and a GeLU activation function is employed. The model ranges from 110M to 1.3B parameters and is trained on the RefinedWeb dataset. A random selection of 0.5B tokens is used as the validation set, while the number of training tokens is allocated based on the scaling law.</p><p name="3c7d" id="3c7d" class="graf graf--p graf-after--p">Only the FFN modules are replaced with low-rank parametrization, using ranks that are half or a quarter of the original hidden state dimension, reducing FFN parameters to 63% or 32% of the original size. The first FFN module remains unchanged to avoid significant performance degradation.</p><figure name="d363" id="d363" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*Ssm12N3veX4emrTkgAm-zQ.png" data-width="799" data-height="171" src="https://cdn-images-1.medium.com/max/800/1*Ssm12N3veX4emrTkgAm-zQ.png"><figcaption class="imageCaption">Model and Training configuration.</figcaption></figure><h3 name="9499" id="9499" class="graf graf--h3 graf-after--figure">Analysis</h3><figure name="8b72" id="8b72" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*2t3Ph2bfrUh-IcolDWwBAg.png" data-width="799" data-height="470" src="https://cdn-images-1.medium.com/max/800/1*2t3Ph2bfrUh-IcolDWwBAg.png"><figcaption class="imageCaption">Performance of low-rank parametrization with 63% and 32% of the original FFN module’s parameters.</figcaption></figure><figure name="3b69" id="3b69" class="graf graf--figure graf-after--figure"><img class="graf-image" data-image-id="1*FybvgrapJXw6JGe56v3aTQ.png" data-width="799" data-height="284" src="https://cdn-images-1.medium.com/max/800/1*FybvgrapJXw6JGe56v3aTQ.png"></figure><ul class="postList"><li name="cf39" id="cf39" class="graf graf--li graf-after--figure">As model size increases, the performance of low-rank models gets closer to dense models.</li><li name="cafd" id="cafd" class="graf graf--li graf-after--li">Low-rank models exhibit steeper scaling curves, especially at lower parameter percentages (e.g., 32% vs 63%), suggesting greater scaling potential and possible superiority at a fixed computational budget.</li><li name="d547" id="d547" class="graf graf--li graf-after--li">Wider, structured networks can match or exceed dense networks when optimized for training FLOPs.</li><li name="21f4" id="21f4" class="graf graf--li graf-after--li">Increased FFN width with low-rank parametrization leads to better GPU utilization, achieving 1.4× and 2.6× speed-ups with 63% and 32% of parameters, respectively, compared to the baseline width of 1536.</li></ul><figure name="5f15" id="5f15" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*WY4K3dXSVQI8cLy-zgSJSw.png" data-width="873" data-height="171" src="https://cdn-images-1.medium.com/max/800/1*WY4K3dXSVQI8cLy-zgSJSw.png"><figcaption class="imageCaption">The performance of GQA v/s wide, structured networks.</figcaption></figure><ul class="postList"><li name="fe6d" id="fe6d" class="graf graf--li graf-after--figure">A model with both structured attention and FFN achieves up to 8% to 17% higher throughput than comparable GQA models while maintaining or slightly improving perplexity.</li></ul><h3 name="f3e1" id="f3e1" class="graf graf--h3 graf-after--li">Paper</h3><p name="00b3" id="00b3" class="graf graf--p graf-after--h3 graf--trailing">Investigating Low-Rank Training in Transformer Language Models: Efficiency and Scaling Analysis <a href="https://arxiv.org/abs/2407.09835" data-href="https://arxiv.org/abs/2407.09835" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">2407.09835</a></p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">That’s a wrap!</strong></p><p name="b91c" id="b91c" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">If you enjoyed this breakdown, follow for more. I publish new paper explanations most weekdays.</strong></p><p name="c811" id="c811" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">More papers in this series, organized by lab and topic, are in the </strong><a href="https://ritvik19.medium.com/start-here-a-guide-to-papers-explained-121405fe195d" data-href="https://ritvik19.medium.com/start-here-a-guide-to-papers-explained-121405fe195d" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">start here</strong></a><strong class="markup--strong markup--p-strong"> guide.</strong></p><p name="1e6a" id="1e6a" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">What paper should I cover next? Let me know in the responses.</strong></p></div></div></section>
+</section>
+<footer><p><a href="https://medium.com/p/cc3f8c294de5">View original.</a></p><p>Exported from <a href="https://medium.com">Medium</a> on August 22, 2026.</p></footer></article></body></html>

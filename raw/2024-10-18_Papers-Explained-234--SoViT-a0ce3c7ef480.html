@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 234: SoViT</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 234: SoViT</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+This paper introduces advanced methods for inferring compute-optimal model shapes, such as width and depth, challenging the prevailing…
+</section>
+<section data-field="body" class="e-content">
+<section name="bf29" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="19ab" id="19ab" class="graf graf--h3 graf--leading graf--title">Papers Explained 234: SoViT</h3><figure name="727c" id="727c" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*lDpgsCOlHaxrbF1jo2Lg-g.png" data-width="1091" data-height="443" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*lDpgsCOlHaxrbF1jo2Lg-g.png"></figure><p name="84e1" id="84e1" class="graf graf--p graf-after--figure">This paper introduces advanced methods for inferring compute-optimal model shapes, such as width and depth, challenging the prevailing approach of blindly scaling up vision models and promoting a more informed scaling in the research community.</p><p name="3e2b" id="3e2b" class="graf graf--p graf-after--p">SoViT is a shape-optimized vision transformer that achieves competitive results with models twice its size, while being pre-trained with an equivalent amount of compute, and it demonstrates effectiveness across various domains.</p><h3 name="ad0a" id="ad0a" class="graf graf--h3 graf-after--p">Scaling Strategy</h3><h4 name="e770" id="e770" class="graf graf--h4 graf-after--h3">Notation and Problem Statement:</h4><ul class="postList"><li name="49e0" id="49e0" class="graf graf--li graf-after--h4">A neural architecture is represented as a tuple <code class="markup--code markup--li-code">(x1, x2, ..., xD)</code> where D is the number of shape dimensions (e.g., width, depth, MLP size).</li><li name="8403" id="8403" class="graf graf--li graf-after--li">The computational cost is denoted as “GFLOPs” (Giga Floating-point Operations) and is represented as ‘t’.</li><li name="d919" id="d919" class="graf graf--li graf-after--li">A performance metric ‘f’ (e.g., ImageNet 10-shot error rate) is used to evaluate the model’s performance.</li><li name="f7ff" id="f7ff" class="graf graf--li graf-after--li">The goal is to optimize the model’s shape (architecture) while keeping the computational cost fixed (t), within a small tolerance (ϵ).</li></ul><h4 name="7561" id="7561" class="graf graf--h4 graf-after--li">Single Dimension Optimization:</h4><figure name="6798" id="6798" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*DmLT9_EjUmKs3xldK7Ovlw.png" data-width="1094" data-height="222" src="https://cdn-images-1.medium.com/max/800/1*DmLT9_EjUmKs3xldK7Ovlw.png"><figcaption class="imageCaption">A grid sweep over multiple ViT shapes pretrained on 600M JFT examples highlights the important role of shape. The two architectures marked in blue and red are compute-optimal for image classification and image-to-text tasks, respectively.</figcaption></figure><ul class="postList"><li name="e526" id="e526" class="graf graf--li graf-after--figure">To optimize a single shape dimension (e.g., depth) while keeping computational cost ‘t’ constant, a functional form ‘fk’ is proposed that relates the shape dimension ‘xk’ and the computational cost ‘t’ to the performance metric ‘f’.</li></ul><figure name="2af9" id="2af9" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*IOhcKr_fdekxUoQ2hqNFlQ.png" data-width="516" data-height="47" src="https://cdn-images-1.medium.com/max/800/1*IOhcKr_fdekxUoQ2hqNFlQ.png"><figcaption class="imageCaption">where αk, ak, βk, bk, c, ξk, εk &gt; 0</figcaption></figure><ul class="postList"><li name="4b03" id="4b03" class="graf graf--li graf-after--figure">This functional form ‘fk’ takes into account various parameters (αk, ak, βk, bk, c, ξk, εk).</li><li name="569c" id="569c" class="graf graf--li graf-after--li">The purpose is to find an optimal value ‘x⋆k’ for the shape dimension ‘xk’ given the fixed computational cost ‘t’.</li><li name="6e1a" id="6e1a" class="graf graf--li graf-after--li">The functional form ‘fk’ is motivated by six observations, including its behavior with unbounded compute, data scaling laws, non-monotonicity, and consistency with power law behavior.</li></ul><h4 name="8d48" id="8d48" class="graf graf--h4 graf-after--li">Optimizing Multiple Dimensions:</h4><ul class="postList"><li name="d7a8" id="d7a8" class="graf graf--li graf-after--h4">The approach is expanded to optimize multiple shape dimensions simultaneously.</li><li name="a392" id="a392" class="graf graf--li graf-after--li">A “star sweep” method is proposed to decrease the number of experiments needed to find optimal architectures. This involves varying one dimension at a time while keeping others fixed.</li><li name="ed48" id="ed48" class="graf graf--li graf-after--li">A “grid sweep” is used to identify a starting architecture that lies on the Pareto optimal frontier for small compute.</li><li name="6ded" id="6ded" class="graf graf--li graf-after--li">Finally, all dimensions are scaled jointly as compute increases.</li></ul><h3 name="5981" id="5981" class="graf graf--h3 graf-after--li">Shape-optimized ViT</h3><p name="e1ce" id="e1ce" class="graf graf--p graf-after--h3">JFT-3B containing about 30,000 classes and approximately 3 billion examples is used for pretraining. Duplicate or near-duplicate examples between the JFT-3B dataset and downstream training and test sets are removed to avoid redundancy and potential bias.</p><p name="dc0d" id="dc0d" class="graf graf--p graf-after--p">The aforementioned star center x (c)= (1968, 40, 6144) is used as our starting point. To estimate the scaling exponents sk in (4) for each dimension separately, the width in the grid (608, 768, 928, 1088, 1328, 1648), depth in the grid (8, 10, 12, 16, 20, 24), and MLP dimension in the grid (1088, 1360, 1728, 2160, 2592, 3072) are varied.</p><p name="4213" id="4213" class="graf graf--p graf-after--p">Based on the scaling exponents, the following observations are made:</p><ul class="postList"><li name="7a15" id="7a15" class="graf graf--li graf-after--p">The MLP dimension should be scaled faster than depth, and depth should be scaled faster than width.</li><li name="9022" id="9022" class="graf graf--li graf-after--li">The size of the ViT model (parameter count) scales more slowly than the allocated computational resources.</li><li name="18fe" id="18fe" class="graf graf--li graf-after--li">Small ViT models can perform well if their shape and training duration are optimized for the available computational resources.</li></ul><p name="5543" id="5543" class="graf graf--p graf-after--li">The validating the findings, optimized ViT models for specific computational budgets are trained, resulting in models like SoViT-400m/14 and SoViT-150m/14.</p><figure name="d6d0" id="d6d0" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*pLUNvNWuFsa7-TAt3U-snA.png" data-width="1352" data-height="235" src="https://cdn-images-1.medium.com/max/800/1*pLUNvNWuFsa7-TAt3U-snA.png"><figcaption class="imageCaption">Optimizing for the compute-equivalent of ViT-g/14 results in the 2.5× smaller SoViT400m/14</figcaption></figure><p name="0a5d" id="0a5d" class="graf graf--p graf-after--figure">SoViT-400m/14 has a width of 1152, depth 27, and MLP dim 4304. Fine-tuning it on ImageNet results in a 90.3% top-1 accuracy.</p><figure name="6395" id="6395" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*2L78qsBHZXgXTz_cBFoBDQ.png" data-width="1359" data-height="266" src="https://cdn-images-1.medium.com/max/800/1*2L78qsBHZXgXTz_cBFoBDQ.png"><figcaption class="imageCaption">LEFT: Optimizing ViT shape for the compute-equivalent of ViT-B/14 results in SoViT150m/14, which improves performance significantly. CENTER &amp; RIGHT: Impact of debiating from the optimal shape in SoViT-150m/14 (in green) while keeping compute fixed.</figcaption></figure><p name="6266" id="6266" class="graf graf--p graf-after--figure">Optimizing the shape of ViT leads to a significant improvement in performance, from 76.6% in ViT-B/14 to 78.5% in SoViT-150m/14.</p><h3 name="5af0" id="5af0" class="graf graf--h3 graf-after--p">Evaluation</h3><figure name="b53a" id="b53a" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*8LTb-U6ecyL1JauGuzVcBw.png" data-width="1348" data-height="561" src="https://cdn-images-1.medium.com/max/800/1*8LTb-U6ecyL1JauGuzVcBw.png"><figcaption class="imageCaption">ImageNet fine-tuning.</figcaption></figure><ul class="postList"><li name="f2ae" id="f2ae" class="graf graf--li graf-after--figure">Pre-trained image encoders evaluated through fine-tuning on ILSVRC2012 classification task.</li><li name="2e08" id="2e08" class="graf graf--li graf-after--li">Increasing image resolution enhances pre-trained model capacity during fine-tuning.</li><li name="b687" id="b687" class="graf graf--li graf-after--li">SoViT-400m/14 matches ViT-g/14 performance but is significantly smaller.</li></ul><figure name="da84" id="da84" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*6OkqyjzGCASyvblpefZmmA.png" data-width="1336" data-height="245" src="https://cdn-images-1.medium.com/max/800/1*6OkqyjzGCASyvblpefZmmA.png"><figcaption class="imageCaption">Summary of multitask decoding and zero-shot transfer results.</figcaption></figure><ul class="postList"><li name="dfc3" id="dfc3" class="graf graf--li graf-after--figure">A new text encoder is trained using the contrastive image-text matching objective in this setup.</li><li name="62b1" id="62b1" class="graf graf--li graf-after--li">SoViT-400m/14 is found to be competitive with ViT-g/14 and significantly better than ViT-L/16 in this context (Table 4, second column).</li><li name="d43c" id="d43c" class="graf graf--li graf-after--li">The three pre-trained ViT models are also evaluated in multitask decoding with a fixed two-layer decoder architecture.</li><li name="e6f4" id="e6f4" class="graf graf--li graf-after--li">Evaluation metrics include COCO CIDEr, OCR, VQAv2, and GQA accuracy, as well as log-perplexity.</li><li name="5293" id="5293" class="graf graf--li graf-after--li">SoViT-400M performs comparably to ViT-g/14 in this multitask decoding evaluation.</li></ul><h3 name="860d" id="860d" class="graf graf--h3 graf-after--li">Paper</h3><p name="b0a2" id="b0a2" class="graf graf--p graf-after--h3">Getting ViT in Shape: Scaling Laws for Compute-Optimal Model Design <a href="https://arxiv.org/abs/2305.13035" data-href="https://arxiv.org/abs/2305.13035" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">2305.13035</a></p><p name="9bb2" id="9bb2" class="graf graf--p graf-after--p graf--trailing">Recommended Reading [<a href="https://ritvik19.medium.com/list/vision-transformers-61e6836230f1" data-href="https://ritvik19.medium.com/list/vision-transformers-61e6836230f1" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Vision Transformers</a>]</p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="d7fb" id="d7fb" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/a0ce3c7ef480"><time class="dt-published" datetime="2024-10-18T04:25:45.828Z">October 18, 2024</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-234-sovit-a0ce3c7ef480" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>

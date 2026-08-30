@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 594: Teacher-Routed Exploration via Forward KL (TREK)</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 594: Teacher-Routed Exploration via Forward KL (TREK)</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+TREK (Teacher-Routed Exploration via Forward KL) is a simple staged procedure that uses distillation not for imitation but for exploration…
+</section>
+<section data-field="body" class="e-content">
+<section name="57da" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="20cf" id="20cf" class="graf graf--h3 graf--leading graf--title">Papers Explained 594: Teacher-Routed Exploration via Forward KL (TREK)</h3><figure name="4370" id="4370" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*HRF8rENEJsQhH00lo9AUtw.png" data-width="1800" data-height="530" src="https://cdn-images-1.medium.com/max/800/1*HRF8rENEJsQhH00lo9AUtw.png"></figure><p name="f9d4" id="f9d4" class="graf graf--p graf-after--figure">TREK (Teacher-Routed Exploration via Forward KL) is a simple staged procedure that uses distillation not for imitation but for exploration support expansion. It first identifies prompts where the unaided student has very low pass rate, queries a proposal source to produce verified candidate solutions, keeps the top-r proposals ranked by current student likelihood, applies a short forward-KL phase to pull those verified modes into the student’s support, and then returns to standard on-policy GRPO refinement.</p><h3 name="531c" id="531c" class="graf graf--h3 graf-after--p">Method</h3><figure name="310c" id="310c" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*BjuvpgICUG-y_9AR-RAxCg.png" data-width="1540" data-height="480" src="https://cdn-images-1.medium.com/max/800/1*BjuvpgICUG-y_9AR-RAxCg.png"><figcaption class="imageCaption">Overview of TREK as distillation for exploration support expansion.</figcaption></figure><h4 name="0844" id="0844" class="graf graf--h4 graf-after--figure">Problem Setup and Failure Mode</h4><p name="c356" id="c356" class="graf graf--p graf-after--h4">Standard GRPO optimizes the student from responses sampled from its current policy. The key limitation for GRPO is that it can only reinforce modes that the student already samples. Prompts with low pass rates are hard candidates: the unaided student fails to discover useful trajectories under the current sampling configuration. A hard candidate becomes useful for proposal learning only if the proposal source later produces at least one verified trajectory. This is the setting in which distillation is treated as exploration support expansion rather than denser supervision on already-sampled rollouts.</p><p name="4f89" id="4f89" class="graf graf--p graf-after--p">For a verified teacher trajectory yT, let</p><figure name="2a98" id="2a98" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*J5sxa6mb0fS-D9ykzXuctA.png" data-width="1540" data-height="78" src="https://cdn-images-1.medium.com/max/800/1*J5sxa6mb0fS-D9ykzXuctA.png"></figure><p name="45b9" id="45b9" class="graf graf--p graf-after--figure">be its token-level student NLL. Reachability is measured with a two-sided trimmed length-normalized NLL,</p><figure name="69a4" id="69a4" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*k-Koqjx8rNk5b1y1md9TVQ.png" data-width="1540" data-height="126" src="https://cdn-images-1.medium.com/max/800/1*k-Koqjx8rNk5b1y1md9TVQ.png"></figure><p name="52f7" id="52f7" class="graf graf--p graf-after--figure">where Iα,β (yT) removes the lowest α fraction and highest β fraction of token losses before averaging. The low-end trim prevents high-confidence boilerplate or formatting tokens from making a trajectory look artificially close, while the high-end trim prevents isolated rare-token outliers from making it look artificially far. The resulting quantity is a reachability score, not yet a training loss: smaller dS(yT | x) indicates a verified trajectory closer to the student’s current support.</p><p name="338a" id="338a" class="graf graf--p graf-after--p">Because absolute NLL scales differ across prompts, the prompt-relative form is also used as an analysis variable, where the expectation is estimated from the same student rollouts already drawn for pS (x).</p><figure name="fe8f" id="fe8f" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*PwdXaPl8hYqCGhZpZ8JDDA.png" data-width="1540" data-height="80" src="https://cdn-images-1.medium.com/max/800/1*PwdXaPl8hYqCGhZpZ8JDDA.png"></figure><h4 name="723e" id="723e" class="graf graf--h4 graf-after--figure">Prompt Routing and Reachability</h4><p name="5ccd" id="5ccd" class="graf graf--p graf-after--h4">The proposal policy πT is used to generate candidate solutions for hard prompts. It may be a larger model, but the most deployment-aligned setting is the same student family run with additional inference-time context. Examples include verifier-guided retry, self-consistency, search, environment interaction, reflection, failure lessons, or a longer reasoning budget. This extra context or computation may help discover solutions.</p><p name="bcbc" id="bcbc" class="graf graf--p graf-after--p">For each routed hard prompt, proposal trajectories that fail the verifier are discarded. Among the verified trajectories, ranking is done by current student likelihood and the top-r student-proximal verified proposals are kept.</p><figure name="92c1" id="92c1" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*pzmaEWj92jDLgzpBrG5Gpg.png" data-width="1540" data-height="80" src="https://cdn-images-1.medium.com/max/800/1*pzmaEWj92jDLgzpBrG5Gpg.png"></figure><p name="64db" id="64db" class="graf graf--p graf-after--figure">This rule makes proposal learning conditional on teacher success while avoiding broad imitation of trajectories far from the student’s current support. The hyperparameter r trades off multi-mode coverage against transfer stability.</p><h4 name="9054" id="9054" class="graf graf--h4 graf-after--p">Proposal Learning and On-Policy Refinement</h4><p name="903f" id="903f" class="graf graf--p graf-after--h4">On routed hard prompts, Yreach(x) defines the target for a short support-expansion update. If teacher probabilities are available, the retained proposal distribution can be written as:</p><figure name="cce3" id="cce3" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*yquQnpW8rHmhGhjWiAm4GA.png" data-width="1540" data-height="80" src="https://cdn-images-1.medium.com/max/800/1*yquQnpW8rHmhGhjWiAm4GA.png"></figure><p name="2ee4" id="2ee4" class="graf graf--p graf-after--figure">Explicit teacher probabilities are not required; retained samples are sufficient. At the distributional level, proposal learning minimizes</p><figure name="6a2b" id="6a2b" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*iTTKBFPaFYUn6Es7_yojwg.png" data-width="1500" data-height="80" src="https://cdn-images-1.medium.com/max/800/1*iTTKBFPaFYUn6Es7_yojwg.png"></figure><p name="deb2" id="deb2" class="graf graf--p graf-after--figure">on selected prompts. The forward direction penalizes missing proposal support and encourages the student to cover the retained solution modes. In black-box or context-only settings, this reduces to teacher-forced negative log-likelihood on retained proposal samples:</p><figure name="9d09" id="9d09" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*NuH2kSKE9BDaS7aMUWl5_Q.png" data-width="1500" data-height="140" src="https://cdn-images-1.medium.com/max/800/1*NuH2kSKE9BDaS7aMUWl5_Q.png"></figure><p name="aa3a" id="aa3a" class="graf graf--p graf-after--figure">This SFT-like update is applied only on the selected proposal dataset.</p><figure name="87ce" id="87ce" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*0qOKB-pyZAL4DK_nVYnWCA.png" data-width="1602" data-height="1000" src="https://cdn-images-1.medium.com/max/800/1*0qOKB-pyZAL4DK_nVYnWCA.png"></figure><h3 name="a3e7" id="a3e7" class="graf graf--h3 graf-after--figure">Experiment Setup</h3><p name="4712" id="4712" class="graf graf--p graf-after--h3">TREK consistently improves performance over direct GRPO baselines across all model scales and benchmarks, especially on harder tasks/prompts.</p><figure name="c799" id="c799" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*nPsNmV0Es-GL0tgKkSm-dQ.png" data-width="1600" data-height="680" src="https://cdn-images-1.medium.com/max/800/1*nPsNmV0Es-GL0tgKkSm-dQ.png"><figcaption class="imageCaption">Math results across Qwen3 scales on AIME 2024 and AIME 2025 (avg@16, %).</figcaption></figure><ul class="postList"><li name="b089" id="b089" class="graf graf--li graf-after--figure">TREK using DeepSeek-V4 proposals gains +5.4 to +6.4 points on AIME 2024 and +2.8 to +4.9 on AIME 2025 across Qwen3 scales. Self-context variant also outperforms direct GRPO, and forward-KL consolidation is shown to be superior to OPD-style supervision.</li></ul><figure name="29ec" id="29ec" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*wYMCUf8K0lI_ZW3RouDBUw.png" data-width="1600" data-height="300" src="https://cdn-images-1.medium.com/max/800/1*wYMCUf8K0lI_ZW3RouDBUw.png"><figcaption class="imageCaption">Agentic task final success rate (%) with Qwen2.5–7B-Instruct on ALFWorld and ScienceWorld.</figcaption></figure><figure name="cc40" id="cc40" class="graf graf--figure graf-after--figure"><img class="graf-image" data-image-id="1*p_a4K38S_YeECgZunMhE5Q.png" data-width="1600" data-height="420" src="https://cdn-images-1.medium.com/max/800/1*p_a4K38S_YeECgZunMhE5Q.png"><figcaption class="imageCaption">Per-task-type ALFWorld success rate (%) for the DeepSeek-V4 TREK variant across all six task types, ordered by GRPO baseline success (lowest first).</figcaption></figure><ul class="postList"><li name="cdaf" id="cdaf" class="graf graf--li graf-after--figure">On ALFWorld, TREK raises success from 75.8 (GRPO) to 82.8 (DeepSeek-V4 proposals), and to 80.4 (self-context). On ScienceWorld, success more than doubles from 12.5 (GRPO) to 26.7 (TREK, DeepSeek-V4) and reaches 23.4 for self-context.</li><li name="ead6" id="ead6" class="graf graf--li graf-after--li">Gains from TREK concentrate on the hardest task types, supporting the central claim: support-expansion proposals most benefit areas where unaided exploration fails.</li></ul><h3 name="f3e1" id="f3e1" class="graf graf--h3 graf-after--li">Paper</h3><p name="00b3" id="00b3" class="graf graf--p graf-after--h3 graf--trailing">TREK: Distill to Explore, Reinforce to Refine <a href="https://arxiv.org/abs/2607.05339" data-href="https://arxiv.org/abs/2607.05339" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">2607.05339</a></p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">That’s a wrap!</strong></p><p name="b91c" id="b91c" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">If you enjoyed this breakdown, follow for more. I publish new paper explanations most weekdays.</strong></p><p name="c811" id="c811" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">More papers in this series, organized by lab and topic, are in the </strong><a href="https://ritvik19.medium.com/start-here-a-guide-to-papers-explained-121405fe195d" data-href="https://ritvik19.medium.com/start-here-a-guide-to-papers-explained-121405fe195d" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">start here</strong></a><strong class="markup--strong markup--p-strong"> guide.</strong></p><p name="1e6a" id="1e6a" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">What paper should I cover next? Let me know in the responses.</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/da20a690b2ad"><time class="dt-published" datetime="2026-08-13T05:30:58.371Z">August 13, 2026</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-594-teacher-routed-exploration-via-forward-kl-trek-da20a690b2ad" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on August 22, 2026.</p></footer></article></body></html>

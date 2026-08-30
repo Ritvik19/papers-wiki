@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cosine Similarity in High-Dimensional Embedding Spaces</title>
+  <style>
+    body { font-family: Georgia, serif; max-width: 800px; margin: 2em auto; line-height: 1.7; color: #222; }
+    h1 { font-size: 1.6em; }
+    h2 { font-size: 1.2em; margin-top: 1.6em; }
+    table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+    th, td { border: 1px solid #ccc; padding: 0.5em 0.8em; text-align: left; }
+    th { background: #f5f5f5; }
+    ul { padding-left: 1.4em; }
+    .meta { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+    ol.refs { font-size: 0.85em; color: #555; }
+  </style>
+</head>
+<body>
+
+<h1>Cosine Similarity in High-Dimensional Embedding Spaces</h1>
+<p class="meta">
+  <strong>Source</strong>: Google AI Mode answer<br>
+  <strong>Query</strong>: "in embedding models if we keep on adding more dimensions does the cosine similarity become irrelevant because points keep on going further and further"<br>
+  <strong>Source URL</strong>: <a href="https://share.google/aimode/1zsaZrPGb4CNgfKaG">https://share.google/aimode/1zsaZrPGb4CNgfKaG</a><br>
+  <strong>Saved</strong>: 2026-05-12
+</p>
+
+<p>Yes, as the number of dimensions in embedding models increases, the effectiveness of cosine similarity can diminish, a phenomenon driven by the "curse of dimensionality". While adding dimensions allows models to capture more nuanced semantic relationships, it simultaneously pushes vectors to become nearly orthogonal (perpendicular) to each other, causing cosine similarity scores to cluster around a narrow band, often near zero or a high constant value, reducing their discriminative power. [1, 2, 3, 4, 5]</p>
+
+<h2>Why High Dimensions Impact Cosine Similarity</h2>
+<ul>
+  <li><strong>Orthogonality and Sparsity:</strong> In very high-dimensional spaces, most vectors tend to be nearly perpendicular, resulting in cosine similarity values close to zero.</li>
+  <li><strong>Concentration of Measure:</strong> Distances between points tend to concentrate, meaning all points appear roughly equidistant from each other. This makes it difficult to differentiate between "nearby" neighbors and "far" points.</li>
+  <li><strong>Constant High Similarity:</strong> Surprisingly, some modern high-dimensional models (like text-embedding-ada-002) can result in relatively high cosine similarities (e.g., &gt;0.68) for all pairs, even when the texts are dissimilar, making the metric less useful for ranking. [2, 4, 5, 6, 7, 8]</li>
+</ul>
+
+<h2>Why Cosine Similarity Often Remains Relevant</h2>
+<p>Despite these issues, cosine similarity is still the default for high-dimensional text embeddings for several reasons:</p>
+<ul>
+  <li><strong>Direction Over Magnitude:</strong> Unlike Euclidean distance, which grows with the number of dimensions, cosine similarity focuses only on the angle between vectors.</li>
+  <li><strong>Learned Clustering:</strong> In practice, embedding models are trained (using contrastive loss) to ensure that semantically similar items, while sparse, still form clusters with smaller angles, keeping their cosine similarity higher than random pairs.</li>
+  <li><strong>Normalization:</strong> Modern embedding APIs often normalize vectors (unit length), reducing the effect of vector magnitude differences. [3, 4, 9, 10, 11]</li>
+</ul>
+
+<h2>Summary Table: Dimensionality Impact</h2>
+<table>
+  <thead>
+    <tr><th>Factor [2, 3, 4]</th><th>Low Dimensions</th><th>High Dimensions</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Cosine Similarity</td><td>Distinguishable</td><td>Tends to concentrate around a mean value</td></tr>
+    <tr><td>Vector Angles</td><td>Diverse</td><td>Mostly orthogonal (~90° or 0 similarity)</td></tr>
+    <tr><td>Data Structure</td><td>Dense</td><td>Sparse (points far apart)</td></tr>
+  </tbody>
+</table>
+
+<h2>When to Look Beyond Cosine Similarity</h2>
+<p>If you find that your model's, say, 1536-dimensional embeddings are giving you too many similar results, you might consider alternatives like using the <a href="https://arxiv.org/html/2407.08623v4">Dimension Insensitive Euclidean Metric (DIEM)</a> or, if you have trained the model with a specific distance metric in mind (e.g., Siamese networks), using that metric for retrieval. [3, 12, 13]</p>
+
+<h2>References</h2>
+<ol class="refs">
+  <li><a href="https://stats.stackexchange.com/questions/341535/curse-of-dimensionality-does-cosine-similarity-work-better-and-if-so-why">stats.stackexchange.com — Curse of dimensionality: does cosine similarity work better and if so why?</a></li>
+  <li><a href="https://milvus.io/ai-quick-reference/what-is-the-curse-of-dimensionality-and-how-does-it-affect-vector-search">milvus.io — What is the curse of dimensionality and how does it affect vector search?</a></li>
+  <li><a href="https://www.linkedin.com/posts/anirshar_embedding-similarity-traps-cosine-isnt-activity-7403455176805957632-VQYC">linkedin.com — Embedding Similarity Traps: Cosine isn't always what you think</a></li>
+  <li><a href="https://x.com/rohanpaul_ai/status/1754190135359615327">x.com/@rohanpaul_ai — tweet on cosine similarity in high dimensions</a></li>
+  <li><a href="https://community.openai.com/t/why-cosine-similarity-between-embedding-vectors-is-always-above-68/661144">community.openai.com — Why cosine similarity between embedding vectors is always above 0.68</a></li>
+  <li><a href="https://www.linkedin.com/posts/anirshar_embedding-similarity-traps-cosine-isnt-activity-7403455176805957632-VQYC">linkedin.com (same as [3])</a></li>
+  <li><a href="https://www.youtube.com/watch?v=L9eNxU-9jBQ">youtube.com — video on cosine similarity in high dimensions</a></li>
+  <li><a href="https://community.openai.com/t/why-cosine-similarity-between-embedding-vectors-is-always-above-68/661144">community.openai.com (same as [5])</a></li>
+  <li><a href="https://www.ibm.com/think/topics/cosine-similarity">ibm.com — Cosine Similarity</a></li>
+  <li><a href="https://www.dataquest.io/blog/measuring-similarity-and-distance-between-embeddings/">dataquest.io — Measuring Similarity and Distance Between Embeddings</a></li>
+  <li><a href="https://arxiv.org/pdf/2504.16318">arxiv.org/pdf/2504.16318</a></li>
+  <li><a href="https://arxiv.org/html/2407.08623v4">arxiv.org — DIEM: Dimension Insensitive Euclidean Metric</a></li>
+  <li><a href="https://www.emergentmind.com/topics/cosine-similarity-reflects-distance-hypothesis">emergentmind.com — Cosine similarity reflects distance hypothesis</a></li>
+</ol>
+
+</body>
+</html>

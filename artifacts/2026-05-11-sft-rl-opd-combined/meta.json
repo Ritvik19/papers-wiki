@@ -1,0 +1,114 @@
+{
+  "query": "Get me a single interactive artifact for @will-brown-on-sft-rl-on-policy-distillation and @x-nrehiew-on-policy-distillation",
+  "created": "2026-05-11",
+  "mode": "focused-explainer",
+  "sources": [
+    {
+      "title": "On SFT RL and On-Policy Distillation",
+      "path": "wiki/On SFT RL and On-Policy Distillation.md",
+      "contribution": "Supplied the phase diagram, SFT/RL/OPD/OPSD taxonomy, same-family teacher argument, and optimal-teacher framing."
+    },
+    {
+      "title": "SFT, RL, and On-Policy Distillation Visual Notes",
+      "path": "wiki/SFT, RL, and On-Policy Distillation Visual Notes.md",
+      "contribution": "Supplied visual intuition for SFT, RL, OPD/MOPD, reverse KL, entropy collapse, and token-category KL concentration."
+    },
+    {
+      "title": "On-Policy Distillation",
+      "path": "wiki/On-Policy Distillation.md",
+      "contribution": "Supplied the OPD definition, objective shape, same-family teacher rationale, comparisons, and failure modes."
+    },
+    {
+      "title": "Distillation Regimes Compared",
+      "path": "wiki/Distillation Regimes Compared.md",
+      "contribution": "Supplied the broader comparison among classical KD, completion-distillation SFT, and OPD."
+    }
+  ],
+  "figures": [
+    {
+      "path": "../../wiki/assets/will-brown-on-sft-rl-on-policy-distillation/fig-1.jpg",
+      "caption": "Conceptual phase diagram showing SFT giving strong early gains, RL compounding later, and OPD occupying a fast same-family middle regime.",
+      "verified": true,
+      "note": "Opened image and confirmed it shows SFT, SFT-RS, RL, and OPD performance over compute."
+    },
+    {
+      "path": "../../wiki/assets/will-brown-on-sft-rl-on-policy-distillation/fig-7.jpg",
+      "caption": "Taxonomy table placing RL, SFT, OPD, and OPSD along sparsity, bias, concentration, and teacher-policy axes.",
+      "verified": true,
+      "note": "Opened image and confirmed it is the method-density-bias-concentration taxonomy."
+    },
+    {
+      "path": "../../wiki/assets/will-brown-on-sft-rl-on-policy-distillation/fig-10.jpg",
+      "caption": "Diagram of the meta-algorithm: sample under a partially on-policy distribution, choose a teacher policy, and update the student.",
+      "verified": true,
+      "note": "Opened image and confirmed it shows three dials for sampling, advantage blend, and teacher choice."
+    },
+    {
+      "path": "../../wiki/assets/will-brown-on-sft-rl-on-policy-distillation/fig-13.jpg",
+      "caption": "Pareto curve sketch for reward improvement versus KL, with SFT, OPD, OPSD, and RL occupying different points.",
+      "verified": true,
+      "note": "Opened image and confirmed it shows the teacher Pareto curve and KL-distance framing."
+    },
+    {
+      "path": "../../wiki/assets/x-nrehiew-on-policy-distillation/fig-1.jpg",
+      "caption": "SFT applies dense update pressure across a dataset target distribution, including useful task behavior and incidental style or dataset artifacts.",
+      "verified": true,
+      "note": "Opened image and confirmed it shows SFT update pressure from a starting model distribution to a dataset target distribution."
+    },
+    {
+      "path": "../../wiki/assets/x-nrehiew-on-policy-distillation/fig-2.jpg",
+      "caption": "RL updates only through behavior sampled from the current policy, concentrating probability mass around rewarded on-policy trajectories.",
+      "verified": true,
+      "note": "Opened image and confirmed it shows current-policy samples and a reward signal."
+    },
+    {
+      "path": "../../wiki/assets/x-nrehiew-on-policy-distillation/fig-4.jpg",
+      "caption": "A toy multimodal example showing reverse KL preserving an old mode better than forward-KL SFT while learning a new task mode.",
+      "verified": true,
+      "note": "Opened image and confirmed it compares forward KL and reverse KL in a multimodal setting."
+    },
+    {
+      "path": "../../wiki/assets/x-nrehiew-on-policy-distillation/fig-6.jpg",
+      "caption": "Reward and entropy curves showing OPD reward rising sharply while entropy collapses compared with a gradual RL teacher run.",
+      "verified": true,
+      "note": "Opened image and confirmed it shows reward and entropy plots for RL teacher and OPD variants."
+    },
+    {
+      "path": "../../wiki/assets/x-nrehiew-on-policy-distillation/fig-8.jpg",
+      "caption": "Per-token KL by token category under student and teacher thinking-mode configurations, with style tokens carrying the highest KL signal.",
+      "verified": true,
+      "note": "Opened image and confirmed it is a per-token KL table by style, math, and other token categories."
+    }
+  ],
+  "concepts": [
+    "Supervised Fine-Tuning",
+    "Reinforcement Learning",
+    "On-Policy Distillation",
+    "On-Policy Self-Distillation",
+    "same-family teacher",
+    "teacher ceiling",
+    "reverse KL",
+    "entropy collapse",
+    "KL concentration"
+  ],
+  "flows": [
+    "SFT trains on fixed teacher or dataset completions with dense next-token loss.",
+    "RL samples current student rollouts and optimizes sparse verifier or reward signal.",
+    "OPD samples current student rollouts, scores sampled tokens with a same-family teacher, and updates the student with dense teacher-derived advantages.",
+    "OPSD uses a privileged-context version of the student as teacher, which solves family mismatch but can concentrate gradients."
+  ],
+  "quiz": {
+    "included": true,
+    "questionCount": 2,
+    "localStorageKey": null
+  },
+  "gaps": [
+    "The nrehiew_ article page says the local X export did not include a clean static article body, so the page is grounded in saved article figures plus local reconstruction rather than a verbatim text archive.",
+    "The figures cite results from minimal editing, MiMo-V2-Flash, and thinking-mode KL analyses; the underlying primary papers are not all linked as separately ingested wiki pages."
+  ],
+  "largeTopic": {
+    "enabled": false,
+    "pendingPages": [],
+    "pendingSections": []
+  }
+}

@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gym-Anything — interactive explainer</title>
+    <!-- CSS/JS inlined so Simple Browser, vscode-webview, and single-file copy work -->
+    <style>
+:root {
+  --bg: #0f1419;
+  --surface: #1a2332;
+  --border: #2d3a4f;
+  --text: #e8eef7;
+  --muted: #9aacbf;
+  --accent: #5eb8ff;
+  --accent-dim: #3d8fcc;
+  --ok: #6bcf8e;
+  --warn: #e8c547;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  line-height: 1.55;
+}
+
+:root.light {
+  --bg: #f4f6fa;
+  --surface: #ffffff;
+  --border: #d4dce8;
+  --text: #1a2332;
+  --muted: #5a6b7d;
+  --accent: #0b6bcb;
+  --accent-dim: #084a94;
+  --ok: #1e8f4a;
+  --warn: #b8860b;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.skip {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  padding: 0.75rem 1rem;
+  background: var(--accent);
+  color: var(--bg);
+  z-index: 100;
+}
+
+.skip:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(200px, 260px) 1fr;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 0;
+}
+
+@media (max-width: 880px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  padding: 1.5rem 1.25rem 2rem;
+  border-right: 1px solid var(--border);
+  background: var(--surface);
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+@media (max-width: 880px) {
+  .sidebar {
+    position: relative;
+    max-height: none;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+}
+
+.sidebar h1 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0 0 0.35rem;
+  line-height: 1.25;
+}
+
+.meta {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 0 0 1.25rem;
+}
+
+.meta a {
+  color: var(--accent);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-bottom: 0.35rem;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: block;
+  padding: 0.25rem 0;
+  border-radius: 4px;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: var(--accent);
+}
+
+.controls {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.theme-btn {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.theme-btn:hover {
+  border-color: var(--accent);
+}
+
+main {
+  padding: 1.75rem 1.5rem 3rem;
+  max-width: 52rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+section > h2 {
+  font-size: 1.35rem;
+  margin: 0 0 0.75rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--border);
+}
+
+section > p.lead {
+  font-size: 1.05rem;
+  color: var(--muted);
+  margin-top: 0;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem 1.15rem;
+  margin: 1rem 0;
+}
+
+.card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+ul.dense {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+ul.dense li {
+  margin-bottom: 0.35rem;
+}
+
+.figure-panel {
+  margin: 1.25rem 0;
+}
+
+.tablist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.tab {
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+
+.tab:hover {
+  border-color: var(--accent-dim);
+}
+
+.tab[aria-selected="true"] {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+}
+
+.tab-panel {
+  display: none;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+.tab-panel figure.paper-figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.figure-frame {
+  display: flex;
+  flex-direction: column;
+}
+
+.figure-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.45rem 0.65rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+  font-size: 0.76rem;
+  color: var(--muted);
+}
+
+.figure-toolbar-btns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.fig-tool-btn {
+  padding: 0.3rem 0.55rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.8rem;
+  line-height: 1;
+  min-width: 2rem;
+}
+
+.fig-tool-btn:hover {
+  border-color: var(--accent-dim);
+}
+
+.fig-tool-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+span.fig-zoom-readout {
+  min-width: 3.25rem;
+  text-align: center;
+  padding: 0.3rem 0.35rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+}
+
+.figure-viewport {
+  max-height: min(82vh, 920px);
+  overflow: auto;
+  overscroll-behavior: contain;
+  touch-action: pan-x pan-y;
+  background: var(--bg);
+}
+
+.figure-zoom-inner {
+  width: 100%;
+  transition: width 0.18s ease;
+}
+
+.figure-zoom-inner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.figure-frame[data-zoom="125"] .figure-zoom-inner {
+  width: 125%;
+}
+
+.figure-frame[data-zoom="150"] .figure-zoom-inner {
+  width: 150%;
+}
+
+.figure-frame[data-zoom="175"] .figure-zoom-inner {
+  width: 175%;
+}
+
+.figure-frame[data-zoom="200"] .figure-zoom-inner {
+  width: 200%;
+}
+
+.tab-panel figcaption {
+  padding: 0.75rem 1rem;
+  font-size: 0.88rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+
+details {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.65rem 1rem;
+  margin-bottom: 0.5rem;
+  background: var(--surface);
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.stat {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.85rem;
+  text-align: center;
+}
+
+.stat .value {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.stat .label {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 0.25rem;
+}
+
+.stat .note {
+  font-size: 0.7rem;
+  color: var(--muted);
+  margin-top: 0.35rem;
+  opacity: 0.9;
+}
+
+.sources {
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.sources ul {
+  padding-left: 1.2rem;
+}
+
+.footer-note {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.flow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 1rem 0;
+  font-size: 0.88rem;
+}
+
+.flow span {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 0.35rem 0.65rem;
+  border-radius: 6px;
+}
+
+.flow .arrow {
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  padding: 0 0.15rem;
+}
+
+/* Google-Wikipedia visual system override */
+:root {
+  --bg: #f8f9fa;
+  --surface: #ffffff;
+  --border: #eaecf0;
+  --text: #202122;
+  --muted: #54595d;
+  --accent: #3366cc;
+  --accent-dim: #254f9a;
+  --ok: #22863a;
+  --warn: #a06700;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: 58px;
+  padding: 0 16px;
+  border-bottom: 1px solid var(--border);
+  background: #fff;
+}
+
+.menu-btn {
+  border: none;
+  background: transparent;
+  color: #5f6368;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.brand {
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #202124;
+  white-space: nowrap;
+}
+
+.brand .papers {
+  letter-spacing: -0.01em;
+}
+
+.brand .wiki {
+  font-weight: 600;
+  color: #5f6368;
+  margin-left: 6px;
+}
+
+.layout {
+  grid-template-columns: 220px minmax(0, 1fr) 300px;
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: calc(100vh - 58px);
+}
+
+@media (max-width: 1200px) {
+  .layout {
+    grid-template-columns: 220px minmax(0, 1fr);
+  }
+  .right-rail {
+    display: none;
+  }
+}
+
+.sidebar {
+  background: #fff;
+  border-right: 1px solid var(--border);
+  padding-top: 1.1rem;
+  top: 58px;
+  max-height: calc(100vh - 58px);
+}
+
+.sidebar h1 {
+  font-size: 1rem;
+  color: var(--muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.meta {
+  display: none;
+}
+
+nav a {
+  color: #202122;
+  padding: 0.38rem 0.5rem;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: var(--accent);
+  background: #f8f9fa;
+}
+
+.controls {
+  display: none;
+}
+
+main {
+  max-width: none;
+  padding: 1.25rem 1.75rem 3rem;
+  background: #fff;
+}
+
+.article-header h1 {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 46px;
+  font-weight: 500;
+}
+
+.article-header p {
+  margin: 0.25rem 0 1rem;
+  color: var(--muted);
+}
+
+section > h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 33px;
+  font-weight: 500;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.2rem;
+}
+
+section > p.lead {
+  color: #202122;
+  font-size: 1rem;
+}
+
+.card,
+details,
+.tab-panel,
+.stat {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.tab {
+  background: #f8f9fa;
+  border-color: #c8ccd1;
+}
+
+.tab[aria-selected="true"] {
+  color: #fff;
+}
+
+.right-rail {
+  border-left: 1px solid var(--border);
+  padding: 1.25rem 1rem;
+  background: #fff;
+}
+
+.infobox {
+  border: 1px solid #a2a9b1;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #f8f9fa;
+}
+
+.infobox h3 {
+  margin: 0;
+  padding: 0.65rem 0.75rem;
+  text-align: center;
+  font-size: 1.08rem;
+  border-bottom: 1px solid #a2a9b1;
+  background: #eaecf0;
+}
+
+.infobox img {
+  width: 100%;
+  display: block;
+}
+
+.infobox table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.infobox th,
+.infobox td {
+  padding: 0.5rem 0.65rem;
+  border-top: 1px solid #eaecf0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.infobox th {
+  width: 40%;
+  font-weight: 700;
+  color: #202122;
+}
+    </style>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="topbar" aria-label="Papers wiki header">
+      <button class="menu-btn" aria-label="Menu">☰</button>
+      <div class="brand" aria-label="Papers wiki">
+        <span class="papers">Papers</span>
+        <span class="wiki">wiki</span>
+      </div>
+    </header>
+    <div class="layout">
+      <aside class="sidebar" aria-label="Document outline">
+        <h1>Contents</h1>
+        <nav aria-label="Page sections">
+          <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#pipeline">Pipeline &amp; mechanisms</a></li>
+            <li><a href="#figures">Figures</a></li>
+            <li><a href="#cuaworld">CUA-World</a></li>
+            <li><a href="#claims">Key claims</a></li>
+            <li><a href="#gaps">Gaps &amp; limits</a></li>
+            <li><a href="#contradictions">Cross-page notes</a></li>
+            <li><a href="#sources">Sources</a></li>
+          </ul>
+        </nav>
+        <div class="controls">
+          <button type="button" class="theme-btn" id="theme-toggle">
+            Toggle theme
+          </button>
+        </div>
+      </aside>
+      <main id="main">
+        <header class="article-header">
+          <h1>Gym-Anything</h1>
+          <p>
+            From Papers wiki, the style-inspired explainer · paper:
+            <a href="https://arxiv.org/abs/2604.06126">2604.06126</a>
+          </p>
+        </header>
+        <section id="overview" aria-labelledby="h-overview">
+          <h2 id="h-overview">Overview</h2>
+          <p class="lead">
+            <strong>Gym-Anything</strong> is a framework for turning arbitrary
+            software into interactive computer-use agent environments, together
+            with a multi-agent pipeline that builds, audits, and scales those
+            environments into the benchmark-and-training collection
+            <strong>CUA-World</strong>. The paper argues that faithful software
+            environments—with real data, long-horizon tasks, and reliable
+            verification—are a major bottleneck for realistic evaluation, not
+            agent capability alone.
+          </p>
+          <p>
+            Environment construction is reframed as an agentic problem: a small
+            specification (install, configure, and task-setup scripts plus a
+            configuration file) is written and debugged by a creation agent,
+            which produces evidence such as screenshots and logs; an
+            independent audit agent verifies whether the software reached the
+            intended state—closer to iterative coding and auditing than
+            one-off benchmark curation.
+          </p>
+        </section>
+
+        <section id="pipeline" aria-labelledby="h-pipeline">
+          <h2 id="h-pipeline">Pipeline &amp; mechanisms</h2>
+          <div class="flow" aria-hidden="true">
+            <span>GDP-grounded selection</span>
+            <span class="arrow">→</span>
+            <span>Creation + audit loop</span>
+            <span class="arrow">→</span>
+            <span>Task scaling</span>
+            <span class="arrow">→</span>
+            <span>Checklist evaluation</span>
+          </div>
+          <div class="card">
+            <h3>Software selection</h3>
+            <p>
+              Occupations are mapped to software categories using U.S. economic
+              data, web-assisted discovery, and filtering for sandboxable GUI
+              applications. The wiki summarizes this as narrowing toward roughly
+              <strong>200 built environments</strong> from 894 occupations and
+              about 16,600 products—aiming for economically meaningful breadth
+              rather than narrow consumer demos.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Task scaling</h3>
+            <p>
+              The wiki describes a <strong>propose-and-amplify</strong> task
+              pipeline that separates expensive seed-task creation from cheaper
+              large-scale task generation so breadth stays feasible.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Verification</h3>
+            <p>
+              A checklist-based vision-language model verifier uses
+              <strong>privileged information</strong> extracted from setup
+              scripts. The paper also reports distilling successful trajectories
+              into a <strong>2B</strong> vision-language model that beats models
+              roughly twice its size, and a <strong>test-time audit</strong> pass.
+            </p>
+          </div>
+        </section>
+
+        <section id="figures" aria-labelledby="h-figures">
+          <h2 id="h-figures">Figures (from PDF)</h2>
+          <p class="lead">
+            Diagrams are <strong>rendered directly from the PDF</strong> using PyMuPDF:
+            embedded figure bounding boxes from pages 3–4 (Figure 2 and Figure 3),
+            then a geometric quarter split for Phase 2 (top-right) and Phase 4
+            (bottom-left). Run <code>build_figures.py</code> to regenerate the
+            <code>figures/</code> folder.
+          </p>
+          <div class="figure-panel">
+            <div
+              class="tablist"
+              role="tablist"
+              aria-label="Select figure"
+            >
+              <button
+                type="button"
+                class="tab"
+                role="tab"
+                id="tab-1"
+                aria-selected="true"
+                aria-controls="panel-1"
+              >
+                Overview pipeline
+              </button>
+              <button
+                type="button"
+                class="tab"
+                role="tab"
+                id="tab-2"
+                aria-selected="false"
+                aria-controls="panel-2"
+                tabindex="-1"
+              >
+                GDP → software
+              </button>
+              <button
+                type="button"
+                class="tab"
+                role="tab"
+                id="tab-3"
+                aria-selected="false"
+                aria-controls="panel-3"
+                tabindex="-1"
+              >
+                Creation–audit loop
+              </button>
+              <button
+                type="button"
+                class="tab"
+                role="tab"
+                id="tab-4"
+                aria-selected="false"
+                aria-controls="panel-4"
+                tabindex="-1"
+              >
+                Verification example
+              </button>
+            </div>
+            <div
+              class="tab-panel active"
+              role="tabpanel"
+              id="panel-1"
+              aria-labelledby="tab-1"
+            >
+              <figure class="paper-figure">
+                <div class="figure-frame" data-zoom="100">
+                  <div
+                    class="figure-toolbar"
+                    role="toolbar"
+                    aria-label="Zoom and pan hint"
+                  >
+                    <span>Cropped diagram — zoom if needed</span>
+                    <div class="figure-toolbar-btns">
+                      <button
+                        type="button"
+                        class="fig-tool-btn"
+                        data-zoom-action="out"
+                        aria-label="Zoom out"
+                      >
+                        −
+                      </button>
+                      <span class="fig-zoom-readout" aria-live="polite">100%</span>
+                      <button
+                        type="button"
+                        class="fig-tool-btn"
+                        data-zoom-action="in"
+                        aria-label="Zoom in"
+                      >
+                        +
+                      </button>
+                      <button
+                        type="button"
+                        class="fig-tool-btn"
+                        data-zoom-action="reset"
+                      >
+                        Fit width
+                      </button>
+                    </div>
+                  </div>
+                  <div class="figure-viewport">
+                    <div class="figure-zoom-inner">
+                      <img
+                        src="figures/overview-pipeline-crop.png"
+                        alt="Figure 2: four-phase Gym-Anything pipeline (GDP selection, creation-audit environment build, task scaling, checklist evaluation)."
+                        loading="eager"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <figcaption>
+                  Figure&nbsp;2 from the PDF (full embedded diagram — page&nbsp;3).
+                </figcaption>
+              </figure>
+            </div>
+            <div
+              class="tab-panel"
+              role="tabpanel"
+              id="panel-2"
+              aria-labelledby="tab-2"
+              hidden
+            >
+              <figure class="paper-figure">
+                <div class="figure-frame" data-zoom="100">
+                  <div
+                    class="figure-toolbar"
+                    role="toolbar"
+                    aria-label="Zoom and pan hint"
+                  >
+                    <span>Cropped diagram — zoom if needed</span>
+                    <div class="figure-toolbar-btns">
+                      <button
+                        type="button"
+                        class="fig-tool-btn"
+                        data-zoom-action="out"
+                        aria-label="Zoom out"
+                      >
+                        −
+                      </button>
+                      <span class="fig-zoom-readout" aria-live="polite">100%</span>
+                      <button
+                        type="button"
+                        class="fig-tool-btn"
+                        data-zoom-action="in"
+                        aria-label="Zoom in"
+                      >
+                        +
+                      </button>
+                      <button
+                        type="button"
+                        class="fig-tool-btn"
+                        data-zoom-action="reset"
+                      >
+                        Fit width
+                      </button>
+                    </div>
+                  </div>
+                  <div class="figure-viewport">
+                    <div class="figure-zoom-inner">
+                      <img
+                        src="figures/software-selection-crop.png"
+                        alt="GDP-grounded software selection funnel from occupations through tiers into roughly 200 built environments."
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <figcaption>
+                  Figure&nbsp;3 from the PDF (embedded diagram — page&nbsp;4).
+                </figcaption>
+              </figure>
+            </div>
+            <div
+              class="tab-panel"
+              role="tabpanel"
+              id="panel-3"
+              aria-labelledby="tab-3"
+              hidden
+            >
+              <figure class="paper-figure">
+                <div class="figure-frame" data-zoom="100">
+                  <div
+                    class="figure-toolbar"
+                    role="toolbar"
+                    aria-label="Zoom and pan hint"
+                  >
+                    <span>Cropped diagram — zoom if needed</span>
+                    <div class="figure-toolbar-btns">
+                      <button
+                        type="button"
+                        class="fig-tool-btn"
+                        data-zoom-action="out"
+                        aria-label="Zoom out"
+                      >
+                        −
+                      </button>
+                      <span class="fig-zoom-readout" aria-live="polite">100%</span>
+                      <button
+                        type="button"
+                        class="fig-tool-btn"
+                        data-zoom-action="in"
+                        aria-label="Zoom in"
+                      >
+                        +
+                      </button>
+                      <button
+                        type="button"
+                        class="fig-tool-btn"
+                        data-zoom-action="reset"
+                      >
+                        Fit width
+                      </button>
+                    </div>
+                  </div>
+                  <div class="figure-viewport">
+                    <div class="figure-zoom-inner">
+                      <img
+                        src="figures/creation-audit-phase2.png"
+                        alt="Figure 2 Phase 2: shared memory, creation agent, audit agent, verified environment loop."
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <figcaption>
+                  <strong>Figure 2 Phase 2</strong> (orange panel): PDF crop
+                  (top-right quadrant of the Figure&nbsp;2 image).
+                </figcaption>
+              </figure>
+            </div>
+            <div
+              class="tab-panel"
+              role="tabpanel"
+              id="panel-4"
+              aria-labelledby="tab-4"
+              hidden
+            >
+              <figure class="paper-figure">
+                <div class="figure-frame" data-zoom="100">
+                  <div
+                    class="figure-toolbar"
+                    role="toolbar"
+                    aria-label="Zoom and pan hint"
+                  >
+                    <span>Cropped diagram — zoom if needed</span>
+                    <div class="figure-toolbar-btns">
+                      <button
+                        type="button"
+                        class="fig-tool-btn"
+                        data-zoom-action="out"
+                        aria-label="Zoom out"
+                      >
+                        −
+                      </button>
+                      <span class="fig-zoom-readout" aria-live="polite">100%</span>
+                      <button
+                        type="button"
+                        class="fig-tool-btn"
+                        data-zoom-action="in"
+                        aria-label="Zoom in"
+                      >
+                        +
+                      </button>
+                      <button
+                        type="button"
+                        class="fig-tool-btn"
+                        data-zoom-action="reset"
+                      >
+                        Fit width
+                      </button>
+                    </div>
+                  </div>
+                  <div class="figure-viewport">
+                    <div class="figure-zoom-inner">
+                      <img
+                        src="figures/verification-phase4.png"
+                        alt="Figure 2 Phase 4: agent screenshots, VLM verifier, checklist rubric with privileged information."
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <figcaption>
+                  <strong>Figure 2 Phase 4</strong> (purple panel): PDF crop
+                  (bottom-left quadrant of the Figure&nbsp;2 image).
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section id="cuaworld" aria-labelledby="h-cuaworld">
+          <h2 id="h-cuaworld">CUA-World (output benchmark)</h2>
+          <p>
+            <strong>CUA-World</strong> packages more than
+            <strong>10,000</strong> tasks across <strong>200</strong> software
+            applications and <strong>three</strong> operating systems
+            (Linux, Windows, Android), with train/test splits and a harder
+            long-horizon split,
+            <strong>CUA-World-Long</strong> (one long task per software; often
+            exceeding 500 interaction steps).
+          </p>
+          <div class="stats" aria-label="Reported benchmark metrics">
+            <div class="stat">
+              <div class="value">27.5%</div>
+              <div class="label">Strongest frontier pass rate</div>
+              <div class="note">CUA-World-Long (wiki)</div>
+            </div>
+            <div class="stat">
+              <div class="value">11.5% → 14.0%</div>
+              <div class="label">Gemini-3-Flash</div>
+              <div class="note">with test-time audit on long split</div>
+            </div>
+          </div>
+          <p>
+            The wiki notes that even the best frontier result remains only
+            27.5%, supporting the claim that realistic computer-use is far from
+            solved.
+          </p>
+        </section>
+
+        <section id="claims" aria-labelledby="h-claims">
+          <h2 id="h-claims">Key claims (expand)</h2>
+          <p class="lead">
+            Bullets summarized from the Gym-Anything wiki page.
+          </p>
+          <details open>
+            <summary>Standardization &amp; dual-agent reliability</summary>
+            <ul class="dense">
+              <li>
+                Environment creation for complex software can be standardized so
+                agents automate much of setup, debugging, and verification.
+              </li>
+              <li>
+                Creation plus audit agents improve reliability versus a single
+                agent’s self-report; screenshots and logs expose actual state.
+              </li>
+            </ul>
+          </details>
+          <details>
+            <summary>Economic grounding &amp; task breadth</summary>
+            <ul class="dense">
+              <li>
+                GDP-grounded selection yields benchmarks closer to economically
+                meaningful work than short-horizon computer-use suites.
+              </li>
+              <li>
+                Propose-and-amplify separates expensive seeds from cheaper
+                scaling.
+              </li>
+            </ul>
+          </details>
+          <details>
+            <summary>Verification &amp; generalization</summary>
+            <ul class="dense">
+              <li>
+                Verification improves when a VLM grades against checklists built
+                from privileged setup-script information.
+              </li>
+              <li>
+                Training on trajectories across many environments improves
+                generalization to unseen software.
+              </li>
+            </ul>
+          </details>
+        </section>
+
+        <section id="gaps" aria-labelledby="h-gaps">
+          <h2 id="h-gaps">Gaps &amp; limits (wiki)</h2>
+          <ul class="dense">
+            <li>
+              GDP-grounded selection still leans on LLM-estimated category and
+              software shares—opaque heuristics may shape “economic importance.”
+            </li>
+            <li>
+              Robustness of the verifier against agents optimizing the checklist
+              rather than the workflow remains open.
+            </li>
+            <li>
+              The benchmark filters to sandboxable, self-hostable, GUI software;
+              proprietary services, credentials, and physical hardware are out of
+              scope for now.
+            </li>
+          </ul>
+        </section>
+
+        <section id="contradictions" aria-labelledby="h-contra">
+          <h2 id="h-contra">Cross-page notes</h2>
+          <p>
+            <strong>Wiki figure filenames vs. diagrams:</strong> The
+            <cite>Gym-Anything</cite> wiki table linked page captures named
+            <code>creation-audit-loop.png</code> and
+            <code>verification-example.png</code> to diagram-oriented captions, but
+            those files show <strong>page 7 prose</strong> and
+            <strong>page 10 benchmark charts</strong>, respectively. This artifact
+            uses crops from <strong>Figure 2</strong> for the creation–audit and
+            checklist panels instead; the wiki captions were
+            adjusted to say so.
+          </p>
+          <p>
+            <strong>Other contradictions:</strong> None noted among
+            <cite>CUA-World</cite> and <cite>Computer-use Agents</cite> for this
+            artifact.
+          </p>
+        </section>
+
+        <section id="sources" aria-labelledby="h-sources">
+          <h2 id="h-sources">Sources &amp; figure index</h2>
+          <div class="sources">
+            <p><strong>Wiki pages:</strong></p>
+            <ul>
+              <li>Gym-Anything</li>
+              <li>CUA-World</li>
+              <li>Computer-use Agents</li>
+            </ul>
+            <p><strong>Figure assets (artifact):</strong></p>
+            <ul>
+              <li>artifacts/2026-05-07-gym-anything/figures/overview-pipeline-crop.png</li>
+              <li>artifacts/2026-05-07-gym-anything/figures/software-selection-crop.png</li>
+              <li>artifacts/2026-05-07-gym-anything/figures/creation-audit-phase2.png</li>
+              <li>artifacts/2026-05-07-gym-anything/figures/verification-phase4.png</li>
+              <li>Generator: artifacts/2026-05-07-gym-anything/build_figures.py</li>
+            </ul>
+          </div>
+          <p class="footer-note">
+            Styles and scripts are embedded so previews still load.             Regenerate crops with
+            <code>python3 artifacts/2026-05-07-gym-anything/build_figures.py</code>
+            (needs the Gym-Anything PDF in <code>raw/</code>; see wiki Source line).
+          </p>
+        </section>
+      </main>
+      <aside class="right-rail" aria-label="Infobox">
+        <article class="infobox">
+          <h3>Gym-Anything</h3>
+          <img
+            src="figures/overview-pipeline-crop.png"
+            alt="Gym-Anything pipeline preview"
+            loading="lazy"
+          />
+          <table>
+            <tbody>
+              <tr>
+                <th>Type</th>
+                <td>Framework + benchmark pipeline</td>
+              </tr>
+              <tr>
+                <th>Benchmark</th>
+                <td>CUA-World</td>
+              </tr>
+              <tr>
+                <th>Scale</th>
+                <td>10K+ tasks, 200+ software, 3 OSes</td>
+              </tr>
+              <tr>
+                <th>Core loop</th>
+                <td>Creation agent ↔ Audit agent</td>
+              </tr>
+              <tr>
+                <th>Source</th>
+                <td><a href="https://arxiv.org/abs/2604.06126">arXiv 2604.06126</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </aside>
+    </div>
+    <script>
+(function () {
+  "use strict";
+
+  var root = document.documentElement;
+  var themeBtn = document.getElementById("theme-toggle");
+
+  function applyTheme(light) {
+    if (light) {
+      root.classList.add("light");
+      if (themeBtn) themeBtn.textContent = "Dark theme";
+    } else {
+      root.classList.remove("light");
+      if (themeBtn) themeBtn.textContent = "Light theme";
+    }
+  }
+
+  var stored = null;
+  try {
+    stored = localStorage.getItem("gym-anything-theme");
+  } catch (_) {}
+
+  if (stored === "light") applyTheme(true);
+  else if (stored === "dark") applyTheme(false);
+  else applyTheme(window.matchMedia("(prefers-color-scheme: light)").matches);
+
+  if (themeBtn) {
+    themeBtn.addEventListener("click", function () {
+      var next = !root.classList.contains("light");
+      applyTheme(next);
+      try {
+        localStorage.setItem("gym-anything-theme", next ? "light" : "dark");
+      } catch (_) {}
+    });
+  }
+
+  var tabs = document.querySelectorAll('[role="tab"]');
+  var panels = document.querySelectorAll('[role="tabpanel"]');
+
+  function activateTab(tab) {
+    var id = tab.getAttribute("aria-controls");
+    tabs.forEach(function (t) {
+      var sel = t === tab;
+      t.setAttribute("aria-selected", sel ? "true" : "false");
+      t.tabIndex = sel ? 0 : -1;
+    });
+    panels.forEach(function (p) {
+      p.classList.toggle("active", p.id === id);
+      p.hidden = p.id !== id;
+    });
+  }
+
+  tabs.forEach(function (tab, i) {
+    tab.addEventListener("click", function () {
+      activateTab(tab);
+    });
+    tab.addEventListener("keydown", function (e) {
+      var next = null;
+      if (e.key === "ArrowRight")
+        next = tabs[(i + 1) % tabs.length];
+      else if (e.key === "ArrowLeft")
+        next = tabs[(i - 1 + tabs.length) % tabs.length];
+      else if (e.key === "Home") next = tabs[0];
+      else if (e.key === "End") next = tabs[tabs.length - 1];
+      if (next) {
+        e.preventDefault();
+        next.focus();
+        activateTab(next);
+      }
+    });
+  });
+
+  var zoomLevels = [100, 125, 150, 175, 200];
+
+  function syncFigureZoom(frame) {
+    var z = parseInt(frame.getAttribute("data-zoom"), 10);
+    if (zoomLevels.indexOf(z) < 0) z = 100;
+    frame.setAttribute("data-zoom", String(z));
+    var readout = frame.querySelector(".fig-zoom-readout");
+    if (readout) readout.textContent = z + "%";
+  }
+
+  document.body.addEventListener("click", function (e) {
+    var btn = e.target.closest("[data-zoom-action]");
+    if (!btn) return;
+    var frame = btn.closest(".figure-frame");
+    if (!frame) return;
+    var cur = parseInt(frame.getAttribute("data-zoom"), 10);
+    if (zoomLevels.indexOf(cur) < 0) cur = 100;
+    var idx = zoomLevels.indexOf(cur);
+    var action = btn.getAttribute("data-zoom-action");
+    if (action === "reset") {
+      frame.setAttribute("data-zoom", "100");
+    } else if (action === "in") {
+      frame.setAttribute(
+        "data-zoom",
+        String(zoomLevels[Math.min(idx + 1, zoomLevels.length - 1)])
+      );
+    } else if (action === "out") {
+      frame.setAttribute(
+        "data-zoom",
+        String(zoomLevels[Math.max(idx - 1, 0)])
+      );
+    }
+    syncFigureZoom(frame);
+  });
+
+  document.querySelectorAll(".figure-frame").forEach(syncFigureZoom);
+})();
+    </script>
+  </body>
+</html>

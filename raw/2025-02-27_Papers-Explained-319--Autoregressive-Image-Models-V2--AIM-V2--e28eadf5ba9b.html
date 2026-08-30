@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Papers Explained 319: Autoregressive Image Models V2 (AIM V2)</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Papers Explained 319: Autoregressive Image Models V2 (AIM V2)</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Autoregressive Image Models V2 (AIM V2) extends the Autoregressive Image Models (AIM) framework to a multimodal setting, i.e., images and…
+</section>
+<section data-field="body" class="e-content">
+<section name="d975" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="c4e2" id="c4e2" class="graf graf--h3 graf--leading graf--title">Papers Explained 319: Autoregressive Image Models V2 (AIM V2)</h3><figure name="9332" id="9332" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*coveiIIwiRs4fiCHDud84A.png" data-width="2040" data-height="570" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*coveiIIwiRs4fiCHDud84A.png"></figure><p name="e9bc" id="e9bc" class="graf graf--p graf-after--figure">Autoregressive Image Models V2 (AIM V2) extends the Autoregressive Image Models (AIM) framework to a multimodal setting, i.e., images and text. This is achieved by pairing the vision encoder with a multimodal decoder that autoregressively generates raw image patches and text tokens.</p><p name="4bcb" id="4bcb" class="graf graf--p graf-after--p">The project is available at <a href="https://github.com/apple/ml-aim" data-href="https://github.com/apple/ml-aim" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">GitHub</a>.</p><h3 name="44b9" id="44b9" class="graf graf--h3 graf-after--p">Architecture</h3><p name="2184" id="2184" class="graf graf--p graf-after--h3">For the vision encoder of AIMV2, the Vision Transformer (ViT) architecture is adopted.</p><p name="b3df" id="b3df" class="graf graf--p graf-after--p">A prefix attention mask constrains the self-attention mechanism within the vision encoder. This strategy facilitates the use of bidirectional attention during inference without additional tuning.</p><p name="e65b" id="e65b" class="graf graf--p graf-after--p">The vision encoder and multimodal decoder incorporate SwiGLU as the feed-forward network (FFN) and replace all normalization layers with RMSNorm.</p><figure name="b1a1" id="b1a1" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*iWzFQktjKJqfj753sqUSOQ.png" data-width="1400" data-height="220" src="https://cdn-images-1.medium.com/max/800/1*iWzFQktjKJqfj753sqUSOQ.png"><figcaption class="imageCaption">AIMV2 family of models.</figcaption></figure><p name="56c4" id="56c4" class="graf graf--p graf-after--figure">A unified multimodal decoder performs autoregressive generation for both image and text modalities concurrently. Image features and raw text tokens are each linearly projected and embedded into Rddec. The decoder receives concatenated sequences of image and text features as input and employs causal attention in the self-attention operations. The outputs of the decoder are processed through two separate linear heads — one for image tokens and another for text tokens — to predict the next token in each modality respectively. The same decoder capacity is used for all the AIMV2 variants.</p><h3 name="ffa3" id="ffa3" class="graf graf--h3 graf-after--p">Pre-Training</h3><figure name="b7de" id="b7de" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*_wGY-reyGzldLe-KE97XNQ.png" data-width="2026" data-height="740" src="https://cdn-images-1.medium.com/max/800/1*_wGY-reyGzldLe-KE97XNQ.png"><figcaption class="imageCaption">AIMV2 pre-training Overview.</figcaption></figure><p name="5705" id="5705" class="graf graf--p graf-after--figure">The model extends the standard unimodal autoregressive framework to multimodal settings that integrate both images and text into a unified sequence.</p><p name="ff62" id="ff62" class="graf graf--p graf-after--p">Specifically, an image x is partitioned into I non-overlapping patches xi, i ∈ [1, I ], forming a sequence of tokens. Similarly, a text sequence is broken down into subwords xt, t ∈ [I, I + T ]. These sequences are then concatenated, allowing text tokens to attend to image tokens. While both concatenation directions (image → text and text → image) are possible, the model focuses on training a strong vision encoder by always prepending the image first, thereby enabling stronger conditioning on the visual features.</p><p name="6d9f" id="6d9f" class="graf graf--p graf-after--p">The decoder subsequently performs next-token prediction on the combined sequence, following the factorization above. To support the autoregressive generation process, the vision encoder and multimodal decoder employ prefix and causal self-attention operations, respectively.</p><p name="a229" id="a229" class="graf graf--p graf-after--p">Separate loss functions are defined for the image and text domains as follows:</p><figure name="c290" id="c290" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*9sxT2aiqLlg-L4X7aRwylw.png" data-width="980" data-height="290" src="https://cdn-images-1.medium.com/max/800/1*9sxT2aiqLlg-L4X7aRwylw.png"></figure><p name="7d16" id="7d16" class="graf graf--p graf-after--figure">The overall objective is to minimize Ltext + α ∗ Limg with respect to model parameters θ. For the text domain, Ltext is a standard cross-entropy loss that measures the negative log-likelihood of the ground truth token at each step. For the image domain, Limg is an l2 pixel-level regression loss, where the model’s predicted patch xˆi(θ) is compared to the true patch xi. The image patches are normalized before loss computation.</p><h4 name="de6f" id="de6f" class="graf graf--h4 graf-after--p">Data</h4><figure name="91e4" id="91e4" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="1*y5-w_lXRtAAVqMa9dtHIaQ.png" data-width="1400" data-height="240" src="https://cdn-images-1.medium.com/max/800/1*y5-w_lXRtAAVqMa9dtHIaQ.png"><figcaption class="imageCaption">Pre-training data mixture.</figcaption></figure><p name="9579" id="9579" class="graf graf--p graf-after--figure">AIMV2 models are pre-trained on 12 billion image-text samples obtained through a combination of public and private datasets containing paired images and text. Publicly available DFN-2B and COYO datasets, along with a proprietary dataset of High Quality Image-Text Pairs (HQITP), are utilized. In addition to alt-text, synthetic captions are used.</p><h3 name="dfd8" id="dfd8" class="graf graf--h3 graf-after--p">Post-Training</h3><p name="8814" id="8814" class="graf graf--p graf-after--h3">While the initial pre-training stage of AIMV2 yields highly performant models, we explore methods to further enhance the capabilities through various post-training strategies.</p><h4 name="62d4" id="62d4" class="graf graf--h4 graf-after--p">High-resolution Adaptation</h4><p name="2736" id="2736" class="graf graf--p graf-after--h4">In the initial pre-training stage, image data with a fixed resolution of 224px is used. AIMV2 models are finetuned for 336 and 448 pixel resolutions. The high-resolution adaptation stage utilizes 2 billion image-text pairs sampled from the same pool as the pre-training stage, except that synthetic captions are not used at this stage. Weight decay of zero is found to be important for maintaining stable optimization.</p><h4 name="04d3" id="04d3" class="graf graf--h4 graf-after--p">Native Resolution Fine-tuning</h4><p name="4cf1" id="4cf1" class="graf graf--p graf-after--h4">Training models for a dedicated resolution and aspect ratio can be inflexible for many applications that require processing images in their original shapes. Totackle this limitation, Bi is defined as the number of images in a mini-batch, Ai as the number of patches per image, and C as the total number of image patches in the mini-batch. For a mini-batch i, an area A is randomly sampled and the images are resized to fit within this area while maintaining their aspect ratios. The mini-batch size Bi is then adjusted such that C = Ai × Bi.</p><h3 name="1590" id="1590" class="graf graf--h3 graf-after--p">Results and Analysis</h3><h4 name="ba47" id="ba47" class="graf graf--h4 graf-after--h3">Scaling AIMv2</h4><p name="e116" id="e116" class="graf graf--p graf-after--h4">AIMv2 models with varying model capacities (300M to 3B parameters) are trained with varied number of image-text pairs seen during pre-training (500M to 6.4B). All models are trained to convergence without early stopping,</p><figure name="ef39" id="ef39" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*vj7aji-GTv4_IizAIWHyuQ.png" data-width="2010" data-height="540" src="https://cdn-images-1.medium.com/max/800/1*vj7aji-GTv4_IizAIWHyuQ.png"><figcaption class="imageCaption">Scaling properties of AIMV2.</figcaption></figure><ul class="postList"><li name="4512" id="4512" class="graf graf--li graf-after--figure">Performance consistently improves with scaling data or parameters.</li><li name="fa89" id="fa89" class="graf graf--li graf-after--li">Diminishing returns appear when scaling data for lower-capacity models.</li><li name="9c6d" id="9c6d" class="graf graf--li graf-after--li">The optimal model size changes with the compute budget; larger models underperform at smaller budgets due to undertraining.</li></ul><h4 name="a25c" id="a25c" class="graf graf--h4 graf-after--li">AIMv2 vs. Captioning</h4><p name="34f6" id="34f6" class="graf graf--p graf-after--h4">A ViT-H backbone models are pre-trained using either the multimodal autoregressive objective (AIMv2) or only language supervision (captioning) on 2B image-text pairs were used for pre-training.</p><figure name="8337" id="8337" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*8LfBLS6W9KFMi1So6UNyzw.png" data-width="1320" data-height="570" src="https://cdn-images-1.medium.com/max/800/1*8LfBLS6W9KFMi1So6UNyzw.png"><figcaption class="imageCaption">AIMV2 vs. Captioning.</figcaption></figure><figure name="131e" id="131e" class="graf graf--figure graf-after--figure"><img class="graf-image" data-image-id="1*6mIveqt5nMzidq6x8w_Y2g.png" data-width="2030" data-height="650" src="https://cdn-images-1.medium.com/max/800/1*6mIveqt5nMzidq6x8w_Y2g.png"><figcaption class="imageCaption">Frozen trunk evaluation for recognition benchmarks.</figcaption></figure><ul class="postList"><li name="02f7" id="02f7" class="graf graf--li graf-after--figure">Both approaches (AIMv2 and captioning) improve with increased data size or model capacity.</li><li name="71ad" id="71ad" class="graf graf--li graf-after--li">Captioning baselines show signs of plateauing with scaling data, which is not observed with AIMv2.</li></ul><h3 name="e197" id="e197" class="graf graf--h3 graf-after--li">Paper</h3><p name="00b3" id="00b3" class="graf graf--p graf-after--h3 graf--trailing">Multimodal Autoregressive Pre-training of Large Vision Encoders <a href="https://arxiv.org/abs/2411.14402" data-href="https://arxiv.org/abs/2411.14402" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">2411.14402</a></p></div></div></section><section name="63ea" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="47a5" id="47a5" class="graf graf--p graf--leading"><strong class="markup--strong markup--p-strong">Hungry for more insights?</strong></p><p name="6a92" id="6a92" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Don’t miss out on exploring other fascinating threads in this series. Simply click </strong><a href="https://ritvik19.github.io/papers-explained" data-href="https://ritvik19.github.io/papers-explained" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong"> and uncover the state-of-the-art research!</strong></p><p name="d7fb" id="d7fb" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Do Subscribe for weekly updates!!</strong></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ritvik19" class="p-author h-card">Ritvik Rastogi</a> on <a href="https://medium.com/p/e28eadf5ba9b"><time class="dt-published" datetime="2025-02-27T04:21:40.359Z">February 27, 2025</time></a>.</p><p><a href="https://medium.com/@ritvik19/papers-explained-319-autoregressive-image-models-v2-aim-v2-e28eadf5ba9b" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 4, 2026.</p></footer></article></body></html>
