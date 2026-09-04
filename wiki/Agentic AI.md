@@ -28,6 +28,8 @@ This topic page groups source ingests from [[Papers Explained Corpus]] that conn
 - [[Agentic Vision in Gemini 3 Flash]] - Think-Act-Observe vision loop with code execution; 5–10% vision benchmark boost.
 - [[Gemini 3.5 Flash]] - Google I/O 2026: Antigravity harness + collaborative subagents for long-horizon workflows; Gemini Spark 24/7 personal agent; enterprise pilots (Shopify, Salesforce Agentforce, Xero).
 - [[Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber]] - Google Jul 2026: 3.6 Flash workhorse with 17% fewer output tokens; 3.5 Flash-Lite at 350 tok/s for high-throughput subagents; built-in computer use; CodeMender cyber pilot.
+- [[Gemini 3.7 Flash]] - Google Aug 2026: DeepSWE 65.3%, FrontierCode 43.6%; Gemini Spark update; Antigravity agent workflows.
+- [[Gemini 3.8 Flash and 3.8 Flash Cyber]] - Google Sep 2026: long-horizon agentic loops; 3.8 Flash Cyber via Fairwind for defenders.
 - [[Devstral]] - agentic coding LLM for real GitHub issues via OpenHands/SWE-Agent scaffolds; 46.8% SWE-Bench Verified.
 - [[Upgrading agentic coding capabilities with the new Devstral models]] - Devstral Medium 61.6% SWE-Bench; enterprise on-prem agentic coding.
 - [[Introducing: Devstral 2 and Mistral Vibe CLI.]] - Devstral 2 + open-source Vibe CLI terminal agent; multi-file orchestration.

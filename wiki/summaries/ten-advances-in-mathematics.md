@@ -56,14 +56,15 @@ No raster figures were embedded in the PDF manuscripts (typeset math only); one 
 
 ## Entities
 
-- [[Astra]] — internal OpenAI reasoning model that generated the proofs.
+- [[Astra]] — internal codename for the reasoning model that generated the proofs.
+- [[GPT-6 Astra]] — Sep 2026 public release of the internal Astra system.
 - [[OpenAI]] — announced results, prepared manuscripts, published Lean certificates.
 - Erdős problems 146, 180, 183 — three Erdős problems explicitly resolved among the ten results.
 
 ## Questions & Gaps
 
 - External mathematician review status for all ten results is unclear (unlike the discrete-geometry companion paper with nine external authors).
-- Astra remains unreleased; relationship to GPT-5.6 Sol/Terra/Luna family undecided publicly.
+- Astra shipped publicly as **[[GPT-6 Astra]]** (Sep 3, 2026); see system card for Critical cyber designation.
 - Blog HTML is a client-rendered shell; announcement details reconstructed from metadata and companion PDFs.
 - Whether "first autonomous math solve" framing from [[Model Disproves Discrete Geometry Conjecture]] still applies uniformly across all ten results, or only to subsets, is not resolved in the source.
 

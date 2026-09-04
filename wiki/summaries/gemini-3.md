@@ -51,6 +51,10 @@ Product rollout spans consumer and developer surfaces. The **Gemini app** adds g
 ## Related
 
 - [[Gemini 3 Flash]] — Dec 2025 speed-optimized sibling; default in Gemini app and Search.
+- [[Gemini 3.5 Flash]] — May 2026 I/O agentic/coding Flash.
+- [[Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber]] — Jul 2026 Flash family expansion.
+- [[Gemini 3.7 Flash]] — Aug 2026 workhorse successor to 3.6 Flash.
+- [[Gemini 3.8 Flash and 3.8 Flash Cyber]] — Sep 2026 latest Flash tier.
 - [[Gemini 3 Deep Think]] — Specialized reasoning mode with science/engineering focus and parallel reasoning.
 - [[Gemini Deep Research]] — Autonomous research agent built on Gemini 3 Pro via Interactions API.
 - [[Agentic Vision in Gemini 3 Flash]] — Code-execution vision loop in the Flash tier.

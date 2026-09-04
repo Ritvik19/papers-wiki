@@ -16,11 +16,14 @@ This topic page groups source ingests from [[Papers Explained Corpus]] that conn
 - [[GPT-5.4]] - Mar 2026 first general-purpose OpenAI model with High cybersecurity mitigations.
 - [[GPT-5.5]] - Apr 2026 GB200/GB300-co-designed inference; High Bio/Chem and Cyber; GPT-5.5 Instant.
 - [[GPT-5.6]] - Jul 2026 GA (preview Jun 26); Sol/Terra/Luna capability-tier family; ChatGPT Work; Luna/Terra price cuts Jul 30.
+- [[GPT-6 Astra]] - Sep 2026 GA; internal Astra shipped; first Critical cyber under Preparedness Framework; succeeds Sol as flagship.
 - [[Papers Explained 576: Aryabhata 2]] - GPT-OSS-20B → 20B STEM specialist via verified Indian competitive-exam RL.
 - [[Papers Explained 577: MAI-Thinking-1]] - From-scratch 1T MoE reasoning model; 30T human pre-training tokens.
 - [[Papers Explained 580: Nemotron 3 Ultra]] - 20T-token NVFP4 pre-train; 1M context Nemotron v3 flagship. - xAI master timeline Nov 2023–Jun 2026: Grok-1 through Grok 4.1, code/voice/imagine APIs; Colossus training cluster.
 - [[xAI]] - Elon Musk's AI lab; Grok on 𝕏, grok.com, Tesla voice, xAI API.
-- [[Claude Models]] - Anthropic master timeline: Claude 1 through Opus 4.8, Fable 5 / Mythos 5, and Sonnet 5 (Jun 2026); Opus/Sonnet/Haiku tiers, 100K→1M context, Constitutional AI.
+- [[Claude Models]] - Anthropic master timeline: Claude 1 through Opus 4.8, Fable 5 / Mythos 5, Fable 5.1 / Mythos 5.1, and Sonnet 5; Opus/Sonnet/Haiku tiers, 100K→1M context, Constitutional AI.
+- [[Gemini 3.7 Flash]] - Google Aug 2026 workhorse Flash; DeepSWE 65.3%; $0.75/$3.75 intro pricing; Spark update.
+- [[Gemini 3.8 Flash and 3.8 Flash Cyber]] - Google Sep 2026 Flash + Fairwind Cyber variant; HLE-Verified 54.9%.
 - [[Scaling Laws, Carefully]] - Lilian Weng Jun 2026 survey of scaling-law fitting, Kaplan/Chinchilla reconciliation, and data-limited extensions.
 - [[Antidoom]] - Liquid AI doom-loop analysis and Final Token Preference Optimization results on LFM2.5 and Qwen3.5.
 - [[Introducing North Mini Code]] - Cohere first open developer MoE (30B/3B); Apache 2.0 (Jun 2026).

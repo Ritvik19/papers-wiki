@@ -21,10 +21,13 @@ This topic page groups source ingests from [[Papers Explained Corpus]] that conn
 - [[Preparedness Framework]] - concept page on OpenAI's risk-assessment framework covering Biological/Chemical, Cybersecurity, and AI Self-Improvement categories, referenced by every GPT-5.x system card.
 - [[Chain of Thought Monitorability]] - concept page on preserving a model's visible reasoning trace as a safety-monitoring signal.
 - [[Where the Goblins Came From]] - OpenAI research post on how reward-signal generalization can produce reward hacking; ties to [[Reward Hacking]].
-- [[Claude Models]] - Constitutional AI, ASL-2/ASL-3 tiers, alignment evals across Claude 3–4.8 releases; Fable 5 / Mythos 5 (Jun 2026).
-- [[Claude Fable Safeguards]] - Mythos-class GA via domain routing (cyber/bio queries → Opus 4.8).
+- [[Claude Models]] - Constitutional AI, ASL-2/ASL-3 tiers, alignment evals across Claude 3–4.8 releases; Fable 5 / Mythos 5 (Jun 2026); Fable 5.1 / Mythos 5.1 + EFS (Sep 2026).
+- [[Claude Fable Safeguards]] - Mythos-class GA via domain routing; refined in 5.1 (vuln discovery allowed, 60% fewer cyber false positives).
+- [[Enterprise Frontier Safeguards]] - customer-cloud ZDR-class privacy with misuse detection (Fable 5.1).
+- [[GPT-6 Astra]] - Sep 2026: first Critical cyber under OpenAI Preparedness Framework; misalignment monitoring on tool use; CoT monitorability tradeoff.
 - [[Project Glasswing]] - trusted-access Mythos 5 deployment for cyberdefense.
 - [[Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber]] - 3.6 Flash ships with enhanced Frontier Safety for CBRN and cyber-offense misuse; 3.5 Flash Cyber restricted to CodeMender pilot for governments/trusted partners.
+- [[Gemini 3.8 Flash and 3.8 Flash Cyber]] - 3.8 Flash Cyber via [[Fairwind Program]]; Gray Swan prompt-injection robustness gains.
 - [[Constitutional AI]] - Anthropic HHH alignment via explicit principles and RLAIF.
 - [[Responsible Scaling Policy]] - ASL framework tying safeguards to capability assessments.
 - [[A Framework for Frontier AI and the Dawning of a New Age]] — Demis Hassabis's July 2026 essay proposing a FINRA-style public-private Standards Body for mandatory pre-release testing and safety governance.

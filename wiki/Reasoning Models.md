@@ -19,6 +19,7 @@ This topic page groups source ingests from [[Papers Explained Corpus]] that conn
 - [[GPT-5]] - Router between `gpt-5-main` (fast) and `gpt-5-thinking` (reasoning), replacing separate instant/reasoning product lines.
 - [[GPT-5.1]] - Adaptive reasoning effort in GPT-5.1 Instant; GPT-5.1-Codex-Max reasons across multiple context windows via compaction.
 - [[GPT-5.6]] - Sol/Terra/Luna family with `max`/`ultra` effort modes; GA Jul 2026.
+- [[GPT-6 Astra]] - Sep 2026 flagship; internal [[Astra]] math system shipped publicly; Critical cyber capability.
 - [[A Single Question to Track Progress from o3 to GPT-5.6 and Beyond]] - [[Sebastien Bubeck]] tracking reasoning model progression (o3 -> GPT-5 -> GPT-5.5 -> GPT-5.6-pro) on open mathematical bounds for self-contracted gradient flows via 80–88 min test-time compute.
 - [[Self-Contracted Curves]] - Concept page on curve length bounds in Euclidean unit balls, proven rectifiable and bounded by GPT-5.6-pro.
 - [[How Two Settings Tripled Our ARC-AGI-3 Scores]] - retained reasoning across turns raises ARC-AGI-3 scores when harness preserves chain-of-thought.
@@ -27,7 +28,7 @@ This topic page groups source ingests from [[Papers Explained Corpus]] that conn
 - [[Chain of Thought Controllability]] - OpenAI research post on reasoning models trained to keep chain-of-thought in a target language or format without hurting accuracy.
 - [[Chain of Thought Monitorability]] - concept page on using a model's visible reasoning trace to catch misbehavior before it reaches the final answer.
 - [[gpt-oss-safeguard]] - open-weight safety-reasoning models that classify content against a developer-supplied policy at inference time, exposing full chain-of-thought.
-- [[Ten Advances in Mathematics and Theoretical Computer Science]] - Aug 2026: internal [[Astra]] model proofs for ten open math/TCS problems; ~$2k inference at Sol API rates; Lean formalization.
+- [[Ten Advances in Mathematics and Theoretical Computer Science]] - Aug 2026: internal [[Astra]] proofs for ten open math/TCS problems; now credited to [[GPT-6 Astra]] at GA.
 - [[How the Ideas Came Together]] - proof-discovery narratives for the ten Astra math results.
 - [[Model Disproves Discrete Geometry Conjecture]] - GPT-5 contributed to disproving a discrete-geometry conjecture in mathematics research.
 - [[New Result in Theoretical Physics]] - GPT-5 assisted result in theoretical physics research.
@@ -43,6 +44,8 @@ This topic page groups source ingests from [[Papers Explained Corpus]] that conn
 - [[Gemini 3 Deep Think]] - Google specialized parallel reasoning mode: 84.6% ARC-AGI-2, 48.4% HLE; science/engineering applications.
 - [[Gemini 3.1 Pro]] - Google Feb 2026 core reasoning upgrade: 77.1% ARC-AGI-2; more than 2× Gemini 3 Pro on ARC-AGI-2.
 - [[Gemini 3]] - Google Nov 2025 launch introducing Deep Think reasoning mode alongside Gemini 3 Pro.
+- [[Gemini 3.7 Flash]] - Aug 2026 Flash workhorse; HLE-Verified 53.6%; customizable thinking levels.
+- [[Gemini 3.8 Flash and 3.8 Flash Cyber]] - Sep 2026; HLE-Verified 54.9%; "works harder" at high effort.
 - [[Gemini Omni Flash]] - Google I/O 2026: Gemini reasoning grounded in world knowledge for video storytelling; physics reasoning (gravity, fluid dynamics) for realistic scene evolution.
 - [[Magistral]] - Mistral first reasoning model: Magistral Small (24B Apache 2.0) + Magistral Medium; multilingual chain-of-thought.
 - [[MathΣtral]] - 7B STEM model from Mistral 7B; 56.6% MATH; majority voting to 74.59%.

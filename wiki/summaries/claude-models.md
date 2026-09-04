@@ -1,7 +1,7 @@
 # Claude Models
 
-**Source**: 17 Anthropic blog posts in `raw/introducing-claude/`, `raw/claude-2/`, `raw/claude-2-1/`, `raw/claude-3-family/`, `raw/claude-3-haiku/`, `raw/claude-3-5-sonnet/`, `raw/3-5-models-and-computer-use/`, `raw/claude-3-7-sonnet/`, `raw/claude-4/`, `raw/claude-opus-4-1/`, `raw/claude-sonnet-4-5/`, `raw/claude-haiku-4-5/`, `raw/claude-opus-4-5/`, `raw/claude-opus-4-6/`, `raw/claude-sonnet-4-6/`, `raw/claude-opus-4-7/`, `raw/claude-opus-4-8/`, `raw/claude-sonnet-5/`; plus `raw/mythos/full-article.md`, `raw/claude-fable-5-mythos-5/full-article.md` (HTML canonical; markdown sibling per slug)  
-**Ingested**: 2026-06-06 (Claude 1–4.8 batch); 2026-06-09 (Fable 5 / Mythos 5); 2026-07-12 (Claude Sonnet 5)  
+**Source**: 17 Anthropic blog posts in `raw/introducing-claude/`, `raw/claude-2/`, `raw/claude-2-1/`, `raw/claude-3-family/`, `raw/claude-3-haiku/`, `raw/claude-3-5-sonnet/`, `raw/3-5-models-and-computer-use/`, `raw/claude-3-7-sonnet/`, `raw/claude-4/`, `raw/claude-opus-4-1/`, `raw/claude-sonnet-4-5/`, `raw/claude-haiku-4-5/`, `raw/claude-opus-4-5/`, `raw/claude-opus-4-6/`, `raw/claude-sonnet-4-6/`, `raw/claude-opus-4-7/`, `raw/claude-opus-4-8/`, `raw/claude-sonnet-5/`; plus `raw/mythos/full-article.md`, `raw/claude-fable-5-mythos-5/full-article.md`, `raw/claude-fable-5-1-mythos-5-1/full-article.md`  
+**Ingested**: 2026-06-06 (Claude 1–4.8 batch); 2026-06-09 (Fable 5 / Mythos 5); 2026-07-12 (Claude Sonnet 5); 2026-09-04 (Fable 5.1 / Mythos 5.1)  
 **Tags**: #summary
 
 ## Summary
@@ -33,6 +33,7 @@ Across releases, Anthropic emphasizes **Constitutional AI** and its **Responsibl
 | Claude Opus 4.8 | May 2026 | Opus 4.8 | Dynamic workflows; effort control in apps; fast mode 3× cheaper |
 | Claude Fable 5 / Mythos 5 | Jun 2026 | Fable 5 (GA), Mythos 5 (trusted access) | Mythos-class capability; Fable safeguards route cyber/bio to Opus 4.8; Glasswing cyber upgrade; $10/$50 pricing |
 | Claude Sonnet 5 | Jun 2026 | Sonnet 5 | Most agentic Sonnet yet; near Opus 4.8 on BrowseComp/OSWorld at lower cost; default Free/Pro; $2/$10 intro then $3/$15; cyber safeguards + Cyber Verification Program |
+| Claude Fable 5.1 / Mythos 5.1 | Sep 2026 | Fable 5.1 (GA), Mythos 5.1 (CVP + LSVP) | Cache-read −75% ($0.25/M); ~25% typical / ~45% agentic savings; EFS + ZDR interim; vuln discovery on Fable; Mythos via CVP/LSVP; $10/$50 I/O unchanged |
 
 ## Claude 1 Era (2023)
 
@@ -206,6 +207,24 @@ Pricing for both tiers: **$10/M input**, **$50/M output**—less than half Mytho
 
 ![Protein complexes designed by Mythos 5](../assets/claude-fable-5-mythos-5/fig-7.webp)
 
+### Claude Fable 5.1 and Claude Mythos 5.1 (Sep 2026)
+
+**Source**: `raw/claude-fable-5-1-mythos-5-1/full-article.md`
+
+Anthropic's September 2026 release upgrades the Mythos-class stack with **Claude Fable 5.1** (general availability) and **Claude Mythos 5.1** (trusted access). Same underlying weights; different safeguard profiles. Fable 5.1 targets customer feedback on **price**, **data retention**, and **safeguard precision**.
+
+**Pricing.** Cache reads drop **75%** to **$0.25/M tokens** wherever usage is token-billed — yielding ~**25%** lower cost on typical workloads and up to ~**45%** on highly agentic, cache-heavy tasks. Input/output pricing stays **$10/$50** per million tokens.
+
+**Data retention.** **[[Enterprise Frontier Safeguards]]** (EFS) stores customer data in customer-controlled cloud infrastructure while maintaining misuse detection; rolling out in phases starting fall 2026. Until EFS ships, eligible enterprises get **zero data retention** on Fable 5.1 (and Fable 5).
+
+**Safeguards.** Cyber safeguards are more precise: **60% fewer false positives** vs Fable 5 launch safeguards. Fable 5.1 may **discover software vulnerabilities** but not develop exploits; penetration testing, exploit generation, and binary vuln scanning still route to Opus models. Biology R&D remains Opus-gated on Fable; advanced biology via **[[Life Sciences Verification Program]]** for Mythos 5.1.
+
+**Performance (Fable 5.1 unless noted).** Terminal-Bench-Science 0.1 **52.6%** (vs Fable 5 24.7%); Terminal-Bench 4.0 **55.8%** (Mythos 5.1 **60.9%**); GDPval-AA v2 **1853**; CursorBench 3.2.0 **73.4%**; HLE **60.9%** no tools / **65.0%** with tools; OSWorld 2.0 **77.9%** partial; AutomationBench **31.4%**. Low/Medium effort can match Fable 5 at lower cost. Defaults: High effort in Claude Code, Medium in Cowork and claude.ai.
+
+**Scientific research (Mythos 5.1).** Protein binder hit rate ~**50%** across 12 targets; Venus elevation map from Magellan radar; GPU kernel speedups up to **2.5×** on seven open-source bio ML models.
+
+**Trusted access.** Mythos 5.1 via **[[Cyber Verification Program]]** (upcoming Mythos-class access) and **[[Life Sciences Verification Program]]** (US-government partnership). **Claude Security** product now powered by Mythos 5.1.
+
 ### Claude Sonnet 5 (Jun 2026)
 
 **Source**: `raw/claude-sonnet-5/full-article.md`
@@ -232,6 +251,7 @@ Safety: cyber safeguards enabled by default (same class as Opus 4.7/4.8, less st
 - Safety: Constitutional AI from launch; ASL-2 (Claude 3) → ASL-3 (Sonnet 4.5+); effort control and cyber safeguards added in Opus 4.5–4.7 generation.
 - Pricing compression: Opus from $15/$75 (Opus 4) to $5/$25 (Opus 4.5+); Haiku 4.5 at $1/$5 near-frontier coding.
 - **Fable 5 / Mythos 5 (Jun 2026)**: Mythos-class models; Fable 5 GA with domain safeguards routing cyber/bio to Opus 4.8; Mythos 5 for trusted Glasswing cyberdefense and life-sciences access; $10/$50 pricing.
+- **Fable 5.1 / Mythos 5.1 (Sep 2026)**: cache-read −75%; ~25–45% effective savings; EFS + interim ZDR; cyber safeguards 60% fewer false positives; vuln discovery allowed on Fable; CVP + LSVP for Mythos; CursorBench 3.2 73.4%; TB-Science 52.6%.
 - Fable 5: SOTA on broad capability benchmarks; longest autonomous horizons to date; vision-only Pokémon FireRed; FrontierCode leader at medium effort.
 - Mythos 5: strongest stated cybersecurity capability; 10× drug-design acceleration; novel molecular-biology hypotheses; autonomous genomics outperforming published _Science_ model at 100× smaller scale.
 - **Claude Sonnet 5 (Jun 2026)**: default Free/Pro model; near Opus 4.8 agentic performance at Sonnet pricing; new tokenizer (1.0–1.35× tokens); $2/$10 intro through Aug 2026 then $3/$15; cyber safeguards on by default; Cyber Verification Program eligible.
@@ -268,11 +288,14 @@ Safety: cyber safeguards enabled by default (same class as Opus 4.7/4.8, less st
 - [[Responsible Scaling Policy]] — ASL framework governing deployment safeguards by capability tier.
 - [[Project Glasswing]] — multi-stakeholder cyber-defense initiative deploying Mythos 5.
 - [[Claude Fable Safeguards]] — domain-routing safeguard pattern for Mythos-class GA release.
+- [[Enterprise Frontier Safeguards]] — customer-cloud storage with ZDR-class privacy (Fable 5.1).
+- [[Life Sciences Verification Program]] — Mythos 5.1 biology access for vetted researchers.
 - [[Cyber Verification Program]] — opt-in reduced cyber guardrails for vetted security research orgs.
 
 ## Questions & Gaps
 
-- Fable 5 safeguard false positives acknowledged at launch; refinement timeline not specified.
+- Fable 5.1 system card and EFS deep-dive not ingested; Anthropic system card linked from product post.
+- Fable 5 safeguard false positives reduced in 5.1 cyber safeguards but biology routing to Opus remains.
 - Mythos 5 trusted-access expansion for biology and broader cyber partners is planned but not fully open.
 - Exact parameter counts and training data mixes are not disclosed in blog posts.
 - Sonnet 5 "cost-neutral" migration claim sits alongside a 1.0–1.35× tokenizer multiplier; effective cost depends on content type and whether intro pricing is active.

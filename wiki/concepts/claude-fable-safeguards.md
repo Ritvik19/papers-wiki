@@ -5,18 +5,18 @@
 
 ## Overview
 
-**Claude Fable safeguards** are Anthropic's mechanism for releasing Mythos-class capability to general users while limiting dual-use risk in cybersecurity and biology. **Claude Fable 5** shares the same underlying weights as **Claude Mythos 5**, but queries in high-risk domains are automatically routed to **Claude Opus 4.8** instead of exposing full Mythos-level performance.
+**Claude Fable safeguards** are Anthropic's mechanism for releasing Mythos-class capability to general users while limiting dual-use risk in cybersecurity and biology. **Claude Fable 5** and **Claude Fable 5.1** share weights with their Mythos counterparts, but high-risk queries are routed to Opus models instead of exposing full Mythos-level performance.
 
 ## Appearances
 
-- [[Claude Models]] — Fable 5 / Mythos 5 joint launch (June 2026); safeguards enable GA of Mythos-class general capability.
+- [[Claude Models]] — Fable 5 / Mythos 5 (June 2026); Fable 5.1 / Mythos 5.1 (September 2026) with refined cyber safeguards.
 - [[Safety and Alignment]] — dual-use routing and conservative classifier tuning.
 
 ## Notes
 
-- Safeguards are tuned conservatively at launch; Anthropic reports they trigger in <5% of sessions on average but can catch benign requests (false positives).
-- Mythos 5 without these domain blocks is available only through trusted-access programs (e.g., [[Project Glasswing]] for cyberdefense).
-- Mythos 5 usage requires 30-day data retention for safety monitoring.
+- **Fable 5.1 (Sep 2026)**: cyber safeguards block **60% fewer false positives** than Fable 5 launch safeguards; **vulnerability discovery** allowed on Fable but exploit generation, penetration testing, and binary vuln scanning still route to Opus.
+- Biology R&D on Fable still routes to Opus; advanced biology via [[Life Sciences Verification Program]] on Mythos 5.1.
+- Mythos without domain blocks available through trusted-access programs ([[Project Glasswing]], [[Cyber Verification Program]], LSVP).
 
 ## Related
 

@@ -14,7 +14,8 @@ This topic page groups source ingests from [[Papers Explained Corpus]] that conn
 - [[GPT-5.3]] - GPT-5.3-Codex and the faster, lower-accuracy GPT-5.3-Codex-Spark.
 - [[Separating Signal From Noise in Coding Evaluations]] - OpenAI audit finding roughly 30% of SWE-Bench Pro's public-split tasks broken, and proposing fixes for coding-benchmark contamination and grading noise.
 - [[Why We No Longer Evaluate SWE-bench Verified]] - OpenAI stopped reporting SWE-bench Verified scores after finding widespread flawed tests and cross-provider training-data contamination; recommends SWE-Bench Pro instead.
-- [[Claude Models]] - Anthropic coding lineage: HumanEval 71.2% (Claude 2) to SWE-bench SOTA (Opus 4.5+); Claude Fable 5 FrontierCode leader; Claude Code agent.
+- [[Claude Models]] - Anthropic coding lineage: HumanEval 71.2% (Claude 2) to SWE-bench SOTA (Opus 4.5+); Claude Fable 5/5.1 FrontierCode and CursorBench 3.2 leaders; Claude Code agent.
+- [[GPT-6 Astra]] - Sep 2026: Critical cyber capability; Codex deployment simulation alignment evals.
 - [[Claude Code]] - Terminal/IDE agentic coding tool; Plan Mode, Agent SDK, dynamic workflows.
 - [[Introducing North Mini Code]] - Cohere's first open agentic coding MoE (30B/3B); multi-harness SFT + CISPO RLVR; Apache 2.0 (Jun 2026).
 - [[North Mini Code]] - entity page for Cohere's open developer coding model.
@@ -26,6 +27,8 @@ This topic page groups source ingests from [[Papers Explained Corpus]] that conn
 - [[Gemini 3 Flash]] - Google Dec 2025: 78% SWE-bench Verified at Flash latency and cost.
 - [[Gemini 3.5 Flash]] - Google I/O 2026: strongest Gemini coding model; Terminal-Bench 2.1 76.2%, MCP Atlas 83.6%; Antigravity subagent demos.
 - [[Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber]] - Google Jul 2026: 3.6 Flash DeepSWE 49% vs 37%, MLE Bench 63.9% vs 49.7%; 3.5 Flash-Lite Terminal-Bench 2.1 54%, SWE-Bench Pro 54.2%; 3.5 Flash Cyber in CodeMender on CyberGym.
+- [[Gemini 3.7 Flash]] - Google Aug 2026: DeepSWE 65.3%, FrontierCode 43.6%, WebDev Arena Elo 1588.
+- [[Gemini 3.8 Flash and 3.8 Flash Cyber]] - Google Sep 2026: DeepSWE v1.1 frontier-class; CWE-Bench 47.2% patching via Fairwind Cyber.
 - [[Gemma 4]] - Google Apr 2026 open models with agentic workflows and coding on Gemini 3 stack.
 - [[FunctionGemma]] - Gemma 3 270M fine-tuned for structured function calling and edge API agents.
 - [[T5Gemma 2]] - Compact encoder-decoder with strong STEM/code benchmarks at 270M–4B scales.

@@ -5,21 +5,25 @@
 
 ## Overview
 
-**Astra** is an internal OpenAI reasoning model previewed to regulators and lawmakers in Washington in July–August 2026. OpenAI describes it as built around multiple agents collaborating on long-running tasks, with frontier mathematics as a headline proving ground. As of the August 1, 2026 announcement, Astra remains unreleased; whether it ships as GPT-6, a GPT-5.x update, or its own tier alongside Sol, Terra, and Luna is undecided publicly.
+**Astra** is OpenAI's internal codename for a multi-agent reasoning system built for long-running tasks, with frontier mathematics as an early proving ground. Previewed to regulators in July–August 2026, it **shipped publicly as GPT-6 Astra** on September 3, 2026 — OpenAI's most capable broadly deployed model and the first to reach **Critical** cybersecurity capability under the [[Preparedness Framework]].
 
 ## Appearances
 
-- [[Ten Advances in Mathematics and Theoretical Computer Science]] — internal Astra version generated proofs for ten open math/TCS problems (~$2,000 inference at Sol API rates); arguments formalized in Lean.
-- [[How the Ideas Came Together]] — AI-generated proof-discovery narratives derived from Astra's chains of thought and the resulting manuscripts.
+- [[GPT-6 Astra]] — September 2026 GA launch; system card and product announcement.
+- [[Ten Advances in Mathematics and Theoretical Computer Science]] — internal Astra generated proofs for ten open math/TCS problems (~$2,000 inference at Sol API rates); Lean formalization.
+- [[How the Ideas Came Together]] — proof-discovery narratives from Astra chains of thought.
 
 ## Notes
 
-- Distinct from the HackerRank **Astra** coding benchmark dataset referenced in [[Papers Explained 317 - Competitive Programming with Large Reasoning Models]].
-- Prior OpenAI math results ([[Model Disproves Discrete Geometry Conjecture]], [[New Result in Theoretical Physics]]) credited GPT-5.x family models rather than Astra by name.
+- Distinct from the HackerRank **Astra** coding benchmark in [[Papers Explained 317 - Competitive Programming with Large Reasoning Models]].
+- Prior math results ([[Model Disproves Discrete Geometry Conjecture]]) credited GPT-5.x rather than Astra by name.
+- Succeeds **GPT-5.6 Sol** as OpenAI flagship; monitorability of chain-of-thought decreased vs Sol under adversarial testing.
 
 ## Related
 
 - [[OpenAI]]
-- [[Reasoning Models]]
+- [[GPT-6 Astra]]
 - [[GPT-5.6]]
+- [[Reasoning Models]]
+- [[Preparedness Framework]]
 - [[Ten Advances in Mathematics and Theoretical Computer Science]]

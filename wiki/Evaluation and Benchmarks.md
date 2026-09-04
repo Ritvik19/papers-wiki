@@ -16,7 +16,8 @@ This topic page groups source ingests from [[Papers Explained Corpus]] that conn
 - [[Why We No Longer Evaluate SWE-bench Verified]] - OpenAI's contamination and test-quality audit of SWE-bench Verified, leading it to stop reporting scores on that benchmark.
 - [[Instruction Hierarchy Challenge]] - OpenAI benchmark testing whether models resolve conflicting system/developer/user/tool instructions in the intended priority order.
 - [[Papers Explained 587: OpenThoughts Agent]] - Comprehensive agent evaluation protocol using OpenThoughts-TBLite, SWE-Bench Verified-100, and Terminal-Bench 2.0 in Daytona sandboxes with held-out OOD benchmarks (Aider Polyglot, BFCL, GAIA, MedAgentBench).
-- [[Ten Advances in Mathematics and Theoretical Computer Science]] - OpenAI frontier-math evaluation: internal [[Astra]] model on ten decade-old open problems with Lean certificate verification (~$2k inference cost reported).
+- [[Ten Advances in Mathematics and Theoretical Computer Science]] - OpenAI frontier-math evaluation: internal [[Astra]] model on ten decade-old open problems; now [[GPT-6 Astra]] at GA.
+- [[GPT-6 Astra]] - Sep 2026 system card: Critical cyber, alignment simulation on 54k Codex tasks, Gray Swan IPI 8.5% ASR.
 - [[Understanding the 4 Main Approaches to LLM Evaluation (From Scratch)]] — Sebastian Raschka's practitioner taxonomy of multiple-choice (MMLU), verifiers, preference leaderboards (LM Arena/Elo), and LLM-as-a-judge evaluation with from-scratch Python code.
 - [[Explainable AI (XAI): A Survey of Recent Methods, Applications and Frameworks]] — AI Summer (2021): interpretability methods (CAM, Grad-CAM, LRP, LIME, TCAV), model trustworthiness in safety-critical CV applications, and XAI toolkits.
 - [[Papers Explained: Reward Hacking in Rubric-Based RL]] - Evaluates rubric-based RL with training verifiers, stronger reference panels, exploitation-rate tracking, and rubric-free judge comparisons.

@@ -26,6 +26,8 @@ Google DeepMind (formerly Google DeepMind and Google Brain) is a leading artific
 - [[Gemini 3.1 Flash TTS]] — Apr 2026 TTS: 70+ languages, Elo 1211 on TTS Arena.
 - [[Gemini 3.5 Flash]] — May 2026 I/O agentic/coding Flash; Terminal-Bench 2.1 76.2%.
 - [[Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber]] — Jul 2026: 3.6 Flash workhorse, 3.5 Flash-Lite throughput tier, 3.5 Flash Cyber in CodeMender; Gemini 4 pre-training started.
+- [[Gemini 3.7 Flash]] — Aug 2026 workhorse: DeepSWE 65.3%, FrontierCode 43.6%; Spark update; $0.75/$3.75 intro pricing.
+- [[Gemini 3.8 Flash and 3.8 Flash Cyber]] — Sep 2026: third Flash in six weeks; HLE-Verified 54.9%; 3.8 Flash Cyber via [[Fairwind Program]].
 - [[Gemini Omni Flash]] — May 2026 I/O omni-modal video generation from any input.
 - [[Nano Banana Pro]] — Nov/Dec 2025 Gemini 3 Pro Image generation and editing.
 - [[How Nano Banana Got Its Name]] — Jan 2026 origin of the Nano Banana codename.

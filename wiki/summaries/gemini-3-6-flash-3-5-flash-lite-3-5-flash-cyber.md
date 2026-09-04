@@ -70,6 +70,8 @@ The post also notes **Gemini 3.5 Pro** is testing with partners, and Google has 
 ## Related
 
 - [[Gemini 3.5 Flash]] — prior workhorse Flash release (May 2026 I/O).
+- [[Gemini 3.7 Flash]] — Aug 2026 successor workhorse (based on 3.6 Flash).
+- [[Gemini 3.8 Flash and 3.8 Flash Cyber]] — Sep 2026 successor with Fairwind Cyber variant.
 - [[Gemini 3.1 Flash Lite]] — prior cost-optimized Flash-Lite tier.
 - [[Gemini 3 Flash]] — baseline for 3.5 Flash-Lite comparisons.
 - [[DeepMind]] — Gemini 3 era timeline and releases.

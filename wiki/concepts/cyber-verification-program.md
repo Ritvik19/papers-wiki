@@ -9,7 +9,7 @@ Anthropic's **Cyber Verification Program** is an opt-in enrollment path for orga
 
 ## Appearances
 
-- [[Claude Models]] — Sonnet 5 launch (June 2026); enrolled orgs keep reduced guardrails when upgrading to Sonnet 5.
+- [[Claude Models]] — Sonnet 5 launch (June 2026); Fable 5.1 / Mythos 5.1 (Sep 2026) adds upcoming Mythos-class CVP access.
 - [[Anthropic]] — safety and deployment policy for frontier cyber capability.
 
 ## Notes

@@ -18,6 +18,7 @@
 - [[GPT-5.4]] — Mar 2026; first general-purpose model with High cybersecurity mitigations.
 - [[GPT-5.5]] — Apr 2026; GB200/GB300-co-designed inference; High Bio/Chem and Cyber; GPT-5.5 Instant.
 - [[GPT-5.6]] — Jul 2026 GA (preview Jun 26); Sol/Terra/Luna family; ChatGPT Work launch; first release with High designations for smaller family members alongside the flagship.
+- [[GPT-6 Astra]] — Sep 2026 GA; internal [[Astra]] codename; first OpenAI model at Critical cyber under Preparedness Framework; succeeds Sol as flagship.
 - [[How Two Settings Tripled Our ARC-AGI-3 Scores]] — Jul 2026 harness analysis: retained reasoning + compaction on Responses API.
 
 ### Products
@@ -38,7 +39,7 @@
 
 ### Research and evaluation methodology
 
-- [[Ten Advances in Mathematics and Theoretical Computer Science]], [[How the Ideas Came Together]] — Aug 2026: internal [[Astra]] model proofs for ten open math/TCS problems; Lean certificates; proof-discovery walkthroughs.
+- [[Ten Advances in Mathematics and Theoretical Computer Science]], [[How the Ideas Came Together]] — Aug 2026: internal [[Astra]] model proofs for ten open math/TCS problems; shipped as [[GPT-6 Astra]] Sep 2026.
 - [[A Single Question to Track Progress from o3 to GPT-5.6 and Beyond]] — Jul 2026: [[Sebastien Bubeck]]'s analysis of o3 through GPT-5.6-pro one-shot mathematical proofs on self-contracted gradient flows.
 - [[Implications of Large-Scale Test-Time Compute]] — Jun 2026: [[Noam Brown]]'s essay analyzing why benchmark performance is a function of test-time compute and advocating for 2D capability curves and compute-budgeted safety evaluations.
 - [[Model Disproves Discrete Geometry Conjecture]], [[New Result in Theoretical Physics]], [[Where the Goblins Came From]] — model-assisted research results.

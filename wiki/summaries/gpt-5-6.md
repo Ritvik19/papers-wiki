@@ -149,6 +149,7 @@ GA announcement charts (benchmark curves, deck comparisons, ultra multi-agent) n
 - [[Sebastien Bubeck]]
 - [[OpenAI]]
 - [[GPT-5.5]]
+- [[GPT-6 Astra]] — Sep 2026 successor flagship; Astra codename; Critical cyber threshold.
 - [[How Two Settings Tripled Our ARC-AGI-3 Scores]]
 - [[ARC-AGI-3]]
 - [[Large Language Models]]

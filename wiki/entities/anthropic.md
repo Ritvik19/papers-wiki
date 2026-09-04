@@ -45,6 +45,7 @@
 #### Claude 5 / Mythos era (2026)
 
 - Claude Fable 5 / Mythos 5 (Jun 2026) — Mythos-class models; Fable 5 GA with [[Claude Fable Safeguards]]; Mythos 5 for [[Project Glasswing]] trusted access; $10/$50 pricing.
+- Claude Fable 5.1 / Mythos 5.1 (Sep 2026) — cache-read pricing cut; [[Enterprise Frontier Safeguards]]; [[Life Sciences Verification Program]]; CVP expansion for Mythos-class cyber.
 - Claude Sonnet 5 (Jun 2026) — Default Free/Pro model; near Opus 4.8 agentic performance at Sonnet cost; $2/$10 intro through Aug 2026 then $3/$15; new tokenizer (1.0–1.35× tokens); cyber safeguards on by default; [[Cyber Verification Program]] eligible.
 - Claude Text Watermarking (Aug 2026) — Cryptographic text watermarking rollout via [[Tournament Sampling]] for AI provenance and regulatory compliance; analyzed in [[How Claude Watermarks AI-Generated Text]].
 

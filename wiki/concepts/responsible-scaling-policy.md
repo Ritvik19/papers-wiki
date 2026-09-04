@@ -18,6 +18,7 @@ Anthropic's **Responsible Scaling Policy (RSP)** is a framework that ties deploy
 - ASL thresholds are evaluated against autonomy, cyber, and CBRN misuse potential—not just benchmark scores.
 - Sonnet 4.5 ASL-3 includes CBRN-related input/output classifiers with fallback to lower-risk models on false positives.
 - Opus 4.7 introduces automated cyber-misuse detection blocks ahead of broader Mythos-class releases.
+- **Claude Fable 5.1** (Sep 2026) refines [[Claude Fable Safeguards]]: vuln discovery on Fable, 60% fewer cyber false positives; **Claude Mythos 5.1** via CVP + [[Life Sciences Verification Program]].
 - **Claude Fable 5** (Jun 2026) releases Mythos-class capability under [[Claude Fable Safeguards]] with cyber/biology domain routing to Opus 4.8; **Claude Mythos 5** remains in trusted-access programs ([[Project Glasswing]]).
 
 ## Related

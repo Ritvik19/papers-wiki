@@ -1197,11 +1197,17 @@
 | [[DiffusionGemma]] | #summary | Google Jun 2026 experimental open text-diffusion MoE: 4× local GPU decode, 256-token parallel canvas, Apache 2.0. | 2026-06-11 |
 | [[Gemini 3.5 Flash]] | #summary | Google I/O 2026: frontier agentic/coding Flash model; Terminal-Bench 2.1 76.2%, 4× frontier speed; Antigravity subagents, Gemini Spark. | 2026-06-06 |
 | [[Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber]] | #summary | Google Jul 2026: 3.6 Flash workhorse, 3.5 Flash-Lite throughput tier, 3.5 Flash Cyber in CodeMender. | 2026-07-22 |
+| [[GPT-6 Astra]] | #summary | Sep 2026 GA: Astra shipped; first Critical cyber; stronger alignment, worse CoT monitorability vs Sol. | 2026-09-04 |
+| [[Gemini 3.7 Flash]] | #summary | Google Aug 2026 workhorse Flash: DeepSWE 65.3%, $0.75/$3.75 intro, Spark update. | 2026-09-04 |
+| [[Gemini 3.8 Flash and 3.8 Flash Cyber]] | #summary | Google Sep 2026: HLE-Verified 54.9%; 3.8 Flash Cyber via Fairwind for defenders. | 2026-09-04 |
+| [[Fairwind Program]] | #concept | Google trusted-defender access for Gemini 3.8 Flash Cyber. | 2026-09-04 |
+| [[Enterprise Frontier Safeguards]] | #concept | Anthropic customer-cloud ZDR-class monitoring for Fable 5.1 enterprises. | 2026-09-04 |
+| [[Life Sciences Verification Program]] | #concept | Anthropic trusted-access program for Mythos 5.1 biology R&D. | 2026-09-04 |
 | [[CodeMender]] | #entity | Google multi-agent code-security system using Gemini 3.5 Flash Cyber; limited pilot for governments/trusted partners. | 2026-07-22 |
 | [[Gemini Omni Flash]] | #summary | Google I/O 2026: video from any input; conversational editing; physics reasoning; SynthID; Avatars. | 2026-06-06 |
 | [[T5Gemma 2]] | #summary | Google Dec 2025 encoder-decoder from Gemma 3: tied embeddings, merged attention, multimodal, 128K context. | 2026-06-06 |
 | [[FunctionGemma]] | #summary | Google Dec 2025 Gemma 3 270M function-calling specialist for edge agents; 58%→85% after fine-tuning. | 2026-06-06 |
-| [[Claude Models]] | #summary | Anthropic Claude timeline Mar 2023–Jun 2026: Opus/Sonnet/Haiku through Fable 5 / Mythos 5 and Sonnet 5; computer use, extended thinking, Claude Code. | 2026-07-12 |
+| [[Claude Models]] | #summary | Anthropic Claude timeline Mar 2023–Sep 2026: through Fable 5.1 / Mythos 5.1, Sonnet 5; computer use, extended thinking, Claude Code. | 2026-09-04 |
 | [[Anthropic]] | #entity | AI safety company; Constitutional AI; Claude model family and platform. | 2026-06-06 |
 | [[Project Glasswing]] | #concept | Anthropic-led cyberdefense initiative deploying Mythos-class models to vetted partners. | 2026-06-09 |
 | [[Claude Fable Safeguards]] | #concept | Domain-routing safeguards releasing Mythos-class Fable 5 broadly; cyber/bio queries → Opus 4.8. | 2026-06-09 |

@@ -9,7 +9,7 @@
 
 ## Appearances
 
-- [[Claude Models]] — Mythos 5 launches as a Glasswing upgrade from Mythos Preview (June 2026).
+- [[Claude Models]] — Mythos 5 launches as a Glasswing upgrade from Mythos Preview (June 2026); Mythos 5.1 continues trusted cyber/bio access (Sep 2026).
 - [[Anthropic]] — initiative partner and Mythos-class model provider.
 
 ## Notes

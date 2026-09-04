@@ -199,6 +199,8 @@ This topic page groups source ingests from [[Papers Explained Corpus]] that conn
 - [[Papers Explained: EMO]] - EMO targets efficient deployment by making small expert subsets retain near full-model performance.
 - [[Gemini 3.5 Flash]] - Google I/O 2026: frontier intelligence at Flash-series speed; 4× output tokens/s vs. other frontier models; top-right on Artificial Analysis intelligence-vs-speed index.
 - [[Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber]] - Google Jul 2026: 3.6 Flash uses 17% fewer output tokens than 3.5 Flash at $1.50/$7.50 per M; 3.5 Flash-Lite at 350 output tok/s and $0.30/$2.50 per M for high-throughput agentic traffic.
+- [[Gemini 3.7 Flash]] - Google Aug 2026: $0.75/$3.75 intro pricing (half 3.6 intro); cache-friendly agent workloads via Spark.
+- [[Gemini 3.8 Flash and 3.8 Flash Cyber]] - Google Sep 2026: same intro price as 3.7; higher token use at max effort by design.
 
 ## Related
 
